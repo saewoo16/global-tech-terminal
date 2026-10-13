@@ -1,0 +1,2074 @@
+[
+  {
+    "sector": "반도체 제조",
+    "category": "메모리 IDM",
+    "name": "Samsung Electronics",
+    "ticker": "005930",
+    "symbol": "KRX:005930",
+    "country": "한국"
+  },
+  {
+    "sector": "반도체 제조",
+    "category": "메모리 IDM",
+    "name": "SK hynix",
+    "ticker": "000660",
+    "symbol": "KRX:000660",
+    "country": "한국"
+  },
+  {
+    "sector": "반도체 제조",
+    "category": "메모리 IDM",
+    "name": "Micron Technology",
+    "ticker": "MU",
+    "symbol": "NASDAQ:MU",
+    "country": "미국"
+  },
+  {
+    "sector": "반도체 제조",
+    "category": "메모리 IDM",
+    "name": "Kioxia Holdings",
+    "ticker": "285A",
+    "symbol": "TSE:285A",
+    "country": "일본"
+  },
+  {
+    "sector": "반도체 제조",
+    "category": "메모리 IDM",
+    "name": "Nanya Technology",
+    "ticker": "2408",
+    "symbol": "TWSE:2408",
+    "country": "대만"
+  },
+  {
+    "sector": "반도체 제조",
+    "category": "메모리 IDM",
+    "name": "Winbond Electronics",
+    "ticker": "2344",
+    "symbol": "TWSE:2344",
+    "country": "대만"
+  },
+  {
+    "sector": "반도체 제조",
+    "category": "메모리 IDM",
+    "name": "Macronix International",
+    "ticker": "2337",
+    "symbol": "TWSE:2337",
+    "country": "대만"
+  },
+  {
+    "sector": "반도체 제조",
+    "category": "비메모리 IDM · CPU",
+    "name": "Intel",
+    "ticker": "INTC",
+    "symbol": "NASDAQ:INTC",
+    "country": "미국"
+  },
+  {
+    "sector": "반도체 제조",
+    "category": "비메모리 IDM · 아날로그",
+    "name": "Texas Instruments",
+    "ticker": "TXN",
+    "symbol": "NASDAQ:TXN",
+    "country": "미국"
+  },
+  {
+    "sector": "반도체 제조",
+    "category": "비메모리 IDM · 아날로그",
+    "name": "Analog Devices",
+    "ticker": "ADI",
+    "symbol": "NASDAQ:ADI",
+    "country": "미국"
+  },
+  {
+    "sector": "반도체 제조",
+    "category": "비메모리 IDM · MCU",
+    "name": "NXP Semiconductors",
+    "ticker": "NXPI",
+    "symbol": "NASDAQ:NXPI",
+    "country": "네덜란드"
+  },
+  {
+    "sector": "반도체 제조",
+    "category": "비메모리 IDM · MCU",
+    "name": "Microchip Technology",
+    "ticker": "MCHP",
+    "symbol": "NASDAQ:MCHP",
+    "country": "미국"
+  },
+  {
+    "sector": "반도체 제조",
+    "category": "비메모리 IDM · MCU",
+    "name": "Renesas Electronics",
+    "ticker": "6723",
+    "symbol": "TSE:6723",
+    "country": "일본"
+  },
+  {
+    "sector": "반도체 제조",
+    "category": "비메모리 IDM · 전력반도체",
+    "name": "Infineon Technologies",
+    "ticker": "IFX",
+    "symbol": "XETR:IFX",
+    "country": "독일"
+  },
+  {
+    "sector": "반도체 제조",
+    "category": "비메모리 IDM · 전력반도체",
+    "name": "STMicroelectronics",
+    "ticker": "STM",
+    "symbol": "NYSE:STM",
+    "country": "스위스"
+  },
+  {
+    "sector": "반도체 제조",
+    "category": "비메모리 IDM · 전력반도체",
+    "name": "onsemi",
+    "ticker": "ON",
+    "symbol": "NASDAQ:ON",
+    "country": "미국"
+  },
+  {
+    "sector": "반도체 제조",
+    "category": "비메모리 IDM · 전력반도체",
+    "name": "ROHM",
+    "ticker": "6963",
+    "symbol": "TSE:6963",
+    "country": "일본"
+  },
+  {
+    "sector": "반도체 제조",
+    "category": "비메모리 IDM · 이미지센서",
+    "name": "Sony Group",
+    "ticker": "6758",
+    "symbol": "TSE:6758",
+    "country": "일본"
+  },
+  {
+    "sector": "반도체 제조",
+    "category": "비메모리 IDM · 이미지센서",
+    "name": "onsemi",
+    "ticker": "ON",
+    "symbol": "NASDAQ:ON",
+    "country": "미국"
+  },
+  {
+    "sector": "반도체 제조",
+    "category": "파운드리",
+    "name": "Taiwan Semiconductor Manufacturing",
+    "ticker": "TSM",
+    "symbol": "NYSE:TSM",
+    "country": "대만"
+  },
+  {
+    "sector": "반도체 제조",
+    "category": "파운드리",
+    "name": "SMIC",
+    "ticker": "0981",
+    "symbol": "HKEX:981",
+    "country": "중국"
+  },
+  {
+    "sector": "팹리스·설계",
+    "category": "GPU·AI 가속기",
+    "name": "NVIDIA",
+    "ticker": "NVDA",
+    "symbol": "NASDAQ:NVDA",
+    "country": "미국"
+  },
+  {
+    "sector": "팹리스·설계",
+    "category": "GPU·AI 가속기",
+    "name": "AMD",
+    "ticker": "AMD",
+    "symbol": "NASDAQ:AMD",
+    "country": "미국"
+  },
+  {
+    "sector": "팹리스·설계",
+    "category": "GPU·AI 가속기",
+    "name": "Cambricon Technologies",
+    "ticker": "688256",
+    "symbol": "SSE:688256",
+    "country": "중국"
+  },
+  {
+    "sector": "팹리스·설계",
+    "category": "CPU·컴퓨트",
+    "name": "AMD",
+    "ticker": "AMD",
+    "symbol": "NASDAQ:AMD",
+    "country": "미국"
+  },
+  {
+    "sector": "팹리스·설계",
+    "category": "AI ASIC·네트워크 칩",
+    "name": "Broadcom",
+    "ticker": "AVGO",
+    "symbol": "NASDAQ:AVGO",
+    "country": "미국"
+  },
+  {
+    "sector": "팹리스·설계",
+    "category": "AI ASIC·네트워크 칩",
+    "name": "Marvell Technology",
+    "ticker": "MRVL",
+    "symbol": "NASDAQ:MRVL",
+    "country": "미국"
+  },
+  {
+    "sector": "팹리스·설계",
+    "category": "AI ASIC·네트워크 칩",
+    "name": "Astera Labs",
+    "ticker": "ALAB",
+    "symbol": "NASDAQ:ALAB",
+    "country": "미국"
+  },
+  {
+    "sector": "팹리스·설계",
+    "category": "AI ASIC·네트워크 칩",
+    "name": "Credo Technology",
+    "ticker": "CRDO",
+    "symbol": "NASDAQ:CRDO",
+    "country": "케이맨"
+  },
+  {
+    "sector": "팹리스·설계",
+    "category": "모바일 AP·모뎀",
+    "name": "Qualcomm",
+    "ticker": "QCOM",
+    "symbol": "NASDAQ:QCOM",
+    "country": "미국"
+  },
+  {
+    "sector": "팹리스·설계",
+    "category": "모바일 AP·모뎀",
+    "name": "MediaTek",
+    "ticker": "2454",
+    "symbol": "TWSE:2454",
+    "country": "대만"
+  },
+  {
+    "sector": "팹리스·설계",
+    "category": "모바일 AP·모뎀",
+    "name": "Rockchip Electronics",
+    "ticker": "603893",
+    "symbol": "SSE:603893",
+    "country": "중국"
+  },
+  {
+    "sector": "팹리스·설계",
+    "category": "아날로그·PMIC",
+    "name": "Monolithic Power Systems",
+    "ticker": "MPWR",
+    "symbol": "NASDAQ:MPWR",
+    "country": "미국"
+  },
+  {
+    "sector": "팹리스·설계",
+    "category": "SSD·NAND 컨트롤러",
+    "name": "Silicon Motion",
+    "ticker": "SIMO",
+    "symbol": "NASDAQ:SIMO",
+    "country": "대만"
+  },
+  {
+    "sector": "팹리스·설계",
+    "category": "SSD·NAND 컨트롤러",
+    "name": "Phison Electronics",
+    "ticker": "8299",
+    "symbol": "TPEX:8299",
+    "country": "대만"
+  },
+  {
+    "sector": "팹리스·설계",
+    "category": "디스플레이 구동 IC",
+    "name": "Novatek Microelectronics",
+    "ticker": "3034",
+    "symbol": "TWSE:3034",
+    "country": "대만"
+  },
+  {
+    "sector": "팹리스·설계",
+    "category": "디스플레이 구동 IC",
+    "name": "Himax Technologies",
+    "ticker": "HIMX",
+    "symbol": "NASDAQ:HIMX",
+    "country": "대만"
+  },
+  {
+    "sector": "팹리스·설계",
+    "category": "디스플레이 구동 IC",
+    "name": "LX Semicon",
+    "ticker": "108320",
+    "symbol": "KRX:108320",
+    "country": "한국"
+  },
+  {
+    "sector": "팹리스·설계",
+    "category": "EDA",
+    "name": "Synopsys",
+    "ticker": "SNPS",
+    "symbol": "NASDAQ:SNPS",
+    "country": "미국"
+  },
+  {
+    "sector": "팹리스·설계",
+    "category": "EDA",
+    "name": "Cadence Design Systems",
+    "ticker": "CDNS",
+    "symbol": "NASDAQ:CDNS",
+    "country": "미국"
+  },
+  {
+    "sector": "팹리스·설계",
+    "category": "EDA",
+    "name": "Siemens",
+    "ticker": "SIE",
+    "symbol": "XETR:SIE",
+    "country": "독일"
+  },
+  {
+    "sector": "팹리스·설계",
+    "category": "반도체 IP",
+    "name": "Arm Holdings",
+    "ticker": "ARM",
+    "symbol": "NASDAQ:ARM",
+    "country": "영국"
+  },
+  {
+    "sector": "팹리스·설계",
+    "category": "반도체 IP",
+    "name": "Rambus",
+    "ticker": "RMBS",
+    "symbol": "NASDAQ:RMBS",
+    "country": "미국"
+  },
+  {
+    "sector": "팹리스·설계",
+    "category": "반도체 IP",
+    "name": "CEVA",
+    "ticker": "CEVA",
+    "symbol": "NASDAQ:CEVA",
+    "country": "미국"
+  },
+  {
+    "sector": "팹리스·설계",
+    "category": "DSP·ASIC 설계서비스",
+    "name": "Global Unichip",
+    "ticker": "3443",
+    "symbol": "TWSE:3443",
+    "country": "대만"
+  },
+  {
+    "sector": "팹리스·설계",
+    "category": "DSP·ASIC 설계서비스",
+    "name": "Alchip Technologies",
+    "ticker": "3661",
+    "symbol": "TWSE:3661",
+    "country": "대만"
+  },
+  {
+    "sector": "팹리스·설계",
+    "category": "DSP·ASIC 설계서비스",
+    "name": "Faraday Technology",
+    "ticker": "3035",
+    "symbol": "TWSE:3035",
+    "country": "대만"
+  },
+  {
+    "sector": "팹리스·설계",
+    "category": "DSP·ASIC 설계서비스",
+    "name": "Socionext",
+    "ticker": "6526",
+    "symbol": "TSE:6526",
+    "country": "일본"
+  },
+  {
+    "sector": "전공정 장비",
+    "category": "노광",
+    "name": "ASML Holding",
+    "ticker": "ASML",
+    "symbol": "NASDAQ:ASML",
+    "country": "네덜란드"
+  },
+  {
+    "sector": "전공정 장비",
+    "category": "노광",
+    "name": "Nikon",
+    "ticker": "7731",
+    "symbol": "TSE:7731",
+    "country": "일본"
+  },
+  {
+    "sector": "전공정 장비",
+    "category": "노광",
+    "name": "Canon",
+    "ticker": "7751",
+    "symbol": "TSE:7751",
+    "country": "일본"
+  },
+  {
+    "sector": "전공정 장비",
+    "category": "증착",
+    "name": "Applied Materials",
+    "ticker": "AMAT",
+    "symbol": "NASDAQ:AMAT",
+    "country": "미국"
+  },
+  {
+    "sector": "전공정 장비",
+    "category": "증착",
+    "name": "ASM International",
+    "ticker": "ASM",
+    "symbol": "EURONEXT:ASM",
+    "country": "네덜란드"
+  },
+  {
+    "sector": "전공정 장비",
+    "category": "증착",
+    "name": "Tokyo Electron",
+    "ticker": "8035",
+    "symbol": "TSE:8035",
+    "country": "일본"
+  },
+  {
+    "sector": "전공정 장비",
+    "category": "증착",
+    "name": "Jusung Engineering",
+    "ticker": "036930",
+    "symbol": "KRX:036930",
+    "country": "한국"
+  },
+  {
+    "sector": "전공정 장비",
+    "category": "증착",
+    "name": "Kokusai Electric",
+    "ticker": "6525",
+    "symbol": "TSE:6525",
+    "country": "일본"
+  },
+  {
+    "sector": "전공정 장비",
+    "category": "식각",
+    "name": "Lam Research",
+    "ticker": "LRCX",
+    "symbol": "NASDAQ:LRCX",
+    "country": "미국"
+  },
+  {
+    "sector": "전공정 장비",
+    "category": "식각",
+    "name": "Tokyo Electron",
+    "ticker": "8035",
+    "symbol": "TSE:8035",
+    "country": "일본"
+  },
+  {
+    "sector": "전공정 장비",
+    "category": "식각",
+    "name": "AMEC",
+    "ticker": "688012",
+    "symbol": "SSE:688012",
+    "country": "중국"
+  },
+  {
+    "sector": "전공정 장비",
+    "category": "식각",
+    "name": "NAURA Technology",
+    "ticker": "002371",
+    "symbol": "SZSE:002371",
+    "country": "중국"
+  },
+  {
+    "sector": "전공정 장비",
+    "category": "세정",
+    "name": "SCREEN Holdings",
+    "ticker": "7735",
+    "symbol": "TSE:7735",
+    "country": "일본"
+  },
+  {
+    "sector": "전공정 장비",
+    "category": "세정",
+    "name": "ACM Research",
+    "ticker": "ACMR",
+    "symbol": "NASDAQ:ACMR",
+    "country": "미국"
+  },
+  {
+    "sector": "전공정 장비",
+    "category": "검사·계측",
+    "name": "KLA Corporation",
+    "ticker": "KLAC",
+    "symbol": "NASDAQ:KLAC",
+    "country": "미국"
+  },
+  {
+    "sector": "전공정 장비",
+    "category": "검사·계측",
+    "name": "Lasertec",
+    "ticker": "6920",
+    "symbol": "TSE:6920",
+    "country": "일본"
+  },
+  {
+    "sector": "전공정 장비",
+    "category": "검사·계측",
+    "name": "Onto Innovation",
+    "ticker": "ONTO",
+    "symbol": "NYSE:ONTO",
+    "country": "미국"
+  },
+  {
+    "sector": "전공정 장비",
+    "category": "검사·계측",
+    "name": "Nova",
+    "ticker": "NVMI",
+    "symbol": "NASDAQ:NVMI",
+    "country": "이스라엘"
+  },
+  {
+    "sector": "전공정 장비",
+    "category": "이온주입",
+    "name": "Axcelis Technologies",
+    "ticker": "ACLS",
+    "symbol": "NASDAQ:ACLS",
+    "country": "미국"
+  },
+  {
+    "sector": "후공정·기판 장비",
+    "category": "본딩·첨단패키징",
+    "name": "Hanmi Semiconductor",
+    "ticker": "042700",
+    "symbol": "KRX:042700",
+    "country": "한국"
+  },
+  {
+    "sector": "후공정·기판 장비",
+    "category": "본딩·첨단패키징",
+    "name": "BESI",
+    "ticker": "BESI",
+    "symbol": "EURONEXT:BESI",
+    "country": "네덜란드"
+  },
+  {
+    "sector": "후공정·기판 장비",
+    "category": "본딩·첨단패키징",
+    "name": "ASMPT",
+    "ticker": "0522",
+    "symbol": "HKEX:522",
+    "country": "홍콩"
+  },
+  {
+    "sector": "후공정·기판 장비",
+    "category": "다이싱·그라인딩",
+    "name": "DISCO Corporation",
+    "ticker": "6146",
+    "symbol": "TSE:6146",
+    "country": "일본"
+  },
+  {
+    "sector": "후공정·기판 장비",
+    "category": "다이싱·그라인딩",
+    "name": "Tokyo Seimitsu",
+    "ticker": "7729",
+    "symbol": "TSE:7729",
+    "country": "일본"
+  },
+  {
+    "sector": "후공정·기판 장비",
+    "category": "ATE·테스터",
+    "name": "Advantest",
+    "ticker": "6857",
+    "symbol": "TSE:6857",
+    "country": "일본"
+  },
+  {
+    "sector": "후공정·기판 장비",
+    "category": "ATE·테스터",
+    "name": "Teradyne",
+    "ticker": "TER",
+    "symbol": "NASDAQ:TER",
+    "country": "미국"
+  },
+  {
+    "sector": "후공정·기판 장비",
+    "category": "ATE·테스터",
+    "name": "Cohu",
+    "ticker": "COHU",
+    "symbol": "NASDAQ:COHU",
+    "country": "미국"
+  },
+  {
+    "sector": "후공정·기판 장비",
+    "category": "ATE·테스터",
+    "name": "Chroma ATE",
+    "ticker": "2360",
+    "symbol": "TWSE:2360",
+    "country": "대만"
+  },
+  {
+    "sector": "후공정·기판 장비",
+    "category": "핸들러·번인",
+    "name": "Techwing",
+    "ticker": "089030",
+    "symbol": "KRX:089030",
+    "country": "한국"
+  },
+  {
+    "sector": "후공정·기판 장비",
+    "category": "핸들러·번인",
+    "name": "Aehr Test Systems",
+    "ticker": "AEHR",
+    "symbol": "NASDAQ:AEHR",
+    "country": "미국"
+  },
+  {
+    "sector": "후공정·기판 장비",
+    "category": "기판 레이저·드릴",
+    "name": "MKS Instruments",
+    "ticker": "MKSI",
+    "symbol": "NASDAQ:MKSI",
+    "country": "미국"
+  },
+  {
+    "sector": "후공정·기판 장비",
+    "category": "기판 레이저·드릴",
+    "name": "Han’s CNC",
+    "ticker": "301200",
+    "symbol": "SZSE:301200",
+    "country": "중국"
+  },
+  {
+    "sector": "후공정·기판 장비",
+    "category": "기판 검사·노광",
+    "name": "KLA Corporation",
+    "ticker": "KLAC",
+    "symbol": "NASDAQ:KLAC",
+    "country": "미국"
+  },
+  {
+    "sector": "후공정·기판 장비",
+    "category": "기판 검사·노광",
+    "name": "MKS Instruments",
+    "ticker": "MKSI",
+    "symbol": "NASDAQ:MKSI",
+    "country": "미국"
+  },
+  {
+    "sector": "기판·PCB·CCL",
+    "category": "ABF·FC-BGA",
+    "name": "Unimicron Technology",
+    "ticker": "3037",
+    "symbol": "TWSE:3037",
+    "country": "대만"
+  },
+  {
+    "sector": "기판·PCB·CCL",
+    "category": "ABF·FC-BGA",
+    "name": "Ibiden",
+    "ticker": "4062",
+    "symbol": "TSE:4062",
+    "country": "일본"
+  },
+  {
+    "sector": "기판·PCB·CCL",
+    "category": "ABF·FC-BGA",
+    "name": "Samsung Electro-Mechanics",
+    "ticker": "009150",
+    "symbol": "KRX:009150",
+    "country": "한국"
+  },
+  {
+    "sector": "기판·PCB·CCL",
+    "category": "ABF·FC-BGA",
+    "name": "Nan Ya PCB",
+    "ticker": "8046",
+    "symbol": "TWSE:8046",
+    "country": "대만"
+  },
+  {
+    "sector": "기판·PCB·CCL",
+    "category": "ABF·FC-BGA",
+    "name": "Kinsus Interconnect",
+    "ticker": "3189",
+    "symbol": "TWSE:3189",
+    "country": "대만"
+  },
+  {
+    "sector": "기판·PCB·CCL",
+    "category": "ABF·FC-BGA",
+    "name": "AT&S",
+    "ticker": "ATS",
+    "symbol": "VIE:ATS",
+    "country": "오스트리아"
+  },
+  {
+    "sector": "기판·PCB·CCL",
+    "category": "BT·FC-CSP",
+    "name": "Unimicron Technology",
+    "ticker": "3037",
+    "symbol": "TWSE:3037",
+    "country": "대만"
+  },
+  {
+    "sector": "기판·PCB·CCL",
+    "category": "BT·FC-CSP",
+    "name": "Kinsus Interconnect",
+    "ticker": "3189",
+    "symbol": "TWSE:3189",
+    "country": "대만"
+  },
+  {
+    "sector": "기판·PCB·CCL",
+    "category": "BT·FC-CSP",
+    "name": "Daeduck Electronics",
+    "ticker": "353200",
+    "symbol": "KRX:353200",
+    "country": "한국"
+  },
+  {
+    "sector": "기판·PCB·CCL",
+    "category": "메모리 패키지 기판",
+    "name": "Simmtech",
+    "ticker": "222800",
+    "symbol": "KRX:222800",
+    "country": "한국"
+  },
+  {
+    "sector": "기판·PCB·CCL",
+    "category": "메모리 패키지 기판",
+    "name": "Daeduck Electronics",
+    "ticker": "353200",
+    "symbol": "KRX:353200",
+    "country": "한국"
+  },
+  {
+    "sector": "기판·PCB·CCL",
+    "category": "메모리 패키지 기판",
+    "name": "Korea Circuit",
+    "ticker": "007810",
+    "symbol": "KRX:007810",
+    "country": "한국"
+  },
+  {
+    "sector": "기판·PCB·CCL",
+    "category": "메모리 패키지 기판",
+    "name": "TLB",
+    "ticker": "356860",
+    "symbol": "KRX:356860",
+    "country": "한국"
+  },
+  {
+    "sector": "기판·PCB·CCL",
+    "category": "MLB·서버 PCB",
+    "name": "WUS Printed Circuit",
+    "ticker": "002463",
+    "symbol": "SZSE:002463",
+    "country": "중국"
+  },
+  {
+    "sector": "기판·PCB·CCL",
+    "category": "MLB·서버 PCB",
+    "name": "Gold Circuit Electronics",
+    "ticker": "2368",
+    "symbol": "TWSE:2368",
+    "country": "대만"
+  },
+  {
+    "sector": "기판·PCB·CCL",
+    "category": "MLB·서버 PCB",
+    "name": "Tripod Technology",
+    "ticker": "3044",
+    "symbol": "TWSE:3044",
+    "country": "대만"
+  },
+  {
+    "sector": "기판·PCB·CCL",
+    "category": "MLB·서버 PCB",
+    "name": "ISU Petasys",
+    "ticker": "007660",
+    "symbol": "KRX:007660",
+    "country": "한국"
+  },
+  {
+    "sector": "기판·PCB·CCL",
+    "category": "MLB·서버 PCB",
+    "name": "TTM Technologies",
+    "ticker": "TTMI",
+    "symbol": "NASDAQ:TTMI",
+    "country": "미국"
+  },
+  {
+    "sector": "기판·PCB·CCL",
+    "category": "MLB·서버 PCB",
+    "name": "Shennan Circuits",
+    "ticker": "002916",
+    "symbol": "SZSE:002916",
+    "country": "중국"
+  },
+  {
+    "sector": "기판·PCB·CCL",
+    "category": "HDI·FPCB",
+    "name": "Compeq Manufacturing",
+    "ticker": "2313",
+    "symbol": "TWSE:2313",
+    "country": "대만"
+  },
+  {
+    "sector": "기판·PCB·CCL",
+    "category": "HDI·FPCB",
+    "name": "Zhen Ding Technology",
+    "ticker": "4958",
+    "symbol": "TWSE:4958",
+    "country": "대만"
+  },
+  {
+    "sector": "기판·PCB·CCL",
+    "category": "HDI·FPCB",
+    "name": "Flexium Interconnect",
+    "ticker": "6269",
+    "symbol": "TWSE:6269",
+    "country": "대만"
+  },
+  {
+    "sector": "기판·PCB·CCL",
+    "category": "HDI·FPCB",
+    "name": "BH Co.",
+    "ticker": "090460",
+    "symbol": "KRX:090460",
+    "country": "한국"
+  },
+  {
+    "sector": "기판·PCB·CCL",
+    "category": "CCL",
+    "name": "Elite Material",
+    "ticker": "2383",
+    "symbol": "TWSE:2383",
+    "country": "대만"
+  },
+  {
+    "sector": "기판·PCB·CCL",
+    "category": "CCL",
+    "name": "Shengyi Technology",
+    "ticker": "600183",
+    "symbol": "SSE:600183",
+    "country": "중국"
+  },
+  {
+    "sector": "기판·PCB·CCL",
+    "category": "CCL",
+    "name": "Kingboard Laminates",
+    "ticker": "1888",
+    "symbol": "HKEX:1888",
+    "country": "홍콩"
+  },
+  {
+    "sector": "기판·PCB·CCL",
+    "category": "CCL",
+    "name": "ITEQ",
+    "ticker": "6213",
+    "symbol": "TWSE:6213",
+    "country": "대만"
+  },
+  {
+    "sector": "기판·PCB·CCL",
+    "category": "CCL",
+    "name": "Doosan Corporation",
+    "ticker": "000150",
+    "symbol": "KRX:000150",
+    "country": "한국"
+  },
+  {
+    "sector": "기판·PCB·CCL",
+    "category": "FCCL",
+    "name": "Taiflex Scientific",
+    "ticker": "8039",
+    "symbol": "TWSE:8039",
+    "country": "대만"
+  },
+  {
+    "sector": "기판·PCB·CCL",
+    "category": "FCCL",
+    "name": "DuPont",
+    "ticker": "DD",
+    "symbol": "NYSE:DD",
+    "country": "미국"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "실리콘 웨이퍼",
+    "name": "Shin-Etsu Chemical",
+    "ticker": "4063",
+    "symbol": "TSE:4063",
+    "country": "일본"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "실리콘 웨이퍼",
+    "name": "SUMCO",
+    "ticker": "3436",
+    "symbol": "TSE:3436",
+    "country": "일본"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "실리콘 웨이퍼",
+    "name": "GlobalWafers",
+    "ticker": "6488",
+    "symbol": "TPEX:6488",
+    "country": "대만"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "실리콘 웨이퍼",
+    "name": "Siltronic",
+    "ticker": "WAF",
+    "symbol": "XETR:WAF",
+    "country": "독일"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "포토레지스트",
+    "name": "Tokyo Ohka Kogyo",
+    "ticker": "4186",
+    "symbol": "TSE:4186",
+    "country": "일본"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "포토레지스트",
+    "name": "Fujifilm",
+    "ticker": "4901",
+    "symbol": "TSE:4901",
+    "country": "일본"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "포토레지스트",
+    "name": "Dongjin Semichem",
+    "ticker": "005290",
+    "symbol": "KRX:005290",
+    "country": "한국"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "프리커서",
+    "name": "Merck KGaA",
+    "ticker": "MRK",
+    "symbol": "XETR:MRK",
+    "country": "독일"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "프리커서",
+    "name": "Entegris",
+    "ticker": "ENTG",
+    "symbol": "NASDAQ:ENTG",
+    "country": "미국"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "프리커서",
+    "name": "Soulbrain",
+    "ticker": "357780",
+    "symbol": "KRX:357780",
+    "country": "한국"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "프리커서",
+    "name": "DNF",
+    "ticker": "092070",
+    "symbol": "KRX:092070",
+    "country": "한국"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "특수가스",
+    "name": "Linde",
+    "ticker": "LIN",
+    "symbol": "NASDAQ:LIN",
+    "country": "아일랜드"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "특수가스",
+    "name": "Air Liquide",
+    "ticker": "AI",
+    "symbol": "EURONEXT:AI",
+    "country": "프랑스"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "특수가스",
+    "name": "Air Products",
+    "ticker": "APD",
+    "symbol": "NYSE:APD",
+    "country": "미국"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "특수가스",
+    "name": "Wonik Materials",
+    "ticker": "104830",
+    "symbol": "KRX:104830",
+    "country": "한국"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "식각액·세정액",
+    "name": "Soulbrain",
+    "ticker": "357780",
+    "symbol": "KRX:357780",
+    "country": "한국"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "식각액·세정액",
+    "name": "ENF Technology",
+    "ticker": "102710",
+    "symbol": "KRX:102710",
+    "country": "한국"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "식각액·세정액",
+    "name": "Entegris",
+    "ticker": "ENTG",
+    "symbol": "NASDAQ:ENTG",
+    "country": "미국"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "CMP",
+    "name": "Entegris",
+    "ticker": "ENTG",
+    "symbol": "NASDAQ:ENTG",
+    "country": "미국"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "CMP",
+    "name": "Fujimi",
+    "ticker": "5384",
+    "symbol": "TSE:5384",
+    "country": "일본"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "솔더볼·접합재",
+    "name": "Duk San Hi Metal",
+    "ticker": "077360",
+    "symbol": "KRX:077360",
+    "country": "한국"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "솔더볼·접합재",
+    "name": "MK Electron",
+    "ticker": "033160",
+    "symbol": "KRX:033160",
+    "country": "한국"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "EMC·언더필",
+    "name": "Sumitomo Bakelite",
+    "ticker": "4203",
+    "symbol": "TSE:4203",
+    "country": "일본"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "EMC·언더필",
+    "name": "Resonac Holdings",
+    "ticker": "4004",
+    "symbol": "TSE:4004",
+    "country": "일본"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "EMC·언더필",
+    "name": "Henkel",
+    "ticker": "HEN3",
+    "symbol": "XETR:HEN3",
+    "country": "독일"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "쿼츠",
+    "name": "Ferrotec Holdings",
+    "ticker": "6890",
+    "symbol": "TSE:6890",
+    "country": "일본"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "쿼츠",
+    "name": "Wonik QnC",
+    "ticker": "074600",
+    "symbol": "KRX:074600",
+    "country": "한국"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "세라믹·실리콘 파츠",
+    "name": "Kyocera",
+    "ticker": "6971",
+    "symbol": "TSE:6971",
+    "country": "일본"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "세라믹·실리콘 파츠",
+    "name": "Hana Materials",
+    "ticker": "166090",
+    "symbol": "KRX:166090",
+    "country": "한국"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "세라믹·실리콘 파츠",
+    "name": "Worldex",
+    "ticker": "101160",
+    "symbol": "KRX:101160",
+    "country": "한국"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "SiC 코팅·세정",
+    "name": "Tocalo",
+    "ticker": "3433",
+    "symbol": "TSE:3433",
+    "country": "일본"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "SiC 코팅·세정",
+    "name": "Komico",
+    "ticker": "183300",
+    "symbol": "KRX:183300",
+    "country": "한국"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "서브시스템·진공",
+    "name": "VAT Group",
+    "ticker": "VACN",
+    "symbol": "SIX:VACN",
+    "country": "스위스"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "서브시스템·진공",
+    "name": "MKS Instruments",
+    "ticker": "MKSI",
+    "symbol": "NASDAQ:MKSI",
+    "country": "미국"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "서브시스템·진공",
+    "name": "Advanced Energy",
+    "ticker": "AEIS",
+    "symbol": "NASDAQ:AEIS",
+    "country": "미국"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "서브시스템·진공",
+    "name": "Ichor Holdings",
+    "ticker": "ICHR",
+    "symbol": "NASDAQ:ICHR",
+    "country": "미국"
+  },
+  {
+    "sector": "소재·파츠",
+    "category": "서브시스템·진공",
+    "name": "Ultra Clean Holdings",
+    "ticker": "UCTT",
+    "symbol": "NASDAQ:UCTT",
+    "country": "미국"
+  },
+  {
+    "sector": "OSAT·테스트",
+    "category": "OSAT",
+    "name": "ASE Technology",
+    "ticker": "ASX",
+    "symbol": "NYSE:ASX",
+    "country": "대만"
+  },
+  {
+    "sector": "OSAT·테스트",
+    "category": "OSAT",
+    "name": "Amkor Technology",
+    "ticker": "AMKR",
+    "symbol": "NASDAQ:AMKR",
+    "country": "미국"
+  },
+  {
+    "sector": "OSAT·테스트",
+    "category": "OSAT",
+    "name": "JCET Group",
+    "ticker": "600584",
+    "symbol": "SSE:600584",
+    "country": "중국"
+  },
+  {
+    "sector": "OSAT·테스트",
+    "category": "OSAT",
+    "name": "Powertech Technology",
+    "ticker": "6239",
+    "symbol": "TWSE:6239",
+    "country": "대만"
+  },
+  {
+    "sector": "OSAT·테스트",
+    "category": "프로브카드",
+    "name": "FormFactor",
+    "ticker": "FORM",
+    "symbol": "NASDAQ:FORM",
+    "country": "미국"
+  },
+  {
+    "sector": "OSAT·테스트",
+    "category": "프로브카드",
+    "name": "Technoprobe",
+    "ticker": "TPRO",
+    "symbol": "MIL:TPRO",
+    "country": "이탈리아"
+  },
+  {
+    "sector": "OSAT·테스트",
+    "category": "프로브카드",
+    "name": "Japan Electronic Materials",
+    "ticker": "6855",
+    "symbol": "TSE:6855",
+    "country": "일본"
+  },
+  {
+    "sector": "OSAT·테스트",
+    "category": "테스트 서비스",
+    "name": "King Yuan Electronics",
+    "ticker": "2449",
+    "symbol": "TWSE:2449",
+    "country": "대만"
+  },
+  {
+    "sector": "OSAT·테스트",
+    "category": "테스트 서비스",
+    "name": "ChipMOS Technologies",
+    "ticker": "IMOS",
+    "symbol": "NASDAQ:IMOS",
+    "country": "대만"
+  },
+  {
+    "sector": "OSAT·테스트",
+    "category": "테스트 소켓",
+    "name": "Leeno Industrial",
+    "ticker": "058470",
+    "symbol": "KRX:058470",
+    "country": "한국"
+  },
+  {
+    "sector": "OSAT·테스트",
+    "category": "테스트 소켓",
+    "name": "ISC",
+    "ticker": "095340",
+    "symbol": "KRX:095340",
+    "country": "한국"
+  },
+  {
+    "sector": "OSAT·테스트",
+    "category": "테스트 소켓",
+    "name": "Yamaichi Electronics",
+    "ticker": "6941",
+    "symbol": "TSE:6941",
+    "country": "일본"
+  },
+  {
+    "sector": "광통신·광학",
+    "category": "광트랜시버",
+    "name": "Zhongji Innolight",
+    "ticker": "300308",
+    "symbol": "SZSE:300308",
+    "country": "중국"
+  },
+  {
+    "sector": "광통신·광학",
+    "category": "광트랜시버",
+    "name": "Eoptolink",
+    "ticker": "300502",
+    "symbol": "SZSE:300502",
+    "country": "중국"
+  },
+  {
+    "sector": "광통신·광학",
+    "category": "광트랜시버",
+    "name": "Fabrinet",
+    "ticker": "FN",
+    "symbol": "NYSE:FN",
+    "country": "케이맨"
+  },
+  {
+    "sector": "광통신·광학",
+    "category": "광트랜시버",
+    "name": "Applied Optoelectronics",
+    "ticker": "AAOI",
+    "symbol": "NASDAQ:AAOI",
+    "country": "미국"
+  },
+  {
+    "sector": "광통신·광학",
+    "category": "레이저·광소자",
+    "name": "Lumentum",
+    "ticker": "LITE",
+    "symbol": "NASDAQ:LITE",
+    "country": "미국"
+  },
+  {
+    "sector": "광통신·광학",
+    "category": "레이저·광소자",
+    "name": "Coherent",
+    "ticker": "COHR",
+    "symbol": "NYSE:COHR",
+    "country": "미국"
+  },
+  {
+    "sector": "광통신·광학",
+    "category": "레이저·광소자",
+    "name": "Hamamatsu Photonics",
+    "ticker": "6965",
+    "symbol": "TSE:6965",
+    "country": "일본"
+  },
+  {
+    "sector": "광통신·광학",
+    "category": "광섬유·케이블",
+    "name": "Corning",
+    "ticker": "GLW",
+    "symbol": "NYSE:GLW",
+    "country": "미국"
+  },
+  {
+    "sector": "광통신·광학",
+    "category": "광섬유·케이블",
+    "name": "Furukawa Electric",
+    "ticker": "5801",
+    "symbol": "TSE:5801",
+    "country": "일본"
+  },
+  {
+    "sector": "광통신·광학",
+    "category": "광섬유·케이블",
+    "name": "Sumitomo Electric",
+    "ticker": "5802",
+    "symbol": "TSE:5802",
+    "country": "일본"
+  },
+  {
+    "sector": "광통신·광학",
+    "category": "광섬유·케이블",
+    "name": "Prysmian",
+    "ticker": "PRY",
+    "symbol": "MIL:PRY",
+    "country": "이탈리아"
+  },
+  {
+    "sector": "광통신·광학",
+    "category": "광통신 테스트",
+    "name": "Keysight Technologies",
+    "ticker": "KEYS",
+    "symbol": "NYSE:KEYS",
+    "country": "미국"
+  },
+  {
+    "sector": "광통신·광학",
+    "category": "광통신 테스트",
+    "name": "Viavi Solutions",
+    "ticker": "VIAV",
+    "symbol": "NASDAQ:VIAV",
+    "country": "미국"
+  },
+  {
+    "sector": "서버·네트워크",
+    "category": "서버 OEM",
+    "name": "Dell Technologies",
+    "ticker": "DELL",
+    "symbol": "NYSE:DELL",
+    "country": "미국"
+  },
+  {
+    "sector": "서버·네트워크",
+    "category": "서버 OEM",
+    "name": "Hewlett Packard Enterprise",
+    "ticker": "HPE",
+    "symbol": "NYSE:HPE",
+    "country": "미국"
+  },
+  {
+    "sector": "서버·네트워크",
+    "category": "서버 OEM",
+    "name": "Lenovo",
+    "ticker": "0992",
+    "symbol": "HKEX:992",
+    "country": "중국"
+  },
+  {
+    "sector": "서버·네트워크",
+    "category": "서버 OEM",
+    "name": "Super Micro Computer",
+    "ticker": "SMCI",
+    "symbol": "NASDAQ:SMCI",
+    "country": "미국"
+  },
+  {
+    "sector": "서버·네트워크",
+    "category": "서버 ODM",
+    "name": "Hon Hai Precision (Foxconn)",
+    "ticker": "2317",
+    "symbol": "TWSE:2317",
+    "country": "대만"
+  },
+  {
+    "sector": "서버·네트워크",
+    "category": "서버 ODM",
+    "name": "Quanta Computer",
+    "ticker": "2382",
+    "symbol": "TWSE:2382",
+    "country": "대만"
+  },
+  {
+    "sector": "서버·네트워크",
+    "category": "서버 ODM",
+    "name": "Wistron",
+    "ticker": "3231",
+    "symbol": "TWSE:3231",
+    "country": "대만"
+  },
+  {
+    "sector": "서버·네트워크",
+    "category": "서버 ODM",
+    "name": "Wiwynn",
+    "ticker": "6669",
+    "symbol": "TWSE:6669",
+    "country": "대만"
+  },
+  {
+    "sector": "서버·네트워크",
+    "category": "서버 ODM",
+    "name": "Inventec",
+    "ticker": "2356",
+    "symbol": "TWSE:2356",
+    "country": "대만"
+  },
+  {
+    "sector": "서버·네트워크",
+    "category": "EMS",
+    "name": "Jabil",
+    "ticker": "JBL",
+    "symbol": "NYSE:JBL",
+    "country": "미국"
+  },
+  {
+    "sector": "서버·네트워크",
+    "category": "EMS",
+    "name": "Flex",
+    "ticker": "FLEX",
+    "symbol": "NASDAQ:FLEX",
+    "country": "싱가포르"
+  },
+  {
+    "sector": "서버·네트워크",
+    "category": "EMS",
+    "name": "Celestica",
+    "ticker": "CLS",
+    "symbol": "NYSE:CLS",
+    "country": "캐나다"
+  },
+  {
+    "sector": "서버·네트워크",
+    "category": "스위치·라우터",
+    "name": "Arista Networks",
+    "ticker": "ANET",
+    "symbol": "NYSE:ANET",
+    "country": "미국"
+  },
+  {
+    "sector": "서버·네트워크",
+    "category": "스위치·라우터",
+    "name": "Cisco Systems",
+    "ticker": "CSCO",
+    "symbol": "NASDAQ:CSCO",
+    "country": "미국"
+  },
+  {
+    "sector": "서버·네트워크",
+    "category": "스위치·라우터",
+    "name": "Ciena",
+    "ticker": "CIEN",
+    "symbol": "NYSE:CIEN",
+    "country": "미국"
+  },
+  {
+    "sector": "서버·네트워크",
+    "category": "SSD·스토리지",
+    "name": "Pure Storage",
+    "ticker": "PSTG",
+    "symbol": "NYSE:PSTG",
+    "country": "미국"
+  },
+  {
+    "sector": "서버·네트워크",
+    "category": "SSD·스토리지",
+    "name": "NetApp",
+    "ticker": "NTAP",
+    "symbol": "NASDAQ:NTAP",
+    "country": "미국"
+  },
+  {
+    "sector": "서버·네트워크",
+    "category": "SSD·스토리지",
+    "name": "Western Digital",
+    "ticker": "WDC",
+    "symbol": "NASDAQ:WDC",
+    "country": "미국"
+  },
+  {
+    "sector": "서버·네트워크",
+    "category": "SSD·스토리지",
+    "name": "Seagate",
+    "ticker": "STX",
+    "symbol": "NASDAQ:STX",
+    "country": "미국"
+  },
+  {
+    "sector": "서버·네트워크",
+    "category": "냉각·UPS·배전",
+    "name": "Vertiv",
+    "ticker": "VRT",
+    "symbol": "NYSE:VRT",
+    "country": "미국"
+  },
+  {
+    "sector": "서버·네트워크",
+    "category": "냉각·UPS·배전",
+    "name": "Eaton",
+    "ticker": "ETN",
+    "symbol": "NYSE:ETN",
+    "country": "아일랜드"
+  },
+  {
+    "sector": "서버·네트워크",
+    "category": "냉각·UPS·배전",
+    "name": "Schneider Electric",
+    "ticker": "SU",
+    "symbol": "EURONEXT:SU",
+    "country": "프랑스"
+  },
+  {
+    "sector": "서버·네트워크",
+    "category": "냉각·UPS·배전",
+    "name": "Modine",
+    "ticker": "MOD",
+    "symbol": "NYSE:MOD",
+    "country": "미국"
+  },
+  {
+    "sector": "서버·네트워크",
+    "category": "냉각·UPS·배전",
+    "name": "Delta Electronics",
+    "ticker": "2308",
+    "symbol": "TWSE:2308",
+    "country": "대만"
+  },
+  {
+    "sector": "클라우드·DC",
+    "category": "하이퍼스케일 CSP",
+    "name": "Amazon",
+    "ticker": "AMZN",
+    "symbol": "NASDAQ:AMZN",
+    "country": "미국"
+  },
+  {
+    "sector": "클라우드·DC",
+    "category": "하이퍼스케일 CSP",
+    "name": "Microsoft",
+    "ticker": "MSFT",
+    "symbol": "NASDAQ:MSFT",
+    "country": "미국"
+  },
+  {
+    "sector": "클라우드·DC",
+    "category": "하이퍼스케일 CSP",
+    "name": "Alphabet",
+    "ticker": "GOOGL",
+    "symbol": "NASDAQ:GOOGL",
+    "country": "미국"
+  },
+  {
+    "sector": "클라우드·DC",
+    "category": "하이퍼스케일 CSP",
+    "name": "Oracle",
+    "ticker": "ORCL",
+    "symbol": "NYSE:ORCL",
+    "country": "미국"
+  },
+  {
+    "sector": "클라우드·DC",
+    "category": "하이퍼스케일 CSP",
+    "name": "Alibaba",
+    "ticker": "BABA",
+    "symbol": "NYSE:BABA",
+    "country": "중국"
+  },
+  {
+    "sector": "클라우드·DC",
+    "category": "하이퍼스케일 CSP",
+    "name": "Tencent",
+    "ticker": "0700",
+    "symbol": "HKEX:700",
+    "country": "중국"
+  },
+  {
+    "sector": "클라우드·DC",
+    "category": "GPU 네오클라우드",
+    "name": "CoreWeave",
+    "ticker": "CRWV",
+    "symbol": "NASDAQ:CRWV",
+    "country": "미국"
+  },
+  {
+    "sector": "클라우드·DC",
+    "category": "GPU 네오클라우드",
+    "name": "Nebius",
+    "ticker": "NBIS",
+    "symbol": "NASDAQ:NBIS",
+    "country": "네덜란드"
+  },
+  {
+    "sector": "클라우드·DC",
+    "category": "GPU 네오클라우드",
+    "name": "IREN",
+    "ticker": "IREN",
+    "symbol": "NASDAQ:IREN",
+    "country": "호주"
+  },
+  {
+    "sector": "클라우드·DC",
+    "category": "코로케이션",
+    "name": "Equinix",
+    "ticker": "EQIX",
+    "symbol": "NASDAQ:EQIX",
+    "country": "미국"
+  },
+  {
+    "sector": "클라우드·DC",
+    "category": "코로케이션",
+    "name": "Digital Realty",
+    "ticker": "DLR",
+    "symbol": "NYSE:DLR",
+    "country": "미국"
+  },
+  {
+    "sector": "클라우드·DC",
+    "category": "코로케이션",
+    "name": "GDS Holdings",
+    "ticker": "GDS",
+    "symbol": "NASDAQ:GDS",
+    "country": "중국"
+  },
+  {
+    "sector": "클라우드·DC",
+    "category": "코로케이션",
+    "name": "VNET",
+    "ticker": "VNET",
+    "symbol": "NASDAQ:VNET",
+    "country": "중국"
+  },
+  {
+    "sector": "전자부품·로봇",
+    "category": "MLCC",
+    "name": "Murata Manufacturing",
+    "ticker": "6981",
+    "symbol": "TSE:6981",
+    "country": "일본"
+  },
+  {
+    "sector": "전자부품·로봇",
+    "category": "MLCC",
+    "name": "Samsung Electro-Mechanics",
+    "ticker": "009150",
+    "symbol": "KRX:009150",
+    "country": "한국"
+  },
+  {
+    "sector": "전자부품·로봇",
+    "category": "MLCC",
+    "name": "TDK",
+    "ticker": "6762",
+    "symbol": "TSE:6762",
+    "country": "일본"
+  },
+  {
+    "sector": "전자부품·로봇",
+    "category": "MLCC",
+    "name": "Taiyo Yuden",
+    "ticker": "6976",
+    "symbol": "TSE:6976",
+    "country": "일본"
+  },
+  {
+    "sector": "전자부품·로봇",
+    "category": "MLCC",
+    "name": "Yageo",
+    "ticker": "2327",
+    "symbol": "TWSE:2327",
+    "country": "대만"
+  },
+  {
+    "sector": "전자부품·로봇",
+    "category": "커넥터",
+    "name": "Amphenol",
+    "ticker": "APH",
+    "symbol": "NYSE:APH",
+    "country": "미국"
+  },
+  {
+    "sector": "전자부품·로봇",
+    "category": "커넥터",
+    "name": "TE Connectivity",
+    "ticker": "TEL",
+    "symbol": "NYSE:TEL",
+    "country": "아일랜드"
+  },
+  {
+    "sector": "전자부품·로봇",
+    "category": "커넥터",
+    "name": "Luxshare Precision",
+    "ticker": "002475",
+    "symbol": "SZSE:002475",
+    "country": "중국"
+  },
+  {
+    "sector": "전자부품·로봇",
+    "category": "산업용 로봇",
+    "name": "FANUC",
+    "ticker": "6954",
+    "symbol": "TSE:6954",
+    "country": "일본"
+  },
+  {
+    "sector": "전자부품·로봇",
+    "category": "산업용 로봇",
+    "name": "Yaskawa Electric",
+    "ticker": "6506",
+    "symbol": "TSE:6506",
+    "country": "일본"
+  },
+  {
+    "sector": "전자부품·로봇",
+    "category": "산업용 로봇",
+    "name": "ABB",
+    "ticker": "ABBN",
+    "symbol": "SIX:ABBN",
+    "country": "스위스"
+  },
+  {
+    "sector": "전자부품·로봇",
+    "category": "자동화·머신비전",
+    "name": "Keyence",
+    "ticker": "6861",
+    "symbol": "TSE:6861",
+    "country": "일본"
+  },
+  {
+    "sector": "전자부품·로봇",
+    "category": "자동화·머신비전",
+    "name": "Cognex",
+    "ticker": "CGNX",
+    "symbol": "NASDAQ:CGNX",
+    "country": "미국"
+  },
+  {
+    "sector": "전자부품·로봇",
+    "category": "자동화·머신비전",
+    "name": "Rockwell Automation",
+    "ticker": "ROK",
+    "symbol": "NYSE:ROK",
+    "country": "미국"
+  },
+  {
+    "sector": "전자부품·로봇",
+    "category": "자동화·머신비전",
+    "name": "Daifuku",
+    "ticker": "6383",
+    "symbol": "TSE:6383",
+    "country": "일본"
+  },
+  {
+    "sector": "전자부품·로봇",
+    "category": "전자부품 유통",
+    "name": "Arrow Electronics",
+    "ticker": "ARW",
+    "symbol": "NYSE:ARW",
+    "country": "미국"
+  },
+  {
+    "sector": "전자부품·로봇",
+    "category": "전자부품 유통",
+    "name": "Avnet",
+    "ticker": "AVT",
+    "symbol": "NASDAQ:AVT",
+    "country": "미국"
+  },
+  {
+    "sector": "전자부품·로봇",
+    "category": "전자부품 유통",
+    "name": "WPG Holdings",
+    "ticker": "3702",
+    "symbol": "TWSE:3702",
+    "country": "대만"
+  },
+  {
+    "sector": "소프트웨어",
+    "category": "보안",
+    "name": "Palo Alto Networks",
+    "ticker": "PANW",
+    "symbol": "NASDAQ:PANW",
+    "country": "미국"
+  },
+  {
+    "sector": "소프트웨어",
+    "category": "보안",
+    "name": "CrowdStrike",
+    "ticker": "CRWD",
+    "symbol": "NASDAQ:CRWD",
+    "country": "미국"
+  },
+  {
+    "sector": "소프트웨어",
+    "category": "보안",
+    "name": "Fortinet",
+    "ticker": "FTNT",
+    "symbol": "NASDAQ:FTNT",
+    "country": "미국"
+  },
+  {
+    "sector": "소프트웨어",
+    "category": "보안",
+    "name": "Zscaler",
+    "ticker": "ZS",
+    "symbol": "NASDAQ:ZS",
+    "country": "미국"
+  },
+  {
+    "sector": "소프트웨어",
+    "category": "보안",
+    "name": "Okta",
+    "ticker": "OKTA",
+    "symbol": "NASDAQ:OKTA",
+    "country": "미국"
+  },
+  {
+    "sector": "소프트웨어",
+    "category": "ERP·CRM·업무자동화",
+    "name": "SAP",
+    "ticker": "SAP",
+    "symbol": "NYSE:SAP",
+    "country": "독일"
+  },
+  {
+    "sector": "소프트웨어",
+    "category": "ERP·CRM·업무자동화",
+    "name": "Salesforce",
+    "ticker": "CRM",
+    "symbol": "NYSE:CRM",
+    "country": "미국"
+  },
+  {
+    "sector": "소프트웨어",
+    "category": "ERP·CRM·업무자동화",
+    "name": "ServiceNow",
+    "ticker": "NOW",
+    "symbol": "NYSE:NOW",
+    "country": "미국"
+  },
+  {
+    "sector": "소프트웨어",
+    "category": "ERP·CRM·업무자동화",
+    "name": "Workday",
+    "ticker": "WDAY",
+    "symbol": "NASDAQ:WDAY",
+    "country": "미국"
+  },
+  {
+    "sector": "소프트웨어",
+    "category": "AI·데이터",
+    "name": "Palantir",
+    "ticker": "PLTR",
+    "symbol": "NASDAQ:PLTR",
+    "country": "미국"
+  },
+  {
+    "sector": "소프트웨어",
+    "category": "AI·데이터",
+    "name": "Snowflake",
+    "ticker": "SNOW",
+    "symbol": "NYSE:SNOW",
+    "country": "미국"
+  },
+  {
+    "sector": "소프트웨어",
+    "category": "AI·데이터",
+    "name": "Datadog",
+    "ticker": "DDOG",
+    "symbol": "NASDAQ:DDOG",
+    "country": "미국"
+  },
+  {
+    "sector": "소프트웨어",
+    "category": "클라우드 네트워크·개발",
+    "name": "Cloudflare",
+    "ticker": "NET",
+    "symbol": "NYSE:NET",
+    "country": "미국"
+  },
+  {
+    "sector": "소프트웨어",
+    "category": "클라우드 네트워크·개발",
+    "name": "Atlassian",
+    "ticker": "TEAM",
+    "symbol": "NASDAQ:TEAM",
+    "country": "호주"
+  },
+  {
+    "sector": "소프트웨어",
+    "category": "클라우드 네트워크·개발",
+    "name": "GitLab",
+    "ticker": "GTLB",
+    "symbol": "NASDAQ:GTLB",
+    "country": "미국"
+  },
+  {
+    "sector": "소프트웨어",
+    "category": "전자상거래·광고",
+    "name": "Shopify",
+    "ticker": "SHOP",
+    "symbol": "NYSE:SHOP",
+    "country": "캐나다"
+  },
+  {
+    "sector": "소프트웨어",
+    "category": "전자상거래·광고",
+    "name": "AppLovin",
+    "ticker": "APP",
+    "symbol": "NASDAQ:APP",
+    "country": "미국"
+  },
+  {
+    "sector": "소프트웨어",
+    "category": "전자상거래·광고",
+    "name": "The Trade Desk",
+    "ticker": "TTD",
+    "symbol": "NASDAQ:TTD",
+    "country": "미국"
+  },
+  {
+    "sector": "소프트웨어",
+    "category": "콘텐츠·설계",
+    "name": "Adobe",
+    "ticker": "ADBE",
+    "symbol": "NASDAQ:ADBE",
+    "country": "미국"
+  },
+  {
+    "sector": "소프트웨어",
+    "category": "콘텐츠·설계",
+    "name": "Autodesk",
+    "ticker": "ADSK",
+    "symbol": "NASDAQ:ADSK",
+    "country": "미국"
+  },
+  {
+    "sector": "소프트웨어",
+    "category": "콘텐츠·설계",
+    "name": "Dassault Systèmes",
+    "ticker": "DSY",
+    "symbol": "EURONEXT:DSY",
+    "country": "프랑스"
+  },
+  {
+    "sector": "소프트웨어",
+    "category": "예약·여행",
+    "name": "Booking Holdings",
+    "ticker": "BKNG",
+    "symbol": "NASDAQ:BKNG",
+    "country": "미국"
+  },
+  {
+    "sector": "소프트웨어",
+    "category": "예약·여행",
+    "name": "Expedia",
+    "ticker": "EXPE",
+    "symbol": "NASDAQ:EXPE",
+    "country": "미국"
+  },
+  {
+    "sector": "소프트웨어",
+    "category": "예약·여행",
+    "name": "Trip.com Group",
+    "ticker": "TCOM",
+    "symbol": "NASDAQ:TCOM",
+    "country": "중국"
+  },
+  {
+    "sector": "소프트웨어",
+    "category": "핀테크·급여",
+    "name": "Intuit",
+    "ticker": "INTU",
+    "symbol": "NASDAQ:INTU",
+    "country": "미국"
+  },
+  {
+    "sector": "소프트웨어",
+    "category": "핀테크·급여",
+    "name": "ADP",
+    "ticker": "ADP",
+    "symbol": "NASDAQ:ADP",
+    "country": "미국"
+  },
+  {
+    "sector": "소프트웨어",
+    "category": "핀테크·급여",
+    "name": "Fiserv",
+    "ticker": "FI",
+    "symbol": "NYSE:FI",
+    "country": "미국"
+  },
+  {
+    "sector": "소프트웨어",
+    "category": "의료·게임",
+    "name": "Veeva Systems",
+    "ticker": "VEEV",
+    "symbol": "NYSE:VEEV",
+    "country": "미국"
+  },
+  {
+    "sector": "소프트웨어",
+    "category": "의료·게임",
+    "name": "Roblox",
+    "ticker": "RBLX",
+    "symbol": "NYSE:RBLX",
+    "country": "미국"
+  },
+  {
+    "sector": "소프트웨어",
+    "category": "의료·게임",
+    "name": "Unity Software",
+    "ticker": "U",
+    "symbol": "NYSE:U",
+    "country": "미국"
+  }
+]
