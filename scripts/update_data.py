@@ -50,25 +50,59 @@ def first_available(frame,candidates):
     return None
 
 def fetch_quarters(obj):
+    """Free Yahoo quarterly income statements; reconstruct FY Q4 ONLY from validated annual and Q1-Q3."""
     try:
-        inc=obj.quarterly_income_stmt
+        inc=obj.get_income_stmt(freq='quarterly')
+        if inc is None or inc.empty:inc=obj.quarterly_income_stmt
         if inc is None or inc.empty:
-            inc=obj.get_income_stmt(freq='quarterly')
-        if inc is None or inc.empty:
-            print('FINANCIALS_EMPTY: Yahoo provided no quarterly income statement',flush=True)
+            print('FINANCIALS_EMPTY',flush=True)
             return []
         rv=first_available(inc,['Total Revenue','Operating Revenue'])
         op=first_available(inc,['Operating Income','Operating Income As Reported'])
         if rv is None:
-            print('FINANCIALS_NO_REVENUE_ROW:',list(inc.index[:15]),flush=True)
+            print('FINANCIALS_NO_REVENUE_ROW',list(inc.index[:15]),flush=True)
             return []
-        out=[]
-        for col in sorted(inc.columns,reverse=True)[:4]:
+        result={}
+        for col in inc.columns:
+            date=str(col.date()) if hasattr(col,'date') else str(col)[:10]
             rev=fnum(rv.get(col));oper=fnum(op.get(col)) if op is not None else None
-            out.append({'date':str(col.date()) if hasattr(col,'date') else str(col)[:10], 'revenue':round(rev/1e6,3) if rev is not None else None,'operatingIncome':round(oper/1e6,3) if oper is not None else None})
-        return out
+            if rev is not None:
+                result[date]={'date':date,'revenue':round(rev/1e6,3),
+                              'operatingIncome':round(oper/1e6,3) if oper is not None else None}
+        # Fallback for a missing fiscal Q4, NOT arbitrary quarter interpolation.
+        annual=obj.get_income_stmt(freq='yearly')
+        if annual is not None and not annual.empty:
+            ar=first_available(annual,['Total Revenue','Operating Revenue'])
+            ao=first_available(annual,['Operating Income','Operating Income As Reported'])
+            if ar is not None:
+                from datetime import date as Date, timedelta
+                for fyend in annual.columns:
+                    fydate=fyend.date() if hasattr(fyend,'date') else Date.fromisoformat(str(fyend)[:10])
+                    key=fydate.isoformat()
+                    if key in result:continue
+                    # Three distinct, quarterly-spaced reporting dates in the 9 months preceding FY end.
+                    # This uses actual quarters, not half-year or cumulative reports.
+                    previous=[]
+                    for d,v in result.items():
+                        day=Date.fromisoformat(d)
+                        lag=(fydate-day).days
+                        if 55<=lag<=125 or 145<=lag<=215 or 235<=lag<=310:
+                            previous.append((lag,v))
+                    buckets=[[(lag,v) for lag,v in previous if lo<=lag<=hi]
+                             for lo,hi in [(55,125),(145,215),(235,310)]]
+                    if any(len(group)!=1 for group in buckets):continue
+                    q=[group[0][1] for group in buckets]
+                    a_rev=fnum(ar.get(fyend));a_op=fnum(ao.get(fyend)) if ao is not None else None
+                    if a_rev is None:continue
+                    q4rev=round(a_rev/1e6-sum(x['revenue'] for x in q),3)
+                    if q4rev<0:continue
+                    q4op=(round(a_op/1e6-sum(x['operatingIncome'] for x in q),3)
+                          if a_op is not None and all(x['operatingIncome'] is not None for x in q) else None)
+                    result[key]={'date':key,'revenue':q4rev,'operatingIncome':q4op}
+                    print('DERIVED_FISCAL_Q4',key,flush=True)
+        return sorted(result.values(),key=lambda q:q['date'],reverse=True)[:4]
     except Exception as e:
-        print('FINANCIAL FETCH ERROR',str(e)[:150],flush=True)
+        print('FINANCIAL_FETCH_ERROR',str(e)[:180],flush=True)
         return []
 
 def fetch_info(obj):
@@ -81,6 +115,8 @@ def main():
     # Slow-changing financial data: once every Monday or manually. Daily close and cap: daily.
     weekly=os.environ.get('FETCH_FINANCIALS','0')=='1' or dt.datetime.now(dt.timezone.utc).weekday()==0
     if os.environ.get('PRICE_ONLY')=='1':weekly=False
+    # Manual workflow runs can explicitly force a refresh of all earnings.
+    if os.environ.get('FETCH_FINANCIALS')=='1':weekly=True
     keys=list(unique)
     limit=int(os.getenv('LIMIT','0'))
     if limit:keys=keys[:limit]
@@ -140,6 +176,7 @@ def main():
     with_quarters=sum(bool(stocks.get(k,{}).get('quarters')) for k in keys)
     no_quarters=[f'{unique[k]["name"]} ({lookup(unique[k])})' for k in keys if not stocks.get(k,{}).get('quarters')]
     print('DONE',ok,'/',len(keys),'quotes fetched;',with_quarters,'/',len(keys),'with financials',flush=True)
+    print('FINANCIALS_FULL_4Q',sum(len(stocks.get(k,{}).get('quarters',[]))>=4 for k in keys),flush=True)
     print('FINANCIALS_MISSING_EXAMPLES:',', '.join(no_quarters[:20]),flush=True)
 
 if __name__=='__main__':main()
