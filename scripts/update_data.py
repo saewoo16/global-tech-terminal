@@ -50,64 +50,84 @@ def first_available(frame,candidates):
     return None
 
 def fetch_quarters(obj):
-    """Free Yahoo quarterly income statements; reconstruct FY Q4 ONLY from validated annual and Q1-Q3."""
     try:
-        inc=obj.get_income_stmt(freq='quarterly')
-        if inc is None or inc.empty:inc=obj.quarterly_income_stmt
+        inc=obj.quarterly_income_stmt
         if inc is None or inc.empty:
-            print('FINANCIALS_EMPTY',flush=True)
+            inc=obj.get_income_stmt(freq='quarterly')
+        if inc is None or inc.empty:
+            print('FINANCIALS_EMPTY: Yahoo provided no quarterly income statement',flush=True)
             return []
         rv=first_available(inc,['Total Revenue','Operating Revenue'])
         op=first_available(inc,['Operating Income','Operating Income As Reported'])
         if rv is None:
-            print('FINANCIALS_NO_REVENUE_ROW',list(inc.index[:15]),flush=True)
+            print('FINANCIALS_NO_REVENUE_ROW:',list(inc.index[:15]),flush=True)
             return []
-        result={}
-        for col in inc.columns:
-            date=str(col.date()) if hasattr(col,'date') else str(col)[:10]
+        out=[]
+        for col in sorted(inc.columns,reverse=True)[:4]:
             rev=fnum(rv.get(col));oper=fnum(op.get(col)) if op is not None else None
-            if rev is not None:
-                result[date]={'date':date,'revenue':round(rev/1e6,3),
-                              'operatingIncome':round(oper/1e6,3) if oper is not None else None}
-        # Fallback for a missing fiscal Q4, NOT arbitrary quarter interpolation.
-        annual=obj.get_income_stmt(freq='yearly')
-        if annual is not None and not annual.empty:
-            ar=first_available(annual,['Total Revenue','Operating Revenue'])
-            ao=first_available(annual,['Operating Income','Operating Income As Reported'])
-            if ar is not None:
-                from datetime import date as Date, timedelta
-                for fyend in annual.columns:
-                    fydate=fyend.date() if hasattr(fyend,'date') else Date.fromisoformat(str(fyend)[:10])
-                    key=fydate.isoformat()
-                    if key in result:continue
-                    # Three distinct, quarterly-spaced reporting dates in the 9 months preceding FY end.
-                    # This uses actual quarters, not half-year or cumulative reports.
-                    previous=[]
-                    for d,v in result.items():
-                        day=Date.fromisoformat(d)
-                        lag=(fydate-day).days
-                        if 55<=lag<=125 or 145<=lag<=215 or 235<=lag<=310:
-                            previous.append((lag,v))
-                    buckets=[[(lag,v) for lag,v in previous if lo<=lag<=hi]
-                             for lo,hi in [(55,125),(145,215),(235,310)]]
-                    if any(len(group)!=1 for group in buckets):continue
-                    q=[group[0][1] for group in buckets]
-                    a_rev=fnum(ar.get(fyend));a_op=fnum(ao.get(fyend)) if ao is not None else None
-                    if a_rev is None:continue
-                    q4rev=round(a_rev/1e6-sum(x['revenue'] for x in q),3)
-                    if q4rev<0:continue
-                    q4op=(round(a_op/1e6-sum(x['operatingIncome'] for x in q),3)
-                          if a_op is not None and all(x['operatingIncome'] is not None for x in q) else None)
-                    result[key]={'date':key,'revenue':q4rev,'operatingIncome':q4op}
-                    print('DERIVED_FISCAL_Q4',key,flush=True)
-        return sorted(result.values(),key=lambda q:q['date'],reverse=True)[:4]
+            out.append({'date':str(col.date()) if hasattr(col,'date') else str(col)[:10], 'revenue':round(rev/1e6,3) if rev is not None else None,'operatingIncome':round(oper/1e6,3) if oper is not None else None})
+        return out
     except Exception as e:
-        print('FINANCIAL_FETCH_ERROR',str(e)[:180],flush=True)
+        print('FINANCIAL FETCH ERROR',str(e)[:150],flush=True)
         return []
 
 def fetch_info(obj):
     try:return obj.get_info() or {}
     except Exception:return {}
+
+# Values below are verified against company IR publications as of 2026-10-13.
+# Revenue and operating income are stored in MILLIONS of JPY, following the
+# existing dashboard schema (which uses millions of reporting currency).
+# Updating IR overrides is necessary when subsequent results are published.
+IR_VERIFIED = {
+    '6723.T': {
+        'source': 'Renesas Electronics official IFRS financial releases',
+        'quarters': [
+            ('2026-06-30', 418.4, 102.1, 'https://www.renesas.com/en/about/newsroom/renesas-reports-financial-results-second-quarter-ended-june-30-2026'),
+            # IFRS six-month total less IFRS Q2, NOT non-GAAP amounts
+            ('2026-03-31', 380.3, 90.6, 'https://www.renesas.com/en/about/newsroom/renesas-reports-financial-results-second-quarter-ended-june-30-2026'),
+            ('2025-12-31', 351.5, 67.2, 'https://www.renesas.com/en/about/newsroom/renesas-reports-financial-results-year-ended-december-31-2025'),
+            ('2025-09-30', 335.4, 72.6, 'https://www.renesas.com/en/about/newsroom/renesas-reports-financial-results-third-quarter-ended-september-30-2025'),
+        ]
+    },
+    '7751.T': {
+        'source': 'Canon official quarterly financial highlights',
+        'quarters': [
+            ('2026-06-30', 1180.9, 159.2, 'https://global.canon/en/ir/finance/highlight-q.html'),
+            ('2026-03-31', 1093.7, 71.4, 'https://global.canon/en/ir/finance/highlight-q.html'),
+            ('2025-12-31', 1321.8, 153.1, 'https://global.canon/en/ir/finance/highlight-q.html'),
+            ('2025-09-30', 1104.3, 88.0, 'https://global.canon/en/ir/finance/highlight-q.html'),
+        ]
+    },
+}
+
+# IR pages for firms requiring additional extraction from PDF disclosures;
+# these are NOT filled with guessed amounts.
+IR_REVIEW_URLS = {
+    '4063.T': 'https://www.shinetsu.co.jp/en/ir/ir-data/ir-results/',
+    '4901.T': 'https://ir.fujifilm.com/en/investors/ir-materials/earnings-presentations.html',
+}
+
+def supplement_verified_ir(ticker, current):
+    if ticker in IR_REVIEW_URLS:
+        current['irSourceUrl'] = IR_REVIEW_URLS[ticker]
+    verified = IR_VERIFIED.get(ticker)
+    if not verified:
+        return current
+    existing = {q['date']: dict(q) for q in current.get('quarters', [])
+                if isinstance(q, dict) and q.get('date')}
+    for date, revenue_bn, operating_bn, url in verified['quarters']:
+        existing[date] = {
+            'date': date,
+            'revenue': round(revenue_bn * 1000, 3),
+            'operatingIncome': round(operating_bn * 1000, 3),
+            'sourceUrl': url,
+            'source': 'Official company IR',
+        }
+    current['quarters'] = sorted(existing.values(), key=lambda q: q['date'], reverse=True)[:4]
+    current['reportingCurrency'] = 'JPY'
+    current['finSource'] = 'Official company IR + Yahoo Finance (where available)'
+    return current
 
 def main():
     unique={r['symbol']:r for r in rows}
@@ -115,8 +135,6 @@ def main():
     # Slow-changing financial data: once every Monday or manually. Daily close and cap: daily.
     weekly=os.environ.get('FETCH_FINANCIALS','0')=='1' or dt.datetime.now(dt.timezone.utc).weekday()==0
     if os.environ.get('PRICE_ONLY')=='1':weekly=False
-    # Manual workflow runs can explicitly force a refresh of all earnings.
-    if os.environ.get('FETCH_FINANCIALS')=='1':weekly=True
     keys=list(unique)
     limit=int(os.getenv('LIMIT','0'))
     if limit:keys=keys[:limit]
@@ -166,6 +184,7 @@ def main():
                     current['financialUpdated']=now
                 else:
                     print('NO FINANCIAL DATA',symbol,ticker,flush=True)
+            current = supplement_verified_ir(ticker, current)
             stocks[symbol]=current
             print(f'{i}/{len(keys)} {symbol} -> {ticker}: {len(p)} prices, {len(current.get("quarters",[]))} quarters',flush=True)
         except Exception as e:print('ERROR',symbol,str(e)[:100],flush=True)
@@ -176,7 +195,6 @@ def main():
     with_quarters=sum(bool(stocks.get(k,{}).get('quarters')) for k in keys)
     no_quarters=[f'{unique[k]["name"]} ({lookup(unique[k])})' for k in keys if not stocks.get(k,{}).get('quarters')]
     print('DONE',ok,'/',len(keys),'quotes fetched;',with_quarters,'/',len(keys),'with financials',flush=True)
-    print('FINANCIALS_FULL_4Q',sum(len(stocks.get(k,{}).get('quarters',[]))>=4 for k in keys),flush=True)
     print('FINANCIALS_MISSING_EXAMPLES:',', '.join(no_quarters[:20]),flush=True)
 
 if __name__=='__main__':main()
