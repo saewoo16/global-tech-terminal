@@ -40,6 +40,8 @@ def first_available(frame,candidates):
 def fetch_quarters(obj):
     try:
         inc=obj.quarterly_income_stmt
+        if inc is None or inc.empty:
+            inc=obj.get_income_stmt(freq='quarterly')
         if inc is None or inc.empty:return []
         rv=first_available(inc,['Total Revenue','Operating Revenue'])
         op=first_available(inc,['Operating Income','Operating Income As Reported'])
@@ -49,7 +51,9 @@ def fetch_quarters(obj):
             rev=fnum(rv.get(col));oper=fnum(op.get(col)) if op is not None else None
             out.append({'date':str(col.date()) if hasattr(col,'date') else str(col)[:10], 'revenue':round(rev/1e6,3) if rev is not None else None,'operatingIncome':round(oper/1e6,3) if oper is not None else None})
         return out
-    except Exception:return []
+    except Exception as e:
+        print('FINANCIAL FETCH ERROR',str(e)[:150],flush=True)
+        return []
 
 def fetch_info(obj):
     try:return obj.get_info() or {}
@@ -96,9 +100,16 @@ def main():
                 if cap is not None:current['marketCapUSD']=round(cap)
             current['priceCurrency']=info.get('currency') or current.get('priceCurrency') or ''
             current['reportingCurrency']=info.get('financialCurrency') or current.get('reportingCurrency') or info.get('currency') or ''
-            if weekly:
+            # First run (or missing quarters): attempt regardless of weekday.
+            # Existing populated financials refresh weekly to limit Yahoo requests.
+            if weekly or not current.get('quarters'):
                 q=fetch_quarters(t)
-                if q:current['quarters']=q;current['finSource']='Yahoo Finance / yfinance (verify filings)'
+                if q:
+                    current['quarters']=q
+                    current['finSource']='Yahoo Finance / yfinance (verify filings)'
+                    current['financialUpdated']=now
+                else:
+                    print('NO FINANCIAL DATA',symbol,ticker,flush=True)
             stocks[symbol]=current
             print(f'{i}/{len(keys)} {symbol} -> {ticker}: {len(p)} prices, {len(current.get("quarters",[]))} quarters',flush=True)
         except Exception as e:print('ERROR',symbol,str(e)[:100],flush=True)
