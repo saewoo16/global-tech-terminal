@@ -30,6 +30,9 @@ jobs:
       - name: Backfill Japanese financials
         run: python scripts/patch_japan_financials.py
 
+      - name: Backfill Japan and Europe earnings
+        run: python scripts/patch_regional_earnings.py
+
       - name: Save updated data
         run: |
           git config user.name "github-actions[bot]"
