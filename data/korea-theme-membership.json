@@ -1,0 +1,775 @@
+{
+  "verified_at": "2026-10-17",
+  "source_scope": "Predeclared fixed representative baskets; business/theme evidence only. Not exhaustive sector index membership or a claim of pure-play exposure.",
+  "membership_count": 38,
+  "unique_ticker_count": 37,
+  "methodology_notes_ko": [
+    "편입 여부는 기업의 실제 사업 또는 자회사 사업 노출을 근거로 검증했다.",
+    "13개 바스켓은 업종지수 전체가 아닌 미리 정한 대표 종목 표본이다.",
+    "복수 사업 기업은 사업비중으로 배분하지 않았다. 한화에어로스페이스는 우주·방산 중복 편입이다.",
+    "AlphaSquare 프로필의 과거 사업명·지분율·순위는 최신 사실로 사용하지 않았으며, 본 파일은 사업분야 분류 근거만 담는다."
+  ],
+  "members": {
+    "005930": {
+      "ticker": "005930",
+      "name": "삼성전자",
+      "sectors": [
+        "반도체"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "메모리와 시스템반도체 등을 제조·판매하는 종합 전자기업이다.",
+      "sources": [
+        {
+          "title": "AlphaSquare 삼성전자 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=005930",
+          "source_type": "public_company_profile"
+        }
+      ],
+      "code": "005930",
+      "captured_profile_display_name": "삼성전자",
+      "current_verified_name": "삼성전자"
+    },
+    "000660": {
+      "ticker": "000660",
+      "name": "SK하이닉스",
+      "sectors": [
+        "반도체"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "DRAM·NAND 등 메모리반도체를 주요 사업으로 영위한다.",
+      "sources": [
+        {
+          "title": "AlphaSquare SK하이닉스 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=000660",
+          "source_type": "public_company_profile"
+        }
+      ],
+      "code": "000660",
+      "captured_profile_display_name": "SK하이닉스",
+      "current_verified_name": "SK하이닉스"
+    },
+    "042700": {
+      "ticker": "042700",
+      "name": "한미반도체",
+      "sectors": [
+        "반도체"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "HBM용 TC 본더와 AI 시스템반도체용 2.5D 패키징 장비 등을 공급한다.",
+      "sources": [
+        {
+          "title": "KRX KIND 한미반도체 2026년 2분기 경영실적 발표 IR 일정",
+          "url": "https://kind.krx.co.kr/corpgeneral/irschedule.do?irSeq=45162&method=searchIRScheduleDetail",
+          "source_type": "exchange_company_disclosure"
+        }
+      ],
+      "code": "042700",
+      "captured_profile_display_name": "한미반도체",
+      "current_verified_name": "한미반도체"
+    },
+    "009150": {
+      "ticker": "009150",
+      "name": "삼성전기",
+      "sectors": [
+        "전자"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "MLCC 등 칩부품, 카메라·통신 모듈과 기판을 제조·판매한다.",
+      "sources": [
+        {
+          "title": "AlphaSquare 삼성전기 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=009150",
+          "source_type": "public_company_profile"
+        }
+      ],
+      "code": "009150",
+      "captured_profile_display_name": "삼성전기",
+      "current_verified_name": "삼성전기"
+    },
+    "066570": {
+      "ticker": "066570",
+      "name": "LG전자",
+      "sectors": [
+        "전자"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "가전과 TV 등 전자제품 및 전자·정보통신 관련 사업을 영위한다.",
+      "sources": [
+        {
+          "title": "AlphaSquare LG전자 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=066570",
+          "source_type": "public_company_profile"
+        }
+      ],
+      "code": "066570",
+      "captured_profile_display_name": "LG전자",
+      "current_verified_name": "LG전자"
+    },
+    "011070": {
+      "ticker": "011070",
+      "name": "LG이노텍",
+      "sectors": [
+        "전자"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "카메라 등 광학솔루션, 기판소재, 전장부품을 제조·판매한다.",
+      "sources": [
+        {
+          "title": "AlphaSquare LG이노텍 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=011070",
+          "source_type": "public_company_profile"
+        }
+      ],
+      "code": "011070",
+      "captured_profile_display_name": "LG이노텍",
+      "current_verified_name": "LG이노텍"
+    },
+    "373220": {
+      "ticker": "373220",
+      "name": "LG에너지솔루션",
+      "sectors": [
+        "2차전지"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "전기차와 ESS 등에 사용되는 배터리를 연구·제조·판매한다.",
+      "sources": [
+        {
+          "title": "AlphaSquare LG에너지솔루션 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=373220",
+          "source_type": "public_company_profile"
+        }
+      ],
+      "code": "373220",
+      "captured_profile_display_name": "LG에너지솔루션",
+      "current_verified_name": "LG에너지솔루션"
+    },
+    "006400": {
+      "ticker": "006400",
+      "name": "삼성SDI",
+      "sectors": [
+        "2차전지"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "소형·자동차·ESS용 이차전지와 전자재료를 제조·판매한다.",
+      "sources": [
+        {
+          "title": "AlphaSquare 삼성SDI 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=006400",
+          "source_type": "public_company_profile"
+        }
+      ],
+      "code": "006400",
+      "captured_profile_display_name": "삼성SDI",
+      "current_verified_name": "삼성SDI"
+    },
+    "247540": {
+      "ticker": "247540",
+      "name": "에코프로비엠",
+      "sectors": [
+        "2차전지"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "리튬이온 이차전지에 사용되는 양극활물질과 전구체를 제조한다.",
+      "sources": [
+        {
+          "title": "AlphaSquare 에코프로비엠 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=247540",
+          "source_type": "public_company_profile"
+        }
+      ],
+      "caveat_ko": "배터리 셀 제조사가 아닌 이차전지 소재 기업이다.",
+      "code": "247540",
+      "captured_profile_display_name": "에코프로비엠",
+      "current_verified_name": "에코프로비엠"
+    },
+    "010950": {
+      "ticker": "010950",
+      "name": "S-Oil",
+      "sectors": [
+        "정유"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "석유 정제와 석유류·윤활기유·석유화학 제품의 제조·판매를 영위한다.",
+      "sources": [
+        {
+          "title": "AlphaSquare S-Oil 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=010950",
+          "source_type": "public_company_profile"
+        }
+      ],
+      "code": "010950",
+      "captured_profile_display_name": "S-Oil",
+      "current_verified_name": "S-Oil"
+    },
+    "096770": {
+      "ticker": "096770",
+      "name": "SK이노베이션",
+      "sectors": [
+        "정유"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "자회사 SK에너지 등을 통해 석유 정제와 석유제품 생산·판매 사업을 영위한다.",
+      "sources": [
+        {
+          "title": "AlphaSquare SK이노베이션 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=096770",
+          "source_type": "public_company_profile"
+        }
+      ],
+      "caveat_ko": "정유 노출은 자회사 SK에너지 등을 통한 연결 기준이다. 배터리·화학 등 다른 사업도 함께 보유한다.",
+      "code": "096770",
+      "captured_profile_display_name": "SK이노베이션",
+      "current_verified_name": "SK이노베이션"
+    },
+    "051910": {
+      "ticker": "051910",
+      "name": "LG화학",
+      "sectors": [
+        "화학"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "석유화학과 첨단소재 사업을 영위하는 화학기업이다.",
+      "sources": [
+        {
+          "title": "AlphaSquare LG화학 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=051910",
+          "source_type": "public_company_profile"
+        }
+      ],
+      "code": "051910",
+      "captured_profile_display_name": "LG화학",
+      "current_verified_name": "LG화학"
+    },
+    "011170": {
+      "ticker": "011170",
+      "name": "롯데케미칼",
+      "sectors": [
+        "화학"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "올레핀·방향족 계열의 석유화학제품과 첨단소재를 생산·판매한다.",
+      "sources": [
+        {
+          "title": "AlphaSquare 롯데케미칼 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=011170",
+          "source_type": "public_company_profile"
+        }
+      ],
+      "code": "011170",
+      "captured_profile_display_name": "롯데케미칼",
+      "current_verified_name": "롯데케미칼"
+    },
+    "011780": {
+      "ticker": "011780",
+      "name": "금호석유",
+      "sectors": [
+        "화학"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "합성고무·합성수지·정밀화학 등 석유화학 제품을 제조·판매한다.",
+      "sources": [
+        {
+          "title": "AlphaSquare 금호석유 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=011780",
+          "source_type": "public_company_profile"
+        }
+      ],
+      "code": "011780",
+      "captured_profile_display_name": "금호석유화학",
+      "current_verified_name": "금호석유"
+    },
+    "207940": {
+      "ticker": "207940",
+      "name": "삼성바이오로직스",
+      "sectors": [
+        "바이오"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "바이오의약품 위탁생산과 세포주·공정개발 서비스를 제공한다.",
+      "sources": [
+        {
+          "title": "AlphaSquare 삼성바이오로직스 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=207940",
+          "source_type": "public_company_profile"
+        }
+      ],
+      "code": "207940",
+      "captured_profile_display_name": "삼성바이오로직스",
+      "current_verified_name": "삼성바이오로직스"
+    },
+    "068270": {
+      "ticker": "068270",
+      "name": "셀트리온",
+      "sectors": [
+        "바이오"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "항체의약품과 바이오시밀러를 개발·생산한다.",
+      "sources": [
+        {
+          "title": "AlphaSquare 셀트리온 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=068270",
+          "source_type": "public_company_profile"
+        }
+      ],
+      "code": "068270",
+      "captured_profile_display_name": "셀트리온",
+      "current_verified_name": "셀트리온"
+    },
+    "196170": {
+      "ticker": "196170",
+      "name": "알테오젠",
+      "sectors": [
+        "바이오"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "히알루로니다제, 항체약물접합체, 지속형 의약품과 바이오시밀러 등 바이오의약품을 연구·개발한다.",
+      "sources": [
+        {
+          "title": "AlphaSquare 알테오젠 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=196170",
+          "source_type": "public_company_profile"
+        }
+      ],
+      "code": "196170",
+      "captured_profile_display_name": "알테오젠",
+      "current_verified_name": "알테오젠"
+    },
+    "105560": {
+      "ticker": "105560",
+      "name": "KB금융",
+      "sectors": [
+        "금융"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "KB국민은행·카드·보험사 등을 보유한 금융지주회사다.",
+      "sources": [
+        {
+          "title": "AlphaSquare KB금융 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=105560",
+          "source_type": "public_company_profile"
+        }
+      ],
+      "caveat_ko": "금융 전반을 완전히 대표하지 않는 은행 중심 금융지주 표본이다.",
+      "code": "105560",
+      "captured_profile_display_name": "KB금융",
+      "current_verified_name": "KB금융"
+    },
+    "055550": {
+      "ticker": "055550",
+      "name": "신한지주",
+      "sectors": [
+        "금융"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "신한은행·카드·금융투자 등을 지배·관리하는 금융지주회사다.",
+      "sources": [
+        {
+          "title": "AlphaSquare 신한지주 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=055550",
+          "source_type": "public_company_profile"
+        }
+      ],
+      "caveat_ko": "금융 전반을 완전히 대표하지 않는 은행 중심 금융지주 표본이다.",
+      "code": "055550",
+      "captured_profile_display_name": "신한지주",
+      "current_verified_name": "신한지주"
+    },
+    "086790": {
+      "ticker": "086790",
+      "name": "하나금융지주",
+      "sectors": [
+        "금융"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "하나은행·증권·카드·캐피탈 등 금융 계열사를 보유·관리하는 금융지주회사다.",
+      "sources": [
+        {
+          "title": "AlphaSquare 하나금융지주 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=086790",
+          "source_type": "public_company_profile"
+        }
+      ],
+      "caveat_ko": "금융 전반을 완전히 대표하지 않는 은행 중심 금융지주 표본이다.",
+      "code": "086790",
+      "captured_profile_display_name": "하나금융지주",
+      "current_verified_name": "하나금융지주"
+    },
+    "352820": {
+      "ticker": "352820",
+      "name": "하이브",
+      "sectors": [
+        "엔터"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "아티스트 육성과 음악 기반 콘텐츠·앨범·공연 등 엔터테인먼트 사업을 영위한다.",
+      "sources": [
+        {
+          "title": "AlphaSquare 하이브 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=352820",
+          "source_type": "public_company_profile"
+        }
+      ],
+      "code": "352820",
+      "captured_profile_display_name": "하이브",
+      "current_verified_name": "하이브"
+    },
+    "041510": {
+      "ticker": "041510",
+      "name": "에스엠",
+      "sectors": [
+        "엔터"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "음악 콘텐츠 제작과 아티스트 매니지먼트 사업을 영위한다.",
+      "sources": [
+        {
+          "title": "AlphaSquare 에스엠 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=041510",
+          "source_type": "public_company_profile"
+        }
+      ],
+      "code": "041510",
+      "captured_profile_display_name": "에스엠",
+      "current_verified_name": "에스엠"
+    },
+    "035900": {
+      "ticker": "035900",
+      "name": "JYP Ent.",
+      "sectors": [
+        "엔터"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "아티스트 활동 관리와 음반·음원 제작 및 판매 등 엔터테인먼트 사업을 영위한다.",
+      "sources": [
+        {
+          "title": "AlphaSquare JYP Ent. 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=035900",
+          "source_type": "public_company_profile"
+        }
+      ],
+      "code": "035900",
+      "captured_profile_display_name": "JYP Ent.",
+      "current_verified_name": "JYP Ent."
+    },
+    "012450": {
+      "ticker": "012450",
+      "name": "한화에어로스페이스",
+      "sectors": [
+        "우주",
+        "방산"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "누리호 제작·발사운용의 체계종합 사업과 군용 엔진·방산장비 사업을 영위한다.",
+      "sources": [
+        {
+          "title": "AlphaSquare 한화에어로스페이스 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=012450",
+          "source_type": "public_company_profile"
+        },
+        {
+          "title": "한화 Space Hub: 한화에어로스페이스 누리호 제작·발사운용 및 민간 발사체 시설",
+          "url": "https://www.hanwhaspacehub.com/media-room/Press-Release/59",
+          "source_type": "official_company_press_release"
+        }
+      ],
+      "caveat_ko": "우주와 방산 두 바스켓에 중복 편입. 두 바스켓을 합치면 중복계산되며, 우주 순수기업이 아니다.",
+      "code": "012450",
+      "captured_profile_display_name": "한화에어로스페이스",
+      "current_verified_name": "한화에어로스페이스"
+    },
+    "047810": {
+      "ticker": "047810",
+      "name": "한국항공우주",
+      "sectors": [
+        "우주"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "차세대중형위성 개발과 한국형 발사체 사업에 참여한다.",
+      "sources": [
+        {
+          "title": "AlphaSquare 한국항공우주 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=047810",
+          "source_type": "public_company_profile"
+        },
+        {
+          "title": "KAI 차세대중형위성 1단계",
+          "url": "https://www.koreaaero.com/KO/Business/CAS500_01.aspx",
+          "source_type": "official_company_business_page"
+        },
+        {
+          "title": "KAI 한국형 발사체",
+          "url": "https://www.koreaaero.com/KO/Business/KoreaSpaceLaunchVehicle.aspx",
+          "source_type": "official_company_business_page"
+        }
+      ],
+      "caveat_ko": "항공·방산 사업을 함께 영위한다. 위성 사업의 실제 참여를 근거로 우주 대표 바스켓에 편입했다.",
+      "code": "047810",
+      "captured_profile_display_name": "한국항공우주",
+      "current_verified_name": "한국항공우주"
+    },
+    "272210": {
+      "ticker": "272210",
+      "name": "한화시스템",
+      "sectors": [
+        "우주"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "소형 SAR 위성 체계·탑재체와 위성 간 통신 구성품 등을 개발한다.",
+      "sources": [
+        {
+          "title": "AlphaSquare 한화시스템 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=272210",
+          "source_type": "public_company_profile"
+        },
+        {
+          "title": "한화시스템 소형 SAR 위성",
+          "url": "https://www.hanwhasystems.com/kr/business/defense/space/sar.do",
+          "source_type": "official_company_business_page"
+        },
+        {
+          "title": "한화시스템 425사업 SAR 위성 탑재체 공급",
+          "url": "https://www.hanwhasystems.com/kr/prcenter/newsView.do?bbidx=622",
+          "source_type": "official_company_press_release"
+        }
+      ],
+      "caveat_ko": "방산전자·ICT 사업도 함께 영위한다. 소형 위성·탑재체 개발을 근거로 우주 대표 바스켓에 편입했다.",
+      "code": "272210",
+      "captured_profile_display_name": "한화시스템",
+      "current_verified_name": "한화시스템"
+    },
+    "277810": {
+      "ticker": "277810",
+      "name": "레인보우로보틱스",
+      "sectors": [
+        "로봇"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "산업용 협동로봇과 이족보행 로봇 플랫폼 등을 개발·제조한다.",
+      "sources": [
+        {
+          "title": "AlphaSquare 레인보우로보틱스 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=277810",
+          "source_type": "public_company_profile"
+        }
+      ],
+      "code": "277810",
+      "captured_profile_display_name": "레인보우로보틱스",
+      "current_verified_name": "레인보우로보틱스"
+    },
+    "454910": {
+      "ticker": "454910",
+      "name": "두산로보틱스",
+      "sectors": [
+        "로봇"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "산업용 협동로봇 제조 및 자동화 솔루션 제공 사업을 영위한다.",
+      "sources": [
+        {
+          "title": "AlphaSquare 두산로보틱스 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=454910",
+          "source_type": "public_company_profile"
+        }
+      ],
+      "code": "454910",
+      "captured_profile_display_name": "두산로보틱스",
+      "current_verified_name": "두산로보틱스"
+    },
+    "108490": {
+      "ticker": "108490",
+      "name": "로보티즈",
+      "sectors": [
+        "로봇"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "로봇용 액추에이터와 서비스로봇 솔루션·부품을 연구·개발·생산한다.",
+      "sources": [
+        {
+          "title": "AlphaSquare 로보티즈 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=108490",
+          "source_type": "public_company_profile"
+        }
+      ],
+      "code": "108490",
+      "captured_profile_display_name": "로보티즈",
+      "current_verified_name": "로보티즈"
+    },
+    "079550": {
+      "ticker": "079550",
+      "name": "LIG디펜스앤에어로스페이스",
+      "sectors": [
+        "방산"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "정밀유도무기·감시정찰·지휘통제 등 방위산업 제품을 개발·생산한다.",
+      "sources": [
+        {
+          "title": "LIG 그룹: LIG Defense&Aerospace",
+          "url": "https://www.lig.co.kr/web/sub/contents/20210512122758051/view.do",
+          "source_type": "official_group_company_profile"
+        },
+        {
+          "title": "LIG디펜스앤에어로스페이스 079550 기업개요",
+          "url": "https://comp.wisereport.co.kr/company/c1020001.aspx?cmp_cd=079550",
+          "source_type": "public_company_profile"
+        },
+        {
+          "title": "AlphaSquare LIG디펜스앤에어로스페이스 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=079550",
+          "source_type": "public_company_profile"
+        }
+      ],
+      "previous_name": "LIG넥스원",
+      "caveat_ko": "일부 시세·프로필 페이지에 과거 사명 LIG넥스원이 남아 있다. 종목코드 079550은 동일하다.",
+      "code": "079550",
+      "captured_profile_display_name": "LIG디펜스앤에어로스페이스",
+      "current_verified_name": "LIG디펜스앤에어로스페이스"
+    },
+    "064350": {
+      "ticker": "064350",
+      "name": "현대로템",
+      "sectors": [
+        "방산"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "철도 등 사업과 함께 K계열 전차·차륜형장갑차 등 방산사업을 영위한다.",
+      "sources": [
+        {
+          "title": "AlphaSquare 현대로템 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=064350",
+          "source_type": "public_company_profile"
+        }
+      ],
+      "caveat_ko": "방산 외 철도·플랜트 사업도 보유한다.",
+      "code": "064350",
+      "captured_profile_display_name": "현대로템",
+      "current_verified_name": "현대로템"
+    },
+    "329180": {
+      "ticker": "329180",
+      "name": "HD현대중공업",
+      "sectors": [
+        "조선"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "선박과 해양구조물·플랜트·엔진 등을 제조·판매한다.",
+      "sources": [
+        {
+          "title": "AlphaSquare HD현대중공업 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=329180",
+          "source_type": "public_company_profile"
+        }
+      ],
+      "code": "329180",
+      "captured_profile_display_name": "HD현대중공업",
+      "current_verified_name": "HD현대중공업"
+    },
+    "042660": {
+      "ticker": "042660",
+      "name": "한화오션",
+      "sectors": [
+        "조선"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "상선·해양제품·특수선을 건조하는 종합 조선해양 기업이다.",
+      "sources": [
+        {
+          "title": "AlphaSquare 한화오션 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=042660",
+          "source_type": "public_company_profile"
+        }
+      ],
+      "code": "042660",
+      "captured_profile_display_name": "한화오션",
+      "current_verified_name": "한화오션"
+    },
+    "010140": {
+      "ticker": "010140",
+      "name": "삼성중공업",
+      "sectors": [
+        "조선"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "LNG선·컨테이너선 등 선박과 해양플랜트를 건조·판매한다.",
+      "sources": [
+        {
+          "title": "AlphaSquare 삼성중공업 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=010140",
+          "source_type": "public_company_profile"
+        }
+      ],
+      "code": "010140",
+      "captured_profile_display_name": "삼성중공업",
+      "current_verified_name": "삼성중공업"
+    },
+    "090430": {
+      "ticker": "090430",
+      "name": "아모레퍼시픽",
+      "sectors": [
+        "화장품"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "설화수·헤라·라네즈 등 브랜드의 화장품을 제조·판매한다.",
+      "sources": [
+        {
+          "title": "AlphaSquare 아모레퍼시픽 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=090430",
+          "source_type": "public_company_profile"
+        }
+      ],
+      "code": "090430",
+      "captured_profile_display_name": "아모레퍼시픽",
+      "current_verified_name": "아모레퍼시픽"
+    },
+    "192820": {
+      "ticker": "192820",
+      "name": "코스맥스",
+      "sectors": [
+        "화장품"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "화장품 연구개발과 생산을 수행하는 ODM 기업이다.",
+      "sources": [
+        {
+          "title": "AlphaSquare 코스맥스 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=192820",
+          "source_type": "public_company_profile"
+        }
+      ],
+      "code": "192820",
+      "captured_profile_display_name": "코스맥스",
+      "current_verified_name": "코스맥스"
+    },
+    "278470": {
+      "ticker": "278470",
+      "name": "에이피알",
+      "sectors": [
+        "화장품"
+      ],
+      "classification_status": "verified",
+      "evidence_ko": "메디큐브·에이프릴스킨 등 화장품 브랜드와 홈 뷰티 디바이스 사업을 영위한다.",
+      "sources": [
+        {
+          "title": "에이피알 기업·브랜드 소개",
+          "url": "https://www.apr-in.com/apr_about.html",
+          "source_type": "official_company_profile"
+        },
+        {
+          "title": "에이피알 IR Book FY2024: 주요 제품 화장품·뷰티 디바이스",
+          "url": "https://apr-in.com/download/APR_IR_BooK_%28KOR%29_update_FY2024.pdf",
+          "source_type": "official_company_investor_presentation"
+        },
+        {
+          "title": "AlphaSquare 에이피알 종목요약: 기업 개요·관련 테마",
+          "url": "https://alphasquare.co.kr/home/stock-summary?code=278470",
+          "source_type": "public_company_profile"
+        }
+      ],
+      "caveat_ko": "AlphaSquare의 형식적 업종은 화학으로 표시되지만, 화장품 사업 근거로 화장품 테마에 편입했다. 뷰티 디바이스·기타 브랜드 사업도 보유한다.",
+      "code": "278470",
+      "captured_profile_display_name": "에이피알",
+      "current_verified_name": "에이피알"
+    }
+  }
+}

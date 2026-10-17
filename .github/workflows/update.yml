@@ -35,6 +35,8 @@ jobs:
           node tests/test_ui.cjs
           node tests/test_briefing_ui.cjs
           node tests/test_markets_ui.cjs
+          node tests/test_korea_ui.cjs
+          python scripts/validate_korean_market.py
           python scripts/manage_briefings.py
 
       - name: Save coverage baseline
@@ -44,6 +46,9 @@ jobs:
         env:
           FETCH_FINANCIALS: ${{ github.event_name == 'workflow_dispatch' && '1' || '0' }}
         run: python scripts/update_data.py
+
+      - name: Update Korean market series and preserve valid snapshots
+        run: python scripts/update_korean_market.py
 
       - name: Backfill Japanese financials
         run: python scripts/patch_japan_financials.py

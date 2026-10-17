@@ -82,8 +82,8 @@
     document.querySelectorAll('[data-sector-sort]').forEach(button=>button.onclick=()=>{if(sortKey===button.dataset.sectorSort)sortDesc=!sortDesc;else{sortKey=button.dataset.sectorSort;sortDesc=true;}render();const target=document.querySelector(`[data-sector-sort="${sortKey}"]`);if(target)target.focus();});
   }
   function view(name) {
-    activeView = ['explorer','briefing','heatmap','rates'].includes(name) ? name : 'explorer';
-    ['explorer','briefing','heatmap','rates'].forEach(name => { const panel = el(name+'-panel'); if (panel) panel.hidden = name !== activeView; });
+    activeView = ['explorer','briefing','heatmap','rates','korea'].includes(name) ? name : 'explorer';
+    ['explorer','briefing','heatmap','rates','korea'].forEach(name => { const panel = el(name+'-panel'); if (panel) panel.hidden = name !== activeView; });
     document.querySelectorAll('[data-view]').forEach(button => {const selected=button.dataset.view === activeView;button.setAttribute('aria-selected',String(selected));button.tabIndex=selected?0:-1;});
     // Chart.js cannot measure a hidden canvas; resize after returning to explorer.
     if (activeView === 'explorer' && typeof window.requestAnimationFrame === 'function') window.requestAnimationFrame(() => { if (typeof chart !== 'undefined' && chart && typeof chart.resize === 'function') chart.resize(); });
@@ -93,12 +93,12 @@
     if (parts[0] === 'briefing') { if (['US','KR'].includes(parts[1])) market=parts[1];selectedDate=date(parts[2])?parts[2]:selectedDate;view('briefing');render(); }
     else view(parts[0]);
   }
-  function navigate(name) { const hash = name === 'briefing' ? '#briefing/'+market+(selectedDate?'/'+selectedDate:'') : '#'+(['heatmap','rates'].includes(name)?name:'explorer'); if (window.location.hash === hash) route(); else window.location.hash=hash; }
+  function navigate(name) { const hash = name === 'briefing' ? '#briefing/'+market+(selectedDate?'/'+selectedDate:'') : '#'+(['heatmap','rates','korea'].includes(name)?name:'explorer'); if (window.location.hash === hash) route(); else window.location.hash=hash; }
   async function load() {
     loading=true;failed=false;render();
     try { const response=await fetch('./data/briefings.json?ts='+Date.now()); if (!response.ok) throw new Error('HTTP '+response.status);const payload=await response.json(); if (payload.schemaVersion !== 1 || !Array.isArray(payload.entries)) throw new Error('Unsupported briefing schema');entries=payload.entries.filter(entry => entry && ['US','KR'].includes(entry.market) && date(entry.date)); }
     catch(error) {failed=true;console.error('Briefing data:',error);}
-    loading=false;route();if(activeView!=='briefing')render();
+    loading=false;window.TerminalBriefingData={entries:entries.slice(),failed};if(typeof window.dispatchEvent==='function'&&typeof window.CustomEvent==='function')window.dispatchEvent(new window.CustomEvent('terminal-briefing-ready'));route();if(activeView!=='briefing')render();
   }
   function boot() {
     const tabs=[...document.querySelectorAll('[data-view]')];
