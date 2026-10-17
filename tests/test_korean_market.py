@@ -77,13 +77,15 @@ class KoreanMarketTests(unittest.TestCase):
     def test_incomplete_theme_cannot_be_partial_sum(self):
         data = copy.deepcopy(self.data)
         rows = data['themes']['monthly']['rows']
-        row = next(r for r in rows if r['foreign'] is None)
+        row = rows[0]
+        row['coverage']['foreign']['memberFlows'][0]['netBuyKRW'] = None
         row['foreign'] = 0
         self.assertTrue(any('incomplete theme must stay null' in x for x in validate(data)))
 
     def test_daily_index_returns_are_validated(self):
         data = copy.deepcopy(self.data)
-        data['indexMovers']['daily']['2026-10-16']['KOSPI200']['gainers'][0]['changePct'] += 1
+        latest = max(data['indexMovers']['daily'])
+        data['indexMovers']['daily'][latest]['KOSPI200']['gainers'][0]['changePct'] += 1
         self.assertTrue(any('return arithmetic mismatch' in x for x in validate(data)))
 
     def test_alphanumeric_index_codes_preserved(self):
