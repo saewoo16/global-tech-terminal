@@ -1,0 +1,22 @@
+/* Source-first market reference panels. No copied or synthetic market imagery. */
+.view-tabs{overflow-x:auto;white-space:nowrap}.view-tab{flex:0 0 auto}
+.market-page{max-width:1380px;padding:26px 28px 40px;margin:auto}
+.market-heading h2{font-size:26px;margin:8px 0}.market-heading p{line-height:1.6;margin:8px 0 20px}
+.heatmap-launch{padding:32px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(135deg,#182842,#101c31);max-width:850px}
+.source-badge{display:inline-block;color:#bed0ff;background:#253b5d;border:1px solid #3a5276;padding:6px 9px;border-radius:6px;font-size:11px;font-weight:700;letter-spacing:.5px}
+.heatmap-launch h3{font-size:27px;margin:20px 0 12px}.heatmap-launch>p{max-width:650px;line-height:1.8;color:#bccbe0}
+.market-primary{background:#38578e;border-color:#718dc1;padding:12px 18px;font-size:14px;margin:12px 0}
+.market-note{font-size:12px;color:var(--muted);line-height:1.8;margin:16px 0 0}
+.rates-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.rate-card{border:1px solid var(--line);border-radius:13px;background:var(--panel);overflow:hidden;min-width:0}
+.rate-head{padding:15px 17px;border-bottom:1px solid var(--line)}.rate-head h3{font-size:17px;margin:5px 0 6px}.rate-kicker{font-size:10px;letter-spacing:1px;font-weight:750;color:var(--accent)}
+.rate-head p{font-size:12px;line-height:1.6;color:var(--muted);margin:0}.rate-body{padding:17px;min-height:190px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:10px}.rate-body p{margin:0;font-size:12px;line-height:1.7;color:var(--muted)}
+.rate-source{padding:10px 17px;border-top:1px solid var(--line);font-size:11px;color:var(--muted);line-height:1.6;overflow-wrap:anywhere}.rate-frame{display:block;width:100%;height:280px;border:0;background:white}
+@media(max-width:760px){.market-page{padding:22px 12px 32px}.rates-grid{grid-template-columns:1fr}.heatmap-launch{padding:23px}.heatmap-launch h3{font-size:23px}.market-heading h2{font-size:23px}.view-tabs{padding:8px 12px;gap:3px}.view-tab{padding:9px 12px}.rate-frame{height:290px}}
+
+.map-toolbar{display:flex;gap:12px;justify-content:space-between;align-items:center;margin-bottom:12px}.heatmap-frame{display:block;width:100%;height:clamp(500px,70vh,900px);border:1px solid var(--line);border-radius:13px;background:var(--panel)}
+@media(max-width:760px){.heatmap-frame{height:640px}}
+
+.fred-chart{background:#fff}.fred-image{display:block;width:100%;height:auto;min-height:100px}.fred-status{margin:0;padding:7px 14px;font-size:10px;line-height:1.6;color:#485773;background:#eef2f8}.fred-error{padding:40px 20px;font-size:12px}.rate-link-card .rate-body{min-height:220px}
+
+.fred-retry{display:block;background:#eef2f8;color:#344b71;border:1px solid #c8d2e3;border-radius:5px;padding:5px 9px;font-size:10px;margin:0 12px 8px}.fred-chart{padding-bottom:1px}

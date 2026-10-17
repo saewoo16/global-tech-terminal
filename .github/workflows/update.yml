@@ -34,6 +34,7 @@ jobs:
           python -m unittest discover -s tests -v
           node tests/test_ui.cjs
           node tests/test_briefing_ui.cjs
+          node tests/test_markets_ui.cjs
           python scripts/manage_briefings.py
 
       - name: Save coverage baseline
