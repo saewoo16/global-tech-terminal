@@ -1,0 +1,1791 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-17T07:17:33.748681+00:00",
+  "entries": [
+    {
+      "market": "US",
+      "date": "2026-10-16",
+      "status": "partial",
+      "indices": [
+        {
+          "name": "S&P500",
+          "close": 7659.44,
+          "changePct": -1.09,
+          "sourceIds": [
+            "close"
+          ]
+        },
+        {
+          "name": "나스닥종합",
+          "close": 26140.03,
+          "changePct": -2.15,
+          "sourceIds": [
+            "close"
+          ]
+        },
+        {
+          "name": "다우",
+          "close": 52002.41,
+          "changePct": -0.34,
+          "sourceIds": [
+            "close"
+          ]
+        },
+        {
+          "name": "러셀2000",
+          "close": 2721.37,
+          "changePct": -1.66,
+          "sourceIds": [
+            "close"
+          ]
+        }
+      ],
+      "summary": [
+        {
+          "title": "AI 투자 우려 재부각",
+          "text": "AI 데이터센터 투자 지속성과 높은 차입비용에 대한 우려 속 기술주가 약세. 나스닥이 다우보다 크게 하락했습니다.",
+          "sourceIds": [
+            "ap"
+          ]
+        },
+        {
+          "title": "반도체·소프트웨어 약세",
+          "text": "반도체 SOXX -4.14%, 소프트웨어 IGV -4.80%. 에너지 XLE +2.52%로 업종 차별화.",
+          "sourceIds": [
+            "price_SOXX",
+            "price_IGV",
+            "price_XLE"
+          ]
+        },
+        {
+          "title": "물가와 생산",
+          "text": "9월 수입물가는 전월 대비 +1.1%, 전년 대비 +8.1%. 산업생산은 전월 대비 +0.7%. 발표 수치이며 주가 영향은 다른 요인과 함께 해석해야 합니다.",
+          "sourceIds": [
+            "bls",
+            "fed"
+          ]
+        }
+      ],
+      "sectors": {
+        "methodology": "Yahoo Finance 조정종가로 직접 계산. 1일:10/15 대비, 1주:10/9 대비, 1개월:9/16 대비. ETF 대용지표이며 업종지수 자체와 차이 가능. ETF 이름은 표의 대용지표 칸에 표시. 동일가중 바스켓은 반올림된 개별 수익률 평균으로 약0.01%p 오차가 가능합니다.",
+        "note": "40개 비교 항목. ETF별 편입범위가 다르며 글로벌 ETF는 미국 이외 기업도 포함합니다. 방어주는 필수소비재·유틸리티 등으로 표시합니다. 정유/화학/화장품의 대표 3사 바스켓은 각 기간 시작 동일가중 수익률의 평균으로 직접 계산했으며 전체 업종지수가 아닙니다. 서로 겹치는 분류를 합산하면 안 됩니다.",
+        "rows": [
+          {
+            "name": "기술",
+            "ticker": "XLK",
+            "day": -3.02,
+            "week": -7.7,
+            "month": -0.13,
+            "sourceIds": [
+              "price_XLK"
+            ],
+            "benchmark": "State Street Technology Select Sector SPDR ETF",
+            "group": "대분류"
+          },
+          {
+            "name": "금융",
+            "ticker": "XLF",
+            "day": 0.45,
+            "week": 1.44,
+            "month": -0.38,
+            "sourceIds": [
+              "price_XLF"
+            ],
+            "benchmark": "State Street Financial Select Sector SPDR ETF",
+            "group": "대분류"
+          },
+          {
+            "name": "헬스케어",
+            "ticker": "XLV",
+            "day": -0.27,
+            "week": 3.45,
+            "month": 5.73,
+            "sourceIds": [
+              "price_XLV"
+            ],
+            "benchmark": "State Street Health Care Select Sector SPDR ETF",
+            "group": "대분류"
+          },
+          {
+            "name": "경기소비재",
+            "ticker": "XLY",
+            "day": -0.84,
+            "week": -0.35,
+            "month": 2.29,
+            "sourceIds": [
+              "price_XLY"
+            ],
+            "benchmark": "State Street Consumer Discretionary Select Sector SPDR ETF",
+            "group": "대분류"
+          },
+          {
+            "name": "필수소비재·방어주",
+            "ticker": "XLP",
+            "day": 1.08,
+            "week": 5.02,
+            "month": 5.84,
+            "sourceIds": [
+              "price_XLP"
+            ],
+            "benchmark": "State Street Consumer Staples Select Sector SPDR ETF",
+            "group": "대분류"
+          },
+          {
+            "name": "에너지",
+            "ticker": "XLE",
+            "day": 2.52,
+            "week": 4.86,
+            "month": 7.21,
+            "sourceIds": [
+              "price_XLE"
+            ],
+            "benchmark": "State Street Energy Select Sector SPDR ETF",
+            "group": "대분류"
+          },
+          {
+            "name": "산업재",
+            "ticker": "XLI",
+            "day": -0.08,
+            "week": -0.88,
+            "month": -0.3,
+            "sourceIds": [
+              "price_XLI"
+            ],
+            "benchmark": "State Street Industrial Select Sector SPDR ETF",
+            "group": "대분류"
+          },
+          {
+            "name": "소재",
+            "ticker": "XLB",
+            "day": 0.71,
+            "week": 3.01,
+            "month": 1.58,
+            "sourceIds": [
+              "price_XLB"
+            ],
+            "benchmark": "State Street Materials Select Sector SPDR ETF",
+            "group": "대분류"
+          },
+          {
+            "name": "유틸리티·방어주",
+            "ticker": "XLU",
+            "day": 1.34,
+            "week": 1.93,
+            "month": 2.91,
+            "sourceIds": [
+              "price_XLU"
+            ],
+            "benchmark": "State Street Utilities Select Sector SPDR ETF",
+            "group": "대분류"
+          },
+          {
+            "name": "부동산",
+            "ticker": "XLRE",
+            "day": 0.4,
+            "week": 1.32,
+            "month": -0.69,
+            "sourceIds": [
+              "price_XLRE"
+            ],
+            "benchmark": "State Street Real Estate Select Sector SPDR ETF",
+            "group": "대분류"
+          },
+          {
+            "name": "통신서비스",
+            "ticker": "XLC",
+            "day": -1.89,
+            "week": -0.05,
+            "month": -2.05,
+            "sourceIds": [
+              "price_XLC"
+            ],
+            "benchmark": "State Street Communication Services Select Sector SPDR ETF",
+            "group": "대분류"
+          },
+          {
+            "name": "반도체",
+            "ticker": "SOXX",
+            "day": -4.14,
+            "week": -11.8,
+            "month": -1.73,
+            "sourceIds": [
+              "price_SOXX"
+            ],
+            "benchmark": "iShares Semiconductor ETF",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "소프트웨어",
+            "ticker": "IGV",
+            "day": -4.8,
+            "week": -7.39,
+            "month": -0.59,
+            "sourceIds": [
+              "price_IGV"
+            ],
+            "benchmark": "iShares Expanded Tech-Software Sector ETF",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "바이오",
+            "ticker": "XBI",
+            "day": -3.65,
+            "week": -6.15,
+            "month": -6.4,
+            "sourceIds": [
+              "price_XBI"
+            ],
+            "benchmark": "State Street SPDR S&P Biotech ETF",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "지역은행",
+            "ticker": "KRE",
+            "day": 0.09,
+            "week": 1.16,
+            "month": -3.48,
+            "sourceIds": [
+              "price_KRE"
+            ],
+            "benchmark": "State Street SPDR S&P Regional Banking ETF",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "석유가스탐사생산",
+            "ticker": "XOP",
+            "day": 2.82,
+            "week": 4.63,
+            "month": 4.89,
+            "sourceIds": [
+              "price_XOP"
+            ],
+            "benchmark": "State Street SPDR S&P Oil & Gas Exploration & Production ETF",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "항공우주방산",
+            "ticker": "ITA",
+            "day": 1.04,
+            "week": 1.17,
+            "month": -2.88,
+            "sourceIds": [
+              "price_ITA"
+            ],
+            "benchmark": "iShares U.S. Aerospace & Defense ETF",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "주택건설",
+            "ticker": "XHB",
+            "day": -0.88,
+            "week": 0.15,
+            "month": -1.4,
+            "sourceIds": [
+              "price_XHB"
+            ],
+            "benchmark": "State Street SPDR S&P Homebuilders ETF",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "소매",
+            "ticker": "XRT",
+            "day": -0.91,
+            "week": 3.48,
+            "month": 5.41,
+            "sourceIds": [
+              "price_XRT"
+            ],
+            "benchmark": "State Street SPDR S&P Retail ETF",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "운송",
+            "ticker": "IYT",
+            "day": -1.09,
+            "week": -0.15,
+            "month": -0.16,
+            "sourceIds": [
+              "price_IYT"
+            ],
+            "benchmark": "iShares Transportation Average ETF",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "반도체대형",
+            "ticker": "SMH",
+            "day": -3.41,
+            "week": -10.53,
+            "month": -1.06,
+            "sourceIds": [
+              "price_SMH"
+            ],
+            "benchmark": "VanEck Semiconductor ETF",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "금속광업",
+            "ticker": "XME",
+            "day": -0.41,
+            "week": -5.11,
+            "month": -7.15,
+            "sourceIds": [
+              "price_XME"
+            ],
+            "benchmark": "State Street SPDR S&P Metals & Mining ETF",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "방산동일가중",
+            "ticker": "XAR",
+            "day": -0.15,
+            "week": -1.68,
+            "month": -7.28,
+            "sourceIds": [
+              "price_XAR"
+            ],
+            "benchmark": "State Street SPDR S&P Aerospace & Defense ETF",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "리튬·배터리(글로벌)",
+            "ticker": "LIT",
+            "day": -2.32,
+            "week": -8.15,
+            "month": -8.3,
+            "sourceIds": [
+              "price_LIT"
+            ],
+            "benchmark": "Global X Lithium & Battery Tech ETF",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "배터리(글로벌)",
+            "ticker": "BATT",
+            "day": -2.18,
+            "week": -8.31,
+            "month": -6.85,
+            "sourceIds": [
+              "price_BATT"
+            ],
+            "benchmark": "Amplify Lithium & Battery Technology ETF",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "신재생에너지(글로벌)",
+            "ticker": "ICLN",
+            "day": -1.33,
+            "week": -5.5,
+            "month": -5.72,
+            "sourceIds": [
+              "price_ICLN"
+            ],
+            "benchmark": "iShares Global Clean Energy ETF",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "태양광(글로벌)",
+            "ticker": "TAN",
+            "day": -2.11,
+            "week": -4.34,
+            "month": -6.21,
+            "sourceIds": [
+              "price_TAN"
+            ],
+            "benchmark": "Invesco Solar ETF",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "풍력(글로벌)",
+            "ticker": "FAN",
+            "day": 0.96,
+            "week": -0.67,
+            "month": -3.85,
+            "sourceIds": [
+              "price_FAN"
+            ],
+            "benchmark": "First Trust Global Wind Energy ETF",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "바이오 대형",
+            "ticker": "IBB",
+            "day": -2.61,
+            "week": -2.18,
+            "month": -0.2,
+            "sourceIds": [
+              "price_IBB"
+            ],
+            "benchmark": "iShares Biotechnology ETF",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "정유(글로벌)",
+            "ticker": "CRAK",
+            "day": 0.1,
+            "week": 1.58,
+            "month": 3.22,
+            "sourceIds": [
+              "price_CRAK"
+            ],
+            "benchmark": "VanEck Oil Refiners ETF",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "은행",
+            "ticker": "KBE",
+            "day": 0.11,
+            "week": 0.78,
+            "month": -4.19,
+            "sourceIds": [
+              "price_KBE"
+            ],
+            "benchmark": "State Street SPDR S&P Bank ETF",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "증권·브로커",
+            "ticker": "IAI",
+            "day": -0.92,
+            "week": -1.47,
+            "month": -2.93,
+            "sourceIds": [
+              "price_IAI"
+            ],
+            "benchmark": "iShares U.S. Broker-Dealers & Securities Exchanges ETF",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "헬스케어서비스",
+            "ticker": "IHF",
+            "day": -1.46,
+            "week": 3.33,
+            "month": 3.49,
+            "sourceIds": [
+              "price_IHF"
+            ],
+            "benchmark": "iShares U.S. Healthcare Providers ETF",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "의료기기",
+            "ticker": "IHI",
+            "day": -0.5,
+            "week": 3.87,
+            "month": 3.55,
+            "sourceIds": [
+              "price_IHI"
+            ],
+            "benchmark": "iShares U.S. Medical Devices ETF",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "제약",
+            "ticker": "XPH",
+            "day": -1.87,
+            "week": -4.35,
+            "month": -7.35,
+            "sourceIds": [
+              "price_XPH"
+            ],
+            "benchmark": "State Street SPDR S&P Pharmaceuticals ETF",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "인터넷",
+            "ticker": "FDN",
+            "day": -3.43,
+            "week": -5.78,
+            "month": -1.65,
+            "sourceIds": [
+              "price_FDN"
+            ],
+            "benchmark": "First Trust Dow Jones Internet Index Fund",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "사이버보안",
+            "ticker": "CIBR",
+            "day": -4.55,
+            "week": -10.16,
+            "month": -1.47,
+            "sourceIds": [
+              "price_CIBR"
+            ],
+            "benchmark": "First Trust NASDAQ Cybersecurity ETF",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "클라우드",
+            "ticker": "CLOU",
+            "day": -4.91,
+            "week": -6.78,
+            "month": 0.18,
+            "sourceIds": [
+              "price_CLOU"
+            ],
+            "benchmark": "Global X Cloud Computing ETF",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "화장품 대표 3사",
+            "ticker": "EL,ELF,COTY",
+            "benchmark": "기간 시작 동일가중 바스켓: 에스티로더, 엘프뷰티, 코티",
+            "group": "대표 종목 바스켓(업종지수 아님)",
+            "day": -1.46,
+            "week": 7.62,
+            "month": 17.52,
+            "sourceIds": [
+              "price_EL",
+              "price_ELF",
+              "price_COTY"
+            ]
+          },
+          {
+            "name": "화학 대표 3사",
+            "ticker": "DOW,LYB,DD",
+            "benchmark": "기간 시작 동일가중 바스켓: 다우케미칼, 라이온델바젤, 듀폰",
+            "group": "대표 종목 바스켓(업종지수 아님)",
+            "day": 0.73,
+            "week": 4.1,
+            "month": 0.13,
+            "sourceIds": [
+              "price_DOW",
+              "price_LYB",
+              "price_DD"
+            ]
+          }
+        ]
+      },
+      "movers": {
+        "criteria": "시총 상위500 우선, 한국200·미국300 축소 가능. 등락률 절댓값≥5%, 거래량 또는 거래대금이 직전 거래일 대비≥100% 증가.",
+        "note": "미국 소재 기업 시총상위300개(StockAnalysis 순위) 중299개 일봉 확인,1개 시세 미확보(otc/NFTN). 이 범위에서 가격±5%·전일 대비 거래량2배 조건 동시충족은0개입니다. 실제 거래대금 데이터는 미확보하여 거래대금 조건까지 부재라고 단정하지 않습니다. 장중·시간외·평균거래량 기준과 혼용하지 않았습니다.",
+        "rows": [],
+        "caption": "299/300개 확인 · 가격·거래량 동시 충족 0개",
+        "emptyMessage": "확인한 299개 중 가격 ±5%와 전일 대비 거래량 2배를 동시에 충족한 종목은 없습니다. 미확보 1개와 거래대금 조건은 제외됩니다."
+      },
+      "highs": {
+        "criteria": "52주 장중 최고가 갱신 여부, 사상최고가 별도 구분.",
+        "note": "같은299개 확인 범위에서 장중52주 최고가를 새로 넘은 종목14개. 2025/10/17~2026/10/16 일봉 고가 비교. 종가 신고가·사상 최고가를 의미하지 않습니다. ETF는 시총상위 기업과 별도 업종 지표입니다.",
+        "rows": [
+          {
+            "name": "Visa Inc.",
+            "ticker": "V",
+            "kind": "장중52주 최고가",
+            "changePct": 0.72,
+            "reason": "미국 소재 시총순위 15위. 장중 고가 $404.74, 직전52주 고가 $403.21.",
+            "sourceIds": [
+              "high_V",
+              "universe_us"
+            ]
+          },
+          {
+            "name": "ExxonMobil Holdings Corporation",
+            "ticker": "XOM",
+            "kind": "장중52주 최고가",
+            "changePct": 2.46,
+            "reason": "미국 소재 시총순위 16위. 장중 고가 $179.16, 직전52주 고가 $178.69.",
+            "sourceIds": [
+              "high_XOM",
+              "universe_us"
+            ]
+          },
+          {
+            "name": "Mastercard Incorporated",
+            "ticker": "MA",
+            "kind": "장중52주 최고가",
+            "changePct": 0.18,
+            "reason": "미국 소재 시총순위 18위. 장중 고가 $622.49, 직전52주 고가 $619.80.",
+            "sourceIds": [
+              "high_MA",
+              "universe_us"
+            ]
+          },
+          {
+            "name": "Chevron Corporation",
+            "ticker": "CVX",
+            "kind": "장중52주 최고가",
+            "changePct": 2.59,
+            "reason": "미국 소재 시총순위 22위. 장중 고가 $225.31, 직전52주 고가 $223.46.",
+            "sourceIds": [
+              "high_CVX",
+              "universe_us"
+            ]
+          },
+          {
+            "name": "ConocoPhillips",
+            "ticker": "COP",
+            "kind": "장중52주 최고가",
+            "changePct": 3.37,
+            "reason": "미국 소재 시총순위 66위. 장중 고가 $146.59, 직전52주 고가 $143.13.",
+            "sourceIds": [
+              "high_COP",
+              "universe_us"
+            ]
+          },
+          {
+            "name": "McKesson Corporation",
+            "ticker": "MCK",
+            "kind": "장중52주 최고가",
+            "changePct": 0.62,
+            "reason": "미국 소재 시총순위 100위. 장중 고가 $1014.99, 직전52주 고가 $1003.21.",
+            "sourceIds": [
+              "high_MCK",
+              "universe_us"
+            ]
+          },
+          {
+            "name": "Automatic Data Processing, Inc.",
+            "ticker": "ADP",
+            "kind": "장중52주 최고가",
+            "changePct": 1.14,
+            "reason": "미국 소재 시총순위 102위. 장중 고가 $290.12, 직전52주 고가 $289.80.",
+            "sourceIds": [
+              "high_ADP",
+              "universe_us"
+            ]
+          },
+          {
+            "name": "EOG Resources, Inc.",
+            "ticker": "EOG",
+            "kind": "장중52주 최고가",
+            "changePct": 3.53,
+            "reason": "미국 소재 시총순위 146위. 장중 고가 $158.37, 직전52주 고가 $155.00.",
+            "sourceIds": [
+              "high_EOG",
+              "universe_us"
+            ]
+          },
+          {
+            "name": "MetLife, Inc.",
+            "ticker": "MET",
+            "kind": "장중52주 최고가",
+            "changePct": 0.49,
+            "reason": "미국 소재 시총순위 189위. 장중 고가 $102.43, 직전52주 고가 $101.44.",
+            "sourceIds": [
+              "high_MET",
+              "universe_us"
+            ]
+          },
+          {
+            "name": "Becton, Dickinson and Company",
+            "ticker": "BDX",
+            "kind": "장중52주 최고가",
+            "changePct": -1.04,
+            "reason": "미국 소재 시총순위 220위. 장중 고가 $195.99, 직전52주 고가 $194.34.",
+            "sourceIds": [
+              "high_BDX",
+              "universe_us"
+            ]
+          },
+          {
+            "name": "Veeva Systems Inc.",
+            "ticker": "VEEV",
+            "kind": "장중52주 최고가",
+            "changePct": -0.85,
+            "reason": "미국 소재 시총순위 225위. 장중 고가 $319.95, 직전52주 고가 $315.02.",
+            "sourceIds": [
+              "high_VEEV",
+              "universe_us"
+            ]
+          },
+          {
+            "name": "Agilent Technologies, Inc.",
+            "ticker": "A",
+            "kind": "장중52주 최고가",
+            "changePct": -1.47,
+            "reason": "미국 소재 시총순위 233위. 장중 고가 $177.47, 직전52주 고가 $177.05.",
+            "sourceIds": [
+              "high_A",
+              "universe_us"
+            ]
+          },
+          {
+            "name": "Keurig Dr Pepper Inc.",
+            "ticker": "KDP",
+            "kind": "장중52주 최고가",
+            "changePct": 1.29,
+            "reason": "미국 소재 시총순위 243위. 장중 고가 $34.71, 직전52주 고가 $34.49.",
+            "sourceIds": [
+              "high_KDP",
+              "universe_us"
+            ]
+          },
+          {
+            "name": "Centene Corporation",
+            "ticker": "CNC",
+            "kind": "장중52주 최고가",
+            "changePct": -1.91,
+            "reason": "미국 소재 시총순위 300위. 장중 고가 $71.21, 직전52주 고가 $71.01.",
+            "sourceIds": [
+              "high_CNC",
+              "universe_us"
+            ]
+          },
+          {
+            "name": "에너지 ETF",
+            "ticker": "XLE",
+            "kind": "업종ETF 장중52주 최고가",
+            "changePct": 2.52,
+            "reason": "당일 고가 $68.29, 직전52주 고가 $67.90. 기업 시총순위 대상과 별도.",
+            "sourceIds": [
+              "price_XLE"
+            ]
+          },
+          {
+            "name": "헬스케어서비스 ETF",
+            "ticker": "IHF",
+            "kind": "업종ETF 장중52주 최고가",
+            "changePct": -1.46,
+            "reason": "당일 고가 $59.96, 직전52주 고가 $59.71. 기업 시총순위 대상과 별도.",
+            "sourceIds": [
+              "price_IHF"
+            ]
+          }
+        ]
+      },
+      "earnings": {
+        "note": "공개 IR 자료에서 확인한 예시. 상위300 실적 발표 전수 확인과 콜 원문 확인은 미완료.",
+        "rows": [
+          {
+            "name": "Travelers",
+            "ticker": "TRV",
+            "period": "2026년 3분기 · 10/16 발표",
+            "summary": "매출은 전년과 비슷했지만 Core EPS는 전년 대비 13% 증가. 보험영업·투자수익이 뒷받침했습니다. 보험사는 일반 제조업 영업이익 대신 순이익/Core income을 구분합니다.",
+            "metrics": [
+              {
+                "label": "총매출",
+                "value": "124.12억 USD (전년 124.70억)"
+              },
+              {
+                "label": "순이익 / GAAP EPS",
+                "value": "19.17억 USD / $9.04"
+              },
+              {
+                "label": "Core EPS (비GAAP)",
+                "value": "$9.18, YoY +13%"
+              },
+              {
+                "label": "합산비율",
+                "value": "86.8%, 전년보다 0.5%p 개선"
+              }
+            ],
+            "callHighlights": [
+              "확인 자료: 공식 실적 보도자료. 컨퍼런스콜 원문/Q&A는 아직 미확인.",
+              "공식 보도자료상 경영진은 보험영업 수익성과 사상 최대 투자수익을 강조."
+            ],
+            "sourceIds": [
+              "trv"
+            ]
+          }
+        ]
+      },
+      "watchlist": [
+        "다음 한국장: 미국 반도체·소프트웨어의 재하락이 국내 금요일 반등에 미칠 영향. 이는 분석 관점이며 확정된 결과가 아닙니다."
+      ],
+      "sources": [
+        {
+          "id": "price_XLK",
+          "title": "State Street Technology Select Sector SPDR ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/XLK/history/"
+        },
+        {
+          "id": "price_XLF",
+          "title": "State Street Financial Select Sector SPDR ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/XLF/history/"
+        },
+        {
+          "id": "price_XLV",
+          "title": "State Street Health Care Select Sector SPDR ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/XLV/history/"
+        },
+        {
+          "id": "price_XLY",
+          "title": "State Street Consumer Discretionary Select Sector SPDR ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/XLY/history/"
+        },
+        {
+          "id": "price_XLP",
+          "title": "State Street Consumer Staples Select Sector SPDR ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/XLP/history/"
+        },
+        {
+          "id": "price_XLE",
+          "title": "State Street Energy Select Sector SPDR ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/XLE/history/"
+        },
+        {
+          "id": "price_XLI",
+          "title": "State Street Industrial Select Sector SPDR ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/XLI/history/"
+        },
+        {
+          "id": "price_XLB",
+          "title": "State Street Materials Select Sector SPDR ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/XLB/history/"
+        },
+        {
+          "id": "price_XLU",
+          "title": "State Street Utilities Select Sector SPDR ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/XLU/history/"
+        },
+        {
+          "id": "price_XLRE",
+          "title": "State Street Real Estate Select Sector SPDR ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/XLRE/history/"
+        },
+        {
+          "id": "price_XLC",
+          "title": "State Street Communication Services Select Sector SPDR ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/XLC/history/"
+        },
+        {
+          "id": "price_SOXX",
+          "title": "iShares Semiconductor ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/SOXX/history/"
+        },
+        {
+          "id": "price_IGV",
+          "title": "iShares Expanded Tech-Software Sector ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/IGV/history/"
+        },
+        {
+          "id": "price_XBI",
+          "title": "State Street SPDR S&P Biotech ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/XBI/history/"
+        },
+        {
+          "id": "price_KRE",
+          "title": "State Street SPDR S&P Regional Banking ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/KRE/history/"
+        },
+        {
+          "id": "price_XOP",
+          "title": "State Street SPDR S&P Oil & Gas Exploration & Production ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/XOP/history/"
+        },
+        {
+          "id": "price_ITA",
+          "title": "iShares U.S. Aerospace & Defense ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/ITA/history/"
+        },
+        {
+          "id": "price_XHB",
+          "title": "State Street SPDR S&P Homebuilders ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/XHB/history/"
+        },
+        {
+          "id": "price_XRT",
+          "title": "State Street SPDR S&P Retail ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/XRT/history/"
+        },
+        {
+          "id": "price_IYT",
+          "title": "iShares Transportation Average ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/IYT/history/"
+        },
+        {
+          "id": "price_SMH",
+          "title": "VanEck Semiconductor ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/SMH/history/"
+        },
+        {
+          "id": "price_XME",
+          "title": "State Street SPDR S&P Metals & Mining ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/XME/history/"
+        },
+        {
+          "id": "price_XAR",
+          "title": "State Street SPDR S&P Aerospace & Defense ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/XAR/history/"
+        },
+        {
+          "id": "ap",
+          "title": "AP 미국장 마감",
+          "url": "https://apnews.com/article/c27809783ae3230b44c26e5ee4bea056"
+        },
+        {
+          "id": "close",
+          "title": "미국 종가·개별 종목",
+          "url": "https://www.investing.com/news/stock-market-news/us-stocks-lower-at-close-of-trade-dow-jones-industrial-average-down-034-4954815"
+        },
+        {
+          "id": "bls",
+          "title": "BLS 9월 수입물가(10/16 발표)",
+          "url": "https://www.bls.gov/news.release/archives/ximpim_10162026.htm"
+        },
+        {
+          "id": "fed",
+          "title": "연준 9월 산업생산(10/16 발표)",
+          "url": "https://www.federalreserve.gov/releases/g17/20261016/g17.pdf"
+        },
+        {
+          "id": "trv",
+          "title": "Travelers 3Q 공식 실적",
+          "url": "https://investor.travelers.com/newsroom/press-releases/news-details/2026/Travelers-Reports-Excellent-Third-Quarter-and-Year-to-Date-Results/default.aspx"
+        },
+        {
+          "id": "price_LIT",
+          "title": "Global X Lithium & Battery Tech ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/LIT/history/"
+        },
+        {
+          "id": "price_BATT",
+          "title": "Amplify Lithium & Battery Technology ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/BATT/history/"
+        },
+        {
+          "id": "price_ICLN",
+          "title": "iShares Global Clean Energy ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/ICLN/history/"
+        },
+        {
+          "id": "price_TAN",
+          "title": "Invesco Solar ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/TAN/history/"
+        },
+        {
+          "id": "price_FAN",
+          "title": "First Trust Global Wind Energy ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/FAN/history/"
+        },
+        {
+          "id": "price_IBB",
+          "title": "iShares Biotechnology ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/IBB/history/"
+        },
+        {
+          "id": "price_CRAK",
+          "title": "VanEck Oil Refiners ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/CRAK/history/"
+        },
+        {
+          "id": "price_KBE",
+          "title": "State Street SPDR S&P Bank ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/KBE/history/"
+        },
+        {
+          "id": "price_IAI",
+          "title": "iShares U.S. Broker-Dealers & Securities Exchanges ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/IAI/history/"
+        },
+        {
+          "id": "price_IHF",
+          "title": "iShares U.S. Healthcare Providers ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/IHF/history/"
+        },
+        {
+          "id": "price_IHI",
+          "title": "iShares U.S. Medical Devices ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/IHI/history/"
+        },
+        {
+          "id": "price_XPH",
+          "title": "State Street SPDR S&P Pharmaceuticals ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/XPH/history/"
+        },
+        {
+          "id": "price_FDN",
+          "title": "First Trust Dow Jones Internet Index Fund 가격 이력",
+          "url": "https://finance.yahoo.com/quote/FDN/history/"
+        },
+        {
+          "id": "price_CIBR",
+          "title": "First Trust NASDAQ Cybersecurity ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/CIBR/history/"
+        },
+        {
+          "id": "price_CLOU",
+          "title": "Global X Cloud Computing ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/CLOU/history/"
+        },
+        {
+          "id": "price_EL",
+          "title": "The Estée Lauder Companies Inc. 가격 이력",
+          "url": "https://finance.yahoo.com/quote/EL/history/"
+        },
+        {
+          "id": "price_ELF",
+          "title": "e.l.f. Beauty, Inc. 가격 이력",
+          "url": "https://finance.yahoo.com/quote/ELF/history/"
+        },
+        {
+          "id": "price_COTY",
+          "title": "Coty Inc. 가격 이력",
+          "url": "https://finance.yahoo.com/quote/COTY/history/"
+        },
+        {
+          "id": "price_DOW",
+          "title": "Dow Inc. 가격 이력",
+          "url": "https://finance.yahoo.com/quote/DOW/history/"
+        },
+        {
+          "id": "price_LYB",
+          "title": "LyondellBasell Industries N.V. 가격 이력",
+          "url": "https://finance.yahoo.com/quote/LYB/history/"
+        },
+        {
+          "id": "price_DD",
+          "title": "DuPont de Nemours, Inc. 가격 이력",
+          "url": "https://finance.yahoo.com/quote/DD/history/"
+        },
+        {
+          "id": "universe_us",
+          "title": "StockAnalysis 미국 소재 기업 시총순위(글로벌 순위에서 선별), 10/17 조회",
+          "url": "https://stockanalysis.com/list/biggest-companies/?count=1000"
+        },
+        {
+          "id": "high_V",
+          "title": "V 일별 고가·거래량",
+          "url": "https://finance.yahoo.com/quote/V/history/"
+        },
+        {
+          "id": "high_XOM",
+          "title": "XOM 일별 고가·거래량",
+          "url": "https://finance.yahoo.com/quote/XOM/history/"
+        },
+        {
+          "id": "high_MA",
+          "title": "MA 일별 고가·거래량",
+          "url": "https://finance.yahoo.com/quote/MA/history/"
+        },
+        {
+          "id": "high_CVX",
+          "title": "CVX 일별 고가·거래량",
+          "url": "https://finance.yahoo.com/quote/CVX/history/"
+        },
+        {
+          "id": "high_COP",
+          "title": "COP 일별 고가·거래량",
+          "url": "https://finance.yahoo.com/quote/COP/history/"
+        },
+        {
+          "id": "high_MCK",
+          "title": "MCK 일별 고가·거래량",
+          "url": "https://finance.yahoo.com/quote/MCK/history/"
+        },
+        {
+          "id": "high_ADP",
+          "title": "ADP 일별 고가·거래량",
+          "url": "https://finance.yahoo.com/quote/ADP/history/"
+        },
+        {
+          "id": "high_EOG",
+          "title": "EOG 일별 고가·거래량",
+          "url": "https://finance.yahoo.com/quote/EOG/history/"
+        },
+        {
+          "id": "high_MET",
+          "title": "MET 일별 고가·거래량",
+          "url": "https://finance.yahoo.com/quote/MET/history/"
+        },
+        {
+          "id": "high_BDX",
+          "title": "BDX 일별 고가·거래량",
+          "url": "https://finance.yahoo.com/quote/BDX/history/"
+        },
+        {
+          "id": "high_VEEV",
+          "title": "VEEV 일별 고가·거래량",
+          "url": "https://finance.yahoo.com/quote/VEEV/history/"
+        },
+        {
+          "id": "high_A",
+          "title": "A 일별 고가·거래량",
+          "url": "https://finance.yahoo.com/quote/A/history/"
+        },
+        {
+          "id": "high_KDP",
+          "title": "KDP 일별 고가·거래량",
+          "url": "https://finance.yahoo.com/quote/KDP/history/"
+        },
+        {
+          "id": "high_CNC",
+          "title": "CNC 일별 고가·거래량",
+          "url": "https://finance.yahoo.com/quote/CNC/history/"
+        }
+      ],
+      "limitations": [
+        "미국 소재 시총300개 중299개 시세를 확인했습니다. 거래대금·콜·실적발표 전수 점검은 미완료입니다.",
+        "컨퍼런스콜을 직접 청취했다고 주장하지 않으며 실제 확인 자료 유형을 표시합니다."
+      ],
+      "title": "AI 투자·신용 우려로 기술주 하락, 에너지 상대 강세"
+    },
+    {
+      "market": "KR",
+      "date": "2026-10-16",
+      "status": "partial",
+      "indices": [
+        {
+          "name": "KOSPI",
+          "close": 5668.05,
+          "changePct": 2.05,
+          "sourceIds": [
+            "kbs"
+          ]
+        },
+        {
+          "name": "KOSDAQ",
+          "close": 794.78,
+          "changePct": 4.46,
+          "sourceIds": [
+            "kbs"
+          ]
+        }
+      ],
+      "summary": [
+        {
+          "title": "저가 매수와 금리 부담 완화",
+          "text": "앞선 미국장 금리 하락과 AI 인프라 우려 완화가 국내 반등에 기여했다는 마감시황 평가. 코스피는 8거래일 만에 상승했지만 장중 고점보다 밀려 마감했습니다.",
+          "sourceIds": [
+            "yuanta"
+          ]
+        },
+        {
+          "title": "바이오·반도체 강세, 항공 약세",
+          "text": "한미반도체 +9.26%, 알테오젠 +9.60%, 한화에어로스페이스 +7.77%. 대한항공은 고유가·연결 실적 부담 우려 속 -10.53%. 이는 가격 특징주이며 모두 거래량 급증 조건을 충족했다는 뜻은 아닙니다.",
+          "sourceIds": [
+            "yuanta"
+          ]
+        },
+        {
+          "title": "환율",
+          "text": "원/달러 15:30 기준 1,331.40원, 전일 같은 시각 대비 13.20원 하락. 야간 종가와 비교한 등락폭은 다릅니다.",
+          "sourceIds": [
+            "kbs"
+          ]
+        }
+      ],
+      "sectors": {
+        "methodology": "Yahoo Finance 조정종가로 직접 계산. 1일:10/15 대비, 1주:10/8(10/9 한국 휴장) 대비, 1개월:9/16 대비. ETF 대용지표이며 업종지수 자체와 차이 가능. ETF 이름은 표의 대용지표 칸에 표시. 동일가중 바스켓은 반올림된 개별 수익률 평균으로 약0.01%p 오차가 가능합니다.",
+        "note": "26개 비교 항목. ETF별 편입범위가 다르며 글로벌 ETF는 미국 이외 기업도 포함합니다. 방어주는 필수소비재·유틸리티 등으로 표시합니다. 정유/화학/화장품의 대표 3사 바스켓은 각 기간 시작 동일가중 수익률의 평균으로 직접 계산했으며 전체 업종지수가 아닙니다. 서로 겹치는 분류를 합산하면 안 됩니다.",
+        "rows": [
+          {
+            "name": "반도체",
+            "ticker": "091160.KS",
+            "day": 3.49,
+            "week": -20.5,
+            "month": -8.99,
+            "sourceIds": [
+              "price_091160.KS"
+            ],
+            "benchmark": "KODEX 반도체",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "자동차",
+            "ticker": "091180.KS",
+            "day": 3.34,
+            "week": -2.88,
+            "month": -6.33,
+            "sourceIds": [
+              "price_091180.KS"
+            ],
+            "benchmark": "KODEX 자동차",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "은행",
+            "ticker": "091170.KS",
+            "day": 0.61,
+            "week": -3.04,
+            "month": -11.27,
+            "sourceIds": [
+              "price_091170.KS"
+            ],
+            "benchmark": "KODEX 은행",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "에너지화학",
+            "ticker": "117460.KS",
+            "day": 0.45,
+            "week": -9.49,
+            "month": -2.35,
+            "sourceIds": [
+              "price_117460.KS"
+            ],
+            "benchmark": "KODEX 에너지화학",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "철강",
+            "ticker": "117680.KS",
+            "day": 2.11,
+            "week": -6.63,
+            "month": -11.57,
+            "sourceIds": [
+              "price_117680.KS"
+            ],
+            "benchmark": "KODEX 철강",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "건설",
+            "ticker": "117700.KS",
+            "day": 2.22,
+            "week": -10.13,
+            "month": -19.6,
+            "sourceIds": [
+              "price_117700.KS"
+            ],
+            "benchmark": "KODEX 건설",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "헬스케어",
+            "ticker": "266420.KS",
+            "day": 6.34,
+            "week": -1.8,
+            "month": -2.3,
+            "sourceIds": [
+              "price_266420.KS"
+            ],
+            "benchmark": "KODEX 헬스케어",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "보험",
+            "ticker": "140700.KS",
+            "day": 0.37,
+            "week": -6.04,
+            "month": -10.24,
+            "sourceIds": [
+              "price_140700.KS"
+            ],
+            "benchmark": "KODEX 보험",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "증권",
+            "ticker": "102970.KS",
+            "day": 4.61,
+            "week": -8.76,
+            "month": -13.31,
+            "sourceIds": [
+              "price_102970.KS"
+            ],
+            "benchmark": "KODEX 증권",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "IT 종합",
+            "ticker": "266370.KS",
+            "day": 2.09,
+            "week": -18.58,
+            "month": -11.99,
+            "sourceIds": [
+              "price_266370.KS"
+            ],
+            "benchmark": "KODEX IT",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "경기소비재",
+            "ticker": "266390.KS",
+            "day": 0.48,
+            "week": -5.62,
+            "month": -9.33,
+            "sourceIds": [
+              "price_266390.KS"
+            ],
+            "benchmark": "KODEX 경기소비재",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "필수소비재·방어주",
+            "ticker": "266410.KS",
+            "day": 3.18,
+            "week": -0.74,
+            "month": -0.9,
+            "sourceIds": [
+              "price_266410.KS"
+            ],
+            "benchmark": "KODEX 필수소비재",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "미디어·콘텐츠",
+            "ticker": "266360.KS",
+            "day": 3.06,
+            "week": 0.28,
+            "month": -2.99,
+            "sourceIds": [
+              "price_266360.KS"
+            ],
+            "benchmark": "KODEX K콘텐츠",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "조선",
+            "ticker": "102960.KS",
+            "day": 1.63,
+            "week": -12.52,
+            "month": -15.59,
+            "sourceIds": [
+              "price_102960.KS"
+            ],
+            "benchmark": "KODEX 조선",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "2차전지산업",
+            "ticker": "305720.KS",
+            "day": -0.71,
+            "week": -7.2,
+            "month": 0.41,
+            "sourceIds": [
+              "price_305720.KS"
+            ],
+            "benchmark": "KODEX 2차전지산업",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "화장품",
+            "ticker": "228790.KS",
+            "day": 5.92,
+            "week": -3.25,
+            "month": -7.47,
+            "sourceIds": [
+              "price_228790.KS"
+            ],
+            "benchmark": "TIGER 화장품",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "신재생에너지",
+            "ticker": "377990.KS",
+            "day": 4.0,
+            "week": -15.67,
+            "month": -12.77,
+            "sourceIds": [
+              "price_377990.KS"
+            ],
+            "benchmark": "TIGER Fn신재생에너지",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "신재생에너지액티브",
+            "ticker": "385510.KS",
+            "day": 1.93,
+            "week": -11.63,
+            "month": -4.77,
+            "sourceIds": [
+              "price_385510.KS"
+            ],
+            "benchmark": "KODEX 신재생에너지액티브",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "바이오",
+            "ticker": "244580.KS",
+            "day": 7.39,
+            "week": -5.63,
+            "month": -2.43,
+            "sourceIds": [
+              "price_244580.KS"
+            ],
+            "benchmark": "KODEX 바이오",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "반도체",
+            "ticker": "091230.KS",
+            "day": 3.77,
+            "week": -20.57,
+            "month": -9.49,
+            "sourceIds": [
+              "price_091230.KS"
+            ],
+            "benchmark": "TIGER 반도체",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "소프트웨어",
+            "ticker": "157490.KS",
+            "day": 2.65,
+            "week": -1.87,
+            "month": -6.3,
+            "sourceIds": [
+              "price_157490.KS"
+            ],
+            "benchmark": "TIGER 소프트웨어",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "여행레저",
+            "ticker": "228800.KS",
+            "day": 0.0,
+            "week": -2.88,
+            "month": -4.72,
+            "sourceIds": [
+              "price_228800.KS"
+            ],
+            "benchmark": "TIGER 여행레저",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "건설",
+            "ticker": "139220.KS",
+            "day": 3.11,
+            "week": -10.94,
+            "month": -19.57,
+            "sourceIds": [
+              "price_139220.KS"
+            ],
+            "benchmark": "TIGER 200 건설",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "운송",
+            "ticker": "140710.KS",
+            "day": -1.49,
+            "week": 0.15,
+            "month": 2.17,
+            "sourceIds": [
+              "price_140710.KS"
+            ],
+            "benchmark": "KODEX 운송",
+            "group": "세부업종 ETF"
+          },
+          {
+            "name": "정유 대표 3사",
+            "ticker": "010950.KS,096770.KS,078930.KS",
+            "benchmark": "기간 시작 동일가중 바스켓: S-Oil, SK이노베이션, GS",
+            "group": "대표 종목 바스켓(업종지수 아님)",
+            "day": -2.33,
+            "week": -8.33,
+            "month": 0.41,
+            "sourceIds": [
+              "price_010950.KS",
+              "price_096770.KS",
+              "price_078930.KS"
+            ]
+          },
+          {
+            "name": "화학 대표 3사",
+            "ticker": "051910.KS,011170.KS,011780.KS",
+            "benchmark": "기간 시작 동일가중 바스켓: LG화학, 롯데케미칼, 금호석유",
+            "group": "대표 종목 바스켓(업종지수 아님)",
+            "day": 0.21,
+            "week": -6.93,
+            "month": -9.1,
+            "sourceIds": [
+              "price_051910.KS",
+              "price_011170.KS",
+              "price_011780.KS"
+            ]
+          }
+        ]
+      },
+      "movers": {
+        "criteria": "시총 상위500 우선, 한국200·미국300 축소 가능. 등락률 절댓값≥5%, 거래량 또는 거래대금이 직전 거래일 대비≥100% 증가.",
+        "note": "StockAnalysis 한국 기업 순위에서 국내 KRX/KOSDAQ 상장200개를 선별,200개 일봉 확인. 가격±5%·전일 거래량2배 동시충족1개. 거래대금 조건은 미확보. 수치는 같은 Yahoo Finance 일봉 기준이며 다른 제공사·거래시장 집계범위와 차이가 있을 수 있습니다.",
+        "rows": [
+          {
+            "name": "대한항공",
+            "ticker": "003490.KS",
+            "changePct": -10.53,
+            "volumeCurrent": 8400986,
+            "volumePrevious": 2912696,
+            "volumeChangePct": 188.43,
+            "marketCapUSD": 7227647044.751734,
+            "reason": "선별 범위 시총 62위. 전일 대비 거래량 +188.43%. 고유가와 연결 실적 불확실성 우려(마감시황 평가).",
+            "sourceIds": [
+              "screen_003490.KS",
+              "universe_kr",
+              "yuanta"
+            ]
+          }
+        ],
+        "caption": "200/200개 확인 · 가격·거래량 동시 충족 1개"
+      },
+      "highs": {
+        "criteria": "52주 장중 최고가 갱신 여부, 사상최고가 별도 구분.",
+        "note": "같은200개 확인 범위의 장중52주 고가 갱신2개. 종가 또는 사상최고가가 아닙니다. 시가총액 순위는 데이터 제공사의 최신 스냅샷 기준입니다.",
+        "rows": [
+          {
+            "name": "KT&G",
+            "ticker": "033780.KS",
+            "kind": "장중52주 최고가",
+            "changePct": 0.79,
+            "reason": "선별 범위 시총 30위. 장중 고가 195,500원, 직전52주 고가 192,400원.",
+            "sourceIds": [
+              "high_033780.KS",
+              "universe_kr"
+            ]
+          },
+          {
+            "name": "코웨이",
+            "ticker": "021240.KS",
+            "kind": "장중52주 최고가",
+            "changePct": 2.67,
+            "reason": "선별 범위 시총 80위. 장중 고가 110,900원, 직전52주 고가 109,200원.",
+            "sourceIds": [
+              "high_021240.KS",
+              "universe_kr"
+            ]
+          }
+        ]
+      },
+      "earnings": {
+        "note": "공개 IR 자료에서 확인한 예시. 상위300 실적 발표 전수 확인과 콜 원문 확인은 미완료.",
+        "rows": [
+          {
+            "name": "대한항공",
+            "ticker": "003490",
+            "period": "2026년 3분기 별도 잠정 · 발표일 10/15, 주가 반응 10/16",
+            "summary": "분기 최대 매출에도 고유가 비용 부담과 연결 실적 불확실성이 주가에 부담. 연결 실적으로 혼동하지 마세요.",
+            "metrics": [
+              {
+                "label": "매출",
+                "value": "5조448억원, YoY +26%"
+              },
+              {
+                "label": "영업이익",
+                "value": "4,212억원, YoY +12%"
+              },
+              {
+                "label": "영업이익률",
+                "value": "8.35% (영업이익÷매출로 계산)"
+              },
+              {
+                "label": "당기순이익",
+                "value": "9,297억원, 환율 효과 등 반영"
+              }
+            ],
+            "callHighlights": [
+              "확인 자료: 회사 공식 잠정실적 발표. 컨퍼런스콜 원문/Q&A 미확인.",
+              "여객·화물 매출 증가, 순이익에는 원/달러 환율 하락 효과 등이 반영."
+            ],
+            "sourceIds": [
+              "kalir",
+              "yuanta"
+            ]
+          }
+        ]
+      },
+      "watchlist": [
+        "한국 10/16 장은 미국 10/15 장 이후, 미국 10/16 급락 이전에 종료됐습니다. 양국 같은 날짜의 방향 차이를 모순으로 해석하지 마세요."
+      ],
+      "sources": [
+        {
+          "id": "price_091160.KS",
+          "title": "Kodex Semicon 가격 이력",
+          "url": "https://finance.yahoo.com/quote/091160.KS/history/"
+        },
+        {
+          "id": "price_091180.KS",
+          "title": "Kodex Autos 가격 이력",
+          "url": "https://finance.yahoo.com/quote/091180.KS/history/"
+        },
+        {
+          "id": "price_091170.KS",
+          "title": "Kodex Banks 가격 이력",
+          "url": "https://finance.yahoo.com/quote/091170.KS/history/"
+        },
+        {
+          "id": "price_117460.KS",
+          "title": "Kodex Energy & Chemicals 가격 이력",
+          "url": "https://finance.yahoo.com/quote/117460.KS/history/"
+        },
+        {
+          "id": "price_117680.KS",
+          "title": "KODEX Steels 가격 이력",
+          "url": "https://finance.yahoo.com/quote/117680.KS/history/"
+        },
+        {
+          "id": "price_117700.KS",
+          "title": "KODEX Constructions 가격 이력",
+          "url": "https://finance.yahoo.com/quote/117700.KS/history/"
+        },
+        {
+          "id": "price_266420.KS",
+          "title": "KODEX Healthcare 가격 이력",
+          "url": "https://finance.yahoo.com/quote/266420.KS/history/"
+        },
+        {
+          "id": "price_140700.KS",
+          "title": "Samsung Investment Trust - Kodex Insurance ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/140700.KS/history/"
+        },
+        {
+          "id": "price_102970.KS",
+          "title": "Samsung Kodex Securities ETF - Equity 가격 이력",
+          "url": "https://finance.yahoo.com/quote/102970.KS/history/"
+        },
+        {
+          "id": "price_266370.KS",
+          "title": "KODEX IT Hardware 가격 이력",
+          "url": "https://finance.yahoo.com/quote/266370.KS/history/"
+        },
+        {
+          "id": "price_266390.KS",
+          "title": "KODEX Consumer Discretionary 가격 이력",
+          "url": "https://finance.yahoo.com/quote/266390.KS/history/"
+        },
+        {
+          "id": "price_266410.KS",
+          "title": "KODEX Consumer Staples 가격 이력",
+          "url": "https://finance.yahoo.com/quote/266410.KS/history/"
+        },
+        {
+          "id": "price_266360.KS",
+          "title": "KODEX IT Software 가격 이력",
+          "url": "https://finance.yahoo.com/quote/266360.KS/history/"
+        },
+        {
+          "id": "price_102960.KS",
+          "title": "Kodex Shipbuilding 가격 이력",
+          "url": "https://finance.yahoo.com/quote/102960.KS/history/"
+        },
+        {
+          "id": "price_305720.KS",
+          "title": "Samsung Kodex Secondary Battery Industry ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/305720.KS/history/"
+        },
+        {
+          "id": "kbs",
+          "title": "KBS 종가·환율",
+          "url": "https://world.kbs.co.kr/service/news_view.htm?Seq_Code=204916&id=Ec&lang=e"
+        },
+        {
+          "id": "yuanta",
+          "title": "유안타·인포스탁 10/16 17:26 마감시황",
+          "url": "https://01.myasset.com/myasset/research/rs_global/RS_0401000_M.cmd?glblGubun=KS"
+        },
+        {
+          "id": "kalhist",
+          "title": "대한항공 일별 거래량·종가",
+          "url": "https://kr.investing.com/equities/korean-air-lines-co-historical-data"
+        },
+        {
+          "id": "kalir",
+          "title": "대한항공 3Q 공식 실적(10/15 발표)",
+          "url": "https://news.koreanair.com/대한항공-2026년-3분기-잠정실적-발표/"
+        },
+        {
+          "id": "price_228790.KS",
+          "title": "Mirae Asset Tiger Cosmetics ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/228790.KS/history/"
+        },
+        {
+          "id": "price_377990.KS",
+          "title": "Mirae Asset Maps Management - Tiger Financial Renewable Energy ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/377990.KS/history/"
+        },
+        {
+          "id": "price_385510.KS",
+          "title": "Samsung Kodex K-Renewable Energy Active ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/385510.KS/history/"
+        },
+        {
+          "id": "price_244580.KS",
+          "title": "KODEX Biotech 가격 이력",
+          "url": "https://finance.yahoo.com/quote/244580.KS/history/"
+        },
+        {
+          "id": "price_091230.KS",
+          "title": "Mirae Asset TIGER Semicon ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/091230.KS/history/"
+        },
+        {
+          "id": "price_157490.KS",
+          "title": "Mirae Asset TIGER Software ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/157490.KS/history/"
+        },
+        {
+          "id": "price_228800.KS",
+          "title": "Mirae Asset Tiger Tour Leisure ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/228800.KS/history/"
+        },
+        {
+          "id": "price_139220.KS",
+          "title": "Mirae Asset TIGER Constructions & Machinery ETF 가격 이력",
+          "url": "https://finance.yahoo.com/quote/139220.KS/history/"
+        },
+        {
+          "id": "price_140710.KS",
+          "title": "Samsung Kodex Transportation ETF - Equity 가격 이력",
+          "url": "https://finance.yahoo.com/quote/140710.KS/history/"
+        },
+        {
+          "id": "price_010950.KS",
+          "title": "S-Oil Corporation 가격 이력",
+          "url": "https://finance.yahoo.com/quote/010950.KS/history/"
+        },
+        {
+          "id": "price_096770.KS",
+          "title": "SK Innovation Co., Ltd. 가격 이력",
+          "url": "https://finance.yahoo.com/quote/096770.KS/history/"
+        },
+        {
+          "id": "price_078930.KS",
+          "title": "GS Holdings Corp. 가격 이력",
+          "url": "https://finance.yahoo.com/quote/078930.KS/history/"
+        },
+        {
+          "id": "price_051910.KS",
+          "title": "LG Chem, Ltd. 가격 이력",
+          "url": "https://finance.yahoo.com/quote/051910.KS/history/"
+        },
+        {
+          "id": "price_011170.KS",
+          "title": "Lotte Chemical Corporation 가격 이력",
+          "url": "https://finance.yahoo.com/quote/011170.KS/history/"
+        },
+        {
+          "id": "price_011780.KS",
+          "title": "Kumho Petro Chemical Co.,Ltd 가격 이력",
+          "url": "https://finance.yahoo.com/quote/011780.KS/history/"
+        },
+        {
+          "id": "universe_kr",
+          "title": "StockAnalysis 한국 기업 시총순위(국내 상장 선별),10/17 조회",
+          "url": "https://stockanalysis.com/list/largest-companies-in-south-korea/?count=500"
+        },
+        {
+          "id": "screen_003490.KS",
+          "title": "003490.KS 일별 고가·거래량",
+          "url": "https://finance.yahoo.com/quote/003490.KS/history/"
+        },
+        {
+          "id": "high_033780.KS",
+          "title": "033780.KS 일별 고가",
+          "url": "https://finance.yahoo.com/quote/033780.KS/history/"
+        },
+        {
+          "id": "high_021240.KS",
+          "title": "021240.KS 일별 고가",
+          "url": "https://finance.yahoo.com/quote/021240.KS/history/"
+        }
+      ],
+      "limitations": [
+        "한국 국내상장 시총200개 일봉을 확인했습니다. 거래대금·실적발표·콜의 전수 점검은 미완료이며 수급은 기사 집계치입니다.",
+        "컨퍼런스콜을 직접 청취했다고 주장하지 않으며 실제 확인 자료 유형을 표시합니다."
+      ],
+      "title": "급락 이후 반등, 외국인 코스피·기관 코스닥 매수",
+      "flows": {
+        "unit": "억원",
+        "asOf": "2026-10-16 17:26 KST 인포스탁 집계",
+        "note": "기사 집계 시점 수치이며 KRX 최종 확정치 대조 전입니다. 기타법인·기타외국인 미표시로 아래 세 주체 합계가 0이 아닐 수 있습니다.",
+        "sourceIds": [
+          "yuanta"
+        ],
+        "rows": [
+          {
+            "market": "KOSPI",
+            "foreign": 3698,
+            "institution": -6812,
+            "individual": -5147
+          },
+          {
+            "market": "KOSDAQ",
+            "foreign": -919,
+            "institution": 1710,
+            "individual": -925
+          }
+        ]
+      }
+    }
+  ]
+}

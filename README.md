@@ -46,3 +46,40 @@ python scripts/audit_coverage.py
 ```
 
 스케줄은 기존 평일 22:00 UTC(한국시간 다음 날 07:00)를 유지합니다. 수동 실행은 실적도 다시 요청합니다. 파이프라인은 테스트 → 시세/실적 수집 → 공시 보완 → 전체 커버리지 검사 → 데이터 커밋 순서입니다. 같은 회사의 유효 차트·시총을 잃거나 같은 보고 기간의 실적 커버리지가 감소하면 게시를 중단합니다. 신규 분기의 일부 항목 누락은 점검표에 기록합니다.
+
+## 7. 마감 브리핑 아카이브
+
+상단 **기업 탐색 / 마감 브리핑** 탭으로 전환합니다. 기존 기업별 차트·실적은 그대로 유지됩니다. `#briefing/US/2026-10-16`처럼 시장·현지 거래일을 포함한 링크를 공유할 수 있습니다. 날짜 선택지는 검증 후 게시한 날짜만 표시하며, 다른 시장으로 바꾸면 같은 날짜가 있을 때 유지합니다.
+
+- 핵심 시황과 지수를 먼저 표시합니다. 업종 비교표는 기본 펼침 상태이며, **1일 / 1주 / 1개월** 열을 눌러 오름차순·내림차순으로 정렬합니다. 대분류/세부업종 그룹 안에서 정렬합니다.
+- ETF 또는 대표 종목 바스켓을 사용한 경우 각 행에 지표명과 구성 기준을 표시합니다. 순수 업종지수나 전체 업종 전수조사를 의미하지 않습니다.
+- 한국 수급, 이례적 등락, 신고가, 실적/컨퍼런스콜은 세부항목을 펼쳐 확인합니다. 빈 항목은 미확인이며 해당 사례 없음으로 표현하지 않습니다.
+- 미국/한국 시황은 현지 거래일 기준입니다. 같은 날짜의 한국장은 미국장보다 먼저 마감합니다. 실적 발표일, 시황 반응일, 콜 원문 확인 여부를 구분합니다.
+
+### 데이터 구조와 매일 추가하기
+
+`data/briefings.json`은 `schemaVersion: 1`, `updatedAt`, `entries`로 구성합니다. 각 entry의 고유 키는 `market` (`US`/`KR`) + `date` (`YYYY-MM-DD`)입니다. 필수값은 `status` (`partial`/`complete`), `title`, `sources`입니다. 확인하지 못한 숫자는 `null`로 두고, 공백·0·추정치로 대체하지 않습니다.
+
+선택 섹션:
+
+- `summary`: `{title, text, sourceIds}` 배열, `indices`: `{name, close, changePct, sourceIds}` 배열
+- `sectors`: `{methodology, note, rows}`. 각 행은 `{name, ticker, benchmark, group, day, week, month, sourceIds}`. 수익률은 백분율 숫자입니다.
+- `movers` / `highs`: `{criteria, note, rows}`. 각 행은 `{name, ticker, changePct, marketCapUSD, reason, kind, sourceIds}`. 거래량 검증값은 `volumeCurrent`, `volumePrevious`, `volumeChangePct`에 기록합니다.
+- `earnings`: `{note, rows}`. 각 행은 `{name, ticker, period, summary, metrics:[{label,value}], callHighlights:[], sourceIds}`. `callHighlights`에는 확인한 자료 유형을 명시합니다.
+- `flows`: `{unit, asOf, note, sourceIds, rows:[{market, foreign, institution, individual}]}`. 양수는 순매수입니다.
+- `watchlist` / `limitations`: 문자열 배열
+- `sources`: `{id, title, url, note}` 배열. 모든 `sourceIds`는 같은 entry의 source ID를 참조합니다.
+
+검증된 단일 entry 또는 여러 entries가 든 같은 구조의 JSON 파일을 준비한 뒤:
+
+```sh
+python scripts/manage_briefings.py --entry /path/to/verified-entry.json
+python scripts/manage_briefings.py
+python -m unittest discover -s tests -v
+node tests/test_ui.cjs
+node tests/test_briefing_ui.cjs
+```
+
+추가 도구는 같은 시장·날짜만 교체하고 과거 날짜와 다른 시장을 보존합니다. 유효하지 않은 날짜, 중복 날짜, 잘못된 출처 링크, 존재하지 않는 source ID, 무한대·NaN·숫자 문자열은 거부합니다. 검증 후 원자적으로 저장합니다. GitHub `main`에 검증된 변경을 커밋하면 기존 Pages URL에 반영됩니다.
+
+이 UI 추가만으로 뉴스·컨퍼런스콜을 자동 생성하거나 새로운 일일 스케줄을 켜지는 않습니다. 별도로 승인된 수집 작업은 검증된 entry를 위 방식으로 추가할 수 있습니다. 기존 시세 자동 수집은 브리핑 내용/날짜를 바꾸지 않습니다. 기존 Actions 테스트 단계에 브리핑 검사도 포함했습니다.
