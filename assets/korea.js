@@ -146,9 +146,15 @@
     const selected=rangeRows(rows,range,true),expected=FLOW_SESSIONS[range]||21;
     return {rows:selected,expected,start:selected[0]?.date,end:selected.at(-1)?.date,totals:['foreign','institution'].map(key=>{const values=selected.map(row=>row[key]).filter(finite),complete=selected.length===expected&&values.length===selected.length;return {key,count:values.length,complete,value:values.length?values.reduce((sum,value)=>sum+value,0):null};})};
   }
+  function flowTotalText(value) {
+    if(!finite(value))return '미확인';
+    // Round only the displayed total, symmetrically for buys/sells, and normalize -0.
+    const rounded=Math.sign(value)*Math.round(Math.abs(value))||0;
+    return (rounded>0?'+':'')+fmt(rounded);
+  }
   function flowTotalsSummary(market,rows,range) {
     const model=flowTotals(rows,range),partial=model.totals.some(total=>!total.complete);
-    return `<div class="kr-flow-totals" data-kr-flow-totals="${market}"><div class="kr-flow-total-heading"><strong>선택 기간 누적 순매수</strong><span>${model.start?esc(model.start+' → '+model.end)+' · '+model.rows.length+'개 거래일 관측':'확인된 관측 없음'}</span></div><div class="kr-flow-total-grid">${model.totals.map(total=>`<div><small>${NAMES[total.key]}${finite(total.value)&&!total.complete?' · 확인분 부분합':''}</small><strong class="${finite(total.value)?total.value>0?'up':total.value<0?'down':'':'muted'}">${finite(total.value)?(total.value>0?'+':'')+fmt(total.value,2)+'<em>억원</em>':'미확인'}</strong><span>${total.count}/${model.expected}개 관측 확인</span></div>`).join('')}</div>${partial?'<p>미확인 관측이 있어 전체 기간의 확정 합계가 아닙니다. 확인된 값만 더했으며 미확인을 0으로 채우지 않았습니다.</p>':'<p>아래 차트·일별 표와 같은 관측의 합계입니다. 양수는 순매수, 음수는 순매도입니다.</p>'}</div>`;
+    return `<div class="kr-flow-totals" data-kr-flow-totals="${market}"><div class="kr-flow-total-heading"><strong>선택 기간 누적 순매수</strong><span>${model.start?esc(model.start+' → '+model.end)+' · '+model.rows.length+'개 거래일 관측':'확인된 관측 없음'}</span></div><div class="kr-flow-total-grid">${model.totals.map(total=>`<div><small>${NAMES[total.key]}${finite(total.value)&&!total.complete?' · 확인분 부분합':''}</small><strong class="${finite(total.value)?total.value>0?'up':total.value<0?'down':'':'muted'}">${finite(total.value)?flowTotalText(total.value)+'<em>억원</em>':'미확인'}</strong><span>${total.count}/${model.expected}개 관측 확인</span></div>`).join('')}</div>${partial?'<p>미확인 관측이 있어 전체 기간의 확정 합계가 아닙니다. 확인된 값만 더했으며 미확인을 0으로 채우지 않았습니다.</p>':'<p>아래 차트·일별 표와 같은 관측의 합계입니다. 양수는 순매수, 음수는 순매도입니다.</p>'}</div>`;
   }
   function flowSection() {
     return `<section class="kr-section" aria-labelledby="kr-flows-title"><div class="kr-section-head"><div><h3 id="kr-flows-title">투자자별 일별 순매수</h3><p>외국인·기관만 표시 · 양수 순매수 / 음수 순매도 · 억원 · 최근 ${FLOW_SESSIONS[flowRange]}개 거래일 관측 (1주 5 · 1개월 21 · 3개월 63 · 6개월 126 · 1년 252)</p></div>${ranges('flow',flowRange)}</div><div class="kr-grid">${['KOSPI','KOSDAQ'].map(market=>{const section=payload.flows?.markets?.[market]||{};return `<article class="kr-card"><div class="kr-card-head"><h4>${market}</h4><span class="kr-badge">일별 · 억원</span></div><div class="kr-card-body">${flowTotalsSummary(market,section.rows,flowRange)}${chart('flow-'+market,section.rows,['foreign','institution'],flowRange,market+' 투자자별 순매수')}</div>${meta(section)}</article>`;}).join('')}</div></section>`;
