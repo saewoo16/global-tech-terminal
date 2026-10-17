@@ -100,3 +100,7 @@ node tests/test_briefing_ui.cjs
 
 추가 회귀 검사: `node tests/test_markets_ui.cjs`.
 공식 안내: [FINVIZ 임베드](https://finviz.com/blog/you-can-now-embed-finviz-maps-on-your-website-blog-or-app/), [FRED 공유/임베드](https://fred.stlouisfed.org/help/graphs/share-my-fred-graph/how-to-embedding-fred-graphs).
+
+### FINVIZ 기간별 원본 링크 (2026-10-17)
+
+시장 히트맵의 기존 1일 임베드 아래에 **1주일 맵 / 1개월 맵** 원본 열기 버튼을 추가했습니다. 사용자 지정 URL `https://finviz.com/map?st=w1`, `https://finviz.com/map?st=w4`는 각각 S&P 500 1주일/1개월 뷰임을 공식 사이트에서 확인했습니다. 새 탭으로 열며 외부 링크 보호 속성을 적용했습니다. 원본 조회는 무료이지만 공식 임베드 설정의 기간 선택은 Elite로 제한되어 있으므로 주간·월간 iframe은 추가하지 않습니다.

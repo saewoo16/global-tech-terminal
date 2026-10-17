@@ -12,3 +12,13 @@ assert(html.includes('https://finviz.com/widgets/map?t=sec&amp;st=d1&amp;theme=d
 for(const id of ['BAMLH0A0HYM2','BAMLH0A0HYM2EY']){assert(html.includes('https://fred.stlouisfed.org/series/'+id));assert(!html.includes('data-fred-series="'+id+'"'));}
 for(const match of html.matchAll(/<iframe\b[^>]*>/g)){assert(match[0].includes('title='));assert(match[0].includes('loading="lazy"'));}
 console.log('PASS macro ranges, leap days, public-domain allowlist, lazy tab load, missing-image fallback, repeat visits, original links, and official FINVIZ embed');
+
+const heatmap=html.split('<section id="heatmap-panel"')[1].split('</section>')[0];
+assert.equal((heatmap.match(/<iframe /g)||[]).length,1);
+for(const [period,label] of [['w1','1주일'],['w4','1개월']]){
+ const link=`<a class="button" href="https://finviz.com/map?st=${period}" target="_blank" rel="noopener noreferrer">${label} 맵 열기 ↗</a>`;
+ assert(heatmap.includes(link));assert(heatmap.indexOf(link)>heatmap.indexOf('</iframe>'));
+ assert(!heatmap.includes(`widgets/map?t=sec&amp;st=${period}`));
+}
+assert(heatmap.includes('새 탭으로 열립니다'));
+console.log('PASS weekly/monthly original links below unchanged daily embed, exact URLs, new-tab protections, and no restricted period iframes');

@@ -20,3 +20,5 @@
 .fred-chart{background:#fff}.fred-image{display:block;width:100%;height:auto;min-height:100px}.fred-status{margin:0;padding:7px 14px;font-size:10px;line-height:1.6;color:#485773;background:#eef2f8}.fred-error{padding:40px 20px;font-size:12px}.rate-link-card .rate-body{min-height:220px}
 
 .fred-retry{display:block;background:#eef2f8;color:#344b71;border:1px solid #c8d2e3;border-radius:5px;padding:5px 9px;font-size:10px;margin:0 12px 8px}.fred-chart{padding-bottom:1px}
+
+.heatmap-period-links{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:16px 0}.heatmap-period-links .button{min-height:42px;display:inline-flex;align-items:center}.heatmap-period-links>span{font-size:12px;line-height:1.6}@media(max-width:760px){.heatmap-period-links>span{flex-basis:100%}}
