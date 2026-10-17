@@ -65,6 +65,35 @@ def validate_entry(entry):
                 require(isinstance(row.get('name'), str) and isinstance(row.get('ticker'), str), field+' rows need name and ticker')
             else:
                 require(isinstance(row.get('market'), str), 'flows rows need market')
+            if field == 'sectors':
+                require(row.get('instrumentType') in (None, 'etf', 'basket'), 'instrumentType must be etf or basket')
+                holdings = row.get('holdings')
+                if holdings is not None:
+                    require(row.get('instrumentType') == 'etf', 'Holdings metadata requires an ETF row')
+                    require(isinstance(holdings, dict), 'holdings must be an object')
+                    require(holdings.get('status') in ('verified', 'unverified'), 'Holdings status is required')
+                    if holdings['status'] == 'verified':
+                        try:
+                            require(date.fromisoformat(holdings['asOf']).isoformat() == holdings['asOf'], 'Invalid holdings date')
+                        except (KeyError, TypeError, ValueError) as exc:
+                            raise ValueError('Holdings asOf must be a real YYYY-MM-DD date') from exc
+                        require(isinstance(holdings.get('sourceIds'), list) and holdings['sourceIds'], 'Verified holdings need sources')
+                        top = holdings.get('top5')
+                        require(isinstance(top, list) and len(top) == 5, 'Verified holdings require exactly five constituents')
+                        seen, weights = set(), []
+                        for item in top:
+                            require(isinstance(item, dict) and isinstance(item.get('name'), str) and item['name'].strip(), 'Holding name is required')
+                            require(isinstance(item.get('ticker'), str) and item['ticker'].strip() and item['ticker'] not in seen, 'Holding tickers must be unique nonempty strings')
+                            require('shortName' not in item or (isinstance(item['shortName'], str) and item['shortName'].strip()), 'Holding shortName must be nonempty text')
+                            seen.add(item['ticker'])
+                            weight = item.get('weightPct')
+                            require(valid_number(weight) and 0 < weight <= 100, 'Holding weightPct must be between 0 and 100')
+                            weights.append(weight)
+                        require(weights == sorted(weights, reverse=True), 'Holdings must be in descending weight order')
+                        require(sum(weights) <= 100.05, 'Top-five weights cannot exceed 100% beyond rounding')
+                    else:
+                        require(not holdings.get('top5'), 'Unverified holdings cannot claim top-five constituents')
+                        require(isinstance(holdings.get('note'), str) and holdings['note'].strip(), 'Unverified holdings need an explanation')
             if field == 'earnings':
                 require(isinstance(row.get('callHighlights', []), list), 'callHighlights must be an array')
                 require(all(isinstance(item, str) for item in row.get('callHighlights', [])), 'callHighlights must contain strings')

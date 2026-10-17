@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-17T07:59:46.973180+00:00",
+  "updatedAt": "2026-10-17T08:15:04.918132+00:00",
   "entries": [
     {
       "market": "US",
@@ -68,7 +68,7 @@
       ],
       "sectors": {
         "methodology": "Yahoo Finance 조정종가로 직접 계산. 1일:10/15 대비, 1주:10/9 대비, 1개월:9/16 대비. ETF 대용지표이며 업종지수 자체와 차이 가능. ETF 이름은 표의 대용지표 칸에 표시. 동일가중 바스켓은 반올림된 개별 수익률 평균으로 약0.01%p 오차가 가능합니다.",
-        "note": "40개 비교 항목. ETF별 편입범위가 다르며 글로벌 ETF는 미국 이외 기업도 포함합니다. 방어주는 필수소비재·유틸리티 등으로 표시합니다. 정유/화학/화장품의 대표 3사 바스켓은 각 기간 시작 동일가중 수익률의 평균으로 직접 계산했으며 전체 업종지수가 아닙니다. 서로 겹치는 분류를 합산하면 안 됩니다.",
+        "note": "40개 비교 항목. ETF별 편입범위가 다르며 글로벌 ETF는 미국 이외 기업도 포함합니다. 방어주는 필수소비재·유틸리티 등으로 표시합니다. 정유/화학/화장품의 대표 3사 바스켓은 각 기간 시작 동일가중 수익률의 평균으로 직접 계산했으며 전체 업종지수가 아닙니다. 서로 겹치는 분류를 합산하면 안 됩니다. ETF명 옆 괄호는 보유비중 상위 5종목이며, 실제 보유내역 기준일과 출처를 각 행에 표시합니다. 주식 종류가 다르면 별도 보유종목으로 유지합니다. 보유비중과 편입종목은 변동되며 수익률 기준일과 보유내역 기준일은 다를 수 있습니다.",
         "rows": [
           {
             "name": "기술",
@@ -80,7 +80,48 @@
               "price_XLK"
             ],
             "benchmark": "State Street Technology Select Sector SPDR ETF",
-            "group": "대분류"
+            "group": "대분류",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-15",
+              "sourceIds": [
+                "holdings-XLK"
+              ],
+              "top5": [
+                {
+                  "ticker": "NVDA",
+                  "name": "NVIDIA Corporation",
+                  "weightPct": 15.19,
+                  "shortName": "NVIDIA"
+                },
+                {
+                  "ticker": "AAPL",
+                  "name": "Apple Inc.",
+                  "weightPct": 14.43,
+                  "shortName": "Apple"
+                },
+                {
+                  "ticker": "MSFT",
+                  "name": "Microsoft Corporation",
+                  "weightPct": 11.58,
+                  "shortName": "Microsoft"
+                },
+                {
+                  "ticker": "AMD",
+                  "name": "Advanced Micro Devices, Inc.",
+                  "weightPct": 4.8,
+                  "shortName": "AMD"
+                },
+                {
+                  "ticker": "AVGO",
+                  "name": "Broadcom Inc.",
+                  "weightPct": 4.73,
+                  "shortName": "Broadcom"
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "금융",
@@ -92,7 +133,48 @@
               "price_XLF"
             ],
             "benchmark": "State Street Financial Select Sector SPDR ETF",
-            "group": "대분류"
+            "group": "대분류",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-15",
+              "sourceIds": [
+                "holdings-XLF"
+              ],
+              "top5": [
+                {
+                  "ticker": "BRK.B",
+                  "name": "Berkshire Hathaway Inc.",
+                  "weightPct": 12.57,
+                  "shortName": "Berkshire Hathaway"
+                },
+                {
+                  "ticker": "JPM",
+                  "name": "JPMorgan Chase & Co.",
+                  "weightPct": 11.45,
+                  "shortName": "JPMorgan Chase"
+                },
+                {
+                  "ticker": "V",
+                  "name": "Visa Inc.",
+                  "weightPct": 8.75,
+                  "shortName": "Visa"
+                },
+                {
+                  "ticker": "MA",
+                  "name": "Mastercard Incorporated",
+                  "weightPct": 6.4,
+                  "shortName": "Mastercard"
+                },
+                {
+                  "ticker": "BAC",
+                  "name": "Bank of America Corporation",
+                  "weightPct": 4.32,
+                  "shortName": "Bank of America"
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "헬스케어",
@@ -104,7 +186,48 @@
               "price_XLV"
             ],
             "benchmark": "State Street Health Care Select Sector SPDR ETF",
-            "group": "대분류"
+            "group": "대분류",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-15",
+              "sourceIds": [
+                "holdings-XLV"
+              ],
+              "top5": [
+                {
+                  "ticker": "LLY",
+                  "name": "Eli Lilly and Company",
+                  "weightPct": 15.57,
+                  "shortName": "Eli Lilly"
+                },
+                {
+                  "ticker": "JNJ",
+                  "name": "Johnson & Johnson",
+                  "weightPct": 9.49,
+                  "shortName": "Johnson & Johnson"
+                },
+                {
+                  "ticker": "ABBV",
+                  "name": "AbbVie Inc.",
+                  "weightPct": 7.79,
+                  "shortName": "AbbVie"
+                },
+                {
+                  "ticker": "UNH",
+                  "name": "UnitedHealth Group Incorporated",
+                  "weightPct": 5.68,
+                  "shortName": "UnitedHealth Group"
+                },
+                {
+                  "ticker": "MRK",
+                  "name": "Merck & Co., Inc.",
+                  "weightPct": 5.57,
+                  "shortName": "Merck & Co."
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "경기소비재",
@@ -116,7 +239,48 @@
               "price_XLY"
             ],
             "benchmark": "State Street Consumer Discretionary Select Sector SPDR ETF",
-            "group": "대분류"
+            "group": "대분류",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-15",
+              "sourceIds": [
+                "holdings-XLY"
+              ],
+              "top5": [
+                {
+                  "ticker": "AMZN",
+                  "name": "Amazon.com, Inc.",
+                  "weightPct": 22.97,
+                  "shortName": "Amazon.com"
+                },
+                {
+                  "ticker": "TSLA",
+                  "name": "Tesla, Inc.",
+                  "weightPct": 17.34,
+                  "shortName": "Tesla"
+                },
+                {
+                  "ticker": "HD",
+                  "name": "The Home Depot, Inc.",
+                  "weightPct": 5.22,
+                  "shortName": "Home Depot"
+                },
+                {
+                  "ticker": "TJX",
+                  "name": "The TJX Companies, Inc.",
+                  "weightPct": 4.27,
+                  "shortName": "TJX"
+                },
+                {
+                  "ticker": "MCD",
+                  "name": "McDonald's Corporation",
+                  "weightPct": 4.26,
+                  "shortName": "McDonald's"
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "필수소비재·방어주",
@@ -128,7 +292,48 @@
               "price_XLP"
             ],
             "benchmark": "State Street Consumer Staples Select Sector SPDR ETF",
-            "group": "대분류"
+            "group": "대분류",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-15",
+              "sourceIds": [
+                "holdings-XLP"
+              ],
+              "top5": [
+                {
+                  "ticker": "WMT",
+                  "name": "Walmart Inc.",
+                  "weightPct": 10.96,
+                  "shortName": "Walmart"
+                },
+                {
+                  "ticker": "COST",
+                  "name": "Costco Wholesale Corporation",
+                  "weightPct": 9.05,
+                  "shortName": "Costco Wholesale"
+                },
+                {
+                  "ticker": "PG",
+                  "name": "The Procter & Gamble Company",
+                  "weightPct": 7.62,
+                  "shortName": "Procter & Gamble"
+                },
+                {
+                  "ticker": "KO",
+                  "name": "The Coca-Cola Company",
+                  "weightPct": 7.43,
+                  "shortName": "Coca-Cola"
+                },
+                {
+                  "ticker": "PM",
+                  "name": "Philip Morris International Inc.",
+                  "weightPct": 6.5,
+                  "shortName": "Philip Morris International"
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "에너지",
@@ -140,7 +345,48 @@
               "price_XLE"
             ],
             "benchmark": "State Street Energy Select Sector SPDR ETF",
-            "group": "대분류"
+            "group": "대분류",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-15",
+              "sourceIds": [
+                "holdings-XLE"
+              ],
+              "top5": [
+                {
+                  "ticker": "XOM",
+                  "name": "ExxonMobil Holdings Corporation",
+                  "weightPct": 23.87,
+                  "shortName": "ExxonMobil"
+                },
+                {
+                  "ticker": "CVX",
+                  "name": "Chevron Corporation",
+                  "weightPct": 17.94,
+                  "shortName": "Chevron"
+                },
+                {
+                  "ticker": "COP",
+                  "name": "ConocoPhillips",
+                  "weightPct": 7.05,
+                  "shortName": "ConocoPhillips"
+                },
+                {
+                  "ticker": "MPC",
+                  "name": "Marathon Petroleum Corporation",
+                  "weightPct": 5.24,
+                  "shortName": "Marathon Petroleum"
+                },
+                {
+                  "ticker": "VLO",
+                  "name": "Valero Energy Corporation",
+                  "weightPct": 5.01,
+                  "shortName": "Valero Energy"
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "산업재",
@@ -152,7 +398,48 @@
               "price_XLI"
             ],
             "benchmark": "State Street Industrial Select Sector SPDR ETF",
-            "group": "대분류"
+            "group": "대분류",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-15",
+              "sourceIds": [
+                "holdings-XLI"
+              ],
+              "top5": [
+                {
+                  "ticker": "CAT",
+                  "name": "Caterpillar Inc.",
+                  "weightPct": 6.33,
+                  "shortName": "Caterpillar"
+                },
+                {
+                  "ticker": "GE",
+                  "name": "GE Aerospace",
+                  "weightPct": 6.06,
+                  "shortName": "GE Aerospace"
+                },
+                {
+                  "ticker": "RTX",
+                  "name": "RTX Corporation",
+                  "weightPct": 4.72,
+                  "shortName": "RTX"
+                },
+                {
+                  "ticker": "GEV",
+                  "name": "GE Vernova Inc.",
+                  "weightPct": 4.62,
+                  "shortName": "GE Vernova"
+                },
+                {
+                  "ticker": "UNP",
+                  "name": "Union Pacific Corporation",
+                  "weightPct": 3.21,
+                  "shortName": "Union Pacific"
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "소재",
@@ -164,7 +451,48 @@
               "price_XLB"
             ],
             "benchmark": "State Street Materials Select Sector SPDR ETF",
-            "group": "대분류"
+            "group": "대분류",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-15",
+              "sourceIds": [
+                "holdings-XLB"
+              ],
+              "top5": [
+                {
+                  "ticker": "LIN",
+                  "name": "Linde plc",
+                  "weightPct": 12.87,
+                  "shortName": "Linde plc"
+                },
+                {
+                  "ticker": "NEM",
+                  "name": "Newmont Corporation",
+                  "weightPct": 6.91,
+                  "shortName": "Newmont"
+                },
+                {
+                  "ticker": "FCX",
+                  "name": "Freeport-McMoRan Inc.",
+                  "weightPct": 5.69,
+                  "shortName": "Freeport-McMoRan"
+                },
+                {
+                  "ticker": "ECL",
+                  "name": "Ecolab Inc.",
+                  "weightPct": 5.09,
+                  "shortName": "Ecolab"
+                },
+                {
+                  "ticker": "SHW",
+                  "name": "The Sherwin-Williams Company",
+                  "weightPct": 5.01,
+                  "shortName": "Sherwin-Williams"
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "유틸리티·방어주",
@@ -176,7 +504,48 @@
               "price_XLU"
             ],
             "benchmark": "State Street Utilities Select Sector SPDR ETF",
-            "group": "대분류"
+            "group": "대분류",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-15",
+              "sourceIds": [
+                "holdings-XLU"
+              ],
+              "top5": [
+                {
+                  "ticker": "NEE",
+                  "name": "NextEra Energy, Inc.",
+                  "weightPct": 12.58,
+                  "shortName": "NextEra Energy"
+                },
+                {
+                  "ticker": "SO",
+                  "name": "The Southern Company",
+                  "weightPct": 7.84,
+                  "shortName": "Southern Company"
+                },
+                {
+                  "ticker": "DUK",
+                  "name": "Duke Energy Corporation",
+                  "weightPct": 7.08,
+                  "shortName": "Duke Energy"
+                },
+                {
+                  "ticker": "CEG",
+                  "name": "Constellation Energy Corporation",
+                  "weightPct": 6.92,
+                  "shortName": "Constellation Energy"
+                },
+                {
+                  "ticker": "AEP",
+                  "name": "American Electric Power Company, Inc.",
+                  "weightPct": 5.17,
+                  "shortName": "American Electric Power Company"
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "부동산",
@@ -188,7 +557,48 @@
               "price_XLRE"
             ],
             "benchmark": "State Street Real Estate Select Sector SPDR ETF",
-            "group": "대분류"
+            "group": "대분류",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-15",
+              "sourceIds": [
+                "holdings-XLRE"
+              ],
+              "top5": [
+                {
+                  "ticker": "WELL",
+                  "name": "Welltower Inc.",
+                  "weightPct": 11.61,
+                  "shortName": "Welltower"
+                },
+                {
+                  "ticker": "PLD",
+                  "name": "Prologis, Inc.",
+                  "weightPct": 8.28,
+                  "shortName": "Prologis"
+                },
+                {
+                  "ticker": "EQIX",
+                  "name": "Equinix, Inc.",
+                  "weightPct": 6.75,
+                  "shortName": "Equinix"
+                },
+                {
+                  "ticker": "AMT",
+                  "name": "American Tower Corporation",
+                  "weightPct": 5.8,
+                  "shortName": "American Tower"
+                },
+                {
+                  "ticker": "PSA",
+                  "name": "Public Storage",
+                  "weightPct": 4.63,
+                  "shortName": "Public Storage"
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "통신서비스",
@@ -200,7 +610,48 @@
               "price_XLC"
             ],
             "benchmark": "State Street Communication Services Select Sector SPDR ETF",
-            "group": "대분류"
+            "group": "대분류",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-15",
+              "sourceIds": [
+                "holdings-XLC"
+              ],
+              "top5": [
+                {
+                  "ticker": "META",
+                  "name": "Meta Platforms, Inc.",
+                  "weightPct": 23.42,
+                  "shortName": "Meta Platforms"
+                },
+                {
+                  "ticker": "GOOGL",
+                  "name": "Alphabet Inc. Class A",
+                  "weightPct": 12.29,
+                  "shortName": "Alphabet A"
+                },
+                {
+                  "ticker": "GOOG",
+                  "name": "Alphabet Inc. Class C",
+                  "weightPct": 9.83,
+                  "shortName": "Alphabet C"
+                },
+                {
+                  "ticker": "DIS",
+                  "name": "The Walt Disney Company",
+                  "weightPct": 4.92,
+                  "shortName": "Walt Disney"
+                },
+                {
+                  "ticker": "TTWO",
+                  "name": "Take-Two Interactive Software, Inc.",
+                  "weightPct": 4.6,
+                  "shortName": "Take-Two Interactive Software"
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "반도체",
@@ -212,7 +663,48 @@
               "price_SOXX"
             ],
             "benchmark": "iShares Semiconductor ETF",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-15",
+              "sourceIds": [
+                "holdings-SOXX"
+              ],
+              "top5": [
+                {
+                  "ticker": "AMD",
+                  "name": "Advanced Micro Devices, Inc.",
+                  "weightPct": 9.42,
+                  "shortName": "AMD"
+                },
+                {
+                  "ticker": "INTC",
+                  "name": "Intel Corporation",
+                  "weightPct": 8.4,
+                  "shortName": "Intel"
+                },
+                {
+                  "ticker": "NVDA",
+                  "name": "NVIDIA Corporation",
+                  "weightPct": 7.76,
+                  "shortName": "NVIDIA"
+                },
+                {
+                  "ticker": "MU",
+                  "name": "Micron Technology, Inc.",
+                  "weightPct": 7.66,
+                  "shortName": "Micron Technology"
+                },
+                {
+                  "ticker": "AVGO",
+                  "name": "Broadcom Inc.",
+                  "weightPct": 7.33,
+                  "shortName": "Broadcom"
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "소프트웨어",
@@ -224,7 +716,48 @@
               "price_IGV"
             ],
             "benchmark": "iShares Expanded Tech-Software Sector ETF",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-15",
+              "sourceIds": [
+                "holdings-IGV"
+              ],
+              "top5": [
+                {
+                  "ticker": "PLTR",
+                  "name": "Palantir Technologies Inc.",
+                  "weightPct": 9.35,
+                  "shortName": "Palantir Technologies"
+                },
+                {
+                  "ticker": "PANW",
+                  "name": "Palo Alto Networks, Inc.",
+                  "weightPct": 8.74,
+                  "shortName": "Palo Alto Networks"
+                },
+                {
+                  "ticker": "MSFT",
+                  "name": "Microsoft Corporation",
+                  "weightPct": 8.68,
+                  "shortName": "Microsoft"
+                },
+                {
+                  "ticker": "CRWD",
+                  "name": "CrowdStrike Holdings, Inc.",
+                  "weightPct": 7.95,
+                  "shortName": "CrowdStrike Holdings"
+                },
+                {
+                  "ticker": "ORCL",
+                  "name": "Oracle Corporation",
+                  "weightPct": 6.58,
+                  "shortName": "Oracle"
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "바이오",
@@ -236,7 +769,48 @@
               "price_XBI"
             ],
             "benchmark": "State Street SPDR S&P Biotech ETF",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-15",
+              "sourceIds": [
+                "holdings-XBI"
+              ],
+              "top5": [
+                {
+                  "ticker": "MRNA",
+                  "name": "Moderna, Inc.",
+                  "weightPct": 2.64,
+                  "shortName": "Moderna"
+                },
+                {
+                  "ticker": "NTRA",
+                  "name": "Natera, Inc.",
+                  "weightPct": 1.85,
+                  "shortName": "Natera"
+                },
+                {
+                  "ticker": "TWST",
+                  "name": "Twist Bioscience Corporation",
+                  "weightPct": 1.74,
+                  "shortName": "Twist Bioscience"
+                },
+                {
+                  "ticker": "HALO",
+                  "name": "Halozyme Therapeutics, Inc.",
+                  "weightPct": 1.71,
+                  "shortName": "Halozyme Therapeutics"
+                },
+                {
+                  "ticker": "ABBV",
+                  "name": "AbbVie Inc.",
+                  "weightPct": 1.71,
+                  "shortName": "AbbVie"
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "지역은행",
@@ -248,7 +822,48 @@
               "price_KRE"
             ],
             "benchmark": "State Street SPDR S&P Regional Banking ETF",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-15",
+              "sourceIds": [
+                "holdings-KRE"
+              ],
+              "top5": [
+                {
+                  "ticker": "UBSI",
+                  "name": "United Bankshares, Inc.",
+                  "weightPct": 1.16,
+                  "shortName": "United Bankshares"
+                },
+                {
+                  "ticker": "EWBC",
+                  "name": "East West Bancorp, Inc.",
+                  "weightPct": 1.15,
+                  "shortName": "East West Bancorp"
+                },
+                {
+                  "ticker": "ONB",
+                  "name": "Old National Bancorp",
+                  "weightPct": 1.15,
+                  "shortName": "Old National Bancorp"
+                },
+                {
+                  "ticker": "HWC",
+                  "name": "Hancock Whitney Corporation",
+                  "weightPct": 1.14,
+                  "shortName": "Hancock Whitney"
+                },
+                {
+                  "ticker": "FBP",
+                  "name": "First BanCorp.",
+                  "weightPct": 1.14,
+                  "shortName": "First BanCorp."
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "석유가스탐사생산",
@@ -260,7 +875,48 @@
               "price_XOP"
             ],
             "benchmark": "State Street SPDR S&P Oil & Gas Exploration & Production ETF",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-15",
+              "sourceIds": [
+                "holdings-XOP"
+              ],
+              "top5": [
+                {
+                  "ticker": "MPC",
+                  "name": "Marathon Petroleum Corporation",
+                  "weightPct": 3.16,
+                  "shortName": "Marathon Petroleum"
+                },
+                {
+                  "ticker": "DINO",
+                  "name": "HF Sinclair Corporation",
+                  "weightPct": 3.05,
+                  "shortName": "HF Sinclair"
+                },
+                {
+                  "ticker": "VLO",
+                  "name": "Valero Energy Corporation",
+                  "weightPct": 3.02,
+                  "shortName": "Valero Energy"
+                },
+                {
+                  "ticker": "PBF",
+                  "name": "PBF Energy Inc.",
+                  "weightPct": 3.01,
+                  "shortName": "PBF Energy"
+                },
+                {
+                  "ticker": "PSX",
+                  "name": "Phillips 66",
+                  "weightPct": 2.93,
+                  "shortName": "Phillips 66"
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "항공우주방산",
@@ -272,7 +928,48 @@
               "price_ITA"
             ],
             "benchmark": "iShares U.S. Aerospace & Defense ETF",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-15",
+              "sourceIds": [
+                "holdings-ITA"
+              ],
+              "top5": [
+                {
+                  "ticker": "GE",
+                  "name": "GE Aerospace",
+                  "weightPct": 20.96,
+                  "shortName": "GE Aerospace"
+                },
+                {
+                  "ticker": "RTX",
+                  "name": "RTX Corporation",
+                  "weightPct": 16.31,
+                  "shortName": "RTX"
+                },
+                {
+                  "ticker": "BA",
+                  "name": "The Boeing Company",
+                  "weightPct": 7.6,
+                  "shortName": "Boeing"
+                },
+                {
+                  "ticker": "LMT",
+                  "name": "Lockheed Martin Corporation",
+                  "weightPct": 4.82,
+                  "shortName": "Lockheed Martin"
+                },
+                {
+                  "ticker": "TDG",
+                  "name": "TransDigm Group Incorporated",
+                  "weightPct": 4.78,
+                  "shortName": "TransDigm Group"
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "주택건설",
@@ -284,7 +981,48 @@
               "price_XHB"
             ],
             "benchmark": "State Street SPDR S&P Homebuilders ETF",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-15",
+              "sourceIds": [
+                "holdings-XHB"
+              ],
+              "top5": [
+                {
+                  "ticker": "SN",
+                  "name": "SharkNinja, Inc.",
+                  "weightPct": 3.77,
+                  "shortName": "SharkNinja"
+                },
+                {
+                  "ticker": "W",
+                  "name": "Wayfair Inc.",
+                  "weightPct": 3.68,
+                  "shortName": "Wayfair"
+                },
+                {
+                  "ticker": "WSM",
+                  "name": "Williams-Sonoma, Inc.",
+                  "weightPct": 3.64,
+                  "shortName": "Williams-Sonoma"
+                },
+                {
+                  "ticker": "MAS",
+                  "name": "Masco Corporation",
+                  "weightPct": 3.44,
+                  "shortName": "Masco"
+                },
+                {
+                  "ticker": "TT",
+                  "name": "Trane Technologies plc",
+                  "weightPct": 3.39,
+                  "shortName": "Trane Technologies plc"
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "소매",
@@ -296,7 +1034,48 @@
               "price_XRT"
             ],
             "benchmark": "State Street SPDR S&P Retail ETF",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-15",
+              "sourceIds": [
+                "holdings-XRT"
+              ],
+              "top5": [
+                {
+                  "ticker": "GME",
+                  "name": "GameStop Corp.",
+                  "weightPct": 1.91,
+                  "shortName": "GameStop Corp."
+                },
+                {
+                  "ticker": "OLLI",
+                  "name": "Ollie's Bargain Outlet Holdings, Inc.",
+                  "weightPct": 1.79,
+                  "shortName": "Ollie's Bargain Outlet Holdings"
+                },
+                {
+                  "ticker": "KSS",
+                  "name": "Kohl's Corporation",
+                  "weightPct": 1.73,
+                  "shortName": "Kohl's"
+                },
+                {
+                  "ticker": "ETSY",
+                  "name": "Etsy, Inc.",
+                  "weightPct": 1.7,
+                  "shortName": "Etsy"
+                },
+                {
+                  "ticker": "VSXY",
+                  "name": "Victoria's Secret & Co.",
+                  "weightPct": 1.62,
+                  "shortName": "Victoria's Secret & Co."
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "운송",
@@ -308,7 +1087,48 @@
               "price_IYT"
             ],
             "benchmark": "iShares Transportation Average ETF",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-15",
+              "sourceIds": [
+                "holdings-IYT"
+              ],
+              "top5": [
+                {
+                  "ticker": "UNP",
+                  "name": "Union Pacific Corporation",
+                  "weightPct": 17.95,
+                  "shortName": "Union Pacific"
+                },
+                {
+                  "ticker": "UBER",
+                  "name": "Uber Technologies, Inc.",
+                  "weightPct": 15.24,
+                  "shortName": "Uber Technologies"
+                },
+                {
+                  "ticker": "CSX",
+                  "name": "CSX Corporation",
+                  "weightPct": 9.44,
+                  "shortName": "CSX"
+                },
+                {
+                  "ticker": "ODFL",
+                  "name": "Old Dominion Freight Line, Inc.",
+                  "weightPct": 4.7,
+                  "shortName": "Old Dominion Freight Line"
+                },
+                {
+                  "ticker": "NSC",
+                  "name": "Norfolk Southern Corporation",
+                  "weightPct": 4.55,
+                  "shortName": "Norfolk Southern"
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "반도체대형",
@@ -320,7 +1140,48 @@
               "price_SMH"
             ],
             "benchmark": "VanEck Semiconductor ETF",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-15",
+              "sourceIds": [
+                "holdings-SMH"
+              ],
+              "top5": [
+                {
+                  "ticker": "NVDA",
+                  "name": "NVIDIA Corporation",
+                  "weightPct": 20.06,
+                  "shortName": "NVIDIA"
+                },
+                {
+                  "ticker": "TSM",
+                  "name": "Taiwan Semiconductor Manufacturing Company Limited",
+                  "weightPct": 9.32,
+                  "shortName": "TSMC"
+                },
+                {
+                  "ticker": "AMD",
+                  "name": "Advanced Micro Devices, Inc.",
+                  "weightPct": 5.57,
+                  "shortName": "AMD"
+                },
+                {
+                  "ticker": "AVGO",
+                  "name": "Broadcom Inc.",
+                  "weightPct": 5.55,
+                  "shortName": "Broadcom"
+                },
+                {
+                  "ticker": "TXN",
+                  "name": "Texas Instruments Incorporated",
+                  "weightPct": 4.95,
+                  "shortName": "Texas Instruments"
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "금속광업",
@@ -332,7 +1193,48 @@
               "price_XME"
             ],
             "benchmark": "State Street SPDR S&P Metals & Mining ETF",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-15",
+              "sourceIds": [
+                "holdings-XME"
+              ],
+              "top5": [
+                {
+                  "ticker": "RS",
+                  "name": "Reliance, Inc.",
+                  "weightPct": 5.73,
+                  "shortName": "Reliance"
+                },
+                {
+                  "ticker": "CLF",
+                  "name": "Cleveland-Cliffs Inc.",
+                  "weightPct": 5.6,
+                  "shortName": "Cleveland-Cliffs"
+                },
+                {
+                  "ticker": "STLD",
+                  "name": "Steel Dynamics, Inc.",
+                  "weightPct": 5.57,
+                  "shortName": "Steel Dynamics"
+                },
+                {
+                  "ticker": "NUE",
+                  "name": "Nucor Corporation",
+                  "weightPct": 5.5,
+                  "shortName": "Nucor"
+                },
+                {
+                  "ticker": "CMC",
+                  "name": "Commercial Metals Company",
+                  "weightPct": 5.28,
+                  "shortName": "Commercial Metals"
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "방산동일가중",
@@ -344,7 +1246,48 @@
               "price_XAR"
             ],
             "benchmark": "State Street SPDR S&P Aerospace & Defense ETF",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-15",
+              "sourceIds": [
+                "holdings-XAR"
+              ],
+              "top5": [
+                {
+                  "ticker": "HONA",
+                  "name": "Honeywell Aerospace Inc.",
+                  "weightPct": 3.33,
+                  "shortName": "Honeywell Aerospace"
+                },
+                {
+                  "ticker": "LMT",
+                  "name": "Lockheed Martin Corporation",
+                  "weightPct": 3.15,
+                  "shortName": "Lockheed Martin"
+                },
+                {
+                  "ticker": "TDG",
+                  "name": "TransDigm Group Incorporated",
+                  "weightPct": 3.12,
+                  "shortName": "TransDigm Group"
+                },
+                {
+                  "ticker": "MOG.A",
+                  "name": "Moog Inc.",
+                  "weightPct": 3.08,
+                  "shortName": "Moog"
+                },
+                {
+                  "ticker": "HEI",
+                  "name": "HEICO Corporation",
+                  "weightPct": 3.06,
+                  "shortName": "HEICO"
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "리튬·배터리(글로벌)",
@@ -356,7 +1299,48 @@
               "price_LIT"
             ],
             "benchmark": "Global X Lithium & Battery Tech ETF",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-16",
+              "sourceIds": [
+                "holdings-LIT"
+              ],
+              "top5": [
+                {
+                  "ticker": "RIO",
+                  "name": "Rio Tinto plc ADR",
+                  "weightPct": 23.1,
+                  "shortName": "Rio Tinto ADR"
+                },
+                {
+                  "ticker": "6752 JP",
+                  "name": "Panasonic Holdings Corporation",
+                  "weightPct": 6.79,
+                  "shortName": "Panasonic"
+                },
+                {
+                  "ticker": "002371 C2",
+                  "name": "NAURA Technology Group Co., Ltd.",
+                  "weightPct": 6.52,
+                  "shortName": "NAURA Technology"
+                },
+                {
+                  "ticker": "006400 KS",
+                  "name": "Samsung SDI Co., Ltd.",
+                  "weightPct": 6.25,
+                  "shortName": "Samsung SDI"
+                },
+                {
+                  "ticker": "6762 JP",
+                  "name": "TDK Corporation",
+                  "weightPct": 5.96,
+                  "shortName": "TDK"
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "배터리(글로벌)",
@@ -368,7 +1352,48 @@
               "price_BATT"
             ],
             "benchmark": "Amplify Lithium & Battery Technology ETF",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-13",
+              "sourceIds": [
+                "holdings-BATT"
+              ],
+              "top5": [
+                {
+                  "ticker": "TSLA",
+                  "name": "Tesla, Inc.",
+                  "weightPct": 8.22,
+                  "shortName": "Tesla"
+                },
+                {
+                  "ticker": "ASX:BHP",
+                  "name": "BHP Group Limited",
+                  "weightPct": 7.03,
+                  "shortName": "BHP Group"
+                },
+                {
+                  "ticker": "FCX",
+                  "name": "Freeport-McMoRan Inc.",
+                  "weightPct": 6.58,
+                  "shortName": "Freeport-McMoRan"
+                },
+                {
+                  "ticker": "SHE:300750",
+                  "name": "Contemporary Amperex Technology Co., Limited",
+                  "weightPct": 5.38,
+                  "shortName": "CATL"
+                },
+                {
+                  "ticker": "BE",
+                  "name": "Bloom Energy Corporation",
+                  "weightPct": 5.02,
+                  "shortName": "Bloom Energy"
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "신재생에너지(글로벌)",
@@ -380,7 +1405,48 @@
               "price_ICLN"
             ],
             "benchmark": "iShares Global Clean Energy ETF",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-15",
+              "sourceIds": [
+                "holdings-ICLN"
+              ],
+              "top5": [
+                {
+                  "ticker": "600900",
+                  "name": "China Yangtze Power Co., Ltd.",
+                  "weightPct": 8.62,
+                  "shortName": "China Yangtze Power Co., Ltd."
+                },
+                {
+                  "ticker": "BE",
+                  "name": "Bloom Energy Corporation",
+                  "weightPct": 8.53,
+                  "shortName": "Bloom Energy"
+                },
+                {
+                  "ticker": "FSLR",
+                  "name": "First Solar, Inc.",
+                  "weightPct": 7.32,
+                  "shortName": "First Solar"
+                },
+                {
+                  "ticker": "NXT",
+                  "name": "Nextpower Inc.",
+                  "weightPct": 6.98,
+                  "shortName": "Nextpower"
+                },
+                {
+                  "ticker": "EQTL3",
+                  "name": "Equatorial S.A.",
+                  "weightPct": 4.44,
+                  "shortName": "Equatorial S.A."
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "태양광(글로벌)",
@@ -392,7 +1458,48 @@
               "price_TAN"
             ],
             "benchmark": "Invesco Solar ETF",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-15",
+              "sourceIds": [
+                "holdings-TAN"
+              ],
+              "top5": [
+                {
+                  "ticker": "NXT",
+                  "name": "Nextpower Inc.",
+                  "weightPct": 11.02,
+                  "shortName": "Nextpower"
+                },
+                {
+                  "ticker": "FSLR",
+                  "name": "First Solar, Inc.",
+                  "weightPct": 9.36,
+                  "shortName": "First Solar"
+                },
+                {
+                  "ticker": "TLV:ENLT",
+                  "name": "Enlight Renewable Energy Ltd",
+                  "weightPct": 8.16,
+                  "shortName": "Enlight Renewable Energy Ltd"
+                },
+                {
+                  "ticker": "ENPH",
+                  "name": "Enphase Energy, Inc.",
+                  "weightPct": 6.83,
+                  "shortName": "Enphase Energy"
+                },
+                {
+                  "ticker": "HASI",
+                  "name": "HA Sustainable Infrastructure Capital, Inc.",
+                  "weightPct": 5.02,
+                  "shortName": "HA Sustainable Infrastructure Capital"
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "풍력(글로벌)",
@@ -404,7 +1511,48 @@
               "price_FAN"
             ],
             "benchmark": "First Trust Global Wind Energy ETF",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-14",
+              "sourceIds": [
+                "holdings-FAN"
+              ],
+              "top5": [
+                {
+                  "ticker": "CPH:ORSTED",
+                  "name": "Ørsted A/S",
+                  "weightPct": 7.69,
+                  "shortName": "Ørsted"
+                },
+                {
+                  "ticker": "ETR:NDX1",
+                  "name": "Nordex SE",
+                  "weightPct": 7.69,
+                  "shortName": "Nordex"
+                },
+                {
+                  "ticker": "ELI:EDPR",
+                  "name": "EDP Renewables, S.A.",
+                  "weightPct": 7.59,
+                  "shortName": "EDP Renewables"
+                },
+                {
+                  "ticker": "CPH:VWS",
+                  "name": "Vestas Wind Systems A/S",
+                  "weightPct": 7.2,
+                  "shortName": "Vestas Wind Systems"
+                },
+                {
+                  "ticker": "HKG:0916",
+                  "name": "China Longyuan Power Group Corporation Limited",
+                  "weightPct": 5.93,
+                  "shortName": "China Longyuan Power"
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "바이오 대형",
@@ -416,7 +1564,48 @@
               "price_IBB"
             ],
             "benchmark": "iShares Biotechnology ETF",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-15",
+              "sourceIds": [
+                "holdings-IBB"
+              ],
+              "top5": [
+                {
+                  "ticker": "GILD",
+                  "name": "Gilead Sciences, Inc.",
+                  "weightPct": 8.66,
+                  "shortName": "Gilead Sciences"
+                },
+                {
+                  "ticker": "AMGN",
+                  "name": "Amgen Inc.",
+                  "weightPct": 8.12,
+                  "shortName": "Amgen"
+                },
+                {
+                  "ticker": "VRTX",
+                  "name": "Vertex Pharmaceuticals Incorporated",
+                  "weightPct": 7.52,
+                  "shortName": "Vertex Pharmaceuticals"
+                },
+                {
+                  "ticker": "MRNA",
+                  "name": "Moderna, Inc.",
+                  "weightPct": 6.15,
+                  "shortName": "Moderna"
+                },
+                {
+                  "ticker": "REGN",
+                  "name": "Regeneron Pharmaceuticals, Inc.",
+                  "weightPct": 5.62,
+                  "shortName": "Regeneron Pharmaceuticals"
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "정유(글로벌)",
@@ -428,7 +1617,48 @@
               "price_CRAK"
             ],
             "benchmark": "VanEck Oil Refiners ETF",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-15",
+              "sourceIds": [
+                "holdings-CRAK"
+              ],
+              "top5": [
+                {
+                  "ticker": "MPC",
+                  "name": "Marathon Petroleum Corporation",
+                  "weightPct": 9.47,
+                  "shortName": "Marathon Petroleum"
+                },
+                {
+                  "ticker": "VLO",
+                  "name": "Valero Energy Corporation",
+                  "weightPct": 9.05,
+                  "shortName": "Valero Energy"
+                },
+                {
+                  "ticker": "PSX",
+                  "name": "Phillips 66",
+                  "weightPct": 7.14,
+                  "shortName": "Phillips 66"
+                },
+                {
+                  "ticker": "RIGD LI",
+                  "name": "Reliance Industries Ltd GDR - 144A",
+                  "weightPct": 6.69,
+                  "shortName": "Reliance Industries GDR"
+                },
+                {
+                  "ticker": "PKN PW",
+                  "name": "Orlen S.A.",
+                  "weightPct": 5.46,
+                  "shortName": "Orlen"
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "은행",
@@ -440,7 +1670,48 @@
               "price_KBE"
             ],
             "benchmark": "State Street SPDR S&P Bank ETF",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-15",
+              "sourceIds": [
+                "holdings-KBE"
+              ],
+              "top5": [
+                {
+                  "ticker": "CBC",
+                  "name": "Central Bancompany, Inc.",
+                  "weightPct": 1.03,
+                  "shortName": "Central Bancompany"
+                },
+                {
+                  "ticker": "EQH",
+                  "name": "Equitable Holdings, Inc.",
+                  "weightPct": 1.02,
+                  "shortName": "Equitable Holdings"
+                },
+                {
+                  "ticker": "CRBG",
+                  "name": "Corebridge Financial, Inc.",
+                  "weightPct": 1.01,
+                  "shortName": "Corebridge Financial"
+                },
+                {
+                  "ticker": "OFG",
+                  "name": "OFG Bancorp",
+                  "weightPct": 0.99,
+                  "shortName": "OFG Bancorp"
+                },
+                {
+                  "ticker": "UBSI",
+                  "name": "United Bankshares, Inc.",
+                  "weightPct": 0.98,
+                  "shortName": "United Bankshares"
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "증권·브로커",
@@ -452,7 +1723,48 @@
               "price_IAI"
             ],
             "benchmark": "iShares U.S. Broker-Dealers & Securities Exchanges ETF",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-15",
+              "sourceIds": [
+                "holdings-IAI"
+              ],
+              "top5": [
+                {
+                  "ticker": "GS",
+                  "name": "The Goldman Sachs Group, Inc.",
+                  "weightPct": 17.82,
+                  "shortName": "Goldman Sachs"
+                },
+                {
+                  "ticker": "MS",
+                  "name": "Morgan Stanley",
+                  "weightPct": 14.92,
+                  "shortName": "Morgan Stanley"
+                },
+                {
+                  "ticker": "SCHW",
+                  "name": "The Charles Schwab Corporation",
+                  "weightPct": 9.06,
+                  "shortName": "Charles Schwab"
+                },
+                {
+                  "ticker": "CME",
+                  "name": "CME Group Inc.",
+                  "weightPct": 5.11,
+                  "shortName": "CME Group"
+                },
+                {
+                  "ticker": "MCO",
+                  "name": "Moody's Corporation",
+                  "weightPct": 4.94,
+                  "shortName": "Moody's"
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "헬스케어서비스",
@@ -464,7 +1776,48 @@
               "price_IHF"
             ],
             "benchmark": "iShares U.S. Healthcare Providers ETF",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-15",
+              "sourceIds": [
+                "holdings-IHF"
+              ],
+              "top5": [
+                {
+                  "ticker": "UNH",
+                  "name": "UnitedHealth Group Incorporated",
+                  "weightPct": 22.18,
+                  "shortName": "UnitedHealth Group"
+                },
+                {
+                  "ticker": "CVS",
+                  "name": "CVS Health Corporation",
+                  "weightPct": 12.21,
+                  "shortName": "CVS Health"
+                },
+                {
+                  "ticker": "ELV",
+                  "name": "Elevance Health, Inc.",
+                  "weightPct": 9.57,
+                  "shortName": "Elevance Health"
+                },
+                {
+                  "ticker": "VEEV",
+                  "name": "Veeva Systems Inc.",
+                  "weightPct": 5.15,
+                  "shortName": "Veeva Systems"
+                },
+                {
+                  "ticker": "HCA",
+                  "name": "HCA Healthcare, Inc.",
+                  "weightPct": 4.76,
+                  "shortName": "HCA Healthcare"
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "의료기기",
@@ -476,7 +1829,48 @@
               "price_IHI"
             ],
             "benchmark": "iShares U.S. Medical Devices ETF",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-15",
+              "sourceIds": [
+                "holdings-IHI"
+              ],
+              "top5": [
+                {
+                  "ticker": "ABT",
+                  "name": "Abbott Laboratories",
+                  "weightPct": 17.91,
+                  "shortName": "Abbott Laboratories"
+                },
+                {
+                  "ticker": "ISRG",
+                  "name": "Intuitive Surgical, Inc.",
+                  "weightPct": 14.95,
+                  "shortName": "Intuitive Surgical"
+                },
+                {
+                  "ticker": "MDT",
+                  "name": "Medtronic plc",
+                  "weightPct": 11.56,
+                  "shortName": "Medtronic plc"
+                },
+                {
+                  "ticker": "RMD",
+                  "name": "ResMed Inc.",
+                  "weightPct": 4.65,
+                  "shortName": "ResMed"
+                },
+                {
+                  "ticker": "BDX",
+                  "name": "Becton, Dickinson and Company",
+                  "weightPct": 4.63,
+                  "shortName": "Becton Dickinson"
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "제약",
@@ -488,7 +1882,48 @@
               "price_XPH"
             ],
             "benchmark": "State Street SPDR S&P Pharmaceuticals ETF",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-15",
+              "sourceIds": [
+                "holdings-XPH"
+              ],
+              "top5": [
+                {
+                  "ticker": "XERS",
+                  "name": "Xeris Biopharma Holdings, Inc.",
+                  "weightPct": 2.68,
+                  "shortName": "Xeris Biopharma Holdings"
+                },
+                {
+                  "ticker": "PCRX",
+                  "name": "Pacira BioSciences, Inc.",
+                  "weightPct": 2.6,
+                  "shortName": "Pacira BioSciences"
+                },
+                {
+                  "ticker": "MANE",
+                  "name": "Veradermics, Incorporated",
+                  "weightPct": 2.37,
+                  "shortName": "Veradermics"
+                },
+                {
+                  "ticker": "PRGO",
+                  "name": "Perrigo Company plc",
+                  "weightPct": 2.36,
+                  "shortName": "Perrigo Company plc"
+                },
+                {
+                  "ticker": "AMRX",
+                  "name": "Amneal Pharmaceuticals, Inc.",
+                  "weightPct": 2.29,
+                  "shortName": "Amneal Pharmaceuticals"
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "인터넷",
@@ -500,7 +1935,48 @@
               "price_FDN"
             ],
             "benchmark": "First Trust Dow Jones Internet Index Fund",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-15",
+              "sourceIds": [
+                "holdings-FDN"
+              ],
+              "top5": [
+                {
+                  "ticker": "META",
+                  "name": "Meta Platforms, Inc.",
+                  "weightPct": 11.04,
+                  "shortName": "Meta Platforms"
+                },
+                {
+                  "ticker": "AMZN",
+                  "name": "Amazon.com, Inc.",
+                  "weightPct": 9.89,
+                  "shortName": "Amazon.com"
+                },
+                {
+                  "ticker": "CSCO",
+                  "name": "Cisco Systems, Inc.",
+                  "weightPct": 8.56,
+                  "shortName": "Cisco Systems"
+                },
+                {
+                  "ticker": "NFLX",
+                  "name": "Netflix, Inc.",
+                  "weightPct": 5.89,
+                  "shortName": "Netflix"
+                },
+                {
+                  "ticker": "GOOGL",
+                  "name": "Alphabet Inc. Class A",
+                  "weightPct": 5.73,
+                  "shortName": "Alphabet A"
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "사이버보안",
@@ -512,7 +1988,48 @@
               "price_CIBR"
             ],
             "benchmark": "First Trust NASDAQ Cybersecurity ETF",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-15",
+              "sourceIds": [
+                "holdings-CIBR"
+              ],
+              "top5": [
+                {
+                  "ticker": "FTNT",
+                  "name": "Fortinet, Inc.",
+                  "weightPct": 8.21,
+                  "shortName": "Fortinet"
+                },
+                {
+                  "ticker": "CRWD",
+                  "name": "CrowdStrike Holdings, Inc.",
+                  "weightPct": 8.17,
+                  "shortName": "CrowdStrike Holdings"
+                },
+                {
+                  "ticker": "CSCO",
+                  "name": "Cisco Systems, Inc.",
+                  "weightPct": 7.67,
+                  "shortName": "Cisco Systems"
+                },
+                {
+                  "ticker": "PANW",
+                  "name": "Palo Alto Networks, Inc.",
+                  "weightPct": 7.47,
+                  "shortName": "Palo Alto Networks"
+                },
+                {
+                  "ticker": "AVGO",
+                  "name": "Broadcom Inc.",
+                  "weightPct": 7.17,
+                  "shortName": "Broadcom"
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "클라우드",
@@ -524,7 +2041,48 @@
               "price_CLOU"
             ],
             "benchmark": "Global X Cloud Computing ETF",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-16",
+              "sourceIds": [
+                "holdings-CLOU"
+              ],
+              "top5": [
+                {
+                  "ticker": "SNOW",
+                  "name": "Snowflake Inc.",
+                  "weightPct": 6.58,
+                  "shortName": "Snowflake"
+                },
+                {
+                  "ticker": "PAYC",
+                  "name": "Paycom Software, Inc.",
+                  "weightPct": 5.82,
+                  "shortName": "Paycom Software"
+                },
+                {
+                  "ticker": "DDOG",
+                  "name": "Datadog, Inc. Class A",
+                  "weightPct": 5.47,
+                  "shortName": "Datadog A"
+                },
+                {
+                  "ticker": "TWLO",
+                  "name": "Twilio Inc. Class A",
+                  "weightPct": 4.84,
+                  "shortName": "Twilio A"
+                },
+                {
+                  "ticker": "NOW",
+                  "name": "ServiceNow, Inc.",
+                  "weightPct": 4.71,
+                  "shortName": "ServiceNow"
+                }
+              ],
+              "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+            }
           },
           {
             "name": "화장품 대표 3사",
@@ -538,7 +2096,8 @@
               "price_EL",
               "price_ELF",
               "price_COTY"
-            ]
+            ],
+            "instrumentType": "basket"
           },
           {
             "name": "화학 대표 3사",
@@ -552,27 +2111,58 @@
               "price_DOW",
               "price_LYB",
               "price_DD"
-            ]
+            ],
+            "instrumentType": "basket"
           }
         ]
       },
       "movers": {
-        "criteria": "시총 상위500 우선, 한국200·미국300 축소 가능. 등락률 절댓값≥5%, 거래량 또는 거래대금이 직전 거래일 대비≥100% 증가.",
-        "note": "미국 소재 기업 시총상위300개(StockAnalysis 순위) 중299개 일봉 확인,1개 시세 미확보(otc/NFTN). 이 범위에서 가격±5%·전일 대비 거래량2배 조건 동시충족은0개입니다. 실제 거래대금 데이터는 미확보하여 거래대금 조건까지 부재라고 단정하지 않습니다. 장중·시간외·평균거래량 기준과 혼용하지 않았습니다.",
-        "rows": [],
-        "caption": "299/300개 확인 · 가격·거래량 동시 충족 0개",
-        "emptyMessage": "확인한 299개 중 가격 ±5%와 전일 대비 거래량 2배를 동시에 충족한 종목은 없습니다. 미확보 1개와 거래대금 조건은 제외됩니다."
+        "criteria": "시총 상위 500개 기업. 일간 등락률 절댓값 ≥5% AND (거래량 또는 실제 거래대금이 직전 거래일의 ≥2배).",
+        "note": "Stock Analysis 미국 소재 기업 중 미국 주요 거래소 대표 상장 500개. OTC(NFTN·ASFZ·FNMA 등)와 비미국 소재 ADR 제외. 동일 기업 복수 주식종류는 제공사 대표 상장 1개만 포함. 시총 순위는 2026-10-17 조회한 최신 USD 스냅샷이며 제공사 원시 시각은 미표시(10/16 종가 시총으로 시점고정 검증한 순위는 아님). ETF·우선주는 대표 기업 목록에서 제외되나 REIT·파트너십 지분은 포함될 수 있습니다. 500개 중 500개 10/15·10/16 일봉 확인, 0개 검증 제외. 가격±5%·거래량2배 동시충족 2개. 실제 거래대금은 전 종목 미확보하여 거래대금 경로만 충족하는 추가 후보를 배제할 수 없습니다. 종가×거래량을 거래대금으로 대신하지 않았습니다. 장중·시간외·평균거래량 기준과 혼용하지 않았습니다.",
+        "rows": [
+          {
+            "name": "Okta, Inc.",
+            "ticker": "OKTA",
+            "changePct": -10.2,
+            "volumeCurrent": 7377600,
+            "volumePrevious": 3595200,
+            "volumeChangePct": 105.21,
+            "marketCapUSD": 32736966977.0,
+            "reason": "선별 범위 시총 311위. 전일 대비 거래량 +105.21% (2.05배). 사이버보안·AI 연관주 매도세와 경쟁 우려(Investing.com 장중 보도).",
+            "sourceIds": [
+              "screen_OKTA",
+              "universe_us",
+              "mover_news_OKTA"
+            ]
+          },
+          {
+            "name": "MongoDB, Inc.",
+            "ticker": "MDB",
+            "changePct": -7.89,
+            "volumeCurrent": 2786200,
+            "volumePrevious": 1335300,
+            "volumeChangePct": 108.66,
+            "marketCapUSD": 27193404031.0,
+            "reason": "선별 범위 시총 345위. 전일 대비 거래량 +108.66% (2.09배). 기술주 전반 약세 국면(AP 마감 보도). 당일 개별 촉매는 미확인.",
+            "sourceIds": [
+              "screen_MDB",
+              "universe_us",
+              "ap"
+            ]
+          }
+        ],
+        "caption": "500/500개 일봉 확인 · 가격·거래량 동시 충족 2개"
       },
       "highs": {
-        "criteria": "52주 장중 최고가 갱신 여부, 사상최고가 별도 구분.",
-        "note": "같은299개 확인 범위에서 장중52주 최고가를 새로 넘은 종목14개. 2025/10/17~2026/10/16 일봉 고가 비교. 종가 신고가·사상 최고가를 의미하지 않습니다. ETF는 시총상위 기업과 별도 업종 지표입니다.",
+        "criteria": "시총 상위 500개 기업. 당일 장중 고가가 직전 52주 일봉 고가 최대치를 엄격히 초과(동률 제외).",
+        "note": "Stock Analysis 미국 소재 기업 중 미국 주요 거래소 대표 상장 500개. OTC(NFTN·ASFZ·FNMA 등)와 비미국 소재 ADR 제외. 동일 기업 복수 주식종류는 제공사 대표 상장 1개만 포함. 시총 순위는 2026-10-17 조회한 최신 USD 스냅샷이며 제공사 원시 시각은 미표시(10/16 종가 시총으로 시점고정 검증한 순위는 아님). ETF·우선주는 대표 기업 목록에서 제외되나 REIT·파트너십 지분은 포함될 수 있습니다. 500개 중 500개 일봉 확인, 0개 검증 제외. 2025-10-17~2026-10-16 장중 고가 비교: 52주 이력 확보 490개 중 신고가 22개. 52주 미만 이력 10개는 별도 구분(이 중 상장 후 고점 0개). 종가 신고가·사상 최고가를 뜻하지 않습니다. 아래 XLE·IHF는 기업 스크리닝 개수에 포함하지 않은 별도 업종 ETF 지표입니다.",
         "rows": [
           {
             "name": "Visa Inc.",
             "ticker": "V",
             "kind": "장중52주 최고가",
             "changePct": 0.72,
-            "reason": "미국 소재 시총순위 15위. 장중 고가 $404.74, 직전52주 고가 $403.21.",
+            "reason": "선별 범위 시총 15위. 장중 고가 $404.74, 직전 52주 고가 $403.21.",
             "sourceIds": [
               "high_V",
               "universe_us"
@@ -583,7 +2173,7 @@
             "ticker": "XOM",
             "kind": "장중52주 최고가",
             "changePct": 2.46,
-            "reason": "미국 소재 시총순위 16위. 장중 고가 $179.16, 직전52주 고가 $178.69.",
+            "reason": "선별 범위 시총 16위. 장중 고가 $179.16, 직전 52주 고가 $178.69.",
             "sourceIds": [
               "high_XOM",
               "universe_us"
@@ -594,7 +2184,7 @@
             "ticker": "MA",
             "kind": "장중52주 최고가",
             "changePct": 0.18,
-            "reason": "미국 소재 시총순위 18위. 장중 고가 $622.49, 직전52주 고가 $619.80.",
+            "reason": "선별 범위 시총 18위. 장중 고가 $622.49, 직전 52주 고가 $619.80.",
             "sourceIds": [
               "high_MA",
               "universe_us"
@@ -605,7 +2195,7 @@
             "ticker": "CVX",
             "kind": "장중52주 최고가",
             "changePct": 2.59,
-            "reason": "미국 소재 시총순위 22위. 장중 고가 $225.31, 직전52주 고가 $223.46.",
+            "reason": "선별 범위 시총 22위. 장중 고가 $225.31, 직전 52주 고가 $223.46.",
             "sourceIds": [
               "high_CVX",
               "universe_us"
@@ -616,7 +2206,7 @@
             "ticker": "COP",
             "kind": "장중52주 최고가",
             "changePct": 3.37,
-            "reason": "미국 소재 시총순위 66위. 장중 고가 $146.59, 직전52주 고가 $143.13.",
+            "reason": "선별 범위 시총 66위. 장중 고가 $146.59, 직전 52주 고가 $143.13.",
             "sourceIds": [
               "high_COP",
               "universe_us"
@@ -627,7 +2217,7 @@
             "ticker": "MCK",
             "kind": "장중52주 최고가",
             "changePct": 0.62,
-            "reason": "미국 소재 시총순위 100위. 장중 고가 $1014.99, 직전52주 고가 $1003.21.",
+            "reason": "선별 범위 시총 100위. 장중 고가 $1,014.99, 직전 52주 고가 $1,003.21.",
             "sourceIds": [
               "high_MCK",
               "universe_us"
@@ -638,7 +2228,7 @@
             "ticker": "ADP",
             "kind": "장중52주 최고가",
             "changePct": 1.14,
-            "reason": "미국 소재 시총순위 102위. 장중 고가 $290.12, 직전52주 고가 $289.80.",
+            "reason": "선별 범위 시총 102위. 장중 고가 $290.12, 직전 52주 고가 $289.80.",
             "sourceIds": [
               "high_ADP",
               "universe_us"
@@ -649,7 +2239,7 @@
             "ticker": "EOG",
             "kind": "장중52주 최고가",
             "changePct": 3.53,
-            "reason": "미국 소재 시총순위 146위. 장중 고가 $158.37, 직전52주 고가 $155.00.",
+            "reason": "선별 범위 시총 145위. 장중 고가 $158.37, 직전 52주 고가 $155.00.",
             "sourceIds": [
               "high_EOG",
               "universe_us"
@@ -660,7 +2250,7 @@
             "ticker": "MET",
             "kind": "장중52주 최고가",
             "changePct": 0.49,
-            "reason": "미국 소재 시총순위 189위. 장중 고가 $102.43, 직전52주 고가 $101.44.",
+            "reason": "선별 범위 시총 188위. 장중 고가 $102.43, 직전 52주 고가 $101.44.",
             "sourceIds": [
               "high_MET",
               "universe_us"
@@ -671,7 +2261,7 @@
             "ticker": "BDX",
             "kind": "장중52주 최고가",
             "changePct": -1.04,
-            "reason": "미국 소재 시총순위 220위. 장중 고가 $195.99, 직전52주 고가 $194.34.",
+            "reason": "선별 범위 시총 219위. 장중 고가 $195.99, 직전 52주 고가 $194.34.",
             "sourceIds": [
               "high_BDX",
               "universe_us"
@@ -682,7 +2272,7 @@
             "ticker": "VEEV",
             "kind": "장중52주 최고가",
             "changePct": -0.85,
-            "reason": "미국 소재 시총순위 225위. 장중 고가 $319.95, 직전52주 고가 $315.02.",
+            "reason": "선별 범위 시총 224위. 장중 고가 $319.95, 직전 52주 고가 $315.02.",
             "sourceIds": [
               "high_VEEV",
               "universe_us"
@@ -693,7 +2283,7 @@
             "ticker": "A",
             "kind": "장중52주 최고가",
             "changePct": -1.47,
-            "reason": "미국 소재 시총순위 233위. 장중 고가 $177.47, 직전52주 고가 $177.05.",
+            "reason": "선별 범위 시총 232위. 장중 고가 $177.47, 직전 52주 고가 $177.05.",
             "sourceIds": [
               "high_A",
               "universe_us"
@@ -704,7 +2294,7 @@
             "ticker": "KDP",
             "kind": "장중52주 최고가",
             "changePct": 1.29,
-            "reason": "미국 소재 시총순위 243위. 장중 고가 $34.71, 직전52주 고가 $34.49.",
+            "reason": "선별 범위 시총 242위. 장중 고가 $34.71, 직전 52주 고가 $34.49.",
             "sourceIds": [
               "high_KDP",
               "universe_us"
@@ -715,16 +2305,104 @@
             "ticker": "CNC",
             "kind": "장중52주 최고가",
             "changePct": -1.91,
-            "reason": "미국 소재 시총순위 300위. 장중 고가 $71.21, 직전52주 고가 $71.01.",
+            "reason": "선별 범위 시총 299위. 장중 고가 $71.21, 직전 52주 고가 $71.01.",
             "sourceIds": [
               "high_CNC",
               "universe_us"
             ]
           },
           {
+            "name": "Williams-Sonoma, Inc.",
+            "ticker": "WSM",
+            "kind": "장중52주 최고가",
+            "changePct": -0.74,
+            "reason": "선별 범위 시총 333위. 장중 고가 $255.33, 직전 52주 고가 $254.89.",
+            "sourceIds": [
+              "high_WSM",
+              "universe_us"
+            ]
+          },
+          {
+            "name": "West Pharmaceutical Services, Inc.",
+            "ticker": "WST",
+            "kind": "장중52주 최고가",
+            "changePct": 0.26,
+            "reason": "선별 범위 시총 349위. 장중 고가 $386.26, 직전 52주 고가 $386.00.",
+            "sourceIds": [
+              "high_WST",
+              "universe_us"
+            ]
+          },
+          {
+            "name": "Expeditors International of Washington, Inc.",
+            "ticker": "EXPD",
+            "kind": "장중52주 최고가",
+            "changePct": -1.37,
+            "reason": "선별 범위 시총 368위. 장중 고가 $200.66, 직전 52주 고가 $199.11.",
+            "sourceIds": [
+              "high_EXPD",
+              "universe_us"
+            ]
+          },
+          {
+            "name": "International Flavors & Fragrances Inc.",
+            "ticker": "IFF",
+            "kind": "장중52주 최고가",
+            "changePct": 0.43,
+            "reason": "선별 범위 시총 398위. 장중 고가 $91.88, 직전 52주 고가 $91.69.",
+            "sourceIds": [
+              "high_IFF",
+              "universe_us"
+            ]
+          },
+          {
+            "name": "Viatris Inc.",
+            "ticker": "VTRS",
+            "kind": "장중52주 최고가",
+            "changePct": 2.41,
+            "reason": "선별 범위 시총 421위. 장중 고가 $18.67, 직전 52주 고가 $18.43.",
+            "sourceIds": [
+              "high_VTRS",
+              "universe_us"
+            ]
+          },
+          {
+            "name": "Ovintiv Inc.",
+            "ticker": "OVV",
+            "kind": "장중52주 최고가",
+            "changePct": 4.84,
+            "reason": "선별 범위 시총 446위. 장중 고가 $69.37, 직전 52주 고가 $67.51.",
+            "sourceIds": [
+              "high_OVV",
+              "universe_us"
+            ]
+          },
+          {
+            "name": "Reinsurance Group of America, Incorporated",
+            "ticker": "RGA",
+            "kind": "장중52주 최고가",
+            "changePct": 1.03,
+            "reason": "선별 범위 시총 477위. 장중 고가 $267.46, 직전 52주 고가 $265.41.",
+            "sourceIds": [
+              "high_RGA",
+              "universe_us"
+            ]
+          },
+          {
+            "name": "APA Corporation",
+            "ticker": "APA",
+            "kind": "장중52주 최고가",
+            "changePct": 4.07,
+            "reason": "선별 범위 시총 489위. 장중 고가 $49.26, 직전 52주 고가 $48.60.",
+            "sourceIds": [
+              "high_APA",
+              "universe_us"
+            ]
+          },
+          {
             "name": "에너지 ETF",
             "ticker": "XLE",
-            "kind": "업종ETF 장중52주 최고가",
+            "kind": "업종 ETF · 장중52주 최고가",
             "changePct": 2.52,
             "reason": "당일 고가 $68.29, 직전52주 고가 $67.90. 기업 시총순위 대상과 별도.",
             "sourceIds": [
@@ -734,14 +2412,15 @@
           {
             "name": "헬스케어서비스 ETF",
             "ticker": "IHF",
-            "kind": "업종ETF 장중52주 최고가",
+            "kind": "업종 ETF · 장중52주 최고가",
             "changePct": -1.46,
             "reason": "당일 고가 $59.96, 직전52주 고가 $59.71. 기업 시총순위 대상과 별도.",
             "sourceIds": [
               "price_IHF"
             ]
           }
-        ]
+        ],
+        "caption": "기업 장중52주 신고가 22개 · 52주 전체 이력 490/500개 · 별도 ETF 2개"
       },
       "earnings": {
         "note": "공개 IR 자료에서 확인한 예시. 상위300 실적 발표 전수 확인과 콜 원문 확인은 미완료.",
@@ -1030,85 +2709,399 @@
         },
         {
           "id": "universe_us",
-          "title": "StockAnalysis 미국 소재 기업 시총순위(글로벌 순위에서 선별), 10/17 조회",
-          "url": "https://stockanalysis.com/list/biggest-companies/?count=1000"
+          "title": "미국500 시총순위 모집단 · Stock Analysis · 2026-10-17 조회",
+          "url": "https://stockanalysis.com/list/biggest-companies/?count=2000"
         },
         {
           "id": "high_V",
-          "title": "V 일별 고가·거래량",
+          "title": "Visa Inc. 일봉 고가 이력 · 2026-10-16",
           "url": "https://finance.yahoo.com/quote/V/history/"
         },
         {
           "id": "high_XOM",
-          "title": "XOM 일별 고가·거래량",
+          "title": "ExxonMobil Holdings Corporation 일봉 고가 이력 · 2026-10-16",
           "url": "https://finance.yahoo.com/quote/XOM/history/"
         },
         {
           "id": "high_MA",
-          "title": "MA 일별 고가·거래량",
+          "title": "Mastercard Incorporated 일봉 고가 이력 · 2026-10-16",
           "url": "https://finance.yahoo.com/quote/MA/history/"
         },
         {
           "id": "high_CVX",
-          "title": "CVX 일별 고가·거래량",
+          "title": "Chevron Corporation 일봉 고가 이력 · 2026-10-16",
           "url": "https://finance.yahoo.com/quote/CVX/history/"
         },
         {
           "id": "high_COP",
-          "title": "COP 일별 고가·거래량",
+          "title": "ConocoPhillips 일봉 고가 이력 · 2026-10-16",
           "url": "https://finance.yahoo.com/quote/COP/history/"
         },
         {
           "id": "high_MCK",
-          "title": "MCK 일별 고가·거래량",
+          "title": "McKesson Corporation 일봉 고가 이력 · 2026-10-16",
           "url": "https://finance.yahoo.com/quote/MCK/history/"
         },
         {
           "id": "high_ADP",
-          "title": "ADP 일별 고가·거래량",
+          "title": "Automatic Data Processing, Inc. 일봉 고가 이력 · 2026-10-16",
           "url": "https://finance.yahoo.com/quote/ADP/history/"
         },
         {
           "id": "high_EOG",
-          "title": "EOG 일별 고가·거래량",
+          "title": "EOG Resources, Inc. 일봉 고가 이력 · 2026-10-16",
           "url": "https://finance.yahoo.com/quote/EOG/history/"
         },
         {
           "id": "high_MET",
-          "title": "MET 일별 고가·거래량",
+          "title": "MetLife, Inc. 일봉 고가 이력 · 2026-10-16",
           "url": "https://finance.yahoo.com/quote/MET/history/"
         },
         {
           "id": "high_BDX",
-          "title": "BDX 일별 고가·거래량",
+          "title": "Becton, Dickinson and Company 일봉 고가 이력 · 2026-10-16",
           "url": "https://finance.yahoo.com/quote/BDX/history/"
         },
         {
           "id": "high_VEEV",
-          "title": "VEEV 일별 고가·거래량",
+          "title": "Veeva Systems Inc. 일봉 고가 이력 · 2026-10-16",
           "url": "https://finance.yahoo.com/quote/VEEV/history/"
         },
         {
           "id": "high_A",
-          "title": "A 일별 고가·거래량",
+          "title": "Agilent Technologies, Inc. 일봉 고가 이력 · 2026-10-16",
           "url": "https://finance.yahoo.com/quote/A/history/"
         },
         {
           "id": "high_KDP",
-          "title": "KDP 일별 고가·거래량",
+          "title": "Keurig Dr Pepper Inc. 일봉 고가 이력 · 2026-10-16",
           "url": "https://finance.yahoo.com/quote/KDP/history/"
         },
         {
           "id": "high_CNC",
-          "title": "CNC 일별 고가·거래량",
+          "title": "Centene Corporation 일봉 고가 이력 · 2026-10-16",
           "url": "https://finance.yahoo.com/quote/CNC/history/"
+        },
+        {
+          "id": "holdings-XLK",
+          "title": "XLK portfolio holdings (2026-10-15)",
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-technology-select-sector-spdr-etf-xlk",
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "holdings-XLF",
+          "title": "XLF portfolio holdings (2026-10-15)",
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-financial-select-sector-spdr-etf-xlf",
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "holdings-XLV",
+          "title": "XLV portfolio holdings (2026-10-15)",
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-health-care-select-sector-spdr-etf-xlv",
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "holdings-XLY",
+          "title": "XLY portfolio holdings (2026-10-15)",
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-consumer-discretionary-select-sector-spdr-etf-xly",
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "holdings-XLP",
+          "title": "XLP portfolio holdings (2026-10-15)",
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-consumer-staples-select-sector-spdr-etf-xlp",
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "holdings-XLE",
+          "title": "XLE portfolio holdings (2026-10-15)",
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-energy-select-sector-spdr-etf-xle",
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "holdings-XLI",
+          "title": "XLI portfolio holdings (2026-10-15)",
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-industrial-select-sector-spdr-etf-xli",
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "holdings-XLB",
+          "title": "XLB portfolio holdings (2026-10-15)",
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-materials-select-sector-spdr-etf-xlb",
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "holdings-XLU",
+          "title": "XLU portfolio holdings (2026-10-15)",
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-utilities-select-sector-spdr-etf-xlu",
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "holdings-XLRE",
+          "title": "XLRE portfolio holdings (2026-10-15)",
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-real-estate-select-sector-spdr-etf-xlre",
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "holdings-XLC",
+          "title": "XLC portfolio holdings (2026-10-15)",
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-communication-services-select-sector-spdr-etf-xlc",
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "holdings-SOXX",
+          "title": "SOXX portfolio holdings (2026-10-15)",
+          "url": "https://www.ishares.com/us/products/239705/ishares-semiconductor-etf/latest-holdings.csv",
+          "note": "iShares / BlackRock · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "holdings-IGV",
+          "title": "IGV portfolio holdings (2026-10-15)",
+          "url": "https://www.ishares.com/us/products/239771/ishares-expanded-tech-software-sector-etf/latest-holdings.csv",
+          "note": "iShares / BlackRock · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "holdings-XBI",
+          "title": "XBI portfolio holdings (2026-10-15)",
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-biotech-etf-xbi",
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "holdings-KRE",
+          "title": "KRE portfolio holdings (2026-10-15)",
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-regional-banking-etf-kre",
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "holdings-XOP",
+          "title": "XOP portfolio holdings (2026-10-15)",
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-oil-gas-exploration-production-etf-xop",
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "holdings-ITA",
+          "title": "ITA portfolio holdings (2026-10-15)",
+          "url": "https://www.ishares.com/us/products/239502/ishares-u-s-aerospace-defense-etf/latest-holdings.csv",
+          "note": "iShares / BlackRock · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "holdings-XHB",
+          "title": "XHB portfolio holdings (2026-10-15)",
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-homebuilders-etf-xhb",
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "holdings-XRT",
+          "title": "XRT portfolio holdings (2026-10-15)",
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-retail-etf-xrt",
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "holdings-IYT",
+          "title": "IYT portfolio holdings (2026-10-15)",
+          "url": "https://www.ishares.com/us/products/239501/ishares-u-s-transportation-etf/latest-holdings.csv",
+          "note": "iShares / BlackRock · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "holdings-SMH",
+          "title": "SMH portfolio holdings (2026-10-15)",
+          "url": "https://www.vaneck.com/us/en/investments/semiconductor-etf-smh/holdings/",
+          "note": "VanEck · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "holdings-XME",
+          "title": "XME portfolio holdings (2026-10-15)",
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-metals-mining-etf-xme",
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "holdings-XAR",
+          "title": "XAR portfolio holdings (2026-10-15)",
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-aerospace-defense-etf-xar",
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "holdings-LIT",
+          "title": "LIT portfolio holdings (2026-10-16)",
+          "url": "https://www.globalxetfs.com/funds/lit/",
+          "note": "Global X · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "holdings-BATT",
+          "title": "BATT portfolio holdings (2026-10-13)",
+          "url": "https://stockanalysis.com/etf/batt/holdings/",
+          "note": "Stock Analysis / Finnhub · 실제 보유내역 2026-10-13 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained. Issuer page did not expose a more recent complete holdings table in the available retrieval; public holdings table used."
+        },
+        {
+          "id": "holdings-ICLN",
+          "title": "ICLN portfolio holdings (2026-10-15)",
+          "url": "https://www.ishares.com/us/products/239738/ishares-global-clean-energy-etf/latest-holdings.csv",
+          "note": "iShares / BlackRock · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "holdings-TAN",
+          "title": "TAN portfolio holdings (2026-10-15)",
+          "url": "https://stockanalysis.com/etf/tan/holdings/",
+          "note": "Stock Analysis / Finnhub · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained. Issuer page did not expose a more recent complete holdings table in the available retrieval; public holdings table used."
+        },
+        {
+          "id": "holdings-FAN",
+          "title": "FAN portfolio holdings (2026-10-14)",
+          "url": "https://stockanalysis.com/etf/fan/holdings/",
+          "note": "Stock Analysis / Finnhub · 실제 보유내역 2026-10-14 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained. Issuer page did not expose a more recent complete holdings table in the available retrieval; public holdings table used."
+        },
+        {
+          "id": "holdings-IBB",
+          "title": "IBB portfolio holdings (2026-10-15)",
+          "url": "https://www.ishares.com/us/products/239699/ishares-biotechnology-etf/latest-holdings.csv",
+          "note": "iShares / BlackRock · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "holdings-CRAK",
+          "title": "CRAK portfolio holdings (2026-10-15)",
+          "url": "https://www.vaneck.com/us/en/investments/oil-refiners-etf-crak/",
+          "note": "VanEck · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "holdings-KBE",
+          "title": "KBE portfolio holdings (2026-10-15)",
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-bank-etf-kbe",
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "holdings-IAI",
+          "title": "IAI portfolio holdings (2026-10-15)",
+          "url": "https://www.ishares.com/us/products/239504/ishares-u-s-broker-dealers-securities-exchanges-etf/latest-holdings.csv",
+          "note": "iShares / BlackRock · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "holdings-IHF",
+          "title": "IHF portfolio holdings (2026-10-15)",
+          "url": "https://www.ishares.com/us/products/239510/ishares-u-s-healthcare-providers-etf/latest-holdings.csv",
+          "note": "iShares / BlackRock · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "holdings-IHI",
+          "title": "IHI portfolio holdings (2026-10-15)",
+          "url": "https://www.ishares.com/us/products/239516/ishares-u-s-medical-devices-etf/latest-holdings.csv",
+          "note": "iShares / BlackRock · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "holdings-XPH",
+          "title": "XPH portfolio holdings (2026-10-15)",
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-pharmaceuticals-etf-xph",
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "holdings-FDN",
+          "title": "FDN portfolio holdings (2026-10-15)",
+          "url": "https://www.ftportfolios.com/Retail/Etf/EtfHoldings.aspx?Ticker=FDN",
+          "note": "First Trust · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "holdings-CIBR",
+          "title": "CIBR portfolio holdings (2026-10-15)",
+          "url": "https://www.ftportfolios.com/Retail/Etf/EtfHoldings.aspx?Ticker=CIBR",
+          "note": "First Trust · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "holdings-CLOU",
+          "title": "CLOU portfolio holdings (2026-10-16)",
+          "url": "https://www.globalxetfs.com/funds/clou/",
+          "note": "Global X · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+        },
+        {
+          "id": "high_WSM",
+          "title": "Williams-Sonoma, Inc. 일봉 고가 이력 · 2026-10-16",
+          "url": "https://finance.yahoo.com/quote/WSM/history/"
+        },
+        {
+          "id": "high_WST",
+          "title": "West Pharmaceutical Services, Inc. 일봉 고가 이력 · 2026-10-16",
+          "url": "https://finance.yahoo.com/quote/WST/history/"
+        },
+        {
+          "id": "high_EXPD",
+          "title": "Expeditors International of Washington, Inc. 일봉 고가 이력 · 2026-10-16",
+          "url": "https://finance.yahoo.com/quote/EXPD/history/"
+        },
+        {
+          "id": "high_IFF",
+          "title": "International Flavors & Fragrances Inc. 일봉 고가 이력 · 2026-10-16",
+          "url": "https://finance.yahoo.com/quote/IFF/history/"
+        },
+        {
+          "id": "high_VTRS",
+          "title": "Viatris Inc. 일봉 고가 이력 · 2026-10-16",
+          "url": "https://finance.yahoo.com/quote/VTRS/history/"
+        },
+        {
+          "id": "high_OVV",
+          "title": "Ovintiv Inc. 일봉 고가 이력 · 2026-10-16",
+          "url": "https://finance.yahoo.com/quote/OVV/history/"
+        },
+        {
+          "id": "high_RGA",
+          "title": "Reinsurance Group of America, Incorporated 일봉 고가 이력 · 2026-10-16",
+          "url": "https://finance.yahoo.com/quote/RGA/history/"
+        },
+        {
+          "id": "high_APA",
+          "title": "APA Corporation 일봉 고가 이력 · 2026-10-16",
+          "url": "https://finance.yahoo.com/quote/APA/history/"
+        },
+        {
+          "id": "mover_news_OKTA",
+          "title": "Okta 하락 배경 · Investing.com · 2026-10-16 장중 보도",
+          "url": "https://www.investing.com/news/stock-market-news/why-is-okta-stock-tumbling-today-93CH-4954713"
+        },
+        {
+          "id": "screen_OKTA",
+          "title": "Okta, Inc. 가격·거래량 이력 · 2026-10-15/16",
+          "url": "https://finance.yahoo.com/quote/OKTA/history/"
+        },
+        {
+          "id": "screen_MDB",
+          "title": "MongoDB, Inc. 가격·거래량 이력 · 2026-10-15/16",
+          "url": "https://finance.yahoo.com/quote/MDB/history/"
         }
       ],
       "limitations": [
-        "미국 소재 시총300개 중299개 시세를 확인했습니다. 거래대금·콜·실적발표 전수 점검은 미완료입니다.",
+        "기업 시총 선별 범위는 미국 500개이며 500개 당일 일봉, 490개 52주 전체 이력을 확인했습니다. 실제 거래대금·실적발표·콜 전수 점검은 미완료입니다.",
         "컨퍼런스콜을 직접 청취했다고 주장하지 않으며 실제 확인 자료 유형을 표시합니다."
       ],
-      "title": "AI 투자·신용 우려로 기술주 하락, 에너지 상대 강세"
+      "title": "AI 투자·신용 우려로 기술주 하락, 에너지 상대 강세",
+      "screeningCoverage": {
+        "requested": 500,
+        "selected": 500,
+        "dailyValid": 500,
+        "missingCount": 0,
+        "missing": [],
+        "full52WeekHistory": 490,
+        "shortHistoryCount": 10,
+        "shortHistoryTickers": [
+          "SPCX",
+          "HONA",
+          "VYLR",
+          "MDLN",
+          "SUNB",
+          "CBRS",
+          "Q",
+          "ARXS",
+          "PS",
+          "FDXF"
+        ],
+        "rankingSource": "https://stockanalysis.com/list/biggest-companies/?count=2000",
+        "rankingSnapshotRetrievedAt": "2026-10-17",
+        "rankingAsOf": "provider latest snapshot; underlying timestamp not stated",
+        "priceAsOf": "2026-10-16",
+        "previousSession": "2026-10-15",
+        "highWindowStart": "2025-10-17",
+        "countryDefinition": "Stock Analysis issuer country, representative primary listing",
+        "turnoverCoverage": 0,
+        "volumeCoverage": 500,
+        "scopeNote": "Stock Analysis 미국 소재 기업 중 미국 주요 거래소 대표 상장 500개. OTC(NFTN·ASFZ·FNMA 등)와 비미국 소재 ADR 제외. 동일 기업 복수 주식종류는 제공사 대표 상장 1개만 포함. 시총 순위는 2026-10-17 조회한 최신 USD 스냅샷이며 제공사 원시 시각은 미표시(10/16 종가 시총으로 시점고정 검증한 순위는 아님). ETF·우선주는 대표 기업 목록에서 제외되나 REIT·파트너십 지분은 포함될 수 있습니다."
+      }
     },
     {
       "market": "KR",
@@ -1178,7 +3171,7 @@
       ],
       "sectors": {
         "methodology": "Yahoo Finance 조정종가로 직접 계산. 1일:10/15 대비, 1주:10/8(10/9 한국 휴장) 대비, 1개월:9/16 대비. ETF 대용지표이며 업종지수 자체와 차이 가능. ETF 이름은 표의 대용지표 칸에 표시. 동일가중 바스켓은 반올림된 개별 수익률 평균으로 약0.01%p 오차가 가능합니다. ETF 수익률은 해당 ETF의 실제 편입비중·운용 및 추종지수 방식이 반영된 가격 수익률이며 구성 종목을 임의로 동일가중하지 않았습니다. 동일가중 계산은 명시된 대표 3사 바스켓에만 적용합니다.",
-        "note": "26개 비교 항목. ETF별 편입범위가 다르며 글로벌 ETF는 미국 이외 기업도 포함합니다. 방어주는 필수소비재·유틸리티 등으로 표시합니다. 정유/화학/화장품의 대표 3사 바스켓은 각 기간 시작 동일가중 수익률의 평균으로 직접 계산했으며 전체 업종지수가 아닙니다. 서로 겹치는 분류를 합산하면 안 됩니다.",
+        "note": "26개 비교 항목. ETF별 편입범위가 다르며 글로벌 ETF는 미국 이외 기업도 포함합니다. 방어주는 필수소비재·유틸리티 등으로 표시합니다. 정유/화학/화장품의 대표 3사 바스켓은 각 기간 시작 동일가중 수익률의 평균으로 직접 계산했으며 전체 업종지수가 아닙니다. 서로 겹치는 분류를 합산하면 안 됩니다. ETF명 옆 괄호는 보유비중 상위 5종목이며, 실제 보유내역 기준일과 출처를 각 행에 표시합니다. 주식 종류가 다르면 별도 보유종목으로 유지합니다. 보유비중과 편입종목은 변동되며 수익률 기준일과 보유내역 기준일은 다를 수 있습니다.",
         "rows": [
           {
             "name": "반도체",
@@ -1190,7 +3183,42 @@
               "price_091160.KS"
             ],
             "benchmark": "KODEX 반도체",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-16",
+              "sourceIds": [
+                "holdings-091160-KS"
+              ],
+              "top5": [
+                {
+                  "name": "삼성전자",
+                  "ticker": "005930",
+                  "weightPct": 17.61
+                },
+                {
+                  "name": "SK하이닉스",
+                  "ticker": "000660",
+                  "weightPct": 15.38
+                },
+                {
+                  "name": "한미반도체",
+                  "ticker": "042700",
+                  "weightPct": 10.24
+                },
+                {
+                  "name": "주성엔지니어링",
+                  "ticker": "036930",
+                  "weightPct": 8.09
+                },
+                {
+                  "name": "이오테크닉스",
+                  "ticker": "039030",
+                  "weightPct": 4.49
+                }
+              ]
+            }
           },
           {
             "name": "자동차",
@@ -1202,7 +3230,42 @@
               "price_091180.KS"
             ],
             "benchmark": "KODEX 자동차",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-16",
+              "sourceIds": [
+                "holdings-091180-KS"
+              ],
+              "top5": [
+                {
+                  "name": "기아",
+                  "ticker": "000270",
+                  "weightPct": 19.39
+                },
+                {
+                  "name": "한국타이어앤테크놀로지",
+                  "ticker": "161390",
+                  "weightPct": 16.7
+                },
+                {
+                  "name": "현대모비스",
+                  "ticker": "012330",
+                  "weightPct": 16.7
+                },
+                {
+                  "name": "현대차",
+                  "ticker": "005380",
+                  "weightPct": 16.13
+                },
+                {
+                  "name": "한온시스템",
+                  "ticker": "018880",
+                  "weightPct": 4.87
+                }
+              ]
+            }
           },
           {
             "name": "은행",
@@ -1214,7 +3277,42 @@
               "price_091170.KS"
             ],
             "benchmark": "KODEX 은행",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-16",
+              "sourceIds": [
+                "holdings-091170-KS"
+              ],
+              "top5": [
+                {
+                  "name": "하나금융지주",
+                  "ticker": "086790",
+                  "weightPct": 20.32
+                },
+                {
+                  "name": "KB금융",
+                  "ticker": "105560",
+                  "weightPct": 19.84
+                },
+                {
+                  "name": "신한지주",
+                  "ticker": "055550",
+                  "weightPct": 19.19
+                },
+                {
+                  "name": "우리금융지주",
+                  "ticker": "316140",
+                  "weightPct": 18.93
+                },
+                {
+                  "name": "카카오뱅크",
+                  "ticker": "323410",
+                  "weightPct": 6.17
+                }
+              ]
+            }
           },
           {
             "name": "에너지화학",
@@ -1226,7 +3324,42 @@
               "price_117460.KS"
             ],
             "benchmark": "KODEX 에너지화학",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-16",
+              "sourceIds": [
+                "holdings-117460-KS"
+              ],
+              "top5": [
+                {
+                  "name": "LG화학",
+                  "ticker": "051910",
+                  "weightPct": 17.65
+                },
+                {
+                  "name": "SK이노베이션",
+                  "ticker": "096770",
+                  "weightPct": 17.61
+                },
+                {
+                  "name": "HD현대",
+                  "ticker": "267250",
+                  "weightPct": 10.85
+                },
+                {
+                  "name": "S-Oil",
+                  "ticker": "010950",
+                  "weightPct": 10.13
+                },
+                {
+                  "name": "한화솔루션",
+                  "ticker": "009830",
+                  "weightPct": 6.52
+                }
+              ]
+            }
           },
           {
             "name": "철강",
@@ -1238,7 +3371,42 @@
               "price_117680.KS"
             ],
             "benchmark": "KODEX 철강",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-16",
+              "sourceIds": [
+                "holdings-117680-KS"
+              ],
+              "top5": [
+                {
+                  "name": "현대제철",
+                  "ticker": "004020",
+                  "weightPct": 20.21
+                },
+                {
+                  "name": "POSCO홀딩스",
+                  "ticker": "005490",
+                  "weightPct": 19.14
+                },
+                {
+                  "name": "고려아연",
+                  "ticker": "010130",
+                  "weightPct": 17.83
+                },
+                {
+                  "name": "풍산",
+                  "ticker": "103140",
+                  "weightPct": 13.35
+                },
+                {
+                  "name": "삼아알미늄",
+                  "ticker": "006110",
+                  "weightPct": 7.12
+                }
+              ]
+            }
           },
           {
             "name": "건설",
@@ -1250,7 +3418,42 @@
               "price_117700.KS"
             ],
             "benchmark": "KODEX 건설",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-16",
+              "sourceIds": [
+                "holdings-117700-KS"
+              ],
+              "top5": [
+                {
+                  "name": "삼성E&A",
+                  "ticker": "028050",
+                  "weightPct": 20.77
+                },
+                {
+                  "name": "현대건설",
+                  "ticker": "000720",
+                  "weightPct": 18.28
+                },
+                {
+                  "name": "대우건설",
+                  "ticker": "047040",
+                  "weightPct": 13.61
+                },
+                {
+                  "name": "한전기술",
+                  "ticker": "052690",
+                  "weightPct": 8.81
+                },
+                {
+                  "name": "GS건설",
+                  "ticker": "006360",
+                  "weightPct": 8.51
+                }
+              ]
+            }
           },
           {
             "name": "헬스케어",
@@ -1262,7 +3465,42 @@
               "price_266420.KS"
             ],
             "benchmark": "KODEX 헬스케어",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-16",
+              "sourceIds": [
+                "holdings-266420-KS"
+              ],
+              "top5": [
+                {
+                  "name": "셀트리온",
+                  "ticker": "068270",
+                  "weightPct": 23.99
+                },
+                {
+                  "name": "삼성바이오로직스",
+                  "ticker": "207940",
+                  "weightPct": 13.09
+                },
+                {
+                  "name": "알테오젠",
+                  "ticker": "196170",
+                  "weightPct": 11.12
+                },
+                {
+                  "name": "HLB",
+                  "ticker": "028300",
+                  "weightPct": 4.7
+                },
+                {
+                  "name": "유한양행",
+                  "ticker": "000100",
+                  "weightPct": 4.15
+                }
+              ]
+            }
           },
           {
             "name": "보험",
@@ -1274,7 +3512,42 @@
               "price_140700.KS"
             ],
             "benchmark": "KODEX 보험",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-16",
+              "sourceIds": [
+                "holdings-140700-KS"
+              ],
+              "top5": [
+                {
+                  "name": "DB손해보험",
+                  "ticker": "005830",
+                  "weightPct": 24.68
+                },
+                {
+                  "name": "삼성화재",
+                  "ticker": "000810",
+                  "weightPct": 18.76
+                },
+                {
+                  "name": "현대해상",
+                  "ticker": "001450",
+                  "weightPct": 13.68
+                },
+                {
+                  "name": "삼성생명",
+                  "ticker": "032830",
+                  "weightPct": 13.61
+                },
+                {
+                  "name": "코리안리",
+                  "ticker": "003690",
+                  "weightPct": 10.7
+                }
+              ]
+            }
           },
           {
             "name": "증권",
@@ -1286,7 +3559,42 @@
               "price_102970.KS"
             ],
             "benchmark": "KODEX 증권",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-16",
+              "sourceIds": [
+                "holdings-102970-KS"
+              ],
+              "top5": [
+                {
+                  "name": "삼성증권",
+                  "ticker": "016360",
+                  "weightPct": 20.81
+                },
+                {
+                  "name": "한국금융지주",
+                  "ticker": "071050",
+                  "weightPct": 19.22
+                },
+                {
+                  "name": "NH투자증권",
+                  "ticker": "005940",
+                  "weightPct": 16.95
+                },
+                {
+                  "name": "미래에셋증권",
+                  "ticker": "006800",
+                  "weightPct": 16.51
+                },
+                {
+                  "name": "키움증권",
+                  "ticker": "039490",
+                  "weightPct": 15.47
+                }
+              ]
+            }
           },
           {
             "name": "IT 종합",
@@ -1298,7 +3606,42 @@
               "price_266370.KS"
             ],
             "benchmark": "KODEX IT",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-16",
+              "sourceIds": [
+                "holdings-266370-KS"
+              ],
+              "top5": [
+                {
+                  "name": "삼성전자",
+                  "ticker": "005930",
+                  "weightPct": 18.57
+                },
+                {
+                  "name": "삼성전기",
+                  "ticker": "009150",
+                  "weightPct": 18.54
+                },
+                {
+                  "name": "SK하이닉스",
+                  "ticker": "000660",
+                  "weightPct": 16.24
+                },
+                {
+                  "name": "삼성SDI",
+                  "ticker": "006400",
+                  "weightPct": 15.28
+                },
+                {
+                  "name": "한미반도체",
+                  "ticker": "042700",
+                  "weightPct": 3.78
+                }
+              ]
+            }
           },
           {
             "name": "경기소비재",
@@ -1310,7 +3653,42 @@
               "price_266390.KS"
             ],
             "benchmark": "KODEX 경기소비재",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-16",
+              "sourceIds": [
+                "holdings-266390-KS"
+              ],
+              "top5": [
+                {
+                  "name": "LG전자",
+                  "ticker": "066570",
+                  "weightPct": 18.85
+                },
+                {
+                  "name": "한진칼",
+                  "ticker": "180640",
+                  "weightPct": 18.0
+                },
+                {
+                  "name": "코웨이",
+                  "ticker": "021240",
+                  "weightPct": 17.47
+                },
+                {
+                  "name": "신세계",
+                  "ticker": "004170",
+                  "weightPct": 5.12
+                },
+                {
+                  "name": "영원무역",
+                  "ticker": "111770",
+                  "weightPct": 5.05
+                }
+              ]
+            }
           },
           {
             "name": "필수소비재·방어주",
@@ -1322,7 +3700,42 @@
               "price_266410.KS"
             ],
             "benchmark": "KODEX 필수소비재",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-16",
+              "sourceIds": [
+                "holdings-266410-KS"
+              ],
+              "top5": [
+                {
+                  "name": "KT&G",
+                  "ticker": "033780",
+                  "weightPct": 21.98
+                },
+                {
+                  "name": "에이피알",
+                  "ticker": "278470",
+                  "weightPct": 15.24
+                },
+                {
+                  "name": "삼양식품",
+                  "ticker": "003230",
+                  "weightPct": 9.44
+                },
+                {
+                  "name": "아모레퍼시픽",
+                  "ticker": "090430",
+                  "weightPct": 8.62
+                },
+                {
+                  "name": "LG생활건강",
+                  "ticker": "051900",
+                  "weightPct": 5.08
+                }
+              ]
+            }
           },
           {
             "name": "미디어·콘텐츠",
@@ -1334,10 +3747,45 @@
               "price_266360.KS"
             ],
             "benchmark": "KODEX K콘텐츠",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-16",
+              "sourceIds": [
+                "holdings-266360-KS"
+              ],
+              "top5": [
+                {
+                  "name": "카카오",
+                  "ticker": "035720",
+                  "weightPct": 19.6
+                },
+                {
+                  "name": "NAVER",
+                  "ticker": "035420",
+                  "weightPct": 18.32
+                },
+                {
+                  "name": "크래프톤",
+                  "ticker": "259960",
+                  "weightPct": 14.85
+                },
+                {
+                  "name": "하이브",
+                  "ticker": "352820",
+                  "weightPct": 11.31
+                },
+                {
+                  "name": "NC",
+                  "ticker": "036570",
+                  "weightPct": 9.37
+                }
+              ]
+            }
           },
           {
-            "name": "조선",
+            "name": "기계장비(조선 포함)",
             "ticker": "102960.KS",
             "day": 1.63,
             "week": -12.52,
@@ -1345,8 +3793,43 @@
             "sourceIds": [
               "price_102960.KS"
             ],
-            "benchmark": "KODEX 조선",
-            "group": "세부업종 ETF"
+            "benchmark": "KODEX 기계장비",
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-16",
+              "sourceIds": [
+                "holdings-102960-KS"
+              ],
+              "top5": [
+                {
+                  "name": "두산에너빌리티",
+                  "ticker": "034020",
+                  "weightPct": 14.63
+                },
+                {
+                  "name": "LG에너지솔루션",
+                  "ticker": "373220",
+                  "weightPct": 10.62
+                },
+                {
+                  "name": "HD한국조선해양",
+                  "ticker": "009540",
+                  "weightPct": 6.58
+                },
+                {
+                  "name": "LS ELECTRIC",
+                  "ticker": "010120",
+                  "weightPct": 6.52
+                },
+                {
+                  "name": "삼성중공업",
+                  "ticker": "010140",
+                  "weightPct": 6.46
+                }
+              ]
+            }
           },
           {
             "name": "2차전지산업",
@@ -1358,7 +3841,42 @@
               "price_305720.KS"
             ],
             "benchmark": "KODEX 2차전지산업",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-16",
+              "sourceIds": [
+                "holdings-305720-KS"
+              ],
+              "top5": [
+                {
+                  "name": "LG에너지솔루션",
+                  "ticker": "373220",
+                  "weightPct": 22.85
+                },
+                {
+                  "name": "삼성SDI",
+                  "ticker": "006400",
+                  "weightPct": 14.98
+                },
+                {
+                  "name": "POSCO홀딩스",
+                  "ticker": "005490",
+                  "weightPct": 13.24
+                },
+                {
+                  "name": "LG화학",
+                  "ticker": "051910",
+                  "weightPct": 10.36
+                },
+                {
+                  "name": "에코프로",
+                  "ticker": "086520",
+                  "weightPct": 7.09
+                }
+              ]
+            }
           },
           {
             "name": "화장품",
@@ -1370,7 +3888,42 @@
               "price_228790.KS"
             ],
             "benchmark": "TIGER 화장품",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-16",
+              "sourceIds": [
+                "holdings-228790-KS"
+              ],
+              "top5": [
+                {
+                  "name": "LG생활건강",
+                  "ticker": "051900",
+                  "weightPct": 11.07
+                },
+                {
+                  "name": "아모레퍼시픽",
+                  "ticker": "090430",
+                  "weightPct": 10.78
+                },
+                {
+                  "name": "코스맥스",
+                  "ticker": "192820",
+                  "weightPct": 10.43
+                },
+                {
+                  "name": "달바글로벌",
+                  "ticker": "483650",
+                  "weightPct": 9.73
+                },
+                {
+                  "name": "실리콘투",
+                  "ticker": "257720",
+                  "weightPct": 9.53
+                }
+              ]
+            }
           },
           {
             "name": "신재생에너지",
@@ -1382,7 +3935,42 @@
               "price_377990.KS"
             ],
             "benchmark": "TIGER Fn신재생에너지",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-16",
+              "sourceIds": [
+                "holdings-377990-KS"
+              ],
+              "top5": [
+                {
+                  "name": "한화솔루션",
+                  "ticker": "009830",
+                  "weightPct": 15.39
+                },
+                {
+                  "name": "산일전기",
+                  "ticker": "062040",
+                  "weightPct": 11.74
+                },
+                {
+                  "name": "두산에너빌리티",
+                  "ticker": "034020",
+                  "weightPct": 10.29
+                },
+                {
+                  "name": "LS ELECTRIC",
+                  "ticker": "010120",
+                  "weightPct": 9.81
+                },
+                {
+                  "name": "OCI홀딩스",
+                  "ticker": "010060",
+                  "weightPct": 9.58
+                }
+              ]
+            }
           },
           {
             "name": "신재생에너지액티브",
@@ -1394,7 +3982,42 @@
               "price_385510.KS"
             ],
             "benchmark": "KODEX 신재생에너지액티브",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-16",
+              "sourceIds": [
+                "holdings-385510-KS"
+              ],
+              "top5": [
+                {
+                  "name": "삼성SDI",
+                  "ticker": "006400",
+                  "weightPct": 7.35
+                },
+                {
+                  "name": "LG에너지솔루션",
+                  "ticker": "373220",
+                  "weightPct": 7.13
+                },
+                {
+                  "name": "씨에스윈드",
+                  "ticker": "112610",
+                  "weightPct": 6.34
+                },
+                {
+                  "name": "한화솔루션",
+                  "ticker": "009830",
+                  "weightPct": 6.25
+                },
+                {
+                  "name": "SK이터닉스",
+                  "ticker": "475150",
+                  "weightPct": 5.56
+                }
+              ]
+            }
           },
           {
             "name": "바이오",
@@ -1406,7 +4029,42 @@
               "price_244580.KS"
             ],
             "benchmark": "KODEX 바이오",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-16",
+              "sourceIds": [
+                "holdings-244580-KS"
+              ],
+              "top5": [
+                {
+                  "name": "루닛",
+                  "ticker": "328130",
+                  "weightPct": 2.91
+                },
+                {
+                  "name": "HLB",
+                  "ticker": "028300",
+                  "weightPct": 2.88
+                },
+                {
+                  "name": "동국제약",
+                  "ticker": "086450",
+                  "weightPct": 2.81
+                },
+                {
+                  "name": "프로티나",
+                  "ticker": "468530",
+                  "weightPct": 2.75
+                },
+                {
+                  "name": "큐리옥스바이오시스템즈",
+                  "ticker": "445680",
+                  "weightPct": 2.65
+                }
+              ]
+            }
           },
           {
             "name": "반도체",
@@ -1418,7 +4076,42 @@
               "price_091230.KS"
             ],
             "benchmark": "TIGER 반도체",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-16",
+              "sourceIds": [
+                "holdings-091230-KS"
+              ],
+              "top5": [
+                {
+                  "name": "삼성전자",
+                  "ticker": "005930",
+                  "weightPct": 17.65
+                },
+                {
+                  "name": "SK하이닉스",
+                  "ticker": "000660",
+                  "weightPct": 15.48
+                },
+                {
+                  "name": "한미반도체",
+                  "ticker": "042700",
+                  "weightPct": 10.26
+                },
+                {
+                  "name": "주성엔지니어링",
+                  "ticker": "036930",
+                  "weightPct": 8.1
+                },
+                {
+                  "name": "이오테크닉스",
+                  "ticker": "039030",
+                  "weightPct": 4.51
+                }
+              ]
+            }
           },
           {
             "name": "소프트웨어",
@@ -1430,7 +4123,42 @@
               "price_157490.KS"
             ],
             "benchmark": "TIGER 소프트웨어",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-16",
+              "sourceIds": [
+                "holdings-157490-KS"
+              ],
+              "top5": [
+                {
+                  "name": "네이버/NAVER",
+                  "ticker": "035420",
+                  "weightPct": 25.2
+                },
+                {
+                  "name": "카카오",
+                  "ticker": "035720",
+                  "weightPct": 19.49
+                },
+                {
+                  "name": "삼성에스디에스",
+                  "ticker": "018260",
+                  "weightPct": 14.38
+                },
+                {
+                  "name": "크래프톤",
+                  "ticker": "259960",
+                  "weightPct": 10.25
+                },
+                {
+                  "name": "엔씨소프트/NC소프트",
+                  "ticker": "036570",
+                  "weightPct": 6.87
+                }
+              ]
+            }
           },
           {
             "name": "여행레저",
@@ -1442,7 +4170,42 @@
               "price_228800.KS"
             ],
             "benchmark": "TIGER 여행레저",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-16",
+              "sourceIds": [
+                "holdings-228800-KS"
+              ],
+              "top5": [
+                {
+                  "name": "강원랜드",
+                  "ticker": "035250",
+                  "weightPct": 10.41
+                },
+                {
+                  "name": "호텔신라",
+                  "ticker": "008770",
+                  "weightPct": 9.71
+                },
+                {
+                  "name": "아시아나항공",
+                  "ticker": "020560",
+                  "weightPct": 9.51
+                },
+                {
+                  "name": "대한항공",
+                  "ticker": "003490",
+                  "weightPct": 9.48
+                },
+                {
+                  "name": "롯데관광개발",
+                  "ticker": "032350",
+                  "weightPct": 9.32
+                }
+              ]
+            }
           },
           {
             "name": "건설",
@@ -1454,7 +4217,42 @@
               "price_139220.KS"
             ],
             "benchmark": "TIGER 200 건설",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-16",
+              "sourceIds": [
+                "holdings-139220-KS"
+              ],
+              "top5": [
+                {
+                  "name": "삼성E&A",
+                  "ticker": "028050",
+                  "weightPct": 24.98
+                },
+                {
+                  "name": "삼성물산",
+                  "ticker": "028260",
+                  "weightPct": 21.86
+                },
+                {
+                  "name": "현대건설",
+                  "ticker": "000720",
+                  "weightPct": 15.4
+                },
+                {
+                  "name": "대우건설",
+                  "ticker": "047040",
+                  "weightPct": 10.93
+                },
+                {
+                  "name": "한전기술",
+                  "ticker": "052690",
+                  "weightPct": 7.07
+                }
+              ]
+            }
           },
           {
             "name": "운송",
@@ -1466,7 +4264,42 @@
               "price_140710.KS"
             ],
             "benchmark": "KODEX 운송",
-            "group": "세부업종 ETF"
+            "group": "세부업종 ETF",
+            "instrumentType": "etf",
+            "holdings": {
+              "status": "verified",
+              "asOf": "2026-10-16",
+              "sourceIds": [
+                "holdings-140710-KS"
+              ],
+              "top5": [
+                {
+                  "name": "HMM",
+                  "ticker": "011200",
+                  "weightPct": 21.03
+                },
+                {
+                  "name": "대한항공",
+                  "ticker": "003490",
+                  "weightPct": 20.36
+                },
+                {
+                  "name": "현대글로비스",
+                  "ticker": "086280",
+                  "weightPct": 16.36
+                },
+                {
+                  "name": "팬오션",
+                  "ticker": "028670",
+                  "weightPct": 14.9
+                },
+                {
+                  "name": "CJ대한통운",
+                  "ticker": "000120",
+                  "weightPct": 7.51
+                }
+              ]
+            }
           },
           {
             "name": "정유 대표 3사",
@@ -1480,7 +4313,8 @@
               "price_010950.KS",
               "price_096770.KS",
               "price_078930.KS"
-            ]
+            ],
+            "instrumentType": "basket"
           },
           {
             "name": "화학 대표 3사",
@@ -1494,13 +4328,14 @@
               "price_051910.KS",
               "price_011170.KS",
               "price_011780.KS"
-            ]
+            ],
+            "instrumentType": "basket"
           }
         ]
       },
       "movers": {
-        "criteria": "시총 상위500 우선, 한국200·미국300 축소 가능. 등락률 절댓값≥5%, 거래량 또는 거래대금이 직전 거래일 대비≥100% 증가.",
-        "note": "StockAnalysis 한국 기업 순위에서 국내 KRX/KOSDAQ 상장200개를 선별,200개 일봉 확인. 가격±5%·전일 거래량2배 동시충족1개. 거래대금 조건은 미확보. 수치는 같은 Yahoo Finance 일봉 기준이며 다른 제공사·거래시장 집계범위와 차이가 있을 수 있습니다. 모집단은 2026-10-17 조회 시총 스냅샷으로 10/16 당시 확정 순위와 다를 수 있습니다. 선별200개에 동일 티커·동일 이름 중복은 없지만 보통주 전용 및 발행사 단위 중복제거는 엄격히 검증하지 않았습니다.",
+        "criteria": "시총 상위 300개 기업. 일간 등락률 절댓값 ≥5% AND (거래량 또는 실제 거래대금이 직전 거래일의 ≥2배).",
+        "note": "Stock Analysis 한국 소재 기업 중 KRX·KOSDAQ 대표 상장 시총 상위 300개. 동일 기업 복수 주식종류는 제공사 대표 상장 1개만 포함. 시총 순위는 2026-10-17 조회한 최신 USD 스냅샷이며 제공사 원시 시각은 미표시(10/16 종가 시총으로 시점고정 검증한 순위는 아님). ETF·우선주는 대표 기업 목록에서 제외되나 REIT·파트너십 지분은 포함될 수 있습니다. 삼부토건(001470.KS)은 10/15·16 거래량이 0이고 정체 시세여서 유효 일봉 검증에서 제외했습니다. 300개 중 299개 10/15·10/16 일봉 확인, 1개 검증 제외. 가격±5%·거래량2배 동시충족 5개. 실제 거래대금은 전 종목 미확보하여 거래대금 경로만 충족하는 추가 후보를 배제할 수 없습니다. 종가×거래량을 거래대금으로 대신하지 않았습니다. 장중·시간외·평균거래량 기준과 혼용하지 않았습니다. 미검증 1개는 삼부토건(001470): 거래량 0·정체 시세로 당일 거래 확인에서 제외했습니다.",
         "rows": [
           {
             "name": "대한항공",
@@ -1510,26 +4345,82 @@
             "volumePrevious": 2912696,
             "volumeChangePct": 188.43,
             "marketCapUSD": 7227647044.751734,
-            "reason": "선별 범위 시총 62위. 전일 대비 거래량 +188.43%. 고유가와 연결 실적 불확실성 우려(마감시황 평가).",
+            "reason": "선별 범위 시총 62위. 전일 대비 거래량 +188.43% (2.88배). 고유가와 연결 실적 불확실성 우려(기존 마감시황 평가).",
             "sourceIds": [
               "screen_003490.KS",
               "universe_kr",
               "yuanta"
             ]
+          },
+          {
+            "name": "LS에코에너지",
+            "ticker": "229640.KS",
+            "changePct": -6.33,
+            "volumeCurrent": 845200,
+            "volumePrevious": 317725,
+            "volumeChangePct": 166.02,
+            "marketCapUSD": 1413241776.556002,
+            "reason": "선별 범위 시총 212위. 전일 대비 거래량 +166.02% (2.66배). 가격·거래량 조건 통과; 개별 촉매는 미확인.",
+            "sourceIds": [
+              "screen_229640.KS",
+              "universe_kr"
+            ]
+          },
+          {
+            "name": "아시아나항공",
+            "ticker": "020560.KS",
+            "changePct": -9.3,
+            "volumeCurrent": 289882,
+            "volumePrevious": 61041,
+            "volumeChangePct": 374.9,
+            "marketCapUSD": 1089403870.2099009,
+            "reason": "선별 범위 시총 246위. 전일 대비 거래량 +374.90% (4.75배). 가격·거래량 조건 통과; 개별 촉매는 미확인.",
+            "sourceIds": [
+              "screen_020560.KS",
+              "universe_kr"
+            ]
+          },
+          {
+            "name": "오스코텍",
+            "ticker": "039200.KQ",
+            "changePct": 5.61,
+            "volumeCurrent": 209051,
+            "volumePrevious": 97900,
+            "volumeChangePct": 113.54,
+            "marketCapUSD": 1043375922.2388111,
+            "reason": "선별 범위 시총 252위. 전일 대비 거래량 +113.54% (2.14배). 가격·거래량 조건 통과; 개별 촉매는 미확인.",
+            "sourceIds": [
+              "screen_039200.KQ",
+              "universe_kr"
+            ]
+          },
+          {
+            "name": "리브스메드",
+            "ticker": "491000.KQ",
+            "changePct": 28.24,
+            "volumeCurrent": 1131579,
+            "volumePrevious": 244912,
+            "volumeChangePct": 362.03,
+            "marketCapUSD": 813308650.5923429,
+            "reason": "선별 범위 시총 288위. 전일 대비 거래량 +362.03% (4.62배). 가격·거래량 조건 통과; 개별 촉매는 미확인.",
+            "sourceIds": [
+              "screen_491000.KQ",
+              "universe_kr"
+            ]
           }
         ],
-        "caption": "200/200개 확인 · 가격·거래량 동시 충족 1개"
+        "caption": "299/300개 일봉 확인 · 가격·거래량 동시 충족 5개"
       },
       "highs": {
-        "criteria": "52주 장중 최고가 갱신 여부, 사상최고가 별도 구분.",
-        "note": "같은200개 확인 범위의 장중52주 고가 갱신2개. 종가 또는 사상최고가가 아닙니다. 시가총액 순위는 데이터 제공사의 최신 스냅샷 기준입니다. 국내 주가·고가는 원(KRW), 표시 시가총액은 미국달러(USD) 기준입니다.",
+        "criteria": "시총 상위 300개 기업. 당일 장중 고가가 직전 52주 일봉 고가 최대치를 엄격히 초과(동률 제외).",
+        "note": "Stock Analysis 한국 소재 기업 중 KRX·KOSDAQ 대표 상장 시총 상위 300개. 동일 기업 복수 주식종류는 제공사 대표 상장 1개만 포함. 시총 순위는 2026-10-17 조회한 최신 USD 스냅샷이며 제공사 원시 시각은 미표시(10/16 종가 시총으로 시점고정 검증한 순위는 아님). ETF·우선주는 대표 기업 목록에서 제외되나 REIT·파트너십 지분은 포함될 수 있습니다. 삼부토건(001470.KS)은 10/15·16 거래량이 0이고 정체 시세여서 유효 일봉 검증에서 제외했습니다. 300개 중 299개 일봉 확인, 1개 검증 제외. 2025-10-17~2026-10-16 장중 고가 비교: 52주 이력 확보 294개 중 신고가 2개. 52주 미만 이력 5개는 별도 구분(이 중 상장 후 고점 0개). 종가 신고가·사상 최고가를 뜻하지 않습니다. 미검증 1개는 삼부토건(001470): 거래량 0·정체 시세. 국내 고가·주가는 원(KRW), 시가총액은 USD 기준입니다.",
         "rows": [
           {
             "name": "KT&G",
             "ticker": "033780.KS",
             "kind": "장중52주 최고가",
             "changePct": 0.79,
-            "reason": "선별 범위 시총 30위. 장중 고가 195,500원, 직전52주 고가 192,400원.",
+            "reason": "선별 범위 시총 30위. 장중 고가 195,500원, 직전 52주 고가 192,400원.",
             "sourceIds": [
               "high_033780.KS",
               "universe_kr"
@@ -1540,13 +4431,14 @@
             "ticker": "021240.KS",
             "kind": "장중52주 최고가",
             "changePct": 2.67,
-            "reason": "선별 범위 시총 80위. 장중 고가 110,900원, 직전52주 고가 109,200원.",
+            "reason": "선별 범위 시총 80위. 장중 고가 110,900원, 직전 52주 고가 109,200원.",
             "sourceIds": [
               "high_021240.KS",
               "universe_kr"
             ]
           }
-        ]
+        ],
+        "caption": "기업 장중52주 신고가 2개 · 52주 전체 이력 294/300개"
       },
       "earnings": {
         "note": "공개 IR 자료에서 확인한 예시. 상위300 실적 발표 전수 확인과 콜 원문 확인은 미완료.",
@@ -1660,7 +4552,7 @@
         },
         {
           "id": "price_102960.KS",
-          "title": "Kodex Shipbuilding 가격 이력",
+          "title": "KODEX 기계장비 (102960) 가격 이력",
           "url": "https://finance.yahoo.com/quote/102960.KS/history/"
         },
         {
@@ -1765,23 +4657,22 @@
         },
         {
           "id": "universe_kr",
-          "title": "StockAnalysis 한국 기업 시총순위(국내 상장 선별),10/17 조회",
-          "url": "https://stockanalysis.com/list/largest-companies-in-south-korea/?count=500",
-          "note": "2026-10-17 조회 시총 스냅샷. 10/16 마감 시점의 확정 순위를 뜻하지 않습니다. 국내 상장 선별200개 티커·이름 중복은 없으나 보통주 전용·발행사 단위 중복제거는 엄격히 검증하지 않았습니다."
+          "title": "한국300 시총순위 모집단 · Stock Analysis · 2026-10-17 조회",
+          "url": "https://stockanalysis.com/list/largest-companies-in-south-korea/?count=500"
         },
         {
           "id": "screen_003490.KS",
-          "title": "003490.KS 일별 고가·거래량",
+          "title": "Korean Airlines Co.,Ltd. 가격·거래량 이력 · 2026-10-15/16",
           "url": "https://finance.yahoo.com/quote/003490.KS/history/"
         },
         {
           "id": "high_033780.KS",
-          "title": "033780.KS 일별 고가",
+          "title": "KT&G Corporation 일봉 고가 이력 · 2026-10-16",
           "url": "https://finance.yahoo.com/quote/033780.KS/history/"
         },
         {
           "id": "high_021240.KS",
-          "title": "021240.KS 일별 고가",
+          "title": "COWAY Co., Ltd. 일봉 고가 이력 · 2026-10-16",
           "url": "https://finance.yahoo.com/quote/021240.KS/history/"
         },
         {
@@ -1801,13 +4692,177 @@
           "title": "연합인포맥스 한화시스템·한화오션 지분 PRS 보도 (10/16 20:30 KST 수정)",
           "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4439711",
           "note": "10/16 한국장 마감 후 보도. 공시를 인용한 2차 자료이며 DART 원문 직접 대조는 미완료."
+        },
+        {
+          "id": "holdings-091160-KS",
+          "title": "KODEX 반도체 구성종목(PDF)",
+          "url": "https://www.funetf.co.kr/product/etf/view/KR7091160002",
+          "note": "FunETF (삼성자산운용 ETF 정보 플랫폼) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+        },
+        {
+          "id": "holdings-091180-KS",
+          "title": "KODEX 자동차 구성종목(PDF)",
+          "url": "https://www.funetf.co.kr/product/etf/view/KR7091180000",
+          "note": "FunETF (삼성자산운용 ETF 정보 플랫폼) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+        },
+        {
+          "id": "holdings-091170-KS",
+          "title": "KODEX 은행 구성종목(PDF)",
+          "url": "https://www.funetf.co.kr/product/etf/view/KR7091170001",
+          "note": "FunETF (삼성자산운용 ETF 정보 플랫폼) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+        },
+        {
+          "id": "holdings-117460-KS",
+          "title": "KODEX 에너지화학 구성종목(PDF)",
+          "url": "https://www.funetf.co.kr/product/etf/view/KR7117460006",
+          "note": "FunETF (삼성자산운용 ETF 정보 플랫폼) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+        },
+        {
+          "id": "holdings-117680-KS",
+          "title": "KODEX 철강 구성종목(PDF)",
+          "url": "https://www.funetf.co.kr/product/etf/view/KR7117680009",
+          "note": "FunETF (삼성자산운용 ETF 정보 플랫폼) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+        },
+        {
+          "id": "holdings-117700-KS",
+          "title": "KODEX 건설 구성종목(PDF)",
+          "url": "https://www.funetf.co.kr/product/etf/view/KR7117700005",
+          "note": "FunETF (삼성자산운용 ETF 정보 플랫폼) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+        },
+        {
+          "id": "holdings-266420-KS",
+          "title": "KODEX 헬스케어 구성종목(PDF)",
+          "url": "https://www.funetf.co.kr/product/etf/view/KR7266420009",
+          "note": "FunETF (삼성자산운용 ETF 정보 플랫폼) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+        },
+        {
+          "id": "holdings-140700-KS",
+          "title": "KODEX 보험 구성종목(PDF)",
+          "url": "https://www.funetf.co.kr/product/etf/view/KR7140700006",
+          "note": "FunETF (삼성자산운용 ETF 정보 플랫폼) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+        },
+        {
+          "id": "holdings-102970-KS",
+          "title": "KODEX 증권 구성종목(PDF)",
+          "url": "https://www.funetf.co.kr/product/etf/view/KR7102970001",
+          "note": "FunETF (삼성자산운용 ETF 정보 플랫폼) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+        },
+        {
+          "id": "holdings-266370-KS",
+          "title": "KODEX IT 구성종목(PDF)",
+          "url": "https://www.funetf.co.kr/product/etf/view/KR7266370006",
+          "note": "FunETF (삼성자산운용 ETF 정보 플랫폼) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+        },
+        {
+          "id": "holdings-266390-KS",
+          "title": "KODEX 경기소비재 구성종목(PDF)",
+          "url": "https://www.funetf.co.kr/product/etf/view/KR7266390004",
+          "note": "FunETF (삼성자산운용 ETF 정보 플랫폼) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+        },
+        {
+          "id": "holdings-266410-KS",
+          "title": "KODEX 필수소비재 구성종목(PDF)",
+          "url": "https://www.funetf.co.kr/product/etf/view/KR7266410000",
+          "note": "FunETF (삼성자산운용 ETF 정보 플랫폼) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+        },
+        {
+          "id": "holdings-266360-KS",
+          "title": "KODEX K콘텐츠 구성종목(PDF)",
+          "url": "https://www.funetf.co.kr/product/etf/view/KR7266360007",
+          "note": "FunETF (삼성자산운용 ETF 정보 플랫폼) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+        },
+        {
+          "id": "holdings-102960-KS",
+          "title": "KODEX 기계장비 구성종목(PDF)",
+          "url": "https://www.funetf.co.kr/product/etf/view/KR7102960002",
+          "note": "FunETF (삼성자산운용 ETF 정보 플랫폼) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+        },
+        {
+          "id": "holdings-305720-KS",
+          "title": "KODEX 2차전지산업 구성종목(PDF)",
+          "url": "https://www.funetf.co.kr/product/etf/view/KR7305720005",
+          "note": "FunETF (삼성자산운용 ETF 정보 플랫폼) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+        },
+        {
+          "id": "holdings-228790-KS",
+          "title": "TIGER 화장품 구성종목(PDF)",
+          "url": "https://www.funetf.co.kr/product/etf/view/KR7228790002",
+          "note": "FunETF (삼성자산운용 ETF 정보 플랫폼, 운용사 외 자료) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+        },
+        {
+          "id": "holdings-377990-KS",
+          "title": "TIGER Fn신재생에너지 구성종목(PDF)",
+          "url": "https://www.funetf.co.kr/product/etf/view/KR7377990007",
+          "note": "FunETF (삼성자산운용 ETF 정보 플랫폼, 운용사 외 자료) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+        },
+        {
+          "id": "holdings-385510-KS",
+          "title": "KODEX 신재생에너지액티브 구성종목(PDF)",
+          "url": "https://www.funetf.co.kr/product/etf/view/KR7385510003",
+          "note": "FunETF (삼성자산운용 ETF 정보 플랫폼) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+        },
+        {
+          "id": "holdings-244580-KS",
+          "title": "KODEX 바이오 구성종목(PDF)",
+          "url": "https://www.funetf.co.kr/product/etf/view/KR7244580007",
+          "note": "FunETF (삼성자산운용 ETF 정보 플랫폼) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+        },
+        {
+          "id": "holdings-091230-KS",
+          "title": "TIGER 반도체 구성종목(PDF)",
+          "url": "https://www.funetf.co.kr/product/etf/view/KR7091230003",
+          "note": "FunETF (삼성자산운용 ETF 정보 플랫폼, 운용사 외 자료) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+        },
+        {
+          "id": "holdings-157490-KS",
+          "title": "TIGER 소프트웨어 구성종목(PDF)",
+          "url": "https://www.funetf.co.kr/product/etf/view/KR7157490004",
+          "note": "FunETF (삼성자산운용 ETF 정보 플랫폼, 운용사 외 자료) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+        },
+        {
+          "id": "holdings-228800-KS",
+          "title": "TIGER 여행레저 구성종목(PDF)",
+          "url": "https://www.funetf.co.kr/product/etf/view/KR7228800009",
+          "note": "FunETF (삼성자산운용 ETF 정보 플랫폼, 운용사 외 자료) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+        },
+        {
+          "id": "holdings-139220-KS",
+          "title": "TIGER 200 건설 구성종목(PDF)",
+          "url": "https://www.funetf.co.kr/product/etf/view/KR7139220008",
+          "note": "FunETF (삼성자산운용 ETF 정보 플랫폼, 운용사 외 자료) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+        },
+        {
+          "id": "holdings-140710-KS",
+          "title": "KODEX 운송 구성종목(PDF)",
+          "url": "https://www.funetf.co.kr/product/etf/view/KR7140710005",
+          "note": "FunETF (삼성자산운용 ETF 정보 플랫폼) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+        },
+        {
+          "id": "screen_229640.KS",
+          "title": "LS Eco Energy Ltd. 가격·거래량 이력 · 2026-10-15/16",
+          "url": "https://finance.yahoo.com/quote/229640.KS/history/"
+        },
+        {
+          "id": "screen_020560.KS",
+          "title": "Asiana Airlines, Inc. 가격·거래량 이력 · 2026-10-15/16",
+          "url": "https://finance.yahoo.com/quote/020560.KS/history/"
+        },
+        {
+          "id": "screen_039200.KQ",
+          "title": "Oscotec Inc. 가격·거래량 이력 · 2026-10-15/16",
+          "url": "https://finance.yahoo.com/quote/039200.KQ/history/"
+        },
+        {
+          "id": "screen_491000.KQ",
+          "title": "Livsmed Inc 가격·거래량 이력 · 2026-10-15/16",
+          "url": "https://finance.yahoo.com/quote/491000.KQ/history/"
         }
       ],
       "limitations": [
-        "한국 국내상장 시총200개 일봉을 확인했습니다. 거래대금·실적발표·콜의 전수 점검은 미완료이며 수급은 기사 집계치입니다.",
+        "기업 시총 선별 범위는 한국 300개이며 299개 당일 일봉, 294개 52주 전체 이력을 확인했습니다. 실제 거래대금·실적발표·콜 전수 점검은 미완료입니다. 수급은 기사 집계치입니다.",
         "컨퍼런스콜을 직접 청취했다고 주장하지 않으며 실제 확인 자료 유형을 표시합니다.",
         "2026-10-17(토)은 한국시장 휴장일입니다. 후속 뉴스는 날짜를 별도 표시했으며 10/17 거래일 데이터나 국내 주가 반응을 생성하지 않았습니다.",
-        "국내 개별주식·ETF 가격은 원(KRW), 지수는 포인트, 시가총액은 USD입니다. 시총 모집단은 10/17 조회 스냅샷이며 보통주 전용 및 발행사 단위 중복제거를 엄격히 검증한 전체 순위가 아닙니다."
+        "국내 개별주식·ETF 가격은 원(KRW), 지수는 포인트, 시가총액은 USD입니다. 시총 모집단은 10/17 조회한 제공사 대표 상장 스냅샷이며 10/16 종가 시점으로 고정 검증한 순위는 아닙니다."
       ],
       "title": "급락 이후 반등, 외국인 코스피·기관 코스닥 매수",
       "flows": {
@@ -1831,6 +4886,37 @@
             "individual": -925
           }
         ]
+      },
+      "screeningCoverage": {
+        "requested": 300,
+        "selected": 300,
+        "dailyValid": 299,
+        "missingCount": 1,
+        "missing": [
+          {
+            "ticker": "001470.KS",
+            "reason": "volume missing or zero baseline"
+          }
+        ],
+        "full52WeekHistory": 294,
+        "shortHistoryCount": 5,
+        "shortHistoryTickers": [
+          "0126Z0.KS",
+          "279570.KS",
+          "0009K0.KQ",
+          "950260.KQ",
+          "491000.KQ"
+        ],
+        "rankingSource": "https://stockanalysis.com/list/largest-companies-in-south-korea/?count=500",
+        "rankingSnapshotRetrievedAt": "2026-10-17",
+        "rankingAsOf": "provider latest snapshot; underlying timestamp not stated",
+        "priceAsOf": "2026-10-16",
+        "previousSession": "2026-10-15",
+        "highWindowStart": "2025-10-17",
+        "countryDefinition": "Stock Analysis issuer country, representative primary listing",
+        "turnoverCoverage": 0,
+        "volumeCoverage": 299,
+        "scopeNote": "Stock Analysis 한국 소재 기업 중 KRX·KOSDAQ 대표 상장 시총 상위 300개. 동일 기업 복수 주식종류는 제공사 대표 상장 1개만 포함. 시총 순위는 2026-10-17 조회한 최신 USD 스냅샷이며 제공사 원시 시각은 미표시(10/16 종가 시총으로 시점고정 검증한 순위는 아님). ETF·우선주는 대표 기업 목록에서 제외되나 REIT·파트너십 지분은 포함될 수 있습니다. 삼부토건(001470.KS)은 10/15·16 거래량이 0이고 정체 시세여서 유효 일봉 검증에서 제외했습니다."
       }
     }
   ]

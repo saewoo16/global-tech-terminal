@@ -54,6 +54,7 @@ python scripts/audit_coverage.py
 - 핵심 시황과 지수를 먼저 표시합니다. 업종 비교표는 기본 펼침 상태이며, **1일 / 1주 / 1개월** 열을 눌러 오름차순·내림차순으로 정렬합니다. 대분류/세부업종 그룹 안에서 정렬합니다.
 - ETF 또는 대표 종목 바스켓을 사용한 경우 각 행에 지표명과 구성 기준을 표시합니다. 순수 업종지수나 전체 업종 전수조사를 의미하지 않습니다.
 - 한국 수급, 이례적 등락, 신고가, 실적/컨퍼런스콜은 세부항목을 펼쳐 확인합니다. 빈 항목은 미확인이며 해당 사례 없음으로 표현하지 않습니다.
+- 2026-10-16 기업 신고가·이례적 등락 선별 범위는 미국 시총 상위 500개, 한국 300개로 확대했습니다. 미국 당일 일봉 500개/52주 전체 이력 490개, 한국 당일 일봉 299개/52주 전체 이력 294개를 확인했습니다. 한국 삼부토건은 거래량 0·정체 시세로 미검증입니다. 상장 이력이 짧은 종목은 52주 신고가로 단정하지 않습니다. 모집단은 10/17 조회한 제공사 대표 상장 최신 스냅샷이며 10/16 종가 시점고정 순위가 아닙니다. 실제 거래대금은 미확보이며 거래량으로 대체하지 않습니다. 실적·컨퍼런스콜 확인 범위와는 별개입니다. `screeningCoverage`에 요청·선별·유효·결측·52주 이력·거래량/거래대금 커버리지를 별도로 저장합니다.
 - 미국/한국 시황은 현지 거래일 기준입니다. 같은 날짜의 한국장은 미국장보다 먼저 마감합니다. 실적 발표일, 시황 반응일, 콜 원문 확인 여부를 구분합니다.
 
 ### 데이터 구조와 매일 추가하기
@@ -64,6 +65,7 @@ python scripts/audit_coverage.py
 
 - `summary`: `{title, text, sourceIds}` 배열, `indices`: `{name, close, changePct, sourceIds}` 배열
 - `sectors`: `{methodology, note, rows}`. 각 행은 `{name, ticker, benchmark, group, day, week, month, sourceIds}`. 수익률은 백분율 숫자입니다.
+- ETF 행은 `instrumentType: "etf"`, 바스켓은 `"basket"`으로 구분합니다. ETF에는 `holdings: {status:"verified", asOf:"YYYY-MM-DD", sourceIds:[], top5:[{name,ticker,weightPct}]}`를 추가합니다. 운용사 실제 보유내역 기준일·출처와 비중 내림차순의 정확히 5개 보유종목을 기록하며 ETF명 옆 괄호에 표시합니다. 현재 자료를 과거 거래일 자료로 간주하지 않습니다. 확인하지 못한 경우 `{status:"unverified", note:"미확인 이유"}`로 명시하고 추정 종목을 넣지 않습니다. 기존 3종목 바스켓은 ETF 상위 5종목으로 바꾸지 않습니다. 매일 새 브리핑 작성 때 기준일과 출처를 다시 검증하며 이전 보유내역의 날짜를 자동으로 오늘로 바꾸지 않습니다.
 - `movers` / `highs`: `{criteria, note, rows}`. 각 행은 `{name, ticker, changePct, marketCapUSD, reason, kind, sourceIds}`. 거래량 검증값은 `volumeCurrent`, `volumePrevious`, `volumeChangePct`에 기록합니다.
 - `earnings`: `{note, rows}`. 각 행은 `{name, ticker, period, summary, metrics:[{label,value}], callHighlights:[], sourceIds}`. `callHighlights`에는 확인한 자료 유형을 명시합니다.
 - `flows`: `{unit, asOf, note, sourceIds, rows:[{market, foreign, institution, individual}]}`. 양수는 순매수입니다.
