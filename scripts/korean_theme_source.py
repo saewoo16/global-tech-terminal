@@ -73,7 +73,7 @@ def build(refresh=False, previous=None, responses=None):
         basket = copy.deepcopy(definition)
         members = [copy.deepcopy(membership['members'][c]) for c in definition['memberCodes']]
         members.sort(key=lambda m: (-m['marketCapKRW'], m['code']))
-        basket.update({'members': members, 'displayMembers': members[:3], 'marketCapAsOf': membership['marketCapAsOf'], 'flows': {}})
+        basket.update({'members': members, 'displayMembers': members[:3], 'displayMembersByMarket': {market: [m for m in members if m['market'] == market][:3] for market in ('KOSPI', 'KOSDAQ')}, 'marketCapAsOf': membership['marketCapAsOf'], 'flows': {}})
         for key in PERIODS:
             basket['flows'][key] = {}
             for investor in INVESTORS:
@@ -121,9 +121,9 @@ def normalize(result, dates, previous=None):
                 'note': 'NAVER 공개 테마·업종 전체 목록의 합집합에서 테마 내 중복을 제거했습니다. 구성종목 한 개라도 금액이 미확인이면 전체 합계는 비우고 확인된 종목의 부분합을 따로 표시합니다. 매수·매도 각 상위100 API 한계로 누락은 0이 아니며 부분합의 방향도 전체와 다를 수 있습니다. 현재 구성으로 기간 수급을 집계하며 과거 편입·편출은 소급 복원하지 않습니다.'}
     daily = {day: value for day, value in (previous or {}).get('daily', {}).items() if value.get('basketDefinitionVersion') == version}
     daily[result['asOf']] = period('1d')
-    catalog = [{k: copy.deepcopy(b[k]) for k in ('id', 'name', 'memberCount', 'members', 'displayMembers', 'marketCapAsOf', 'sourceCategories', 'scopeNote', 'excludedMembers', 'providerUnionCount')} for b in result['baskets']]
+    catalog = [{k: copy.deepcopy(b[k]) for k in ('id', 'name', 'memberCount', 'members', 'displayMembers', 'displayMembersByMarket', 'marketCapAsOf', 'sourceCategories', 'scopeNote', 'excludedMembers', 'providerUnionCount')} for b in result['baskets']]
     metadata = {k: copy.deepcopy(result[k]) for k in ('basketDefinitionVersion', 'membershipAsOf', 'marketCapAsOf', 'marketCapPolicy', 'marketCapDateEvidence', 'membershipCounts', 'membershipVerification')}
     return {**metadata, 'unit': '억원', 'dates': dates, 'daily': {d: daily.get(d, absent(d)) for d in dates},
             'aggregate5d': period('1w'), 'monthly': period('1m'), 'baskets': catalog,
-            'methodology': 'NAVER 테마·업종 분류를 기준으로 범위를 확장했습니다. 수급은 전체 구성종목을 대상으로 확인하며, 괄호에는 시총 상위 3개만 표시합니다. 대기업·사업노출 기업도 포함하며 순수 테마 전문기업만의 집계가 아닙니다.',
+            'methodology': 'NAVER 테마·업종 분류를 기준으로 범위를 확장했습니다. 수급은 전체 구성종목을 대상으로 확인하며, 괄호에는 KOSPI·KOSDAQ 각각 시총 상위 최대 3개를 표시합니다. 대기업·사업노출 기업도 포함하며 순수 테마 전문기업만의 집계가 아닙니다.',
             'classification': result['classificationType'], 'notes': result['notes']}

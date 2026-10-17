@@ -141,6 +141,45 @@ class KoreanMarketTests(unittest.TestCase):
         all_rows = [row for index in self.data['indexMovers']['monthly'].values() for key in ['gainers', 'losers'] for row in index[key]]
         self.assertTrue(all(isinstance(row['code'], str) for row in all_rows))
 
+    def test_market_split_cap_labels_cannot_use_global_top3(self):
+        data = copy.deepcopy(self.data)
+        basket = data['themes']['baskets'][0]
+        basket['displayMembersByMarket']['KOSDAQ'] = basket['displayMembers']
+        self.assertTrue(any('KOSDAQ display must be market cap top3' in e for e in validate(data)))
+
+    def test_granular_sector_arithmetic_rejected_when_changed(self):
+        data = copy.deepcopy(self.data)
+        data['sectorReturns']['rows'][0]['month'] += 1
+        self.assertTrue(any('sectorReturns: return arithmetic mismatch' in e for e in validate(data)))
+
+    def test_near_high_distance_and_true_high_checked(self):
+        data = copy.deepcopy(self.data)
+        data['highsScreen']['rows'][0]['distancePct'] = -5
+        errors = validate(data)
+        self.assertTrue(any('high-distance mismatch' in e for e in errors))
+        self.assertTrue(any('near high must be within3pct' in e for e in errors))
+        data = copy.deepcopy(self.data)
+        row = data['highsScreen']['rows'][0]
+        row['sessionHigh'] = row['prior52WeekHigh']
+        self.assertTrue(any('strictly exceed' in e for e in validate(data)))
+
+    def test_all_highs_are_union_of_actual300_screen(self):
+        evidence = json.loads((ROOT / 'data/korea-highs-evidence.json').read_text())
+        self.assertEqual(len(evidence['rows']), 300)
+        eligible = [r for r in evidence['rows'] if r.get('freshDailyCoverage') and r.get('fullHistoryCoverage')]
+        self.assertEqual(len(eligible), self.data['highsScreen']['coverage']['full52WeekHistory'])
+        expected = {r['code'] for r in eligible if r['close'] >= .97 * r['high52'] or r['sessionHigh'] > r['prior52WeekHigh']}
+        self.assertEqual(expected, {r['code'] for r in self.data['highsScreen']['rows']})
+
+    def test_latest_turnover_excludes_konex_from_denominator(self):
+        section = self.data['rankings']['daily'][max(self.data['rankings']['daily'])]['tradedValue']
+        coverage = section['coverage']
+        self.assertEqual(coverage['marketUniverseCount'] + coverage['excludedOtherMarketCount'], coverage['sourceUniverseCount'])
+        self.assertLessEqual(coverage['eligibleStockCount'], coverage['marketUniverseCount'])
+        self.assertIn('KOSPI', coverage['universeDefinition'])
+        self.assertIn('KOSDAQ', coverage['universeDefinition'])
+        self.assertTrue(all(row['market'] in ('KOSPI', 'KOSDAQ') for row in section['rows']))
+
     def test_existing_tabs_and_fifth_tab_present(self):
         html = (ROOT / 'index.html').read_text()
         for view in ['explorer', 'briefing', 'heatmap', 'rates', 'korea']:

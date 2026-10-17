@@ -117,6 +117,13 @@ def validate(payload):
                         check([m.get("code") for m in display] == [m["code"] for m in top], f"{path}: display members must be full-universe market cap top3")
                     check(all(m.get("marketCapSourceId") in ids for m in members), f"{path}: unknown market cap source")
                     check(all(m.get("marketCapAsOf") == cap_date for m in members), f"{path}: mixed market cap dates")
+                by_market = row.get("displayMembersByMarket", basket.get("displayMembersByMarket"))
+                if by_market is not None:
+                    for market in MARKETS:
+                        candidates = [m for m in members if m.get('market') == market]
+                        if all(number(m.get('marketCapKRW')) for m in candidates):
+                            expected = sorted(candidates, key=lambda m: (-m['marketCapKRW'], m['code']))[:3]
+                            check([m.get('code') for m in by_market.get(market, [])] == [m['code'] for m in expected], f"{path}: {market} display must be market cap top3")
                 for investor in ("foreign", "institution"):
                     cell = row.get("coverage", {}).get(investor, {})
                     components = cell.get("memberFlows", [])
@@ -172,7 +179,12 @@ def validate(payload):
         for day, entry in periods:
             if group == "rankings":
                 for key in ("foreign", "institution", "tradedValue"):
-                    section(entry.get(key), f"{group}.{day}.{key}", "rank", ("value",), 20 if key == "tradedValue" else 10)
+                    section(entry.get(key), f"{group}.{day}.{key}", "rank", ("value",), 20 if key == "tradedValue" else 15)
+                    item = entry.get(key, {})
+                    for market, rows in item.get('byMarket', {}).items():
+                        check(market in MARKETS and all(row.get('market') == market for row in rows), f"{group}.{day}.{key}: wrong byMarket stock")
+                        if rows:
+                            section({**item, 'rows': rows}, f"{group}.{day}.{key}.{market}", "rank", ("value",), 20 if key == "tradedValue" else 15)
             else:
                 section(entry, f"{group}.{day}", "theme", ("foreign", "institution"))
     movers = payload.get("indexMovers", {})
@@ -207,6 +219,94 @@ def validate(payload):
                         check(value > 0 if kind == "gainers" else value < 0, f"{index}: wrong {kind} sign")
                         check(previous is None or (value <= previous if kind == "gainers" else value >= previous), f"{index}: wrong {kind} ordering")
                         previous = value
+    def dated_sources(item, label):
+        check(valid_date(item.get('asOf')), f'{label}: asOf required')
+        check(not valid_date(item.get('asOf')) or item['asOf'] <= payload['asOf'], f'{label}: future snapshot')
+        check(bool(item.get('sourceIds')) and all(ref in ids for ref in item.get('sourceIds', [])), f'{label}: source references required')
+
+    sectors = payload.get('sectorReturns')
+    if sectors is not None:
+        dated_sources(sectors, 'sectorReturns')
+        names = set()
+        for row in sectors.get('rows', []):
+            check(bool(row.get('name')) and row['name'] not in names, 'sectorReturns: duplicate/missing sector name')
+            names.add(row.get('name'))
+            check(row.get('instrumentType') in ('etf', 'basket'), 'sectorReturns: explicit calculation type required')
+            check(all(number(row.get(key)) for key in ('day', 'week', 'month')), 'sectorReturns: finite returns required')
+            check(bool(row.get('sourceIds')) and all(sid in ids for sid in row['sourceIds']), 'sectorReturns: row sources required')
+            calculation = row.get('calculation', {})
+            components = calculation.get('constituentData', [])
+            check(bool(components), 'sectorReturns: price boundary evidence required')
+            for period in ('day', 'week', 'month'):
+                window = sectors.get('windows', {}).get(period, {})
+                check(valid_date(window.get('baseDate')) and window.get('endDate') == sectors.get('asOf'), 'sectorReturns: verified window required')
+                returns = []
+                for component in components:
+                    observations = component.get('observations', {})
+                    base = observations.get(window.get('baseDate'), {}).get('adjustedClose')
+                    end = observations.get(window.get('endDate'), {}).get('adjustedClose')
+                    check(number(base) and base > 0 and number(end) and end > 0, 'sectorReturns: positive adjusted closes required')
+                    if number(base) and base > 0 and number(end):
+                        returns.append((end / base - 1) * 100)
+                if len(returns) == len(components) and returns and number(row.get(period)):
+                    check(abs(row[period] - sum(returns) / len(returns)) <= .005000001, 'sectorReturns: return arithmetic mismatch')
+            if row.get('instrumentType') == 'etf':
+                holding = row.get('holdings', {})
+                check(holding.get('status') == 'verified' and len(holding.get('top5', [])) == 5, 'sectorReturns: verified ETF top5 required')
+                check(valid_date(holding.get('asOf')), 'sectorReturns: holdings date required')
+                check(bool(holding.get('sourceIds')) and all(sid in ids for sid in holding.get('sourceIds', [])), 'sectorReturns: holdings sources required')
+
+    maps = payload.get('heatmaps')
+    if maps is not None:
+        dated_sources(maps, 'heatmaps')
+        for market in MARKETS:
+            item = maps.get('markets', {}).get(market, {})
+            check(item.get('asOf') == maps['asOf'], f'heatmaps.{market}: date mismatch')
+            rows = item.get('rows', [])
+            coverage = item.get('coverage', {})
+            check(item.get('status') in STATUSES, f'heatmaps.{market}: explicit status required')
+            check(coverage.get('validCount') == len(rows), f'heatmaps.{market}: valid count mismatch')
+            check(coverage.get('sampleCount') == len(rows) + coverage.get('excludedCount', 0), f'heatmaps.{market}: sample count mismatch')
+            check(len(coverage.get('excluded', [])) == coverage.get('excludedCount'), f'heatmaps.{market}: excluded count mismatch')
+            check(coverage.get('isComplete') == (coverage.get('excludedCount') == 0), f'heatmaps.{market}: completion flag mismatch')
+            if coverage.get('excludedCount', 0):
+                check(item.get('status') == 'partial', f'heatmaps.{market}: incomplete snapshot cannot claim verified')
+            seen = set()
+            for row in rows:
+                check(bool(row.get('code')) and row['code'] not in seen, f'heatmaps.{market}: unique stock required')
+                seen.add(row.get('code'))
+                check(number(row.get('marketCapKRW')) and row['marketCapKRW'] > 0, f'heatmaps.{market}: positive cap required')
+                check(number(row.get('changePct')), f'heatmaps.{market}: change percent required')
+                check(bool(row.get('name')), f'heatmaps.{market}: stock name required')
+                check(row.get('market') == market and row.get('asOf') == item['asOf'], f'heatmaps.{market}: row market/date mismatch')
+                check(number(row.get('volume')) and row['volume'] > 0, f'heatmaps.{market}: stale/zero-volume quote')
+                check(bool(row.get('sourceIds')) and all(sid in ids for sid in row['sourceIds']), f'heatmaps.{market}: row source required')
+                if number(row.get('close')) and number(row.get('sharesOutstanding')):
+                    check(row['marketCapKRW'] == row['close'] * row['sharesOutstanding'], f'heatmaps.{market}: cap arithmetic mismatch')
+                if number(row.get('close')) and number(row.get('previousClose')) and row['previousClose'] > 0 and number(row.get('changePct')):
+                    check(abs(row['changePct'] - (row['close'] / row['previousClose'] - 1) * 100) < .011, f'heatmaps.{market}: return mismatch')
+            check(bool(seen), f'heatmaps.{market}: observations required')
+            check(not seen.intersection(r.get('code') for r in coverage.get('excluded', [])), f'heatmaps.{market}: excluded rows rendered')
+            check(item.get('totalDisplayedMarketCapKRW') == sum(r['marketCapKRW'] for r in rows), f'heatmaps.{market}: total cap mismatch')
+
+    highs = payload.get('highsScreen')
+    if highs is not None:
+        dated_sources(highs, 'highsScreen')
+        seen = set()
+        for row in highs.get('rows', []):
+            code = row.get('code', row.get('ticker'))
+            check(bool(code) and code not in seen, 'highsScreen: unique stock required')
+            seen.add(code)
+            check(row.get('classification') in ('new_high', 'near_high'), 'highsScreen: classification required')
+            close, high, distance = row.get('close'), row.get('high52'), row.get('distancePct')
+            check(number(close) and close > 0 and number(high) and high > 0, 'highsScreen: positive close/high required')
+            if number(close) and number(high) and high > 0:
+                check(number(distance) and abs(distance - (close / high - 1) * 100) < .011, 'highsScreen: high-distance mismatch')
+            if row.get('classification') == 'new_high':
+                check(number(row.get('sessionHigh')) and number(row.get('prior52WeekHigh')) and row['sessionHigh'] > row['prior52WeekHigh'], 'highsScreen: new high must strictly exceed previous high')
+            if row.get('classification') == 'near_high' or row.get('isNearHigh'):
+                check(number(distance) and -3.0000001 <= distance <= 0.0000001, 'highsScreen: near high must be within3pct')
+            check(bool(row.get('sourceIds')) and all(sid in ids for sid in row.get('sourceIds', [])), 'highsScreen: row sources required')
     return errors
 
 

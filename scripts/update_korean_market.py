@@ -111,7 +111,7 @@ def atomic_write(payload, target=FILE):
         raise ValueError('\n'.join(errors))
     target.parent.mkdir(exist_ok=True, parents=True)
     with tempfile.NamedTemporaryFile('w', encoding='utf-8', dir=target.parent, delete=False) as handle:
-        json.dump(payload, handle, ensure_ascii=False, indent=2, allow_nan=False)
+        json.dump(payload, handle, ensure_ascii=False, separators=(',', ':'), allow_nan=False)
         handle.write('\n')
         name = handle.name
     os.replace(name, target)
