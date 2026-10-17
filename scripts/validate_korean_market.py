@@ -47,6 +47,8 @@ def validate(payload):
         check(url.scheme in ("http", "https") and bool(url.netloc) and not url.username and not url.password, f"unsafe source URL: {sid}")
         check(bool(source.get("title")), f"source needs title: {sid}")
 
+    theme_catalog = {b.get('id'): b for b in payload.get('themes', {}).get('baskets', [])}
+
     def section(value, path, row_kind, keys, size=None):
         check(isinstance(value, dict), f"{path}: section required")
         if not isinstance(value, dict):
@@ -94,24 +96,48 @@ def validate(payload):
             for field in keys:
                 check(field in row and (row[field] is None or number(row[field])), f"{path}: {field} must be finite number or null")
             if row_kind == "theme":
-                members = row.get("members", [])
+                basket = theme_catalog.get(row.get("id"), {})
+                members = row.get("members", basket.get("members", []))
+                codes = [m.get("code") for m in members]
+                check(bool(members) and len(set(codes)) == len(codes), f"{path}: unique theme members required")
                 check(len(members) == row.get("memberCount"), f"{path}: member count mismatch")
                 for member in members:
                     evidence = member.get("classificationEvidence")
                     check(isinstance(evidence, dict) and evidence.get("classification_status") == "verified", f"{path}: verified membership evidence required")
                     if isinstance(evidence, dict):
                         check(all(sid in ids for sid in evidence.get("sourceIds", [])), f"{path}: unknown classification source")
+                display = row.get("displayMembers", basket.get("displayMembers"))
+                if display is not None:
+                    cap_date = basket.get("marketCapAsOf", payload.get("themes", {}).get("marketCapAsOf"))
+                    check(valid_date(cap_date), f"{path}: market cap date required")
+                    caps_valid = all(number(m.get("marketCapKRW")) and m["marketCapKRW"] > 0 for m in members)
+                    check(caps_valid, f"{path}: market caps required for every display candidate")
+                    if caps_valid:
+                        top = sorted(members, key=lambda m: (-m["marketCapKRW"], m["code"]))[:3]
+                        check([m.get("code") for m in display] == [m["code"] for m in top], f"{path}: display members must be full-universe market cap top3")
+                    check(all(m.get("marketCapSourceId") in ids for m in members), f"{path}: unknown market cap source")
+                    check(all(m.get("marketCapAsOf") == cap_date for m in members), f"{path}: mixed market cap dates")
                 for investor in ("foreign", "institution"):
                     cell = row.get("coverage", {}).get(investor, {})
                     components = cell.get("memberFlows", [])
                     check(len(components) == len(members), f"{path}: component count mismatch")
+                    check({r.get("code") for r in components} == set(codes) and len({r.get("code") for r in components}) == len(components), f"{path}: component codes must match full membership")
+                    check(all(r.get("netBuyKRW") is None or number(r.get("netBuyKRW")) for r in components), f"{path}: invalid constituent amount")
                     available = [r for r in components if number(r.get("netBuyKRW"))]
+                    check(cell.get("expectedCount") == len(members), f"{path}: expected constituent count mismatch")
+                    if "knownSubtotalKRW" in cell:
+                        expected_subtotal = sum(r["netBuyKRW"] for r in available) if available else None
+                        check(cell.get("knownSubtotalKRW") == expected_subtotal, f"{path}: known subtotal mismatch")
+                        expected_eok = None if expected_subtotal is None else expected_subtotal / 1e8
+                        check(cell.get("knownSubtotalEok") == expected_eok, f"{path}: known subtotal unit mismatch")
                     check(cell.get("availableCount") == len(available), f"{path}: available constituent count mismatch")
                     if len(available) == len(members):
                         theme_value = row.get(investor)
                         check(number(theme_value) and abs(theme_value - sum(r["netBuyKRW"] for r in available) / 1e8) < 1e-7, f"{path}: theme sum mismatch")
                     else:
-                        check(row.get(investor) is None, f"{path}: incomplete theme must stay null")
+                        check(row.get(investor) is None and cell.get("netBuyKRW") is None and cell.get("netBuyEok") is None, f"{path}: incomplete theme must stay null")
+                        check(cell.get("rank") is None, f"{path}: incomplete theme cannot have rank")
+                        check(cell.get("status") != "complete", f"{path}: incomplete theme cannot claim complete")
                     check(all(r.get("sourceId") in ids for r in available), f"{path}: unknown constituent amount source")
 
             if row_kind == "time" and keys == ("value",):

@@ -9,6 +9,7 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 from validate_korean_market import validate
 from update_korean_market import merge_series, as_number, collect_flows
 from unittest.mock import patch
+from korean_theme_source import build as build_themes, normalize as normalize_themes
 
 
 class KoreanMarketTests(unittest.TestCase):
@@ -81,6 +82,54 @@ class KoreanMarketTests(unittest.TestCase):
         row['coverage']['foreign']['memberFlows'][0]['netBuyKRW'] = None
         row['foreign'] = 0
         self.assertTrue(any('incomplete theme must stay null' in x for x in validate(data)))
+
+    def test_partial_subtotal_is_exact_and_never_ranked(self):
+        data = copy.deepcopy(self.data)
+        cell = data['themes']['monthly']['rows'][0]['coverage']['foreign']
+        cell['knownSubtotalKRW'] += 1
+        cell['rank'] = 1
+        errors = validate(data)
+        self.assertTrue(any('known subtotal mismatch' in e for e in errors))
+        self.assertTrue(any('cannot have rank' in e for e in errors))
+
+    def test_display_is_top3_not_aggregation_universe(self):
+        data = copy.deepcopy(self.data)
+        basket = data['themes']['baskets'][0]
+        self.assertGreater(basket['memberCount'], 3)
+        basket['displayMembers'] = basket['members'][-3:]
+        self.assertTrue(any('market cap top3' in e for e in validate(data)))
+
+    def test_theme_components_cover_full_membership_once(self):
+        data = copy.deepcopy(self.data)
+        cell = data['themes']['monthly']['rows'][0]['coverage']['foreign']
+        cell['memberFlows'][1]['code'] = cell['memberFlows'][0]['code']
+        self.assertTrue(any('component codes' in e for e in validate(data)))
+
+    def test_flow_refresh_does_not_redate_frozen_caps(self):
+        responses = {}
+        for market, code in [('KOSPI', '005930'), ('KOSDAQ', '247540')]:
+            for investor in ['FOREIGNER', 'ORGANIZATION']:
+                for period in ['DAY', 'WEEK', 'MONTH']:
+                    key = f'{market}_{investor}_{period}'
+                    responses[key] = {'url': 'https://stock.naver.com/api/fixture', 'data': {'sections': {
+                        'buyRankList': [{'type': 'ST', 'itemcode': code, 'accTradeAmount': '123456000',
+                                         'bizdateFrom': '20261019', 'bizdateTo': '20261019'}], 'sellRankList': []}}}
+        result = build_themes(responses=responses)
+        self.assertEqual(result['asOf'], '2026-10-19')
+        self.assertEqual(result['marketCapAsOf'], self.data['themes']['marketCapAsOf'])
+        self.assertEqual(result['membershipAsOf'], self.data['themes']['membershipAsOf'])
+        self.assertGreater(result['baskets'][0]['memberCount'], 3)
+        self.assertEqual(result['baskets'][0]['flows']['1d']['foreign']['knownSubtotalKRW'], 123456000)
+        self.assertIsNone(result['baskets'][0]['flows']['1d']['foreign']['netBuyKRW'])
+
+    def test_legacy_basket_history_is_not_rebranded_as_broad(self):
+        current = copy.deepcopy(self.data['themes'])
+        old_day = min(current['dates'])
+        current['daily'][old_day] = {'status': 'verified', 'rows': [{'name': 'Legacy small basket'}]}
+        # Normalization's retained history must carry the matching definition version.
+        kept = {day: value for day, value in current['daily'].items()
+                if value.get('basketDefinitionVersion') == current['basketDefinitionVersion']}
+        self.assertNotIn(old_day, kept)
 
     def test_daily_index_returns_are_validated(self):
         data = copy.deepcopy(self.data)

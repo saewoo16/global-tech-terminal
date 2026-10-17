@@ -191,7 +191,7 @@ def main():
         successes.append('themes')
     except Exception as exc:
         failures.append({'section': 'themes', 'message': f'{type(exc).__name__}: {exc}'})
-    payload['refresh'] = {'attemptedAt': now.isoformat(), 'status': 'partial' if failures and successes else 'failed' if failures else 'verified', 'refreshedSections': successes, 'failures': failures, 'note': '수급·예탁금·신용융자와 순매수 종목을 갱신합니다. 대표 테마 바스켓도 같은 공급사 응답으로 갱신합니다. 지수 구성종목 분석은 별도 검증 스냅샷 기준일을 유지합니다.'}
+    payload['refresh'] = {'attemptedAt': now.isoformat(), 'status': 'partial' if failures and successes else 'failed' if failures else 'verified', 'refreshedSections': successes, 'failures': failures, 'note': '수급·예탁금·신용융자와 순매수 종목을 갱신합니다. 확장 테마의 확인분 수급도 같은 공급사 응답으로 갱신합니다. 구성목록과 시총 순위는 별도 검증 스냅샷의 날짜를 유지합니다. 지수 구성종목 분석은 별도 검증 스냅샷 기준일을 유지합니다.'}
     if successes:
         payload['updatedAt'] = now.isoformat()
         payload['asOf'] = max(payload['flows']['markets'][market]['coverage']['end'] for market in ('KOSPI', 'KOSDAQ'))
