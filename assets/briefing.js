@@ -24,9 +24,9 @@
     if (row.instrumentType !== 'etf') return '';
     const holdings = row.holdings || {}, top = list(holdings.top5);
     if (holdings.status !== 'verified' || top.length !== 5 || !date(holdings.asOf)) {
-      return `<span class="brief-holdings muted"> (상위 5종목 미확인)</span>${holdings.note ? `<small class="brief-holdings-meta">${text(holdings.note)}</small>` : ''}`;
+      return '<span class="brief-holdings muted">(상위 5종목 미확인)</span>';
     }
-    return `<span class="brief-holdings"> (${top.map(item => text(item.shortName || item.name)).join(', ')})</span><small class="brief-holdings-meta">보유비중 상위 5 · ${text(holdings.asOf)} 기준 ${citationLine(holdings.sourceIds,entry)}</small>`;
+    return `<span class="brief-holdings">(${top.map(item => text(item.shortName || item.name)).join(' / ')})</span>`;
   }
   function sectorSection(entry) {
     const section = entry.sectors || {}, rows = list(section.rows);
@@ -34,8 +34,8 @@
     const sorted = groups.flatMap(group=>rows.filter(row=>(row.group || '대표 업종')===group).sort((a,b)=>number(a[sortKey])&&number(b[sortKey])?(sortDesc?b[sortKey]-a[sortKey]:a[sortKey]-b[sortKey]):number(a[sortKey])?-1:number(b[sortKey])?1:0));
     const head = [['day','1일'],['week','1주'],['month','1개월']].map(([key,label])=>`<th scope="col" aria-sort="${sortKey===key?(sortDesc?'descending':'ascending'):'none'}"><button class="sort-button" data-sector-sort="${key}" title="${label} 수익률로 정렬">${label}${sortKey===key?(sortDesc?' ↓':' ↑'):' ↕'}</button></th>`).join('');
     let previousGroup = null;
-    const tableRows = sorted.map(row=>{const group=row.group || '대표 업종';const separator=groups.length>1&&group!==previousGroup?`<tr class="sector-separator"><th scope="rowgroup" colspan="5">${text(group)}</th></tr>`:'';previousGroup=group;return separator+`<tr><td>${text(row.name)}<small>${text(row.ticker)}</small>${row.benchmark ? `<small class="brief-benchmark">${text(row.benchmark)}${holdingsLabel(row,entry)}</small>` : ''}</td><td>${pct(row.day)}</td><td>${pct(row.week)}</td><td>${pct(row.month)}</td><td>${citationLine(row.sourceIds,entry) || '<span class="muted">미확인</span>'}</td></tr>`;}).join('');
-    const body = note(section.methodology) + note(section.note) + (rows.length ? `<div class="tablewrap" tabindex="0" role="region" aria-label="업종별 수익률 표, 가로로 스크롤 가능"><table class="brief-table"><caption>ETF·종목 바스켓 · % · 열 제목을 누르면 정렬 · 미확인은 0이 아닙니다</caption><thead><tr><th scope="col">업종 / ETF</th>${head}<th scope="col">출처</th></tr></thead><tbody>${tableRows}</tbody></table></div>` : blank(section.emptyMessage));
+    const tableRows = sorted.map(row=>{const group=row.group || '대표 업종';const separator=groups.length>1&&group!==previousGroup?`<tr class="sector-separator"><th scope="rowgroup" colspan="5">${text(group)}</th></tr>`:'';previousGroup=group;return separator+`<tr><td>${text(row.name)}${row.instrumentType === 'etf' ? `<small class="brief-etf-label">${text(row.ticker)}${holdingsLabel(row,entry)}</small>` : `<small>${text(row.ticker)}</small>${row.benchmark ? `<small class="brief-benchmark">${text(row.benchmark)}</small>` : ''}`}</td><td>${pct(row.day)}</td><td>${pct(row.week)}</td><td>${pct(row.month)}</td><td>${citationLine(row.sourceIds,entry) || '<span class="muted">미확인</span>'}</td></tr>`;}).join('');
+    const body = note(section.methodology) + note(typeof section.note === 'string' ? section.note.replace('기준일과 출처를 각 행에 표시합니다.', '기준일과 출처는 하단 출처 목록에서 확인할 수 있습니다.') : section.note) + (rows.length ? `<div class="tablewrap" tabindex="0" role="region" aria-label="업종별 수익률 표, 가로로 스크롤 가능"><table class="brief-table"><caption>ETF·종목 바스켓 · % · 열 제목을 누르면 정렬 · 미확인은 0이 아닙니다</caption><thead><tr><th scope="col">업종 / ETF</th>${head}<th scope="col">출처</th></tr></thead><tbody>${tableRows}</tbody></table></div>` : blank(section.emptyMessage));
     return details('brief-sectors','업종별 수익률', rows.length ? `${rows.length}개 비교지표 · 1일 / 1주 / 1개월` : '수익률 검증 대기', body, true);
   }
   function storySection(entry, key) {

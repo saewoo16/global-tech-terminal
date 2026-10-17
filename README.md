@@ -65,7 +65,7 @@ python scripts/audit_coverage.py
 
 - `summary`: `{title, text, sourceIds}` 배열, `indices`: `{name, close, changePct, sourceIds}` 배열
 - `sectors`: `{methodology, note, rows}`. 각 행은 `{name, ticker, benchmark, group, day, week, month, sourceIds}`. 수익률은 백분율 숫자입니다.
-- ETF 행은 `instrumentType: "etf"`, 바스켓은 `"basket"`으로 구분합니다. ETF에는 `holdings: {status:"verified", asOf:"YYYY-MM-DD", sourceIds:[], top5:[{name,ticker,weightPct}]}`를 추가합니다. 운용사 실제 보유내역 기준일·출처와 비중 내림차순의 정확히 5개 보유종목을 기록하며 ETF명 옆 괄호에 표시합니다. 현재 자료를 과거 거래일 자료로 간주하지 않습니다. 확인하지 못한 경우 `{status:"unverified", note:"미확인 이유"}`로 명시하고 추정 종목을 넣지 않습니다. 기존 3종목 바스켓은 ETF 상위 5종목으로 바꾸지 않습니다. 매일 새 브리핑 작성 때 기준일과 출처를 다시 검증하며 이전 보유내역의 날짜를 자동으로 오늘로 바꾸지 않습니다.
+- ETF 행은 `instrumentType: "etf"`, 바스켓은 `"basket"`으로 구분합니다. ETF에는 `holdings: {status:"verified", asOf:"YYYY-MM-DD", sourceIds:[], top5:[{name,ticker,weightPct}]}`를 추가합니다. 운용사 실제 보유내역 기준일·출처와 비중 내림차순의 정확히 5개 보유종목을 기록하며 `티커(종목1 / 종목2 / 종목3 / 종목4 / 종목5)` 형식으로 표시하며 중복되는 ETF 풀네임과 행별 보유비중·기준일·출처 줄은 생략합니다. 실제 기준일과 출처는 하단 출처 목록과 데이터에 보존합니다. 현재 자료를 과거 거래일 자료로 간주하지 않습니다. 확인하지 못한 경우 `{status:"unverified", note:"미확인 이유"}`로 명시하고 추정 종목을 넣지 않습니다. 기존 3종목 바스켓은 ETF 상위 5종목으로 바꾸지 않습니다. 매일 새 브리핑 작성 때 기준일과 출처를 다시 검증하며 이전 보유내역의 날짜를 자동으로 오늘로 바꾸지 않습니다.
 - `movers` / `highs`: `{criteria, note, rows}`. 각 행은 `{name, ticker, changePct, marketCapUSD, reason, kind, sourceIds}`. 거래량 검증값은 `volumeCurrent`, `volumePrevious`, `volumeChangePct`에 기록합니다.
 - `earnings`: `{note, rows}`. 각 행은 `{name, ticker, period, summary, metrics:[{label,value}], callHighlights:[], sourceIds}`. `callHighlights`에는 확인한 자료 유형을 명시합니다.
 - `flows`: `{unit, asOf, note, sourceIds, rows:[{market, foreign, institution, individual}]}`. 양수는 순매수입니다.
