@@ -1514,9 +1514,9 @@
   {
     "sector": "서버·네트워크",
     "category": "SSD·스토리지",
-    "name": "Pure Storage",
-    "ticker": "PSTG",
-    "symbol": "NYSE:PSTG",
+    "name": "Everpure (Pure Storage)",
+    "ticker": "P",
+    "symbol": "NYSE:P",
     "country": "미국"
   },
   {
@@ -2043,8 +2043,8 @@
     "sector": "소프트웨어",
     "category": "핀테크·급여",
     "name": "Fiserv",
-    "ticker": "FI",
-    "symbol": "NYSE:FI",
+    "ticker": "FISV",
+    "symbol": "NASDAQ:FISV",
     "country": "미국"
   },
   {

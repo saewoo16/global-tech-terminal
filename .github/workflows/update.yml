@@ -9,9 +9,14 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: market-data-updates
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -24,7 +29,17 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Validate updater regression tests
+        run: |
+          python -m unittest discover -s tests -v
+          node tests/test_ui.cjs
+
+      - name: Save coverage baseline
+        run: cp data/market.json /tmp/market-baseline.json
+
       - name: Update data
+        env:
+          FETCH_FINANCIALS: ${{ github.event_name == 'workflow_dispatch' && '1' || '0' }}
         run: python scripts/update_data.py
 
       - name: Backfill Japanese financials
@@ -32,6 +47,12 @@ jobs:
 
       - name: Backfill Japan and Europe earnings
         run: python scripts/patch_regional_earnings.py
+
+      - name: Apply verified source snapshots
+        run: python scripts/apply_financial_backfills.py
+
+      - name: Audit every company and reject coverage regressions
+        run: python scripts/audit_coverage.py --baseline /tmp/market-baseline.json
 
       - name: Save updated data
         run: |

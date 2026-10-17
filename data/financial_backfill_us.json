@@ -1,0 +1,1191 @@
+{
+  "asOf": "2026-10-17",
+  "unit": "millions of reporting currency",
+  "companies": {
+    "NASDAQ:FLEX": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": true,
+      "quarters": [
+        {
+          "date": "2026-06-26",
+          "periodStart": "2026-04-01",
+          "revenue": 7928.0,
+          "operatingIncome": 392.0,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/866374/000086637426000030/flex-20260626.htm",
+          "sourceType": "filing",
+          "source": "SEC EDGAR US GAAP",
+          "verifiedAt": "2026-10-17",
+          "basis": "US GAAP",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2026-04-01",
+              "periodEnd": "2026-06-26",
+              "value": 7928.0,
+              "xbrlTag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "accessionNumber": "0000866374-26-000030",
+              "filed": "2026-07-31",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/866374/000086637426000030/flex-20260626.htm"
+            },
+            "operatingIncome": {
+              "periodStart": "2026-04-01",
+              "periodEnd": "2026-06-26",
+              "value": 392.0,
+              "xbrlTag": "us-gaap:OperatingIncomeLoss",
+              "accessionNumber": "0000866374-26-000030",
+              "filed": "2026-07-31",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/866374/000086637426000030/flex-20260626.htm"
+            }
+          }
+        },
+        {
+          "date": "2026-03-31",
+          "periodStart": "2026-01-01",
+          "revenue": 7477.0,
+          "operatingIncome": 372.0,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/866374/000086637426000012/flex-20260331.htm",
+          "sourceType": "filing-derived",
+          "source": "SEC EDGAR US GAAP",
+          "verifiedAt": "2026-10-17",
+          "basis": "US GAAP",
+          "derivation": {
+            "method": "Annual minus Q1 minus Q2 minus Q3 (standalone quarters); sum of Q1–Q3 reconciles to the reported nine-month total.",
+            "revenue": {
+              "annual": {
+                "periodStart": "2025-04-01",
+                "periodEnd": "2026-03-31",
+                "value": 27914.0,
+                "xbrlTag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+                "accessionNumber": "0000866374-26-000012",
+                "filed": "2026-05-20",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/866374/000086637426000012/flex-20260331.htm"
+              },
+              "subtractQuarters": [
+                {
+                  "periodStart": "2025-04-01",
+                  "periodEnd": "2025-06-27",
+                  "value": 6575.0,
+                  "xbrlTag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+                  "accessionNumber": "0000866374-26-000030",
+                  "filed": "2026-07-31",
+                  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/866374/000086637426000030/flex-20260626.htm"
+                },
+                {
+                  "periodStart": "2025-06-28",
+                  "periodEnd": "2025-09-26",
+                  "value": 6804.0,
+                  "xbrlTag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+                  "accessionNumber": "0000866374-25-000051",
+                  "filed": "2025-10-31",
+                  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/866374/000086637425000051/flex-20250926.htm"
+                },
+                {
+                  "periodStart": "2025-09-27",
+                  "periodEnd": "2025-12-31",
+                  "value": 7058.0,
+                  "xbrlTag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+                  "accessionNumber": "0000866374-26-000005",
+                  "filed": "2026-02-06",
+                  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/866374/000086637426000005/flex-20251231.htm"
+                }
+              ]
+            },
+            "operatingIncome": {
+              "annual": {
+                "periodStart": "2025-04-01",
+                "periodEnd": "2026-03-31",
+                "value": 1368.0,
+                "xbrlTag": "us-gaap:OperatingIncomeLoss",
+                "accessionNumber": "0000866374-26-000012",
+                "filed": "2026-05-20",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/866374/000086637426000012/flex-20260331.htm"
+              },
+              "subtractQuarters": [
+                {
+                  "periodStart": "2025-04-01",
+                  "periodEnd": "2025-06-27",
+                  "value": 311.0,
+                  "xbrlTag": "us-gaap:OperatingIncomeLoss",
+                  "accessionNumber": "0000866374-26-000030",
+                  "filed": "2026-07-31",
+                  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/866374/000086637426000030/flex-20260626.htm"
+                },
+                {
+                  "periodStart": "2025-06-28",
+                  "periodEnd": "2025-09-26",
+                  "value": 296.0,
+                  "xbrlTag": "us-gaap:OperatingIncomeLoss",
+                  "accessionNumber": "0000866374-25-000051",
+                  "filed": "2025-10-31",
+                  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/866374/000086637425000051/flex-20250926.htm"
+                },
+                {
+                  "periodStart": "2025-09-27",
+                  "periodEnd": "2025-12-31",
+                  "value": 389.0,
+                  "xbrlTag": "us-gaap:OperatingIncomeLoss",
+                  "accessionNumber": "0000866374-26-000005",
+                  "filed": "2026-02-06",
+                  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/866374/000086637426000005/flex-20251231.htm"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "date": "2025-12-31",
+          "periodStart": "2025-09-27",
+          "revenue": 7058.0,
+          "operatingIncome": 389.0,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/866374/000086637426000005/flex-20251231.htm",
+          "sourceType": "filing",
+          "source": "SEC EDGAR US GAAP",
+          "verifiedAt": "2026-10-17",
+          "basis": "US GAAP",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2025-09-27",
+              "periodEnd": "2025-12-31",
+              "value": 7058.0,
+              "xbrlTag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "accessionNumber": "0000866374-26-000005",
+              "filed": "2026-02-06",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/866374/000086637426000005/flex-20251231.htm"
+            },
+            "operatingIncome": {
+              "periodStart": "2025-09-27",
+              "periodEnd": "2025-12-31",
+              "value": 389.0,
+              "xbrlTag": "us-gaap:OperatingIncomeLoss",
+              "accessionNumber": "0000866374-26-000005",
+              "filed": "2026-02-06",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/866374/000086637426000005/flex-20251231.htm"
+            }
+          }
+        },
+        {
+          "date": "2025-09-26",
+          "periodStart": "2025-06-28",
+          "revenue": 6804.0,
+          "operatingIncome": 296.0,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/866374/000086637425000051/flex-20250926.htm",
+          "sourceType": "filing",
+          "source": "SEC EDGAR US GAAP",
+          "verifiedAt": "2026-10-17",
+          "basis": "US GAAP",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2025-06-28",
+              "periodEnd": "2025-09-26",
+              "value": 6804.0,
+              "xbrlTag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "accessionNumber": "0000866374-25-000051",
+              "filed": "2025-10-31",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/866374/000086637425000051/flex-20250926.htm"
+            },
+            "operatingIncome": {
+              "periodStart": "2025-06-28",
+              "periodEnd": "2025-09-26",
+              "value": 296.0,
+              "xbrlTag": "us-gaap:OperatingIncomeLoss",
+              "accessionNumber": "0000866374-25-000051",
+              "filed": "2025-10-31",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/866374/000086637425000051/flex-20250926.htm"
+            }
+          }
+        }
+      ],
+      "financialNote": "Consolidated US GAAP revenue and operating income in millions of USD. Actual fiscal period ends; fiscal Q4 is derived from the annual result less standalone Q1–Q3."
+    },
+    "NASDAQ:AMZN": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": true,
+      "quarters": [
+        {
+          "date": "2026-06-30",
+          "periodStart": "2026-04-01",
+          "revenue": 200606.0,
+          "operatingIncome": 27461.0,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+          "sourceType": "filing",
+          "source": "SEC EDGAR US GAAP",
+          "verifiedAt": "2026-10-17",
+          "basis": "US GAAP",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2026-04-01",
+              "periodEnd": "2026-06-30",
+              "value": 200606.0,
+              "xbrlTag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "accessionNumber": "0001018724-26-000026",
+              "filed": "2026-07-31",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+            },
+            "operatingIncome": {
+              "periodStart": "2026-04-01",
+              "periodEnd": "2026-06-30",
+              "value": 27461.0,
+              "xbrlTag": "us-gaap:OperatingIncomeLoss",
+              "accessionNumber": "0001018724-26-000026",
+              "filed": "2026-07-31",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+            }
+          }
+        },
+        {
+          "date": "2026-03-31",
+          "periodStart": "2026-01-01",
+          "revenue": 181519.0,
+          "operatingIncome": 23852.0,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000014/amzn-20260331.htm",
+          "sourceType": "filing",
+          "source": "SEC EDGAR US GAAP",
+          "verifiedAt": "2026-10-17",
+          "basis": "US GAAP",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2026-01-01",
+              "periodEnd": "2026-03-31",
+              "value": 181519.0,
+              "xbrlTag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "accessionNumber": "0001018724-26-000014",
+              "filed": "2026-04-30",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000014/amzn-20260331.htm"
+            },
+            "operatingIncome": {
+              "periodStart": "2026-01-01",
+              "periodEnd": "2026-03-31",
+              "value": 23852.0,
+              "xbrlTag": "us-gaap:OperatingIncomeLoss",
+              "accessionNumber": "0001018724-26-000014",
+              "filed": "2026-04-30",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000014/amzn-20260331.htm"
+            }
+          }
+        },
+        {
+          "date": "2025-12-31",
+          "periodStart": "2025-10-01",
+          "revenue": 213386.0,
+          "operatingIncome": 24977.0,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+          "sourceType": "filing-derived",
+          "source": "SEC EDGAR US GAAP",
+          "verifiedAt": "2026-10-17",
+          "basis": "US GAAP",
+          "derivation": {
+            "method": "Annual minus Q1 minus Q2 minus Q3 (standalone quarters); sum of Q1–Q3 reconciles to the reported nine-month total.",
+            "revenue": {
+              "annual": {
+                "periodStart": "2025-01-01",
+                "periodEnd": "2025-12-31",
+                "value": 716924.0,
+                "xbrlTag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+                "accessionNumber": "0001018724-26-000004",
+                "filed": "2026-02-06",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+              },
+              "subtractQuarters": [
+                {
+                  "periodStart": "2025-01-01",
+                  "periodEnd": "2025-03-31",
+                  "value": 155667.0,
+                  "xbrlTag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+                  "accessionNumber": "0001018724-26-000014",
+                  "filed": "2026-04-30",
+                  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000014/amzn-20260331.htm"
+                },
+                {
+                  "periodStart": "2025-04-01",
+                  "periodEnd": "2025-06-30",
+                  "value": 167702.0,
+                  "xbrlTag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+                  "accessionNumber": "0001018724-26-000026",
+                  "filed": "2026-07-31",
+                  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+                },
+                {
+                  "periodStart": "2025-07-01",
+                  "periodEnd": "2025-09-30",
+                  "value": 180169.0,
+                  "xbrlTag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+                  "accessionNumber": "0001018724-25-000123",
+                  "filed": "2025-10-31",
+                  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000123/amzn-20250930.htm"
+                }
+              ]
+            },
+            "operatingIncome": {
+              "annual": {
+                "periodStart": "2025-01-01",
+                "periodEnd": "2025-12-31",
+                "value": 79975.0,
+                "xbrlTag": "us-gaap:OperatingIncomeLoss",
+                "accessionNumber": "0001018724-26-000004",
+                "filed": "2026-02-06",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+              },
+              "subtractQuarters": [
+                {
+                  "periodStart": "2025-01-01",
+                  "periodEnd": "2025-03-31",
+                  "value": 18405.0,
+                  "xbrlTag": "us-gaap:OperatingIncomeLoss",
+                  "accessionNumber": "0001018724-26-000014",
+                  "filed": "2026-04-30",
+                  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000014/amzn-20260331.htm"
+                },
+                {
+                  "periodStart": "2025-04-01",
+                  "periodEnd": "2025-06-30",
+                  "value": 19171.0,
+                  "xbrlTag": "us-gaap:OperatingIncomeLoss",
+                  "accessionNumber": "0001018724-26-000026",
+                  "filed": "2026-07-31",
+                  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+                },
+                {
+                  "periodStart": "2025-07-01",
+                  "periodEnd": "2025-09-30",
+                  "value": 17422.0,
+                  "xbrlTag": "us-gaap:OperatingIncomeLoss",
+                  "accessionNumber": "0001018724-25-000123",
+                  "filed": "2025-10-31",
+                  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000123/amzn-20250930.htm"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "date": "2025-09-30",
+          "periodStart": "2025-07-01",
+          "revenue": 180169.0,
+          "operatingIncome": 17422.0,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000123/amzn-20250930.htm",
+          "sourceType": "filing",
+          "source": "SEC EDGAR US GAAP",
+          "verifiedAt": "2026-10-17",
+          "basis": "US GAAP",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2025-07-01",
+              "periodEnd": "2025-09-30",
+              "value": 180169.0,
+              "xbrlTag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "accessionNumber": "0001018724-25-000123",
+              "filed": "2025-10-31",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000123/amzn-20250930.htm"
+            },
+            "operatingIncome": {
+              "periodStart": "2025-07-01",
+              "periodEnd": "2025-09-30",
+              "value": 17422.0,
+              "xbrlTag": "us-gaap:OperatingIncomeLoss",
+              "accessionNumber": "0001018724-25-000123",
+              "filed": "2025-10-31",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000123/amzn-20250930.htm"
+            }
+          }
+        }
+      ],
+      "financialNote": "Consolidated US GAAP revenue and operating income in millions of USD. Actual fiscal period ends; fiscal Q4 is derived from the annual result less standalone Q1–Q3."
+    },
+    "NYSE:APH": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": true,
+      "quarters": [
+        {
+          "date": "2026-06-30",
+          "periodStart": "2026-04-01",
+          "revenue": 8758.1,
+          "operatingIncome": 2584.6,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/820313/000110465926089194/aph-20260630x10q.htm",
+          "sourceType": "filing",
+          "source": "SEC EDGAR US GAAP",
+          "verifiedAt": "2026-10-17",
+          "basis": "US GAAP",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2026-04-01",
+              "periodEnd": "2026-06-30",
+              "value": 8758.1,
+              "xbrlTag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "accessionNumber": "0001104659-26-089194",
+              "filed": "2026-07-31",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/820313/000110465926089194/aph-20260630x10q.htm"
+            },
+            "operatingIncome": {
+              "periodStart": "2026-04-01",
+              "periodEnd": "2026-06-30",
+              "value": 2584.6,
+              "xbrlTag": "us-gaap:OperatingIncomeLoss",
+              "accessionNumber": "0001104659-26-089194",
+              "filed": "2026-07-31",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/820313/000110465926089194/aph-20260630x10q.htm"
+            }
+          }
+        },
+        {
+          "date": "2026-03-31",
+          "periodStart": "2026-01-01",
+          "revenue": 7620.1,
+          "operatingIncome": 1831.8,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/820313/000110465926054128/aph-20260331x10q.htm",
+          "sourceType": "filing",
+          "source": "SEC EDGAR US GAAP",
+          "verifiedAt": "2026-10-17",
+          "basis": "US GAAP",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2026-01-01",
+              "periodEnd": "2026-03-31",
+              "value": 7620.1,
+              "xbrlTag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "accessionNumber": "0001104659-26-054128",
+              "filed": "2026-05-01",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/820313/000110465926054128/aph-20260331x10q.htm"
+            },
+            "operatingIncome": {
+              "periodStart": "2026-01-01",
+              "periodEnd": "2026-03-31",
+              "value": 1831.8,
+              "xbrlTag": "us-gaap:OperatingIncomeLoss",
+              "accessionNumber": "0001104659-26-054128",
+              "filed": "2026-05-01",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/820313/000110465926054128/aph-20260331x10q.htm"
+            }
+          }
+        },
+        {
+          "date": "2025-12-31",
+          "periodStart": "2025-10-01",
+          "revenue": 6439.0,
+          "operatingIncome": 1722.7,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/820313/000110465926013549/aph-20251231x10k.htm",
+          "sourceType": "filing-derived",
+          "source": "SEC EDGAR US GAAP",
+          "verifiedAt": "2026-10-17",
+          "basis": "US GAAP",
+          "derivation": {
+            "method": "Annual minus Q1 minus Q2 minus Q3 (standalone quarters); sum of Q1–Q3 reconciles to the reported nine-month total.",
+            "revenue": {
+              "annual": {
+                "periodStart": "2025-01-01",
+                "periodEnd": "2025-12-31",
+                "value": 23094.7,
+                "xbrlTag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+                "accessionNumber": "0001104659-26-013549",
+                "filed": "2026-02-11",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/820313/000110465926013549/aph-20251231x10k.htm"
+              },
+              "subtractQuarters": [
+                {
+                  "periodStart": "2025-01-01",
+                  "periodEnd": "2025-03-31",
+                  "value": 4811.0,
+                  "xbrlTag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+                  "accessionNumber": "0001104659-26-054128",
+                  "filed": "2026-05-01",
+                  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/820313/000110465926054128/aph-20260331x10q.htm"
+                },
+                {
+                  "periodStart": "2025-04-01",
+                  "periodEnd": "2025-06-30",
+                  "value": 5650.3,
+                  "xbrlTag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+                  "accessionNumber": "0001104659-26-089194",
+                  "filed": "2026-07-31",
+                  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/820313/000110465926089194/aph-20260630x10q.htm"
+                },
+                {
+                  "periodStart": "2025-07-01",
+                  "periodEnd": "2025-09-30",
+                  "value": 6194.4,
+                  "xbrlTag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+                  "accessionNumber": "0001104659-25-102142",
+                  "filed": "2025-10-24",
+                  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/820313/000110465925102142/aph-20250930x10q.htm"
+                }
+              ]
+            },
+            "operatingIncome": {
+              "annual": {
+                "periodStart": "2025-01-01",
+                "periodEnd": "2025-12-31",
+                "value": 5868.6,
+                "xbrlTag": "us-gaap:OperatingIncomeLoss",
+                "accessionNumber": "0001104659-26-013549",
+                "filed": "2026-02-11",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/820313/000110465926013549/aph-20251231x10k.htm"
+              },
+              "subtractQuarters": [
+                {
+                  "periodStart": "2025-01-01",
+                  "periodEnd": "2025-03-31",
+                  "value": 1024.8,
+                  "xbrlTag": "us-gaap:OperatingIncomeLoss",
+                  "accessionNumber": "0001104659-26-054128",
+                  "filed": "2026-05-01",
+                  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/820313/000110465926054128/aph-20260331x10q.htm"
+                },
+                {
+                  "periodStart": "2025-04-01",
+                  "periodEnd": "2025-06-30",
+                  "value": 1418.8,
+                  "xbrlTag": "us-gaap:OperatingIncomeLoss",
+                  "accessionNumber": "0001104659-26-089194",
+                  "filed": "2026-07-31",
+                  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/820313/000110465926089194/aph-20260630x10q.htm"
+                },
+                {
+                  "periodStart": "2025-07-01",
+                  "periodEnd": "2025-09-30",
+                  "value": 1702.3,
+                  "xbrlTag": "us-gaap:OperatingIncomeLoss",
+                  "accessionNumber": "0001104659-25-102142",
+                  "filed": "2025-10-24",
+                  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/820313/000110465925102142/aph-20250930x10q.htm"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "date": "2025-09-30",
+          "periodStart": "2025-07-01",
+          "revenue": 6194.4,
+          "operatingIncome": 1702.3,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/820313/000110465925102142/aph-20250930x10q.htm",
+          "sourceType": "filing",
+          "source": "SEC EDGAR US GAAP",
+          "verifiedAt": "2026-10-17",
+          "basis": "US GAAP",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2025-07-01",
+              "periodEnd": "2025-09-30",
+              "value": 6194.4,
+              "xbrlTag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "accessionNumber": "0001104659-25-102142",
+              "filed": "2025-10-24",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/820313/000110465925102142/aph-20250930x10q.htm"
+            },
+            "operatingIncome": {
+              "periodStart": "2025-07-01",
+              "periodEnd": "2025-09-30",
+              "value": 1702.3,
+              "xbrlTag": "us-gaap:OperatingIncomeLoss",
+              "accessionNumber": "0001104659-25-102142",
+              "filed": "2025-10-24",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/820313/000110465925102142/aph-20250930x10q.htm"
+            }
+          }
+        }
+      ],
+      "financialNote": "Consolidated US GAAP revenue and operating income in millions of USD. Actual fiscal period ends; fiscal Q4 is derived from the annual result less standalone Q1–Q3."
+    },
+    "NYSE:P": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": true,
+      "quarters": [
+        {
+          "date": "2026-08-02",
+          "periodStart": "2026-05-04",
+          "revenue": 1185.898,
+          "operatingIncome": 63.155,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1474432/000147443226000088/pstg-20260802.htm",
+          "sourceType": "filing",
+          "source": "SEC EDGAR US GAAP",
+          "verifiedAt": "2026-10-17",
+          "basis": "US GAAP",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2026-05-04",
+              "periodEnd": "2026-08-02",
+              "value": 1185.898,
+              "xbrlTag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "accessionNumber": "0001474432-26-000088",
+              "filed": "2026-09-04",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1474432/000147443226000088/pstg-20260802.htm"
+            },
+            "operatingIncome": {
+              "periodStart": "2026-05-04",
+              "periodEnd": "2026-08-02",
+              "value": 63.155,
+              "xbrlTag": "us-gaap:OperatingIncomeLoss",
+              "accessionNumber": "0001474432-26-000088",
+              "filed": "2026-09-04",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1474432/000147443226000088/pstg-20260802.htm"
+            }
+          }
+        },
+        {
+          "date": "2026-05-03",
+          "periodStart": "2026-02-02",
+          "revenue": 1052.896,
+          "operatingIncome": 19.939,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1474432/000147443226000061/pstg-20260503.htm",
+          "sourceType": "filing",
+          "source": "SEC EDGAR US GAAP",
+          "verifiedAt": "2026-10-17",
+          "basis": "US GAAP",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2026-02-02",
+              "periodEnd": "2026-05-03",
+              "value": 1052.896,
+              "xbrlTag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "accessionNumber": "0001474432-26-000061",
+              "filed": "2026-06-05",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1474432/000147443226000061/pstg-20260503.htm"
+            },
+            "operatingIncome": {
+              "periodStart": "2026-02-02",
+              "periodEnd": "2026-05-03",
+              "value": 19.939,
+              "xbrlTag": "us-gaap:OperatingIncomeLoss",
+              "accessionNumber": "0001474432-26-000061",
+              "filed": "2026-06-05",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1474432/000147443226000061/pstg-20260503.htm"
+            }
+          }
+        },
+        {
+          "date": "2026-02-01",
+          "periodStart": "2025-11-03",
+          "revenue": 1058.903,
+          "operatingIncome": 87.198,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1474432/000147443226000027/pstg-20260201.htm",
+          "sourceType": "filing-derived",
+          "source": "SEC EDGAR US GAAP",
+          "verifiedAt": "2026-10-17",
+          "basis": "US GAAP",
+          "derivation": {
+            "method": "Annual minus Q1 minus Q2 minus Q3 (standalone quarters); sum of Q1–Q3 reconciles to the reported nine-month total.",
+            "revenue": {
+              "annual": {
+                "periodStart": "2025-02-03",
+                "periodEnd": "2026-02-01",
+                "value": 3662.843,
+                "xbrlTag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+                "accessionNumber": "0001474432-26-000027",
+                "filed": "2026-03-25",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1474432/000147443226000027/pstg-20260201.htm"
+              },
+              "subtractQuarters": [
+                {
+                  "periodStart": "2025-02-03",
+                  "periodEnd": "2025-05-04",
+                  "value": 778.485,
+                  "xbrlTag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+                  "accessionNumber": "0001474432-26-000061",
+                  "filed": "2026-06-05",
+                  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1474432/000147443226000061/pstg-20260503.htm"
+                },
+                {
+                  "periodStart": "2025-05-05",
+                  "periodEnd": "2025-08-03",
+                  "value": 861.002,
+                  "xbrlTag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+                  "accessionNumber": "0001474432-26-000088",
+                  "filed": "2026-09-04",
+                  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1474432/000147443226000088/pstg-20260802.htm"
+                },
+                {
+                  "periodStart": "2025-08-04",
+                  "periodEnd": "2025-11-02",
+                  "value": 964.453,
+                  "xbrlTag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+                  "accessionNumber": "0001474432-25-000065",
+                  "filed": "2025-12-10",
+                  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1474432/000147443225000065/pstg-20251102.htm"
+                }
+              ]
+            },
+            "operatingIncome": {
+              "annual": {
+                "periodStart": "2025-02-03",
+                "periodEnd": "2026-02-01",
+                "value": 114.816,
+                "xbrlTag": "us-gaap:OperatingIncomeLoss",
+                "accessionNumber": "0001474432-26-000027",
+                "filed": "2026-03-25",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1474432/000147443226000027/pstg-20260201.htm"
+              },
+              "subtractQuarters": [
+                {
+                  "periodStart": "2025-02-03",
+                  "periodEnd": "2025-05-04",
+                  "value": -31.171,
+                  "xbrlTag": "us-gaap:OperatingIncomeLoss",
+                  "accessionNumber": "0001474432-26-000061",
+                  "filed": "2026-06-05",
+                  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1474432/000147443226000061/pstg-20260503.htm"
+                },
+                {
+                  "periodStart": "2025-05-05",
+                  "periodEnd": "2025-08-03",
+                  "value": 4.871,
+                  "xbrlTag": "us-gaap:OperatingIncomeLoss",
+                  "accessionNumber": "0001474432-26-000088",
+                  "filed": "2026-09-04",
+                  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1474432/000147443226000088/pstg-20260802.htm"
+                },
+                {
+                  "periodStart": "2025-08-04",
+                  "periodEnd": "2025-11-02",
+                  "value": 53.918,
+                  "xbrlTag": "us-gaap:OperatingIncomeLoss",
+                  "accessionNumber": "0001474432-25-000065",
+                  "filed": "2025-12-10",
+                  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1474432/000147443225000065/pstg-20251102.htm"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "date": "2025-11-02",
+          "periodStart": "2025-08-04",
+          "revenue": 964.453,
+          "operatingIncome": 53.918,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1474432/000147443225000065/pstg-20251102.htm",
+          "sourceType": "filing",
+          "source": "SEC EDGAR US GAAP",
+          "verifiedAt": "2026-10-17",
+          "basis": "US GAAP",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2025-08-04",
+              "periodEnd": "2025-11-02",
+              "value": 964.453,
+              "xbrlTag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "accessionNumber": "0001474432-25-000065",
+              "filed": "2025-12-10",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1474432/000147443225000065/pstg-20251102.htm"
+            },
+            "operatingIncome": {
+              "periodStart": "2025-08-04",
+              "periodEnd": "2025-11-02",
+              "value": 53.918,
+              "xbrlTag": "us-gaap:OperatingIncomeLoss",
+              "accessionNumber": "0001474432-25-000065",
+              "filed": "2025-12-10",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1474432/000147443225000065/pstg-20251102.htm"
+            }
+          }
+        }
+      ],
+      "financialNote": "Consolidated US GAAP revenue and operating income in millions of USD. Actual fiscal period ends; fiscal Q4 is derived from the annual result less standalone Q1–Q3.",
+      "formerSymbol": "NYSE:PSTG",
+      "identitySourceUrl": "https://www.everpuredata.com/uk/company/newsroom/press-releases/everpure-to-change-ticker-symbol.html"
+    },
+    "NASDAQ:FISV": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": true,
+      "quarters": [
+        {
+          "date": "2026-06-30",
+          "periodStart": "2026-04-01",
+          "revenue": 5292.0,
+          "operatingIncome": 1015.0,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000031/fisv-20260630.htm",
+          "sourceType": "filing",
+          "source": "SEC EDGAR US GAAP",
+          "verifiedAt": "2026-10-17",
+          "basis": "US GAAP",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2026-04-01",
+              "periodEnd": "2026-06-30",
+              "value": 5292.0,
+              "xbrlTag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "accessionNumber": "0000798354-26-000031",
+              "filed": "2026-08-07",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000031/fisv-20260630.htm"
+            },
+            "operatingIncome": {
+              "periodStart": "2026-04-01",
+              "periodEnd": "2026-06-30",
+              "value": 1015.0,
+              "xbrlTag": "us-gaap:OperatingIncomeLoss",
+              "accessionNumber": "0000798354-26-000031",
+              "filed": "2026-08-07",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000031/fisv-20260630.htm"
+            }
+          }
+        },
+        {
+          "date": "2026-03-31",
+          "periodStart": "2026-01-01",
+          "revenue": 5027.0,
+          "operatingIncome": 918.0,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000018/fisv-20260331.htm",
+          "sourceType": "filing",
+          "source": "SEC EDGAR US GAAP",
+          "verifiedAt": "2026-10-17",
+          "basis": "US GAAP",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2026-01-01",
+              "periodEnd": "2026-03-31",
+              "value": 5027.0,
+              "xbrlTag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "accessionNumber": "0000798354-26-000018",
+              "filed": "2026-05-06",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000018/fisv-20260331.htm"
+            },
+            "operatingIncome": {
+              "periodStart": "2026-01-01",
+              "periodEnd": "2026-03-31",
+              "value": 918.0,
+              "xbrlTag": "us-gaap:OperatingIncomeLoss",
+              "accessionNumber": "0000798354-26-000018",
+              "filed": "2026-05-06",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000018/fisv-20260331.htm"
+            }
+          }
+        },
+        {
+          "date": "2025-12-31",
+          "periodStart": "2025-10-01",
+          "revenue": 5284.0,
+          "operatingIncome": 1291.0,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000009/fi-20251231.htm",
+          "sourceType": "filing-derived",
+          "source": "SEC EDGAR US GAAP",
+          "verifiedAt": "2026-10-17",
+          "basis": "US GAAP",
+          "derivation": {
+            "method": "Annual minus Q1 minus Q2 minus Q3 (standalone quarters); sum of Q1–Q3 reconciles to the reported nine-month total.",
+            "revenue": {
+              "annual": {
+                "periodStart": "2025-01-01",
+                "periodEnd": "2025-12-31",
+                "value": 21193.0,
+                "xbrlTag": "us-gaap:Revenues",
+                "accessionNumber": "0000798354-26-000009",
+                "filed": "2026-02-19",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000009/fi-20251231.htm"
+              },
+              "subtractQuarters": [
+                {
+                  "periodStart": "2025-01-01",
+                  "periodEnd": "2025-03-31",
+                  "value": 5130.0,
+                  "xbrlTag": "us-gaap:Revenues",
+                  "accessionNumber": "0000798354-26-000018",
+                  "filed": "2026-05-06",
+                  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000018/fisv-20260331.htm"
+                },
+                {
+                  "periodStart": "2025-04-01",
+                  "periodEnd": "2025-06-30",
+                  "value": 5516.0,
+                  "xbrlTag": "us-gaap:Revenues",
+                  "accessionNumber": "0000798354-26-000031",
+                  "filed": "2026-08-07",
+                  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000031/fisv-20260630.htm"
+                },
+                {
+                  "periodStart": "2025-07-01",
+                  "periodEnd": "2025-09-30",
+                  "value": 5263.0,
+                  "xbrlTag": "us-gaap:Revenues",
+                  "accessionNumber": "0000798354-25-000171",
+                  "filed": "2025-10-30",
+                  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/798354/000079835425000171/fisv-20250930.htm"
+                }
+              ]
+            },
+            "operatingIncome": {
+              "annual": {
+                "periodStart": "2025-01-01",
+                "periodEnd": "2025-12-31",
+                "value": 5818.0,
+                "xbrlTag": "us-gaap:OperatingIncomeLoss",
+                "accessionNumber": "0000798354-26-000009",
+                "filed": "2026-02-19",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000009/fi-20251231.htm"
+              },
+              "subtractQuarters": [
+                {
+                  "periodStart": "2025-01-01",
+                  "periodEnd": "2025-03-31",
+                  "value": 1395.0,
+                  "xbrlTag": "us-gaap:OperatingIncomeLoss",
+                  "accessionNumber": "0000798354-26-000018",
+                  "filed": "2026-05-06",
+                  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000018/fisv-20260331.htm"
+                },
+                {
+                  "periodStart": "2025-04-01",
+                  "periodEnd": "2025-06-30",
+                  "value": 1696.0,
+                  "xbrlTag": "us-gaap:OperatingIncomeLoss",
+                  "accessionNumber": "0000798354-26-000031",
+                  "filed": "2026-08-07",
+                  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000031/fisv-20260630.htm"
+                },
+                {
+                  "periodStart": "2025-07-01",
+                  "periodEnd": "2025-09-30",
+                  "value": 1436.0,
+                  "xbrlTag": "us-gaap:OperatingIncomeLoss",
+                  "accessionNumber": "0000798354-25-000171",
+                  "filed": "2025-10-30",
+                  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/798354/000079835425000171/fisv-20250930.htm"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "date": "2025-09-30",
+          "periodStart": "2025-07-01",
+          "revenue": 5263.0,
+          "operatingIncome": 1436.0,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/798354/000079835425000171/fisv-20250930.htm",
+          "sourceType": "filing",
+          "source": "SEC EDGAR US GAAP",
+          "verifiedAt": "2026-10-17",
+          "basis": "US GAAP",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2025-07-01",
+              "periodEnd": "2025-09-30",
+              "value": 5263.0,
+              "xbrlTag": "us-gaap:Revenues",
+              "accessionNumber": "0000798354-25-000171",
+              "filed": "2025-10-30",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/798354/000079835425000171/fisv-20250930.htm"
+            },
+            "operatingIncome": {
+              "periodStart": "2025-07-01",
+              "periodEnd": "2025-09-30",
+              "value": 1436.0,
+              "xbrlTag": "us-gaap:OperatingIncomeLoss",
+              "accessionNumber": "0000798354-25-000171",
+              "filed": "2025-10-30",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/798354/000079835425000171/fisv-20250930.htm"
+            }
+          }
+        }
+      ],
+      "financialNote": "Consolidated US GAAP revenue and operating income in millions of USD. Actual fiscal period ends; fiscal Q4 is derived from the annual result less standalone Q1–Q3.",
+      "formerSymbol": "NYSE:FI",
+      "identitySourceUrl": "https://www.nasdaqtrader.com/TraderNews.aspx?id=DTN2025-32"
+    },
+    "NASDAQ:NVMI": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": true,
+      "quarters": [
+        {
+          "date": "2026-06-30",
+          "periodStart": "2026-04-01",
+          "revenue": 254.958,
+          "operatingIncome": 76.185,
+          "sourceUrl": "https://www.novami.com/investors/press-releases/nova-reports-record-second-quarter-2026-financial-results/",
+          "sourceType": "issuer",
+          "source": "Nova official earnings release, GAAP tables",
+          "verifiedAt": "2026-10-17",
+          "basis": "US GAAP"
+        },
+        {
+          "date": "2026-03-31",
+          "periodStart": "2026-01-01",
+          "revenue": 235.308,
+          "operatingIncome": 70.836,
+          "sourceUrl": "https://www.novami.com/investors/press-releases/nova-reports-record-first-quarter-2026-financial-results/",
+          "sourceType": "issuer",
+          "source": "Nova official earnings release, GAAP tables",
+          "verifiedAt": "2026-10-17",
+          "basis": "US GAAP"
+        },
+        {
+          "date": "2025-12-31",
+          "periodStart": "2025-10-01",
+          "revenue": 222.624,
+          "operatingIncome": 60.733,
+          "sourceUrl": "https://www.novami.com/investors/press-releases/nova-reports-fourth-quarter-and-record-full-year-2025-results/",
+          "sourceType": "issuer",
+          "source": "Nova official earnings release, GAAP tables",
+          "verifiedAt": "2026-10-17",
+          "basis": "US GAAP"
+        },
+        {
+          "date": "2025-09-30",
+          "periodStart": "2025-07-01",
+          "revenue": 224.608,
+          "operatingIncome": 63.86,
+          "sourceUrl": "https://www.novami.com/investors/press-releases/nova-reports-fourth-quarter-and-record-full-year-2025-results/",
+          "sourceType": "issuer",
+          "source": "Nova official earnings release, GAAP tables",
+          "verifiedAt": "2026-10-17",
+          "basis": "US GAAP"
+        }
+      ],
+      "financialNote": "Consolidated US GAAP; USD thousands in source divided by 1,000. Q4 and Q3 operating income are explicitly reported in the GAAP-to-non-GAAP reconciliation; no adjusted income is used."
+    },
+    "NYSE:DLR": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": true,
+      "quarters": [
+        {
+          "date": "2026-06-30",
+          "periodStart": "2026-04-01",
+          "revenue": 1924.04,
+          "operatingIncome": 467.245,
+          "sourceUrl": "https://investor.digitalrealty.com/node/30551/pdf",
+          "sourceType": "issuer",
+          "source": "Digital Realty Q2 2026 consolidated quarterly statements of operations, PDF pages 5–6",
+          "verifiedAt": "2026-10-17",
+          "basis": "US GAAP",
+          "sourcePage": 6,
+          "revenueSourcePage": 5,
+          "filingUrl": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926089296/dlr-20260630x10q.htm"
+        },
+        {
+          "date": "2026-03-31",
+          "periodStart": "2026-01-01",
+          "revenue": 1635.173,
+          "operatingIncome": 267.806,
+          "sourceUrl": "https://investor.digitalrealty.com/node/30551/pdf",
+          "sourceType": "issuer",
+          "source": "Digital Realty Q2 2026 consolidated quarterly statements of operations, PDF pages 5–6",
+          "verifiedAt": "2026-10-17",
+          "basis": "US GAAP",
+          "sourcePage": 6,
+          "revenueSourcePage": 5
+        },
+        {
+          "date": "2025-12-31",
+          "periodStart": "2025-10-01",
+          "revenue": 1634.671,
+          "operatingIncome": 155.489,
+          "sourceUrl": "https://investor.digitalrealty.com/node/30551/pdf",
+          "sourceType": "issuer",
+          "source": "Digital Realty Q2 2026 consolidated quarterly statements of operations, PDF pages 5–6",
+          "verifiedAt": "2026-10-17",
+          "basis": "US GAAP",
+          "sourcePage": 6,
+          "revenueSourcePage": 5
+        },
+        {
+          "date": "2025-09-30",
+          "periodStart": "2025-07-01",
+          "revenue": 1577.234,
+          "operatingIncome": 158.2,
+          "sourceUrl": "https://investor.digitalrealty.com/node/30551/pdf",
+          "sourceType": "issuer",
+          "source": "Digital Realty Q2 2026 consolidated quarterly statements of operations, PDF pages 5–6",
+          "verifiedAt": "2026-10-17",
+          "basis": "US GAAP",
+          "sourcePage": 6,
+          "revenueSourcePage": 5
+        }
+      ],
+      "financialNote": "2026년 2분기 공시에 재작성된 연결 US GAAP 기준입니다. 4개 분기 모두 자산 매각손익을 포함한 공시 영업이익으로 통일했습니다. NOI·FFO·EBITDA·조정영업이익과 다릅니다."
+    },
+    "NYSE:DD": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": true,
+      "quarters": [
+        {
+          "date": "2026-06-30",
+          "periodStart": "2026-04-01",
+          "revenue": 1819.0,
+          "operatingIncome": null,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1666700/000166670026000053/dd-20260630.htm",
+          "sourceType": "filing",
+          "source": "DuPont SEC EDGAR, restated continuing operations",
+          "verifiedAt": "2026-10-17",
+          "basis": "US GAAP continuing operations",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2026-04-01",
+              "periodEnd": "2026-06-30",
+              "value": 1819.0,
+              "xbrlTag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "accessionNumber": "0001666700-26-000053",
+              "filed": "2026-08-04",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1666700/000166670026000053/dd-20260630.htm"
+            }
+          },
+          "operatingIncomeNote": "Not separately reported in the consolidated GAAP income statement; unverified Yahoo subtotal removed. Income from continuing operations and Operating EBITDA are not substituted."
+        },
+        {
+          "date": "2026-03-31",
+          "periodStart": "2026-01-01",
+          "revenue": 1681.0,
+          "operatingIncome": null,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1666700/000166670026000031/dd-20260331.htm",
+          "sourceType": "filing",
+          "source": "DuPont SEC EDGAR, restated continuing operations",
+          "verifiedAt": "2026-10-17",
+          "basis": "US GAAP continuing operations",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2026-01-01",
+              "periodEnd": "2026-03-31",
+              "value": 1681.0,
+              "xbrlTag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "accessionNumber": "0001666700-26-000031",
+              "filed": "2026-05-05",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1666700/000166670026000031/dd-20260331.htm"
+            }
+          },
+          "operatingIncomeNote": "Not separately reported in the consolidated GAAP income statement; unverified Yahoo subtotal removed. Income from continuing operations and Operating EBITDA are not substituted."
+        },
+        {
+          "date": "2025-12-31",
+          "periodStart": "2025-10-01",
+          "revenue": 1693.0,
+          "operatingIncome": null,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1666700/000166670026000013/dd-20251231.htm",
+          "sourceType": "filing",
+          "source": "DuPont SEC EDGAR, restated continuing operations",
+          "verifiedAt": "2026-10-17",
+          "basis": "US GAAP continuing operations",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2025-10-01",
+              "periodEnd": "2025-12-31",
+              "value": 1693.0,
+              "xbrlTag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "accessionNumber": "0001666700-26-000013",
+              "filed": "2026-02-17",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1666700/000166670026000013/dd-20251231.htm"
+            }
+          },
+          "operatingIncomeNote": "Not separately reported in the consolidated GAAP income statement; unverified Yahoo subtotal removed. Income from continuing operations and Operating EBITDA are not substituted."
+        },
+        {
+          "date": "2025-09-30",
+          "periodStart": "2025-07-01",
+          "revenue": 1795.0,
+          "operatingIncome": null,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1666700/000166670026000013/dd-20251231.htm",
+          "sourceType": "filing",
+          "source": "DuPont SEC EDGAR, restated continuing operations",
+          "verifiedAt": "2026-10-17",
+          "basis": "US GAAP continuing operations",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2025-07-01",
+              "periodEnd": "2025-09-30",
+              "value": 1795.0,
+              "xbrlTag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "accessionNumber": "0001666700-26-000013",
+              "filed": "2026-02-17",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1666700/000166670026000013/dd-20251231.htm"
+            }
+          },
+          "operatingIncomeNote": "Not separately reported in the consolidated GAAP income statement; unverified Yahoo subtotal removed. Income from continuing operations and Operating EBITDA are not substituted."
+        }
+      ],
+      "financialNote": "Electronics(Qnity)·Aramids 분사 사업을 제외한 계속영업 기준으로 재작성된 매출입니다. 2025년 3·4분기는 연차보고서의 독립 분기 수치입니다. 회사가 연결 GAAP 영업이익 소계를 별도 제시하지 않아 미공시로 표시하며, EBITDA·세전이익으로 대체하지 않습니다.",
+      "financialStatus": "not_disclosed"
+    }
+  }
+}

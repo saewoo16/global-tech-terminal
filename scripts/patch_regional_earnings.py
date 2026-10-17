@@ -19,6 +19,7 @@ import datetime as dt
 import json
 from collections import defaultdict
 from pathlib import Path
+from data_quality import write_json
 
 ROOT = Path(__file__).resolve().parents[1]
 MARKET = ROOT / 'data' / 'market.json'
@@ -238,7 +239,7 @@ def apply_patch():
     market=json.loads(MARKET.read_text(encoding='utf-8'))
     stocks=market.setdefault('stocks',{})
     companies={r['symbol']:r for r in rows}
-    now=dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds')
+    verified_at='2026-10-13'  # Snapshot evidence date, never today's price-refresh date.
     seeds = {}
     for symbol,(source,groups) in JAPAN_YTD.items():
         seeds[symbol] = ('JPY',source,standalone_from_ytd(groups))
@@ -259,6 +260,7 @@ def apply_patch():
             # Yahoo financial currency/period data, only for these known dates.
             existing[date]={'date':date,'revenue':rev,'operatingIncome':op,
                             'sourceUrl':source,'source':('Issuer IR / disclosed filings' if 'google.com' not in source and 'marketscreener.com' not in source else 'Public financial data aggregation'),
+                            'verifiedAt':verified_at, 'operatingIncomeNotDisclosed':symbol in EUROPE_REVENUE_ONLY,
                             'sourceType':('filing' if 'google.com' not in source and 'marketscreener.com' not in source else 'financial_aggregator'), 'reportedCurrency':currency}
             if prior.get('revenue') != rev or prior.get('operatingIncome') != op:changes+=1
         obj['quarters']=sorted(existing.values(),key=lambda q:q['date'],reverse=True)[:4]
@@ -266,7 +268,9 @@ def apply_patch():
         obj['finSource']=('Published quarterly revenue; operating profit only H1/FY (not disclosed quarterly)'
                           if symbol in EUROPE_REVENUE_ONLY else
                           'Public filings / reported quarterly financial snapshot')
-        obj['financialUpdated']=now
+        obj['financialVerifiedAt']=verified_at
+        # Legacy patch timestamps reflected execution, not new source evidence.
+        obj.pop('financialUpdated',None)
     report=[]
     for sym,row in sorted(companies.items()):
         if not sym.startswith(REGIONAL_PREFIXES):continue
@@ -282,7 +286,7 @@ def apply_patch():
     REPORT.parent.mkdir(parents=True,exist_ok=True)
     with REPORT.open('w',encoding='utf-8-sig',newline='') as f:
         w=csv.DictWriter(f,fieldnames=list(report[0]));w.writeheader();w.writerows(report)
-    MARKET.write_text(json.dumps(market,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
+    write_json(MARKET,market)
     for venue in ('TSE:', 'EU'):
         group=[r for r in report if r['symbol'].startswith('TSE:') == (venue=='TSE:')]
         print('REGIONAL_COVERAGE',venue,'companies',len(group),

@@ -6,6 +6,7 @@ No API key required. Yahoo availability varies by issuer.
 import json, math, time, datetime as dt
 from pathlib import Path
 import yfinance as yf
+from data_quality import merge_quarters, write_json
 
 ROOT = Path(__file__).resolve().parents[1]
 COMPANIES = ROOT/'data'/'companies.json'
@@ -87,20 +88,22 @@ def main():
                 old=previous.get(date)
                 if old is None or (old.get('operatingIncome') is None and new['operatingIncome'] is not None):
                     previous[date]=new
-            merged=sorted(previous.values(),key=lambda x:x['date'],reverse=True)[:4]
+            merged=merge_quarters(item.get('quarters',[]),list(previous.values()))
             if len(merged)>len(item.get('quarters',[])):improved+=1
             if merged:
+                changed=merged!=item.get('quarters',[])
                 item['quarters']=merged
                 item['reportingCurrency']=item.get('reportingCurrency') or 'JPY'
-                item['financialUpdated']=dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds')
-                item['finSource']='Yahoo Finance (quarterly + verified FY Q4 backfill); verify official IR'
+                if changed:
+                    item['financialUpdated']=dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds')
+                    item['finSource']='Yahoo Finance (quarterly + FY Q4 derivation); verify official IR'
             if len(merged)==4 and all(q.get('operatingIncome') is not None for q in merged):full+=1
             print(f'{i}/{len(japan)} {company["name"]} ({ticker}) {len(merged)}/4 quarters, {sum(q.get("operatingIncome") is not None for q in merged)} operating income',flush=True)
         except Exception as exc:
             print('FAILED',ticker,str(exc)[:180],flush=True)
         time.sleep(.25)
     market['stocks']=stocks
-    MARKET.write_text(json.dumps(market,ensure_ascii=False),encoding='utf-8')
+    write_json(MARKET,market)
     print(f'JAPAN_DONE total={len(japan)} full_4q_with_operating_income={full} improved_count={improved}',flush=True)
     print('NOTE: If Yahoo has no quarterly statements, this script cannot reconstruct them from official IR. No fabricated values.',flush=True)
 

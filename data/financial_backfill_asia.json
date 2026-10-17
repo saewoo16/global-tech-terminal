@@ -1,0 +1,717 @@
+{
+  "asOf": "2026-10-17",
+  "unit": "million reportingCurrency",
+  "companies": {
+    "HKEX:981": {
+      "reportingCurrency": "USD",
+      "quarters": [
+        {
+          "date": "2026-06-30",
+          "periodStart": "2026-04-01",
+          "periodType": "quarter",
+          "revenue": 3005.588,
+          "operatingIncome": 534.179,
+          "sourceUrl": "https://smic.cdn.shwebspace.com/uploads/6a7d7c4f/ER_EN.pdf",
+          "sourceType": "filing",
+          "verifiedAt": "2026-10-17",
+          "asOf": "2026-10-17",
+          "sourcePage": 4,
+          "accountingBasis": "IFRS consolidated"
+        },
+        {
+          "date": "2026-03-31",
+          "periodStart": "2026-01-01",
+          "periodType": "quarter",
+          "revenue": 2505.487,
+          "operatingIncome": 247.792,
+          "sourceUrl": "https://smic.cdn.shwebspace.com/uploads/6a7d7c4f/ER_EN.pdf",
+          "sourceType": "filing",
+          "verifiedAt": "2026-10-17",
+          "asOf": "2026-10-17",
+          "sourcePage": 4,
+          "accountingBasis": "IFRS consolidated"
+        },
+        {
+          "date": "2025-12-31",
+          "periodStart": "2025-10-01",
+          "periodType": "quarter",
+          "revenue": 2488.71,
+          "operatingIncome": 298.62,
+          "sourceUrl": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0210/2026021000518.pdf",
+          "sourceType": "filing",
+          "verifiedAt": "2026-10-17",
+          "asOf": "2026-10-17",
+          "sourcePage": 4,
+          "accountingBasis": "IFRS consolidated"
+        },
+        {
+          "date": "2025-09-30",
+          "periodStart": "2025-07-01",
+          "periodType": "quarter",
+          "revenue": 2381.822,
+          "operatingIncome": 351.069,
+          "sourceUrl": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0210/2026021000518.pdf",
+          "sourceType": "filing",
+          "verifiedAt": "2026-10-17",
+          "asOf": "2026-10-17",
+          "sourcePage": 4,
+          "accountingBasis": "IFRS consolidated"
+        }
+      ],
+      "replaceQuarters": true,
+      "financialNote": "회사 공시 IFRS 연결 분기 실적. 원문 USD 천 단위를 백만 단위로 환산."
+    },
+    "KRX:108320": {
+      "reportingCurrency": "KRW",
+      "quarters": [
+        {
+          "date": "2026-06-30",
+          "periodStart": "2026-04-01",
+          "periodType": "quarter",
+          "revenue": 401200,
+          "operatingIncome": 22000,
+          "sourceUrl": "https://www.lxsemicon.com/comm/filedown/2391",
+          "sourceType": "filing",
+          "verifiedAt": "2026-10-17",
+          "asOf": "2026-10-17",
+          "sourcePage": 6,
+          "accountingBasis": "IFRS consolidated"
+        },
+        {
+          "date": "2026-03-31",
+          "periodStart": "2026-01-01",
+          "periodType": "quarter",
+          "revenue": 388800,
+          "operatingIncome": 20600,
+          "sourceUrl": "https://www.lxsemicon.com/comm/filedown/2391",
+          "sourceType": "filing",
+          "verifiedAt": "2026-10-17",
+          "asOf": "2026-10-17",
+          "sourcePage": 6,
+          "accountingBasis": "IFRS consolidated"
+        },
+        {
+          "date": "2025-12-31",
+          "periodStart": "2025-10-01",
+          "periodType": "quarter",
+          "revenue": 389800,
+          "operatingIncome": 24900,
+          "sourceUrl": "https://www.lxsemicon.com/comm/filedown/2391",
+          "sourceType": "filing",
+          "verifiedAt": "2026-10-17",
+          "asOf": "2026-10-17",
+          "sourcePage": 6,
+          "accountingBasis": "IFRS consolidated"
+        },
+        {
+          "date": "2025-09-30",
+          "periodStart": "2025-07-01",
+          "periodType": "quarter",
+          "revenue": 394400,
+          "operatingIncome": 14000,
+          "sourceUrl": "https://www.lxsemicon.com/comm/filedown/2391",
+          "sourceType": "filing",
+          "verifiedAt": "2026-10-17",
+          "asOf": "2026-10-17",
+          "sourcePage": 6,
+          "accountingBasis": "IFRS consolidated"
+        }
+      ],
+      "replaceQuarters": true,
+      "financialNote": "회사 IFRS 연결 실적 발표. 원문 억원 단위 반올림 수치를 백만원으로 환산. 잠정·미감사 실적."
+    },
+    "HKEX:992": {
+      "reportingCurrency": "USD",
+      "quarters": [
+        {
+          "date": "2026-06-30",
+          "periodStart": "2026-04-01",
+          "periodType": "quarter",
+          "revenue": 26942.766,
+          "operatingIncome": 19.202,
+          "sourceUrl": "https://investor.lenovo.com/en/financial/income_statement.php?data=quarterly",
+          "sourceType": "filing",
+          "verifiedAt": "2026-10-17",
+          "asOf": "2026-10-17",
+          "accountingBasis": "IFRS consolidated"
+        },
+        {
+          "date": "2026-03-31",
+          "periodStart": "2026-01-01",
+          "periodType": "quarter",
+          "revenue": 21588.33,
+          "operatingIncome": 885.555,
+          "sourceUrl": "https://investor.lenovo.com/en/financial/income_statement.php?data=quarterly",
+          "sourceType": "filing",
+          "verifiedAt": "2026-10-17",
+          "asOf": "2026-10-17",
+          "accountingBasis": "IFRS consolidated"
+        },
+        {
+          "date": "2025-12-31",
+          "periodStart": "2025-10-01",
+          "periodType": "quarter",
+          "revenue": 22204.334,
+          "operatingIncome": 948.458,
+          "sourceUrl": "https://investor.lenovo.com/en/financial/income_statement.php?data=quarterly",
+          "sourceType": "filing",
+          "verifiedAt": "2026-10-17",
+          "asOf": "2026-10-17",
+          "accountingBasis": "IFRS consolidated"
+        },
+        {
+          "date": "2025-09-30",
+          "periodStart": "2025-07-01",
+          "periodType": "quarter",
+          "revenue": 20452.022,
+          "operatingIncome": 642.921,
+          "sourceUrl": "https://investor.lenovo.com/en/financial/income_statement.php?data=quarterly",
+          "sourceType": "filing",
+          "verifiedAt": "2026-10-17",
+          "asOf": "2026-10-17",
+          "accountingBasis": "IFRS consolidated"
+        }
+      ],
+      "replaceQuarters": true,
+      "financialNote": "회사 공식 분기 연결 손익계산서. USD 천 단위를 백만 단위로 환산. 세그먼트·조정 영업이익 제외."
+    },
+    "HKEX:700": {
+      "reportingCurrency": "CNY",
+      "quarters": [
+        {
+          "date": "2026-06-30",
+          "periodStart": "2026-04-01",
+          "periodType": "quarter",
+          "revenue": 204785,
+          "operatingIncome": 67276,
+          "sourceUrl": "https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf",
+          "sourceType": "filing",
+          "verifiedAt": "2026-10-17",
+          "asOf": "2026-10-17",
+          "sourcePage": 4,
+          "correction": "Replaces vendor operatingIncome 68236 with issuer IFRS operating profit 67276.",
+          "accountingBasis": "IFRS consolidated"
+        },
+        {
+          "date": "2026-03-31",
+          "periodStart": "2026-01-01",
+          "periodType": "quarter",
+          "revenue": 196458,
+          "operatingIncome": 67375,
+          "sourceUrl": "https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf",
+          "sourceType": "filing",
+          "verifiedAt": "2026-10-17",
+          "asOf": "2026-10-17",
+          "sourcePage": 4,
+          "accountingBasis": "IFRS consolidated"
+        },
+        {
+          "date": "2025-12-31",
+          "periodStart": "2025-10-01",
+          "periodType": "quarter",
+          "revenue": 194371,
+          "operatingIncome": 60338,
+          "sourceUrl": "https://static.www.tencent.com/uploads/2026/05/13/59cf8219adbb046153f69387479350ac.pdf",
+          "sourceType": "filing",
+          "verifiedAt": "2026-10-17",
+          "asOf": "2026-10-17",
+          "sourcePage": 8,
+          "accountingBasis": "IFRS consolidated"
+        },
+        {
+          "date": "2025-09-30",
+          "periodStart": "2025-07-01",
+          "periodType": "quarter",
+          "revenue": 192869,
+          "operatingIncome": 63554,
+          "sourceUrl": "https://static.www.tencent.com/uploads/2025/11/13/e63656944030f90a5e4c8f1718d8bdd6.pdf",
+          "sourceType": "filing",
+          "verifiedAt": "2026-10-17",
+          "asOf": "2026-10-17",
+          "sourcePage": 5,
+          "accountingBasis": "IFRS consolidated"
+        }
+      ],
+      "replaceQuarters": true,
+      "financialNote": "회사 IFRS 연결 분기 실적. 2026년 2분기 영업이익은 공식 공시 67,276백만 CNY로 정정. 비IFRS 조정 수치 제외."
+    },
+    "HKEX:1888": {
+      "reportingCurrency": "HKD",
+      "quarters": [],
+      "replaceQuarters": true,
+      "financialStatus": "not_disclosed",
+      "financialNote": "회사는 반기·연간 실적을 공시하며 독립 분기 매출·영업이익은 확인되지 않았습니다. 반기 수치를 임의로 분할하지 않습니다.",
+      "sourceUrl": "https://www.kblaminates.com/en/upload/portal/20260918/202609180905142933.pdf",
+      "verifiedAt": "2026-10-17",
+      "reportedPeriods": [
+        {
+          "date": "2026-06-30",
+          "periodStart": "2026-01-01",
+          "periodType": "half_year",
+          "revenue": 14903.809,
+          "operatingIncome": null,
+          "sourceUrl": "https://www.kblaminates.com/en/upload/portal/20260918/202609180905142933.pdf",
+          "sourcePage": 2,
+          "sourceType": "filing",
+          "verifiedAt": "2026-10-17",
+          "asOf": "2026-10-17",
+          "note": "Six-month revenue directly reported. No explicitly reported operating-profit subtotal; no EBIT substitute inserted."
+        }
+      ]
+    },
+    "TWSE:3189": {
+      "reportingCurrency": "TWD",
+      "quarters": [
+        {
+          "date": "2025-09-30",
+          "periodStart": "2025-07-01",
+          "periodType": "quarter",
+          "revenue": 10356.188,
+          "operatingIncome": 627.991,
+          "sourceUrl": "https://www.kinsus.com.tw/upload/media/ir/financial-information/financial-report/114/114Q3(E).pdf",
+          "sourceType": "filing",
+          "verifiedAt": "2026-10-17",
+          "asOf": "2026-10-17",
+          "sourcePage": 8,
+          "accountingBasis": "IFRS consolidated"
+        }
+      ],
+      "financialNote": "2025년 3분기 연결 실적은 회사 원문 공시로 보완. 원문 TWD 천 단위를 백만 단위로 환산."
+    },
+    "HKEX:522": {
+      "reportingCurrency": "HKD",
+      "quarters": [
+        {
+          "date": "2026-06-30",
+          "periodStart": "2026-04-01",
+          "periodType": "quarter",
+          "revenue": 4935.8,
+          "operatingIncome": 786.474,
+          "sourceUrl": "https://www.asmpt.com/site/assets/files/85468/q2_2026_en_announcement.pdf",
+          "sourceType": "filing",
+          "verifiedAt": "2026-10-17",
+          "asOf": "2026-10-17",
+          "sourcePage": 30,
+          "accountingScope": "continuing_operations",
+          "accountingBasis": "HKFRS consolidated"
+        },
+        {
+          "date": "2026-03-31",
+          "periodStart": "2026-01-01",
+          "periodType": "quarter",
+          "revenue": 3966.8,
+          "operatingIncome": 385.177,
+          "sourceUrl": "https://www.asmpt.com/site/assets/files/85243/e0522_results_announcement_2026_q1.pdf",
+          "sourceType": "filing",
+          "verifiedAt": "2026-10-17",
+          "asOf": "2026-10-17",
+          "sourcePage": 13,
+          "accountingScope": "continuing_operations",
+          "accountingBasis": "HKFRS consolidated",
+          "sourcePages": [
+            7,
+            13
+          ]
+        },
+        {
+          "date": "2025-12-31",
+          "periodStart": "2025-10-01",
+          "periodType": "quarter",
+          "revenue": 3958.972,
+          "operatingIncome": 161.041,
+          "sourceUrl": "https://www.asmpt.com/site/assets/files/85243/e0522_results_announcement_2026_q1.pdf",
+          "sourceType": "filing",
+          "verifiedAt": "2026-10-17",
+          "asOf": "2026-10-17",
+          "sourcePage": 13,
+          "accountingScope": "continuing_operations",
+          "accountingBasis": "HKFRS consolidated",
+          "sourcePages": [
+            7,
+            13
+          ]
+        },
+        {
+          "date": "2025-09-30",
+          "periodStart": "2025-07-01",
+          "periodType": "quarter",
+          "revenue": 3527.972,
+          "operatingIncome": 80.589,
+          "sourceUrl": "https://www.asmpt.com/site/assets/files/84503/e0522_results_announcement_2025_q4.pdf",
+          "sourceType": "filing",
+          "verifiedAt": "2026-10-17",
+          "asOf": "2026-10-17",
+          "sourcePage": 36,
+          "accountingScope": "continuing_operations",
+          "accountingBasis": "HKFRS consolidated",
+          "sourcePages": [
+            24,
+            36
+          ],
+          "note": "Revenue directly reported as continuing-operations total in quarterly analysis; operating profit directly reported in HKFRS reconciliation, not segment profit."
+        }
+      ],
+      "replaceQuarters": true,
+      "financialNote": "계속영업 기준 HKFRS 연결 분기 실적. NEXX 중단영업 재분류에 맞춰 2025년 비교 수치를 재작성. 비HKFRS 조정 영업이익 제외."
+    },
+    "SSE:688256": {
+      "name": "Cambricon",
+      "reportingCurrency": "CNY",
+      "units": "millions",
+      "quarters": [
+        {
+          "date": "2025-09-30",
+          "revenue": 1726.78089257,
+          "operatingIncome": 567.24671402,
+          "sourceUrl": "https://static.cninfo.com.cn/finalpage/2025-10-18/1224719401.PDF",
+          "asOf": "2026-10-17",
+          "derivation": "Revenue directly reported for Q3: CNY 1,726,780,892.57. Operating income = consolidated PRC GAAP 营业利润 for 9M 2025 CNY 1,605,699,534.07 minus H1 2025 CNY 1,038,452,820.05 = CNY 567,246,714.02; all CNY figures divided by 1,000,000.",
+          "sources": [
+            {
+              "url": "https://static.cninfo.com.cn/finalpage/2025-10-18/1224719401.PDF",
+              "document": "2025 third-quarter report",
+              "pages": [
+                1,
+                9
+              ],
+              "revenueCNY": "1726780892.57",
+              "nineMonthOperatingIncomeCNY": "1605699534.07"
+            },
+            {
+              "url": "https://static.cninfo.com.cn/finalpage/2025-08-27/1224586025.PDF",
+              "document": "2025 half-year report",
+              "pages": [
+                61,
+                62
+              ],
+              "halfYearOperatingIncomeCNY": "1038452820.05"
+            }
+          ],
+          "accountingBasis": "Consolidated PRC GAAP reported operating profit (营业利润); not net income, not non-GAAP. Standalone three-month quarter calculated from cumulative periods where required.",
+          "periodStart": "2025-07-01",
+          "periodType": "quarter",
+          "sourceType": "filing",
+          "verifiedAt": "2026-10-17",
+          "supportingSourceUrls": [
+            "https://static.cninfo.com.cn/finalpage/2025-08-27/1224586025.PDF"
+          ]
+        }
+      ],
+      "financialNote": "누락 분기만 공식 공시로 보완. 중국 회계기준 연결 영업이익(营业利润)은 누적 9개월에서 상반기를 차감해 산출(1분기는 직접 공시)."
+    },
+    "SZSE:301200": {
+      "name": "Han's CNC",
+      "reportingCurrency": "CNY",
+      "units": "millions",
+      "quarters": [
+        {
+          "date": "2026-03-31",
+          "revenue": 1955.15285095,
+          "operatingIncome": 366.98869016,
+          "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-21/1225124924.PDF",
+          "asOf": "2026-10-17",
+          "derivation": "Directly reported Q1 2026 consolidated revenue CNY 1,955,152,850.95 and operating profit (营业利润) CNY 366,988,690.16, divided by 1,000,000. No cumulative-period subtraction.",
+          "sources": [
+            {
+              "url": "https://static.cninfo.com.cn/finalpage/2026-04-21/1225124924.PDF",
+              "document": "2026 first-quarter report",
+              "pages": [
+                2,
+                9
+              ],
+              "revenueCNY": "1955152850.95",
+              "operatingIncomeCNY": "366988690.16"
+            }
+          ],
+          "accountingBasis": "Consolidated PRC GAAP reported operating profit (营业利润); not net income, not non-GAAP.",
+          "periodStart": "2026-01-01",
+          "periodType": "quarter",
+          "sourceType": "filing",
+          "verifiedAt": "2026-10-17",
+          "supportingSourceUrls": []
+        },
+        {
+          "date": "2025-09-30",
+          "revenue": 1520.984069,
+          "operatingIncome": 265.23460359,
+          "sourceUrl": "https://static.cninfo.com.cn/finalpage/2025-10-21/1224720256.PDF",
+          "asOf": "2026-10-17",
+          "derivation": "Revenue directly reported for Q3: CNY 1,520,984,069.00. Operating income = consolidated PRC GAAP 营业利润 for 9M 2025 CNY 558,043,190.68 minus H1 2025 CNY 292,808,587.09 = CNY 265,234,603.59; all CNY figures divided by 1,000,000.",
+          "sources": [
+            {
+              "url": "https://static.cninfo.com.cn/finalpage/2025-10-21/1224720256.PDF",
+              "document": "2025 third-quarter report",
+              "pages": [
+                2,
+                10
+              ],
+              "revenueCNY": "1520984069.00",
+              "nineMonthOperatingIncomeCNY": "558043190.68"
+            },
+            {
+              "url": "https://static.cninfo.com.cn/finalpage/2025-08-20/1224517851.PDF",
+              "document": "2025 half-year report",
+              "pages": [
+                49,
+                50
+              ],
+              "halfYearOperatingIncomeCNY": "292808587.09"
+            }
+          ],
+          "accountingBasis": "Consolidated PRC GAAP reported operating profit (营业利润); not net income, not non-GAAP. Standalone three-month quarter calculated from cumulative periods where required.",
+          "periodStart": "2025-07-01",
+          "periodType": "quarter",
+          "sourceType": "filing",
+          "verifiedAt": "2026-10-17",
+          "supportingSourceUrls": [
+            "https://static.cninfo.com.cn/finalpage/2025-08-20/1224517851.PDF"
+          ]
+        }
+      ],
+      "financialNote": "누락 분기만 공식 공시로 보완. 중국 회계기준 연결 영업이익(营业利润)은 누적 9개월에서 상반기를 차감해 산출(1분기는 직접 공시)."
+    },
+    "SZSE:002463": {
+      "name": "WUS Printed Circuit",
+      "reportingCurrency": "CNY",
+      "units": "millions",
+      "quarters": [
+        {
+          "date": "2025-09-30",
+          "revenue": 5018.518348,
+          "operatingIncome": 1197.543026,
+          "sourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2025-10-29/33640cca-c7b0-4d33-a0e3-18eb541603a0.PDF",
+          "asOf": "2026-10-17",
+          "derivation": "Revenue directly reported for Q3: CNY 5,018,518,348.00. Operating income = consolidated PRC GAAP 营业利润 for 9M 2025 CNY 3,111,766,705.00 minus H1 2025 CNY 1,914,223,679.00 = CNY 1,197,543,026.00; all CNY figures divided by 1,000,000.",
+          "sources": [
+            {
+              "url": "https://disc.static.szse.cn/disc/disk03/finalpage/2025-10-29/33640cca-c7b0-4d33-a0e3-18eb541603a0.PDF",
+              "document": "2025 third-quarter report",
+              "pages": [
+                1,
+                8
+              ],
+              "revenueCNY": "5018518348",
+              "nineMonthOperatingIncomeCNY": "3111766705"
+            },
+            {
+              "url": "https://static.cninfo.com.cn/finalpage/2025-08-22/1224535064.PDF",
+              "document": "2025 half-year report",
+              "pages": [
+                40
+              ],
+              "halfYearOperatingIncomeCNY": "1914223679"
+            }
+          ],
+          "accountingBasis": "Consolidated PRC GAAP reported operating profit (营业利润); not net income, not non-GAAP. Standalone three-month quarter calculated from cumulative periods where required.",
+          "periodStart": "2025-07-01",
+          "periodType": "quarter",
+          "sourceType": "filing",
+          "verifiedAt": "2026-10-17",
+          "supportingSourceUrls": [
+            "https://static.cninfo.com.cn/finalpage/2025-08-22/1224535064.PDF"
+          ]
+        }
+      ],
+      "financialNote": "누락 분기만 공식 공시로 보완. 중국 회계기준 연결 영업이익(营业利润)은 누적 9개월에서 상반기를 차감해 산출(1분기는 직접 공시)."
+    },
+    "SZSE:002916": {
+      "name": "Shennan Circuits",
+      "reportingCurrency": "CNY",
+      "units": "millions",
+      "quarters": [
+        {
+          "date": "2025-09-30",
+          "revenue": 6300.56058388,
+          "operatingIncome": 1062.51606233,
+          "sourceUrl": "https://disc.static.szse.cn/disc/disk03/finalpage/2025-10-30/9f44ccd0-adef-412f-acc9-5743697ca13a.PDF",
+          "asOf": "2026-10-17",
+          "derivation": "Revenue directly reported for Q3: CNY 6,300,560,583.88. Operating income = consolidated PRC GAAP 营业利润 for 9M 2025 CNY 2,571,070,322.26 minus H1 2025 CNY 1,508,554,259.93 = CNY 1,062,516,062.33; all CNY figures divided by 1,000,000.",
+          "sources": [
+            {
+              "url": "https://disc.static.szse.cn/disc/disk03/finalpage/2025-10-30/9f44ccd0-adef-412f-acc9-5743697ca13a.PDF",
+              "document": "2025 third-quarter report",
+              "pages": [
+                2,
+                9
+              ],
+              "revenueCNY": "6300560583.88",
+              "nineMonthOperatingIncomeCNY": "2571070322.26"
+            },
+            {
+              "url": "https://disc.static.szse.cn/disc/disk03/finalpage/2025-08-28/4d9e63cb-21b9-4ff2-ae9f-2414fa87f10b.PDF",
+              "document": "2025 half-year report",
+              "pages": [
+                47
+              ],
+              "halfYearOperatingIncomeCNY": "1508554259.93"
+            }
+          ],
+          "accountingBasis": "Consolidated PRC GAAP reported operating profit (营业利润); not net income, not non-GAAP. Standalone three-month quarter calculated from cumulative periods where required.",
+          "periodStart": "2025-07-01",
+          "periodType": "quarter",
+          "sourceType": "filing",
+          "verifiedAt": "2026-10-17",
+          "supportingSourceUrls": [
+            "https://disc.static.szse.cn/disc/disk03/finalpage/2025-08-28/4d9e63cb-21b9-4ff2-ae9f-2414fa87f10b.PDF"
+          ]
+        }
+      ],
+      "financialNote": "누락 분기만 공식 공시로 보완. 중국 회계기준 연결 영업이익(营业利润)은 누적 9개월에서 상반기를 차감해 산출(1분기는 직접 공시)."
+    },
+    "SSE:600183": {
+      "name": "Shengyi Technology",
+      "reportingCurrency": "CNY",
+      "units": "millions",
+      "quarters": [
+        {
+          "date": "2025-09-30",
+          "revenue": 7933.6584455,
+          "operatingIncome": 1393.43559095,
+          "sourceUrl": "https://static.cninfo.com.cn/finalpage/2025-10-29/1224754863.PDF",
+          "asOf": "2026-10-17",
+          "derivation": "Revenue directly reported for Q3: CNY 7,933,658,445.50. Operating income = consolidated PRC GAAP 营业利润 for 9M 2025 CNY 3,234,757,157.96 minus H1 2025 CNY 1,841,321,567.01 = CNY 1,393,435,590.95; all CNY figures divided by 1,000,000.",
+          "sources": [
+            {
+              "url": "https://static.cninfo.com.cn/finalpage/2025-10-29/1224754863.PDF",
+              "document": "2025 third-quarter report",
+              "pages": [
+                1,
+                9
+              ],
+              "revenueCNY": "7933658445.50",
+              "nineMonthOperatingIncomeCNY": "3234757157.96"
+            },
+            {
+              "url": "https://static.cninfo.com.cn/finalpage/2025-08-16/1224499862.PDF",
+              "document": "2025 half-year report",
+              "pages": [
+                45,
+                46
+              ],
+              "halfYearOperatingIncomeCNY": "1841321567.01"
+            }
+          ],
+          "accountingBasis": "Consolidated PRC GAAP reported operating profit (营业利润); not net income, not non-GAAP. Standalone three-month quarter calculated from cumulative periods where required.",
+          "periodStart": "2025-07-01",
+          "periodType": "quarter",
+          "sourceType": "filing",
+          "verifiedAt": "2026-10-17",
+          "supportingSourceUrls": [
+            "https://static.cninfo.com.cn/finalpage/2025-08-16/1224499862.PDF"
+          ]
+        }
+      ],
+      "financialNote": "누락 분기만 공식 공시로 보완. 중국 회계기준 연결 영업이익(营业利润)은 누적 9개월에서 상반기를 차감해 산출(1분기는 직접 공시)."
+    },
+    "SZSE:300308": {
+      "name": "Zhongji Innolight",
+      "reportingCurrency": "CNY",
+      "units": "millions",
+      "quarters": [
+        {
+          "date": "2025-09-30",
+          "revenue": 10215.72601352,
+          "operatingIncome": 3961.45298572,
+          "sourceUrl": "https://static.cninfo.com.cn/finalpage/2025-10-31/1224773075.PDF",
+          "asOf": "2026-10-17",
+          "derivation": "Revenue directly reported for Q3: CNY 10,215,726,013.52. Operating income = consolidated PRC GAAP 营业利润 for 9M 2025 CNY 8,838,676,999.07 minus H1 2025 CNY 4,877,224,013.35 = CNY 3,961,452,985.72; all CNY figures divided by 1,000,000.",
+          "sources": [
+            {
+              "url": "https://static.cninfo.com.cn/finalpage/2025-10-31/1224773075.PDF",
+              "document": "2025 third-quarter report",
+              "pages": [
+                2,
+                10
+              ],
+              "revenueCNY": "10215726013.52",
+              "nineMonthOperatingIncomeCNY": "8838676999.07"
+            },
+            {
+              "url": "https://static.cninfo.com.cn/finalpage/2025-08-27/1224585964.PDF",
+              "document": "2025 half-year report",
+              "pages": [
+                59,
+                60
+              ],
+              "halfYearOperatingIncomeCNY": "4877224013.35"
+            }
+          ],
+          "accountingBasis": "Consolidated PRC GAAP reported operating profit (营业利润); not net income, not non-GAAP. Standalone three-month quarter calculated from cumulative periods where required.",
+          "periodStart": "2025-07-01",
+          "periodType": "quarter",
+          "sourceType": "filing",
+          "verifiedAt": "2026-10-17",
+          "supportingSourceUrls": [
+            "https://static.cninfo.com.cn/finalpage/2025-08-27/1224585964.PDF"
+          ]
+        }
+      ],
+      "financialNote": "누락 분기만 공식 공시로 보완. 중국 회계기준 연결 영업이익(营业利润)은 누적 9개월에서 상반기를 차감해 산출(1분기는 직접 공시)."
+    },
+    "SZSE:002475": {
+      "name": "Luxshare Precision",
+      "reportingCurrency": "CNY",
+      "units": "millions",
+      "quarters": [
+        {
+          "date": "2025-09-30",
+          "revenue": 96411.45342377,
+          "operatingIncome": 5684.18030658,
+          "sourceUrl": "https://static.cninfo.com.cn/finalpage/2025-10-31/1224777620.PDF",
+          "asOf": "2026-10-17",
+          "derivation": "Revenue directly reported for Q3: CNY 96,411,453,423.77. Operating income = consolidated PRC GAAP 营业利润 for 9M 2025 CNY 13,866,594,874.55 minus H1 2025 CNY 8,182,414,567.97 = CNY 5,684,180,306.58; all CNY figures divided by 1,000,000.",
+          "sources": [
+            {
+              "url": "https://static.cninfo.com.cn/finalpage/2025-10-31/1224777620.PDF",
+              "document": "2025 third-quarter report",
+              "pages": [
+                1,
+                9
+              ],
+              "revenueCNY": "96411453423.77",
+              "nineMonthOperatingIncomeCNY": "13866594874.55"
+            },
+            {
+              "url": "https://static.cninfo.com.cn/finalpage/2025-08-26/1224571100.PDF",
+              "document": "2025 half-year report",
+              "pages": [
+                49
+              ],
+              "halfYearOperatingIncomeCNY": "8182414567.97"
+            }
+          ],
+          "accountingBasis": "Consolidated PRC GAAP reported operating profit (营业利润); not net income, not non-GAAP. Standalone three-month quarter calculated from cumulative periods where required.",
+          "periodStart": "2025-07-01",
+          "periodType": "quarter",
+          "sourceType": "filing",
+          "verifiedAt": "2026-10-17",
+          "supportingSourceUrls": [
+            "https://static.cninfo.com.cn/finalpage/2025-08-26/1224571100.PDF"
+          ]
+        }
+      ],
+      "financialNote": "누락 분기만 공식 공시로 보완. 중국 회계기준 연결 영업이익(营业利润)은 누적 9개월에서 상반기를 차감해 산출(1분기는 직접 공시)."
+    },
+    "TWSE:3037": {
+      "reportingCurrency": "TWD",
+      "quarters": [
+        {
+          "date": "2025-09-30",
+          "periodStart": "2025-07-01",
+          "periodType": "quarter",
+          "revenue": 33994,
+          "operatingIncome": 1533,
+          "sourceUrl": "https://mopsov.twse.com.tw/nas/STR/303720251110E001.pdf",
+          "sourcePage": 4,
+          "sourceType": "filing",
+          "verifiedAt": "2026-10-17",
+          "asOf": "2026-10-17",
+          "precisionNote": "Issuer consolidated financial presentation reports in whole millions TWD. No false decimal precision added.",
+          "accountingBasis": "IFRS consolidated"
+        }
+      ],
+      "financialNote": "2025년 3분기 연결 실적은 TWSE에 제출한 회사 발표자료로 보완. 원문 백만 TWD 단위 반올림 수치."
+    }
+  },
+  "sourcePageConvention": "One-based PDF page index, unless the nested source describes a printed report page."
+}
