@@ -22,3 +22,8 @@ for(const [period,label] of [['w1','1주일'],['w4','1개월']]){
 }
 assert(heatmap.includes('새 탭으로 열립니다'));
 console.log('PASS weekly/monthly original links below unchanged daily embed, exact URLs, new-tab protections, and no restricted period iframes');
+
+const cards=[...html.matchAll(/<article class="rate-card(?: rate-link-card)?" data-series="([^"]+)"/g)].map(m=>m[1]);
+assert.deepEqual(cards.slice(0,3),['DGS10','BAMLH0A0HYM2EY','HQMCB10YRP']);
+assert(html.includes('<h3>하이일드 채권 수익률 · 원본 링크</h3>'));
+console.log('PASS Treasury → HY yield original link → high-quality corporate card order');
