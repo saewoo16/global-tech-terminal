@@ -161,6 +161,54 @@ def validate(payload):
     check(flows.get("unit") == "억원", "flow unit must be 억원")
     for market in MARKETS:
         section(flows.get("markets", {}).get(market), f"flows.{market}", "time", ("foreign", "institution", "individual"))
+    futures = payload.get('futures')
+    if futures is not None:
+        check(isinstance(futures, dict), 'futures: object required')
+        if isinstance(futures, dict):
+            for name, field in (('foreignFlows', 'foreign'), ('openInterest', 'openInterest')):
+                item = futures.get(name, {})
+                path = 'futures.' + name
+                section(item, path, 'time', (field,))
+                check(item.get('unit') == '계약', path + ': explicit unit must be contracts (계약)')
+                check(all(isinstance(item.get(key), str) and item[key] for key in ('product', 'contractScope', 'sessionScope')), path + ': product/contract/session scope required')
+                if name == 'openInterest':
+                    check(item.get('holderScope') == 'market', path + ': open interest must be market-wide, not foreign holdings')
+                for row in item.get('rows', []):
+                    if name == 'openInterest' and item.get('contractCode'):
+                        check(row.get('contractCode') == item['contractCode'], path + ': fixed contract mismatch; do not stitch maturities')
+                    if name == 'foreignFlows' and number(row.get('sourceInvestorNetImbalance')) and row['sourceInvestorNetImbalance'] != 0:
+                        check(row.get('sourceBalanceWarning') is True, path + ': imbalance cannot lose warning flag')
+                    if name == 'foreignFlows' and row.get('sourceBalanceWarning'):
+                        check(number(row.get('sourceInvestorNetImbalance')) and row['sourceInvestorNetImbalance'] != 0, path + ': imbalance flag requires actual discrepancy')
+                    value = row.get(field)
+                    if value is not None and number(value):
+                        if item.get('unit') == '계약':
+                            check(value == int(value), path + ': contract counts must be whole numbers')
+                        if name == 'openInterest':
+                            check(value >= 0, path + ': open interest cannot be negative')
+                    if name == 'foreignFlows' and ('buy' in row or 'sell' in row):
+                        buy, sell = row.get('buy'), row.get('sell')
+                        check(number(buy) and buy >= 0 and number(sell) and sell >= 0, path + ': nonnegative buy/sell required')
+                        if number(buy) and number(sell) and number(value):
+                            check(abs(buy - sell - value) < .000001, path + ': net must equal buy minus sell')
+
+            item = futures.get('foreignFlows', {})
+            rows = item.get('rows', [])
+            flagged = [row['date'] for row in rows if row.get('sourceBalanceWarning')]
+            quality = item.get('qualityFlags', {})
+            if rows:
+                check(quality.get('count') == len(flagged) and quality.get('affectedDates') == flagged, 'futures.foreignFlows: quality flags must reconcile with rows')
+                if flagged:
+                    check(item.get('status') == 'partial', 'futures.foreignFlows: source warning requires partial status')
+                for n in (5, 21, 63, 126, 252):
+                    if len(rows) < n:
+                        continue
+                    selected = rows[-n:]
+                    window = item.get('windowChecks', {}).get(str(n), {})
+                    check(window.get('sessions') == n and window.get('start') == selected[0]['date'] and window.get('end') == selected[-1]['date'], 'futures.foreignFlows: window dates/count mismatch')
+                    check(window.get('flaggedDates') == [row['date'] for row in selected if row.get('sourceBalanceWarning')], 'futures.foreignFlows: window warnings mismatch')
+                    if all(number(row.get('foreign')) for row in selected):
+                        check(window.get('foreignTotal') == sum(row['foreign'] for row in selected), 'futures.foreignFlows: window sum mismatch')
     liquidity = payload.get("liquidity", {})
     check(liquidity.get("unit") == "억원", "liquidity unit must be 억원")
     check(liquidity.get("depositScope") == "market-wide", "deposits must be labeled market-wide")
@@ -288,6 +336,35 @@ def validate(payload):
             check(bool(seen), f'heatmaps.{market}: observations required')
             check(not seen.intersection(r.get('code') for r in coverage.get('excluded', [])), f'heatmaps.{market}: excluded rows rendered')
             check(item.get('totalDisplayedMarketCapKRW') == sum(r['marketCapKRW'] for r in rows), f'heatmaps.{market}: total cap mismatch')
+
+    classification = payload.get('heatmaps', {}).get('classification')
+    if classification is not None:
+        check(valid_date(classification.get('asOf')), 'heatmap classification: valid observation date required')
+        check(bool(classification.get('provider')), 'heatmap classification: provider required')
+        refs = classification.get('sourceIds', [])
+        check(bool(refs) and all(sid in ids for sid in refs), 'heatmap classification: sources required')
+        all_rows = [row for market in MARKETS for row in payload['heatmaps']['markets'][market]['rows']]
+        classified = 0
+        industries = {}
+        for row in all_rows:
+            industry = row.get('industry')
+            check(isinstance(industry, dict), 'heatmap classification: explicit industry or unclassified required')
+            if not isinstance(industry, dict):
+                continue
+            ident, name = industry.get('id'), industry.get('name')
+            check(isinstance(ident, str) and bool(ident) and isinstance(name, str) and bool(name), 'heatmap classification: id and name required')
+            if ident == 'unclassified':
+                check(name == '미분류', 'heatmap classification: unknown cannot be guessed')
+            else:
+                classified += 1
+                check(industry.get('sourceId') in ids, 'heatmap classification: row source required')
+                check(ident not in industries or industries[ident] == name, 'heatmap classification: conflicting industry names')
+                industries[ident] = name
+        coverage = classification.get('coverage', {})
+        check(coverage.get('total') == len(all_rows), 'heatmap classification: total mismatch')
+        check(coverage.get('classified') == classified, 'heatmap classification: classified mismatch')
+        check(coverage.get('unclassified') == len(all_rows) - classified, 'heatmap classification: unclassified mismatch')
+        check(coverage.get('industryCount') == len(industries), 'heatmap classification: industry count mismatch')
 
     highs = payload.get('highsScreen')
     if highs is not None:
