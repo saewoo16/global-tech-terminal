@@ -1,10 +1,28 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
 const root=path.resolve(__dirname,'..'),raw=fs.readFileSync(root+'/assets/markets.js','utf8'),html=fs.readFileSync(root+'/index.html','utf8');
 const elements=['DGS10','HQMCB10YRP','DCOILWTICO','DCOILBRENTEU','DEXJPUS','DEXKOUS','DTWEXBGS','BAMLH0A0HYM2'].map(id=>({dataset:{fredSeries:id},children:[],append(...items){this.children.push(...items)}}));
-const listeners=new Map(),context={URL,Date,Set,Object,window:{location:{hash:'#explorer'},addEventListener:(n,fn)=>listeners.set(n,fn)},document:{readyState:'loading',addEventListener:(n,fn)=>listeners.set(n,fn),querySelectorAll:()=>elements,createElement:tag=>({tag,classList:{add(){}}})}};
+const widgetDefinitions=[...html.matchAll(/<div class="tradingview-chart" data-tradingview-widget="([^"]+)" role="region" aria-label="([^"]+)"><template>\n([\s\S]*?)\n<\/template>/g)].map(([,id,label,markup])=>{
+ const script=markup.match(/<script type="([^"]+)" src="([^"]+)" async>([\s\S]*?)<\/script>/);
+ assert(script,'Official script must remain inside the inert template');
+ return {id,label,markup,type:script[1],src:script[2],textContent:script[3]};
+});
+function mockWidget(definition){
+ const status={textContent:'TradingView 제공 차트 · 표시되지 않으면 아래 원본 링크를 이용하세요.'};
+ return {definition,dataset:{tradingviewWidget:definition.id},children:[],status,frame:null,
+  querySelector(selector){return selector==='template'?{content:definition}:selector==='iframe'?this.frame:null},
+  getAttribute(name){return name==='aria-label'?definition.label:null},
+  parentElement:{querySelector:()=>status},append(fragment){this.children.push(fragment)}};
+}
+const widgets=widgetDefinitions.map(mockWidget),observers=[];
+const listeners=new Map(),context={URL,Date,Set,Object,window:{location:{hash:'#explorer'},addEventListener:(n,fn)=>listeners.set(n,fn),MutationObserver:class{constructor(callback){this.callback=callback;observers.push(this)}observe(holder){this.holder=holder}disconnect(){this.disconnected=true}}},document:{readyState:'loading',addEventListener:(n,fn)=>listeners.set(n,fn),querySelectorAll:selector=>selector==='[data-fred-series]'?elements:selector==='[data-tradingview-widget]'?widgets:[],
+importNode:definition=>{
+ const container={children:[],append(script){this.children.push(script)}};
+ const original={type:definition.type,textContent:definition.textContent,parentNode:container,getAttribute:()=>definition.src,remove(){this.removed=true}};
+ return {container,original,querySelector:()=>original};
+},createElement:tag=>({tag,classList:{add(){}}})}};
 vm.createContext(context);vm.runInContext(raw.replace('  if(document.readyState','  window.api={range,imageUrl,load,boot};\n  if(document.readyState'),context);const api=context.window.api;
 assert.equal(api.range(new Date('2026-10-17T08:00:00Z')).start,'2021-10-17');assert.equal(api.range(new Date('2024-02-29T08:00:00Z')).start,'2019-02-28');
-assert.equal(api.imageUrl('BAMLH0A0HYM2',api.range()),'');api.boot();assert(elements.every(item=>item.children.length===0));
+assert.equal(api.imageUrl('BAMLH0A0HYM2',api.range()),'');api.boot();assert(elements.every(item=>item.children.length===0));assert(widgets.every(item=>item.children.length===0),'No TradingView script activates outside rates');
 context.window.location.hash='#rates';listeners.get('hashchange')();assert.equal(elements[0].children.length,3);assert.equal(elements[7].children.length,0);
 for(const el of elements.slice(0,7)){const [image,status]=el.children;assert(image.src.startsWith('https://fred.stlouisfed.org/graph/fredgraph.png?'));assert(image.src.includes('cosd='));image.onload();assert(status.textContent.includes('최신 관측일'));image.onerror();assert(image.hidden);assert(status.textContent.includes('불러오지 못했습니다'));el.children[2].onclick();assert.equal(image.hidden,false);assert(image.src.includes('width=1200'));el.children[2].onclick();assert(image.src.includes('width=1100'));}
 api.load();assert.equal(elements[0].children.length,3);
@@ -25,5 +43,52 @@ console.log('PASS weekly/monthly original links below unchanged daily embed, exa
 
 const cards=[...html.matchAll(/<article class="rate-card(?: rate-link-card)?" data-series="([^"]+)"/g)].map(m=>m[1]);
 assert.deepEqual(cards.slice(0,3),['DGS10','BAMLH0A0HYM2EY','HQMCB10YRP']);
-assert(html.includes('<h3>하이일드 채권 수익률 · 원본 링크</h3>'));
-console.log('PASS Treasury → HY yield original link → high-quality corporate card order');
+assert(html.includes('<h3>하이일드 채권 수익률</h3>'));
+assert.equal(cards[3],'US594918BC73');
+console.log('PASS Treasury → HY yield widget → high-quality corporate → Microsoft individual bond card order');
+
+assert.deepEqual(widgetDefinitions.map(item=>item.id),['BAMLH0A0HYM2EY','US594918BC73']);
+for(const [index,widget] of widgets.entries()){
+ assert.equal(widget.children.length,1);const fragment=widget.children[0],script=fragment.container.children[0];
+ assert(fragment.original.removed,'Inert script is replaced once');
+ assert.equal(script.src,'https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js');
+ assert.equal(script.type,'text/javascript');assert.equal(script.async,true);
+ assert.equal(script.textContent,widget.definition.textContent,'Generated config is copied verbatim');
+ const config=JSON.parse(script.textContent);
+ assert.equal(config.symbol,['FRED:BAMLH0A0HYM2EY','MUN:US594918BC7'][index]);
+ assert.equal(config.range,'60M');assert.equal(config.autosize,true);assert.equal(config.theme,'light');
+ assert.match(widget.definition.markup,/tradingview-widget-container__widget/);
+ assert.match(widget.definition.markup,/tradingview-widget-copyright/);
+ assert.match(widget.definition.markup,/rel="noopener nofollow" target="_blank"/);
+ assert.match(widget.definition.markup,/<span class="trademark">&nbsp;by TradingView<\/span>/);
+ assert.equal(script.onload,undefined,'Script success must not claim chart data loaded');
+ assert.equal(widget.status.textContent.includes('원본 링크'),true);
+ widget.frame={attrs:{},getAttribute(key){return this.attrs[key]},setAttribute(key,value){this.attrs[key]=value}};
+ if(index===1)widget.frame.attrs.title='Provider supplied title';
+ observers[index].callback();assert(observers[index].disconnected);
+ assert.equal(widget.frame.attrs.title,index===1?'Provider supplied title':widget.definition.label);
+ script.onerror();assert.match(widget.status.textContent,/불러오지 못했습니다/);assert.match(widget.status.textContent,/원본 링크/);
+}
+for(const route of ['#explorer','#heatmap','#rates','#briefing/US/2026-10-16','#rates']){
+ context.window.location.hash=route;listeners.get('hashchange')();
+ assert(widgets.every(widget=>widget.children.length===1),'Repeat routes must preserve a single widget');
+}
+const untrusted=mockWidget({...widgetDefinitions[0],src:'https://example.com/not-a-provider.js'});
+widgets.push(untrusted);api.load();assert.equal(untrusted.children.length,0);assert.equal(untrusted.dataset.loaded,undefined);
+assert.equal((html.match(/data-fred-series=/g)||[]).length,7,'Existing seven FRED charts stay intact');
+assert.match(html,/markets\.css\?v=20261017-tradingview1/);assert.match(html,/markets\.js\?v=20261017-tradingview1/);
+assert.match(fs.readFileSync(root+'/assets/markets.css','utf8'),/\.tradingview-chart\{height:440px;width:100%/);
+assert.match(html,/쿠폰 3\.5% · 만기 2035-02-12/);assert.match(html,/회사 전체 금리가 아닙니다/);
+assert(!html.includes('MUN:US023135'));assert(!html.includes('MUN:US02079K'));
+console.log('PASS official TradingView templates, exact settings and attribution, rates-only lazy loading, accessible titles, script-error fallback, repeat navigation, and provider allowlist');
+
+for(const symbol of ['FINRA-AMZN6237343','FINRA-GOOG6065581']){
+ assert(html.includes(`href="https://www.tradingview.com/symbols/${symbol}/" target="_blank" rel="noopener noreferrer"`));
+ assert(!widgetDefinitions.some(widget=>widget.markup.includes(symbol)));
+}
+assert.match(html,/두 채권은 제공사의 위젯 제한/);
+console.log('PASS Amazon and Alphabet compact original-source links without unsupported embeds');
+
+assert.equal((html.match(/기본 5년 차트는 주별 표본으로 표시될 수 있습니다/g)||[]).length,2);
+assert.equal((html.match(/최신 관측일은 차트\/원본을 확인하세요/g)||[]).length,2);
+console.log('PASS five-year sampling and latest-observation notes on both TradingView cards');

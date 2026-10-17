@@ -1,7 +1,46 @@
-/* Public-domain FRED series only. ICE series stay source links, never images or data. */
+/* Public-domain FRED images and official provider widgets. No copied ICE data. */
 (function () {
   'use strict';
   const SERIES = new Set(['DGS10','HQMCB10YRP','DCOILWTICO','DCOILBRENTEU','DEXJPUS','DEXKOUS','DTWEXBGS']);
+  const TRADINGVIEW_SCRIPT = 'https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js';
+  function loadTradingView() {
+    document.querySelectorAll('[data-tradingview-widget]').forEach(holder => {
+      if (holder.dataset.loaded) return;
+      const template = holder.querySelector('template');
+      const status = holder.parentElement.querySelector('[data-tradingview-status]');
+      if (!template) return;
+      const fragment = document.importNode(template.content, true);
+      const original = fragment.querySelector('script');
+      // Only activate the official embed script from our reviewed, static templates.
+      if (!original || original.getAttribute('src') !== TRADINGVIEW_SCRIPT) return;
+      const container = original.parentNode;
+      const script = document.createElement('script');
+      script.type = original.type; script.src = TRADINGVIEW_SCRIPT; script.async = true;
+      script.textContent = original.textContent;
+      original.remove();
+      holder.dataset.loaded = 'true';
+      let observer;
+      const labelFrame = () => {
+        const frame = holder.querySelector('iframe');
+        if (!frame) return;
+        if (!frame.getAttribute('title')) frame.setAttribute('title', holder.getAttribute('aria-label'));
+        if (observer) observer.disconnect();
+      };
+      if (typeof window.MutationObserver === 'function') {
+        observer = new window.MutationObserver(labelFrame);
+        observer.observe(holder, {childList:true, subtree:true});
+      }
+      script.onerror = () => {
+        if (observer) observer.disconnect();
+        if (status) status.textContent = 'TradingView 차트를 불러오지 못했습니다. 아래 원본 링크에서 확인하거나 페이지를 새로고침해 주세요.';
+      };
+      holder.append(fragment);
+      // A fresh script node runs after its original provider container is attached.
+      // Keep all generated settings and branding unchanged; do not read the iframe.
+      container.append(script);
+      labelFrame();
+    });
+  }
   function range(now = new Date()) {
     const end = now.toISOString().slice(0,10), start = new Date(end+'T00:00:00Z');
     const month = start.getUTCMonth(); start.setUTCFullYear(start.getUTCFullYear()-5);
@@ -16,6 +55,7 @@
   }
   function load() {
     if (window.location.hash.split('/')[0] !== '#rates') return;
+    loadTradingView();
     const dates = range();
     document.querySelectorAll('[data-fred-series]').forEach(holder => {
       const series = holder.dataset.fredSeries;

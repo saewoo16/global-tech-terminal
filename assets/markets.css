@@ -22,3 +22,5 @@
 .fred-retry{display:block;background:#eef2f8;color:#344b71;border:1px solid #c8d2e3;border-radius:5px;padding:5px 9px;font-size:10px;margin:0 12px 8px}.fred-chart{padding-bottom:1px}
 
 .heatmap-period-links{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:16px 0}.heatmap-period-links .button{min-height:42px;display:inline-flex;align-items:center}.heatmap-period-links>span{font-size:12px;line-height:1.6}@media(max-width:760px){.heatmap-period-links>span{flex-basis:100%}}
+
+.tradingview-chart{height:440px;width:100%;min-width:0;background:#fff;color:#131722}.tradingview-chart iframe{display:block}.tradingview-status{margin:0;padding:8px 17px;font-size:11px;line-height:1.6;color:var(--muted);overflow-wrap:anywhere}
