@@ -46,7 +46,7 @@
   function flowsSection(entry) {
     const section = entry.flows || {}, rows = list(section.rows);
     if (!rows.length) return '';
-    const signed = value => number(value) ? `<span class="brief-return ${value>0?'up':value<0?'down':''}">${value>0?'+':''}${format(value)}</span>` : '미확인';
+    const signed = value => { if (!number(value)) return '미확인'; const rounded = Math.round(value) || 0; return `<span class="brief-return ${rounded>0?'up':rounded<0?'down':''}">${rounded>0?'+':''}${rounded.toLocaleString('ko-KR')}</span>`; };
     const body = note(section.asOf) + note(section.note) + `<div class="tablewrap" tabindex="0" role="region" aria-label="투자자별 순매수 표, 가로로 스크롤 가능"><table class="brief-table"><caption>순매수 · ${text(section.unit || '단위 미확인')} · 양수는 순매수, 음수는 순매도</caption><thead><tr><th scope="col">시장</th><th scope="col">외국인</th><th scope="col">기관</th><th scope="col">개인</th></tr></thead><tbody>${rows.map(row=>`<tr><td>${text(row.market)}</td><td>${signed(row.foreign)}</td><td>${signed(row.institution)}</td><td>${signed(row.individual)}</td></tr>`).join('')}</tbody></table></div>`+citationLine(section.sourceIds,entry);
     return details('brief-flows','외국인 · 기관 수급', '시장별 순매수 · '+text(section.unit || '단위 미확인'),body);
   }
