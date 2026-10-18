@@ -30,7 +30,7 @@
     const cov=section?.coverage||{}, rows=list(section?.rows), first=cov.start||rows[0]?.date, last=cov.end||rows.at(-1)?.date;
     const dateLabel=first&&last?`${first} ~ ${last}`:last||first||'기준일 미확인';
     const counts=Number.isInteger(cov.sampleCount)?`${fmt(cov.validCount??cov.sampleCount)}/${fmt(cov.sampleCount)}개 종목 확인`:Number.isInteger(cov.count)?`${fmt(cov.count)}개 관측`:rows.length?`${fmt(rows.length)}개 관측`:'';
-    return `<details class="kr-metadata"><summary>${esc([dateLabel,counts,suffix,section?.status==='partial'?'일부 확인':section?.status==='unavailable'?'미확보':'','출처·확인 범위'].filter(Boolean).join(' · '))}</summary>${section?.note?`<p>${esc(section.note)}</p>`:''}${cov.note?`<p>${esc(cov.note)}</p>`:''}${cov.actualCountNote?`<p>${esc(cov.actualCountNote)}</p>`:''}${section?.status==='partial'||section?.status==='unavailable'?`<p>수집 상태: ${section.status==='partial'?'일부 확인':'미확보'}. 결측값을 보간하거나 0으로 채우지 않습니다.</p>`:''}${sourceLinks(section?.sourceIds)}</details>`;
+    return `<p class="kr-coverage-line">${esc([dateLabel,counts,section?.status==='partial'?'일부 확인':section?.status==='unavailable'?'미확보':''].filter(Boolean).join(' · '))}</p><details class="kr-metadata"><summary>${esc([dateLabel,counts,suffix,section?.status==='partial'?'일부 확인':section?.status==='unavailable'?'미확보':'','출처·확인 범위'].filter(Boolean).join(' · '))}</summary>${section?.note?`<p>${esc(section.note)}</p>`:''}${cov.note?`<p>${esc(cov.note)}</p>`:''}${cov.actualCountNote?`<p>${esc(cov.actualCountNote)}</p>`:''}${section?.status==='partial'||section?.status==='unavailable'?`<p>수집 상태: ${section.status==='partial'?'일부 확인':'미확보'}. 결측값을 보간하거나 0으로 채우지 않습니다.</p>`:''}${sourceLinks(section?.sourceIds)}</details>`;
   }
   const FLOW_SESSIONS = {'1W':5,'1M':21,'3M':63,'6M':126,'1Y':252};
   function rangeRows(rows, range, tradingSessions=false) {
@@ -233,15 +233,41 @@
     const cards=['deposits','creditKOSPI','creditKOSDAQ'].map(key=>{const section=series[key]||{}, latest=list(section.rows).filter(r=>finite(r.value)).at(-1);return `<article class="kr-summary-card"><small>${NAMES[key]}${key==='deposits'?' · 시장 전체':''}</small><strong>${latest?integer(latest.value)+'억원':'미확인'}</strong><p>${latest?latest.date+' 기준':'검증된 관측값 없음'}</p></article>`;});
     return `<div class="kr-summary kr-balance-summary">${cards.join('')}</div>`;
   }
+  // Move existing nodes, preserving every explanation and source link. Data tables stay beside charts.
+  function collectExplanations(target, open=false) {
+    const notes=Array.from(target.querySelectorAll?.('.kr-metadata:not(.kr-heat-numbers), .kr-source-list, .kr-statusline, .kr-page-footer')||[]);
+    if(!notes.length)return;
+    const disclosure=document.createElement('details');
+    disclosure.id='kr-explanations';disclosure.className='kr-explanations';disclosure.open=open;
+    disclosure.innerHTML='<summary><span class="kr-explanations-closed">설명·출처 보기</span><span class="kr-explanations-open">설명·출처 접기</span></summary><div class="kr-explanations-body"></div>';
+    const body=disclosure.lastElementChild,groups=new Map();
+    notes.forEach(note=>{
+      const section=note.closest('.kr-section');
+      let group=groups.get(section);
+      if(!group){
+        group=document.createElement('section');group.className='kr-explanation-group';
+        const title=document.createElement('h4');title.textContent=section?.querySelector('h3')?.textContent||'공통 안내·전체 출처';
+        group.append(title);body.append(group);groups.set(section,group);
+      }
+      const cardTitle=note.closest('.kr-card')?.querySelector('h4')?.textContent;
+      if(cardTitle&&note.matches('.kr-metadata')){
+        const summary=note.querySelector('summary');if(summary)summary.prepend(cardTitle+' · ');
+      }
+      group.append(note);
+    });
+    target.append(disclosure);
+  }
   function render() {
     const target=el('kr-content');if(!target)return;
+    const explanationsOpen=!!target.querySelector?.('#kr-explanations')?.open;
     const active=document.activeElement,focusAttribute=['data-kr-range','data-kr-period','data-kr-index','data-kr-movers-period','data-kr-rank-market','data-kr-sector-sort'].find(key=>active?.hasAttribute?.(key)),focusSelector=focusAttribute?'['+focusAttribute+'="'+active.getAttribute(focusAttribute)+'"]'+(active.dataset?.range?'[data-range="'+active.dataset.range+'"]':''):active?.id==='kr-date'||active?.id?.startsWith('kr-heat-')?'#'+active.id:null;
     if(loading){target.innerHTML='<div class="kr-empty kr-loading">국내 시장 데이터를 불러오는 중입니다.</div>';return;}
-    if(failed||!payload){target.innerHTML=closeSection()+'<div class="kr-empty" role="alert"><div>국내 수급·자금 데이터 파일을 불러오지 못했습니다. 아래 시황·참고 자료는 각각 표시된 기존 기준일의 자료입니다.<br><button type="button" class="button" id="kr-retry">다시 불러오기</button></div></div>'+sectorReturnsSection()+highsSection();el('kr-retry').onclick=load;bindSectorSorting();return;}
+    if(failed||!payload){target.innerHTML=closeSection()+'<div class="kr-empty" role="alert"><div>국내 수급·자금 데이터 파일을 불러오지 못했습니다. 아래 시황·참고 자료는 각각 표시된 기존 기준일의 자료입니다.<br><button type="button" class="button" id="kr-retry">다시 불러오기</button></div></div>'+sectorReturnsSection()+highsSection();collectExplanations(target,explanationsOpen);el('kr-retry').onclick=load;bindSectorSorting();return;}
     charts=new Map();
     const dates=list(payload.rankings?.dates).filter(isDate).slice().sort().reverse();if(!['5d','1m'].includes(selected)&&!dates.includes(selected))selected=dates[0]||'';
     el('kr-asof').innerHTML=`<span>자료 기준일</span><strong>${esc(payload.asOf||'미확인')}</strong><span>항목별 실제 관측일은 아래 표시</span>`;
     target.innerHTML=(payload.refresh?.failures?.length?`<div class="kr-warn">일부 데이터 갱신에 실패해 이전 관측값을 보존했습니다. 각 항목의 실제 기준일을 확인하세요.</div>`:'')+heatmapsSection()+closeSection()+dailyFlowSummary()+`<p class="kr-statusline">금액·지수·가격은 반올림 표시하며 원자료·계산값의 정밀도는 유지합니다. 일별 자료의 최신 관측일과 공개 시차는 항목별로 다릅니다.${payload.requestedWindow?' 조회 목표: '+esc(payload.requestedWindow.start)+' ~ '+esc(payload.requestedWindow.end)+'.':''}</p>`+flowSection()+futuresSection()+sectorReturnsSection()+rankingsSection()+moversSection()+highsSection()+liquiditySection()+`<details class="kr-source-list"><summary>전체 출처 · 데이터 제약</summary><ol>${list(payload.sources).map(s=>`<li>${safe(s.url)?`<a href="${esc(safe(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.title||s.id)} ↗</a>`:esc(s.title||s.id)}${s.note?' · '+esc(s.note):''}</li>`).join('')}</ol><ul>${list(payload.limitations).map(note=>`<li>${esc(note)}</li>`).join('')}</ul><p>수집 시각: ${esc(payload.updatedAt||'미확인')}</p></details><p class="kr-page-footer">공개 자료 기반 개인 연구용 대시보드입니다. 실시간 시세나 투자 권유가 아닙니다. 미확인 값은 0이 아니며, 테마는 서로 중복될 수 있어 합산하면 전체시장과 일치하지 않습니다.</p>`;
+    collectExplanations(target,explanationsOpen);
     document.querySelectorAll('[data-kr-range]').forEach(button=>button.onclick=()=>{if(button.dataset.krRange==='flow')flowRange=button.dataset.range;else if(button.dataset.krRange==='futures')futuresRange=button.dataset.range;else liquidityRange=button.dataset.range;render();});
     document.querySelectorAll('[data-kr-period]').forEach(button=>button.onclick=()=>{selected=button.dataset.krPeriod==='day'?dates[0]||'':button.dataset.krPeriod;render();});
     const dateSelect=el('kr-date');if(dateSelect)dateSelect.onchange=event=>{selected=event.target.value;render();};

@@ -25,3 +25,16 @@
 /* Industry boundaries are overlays: no minimum areas or padding alter cap proportions. */
 .kr-heat-group{position:absolute;pointer-events:none;box-shadow:inset 0 0 0 1px #b3c7e577;z-index:1;overflow:hidden}.kr-heat-group>span{display:block;max-width:100%;width:max-content;padding:2px 5px;background:#0a142aee;color:#e4ecfa;font-size:10px;font-weight:650;line-height:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.kr-heat-group.compact>span{display:none}.kr-heat-industries{display:flex;flex-wrap:wrap;gap:5px 8px;margin:10px 17px 4px;font-size:10px;line-height:1.6}.kr-heat-industries>span{padding:3px 6px;border:1px solid #354965;border-radius:4px;color:#cbd9ef}.kr-heat-industries small{font-size:9px;color:var(--muted);margin-left:3px}.kr-heat-numbers .kr-table td:first-child,.kr-heat-numbers .kr-table th:first-child{width:auto;text-align:left}.kr-heat-numbers .kr-table td:nth-child(2){font-size:10px;color:#b8c9e1}.kr-heat-card .kr-heat-detail{min-height:44px}.kr-futures-scope{font-size:11px;color:var(--muted)}
 @media(max-width:760px){.kr-heat-industries{margin-left:12px;margin-right:12px}.kr-heat-group>span{font-size:9px;padding-left:3px;padding-right:3px}}
+
+/* One bottom disclosure keeps explanations out of the data reading flow. */
+.kr-coverage-line{margin:0;padding:8px 17px;color:var(--muted);font-size:10px;line-height:1.7;overflow-wrap:anywhere}
+.kr-explanations{margin-top:28px;border:1px solid var(--line);border-radius:12px;background:var(--panel);min-width:0;overflow-wrap:anywhere}
+.kr-explanations>summary{cursor:pointer;padding:16px;font-size:13px;font-weight:650;min-height:48px;list-style:disclosure-closed}
+.kr-explanations[open]>summary{list-style:disclosure-open;border-bottom:1px solid var(--line)}
+.kr-explanations>summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:10px}
+.kr-explanations-open,.kr-explanations[open]>summary .kr-explanations-closed{display:none}
+.kr-explanations[open]>summary .kr-explanations-open{display:inline}
+.kr-explanations-body{padding:4px 16px 16px;min-width:0}
+.kr-explanation-group{min-width:0;margin-top:18px}.kr-explanation-group>h4{font-size:12px;margin:0 0 8px;color:var(--text)}
+.kr-explanations .kr-metadata{padding:10px 0}.kr-explanations .kr-source-list{margin:0}.kr-explanations a{overflow-wrap:anywhere}
+@media(max-width:760px){.kr-coverage-line{padding:8px 12px}.kr-explanations-body{padding:4px 12px 12px}}
