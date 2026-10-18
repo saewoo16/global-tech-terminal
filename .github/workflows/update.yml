@@ -36,6 +36,8 @@ jobs:
           node tests/test_briefing_ui.cjs
           node tests/test_markets_ui.cjs
           node tests/test_korea_ui.cjs
+          node tests/test_us_analysis_ui.cjs
+          python scripts/validate_us_analysis.py
           python scripts/validate_korean_market.py
           python scripts/manage_briefings.py
 

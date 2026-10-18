@@ -1,0 +1,650 @@
+{
+  "asOf": "2026-10-18T12:04:00Z",
+  "reportDate": "2026-10-16",
+  "section": "latestSP500earnings",
+  "coverageStatus": "five_issuer_releases_verified_not_exhaustive",
+  "coverageNotes": [
+    "Five dated releases verified against issuer/SEC sources; not a certified exhaustive scan of all S&P 500 releases or newly posted calls.",
+    "All five periods are quarters ended September 30, 2026; release/call date is October 16, 2026. Prior-quarter figures are comparison data only.",
+    "Banks: revenue is net interest income plus noninterest income, not gross interest income. No invented gross-profit or industrial operating-margin figures.",
+    "RF $611m is income available to common, not consolidated net income ($631m). TFC GAAP EPS $0.56 is distinct from adjusted EPS $1.16.",
+    "Growth computed as current/comparator minus one from published rounded figures; no seasonality adjustment.",
+    "S&P membership cross-check uses shared membership.json; primary issuer explicitly confirms RF. An as-of-Oct-16 official index constituent file was not independently obtained.",
+    "FITB excluded: issuer schedules October 19. AXP excluded: no October 16 release verified; issuer-authored distributed announcement schedules October 23."
+  ],
+  "companies": [
+    {
+      "ticker": "TRV",
+      "company": "Travelers",
+      "releaseDate": "2026-10-16",
+      "fiscalPeriod": "Q3 2026",
+      "periodEnd": "2026-09-30",
+      "scope": "consolidated",
+      "accountingBasis": "US GAAP except separately labeled supplemental measures",
+      "revenue": {
+        "value": 12412,
+        "previousQuarter": 12153,
+        "yearAgoQuarter": 12470,
+        "unit": "USD million",
+        "yoyPct": -0.47,
+        "qoqPct": 2.13,
+        "note": null
+      },
+      "grossProfit": {
+        "value": null,
+        "status": "not_applicable",
+        "note": "Not reported as a comparable industrial-style GAAP subtotal by this financial issuer. Do not substitute net interest margin, pre-provision income or underwriting income."
+      },
+      "grossMargin": {
+        "value": null,
+        "status": "not_applicable",
+        "note": "Not reported as a comparable industrial-style GAAP subtotal by this financial issuer. Do not substitute net interest margin, pre-provision income or underwriting income."
+      },
+      "operatingProfit": {
+        "value": null,
+        "status": "not_applicable",
+        "note": "Not reported as a comparable industrial-style GAAP subtotal by this financial issuer. Do not substitute net interest margin, pre-provision income or underwriting income."
+      },
+      "operatingMargin": {
+        "value": null,
+        "status": "not_applicable",
+        "note": "Not reported as a comparable industrial-style GAAP subtotal by this financial issuer. Do not substitute net interest margin, pre-provision income or underwriting income."
+      },
+      "netIncome": {
+        "value": 1917,
+        "previousQuarter": 2208,
+        "yearAgoQuarter": 1888,
+        "unit": "USD million",
+        "yoyPct": 1.54,
+        "qoqPct": -13.18,
+        "note": null
+      },
+      "dilutedEPS": {
+        "value": 9.04,
+        "previousQuarter": 10.26,
+        "yearAgoQuarter": 8.24,
+        "unit": "USD/share",
+        "yoyPct": 9.71,
+        "qoqPct": -11.89,
+        "note": null
+      },
+      "sources": [
+        {
+          "label": "Issuer earnings release / SEC furnished financial schedules",
+          "url": "https://www.sec.gov/Archives/edgar/data/86312/000008631226000180/a991pressrelease93026.htm",
+          "type": "primary"
+        },
+        {
+          "label": "Q2 2026 release (sequential comparison only)",
+          "url": "https://investor.travelers.com/newsroom/press-releases/news-details/2026/Travelers-Reports-Excellent-Second-Quarter-and-Year-to-Date-Results/default.aspx",
+          "type": "primary_comparison_not_new"
+        }
+      ],
+      "consensus": {
+        "status": "not_verified_comparable_basis",
+        "note": "No surprise calculated without verified matching accounting basis and estimate source."
+      },
+      "capex": {
+        "value": null,
+        "status": "not_verified",
+        "note": "No quantified consolidated capital-expenditure figure verified in this research pass; technology expense is not capex."
+      },
+      "adjustedEPS": {
+        "value": 9.18,
+        "previousQuarter": 10.04,
+        "yearAgoQuarter": 8.14,
+        "unit": "USD/share",
+        "yoyPct": 12.78,
+        "qoqPct": -8.57,
+        "note": "Core EPS, non-GAAP; distinct from GAAP EPS."
+      },
+      "supplemental": {
+        "coreIncomeUSDm": 1947,
+        "combinedRatioPct": 86.8,
+        "combinedRatioYoYChangePp": -0.5,
+        "combinedRatioQoQChangePp": 3.2,
+        "underlyingCombinedRatioPct": 84.1,
+        "underwritingIncomePretaxUSDm": 1432
+      },
+      "call": {
+        "eventDate": "2026-10-16",
+        "status": "public_third_party_transcript_reviewed",
+        "sourceType": "Public third-party transcript, The Motley Fool; not issuer transcript",
+        "audioListened": false,
+        "transcriptURL": "https://www.fool.com/earnings/call-transcripts/2026/10/16/travelers-trv-q3-2026-earnings-call-transcript/",
+        "reviewScope": "Relevant prepared-remarks and analyst-Q&A passages reviewed; summary is selective, not exhaustive.",
+        "issuerReplayURL": "https://investor.travelers.com/events-and-presentations/",
+        "issuerReplayAccess": "Link/page checked; audio was not played. JS/dynamic content limited text extraction.",
+        "summary": {
+          "demandPricing": "Management emphasized matching price to risk rather than maximizing near-term personal-lines premiums. Business-insurance retention remained strong.",
+          "margins": "Higher investment yields help pricing economics, but required returns also rise with risk-free rates. Management expected a full-year expense ratio slightly below 29%.",
+          "investment": "Innovation and claims investments were discussed, but no capex amount verified.",
+          "coreQA": "Analysts pressed on casualty reserves, AI savings and competition. Management did not assume future reserve releases from claims improvements and attributed the small business-insurance loss-ratio change to multiple ordinary factors."
+        }
+      },
+      "membershipCrossCheck": {
+        "Symbol": "TRV",
+        "Security": "Travelers Companies (The)",
+        "GICS Sector": "Financials",
+        "GICS Sub-Industry": "Property & Casualty Insurance",
+        "Headquarters Location": "New York City, New York",
+        "Date added": "2002-08-21",
+        "CIK": 86312,
+        "Founded": "1853"
+      }
+    },
+    {
+      "ticker": "CFG",
+      "company": "Citizens Financial Group",
+      "releaseDate": "2026-10-16",
+      "fiscalPeriod": "Q3 2026",
+      "periodEnd": "2026-09-30",
+      "scope": "consolidated",
+      "accountingBasis": "US GAAP except separately labeled supplemental measures",
+      "revenue": {
+        "value": 2322,
+        "previousQuarter": 2283,
+        "yearAgoQuarter": 2118,
+        "unit": "USD million",
+        "yoyPct": 9.63,
+        "qoqPct": 1.71,
+        "note": null
+      },
+      "grossProfit": {
+        "value": null,
+        "status": "not_applicable",
+        "note": "Not reported as a comparable industrial-style GAAP subtotal by this financial issuer. Do not substitute net interest margin, pre-provision income or underwriting income."
+      },
+      "grossMargin": {
+        "value": null,
+        "status": "not_applicable",
+        "note": "Not reported as a comparable industrial-style GAAP subtotal by this financial issuer. Do not substitute net interest margin, pre-provision income or underwriting income."
+      },
+      "operatingProfit": {
+        "value": null,
+        "status": "not_applicable",
+        "note": "Not reported as a comparable industrial-style GAAP subtotal by this financial issuer. Do not substitute net interest margin, pre-provision income or underwriting income."
+      },
+      "operatingMargin": {
+        "value": null,
+        "status": "not_applicable",
+        "note": "Not reported as a comparable industrial-style GAAP subtotal by this financial issuer. Do not substitute net interest margin, pre-provision income or underwriting income."
+      },
+      "netIncome": {
+        "value": 636,
+        "previousQuarter": 587,
+        "yearAgoQuarter": 494,
+        "unit": "USD million",
+        "yoyPct": 28.74,
+        "qoqPct": 8.35,
+        "note": null
+      },
+      "dilutedEPS": {
+        "value": 1.41,
+        "previousQuarter": 1.3,
+        "yearAgoQuarter": 1.05,
+        "unit": "USD/share",
+        "yoyPct": 34.29,
+        "qoqPct": 8.46,
+        "note": null
+      },
+      "sources": [
+        {
+          "label": "Issuer earnings release / SEC furnished financial schedules",
+          "url": "https://investor.citizensbank.com/~/media/Files/C/CitizensBank-IR/3q26-earnings-press-release.pdf",
+          "type": "primary"
+        }
+      ],
+      "consensus": {
+        "epsActual": 1.41,
+        "epsEstimate": 1.39,
+        "revenueActualRoundedUSDbn": 2.32,
+        "revenueEstimateRoundedUSDbn": 2.34,
+        "status": "estimate_basis_unverified_no_surprise_claim",
+        "basisNote": "Reported actual matches issuer GAAP EPS, but the estimate accounting basis is not separately verified. Do not assert a comparable-basis earnings surprise.",
+        "source": "https://www.marketbeat.com/earnings/reports/2026-10-16-citizens-financial-group-inc-stock/"
+      },
+      "capex": {
+        "value": null,
+        "status": "not_verified",
+        "note": "No quantified consolidated capital-expenditure figure verified in this research pass; technology expense is not capex."
+      },
+      "netIncomeCommon": {
+        "value": 599,
+        "previousQuarter": 554,
+        "yearAgoQuarter": 457,
+        "unit": "USD million",
+        "yoyPct": 31.07,
+        "qoqPct": 8.12,
+        "note": null
+      },
+      "supplemental": {
+        "preProvisionProfitUSDm": 929,
+        "netInterestMarginFTEPct": 3.19,
+        "netInterestMarginGAAPPct": 3.18,
+        "efficiencyRatioPct": 60.0
+      },
+      "call": {
+        "eventDate": "2026-10-16",
+        "status": "public_third_party_transcript_reviewed",
+        "sourceType": "Public third-party transcript, The Motley Fool; not issuer transcript",
+        "audioListened": false,
+        "transcriptURL": "https://www.fool.com/earnings/call-transcripts/2026/10/16/citizens-cfg-q3-2026-earnings-call-transcript/",
+        "reviewScope": "Relevant prepared-remarks and analyst-Q&A passages reviewed; summary is selective, not exhaustive.",
+        "issuerReplayURL": "https://event.choruscall.com/mediaframe/webcast.html?webcastid=9Fs9PkKT",
+        "issuerReplayAccess": "Registration page requests personal information; no registration submitted.",
+        "summary": {
+          "demandPricing": "Private Bank growth and cross-referrals remained strong; management said acquired bankers were still rebuilding prior client books.",
+          "margins": "Management expected further NIM expansion but cautioned that 2027 time-based benefits would be smaller; formal 2027 guidance was deferred to January.",
+          "investment": "AI infrastructure financing creates fees and spread income; the bank described investment-grade lessees, committed power and approved developments. This is customer financing, not bank capex.",
+          "coreQA": "Analysts asked about AI credit exposure and future NII growth. Management stressed exposure limits, hedging and moving construction loans into permanent financing."
+        }
+      },
+      "membershipCrossCheck": {
+        "Symbol": "CFG",
+        "Security": "Citizens Financial Group",
+        "GICS Sector": "Financials",
+        "GICS Sub-Industry": "Regional Banks",
+        "Headquarters Location": "Providence, Rhode Island",
+        "Date added": "2016-01-29",
+        "CIK": 759944,
+        "Founded": "1828"
+      }
+    },
+    {
+      "ticker": "MTB",
+      "company": "M&T Bank",
+      "releaseDate": "2026-10-16",
+      "fiscalPeriod": "Q3 2026",
+      "periodEnd": "2026-09-30",
+      "scope": "consolidated",
+      "accountingBasis": "US GAAP except separately labeled supplemental measures",
+      "revenue": {
+        "value": 2536,
+        "previousQuarter": 2532,
+        "yearAgoQuarter": 2513,
+        "unit": "USD million",
+        "yoyPct": 0.92,
+        "qoqPct": 0.16,
+        "note": "Net interest income plus noninterest income; computed from GAAP components."
+      },
+      "grossProfit": {
+        "value": null,
+        "status": "not_applicable",
+        "note": "Not reported as a comparable industrial-style GAAP subtotal by this financial issuer. Do not substitute net interest margin, pre-provision income or underwriting income."
+      },
+      "grossMargin": {
+        "value": null,
+        "status": "not_applicable",
+        "note": "Not reported as a comparable industrial-style GAAP subtotal by this financial issuer. Do not substitute net interest margin, pre-provision income or underwriting income."
+      },
+      "operatingProfit": {
+        "value": null,
+        "status": "not_applicable",
+        "note": "Not reported as a comparable industrial-style GAAP subtotal by this financial issuer. Do not substitute net interest margin, pre-provision income or underwriting income."
+      },
+      "operatingMargin": {
+        "value": null,
+        "status": "not_applicable",
+        "note": "Not reported as a comparable industrial-style GAAP subtotal by this financial issuer. Do not substitute net interest margin, pre-provision income or underwriting income."
+      },
+      "netIncome": {
+        "value": 775,
+        "previousQuarter": 818,
+        "yearAgoQuarter": 792,
+        "unit": "USD million",
+        "yoyPct": -2.15,
+        "qoqPct": -5.26,
+        "note": null
+      },
+      "dilutedEPS": {
+        "value": 5.04,
+        "previousQuarter": 5.32,
+        "yearAgoQuarter": 4.82,
+        "unit": "USD/share",
+        "yoyPct": 4.56,
+        "qoqPct": -5.26,
+        "note": null
+      },
+      "sources": [
+        {
+          "label": "Issuer earnings release / SEC furnished financial schedules",
+          "url": "https://ir.mtb.com/static-files/254ecf16-db49-4453-b9d1-02d1afd05980",
+          "type": "primary"
+        }
+      ],
+      "consensus": {
+        "status": "not_verified_comparable_basis",
+        "note": "No surprise calculated without verified matching accounting basis and estimate source."
+      },
+      "capex": {
+        "value": null,
+        "status": "not_verified",
+        "note": "No quantified consolidated capital-expenditure figure verified in this research pass; technology expense is not capex."
+      },
+      "netIncomeCommon": {
+        "value": 732,
+        "previousQuarter": 781,
+        "yearAgoQuarter": 754,
+        "unit": "USD million",
+        "yoyPct": -2.92,
+        "qoqPct": -6.27,
+        "note": null
+      },
+      "adjustedEPS": {
+        "value": 5.08,
+        "previousQuarter": 5.35,
+        "yearAgoQuarter": 4.87,
+        "unit": "USD/share",
+        "yoyPct": 4.31,
+        "qoqPct": -5.05,
+        "note": "Net operating EPS, non-GAAP."
+      },
+      "supplemental": {
+        "incomeBeforeTaxes": {
+          "value": 1008,
+          "previousQuarter": 1063,
+          "yearAgoQuarter": 1025,
+          "unit": "USD million",
+          "yoyPct": -1.66,
+          "qoqPct": -5.17,
+          "note": null
+        },
+        "netInterestMarginTaxableEquivalentPct": 3.65,
+        "efficiencyRatioNonGAAPPct": 54.4
+      },
+      "call": {
+        "eventDate": "2026-10-16",
+        "status": "public_third_party_transcript_reviewed",
+        "sourceType": "Public third-party transcript, The Motley Fool; not issuer transcript",
+        "audioListened": false,
+        "transcriptURL": "https://www.fool.com/earnings/call-transcripts/2026/10/16/mt-bank-mtb-q3-2026-earnings-call-transcript/",
+        "reviewScope": "Relevant prepared-remarks and analyst-Q&A passages reviewed; summary is selective, not exhaustive.",
+        "issuerReplayURL": "https://edge.media-server.com/mmc/p/xe7eyqv9",
+        "issuerReplayAccess": "Link/page checked; audio was not played. JS/dynamic content limited text extraction.",
+        "summary": {
+          "demandPricing": "C&I was broadly flat as growth elsewhere offset seasonal dealer inventory and owner-occupied declines. Management anticipated broader fourth-quarter loan growth.",
+          "margins": "Q4 NIM outlook was in the mid-3.60% range; securities and fixed-rate loan repricing were cited as tailwinds, with no formal 2027 guidance.",
+          "investment": "No quantified capex verified.",
+          "coreQA": "Analysts focused on loan pricing, margin durability and buybacks. Management said lending hurdles remained intact, and capital decisions would account for final regulatory rules, AOCI and rating-agency reactions."
+        }
+      },
+      "membershipCrossCheck": {
+        "Symbol": "MTB",
+        "Security": "M&T Bank",
+        "GICS Sector": "Financials",
+        "GICS Sub-Industry": "Regional Banks",
+        "Headquarters Location": "Buffalo, New York",
+        "Date added": "2004-02-23",
+        "CIK": 36270,
+        "Founded": "1856"
+      }
+    },
+    {
+      "ticker": "RF",
+      "company": "Regions Financial",
+      "releaseDate": "2026-10-16",
+      "fiscalPeriod": "Q3 2026",
+      "periodEnd": "2026-09-30",
+      "scope": "consolidated",
+      "accountingBasis": "US GAAP except separately labeled supplemental measures",
+      "revenue": {
+        "value": 1973,
+        "previousQuarter": 1907,
+        "yearAgoQuarter": 1916,
+        "unit": "USD million",
+        "yoyPct": 2.97,
+        "qoqPct": 3.46,
+        "note": "Net interest income plus noninterest income; computed from GAAP components."
+      },
+      "grossProfit": {
+        "value": null,
+        "status": "not_applicable",
+        "note": "Not reported as a comparable industrial-style GAAP subtotal by this financial issuer. Do not substitute net interest margin, pre-provision income or underwriting income."
+      },
+      "grossMargin": {
+        "value": null,
+        "status": "not_applicable",
+        "note": "Not reported as a comparable industrial-style GAAP subtotal by this financial issuer. Do not substitute net interest margin, pre-provision income or underwriting income."
+      },
+      "operatingProfit": {
+        "value": null,
+        "status": "not_applicable",
+        "note": "Not reported as a comparable industrial-style GAAP subtotal by this financial issuer. Do not substitute net interest margin, pre-provision income or underwriting income."
+      },
+      "operatingMargin": {
+        "value": null,
+        "status": "not_applicable",
+        "note": "Not reported as a comparable industrial-style GAAP subtotal by this financial issuer. Do not substitute net interest margin, pre-provision income or underwriting income."
+      },
+      "netIncome": {
+        "value": 631,
+        "previousQuarter": 570,
+        "yearAgoQuarter": 569,
+        "unit": "USD million",
+        "yoyPct": 10.9,
+        "qoqPct": 10.7,
+        "note": null
+      },
+      "dilutedEPS": {
+        "value": 0.71,
+        "previousQuarter": 0.64,
+        "yearAgoQuarter": 0.61,
+        "unit": "USD/share",
+        "yoyPct": 16.39,
+        "qoqPct": 10.94,
+        "note": null
+      },
+      "sources": [
+        {
+          "label": "Issuer earnings release / SEC furnished financial schedules",
+          "url": "https://www.sec.gov/Archives/edgar/data/1281761/000128176126000063/rf-2026930xexhibitx992.htm",
+          "type": "primary"
+        },
+        {
+          "label": "Regions release",
+          "url": "https://www.sec.gov/Archives/edgar/data/1281761/000128176126000063/rf-2026930xexhibit991.htm",
+          "type": "primary"
+        }
+      ],
+      "consensus": {
+        "epsActualNonGAAP": 0.73,
+        "epsEstimateNonGAAP": 0.66,
+        "epsDifferenceUSD": 0.07,
+        "revenueActualRoundedUSDbn": 1.97,
+        "revenueEstimateRoundedUSDbn": 1.99,
+        "status": "secondary_source_comparison",
+        "basisNote": "Investing.com explicitly identifies adjusted EPS. Revenue figures are rounded; exact consensus basis not independently verified.",
+        "source": "https://www.investing.com/equities/regions-fin-earnings"
+      },
+      "capex": {
+        "value": null,
+        "status": "not_verified",
+        "note": "No quantified consolidated capital-expenditure figure verified in this research pass; technology expense is not capex."
+      },
+      "netIncomeCommon": {
+        "value": 611,
+        "previousQuarter": 549,
+        "yearAgoQuarter": 548,
+        "unit": "USD million",
+        "yoyPct": 11.5,
+        "qoqPct": 11.29,
+        "note": null
+      },
+      "adjustedEPS": {
+        "value": 0.73,
+        "previousQuarter": 0.68,
+        "yearAgoQuarter": null,
+        "unit": "USD/share",
+        "yoyPct": null,
+        "qoqPct": 7.35,
+        "note": "Adjusted EPS, non-GAAP; verified sequential comparison."
+      },
+      "supplemental": {
+        "incomeBeforeTaxes": {
+          "value": 787,
+          "previousQuarter": 718,
+          "yearAgoQuarter": 708,
+          "unit": "USD million",
+          "yoyPct": 11.16,
+          "qoqPct": 9.61,
+          "note": null
+        },
+        "netInterestMarginFTEPct": 3.68,
+        "netInterestMarginQoQChangeBp": 2,
+        "netChargeOffRatioPct": 0.29
+      },
+      "call": {
+        "eventDate": "2026-10-16",
+        "status": "public_third_party_transcript_reviewed",
+        "sourceType": "Public third-party transcript, The Motley Fool; not issuer transcript",
+        "audioListened": false,
+        "transcriptURL": "https://www.fool.com/earnings/call-transcripts/2026/10/16/regions-financial-rf-q3-2026-earnings-call-transcript/",
+        "reviewScope": "Relevant prepared-remarks and analyst-Q&A passages reviewed; summary is selective, not exhaustive.",
+        "issuerReplayURL": "https://ir.regions.com/news-events/events-and-presentations/default.aspx",
+        "issuerReplayAccess": "Link/page checked; audio was not played. JS/dynamic content limited text extraction.",
+        "summary": {
+          "demandPricing": "Loan activity improved late in the quarter; higher rates constrained new investor-real-estate deals.",
+          "margins": "Assuming a December Fed rate hike, management expected Q4 NII growth of 1–2% and NIM around 3.70%; noninterest-bearing deposit relationships remained important to funding costs.",
+          "investment": "Deposit-platform conversion was targeted for late Q2/early Q3 2027, after pilots. No capex amount verified.",
+          "coreQA": "Analysts questioned capital-market guidance, technology timing, credit and M&A. Management expected relatively stable credit with some Texas multifamily softness, and deferred depository M&A consideration until after the platform project."
+        }
+      },
+      "membershipCrossCheck": {
+        "Symbol": "RF",
+        "Security": "Regions Financial Corporation",
+        "GICS Sector": "Financials",
+        "GICS Sub-Industry": "Regional Banks",
+        "Headquarters Location": "Birmingham, Alabama",
+        "Date added": "1998-08-28",
+        "CIK": 1281761,
+        "Founded": "1971"
+      }
+    },
+    {
+      "ticker": "TFC",
+      "company": "Truist Financial",
+      "releaseDate": "2026-10-16",
+      "fiscalPeriod": "Q3 2026",
+      "periodEnd": "2026-09-30",
+      "scope": "consolidated",
+      "accountingBasis": "US GAAP except separately labeled supplemental measures",
+      "revenue": {
+        "value": 3747,
+        "previousQuarter": 5265,
+        "yearAgoQuarter": 5187,
+        "unit": "USD million",
+        "yoyPct": -27.76,
+        "qoqPct": -28.83,
+        "note": "Net interest income plus noninterest income; computed from GAAP components."
+      },
+      "grossProfit": {
+        "value": null,
+        "status": "not_applicable",
+        "note": "Not reported as a comparable industrial-style GAAP subtotal by this financial issuer. Do not substitute net interest margin, pre-provision income or underwriting income."
+      },
+      "grossMargin": {
+        "value": null,
+        "status": "not_applicable",
+        "note": "Not reported as a comparable industrial-style GAAP subtotal by this financial issuer. Do not substitute net interest margin, pre-provision income or underwriting income."
+      },
+      "operatingProfit": {
+        "value": null,
+        "status": "not_applicable",
+        "note": "Not reported as a comparable industrial-style GAAP subtotal by this financial issuer. Do not substitute net interest margin, pre-provision income or underwriting income."
+      },
+      "operatingMargin": {
+        "value": null,
+        "status": "not_applicable",
+        "note": "Not reported as a comparable industrial-style GAAP subtotal by this financial issuer. Do not substitute net interest margin, pre-provision income or underwriting income."
+      },
+      "netIncome": {
+        "value": 800,
+        "previousQuarter": 1550,
+        "yearAgoQuarter": 1450,
+        "unit": "USD million",
+        "yoyPct": -44.83,
+        "qoqPct": -48.39,
+        "note": "Approximate: issuer headline table rounds consolidated net income to $0.80bn, $1.55bn and $1.45bn. Growth percentages are approximate."
+      },
+      "dilutedEPS": {
+        "value": 0.56,
+        "previousQuarter": 1.23,
+        "yearAgoQuarter": 1.04,
+        "unit": "USD/share",
+        "yoyPct": -46.15,
+        "qoqPct": -54.47,
+        "note": null
+      },
+      "sources": [
+        {
+          "label": "Issuer earnings release / SEC furnished financial schedules",
+          "url": "https://www.sec.gov/Archives/edgar/data/92230/000009223026000108/ex991-3q26.htm",
+          "type": "primary"
+        }
+      ],
+      "consensus": {
+        "status": "not_verified_comparable_basis",
+        "note": "No surprise calculated without verified matching accounting basis and estimate source."
+      },
+      "capex": {
+        "value": null,
+        "status": "not_verified",
+        "note": "No quantified consolidated capital-expenditure figure verified in this research pass; technology expense is not capex."
+      },
+      "adjustedEPS": {
+        "value": 1.16,
+        "previousQuarter": 1.23,
+        "yearAgoQuarter": 1.04,
+        "unit": "USD/share",
+        "yoyPct": 11.54,
+        "qoqPct": -5.69,
+        "note": "Adjusted EPS, non-GAAP; excludes securities repositioning and RAC-related items."
+      },
+      "supplemental": {
+        "adjustedRevenueTEUSDbnApprox": 5.3,
+        "netInterestMarginTEPct": 3.0,
+        "adjustedROTCEPct": 14.6,
+        "reportedEfficiencyRatioPct": 82.9
+      },
+      "call": {
+        "eventDate": "2026-10-16",
+        "status": "public_third_party_transcript_reviewed",
+        "sourceType": "Public third-party transcript, The Motley Fool; not issuer transcript",
+        "audioListened": false,
+        "transcriptURL": "https://www.fool.com/earnings/call-transcripts/2026/10/16/truist-tfc-q3-2026-earnings-call-transcript/",
+        "reviewScope": "Relevant prepared-remarks and analyst-Q&A passages reviewed; summary is selective, not exhaustive.",
+        "issuerReplayURL": "https://app.webinar.net/BAM6O91OpkL",
+        "issuerReplayAccess": "Link/page checked; audio was not played. JS/dynamic content limited text extraction.",
+        "summary": {
+          "demandPricing": "The bank is refocusing on relationship businesses and sees room to deepen treasury, FX and lending penetration.",
+          "margins": "Management linked loan exits and securities repositioning to balance-sheet quality; Q4 NII guidance was $3.65–$3.70bn.",
+          "investment": "Resources are being redirected toward priority businesses, branches and digital capabilities; no capex amount verified.",
+          "coreQA": "Analysts challenged near-term sale costs versus long-term benefits. Management described lowering duration and wholesale funding, pairing capital-generating exits with repositioning, and evaluating additional securities actions after LightStream completion."
+        }
+      },
+      "membershipCrossCheck": {
+        "Symbol": "TFC",
+        "Security": "Truist Financial",
+        "GICS Sector": "Financials",
+        "GICS Sub-Industry": "Diversified Banks",
+        "Headquarters Location": "Charlotte, North Carolina",
+        "Date added": "1997-12-04",
+        "CIK": 92230,
+        "Founded": "1872"
+      }
+    }
+  ],
+  "callFollowupDesign": {
+    "status": "suggestion_only_not_scheduled",
+    "scope": "Only these five Q3 2026 calls; replace third-party summaries with issuer-approved transcript if subsequently posted.",
+    "scheduleSuggestion": "One check on the next US business day, then a final check seven days after the call; end after those checks or successful issuer-transcript update.",
+    "rules": [
+      "Keep as-of date and source type visible.",
+      "Do not imply recording was listened to when only a transcript was read.",
+      "Preserve existing valid results if a source disappears.",
+      "No registration, payment or credentials without authorization.",
+      "Do not claim every S&P 500 call is covered."
+    ]
+  }
+}
