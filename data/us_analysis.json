@@ -3454,6 +3454,56 @@
           "id": "earnings_TFC_1",
           "title": "TFC · The Motley Fool 공개 콜 녹취록 · 관련 발언/Q&A 확인",
           "url": "https://www.fool.com/earnings/call-transcripts/2026/10/16/truist-tfc-q3-2026-earnings-call-transcript/"
+        },
+        {
+          "id": "earnings_session_TRV",
+          "title": "TRV · 회사 공지/회사 발행 보도자료 · 장전 발표 확인",
+          "url": "https://www.nasdaq.com/press-release/travelers-schedules-conference-call-review-third-quarter-2026-results-2026-09-14",
+          "note": "회사 발표: 09:00 ET 콜에 앞서 당일 아침 실적 발표. 정확한 배포 분은 미확인."
+        },
+        {
+          "id": "earnings_session_CFG",
+          "title": "CFG · 회사 공지/회사 발행 보도자료 · 장전 발표 확인",
+          "url": "https://investor.wedbush.com/wedbush/article/bizwire-2026-10-16-citizens-financial-group-inc-reports-third-quarter-2026-net-income-of-636-million-up-29-yoy-and-eps-of-141-up-34-yoy-and-8-qoq",
+          "note": "Citizens 발행 Business Wire 보도자료의 배포 시각 06:20 EDT 확인."
+        },
+        {
+          "id": "us_price_CFG",
+          "title": "CFG · 2026-10-15·16 정규장 종가",
+          "url": "https://finance.yahoo.com/quote/CFG/history/"
+        },
+        {
+          "id": "earnings_session_MTB",
+          "title": "MTB · 회사 공지/회사 발행 보도자료 · 장전 발표 확인",
+          "url": "https://ir.mtb.com/news-releases/news-release-details/mt-bank-corporation-announces-third-quarter-2026-earnings",
+          "note": "회사 발표: 10/16 장전 실적 발표, 08:00 ET 콜. 콜 시간을 발표 시간으로 사용하지 않음."
+        },
+        {
+          "id": "us_price_MTB",
+          "title": "MTB · 2026-10-15·16 정규장 종가",
+          "url": "https://finance.yahoo.com/quote/MTB/history/"
+        },
+        {
+          "id": "earnings_session_RF",
+          "title": "RF · 회사 공지/회사 발행 보도자료 · 장전 발표 확인",
+          "url": "https://www.nasdaq.com/press-release/regions-financial-corp-announce-third-quarter-2026-financial-results-october-16-2026",
+          "note": "회사 발표: 10/16 장전 실적 발표. 10:00 ET는 콜 시작 시각이며 실적 발표 시각이 아님."
+        },
+        {
+          "id": "us_price_RF",
+          "title": "RF · 2026-10-15·16 정규장 종가",
+          "url": "https://finance.yahoo.com/quote/RF/history/"
+        },
+        {
+          "id": "earnings_session_TFC",
+          "title": "TFC · 회사 공지/회사 발행 보도자료 · 장전 발표 확인",
+          "url": "https://ir.truist.com/2026-09-18-Truist-announces-third-quarter-2026-earnings-call-details",
+          "note": "회사 발표: 10/16 미국 정규장 시작 전 실적 발표. 정확한 배포 분은 미확인."
+        },
+        {
+          "id": "us_price_TFC",
+          "title": "TFC · 2026-10-15·16 정규장 종가",
+          "url": "https://finance.yahoo.com/quote/TFC/history/"
         }
       ],
       "sessionStatus": "closed",
@@ -6384,7 +6434,37 @@
               "수요·가격: 개인보험은 단기 보험료 규모보다 위험에 맞춘 가격과 수익성 있는 성장을 강조했습니다. 마진: 투자수익률 상승은 가격 산정에 반영되지만 요구수익률도 함께 올라간다고 설명했습니다. 연간 비용률은 29%를 소폭 밑돌 것으로 전망했습니다. 투자·Q&A: 혁신·보험금 처리 투자를 논의했으나 확인된 설비투자액은 없습니다. 경영진은 처리 효율 개선에 따른 미래 준비금 환입을 현재 가정에 미리 반영하지 않았다고 답했습니다."
             ],
             "note": "모두 2026년 9월 30일 종료 분기 연결 실적입니다. 은행 매출은 순이자이익과 비이자이익의 합계입니다. 금융업에 맞지 않는 일반 제조업식 매출총이익·매출총이익률·영업이익·영업이익률은 N/A로 표시합니다. 비GAAP 수치는 별도 표기하며, 증감률은 공시된 반올림 수치로 계산했습니다.  확인된 연결 CAPEX 금액은 없습니다.",
-            "statusLabel": "공시 + 공개 콜 발췌 확인"
+            "statusLabel": "공시 + 공개 콜 발췌 확인",
+            "releaseTiming": {
+              "session": "before_open",
+              "publishedAt": null,
+              "sourceIds": [
+                "earnings_session_TRV"
+              ],
+              "note": "회사 발표: 09:00 ET 콜에 앞서 당일 아침 실적 발표. 정확한 배포 분은 미확인."
+            },
+            "priceReaction": {
+              "currency": "USD",
+              "regular": {
+                "date": "2026-10-16",
+                "previousDate": "2026-10-15",
+                "closedAt": "2026-10-16T16:00:00-04:00",
+                "close": 389.5400085449219,
+                "previousClose": 383.8900146484375,
+                "changePct": 1.47177412302808,
+                "sourceIds": [
+                  "us_price_TRV"
+                ]
+              },
+              "afterHours": {
+                "status": "not_applicable",
+                "price": null,
+                "changePct": null,
+                "observedAt": null,
+                "sourceIds": [],
+                "note": "장전 실적 발표 기업: 당일 정규장 수익률은 발표 후 거래를 포함합니다. 장후 발표 직후 반응으로 표시하지 않습니다."
+              }
+            }
           },
           {
             "ticker": "CFG",
@@ -6515,7 +6595,37 @@
               "수요·가격: 프라이빗뱅크 고객 유입과 사업 간 소개가 이어지고 있다고 설명했습니다. 마진: 추가 순이자마진 개선을 예상하지만 2027년에는 시간 경과에 따른 개선 효과가 줄 수 있으며 정식 가이던스는 1월로 미뤘습니다. 투자·Q&A: 데이터센터 건설금융 참여 시 보유한도·헤지·장기금융 전환을 강조했습니다. 이는 고객의 AI 인프라 투자에 대한 금융 제공이며 은행 자체 설비투자가 아닙니다."
             ],
             "note": "모두 2026년 9월 30일 종료 분기 연결 실적입니다. 은행 매출은 순이자이익과 비이자이익의 합계입니다. 금융업에 맞지 않는 일반 제조업식 매출총이익·매출총이익률·영업이익·영업이익률은 N/A로 표시합니다. 비GAAP 수치는 별도 표기하며, 증감률은 공시된 반올림 수치로 계산했습니다.  확인된 연결 CAPEX 금액은 없습니다.",
-            "statusLabel": "공시 + 공개 콜 발췌 확인"
+            "statusLabel": "공시 + 공개 콜 발췌 확인",
+            "releaseTiming": {
+              "session": "before_open",
+              "publishedAt": "2026-10-16T06:20:00-04:00",
+              "sourceIds": [
+                "earnings_session_CFG"
+              ],
+              "note": "Citizens 발행 Business Wire 보도자료의 배포 시각 06:20 EDT 확인."
+            },
+            "priceReaction": {
+              "currency": "USD",
+              "regular": {
+                "date": "2026-10-16",
+                "previousDate": "2026-10-15",
+                "closedAt": "2026-10-16T16:00:00-04:00",
+                "close": 63.36000061035156,
+                "previousClose": 63.43000030517578,
+                "changePct": -0.11035739316953563,
+                "sourceIds": [
+                  "us_price_CFG"
+                ]
+              },
+              "afterHours": {
+                "status": "not_applicable",
+                "price": null,
+                "changePct": null,
+                "observedAt": null,
+                "sourceIds": [],
+                "note": "장전 실적 발표 기업: 당일 정규장 수익률은 발표 후 거래를 포함합니다. 장후 발표 직후 반응으로 표시하지 않습니다."
+              }
+            }
           },
           {
             "ticker": "MTB",
@@ -6654,7 +6764,37 @@
               "수요·가격: C&I 대출은 일부 사업 성장과 딜러 재고의 계절적 감소 등이 상쇄돼 대체로 보합이었습니다. 4분기에는 더 폭넓은 대출 성장을 예상했습니다. 마진: 4분기 순이자마진을 3.6%대 중반으로 전망하며 유가증권·고정금리 대출 재가격을 긍정 요인으로 들었습니다. Q&A: 대출 심사·수익 기준을 유지하고, 자사주 매입은 최종 규제·AOCI·신용평가사 반응을 고려하겠다고 답했습니다. 확인된 설비투자액은 없습니다."
             ],
             "note": "모두 2026년 9월 30일 종료 분기 연결 실적입니다. 은행 매출은 순이자이익과 비이자이익의 합계입니다. 금융업에 맞지 않는 일반 제조업식 매출총이익·매출총이익률·영업이익·영업이익률은 N/A로 표시합니다. 비GAAP 수치는 별도 표기하며, 증감률은 공시된 반올림 수치로 계산했습니다.  확인된 연결 CAPEX 금액은 없습니다.",
-            "statusLabel": "공시 + 공개 콜 발췌 확인"
+            "statusLabel": "공시 + 공개 콜 발췌 확인",
+            "releaseTiming": {
+              "session": "before_open",
+              "publishedAt": null,
+              "sourceIds": [
+                "earnings_session_MTB"
+              ],
+              "note": "회사 발표: 10/16 장전 실적 발표, 08:00 ET 콜. 콜 시간을 발표 시간으로 사용하지 않음."
+            },
+            "priceReaction": {
+              "currency": "USD",
+              "regular": {
+                "date": "2026-10-16",
+                "previousDate": "2026-10-15",
+                "closedAt": "2026-10-16T16:00:00-04:00",
+                "close": 215.27999877929688,
+                "previousClose": 218.64999389648438,
+                "changePct": -1.5412738217513766,
+                "sourceIds": [
+                  "us_price_MTB"
+                ]
+              },
+              "afterHours": {
+                "status": "not_applicable",
+                "price": null,
+                "changePct": null,
+                "observedAt": null,
+                "sourceIds": [],
+                "note": "장전 실적 발표 기업: 당일 정규장 수익률은 발표 후 거래를 포함합니다. 장후 발표 직후 반응으로 표시하지 않습니다."
+              }
+            }
           },
           {
             "ticker": "RF",
@@ -6794,7 +6934,37 @@
               "수요·가격: 분기 말 대출 활동이 개선됐지만 높은 금리가 신규 투자용 부동산 거래를 제약했습니다. 마진: 12월 연준 금리 인상을 가정해 4분기 순이자이익 1~2% 증가, 순이자마진 약 3.70%를 전망했습니다. 투자·Q&A: 예금 플랫폼 전환 완료 목표는 시범 운영을 거쳐 2027년 2분기 말~3분기 초입니다. 텍사스 다가구주택의 일부 약세를 지적했고, 플랫폼 프로젝트 완료 전에는 예금은행 M&A에 집중하지 않겠다고 설명했습니다. 확인된 설비투자액은 없습니다."
             ],
             "note": "모두 2026년 9월 30일 종료 분기 연결 실적입니다. 은행 매출은 순이자이익과 비이자이익의 합계입니다. 금융업에 맞지 않는 일반 제조업식 매출총이익·매출총이익률·영업이익·영업이익률은 N/A로 표시합니다. 비GAAP 수치는 별도 표기하며, 증감률은 공시된 반올림 수치로 계산했습니다.  확인된 연결 CAPEX 금액은 없습니다.",
-            "statusLabel": "공시 + 공개 콜 발췌 확인"
+            "statusLabel": "공시 + 공개 콜 발췌 확인",
+            "releaseTiming": {
+              "session": "before_open",
+              "publishedAt": null,
+              "sourceIds": [
+                "earnings_session_RF"
+              ],
+              "note": "회사 발표: 10/16 장전 실적 발표. 10:00 ET는 콜 시작 시각이며 실적 발표 시각이 아님."
+            },
+            "priceReaction": {
+              "currency": "USD",
+              "regular": {
+                "date": "2026-10-16",
+                "previousDate": "2026-10-15",
+                "closedAt": "2026-10-16T16:00:00-04:00",
+                "close": 27.450000762939453,
+                "previousClose": 27.309999465942383,
+                "changePct": 0.5126374944520284,
+                "sourceIds": [
+                  "us_price_RF"
+                ]
+              },
+              "afterHours": {
+                "status": "not_applicable",
+                "price": null,
+                "changePct": null,
+                "observedAt": null,
+                "sourceIds": [],
+                "note": "장전 실적 발표 기업: 당일 정규장 수익률은 발표 후 거래를 포함합니다. 장후 발표 직후 반응으로 표시하지 않습니다."
+              }
+            }
           },
           {
             "ticker": "TFC",
@@ -6933,7 +7103,37 @@
               "수요·가격: 관계 중심 사업에 집중하고 자금관리·외환·대출의 고객 침투 확대를 추진합니다. 마진: 대출사업 매각과 증권 재배치를 통해 재무상태표의 질을 개선하며 4분기 순이자이익을 36.5억~37.0억달러로 전망했습니다. 투자·Q&A: 우선 사업·점포·디지털 역량으로 자원을 재배분하고, 자본을 확보하는 사업 매각과 듀레이션 축소를 함께 추진한다고 답했습니다. LightStream 거래 완료 후 추가 증권 조치를 검토할 수 있습니다. 확인된 설비투자액은 없습니다."
             ],
             "note": "모두 2026년 9월 30일 종료 분기 연결 실적입니다. 은행 매출은 순이자이익과 비이자이익의 합계입니다. 금융업에 맞지 않는 일반 제조업식 매출총이익·매출총이익률·영업이익·영업이익률은 N/A로 표시합니다. 비GAAP 수치는 별도 표기하며, 증감률은 공시된 반올림 수치로 계산했습니다. 연결 순이익 현재 약 8.0억달러, 전분기 약 15.5억달러, 전년 동기 약 14.5억달러. 이에 기반한 증감률은 근사치입니다. 확인된 연결 CAPEX 금액은 없습니다.",
-            "statusLabel": "공시 + 공개 콜 발췌 확인"
+            "statusLabel": "공시 + 공개 콜 발췌 확인",
+            "releaseTiming": {
+              "session": "before_open",
+              "publishedAt": null,
+              "sourceIds": [
+                "earnings_session_TFC"
+              ],
+              "note": "회사 발표: 10/16 미국 정규장 시작 전 실적 발표. 정확한 배포 분은 미확인."
+            },
+            "priceReaction": {
+              "currency": "USD",
+              "regular": {
+                "date": "2026-10-16",
+                "previousDate": "2026-10-15",
+                "closedAt": "2026-10-16T16:00:00-04:00",
+                "close": 47.06999969482422,
+                "previousClose": 46.56999969482422,
+                "changePct": 1.0736525730653312,
+                "sourceIds": [
+                  "us_price_TFC"
+                ]
+              },
+              "afterHours": {
+                "status": "not_applicable",
+                "price": null,
+                "changePct": null,
+                "observedAt": null,
+                "sourceIds": [],
+                "note": "장전 실적 발표 기업: 당일 정규장 수익률은 발표 후 거래를 포함합니다. 장후 발표 직후 반응으로 표시하지 않습니다."
+              }
+            }
           }
         ],
         "note": "당일 실적 발표가 확인된 S&P 500 구성종목 5개를 조사했습니다. 전체 구성종목의 발표·신규 공개 콜을 빠짐없이 대조한 결과는 아닙니다.",

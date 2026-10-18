@@ -223,3 +223,20 @@ node tests/test_korea_ui.cjs
 - 공식 발표 확인 후 새 콜 자료가 공개되면 같은 회사/분기의 `callStatus`, `callHighlights`, `sourceIds`를 보강합니다. 제3자 텍스트 콜과 회사 오디오를 구분하고 실제 확인 범위를 표시합니다. 새 회사 분기나 새로운 거래일로 복제하지 않습니다.
 
 검증: `python scripts/validate_us_analysis.py`, `node tests/test_us_analysis_ui.cjs`, 기존 전체 Python/JavaScript 테스트를 실행합니다. 변경 게시 전 기존 원격 HEAD와 비교하여 관련 파일만 커밋하고, 해당 커밋의 Pages 배포 성공과 공개 페이지를 확인합니다.
+
+
+### 실적 기업명 옆 정규장 / 발표 후 시간외 가격 (2026-10-18)
+
+`earnings.rows`의 선택적 확장 필드이며 기존 `schemaVersion: 1`을 유지합니다. 새 게시·실적 보강 작업에서는 각 행에 아래 항목을 채웁니다. 과거 필드 없는 행도 읽을 수 있으며 미확인으로 표시됩니다.
+
+- `releaseTiming`: `{session, publishedAt, sourceIds, note}`. session은 `before_open` / `during_session` / `after_close` / `unknown`. 공식 발표 공지 또는 회사 발행 보도자료로 장전·장중·장후를 확인하고 출처를 남깁니다. `publishedAt`은 실제 실적 배포 시각의 offset 포함 ISO 8601이며, 분까지 확인할 수 없으면 `null`. 콜 시작 시각이나 예약 공지 게시 시각을 실적 배포 시각으로 쓰지 않습니다.
+- `priceReaction.currency`: `USD`.
+- `priceReaction.regular`: `{date, previousDate, closedAt, close, previousClose, changePct, sourceIds}`. 실제 실적 발표일의 정규장 종가 / 직전 거래일 정규장 종가를 같은 가격 조정 기준으로 조회합니다. `changePct = (close / previousClose - 1) * 100`. 원값과 계산 정밀도를 보존하고 표시에서만 기존 방식으로 최대 소수 둘째 자리 반올림합니다. `closedAt`은 실제 거래소 마감 시각(단축장 포함)이며 일봉의 09:30 타임스탬프나 수집 시각이 아닙니다. 날짜별 실제 거래 세션도 별도 확인해야 합니다.
+- `priceReaction.afterHours`: `{status, price, changePct, observedAt, sourceIds, note}`. status는 `verified` / `unverified` / `not_applicable`. 장후 발표 기업만 발표 이후 시간외 반응을 연결합니다. `changePct = (price / regular.close - 1) * 100`; 전일 종가, 시가, 총 당일 수익률과 혼용하지 않습니다. `observedAt`은 제공사가 명시한 가격 관측 시각이며 offset 포함 ISO 8601. 같은 ET 날짜의 정규장 마감 이후이면서 실적 발표보다 엄격히 늦고 20:00 ET 이전인 최신 검증 가능 관측만 씁니다. 실제 발표 시각을 모르면 안전하게 `unverified`로 둡니다. 다음날 프리마켓, overnight, 발표 직전 값, 정체된 정규장 가격을 대체하지 않습니다.
+- 가격 또는 시각을 검증하지 못한 경우 `price`, `changePct`, `observedAt`은 전부 `null`, 상태 `unverified`와 이유를 저장합니다. 수집 당시 최신 여부·유동성·지연을 출처에서 확인하고 필요하면 note에 명시합니다. 정확히 변화가 없는 검증된 시세만 0%가 됩니다.
+- 장전/장중 발표는 `afterHours.status = not_applicable`, 값은 null로 남깁니다. 해당 당일 정규장 수익률을 `발표 전`이라고 부르지 않습니다. 발표 세션도 미확인이면 `unknown` / 시간외 `unverified`를 씁니다. 발표일보다 나중 날짜의 종가를 가져오지 않습니다.
+- 기업명 옆에는 장후 발표일 경우 `발표 전 정규장 $가격 등락률 · 실적 발표 후 시간외 $가격 등락률 (HH:mm ET)`를 표시합니다. 날짜/비교 기준은 바로 아래, 원문과 추가 근거는 기존 접힌 출처 안에 둡니다. 이후 보강 작업도 해당 행의 동일 필드만 갱신하고 기존 실적·콜 내용은 보존합니다.
+
+현재 2026-10-16의 TRV, CFG, MTB, RF, TFC는 모두 장전 발표로 확인했습니다. 503개 증권의 동일 날짜 검증 모집단에서 10/15·16 종가를 재사용했습니다. 장후 발표처럼 꾸민 예시는 실데이터에 없습니다. 장후·장전·미확인·0%·발표 전/이전일/다음날/overnight 시세·잘못된 분모·서머타임·단축장 검사는 합성 테스트 fixture로만 수행합니다.
+
+일일 갱신/실적 보강 작업은 위 필드를 함께 작성한 뒤 `python scripts/validate_us_analysis.py`, `python -m unittest discover -s tests -v`, `node tests/test_us_analysis_ui.cjs`를 통과해야 게시할 수 있습니다. 기존 GitHub Actions 검증 단계에도 이 검사들이 포함되어 있습니다. 이 UI 변경이 별도의 실시간 시세 수집기를 설치하거나 존재하지 않는 시간외 체결을 생성하지는 않습니다.
