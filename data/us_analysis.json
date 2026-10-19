@@ -87,7 +87,7 @@
             "instrumentType": "etf",
             "holdings": {
               "status": "verified",
-              "asOf": "2026-10-15",
+              "asOf": "2026-10-16",
               "sourceIds": [
                 "holdings-XLK"
               ],
@@ -95,32 +95,32 @@
                 {
                   "ticker": "NVDA",
                   "name": "NVIDIA Corporation",
-                  "weightPct": 15.19,
-                  "shortName": "NVIDIA"
+                  "shortName": "NVIDIA",
+                  "weightPct": 15.45
                 },
                 {
                   "ticker": "AAPL",
                   "name": "Apple Inc.",
-                  "weightPct": 14.43,
-                  "shortName": "Apple"
+                  "shortName": "Apple",
+                  "weightPct": 14.94
                 },
                 {
                   "ticker": "MSFT",
                   "name": "Microsoft Corporation",
-                  "weightPct": 11.58,
-                  "shortName": "Microsoft"
-                },
-                {
-                  "ticker": "AMD",
-                  "name": "Advanced Micro Devices, Inc.",
-                  "weightPct": 4.8,
-                  "shortName": "AMD"
+                  "shortName": "Microsoft",
+                  "weightPct": 11.71
                 },
                 {
                   "ticker": "AVGO",
                   "name": "Broadcom Inc.",
-                  "weightPct": 4.73,
-                  "shortName": "Broadcom"
+                  "shortName": "Broadcom",
+                  "weightPct": 4.66
+                },
+                {
+                  "ticker": "AMD",
+                  "name": "Advanced Micro Devices, Inc.",
+                  "shortName": "AMD",
+                  "weightPct": 4.66
                 }
               ],
               "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
@@ -140,7 +140,7 @@
             "instrumentType": "etf",
             "holdings": {
               "status": "verified",
-              "asOf": "2026-10-15",
+              "asOf": "2026-10-16",
               "sourceIds": [
                 "holdings-XLF"
               ],
@@ -148,32 +148,32 @@
                 {
                   "ticker": "BRK.B",
                   "name": "Berkshire Hathaway Inc.",
-                  "weightPct": 12.57,
-                  "shortName": "Berkshire Hathaway"
+                  "shortName": "Berkshire Hathaway",
+                  "weightPct": 12.66
                 },
                 {
                   "ticker": "JPM",
                   "name": "JPMorgan Chase & Co.",
-                  "weightPct": 11.45,
-                  "shortName": "JPMorgan Chase"
+                  "shortName": "JPMorgan Chase",
+                  "weightPct": 11.54
                 },
                 {
                   "ticker": "V",
                   "name": "Visa Inc.",
-                  "weightPct": 8.75,
-                  "shortName": "Visa"
+                  "shortName": "Visa",
+                  "weightPct": 8.77
                 },
                 {
                   "ticker": "MA",
                   "name": "Mastercard Incorporated",
-                  "weightPct": 6.4,
-                  "shortName": "Mastercard"
+                  "shortName": "Mastercard",
+                  "weightPct": 6.38
                 },
                 {
                   "ticker": "BAC",
                   "name": "Bank of America Corporation",
-                  "weightPct": 4.32,
-                  "shortName": "Bank of America"
+                  "shortName": "Bank of America",
+                  "weightPct": 4.26
                 }
               ],
               "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
@@ -193,7 +193,7 @@
             "instrumentType": "etf",
             "holdings": {
               "status": "verified",
-              "asOf": "2026-10-15",
+              "asOf": "2026-10-16",
               "sourceIds": [
                 "holdings-XLV"
               ],
@@ -201,32 +201,32 @@
                 {
                   "ticker": "LLY",
                   "name": "Eli Lilly and Company",
-                  "weightPct": 15.57,
-                  "shortName": "Eli Lilly"
+                  "shortName": "Eli Lilly",
+                  "weightPct": 15.68
                 },
                 {
                   "ticker": "JNJ",
                   "name": "Johnson & Johnson",
-                  "weightPct": 9.49,
-                  "shortName": "Johnson & Johnson"
+                  "shortName": "Johnson & Johnson",
+                  "weightPct": 9.6
                 },
                 {
                   "ticker": "ABBV",
                   "name": "AbbVie Inc.",
-                  "weightPct": 7.79,
-                  "shortName": "AbbVie"
+                  "shortName": "AbbVie",
+                  "weightPct": 7.86
                 },
                 {
                   "ticker": "UNH",
                   "name": "UnitedHealth Group Incorporated",
-                  "weightPct": 5.68,
-                  "shortName": "UnitedHealth Group"
+                  "shortName": "UnitedHealth Group",
+                  "weightPct": 5.62
                 },
                 {
                   "ticker": "MRK",
                   "name": "Merck & Co., Inc.",
-                  "weightPct": 5.57,
-                  "shortName": "Merck & Co."
+                  "shortName": "Merck & Co.",
+                  "weightPct": 5.61
                 }
               ],
               "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
@@ -246,7 +246,7 @@
             "instrumentType": "etf",
             "holdings": {
               "status": "verified",
-              "asOf": "2026-10-15",
+              "asOf": "2026-10-16",
               "sourceIds": [
                 "holdings-XLY"
               ],
@@ -254,32 +254,32 @@
                 {
                   "ticker": "AMZN",
                   "name": "Amazon.com, Inc.",
-                  "weightPct": 22.97,
-                  "shortName": "Amazon.com"
+                  "shortName": "Amazon.com",
+                  "weightPct": 22.73
                 },
                 {
                   "ticker": "TSLA",
                   "name": "Tesla, Inc.",
-                  "weightPct": 17.34,
-                  "shortName": "Tesla"
+                  "shortName": "Tesla",
+                  "weightPct": 17.11
                 },
                 {
                   "ticker": "HD",
                   "name": "The Home Depot, Inc.",
-                  "weightPct": 5.22,
-                  "shortName": "Home Depot"
+                  "shortName": "Home Depot",
+                  "weightPct": 5.28
                 },
                 {
                   "ticker": "TJX",
                   "name": "The TJX Companies, Inc.",
-                  "weightPct": 4.27,
-                  "shortName": "TJX"
+                  "shortName": "TJX",
+                  "weightPct": 4.39
                 },
                 {
                   "ticker": "MCD",
                   "name": "McDonald's Corporation",
-                  "weightPct": 4.26,
-                  "shortName": "McDonald's"
+                  "shortName": "McDonald's",
+                  "weightPct": 4.3
                 }
               ],
               "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
@@ -299,7 +299,7 @@
             "instrumentType": "etf",
             "holdings": {
               "status": "verified",
-              "asOf": "2026-10-15",
+              "asOf": "2026-10-16",
               "sourceIds": [
                 "holdings-XLP"
               ],
@@ -307,32 +307,32 @@
                 {
                   "ticker": "WMT",
                   "name": "Walmart Inc.",
-                  "weightPct": 10.96,
-                  "shortName": "Walmart"
+                  "shortName": "Walmart",
+                  "weightPct": 10.93
                 },
                 {
                   "ticker": "COST",
                   "name": "Costco Wholesale Corporation",
-                  "weightPct": 9.05,
-                  "shortName": "Costco Wholesale"
+                  "shortName": "Costco Wholesale",
+                  "weightPct": 9.05
                 },
                 {
                   "ticker": "PG",
                   "name": "The Procter & Gamble Company",
-                  "weightPct": 7.62,
-                  "shortName": "Procter & Gamble"
+                  "shortName": "Procter & Gamble",
+                  "weightPct": 7.64
                 },
                 {
                   "ticker": "KO",
                   "name": "The Coca-Cola Company",
-                  "weightPct": 7.43,
-                  "shortName": "Coca-Cola"
+                  "shortName": "Coca-Cola",
+                  "weightPct": 7.5
                 },
                 {
                   "ticker": "PM",
                   "name": "Philip Morris International Inc.",
-                  "weightPct": 6.5,
-                  "shortName": "Philip Morris International"
+                  "shortName": "Philip Morris International",
+                  "weightPct": 6.6
                 }
               ],
               "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
@@ -352,7 +352,7 @@
             "instrumentType": "etf",
             "holdings": {
               "status": "verified",
-              "asOf": "2026-10-15",
+              "asOf": "2026-10-16",
               "sourceIds": [
                 "holdings-XLE"
               ],
@@ -360,32 +360,32 @@
                 {
                   "ticker": "XOM",
                   "name": "ExxonMobil Holdings Corporation",
-                  "weightPct": 23.87,
-                  "shortName": "ExxonMobil"
+                  "shortName": "ExxonMobil",
+                  "weightPct": 23.85
                 },
                 {
                   "ticker": "CVX",
                   "name": "Chevron Corporation",
-                  "weightPct": 17.94,
-                  "shortName": "Chevron"
+                  "shortName": "Chevron",
+                  "weightPct": 17.95
                 },
                 {
                   "ticker": "COP",
                   "name": "ConocoPhillips",
-                  "weightPct": 7.05,
-                  "shortName": "ConocoPhillips"
+                  "shortName": "ConocoPhillips",
+                  "weightPct": 7.11
                 },
                 {
                   "ticker": "MPC",
                   "name": "Marathon Petroleum Corporation",
-                  "weightPct": 5.24,
-                  "shortName": "Marathon Petroleum"
+                  "shortName": "Marathon Petroleum",
+                  "weightPct": 5.13
                 },
                 {
                   "ticker": "VLO",
                   "name": "Valero Energy Corporation",
-                  "weightPct": 5.01,
-                  "shortName": "Valero Energy"
+                  "shortName": "Valero Energy",
+                  "weightPct": 4.9
                 }
               ],
               "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
@@ -405,7 +405,7 @@
             "instrumentType": "etf",
             "holdings": {
               "status": "verified",
-              "asOf": "2026-10-15",
+              "asOf": "2026-10-16",
               "sourceIds": [
                 "holdings-XLI"
               ],
@@ -413,32 +413,32 @@
                 {
                   "ticker": "CAT",
                   "name": "Caterpillar Inc.",
-                  "weightPct": 6.33,
-                  "shortName": "Caterpillar"
+                  "shortName": "Caterpillar",
+                  "weightPct": 6.29
                 },
                 {
                   "ticker": "GE",
                   "name": "GE Aerospace",
-                  "weightPct": 6.06,
-                  "shortName": "GE Aerospace"
+                  "shortName": "GE Aerospace",
+                  "weightPct": 6.1
                 },
                 {
                   "ticker": "RTX",
                   "name": "RTX Corporation",
-                  "weightPct": 4.72,
-                  "shortName": "RTX"
+                  "shortName": "RTX",
+                  "weightPct": 4.9
                 },
                 {
                   "ticker": "GEV",
                   "name": "GE Vernova Inc.",
-                  "weightPct": 4.62,
-                  "shortName": "GE Vernova"
+                  "shortName": "GE Vernova",
+                  "weightPct": 4.6
                 },
                 {
                   "ticker": "UNP",
                   "name": "Union Pacific Corporation",
-                  "weightPct": 3.21,
-                  "shortName": "Union Pacific"
+                  "shortName": "Union Pacific",
+                  "weightPct": 3.22
                 }
               ],
               "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
@@ -458,7 +458,7 @@
             "instrumentType": "etf",
             "holdings": {
               "status": "verified",
-              "asOf": "2026-10-15",
+              "asOf": "2026-10-16",
               "sourceIds": [
                 "holdings-XLB"
               ],
@@ -466,32 +466,32 @@
                 {
                   "ticker": "LIN",
                   "name": "Linde plc",
-                  "weightPct": 12.87,
-                  "shortName": "Linde plc"
+                  "shortName": "Linde plc",
+                  "weightPct": 12.92
                 },
                 {
                   "ticker": "NEM",
                   "name": "Newmont Corporation",
-                  "weightPct": 6.91,
-                  "shortName": "Newmont"
+                  "shortName": "Newmont",
+                  "weightPct": 7.03
                 },
                 {
                   "ticker": "FCX",
                   "name": "Freeport-McMoRan Inc.",
-                  "weightPct": 5.69,
-                  "shortName": "Freeport-McMoRan"
+                  "shortName": "Freeport-McMoRan",
+                  "weightPct": 5.62
                 },
                 {
                   "ticker": "ECL",
                   "name": "Ecolab Inc.",
-                  "weightPct": 5.09,
-                  "shortName": "Ecolab"
+                  "shortName": "Ecolab",
+                  "weightPct": 5.03
                 },
                 {
                   "ticker": "SHW",
                   "name": "The Sherwin-Williams Company",
-                  "weightPct": 5.01,
-                  "shortName": "Sherwin-Williams"
+                  "shortName": "Sherwin-Williams",
+                  "weightPct": 4.95
                 }
               ],
               "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
@@ -511,7 +511,7 @@
             "instrumentType": "etf",
             "holdings": {
               "status": "verified",
-              "asOf": "2026-10-15",
+              "asOf": "2026-10-16",
               "sourceIds": [
                 "holdings-XLU"
               ],
@@ -519,32 +519,32 @@
                 {
                   "ticker": "NEE",
                   "name": "NextEra Energy, Inc.",
-                  "weightPct": 12.58,
-                  "shortName": "NextEra Energy"
+                  "shortName": "NextEra Energy",
+                  "weightPct": 12.54
                 },
                 {
                   "ticker": "SO",
                   "name": "The Southern Company",
-                  "weightPct": 7.84,
-                  "shortName": "Southern Company"
+                  "shortName": "Southern Company",
+                  "weightPct": 7.9
                 },
                 {
                   "ticker": "DUK",
                   "name": "Duke Energy Corporation",
-                  "weightPct": 7.08,
-                  "shortName": "Duke Energy"
+                  "shortName": "Duke Energy",
+                  "weightPct": 7.13
                 },
                 {
                   "ticker": "CEG",
                   "name": "Constellation Energy Corporation",
-                  "weightPct": 6.92,
-                  "shortName": "Constellation Energy"
+                  "shortName": "Constellation Energy",
+                  "weightPct": 6.74
                 },
                 {
                   "ticker": "AEP",
                   "name": "American Electric Power Company, Inc.",
-                  "weightPct": 5.17,
-                  "shortName": "American Electric Power Company"
+                  "shortName": "American Electric Power Company",
+                  "weightPct": 5.21
                 }
               ],
               "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
@@ -564,7 +564,7 @@
             "instrumentType": "etf",
             "holdings": {
               "status": "verified",
-              "asOf": "2026-10-15",
+              "asOf": "2026-10-16",
               "sourceIds": [
                 "holdings-XLRE"
               ],
@@ -572,32 +572,32 @@
                 {
                   "ticker": "WELL",
                   "name": "Welltower Inc.",
-                  "weightPct": 11.61,
-                  "shortName": "Welltower"
+                  "shortName": "Welltower",
+                  "weightPct": 11.57
                 },
                 {
                   "ticker": "PLD",
                   "name": "Prologis, Inc.",
-                  "weightPct": 8.28,
-                  "shortName": "Prologis"
+                  "shortName": "Prologis",
+                  "weightPct": 8.17
                 },
                 {
                   "ticker": "EQIX",
                   "name": "Equinix, Inc.",
-                  "weightPct": 6.75,
-                  "shortName": "Equinix"
+                  "shortName": "Equinix",
+                  "weightPct": 6.65
                 },
                 {
                   "ticker": "AMT",
                   "name": "American Tower Corporation",
-                  "weightPct": 5.8,
-                  "shortName": "American Tower"
+                  "shortName": "American Tower",
+                  "weightPct": 5.9
                 },
                 {
                   "ticker": "PSA",
                   "name": "Public Storage",
-                  "weightPct": 4.63,
-                  "shortName": "Public Storage"
+                  "shortName": "Public Storage",
+                  "weightPct": 4.66
                 }
               ],
               "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
@@ -617,7 +617,7 @@
             "instrumentType": "etf",
             "holdings": {
               "status": "verified",
-              "asOf": "2026-10-15",
+              "asOf": "2026-10-16",
               "sourceIds": [
                 "holdings-XLC"
               ],
@@ -625,32 +625,32 @@
                 {
                   "ticker": "META",
                   "name": "Meta Platforms, Inc.",
-                  "weightPct": 23.42,
-                  "shortName": "Meta Platforms"
+                  "shortName": "Meta Platforms",
+                  "weightPct": 23.03
                 },
                 {
                   "ticker": "GOOGL",
                   "name": "Alphabet Inc. Class A",
-                  "weightPct": 12.29,
-                  "shortName": "Alphabet A"
+                  "shortName": "Alphabet A",
+                  "weightPct": 12.24
                 },
                 {
                   "ticker": "GOOG",
                   "name": "Alphabet Inc. Class C",
-                  "weightPct": 9.83,
-                  "shortName": "Alphabet C"
+                  "shortName": "Alphabet C",
+                  "weightPct": 9.8
                 },
                 {
                   "ticker": "DIS",
                   "name": "The Walt Disney Company",
-                  "weightPct": 4.92,
-                  "shortName": "Walt Disney"
+                  "shortName": "Walt Disney",
+                  "weightPct": 5.02
                 },
                 {
                   "ticker": "TTWO",
                   "name": "Take-Two Interactive Software, Inc.",
-                  "weightPct": 4.6,
-                  "shortName": "Take-Two Interactive Software"
+                  "shortName": "Take-Two Interactive Software",
+                  "weightPct": 4.6
                 }
               ],
               "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
@@ -670,7 +670,7 @@
             "instrumentType": "etf",
             "holdings": {
               "status": "verified",
-              "asOf": "2026-10-15",
+              "asOf": "2026-10-16",
               "sourceIds": [
                 "holdings-SOXX"
               ],
@@ -678,32 +678,32 @@
                 {
                   "ticker": "AMD",
                   "name": "Advanced Micro Devices, Inc.",
-                  "weightPct": 9.42,
-                  "shortName": "AMD"
+                  "shortName": "AMD",
+                  "weightPct": 9.25
                 },
                 {
                   "ticker": "INTC",
                   "name": "Intel Corporation",
-                  "weightPct": 8.4,
-                  "shortName": "Intel"
+                  "shortName": "Intel",
+                  "weightPct": 8.26
                 },
                 {
                   "ticker": "NVDA",
                   "name": "NVIDIA Corporation",
-                  "weightPct": 7.76,
-                  "shortName": "NVIDIA"
+                  "shortName": "NVIDIA",
+                  "weightPct": 7.98
                 },
                 {
                   "ticker": "MU",
                   "name": "Micron Technology, Inc.",
-                  "weightPct": 7.66,
-                  "shortName": "Micron Technology"
+                  "shortName": "Micron Technology",
+                  "weightPct": 7.55
                 },
                 {
                   "ticker": "AVGO",
                   "name": "Broadcom Inc.",
-                  "weightPct": 7.33,
-                  "shortName": "Broadcom"
+                  "shortName": "Broadcom",
+                  "weightPct": 7.31
                 }
               ],
               "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
@@ -776,7 +776,7 @@
             "instrumentType": "etf",
             "holdings": {
               "status": "verified",
-              "asOf": "2026-10-15",
+              "asOf": "2026-10-16",
               "sourceIds": [
                 "holdings-XBI"
               ],
@@ -784,32 +784,32 @@
                 {
                   "ticker": "MRNA",
                   "name": "Moderna, Inc.",
-                  "weightPct": 2.64,
-                  "shortName": "Moderna"
+                  "shortName": "Moderna",
+                  "weightPct": 2.52
                 },
                 {
                   "ticker": "NTRA",
                   "name": "Natera, Inc.",
-                  "weightPct": 1.85,
-                  "shortName": "Natera"
-                },
-                {
-                  "ticker": "TWST",
-                  "name": "Twist Bioscience Corporation",
-                  "weightPct": 1.74,
-                  "shortName": "Twist Bioscience"
-                },
-                {
-                  "ticker": "HALO",
-                  "name": "Halozyme Therapeutics, Inc.",
-                  "weightPct": 1.71,
-                  "shortName": "Halozyme Therapeutics"
+                  "shortName": "Natera",
+                  "weightPct": 1.87
                 },
                 {
                   "ticker": "ABBV",
                   "name": "AbbVie Inc.",
-                  "weightPct": 1.71,
-                  "shortName": "AbbVie"
+                  "shortName": "AbbVie",
+                  "weightPct": 1.79
+                },
+                {
+                  "ticker": "HALO",
+                  "name": "Halozyme Therapeutics, Inc.",
+                  "shortName": "Halozyme",
+                  "weightPct": 1.78
+                },
+                {
+                  "ticker": "AMGN",
+                  "name": "Amgen Inc.",
+                  "shortName": "Amgen",
+                  "weightPct": 1.74
                 }
               ],
               "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
@@ -829,7 +829,7 @@
             "instrumentType": "etf",
             "holdings": {
               "status": "verified",
-              "asOf": "2026-10-15",
+              "asOf": "2026-10-16",
               "sourceIds": [
                 "holdings-KRE"
               ],
@@ -837,32 +837,32 @@
                 {
                   "ticker": "UBSI",
                   "name": "United Bankshares, Inc.",
-                  "weightPct": 1.16,
-                  "shortName": "United Bankshares"
+                  "shortName": "United Bankshares",
+                  "weightPct": 1.16
                 },
                 {
                   "ticker": "EWBC",
                   "name": "East West Bancorp, Inc.",
-                  "weightPct": 1.15,
-                  "shortName": "East West Bancorp"
+                  "shortName": "East West Bancorp",
+                  "weightPct": 1.15
+                },
+                {
+                  "ticker": "FBP",
+                  "name": "First BanCorp. (Puerto Rico)",
+                  "shortName": "First BanCorp",
+                  "weightPct": 1.15
                 },
                 {
                   "ticker": "ONB",
                   "name": "Old National Bancorp",
-                  "weightPct": 1.15,
-                  "shortName": "Old National Bancorp"
+                  "shortName": "Old National Bancorp",
+                  "weightPct": 1.14
                 },
                 {
-                  "ticker": "HWC",
-                  "name": "Hancock Whitney Corporation",
-                  "weightPct": 1.14,
-                  "shortName": "Hancock Whitney"
-                },
-                {
-                  "ticker": "FBP",
-                  "name": "First BanCorp.",
-                  "weightPct": 1.14,
-                  "shortName": "First BanCorp."
+                  "ticker": "HOMB",
+                  "name": "Home BancShares, Inc.",
+                  "shortName": "Home BancShares",
+                  "weightPct": 1.14
                 }
               ],
               "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
@@ -882,7 +882,7 @@
             "instrumentType": "etf",
             "holdings": {
               "status": "verified",
-              "asOf": "2026-10-15",
+              "asOf": "2026-10-16",
               "sourceIds": [
                 "holdings-XOP"
               ],
@@ -890,32 +890,32 @@
                 {
                   "ticker": "MPC",
                   "name": "Marathon Petroleum Corporation",
-                  "weightPct": 3.16,
-                  "shortName": "Marathon Petroleum"
+                  "shortName": "Marathon Petroleum",
+                  "weightPct": 3.08
                 },
                 {
                   "ticker": "DINO",
                   "name": "HF Sinclair Corporation",
-                  "weightPct": 3.05,
-                  "shortName": "HF Sinclair"
+                  "shortName": "HF Sinclair",
+                  "weightPct": 2.98
                 },
                 {
                   "ticker": "VLO",
                   "name": "Valero Energy Corporation",
-                  "weightPct": 3.02,
-                  "shortName": "Valero Energy"
-                },
-                {
-                  "ticker": "PBF",
-                  "name": "PBF Energy Inc.",
-                  "weightPct": 3.01,
-                  "shortName": "PBF Energy"
+                  "shortName": "Valero Energy",
+                  "weightPct": 2.94
                 },
                 {
                   "ticker": "PSX",
                   "name": "Phillips 66",
-                  "weightPct": 2.93,
-                  "shortName": "Phillips 66"
+                  "shortName": "Phillips 66",
+                  "weightPct": 2.89
+                },
+                {
+                  "ticker": "PBF",
+                  "name": "PBF Energy Inc.",
+                  "shortName": "PBF Energy",
+                  "weightPct": 2.84
                 }
               ],
               "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
@@ -935,7 +935,7 @@
             "instrumentType": "etf",
             "holdings": {
               "status": "verified",
-              "asOf": "2026-10-15",
+              "asOf": "2026-10-16",
               "sourceIds": [
                 "holdings-ITA"
               ],
@@ -943,32 +943,32 @@
                 {
                   "ticker": "GE",
                   "name": "GE Aerospace",
-                  "weightPct": 20.96,
-                  "shortName": "GE Aerospace"
+                  "shortName": "GE Aerospace",
+                  "weightPct": 20.86
                 },
                 {
                   "ticker": "RTX",
                   "name": "RTX Corporation",
-                  "weightPct": 16.31,
-                  "shortName": "RTX"
+                  "shortName": "RTX",
+                  "weightPct": 16.74
                 },
                 {
                   "ticker": "BA",
                   "name": "The Boeing Company",
-                  "weightPct": 7.6,
-                  "shortName": "Boeing"
+                  "shortName": "Boeing",
+                  "weightPct": 7.58
                 },
                 {
                   "ticker": "LMT",
                   "name": "Lockheed Martin Corporation",
-                  "weightPct": 4.82,
-                  "shortName": "Lockheed Martin"
+                  "shortName": "Lockheed Martin",
+                  "weightPct": 4.94
                 },
                 {
                   "ticker": "TDG",
                   "name": "TransDigm Group Incorporated",
-                  "weightPct": 4.78,
-                  "shortName": "TransDigm Group"
+                  "shortName": "TransDigm Group",
+                  "weightPct": 4.75
                 }
               ],
               "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
@@ -988,7 +988,7 @@
             "instrumentType": "etf",
             "holdings": {
               "status": "verified",
-              "asOf": "2026-10-15",
+              "asOf": "2026-10-16",
               "sourceIds": [
                 "holdings-XHB"
               ],
@@ -996,32 +996,32 @@
                 {
                   "ticker": "SN",
                   "name": "SharkNinja, Inc.",
-                  "weightPct": 3.77,
-                  "shortName": "SharkNinja"
-                },
-                {
-                  "ticker": "W",
-                  "name": "Wayfair Inc.",
-                  "weightPct": 3.68,
-                  "shortName": "Wayfair"
+                  "shortName": "SharkNinja",
+                  "weightPct": 3.66
                 },
                 {
                   "ticker": "WSM",
                   "name": "Williams-Sonoma, Inc.",
-                  "weightPct": 3.64,
-                  "shortName": "Williams-Sonoma"
+                  "shortName": "Williams-Sonoma",
+                  "weightPct": 3.65
+                },
+                {
+                  "ticker": "W",
+                  "name": "Wayfair Inc.",
+                  "shortName": "Wayfair",
+                  "weightPct": 3.56
                 },
                 {
                   "ticker": "MAS",
                   "name": "Masco Corporation",
-                  "weightPct": 3.44,
-                  "shortName": "Masco"
+                  "shortName": "Masco",
+                  "weightPct": 3.49
                 },
                 {
                   "ticker": "TT",
                   "name": "Trane Technologies plc",
-                  "weightPct": 3.39,
-                  "shortName": "Trane Technologies plc"
+                  "shortName": "Trane Technologies plc",
+                  "weightPct": 3.43
                 }
               ],
               "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
@@ -1041,7 +1041,7 @@
             "instrumentType": "etf",
             "holdings": {
               "status": "verified",
-              "asOf": "2026-10-15",
+              "asOf": "2026-10-16",
               "sourceIds": [
                 "holdings-XRT"
               ],
@@ -1049,32 +1049,32 @@
                 {
                   "ticker": "GME",
                   "name": "GameStop Corp.",
-                  "weightPct": 1.91,
-                  "shortName": "GameStop Corp."
+                  "shortName": "GameStop Corp.",
+                  "weightPct": 1.84
                 },
                 {
                   "ticker": "OLLI",
                   "name": "Ollie's Bargain Outlet Holdings, Inc.",
-                  "weightPct": 1.79,
-                  "shortName": "Ollie's Bargain Outlet Holdings"
+                  "shortName": "Ollie's Bargain Outlet Holdings",
+                  "weightPct": 1.76
                 },
                 {
                   "ticker": "KSS",
                   "name": "Kohl's Corporation",
-                  "weightPct": 1.73,
-                  "shortName": "Kohl's"
+                  "shortName": "Kohl's",
+                  "weightPct": 1.69
                 },
                 {
                   "ticker": "ETSY",
                   "name": "Etsy, Inc.",
-                  "weightPct": 1.7,
-                  "shortName": "Etsy"
+                  "shortName": "Etsy",
+                  "weightPct": 1.64
                 },
                 {
-                  "ticker": "VSXY",
-                  "name": "Victoria's Secret & Co.",
-                  "weightPct": 1.62,
-                  "shortName": "Victoria's Secret & Co."
+                  "ticker": "RVLV",
+                  "name": "Revolve Group, Inc. Class A",
+                  "shortName": "Revolve",
+                  "weightPct": 1.6
                 }
               ],
               "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
@@ -1147,7 +1147,7 @@
             "instrumentType": "etf",
             "holdings": {
               "status": "verified",
-              "asOf": "2026-10-15",
+              "asOf": "2026-10-16",
               "sourceIds": [
                 "holdings-SMH"
               ],
@@ -1155,32 +1155,32 @@
                 {
                   "ticker": "NVDA",
                   "name": "NVIDIA Corporation",
-                  "weightPct": 20.06,
-                  "shortName": "NVIDIA"
+                  "shortName": "NVIDIA",
+                  "weightPct": 20.46
                 },
                 {
                   "ticker": "TSM",
                   "name": "Taiwan Semiconductor Manufacturing Company Limited",
-                  "weightPct": 9.32,
-                  "shortName": "TSMC"
-                },
-                {
-                  "ticker": "AMD",
-                  "name": "Advanced Micro Devices, Inc.",
-                  "weightPct": 5.57,
-                  "shortName": "AMD"
+                  "shortName": "TSMC",
+                  "weightPct": 9.42
                 },
                 {
                   "ticker": "AVGO",
                   "name": "Broadcom Inc.",
-                  "weightPct": 5.55,
-                  "shortName": "Broadcom"
+                  "shortName": "Broadcom",
+                  "weightPct": 5.48
+                },
+                {
+                  "ticker": "AMD",
+                  "name": "Advanced Micro Devices, Inc.",
+                  "shortName": "AMD",
+                  "weightPct": 5.42
                 },
                 {
                   "ticker": "TXN",
                   "name": "Texas Instruments Incorporated",
-                  "weightPct": 4.95,
-                  "shortName": "Texas Instruments"
+                  "shortName": "Texas Instruments",
+                  "weightPct": 5.07
                 }
               ],
               "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
@@ -1200,7 +1200,7 @@
             "instrumentType": "etf",
             "holdings": {
               "status": "verified",
-              "asOf": "2026-10-15",
+              "asOf": "2026-10-16",
               "sourceIds": [
                 "holdings-XME"
               ],
@@ -1208,32 +1208,32 @@
                 {
                   "ticker": "RS",
                   "name": "Reliance, Inc.",
-                  "weightPct": 5.73,
-                  "shortName": "Reliance"
+                  "shortName": "Reliance",
+                  "weightPct": 5.82
                 },
                 {
                   "ticker": "CLF",
                   "name": "Cleveland-Cliffs Inc.",
-                  "weightPct": 5.6,
-                  "shortName": "Cleveland-Cliffs"
+                  "shortName": "Cleveland-Cliffs",
+                  "weightPct": 5.61
                 },
                 {
                   "ticker": "STLD",
                   "name": "Steel Dynamics, Inc.",
-                  "weightPct": 5.57,
-                  "shortName": "Steel Dynamics"
+                  "shortName": "Steel Dynamics",
+                  "weightPct": 5.59
                 },
                 {
                   "ticker": "NUE",
                   "name": "Nucor Corporation",
-                  "weightPct": 5.5,
-                  "shortName": "Nucor"
+                  "shortName": "Nucor",
+                  "weightPct": 5.56
                 },
                 {
                   "ticker": "CMC",
                   "name": "Commercial Metals Company",
-                  "weightPct": 5.28,
-                  "shortName": "Commercial Metals"
+                  "shortName": "Commercial Metals",
+                  "weightPct": 5.27
                 }
               ],
               "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
@@ -1253,7 +1253,7 @@
             "instrumentType": "etf",
             "holdings": {
               "status": "verified",
-              "asOf": "2026-10-15",
+              "asOf": "2026-10-16",
               "sourceIds": [
                 "holdings-XAR"
               ],
@@ -1261,32 +1261,32 @@
                 {
                   "ticker": "HONA",
                   "name": "Honeywell Aerospace Inc.",
-                  "weightPct": 3.33,
-                  "shortName": "Honeywell Aerospace"
+                  "shortName": "Honeywell Aerospace",
+                  "weightPct": 3.44
                 },
                 {
                   "ticker": "LMT",
                   "name": "Lockheed Martin Corporation",
-                  "weightPct": 3.15,
-                  "shortName": "Lockheed Martin"
+                  "shortName": "Lockheed Martin",
+                  "weightPct": 3.26
                 },
                 {
                   "ticker": "TDG",
                   "name": "TransDigm Group Incorporated",
-                  "weightPct": 3.12,
-                  "shortName": "TransDigm Group"
+                  "shortName": "TransDigm Group",
+                  "weightPct": 3.14
+                },
+                {
+                  "ticker": "NOC",
+                  "name": "Northrop Grumman",
+                  "shortName": "Northrop Grumman",
+                  "weightPct": 3.13
                 },
                 {
                   "ticker": "MOG.A",
-                  "name": "Moog Inc.",
-                  "weightPct": 3.08,
-                  "shortName": "Moog"
-                },
-                {
-                  "ticker": "HEI",
-                  "name": "HEICO Corporation",
-                  "weightPct": 3.06,
-                  "shortName": "HEICO"
+                  "name": "Moog Inc. Class A",
+                  "shortName": "Moog A",
+                  "weightPct": 3.11
                 }
               ],
               "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
@@ -1412,40 +1412,40 @@
             "instrumentType": "etf",
             "holdings": {
               "status": "verified",
-              "asOf": "2026-10-15",
+              "asOf": "2026-10-16",
               "sourceIds": [
                 "holdings-ICLN"
               ],
               "top5": [
                 {
-                  "ticker": "600900",
-                  "name": "China Yangtze Power Co., Ltd.",
-                  "weightPct": 8.62,
-                  "shortName": "China Yangtze Power Co., Ltd."
-                },
-                {
-                  "ticker": "BE",
-                  "name": "Bloom Energy Corporation",
-                  "weightPct": 8.53,
-                  "shortName": "Bloom Energy"
-                },
-                {
                   "ticker": "FSLR",
                   "name": "First Solar, Inc.",
-                  "weightPct": 7.32,
-                  "shortName": "First Solar"
+                  "shortName": "First Solar",
+                  "weightPct": 7.97
                 },
                 {
                   "ticker": "NXT",
                   "name": "Nextpower Inc.",
-                  "weightPct": 6.98,
-                  "shortName": "Nextpower"
+                  "shortName": "Nextpower",
+                  "weightPct": 7.59
                 },
                 {
-                  "ticker": "EQTL3",
-                  "name": "Equatorial S.A.",
-                  "weightPct": 4.44,
-                  "shortName": "Equatorial S.A."
+                  "ticker": "IBE",
+                  "name": "Iberdrola S.A.",
+                  "shortName": "Iberdrola",
+                  "weightPct": 6.5
+                },
+                {
+                  "ticker": "BE",
+                  "name": "Bloom Energy Corporation",
+                  "shortName": "Bloom Energy",
+                  "weightPct": 6.32
+                },
+                {
+                  "ticker": "600900",
+                  "name": "China Yangtze Power Co., Ltd.",
+                  "shortName": "China Yangtze Power Co., Ltd.",
+                  "weightPct": 5.38
                 }
               ],
               "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
@@ -1465,7 +1465,7 @@
             "instrumentType": "etf",
             "holdings": {
               "status": "verified",
-              "asOf": "2026-10-15",
+              "asOf": "2026-10-16",
               "sourceIds": [
                 "holdings-TAN"
               ],
@@ -1473,32 +1473,32 @@
                 {
                   "ticker": "NXT",
                   "name": "Nextpower Inc.",
-                  "weightPct": 11.02,
-                  "shortName": "Nextpower"
+                  "shortName": "Nextpower",
+                  "weightPct": 10.78
                 },
                 {
                   "ticker": "FSLR",
                   "name": "First Solar, Inc.",
-                  "weightPct": 9.36,
-                  "shortName": "First Solar"
+                  "shortName": "First Solar",
+                  "weightPct": 9.22
                 },
                 {
                   "ticker": "TLV:ENLT",
                   "name": "Enlight Renewable Energy Ltd",
-                  "weightPct": 8.16,
-                  "shortName": "Enlight Renewable Energy Ltd"
+                  "shortName": "Enlight Renewable Energy Ltd",
+                  "weightPct": 8.54
                 },
                 {
                   "ticker": "ENPH",
                   "name": "Enphase Energy, Inc.",
-                  "weightPct": 6.83,
-                  "shortName": "Enphase Energy"
+                  "shortName": "Enphase Energy",
+                  "weightPct": 6.92
                 },
                 {
                   "ticker": "HASI",
                   "name": "HA Sustainable Infrastructure Capital, Inc.",
-                  "weightPct": 5.02,
-                  "shortName": "HA Sustainable Infrastructure Capital"
+                  "shortName": "HA Sustainable Infrastructure Capital",
+                  "weightPct": 5.07
                 }
               ],
               "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
@@ -1518,40 +1518,40 @@
             "instrumentType": "etf",
             "holdings": {
               "status": "verified",
-              "asOf": "2026-10-14",
+              "asOf": "2026-10-16",
               "sourceIds": [
                 "holdings-FAN"
               ],
               "top5": [
                 {
-                  "ticker": "CPH:ORSTED",
-                  "name": "Ørsted A/S",
-                  "weightPct": 7.69,
-                  "shortName": "Ørsted"
-                },
-                {
-                  "ticker": "ETR:NDX1",
+                  "ticker": "NDX1.GY",
                   "name": "Nordex SE",
-                  "weightPct": 7.69,
+                  "weightPct": 8.5,
                   "shortName": "Nordex"
                 },
                 {
-                  "ticker": "ELI:EDPR",
-                  "name": "EDP Renewables, S.A.",
-                  "weightPct": 7.59,
+                  "ticker": "ORSTED.DC",
+                  "name": "Orsted A/S",
+                  "weightPct": 7.76,
+                  "shortName": "Ørsted"
+                },
+                {
+                  "ticker": "EDPR.PL",
+                  "name": "EDP Renewables SA",
+                  "weightPct": 7.55,
                   "shortName": "EDP Renewables"
                 },
                 {
-                  "ticker": "CPH:VWS",
+                  "ticker": "VWS.DC",
                   "name": "Vestas Wind Systems A/S",
-                  "weightPct": 7.2,
+                  "weightPct": 7.25,
                   "shortName": "Vestas Wind Systems"
                 },
                 {
-                  "ticker": "HKG:0916",
-                  "name": "China Longyuan Power Group Corporation Limited",
-                  "weightPct": 5.93,
-                  "shortName": "China Longyuan Power"
+                  "ticker": "916.HK",
+                  "name": "China Longyuan Power Group Corporation Limited (Class H)",
+                  "weightPct": 5.81,
+                  "shortName": "China Longyuan Power H"
                 }
               ],
               "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
@@ -1624,7 +1624,7 @@
             "instrumentType": "etf",
             "holdings": {
               "status": "verified",
-              "asOf": "2026-10-15",
+              "asOf": "2026-10-16",
               "sourceIds": [
                 "holdings-CRAK"
               ],
@@ -1632,32 +1632,32 @@
                 {
                   "ticker": "MPC",
                   "name": "Marathon Petroleum Corporation",
-                  "weightPct": 9.47,
-                  "shortName": "Marathon Petroleum"
+                  "shortName": "Marathon Petroleum",
+                  "weightPct": 9.44
                 },
                 {
                   "ticker": "VLO",
                   "name": "Valero Energy Corporation",
-                  "weightPct": 9.05,
-                  "shortName": "Valero Energy"
+                  "shortName": "Valero Energy",
+                  "weightPct": 9.02
                 },
                 {
                   "ticker": "PSX",
                   "name": "Phillips 66",
-                  "weightPct": 7.14,
-                  "shortName": "Phillips 66"
+                  "shortName": "Phillips 66",
+                  "weightPct": 7.21
                 },
                 {
                   "ticker": "RIGD LI",
                   "name": "Reliance Industries Ltd GDR - 144A",
-                  "weightPct": 6.69,
-                  "shortName": "Reliance Industries GDR"
+                  "shortName": "Reliance Industries GDR",
+                  "weightPct": 6.68
                 },
                 {
                   "ticker": "PKN PW",
                   "name": "Orlen S.A.",
-                  "weightPct": 5.46,
-                  "shortName": "Orlen"
+                  "shortName": "Orlen",
+                  "weightPct": 5.51
                 }
               ],
               "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
@@ -1677,7 +1677,7 @@
             "instrumentType": "etf",
             "holdings": {
               "status": "verified",
-              "asOf": "2026-10-15",
+              "asOf": "2026-10-16",
               "sourceIds": [
                 "holdings-KBE"
               ],
@@ -1685,32 +1685,32 @@
                 {
                   "ticker": "CBC",
                   "name": "Central Bancompany, Inc.",
-                  "weightPct": 1.03,
-                  "shortName": "Central Bancompany"
+                  "shortName": "Central Bancompany",
+                  "weightPct": 1.03
                 },
                 {
                   "ticker": "EQH",
                   "name": "Equitable Holdings, Inc.",
-                  "weightPct": 1.02,
-                  "shortName": "Equitable Holdings"
+                  "shortName": "Equitable Holdings",
+                  "weightPct": 1.01
                 },
                 {
                   "ticker": "CRBG",
                   "name": "Corebridge Financial, Inc.",
-                  "weightPct": 1.01,
-                  "shortName": "Corebridge Financial"
+                  "shortName": "Corebridge Financial",
+                  "weightPct": 1.01
                 },
                 {
                   "ticker": "OFG",
                   "name": "OFG Bancorp",
-                  "weightPct": 0.99,
-                  "shortName": "OFG Bancorp"
+                  "shortName": "OFG Bancorp",
+                  "weightPct": 1
                 },
                 {
-                  "ticker": "UBSI",
-                  "name": "United Bankshares, Inc.",
-                  "weightPct": 0.98,
-                  "shortName": "United Bankshares"
+                  "ticker": "FCNCA",
+                  "name": "FIRST CITIZENS BCSHS CL A",
+                  "shortName": "FIRST CITIZENS BCSHS CL A",
+                  "weightPct": 0.99
                 }
               ],
               "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
@@ -1730,7 +1730,7 @@
             "instrumentType": "etf",
             "holdings": {
               "status": "verified",
-              "asOf": "2026-10-15",
+              "asOf": "2026-10-16",
               "sourceIds": [
                 "holdings-IAI"
               ],
@@ -1738,32 +1738,32 @@
                 {
                   "ticker": "GS",
                   "name": "The Goldman Sachs Group, Inc.",
-                  "weightPct": 17.82,
-                  "shortName": "Goldman Sachs"
+                  "shortName": "Goldman Sachs",
+                  "weightPct": 17.77
                 },
                 {
                   "ticker": "MS",
                   "name": "Morgan Stanley",
-                  "weightPct": 14.92,
-                  "shortName": "Morgan Stanley"
+                  "shortName": "Morgan Stanley",
+                  "weightPct": 14.92
                 },
                 {
                   "ticker": "SCHW",
                   "name": "The Charles Schwab Corporation",
-                  "weightPct": 9.06,
-                  "shortName": "Charles Schwab"
+                  "shortName": "Charles Schwab",
+                  "weightPct": 8.92
                 },
                 {
                   "ticker": "CME",
                   "name": "CME Group Inc.",
-                  "weightPct": 5.11,
-                  "shortName": "CME Group"
+                  "shortName": "CME Group",
+                  "weightPct": 5.23
                 },
                 {
-                  "ticker": "MCO",
-                  "name": "Moody's Corporation",
-                  "weightPct": 4.94,
-                  "shortName": "Moody's"
+                  "ticker": "ICE",
+                  "name": "Intercontinental Exchange",
+                  "shortName": "Intercontinental Exchange",
+                  "weightPct": 5.05
                 }
               ],
               "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
@@ -1783,7 +1783,7 @@
             "instrumentType": "etf",
             "holdings": {
               "status": "verified",
-              "asOf": "2026-10-15",
+              "asOf": "2026-10-16",
               "sourceIds": [
                 "holdings-IHF"
               ],
@@ -1791,32 +1791,32 @@
                 {
                   "ticker": "UNH",
                   "name": "UnitedHealth Group Incorporated",
-                  "weightPct": 22.18,
-                  "shortName": "UnitedHealth Group"
+                  "shortName": "UnitedHealth Group",
+                  "weightPct": 22.22
                 },
                 {
                   "ticker": "CVS",
                   "name": "CVS Health Corporation",
-                  "weightPct": 12.21,
-                  "shortName": "CVS Health"
+                  "shortName": "CVS Health",
+                  "weightPct": 12.36
                 },
                 {
                   "ticker": "ELV",
                   "name": "Elevance Health, Inc.",
-                  "weightPct": 9.57,
-                  "shortName": "Elevance Health"
+                  "shortName": "Elevance Health",
+                  "weightPct": 9.71
                 },
                 {
                   "ticker": "VEEV",
                   "name": "Veeva Systems Inc.",
-                  "weightPct": 5.15,
-                  "shortName": "Veeva Systems"
+                  "shortName": "Veeva Systems",
+                  "weightPct": 5.18
                 },
                 {
                   "ticker": "HCA",
                   "name": "HCA Healthcare, Inc.",
-                  "weightPct": 4.76,
-                  "shortName": "HCA Healthcare"
+                  "shortName": "HCA Healthcare",
+                  "weightPct": 4.73
                 }
               ],
               "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
@@ -1836,7 +1836,7 @@
             "instrumentType": "etf",
             "holdings": {
               "status": "verified",
-              "asOf": "2026-10-15",
+              "asOf": "2026-10-16",
               "sourceIds": [
                 "holdings-IHI"
               ],
@@ -1844,32 +1844,32 @@
                 {
                   "ticker": "ABT",
                   "name": "Abbott Laboratories",
-                  "weightPct": 17.91,
-                  "shortName": "Abbott Laboratories"
+                  "shortName": "Abbott Laboratories",
+                  "weightPct": 18.03
                 },
                 {
                   "ticker": "ISRG",
                   "name": "Intuitive Surgical, Inc.",
-                  "weightPct": 14.95,
-                  "shortName": "Intuitive Surgical"
+                  "shortName": "Intuitive Surgical",
+                  "weightPct": 14.98
                 },
                 {
                   "ticker": "MDT",
                   "name": "Medtronic plc",
-                  "weightPct": 11.56,
-                  "shortName": "Medtronic plc"
+                  "shortName": "Medtronic plc",
+                  "weightPct": 11.52
                 },
                 {
-                  "ticker": "RMD",
-                  "name": "ResMed Inc.",
-                  "weightPct": 4.65,
-                  "shortName": "ResMed"
+                  "ticker": "IDXX",
+                  "name": "Idexx Laboratories",
+                  "shortName": "Idexx Laboratories",
+                  "weightPct": 4.7
                 },
                 {
-                  "ticker": "BDX",
-                  "name": "Becton, Dickinson and Company",
-                  "weightPct": 4.63,
-                  "shortName": "Becton Dickinson"
+                  "ticker": "SYK",
+                  "name": "Stryker Corporation",
+                  "shortName": "Stryker Corporation",
+                  "weightPct": 4.62
                 }
               ],
               "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
@@ -1889,7 +1889,7 @@
             "instrumentType": "etf",
             "holdings": {
               "status": "verified",
-              "asOf": "2026-10-15",
+              "asOf": "2026-10-16",
               "sourceIds": [
                 "holdings-XPH"
               ],
@@ -1897,32 +1897,32 @@
                 {
                   "ticker": "XERS",
                   "name": "Xeris Biopharma Holdings, Inc.",
-                  "weightPct": 2.68,
-                  "shortName": "Xeris Biopharma Holdings"
+                  "shortName": "Xeris Biopharma Holdings",
+                  "weightPct": 2.8
                 },
                 {
                   "ticker": "PCRX",
                   "name": "Pacira BioSciences, Inc.",
-                  "weightPct": 2.6,
-                  "shortName": "Pacira BioSciences"
-                },
-                {
-                  "ticker": "MANE",
-                  "name": "Veradermics, Incorporated",
-                  "weightPct": 2.37,
-                  "shortName": "Veradermics"
+                  "shortName": "Pacira BioSciences",
+                  "weightPct": 2.65
                 },
                 {
                   "ticker": "PRGO",
                   "name": "Perrigo Company plc",
-                  "weightPct": 2.36,
-                  "shortName": "Perrigo Company plc"
+                  "shortName": "Perrigo",
+                  "weightPct": 2.43
                 },
                 {
-                  "ticker": "AMRX",
-                  "name": "Amneal Pharmaceuticals, Inc.",
-                  "weightPct": 2.29,
-                  "shortName": "Amneal Pharmaceuticals"
+                  "ticker": "VTRS",
+                  "name": "Viatris",
+                  "shortName": "Viatris",
+                  "weightPct": 2.37
+                },
+                {
+                  "ticker": "LLY",
+                  "name": "Eli Lilly and Company",
+                  "shortName": "Eli Lilly",
+                  "weightPct": 2.34
                 }
               ],
               "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
@@ -1942,7 +1942,7 @@
             "instrumentType": "etf",
             "holdings": {
               "status": "verified",
-              "asOf": "2026-10-15",
+              "asOf": "2026-10-16",
               "sourceIds": [
                 "holdings-FDN"
               ],
@@ -1950,32 +1950,32 @@
                 {
                   "ticker": "META",
                   "name": "Meta Platforms, Inc.",
-                  "weightPct": 11.04,
-                  "shortName": "Meta Platforms"
+                  "shortName": "Meta Platforms",
+                  "weightPct": 11
                 },
                 {
                   "ticker": "AMZN",
                   "name": "Amazon.com, Inc.",
-                  "weightPct": 9.89,
-                  "shortName": "Amazon.com"
+                  "shortName": "Amazon.com",
+                  "weightPct": 10.04
                 },
                 {
                   "ticker": "CSCO",
                   "name": "Cisco Systems, Inc.",
-                  "weightPct": 8.56,
-                  "shortName": "Cisco Systems"
+                  "shortName": "Cisco Systems",
+                  "weightPct": 8.66
                 },
                 {
                   "ticker": "NFLX",
                   "name": "Netflix, Inc.",
-                  "weightPct": 5.89,
-                  "shortName": "Netflix"
+                  "shortName": "Netflix",
+                  "weightPct": 5.92
                 },
                 {
                   "ticker": "GOOGL",
                   "name": "Alphabet Inc. Class A",
-                  "weightPct": 5.73,
-                  "shortName": "Alphabet A"
+                  "shortName": "Alphabet A",
+                  "weightPct": 5.79
                 }
               ],
               "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
@@ -1995,7 +1995,7 @@
             "instrumentType": "etf",
             "holdings": {
               "status": "verified",
-              "asOf": "2026-10-15",
+              "asOf": "2026-10-16",
               "sourceIds": [
                 "holdings-CIBR"
               ],
@@ -2003,32 +2003,32 @@
                 {
                   "ticker": "FTNT",
                   "name": "Fortinet, Inc.",
-                  "weightPct": 8.21,
-                  "shortName": "Fortinet"
+                  "shortName": "Fortinet",
+                  "weightPct": 8.01
                 },
                 {
                   "ticker": "CRWD",
                   "name": "CrowdStrike Holdings, Inc.",
-                  "weightPct": 8.17,
-                  "shortName": "CrowdStrike Holdings"
+                  "shortName": "CrowdStrike Holdings",
+                  "weightPct": 7.96
                 },
                 {
                   "ticker": "CSCO",
                   "name": "Cisco Systems, Inc.",
-                  "weightPct": 7.67,
-                  "shortName": "Cisco Systems"
+                  "shortName": "Cisco Systems",
+                  "weightPct": 7.86
                 },
                 {
                   "ticker": "PANW",
                   "name": "Palo Alto Networks, Inc.",
-                  "weightPct": 7.47,
-                  "shortName": "Palo Alto Networks"
+                  "shortName": "Palo Alto Networks",
+                  "weightPct": 7.24
                 },
                 {
                   "ticker": "AVGO",
                   "name": "Broadcom Inc.",
-                  "weightPct": 7.17,
-                  "shortName": "Broadcom"
+                  "shortName": "Broadcom",
+                  "weightPct": 7.18
                 }
               ],
               "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
@@ -2442,75 +2442,75 @@
         },
         {
           "id": "holdings-XLK",
-          "title": "XLK portfolio holdings (2026-10-15)",
+          "title": "XLK portfolio holdings (2026-10-16)",
           "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-technology-select-sector-spdr-etf-xlk",
-          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
         },
         {
           "id": "holdings-XLF",
-          "title": "XLF portfolio holdings (2026-10-15)",
+          "title": "XLF portfolio holdings (2026-10-16)",
           "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-financial-select-sector-spdr-etf-xlf",
-          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
         },
         {
           "id": "holdings-XLV",
-          "title": "XLV portfolio holdings (2026-10-15)",
+          "title": "XLV portfolio holdings (2026-10-16)",
           "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-health-care-select-sector-spdr-etf-xlv",
-          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
         },
         {
           "id": "holdings-XLY",
-          "title": "XLY portfolio holdings (2026-10-15)",
+          "title": "XLY portfolio holdings (2026-10-16)",
           "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-consumer-discretionary-select-sector-spdr-etf-xly",
-          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
         },
         {
           "id": "holdings-XLP",
-          "title": "XLP portfolio holdings (2026-10-15)",
+          "title": "XLP portfolio holdings (2026-10-16)",
           "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-consumer-staples-select-sector-spdr-etf-xlp",
-          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
         },
         {
           "id": "holdings-XLE",
-          "title": "XLE portfolio holdings (2026-10-15)",
+          "title": "XLE portfolio holdings (2026-10-16)",
           "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-energy-select-sector-spdr-etf-xle",
-          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
         },
         {
           "id": "holdings-XLI",
-          "title": "XLI portfolio holdings (2026-10-15)",
+          "title": "XLI portfolio holdings (2026-10-16)",
           "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-industrial-select-sector-spdr-etf-xli",
-          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
         },
         {
           "id": "holdings-XLB",
-          "title": "XLB portfolio holdings (2026-10-15)",
+          "title": "XLB portfolio holdings (2026-10-16)",
           "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-materials-select-sector-spdr-etf-xlb",
-          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
         },
         {
           "id": "holdings-XLU",
-          "title": "XLU portfolio holdings (2026-10-15)",
+          "title": "XLU portfolio holdings (2026-10-16)",
           "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-utilities-select-sector-spdr-etf-xlu",
-          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
         },
         {
           "id": "holdings-XLRE",
-          "title": "XLRE portfolio holdings (2026-10-15)",
+          "title": "XLRE portfolio holdings (2026-10-16)",
           "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-real-estate-select-sector-spdr-etf-xlre",
-          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
         },
         {
           "id": "holdings-XLC",
-          "title": "XLC portfolio holdings (2026-10-15)",
+          "title": "XLC portfolio holdings (2026-10-16)",
           "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-communication-services-select-sector-spdr-etf-xlc",
-          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
         },
         {
           "id": "holdings-SOXX",
-          "title": "SOXX portfolio holdings (2026-10-15)",
+          "title": "SOXX portfolio holdings (2026-10-16)",
           "url": "https://www.ishares.com/us/products/239705/ishares-semiconductor-etf/latest-holdings.csv",
-          "note": "iShares / BlackRock · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+          "note": "iShares / BlackRock · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
         },
         {
           "id": "holdings-IGV",
@@ -2520,39 +2520,39 @@
         },
         {
           "id": "holdings-XBI",
-          "title": "XBI portfolio holdings (2026-10-15)",
+          "title": "XBI portfolio holdings (2026-10-16)",
           "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-biotech-etf-xbi",
-          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
         },
         {
           "id": "holdings-KRE",
-          "title": "KRE portfolio holdings (2026-10-15)",
+          "title": "KRE portfolio holdings (2026-10-16)",
           "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-regional-banking-etf-kre",
-          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
         },
         {
           "id": "holdings-XOP",
-          "title": "XOP portfolio holdings (2026-10-15)",
+          "title": "XOP portfolio holdings (2026-10-16)",
           "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-oil-gas-exploration-production-etf-xop",
-          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
         },
         {
           "id": "holdings-ITA",
-          "title": "ITA portfolio holdings (2026-10-15)",
+          "title": "ITA portfolio holdings (2026-10-16)",
           "url": "https://www.ishares.com/us/products/239502/ishares-u-s-aerospace-defense-etf/latest-holdings.csv",
-          "note": "iShares / BlackRock · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+          "note": "iShares / BlackRock · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
         },
         {
           "id": "holdings-XHB",
-          "title": "XHB portfolio holdings (2026-10-15)",
+          "title": "XHB portfolio holdings (2026-10-16)",
           "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-homebuilders-etf-xhb",
-          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
         },
         {
           "id": "holdings-XRT",
-          "title": "XRT portfolio holdings (2026-10-15)",
+          "title": "XRT portfolio holdings (2026-10-16)",
           "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-retail-etf-xrt",
-          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
         },
         {
           "id": "holdings-IYT",
@@ -2562,21 +2562,21 @@
         },
         {
           "id": "holdings-SMH",
-          "title": "SMH portfolio holdings (2026-10-15)",
+          "title": "SMH portfolio holdings (2026-10-16)",
           "url": "https://www.vaneck.com/us/en/investments/semiconductor-etf-smh/holdings/",
-          "note": "VanEck · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+          "note": "VanEck · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
         },
         {
           "id": "holdings-XME",
-          "title": "XME portfolio holdings (2026-10-15)",
+          "title": "XME portfolio holdings (2026-10-16)",
           "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-metals-mining-etf-xme",
-          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
         },
         {
           "id": "holdings-XAR",
-          "title": "XAR portfolio holdings (2026-10-15)",
+          "title": "XAR portfolio holdings (2026-10-16)",
           "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-aerospace-defense-etf-xar",
-          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
         },
         {
           "id": "holdings-LIT",
@@ -2592,21 +2592,21 @@
         },
         {
           "id": "holdings-ICLN",
-          "title": "ICLN portfolio holdings (2026-10-15)",
+          "title": "ICLN portfolio holdings (2026-10-16)",
           "url": "https://www.ishares.com/us/products/239738/ishares-global-clean-energy-etf/latest-holdings.csv",
-          "note": "iShares / BlackRock · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+          "note": "iShares / BlackRock · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
         },
         {
           "id": "holdings-TAN",
-          "title": "TAN portfolio holdings (2026-10-15)",
+          "title": "TAN portfolio holdings (2026-10-16)",
           "url": "https://stockanalysis.com/etf/tan/holdings/",
-          "note": "Stock Analysis / Finnhub · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained. Issuer page did not expose a more recent complete holdings table in the available retrieval; public holdings table used."
+          "note": "Stock Analysis / Finnhub · 실제 보유내역 2026-10-16, 2026-10-19 확인. 동일한 기존 제3자 제공사의 표를 사용; 운용사 원문 표는 이번 조회에서 확인되지 않음. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
         },
         {
           "id": "holdings-FAN",
-          "title": "FAN portfolio holdings (2026-10-14)",
-          "url": "https://stockanalysis.com/etf/fan/holdings/",
-          "note": "Stock Analysis / Finnhub · 실제 보유내역 2026-10-14 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained. Issuer page did not expose a more recent complete holdings table in the available retrieval; public holdings table used."
+          "title": "FAN · First Trust 공식 보유내역 (2026-10-16)",
+          "url": "https://www.ftportfolios.com/Retail/Etf/EtfHoldings.aspx?Ticker=FAN",
+          "note": "First Trust 공식 일별 보유내역 · 실제 보유일 2026-10-16, 2026-10-19 확인. 현금 제외 46개 증권의 비중 내림차순 상위 5종목. 공급사 종목 식별자 그대로 사용; 분류/주식종류를 합산하지 않음. 수익률·미국 완료 거래일은 2026-10-16을 유지."
         },
         {
           "id": "holdings-IBB",
@@ -2616,51 +2616,51 @@
         },
         {
           "id": "holdings-CRAK",
-          "title": "CRAK portfolio holdings (2026-10-15)",
+          "title": "CRAK portfolio holdings (2026-10-16)",
           "url": "https://www.vaneck.com/us/en/investments/oil-refiners-etf-crak/",
-          "note": "VanEck · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+          "note": "VanEck · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
         },
         {
           "id": "holdings-KBE",
-          "title": "KBE portfolio holdings (2026-10-15)",
+          "title": "KBE portfolio holdings (2026-10-16)",
           "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-bank-etf-kbe",
-          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
         },
         {
           "id": "holdings-IAI",
-          "title": "IAI portfolio holdings (2026-10-15)",
+          "title": "IAI portfolio holdings (2026-10-16)",
           "url": "https://www.ishares.com/us/products/239504/ishares-u-s-broker-dealers-securities-exchanges-etf/latest-holdings.csv",
-          "note": "iShares / BlackRock · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+          "note": "iShares / BlackRock · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
         },
         {
           "id": "holdings-IHF",
-          "title": "IHF portfolio holdings (2026-10-15)",
+          "title": "IHF portfolio holdings (2026-10-16)",
           "url": "https://www.ishares.com/us/products/239510/ishares-u-s-healthcare-providers-etf/latest-holdings.csv",
-          "note": "iShares / BlackRock · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+          "note": "iShares / BlackRock · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
         },
         {
           "id": "holdings-IHI",
-          "title": "IHI portfolio holdings (2026-10-15)",
+          "title": "IHI portfolio holdings (2026-10-16)",
           "url": "https://www.ishares.com/us/products/239516/ishares-u-s-medical-devices-etf/latest-holdings.csv",
-          "note": "iShares / BlackRock · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+          "note": "iShares / BlackRock · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
         },
         {
           "id": "holdings-XPH",
-          "title": "XPH portfolio holdings (2026-10-15)",
+          "title": "XPH portfolio holdings (2026-10-16)",
           "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-pharmaceuticals-etf-xph",
-          "note": "State Street Investment Management · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+          "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
         },
         {
           "id": "holdings-FDN",
-          "title": "FDN portfolio holdings (2026-10-15)",
+          "title": "FDN portfolio holdings (2026-10-16)",
           "url": "https://www.ftportfolios.com/Retail/Etf/EtfHoldings.aspx?Ticker=FDN",
-          "note": "First Trust · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+          "note": "First Trust · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
         },
         {
           "id": "holdings-CIBR",
-          "title": "CIBR portfolio holdings (2026-10-15)",
+          "title": "CIBR portfolio holdings (2026-10-16)",
           "url": "https://www.ftportfolios.com/Retail/Etf/EtfHoldings.aspx?Ticker=CIBR",
-          "note": "First Trust · 실제 보유내역 2026-10-15 기준. 수익률 거래일과 다를 수 있습니다. Holdings date is distinct from the 2026-10-16 return date; top five security positions, separate share classes retained."
+          "note": "First Trust · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
         },
         {
           "id": "holdings-CLOU",
@@ -10735,5 +10735,6 @@
         }
       ]
     }
-  ]
+  ],
+  "updatedAt": "2026-10-19T14:58:00Z"
 }

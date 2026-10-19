@@ -118,10 +118,39 @@ def normalize(result, dates, previous=None):
         return {'status': 'verified' if all(v == count for v in complete.values()) else 'partial',
                 'rows': rows, 'sourceIds': sorted(ids), 'basketDefinitionVersion': version,
                 'membershipAsOf': result['membershipAsOf'], 'marketCapAsOf': result['marketCapAsOf'],
+                'marketCapPolicy': result['marketCapPolicy'],
                 'coverage': {'start': info['from'], 'end': info['to'], 'count': count,
                              'note': f"전체 금액 확보: 외국인 {complete['foreign']}/{count} · 기관 {complete['institution']}/{count}개 테마. 나머지는 확인분 부분합."},
                 'note': 'NAVER 공개 테마·업종 전체 목록의 합집합에서 테마 내 중복을 제거했습니다. 구성종목 한 개라도 금액이 미확인이면 전체 합계는 비우고 확인된 종목의 부분합을 따로 표시합니다. 매수·매도 각 상위100 API 한계로 누락은 0이 아니며 부분합의 방향도 전체와 다를 수 있습니다. 현재 구성으로 기간 수급을 집계하며 과거 편입·편출은 소급 복원하지 않습니다.'}
-    daily = {day: value for day, value in (previous or {}).get('daily', {}).items() if value.get('basketDefinitionVersion') == version}
+    # A new membership/cap snapshot must not relabel or discard real older flows.
+    # Materialize the prior catalog into historical rows when its definition changes.
+    prior = previous or {}
+    prior_catalog = {b['id']: b for b in prior.get('baskets', [])}
+    daily = {}
+    for day, value in prior.get('daily', {}).items():
+        if not value.get('rows'):
+            continue
+        saved = copy.deepcopy(value)
+        saved.setdefault('marketCapPolicy', prior.get('marketCapPolicy'))
+        if (value.get('basketDefinitionVersion') != prior.get('basketDefinitionVersion')
+                and not all(row.get('members') for row in saved['rows'])):
+            # An unmaterialized older/legacy row cannot borrow a newer catalog.
+            continue
+        if (value.get('basketDefinitionVersion') != version
+                or value.get('marketCapAsOf', prior.get('marketCapAsOf')) != result['marketCapAsOf']
+                or value.get('membershipAsOf', prior.get('membershipAsOf')) != result['membershipAsOf']):
+            for row in saved['rows']:
+                catalog = prior_catalog.get(row.get('id'), {})
+                for field in ('members', 'displayMembers', 'displayMembersByMarket',
+                              'marketCapAsOf', 'sourceCategories', 'scopeNote',
+                              'excludedMembers', 'providerUnionCount'):
+                    if field not in row and field in catalog:
+                        row[field] = copy.deepcopy(catalog[field])
+                row.setdefault('membershipAsOf', value.get('membershipAsOf', prior.get('membershipAsOf')))
+                row.setdefault('marketCapAsOf', value.get('marketCapAsOf', prior.get('marketCapAsOf')))
+            if not all(row.get('members') for row in saved['rows']):
+                continue
+        daily[day] = saved
     daily[result['asOf']] = period('1d')
     catalog = [{k: copy.deepcopy(b[k]) for k in ('id', 'name', 'memberCount', 'members', 'displayMembers', 'displayMembersByMarket', 'marketCapAsOf', 'sourceCategories', 'scopeNote', 'excludedMembers', 'providerUnionCount')} for b in result['baskets']]
     metadata = {k: copy.deepcopy(result[k]) for k in ('basketDefinitionVersion', 'membershipAsOf', 'marketCapAsOf', 'marketCapPolicy', 'marketCapDateEvidence', 'membershipCounts', 'membershipVerification')}

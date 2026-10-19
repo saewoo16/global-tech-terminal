@@ -108,7 +108,7 @@ def validate(payload):
                         check(all(sid in ids for sid in evidence.get("sourceIds", [])), f"{path}: unknown classification source")
                 display = row.get("displayMembers", basket.get("displayMembers"))
                 if display is not None:
-                    cap_date = basket.get("marketCapAsOf", payload.get("themes", {}).get("marketCapAsOf"))
+                    cap_date = row.get("marketCapAsOf", basket.get("marketCapAsOf", payload.get("themes", {}).get("marketCapAsOf")))
                     check(valid_date(cap_date), f"{path}: market cap date required")
                     caps_valid = all(number(m.get("marketCapKRW")) and m["marketCapKRW"] > 0 for m in members)
                     check(caps_valid, f"{path}: market caps required for every display candidate")

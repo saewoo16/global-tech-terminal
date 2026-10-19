@@ -1,0 +1,2655 @@
+{
+  "schemaVersion": 1,
+  "baseCommit": "6e9eb2ae5c6c8620200359282f27cc3c21ab8919",
+  "reportDate": "2026-10-16",
+  "verifiedAt": "2026-10-19T14:58:00Z",
+  "scope": "Replace only each named ETF holdings object and the matching same-ID source in the existing completed US session. No new session; no return, index, price, earnings, ranking, or archive change.",
+  "updates": [
+    {
+      "ticker": "XLK",
+      "oldAsOf": "2026-10-15",
+      "holdings": {
+        "status": "verified",
+        "asOf": "2026-10-16",
+        "sourceIds": [
+          "holdings-XLK"
+        ],
+        "top5": [
+          {
+            "ticker": "NVDA",
+            "name": "NVIDIA Corporation",
+            "shortName": "NVIDIA",
+            "weightPct": 15.45
+          },
+          {
+            "ticker": "AAPL",
+            "name": "Apple Inc.",
+            "shortName": "Apple",
+            "weightPct": 14.94
+          },
+          {
+            "ticker": "MSFT",
+            "name": "Microsoft Corporation",
+            "shortName": "Microsoft",
+            "weightPct": 11.71
+          },
+          {
+            "ticker": "AVGO",
+            "name": "Broadcom Inc.",
+            "shortName": "Broadcom",
+            "weightPct": 4.66
+          },
+          {
+            "ticker": "AMD",
+            "name": "Advanced Micro Devices, Inc.",
+            "shortName": "AMD",
+            "weightPct": 4.66
+          }
+        ],
+        "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+      },
+      "source": {
+        "id": "holdings-XLK",
+        "title": "XLK portfolio holdings (2026-10-16)",
+        "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-technology-select-sector-spdr-etf-xlk",
+        "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
+      },
+      "evidence": {
+        "provider": "State Street Investment Management",
+        "sourceType": "primary",
+        "sourceAsOf": "2026-10-16",
+        "method": "Fund Top Holdings, not Index Top Holdings; issuer-displayed order retained for weights rounded to two decimals.",
+        "sourceRows": [
+          {
+            "ticker": "NVDA",
+            "name": "NVIDIA CORP",
+            "weightPct": 15.45
+          },
+          {
+            "ticker": "AAPL",
+            "name": "APPLE INC",
+            "weightPct": 14.94
+          },
+          {
+            "ticker": "MSFT",
+            "name": "MICROSOFT CORP",
+            "weightPct": 11.71
+          },
+          {
+            "ticker": "AVGO",
+            "name": "BROADCOM INC",
+            "weightPct": 4.66
+          },
+          {
+            "ticker": "AMD",
+            "name": "ADVANCED MICRO DEVICES",
+            "weightPct": 4.66
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "XLF",
+      "oldAsOf": "2026-10-15",
+      "holdings": {
+        "status": "verified",
+        "asOf": "2026-10-16",
+        "sourceIds": [
+          "holdings-XLF"
+        ],
+        "top5": [
+          {
+            "ticker": "BRK.B",
+            "name": "Berkshire Hathaway Inc.",
+            "shortName": "Berkshire Hathaway",
+            "weightPct": 12.66
+          },
+          {
+            "ticker": "JPM",
+            "name": "JPMorgan Chase & Co.",
+            "shortName": "JPMorgan Chase",
+            "weightPct": 11.54
+          },
+          {
+            "ticker": "V",
+            "name": "Visa Inc.",
+            "shortName": "Visa",
+            "weightPct": 8.77
+          },
+          {
+            "ticker": "MA",
+            "name": "Mastercard Incorporated",
+            "shortName": "Mastercard",
+            "weightPct": 6.38
+          },
+          {
+            "ticker": "BAC",
+            "name": "Bank of America Corporation",
+            "shortName": "Bank of America",
+            "weightPct": 4.26
+          }
+        ],
+        "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+      },
+      "source": {
+        "id": "holdings-XLF",
+        "title": "XLF portfolio holdings (2026-10-16)",
+        "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-financial-select-sector-spdr-etf-xlf",
+        "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
+      },
+      "evidence": {
+        "provider": "State Street Investment Management",
+        "sourceType": "primary",
+        "sourceAsOf": "2026-10-16",
+        "method": "Fund Top Holdings, not Index Top Holdings; issuer-displayed order retained for weights rounded to two decimals.",
+        "sourceRows": [
+          {
+            "ticker": "BRK.B",
+            "name": "BERKSHIRE HATHAWAY INC CL B",
+            "weightPct": 12.66
+          },
+          {
+            "ticker": "JPM",
+            "name": "JPMORGAN CHASE + CO",
+            "weightPct": 11.54
+          },
+          {
+            "ticker": "V",
+            "name": "VISA INC CLASS A SHARES",
+            "weightPct": 8.77
+          },
+          {
+            "ticker": "MA",
+            "name": "MASTERCARD INC A",
+            "weightPct": 6.38
+          },
+          {
+            "ticker": "BAC",
+            "name": "BANK OF AMERICA CORP",
+            "weightPct": 4.26
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "XLV",
+      "oldAsOf": "2026-10-15",
+      "holdings": {
+        "status": "verified",
+        "asOf": "2026-10-16",
+        "sourceIds": [
+          "holdings-XLV"
+        ],
+        "top5": [
+          {
+            "ticker": "LLY",
+            "name": "Eli Lilly and Company",
+            "shortName": "Eli Lilly",
+            "weightPct": 15.68
+          },
+          {
+            "ticker": "JNJ",
+            "name": "Johnson & Johnson",
+            "shortName": "Johnson & Johnson",
+            "weightPct": 9.6
+          },
+          {
+            "ticker": "ABBV",
+            "name": "AbbVie Inc.",
+            "shortName": "AbbVie",
+            "weightPct": 7.86
+          },
+          {
+            "ticker": "UNH",
+            "name": "UnitedHealth Group Incorporated",
+            "shortName": "UnitedHealth Group",
+            "weightPct": 5.62
+          },
+          {
+            "ticker": "MRK",
+            "name": "Merck & Co., Inc.",
+            "shortName": "Merck & Co.",
+            "weightPct": 5.61
+          }
+        ],
+        "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+      },
+      "source": {
+        "id": "holdings-XLV",
+        "title": "XLV portfolio holdings (2026-10-16)",
+        "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-health-care-select-sector-spdr-etf-xlv",
+        "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
+      },
+      "evidence": {
+        "provider": "State Street Investment Management",
+        "sourceType": "primary",
+        "sourceAsOf": "2026-10-16",
+        "method": "Fund Top Holdings, not Index Top Holdings; issuer-displayed order retained for weights rounded to two decimals.",
+        "sourceRows": [
+          {
+            "ticker": "LLY",
+            "name": "ELI LILLY + CO",
+            "weightPct": 15.68
+          },
+          {
+            "ticker": "JNJ",
+            "name": "JOHNSON + JOHNSON",
+            "weightPct": 9.6
+          },
+          {
+            "ticker": "ABBV",
+            "name": "ABBVIE INC",
+            "weightPct": 7.86
+          },
+          {
+            "ticker": "UNH",
+            "name": "UNITEDHEALTH GROUP INC",
+            "weightPct": 5.62
+          },
+          {
+            "ticker": "MRK",
+            "name": "MERCK + CO. INC.",
+            "weightPct": 5.61
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "XLY",
+      "oldAsOf": "2026-10-15",
+      "holdings": {
+        "status": "verified",
+        "asOf": "2026-10-16",
+        "sourceIds": [
+          "holdings-XLY"
+        ],
+        "top5": [
+          {
+            "ticker": "AMZN",
+            "name": "Amazon.com, Inc.",
+            "shortName": "Amazon.com",
+            "weightPct": 22.73
+          },
+          {
+            "ticker": "TSLA",
+            "name": "Tesla, Inc.",
+            "shortName": "Tesla",
+            "weightPct": 17.11
+          },
+          {
+            "ticker": "HD",
+            "name": "The Home Depot, Inc.",
+            "shortName": "Home Depot",
+            "weightPct": 5.28
+          },
+          {
+            "ticker": "TJX",
+            "name": "The TJX Companies, Inc.",
+            "shortName": "TJX",
+            "weightPct": 4.39
+          },
+          {
+            "ticker": "MCD",
+            "name": "McDonald's Corporation",
+            "shortName": "McDonald's",
+            "weightPct": 4.3
+          }
+        ],
+        "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+      },
+      "source": {
+        "id": "holdings-XLY",
+        "title": "XLY portfolio holdings (2026-10-16)",
+        "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-consumer-discretionary-select-sector-spdr-etf-xly",
+        "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
+      },
+      "evidence": {
+        "provider": "State Street Investment Management",
+        "sourceType": "primary",
+        "sourceAsOf": "2026-10-16",
+        "method": "Fund Top Holdings, not Index Top Holdings; issuer-displayed order retained for weights rounded to two decimals.",
+        "sourceRows": [
+          {
+            "ticker": "AMZN",
+            "name": "AMAZON.COM INC",
+            "weightPct": 22.73
+          },
+          {
+            "ticker": "TSLA",
+            "name": "TESLA INC",
+            "weightPct": 17.11
+          },
+          {
+            "ticker": "HD",
+            "name": "HOME DEPOT INC",
+            "weightPct": 5.28
+          },
+          {
+            "ticker": "TJX",
+            "name": "TJX COMPANIES INC",
+            "weightPct": 4.39
+          },
+          {
+            "ticker": "MCD",
+            "name": "MCDONALD S CORP",
+            "weightPct": 4.3
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "XLP",
+      "oldAsOf": "2026-10-15",
+      "holdings": {
+        "status": "verified",
+        "asOf": "2026-10-16",
+        "sourceIds": [
+          "holdings-XLP"
+        ],
+        "top5": [
+          {
+            "ticker": "WMT",
+            "name": "Walmart Inc.",
+            "shortName": "Walmart",
+            "weightPct": 10.93
+          },
+          {
+            "ticker": "COST",
+            "name": "Costco Wholesale Corporation",
+            "shortName": "Costco Wholesale",
+            "weightPct": 9.05
+          },
+          {
+            "ticker": "PG",
+            "name": "The Procter & Gamble Company",
+            "shortName": "Procter & Gamble",
+            "weightPct": 7.64
+          },
+          {
+            "ticker": "KO",
+            "name": "The Coca-Cola Company",
+            "shortName": "Coca-Cola",
+            "weightPct": 7.5
+          },
+          {
+            "ticker": "PM",
+            "name": "Philip Morris International Inc.",
+            "shortName": "Philip Morris International",
+            "weightPct": 6.6
+          }
+        ],
+        "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+      },
+      "source": {
+        "id": "holdings-XLP",
+        "title": "XLP portfolio holdings (2026-10-16)",
+        "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-consumer-staples-select-sector-spdr-etf-xlp",
+        "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
+      },
+      "evidence": {
+        "provider": "State Street Investment Management",
+        "sourceType": "primary",
+        "sourceAsOf": "2026-10-16",
+        "method": "Fund Top Holdings, not Index Top Holdings; issuer-displayed order retained for weights rounded to two decimals.",
+        "sourceRows": [
+          {
+            "ticker": "WMT",
+            "name": "WALMART INC",
+            "weightPct": 10.93
+          },
+          {
+            "ticker": "COST",
+            "name": "COSTCO WHOLESALE CORP",
+            "weightPct": 9.05
+          },
+          {
+            "ticker": "PG",
+            "name": "PROCTER + GAMBLE CO/THE",
+            "weightPct": 7.64
+          },
+          {
+            "ticker": "KO",
+            "name": "COCA COLA CO/THE",
+            "weightPct": 7.5
+          },
+          {
+            "ticker": "PM",
+            "name": "PHILIP MORRIS INTERNATIONAL",
+            "weightPct": 6.6
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "XLE",
+      "oldAsOf": "2026-10-15",
+      "holdings": {
+        "status": "verified",
+        "asOf": "2026-10-16",
+        "sourceIds": [
+          "holdings-XLE"
+        ],
+        "top5": [
+          {
+            "ticker": "XOM",
+            "name": "ExxonMobil Holdings Corporation",
+            "shortName": "ExxonMobil",
+            "weightPct": 23.85
+          },
+          {
+            "ticker": "CVX",
+            "name": "Chevron Corporation",
+            "shortName": "Chevron",
+            "weightPct": 17.95
+          },
+          {
+            "ticker": "COP",
+            "name": "ConocoPhillips",
+            "shortName": "ConocoPhillips",
+            "weightPct": 7.11
+          },
+          {
+            "ticker": "MPC",
+            "name": "Marathon Petroleum Corporation",
+            "shortName": "Marathon Petroleum",
+            "weightPct": 5.13
+          },
+          {
+            "ticker": "VLO",
+            "name": "Valero Energy Corporation",
+            "shortName": "Valero Energy",
+            "weightPct": 4.9
+          }
+        ],
+        "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+      },
+      "source": {
+        "id": "holdings-XLE",
+        "title": "XLE portfolio holdings (2026-10-16)",
+        "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-energy-select-sector-spdr-etf-xle",
+        "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
+      },
+      "evidence": {
+        "provider": "State Street Investment Management",
+        "sourceType": "primary",
+        "sourceAsOf": "2026-10-16",
+        "method": "Fund Top Holdings, not Index Top Holdings; issuer-displayed order retained for weights rounded to two decimals.",
+        "sourceRows": [
+          {
+            "ticker": "XOM",
+            "name": "EXXONMOBIL HOLDINGS CORP",
+            "weightPct": 23.85
+          },
+          {
+            "ticker": "CVX",
+            "name": "CHEVRON CORP",
+            "weightPct": 17.95
+          },
+          {
+            "ticker": "COP",
+            "name": "CONOCOPHILLIPS",
+            "weightPct": 7.11
+          },
+          {
+            "ticker": "MPC",
+            "name": "MARATHON PETROLEUM CORP",
+            "weightPct": 5.13
+          },
+          {
+            "ticker": "VLO",
+            "name": "VALERO ENERGY CORP",
+            "weightPct": 4.9
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "XLI",
+      "oldAsOf": "2026-10-15",
+      "holdings": {
+        "status": "verified",
+        "asOf": "2026-10-16",
+        "sourceIds": [
+          "holdings-XLI"
+        ],
+        "top5": [
+          {
+            "ticker": "CAT",
+            "name": "Caterpillar Inc.",
+            "shortName": "Caterpillar",
+            "weightPct": 6.29
+          },
+          {
+            "ticker": "GE",
+            "name": "GE Aerospace",
+            "shortName": "GE Aerospace",
+            "weightPct": 6.1
+          },
+          {
+            "ticker": "RTX",
+            "name": "RTX Corporation",
+            "shortName": "RTX",
+            "weightPct": 4.9
+          },
+          {
+            "ticker": "GEV",
+            "name": "GE Vernova Inc.",
+            "shortName": "GE Vernova",
+            "weightPct": 4.6
+          },
+          {
+            "ticker": "UNP",
+            "name": "Union Pacific Corporation",
+            "shortName": "Union Pacific",
+            "weightPct": 3.22
+          }
+        ],
+        "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+      },
+      "source": {
+        "id": "holdings-XLI",
+        "title": "XLI portfolio holdings (2026-10-16)",
+        "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-industrial-select-sector-spdr-etf-xli",
+        "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
+      },
+      "evidence": {
+        "provider": "State Street Investment Management",
+        "sourceType": "primary",
+        "sourceAsOf": "2026-10-16",
+        "method": "Fund Top Holdings, not Index Top Holdings; issuer-displayed order retained for weights rounded to two decimals.",
+        "sourceRows": [
+          {
+            "ticker": "CAT",
+            "name": "CATERPILLAR INC",
+            "weightPct": 6.29
+          },
+          {
+            "ticker": "GE",
+            "name": "GENERAL ELECTRIC",
+            "weightPct": 6.1
+          },
+          {
+            "ticker": "RTX",
+            "name": "RTX CORP",
+            "weightPct": 4.9
+          },
+          {
+            "ticker": "GEV",
+            "name": "GE VERNOVA INC",
+            "weightPct": 4.6
+          },
+          {
+            "ticker": "UNP",
+            "name": "UNION PACIFIC CORP",
+            "weightPct": 3.22
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "XLB",
+      "oldAsOf": "2026-10-15",
+      "holdings": {
+        "status": "verified",
+        "asOf": "2026-10-16",
+        "sourceIds": [
+          "holdings-XLB"
+        ],
+        "top5": [
+          {
+            "ticker": "LIN",
+            "name": "Linde plc",
+            "shortName": "Linde plc",
+            "weightPct": 12.92
+          },
+          {
+            "ticker": "NEM",
+            "name": "Newmont Corporation",
+            "shortName": "Newmont",
+            "weightPct": 7.03
+          },
+          {
+            "ticker": "FCX",
+            "name": "Freeport-McMoRan Inc.",
+            "shortName": "Freeport-McMoRan",
+            "weightPct": 5.62
+          },
+          {
+            "ticker": "ECL",
+            "name": "Ecolab Inc.",
+            "shortName": "Ecolab",
+            "weightPct": 5.03
+          },
+          {
+            "ticker": "SHW",
+            "name": "The Sherwin-Williams Company",
+            "shortName": "Sherwin-Williams",
+            "weightPct": 4.95
+          }
+        ],
+        "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+      },
+      "source": {
+        "id": "holdings-XLB",
+        "title": "XLB portfolio holdings (2026-10-16)",
+        "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-materials-select-sector-spdr-etf-xlb",
+        "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
+      },
+      "evidence": {
+        "provider": "State Street Investment Management",
+        "sourceType": "primary",
+        "sourceAsOf": "2026-10-16",
+        "method": "Fund Top Holdings, not Index Top Holdings; issuer-displayed order retained for weights rounded to two decimals.",
+        "sourceRows": [
+          {
+            "ticker": "LIN",
+            "name": "LINDE PLC",
+            "weightPct": 12.92
+          },
+          {
+            "ticker": "NEM",
+            "name": "NEWMONT CORP",
+            "weightPct": 7.03
+          },
+          {
+            "ticker": "FCX",
+            "name": "FREEPORT MCMORAN INC",
+            "weightPct": 5.62
+          },
+          {
+            "ticker": "ECL",
+            "name": "ECOLAB INC",
+            "weightPct": 5.03
+          },
+          {
+            "ticker": "SHW",
+            "name": "SHERWIN WILLIAMS CO/THE",
+            "weightPct": 4.95
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "XLU",
+      "oldAsOf": "2026-10-15",
+      "holdings": {
+        "status": "verified",
+        "asOf": "2026-10-16",
+        "sourceIds": [
+          "holdings-XLU"
+        ],
+        "top5": [
+          {
+            "ticker": "NEE",
+            "name": "NextEra Energy, Inc.",
+            "shortName": "NextEra Energy",
+            "weightPct": 12.54
+          },
+          {
+            "ticker": "SO",
+            "name": "The Southern Company",
+            "shortName": "Southern Company",
+            "weightPct": 7.9
+          },
+          {
+            "ticker": "DUK",
+            "name": "Duke Energy Corporation",
+            "shortName": "Duke Energy",
+            "weightPct": 7.13
+          },
+          {
+            "ticker": "CEG",
+            "name": "Constellation Energy Corporation",
+            "shortName": "Constellation Energy",
+            "weightPct": 6.74
+          },
+          {
+            "ticker": "AEP",
+            "name": "American Electric Power Company, Inc.",
+            "shortName": "American Electric Power Company",
+            "weightPct": 5.21
+          }
+        ],
+        "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+      },
+      "source": {
+        "id": "holdings-XLU",
+        "title": "XLU portfolio holdings (2026-10-16)",
+        "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-utilities-select-sector-spdr-etf-xlu",
+        "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
+      },
+      "evidence": {
+        "provider": "State Street Investment Management",
+        "sourceType": "primary",
+        "sourceAsOf": "2026-10-16",
+        "method": "Fund Top Holdings, not Index Top Holdings; issuer-displayed order retained for weights rounded to two decimals.",
+        "sourceRows": [
+          {
+            "ticker": "NEE",
+            "name": "NEXTERA ENERGY INC",
+            "weightPct": 12.54
+          },
+          {
+            "ticker": "SO",
+            "name": "SOUTHERN CO/THE",
+            "weightPct": 7.9
+          },
+          {
+            "ticker": "DUK",
+            "name": "DUKE ENERGY CORP",
+            "weightPct": 7.13
+          },
+          {
+            "ticker": "CEG",
+            "name": "CONSTELLATION ENERGY",
+            "weightPct": 6.74
+          },
+          {
+            "ticker": "AEP",
+            "name": "AMERICAN ELECTRIC POWER",
+            "weightPct": 5.21
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "XLRE",
+      "oldAsOf": "2026-10-15",
+      "holdings": {
+        "status": "verified",
+        "asOf": "2026-10-16",
+        "sourceIds": [
+          "holdings-XLRE"
+        ],
+        "top5": [
+          {
+            "ticker": "WELL",
+            "name": "Welltower Inc.",
+            "shortName": "Welltower",
+            "weightPct": 11.57
+          },
+          {
+            "ticker": "PLD",
+            "name": "Prologis, Inc.",
+            "shortName": "Prologis",
+            "weightPct": 8.17
+          },
+          {
+            "ticker": "EQIX",
+            "name": "Equinix, Inc.",
+            "shortName": "Equinix",
+            "weightPct": 6.65
+          },
+          {
+            "ticker": "AMT",
+            "name": "American Tower Corporation",
+            "shortName": "American Tower",
+            "weightPct": 5.9
+          },
+          {
+            "ticker": "PSA",
+            "name": "Public Storage",
+            "shortName": "Public Storage",
+            "weightPct": 4.66
+          }
+        ],
+        "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+      },
+      "source": {
+        "id": "holdings-XLRE",
+        "title": "XLRE portfolio holdings (2026-10-16)",
+        "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-real-estate-select-sector-spdr-etf-xlre",
+        "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
+      },
+      "evidence": {
+        "provider": "State Street Investment Management",
+        "sourceType": "primary",
+        "sourceAsOf": "2026-10-16",
+        "method": "Fund Top Holdings, not Index Top Holdings; issuer-displayed order retained for weights rounded to two decimals.",
+        "sourceRows": [
+          {
+            "ticker": "WELL",
+            "name": "WELLTOWER INC",
+            "weightPct": 11.57
+          },
+          {
+            "ticker": "PLD",
+            "name": "PROLOGIS INC",
+            "weightPct": 8.17
+          },
+          {
+            "ticker": "EQIX",
+            "name": "EQUINIX INC",
+            "weightPct": 6.65
+          },
+          {
+            "ticker": "AMT",
+            "name": "AMERICAN TOWER CORP",
+            "weightPct": 5.9
+          },
+          {
+            "ticker": "PSA",
+            "name": "PUBLIC STORAGE",
+            "weightPct": 4.66
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "XLC",
+      "oldAsOf": "2026-10-15",
+      "holdings": {
+        "status": "verified",
+        "asOf": "2026-10-16",
+        "sourceIds": [
+          "holdings-XLC"
+        ],
+        "top5": [
+          {
+            "ticker": "META",
+            "name": "Meta Platforms, Inc.",
+            "shortName": "Meta Platforms",
+            "weightPct": 23.03
+          },
+          {
+            "ticker": "GOOGL",
+            "name": "Alphabet Inc. Class A",
+            "shortName": "Alphabet A",
+            "weightPct": 12.24
+          },
+          {
+            "ticker": "GOOG",
+            "name": "Alphabet Inc. Class C",
+            "shortName": "Alphabet C",
+            "weightPct": 9.8
+          },
+          {
+            "ticker": "DIS",
+            "name": "The Walt Disney Company",
+            "shortName": "Walt Disney",
+            "weightPct": 5.02
+          },
+          {
+            "ticker": "TTWO",
+            "name": "Take-Two Interactive Software, Inc.",
+            "shortName": "Take-Two Interactive Software",
+            "weightPct": 4.6
+          }
+        ],
+        "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+      },
+      "source": {
+        "id": "holdings-XLC",
+        "title": "XLC portfolio holdings (2026-10-16)",
+        "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-communication-services-select-sector-spdr-etf-xlc",
+        "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
+      },
+      "evidence": {
+        "provider": "State Street Investment Management",
+        "sourceType": "primary",
+        "sourceAsOf": "2026-10-16",
+        "method": "Fund Top Holdings, not Index Top Holdings; issuer-displayed order retained for weights rounded to two decimals.",
+        "sourceRows": [
+          {
+            "ticker": "META",
+            "name": "META PLATFORMS INC CLASS A",
+            "weightPct": 23.03
+          },
+          {
+            "ticker": "GOOGL",
+            "name": "ALPHABET INC CL A",
+            "weightPct": 12.24
+          },
+          {
+            "ticker": "GOOG",
+            "name": "ALPHABET INC CL C",
+            "weightPct": 9.8
+          },
+          {
+            "ticker": "DIS",
+            "name": "WALT DISNEY CO/THE",
+            "weightPct": 5.02
+          },
+          {
+            "ticker": "TTWO",
+            "name": "TAKE TWO INTERACTIVE SOFTWRE",
+            "weightPct": 4.6
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "XBI",
+      "oldAsOf": "2026-10-15",
+      "holdings": {
+        "status": "verified",
+        "asOf": "2026-10-16",
+        "sourceIds": [
+          "holdings-XBI"
+        ],
+        "top5": [
+          {
+            "ticker": "MRNA",
+            "name": "Moderna, Inc.",
+            "shortName": "Moderna",
+            "weightPct": 2.52
+          },
+          {
+            "ticker": "NTRA",
+            "name": "Natera, Inc.",
+            "shortName": "Natera",
+            "weightPct": 1.87
+          },
+          {
+            "ticker": "ABBV",
+            "name": "AbbVie Inc.",
+            "shortName": "AbbVie",
+            "weightPct": 1.79
+          },
+          {
+            "ticker": "HALO",
+            "name": "Halozyme Therapeutics, Inc.",
+            "shortName": "Halozyme",
+            "weightPct": 1.78
+          },
+          {
+            "ticker": "AMGN",
+            "name": "Amgen Inc.",
+            "shortName": "Amgen",
+            "weightPct": 1.74
+          }
+        ],
+        "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+      },
+      "source": {
+        "id": "holdings-XBI",
+        "title": "XBI portfolio holdings (2026-10-16)",
+        "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-biotech-etf-xbi",
+        "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
+      },
+      "evidence": {
+        "provider": "State Street Investment Management",
+        "sourceType": "primary",
+        "sourceAsOf": "2026-10-16",
+        "method": "Fund Top Holdings, not Index Top Holdings; issuer-displayed order retained for weights rounded to two decimals.",
+        "sourceRows": [
+          {
+            "ticker": "MRNA",
+            "name": "MODERNA INC",
+            "weightPct": 2.52
+          },
+          {
+            "ticker": "NTRA",
+            "name": "NATERA INC",
+            "weightPct": 1.87
+          },
+          {
+            "ticker": "ABBV",
+            "name": "ABBVIE INC",
+            "weightPct": 1.79
+          },
+          {
+            "ticker": "HALO",
+            "name": "HALOZYME THERAPEUTICS INC",
+            "weightPct": 1.78
+          },
+          {
+            "ticker": "AMGN",
+            "name": "AMGEN INC",
+            "weightPct": 1.74
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "KRE",
+      "oldAsOf": "2026-10-15",
+      "holdings": {
+        "status": "verified",
+        "asOf": "2026-10-16",
+        "sourceIds": [
+          "holdings-KRE"
+        ],
+        "top5": [
+          {
+            "ticker": "UBSI",
+            "name": "United Bankshares, Inc.",
+            "shortName": "United Bankshares",
+            "weightPct": 1.16
+          },
+          {
+            "ticker": "EWBC",
+            "name": "East West Bancorp, Inc.",
+            "shortName": "East West Bancorp",
+            "weightPct": 1.15
+          },
+          {
+            "ticker": "FBP",
+            "name": "First BanCorp. (Puerto Rico)",
+            "shortName": "First BanCorp",
+            "weightPct": 1.15
+          },
+          {
+            "ticker": "ONB",
+            "name": "Old National Bancorp",
+            "shortName": "Old National Bancorp",
+            "weightPct": 1.14
+          },
+          {
+            "ticker": "HOMB",
+            "name": "Home BancShares, Inc.",
+            "shortName": "Home BancShares",
+            "weightPct": 1.14
+          }
+        ],
+        "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+      },
+      "source": {
+        "id": "holdings-KRE",
+        "title": "KRE portfolio holdings (2026-10-16)",
+        "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-regional-banking-etf-kre",
+        "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
+      },
+      "evidence": {
+        "provider": "State Street Investment Management",
+        "sourceType": "primary",
+        "sourceAsOf": "2026-10-16",
+        "method": "Fund Top Holdings, not Index Top Holdings; issuer-displayed order retained for weights rounded to two decimals.",
+        "sourceRows": [
+          {
+            "ticker": "UBSI",
+            "name": "UNITED BANKSHARES INC",
+            "weightPct": 1.16
+          },
+          {
+            "ticker": "EWBC",
+            "name": "EAST WEST BANCORP INC",
+            "weightPct": 1.15
+          },
+          {
+            "ticker": "FBP",
+            "name": "FIRST BANCORP PUERTO RICO",
+            "weightPct": 1.15
+          },
+          {
+            "ticker": "ONB",
+            "name": "OLD NATIONAL BANCORP",
+            "weightPct": 1.14
+          },
+          {
+            "ticker": "HOMB",
+            "name": "HOME BANCSHARES INC",
+            "weightPct": 1.14
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "XOP",
+      "oldAsOf": "2026-10-15",
+      "holdings": {
+        "status": "verified",
+        "asOf": "2026-10-16",
+        "sourceIds": [
+          "holdings-XOP"
+        ],
+        "top5": [
+          {
+            "ticker": "MPC",
+            "name": "Marathon Petroleum Corporation",
+            "shortName": "Marathon Petroleum",
+            "weightPct": 3.08
+          },
+          {
+            "ticker": "DINO",
+            "name": "HF Sinclair Corporation",
+            "shortName": "HF Sinclair",
+            "weightPct": 2.98
+          },
+          {
+            "ticker": "VLO",
+            "name": "Valero Energy Corporation",
+            "shortName": "Valero Energy",
+            "weightPct": 2.94
+          },
+          {
+            "ticker": "PSX",
+            "name": "Phillips 66",
+            "shortName": "Phillips 66",
+            "weightPct": 2.89
+          },
+          {
+            "ticker": "PBF",
+            "name": "PBF Energy Inc.",
+            "shortName": "PBF Energy",
+            "weightPct": 2.84
+          }
+        ],
+        "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+      },
+      "source": {
+        "id": "holdings-XOP",
+        "title": "XOP portfolio holdings (2026-10-16)",
+        "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-oil-gas-exploration-production-etf-xop",
+        "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
+      },
+      "evidence": {
+        "provider": "State Street Investment Management",
+        "sourceType": "primary",
+        "sourceAsOf": "2026-10-16",
+        "method": "Fund Top Holdings, not Index Top Holdings; issuer-displayed order retained for weights rounded to two decimals.",
+        "sourceRows": [
+          {
+            "ticker": "MPC",
+            "name": "MARATHON PETROLEUM CORP",
+            "weightPct": 3.08
+          },
+          {
+            "ticker": "DINO",
+            "name": "HF SINCLAIR CORP",
+            "weightPct": 2.98
+          },
+          {
+            "ticker": "VLO",
+            "name": "VALERO ENERGY CORP",
+            "weightPct": 2.94
+          },
+          {
+            "ticker": "PSX",
+            "name": "PHILLIPS 66",
+            "weightPct": 2.89
+          },
+          {
+            "ticker": "PBF",
+            "name": "PBF ENERGY INC CLASS A",
+            "weightPct": 2.84
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "XHB",
+      "oldAsOf": "2026-10-15",
+      "holdings": {
+        "status": "verified",
+        "asOf": "2026-10-16",
+        "sourceIds": [
+          "holdings-XHB"
+        ],
+        "top5": [
+          {
+            "ticker": "SN",
+            "name": "SharkNinja, Inc.",
+            "shortName": "SharkNinja",
+            "weightPct": 3.66
+          },
+          {
+            "ticker": "WSM",
+            "name": "Williams-Sonoma, Inc.",
+            "shortName": "Williams-Sonoma",
+            "weightPct": 3.65
+          },
+          {
+            "ticker": "W",
+            "name": "Wayfair Inc.",
+            "shortName": "Wayfair",
+            "weightPct": 3.56
+          },
+          {
+            "ticker": "MAS",
+            "name": "Masco Corporation",
+            "shortName": "Masco",
+            "weightPct": 3.49
+          },
+          {
+            "ticker": "TT",
+            "name": "Trane Technologies plc",
+            "shortName": "Trane Technologies plc",
+            "weightPct": 3.43
+          }
+        ],
+        "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+      },
+      "source": {
+        "id": "holdings-XHB",
+        "title": "XHB portfolio holdings (2026-10-16)",
+        "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-homebuilders-etf-xhb",
+        "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
+      },
+      "evidence": {
+        "provider": "State Street Investment Management",
+        "sourceType": "primary",
+        "sourceAsOf": "2026-10-16",
+        "method": "Fund Top Holdings, not Index Top Holdings; issuer-displayed order retained for weights rounded to two decimals.",
+        "sourceRows": [
+          {
+            "ticker": "SN",
+            "name": "SHARKNINJA INC",
+            "weightPct": 3.66
+          },
+          {
+            "ticker": "WSM",
+            "name": "WILLIAMS SONOMA INC",
+            "weightPct": 3.65
+          },
+          {
+            "ticker": "W",
+            "name": "WAYFAIR INC CLASS A",
+            "weightPct": 3.56
+          },
+          {
+            "ticker": "MAS",
+            "name": "MASCO CORP",
+            "weightPct": 3.49
+          },
+          {
+            "ticker": "TT",
+            "name": "TRANE TECHNOLOGIES PLC",
+            "weightPct": 3.43
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "XRT",
+      "oldAsOf": "2026-10-15",
+      "holdings": {
+        "status": "verified",
+        "asOf": "2026-10-16",
+        "sourceIds": [
+          "holdings-XRT"
+        ],
+        "top5": [
+          {
+            "ticker": "GME",
+            "name": "GameStop Corp.",
+            "shortName": "GameStop Corp.",
+            "weightPct": 1.84
+          },
+          {
+            "ticker": "OLLI",
+            "name": "Ollie's Bargain Outlet Holdings, Inc.",
+            "shortName": "Ollie's Bargain Outlet Holdings",
+            "weightPct": 1.76
+          },
+          {
+            "ticker": "KSS",
+            "name": "Kohl's Corporation",
+            "shortName": "Kohl's",
+            "weightPct": 1.69
+          },
+          {
+            "ticker": "ETSY",
+            "name": "Etsy, Inc.",
+            "shortName": "Etsy",
+            "weightPct": 1.64
+          },
+          {
+            "ticker": "RVLV",
+            "name": "Revolve Group, Inc. Class A",
+            "shortName": "Revolve",
+            "weightPct": 1.6
+          }
+        ],
+        "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+      },
+      "source": {
+        "id": "holdings-XRT",
+        "title": "XRT portfolio holdings (2026-10-16)",
+        "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-retail-etf-xrt",
+        "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
+      },
+      "evidence": {
+        "provider": "State Street Investment Management",
+        "sourceType": "primary",
+        "sourceAsOf": "2026-10-16",
+        "method": "Fund Top Holdings, not Index Top Holdings; issuer-displayed order retained for weights rounded to two decimals.",
+        "sourceRows": [
+          {
+            "ticker": "GME",
+            "name": "GAMESTOP CORP CLASS A",
+            "weightPct": 1.84
+          },
+          {
+            "ticker": "OLLI",
+            "name": "OLLIE S BARGAIN OUTLET HOLDI",
+            "weightPct": 1.76
+          },
+          {
+            "ticker": "KSS",
+            "name": "KOHLS CORP",
+            "weightPct": 1.69
+          },
+          {
+            "ticker": "ETSY",
+            "name": "ETSY INC",
+            "weightPct": 1.64
+          },
+          {
+            "ticker": "RVLV",
+            "name": "REVOLVE GROUP INC A",
+            "weightPct": 1.6
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "XME",
+      "oldAsOf": "2026-10-15",
+      "holdings": {
+        "status": "verified",
+        "asOf": "2026-10-16",
+        "sourceIds": [
+          "holdings-XME"
+        ],
+        "top5": [
+          {
+            "ticker": "RS",
+            "name": "Reliance, Inc.",
+            "shortName": "Reliance",
+            "weightPct": 5.82
+          },
+          {
+            "ticker": "CLF",
+            "name": "Cleveland-Cliffs Inc.",
+            "shortName": "Cleveland-Cliffs",
+            "weightPct": 5.61
+          },
+          {
+            "ticker": "STLD",
+            "name": "Steel Dynamics, Inc.",
+            "shortName": "Steel Dynamics",
+            "weightPct": 5.59
+          },
+          {
+            "ticker": "NUE",
+            "name": "Nucor Corporation",
+            "shortName": "Nucor",
+            "weightPct": 5.56
+          },
+          {
+            "ticker": "CMC",
+            "name": "Commercial Metals Company",
+            "shortName": "Commercial Metals",
+            "weightPct": 5.27
+          }
+        ],
+        "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+      },
+      "source": {
+        "id": "holdings-XME",
+        "title": "XME portfolio holdings (2026-10-16)",
+        "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-metals-mining-etf-xme",
+        "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
+      },
+      "evidence": {
+        "provider": "State Street Investment Management",
+        "sourceType": "primary",
+        "sourceAsOf": "2026-10-16",
+        "method": "Fund Top Holdings, not Index Top Holdings; issuer-displayed order retained for weights rounded to two decimals.",
+        "sourceRows": [
+          {
+            "ticker": "RS",
+            "name": "RELIANCE INC",
+            "weightPct": 5.82
+          },
+          {
+            "ticker": "CLF",
+            "name": "CLEVELAND CLIFFS INC",
+            "weightPct": 5.61
+          },
+          {
+            "ticker": "STLD",
+            "name": "STEEL DYNAMICS INC",
+            "weightPct": 5.59
+          },
+          {
+            "ticker": "NUE",
+            "name": "NUCOR CORP",
+            "weightPct": 5.56
+          },
+          {
+            "ticker": "CMC",
+            "name": "COMMERCIAL METALS CO",
+            "weightPct": 5.27
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "XAR",
+      "oldAsOf": "2026-10-15",
+      "holdings": {
+        "status": "verified",
+        "asOf": "2026-10-16",
+        "sourceIds": [
+          "holdings-XAR"
+        ],
+        "top5": [
+          {
+            "ticker": "HONA",
+            "name": "Honeywell Aerospace Inc.",
+            "shortName": "Honeywell Aerospace",
+            "weightPct": 3.44
+          },
+          {
+            "ticker": "LMT",
+            "name": "Lockheed Martin Corporation",
+            "shortName": "Lockheed Martin",
+            "weightPct": 3.26
+          },
+          {
+            "ticker": "TDG",
+            "name": "TransDigm Group Incorporated",
+            "shortName": "TransDigm Group",
+            "weightPct": 3.14
+          },
+          {
+            "ticker": "NOC",
+            "name": "Northrop Grumman",
+            "shortName": "Northrop Grumman",
+            "weightPct": 3.13
+          },
+          {
+            "ticker": "MOG.A",
+            "name": "Moog Inc. Class A",
+            "shortName": "Moog A",
+            "weightPct": 3.11
+          }
+        ],
+        "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+      },
+      "source": {
+        "id": "holdings-XAR",
+        "title": "XAR portfolio holdings (2026-10-16)",
+        "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-aerospace-defense-etf-xar",
+        "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
+      },
+      "evidence": {
+        "provider": "State Street Investment Management",
+        "sourceType": "primary",
+        "sourceAsOf": "2026-10-16",
+        "method": "Fund Top Holdings, not Index Top Holdings; issuer-displayed order retained for weights rounded to two decimals.",
+        "sourceRows": [
+          {
+            "ticker": "HONA",
+            "name": "HONEYWELL AEROSPACE INC",
+            "weightPct": 3.44
+          },
+          {
+            "ticker": "LMT",
+            "name": "LOCKHEED MARTIN CORP",
+            "weightPct": 3.26
+          },
+          {
+            "ticker": "TDG",
+            "name": "TRANSDIGM GROUP INC",
+            "weightPct": 3.14
+          },
+          {
+            "ticker": "NOC",
+            "name": "NORTHROP GRUMMAN CORP",
+            "weightPct": 3.13
+          },
+          {
+            "ticker": "MOG.A",
+            "name": "MOOG INC CLASS A",
+            "weightPct": 3.11
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "KBE",
+      "oldAsOf": "2026-10-15",
+      "holdings": {
+        "status": "verified",
+        "asOf": "2026-10-16",
+        "sourceIds": [
+          "holdings-KBE"
+        ],
+        "top5": [
+          {
+            "ticker": "CBC",
+            "name": "Central Bancompany, Inc.",
+            "shortName": "Central Bancompany",
+            "weightPct": 1.03
+          },
+          {
+            "ticker": "EQH",
+            "name": "Equitable Holdings, Inc.",
+            "shortName": "Equitable Holdings",
+            "weightPct": 1.01
+          },
+          {
+            "ticker": "CRBG",
+            "name": "Corebridge Financial, Inc.",
+            "shortName": "Corebridge Financial",
+            "weightPct": 1.01
+          },
+          {
+            "ticker": "OFG",
+            "name": "OFG Bancorp",
+            "shortName": "OFG Bancorp",
+            "weightPct": 1
+          },
+          {
+            "ticker": "FCNCA",
+            "name": "FIRST CITIZENS BCSHS CL A",
+            "shortName": "FIRST CITIZENS BCSHS CL A",
+            "weightPct": 0.99
+          }
+        ],
+        "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+      },
+      "source": {
+        "id": "holdings-KBE",
+        "title": "KBE portfolio holdings (2026-10-16)",
+        "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-bank-etf-kbe",
+        "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
+      },
+      "evidence": {
+        "provider": "State Street Investment Management",
+        "sourceType": "primary",
+        "sourceAsOf": "2026-10-16",
+        "method": "Fund Top Holdings, not Index Top Holdings; issuer-displayed order retained for weights rounded to two decimals.",
+        "sourceRows": [
+          {
+            "ticker": "CBC",
+            "name": "CENTRAL BANCOMPANY",
+            "weightPct": 1.03
+          },
+          {
+            "ticker": "EQH",
+            "name": "EQUITABLE HOLDINGS INC",
+            "weightPct": 1.01
+          },
+          {
+            "ticker": "CRBG",
+            "name": "COREBRIDGE FINANCIAL INC",
+            "weightPct": 1.01
+          },
+          {
+            "ticker": "OFG",
+            "name": "OFG BANCORP",
+            "weightPct": 1
+          },
+          {
+            "ticker": "FCNCA",
+            "name": "FIRST CITIZENS BCSHS CL A",
+            "weightPct": 0.99
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "XPH",
+      "oldAsOf": "2026-10-15",
+      "holdings": {
+        "status": "verified",
+        "asOf": "2026-10-16",
+        "sourceIds": [
+          "holdings-XPH"
+        ],
+        "top5": [
+          {
+            "ticker": "XERS",
+            "name": "Xeris Biopharma Holdings, Inc.",
+            "shortName": "Xeris Biopharma Holdings",
+            "weightPct": 2.8
+          },
+          {
+            "ticker": "PCRX",
+            "name": "Pacira BioSciences, Inc.",
+            "shortName": "Pacira BioSciences",
+            "weightPct": 2.65
+          },
+          {
+            "ticker": "PRGO",
+            "name": "Perrigo Company plc",
+            "shortName": "Perrigo",
+            "weightPct": 2.43
+          },
+          {
+            "ticker": "VTRS",
+            "name": "Viatris",
+            "shortName": "Viatris",
+            "weightPct": 2.37
+          },
+          {
+            "ticker": "LLY",
+            "name": "Eli Lilly and Company",
+            "shortName": "Eli Lilly",
+            "weightPct": 2.34
+          }
+        ],
+        "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+      },
+      "source": {
+        "id": "holdings-XPH",
+        "title": "XPH portfolio holdings (2026-10-16)",
+        "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-pharmaceuticals-etf-xph",
+        "note": "State Street Investment Management · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
+      },
+      "evidence": {
+        "provider": "State Street Investment Management",
+        "sourceType": "primary",
+        "sourceAsOf": "2026-10-16",
+        "method": "Fund Top Holdings, not Index Top Holdings; issuer-displayed order retained for weights rounded to two decimals.",
+        "sourceRows": [
+          {
+            "ticker": "XERS",
+            "name": "XERIS BIOPHARMA HOLDINGS INC",
+            "weightPct": 2.8
+          },
+          {
+            "ticker": "PCRX",
+            "name": "PACIRA BIOSCIENCES INC",
+            "weightPct": 2.65
+          },
+          {
+            "ticker": "PRGO",
+            "name": "PERRIGO CO PLC",
+            "weightPct": 2.43
+          },
+          {
+            "ticker": "VTRS",
+            "name": "VIATRIS INC",
+            "weightPct": 2.37
+          },
+          {
+            "ticker": "LLY",
+            "name": "ELI LILLY + CO",
+            "weightPct": 2.34
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "SOXX",
+      "oldAsOf": "2026-10-15",
+      "holdings": {
+        "status": "verified",
+        "asOf": "2026-10-16",
+        "sourceIds": [
+          "holdings-SOXX"
+        ],
+        "top5": [
+          {
+            "ticker": "AMD",
+            "name": "Advanced Micro Devices, Inc.",
+            "shortName": "AMD",
+            "weightPct": 9.25
+          },
+          {
+            "ticker": "INTC",
+            "name": "Intel Corporation",
+            "shortName": "Intel",
+            "weightPct": 8.26
+          },
+          {
+            "ticker": "NVDA",
+            "name": "NVIDIA Corporation",
+            "shortName": "NVIDIA",
+            "weightPct": 7.98
+          },
+          {
+            "ticker": "MU",
+            "name": "Micron Technology, Inc.",
+            "shortName": "Micron Technology",
+            "weightPct": 7.55
+          },
+          {
+            "ticker": "AVGO",
+            "name": "Broadcom Inc.",
+            "shortName": "Broadcom",
+            "weightPct": 7.31
+          }
+        ],
+        "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+      },
+      "source": {
+        "id": "holdings-SOXX",
+        "title": "SOXX portfolio holdings (2026-10-16)",
+        "url": "https://www.ishares.com/us/products/239705/ishares-semiconductor-etf/latest-holdings.csv",
+        "note": "iShares / BlackRock · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
+      },
+      "evidence": {
+        "provider": "iShares / BlackRock",
+        "sourceType": "primary",
+        "sourceAsOf": "2026-10-16",
+        "method": "Official latest-holdings.csv; equity security rows; weight field: Weight (%). IAI uses Market Weight rather than Notional Weight.",
+        "sourceRows": [
+          {
+            "ticker": "AMD",
+            "name": "ADVANCED MICRO DEVICES",
+            "weightPct": 9.25
+          },
+          {
+            "ticker": "INTC",
+            "name": "INTEL CORPORATION",
+            "weightPct": 8.26
+          },
+          {
+            "ticker": "NVDA",
+            "name": "NVIDIA",
+            "weightPct": 7.98
+          },
+          {
+            "ticker": "MU",
+            "name": "MICRON TECHNOLOGY",
+            "weightPct": 7.55
+          },
+          {
+            "ticker": "AVGO",
+            "name": "BROADCOM INC",
+            "weightPct": 7.31
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "ITA",
+      "oldAsOf": "2026-10-15",
+      "holdings": {
+        "status": "verified",
+        "asOf": "2026-10-16",
+        "sourceIds": [
+          "holdings-ITA"
+        ],
+        "top5": [
+          {
+            "ticker": "GE",
+            "name": "GE Aerospace",
+            "shortName": "GE Aerospace",
+            "weightPct": 20.86
+          },
+          {
+            "ticker": "RTX",
+            "name": "RTX Corporation",
+            "shortName": "RTX",
+            "weightPct": 16.74
+          },
+          {
+            "ticker": "BA",
+            "name": "The Boeing Company",
+            "shortName": "Boeing",
+            "weightPct": 7.58
+          },
+          {
+            "ticker": "LMT",
+            "name": "Lockheed Martin Corporation",
+            "shortName": "Lockheed Martin",
+            "weightPct": 4.94
+          },
+          {
+            "ticker": "TDG",
+            "name": "TransDigm Group Incorporated",
+            "shortName": "TransDigm Group",
+            "weightPct": 4.75
+          }
+        ],
+        "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+      },
+      "source": {
+        "id": "holdings-ITA",
+        "title": "ITA portfolio holdings (2026-10-16)",
+        "url": "https://www.ishares.com/us/products/239502/ishares-u-s-aerospace-defense-etf/latest-holdings.csv",
+        "note": "iShares / BlackRock · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
+      },
+      "evidence": {
+        "provider": "iShares / BlackRock",
+        "sourceType": "primary",
+        "sourceAsOf": "2026-10-16",
+        "method": "Official latest-holdings.csv; equity security rows; weight field: Weight (%). IAI uses Market Weight rather than Notional Weight.",
+        "sourceRows": [
+          {
+            "ticker": "GE",
+            "name": "GE AEROSPACE",
+            "weightPct": 20.86
+          },
+          {
+            "ticker": "RTX",
+            "name": "RTX",
+            "weightPct": 16.74
+          },
+          {
+            "ticker": "BA",
+            "name": "BOEING",
+            "weightPct": 7.58
+          },
+          {
+            "ticker": "LMT",
+            "name": "LOCKHEED MARTIN CORP",
+            "weightPct": 4.94
+          },
+          {
+            "ticker": "TDG",
+            "name": "TRANSDIGM GROUP",
+            "weightPct": 4.75
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "ICLN",
+      "oldAsOf": "2026-10-15",
+      "holdings": {
+        "status": "verified",
+        "asOf": "2026-10-16",
+        "sourceIds": [
+          "holdings-ICLN"
+        ],
+        "top5": [
+          {
+            "ticker": "FSLR",
+            "name": "First Solar, Inc.",
+            "shortName": "First Solar",
+            "weightPct": 7.97
+          },
+          {
+            "ticker": "NXT",
+            "name": "Nextpower Inc.",
+            "shortName": "Nextpower",
+            "weightPct": 7.59
+          },
+          {
+            "ticker": "IBE",
+            "name": "Iberdrola S.A.",
+            "shortName": "Iberdrola",
+            "weightPct": 6.5
+          },
+          {
+            "ticker": "BE",
+            "name": "Bloom Energy Corporation",
+            "shortName": "Bloom Energy",
+            "weightPct": 6.32
+          },
+          {
+            "ticker": "600900",
+            "name": "China Yangtze Power Co., Ltd.",
+            "shortName": "China Yangtze Power Co., Ltd.",
+            "weightPct": 5.38
+          }
+        ],
+        "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+      },
+      "source": {
+        "id": "holdings-ICLN",
+        "title": "ICLN portfolio holdings (2026-10-16)",
+        "url": "https://www.ishares.com/us/products/239738/ishares-global-clean-energy-etf/latest-holdings.csv",
+        "note": "iShares / BlackRock · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
+      },
+      "evidence": {
+        "provider": "iShares / BlackRock",
+        "sourceType": "primary",
+        "sourceAsOf": "2026-10-16",
+        "method": "Official latest-holdings.csv; equity security rows; weight field: Weight (%). IAI uses Market Weight rather than Notional Weight.",
+        "sourceRows": [
+          {
+            "ticker": "FSLR",
+            "name": "FIRST SOLAR",
+            "weightPct": 7.97
+          },
+          {
+            "ticker": "NXT",
+            "name": "NEXTPOWER INC",
+            "weightPct": 7.59
+          },
+          {
+            "ticker": "IBE",
+            "name": "IBERDROLA",
+            "weightPct": 6.5
+          },
+          {
+            "ticker": "BE",
+            "name": "BLOOM ENERGY CLASS A",
+            "weightPct": 6.32
+          },
+          {
+            "ticker": "600900",
+            "name": "CHINA YANGTZE POWER LTD A",
+            "weightPct": 5.38
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "IAI",
+      "oldAsOf": "2026-10-15",
+      "holdings": {
+        "status": "verified",
+        "asOf": "2026-10-16",
+        "sourceIds": [
+          "holdings-IAI"
+        ],
+        "top5": [
+          {
+            "ticker": "GS",
+            "name": "The Goldman Sachs Group, Inc.",
+            "shortName": "Goldman Sachs",
+            "weightPct": 17.77
+          },
+          {
+            "ticker": "MS",
+            "name": "Morgan Stanley",
+            "shortName": "Morgan Stanley",
+            "weightPct": 14.92
+          },
+          {
+            "ticker": "SCHW",
+            "name": "The Charles Schwab Corporation",
+            "shortName": "Charles Schwab",
+            "weightPct": 8.92
+          },
+          {
+            "ticker": "CME",
+            "name": "CME Group Inc.",
+            "shortName": "CME Group",
+            "weightPct": 5.23
+          },
+          {
+            "ticker": "ICE",
+            "name": "Intercontinental Exchange",
+            "shortName": "Intercontinental Exchange",
+            "weightPct": 5.05
+          }
+        ],
+        "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+      },
+      "source": {
+        "id": "holdings-IAI",
+        "title": "IAI portfolio holdings (2026-10-16)",
+        "url": "https://www.ishares.com/us/products/239504/ishares-u-s-broker-dealers-securities-exchanges-etf/latest-holdings.csv",
+        "note": "iShares / BlackRock · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
+      },
+      "evidence": {
+        "provider": "iShares / BlackRock",
+        "sourceType": "primary",
+        "sourceAsOf": "2026-10-16",
+        "method": "Official latest-holdings.csv; equity security rows; weight field: Market Weight. IAI uses Market Weight rather than Notional Weight.",
+        "sourceRows": [
+          {
+            "ticker": "GS",
+            "name": "GOLDMAN SACHS GROUP",
+            "weightPct": 17.77
+          },
+          {
+            "ticker": "MS",
+            "name": "MORGAN STANLEY",
+            "weightPct": 14.92
+          },
+          {
+            "ticker": "SCHW",
+            "name": "CHARLES SCHWAB",
+            "weightPct": 8.92
+          },
+          {
+            "ticker": "CME",
+            "name": "CME GROUP CLASS A",
+            "weightPct": 5.23
+          },
+          {
+            "ticker": "ICE",
+            "name": "INTERCONTINENTAL EXCHANGE INC",
+            "weightPct": 5.05
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "IHF",
+      "oldAsOf": "2026-10-15",
+      "holdings": {
+        "status": "verified",
+        "asOf": "2026-10-16",
+        "sourceIds": [
+          "holdings-IHF"
+        ],
+        "top5": [
+          {
+            "ticker": "UNH",
+            "name": "UnitedHealth Group Incorporated",
+            "shortName": "UnitedHealth Group",
+            "weightPct": 22.22
+          },
+          {
+            "ticker": "CVS",
+            "name": "CVS Health Corporation",
+            "shortName": "CVS Health",
+            "weightPct": 12.36
+          },
+          {
+            "ticker": "ELV",
+            "name": "Elevance Health, Inc.",
+            "shortName": "Elevance Health",
+            "weightPct": 9.71
+          },
+          {
+            "ticker": "VEEV",
+            "name": "Veeva Systems Inc.",
+            "shortName": "Veeva Systems",
+            "weightPct": 5.18
+          },
+          {
+            "ticker": "HCA",
+            "name": "HCA Healthcare, Inc.",
+            "shortName": "HCA Healthcare",
+            "weightPct": 4.73
+          }
+        ],
+        "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+      },
+      "source": {
+        "id": "holdings-IHF",
+        "title": "IHF portfolio holdings (2026-10-16)",
+        "url": "https://www.ishares.com/us/products/239510/ishares-u-s-healthcare-providers-etf/latest-holdings.csv",
+        "note": "iShares / BlackRock · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
+      },
+      "evidence": {
+        "provider": "iShares / BlackRock",
+        "sourceType": "primary",
+        "sourceAsOf": "2026-10-16",
+        "method": "Official latest-holdings.csv; equity security rows; weight field: Weight (%). IAI uses Market Weight rather than Notional Weight.",
+        "sourceRows": [
+          {
+            "ticker": "UNH",
+            "name": "UNITEDHEALTH GROUP",
+            "weightPct": 22.22
+          },
+          {
+            "ticker": "CVS",
+            "name": "CVS HEALTH",
+            "weightPct": 12.36
+          },
+          {
+            "ticker": "ELV",
+            "name": "ELEVANCE HEALTH INC",
+            "weightPct": 9.71
+          },
+          {
+            "ticker": "VEEV",
+            "name": "VEEVA SYSTEMS CLASS A",
+            "weightPct": 5.18
+          },
+          {
+            "ticker": "HCA",
+            "name": "HCA HEALTHCARE",
+            "weightPct": 4.73
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "IHI",
+      "oldAsOf": "2026-10-15",
+      "holdings": {
+        "status": "verified",
+        "asOf": "2026-10-16",
+        "sourceIds": [
+          "holdings-IHI"
+        ],
+        "top5": [
+          {
+            "ticker": "ABT",
+            "name": "Abbott Laboratories",
+            "shortName": "Abbott Laboratories",
+            "weightPct": 18.03
+          },
+          {
+            "ticker": "ISRG",
+            "name": "Intuitive Surgical, Inc.",
+            "shortName": "Intuitive Surgical",
+            "weightPct": 14.98
+          },
+          {
+            "ticker": "MDT",
+            "name": "Medtronic plc",
+            "shortName": "Medtronic plc",
+            "weightPct": 11.52
+          },
+          {
+            "ticker": "IDXX",
+            "name": "Idexx Laboratories",
+            "shortName": "Idexx Laboratories",
+            "weightPct": 4.7
+          },
+          {
+            "ticker": "SYK",
+            "name": "Stryker Corporation",
+            "shortName": "Stryker Corporation",
+            "weightPct": 4.62
+          }
+        ],
+        "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+      },
+      "source": {
+        "id": "holdings-IHI",
+        "title": "IHI portfolio holdings (2026-10-16)",
+        "url": "https://www.ishares.com/us/products/239516/ishares-u-s-medical-devices-etf/latest-holdings.csv",
+        "note": "iShares / BlackRock · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
+      },
+      "evidence": {
+        "provider": "iShares / BlackRock",
+        "sourceType": "primary",
+        "sourceAsOf": "2026-10-16",
+        "method": "Official latest-holdings.csv; equity security rows; weight field: Weight (%). IAI uses Market Weight rather than Notional Weight.",
+        "sourceRows": [
+          {
+            "ticker": "ABT",
+            "name": "ABBOTT LABORATORIES",
+            "weightPct": 18.03
+          },
+          {
+            "ticker": "ISRG",
+            "name": "INTUITIVE SURGICAL",
+            "weightPct": 14.98
+          },
+          {
+            "ticker": "MDT",
+            "name": "MEDTRONIC PLC",
+            "weightPct": 11.52
+          },
+          {
+            "ticker": "IDXX",
+            "name": "IDEXX LABORATORIES",
+            "weightPct": 4.7
+          },
+          {
+            "ticker": "SYK",
+            "name": "STRYKER",
+            "weightPct": 4.62
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "FDN",
+      "oldAsOf": "2026-10-15",
+      "holdings": {
+        "status": "verified",
+        "asOf": "2026-10-16",
+        "sourceIds": [
+          "holdings-FDN"
+        ],
+        "top5": [
+          {
+            "ticker": "META",
+            "name": "Meta Platforms, Inc.",
+            "shortName": "Meta Platforms",
+            "weightPct": 11
+          },
+          {
+            "ticker": "AMZN",
+            "name": "Amazon.com, Inc.",
+            "shortName": "Amazon.com",
+            "weightPct": 10.04
+          },
+          {
+            "ticker": "CSCO",
+            "name": "Cisco Systems, Inc.",
+            "shortName": "Cisco Systems",
+            "weightPct": 8.66
+          },
+          {
+            "ticker": "NFLX",
+            "name": "Netflix, Inc.",
+            "shortName": "Netflix",
+            "weightPct": 5.92
+          },
+          {
+            "ticker": "GOOGL",
+            "name": "Alphabet Inc. Class A",
+            "shortName": "Alphabet A",
+            "weightPct": 5.79
+          }
+        ],
+        "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+      },
+      "source": {
+        "id": "holdings-FDN",
+        "title": "FDN portfolio holdings (2026-10-16)",
+        "url": "https://www.ftportfolios.com/Retail/Etf/EtfHoldings.aspx?Ticker=FDN",
+        "note": "First Trust · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
+      },
+      "evidence": {
+        "provider": "First Trust",
+        "sourceType": "primary",
+        "sourceAsOf": "2026-10-16",
+        "method": "Issuer holdings table (41 noncash securities), reported descending portfolio weights.",
+        "sourceRows": [
+          {
+            "ticker": "META",
+            "weightPct": 11
+          },
+          {
+            "ticker": "AMZN",
+            "weightPct": 10.04
+          },
+          {
+            "ticker": "CSCO",
+            "weightPct": 8.66
+          },
+          {
+            "ticker": "NFLX",
+            "weightPct": 5.92
+          },
+          {
+            "ticker": "GOOGL",
+            "weightPct": 5.79
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "CIBR",
+      "oldAsOf": "2026-10-15",
+      "holdings": {
+        "status": "verified",
+        "asOf": "2026-10-16",
+        "sourceIds": [
+          "holdings-CIBR"
+        ],
+        "top5": [
+          {
+            "ticker": "FTNT",
+            "name": "Fortinet, Inc.",
+            "shortName": "Fortinet",
+            "weightPct": 8.01
+          },
+          {
+            "ticker": "CRWD",
+            "name": "CrowdStrike Holdings, Inc.",
+            "shortName": "CrowdStrike Holdings",
+            "weightPct": 7.96
+          },
+          {
+            "ticker": "CSCO",
+            "name": "Cisco Systems, Inc.",
+            "shortName": "Cisco Systems",
+            "weightPct": 7.86
+          },
+          {
+            "ticker": "PANW",
+            "name": "Palo Alto Networks, Inc.",
+            "shortName": "Palo Alto Networks",
+            "weightPct": 7.24
+          },
+          {
+            "ticker": "AVGO",
+            "name": "Broadcom Inc.",
+            "shortName": "Broadcom",
+            "weightPct": 7.18
+          }
+        ],
+        "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+      },
+      "source": {
+        "id": "holdings-CIBR",
+        "title": "CIBR portfolio holdings (2026-10-16)",
+        "url": "https://www.ftportfolios.com/Retail/Etf/EtfHoldings.aspx?Ticker=CIBR",
+        "note": "First Trust · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
+      },
+      "evidence": {
+        "provider": "First Trust",
+        "sourceType": "primary",
+        "sourceAsOf": "2026-10-16",
+        "method": "Issuer holdings table (45 noncash securities), reported descending portfolio weights.",
+        "sourceRows": [
+          {
+            "ticker": "FTNT",
+            "weightPct": 8.01
+          },
+          {
+            "ticker": "CRWD",
+            "weightPct": 7.96
+          },
+          {
+            "ticker": "CSCO",
+            "weightPct": 7.86
+          },
+          {
+            "ticker": "PANW",
+            "weightPct": 7.24
+          },
+          {
+            "ticker": "AVGO",
+            "weightPct": 7.18
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "SMH",
+      "oldAsOf": "2026-10-15",
+      "holdings": {
+        "status": "verified",
+        "asOf": "2026-10-16",
+        "sourceIds": [
+          "holdings-SMH"
+        ],
+        "top5": [
+          {
+            "ticker": "NVDA",
+            "name": "NVIDIA Corporation",
+            "shortName": "NVIDIA",
+            "weightPct": 20.46
+          },
+          {
+            "ticker": "TSM",
+            "name": "Taiwan Semiconductor Manufacturing Company Limited",
+            "shortName": "TSMC",
+            "weightPct": 9.42
+          },
+          {
+            "ticker": "AVGO",
+            "name": "Broadcom Inc.",
+            "shortName": "Broadcom",
+            "weightPct": 5.48
+          },
+          {
+            "ticker": "AMD",
+            "name": "Advanced Micro Devices, Inc.",
+            "shortName": "AMD",
+            "weightPct": 5.42
+          },
+          {
+            "ticker": "TXN",
+            "name": "Texas Instruments Incorporated",
+            "shortName": "Texas Instruments",
+            "weightPct": 5.07
+          }
+        ],
+        "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+      },
+      "source": {
+        "id": "holdings-SMH",
+        "title": "SMH portfolio holdings (2026-10-16)",
+        "url": "https://www.vaneck.com/us/en/investments/semiconductor-etf-smh/holdings/",
+        "note": "VanEck · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
+      },
+      "evidence": {
+        "provider": "VanEck",
+        "sourceType": "primary",
+        "sourceAsOf": "2026-10-16",
+        "method": "Issuer Daily Holdings, percentage of net assets.",
+        "sourceRows": [
+          {
+            "ticker": "NVDA",
+            "weightPct": 20.46
+          },
+          {
+            "ticker": "TSM",
+            "weightPct": 9.42
+          },
+          {
+            "ticker": "AVGO",
+            "weightPct": 5.48
+          },
+          {
+            "ticker": "AMD",
+            "weightPct": 5.42
+          },
+          {
+            "ticker": "TXN",
+            "weightPct": 5.07
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "CRAK",
+      "oldAsOf": "2026-10-15",
+      "holdings": {
+        "status": "verified",
+        "asOf": "2026-10-16",
+        "sourceIds": [
+          "holdings-CRAK"
+        ],
+        "top5": [
+          {
+            "ticker": "MPC",
+            "name": "Marathon Petroleum Corporation",
+            "shortName": "Marathon Petroleum",
+            "weightPct": 9.44
+          },
+          {
+            "ticker": "VLO",
+            "name": "Valero Energy Corporation",
+            "shortName": "Valero Energy",
+            "weightPct": 9.02
+          },
+          {
+            "ticker": "PSX",
+            "name": "Phillips 66",
+            "shortName": "Phillips 66",
+            "weightPct": 7.21
+          },
+          {
+            "ticker": "RIGD LI",
+            "name": "Reliance Industries Ltd GDR - 144A",
+            "shortName": "Reliance Industries GDR",
+            "weightPct": 6.68
+          },
+          {
+            "ticker": "PKN PW",
+            "name": "Orlen S.A.",
+            "shortName": "Orlen",
+            "weightPct": 5.51
+          }
+        ],
+        "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+      },
+      "source": {
+        "id": "holdings-CRAK",
+        "title": "CRAK portfolio holdings (2026-10-16)",
+        "url": "https://www.vaneck.com/us/en/investments/oil-refiners-etf-crak/",
+        "note": "VanEck · 실제 보유내역 2026-10-16, 2026-10-19 확인. 운용사 원문 표의 실제 포트폴리오 보유비중을 사용; 지수 구성비중과 구분. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
+      },
+      "evidence": {
+        "provider": "VanEck",
+        "sourceType": "primary",
+        "sourceAsOf": "2026-10-16",
+        "method": "Issuer Daily Holdings, percentage of net assets; foreign security identifiers preserved.",
+        "sourceRows": [
+          {
+            "ticker": "MPC",
+            "weightPct": 9.44
+          },
+          {
+            "ticker": "VLO",
+            "weightPct": 9.02
+          },
+          {
+            "ticker": "PSX",
+            "weightPct": 7.21
+          },
+          {
+            "ticker": "RIGD LI",
+            "weightPct": 6.68
+          },
+          {
+            "ticker": "PKN PW",
+            "weightPct": 5.51
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "TAN",
+      "oldAsOf": "2026-10-15",
+      "holdings": {
+        "status": "verified",
+        "asOf": "2026-10-16",
+        "sourceIds": [
+          "holdings-TAN"
+        ],
+        "top5": [
+          {
+            "ticker": "NXT",
+            "name": "Nextpower Inc.",
+            "shortName": "Nextpower",
+            "weightPct": 10.78
+          },
+          {
+            "ticker": "FSLR",
+            "name": "First Solar, Inc.",
+            "shortName": "First Solar",
+            "weightPct": 9.22
+          },
+          {
+            "ticker": "TLV:ENLT",
+            "name": "Enlight Renewable Energy Ltd",
+            "shortName": "Enlight Renewable Energy Ltd",
+            "weightPct": 8.54
+          },
+          {
+            "ticker": "ENPH",
+            "name": "Enphase Energy, Inc.",
+            "shortName": "Enphase Energy",
+            "weightPct": 6.92
+          },
+          {
+            "ticker": "HASI",
+            "name": "HA Sustainable Infrastructure Capital, Inc.",
+            "shortName": "HA Sustainable Infrastructure Capital",
+            "weightPct": 5.07
+          }
+        ],
+        "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+      },
+      "source": {
+        "id": "holdings-TAN",
+        "title": "TAN portfolio holdings (2026-10-16)",
+        "url": "https://stockanalysis.com/etf/tan/holdings/",
+        "note": "Stock Analysis / Finnhub · 실제 보유내역 2026-10-16, 2026-10-19 확인. 동일한 기존 제3자 제공사의 표를 사용; 운용사 원문 표는 이번 조회에서 확인되지 않음. 주식 종류별 상위 5종목, 비중 미정규화. 미국 완료 거래일과 가격 수익률은 2026-10-16 유지."
+      },
+      "evidence": {
+        "provider": "Stock Analysis / Finnhub",
+        "sourceType": "secondary",
+        "sourceAsOf": "2026-10-16",
+        "method": "Same existing public holdings provider, explicitly dated October 16; issuer site retrieval did not expose a current holdings table. Percentages are this provider's reported values, not substituted estimates.",
+        "sourceRows": [
+          {
+            "ticker": "NXT",
+            "weightPct": 10.78
+          },
+          {
+            "ticker": "FSLR",
+            "weightPct": 9.22
+          },
+          {
+            "ticker": "TLV:ENLT",
+            "weightPct": 8.54
+          },
+          {
+            "ticker": "ENPH",
+            "weightPct": 6.92
+          },
+          {
+            "ticker": "HASI",
+            "weightPct": 5.07
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "FAN",
+      "oldAsOf": "2026-10-14",
+      "holdings": {
+        "status": "verified",
+        "asOf": "2026-10-16",
+        "sourceIds": [
+          "holdings-FAN"
+        ],
+        "top5": [
+          {
+            "ticker": "NDX1.GY",
+            "name": "Nordex SE",
+            "weightPct": 8.5,
+            "shortName": "Nordex"
+          },
+          {
+            "ticker": "ORSTED.DC",
+            "name": "Orsted A/S",
+            "weightPct": 7.76,
+            "shortName": "Ørsted"
+          },
+          {
+            "ticker": "EDPR.PL",
+            "name": "EDP Renewables SA",
+            "weightPct": 7.55,
+            "shortName": "EDP Renewables"
+          },
+          {
+            "ticker": "VWS.DC",
+            "name": "Vestas Wind Systems A/S",
+            "weightPct": 7.25,
+            "shortName": "Vestas Wind Systems"
+          },
+          {
+            "ticker": "916.HK",
+            "name": "China Longyuan Power Group Corporation Limited (Class H)",
+            "weightPct": 5.81,
+            "shortName": "China Longyuan Power H"
+          }
+        ],
+        "basis": "Top five individual equity security positions by reported portfolio weight; share classes and ADRs/GDRs are separate positions; weights are not normalized to equal weight."
+      },
+      "source": {
+        "id": "holdings-FAN",
+        "title": "FAN · First Trust 공식 보유내역 (2026-10-16)",
+        "url": "https://www.ftportfolios.com/Retail/Etf/EtfHoldings.aspx?Ticker=FAN",
+        "note": "First Trust 공식 일별 보유내역 · 실제 보유일 2026-10-16, 2026-10-19 확인. 현금 제외 46개 증권의 비중 내림차순 상위 5종목. 공급사 종목 식별자 그대로 사용; 분류/주식종류를 합산하지 않음. 수익률·미국 완료 거래일은 2026-10-16을 유지."
+      },
+      "evidence": {
+        "retrievedAt": "2026-10-19T14:54:00Z",
+        "sourceAsOf": "2026-10-16",
+        "provider": "First Trust",
+        "holdingsExCash": 46,
+        "scope": "Replace only the FAN holdings object and its same-ID source. Preserve returns, dates, all other securities and earnings.",
+        "oldSource": "https://stockanalysis.com/etf/fan/holdings/",
+        "oldSourceAsOf": "2026-10-14",
+        "basis": "Official full holdings table sorted descending weight. No derived or equal weights."
+      }
+    }
+  ],
+  "preserved": [
+    {
+      "ticker": "BATT",
+      "asOf": "2026-10-13",
+      "reason": "Existing secondary table remains10/13. Official issuer now labels holdings10/19; not a verified10/16 snapshot and not relabelled.",
+      "checkedUrl": "https://amplifyetfs.com/batt/"
+    },
+    {
+      "ticker": "IGV",
+      "asOf": "2026-10-15",
+      "reason": "Official latest-holdings.csv still reports October15 in this retrieval.",
+      "checkedUrl": "https://www.ishares.com/us/products/239771/ishares-expanded-tech-software-sector-etf/latest-holdings.csv"
+    },
+    {
+      "ticker": "IYT",
+      "asOf": "2026-10-15",
+      "reason": "Official latest-holdings.csv still reports October15 in this retrieval.",
+      "checkedUrl": "https://www.ishares.com/us/products/239501/ishares-u-s-transportation-etf/latest-holdings.csv"
+    },
+    {
+      "ticker": "IBB",
+      "asOf": "2026-10-15",
+      "reason": "Official latest-holdings.csv still reports October15 in this retrieval.",
+      "checkedUrl": "https://www.ishares.com/us/products/239699/ishares-biotechnology-etf/latest-holdings.csv"
+    },
+    {
+      "ticker": "LIT",
+      "asOf": "2026-10-16",
+      "reason": "Already dated10/16. Issuer top visible holdings reconfirmed; no change.",
+      "checkedUrl": "https://www.globalxetfs.com/funds/lit/"
+    },
+    {
+      "ticker": "CLOU",
+      "asOf": "2026-10-16",
+      "reason": "Already dated10/16. Issuer top visible holdings reconfirmed; no change.",
+      "checkedUrl": "https://www.globalxetfs.com/funds/clou/"
+    }
+  ]
+}
