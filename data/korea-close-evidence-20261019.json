@@ -1,0 +1,770 @@
+{
+  "schemaVersion": 1,
+  "asOf": "2026-10-19",
+  "indices": {
+    "KOSPI": {
+      "data": {
+        "stockEndType": "index",
+        "itemCode": "KOSPI",
+        "reutersCode": "KOSPI",
+        "symbolCode": "KOSPI",
+        "stockName": "코스피",
+        "itemLogoUrl": "https://ssl.pstatic.net/imgstock/fn/real/logo/index/IndexKOSPI.svg",
+        "itemLogoPngUrl": "https://ssl.pstatic.net/imgstock/fn/real/logo/png/index/IndexKOSPI.png",
+        "closePrice": "5,768.01",
+        "compareToPreviousClosePrice": "99.96",
+        "compareToPreviousPrice": {
+          "code": "2",
+          "text": "상승",
+          "name": "RISING"
+        },
+        "fluctuationsRatio": "1.76",
+        "marketStatus": "CLOSE",
+        "localTradedAt": "2026-10-19T16:15:00+09:00",
+        "stockExchangeType": {
+          "code": "KS",
+          "zoneId": "Asia/Seoul",
+          "nationType": "KOR",
+          "delayTime": 0,
+          "startTime": "0900",
+          "endTime": "1530",
+          "closePriceSendTime": "1630",
+          "nameKor": "코스피",
+          "nameEng": "KOSPI",
+          "stockType": "domestic",
+          "nationCode": "KOR",
+          "nationName": "대한민국",
+          "name": "KOSPI"
+        },
+        "imageCharts": {
+          "candleMonth": "https://financial-vn.pstatic.net/chart/mobile/candle/month/KOSPI_end.png",
+          "day_up": "https://financial-vn.pstatic.net/chart/mobile/mini/KOSPI_end_up.png",
+          "transparent": "https://financial-vn.pstatic.net/chart/mobile/mini/KOSPI_transparent.png",
+          "areaYear": "https://financial-vn.pstatic.net/chart/mobile/area/year/KOSPI_end.png",
+          "day": "https://financial-vn.pstatic.net/chart/mobile/day/KOSPI_end.png",
+          "day_up_tablet": "https://financial-vn.pstatic.net/chart/mobile/mini/KOSPI_end_up_tablet.png",
+          "areaYearTen": "https://financial-vn.pstatic.net/chart/mobile/area/year10/KOSPI_end.png",
+          "candleWeek": "https://financial-vn.pstatic.net/chart/mobile/candle/week/KOSPI_end.png",
+          "candleDay": "https://financial-vn.pstatic.net/chart/mobile/candle/day/KOSPI_end.png",
+          "areaYearThree": "https://financial-vn.pstatic.net/chart/mobile/area/year3/KOSPI_end.png",
+          "areaMonthThree": "https://financial-vn.pstatic.net/chart/mobile/area/month3/KOSPI_end.png"
+        },
+        "scriptChartTypes": [
+          "candleMinuteFive",
+          "candleDay",
+          "candleWeek",
+          "candleMonth",
+          "day",
+          "areaMonthThree",
+          "areaYear",
+          "areaYearThree",
+          "areaYearTen"
+        ],
+        "delayTime": 0,
+        "delayTimeName": "실시간",
+        "endUrl": "https://m.stock.naver.com/domestic/index/KOSPI",
+        "newPcUrl": "https://stock.naver.com/domestic/index/KOSPI",
+        "chartIqEndUrl": "https://m.stock.naver.com/fchart/domestic/index/KOSPI",
+        "nationType": "KOR",
+        "nationName": "대한민국",
+        "imageChartUrlInfo": {
+          "line": {
+            "day": "https://financial-vn.pstatic.net/chart/mobile/day/KOSPI_end.png",
+            "month3": "https://financial-vn.pstatic.net/chart/mobile/area/month3/KOSPI_end.png",
+            "year": "https://financial-vn.pstatic.net/chart/mobile/area/year/KOSPI_end.png",
+            "year3": "https://financial-vn.pstatic.net/chart/mobile/area/year3/KOSPI_end.png",
+            "year5": "https://financial-vn.pstatic.net/chart/mobile/area/year5/KOSPI_end.png",
+            "year10": "https://financial-vn.pstatic.net/chart/mobile/area/year10/KOSPI_end.png"
+          },
+          "candle": {
+            "day": "https://financial-vn.pstatic.net/chart/mobile/candle/day/KOSPI_end.png",
+            "week": "https://financial-vn.pstatic.net/chart/mobile/candle/week/KOSPI_end.png",
+            "month": "https://financial-vn.pstatic.net/chart/mobile/candle/month/KOSPI_end.png"
+          },
+          "mini": {
+            "transparent": "https://financial-vn.pstatic.net/chart/mobile/mini/KOSPI_transparent.png",
+            "dayUp": "https://financial-vn.pstatic.net/chart/mobile/mini/KOSPI_end_up.png",
+            "dayUpTablet": "https://financial-vn.pstatic.net/chart/mobile/mini/KOSPI_end_up_tablet.png"
+          }
+        }
+      },
+      "provenance": {
+        "url": "https://m.stock.naver.com/api/index/KOSPI/basic",
+        "retrievedAt": "2026-10-19T08:18:13.211941+00:00",
+        "responseHeaders": {
+          "date": "Mon, 19 Oct 2026 08:18:13 GMT",
+          "referrer-policy": "unsafe-url",
+          "set-cookie": "XSRF-TOKEN=685fabd9-8221-45f5-bdcf-37a32f1714da; Path=/",
+          "x-content-type-options": "nosniff",
+          "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+          "pragma": "no-cache",
+          "expires": "0",
+          "x-frame-options": "DENY",
+          "p3p": "CP=\"ALL CURa ADMa DEVa TAIa OUR BUS IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC OTC\"",
+          "vary": "User-Agent",
+          "content-type": "application/json;charset=UTF-8",
+          "server": "envoy",
+          "strict-transport-security": "max-age=31536000; includeSubDomains",
+          "x-xss-protection": "1; mode=block",
+          "x-envoy-upstream-service-time": "800",
+          "connection": "close",
+          "transfer-encoding": "chunked"
+        }
+      }
+    },
+    "KOSDAQ": {
+      "data": {
+        "stockEndType": "index",
+        "itemCode": "KOSDAQ",
+        "reutersCode": "KOSDAQ",
+        "symbolCode": "KOSDAQ",
+        "stockName": "코스닥",
+        "itemLogoUrl": "https://ssl.pstatic.net/imgstock/fn/real/logo/index/IndexKOSDAQ.svg",
+        "itemLogoPngUrl": "https://ssl.pstatic.net/imgstock/fn/real/logo/png/index/IndexKOSDAQ.png",
+        "closePrice": "808.89",
+        "compareToPreviousClosePrice": "14.11",
+        "compareToPreviousPrice": {
+          "code": "2",
+          "text": "상승",
+          "name": "RISING"
+        },
+        "fluctuationsRatio": "1.78",
+        "marketStatus": "CLOSE",
+        "localTradedAt": "2026-10-19T16:15:00+09:00",
+        "stockExchangeType": {
+          "code": "KQ",
+          "zoneId": "Asia/Seoul",
+          "nationType": "KOR",
+          "delayTime": 0,
+          "startTime": "0900",
+          "endTime": "1530",
+          "closePriceSendTime": "1630",
+          "nameKor": "코스닥",
+          "nameEng": "KOSDAQ",
+          "stockType": "domestic",
+          "nationCode": "KOR",
+          "nationName": "대한민국",
+          "name": "KOSDAQ"
+        },
+        "imageCharts": {
+          "day_up_tablet": "https://financial-vn.pstatic.net/chart/mobile/mini/KOSDAQ_end_up_tablet.png",
+          "areaYearThree": "https://financial-vn.pstatic.net/chart/mobile/area/year3/KOSDAQ_end.png",
+          "candleWeek": "https://financial-vn.pstatic.net/chart/mobile/candle/week/KOSDAQ_end.png",
+          "transparent": "https://financial-vn.pstatic.net/chart/mobile/mini/KOSDAQ_transparent.png",
+          "day": "https://financial-vn.pstatic.net/chart/mobile/day/KOSDAQ_end.png",
+          "areaYearTen": "https://financial-vn.pstatic.net/chart/mobile/area/year10/KOSDAQ_end.png",
+          "day_up": "https://financial-vn.pstatic.net/chart/mobile/mini/KOSDAQ_end_up.png",
+          "candleDay": "https://financial-vn.pstatic.net/chart/mobile/candle/day/KOSDAQ_end.png",
+          "areaMonthThree": "https://financial-vn.pstatic.net/chart/mobile/area/month3/KOSDAQ_end.png",
+          "candleMonth": "https://financial-vn.pstatic.net/chart/mobile/candle/month/KOSDAQ_end.png",
+          "areaYear": "https://financial-vn.pstatic.net/chart/mobile/area/year/KOSDAQ_end.png"
+        },
+        "scriptChartTypes": [
+          "candleMinuteFive",
+          "candleDay",
+          "candleWeek",
+          "candleMonth",
+          "day",
+          "areaMonthThree",
+          "areaYear",
+          "areaYearThree",
+          "areaYearTen"
+        ],
+        "delayTime": 0,
+        "delayTimeName": "실시간",
+        "endUrl": "https://m.stock.naver.com/domestic/index/KOSDAQ",
+        "newPcUrl": "https://stock.naver.com/domestic/index/KOSDAQ",
+        "chartIqEndUrl": "https://m.stock.naver.com/fchart/domestic/index/KOSDAQ",
+        "nationType": "KOR",
+        "nationName": "대한민국",
+        "imageChartUrlInfo": {
+          "line": {
+            "day": "https://financial-vn.pstatic.net/chart/mobile/day/KOSDAQ_end.png",
+            "month3": "https://financial-vn.pstatic.net/chart/mobile/area/month3/KOSDAQ_end.png",
+            "year": "https://financial-vn.pstatic.net/chart/mobile/area/year/KOSDAQ_end.png",
+            "year3": "https://financial-vn.pstatic.net/chart/mobile/area/year3/KOSDAQ_end.png",
+            "year5": "https://financial-vn.pstatic.net/chart/mobile/area/year5/KOSDAQ_end.png",
+            "year10": "https://financial-vn.pstatic.net/chart/mobile/area/year10/KOSDAQ_end.png"
+          },
+          "candle": {
+            "day": "https://financial-vn.pstatic.net/chart/mobile/candle/day/KOSDAQ_end.png",
+            "week": "https://financial-vn.pstatic.net/chart/mobile/candle/week/KOSDAQ_end.png",
+            "month": "https://financial-vn.pstatic.net/chart/mobile/candle/month/KOSDAQ_end.png"
+          },
+          "mini": {
+            "transparent": "https://financial-vn.pstatic.net/chart/mobile/mini/KOSDAQ_transparent.png",
+            "dayUp": "https://financial-vn.pstatic.net/chart/mobile/mini/KOSDAQ_end_up.png",
+            "dayUpTablet": "https://financial-vn.pstatic.net/chart/mobile/mini/KOSDAQ_end_up_tablet.png"
+          }
+        }
+      },
+      "provenance": {
+        "url": "https://m.stock.naver.com/api/index/KOSDAQ/basic",
+        "retrievedAt": "2026-10-19T08:18:16.514704+00:00",
+        "responseHeaders": {
+          "date": "Mon, 19 Oct 2026 08:18:16 GMT",
+          "referrer-policy": "unsafe-url",
+          "set-cookie": "XSRF-TOKEN=64948a22-1ecf-4788-9503-4578ff012d27; Path=/",
+          "x-content-type-options": "nosniff",
+          "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+          "pragma": "no-cache",
+          "expires": "0",
+          "x-frame-options": "DENY",
+          "p3p": "CP=\"ALL CURa ADMa DEVa TAIa OUR BUS IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC OTC\"",
+          "vary": "User-Agent",
+          "content-type": "application/json;charset=UTF-8",
+          "server": "envoy",
+          "strict-transport-security": "max-age=31536000; includeSubDomains",
+          "x-xss-protection": "1; mode=block",
+          "x-envoy-upstream-service-time": "206",
+          "connection": "close",
+          "transfer-encoding": "chunked"
+        }
+      }
+    }
+  },
+  "flows": {
+    "KOSPI": {
+      "derived": {
+        "date": "2026-10-19",
+        "foreign": 422.37,
+        "institution": 5774.84,
+        "individual": -11675.88,
+        "otherForeign": -19.26,
+        "otherCorporation": 5497.94,
+        "unit": "억원",
+        "residualAllCategoriesKRW": 1000000,
+        "source": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=KOSPI&bizdate=20261019&startIdx=0&pageSize=30",
+        "retrievedAt": "2026-10-19T08:18:00.231334+00:00",
+        "providerTime": "",
+        "note": "NAVER KRX 일별 API의 조회 시점 스냅샷. 기사 잠정 수급과 별도; 원자료에는 일중 기준시각 없음."
+      },
+      "providerRow": {
+        "bizdate": "20261019",
+        "time": "",
+        "netAmounts": [
+          {
+            "investorGubun": "9001",
+            "diffValue": "-1926000000",
+            "sellQuant": "791585",
+            "sellPrice": "17506000000",
+            "buyQuant": "742178",
+            "buyPrice": "15580000000"
+          },
+          {
+            "investorGubun": "9000",
+            "diffValue": "42237000000",
+            "sellQuant": "75062868",
+            "sellPrice": "6386457000000",
+            "buyQuant": "77321046",
+            "buyPrice": "6428694000000"
+          },
+          {
+            "investorGubun": "8000",
+            "diffValue": "-1167588000000",
+            "sellQuant": "148695897",
+            "sellPrice": "5520542000000",
+            "buyQuant": "137135047",
+            "buyPrice": "4352954000000"
+          },
+          {
+            "investorGubun": "7100",
+            "diffValue": "549794000000",
+            "sellQuant": "2220764",
+            "sellPrice": "193653000000",
+            "buyQuant": "2996583",
+            "buyPrice": "743447000000"
+          },
+          {
+            "investorGubun": "7000",
+            "diffValue": "0",
+            "sellQuant": "0",
+            "sellPrice": "0",
+            "buyQuant": "0",
+            "buyPrice": "0"
+          },
+          {
+            "investorGubun": "6000",
+            "diffValue": "215130000000",
+            "sellQuant": "15164598",
+            "sellPrice": "3457542000000",
+            "buyQuant": "18491668",
+            "buyPrice": "3672672000000"
+          },
+          {
+            "investorGubun": "5000",
+            "diffValue": "1032000000",
+            "sellQuant": "55213",
+            "sellPrice": "10171000000",
+            "buyQuant": "137289",
+            "buyPrice": "11203000000"
+          },
+          {
+            "investorGubun": "4000",
+            "diffValue": "1389000000",
+            "sellQuant": "6917",
+            "sellPrice": "555000000",
+            "buyQuant": "11338",
+            "buyPrice": "1944000000"
+          },
+          {
+            "investorGubun": "3100",
+            "diffValue": "-4268000000",
+            "sellQuant": "2274920",
+            "sellPrice": "316737000000",
+            "buyQuant": "2941164",
+            "buyPrice": "312469000000"
+          },
+          {
+            "investorGubun": "3000",
+            "diffValue": "168811000000",
+            "sellQuant": "2881091",
+            "sellPrice": "390101000000",
+            "buyQuant": "3777582",
+            "buyPrice": "558912000000"
+          },
+          {
+            "investorGubun": "2000",
+            "diffValue": "57260000000",
+            "sellQuant": "627613",
+            "sellPrice": "64556000000",
+            "buyQuant": "930842",
+            "buyPrice": "121816000000"
+          },
+          {
+            "investorGubun": "1000",
+            "diffValue": "138130000000",
+            "sellQuant": "9212531",
+            "sellPrice": "1156433000000",
+            "buyQuant": "12509260",
+            "buyPrice": "1294563000000"
+          }
+        ]
+      }
+    },
+    "KOSDAQ": {
+      "derived": {
+        "date": "2026-10-19",
+        "foreign": -1494.05,
+        "institution": 692.16,
+        "individual": 673.24,
+        "otherForeign": -17.2,
+        "otherCorporation": 145.84,
+        "unit": "억원",
+        "residualAllCategoriesKRW": -1000000,
+        "source": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=KOSDAQ&bizdate=20261019&startIdx=0&pageSize=30",
+        "retrievedAt": "2026-10-19T08:18:03.706940+00:00",
+        "providerTime": "",
+        "note": "NAVER KRX 일별 API의 조회 시점 스냅샷. 기사 잠정 수급과 별도; 원자료에는 일중 기준시각 없음."
+      },
+      "providerRow": {
+        "bizdate": "20261019",
+        "time": "",
+        "netAmounts": [
+          {
+            "investorGubun": "9001",
+            "diffValue": "-1720000000",
+            "sellQuant": "1508865",
+            "sellPrice": "12530000000",
+            "buyQuant": "1417868",
+            "buyPrice": "10810000000"
+          },
+          {
+            "investorGubun": "9000",
+            "diffValue": "-149405000000",
+            "sellQuant": "100555819",
+            "sellPrice": "1523792000000",
+            "buyQuant": "101734333",
+            "buyPrice": "1374387000000"
+          },
+          {
+            "investorGubun": "8000",
+            "diffValue": "67324000000",
+            "sellQuant": "306997002",
+            "sellPrice": "2643982000000",
+            "buyQuant": "303096713",
+            "buyPrice": "2711306000000"
+          },
+          {
+            "investorGubun": "7100",
+            "diffValue": "14584000000",
+            "sellQuant": "2588510",
+            "sellPrice": "30276000000",
+            "buyQuant": "3369536",
+            "buyPrice": "44860000000"
+          },
+          {
+            "investorGubun": "7000",
+            "diffValue": "0",
+            "sellQuant": "0",
+            "sellPrice": "0",
+            "buyQuant": "0",
+            "buyPrice": "0"
+          },
+          {
+            "investorGubun": "6000",
+            "diffValue": "-46797000000",
+            "sellQuant": "1544066",
+            "sellPrice": "120852000000",
+            "buyQuant": "1508060",
+            "buyPrice": "74055000000"
+          },
+          {
+            "investorGubun": "5000",
+            "diffValue": "-1424000000",
+            "sellQuant": "68112",
+            "sellPrice": "1727000000",
+            "buyQuant": "11128",
+            "buyPrice": "303000000"
+          },
+          {
+            "investorGubun": "4000",
+            "diffValue": "147000000",
+            "sellQuant": "18139",
+            "sellPrice": "414000000",
+            "buyQuant": "12958",
+            "buyPrice": "561000000"
+          },
+          {
+            "investorGubun": "3100",
+            "diffValue": "-1253000000",
+            "sellQuant": "2890488",
+            "sellPrice": "91543000000",
+            "buyQuant": "2539362",
+            "buyPrice": "90290000000"
+          },
+          {
+            "investorGubun": "3000",
+            "diffValue": "45619000000",
+            "sellQuant": "3740352",
+            "sellPrice": "116916000000",
+            "buyQuant": "4371897",
+            "buyPrice": "162535000000"
+          },
+          {
+            "investorGubun": "2000",
+            "diffValue": "-114000000",
+            "sellQuant": "313917",
+            "sellPrice": "11070000000",
+            "buyQuant": "336490",
+            "buyPrice": "10956000000"
+          },
+          {
+            "investorGubun": "1000",
+            "diffValue": "73038000000",
+            "sellQuant": "8230459",
+            "sellPrice": "225046000000",
+            "buyQuant": "10057384",
+            "buyPrice": "298084000000"
+          }
+        ]
+      }
+    }
+  },
+  "futuresLatest": {
+    "foreignFlows": {
+      "row": {
+        "date": "2026-10-19",
+        "foreign": -345,
+        "buy": 127153,
+        "sell": 127498,
+        "sourceId": "naver-futures-investor-daily"
+      },
+      "sourceIds": [
+        "naver-futures-investor-daily"
+      ]
+    },
+    "openInterest": {
+      "row": {
+        "date": "2026-10-19",
+        "openInterest": 150086,
+        "contractCode": "KR4A016C0004",
+        "sourceId": "daum-kospi200-dec2026-open-interest"
+      },
+      "sourceIds": [
+        "daum-kospi200-dec2026-open-interest"
+      ]
+    }
+  },
+  "volumeCrossCheck": {
+    "asOf": "2026-10-19",
+    "previousSession": "2026-10-16",
+    "scope": "Independent candidate confirmation only, not all-universe volume screening. Exact daily volumeRaw, never rounded displayed K/M values.",
+    "classificationResult": "All four Yahoo-screened candidates also pass absolute price change >=5% and same-provider Investing daily volume ratio >=2.",
+    "regularSessionVolumeCertification": "NOT ESTABLISHED: cross-provider volume disagreements remain. Daily-provider values can be labeled as such; exact regular-session volume coverage cannot be certified from current evidence.",
+    "rows": [
+      {
+        "ticker": "373220.KS",
+        "name": "LG에너지솔루션",
+        "asOf": "2026-10-19",
+        "previousSession": "2026-10-16",
+        "close": 432000.0,
+        "previousClose": 403000.0,
+        "closeMatchYahoo": true,
+        "priceChangePct": 7.196029776674928,
+        "investing": {
+          "currentVolume": 745513,
+          "previousVolume": 361061,
+          "volumeRatio": 2.064784066958215,
+          "priceLastUpdateTimeKST": "2026-10-19T15:29:59+09:00",
+          "historicalCurrentRow": {
+            "direction_color": "greenFont",
+            "rowDate": "2026년 10월 19일",
+            "rowDateRaw": 1792368000,
+            "rowDateTimestamp": "2026-10-19T00:00:00Z",
+            "last_close": "432,000",
+            "last_open": "397,000",
+            "last_max": "433,000",
+            "last_min": "394,500",
+            "volume": "745.51K",
+            "volumeRaw": 745513,
+            "change_precent": "7.20",
+            "last_closeRaw": "432000.00000000000000",
+            "last_openRaw": "397000.00000000000000",
+            "last_maxRaw": "433000.00000000000000",
+            "last_minRaw": "394500.00000000000000",
+            "change_precentRaw": 7.196029776674938
+          },
+          "historicalPreviousRow": {
+            "direction_color": "greenFont",
+            "rowDate": "2026년 10월 16일",
+            "rowDateRaw": 1792108800,
+            "rowDateTimestamp": "2026-10-16T00:00:00Z",
+            "last_close": "403,000",
+            "last_open": "404,000",
+            "last_max": "411,000",
+            "last_min": "397,000",
+            "volume": "361.06K",
+            "volumeRaw": 361061,
+            "change_precent": "0.12",
+            "last_closeRaw": "403000.00000000000000",
+            "last_openRaw": "404000.00000000000000",
+            "last_maxRaw": "411000.00000000000000",
+            "last_minRaw": "397000.00000000000000",
+            "change_precentRaw": 0.12422360248447205
+          },
+          "sourceUrl": "https://kr.investing.com/equities/lg-energy-solution-historical-data",
+          "sha256": "5de396e29cade77aae19c52a153aba83ba27a599f1a448432cfdd5b2e78744b4"
+        },
+        "mbn": {
+          "currentVolume": 745507,
+          "quoteTimeKST": "15:30",
+          "sourceUrl": "https://mbnmoney.mbn.co.kr/stock/item?code=373220"
+        },
+        "yahoo": {
+          "currentVolume": 784754,
+          "previousVolume": 369630,
+          "volumeRatio": 2.1230798365933503
+        },
+        "scopeCaveat": "Exact provider daily volumes disagree. MBN is stamped 15:30; Investing quote time 15:29:59 while dated historical close rows carry same prices. No provider documentation proving complete/identical regular-session scope was obtained. Do not claim Yahoo volumes were independently matched or explain discrepancy as after-hours with certainty.",
+        "passesInvestingSameProviderPriceVolumeScreen": true,
+        "passesYahooSameProviderPriceVolumeScreen": true
+      },
+      {
+        "ticker": "000100.KS",
+        "name": "유한양행",
+        "asOf": "2026-10-19",
+        "previousSession": "2026-10-16",
+        "close": 87400.0,
+        "previousClose": 80400.0,
+        "closeMatchYahoo": true,
+        "priceChangePct": 8.70646766169154,
+        "investing": {
+          "currentVolume": 933025,
+          "previousVolume": 406297,
+          "volumeRatio": 2.2964112459604675,
+          "priceLastUpdateTimeKST": "2026-10-19T15:29:59+09:00",
+          "historicalCurrentRow": {
+            "direction_color": "greenFont",
+            "rowDate": "2026년 10월 19일",
+            "rowDateRaw": 1792368000,
+            "rowDateTimestamp": "2026-10-19T00:00:00Z",
+            "last_close": "87,400",
+            "last_open": "80,500",
+            "last_max": "87,800",
+            "last_min": "80,000",
+            "volume": "933.03K",
+            "volumeRaw": 933025,
+            "change_precent": "8.71",
+            "last_closeRaw": "87400.00000000000000",
+            "last_openRaw": "80500.00000000000000",
+            "last_maxRaw": "87800.00000000000000",
+            "last_minRaw": "80000.00000000000000",
+            "change_precentRaw": 8.706467661691542
+          },
+          "historicalPreviousRow": {
+            "direction_color": "greenFont",
+            "rowDate": "2026년 10월 16일",
+            "rowDateRaw": 1792108800,
+            "rowDateTimestamp": "2026-10-16T00:00:00Z",
+            "last_close": "80,400",
+            "last_open": "76,200",
+            "last_max": "82,100",
+            "last_min": "76,200",
+            "volume": "406.30K",
+            "volumeRaw": 406297,
+            "change_precent": "5.24",
+            "last_closeRaw": "80400.00000000000000",
+            "last_openRaw": "76200.00000000000000",
+            "last_maxRaw": "82100.00000000000000",
+            "last_minRaw": "76200.00000000000000",
+            "change_precentRaw": 5.2356020942408374
+          },
+          "sourceUrl": "https://kr.investing.com/equities/yuhan-historical-data",
+          "sha256": "1f1277f1972ad5ff15095a58574084e836f75d4e1f4b9e21919632ea87fe50d6"
+        },
+        "mbn": {
+          "currentVolume": 962407,
+          "quoteTimeKST": "15:30",
+          "sourceUrl": "https://mbnmoney.mbn.co.kr/stock/item?code=000100"
+        },
+        "yahoo": {
+          "currentVolume": 995830,
+          "previousVolume": 411748,
+          "volumeRatio": 2.418542409434897
+        },
+        "scopeCaveat": "Exact provider daily volumes disagree. MBN is stamped 15:30; Investing quote time 15:29:59 while dated historical close rows carry same prices. No provider documentation proving complete/identical regular-session scope was obtained. Do not claim Yahoo volumes were independently matched or explain discrepancy as after-hours with certainty.",
+        "passesInvestingSameProviderPriceVolumeScreen": true,
+        "passesYahooSameProviderPriceVolumeScreen": true
+      },
+      {
+        "ticker": "020150.KS",
+        "name": "롯데에너지머티리얼즈",
+        "asOf": "2026-10-19",
+        "previousSession": "2026-10-16",
+        "close": 58500.0,
+        "previousClose": 49400.0,
+        "closeMatchYahoo": true,
+        "priceChangePct": 18.421052631578938,
+        "investing": {
+          "currentVolume": 873601,
+          "previousVolume": 432878,
+          "volumeRatio": 2.0181228891281147,
+          "priceLastUpdateTimeKST": "2026-10-19T15:29:59+09:00",
+          "historicalCurrentRow": {
+            "direction_color": "greenFont",
+            "rowDate": "2026년 10월 19일",
+            "rowDateRaw": 1792368000,
+            "rowDateTimestamp": "2026-10-19T00:00:00Z",
+            "last_close": "58,500",
+            "last_open": "47,650",
+            "last_max": "58,900",
+            "last_min": "47,650",
+            "volume": "873.60K",
+            "volumeRaw": 873601,
+            "change_precent": "18.42",
+            "last_closeRaw": "58500.00000000000000",
+            "last_openRaw": "47650.00000000000000",
+            "last_maxRaw": "58900.00000000000000",
+            "last_minRaw": "47650.00000000000000",
+            "change_precentRaw": 18.42105263157895
+          },
+          "historicalPreviousRow": {
+            "direction_color": "redFont",
+            "rowDate": "2026년 10월 16일",
+            "rowDateRaw": 1792108800,
+            "rowDateTimestamp": "2026-10-16T00:00:00Z",
+            "last_close": "49,400",
+            "last_open": "52,900",
+            "last_max": "53,100",
+            "last_min": "48,250",
+            "volume": "432.88K",
+            "volumeRaw": 432878,
+            "change_precent": "-5.18",
+            "last_closeRaw": "49400.00000000000000",
+            "last_openRaw": "52900.00000000000000",
+            "last_maxRaw": "53100.00000000000000",
+            "last_minRaw": "48250.00000000000000",
+            "change_precentRaw": -5.182341650671785
+          },
+          "sourceUrl": "https://kr.investing.com/equities/iljin-materials-historical-data",
+          "sha256": "34e1836f2b4b2e8546911c985b61a0153739f20d81672ded65f32ca8c9daa5a2"
+        },
+        "mbn": {
+          "currentVolume": 873601,
+          "quoteTimeKST": "15:30",
+          "sourceUrl": "https://mbnmoney.mbn.co.kr/stock/item?code=020150"
+        },
+        "yahoo": {
+          "currentVolume": 894563,
+          "previousVolume": 445144,
+          "volumeRatio": 2.0096036338802725
+        },
+        "scopeCaveat": "Exact provider daily volumes disagree. MBN is stamped 15:30; Investing quote time 15:29:59 while dated historical close rows carry same prices. No provider documentation proving complete/identical regular-session scope was obtained. Do not claim Yahoo volumes were independently matched or explain discrepancy as after-hours with certainty.",
+        "passesInvestingSameProviderPriceVolumeScreen": true,
+        "passesYahooSameProviderPriceVolumeScreen": true
+      },
+      {
+        "ticker": "011210.KS",
+        "name": "현대위아",
+        "asOf": "2026-10-19",
+        "previousSession": "2026-10-16",
+        "close": 52100.0,
+        "previousClose": 48650.0,
+        "closeMatchYahoo": true,
+        "priceChangePct": 7.091469681397733,
+        "investing": {
+          "currentVolume": 153624,
+          "previousVolume": 59845,
+          "volumeRatio": 2.5670314980365947,
+          "priceLastUpdateTimeKST": "2026-10-19T15:29:59+09:00",
+          "historicalCurrentRow": {
+            "direction_color": "greenFont",
+            "rowDate": "2026년 10월 19일",
+            "rowDateRaw": 1792368000,
+            "rowDateTimestamp": "2026-10-19T00:00:00Z",
+            "last_close": "52,100",
+            "last_open": "47,800",
+            "last_max": "53,200",
+            "last_min": "47,650",
+            "volume": "153.62K",
+            "volumeRaw": 153624,
+            "change_precent": "7.09",
+            "last_closeRaw": "52100.00000000000000",
+            "last_openRaw": "47800.00000000000000",
+            "last_maxRaw": "53200.00000000000000",
+            "last_minRaw": "47650.00000000000000",
+            "change_precentRaw": 7.091469681397739
+          },
+          "historicalPreviousRow": {
+            "direction_color": "greenFont",
+            "rowDate": "2026년 10월 16일",
+            "rowDateRaw": 1792108800,
+            "rowDateTimestamp": "2026-10-16T00:00:00Z",
+            "last_close": "48,650",
+            "last_open": "47,950",
+            "last_max": "50,000",
+            "last_min": "47,650",
+            "volume": "59.85K",
+            "volumeRaw": 59845,
+            "change_precent": "2.75",
+            "last_closeRaw": "48650.00000000000000",
+            "last_openRaw": "47950.00000000000000",
+            "last_maxRaw": "50000.00000000000000",
+            "last_minRaw": "47650.00000000000000",
+            "change_precentRaw": 2.7455121436114043
+          },
+          "sourceUrl": "https://kr.investing.com/equities/hyundai-wia-historical-data",
+          "sha256": "09e052da87e8b8b4174e974fd5e99a51ce473935f22c9e3a914143820c48f840"
+        },
+        "mbn": {
+          "currentVolume": 158351,
+          "quoteTimeKST": "15:30",
+          "sourceUrl": "https://mbnmoney.mbn.co.kr/stock/item?code=011210"
+        },
+        "yahoo": {
+          "currentVolume": 163473,
+          "previousVolume": 60481,
+          "volumeRatio": 2.7028818967940347
+        },
+        "scopeCaveat": "Exact provider daily volumes disagree. MBN is stamped 15:30; Investing quote time 15:29:59 while dated historical close rows carry same prices. No provider documentation proving complete/identical regular-session scope was obtained. Do not claim Yahoo volumes were independently matched or explain discrepancy as after-hours with certainty.",
+        "passesInvestingSameProviderPriceVolumeScreen": true,
+        "passesYahooSameProviderPriceVolumeScreen": true
+      }
+    ]
+  },
+  "snapshotNotes": [
+    "Cash flows use the same provisional17:18 KST portal snapshot in the archive and domestic analysis.",
+    "Ranking/theme amount providers had estimated quantity-only lists and stale amount periods; previous verified snapshots retained."
+  ]
+}

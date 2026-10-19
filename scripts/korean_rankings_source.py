@@ -35,6 +35,8 @@ def build(refresh=False,previous=None):
    for market in ['KOSPI','KOSDAQ']:
     obj=raw[f'{market}_{inv}_{period}'];source=f'naver-{market.lower()}-{key}-{label}-'+obj['data']['sections']['buyRankList'][0]['bizdateTo'];sids.append(source)
     vs=obj['data']['sections']['buyRankList'];assert len(vs)>=15
+    if any(x.get('estimated') is True for x in vs):
+     raise ValueError('Estimated share ranking has no verified net-buy amount; retain prior amount ranking')
     starts.update(iso(x['bizdateFrom']) for x in vs);ends.update(iso(x['bizdateTo']) for x in vs)
     rows=[{'code':x['itemcode'],'name':x['itemname'],'market':market,'value':int(x['accTradeAmount']),'sourceId':source,'source':obj['url']} for x in vs if eligible(x)]
     assert len(rows)>=15 and all(x['value']>0 for x in rows[:15])

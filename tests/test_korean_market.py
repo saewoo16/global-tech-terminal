@@ -20,6 +20,21 @@ class KoreanMarketTests(unittest.TestCase):
     def test_snapshot_is_valid(self):
         self.assertEqual(validate(self.data), [])
 
+    def test_latest_brief_and_domestic_snapshots_are_consistent(self):
+        archive = json.loads((ROOT / 'data/briefings.json').read_text())
+        latest = max((e for e in archive['entries'] if e['market'] == 'KR'), key=lambda e: e['date'])
+        for row in latest['flows']['rows']:
+            observations = {r['date']: r for r in self.data['flows']['markets'][row['market']]['rows']}
+            if latest['date'] in observations:
+                for field in ['foreign', 'institution', 'individual']:
+                    self.assertEqual(row[field], observations[latest['date']][field])
+        if latest['date'] == self.data['sectorReturns']['asOf']:
+            self.assertEqual([(r['name'], r['day'], r['week'], r['month']) for r in latest['sectors']['rows']],
+                             [(r['name'], r['day'], r['week'], r['month']) for r in self.data['sectorReturns']['rows']])
+        if latest['date'] == self.data['highsScreen']['asOf']:
+            self.assertEqual({r['ticker'] for r in latest['highs']['rows']},
+                             {r['ticker'] for r in self.data['highsScreen']['rows']})
+
     def test_deposits_are_never_split(self):
         data = copy.deepcopy(self.data)
         data['liquidity']['depositScope'] = 'KOSPI'
@@ -122,6 +137,14 @@ class KoreanMarketTests(unittest.TestCase):
         self.assertEqual(result['baskets'][0]['flows']['1d']['foreign']['knownSubtotalKRW'], 123456000)
         self.assertIsNone(result['baskets'][0]['flows']['1d']['foreign']['netBuyKRW'])
 
+    def test_estimated_share_ranking_cannot_become_zero_theme_amounts(self):
+        raw = {'type': 'ST', 'itemcode': '005930', 'accTradeAmount': '0',
+               'bizdateFrom': '20261019', 'bizdateTo': '20261019', 'estimated': True}
+        response = {'url': 'https://stock.naver.com/api/fixture',
+                    'data': {'sections': {'buyRankList': [raw], 'sellRankList': []}}}
+        with self.assertRaisesRegex(ValueError, 'Estimated share ranking'):
+            build_themes(responses={'KOSPI_FOREIGNER_DAY': response})
+
     def test_legacy_basket_history_is_not_rebranded_as_broad(self):
         current = copy.deepcopy(self.data['themes'])
         old_day = min(current['dates'])
@@ -160,6 +183,7 @@ class KoreanMarketTests(unittest.TestCase):
         self.assertTrue(any('near high must be within3pct' in e for e in errors))
         data = copy.deepcopy(self.data)
         row = data['highsScreen']['rows'][0]
+        row['classification'] = 'new_high'
         row['sessionHigh'] = row['prior52WeekHigh']
         self.assertTrue(any('strictly exceed' in e for e in validate(data)))
 

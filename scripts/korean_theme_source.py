@@ -44,6 +44,8 @@ def build(refresh=False, previous=None, responses=None):
                 obj = responses[f'{market}_{api_investor}_{api_period}']
                 for side in ('buyRankList', 'sellRankList'):
                     for raw in obj['data']['sections'][side]:
+                        if raw.get('estimated') is True:
+                            raise ValueError('Estimated share ranking has no verified net-buy amount; retain prior theme snapshot')
                         if raw['type'] != 'ST':
                             continue
                         code = raw['itemcode']

@@ -1,4 +1,5 @@
 import copy
+from datetime import date, timedelta
 import importlib.util
 import json
 from pathlib import Path
@@ -28,7 +29,7 @@ class BriefingDataTests(unittest.TestCase):
                     self.assertIn(row.get('holdings', {}).get('status'), ('verified', 'unverified'))
 
     def test_kodex_machinery_is_not_mislabeled_shipbuilding(self):
-        entry = next(e for e in self.payload['entries'] if e['market'] == 'KR')
+        entry = next(e for e in self.payload['entries'] if e['market'] == 'KR' and e['date'] == '2026-10-16')
         row = next(r for r in entry['sectors']['rows'] if r['ticker'] == '102960.KS')
         self.assertEqual(row['benchmark'], 'KODEX 기계장비')
         self.assertEqual(row['name'], '기계장비(조선 포함)')
@@ -126,10 +127,10 @@ class BriefingDataTests(unittest.TestCase):
         replacement['title'] = 'Updated verified brief'
         result = module.upsert(self.payload, replacement)
         self.assertEqual(len(result['entries']), len(self.payload['entries']))
-        replacement['date'] = '2026-10-19'
+        replacement['date'] = (date.fromisoformat(max(e['date'] for e in self.payload['entries'])) + timedelta(days=1)).isoformat()
         result = module.upsert(result, replacement)
         self.assertEqual(len(result['entries']), len(self.payload['entries'])+1)
-        self.assertEqual(result['entries'][0]['date'], '2026-10-19')
+        self.assertEqual(result['entries'][0]['date'], replacement['date'])
         self.assertEqual(self.payload, original)
 
 if __name__ == '__main__': unittest.main()

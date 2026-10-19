@@ -56,7 +56,8 @@ class KoreanFuturesTests(unittest.TestCase):
         self.assertEqual(section['qualityFlags']['affectedDates'], ['2026-10-16'])
 
     def test_snapshot_actual_foreign_sums_and_flags(self):
-        section = self.data['futures']['foreignFlows']
+        # Fixed, independently audited October 16 checkpoint; live refreshes may append rows.
+        section = {'rows': [r for r in self.data['futures']['foreignFlows']['rows'] if r['date'] <= '2026-10-16']}
         self.assertEqual(len(section['rows']), 730)
         self.assertEqual(section['rows'][-1]['foreign'], -4200)
         for count, expected in [(5, 9580), (21, 6800), (63, 18244), (126, 26101), (252, -34948)]:
@@ -115,9 +116,10 @@ class KoreanFuturesTests(unittest.TestCase):
         part = self.data['futures']['openInterest']
         self.assertEqual(part['holderScope'], 'market')
         self.assertEqual(part['contractCode'], OI_CONTRACT)
-        self.assertEqual(len(part['rows']), 564)
-        self.assertEqual(part['rows'][-1]['openInterest'], 148415)
-        self.assertEqual(part['rows'][-1]['openInterest'] - part['rows'][-2]['openInterest'], -6004)
+        snapshot = [r for r in part['rows'] if r['date'] <= '2026-10-16']
+        self.assertEqual(len(snapshot), 564)
+        self.assertEqual(snapshot[-1]['openInterest'], 148415)
+        self.assertEqual(snapshot[-1]['openInterest'] - snapshot[-2]['openInterest'], -6004)
         self.assertEqual({r['contractCode'] for r in part['rows']}, {OI_CONTRACT})
         data = copy.deepcopy(self.data)
         data['futures']['openInterest']['rows'][0]['contractCode'] = 'different-contract'
