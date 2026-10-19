@@ -204,11 +204,13 @@ class KoreanMarketTests(unittest.TestCase):
         self.assertIn('KOSDAQ', coverage['universeDefinition'])
         self.assertTrue(all(row['market'] in ('KOSPI', 'KOSDAQ') for row in section['rows']))
 
-    def test_existing_tabs_and_fifth_tab_present(self):
+    def test_analysis_tabs_replace_legacy_briefing_view(self):
         html = (ROOT / 'index.html').read_text()
-        for view in ['explorer', 'briefing', 'heatmap', 'rates', 'korea']:
+        for view in ['explorer', 'heatmap', 'rates', 'korea', 'us']:
             self.assertIn(f'id="{view}-panel"', html)
             self.assertIn(f'id="{view}-tab"', html)
+        self.assertNotIn('id="briefing-tab"', html)
+        self.assertNotIn('id="briefing-panel"', html)
         self.assertLess(html.index('data-tradingview-widget="BAMLH0A0HYM2EY"'), html.index('data-tradingview-widget="BAMLH0A0HYM2"'))
 
 

@@ -90,26 +90,7 @@
       },
       "provenance": {
         "url": "https://m.stock.naver.com/api/index/KOSPI/basic",
-        "retrievedAt": "2026-10-19T08:18:13.211941+00:00",
-        "responseHeaders": {
-          "date": "Mon, 19 Oct 2026 08:18:13 GMT",
-          "referrer-policy": "unsafe-url",
-          "set-cookie": "XSRF-TOKEN=685fabd9-8221-45f5-bdcf-37a32f1714da; Path=/",
-          "x-content-type-options": "nosniff",
-          "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
-          "pragma": "no-cache",
-          "expires": "0",
-          "x-frame-options": "DENY",
-          "p3p": "CP=\"ALL CURa ADMa DEVa TAIa OUR BUS IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC OTC\"",
-          "vary": "User-Agent",
-          "content-type": "application/json;charset=UTF-8",
-          "server": "envoy",
-          "strict-transport-security": "max-age=31536000; includeSubDomains",
-          "x-xss-protection": "1; mode=block",
-          "x-envoy-upstream-service-time": "800",
-          "connection": "close",
-          "transfer-encoding": "chunked"
-        }
+        "retrievedAt": "2026-10-19T08:18:13.211941+00:00"
       }
     },
     "KOSDAQ": {
@@ -200,26 +181,7 @@
       },
       "provenance": {
         "url": "https://m.stock.naver.com/api/index/KOSDAQ/basic",
-        "retrievedAt": "2026-10-19T08:18:16.514704+00:00",
-        "responseHeaders": {
-          "date": "Mon, 19 Oct 2026 08:18:16 GMT",
-          "referrer-policy": "unsafe-url",
-          "set-cookie": "XSRF-TOKEN=64948a22-1ecf-4788-9503-4578ff012d27; Path=/",
-          "x-content-type-options": "nosniff",
-          "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
-          "pragma": "no-cache",
-          "expires": "0",
-          "x-frame-options": "DENY",
-          "p3p": "CP=\"ALL CURa ADMa DEVa TAIa OUR BUS IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC OTC\"",
-          "vary": "User-Agent",
-          "content-type": "application/json;charset=UTF-8",
-          "server": "envoy",
-          "strict-transport-security": "max-age=31536000; includeSubDomains",
-          "x-xss-protection": "1; mode=block",
-          "x-envoy-upstream-service-time": "206",
-          "connection": "close",
-          "transfer-encoding": "chunked"
-        }
+        "retrievedAt": "2026-10-19T08:18:16.514704+00:00"
       }
     }
   },
