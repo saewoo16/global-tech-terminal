@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 from korean_futures_source import parse_foreign_page, exact_integer, collect_foreign_flows, update_quality, parse_open_interest, OI_CONTRACT, OI_CONTRACT_NAME
 from validate_korean_market import validate
+from update_korean_market import merge_series
 
 
 class KoreanFuturesTests(unittest.TestCase):
@@ -58,15 +59,28 @@ class KoreanFuturesTests(unittest.TestCase):
     def test_snapshot_actual_foreign_sums_and_flags(self):
         # Fixed, independently audited October 16 checkpoint; live refreshes may append rows.
         section = {'rows': [r for r in self.data['futures']['foreignFlows']['rows'] if r['date'] <= '2026-10-16']}
-        self.assertEqual(len(section['rows']), 730)
+        self.assertGreaterEqual(len(section['rows']), 252)
         self.assertEqual(section['rows'][-1]['foreign'], -4200)
         for count, expected in [(5, 9580), (21, 6800), (63, 18244), (126, 26101), (252, -34948)]:
             rows = section['rows'][-count:]
             self.assertEqual(sum(row['foreign'] for row in rows), expected)
             self.assertEqual(sum(bool(row.get('sourceBalanceWarning')) for row in rows), 6 if count == 252 else 0)
-        self.assertEqual(sum(bool(row.get('sourceBalanceWarning')) for row in section['rows']), 15)
+        observed = {row['date'] for row in section['rows']}
+        expected_flags = set(self.data['futures']['foreignFlows']['qualityFlags']['affectedDates']) & observed
+        self.assertEqual({row['date'] for row in section['rows'] if row.get('sourceBalanceWarning')}, expected_flags)
         for row in section['rows']:
             self.assertEqual(row['buy'] - row['sell'], row['foreign'])
+
+    def test_rolling_history_cutoff_preserves_dynamic_coverage_and_checks(self):
+        data = copy.deepcopy(self.data)
+        section = data['futures']['foreignFlows']
+        original_count = len(section['rows'])
+        next_start = section['rows'][1]['date']
+        merge_series(section, [copy.deepcopy(section['rows'][-1])], next_start)
+        update_quality(section)
+        self.assertEqual(len(section['rows']), original_count - 1)
+        self.assertEqual(section['coverage']['start'], next_start)
+        self.assertEqual(validate(data), [])
 
     def test_validator_rejects_wrong_units_positions_and_fractional_oi(self):
         cases = [('unit', '억원', 'explicit unit'), ('holderScope', 'foreign', 'market-wide')]
@@ -117,7 +131,7 @@ class KoreanFuturesTests(unittest.TestCase):
         self.assertEqual(part['holderScope'], 'market')
         self.assertEqual(part['contractCode'], OI_CONTRACT)
         snapshot = [r for r in part['rows'] if r['date'] <= '2026-10-16']
-        self.assertEqual(len(snapshot), 564)
+        self.assertGreaterEqual(len(snapshot), 2)
         self.assertEqual(snapshot[-1]['openInterest'], 148415)
         self.assertEqual(snapshot[-1]['openInterest'] - snapshot[-2]['openInterest'], -6004)
         self.assertEqual({r['contractCode'] for r in part['rows']}, {OI_CONTRACT})
