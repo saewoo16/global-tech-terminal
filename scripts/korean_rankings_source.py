@@ -19,6 +19,23 @@ def preferred(x):
  return bool(re.search(r'우(?:B|C)?(?:\(전환\))?$',x['itemname'])) and not x['itemcode'].endswith('0')
 def eligible(x):return x.get('type','ST')=='ST' and not preferred(x)
 def iso(s):return f'{s[:4]}-{s[4:6]}-{s[6:]}'
+def validate_period_windows(periods):
+ """Reject mixed publication cycles rather than implying all panels are current."""
+ ends=set()
+ for section in periods.values():
+  for investor in ('foreign','institution'):
+   window=section[investor]['coverage']
+   if window['start']>window['end']:
+    raise ValueError('Invalid provider period window')
+   ends.add(window['end'])
+ if len(ends)!=1:
+  raise ValueError('Mixed provider period end dates; retain prior coherent snapshot')
+ return next(iter(ends))
+
+def validate_turnover_amounts(rows):
+ if any(int(x.get('tradeAmount') or 0)<=0 for x in rows):
+  raise ValueError('Missing/zero placeholder turnover; retain verified prior ranking')
+
 def build(refresh=False,previous=None):
  jobs=[]
  for market in ['KOSPI','KOSDAQ']:
@@ -47,9 +64,11 @@ def build(refresh=False,previous=None):
    start=next(iter(starts));end=next(iter(ends));asof=end
    section[key]={'status':'verified','unit':'KRW','rows':sorted(allrows,key=lambda x:x['value'],reverse=True)[:15],'byMarket':bymarket,'sourceIds':sids,'coverage':{'start':start,'end':end,'sourceCounts':counts,'markets':['KOSPI','KOSDAQ'],'periodType':period},'note':'NAVER 원자료의 외국인/기관 순매수 금액. 각 시장 상위 100개 순매수 목록에서 공급사 유형 ST만 대상으로 우선주 명칭·코드 필터를 적용한 상위 15종목. ST 스팩은 포함하며 RT 리츠·FS 외국주식·DR 예탁증권 및 펀드·ETF·ETN은 제외합니다. 보통주 중심 조회이며 법적 주식종류 전수 검증은 아닙니다. 전체 종목 금액 합계로 사용할 수 없습니다. '+('공급사의 MONTH 실제 조회창은 '+start+'~'+end+'입니다.' if period=='MONTH' else '공급사 집계 시점에 따라 장마감 기사와 값이 다를 수 있습니다.')}
   periods[label]=section
+ asof=validate_period_windows(periods)
  # Latest turnover is returned by the priceTop sort and independently checked against full stock list.
  obj=raw['turnover'];univ=raw['universe']['data'];vs=obj['data'];allcommon=[x for x in univ if eligible(x) and x.get('sosok') in ('0','1')];eligible_top=[x for x in vs if eligible(x) and x.get('sosok') in ('0','1')]
  assert len(eligible_top)>=20 and len(univ)>2000
+ validate_turnover_amounts(eligible_top[:20])
  expected=sorted(allcommon,key=lambda x:int(x['tradeAmount'] or 0),reverse=True)[:20]
  assert [x['itemcode']for x in expected]==[x['itemcode']for x in eligible_top[:20]],'Turnover ranking mismatch'
  exchange=raw['exchange_status']['data'];dates={s['latest']['tradeBaseAt'] for e in exchange['exchanges']for s in e['statuses']if s.get('marketType')in ['KOSPI','KOSDAQ']};assert dates=={asof},(dates,asof)

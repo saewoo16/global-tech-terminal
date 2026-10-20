@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "completedSession": "2026-10-20",
+  "verifiedAt": "2026-10-20T22:01:25.814514+00:00",
+  "responses": [
+    {
+      "id": "KOSPI_FOREIGNER_DAY",
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=FOREIGNER&tradeType=KRX&marketType=KOSPI&startIdx=0&pageSize=100&periodType=DAY",
+      "retrievedAt": "2026-10-20T21:58:48.583889+00:00",
+      "responseSHA256": "33d6df1f873dca87ff93571067bd7feeb62d0a52c678f02ffe1d6d6d3072f4cd",
+      "periodWindows": [
+        [
+          "20261020",
+          "20261020"
+        ]
+      ],
+      "estimatedRows": 0,
+      "rowCount": 200
+    },
+    {
+      "id": "KOSPI_FOREIGNER_WEEK",
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=FOREIGNER&tradeType=KRX&marketType=KOSPI&startIdx=0&pageSize=100&periodType=WEEK",
+      "retrievedAt": "2026-10-20T21:58:48.685838+00:00",
+      "responseSHA256": "ca5c80ae8ad0363c7182313a6c305fe7642131237ffdb379ab2e32d12b0fdf3d",
+      "periodWindows": [
+        [
+          "20261014",
+          "20261020"
+        ]
+      ],
+      "estimatedRows": 0,
+      "rowCount": 200
+    },
+    {
+      "id": "KOSPI_ORGANIZATION_DAY",
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=ORGANIZATION&tradeType=KRX&marketType=KOSPI&startIdx=0&pageSize=100&periodType=DAY",
+      "retrievedAt": "2026-10-20T21:58:48.739078+00:00",
+      "responseSHA256": "ad4a1191d7b7f45bc73a5ec8f185e76db073afe7bf0c65fd707f1df694e4f0ab",
+      "periodWindows": [
+        [
+          "20261020",
+          "20261020"
+        ]
+      ],
+      "estimatedRows": 0,
+      "rowCount": 200
+    },
+    {
+      "id": "KOSPI_FOREIGNER_MONTH",
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=FOREIGNER&tradeType=KRX&marketType=KOSPI&startIdx=0&pageSize=100&periodType=MONTH",
+      "retrievedAt": "2026-10-20T21:58:48.750387+00:00",
+      "responseSHA256": "c97504009bb6d1cc76da381b39cabeeaeb56dc8e030b55be1aea31d5991952ca",
+      "periodWindows": [
+        [
+          "20260917",
+          "20261020"
+        ]
+      ],
+      "estimatedRows": 0,
+      "rowCount": 200
+    },
+    {
+      "id": "KOSDAQ_FOREIGNER_DAY",
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=FOREIGNER&tradeType=KRX&marketType=KOSDAQ&startIdx=0&pageSize=100&periodType=DAY",
+      "retrievedAt": "2026-10-20T21:58:51.165986+00:00",
+      "responseSHA256": "593b7466f73e90799ed8fbc5aa1427b326d82fe22b9b4918adb3790485163894",
+      "periodWindows": [
+        [
+          "20261020",
+          "20261020"
+        ]
+      ],
+      "estimatedRows": 0,
+      "rowCount": 200
+    },
+    {
+      "id": "KOSPI_ORGANIZATION_WEEK",
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=ORGANIZATION&tradeType=KRX&marketType=KOSPI&startIdx=0&pageSize=100&periodType=WEEK",
+      "retrievedAt": "2026-10-20T21:58:51.254226+00:00",
+      "responseSHA256": "3c2eec000db3c66134251dda8873a4c835cd1383e7db7387a13d31a30817fcad",
+      "periodWindows": [
+        [
+          "20261014",
+          "20261020"
+        ]
+      ],
+      "estimatedRows": 0,
+      "rowCount": 200
+    },
+    {
+      "id": "KOSPI_ORGANIZATION_MONTH",
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=ORGANIZATION&tradeType=KRX&marketType=KOSPI&startIdx=0&pageSize=100&periodType=MONTH",
+      "retrievedAt": "2026-10-20T21:58:51.280726+00:00",
+      "responseSHA256": "29d8f07ffa10dab6d10e60ed2455053532ea246f6ef86a829c1316a0d2fbaa06",
+      "periodWindows": [
+        [
+          "20260917",
+          "20261020"
+        ]
+      ],
+      "estimatedRows": 0,
+      "rowCount": 200
+    },
+    {
+      "id": "KOSDAQ_FOREIGNER_WEEK",
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=FOREIGNER&tradeType=KRX&marketType=KOSDAQ&startIdx=0&pageSize=100&periodType=WEEK",
+      "retrievedAt": "2026-10-20T21:58:51.390787+00:00",
+      "responseSHA256": "05f8c77cecf509c8ed984caf934ac7f82c85cf13d03aac3365fed10d3f7d26e4",
+      "periodWindows": [
+        [
+          "20261014",
+          "20261020"
+        ]
+      ],
+      "estimatedRows": 0,
+      "rowCount": 200
+    },
+    {
+      "id": "KOSDAQ_FOREIGNER_MONTH",
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=FOREIGNER&tradeType=KRX&marketType=KOSDAQ&startIdx=0&pageSize=100&periodType=MONTH",
+      "retrievedAt": "2026-10-20T21:58:53.787248+00:00",
+      "responseSHA256": "ce7a968e3cd8c2b4caaadaa1031613c648d1d56751aab15b9e1bc59aae97f003",
+      "periodWindows": [
+        [
+          "20260917",
+          "20261020"
+        ]
+      ],
+      "estimatedRows": 0,
+      "rowCount": 200
+    },
+    {
+      "id": "KOSDAQ_ORGANIZATION_WEEK",
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=ORGANIZATION&tradeType=KRX&marketType=KOSDAQ&startIdx=0&pageSize=100&periodType=WEEK",
+      "retrievedAt": "2026-10-20T21:58:53.792446+00:00",
+      "responseSHA256": "5b30d6926ace43a071323761a9a41bf829ab4335a5f50e0674dd869c6d09392d",
+      "periodWindows": [
+        [
+          "20261014",
+          "20261020"
+        ]
+      ],
+      "estimatedRows": 0,
+      "rowCount": 200
+    },
+    {
+      "id": "KOSDAQ_ORGANIZATION_DAY",
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=ORGANIZATION&tradeType=KRX&marketType=KOSDAQ&startIdx=0&pageSize=100&periodType=DAY",
+      "retrievedAt": "2026-10-20T21:58:53.845379+00:00",
+      "responseSHA256": "5be804fc085e189fb62111921e287600c59142f726182a3aa49fd6f6bd5d871b",
+      "periodWindows": [
+        [
+          "20261020",
+          "20261020"
+        ]
+      ],
+      "estimatedRows": 0,
+      "rowCount": 200
+    },
+    {
+      "id": "KOSDAQ_ORGANIZATION_MONTH",
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=ORGANIZATION&tradeType=KRX&marketType=KOSDAQ&startIdx=0&pageSize=100&periodType=MONTH",
+      "retrievedAt": "2026-10-20T21:58:53.846345+00:00",
+      "responseSHA256": "8ae3c304b76f5eda1a5768ce2495141791dd03df90388725201887089f8d2cb9",
+      "periodWindows": [
+        [
+          "20260917",
+          "20261020"
+        ]
+      ],
+      "estimatedRows": 0,
+      "rowCount": 200
+    },
+    {
+      "id": "exchange_status",
+      "url": "https://stock.naver.com/api/stockSecurity/exchanges/market-status?exchanges=KRX",
+      "retrievedAt": "2026-10-20T21:58:56.472847+00:00",
+      "responseSHA256": "034f437fa13d6e188e581272a6057a0a2d03c1bb6108b1523d32eddac5e0b121",
+      "rowCount": 2
+    },
+    {
+      "id": "turnover",
+      "url": "https://stock.naver.com/api/domestic/market/stock/default?tradeType=KRX&marketType=ALL&orderType=priceTop&startIdx=0&pageSize=100",
+      "retrievedAt": "2026-10-20T21:58:56.488084+00:00",
+      "responseSHA256": "696a94ea8954fc4152420852512a3ee4cb2102b1c8b437e35e1cc2b1d7dff8e8",
+      "rowCount": 100
+    },
+    {
+      "id": "universe",
+      "url": "https://stock.naver.com/api/domestic/market/stock/default?tradeType=KRX&marketType=ALL&orderType=marketSum&startIdx=0&pageSize=4000",
+      "retrievedAt": "2026-10-20T21:58:57.842989+00:00",
+      "responseSHA256": "b7a3c82a4f2ae04823dc37913a4576769a2938c6d725893811d868aefed7bf60",
+      "rowCount": 2869
+    }
+  ],
+  "turnoverCheck": "Top20 eligible source rows exactly match tradeAmount sorting of same-time full universe. All selected values positive. No close-times-volume estimate.",
+  "themeCoverage": "13 themes; foreign and institution each1complete; other12remain explicit partial sums; membership/cap snapshot remains2026-10-19.",
+  "paginationCheck": {
+    "startIdx100_pageSize100": {
+      "buyRankList": 0,
+      "sellRankList": 0
+    },
+    "startIdx0_pageSize2000": {
+      "buyRankList": 100,
+      "sellRankList": 100
+    }
+  },
+  "liquidityOfficialRecheck": {
+    "checkedAt": "2026-10-20T21:58:52.039677+00:00",
+    "checkedAtKST": "2026-10-21T06:58:33+09:00",
+    "officialLatestDate": "2026-10-19",
+    "unit": "million KRW",
+    "investorDeposits": 92096622,
+    "marginLoans": 31108258,
+    "homepage": "https://freesis.kofia.or.kr/stat/main.do",
+    "sourceEvidence": {
+      "deposits": "투자자예탁금 백만원 | 10/19 92,096,622",
+      "margin": "신용융자 백만원 | 10/19 31,108,258",
+      "announcement": "[2026-10-19] 신용공여통계관리 통계가 발표되었습니다."
+    },
+    "publicationRule": {
+      "scope": "신용공여 잔고 추이",
+      "timing": "익일 오후3시~6시",
+      "source": "https://www.kofia.or.kr/voc/m_113/view.do?answer_seq=2298&voc_id=3009",
+      "sourcePublicationDate": "2024-04-03",
+      "openApiTiming": "KOFIA explicitly says unable to answer API timing",
+      "depositTiming": "not independently verified"
+    },
+    "localComparison": "Matches existing data/korea-market.json officialLatestRelease and deposits final row exactly",
+    "conclusion": "Oct19 is current official published data, not a missed Oct20 update. Do not relabel as Oct20 or blend estimated deposits."
+  }
+}
