@@ -67,7 +67,7 @@ python scripts/audit_coverage.py
 - `summary`: `{title, text, sourceIds}` 배열, `indices`: `{name, close, changePct, sourceIds}` 배열
 - `sectors`: `{methodology, note, rows}`. 각 행은 `{name, ticker, benchmark, group, day, week, month, sourceIds}`. 수익률은 백분율 숫자입니다.
 - ETF 행은 `instrumentType: "etf"`, 바스켓은 `"basket"`으로 구분합니다. ETF에는 `holdings: {status:"verified", asOf:"YYYY-MM-DD", sourceIds:[], top5:[{name,ticker,weightPct}]}`를 추가합니다. 운용사 실제 보유내역 기준일·출처와 비중 내림차순의 정확히 5개 보유종목을 기록하며 `티커(종목1 / 종목2 / 종목3 / 종목4 / 종목5)` 형식으로 표시하며 중복되는 ETF 풀네임과 행별 보유비중·기준일·출처 줄은 생략합니다. 실제 기준일과 출처는 하단 출처 목록과 데이터에 보존합니다. 현재 자료를 과거 거래일 자료로 간주하지 않습니다. 확인하지 못한 경우 `{status:"unverified", note:"미확인 이유"}`로 명시하고 추정 종목을 넣지 않습니다. 기존 3종목 바스켓은 ETF 상위 5종목으로 바꾸지 않습니다. 매일 새 분석 작성 때 기준일과 출처를 다시 검증하며 이전 보유내역의 날짜를 자동으로 오늘로 바꾸지 않습니다.
-- `movers` / `highs`: `{criteria, note, rows}`. 각 행은 `{name, ticker, changePct, marketCapUSD, reason, kind, sourceIds}`. 거래량 검증값은 `volumeCurrent`, `volumePrevious`, `volumeChangePct`에 기록합니다.
+- `movers` / `highs`: `{criteria, note, rows}`. 각 행은 `{name, ticker, changePct, marketCapUSD, reason, kind, sourceIds}`. 거래량 검증값은 `volumeCurrent`, `volumePrevious`, `volumeChangePct`에 기록합니다. 국내 `movers.rows[].news`는 선택 필드 `{text, date, kind: "reported-context", sourceIds}`이며, 검증된 관련 뉴스가 있을 때만 짧게 표시합니다. 뉴스 날짜와 출처를 함께 보이고, 보도된 배경과 입증된 가격 원인을 구분합니다. 없으면 빈 문구를 추가하지 않습니다. 기존 `reason`은 선별 근거로 접힌 출처 영역에 보존합니다.
 - `earnings`: `{note, rows}`. 각 행은 `{name, ticker, period, summary, metrics:[{label,value}], callHighlights:[], sourceIds}`. `callHighlights`에는 확인한 자료 유형을 명시합니다.
 - `flows`: `{unit, asOf, note, sourceIds, rows:[{market, foreign, institution, individual}]}`. 양수는 순매수입니다.
 - `watchlist` / `limitations`: 문자열 배열
@@ -285,3 +285,11 @@ node tests/test_korea_ui.cjs
 수집 전과 **모든 데이터 갱신·백필·커버리지 감사 후** `bash scripts/validate_publication.sh`를 실행합니다. Python 회귀 테스트 전체, 모든 UI 테스트, 미국·국내 분석 스키마 및 보존된 브리핑 아카이브 검사를 다시 통과한 후보만 커밋·푸시합니다. 실패하면 저장 단계에 도달하지 않으므로 검증 실패 후보가 기존 공개 자료를 덮어쓰지 않습니다. 이 검사는 네트워크 요청이나 데이터 수정을 하지 않으며 새 인증정보·권한을 요구하지 않습니다.
 
 공식 완료 세션 확인, 독립 원천 검증, 패널별 실제 기준일 검증을 포함하는 전체 분석 수집기의 통합은 별도 작업입니다. 일부 시계열 수집 성공이나 스키마 검사 통과를 전체 당일 분석 완료로 표시하지 않습니다.
+
+## 국내 업종별/테마별 ETF 차트
+
+- `#etf` 탭은 국내 상장 업종·테마 ETF 38개를 제공하며, 주요 업종과 로봇·2차전지·우주항공·반도체 소부장/전공정/후공정·전력 등 세부 테마를 구분합니다. KODEX/TIGER를 우선하고 세부 공급망은 SOL을 보완합니다. 전체 시장의 모든 ETF를 전수 비교해 최적 상품을 선정했다는 뜻은 아닙니다. 작은 업종 ETF는 유동성이 낮을 수 있어 실제 기준일의 시가총액·거래량을 함께 표시합니다.
+- 실제 NAVER KRX 일별 OHLCV와 실제 장중 관측값을 `data/korean_etf_charts.json`에 보관합니다. 일봉 기간은 3·6·12개월이고, 당일은 실제 1분 관측 선형 차트입니다. 무거래 시간은 원천에 없을 수 있고 시간외 가격도 포함됩니다. 일봉으로 당일 가격을 합성하지 않습니다. 최근 상장 ETF는 상장 이후 확보된 이력만 표시합니다.
+- 순자산(AUM)과 ETF 시가총액은 다른 값입니다. 공식 순자산을 확보하지 못한 경우 `aumKRW: null`을 유지하고 시가총액을 명확히 표시합니다. 거래대금 미확보 시 실제 거래량을 표시하며 0으로 대체하지 않습니다. 분배금/공급사 가격 조정에 따라 가격 수익률은 총수익률과 다를 수 있습니다.
+- `python scripts/update_korean_etf_charts.py`로 현재 공개 자료를 수집합니다. 표준 라이브러리만 사용하며 신규 인증정보가 필요하지 않습니다. 개별 실패는 기존 유효 자료와 원래 기준일을 보존합니다. 공개 비공식 API는 변경·제한될 수 있습니다. 데이터 스키마 검증과 UI 테스트를 전체 게시 검증에 포함합니다.
+- `sourceUrls`, `metadataAsOf`, `intraday.asOf`, `dailyCoverage`를 보존합니다. 차트는 게시된 스냅샷이지 실시간 호가가 아닙니다. 목록의 1개월 수익률은 이전 1개월 달력 기준일 이전의 마지막 관측 종가 대비이며, 확보된 이전 관측이 없으면 미확인으로 남깁니다.

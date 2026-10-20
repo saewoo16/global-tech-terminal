@@ -43,6 +43,9 @@ jobs:
       - name: Update Korean market series and preserve valid snapshots
         run: python scripts/update_korean_market.py
 
+      - name: Update Korean industry and theme ETF charts
+        run: python scripts/update_korean_etf_charts.py
+
       - name: Backfill Japanese financials
         run: python scripts/patch_japan_financials.py
 

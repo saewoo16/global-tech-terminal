@@ -1,0 +1,9 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
+const root=path.resolve(__dirname,'..'),raw=fs.readFileSync(root+'/assets/korean-etf.js','utf8'),html=fs.readFileSync(root+'/index.html','utf8');
+const ctx={URL,Date,Number,String,Math,Array,console,document:{readyState:'loading',addEventListener(){}},window:{}};vm.createContext(ctx);vm.runInContext(raw.replace('window.TerminalETF={returns,series,safeURL}','window.TerminalETF={returns,series,safeURL,esc,setPeriod:p=>period=p}'),ctx);const a=ctx.window.TerminalETF;
+assert(html.includes('id="etf-tab"'));assert(html.includes('국내 업종별/테마별 차트'));assert(html.includes('id="etf-panel"'));
+assert.equal(a.safeURL('javascript:alert(1)'),'#');assert.equal(a.safeURL('https://example.com/a'),'https://example.com/a');assert.equal(a.esc('<script>'),'&lt;script&gt;');
+const f={daily:[{date:'2026-07-20',open:90,high:110,low:80,close:100},{date:'2026-09-18',close:120},{date:'2026-10-20',close:132}],intraday:{date:'2026-10-20',points:[{time:'09:00',price:130},{time:'09:03',price:132}]}};
+assert(Math.abs(a.returns(f)-10)<1e-8);assert.equal(a.returns({daily:[]}),null);a.setPeriod('day');assert.equal(a.series(f).length,2);assert.equal(a.series(f)[0].label,'09:00');assert.equal(a.series({daily:f.daily}).length,0,'Never resample daily data to fake intraday');a.setPeriod('3');assert.equal(a.series(f).length,3);
+assert(raw.includes("{cache:'no-store'}"));assert(raw.includes('p.high'));assert(raw.includes('p.low'));assert(raw.includes('onpointermove'));assert(raw.includes('무')||raw.includes('수집된 실제 장중'));
+console.log('PASS ETF navigation, OHLC/intraday separation, calendar ranges, real price returns, source URL/XSS safety, cache refresh, pointer inspection');
