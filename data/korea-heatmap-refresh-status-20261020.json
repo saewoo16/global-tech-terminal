@@ -1,0 +1,11 @@
+{
+  "asOf": "2026-10-20",
+  "status": "verified_partial_coverage",
+  "validCount": 2480,
+  "eligibleCount": 2600,
+  "haltedCount": 109,
+  "missingCount": 11,
+  "fullUniverseAttempt": true,
+  "arithmeticProvenanceChecksPassed": 12410,
+  "note": "거래정지와 미확인은 명시적으로 제외하며 미확인값을0으로 채우지 않습니다."
+}

@@ -47,11 +47,19 @@ def as_number(value):
 
 
 def merge_series(section, rows, cutoff):
-    """Merge real observations, never replace old data with an empty fetch."""
+    """Merge real observations without silently revising archived snapshots.
+
+    A stored snapshotPolicy marks a deliberately frozen, sourced observation
+    shared with the closing archive. Generic collection cannot update that row
+    independently of its archive and explanatory notes. Explicit coordinated
+    revisions must replace the snapshot outside this generic merge.
+    """
     if not rows:
         raise ValueError('empty observation result')
     merged = {row['date']: row for row in section.get('rows', [])}
     for row in rows:
+        if merged.get(row['date'], {}).get('snapshotPolicy'):
+            continue
         merged[row['date']] = row
     section['rows'] = [row for day, row in sorted(merged.items()) if day >= cutoff]
     section['coverage'].update(start=section['rows'][0]['date'], end=section['rows'][-1]['date'], count=len(section['rows']))

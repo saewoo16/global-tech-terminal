@@ -21,6 +21,57 @@ def market_time(value):
     return parsed.astimezone(ET)
 
 
+def validate_fx(rows):
+    """FX timestamps are observations, never an exchange-close assertion."""
+    assert isinstance(rows, list)
+    for row in rows:
+        assert row.get('name') and row.get('basis'), 'FX needs name and observation/comparison basis'
+        if 'decimals' in row:
+            assert isinstance(row['decimals'], int) and not isinstance(row['decimals'], bool) and 0 <= row['decimals'] <= 8
+        value = row.get('value')
+        change = row.get('changePct')
+        if value is None:
+            assert change is None, 'Unknown FX value cannot have a verified percentage'
+        else:
+            assert finite_number(value) and value > 0
+            assert row.get('sourceIds'), 'FX observation requires a source'
+            market_time(row.get('observedAt'))
+        assert change is None or finite_number(change)
+        if row.get('observedAt') is not None:
+            market_time(row['observedAt'])
+
+
+def validate_unusual_movers(screen, member_symbols, date):
+    """Validate exact two-session volume and price filters within a stated universe."""
+    assert isinstance(screen, dict)
+    assert screen.get('criteria') and screen.get('note') and screen.get('sourceIds')
+    coverage = screen.get('coverage', {})
+    assert coverage.get('universe') == 'S&P 500', 'Screen must state its actual universe'
+    for key in ('selected', 'volumeValid', 'missingCount'):
+        count = coverage.get(key)
+        assert isinstance(count, int) and not isinstance(count, bool) and count >= 0
+    assert coverage['selected'] == coverage['volumeValid'] + coverage['missingCount']
+    if member_symbols:
+        assert coverage['selected'] == len(member_symbols), 'Coverage must include the stated S&P 500 membership'
+    assert dt.date.fromisoformat(coverage['previousSession']) < date
+    rows = screen.get('rows')
+    assert isinstance(rows, list) and len(rows) <= coverage['volumeValid']
+    assert len({r['ticker'] for r in rows}) == len(rows), 'Duplicate unusual-mover row'
+    for row in rows:
+        assert not member_symbols or row['ticker'] in member_symbols
+        assert row.get('name') and row.get('sector') and row.get('sourceIds')
+        assert finite_number(row.get('changePct')) and abs(row['changePct']) >= 5
+        for key in ('volumeCurrent', 'volumePrevious'):
+            volume = row.get(key)
+            assert isinstance(volume, int) and not isinstance(volume, bool) and 0 < volume <= 2**53 - 1, 'Exact positive share volumes required'
+        ratio = row['volumeCurrent'] / row['volumePrevious']
+        assert ratio >= 2, 'Volume must be at least twice the previous session'
+        assert finite_number(row.get('volumeRatio')) and math.isclose(row['volumeRatio'], ratio, rel_tol=0, abs_tol=1e-9), 'Volume ratio must use exact two-session volumes'
+        assert isinstance(row.get('reasonVerified'), bool)
+        if row['reasonVerified']:
+            assert row.get('reason')
+
+
 def validate_earnings_prices(row):
     # Optional additive fields keep historical schemaVersion 1 rows readable.
     if 'releaseTiming' not in row and 'priceReaction' not in row:
@@ -106,6 +157,8 @@ def validate(payload):
                 for v in value: walk(v)
             elif isinstance(value, float): assert math.isfinite(value)
         walk(e)
+        if 'fx' in e:
+            validate_fx(e['fx'])
         for row in e['sectors']['rows']:
             for k in ('day','week','month'):
                 assert row.get(k) is None or isinstance(row[k], (int,float))
@@ -115,6 +168,8 @@ def validate(payload):
         member_symbols={r['ticker'] for r in e.get('constituents',[])}
         if member_symbols:
             assert len(member_symbols)>=500
+        if 'unusualMovers' in e:
+            validate_unusual_movers(e['unusualMovers'], member_symbols, date)
         highs=e.get('highs',{}).get('rows',[])
         assert len({r['ticker'] for r in highs}) == len(highs)
         for r in highs:

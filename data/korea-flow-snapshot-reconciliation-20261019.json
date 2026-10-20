@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "tradeDate": "2026-10-19",
+  "policy": "Preserve the explicitly labelled 17:18 KST provisional closing-archive snapshot in the main series. Later differing provider values are not declared incorrect, are retained here, and must not be represented as the same 17:18 observation. A coordinated archive and source-note revision can adopt a later snapshot. New trading sessions continue to append normally.",
+  "priorPublishedRevision": "e361e9d",
+  "laterGenericRefreshRows": {
+    "KOSPI": {
+      "date": "2026-10-19",
+      "foreign": 961.85,
+      "institution": 5301.66,
+      "individual": -11766.9,
+      "otherForeign": -14.53,
+      "otherCorporation": 5517.92,
+      "source": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=KOSPI&bizdate=20261019&startIdx=0&pageSize=30"
+    },
+    "KOSDAQ": {
+      "date": "2026-10-19",
+      "foreign": -1597.74,
+      "institution": 686.05,
+      "individual": 782.96,
+      "otherForeign": -20.41,
+      "otherCorporation": 149.14,
+      "source": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=KOSDAQ&bizdate=20261019&startIdx=0&pageSize=30"
+    }
+  },
+  "laterGenericRefreshTimestampCaveat": "Exact retrieval time is not attached to these prior published rows; their values and source URLs are retained without inventing a timestamp or finality claim.",
+  "retainedClosingArchiveRows": {
+    "KOSPI": {
+      "date": "2026-10-19",
+      "foreign": 422.37,
+      "institution": 5774.84,
+      "individual": -11675.88,
+      "otherForeign": -19.26,
+      "otherCorporation": 5497.94,
+      "source": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=KOSPI&bizdate=20261019&startIdx=0&pageSize=30",
+      "retrievedAt": "2026-10-19T08:18:00.231334+00:00",
+      "snapshotPolicy": "Preserved 17:18 KST provisional observation, consistent with the dated closing archive",
+      "sourceId": "naver_flow_kospi_1019"
+    },
+    "KOSDAQ": {
+      "date": "2026-10-19",
+      "foreign": -1494.05,
+      "institution": 692.16,
+      "individual": 673.24,
+      "otherForeign": -17.2,
+      "otherCorporation": 145.84,
+      "source": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=KOSDAQ&bizdate=20261019&startIdx=0&pageSize=30",
+      "retrievedAt": "2026-10-19T08:18:03.706940+00:00",
+      "snapshotPolicy": "Preserved 17:18 KST provisional observation, consistent with the dated closing archive",
+      "sourceId": "naver_flow_kosdaq_1019"
+    }
+  },
+  "retainedRawEvidenceFile": "data/korea-close-evidence-20261019.json"
+}

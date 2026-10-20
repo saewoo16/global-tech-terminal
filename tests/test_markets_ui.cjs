@@ -26,20 +26,21 @@ assert.equal(api.imageUrl('BAMLH0A0HYM2',api.range()),'');api.boot();assert(elem
 context.window.location.hash='#rates';listeners.get('hashchange')();assert.equal(elements[0].children.length,3);assert.equal(elements[7].children.length,0);
 for(const el of elements.slice(0,7)){const [image,status]=el.children;assert(image.src.startsWith('https://fred.stlouisfed.org/graph/fredgraph.png?'));assert(image.src.includes('cosd='));image.onload();assert(status.textContent.includes('최신 관측일'));image.onerror();assert(image.hidden);assert(status.textContent.includes('불러오지 못했습니다'));el.children[2].onclick();assert.equal(image.hidden,false);assert(image.src.includes('width=1200'));el.children[2].onclick();assert(image.src.includes('width=1100'));}
 api.load();assert.equal(elements[0].children.length,3);
-assert(html.includes('https://finviz.com/widgets/map?t=sec&amp;st=d1&amp;theme=dark'));assert(!html.includes('src="https://finviz.com/map'));
+assert(!html.includes('id="heatmap-panel"'));assert(!html.includes('data-view="heatmap"'));
 for(const id of ['BAMLH0A0HYM2','BAMLH0A0HYM2EY']){assert(html.includes('https://fred.stlouisfed.org/series/'+id));assert(!html.includes('data-fred-series="'+id+'"'));}
 for(const match of html.matchAll(/<iframe\b[^>]*>/g)){assert(match[0].includes('title='));assert(match[0].includes('loading="lazy"'));}
-console.log('PASS macro ranges, leap days, public-domain allowlist, lazy tab load, missing-image fallback, repeat visits, original links, and official FINVIZ embed');
+console.log('PASS macro ranges, leap days, public-domain allowlist, lazy tab load, missing-image fallback, repeat visits, original links, and retired standalone heatmap');
 
-const heatmap=html.split('<section id="heatmap-panel"')[1].split('</section>')[0];
-assert.equal((heatmap.match(/<iframe /g)||[]).length,1);
-for(const [period,label] of [['w1','1주일'],['w4','1개월']]){
- const link=`<a class="button" href="https://finviz.com/map?st=${period}" target="_blank" rel="noopener noreferrer">${label} 맵 열기 ↗</a>`;
- assert(heatmap.includes(link));assert(heatmap.indexOf(link)>heatmap.indexOf('</iframe>'));
+// The remaining FINVIZ map lives inside US analysis; domestic maps use their own renderer.
+const heatmap=fs.readFileSync(root+'/assets/us-analysis.js','utf8');
+assert(heatmap.includes('id="us-heatmap"'));
+assert(heatmap.includes('https://finviz.com/widgets/map?t=sec&amp;st=d1&amp;theme=dark'));
+for(const period of ['w1','w4']){
+ assert(heatmap.includes(`href="https://finviz.com/map.ashx?t=sec&amp;st=${period}" target="_blank" rel="noopener noreferrer"`));
  assert(!heatmap.includes(`widgets/map?t=sec&amp;st=${period}`));
 }
-assert(heatmap.includes('새 탭으로 열립니다'));
-console.log('PASS weekly/monthly original links below unchanged daily embed, exact URLs, new-tab protections, and no restricted period iframes');
+assert(fs.readFileSync(root+'/assets/korea.js','utf8').includes('id="kr-heatmaps"'));
+console.log('PASS embedded domestic/US maps, official daily FINVIZ embed, protected weekly/monthly original links, and no restricted period iframes');
 
 const cards=[...html.matchAll(/<article class="rate-card(?: rate-link-card)?" data-series="([^"]+)"/g)].map(m=>m[1]);
 assert.deepEqual(cards,['DGS10','BAMLH0A0HYM2EY','BAMLH0A0HYM2','HQMCB10YRP','US594918BC73','DCOILWTICO','DCOILBRENTEU','DTWEXBGS','DEXJPUS','DEXKOUS']);

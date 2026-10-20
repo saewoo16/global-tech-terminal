@@ -3,7 +3,7 @@
   'use strict';
   const el=id=>document.getElementById(id);
   const date=value=>typeof value==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(value)&&Number.isFinite(Date.parse(value))&&new Date(value).toISOString().slice(0,10)===value;
-  const views=['explorer','heatmap','rates','korea','us'];
+  const views=['explorer','rates','korea','us'];
   let entries=[], loading=false, failed=false, activeView='explorer', lastLoaded=0;
   function view(name) {
     activeView=views.includes(name)?name:'explorer';
@@ -13,8 +13,8 @@
   }
   function route() {
     const parts=window.location.hash.slice(1).split('/');
-    if(parts[0]==='briefing') {
-      const target=parts[1]==='KR'?'korea':'us',hash='#'+target+(date(parts[2])?'/'+parts[2]:'');
+    if(parts[0]==='briefing'||parts[0]==='heatmap') {
+      const target=parts[0]==='briefing'&&parts[1]==='KR'?'korea':'us',hash='#'+target+(parts[0]==='briefing'&&date(parts[2])?'/'+parts[2]:'');
       // Replace the obsolete route so browser Back does not loop through it.
       if(window.history?.replaceState)window.history.replaceState(null,'',hash);else window.location.hash=hash;
       view(target);

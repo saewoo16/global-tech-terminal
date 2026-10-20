@@ -141,7 +141,15 @@ class KoreanFuturesTests(unittest.TestCase):
 
     def test_classification_is_exact_single_source_join_and_preserves_cap(self):
         mapping = json.loads((ROOT / 'data/korea-heatmap-industries.json').read_text())
-        self.assertEqual(mapping['coverage']['classified'], 2440)
+        rows = [row for part in self.data['heatmaps']['markets'].values() for row in part['rows']]
+        codes = {row['code'] for row in rows}
+        self.assertEqual(len(codes), len(rows))
+        self.assertEqual(set(mapping['byCode']), codes)
+        self.assertEqual(mapping['coverage']['total'], len(rows))
+        self.assertEqual(mapping['coverage']['classified'], len(rows))
+        self.assertEqual(mapping['coverage']['unclassified'], 0)
+        self.assertEqual(mapping['asOf'], self.data['heatmaps']['classification']['asOf'])
+        self.assertLessEqual(mapping['asOf'], self.data['heatmaps']['asOf'])
         self.assertEqual(mapping['conflictsInUniverse'], [])
         self.assertEqual(mapping['unclassified'], [])
         for part in self.data['heatmaps']['markets'].values():

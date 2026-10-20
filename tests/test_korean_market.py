@@ -70,6 +70,24 @@ class KoreanMarketTests(unittest.TestCase):
                 self.assertEqual(series['rows'], [])
                 self.assertTrue(series['note'])
 
+    def test_incremental_merge_preserves_explicit_archived_snapshot(self):
+        frozen = {'date': '2026-10-19', 'foreign': 422.37,
+                  'snapshotPolicy': 'Preserved 17:18 KST provisional observation',
+                  'retrievedAt': '2026-10-19T08:18:00.231334+00:00',
+                  'sourceId': 'naver_flow_kospi_1019'}
+        section = {'rows': [{'date': '2026-10-16', 'foreign': 1}, copy.deepcopy(frozen)],
+                   'coverage': {}, 'status': 'verified'}
+        merge_series(section, [
+            {'date': '2026-10-16', 'foreign': 2},
+            {'date': '2026-10-19', 'foreign': 961.85},
+            {'date': '2026-10-20', 'foreign': 3},
+        ], '2023-10-17')
+        self.assertEqual(section['rows'][1], frozen)
+        self.assertEqual(section['rows'][0]['foreign'], 2)
+        self.assertEqual(section['rows'][2]['foreign'], 3)
+        self.assertEqual(section['coverage']['end'], '2026-10-20')
+        self.assertEqual(section['coverage']['count'], 3)
+
     def test_incremental_merge_preserves_good_history(self):
         section = {'rows': [{'date': '2026-10-12', 'value': 1}, {'date': '2026-10-13', 'value': 2}], 'coverage': {}}
         merge_series(section, [{'date': '2026-10-13', 'value': 3}, {'date': '2026-10-14', 'value': 4}], '2023-10-17')
@@ -177,7 +195,7 @@ class KoreanMarketTests(unittest.TestCase):
 
     def test_near_high_distance_and_true_high_checked(self):
         data = copy.deepcopy(self.data)
-        data['highsScreen']['rows'][0]['distancePct'] = -5
+        next(row for row in data['highsScreen']['rows'] if row['classification'] == 'near_high')['distancePct'] = -5
         errors = validate(data)
         self.assertTrue(any('high-distance mismatch' in e for e in errors))
         self.assertTrue(any('near high must be within3pct' in e for e in errors))
@@ -197,6 +215,12 @@ class KoreanMarketTests(unittest.TestCase):
 
     def test_latest_turnover_excludes_konex_from_denominator(self):
         section = self.data['rankings']['daily'][max(self.data['rankings']['daily'])]['tradedValue']
+        if section['status'] == 'unavailable':
+            self.assertEqual(section['rows'], [])
+            self.assertTrue(section['note'])
+            # A fresh unavailable session must not masquerade as an older verified ranking.
+            self.assertEqual(section['coverage']['end'], max(self.data['rankings']['daily']))
+            section = next(self.data['rankings']['daily'][d]['tradedValue'] for d in sorted(self.data['rankings']['daily'], reverse=True) if self.data['rankings']['daily'][d]['tradedValue']['status'] == 'verified')
         coverage = section['coverage']
         self.assertEqual(coverage['marketUniverseCount'] + coverage['excludedOtherMarketCount'], coverage['sourceUniverseCount'])
         self.assertLessEqual(coverage['eligibleStockCount'], coverage['marketUniverseCount'])
@@ -204,13 +228,14 @@ class KoreanMarketTests(unittest.TestCase):
         self.assertIn('KOSDAQ', coverage['universeDefinition'])
         self.assertTrue(all(row['market'] in ('KOSPI', 'KOSDAQ') for row in section['rows']))
 
-    def test_analysis_tabs_replace_legacy_briefing_view(self):
+    def test_analysis_tabs_replace_standalone_legacy_views(self):
         html = (ROOT / 'index.html').read_text()
-        for view in ['explorer', 'heatmap', 'rates', 'korea', 'us']:
+        for view in ['explorer', 'rates', 'korea', 'us']:
             self.assertIn(f'id="{view}-panel"', html)
             self.assertIn(f'id="{view}-tab"', html)
-        self.assertNotIn('id="briefing-tab"', html)
-        self.assertNotIn('id="briefing-panel"', html)
+        for view in ['briefing', 'heatmap']:
+            self.assertNotIn(f'id="{view}-tab"', html)
+            self.assertNotIn(f'id="{view}-panel"', html)
         self.assertLess(html.index('data-tradingview-widget="BAMLH0A0HYM2EY"'), html.index('data-tradingview-widget="BAMLH0A0HYM2"'))
 
 
