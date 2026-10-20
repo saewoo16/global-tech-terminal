@@ -30,16 +30,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Validate updater regression tests
-        run: |
-          python -m unittest discover -s tests -v
-          node tests/test_ui.cjs
-          node tests/test_briefing_ui.cjs
-          node tests/test_markets_ui.cjs
-          node tests/test_korea_ui.cjs
-          node tests/test_us_analysis_ui.cjs
-          python scripts/validate_us_analysis.py
-          python scripts/validate_korean_market.py
-          python scripts/manage_briefings.py
+        run: bash scripts/validate_publication.sh
 
       - name: Save coverage baseline
         run: cp data/market.json /tmp/market-baseline.json
@@ -63,6 +54,11 @@ jobs:
 
       - name: Audit every company and reject coverage regressions
         run: python scripts/audit_coverage.py --baseline /tmp/market-baseline.json
+
+      # Validate the actual refreshed candidate, not only the checkout baseline.
+      # Any failure stops the job before git add, commit, or push.
+      - name: Validate refreshed publication candidate
+        run: bash scripts/validate_publication.sh
 
       - name: Save updated data
         run: |

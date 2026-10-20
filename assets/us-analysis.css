@@ -3,3 +3,4 @@
 .us-earnings-prices{font-size:13px;font-weight:500;line-height:1.8;overflow-wrap:anywhere}.us-earnings-prices small{white-space:nowrap}.us-earnings-head h4{line-height:1.9}
 
 .us-fx{margin-top:22px}
+.us-quarterly{margin:24px 0}.us-quarterly h4,.us-consensus h4{font-size:14px;margin:0 0 10px}.us-quarterly table{min-width:520px}.us-quarterly th:not(:first-child),.us-quarterly td{text-align:right;font-variant-numeric:tabular-nums}.us-consensus{padding:15px 18px;margin-top:16px;background:#13243a;border:1px solid var(--line);border-radius:9px}.us-consensus p{font-size:12px;line-height:1.9;margin:6px 0}.us-earnings-summary{font-size:13px;line-height:1.9;margin:20px 0}.us-call li{margin-bottom:12px;line-height:1.9}
