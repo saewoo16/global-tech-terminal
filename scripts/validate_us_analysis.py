@@ -41,12 +41,19 @@ def validate_fx(rows):
             market_time(row['observedAt'])
 
 
-def validate_unusual_movers(screen, member_symbols, date):
+def validate_unusual_movers(screen, member_symbols, date, cap500=False):
     """Validate exact two-session volume and price filters within a stated universe."""
     assert isinstance(screen, dict)
     assert screen.get('criteria') and screen.get('note') and screen.get('sourceIds')
     coverage = screen.get('coverage', {})
-    assert coverage.get('universe') == 'S&P 500', 'Screen must state its actual universe'
+    assert coverage.get('universe') == ('미국 상장 시총 상위 500 (공급사 대표 티커)' if cap500 else 'S&P 500'), 'Screen must state its actual universe'
+    if cap500:
+        roster = screen.get('constituents', [])
+        assert len(roster) == 500 and {r['rank'] for r in roster} == set(range(1, 501))
+        assert len({r['ticker'] for r in roster}) == 500
+        member_symbols = {r['ticker'] for r in roster}
+        assert dt.date.fromisoformat(coverage['universeAsOf']) <= date
+        assert market_time(coverage['rankingObservedAt']).date().isoformat() == coverage['universeAsOf']
     for key in ('selected', 'volumeValid', 'missingCount'):
         count = coverage.get(key)
         assert isinstance(count, int) and not isinstance(count, bool) and count >= 0
@@ -170,6 +177,8 @@ def validate(payload):
             assert len(member_symbols)>=500
         if 'unusualMovers' in e:
             validate_unusual_movers(e['unusualMovers'], member_symbols, date)
+        if 'marketCapUnusualMovers' in e:
+            validate_unusual_movers(e['marketCapUnusualMovers'], set(), date, cap500=True)
         highs=e.get('highs',{}).get('rows',[])
         assert len({r['ticker'] for r in highs}) == len(highs)
         for r in highs:
@@ -193,7 +202,17 @@ def validate(payload):
             assert not member_symbols or r['ticker'] in member_symbols
             assert r.get('sourceIds') and r.get('releaseDate')
             dt.date.fromisoformat(r['releaseDate'])
-            assert len(r.get('metrics',[]))>=8
+            metrics = r.get('metrics', [])
+            if r.get('presentationVersion') == 2:
+                assert len(metrics) == 4, 'Current earnings show exactly four principal metrics'
+                labels = [m.get('label', '') for m in metrics]
+                assert any(label in ('매출', '매출액') for label in labels)
+                assert '영업이익' in labels and '영업이익률' in labels
+                assert any('순이익' in label for label in labels)
+                history = r.get('quarterlyHistory', {})
+                assert len(history.get('rows', [])) == 4, 'Four reported quarters required'
+            else:
+                assert len(metrics) >= 8
             validate_earnings_prices(r)
     return len(entries)
 
