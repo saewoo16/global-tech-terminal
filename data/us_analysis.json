@@ -2723,6 +2723,12 @@
           "title": "SMCI Yahoo 정규장 원시 종가",
           "url": "https://query1.finance.yahoo.com/v8/finance/chart/SMCI?period1=1760659200&period2=1792540800&interval=1d&events=div%2Csplits",
           "note": ""
+        },
+        {
+          "id": "earn_20261020_SPCX_call",
+          "title": "SpaceX 10월 20일 공개 컨퍼런스콜 전문",
+          "url": "https://stockanalysis.com/stocks/spcx/transcripts/723936-q3-2026/",
+          "note": ""
         }
       ],
       "limitations": [
@@ -23518,13 +23524,24 @@
             "consensusMetrics": [],
             "summary": "클라우드 컴퓨트와 Starlink 성장으로 매출이 161% 증가했고 영업손익이 흑자로 전환했습니다.",
             "presentationSummary": "클라우드 컴퓨트와 Starlink 성장으로 매출이 161% 증가했고 영업손익이 흑자로 전환했습니다.",
-            "callStatus": "확인 대기",
-            "callHighlights": [],
-            "displayCallHighlights": [],
+            "callStatus": "확인",
+            "callHighlights": [
+              "수요·가격: SI 컴퓨트 계약이 매출로 전환되고 있으며 가격은 기존 와트당 30~50달러 범위 상단을 소폭 웃돈다고 설명했습니다. 자체 모델 학습과 외부 고객 공급 사이에서 용량을 유연하게 배분합니다.",
+              "마진: 고마진 클라우드 계약이 SI 수익성 개선을 이끌었습니다. 다만 Cursor 인수 관련 주식보상 12억 달러가 이번 분기 SI 영업이익에 반영됐고 관련 보상비용은 약 3년간 인식될 예정입니다.",
+              "설비투자·가이던스: Q4 설비투자 350~400억 달러, 연말 명목 컴퓨트 2.5~3GW, 2027 Q1 매출 330~370억 달러를 제시했습니다. 2026년 말 ARR 1,000억 달러 목표는 12월 매출의 연환산이며 연간 확정 매출이 아닙니다.",
+              "핵심 Q&A: V3 위성 개선을 사용자가 지속 체감하려면 수백 기가 필요하며 2027년 중반 달성을 기대했습니다. 테슬라와 양사 특별위원회가 합병을 논의하지만 조건 합의도 거래 확정도 아니라고 밝혔습니다."
+            ],
+            "displayCallHighlights": [
+              "수요·가격: SI 컴퓨트 계약이 매출로 전환되고 있으며 가격은 기존 와트당 30~50달러 범위 상단을 소폭 웃돈다고 설명했습니다. 자체 모델 학습과 외부 고객 공급 사이에서 용량을 유연하게 배분합니다.",
+              "마진: 고마진 클라우드 계약이 SI 수익성 개선을 이끌었습니다. 다만 Cursor 인수 관련 주식보상 12억 달러가 이번 분기 SI 영업이익에 반영됐고 관련 보상비용은 약 3년간 인식될 예정입니다.",
+              "설비투자·가이던스: Q4 설비투자 350~400억 달러, 연말 명목 컴퓨트 2.5~3GW, 2027 Q1 매출 330~370억 달러를 제시했습니다. 2026년 말 ARR 1,000억 달러 목표는 12월 매출의 연환산이며 연간 확정 매출이 아닙니다.",
+              "핵심 Q&A: V3 위성 개선을 사용자가 지속 체감하려면 수백 기가 필요하며 2027년 중반 달성을 기대했습니다. 테슬라와 양사 특별위원회가 합병을 논의하지만 조건 합의도 거래 확정도 아니라고 밝혔습니다."
+            ],
             "sourceIds": [
               "earn_20261020_SPCX_release",
               "earn_20261020_SPCX_event",
-              "earn_20261020_SPCX_consensus"
+              "earn_20261020_SPCX_consensus",
+              "earn_20261020_SPCX_call"
             ],
             "releaseTiming": {
               "session": "after_close",
@@ -23615,7 +23632,21 @@
                 "note": "07:00 KST 이전 발표 후 시간외 관측값 미확인."
               }
             },
-            "reportCutoffAt": "2026-10-20T22:00:00Z"
+            "reportCutoffAt": "2026-10-20T22:00:00Z",
+            "callPresentationPhase": "supplement",
+            "callUpdatedAt": "2026-10-21T08:42:17.613406+00:00",
+            "callSupplement": {
+              "checkedAt": "2026-10-21T08:42:17.613406+00:00",
+              "addedAt": "2026-10-21T08:42:17.613406+00:00",
+              "displayTime": "2026-10-21 17:42 KST",
+              "sourcePublishedAt": null,
+              "sourcePublicationStatus": "exact_time_unverified",
+              "sourceIds": [
+                "earn_20261020_SPCX_call",
+                "earn_20261020_SPCX_event"
+              ],
+              "note": "공개 콜 전문을 후속 확인해 원래 10월20일 발표 카드에 보완했다. 전문 최초 공개시각은 미확인이므로 07:00 KST 검토본 당시 이용 가능했던 자료라고 소급하지 않는다."
+            }
           },
           {
             "ticker": "SMCI",
