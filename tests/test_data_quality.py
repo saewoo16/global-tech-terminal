@@ -74,6 +74,52 @@ class DataQualityTests(unittest.TestCase):
         self.assertEqual(update_data.lookup({'symbol':'NYSE:P','ticker':'P','country':'미국'}),'P')
         self.assertEqual(update_data.lookup({'symbol':'KRX:095340','ticker':'095340','country':'한국'}),'095340.KQ')
 
+    def test_reported_operating_income_precedes_provider_normalization(self):
+        import datetime as dt
+        import types
+        from unittest.mock import patch
+        with patch.dict(sys.modules, {'yfinance': types.ModuleType('yfinance')}):
+            import update_data
+            import patch_japan_financials
+        day = dt.date(2026, 6, 30)
+        rows = {'Total Revenue': {day: 1000000},
+                'Operating Income': {day: 200000},
+                'Operating Income As Reported': {day: 125000}}
+        frame = types.SimpleNamespace(index=rows, loc=rows, columns=[day], empty=False)
+        ticker = types.SimpleNamespace(quarterly_income_stmt=frame)
+        self.assertEqual(update_data.fetch_quarters(ticker)[0]['operatingIncome'], 0.125)
+        self.assertEqual(patch_japan_financials.parse(frame)['2026-06-30']['operatingIncome'], 0.125)
+        del rows['Operating Income As Reported']
+        self.assertEqual(update_data.fetch_quarters(ticker)[0]['operatingIncome'], 0.2)
+        self.assertEqual(patch_japan_financials.parse(frame)['2026-06-30']['operatingIncome'], 0.2)
+
+    def test_october_filing_snapshot_is_source_backed_and_idempotent(self):
+        root = Path(__file__).resolve().parents[1]
+        snapshot = json.loads((root/'data/financial_backfill_zlatest_20261018.json').read_text())
+        expected = {'NASDAQ:ASML': ('2026-09-27', 11662.0, 5172.8),
+                    'NASDAQ:MU': ('2026-09-03', 54229.0, 43751.0),
+                    'NYSE:JBL': ('2026-08-31', 10616.0, 602.0),
+                    'NASDAQ:AEIS': ('2026-06-30', 574.1, 95.1),
+                    'NYSE:TSM': ('2026-09-30', 1494243.0, 876445.0),
+                    'TWSE:2408': ('2026-09-30', 133649.0, 106894.0)}
+        self.assertEqual(set(snapshot['companies']), set(expected))
+        market = {'stocks': {}}
+        for symbol, record in snapshot['companies'].items():
+            q = record['quarters'][0]
+            self.assertEqual((q['date'], q['revenue'], q['operatingIncome']), expected[symbol])
+            for q in record['quarters']:
+                self.assertTrue(q['sourceUrl'].startswith('https://'))
+                self.assertEqual(q['reportedCurrency'], record['reportingCurrency'])
+                self.assertEqual(q['verifiedAt'], '2026-10-18')
+                self.assertLess(q['periodStart'], q['date'])
+        once = apply(copy.deepcopy(market), [snapshot])
+        self.assertEqual(once, apply(copy.deepcopy(once), [snapshot]))
+        for symbol in ['NASDAQ:ASML', 'NASDAQ:MU', 'NYSE:JBL', 'NASDAQ:AEIS']:
+            self.assertEqual(len(once['stocks'][symbol]['quarters']), 4)
+        jabil = once['stocks']['NYSE:JBL']['quarters']
+        self.assertEqual(sum(q['revenue'] for q in jabil), 35954)
+        self.assertEqual(sum(q['operatingIncome'] for q in jabil), 1704)
+
     def test_repository_company_coverage(self):
         root=Path(__file__).resolve().parents[1]
         companies=json.loads((root/'data/companies.json').read_text())

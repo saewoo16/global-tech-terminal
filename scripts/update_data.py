@@ -62,13 +62,58 @@ def chart_fallback(ticker):
         return [],{}
 
 
+def completed_daily_points(result, now=None):
+    """Use actual adjusted daily bars only after their source session has ended.
+
+    Yahoo sometimes omits the latest daily close in range=5y while range=1d
+    supplies it. Never substitute regularMarketPrice or an unadjusted close.
+    The provider session timestamps, not a guessed weekday calendar, gate an
+    in-progress session. Older dated bars precede its current session.
+    """
+    now = now or dt.datetime.now(dt.timezone.utc)
+    try:
+        meta = result['meta']
+        zone = ZoneInfo(meta['exchangeTimezoneName'])
+        regular = meta['currentTradingPeriod']['regular']
+        session_day = dt.datetime.fromtimestamp(regular['start'], zone).date()
+        end = dt.datetime.fromtimestamp(regular['end'], dt.timezone.utc)
+        adjusted = result['indicators'].get('adjclose', [{}])[0].get('adjclose', [])
+        points = []
+        for stamp, value in zip(result.get('timestamp', []), adjusted):
+            day = dt.datetime.fromtimestamp(stamp, zone).date()
+            if day > session_day or (day == session_day and now < end):
+                continue
+            if day > now.astimezone(zone).date() or fnum(value) is None or value <= 0:
+                continue
+            points.append([day.isoformat(), round(value, 5)])
+        return clean_prices(points)
+    except (KeyError, TypeError, ValueError, OverflowError):
+        return []
+
+
+def latest_completed_daily(ticker):
+    try:
+        url = 'https://query2.finance.yahoo.com/v8/finance/chart/' + quote(ticker, safe='') + '?range=1d&interval=1d'
+        with urlopen(Request(url, headers={'User-Agent': 'Mozilla/5.0'}), timeout=20) as response:
+            result = json.load(response)['chart']['result'][0]
+        return completed_daily_points(result)
+    except Exception as exc:
+        print('LATEST_DAILY_ERROR', ticker, str(exc)[:100], flush=True)
+        return []
+
+
 def fetch_prices(obj):
+    prices = []
     try:
         h=obj.history(period='5y',interval='1d',auto_adjust=True,raise_errors=False,timeout=20)
         if h is not None and not h.empty:
-            return clean_prices([[str(i.date()),round(float(row['Close']),5)] for i,row in h.iterrows() if fnum(row.get('Close')) is not None])
+            prices = clean_prices([[str(i.date()),round(float(row['Close']),5)] for i,row in h.iterrows() if fnum(row.get('Close')) is not None])
     except Exception:pass
-    return chart_fallback(obj.ticker)[0]
+    if not prices:
+        prices = chart_fallback(obj.ticker)[0]
+    # Repair the range-specific final-bar omission without discarding history.
+    latest = latest_completed_daily(obj.ticker)
+    return clean_prices(prices + latest)
 
 def first_available(frame,candidates):
     for item in candidates:
@@ -84,7 +129,7 @@ def fetch_quarters(obj):
             print('FINANCIALS_EMPTY: Yahoo provided no quarterly income statement',flush=True)
             return []
         rv=first_available(inc,['Total Revenue','Operating Revenue'])
-        op=first_available(inc,['Operating Income','Operating Income As Reported'])
+        op=first_available(inc,['Operating Income As Reported','Operating Income'])
         if rv is None:
             print('FINANCIALS_NO_REVENUE_ROW:',list(inc.index[:15]),flush=True)
             return []

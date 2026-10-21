@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 COMPANIES = ROOT/'data'/'companies.json'
 MARKET = ROOT/'data'/'market.json'
 REVENUE = ('Total Revenue','Operating Revenue')
-OPERATING = ('Operating Income','Operating Income As Reported')
+OPERATING = ('Operating Income As Reported','Operating Income')
 
 def number(x):
     try:

@@ -1,0 +1,205 @@
+{
+  "scope": "20 source-verified company quarter records for seven companies, not a full246issuer-disclosure audit. Original19-quarter verification dates preserved. VAT Q3 revenue only.",
+  "rows": [
+    {
+      "symbol": "NASDAQ:ASML",
+      "periodEnd": "2026-09-27",
+      "revenue": 11662.0,
+      "operatingIncome": 5172.8,
+      "currency": "EUR",
+      "sourceUrl": "https://ml-eu.globenewswire.com/Resource/Download/5bcb0f5c-1729-4046-baad-849ca7feb9a3",
+      "publishedAt": "2026-10-14",
+      "recheckedAt": "2026-10-21"
+    },
+    {
+      "symbol": "NASDAQ:ASML",
+      "periodEnd": "2026-06-28",
+      "revenue": 9326.5,
+      "operatingIncome": 3456.1,
+      "currency": "EUR",
+      "sourceUrl": "https://ml-eu.globenewswire.com/Resource/Download/5bcb0f5c-1729-4046-baad-849ca7feb9a3",
+      "publishedAt": "2026-10-14",
+      "recheckedAt": "2026-10-21"
+    },
+    {
+      "symbol": "NASDAQ:ASML",
+      "periodEnd": "2026-03-29",
+      "revenue": 8766.9,
+      "operatingIncome": 3157.8,
+      "currency": "EUR",
+      "sourceUrl": "https://ml-eu.globenewswire.com/Resource/Download/5bcb0f5c-1729-4046-baad-849ca7feb9a3",
+      "publishedAt": "2026-10-14",
+      "recheckedAt": "2026-10-21"
+    },
+    {
+      "symbol": "NASDAQ:ASML",
+      "periodEnd": "2025-12-31",
+      "revenue": 9718.1,
+      "operatingIncome": 3431.1,
+      "currency": "EUR",
+      "sourceUrl": "https://ml-eu.globenewswire.com/Resource/Download/5bcb0f5c-1729-4046-baad-849ca7feb9a3",
+      "publishedAt": "2026-10-14",
+      "recheckedAt": "2026-10-21"
+    },
+    {
+      "symbol": "NASDAQ:MU",
+      "periodEnd": "2026-09-03",
+      "revenue": 54229.0,
+      "operatingIncome": 43751.0,
+      "currency": "USD",
+      "sourceUrl": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/",
+      "publishedAt": "2026-09-30",
+      "recheckedAt": "2026-10-21"
+    },
+    {
+      "symbol": "NASDAQ:MU",
+      "periodEnd": "2026-05-28",
+      "revenue": 41456.0,
+      "operatingIncome": 33318.0,
+      "currency": "USD",
+      "sourceUrl": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/",
+      "publishedAt": "2026-09-30",
+      "recheckedAt": "2026-10-21"
+    },
+    {
+      "symbol": "NASDAQ:MU",
+      "periodEnd": "2026-02-26",
+      "revenue": 23860.0,
+      "operatingIncome": 16135.0,
+      "currency": "USD",
+      "sourceUrl": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Results-for-the-Second-Quarter-of-Fiscal-2026-03-18-2026/default.aspx",
+      "publishedAt": "2026-03-18",
+      "recheckedAt": "2026-10-21"
+    },
+    {
+      "symbol": "NASDAQ:MU",
+      "periodEnd": "2025-11-27",
+      "revenue": 13643.0,
+      "operatingIncome": 6136.0,
+      "currency": "USD",
+      "sourceUrl": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Results-for-the-Second-Quarter-of-Fiscal-2026-03-18-2026/default.aspx",
+      "publishedAt": "2026-03-18",
+      "recheckedAt": "2026-10-21"
+    },
+    {
+      "symbol": "NYSE:JBL",
+      "periodEnd": "2026-08-31",
+      "revenue": 10616.0,
+      "operatingIncome": 602.0,
+      "currency": "USD",
+      "sourceUrl": "https://investors.jabil.com/news/news-details/2026/Jabil-Posts-Fourth-Quarter-and-Fiscal-Year-2026-Results/default.aspx",
+      "publishedAt": "2026-09-30",
+      "recheckedAt": "2026-10-21"
+    },
+    {
+      "symbol": "NYSE:JBL",
+      "periodEnd": "2026-05-31",
+      "revenue": 8751.0,
+      "operatingIncome": 445.0,
+      "currency": "USD",
+      "sourceUrl": "https://investors.jabil.com/news/news-details/2026/Jabil-Posts-Third-Quarter-Results/default.aspx",
+      "publishedAt": "2026-06-17",
+      "recheckedAt": "2026-10-21"
+    },
+    {
+      "symbol": "NYSE:JBL",
+      "periodEnd": "2026-02-28",
+      "revenue": 8282.0,
+      "operatingIncome": 374.0,
+      "currency": "USD",
+      "sourceUrl": "https://investors.jabil.com/news/news-details/2026/Jabil-Posts-Second-Quarter-Results/default.aspx",
+      "publishedAt": "2026-03-18",
+      "recheckedAt": "2026-10-21"
+    },
+    {
+      "symbol": "NYSE:JBL",
+      "periodEnd": "2025-11-30",
+      "revenue": 8305.0,
+      "operatingIncome": 283.0,
+      "currency": "USD",
+      "sourceUrl": "https://investors.jabil.com/news/news-details/2025/Jabil-Posts-First-Quarter-Results/",
+      "publishedAt": "2025-12-17",
+      "recheckedAt": "2026-10-21"
+    },
+    {
+      "symbol": "NASDAQ:AEIS",
+      "periodEnd": "2026-06-30",
+      "revenue": 574.1,
+      "operatingIncome": 95.1,
+      "currency": "USD",
+      "sourceUrl": "https://ir.advanced-energy.com/news/advanced-energy-reports-second-quarter-2026-results/a80af9be-bd06-413a-b193-5909f008ea48",
+      "publishedAt": "2026-08-03",
+      "recheckedAt": "2026-10-21"
+    },
+    {
+      "symbol": "NASDAQ:AEIS",
+      "periodEnd": "2026-03-31",
+      "revenue": 511.0,
+      "operatingIncome": 68.3,
+      "currency": "USD",
+      "sourceUrl": "https://ir.advanced-energy.com/news/advanced-energy-reports-second-quarter-2026-results/a80af9be-bd06-413a-b193-5909f008ea48",
+      "publishedAt": "2026-08-03",
+      "recheckedAt": "2026-10-21"
+    },
+    {
+      "symbol": "NASDAQ:AEIS",
+      "periodEnd": "2025-12-31",
+      "revenue": 489.4,
+      "operatingIncome": 56.6,
+      "currency": "USD",
+      "sourceUrl": "https://ir.advanced-energy.com/news/advanced-energy-reports-fourth-quarter-and-full-year-2025-results/579d65f4-6a23-471e-8f5c-ec1be349785b",
+      "publishedAt": "2026-02-10",
+      "recheckedAt": "2026-10-21"
+    },
+    {
+      "symbol": "NASDAQ:AEIS",
+      "periodEnd": "2025-09-30",
+      "revenue": 463.3,
+      "operatingIncome": 49.2,
+      "currency": "USD",
+      "sourceUrl": "https://ir.advanced-energy.com/news/advanced-energy-reports-fourth-quarter-and-full-year-2025-results/579d65f4-6a23-471e-8f5c-ec1be349785b",
+      "publishedAt": "2026-02-10",
+      "recheckedAt": "2026-10-21"
+    },
+    {
+      "symbol": "NYSE:TSM",
+      "periodEnd": "2026-09-30",
+      "revenue": 1494243.0,
+      "operatingIncome": 876445.0,
+      "currency": "TWD",
+      "sourceUrl": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/3a94d1034b9e6b22446b674f7aaf3d088a12a193/FS.pdf",
+      "publishedAt": "2026-10-15",
+      "recheckedAt": "2026-10-21"
+    },
+    {
+      "symbol": "NYSE:TSM",
+      "periodEnd": "2026-06-30",
+      "revenue": 1270381.0,
+      "operatingIncome": 766603.0,
+      "currency": "TWD",
+      "sourceUrl": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/3a94d1034b9e6b22446b674f7aaf3d088a12a193/FS.pdf",
+      "publishedAt": "2026-10-15",
+      "recheckedAt": "2026-10-21"
+    },
+    {
+      "symbol": "TWSE:2408",
+      "periodEnd": "2026-09-30",
+      "revenue": 133649.0,
+      "operatingIncome": 106894.0,
+      "currency": "TWD",
+      "sourceUrl": "https://www.nanya.com/en/IR/16/Press%20Release?IRId=14188",
+      "publishedAt": "2026-10-12",
+      "recheckedAt": "2026-10-21"
+    },
+    {
+      "symbol": "SIX:VACN",
+      "periodEnd": "2026-09-30",
+      "revenue": 376.4,
+      "operatingIncome": null,
+      "currency": "CHF",
+      "sourceUrl": "https://www.vatgroup.com/uploads/financial_reports/2026/vat-media-release-q3-2026-trading-update-en.pdf",
+      "publishedAt": "2026-10-15",
+      "recheckedAt": "2026-10-21"
+    }
+  ]
+}

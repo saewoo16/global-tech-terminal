@@ -1,0 +1,757 @@
+{
+  "asOf": "2026-10-18",
+  "unit": "millions of reporting currency",
+  "auditScope": "Targeted freshness check: six identified missing quarters. Full latest-four-quarter replacement for ASML, MU, JBL and AEIS; latest-two-quarter update for TSM; latest-quarter update for Nanya. Does not independently audit the other companies.",
+  "companies": {
+    "NASDAQ:ASML": {
+      "reportingCurrency": "EUR",
+      "replaceQuarters": true,
+      "quarters": [
+        {
+          "date": "2026-09-27",
+          "periodStart": "2026-06-29",
+          "revenue": 11662.0,
+          "operatingIncome": 5172.8,
+          "sourceUrl": "https://ml-eu.globenewswire.com/Resource/Download/5bcb0f5c-1729-4046-baad-849ca7feb9a3",
+          "sourceType": "filing",
+          "source": "Official issuer financial statements",
+          "verifiedAt": "2026-10-18",
+          "publishedAt": "2026-10-14",
+          "basis": "US GAAP",
+          "reportedCurrency": "EUR",
+          "unit": "millions of reporting currency",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2026-06-29",
+              "periodEnd": "2026-09-27",
+              "value": 11662.0,
+              "reportedCurrency": "EUR",
+              "unit": "millions",
+              "sourceUrl": "https://ml-eu.globenewswire.com/Resource/Download/5bcb0f5c-1729-4046-baad-849ca7feb9a3",
+              "lineItem": "Revenue / total net sales",
+              "periodStartMethod": "Day after the preceding reported fiscal period end; confirmed from the consecutive fiscal endpoints in the cited issuer statements."
+            },
+            "operatingIncome": {
+              "periodStart": "2026-06-29",
+              "periodEnd": "2026-09-27",
+              "value": 5172.8,
+              "reportedCurrency": "EUR",
+              "unit": "millions",
+              "sourceUrl": "https://ml-eu.globenewswire.com/Resource/Download/5bcb0f5c-1729-4046-baad-849ca7feb9a3",
+              "lineItem": "Operating income / income from operations",
+              "periodStartMethod": "Day after the preceding reported fiscal period end; confirmed from the consecutive fiscal endpoints in the cited issuer statements."
+            }
+          },
+          "fiscalPeriod": "2026 Q3",
+          "sourcePage": 7,
+          "periodStartMethod": "Day after the preceding reported fiscal period end; confirmed from the consecutive fiscal endpoints in the cited issuer statements.",
+          "issuerReleaseUrl": "https://www.investor.asml.com/news-releases/news-release-details/asml-reports-eu11.7-billion-total-net-sales-and-eu5.0-billion-net-income-q3-2026",
+          "sourcePageLabel": "Printed page 6; PDF page 7"
+        },
+        {
+          "date": "2026-06-28",
+          "periodStart": "2026-03-30",
+          "revenue": 9326.5,
+          "operatingIncome": 3456.1,
+          "sourceUrl": "https://ml-eu.globenewswire.com/Resource/Download/5bcb0f5c-1729-4046-baad-849ca7feb9a3",
+          "sourceType": "filing",
+          "source": "Official issuer financial statements",
+          "verifiedAt": "2026-10-18",
+          "publishedAt": "2026-10-14",
+          "basis": "US GAAP",
+          "reportedCurrency": "EUR",
+          "unit": "millions of reporting currency",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2026-03-30",
+              "periodEnd": "2026-06-28",
+              "value": 9326.5,
+              "reportedCurrency": "EUR",
+              "unit": "millions",
+              "sourceUrl": "https://ml-eu.globenewswire.com/Resource/Download/5bcb0f5c-1729-4046-baad-849ca7feb9a3",
+              "lineItem": "Revenue / total net sales",
+              "periodStartMethod": "Day after the preceding reported fiscal period end; confirmed from the consecutive fiscal endpoints in the cited issuer statements."
+            },
+            "operatingIncome": {
+              "periodStart": "2026-03-30",
+              "periodEnd": "2026-06-28",
+              "value": 3456.1,
+              "reportedCurrency": "EUR",
+              "unit": "millions",
+              "sourceUrl": "https://ml-eu.globenewswire.com/Resource/Download/5bcb0f5c-1729-4046-baad-849ca7feb9a3",
+              "lineItem": "Operating income / income from operations",
+              "periodStartMethod": "Day after the preceding reported fiscal period end; confirmed from the consecutive fiscal endpoints in the cited issuer statements."
+            }
+          },
+          "fiscalPeriod": "2026 Q2",
+          "sourcePage": 7,
+          "periodStartMethod": "Day after the preceding reported fiscal period end; confirmed from the consecutive fiscal endpoints in the cited issuer statements.",
+          "issuerReleaseUrl": "https://www.investor.asml.com/news-releases/news-release-details/asml-reports-eu11.7-billion-total-net-sales-and-eu5.0-billion-net-income-q3-2026",
+          "sourcePageLabel": "Printed page 6; PDF page 7"
+        },
+        {
+          "date": "2026-03-29",
+          "periodStart": "2026-01-01",
+          "revenue": 8766.9,
+          "operatingIncome": 3157.8,
+          "sourceUrl": "https://ml-eu.globenewswire.com/Resource/Download/5bcb0f5c-1729-4046-baad-849ca7feb9a3",
+          "sourceType": "filing",
+          "source": "Official issuer financial statements",
+          "verifiedAt": "2026-10-18",
+          "publishedAt": "2026-10-14",
+          "basis": "US GAAP",
+          "reportedCurrency": "EUR",
+          "unit": "millions of reporting currency",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2026-01-01",
+              "periodEnd": "2026-03-29",
+              "value": 8766.9,
+              "reportedCurrency": "EUR",
+              "unit": "millions",
+              "sourceUrl": "https://ml-eu.globenewswire.com/Resource/Download/5bcb0f5c-1729-4046-baad-849ca7feb9a3",
+              "lineItem": "Revenue / total net sales",
+              "periodStartMethod": "Day after the preceding reported fiscal period end; confirmed from the consecutive fiscal endpoints in the cited issuer statements."
+            },
+            "operatingIncome": {
+              "periodStart": "2026-01-01",
+              "periodEnd": "2026-03-29",
+              "value": 3157.8,
+              "reportedCurrency": "EUR",
+              "unit": "millions",
+              "sourceUrl": "https://ml-eu.globenewswire.com/Resource/Download/5bcb0f5c-1729-4046-baad-849ca7feb9a3",
+              "lineItem": "Operating income / income from operations",
+              "periodStartMethod": "Day after the preceding reported fiscal period end; confirmed from the consecutive fiscal endpoints in the cited issuer statements."
+            }
+          },
+          "fiscalPeriod": "2026 Q1",
+          "sourcePage": 7,
+          "periodStartMethod": "Day after the preceding reported fiscal period end; confirmed from the consecutive fiscal endpoints in the cited issuer statements.",
+          "issuerReleaseUrl": "https://www.investor.asml.com/news-releases/news-release-details/asml-reports-eu11.7-billion-total-net-sales-and-eu5.0-billion-net-income-q3-2026",
+          "sourcePageLabel": "Printed page 6; PDF page 7"
+        },
+        {
+          "date": "2025-12-31",
+          "periodStart": "2025-09-29",
+          "revenue": 9718.1,
+          "operatingIncome": 3431.1,
+          "sourceUrl": "https://ml-eu.globenewswire.com/Resource/Download/5bcb0f5c-1729-4046-baad-849ca7feb9a3",
+          "sourceType": "filing",
+          "source": "Official issuer financial statements",
+          "verifiedAt": "2026-10-18",
+          "publishedAt": "2026-10-14",
+          "basis": "US GAAP",
+          "reportedCurrency": "EUR",
+          "unit": "millions of reporting currency",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2025-09-29",
+              "periodEnd": "2025-12-31",
+              "value": 9718.1,
+              "reportedCurrency": "EUR",
+              "unit": "millions",
+              "sourceUrl": "https://ml-eu.globenewswire.com/Resource/Download/5bcb0f5c-1729-4046-baad-849ca7feb9a3",
+              "lineItem": "Revenue / total net sales",
+              "periodStartMethod": "Day after the preceding reported fiscal period end; confirmed from the consecutive fiscal endpoints in the cited issuer statements."
+            },
+            "operatingIncome": {
+              "periodStart": "2025-09-29",
+              "periodEnd": "2025-12-31",
+              "value": 3431.1,
+              "reportedCurrency": "EUR",
+              "unit": "millions",
+              "sourceUrl": "https://ml-eu.globenewswire.com/Resource/Download/5bcb0f5c-1729-4046-baad-849ca7feb9a3",
+              "lineItem": "Operating income / income from operations",
+              "periodStartMethod": "Day after the preceding reported fiscal period end; confirmed from the consecutive fiscal endpoints in the cited issuer statements."
+            }
+          },
+          "fiscalPeriod": "2025 Q4",
+          "sourcePage": 7,
+          "periodStartMethod": "Day after the preceding reported fiscal period end; confirmed from the consecutive fiscal endpoints in the cited issuer statements.",
+          "issuerReleaseUrl": "https://www.investor.asml.com/news-releases/news-release-details/asml-reports-eu11.7-billion-total-net-sales-and-eu5.0-billion-net-income-q3-2026",
+          "sourcePageLabel": "Printed page 6; PDF page 7"
+        }
+      ],
+      "financialNote": "매출·영업이익은 연결 US GAAP 기준, 단위는 백만 EUR입니다. 최근 4개 분기를 발행사 2026년 3분기 재무제표로 확인했으며 실제 회계분기 종료일을 사용합니다. 미감사 수치입니다."
+    },
+    "NASDAQ:MU": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": true,
+      "quarters": [
+        {
+          "date": "2026-09-03",
+          "periodStart": "2026-05-29",
+          "revenue": 54229.0,
+          "operatingIncome": 43751.0,
+          "sourceUrl": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/",
+          "sourceType": "filing",
+          "source": "Official issuer financial statements",
+          "verifiedAt": "2026-10-18",
+          "publishedAt": "2026-09-30",
+          "basis": "US GAAP",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2026-05-29",
+              "periodEnd": "2026-09-03",
+              "value": 54229.0,
+              "reportedCurrency": "USD",
+              "unit": "millions",
+              "sourceUrl": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/",
+              "lineItem": "Revenue / total net sales",
+              "periodStartMethod": "Day after the preceding reported fiscal period end; confirmed from the consecutive fiscal endpoints in the cited issuer statements."
+            },
+            "operatingIncome": {
+              "periodStart": "2026-05-29",
+              "periodEnd": "2026-09-03",
+              "value": 43751.0,
+              "reportedCurrency": "USD",
+              "unit": "millions",
+              "sourceUrl": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/",
+              "lineItem": "Operating income / income from operations",
+              "periodStartMethod": "Day after the preceding reported fiscal period end; confirmed from the consecutive fiscal endpoints in the cited issuer statements."
+            }
+          },
+          "fiscalPeriod": "FY2026 Q4",
+          "periodStartMethod": "Day after the preceding reported fiscal period end; confirmed from the consecutive fiscal endpoints in the cited issuer statements."
+        },
+        {
+          "date": "2026-05-28",
+          "periodStart": "2026-02-27",
+          "revenue": 41456.0,
+          "operatingIncome": 33318.0,
+          "sourceUrl": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/",
+          "sourceType": "filing",
+          "source": "Official issuer financial statements",
+          "verifiedAt": "2026-10-18",
+          "publishedAt": "2026-09-30",
+          "basis": "US GAAP",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2026-02-27",
+              "periodEnd": "2026-05-28",
+              "value": 41456.0,
+              "reportedCurrency": "USD",
+              "unit": "millions",
+              "sourceUrl": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/",
+              "lineItem": "Revenue / total net sales",
+              "periodStartMethod": "Day after the preceding reported fiscal period end; confirmed from the consecutive fiscal endpoints in the cited issuer statements."
+            },
+            "operatingIncome": {
+              "periodStart": "2026-02-27",
+              "periodEnd": "2026-05-28",
+              "value": 33318.0,
+              "reportedCurrency": "USD",
+              "unit": "millions",
+              "sourceUrl": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/",
+              "lineItem": "Operating income / income from operations",
+              "periodStartMethod": "Day after the preceding reported fiscal period end; confirmed from the consecutive fiscal endpoints in the cited issuer statements."
+            }
+          },
+          "fiscalPeriod": "FY2026 Q3",
+          "periodStartMethod": "Day after the preceding reported fiscal period end; confirmed from the consecutive fiscal endpoints in the cited issuer statements."
+        },
+        {
+          "date": "2026-02-26",
+          "periodStart": "2025-11-28",
+          "revenue": 23860.0,
+          "operatingIncome": 16135.0,
+          "sourceUrl": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Results-for-the-Second-Quarter-of-Fiscal-2026-03-18-2026/default.aspx",
+          "sourceType": "filing",
+          "source": "Official issuer financial statements",
+          "verifiedAt": "2026-10-18",
+          "publishedAt": "2026-03-18",
+          "basis": "US GAAP",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2025-11-28",
+              "periodEnd": "2026-02-26",
+              "value": 23860.0,
+              "reportedCurrency": "USD",
+              "unit": "millions",
+              "sourceUrl": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Results-for-the-Second-Quarter-of-Fiscal-2026-03-18-2026/default.aspx",
+              "lineItem": "Revenue / total net sales",
+              "periodStartMethod": "Day after the preceding reported fiscal period end; confirmed from the consecutive fiscal endpoints in the cited issuer statements."
+            },
+            "operatingIncome": {
+              "periodStart": "2025-11-28",
+              "periodEnd": "2026-02-26",
+              "value": 16135.0,
+              "reportedCurrency": "USD",
+              "unit": "millions",
+              "sourceUrl": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Results-for-the-Second-Quarter-of-Fiscal-2026-03-18-2026/default.aspx",
+              "lineItem": "Operating income / income from operations",
+              "periodStartMethod": "Day after the preceding reported fiscal period end; confirmed from the consecutive fiscal endpoints in the cited issuer statements."
+            }
+          },
+          "fiscalPeriod": "FY2026 Q2",
+          "periodStartMethod": "Day after the preceding reported fiscal period end; confirmed from the consecutive fiscal endpoints in the cited issuer statements."
+        },
+        {
+          "date": "2025-11-27",
+          "periodStart": "2025-08-29",
+          "revenue": 13643.0,
+          "operatingIncome": 6136.0,
+          "sourceUrl": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Results-for-the-Second-Quarter-of-Fiscal-2026-03-18-2026/default.aspx",
+          "sourceType": "filing",
+          "source": "Official issuer financial statements",
+          "verifiedAt": "2026-10-18",
+          "publishedAt": "2026-03-18",
+          "basis": "US GAAP",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2025-08-29",
+              "periodEnd": "2025-11-27",
+              "value": 13643.0,
+              "reportedCurrency": "USD",
+              "unit": "millions",
+              "sourceUrl": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Results-for-the-Second-Quarter-of-Fiscal-2026-03-18-2026/default.aspx",
+              "lineItem": "Revenue / total net sales",
+              "periodStartMethod": "Day after the preceding reported fiscal period end; confirmed from the consecutive fiscal endpoints in the cited issuer statements."
+            },
+            "operatingIncome": {
+              "periodStart": "2025-08-29",
+              "periodEnd": "2025-11-27",
+              "value": 6136.0,
+              "reportedCurrency": "USD",
+              "unit": "millions",
+              "sourceUrl": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Results-for-the-Second-Quarter-of-Fiscal-2026-03-18-2026/default.aspx",
+              "lineItem": "Operating income / income from operations",
+              "periodStartMethod": "Day after the preceding reported fiscal period end; confirmed from the consecutive fiscal endpoints in the cited issuer statements."
+            }
+          },
+          "fiscalPeriod": "FY2026 Q1",
+          "periodStartMethod": "Day after the preceding reported fiscal period end; confirmed from the consecutive fiscal endpoints in the cited issuer statements."
+        }
+      ],
+      "financialNote": "매출·영업이익은 연결 US GAAP 기준, 단위는 백만 USD입니다. FY2026 4개 분기를 발행사 4분기·2분기 재무제표로 확인했으며 실제 회계분기 종료일을 사용합니다. 미감사 수치입니다."
+    },
+    "NYSE:JBL": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": true,
+      "quarters": [
+        {
+          "date": "2026-08-31",
+          "periodStart": "2026-06-01",
+          "revenue": 10616.0,
+          "operatingIncome": 602.0,
+          "sourceUrl": "https://investors.jabil.com/news/news-details/2026/Jabil-Posts-Fourth-Quarter-and-Fiscal-Year-2026-Results/default.aspx",
+          "sourceType": "filing",
+          "source": "Official issuer financial statements",
+          "verifiedAt": "2026-10-18",
+          "publishedAt": "2026-09-30",
+          "basis": "US GAAP",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2026-06-01",
+              "periodEnd": "2026-08-31",
+              "value": 10616.0,
+              "reportedCurrency": "USD",
+              "unit": "millions",
+              "sourceUrl": "https://investors.jabil.com/news/news-details/2026/Jabil-Posts-Fourth-Quarter-and-Fiscal-Year-2026-Results/default.aspx",
+              "lineItem": "Revenue / total net sales"
+            },
+            "operatingIncome": {
+              "periodStart": "2026-06-01",
+              "periodEnd": "2026-08-31",
+              "value": 602.0,
+              "reportedCurrency": "USD",
+              "unit": "millions",
+              "sourceUrl": "https://investors.jabil.com/news/news-details/2026/Jabil-Posts-Fourth-Quarter-and-Fiscal-Year-2026-Results/default.aspx",
+              "lineItem": "Operating income / income from operations"
+            }
+          },
+          "fiscalPeriod": "FY2026 Q4"
+        },
+        {
+          "date": "2026-05-31",
+          "periodStart": "2026-03-01",
+          "revenue": 8751.0,
+          "operatingIncome": 445.0,
+          "sourceUrl": "https://investors.jabil.com/news/news-details/2026/Jabil-Posts-Third-Quarter-Results/default.aspx",
+          "sourceType": "filing",
+          "source": "Official issuer financial statements",
+          "verifiedAt": "2026-10-18",
+          "publishedAt": "2026-06-17",
+          "basis": "US GAAP",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2026-03-01",
+              "periodEnd": "2026-05-31",
+              "value": 8751.0,
+              "reportedCurrency": "USD",
+              "unit": "millions",
+              "sourceUrl": "https://investors.jabil.com/news/news-details/2026/Jabil-Posts-Third-Quarter-Results/default.aspx",
+              "lineItem": "Revenue / total net sales"
+            },
+            "operatingIncome": {
+              "periodStart": "2026-03-01",
+              "periodEnd": "2026-05-31",
+              "value": 445.0,
+              "reportedCurrency": "USD",
+              "unit": "millions",
+              "sourceUrl": "https://investors.jabil.com/news/news-details/2026/Jabil-Posts-Third-Quarter-Results/default.aspx",
+              "lineItem": "Operating income / income from operations"
+            }
+          },
+          "fiscalPeriod": "FY2026 Q3"
+        },
+        {
+          "date": "2026-02-28",
+          "periodStart": "2025-12-01",
+          "revenue": 8282.0,
+          "operatingIncome": 374.0,
+          "sourceUrl": "https://investors.jabil.com/news/news-details/2026/Jabil-Posts-Second-Quarter-Results/default.aspx",
+          "sourceType": "filing",
+          "source": "Official issuer financial statements",
+          "verifiedAt": "2026-10-18",
+          "publishedAt": "2026-03-18",
+          "basis": "US GAAP",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2025-12-01",
+              "periodEnd": "2026-02-28",
+              "value": 8282.0,
+              "reportedCurrency": "USD",
+              "unit": "millions",
+              "sourceUrl": "https://investors.jabil.com/news/news-details/2026/Jabil-Posts-Second-Quarter-Results/default.aspx",
+              "lineItem": "Revenue / total net sales"
+            },
+            "operatingIncome": {
+              "periodStart": "2025-12-01",
+              "periodEnd": "2026-02-28",
+              "value": 374.0,
+              "reportedCurrency": "USD",
+              "unit": "millions",
+              "sourceUrl": "https://investors.jabil.com/news/news-details/2026/Jabil-Posts-Second-Quarter-Results/default.aspx",
+              "lineItem": "Operating income / income from operations"
+            }
+          },
+          "fiscalPeriod": "FY2026 Q2"
+        },
+        {
+          "date": "2025-11-30",
+          "periodStart": "2025-09-01",
+          "revenue": 8305.0,
+          "operatingIncome": 283.0,
+          "sourceUrl": "https://investors.jabil.com/news/news-details/2025/Jabil-Posts-First-Quarter-Results/",
+          "sourceType": "filing",
+          "source": "Official issuer financial statements",
+          "verifiedAt": "2026-10-18",
+          "publishedAt": "2025-12-17",
+          "basis": "US GAAP",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2025-09-01",
+              "periodEnd": "2025-11-30",
+              "value": 8305.0,
+              "reportedCurrency": "USD",
+              "unit": "millions",
+              "sourceUrl": "https://investors.jabil.com/news/news-details/2025/Jabil-Posts-First-Quarter-Results/",
+              "lineItem": "Revenue / total net sales"
+            },
+            "operatingIncome": {
+              "periodStart": "2025-09-01",
+              "periodEnd": "2025-11-30",
+              "value": 283.0,
+              "reportedCurrency": "USD",
+              "unit": "millions",
+              "sourceUrl": "https://investors.jabil.com/news/news-details/2025/Jabil-Posts-First-Quarter-Results/",
+              "lineItem": "Operating income / income from operations"
+            }
+          },
+          "fiscalPeriod": "FY2026 Q1"
+        }
+      ],
+      "financialNote": "매출·영업이익은 연결 US GAAP 기준, 단위는 백만 USD입니다. 최근 4개 분기를 발행사 실적자료로 확인했습니다. 영업이익은 구조조정 등 공시된 영업비용을 포함하며 조정·비GAAP 지표가 아닙니다. 잠정·미감사 수치로, FY2026 합계는 연간 매출 35,954·영업이익 1,704와 일치합니다."
+    },
+    "NASDAQ:AEIS": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": true,
+      "quarters": [
+        {
+          "date": "2026-06-30",
+          "periodStart": "2026-04-01",
+          "revenue": 574.1,
+          "operatingIncome": 95.1,
+          "sourceUrl": "https://ir.advanced-energy.com/news/advanced-energy-reports-second-quarter-2026-results/a80af9be-bd06-413a-b193-5909f008ea48",
+          "sourceType": "filing",
+          "source": "Official issuer financial statements",
+          "verifiedAt": "2026-10-18",
+          "publishedAt": "2026-08-03",
+          "basis": "US GAAP",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2026-04-01",
+              "periodEnd": "2026-06-30",
+              "value": 574.1,
+              "reportedCurrency": "USD",
+              "unit": "millions",
+              "sourceUrl": "https://ir.advanced-energy.com/news/advanced-energy-reports-second-quarter-2026-results/a80af9be-bd06-413a-b193-5909f008ea48",
+              "lineItem": "Revenue / total net sales"
+            },
+            "operatingIncome": {
+              "periodStart": "2026-04-01",
+              "periodEnd": "2026-06-30",
+              "value": 95.1,
+              "reportedCurrency": "USD",
+              "unit": "millions",
+              "sourceUrl": "https://ir.advanced-energy.com/news/advanced-energy-reports-second-quarter-2026-results/a80af9be-bd06-413a-b193-5909f008ea48",
+              "lineItem": "Operating income / income from operations"
+            }
+          },
+          "fiscalPeriod": "2026 Q2"
+        },
+        {
+          "date": "2026-03-31",
+          "periodStart": "2026-01-01",
+          "revenue": 511.0,
+          "operatingIncome": 68.3,
+          "sourceUrl": "https://ir.advanced-energy.com/news/advanced-energy-reports-second-quarter-2026-results/a80af9be-bd06-413a-b193-5909f008ea48",
+          "sourceType": "filing",
+          "source": "Official issuer financial statements",
+          "verifiedAt": "2026-10-18",
+          "publishedAt": "2026-08-03",
+          "basis": "US GAAP",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2026-01-01",
+              "periodEnd": "2026-03-31",
+              "value": 511.0,
+              "reportedCurrency": "USD",
+              "unit": "millions",
+              "sourceUrl": "https://ir.advanced-energy.com/news/advanced-energy-reports-second-quarter-2026-results/a80af9be-bd06-413a-b193-5909f008ea48",
+              "lineItem": "Revenue / total net sales"
+            },
+            "operatingIncome": {
+              "periodStart": "2026-01-01",
+              "periodEnd": "2026-03-31",
+              "value": 68.3,
+              "reportedCurrency": "USD",
+              "unit": "millions",
+              "sourceUrl": "https://ir.advanced-energy.com/news/advanced-energy-reports-second-quarter-2026-results/a80af9be-bd06-413a-b193-5909f008ea48",
+              "lineItem": "Operating income / income from operations"
+            }
+          },
+          "fiscalPeriod": "2026 Q1"
+        },
+        {
+          "date": "2025-12-31",
+          "periodStart": "2025-10-01",
+          "revenue": 489.4,
+          "operatingIncome": 56.6,
+          "sourceUrl": "https://ir.advanced-energy.com/news/advanced-energy-reports-fourth-quarter-and-full-year-2025-results/579d65f4-6a23-471e-8f5c-ec1be349785b",
+          "sourceType": "filing",
+          "source": "Official issuer financial statements",
+          "verifiedAt": "2026-10-18",
+          "publishedAt": "2026-02-10",
+          "basis": "US GAAP",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2025-10-01",
+              "periodEnd": "2025-12-31",
+              "value": 489.4,
+              "reportedCurrency": "USD",
+              "unit": "millions",
+              "sourceUrl": "https://ir.advanced-energy.com/news/advanced-energy-reports-fourth-quarter-and-full-year-2025-results/579d65f4-6a23-471e-8f5c-ec1be349785b",
+              "lineItem": "Revenue / total net sales"
+            },
+            "operatingIncome": {
+              "periodStart": "2025-10-01",
+              "periodEnd": "2025-12-31",
+              "value": 56.6,
+              "reportedCurrency": "USD",
+              "unit": "millions",
+              "sourceUrl": "https://ir.advanced-energy.com/news/advanced-energy-reports-fourth-quarter-and-full-year-2025-results/579d65f4-6a23-471e-8f5c-ec1be349785b",
+              "lineItem": "Operating income / income from operations"
+            }
+          },
+          "fiscalPeriod": "2025 Q4"
+        },
+        {
+          "date": "2025-09-30",
+          "periodStart": "2025-07-01",
+          "revenue": 463.3,
+          "operatingIncome": 49.2,
+          "sourceUrl": "https://ir.advanced-energy.com/news/advanced-energy-reports-fourth-quarter-and-full-year-2025-results/579d65f4-6a23-471e-8f5c-ec1be349785b",
+          "sourceType": "filing",
+          "source": "Official issuer financial statements",
+          "verifiedAt": "2026-10-18",
+          "publishedAt": "2026-02-10",
+          "basis": "US GAAP",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2025-07-01",
+              "periodEnd": "2025-09-30",
+              "value": 463.3,
+              "reportedCurrency": "USD",
+              "unit": "millions",
+              "sourceUrl": "https://ir.advanced-energy.com/news/advanced-energy-reports-fourth-quarter-and-full-year-2025-results/579d65f4-6a23-471e-8f5c-ec1be349785b",
+              "lineItem": "Revenue / total net sales"
+            },
+            "operatingIncome": {
+              "periodStart": "2025-07-01",
+              "periodEnd": "2025-09-30",
+              "value": 49.2,
+              "reportedCurrency": "USD",
+              "unit": "millions",
+              "sourceUrl": "https://ir.advanced-energy.com/news/advanced-energy-reports-fourth-quarter-and-full-year-2025-results/579d65f4-6a23-471e-8f5c-ec1be349785b",
+              "lineItem": "Operating income / income from operations"
+            }
+          },
+          "fiscalPeriod": "2025 Q3"
+        }
+      ],
+      "financialNote": "매출·영업이익은 연결 US GAAP 계속영업 기준, 단위는 백만 USD입니다. 구조조정 등 공시된 영업비용을 포함합니다. 최근 4개 분기를 발행사 2026년 2분기·2025년 4분기 재무제표로 확인했습니다. 미감사 수치입니다."
+    },
+    "NYSE:TSM": {
+      "reportingCurrency": "TWD",
+      "replaceQuarters": false,
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "revenue": 1494243.0,
+          "operatingIncome": 876445.0,
+          "sourceUrl": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/3a94d1034b9e6b22446b674f7aaf3d088a12a193/FS.pdf",
+          "sourceType": "filing",
+          "source": "Official issuer financial statements",
+          "verifiedAt": "2026-10-18",
+          "publishedAt": "2026-10-15",
+          "basis": "Issuer consolidated condensed financial statements",
+          "reportedCurrency": "TWD",
+          "unit": "millions of reporting currency",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "value": 1494243.0,
+              "reportedCurrency": "TWD",
+              "unit": "millions",
+              "sourceUrl": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/3a94d1034b9e6b22446b674f7aaf3d088a12a193/FS.pdf",
+              "lineItem": "Net revenue"
+            },
+            "operatingIncome": {
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "value": 876445.0,
+              "reportedCurrency": "TWD",
+              "unit": "millions",
+              "sourceUrl": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/3a94d1034b9e6b22446b674f7aaf3d088a12a193/FS.pdf",
+              "lineItem": "Operating income / income from operations"
+            }
+          },
+          "fiscalPeriod": "2026 Q3",
+          "sourcePage": 2,
+          "sourceNote": "NTD columns, expressed in whole millions; unaudited. Source includes other operating income and expenses in income from operations."
+        },
+        {
+          "date": "2026-06-30",
+          "periodStart": "2026-04-01",
+          "revenue": 1270381.0,
+          "operatingIncome": 766603.0,
+          "sourceUrl": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/3a94d1034b9e6b22446b674f7aaf3d088a12a193/FS.pdf",
+          "sourceType": "filing",
+          "source": "Official issuer financial statements",
+          "verifiedAt": "2026-10-18",
+          "publishedAt": "2026-10-15",
+          "basis": "Issuer consolidated condensed financial statements",
+          "reportedCurrency": "TWD",
+          "unit": "millions of reporting currency",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2026-04-01",
+              "periodEnd": "2026-06-30",
+              "value": 1270381.0,
+              "reportedCurrency": "TWD",
+              "unit": "millions",
+              "sourceUrl": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/3a94d1034b9e6b22446b674f7aaf3d088a12a193/FS.pdf",
+              "lineItem": "Net revenue"
+            },
+            "operatingIncome": {
+              "periodStart": "2026-04-01",
+              "periodEnd": "2026-06-30",
+              "value": 766603.0,
+              "reportedCurrency": "TWD",
+              "unit": "millions",
+              "sourceUrl": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/3a94d1034b9e6b22446b674f7aaf3d088a12a193/FS.pdf",
+              "lineItem": "Operating income / income from operations"
+            }
+          },
+          "fiscalPeriod": "2026 Q2",
+          "sourcePage": 2,
+          "sourceNote": "Comparative NTD columns, expressed in whole millions; unaudited. Source includes other operating income and expenses in income from operations."
+        }
+      ],
+      "financialNote": "최근 2개 분기만 발행사 2026년 3분기 연결 재무제표로 확인했습니다. 단위는 백만 TWD(NTD), 공시 정수 단위이며 기타영업손익을 포함합니다. 미감사 수치입니다. 유지된 이전 분기는 이번에 독립적으로 재검증하지 않았으므로 분기별 출처·확인일을 참조하세요."
+    },
+    "TWSE:2408": {
+      "reportingCurrency": "TWD",
+      "replaceQuarters": false,
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "revenue": 133649.0,
+          "operatingIncome": 106894.0,
+          "sourceUrl": "https://www.nanya.com/en/IR/16/Press%20Release?IRId=14188",
+          "sourceType": "filing",
+          "source": "Nanya Technology official quarterly results",
+          "verifiedAt": "2026-10-18",
+          "publishedAt": "2026-10-12",
+          "basis": "Issuer consolidated income statement",
+          "reportedCurrency": "TWD",
+          "unit": "millions of reporting currency",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "value": 133649.0,
+              "reportedCurrency": "TWD",
+              "unit": "millions",
+              "sourceUrl": "https://www.nanya.com/en/IR/16/Press%20Release?IRId=14188",
+              "lineItem": "Net revenue"
+            },
+            "operatingIncome": {
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "value": 106894.0,
+              "reportedCurrency": "TWD",
+              "unit": "millions",
+              "sourceUrl": "https://www.nanya.com/en/IR/16/Press%20Release?IRId=14188",
+              "lineItem": "Operating income / income from operations"
+            }
+          },
+          "fiscalPeriod": "2026 Q3",
+          "sourceNote": "Issuer explicitly states that all numbers are unaudited."
+        }
+      ],
+      "financialNote": "최신 분기만 Nanya의 2026년 3분기 공식 실적자료로 확인했습니다. 단위는 백만 TWD(NTD), 미감사 수치입니다. 유지된 이전 분기는 이번에 독립적으로 재검증하지 않았으므로 분기별 출처·확인일을 참조하세요."
+    }
+  },
+  "recheckedAt": "2026-10-21",
+  "recheckScope": "All 19 quarter revenue and operating-income values re-read in cited issuer financial tables; original verification dates preserved."
+}

@@ -22,7 +22,10 @@ def audit(companies, market):
         operating = sum(number(q.get('operatingIncome')) is not None for q in quarters[:4])
         complete = sum(number(q.get('revenue')) is not None and number(q.get('operatingIncome')) is not None for q in quarters[:4])
         latest = prices[-1][0] if prices else ''
-        stale = not latest or (today-dt.date.fromisoformat(latest)).days > 7
+        age = (today-dt.date.fromisoformat(latest)).days if latest else None
+        stale = age is None or age > 7
+        expected = item.get('latestCompletedSession')
+        behind_session = bool(expected and (not latest or latest < expected))
         if prices != item.get('prices', []):
             errors.append(f'{symbol}: invalid/duplicate/unsorted chart points')
         if len({q.get('date') for q in quarters}) != len(quarters):
@@ -39,6 +42,8 @@ def audit(companies, market):
                 errors.append(f'{symbol}: negative revenue')
         result.append({'symbol':symbol,'name':company['name'],'country':company['country'],
                        'chart_points':len(prices),'latest_price':latest,'stale_price':stale,
+                       'price_age_calendar_days':age,'verified_completed_session':expected,
+                       'behind_verified_session':behind_session,
                        'market_cap':number(item.get('marketCapUSD')) is not None,
                        'quarters':len(quarters),'revenue_quarters':revenue,'operating_quarters':operating,
                        'complete_quarters':complete,'financial_status':item.get('financialStatus','unknown'),
@@ -48,11 +53,12 @@ def audit(companies, market):
                'missing_charts':sum(r['chart_points']<2 for r in result),
                'missing_market_caps':sum(not r['market_cap'] for r in result),
                'stale_prices':sum(r['stale_price'] for r in result),
+               'behind_verified_sessions':sum(r['behind_verified_session'] for r in result),
                'four_complete_quarters':sum(r['complete_quarters']==4 for r in result),
                'no_financial_quarters':sum(not r['quarters'] for r in result),
                'not_disclosed_quarterly':sum(r['financial_status']=='not_disclosed' for r in result)}
     return {'checkedAt':dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'),
-            'summary':summary,'companies':result,'errors':errors}
+            'summary':summary,'freshnessMethodology':{'stalePrice':'Missing or more than 7 calendar days old; not a latest-exchange-session certification.', 'behindVerifiedSession':'Compared only where a source-observed latestCompletedSession is recorded; null means not certified.'},'companies':result,'errors':errors}
 
 
 def regressions(current, baseline):

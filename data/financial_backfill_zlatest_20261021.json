@@ -1,0 +1,42 @@
+{
+  "asOf": "2026-10-21",
+  "unit": "millions of reporting currency",
+  "auditScope": "VAT Group Q3 trading update only; preserve non-disclosed quarterly operating income and all prior records.",
+  "companies": {
+    "SIX:VACN": {
+      "reportingCurrency": "CHF",
+      "replaceQuarters": false,
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "revenue": 376.4,
+          "operatingIncome": null,
+          "operatingIncomeNotDisclosed": true,
+          "sourceUrl": "https://www.vatgroup.com/uploads/financial_reports/2026/vat-media-release-q3-2026-trading-update-en.pdf",
+          "sourceType": "filing",
+          "source": "Official issuer Q3 trading update",
+          "verifiedAt": "2026-10-21",
+          "publishedAt": "2026-10-15",
+          "reportedCurrency": "CHF",
+          "unit": "millions of reporting currency",
+          "basis": "Consolidated group trading update; quarterly operating income not disclosed",
+          "sourcePage": 2,
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "value": 376.4,
+              "reportedCurrency": "CHF",
+              "unit": "millions",
+              "sourceUrl": "https://www.vatgroup.com/uploads/financial_reports/2026/vat-media-release-q3-2026-trading-update-en.pdf",
+              "lineItem": "Group net sales"
+            }
+          }
+        }
+      ],
+      "financialStatus": "not_disclosed",
+      "financialNote": "분기 매출은 공시되지만 영업이익은 반기·연간으로만 공시되어 분기 영업이익과 OPM은 N/A입니다."
+    }
+  }
+}

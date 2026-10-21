@@ -1,0 +1,295 @@
+{
+  "asOf": "2026-10-21T00:26:12+00:00",
+  "companies": {
+    "XETR:IFX": {
+      "ticker": "IFX.DE",
+      "sourceUrl": "https://query2.finance.yahoo.com/v8/finance/chart/IFX.DE?range=1d&interval=1d",
+      "retrievedAt": "2026-10-21T00:26:12+00:00",
+      "currency": "EUR",
+      "exchange": "XETRA",
+      "sourceSymbol": "IFX.DE",
+      "regularMarketTime": 1792510777,
+      "points": [
+        [
+          "2026-10-20",
+          52.04
+        ]
+      ],
+      "rawSHA256": "611385ae560a91e4f4a8ea6a5d06438a2e0cd06daedf043717ea73b56ffcb859"
+    },
+    "XETR:SIE": {
+      "ticker": "SIE.DE",
+      "sourceUrl": "https://query2.finance.yahoo.com/v8/finance/chart/SIE.DE?range=1d&interval=1d",
+      "retrievedAt": "2026-10-21T00:26:12+00:00",
+      "currency": "EUR",
+      "exchange": "XETRA",
+      "sourceSymbol": "SIE.DE",
+      "regularMarketTime": 1792510514,
+      "points": [
+        [
+          "2026-10-20",
+          260.25
+        ]
+      ],
+      "rawSHA256": "28d74d9c19dbedddeeb7cce271d2260f87be1cebdc831fd16af152b04f7b2532"
+    },
+    "EURONEXT:ASM": {
+      "ticker": "ASM.AS",
+      "sourceUrl": "https://query2.finance.yahoo.com/v8/finance/chart/ASM.AS?range=1d&interval=1d",
+      "retrievedAt": "2026-10-21T00:26:12+00:00",
+      "currency": "EUR",
+      "exchange": "Amsterdam",
+      "sourceSymbol": "ASM.AS",
+      "regularMarketTime": 1792510560,
+      "points": [
+        [
+          "2026-10-20",
+          739.79999
+        ]
+      ],
+      "rawSHA256": "72eff64c7165f73c572fb5c262dfc8e59afd9c0348a548737e3fa5cfc30c9686"
+    },
+    "EURONEXT:BESI": {
+      "ticker": "BESI.AS",
+      "sourceUrl": "https://query2.finance.yahoo.com/v8/finance/chart/BESI.AS?range=1d&interval=1d",
+      "retrievedAt": "2026-10-21T00:26:12+00:00",
+      "currency": "EUR",
+      "exchange": "Amsterdam",
+      "sourceSymbol": "BESI.AS",
+      "regularMarketTime": 1792510523,
+      "points": [
+        [
+          "2026-10-20",
+          155.60001
+        ]
+      ],
+      "rawSHA256": "a600604fc94e6f8ad39c64de7d704399b8edaa057f2fb0a9f1c0a20db770039e"
+    },
+    "VIE:ATS": {
+      "ticker": "ATS.VI",
+      "sourceUrl": "https://query2.finance.yahoo.com/v8/finance/chart/ATS.VI?range=1d&interval=1d",
+      "retrievedAt": "2026-10-21T00:26:12+00:00",
+      "currency": "EUR",
+      "exchange": "Vienna",
+      "sourceSymbol": "ATS.VI",
+      "regularMarketTime": 1792510512,
+      "points": [
+        [
+          "2026-10-20",
+          160.8
+        ]
+      ],
+      "rawSHA256": "6900d06bacffb57aaa0f131ad4d06cb55e66c97d4130787ce38b855269480376"
+    },
+    "XETR:WAF": {
+      "ticker": "WAF.DE",
+      "sourceUrl": "https://query2.finance.yahoo.com/v8/finance/chart/WAF.DE?range=1d&interval=1d",
+      "retrievedAt": "2026-10-21T00:26:12+00:00",
+      "currency": "EUR",
+      "exchange": "XETRA",
+      "sourceSymbol": "WAF.DE",
+      "regularMarketTime": 1792510511,
+      "points": [
+        [
+          "2026-10-20",
+          64.5
+        ]
+      ],
+      "rawSHA256": "17752eddfe7e7bc7da60ca46200773df5e75e04d78a8fdb0f75fa66d735dbe47"
+    },
+    "XETR:MRK": {
+      "ticker": "MRK.DE",
+      "sourceUrl": "https://query2.finance.yahoo.com/v8/finance/chart/MRK.DE?range=1d&interval=1d",
+      "retrievedAt": "2026-10-21T00:26:12+00:00",
+      "currency": "EUR",
+      "exchange": "XETRA",
+      "sourceSymbol": "MRK.DE",
+      "regularMarketTime": 1792510505,
+      "points": [
+        [
+          "2026-10-20",
+          146.39999
+        ]
+      ],
+      "rawSHA256": "a05dfb46fc3e41e2e49bc49ba729b6c418e1f4cdd14c3ffce40149f4f55a7062"
+    },
+    "EURONEXT:AI": {
+      "ticker": "AI.PA",
+      "sourceUrl": "https://query2.finance.yahoo.com/v8/finance/chart/AI.PA?range=1d&interval=1d",
+      "retrievedAt": "2026-10-21T00:26:12+00:00",
+      "currency": "EUR",
+      "exchange": "Paris",
+      "sourceSymbol": "AI.PA",
+      "regularMarketTime": 1792510702,
+      "points": [
+        [
+          "2026-10-20",
+          172.24001
+        ]
+      ],
+      "rawSHA256": "8eafb5d50bb1dacae143dfea3e65555c97982f1d8720c0ff44f2b1d1b46981f6"
+    },
+    "XETR:HEN3": {
+      "ticker": "HEN3.DE",
+      "sourceUrl": "https://query2.finance.yahoo.com/v8/finance/chart/HEN3.DE?range=1d&interval=1d",
+      "retrievedAt": "2026-10-21T00:26:12+00:00",
+      "currency": "EUR",
+      "exchange": "XETRA",
+      "sourceSymbol": "HEN3.DE",
+      "regularMarketTime": 1792510508,
+      "points": [
+        [
+          "2026-10-20",
+          78.72
+        ]
+      ],
+      "rawSHA256": "e3d1e4feb0d74996581cbeb13624518c0301c034b3a551d1630ef26b9d614e3d"
+    },
+    "SIX:VACN": {
+      "ticker": "VACN.SW",
+      "sourceUrl": "https://query2.finance.yahoo.com/v8/finance/chart/VACN.SW?range=1d&interval=1d",
+      "retrievedAt": "2026-10-21T00:26:12+00:00",
+      "currency": "CHF",
+      "exchange": "Swiss",
+      "sourceSymbol": "VACN.SW",
+      "regularMarketTime": 1792510205,
+      "points": [
+        [
+          "2026-10-20",
+          600.59998
+        ]
+      ],
+      "rawSHA256": "d7ca6197e4df025ef4bbf560ede2ae8eff7e5e3454f5523cbdf45fd6170af77d"
+    },
+    "MIL:TPRO": {
+      "ticker": "TPRO.MI",
+      "sourceUrl": "https://query2.finance.yahoo.com/v8/finance/chart/TPRO.MI?range=1d&interval=1d",
+      "retrievedAt": "2026-10-21T00:26:12+00:00",
+      "currency": "EUR",
+      "exchange": "Milan",
+      "sourceSymbol": "TPRO.MI",
+      "regularMarketTime": 1792510505,
+      "points": [
+        [
+          "2026-10-20",
+          26.02
+        ]
+      ],
+      "rawSHA256": "df0c82ffea17f0113bb553dbfc2a0a6ea7a0aa0ebbf5d82c5bfb281959807978"
+    },
+    "MIL:PRY": {
+      "ticker": "PRY.MI",
+      "sourceUrl": "https://query2.finance.yahoo.com/v8/finance/chart/PRY.MI?range=1d&interval=1d",
+      "retrievedAt": "2026-10-21T00:26:12+00:00",
+      "currency": "EUR",
+      "exchange": "Milan",
+      "sourceSymbol": "PRY.MI",
+      "regularMarketTime": 1792510626,
+      "points": [
+        [
+          "2026-10-20",
+          104.3
+        ]
+      ],
+      "rawSHA256": "bce6b1ac7faf9f560ce66eb59953605ba2934b05a106c9ef479d75e1d9f258b0"
+    },
+    "EURONEXT:SU": {
+      "ticker": "SU.PA",
+      "sourceUrl": "https://query2.finance.yahoo.com/v8/finance/chart/SU.PA?range=1d&interval=1d",
+      "retrievedAt": "2026-10-21T00:26:12+00:00",
+      "currency": "EUR",
+      "exchange": "Paris",
+      "sourceSymbol": "SU.PA",
+      "regularMarketTime": 1792510503,
+      "points": [
+        [
+          "2026-10-20",
+          244.3
+        ]
+      ],
+      "rawSHA256": "03d5d93a2a283d682e84f1009880e49d0c3b529de8d2adcafe4a21dcc51a7788"
+    },
+    "SIX:ABBN": {
+      "ticker": "ABBN.SW",
+      "sourceUrl": "https://query2.finance.yahoo.com/v8/finance/chart/ABBN.SW?range=1d&interval=1d",
+      "retrievedAt": "2026-10-21T00:26:12+00:00",
+      "currency": "CHF",
+      "exchange": "Swiss",
+      "sourceSymbol": "ABBN.SW",
+      "regularMarketTime": 1792510205,
+      "points": [
+        [
+          "2026-10-20",
+          70.96
+        ]
+      ],
+      "rawSHA256": "d2f1641d62b61ddcae168891d478623a4f7983e79a313d5f21cf250a0da0333c"
+    },
+    "EURONEXT:DSY": {
+      "ticker": "DSY.PA",
+      "sourceUrl": "https://query2.finance.yahoo.com/v8/finance/chart/DSY.PA?range=1d&interval=1d",
+      "retrievedAt": "2026-10-21T00:26:12+00:00",
+      "currency": "EUR",
+      "exchange": "Paris",
+      "sourceSymbol": "DSY.PA",
+      "regularMarketTime": 1792510508,
+      "points": [
+        [
+          "2026-10-20",
+          23.19
+        ]
+      ],
+      "rawSHA256": "7f9aefb2d7f43b7c33a716cce1e0fbb3bc7f777603b0df98bc73c37594551c00"
+    },
+    "NYSE:P": {
+      "ticker": "P",
+      "sourceUrl": "https://query2.finance.yahoo.com/v8/finance/chart/P?range=1d&interval=1d",
+      "retrievedAt": "2026-10-21T00:26:12+00:00",
+      "currency": "USD",
+      "exchange": "NYSE",
+      "sourceSymbol": "P",
+      "regularMarketTime": 1792526624,
+      "points": [
+        [
+          "2026-10-20",
+          126.52
+        ]
+      ],
+      "rawSHA256": "7e651100ed506aa4d72d48c5583ce3269576eeabca53f013c5090a278ca4b50f"
+    },
+    "NASDAQ:FISV": {
+      "ticker": "FISV",
+      "sourceUrl": "https://query2.finance.yahoo.com/v8/finance/chart/FISV?range=1d&interval=1d",
+      "retrievedAt": "2026-10-21T00:26:12+00:00",
+      "currency": "USD",
+      "exchange": "NasdaqGS",
+      "sourceSymbol": "FISV",
+      "regularMarketTime": 1792526401,
+      "points": [
+        [
+          "2026-10-20",
+          48.25
+        ]
+      ],
+      "rawSHA256": "f332df00b551efb92dcd489da4019d977b98d93eda5654e10b91ada8ca5a8c2b"
+    },
+    "KRX:108320": {
+      "ticker": "108320.KS",
+      "sourceUrl": "https://query2.finance.yahoo.com/v8/finance/chart/108320.KS?range=1d&interval=1d",
+      "retrievedAt": "2026-10-21T00:26:12+00:00",
+      "currency": "KRW",
+      "exchange": "KSE",
+      "sourceSymbol": "108320.KS",
+      "regularMarketTime": 1792541181,
+      "points": [],
+      "rawSHA256": "ed723717a1388a7d7386d2aa47de69093fb3bab8125240bf62fd8d052927806f"
+    }
+  },
+  "methodology": {
+    "issue": "Long-range Yahoo daily responses omitted the Oct20 final close/adjusted-close while range=1d supplied a real adjusted close.",
+    "repair": "Append actual range=1d adjusted bar only after provider regular-session end; retain all historical points and other company fields.",
+    "scope": "15 European listings repaired from Oct19 to Oct20. 231 other company prices unchanged. Market capitalizations and financial disclosures unchanged.",
+    "precision": "Original provider double precision retained in raw response evidence; display series uses existing 5-decimal price convention.",
+    "coverageCaveat": "Seven-calendar-day stale flag is not a latest-session certification."
+  }
+}
