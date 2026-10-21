@@ -1,0 +1,85 @@
+name: Korean close ETF and official liquidity
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/korean-close-data.yml
+      - scripts/kofia_official.py
+  workflow_dispatch:
+    inputs:
+      kind:
+        type: choice
+        options: [etf, liquidity]
+        default: liquidity
+  schedule:
+    - cron: '30 8 * * 1-5' # 17:30 Asia/Seoul
+    # Enable 18:00/19:00 liquidity only after the read-only runner smoke passes.
+permissions:
+  contents: write
+concurrency:
+  group: market-data-updates
+  cancel-in-progress: false
+jobs:
+  official-source-smoke:
+    if: github.event_name == 'push'
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify complete official source on the real runner without changing data
+        run: |
+          python - <<'PYCODE'
+          import json, sys
+          from datetime import datetime, timezone
+          sys.path.insert(0, 'scripts')
+          from kofia_official import collect
+          release = collect(datetime.now(timezone.utc).isoformat())
+          print(json.dumps(release, ensure_ascii=False))
+          PYCODE
+  refresh:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - name: Record expected head and validate baseline
+        run: |
+          echo "EXPECTED_HEAD=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+          bash scripts/validate_publication.sh
+      - name: Collect only today's verified Korean session
+        env:
+          SCHEDULE: ${{ github.event.schedule }}
+          REQUEST_KIND: ${{ inputs.kind }}
+        run: |
+          kind="${REQUEST_KIND:-liquidity}"
+          if [ "$SCHEDULE" = '30 8 * * 1-5' ]; then kind=etf; fi
+          python scripts/refresh_korean_scheduled.py --kind "$kind"
+      - name: Validate complete candidate
+        run: bash scripts/validate_publication.sh
+      - name: Commit only changed bounded data at expected head
+        run: |
+          set -euo pipefail
+          git add data/korean_etf_charts.json data/korea-market.json
+          if git diff --cached --quiet; then exit 0; fi
+          remote_head=$(git ls-remote origin refs/heads/main | cut -f1)
+          if [ "$remote_head" != "$EXPECTED_HEAD" ]; then
+            echo 'Main changed during collection; refuse stale candidate. Rerun on latest main.' >&2
+            exit 1
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Refresh verified Korean close data'
+          git push origin HEAD:main
+          # No Pages success claim: GITHUB_TOKEN push is not a guaranteed Pages trigger.

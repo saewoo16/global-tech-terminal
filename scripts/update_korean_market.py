@@ -174,16 +174,17 @@ def main():
             successes.append('flows.'+market)
         except Exception as exc:
             failures.append({'section': 'flows.'+market, 'message': f'{type(exc).__name__}: {exc}'})
-    try:
-        results = collect_liquidity()
-        for key, rows in results.items():
-            if rows:
-                merge_series(payload['liquidity']['series'][key], rows, cutoff)
-                successes.append('liquidity.'+key)
-            else:
-                failures.append({'section': 'liquidity.'+key, 'message': '교차검증된 새 잔고 없음. 이전 관측을 보존했습니다.'})
-    except Exception as exc:
-        failures.append({'section': 'liquidity', 'message': f'{type(exc).__name__}: {exc}'})
+    if os.environ.get('SKIP_KR_LIQUIDITY') != '1':
+        try:
+            results = collect_liquidity()
+            for key, rows in results.items():
+                if rows:
+                    merge_series(payload['liquidity']['series'][key], rows, cutoff)
+                    successes.append('liquidity.'+key)
+                else:
+                    failures.append({'section': 'liquidity.'+key, 'message': '교차검증된 새 잔고 없음. 이전 관측을 보존했습니다.'})
+        except Exception as exc:
+            failures.append({'section': 'liquidity', 'message': f'{type(exc).__name__}: {exc}'})
     payload['asOf'] = max(payload['flows']['markets'][market]['coverage']['end'] for market in ('KOSPI', 'KOSDAQ'))
     if payload.get('futures'):
         try:
