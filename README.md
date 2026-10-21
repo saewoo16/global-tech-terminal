@@ -330,7 +330,7 @@ Yahoo 장기 일봉 응답의 마지막 종가가 null이더라도 `range=1d`에
 - 최근 4개 분기 `quarterlyHistory.rows`에는 `period`, `revenue`, `grossProfit`, `grossMargin`, `operatingIncome`, `eps`, `sourceIds`를 저장한다. 금액은 `unit`, 회계기준은 `basis`, EPS 기준은 `epsBasis`에 명시한다. 미공시/비해당/미확인은 null로 보존하고 0이나 임의 분할값을 만들지 않는다. 매출총이익 도출은 같은 연결/회계기준의 실제 매출원가만 사용하고 계산과 한계를 접힌 출처에 기록한다.
 - `releaseDate`는 미국 동부 `America/New_York`의 실제 발표일이며 `entry.date`와 같아야 한다. offset 포함 `releaseTiming.publishedAt`도 ET로 변환해 검사한다. KST 날짜, 수집일, 콜 종료일은 발표일을 바꾸지 않는다. 장전/장중/장후 모두 같은 ET 날짜에 귀속한다.
 - 늦게 공개되는 콜은 원래 발표 거래일의 카드만 보완한다. 예를 들어 SpaceX의 ET 2026-10-20 발표는 KST 10-21 오전 보고의 10-20 항목이며, 다음날 10-21 신규 실적으로 복제하지 않는다. 기본 선택 최신 거래일 및 다른 패널은 변경하지 않는다. UI도 다른 발표일의 행을 제외한다.
-- 사용자가 지정한 S&P500 외 기업은 `universeScope: additional_interest`로 명시하여 추가 관심기업으로 구분한다. 예비 발표는 `releaseType: preliminary`로 구분하고 공시 범위의 중간값을 실적 확정값으로 사용하지 않는다.
+- 실적 범위는 S&P500 + 검증된 미국 상장 시총 상위10개 + 명시 예외 SpaceX(SPCX)의 합집합이다. 임의의 추가 관심기업은 허용하지 않는다. `earnings.topMarketCapUniverse`는 `status: verified`, 실제 순위 `asOf`/`observedAt`, `sourceIds`, 정확히1~10위의 `rows`를 갖는다. 순위일과 발표일을 혼동하지 않는다. S&P 외 항목은 `top_market_cap_10` 또는 `explicit_exception`으로 구분한다. 예비 발표는 `releaseType: preliminary`로 구분하고 공시 범위의 중간값을 실적 확정값으로 사용하지 않는다.
 - 오전7시 시장 분석은 콜 종료를 기다리지 않고 게시한다. 후속 콜 작업은 대기 항목과 실제로 새로 공개된 자료가 있을 때만 실적/콜/출처를 보완하며 시장 분석을 재생성하지 않는다. `callUpdatedAt` 등 보강 시각은 발표일과 구분한다.
 
 후속 확인 시간은 한국시간 화~토 08·09·10·11시이며, 대기 콜과 새로운 공개 자료가 있을 때만 해당 발표일의 실적을 보완한다. 오전7시 기본 분석 일정과 별개다.

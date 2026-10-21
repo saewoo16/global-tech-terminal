@@ -198,8 +198,16 @@ def validate(payload):
                 assert not member_symbols or r['ticker'] in member_symbols
                 assert isinstance(r.get('reasonVerified'),bool)
                 if r['reasonVerified']: assert r.get('reason') and r.get('sourceIds')
+        top = e.get('earnings', {}).get('topMarketCapUniverse', {})
+        top_members = set()
+        if top:
+            assert top.get('status') == 'verified' and top.get('sourceIds')
+            assert dt.date.fromisoformat(top['asOf']) <= date
+            assert len(top.get('rows', [])) == 10 and {x['rank'] for x in top['rows']} == set(range(1, 11))
+            assert len({x['ticker'] for x in top['rows']}) == 10
+            top_members = {x['ticker'] for x in top['rows']}
         for r in e.get('earnings',{}).get('rows',[]):
-            assert r.get('universeScope') == 'additional_interest' or not member_symbols or r['ticker'] in member_symbols
+            assert r['ticker'] in member_symbols or r['ticker'] in top_members or r['ticker'] == 'SPCX', 'Earnings scope is S&P500 plus verified US top10 plus explicit SPCX only'
             assert r.get('sourceIds') and r.get('releaseDate')
             dt.date.fromisoformat(r['releaseDate'])
             assert r['releaseDate'] == e['date'], 'Earnings stay on their actual ET announcement session'

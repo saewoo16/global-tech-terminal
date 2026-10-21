@@ -23424,7 +23424,7 @@
             "period": "2026년 3분기 · 9/30 종료",
             "releaseDate": "2026-10-20",
             "announcementDateET": "2026-10-20",
-            "universeScope": "additional_interest",
+            "universeScope": "explicit_exception",
             "releaseType": "results",
             "statusLabel": "실적 발표 · 추가 관심기업",
             "presentationVersion": 3,
@@ -23828,10 +23828,75 @@
           "complete": false,
           "note": "실제 공식 발표를 확인한 17개 기업. 당일 모든 공시 전수 확인을 뜻하지 않습니다."
         },
-        "note": "발표 포함 기준은 한국시간 2026-10-21 07:00 이전 공개된 미국동부 10월20일 실적이다. 콜 요약은 후속 보완 자료로 구분하며 당시 확인 완료였다고 소급하지 않는다. 추가 관심기업 SpaceX는 S&P500 구성종목과 구분한다.",
+        "note": "발표 포함 기준은 한국시간 2026-10-21 07:00 이전 공개된 미국동부 10월20일 실적이다. 콜 요약은 후속 보완 자료로 구분하며 당시 확인 완료였다고 소급하지 않는다. 실적 범위는 S&P500 구성종목 + 미국 상장 시총 상위10개 + 명시 예외 SpaceX이다. 시총 순위는 10월19일16:00ET 확인분이며 발표일 및 가격 기준일과 구분한다. SpaceX는 S&P500 구성종목이 아니다.",
         "reportCutoffAt": "2026-10-20T22:00:00Z",
         "reportCutoffLabel": "2026-10-21 07:00 KST (10-20 18:00 ET)",
-        "reconstructedAt": "2026-10-21T08:11:58.236024+00:00"
+        "reconstructedAt": "2026-10-21T08:11:58.236024+00:00",
+        "topMarketCapUniverse": {
+          "status": "verified",
+          "asOf": "2026-10-19",
+          "observedAt": "2026-10-19T16:00:00-04:00",
+          "scope": "미국 상장 기업 · 공급사 대표 티커, ETF 제외 · 외국 발행인 및 REIT 포함",
+          "sourceIds": [
+            "cap500_membership",
+            "cap500_evidence"
+          ],
+          "rows": [
+            {
+              "rank": 1,
+              "ticker": "NVDA",
+              "name": "NVIDIA"
+            },
+            {
+              "rank": 2,
+              "ticker": "AAPL",
+              "name": "Apple"
+            },
+            {
+              "rank": 3,
+              "ticker": "GOOGL",
+              "name": "Alphabet"
+            },
+            {
+              "rank": 4,
+              "ticker": "MSFT",
+              "name": "Microsoft"
+            },
+            {
+              "rank": 5,
+              "ticker": "AMZN",
+              "name": "Amazon"
+            },
+            {
+              "rank": 6,
+              "ticker": "SPCX",
+              "name": "SpaceX"
+            },
+            {
+              "rank": 7,
+              "ticker": "META",
+              "name": "Meta Platforms"
+            },
+            {
+              "rank": 8,
+              "ticker": "AVGO",
+              "name": "Broadcom"
+            },
+            {
+              "rank": 9,
+              "ticker": "TSLA",
+              "name": "Tesla"
+            },
+            {
+              "rank": 10,
+              "ticker": "LLY",
+              "name": "Eli Lilly"
+            }
+          ]
+        },
+        "explicitExceptions": [
+          "SPCX"
+        ]
       },
       "collectedAt": "2026-10-20T22:16:29.501393+00:00"
     },

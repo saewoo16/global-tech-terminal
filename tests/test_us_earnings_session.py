@@ -39,15 +39,24 @@ class EarningsSessionTests(unittest.TestCase):
     def test_spacex_is_original_session_only_and_smci_is_preliminary(self):
         rows={r['ticker']:r for r in self.entry['earnings']['rows']}
         self.assertEqual(rows['SPCX']['releaseDate'],'2026-10-20')
-        self.assertEqual(rows['SPCX']['universeScope'],'additional_interest')
+        self.assertEqual(rows['SPCX']['universeScope'],'explicit_exception')
         self.assertEqual(rows['SMCI']['releaseType'],'preliminary')
         self.assertFalse(rows['SMCI']['displayCallHighlights'])
         for e in self.data['entries']:
             if e['date']!='2026-10-20': self.assertNotIn('SPCX',{r['ticker'] for r in e.get('earnings',{}).get('rows',[])})
-    def test_additional_interest_requires_explicit_scope(self):
+    def test_arbitrary_additional_interest_cannot_bypass_scope(self):
         row=copy.deepcopy(self.entry['earnings']['rows'][0]);row['ticker']='SYNTHETIC'
         self.entry['earnings']['rows'].append(row)
         with self.assertRaises(AssertionError):validate(self.data)
         row['universeScope']='additional_interest'
+        with self.assertRaisesRegex(AssertionError,'Earnings scope'):
+            validate(self.data)
+    def test_verified_top10_and_explicit_spcx_allowed(self):
+        self.assertEqual(len(self.entry['earnings']['topMarketCapUniverse']['rows']),10)
+        self.entry['earnings']['topMarketCapUniverse']['rows'][0]['ticker']='SYNTHETIC'
+        row=copy.deepcopy(self.entry['earnings']['rows'][0]);row['ticker']='SYNTHETIC';row['universeScope']='top_market_cap_10'
+        self.entry['earnings']['rows'].append(row)
         validate(self.data)
+        self.entry['earnings']['topMarketCapUniverse']['status']='unverified'
+        with self.assertRaises(AssertionError):validate(self.data)
 if __name__=='__main__':unittest.main()
