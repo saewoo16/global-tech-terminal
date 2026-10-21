@@ -81,7 +81,10 @@ def collect(observed_at):
                 expected = response.headers.get('Content-Length')
                 if expected is not None and len(raw) != int(expected): raise ValueError('Incomplete official response')
                 html = raw.decode(response.headers.get_content_charset() or 'utf-8')
-                if '</html>' not in html.lower(): raise ValueError('Incomplete official HTML')
+                # Actual FreeSIS public JSP ends with </body>; outer HTML tag is omitted.
+                # Keep a terminal body boundary plus strict dated-statistics parsing.
+                if not re.search(r'</body\s*>\s*(?:</html\s*>\s*)?$', html, re.IGNORECASE):
+                    raise ValueError('Incomplete official HTML body')
                 release = parse(html, observed_at)
                 release.update(acquisitionUrl=url, transport='https' if url.startswith('https:') else 'http',
                                sourceSha256=hashlib.sha256(raw).hexdigest())
