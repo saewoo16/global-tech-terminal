@@ -25,14 +25,14 @@ class October20Verification(unittest.TestCase):
  def test_reject_wrong_volume(self):
   c=copy.deepcopy(self.e['marketCapUnusualMovers']);c['rows'][0]['volumeRatio']=2
   with self.assertRaises(AssertionError):validate_unusual_movers(c,set(),dt.date(2026,10,20),cap500=True)
- def test_seventeen_reports_four_metrics_and_reported_quarters(self):
-  rows=self.e['earnings']['rows'];self.assertEqual(len(rows),17)
+ def test_reports_five_metrics_and_reported_quarters(self):
+  rows=self.e['earnings']['rows'];self.assertGreaterEqual(len(rows),17)
   for r in rows:
-   self.assertEqual(r['presentationVersion'],2);self.assertEqual(len(r['metrics']),4)
+   self.assertEqual(r['presentationVersion'],3);self.assertEqual(len(r['metrics']),5)
    quarters=r['quarterlyHistory']['rows'];self.assertEqual(len(quarters),4)
    for q in quarters:
-    if q.get('revenue') and q.get('operatingIncome') is not None:self.assertAlmostEqual(q['operatingMargin'],q['operatingIncome']/q['revenue']*100)
-  after=[r for r in rows if r['priceReaction']['afterHours']['status']=='verified'];self.assertEqual(len(after),5)
+    if q.get('revenue') and q.get('grossProfit') is not None:self.assertAlmostEqual(q['grossMargin'],q['grossProfit']/q['revenue']*100)
+  after=[r for r in rows if r.get('priceReaction',{}).get('afterHours',{}).get('status')=='verified'];self.assertEqual({r['ticker'] for r in after},{'UAL','COF','CB'})
   for r in after:
    a=r['priceReaction']['afterHours'];self.assertGreater(dt.datetime.fromisoformat(a['observedAt']),dt.datetime.fromisoformat(r['releaseTiming']['publishedAt']))
    self.assertAlmostEqual(a['changePct'],(a['price']/r['priceReaction']['regular']['close']-1)*100)

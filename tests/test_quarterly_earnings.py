@@ -26,10 +26,15 @@ class QuarterlyEarningsTests(unittest.TestCase):
                     for row in rows:
                         self.assertTrue(row['sourceIds'])
                         self.assertLessEqual(set(row['sourceIds']), sources)
-                        for key in ['revenue', 'operatingIncome', 'operatingMargin', 'netIncome']:
+                        keys = ['revenue','grossProfit','grossMargin','operatingIncome','eps'] if company.get('presentationVersion') == 3 else ['revenue','operatingIncome','operatingMargin','netIncome']
+                        for key in keys:
                             self.assertTrue(row[key] is None or isinstance(row[key], (int, float)))
                             if row[key] is not None:
                                 self.assertTrue(math.isfinite(row[key]))
+                        if company.get('presentationVersion') == 3:
+                            if row['grossProfit'] is not None and row['revenue']:
+                                self.assertAlmostEqual(row['grossMargin'],100*row['grossProfit']/row['revenue'],delta=0.01)
+                            continue
                         if row['operatingIncome'] is None:
                             self.assertIsNone(row['operatingMargin'])
                         elif row['revenue']:

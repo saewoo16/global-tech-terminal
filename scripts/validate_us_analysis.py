@@ -199,11 +199,23 @@ def validate(payload):
                 assert isinstance(r.get('reasonVerified'),bool)
                 if r['reasonVerified']: assert r.get('reason') and r.get('sourceIds')
         for r in e.get('earnings',{}).get('rows',[]):
-            assert not member_symbols or r['ticker'] in member_symbols
+            assert r.get('universeScope') == 'additional_interest' or not member_symbols or r['ticker'] in member_symbols
             assert r.get('sourceIds') and r.get('releaseDate')
             dt.date.fromisoformat(r['releaseDate'])
+            assert r['releaseDate'] == e['date'], 'Earnings stay on their actual ET announcement session'
+            if r.get('releaseTiming', {}).get('publishedAt'):
+                assert market_time(r['releaseTiming']['publishedAt']).date().isoformat() == e['date'], 'Announcement timestamp must match entry in America/New_York, not KST or refresh date'
+                if e.get('earnings', {}).get('reportCutoffAt'):
+                    assert market_time(r['releaseTiming']['publishedAt']) <= market_time(e['earnings']['reportCutoffAt']), 'Release was not available at the stated report cutoff'
             metrics = r.get('metrics', [])
-            if r.get('presentationVersion') == 2:
+            if r.get('presentationVersion') == 3:
+                assert [m.get('label') for m in metrics] == ['매출', '매출총이익', '매출총이익률', '영업이익', 'EPS'], 'Exactly five requested principal metrics'
+                history = r.get('quarterlyHistory', {})
+                assert len(history.get('rows', [])) == 4, 'Four reported quarters required'
+                for quarter in history['rows']:
+                    assert all(key in quarter for key in ('revenue', 'grossProfit', 'grossMargin', 'operatingIncome', 'eps'))
+                    assert quarter.get('sourceIds')
+            elif r.get('presentationVersion') == 2:
                 assert len(metrics) == 4, 'Current earnings show exactly four principal metrics'
                 labels = [m.get('label', '') for m in metrics]
                 assert any(label in ('매출', '매출액') for label in labels)

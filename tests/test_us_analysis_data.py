@@ -42,7 +42,7 @@ class USAnalysisTests(unittest.TestCase):
   later=copy.deepcopy(self.historical)
   date=max(dt.date.fromisoformat(e['date']) for e in self.data['entries'])+dt.timedelta(days=1)
   while date.weekday()>=5:date+=dt.timedelta(days=1)
-  later['date']=date.isoformat();self.data['entries'].insert(0,later)
+  later['date']=date.isoformat();later['earnings']['rows']=[];self.data['entries'].insert(0,later)
   self.assertEqual(mod.validate(self.data),len(self.data['entries']))
   self.assertEqual(next(e for e in self.data['entries'] if e['date']=='2026-10-16'),self.historical)
 
