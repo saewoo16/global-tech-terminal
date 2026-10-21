@@ -7,6 +7,7 @@ for test in tests/test_*.cjs; do
   node "$test"
 done
 python scripts/validate_us_analysis.py
+python scripts/validate_us_heatmaps.py
 python scripts/validate_korean_market.py
 # No --entry: validate the preserved archive without rewriting it.
 python scripts/manage_briefings.py
