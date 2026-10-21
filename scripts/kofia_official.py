@@ -41,6 +41,26 @@ def parse(html, observed_at):
             **values, 'publicationTimeRule': 'Credit balances next day15:00–18:00; exact deposits release time unverified',
             'ruleSource': RULE_URL}
 
+def response_diagnostic(raw, headers):
+    """Bounded diagnostics for this unauthenticated public statistics response.
+
+    No headers containing cookies or credentials are logged. Long opaque values,
+    query strings, and input values are redacted from the short HTML excerpts.
+    """
+    import hashlib
+    text = raw.decode(headers.get_content_charset() or 'utf-8', errors='replace')
+    def excerpt(value):
+        value = re.sub(r'(?i)(value\s*=\s*)[\"\'][^\"\']*[\"\']', r'\1"[redacted]"', value)
+        value = re.sub(r'(?i)(https?://[^\s\"\'<>?]+)\?[^\s\"\'<>]*', r'\1?[redacted]', value)
+        value = re.sub(r'[A-Za-z0-9_+/=.-]{32,}', '[opaque-redacted]', value)
+        return ' '.join(value.split())
+    return {'bytes': len(raw), 'contentLength': headers.get('Content-Length'),
+            'contentType': headers.get('Content-Type'), 'contentEncoding': headers.get('Content-Encoding'),
+            'sha256': hashlib.sha256(raw).hexdigest(), 'hasHtmlEnd': '</html>' in text.lower(),
+            'hasBodyEnd': '</body>' in text.lower(), 'hasDepositLabel': '투자자예탁금' in text,
+            'hasCreditLabel': '신용융자' in text, 'hasAnnouncement': '신용공여통계관리' in text,
+            'prefix': excerpt(text[:400]), 'tail': excerpt(text[-400:])}
+
 def collect(observed_at):
     """Try the official HTTPS and public HTTP endpoints, never disable TLS checks.
 
@@ -55,6 +75,9 @@ def collect(observed_at):
             with urllib.request.urlopen(req, timeout=90) as response:
                 if response.status != 200: raise ValueError('Official source did not return HTTP200')
                 raw = response.read()
+                # Diagnostics only: unchanged strict validation below still decides acceptance.
+                import json
+                print('FreeSIS response diagnostic: ' + json.dumps(response_diagnostic(raw, response.headers), ensure_ascii=False))
                 expected = response.headers.get('Content-Length')
                 if expected is not None and len(raw) != int(expected): raise ValueError('Incomplete official response')
                 html = raw.decode(response.headers.get_content_charset() or 'utf-8')
