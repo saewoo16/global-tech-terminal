@@ -11,6 +11,9 @@ class USAnalysisTests(unittest.TestCase):
   self.data=json.loads((ROOT/'data/us_analysis.json').read_text())
   self.historical=next(e for e in self.data['entries'] if e['date']=='2026-10-16')
  def test_real_snapshot(self):self.assertEqual(mod.validate(self.data),len(self.data['entries']))
+ def test_future_updates_do_not_require_retired_cap500_panel(self):
+  for entry in self.data['entries']:entry.pop('marketCapUnusualMovers',None)
+  self.assertEqual(mod.validate(self.data),len(self.data['entries']))
  def test_weekend_rejected(self):
   self.historical['date']='2026-10-17'
   with self.assertRaises(AssertionError):mod.validate(self.data)

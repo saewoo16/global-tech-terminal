@@ -6,3 +6,5 @@
 .us-quarterly{margin:24px 0}.us-quarterly h4,.us-consensus h4{font-size:14px;margin:0 0 10px}.us-quarterly table{min-width:520px;table-layout:fixed}
 .us-quarterly table th:first-child{width:112px;text-align:left;white-space:nowrap}
 .us-quarterly table th:nth-child(n+2),.us-quarterly table td:nth-child(n+2){text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}.us-consensus{padding:15px 18px;margin-top:16px;background:#13243a;border:1px solid var(--line);border-radius:9px}.us-consensus p{font-size:12px;line-height:1.9;margin:6px 0}.us-earnings-summary{font-size:13px;line-height:1.9;margin:20px 0}.us-call li{margin-bottom:12px;line-height:1.9}
+
+.us-high-group{margin-top:1.5rem}.us-high-sector th{text-align:left;background:rgba(96,165,250,.09)}.us-high-sector small{display:inline;margin-left:.7em;font-weight:400}.us-high-summary th,.us-high-summary td{white-space:normal;text-align:left;line-height:1.8;border-top:2px solid var(--border,#334155);font-weight:600}
