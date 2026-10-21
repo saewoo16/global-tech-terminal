@@ -146,12 +146,14 @@ class KoreanFuturesTests(unittest.TestCase):
         self.assertEqual(len(codes), len(rows))
         self.assertEqual(set(mapping['byCode']), codes)
         self.assertEqual(mapping['coverage']['total'], len(rows))
-        self.assertEqual(mapping['coverage']['classified'], len(rows))
-        self.assertEqual(mapping['coverage']['unclassified'], 0)
+        unknown = {r['code'] for r in rows if r['industry']['id'] == 'unclassified'}
+        self.assertEqual(mapping['coverage']['classified'], len(rows) - len(unknown))
+        self.assertEqual(mapping['coverage']['unclassified'], len(unknown))
         self.assertEqual(mapping['asOf'], self.data['heatmaps']['classification']['asOf'])
         self.assertLessEqual(mapping['asOf'], self.data['heatmaps']['asOf'])
         self.assertEqual(mapping['conflictsInUniverse'], [])
-        self.assertEqual(mapping['unclassified'], [])
+        self.assertEqual({r['code'] for r in mapping['unclassified']}, unknown)
+        self.assertTrue(all(r.get('reason') for r in mapping['unclassified']))
         for part in self.data['heatmaps']['markets'].values():
             self.assertEqual(sum(row['marketCapKRW'] for row in part['rows']), part['totalDisplayedMarketCapKRW'])
             for row in part['rows']:

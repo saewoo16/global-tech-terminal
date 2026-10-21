@@ -195,7 +195,9 @@ class KoreanMarketTests(unittest.TestCase):
 
     def test_near_high_distance_and_true_high_checked(self):
         data = copy.deepcopy(self.data)
-        next(row for row in data['highsScreen']['rows'] if row['classification'] == 'near_high')['distancePct'] = -5
+        row = next((row for row in data['highsScreen']['rows'] if row['classification'] == 'near_high'), data['highsScreen']['rows'][0])
+        row['classification'] = 'near_high'
+        row['distancePct'] = -5
         errors = validate(data)
         self.assertTrue(any('high-distance mismatch' in e for e in errors))
         self.assertTrue(any('near high must be within3pct' in e for e in errors))

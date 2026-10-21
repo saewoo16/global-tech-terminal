@@ -88,11 +88,41 @@ def collect_flows(market, today):
     return sorted(result, key=lambda row: row['date'])
 
 
-def collect_liquidity():
+def direct_official_credit_splits(balance, release):
+    """Verify actual same-day market splits against a directly observed official total.
+
+    This narrow path is independent of delayed CSV mirrors. It neither estimates
+    a missing market nor revises deposits, dates, or any other market panel.
+    """
+    empty = {'creditKOSPI': [], 'creditKOSDAQ': []}
+    if not release: return empty
+    day = release.get('date')
+    datetime.strptime(day, '%Y-%m-%d')
+    if release.get('url') != 'https://freesis.kofia.or.kr/stat/main.do' or release.get('unit') != 'million KRW':
+        raise ValueError('Direct official FreeSIS total with explicit units required')
+    def whole(value):
+        number = as_number(value)
+        if number <= 0 or not number.is_integer(): raise ValueError('Positive integer million-KRW balance required')
+        return int(number)
+    total = whole(release.get('officialMarginLoans'))
+    values = {}
+    for market in ('KOSPI', 'KOSDAQ'):
+        matches = [row for row in balance.get('kospiList' if market == 'KOSPI' else 'kosdaqList', []) if row.get('stdDate') == day]
+        if len(matches) > 1: raise ValueError('Duplicate same-day market credit observations')
+        if not matches: return empty
+        values[market] = whole(matches[0].get('sinyong'))
+    if abs(sum(values.values()) - total) > 1: return empty
+    return {'credit'+market: [{'date': day, 'value': value/100, 'rawMillionKRW': value,
+        'sourceId': 'chun-crosschecked', 'verificationMethod': 'same-day direct official KOFIA total',
+        'officialSourceUrl': release['url'], 'officialMarginLoansMillionKRW': total,
+        'splitMinusOfficialMillionKRW': sum(values.values())-total}]
+        for market, value in values.items()}
+
+
+def _collect_mirrored_liquidity(balance):
     """Cross-check each recent market split against independent KOFIA totals."""
     recent = list(csv.DictReader(io.StringIO(fetch(RECENT))))
     latest = json.loads(fetch(LATEST))['as_of']
-    balance = json.loads(fetch(CHUN))
     kospi = {row['stdDate']: round(as_number(row['sinyong'])) for row in balance['kospiList'] if row.get('sinyong') is not None}
     kosdaq = {row['stdDate']: round(as_number(row['sinyong'])) for row in balance['kosdaqList'] if row.get('sinyong') is not None}
     rows = {key: [] for key in ('deposits', 'creditKOSPI', 'creditKOSDAQ')}
@@ -111,6 +141,22 @@ def collect_liquidity():
                 if values[day] <= 0:
                     raise ValueError('invalid per-market balance')
                 rows[key].append({'date': day, 'value': values[day]/100, 'sourceId': 'chun-crosschecked'})
+    return rows
+
+
+def collect_liquidity(official_release=None):
+    balance = json.loads(fetch(CHUN))
+    direct = direct_official_credit_splits(balance, official_release)
+    try:
+        rows = _collect_mirrored_liquidity(balance)
+    except Exception:
+        if not all(direct.values()): raise
+        # Only the directly verified two-market observation survives mirror failure.
+        rows = {'deposits': [], 'creditKOSPI': [], 'creditKOSDAQ': []}
+    for key, observations in direct.items():
+        combined = {row['date']: row for row in rows[key]}
+        combined.update({row['date']: row for row in observations})
+        rows[key] = [row for _, row in sorted(combined.items())]
     return rows
 
 
@@ -200,9 +246,9 @@ def main():
             failures.append({'section': 'flows.'+market, 'message': f'{type(exc).__name__}: {exc}'})
     if os.environ.get('SKIP_KR_LIQUIDITY') != '1':
         try:
-            results = collect_liquidity()
-            if os.environ.get('OFFICIAL_KR_LIQUIDITY') == '1':
-                release = payload['liquidity'].get('validationSummary', {}).get('latestOfficialRelease', {})
+            release = payload['liquidity'].get('validationSummary', {}).get('latestOfficialRelease', {}) if os.environ.get('OFFICIAL_KR_LIQUIDITY') == '1' else None
+            results = collect_liquidity(official_release=release)
+            if release is not None:
                 results = official_credit_splits(results, release)
             for key, rows in results.items():
                 if rows:

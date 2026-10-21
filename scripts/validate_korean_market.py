@@ -247,6 +247,15 @@ def validate(payload):
                 check(valid_date(item.get("comparisonStart")) and valid_date(item.get("comparisonEnd")), f"{index}: comparison dates required")
                 if valid_date(item.get("comparisonStart")) and valid_date(item.get("comparisonEnd")):
                     check(item["comparisonStart"] < item["comparisonEnd"], f"{index}: comparison dates must increase")
+            coverage = item.get('coverage', {})
+            if coverage.get('missingCount', 0):
+                missing_codes = coverage.get('missingCodes', [])
+                check(item.get('status') == 'partial' and coverage.get('rankingScope') == 'verified_subset' and coverage.get('isComplete') is False, f"{index}: partial ranking scope must be explicit")
+                check(bool(item.get('scopeLabel')) and '전체 순위 아님' in item.get('scopeLabel', ''), f"{index}: partial ranking visible limitation required")
+                check(len(set(missing_codes)) == len(missing_codes) == coverage.get('missingCount'), f"{index}: exact missing list required")
+                check(coverage.get('validCount', 0) + coverage.get('missingCount', 0) == coverage.get('expectedCount'), f"{index}: partial count does not reconcile")
+                check({r.get('code') for r in item.get('missingConstituents', [])} == set(missing_codes), f"{index}: visible missing names required")
+                check(all(r.get('code') not in missing_codes for kind in ('gainers', 'losers') for r in item.get(kind, [])), f"{index}: missing constituent cannot be ranked")
             seen = set()
             for kind in ("gainers", "losers"):
                 rows = item.get(kind, [])
@@ -286,14 +295,25 @@ def validate(payload):
             components = calculation.get('constituentData', [])
             check(bool(components), 'sectorReturns: price boundary evidence required')
             for period in ('day', 'week', 'month'):
-                window = sectors.get('windows', {}).get(period, {})
-                check(valid_date(window.get('baseDate')) and window.get('endDate') == sectors.get('asOf'), 'sectorReturns: verified window required')
+                row_date = row.get('asOf', sectors.get('asOf'))
+                window = {'baseDate': calculation.get('bases', {}).get(period), 'endDate': calculation.get('end')}
+                check(valid_date(row_date) and row_date <= sectors.get('asOf', ''), 'sectorReturns: invalid row observation date')
+                check(valid_date(window.get('baseDate')) and window.get('endDate') == row_date, 'sectorReturns: verified window required')
+                if row_date != sectors.get('asOf'):
+                    check(row.get('refreshStatus') == 'retained_previous' and bool(row.get('refreshNote')), 'sectorReturns: stale row must be explicit')
                 returns = []
                 for component in components:
                     observations = component.get('observations', {})
-                    base = observations.get(window.get('baseDate'), {}).get('adjustedClose')
-                    end = observations.get(window.get('endDate'), {}).get('adjustedClose')
-                    check(number(base) and base > 0 and number(end) and end > 0, 'sectorReturns: positive adjusted closes required')
+                    declared_field = component.get('priceField')
+                    check(declared_field in ('indicators.adjclose[0].adjclose', 'adjustedClose', 'close'), 'sectorReturns: unknown price field')
+                    price_field = declared_field
+                    # Legacy Yahoo path explicitly names indicators.adjclose; fresh NAVER declares close.
+                    price_field = 'close' if price_field == 'close' else 'adjustedClose'
+                    if price_field == 'close':
+                        check(bool(component.get('priceBasis')) and component.get('collectionMethod') == 'fresh_naver_daily_chart', 'sectorReturns: non-adjusted source basis required')
+                    base = observations.get(window.get('baseDate'), {}).get(price_field)
+                    end = observations.get(window.get('endDate'), {}).get(price_field)
+                    check(number(base) and base > 0 and number(end) and end > 0, 'sectorReturns: positive declared-basis prices required')
                     if number(base) and base > 0 and number(end):
                         returns.append((end / base - 1) * 100)
                 if len(returns) == len(components) and returns and number(row.get(period)):
