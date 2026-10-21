@@ -114,6 +114,30 @@ def collect_liquidity():
     return rows
 
 
+def official_credit_splits(results, release):
+    """Keep mirrored market splits behind the latest directly verified total.
+
+    The primary-source job owns deposits. Never infer a missing market or admit
+    a new date on the strength of a mirror's latest-date label alone.
+    """
+    day = release.get('date')
+    total = release.get('officialMarginLoans')
+    if not day or not isinstance(total, (int, float)) or isinstance(total, bool) or not math.isfinite(total) or total <= 0:
+        raise ValueError('Direct official credit date and total required')
+    keys = ('creditKOSPI', 'creditKOSDAQ')
+    indexed = {key: {row['date']: row for row in results.get(key, [])} for key in keys}
+    dates = sorted(set(indexed[keys[0]]) & set(indexed[keys[1]]))
+    accepted = {key: [] for key in keys}
+    for observed in dates:
+        if observed > day: continue
+        values = [as_number(indexed[key][observed]['value']) for key in keys]
+        if any(value <= 0 for value in values): continue
+        # Earlier rows were independently cross-checked by collect_liquidity.
+        if observed == day and abs(sum(values)*100-total) > 1.000001: continue
+        for key in keys: accepted[key].append(indexed[key][observed])
+    return accepted
+
+
 def atomic_write(payload, target=FILE):
     errors = validate(payload)
     if errors:
@@ -177,6 +201,9 @@ def main():
     if os.environ.get('SKIP_KR_LIQUIDITY') != '1':
         try:
             results = collect_liquidity()
+            if os.environ.get('OFFICIAL_KR_LIQUIDITY') == '1':
+                release = payload['liquidity'].get('validationSummary', {}).get('latestOfficialRelease', {})
+                results = official_credit_splits(results, release)
             for key, rows in results.items():
                 if rows:
                     merge_series(payload['liquidity']['series'][key], rows, cutoff)

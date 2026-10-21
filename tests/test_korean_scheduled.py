@@ -81,9 +81,33 @@ class WorkflowSafety(unittest.TestCase):
         self.assertIn("cron: '0 22 * * 1-5'",generic)
         self.assertNotIn('python scripts/update_korean_etf_charts.py',generic)
         self.assertNotIn('SKIP_KR_LIQUIDITY',generic)
+        self.assertIn('OFFICIAL_KR_LIQUIDITY',generic)
         self.assertIn('contents: read',workflow)
         self.assertIn("if: github.event_name == 'push'",workflow)
-        self.assertNotIn("cron: '0 9,10",workflow)
+        self.assertIn("cron: '0 9,10",workflow)
     def test_timestamp_only_noop(self):
         from refresh_korean_scheduled import substantive
         self.assertEqual(substantive({'updatedAt':'a','funds':[{'metadataRetrievedAt':'a','representatives':{'marketCapObservedAt':'a','value':1}}]}),substantive({'updatedAt':'b','funds':[{'metadataRetrievedAt':'b','representatives':{'marketCapObservedAt':'b','value':1}}]}))
+
+from update_korean_market import official_credit_splits
+
+class CreditPolicy(unittest.TestCase):
+    def fixture(self):
+        return {'deposits':[{'date':'2026-10-20','value':1}],
+                'creditKOSPI':[{'date':d,'value':200.0} for d in ('2026-10-19','2026-10-20','2026-10-21')],
+                'creditKOSDAQ':[{'date':d,'value':100.0} for d in ('2026-10-19','2026-10-20','2026-10-21')]}
+    def test_keeps_only_verified_dates_and_no_deposit(self):
+        rows=official_credit_splits(self.fixture(),{'date':'2026-10-20','officialMarginLoans':30000})
+        self.assertNotIn('deposits',rows)
+        self.assertEqual([r['date'] for r in rows['creditKOSPI']],['2026-10-19','2026-10-20'])
+    def test_mismatch_excludes_both(self):
+        rows=official_credit_splits(self.fixture(),{'date':'2026-10-20','officialMarginLoans':30100})
+        self.assertEqual([r['date'] for r in rows['creditKOSDAQ']],['2026-10-19'])
+    def test_missing_market_not_inferred(self):
+        data=self.fixture();data['creditKOSDAQ']=[]
+        self.assertEqual(official_credit_splits(data,{'date':'2026-10-20','officialMarginLoans':30000}),{'creditKOSPI':[],'creditKOSDAQ':[]})
+    def test_one_million_tolerance(self):
+        rows=official_credit_splits(self.fixture(),{'date':'2026-10-20','officialMarginLoans':30001})
+        self.assertEqual(rows['creditKOSPI'][-1]['date'],'2026-10-20')
+    def test_missing_primary_total_fails(self):
+        with self.assertRaises(ValueError):official_credit_splits(self.fixture(),{})
