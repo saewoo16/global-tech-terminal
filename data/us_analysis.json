@@ -2939,6 +2939,166 @@
           "observedAt": "2026-10-22T00:02:05Z",
           "publishedAt": null,
           "note": "실제 공개 원문 페이지를 열람. 전년 실적 조정기준, 연료할증료와 가격, 전년 대비 마진과 전분기 계절성을 구분.07시 이후 확인된09시 보완."
+        },
+        {
+          "id": "afterhours_20261021_TSLA",
+          "title": "TSLA · Yahoo Finance 시간외 최종 관측",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/TSLA?range=1d&interval=1m&includePrePost=true",
+          "observedAt": "2026-10-22T01:08:59.794753+00:00",
+          "quoteObservedAt": "2026-10-21T19:59:57-04:00",
+          "note": "ET 2026-10-21 정규장 종가 대비 직접 계산. 제공사 전일 종가 대비 수익률과 구분. 원자료 가격 정밀도 보존. 최신 체결이 이른 시각이면 해당 관측시각을 그대로 표시."
+        },
+        {
+          "id": "afterhours_20261021_LRCX",
+          "title": "LRCX · Yahoo Finance 시간외 최종 관측",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/LRCX?range=1d&interval=1m&includePrePost=true",
+          "observedAt": "2026-10-22T01:08:59.712576+00:00",
+          "quoteObservedAt": "2026-10-21T19:59:34-04:00",
+          "note": "ET 2026-10-21 정규장 종가 대비 직접 계산. 제공사 전일 종가 대비 수익률과 구분. 원자료 가격 정밀도 보존. 최신 체결이 이른 시각이면 해당 관측시각을 그대로 표시."
+        },
+        {
+          "id": "afterhours_20261021_CSX",
+          "title": "CSX · Yahoo Finance 시간외 최종 관측",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/CSX?range=1d&interval=1m&includePrePost=true",
+          "observedAt": "2026-10-22T01:08:59.716469+00:00",
+          "quoteObservedAt": "2026-10-21T19:59:29-04:00",
+          "note": "ET 2026-10-21 정규장 종가 대비 직접 계산. 제공사 전일 종가 대비 수익률과 구분. 원자료 가격 정밀도 보존. 최신 체결이 이른 시각이면 해당 관측시각을 그대로 표시."
+        },
+        {
+          "id": "afterhours_20261021_IBM",
+          "title": "IBM · Yahoo Finance 시간외 최종 관측",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/IBM?range=1d&interval=1m&includePrePost=true",
+          "observedAt": "2026-10-22T01:08:59.660872+00:00",
+          "quoteObservedAt": "2026-10-21T19:59:51-04:00",
+          "note": "ET 2026-10-21 정규장 종가 대비 직접 계산. 제공사 전일 종가 대비 수익률과 구분. 원자료 가격 정밀도 보존. 최신 체결이 이른 시각이면 해당 관측시각을 그대로 표시."
+        },
+        {
+          "id": "afterhours_20261021_URI",
+          "title": "URI · Yahoo Finance 시간외 최종 관측",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/URI?range=1d&interval=1m&includePrePost=true",
+          "observedAt": "2026-10-22T01:08:59.656470+00:00",
+          "quoteObservedAt": "2026-10-21T19:29:01-04:00",
+          "note": "ET 2026-10-21 정규장 종가 대비 직접 계산. 제공사 전일 종가 대비 수익률과 구분. 원자료 가격 정밀도 보존. 최신 체결이 이른 시각이면 해당 관측시각을 그대로 표시."
+        },
+        {
+          "id": "afterhours_20261021_TXN",
+          "title": "TXN · Yahoo Finance 시간외 최종 관측",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/TXN?range=1d&interval=1m&includePrePost=true",
+          "observedAt": "2026-10-22T01:08:59.600389+00:00",
+          "quoteObservedAt": "2026-10-21T19:58:06-04:00",
+          "note": "ET 2026-10-21 정규장 종가 대비 직접 계산. 제공사 전일 종가 대비 수익률과 구분. 원자료 가격 정밀도 보존. 최신 체결이 이른 시각이면 해당 관측시각을 그대로 표시."
+        },
+        {
+          "id": "afterhours_20261021_CCI",
+          "title": "CCI · Yahoo Finance 시간외 최종 관측",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/CCI?range=1d&interval=1m&includePrePost=true",
+          "observedAt": "2026-10-22T01:08:59.656734+00:00",
+          "quoteObservedAt": "2026-10-21T19:51:29-04:00",
+          "note": "ET 2026-10-21 정규장 종가 대비 직접 계산. 제공사 전일 종가 대비 수익률과 구분. 원자료 가격 정밀도 보존. 최신 체결이 이른 시각이면 해당 관측시각을 그대로 표시."
+        },
+        {
+          "id": "afterhours_20261021_T",
+          "title": "T · Yahoo Finance 시간외 최종 관측",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/T?range=1d&interval=1m&includePrePost=true",
+          "observedAt": "2026-10-22T01:09:02.468868+00:00",
+          "quoteObservedAt": "2026-10-21T19:59:32-04:00",
+          "note": "ET 2026-10-21 정규장 종가 대비 직접 계산. 제공사 전일 종가 대비 수익률과 구분. 원자료 가격 정밀도 보존. 최신 체결이 이른 시각이면 해당 관측시각을 그대로 표시."
+        },
+        {
+          "id": "afterhours_20261021_ABT",
+          "title": "ABT · Yahoo Finance 시간외 최종 관측",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/ABT?range=1d&interval=1m&includePrePost=true",
+          "observedAt": "2026-10-22T01:09:02.457164+00:00",
+          "quoteObservedAt": "2026-10-21T19:02:29-04:00",
+          "note": "ET 2026-10-21 정규장 종가 대비 직접 계산. 제공사 전일 종가 대비 수익률과 구분. 원자료 가격 정밀도 보존. 최신 체결이 이른 시각이면 해당 관측시각을 그대로 표시."
+        },
+        {
+          "id": "afterhours_20261021_DHR",
+          "title": "DHR · Yahoo Finance 시간외 최종 관측",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/DHR?range=1d&interval=1m&includePrePost=true",
+          "observedAt": "2026-10-22T01:09:02.424378+00:00",
+          "quoteObservedAt": "2026-10-21T16:53:49-04:00",
+          "note": "ET 2026-10-21 정규장 종가 대비 직접 계산. 제공사 전일 종가 대비 수익률과 구분. 원자료 가격 정밀도 보존. 최신 체결이 이른 시각이면 해당 관측시각을 그대로 표시."
+        },
+        {
+          "id": "afterhours_20261021_TMO",
+          "title": "TMO · Yahoo Finance 시간외 최종 관측",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/TMO?range=1d&interval=1m&includePrePost=true",
+          "observedAt": "2026-10-22T01:09:02.420361+00:00",
+          "quoteObservedAt": "2026-10-21T19:53:31-04:00",
+          "note": "ET 2026-10-21 정규장 종가 대비 직접 계산. 제공사 전일 종가 대비 수익률과 구분. 원자료 가격 정밀도 보존. 최신 체결이 이른 시각이면 해당 관측시각을 그대로 표시."
+        },
+        {
+          "id": "afterhours_20261021_ELV",
+          "title": "ELV · Yahoo Finance 시간외 최종 관측",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/ELV?range=1d&interval=1m&includePrePost=true",
+          "observedAt": "2026-10-22T01:09:02.436270+00:00",
+          "quoteObservedAt": "2026-10-21T19:17:48-04:00",
+          "note": "ET 2026-10-21 정규장 종가 대비 직접 계산. 제공사 전일 종가 대비 수익률과 구분. 원자료 가격 정밀도 보존. 최신 체결이 이른 시각이면 해당 관측시각을 그대로 표시."
+        },
+        {
+          "id": "afterhours_20261021_CME",
+          "title": "CME · Yahoo Finance 시간외 최종 관측",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/CME?range=1d&interval=1m&includePrePost=true",
+          "observedAt": "2026-10-22T01:09:02.388748+00:00",
+          "quoteObservedAt": "2026-10-21T16:29:32-04:00",
+          "note": "ET 2026-10-21 정규장 종가 대비 직접 계산. 제공사 전일 종가 대비 수익률과 구분. 원자료 가격 정밀도 보존. 최신 체결이 이른 시각이면 해당 관측시각을 그대로 표시."
+        },
+        {
+          "id": "afterhours_20261021_MCO",
+          "title": "MCO · Yahoo Finance 시간외 최종 관측",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/MCO?range=1d&interval=1m&includePrePost=true",
+          "observedAt": "2026-10-22T01:09:02.424147+00:00",
+          "quoteObservedAt": "2026-10-21T16:54:53-04:00",
+          "note": "ET 2026-10-21 정규장 종가 대비 직접 계산. 제공사 전일 종가 대비 수익률과 구분. 원자료 가격 정밀도 보존. 최신 체결이 이른 시각이면 해당 관측시각을 그대로 표시."
+        },
+        {
+          "id": "afterhours_20261021_NEE",
+          "title": "NEE · Yahoo Finance 시간외 최종 관측",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/NEE?range=1d&interval=1m&includePrePost=true",
+          "observedAt": "2026-10-22T01:09:05.044363+00:00",
+          "quoteObservedAt": "2026-10-21T19:58:46-04:00",
+          "note": "ET 2026-10-21 정규장 종가 대비 직접 계산. 제공사 전일 종가 대비 수익률과 구분. 원자료 가격 정밀도 보존. 최신 체결이 이른 시각이면 해당 관측시각을 그대로 표시."
+        },
+        {
+          "id": "afterhours_20261021_NTRS",
+          "title": "NTRS · Yahoo Finance 시간외 최종 관측",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/NTRS?range=1d&interval=1m&includePrePost=true",
+          "observedAt": "2026-10-22T01:09:05.106556+00:00",
+          "quoteObservedAt": "2026-10-21T16:36:17-04:00",
+          "note": "ET 2026-10-21 정규장 종가 대비 직접 계산. 제공사 전일 종가 대비 수익률과 구분. 원자료 가격 정밀도 보존. 최신 체결이 이른 시각이면 해당 관측시각을 그대로 표시."
+        },
+        {
+          "id": "afterhours_20261021_TDY",
+          "title": "TDY · Yahoo Finance 시간외 최종 관측",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/TDY?range=1d&interval=1m&includePrePost=true",
+          "observedAt": "2026-10-22T01:09:05.048976+00:00",
+          "quoteObservedAt": "2026-10-21T16:05:46-04:00",
+          "note": "ET 2026-10-21 정규장 종가 대비 직접 계산. 제공사 전일 종가 대비 수익률과 구분. 원자료 가격 정밀도 보존. 최신 체결이 이른 시각이면 해당 관측시각을 그대로 표시."
+        },
+        {
+          "id": "afterhours_20261021_WAB",
+          "title": "WAB · Yahoo Finance 시간외 최종 관측",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/WAB?range=1d&interval=1m&includePrePost=true",
+          "observedAt": "2026-10-22T01:09:05.056517+00:00",
+          "quoteObservedAt": "2026-10-21T19:46:47-04:00",
+          "note": "ET 2026-10-21 정규장 종가 대비 직접 계산. 제공사 전일 종가 대비 수익률과 구분. 원자료 가격 정밀도 보존. 최신 체결이 이른 시각이면 해당 관측시각을 그대로 표시."
+        },
+        {
+          "id": "afterhours_20261021_PM",
+          "title": "PM · Yahoo Finance 시간외 최종 관측",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/PM?range=1d&interval=1m&includePrePost=true",
+          "observedAt": "2026-10-22T01:09:05.087524+00:00",
+          "quoteObservedAt": "2026-10-21T19:01:52-04:00",
+          "note": "ET 2026-10-21 정규장 종가 대비 직접 계산. 제공사 전일 종가 대비 수익률과 구분. 원자료 가격 정밀도 보존. 최신 체결이 이른 시각이면 해당 관측시각을 그대로 표시."
+        },
+        {
+          "id": "afterhours_20261021_META",
+          "title": "META · Nasdaq 공식 시간외 체결",
+          "url": "https://api.nasdaq.com/api/quote/META/extended-trading?assetclass=stocks&markettype=post",
+          "observedAt": "2026-10-22T01:08:05.076821+00:00",
+          "quoteObservedAt": "2026-10-21T19:59:58-04:00",
+          "note": "ET 2026-10-21 정규장 종가 대비 직접 계산. 제공사 전일 종가 대비 수익률과 구분. 원자료 가격 정밀도 보존. 최신 체결이 이른 시각이면 해당 관측시각을 그대로 표시."
         }
       ],
       "limitations": [
@@ -15713,6 +15873,18 @@
                   "earn_20261021_TSLA_price"
                 ],
                 "note": "SEC 실적 공표 확인 이후 실제 시간외 관측. 당일정규장종가 대비."
+              },
+              "subsequentAfterHours": {
+                "status": "verified",
+                "price": 373.63,
+                "changePct": -3.3223797914836206,
+                "observedAt": "2026-10-21T19:59:57-04:00",
+                "collectedAt": "2026-10-22T01:08:59.794753+00:00",
+                "presentationPhase": "supplement",
+                "sourceIds": [
+                  "afterhours_20261021_TSLA"
+                ],
+                "note": "당일 정규장 종가 대비 시간외 등락률. 07시 보고 이후 확인한 실제 관측이며 실적 발표와의 선후·인과관계를 뜻하지 않습니다."
               }
             },
             "consensusMetrics": [
@@ -15990,6 +16162,18 @@
                 "observedAt": null,
                 "sourceIds": [],
                 "note": "장전 발표 기업. 당일 정규장 반응은 발표 이후 움직임."
+              },
+              "subsequentAfterHours": {
+                "status": "verified",
+                "price": 22.0,
+                "changePct": 0.4107720365799983,
+                "observedAt": "2026-10-21T19:59:32-04:00",
+                "collectedAt": "2026-10-22T01:09:02.468868+00:00",
+                "presentationPhase": "supplement",
+                "sourceIds": [
+                  "afterhours_20261021_T"
+                ],
+                "note": "당일 정규장 종가 대비 시간외 등락률. 07시 보고 이후 확인한 실제 관측이며 실적 발표와의 선후·인과관계를 뜻하지 않습니다."
               }
             },
             "consensusMetrics": [
@@ -16243,6 +16427,18 @@
                 "observedAt": null,
                 "sourceIds": [],
                 "note": "장전 발표 기업. 당일 정규장 반응은 발표 이후 움직임."
+              },
+              "subsequentAfterHours": {
+                "status": "verified",
+                "price": 100.5,
+                "changePct": -0.009951383959694304,
+                "observedAt": "2026-10-21T19:02:29-04:00",
+                "collectedAt": "2026-10-22T01:09:02.457164+00:00",
+                "presentationPhase": "supplement",
+                "sourceIds": [
+                  "afterhours_20261021_ABT"
+                ],
+                "note": "당일 정규장 종가 대비 시간외 등락률. 07시 보고 이후 확인한 실제 관측이며 실적 발표와의 선후·인과관계를 뜻하지 않습니다."
               }
             },
             "consensusMetrics": [
@@ -16505,6 +16701,18 @@
                 "observedAt": null,
                 "sourceIds": [],
                 "note": "장전 발표 기업. 당일 정규장 반응은 발표 이후 움직임."
+              },
+              "subsequentAfterHours": {
+                "status": "verified",
+                "price": 233.86,
+                "changePct": -2.6099014061031767e-07,
+                "observedAt": "2026-10-21T16:53:49-04:00",
+                "collectedAt": "2026-10-22T01:09:02.424378+00:00",
+                "presentationPhase": "supplement",
+                "sourceIds": [
+                  "afterhours_20261021_DHR"
+                ],
+                "note": "당일 정규장 종가 대비 시간외 등락률. 07시 보고 이후 확인한 실제 관측이며 실적 발표와의 선후·인과관계를 뜻하지 않습니다."
               }
             },
             "consensusMetrics": [
@@ -16767,6 +16975,18 @@
                 "observedAt": null,
                 "sourceIds": [],
                 "note": "장전 발표 기업. 당일 정규장 반응은 발표 이후 움직임."
+              },
+              "subsequentAfterHours": {
+                "status": "verified",
+                "price": 696.31,
+                "changePct": 0.32995884906845685,
+                "observedAt": "2026-10-21T19:53:31-04:00",
+                "collectedAt": "2026-10-22T01:09:02.420361+00:00",
+                "presentationPhase": "supplement",
+                "sourceIds": [
+                  "afterhours_20261021_TMO"
+                ],
+                "note": "당일 정규장 종가 대비 시간외 등락률. 07시 보고 이후 확인한 실제 관측이며 실적 발표와의 선후·인과관계를 뜻하지 않습니다."
               }
             },
             "consensusMetrics": [
@@ -17029,6 +17249,18 @@
                 "observedAt": null,
                 "sourceIds": [],
                 "note": "장전 발표 기업. 당일 정규장 반응은 발표 이후 움직임."
+              },
+              "subsequentAfterHours": {
+                "status": "verified",
+                "price": 434.48,
+                "changePct": 0.0806198864973684,
+                "observedAt": "2026-10-21T19:17:48-04:00",
+                "collectedAt": "2026-10-22T01:09:02.436270+00:00",
+                "presentationPhase": "supplement",
+                "sourceIds": [
+                  "afterhours_20261021_ELV"
+                ],
+                "note": "당일 정규장 종가 대비 시간외 등락률. 07시 보고 이후 확인한 실제 관측이며 실적 발표와의 선후·인과관계를 뜻하지 않습니다."
               }
             },
             "consensusMetrics": [
@@ -17287,6 +17519,18 @@
                 "observedAt": null,
                 "sourceIds": [],
                 "note": "장전 발표 기업. 당일 정규장 반응은 발표 이후 움직임."
+              },
+              "subsequentAfterHours": {
+                "status": "verified",
+                "price": 295.4044,
+                "changePct": -0.13036564244301996,
+                "observedAt": "2026-10-21T16:29:32-04:00",
+                "collectedAt": "2026-10-22T01:09:02.388748+00:00",
+                "presentationPhase": "supplement",
+                "sourceIds": [
+                  "afterhours_20261021_CME"
+                ],
+                "note": "당일 정규장 종가 대비 시간외 등락률. 07시 보고 이후 확인한 실제 관측이며 실적 발표와의 선후·인과관계를 뜻하지 않습니다."
               }
             },
             "consensusMetrics": [
@@ -17551,6 +17795,18 @@
                 "observedAt": null,
                 "sourceIds": [],
                 "note": "장전 발표 기업. 당일 정규장 반응은 발표 이후 움직임."
+              },
+              "subsequentAfterHours": {
+                "status": "verified",
+                "price": 481.05,
+                "changePct": 2.5375806123051348e-06,
+                "observedAt": "2026-10-21T16:54:53-04:00",
+                "collectedAt": "2026-10-22T01:09:02.424147+00:00",
+                "presentationPhase": "supplement",
+                "sourceIds": [
+                  "afterhours_20261021_MCO"
+                ],
+                "note": "당일 정규장 종가 대비 시간외 등락률. 07시 보고 이후 확인한 실제 관측이며 실적 발표와의 선후·인과관계를 뜻하지 않습니다."
               }
             },
             "consensusMetrics": [
@@ -17824,6 +18080,18 @@
                 "observedAt": null,
                 "sourceIds": [],
                 "note": "장전 발표 기업. 당일 정규장 반응은 발표 이후 움직임."
+              },
+              "subsequentAfterHours": {
+                "status": "verified",
+                "price": 78.1166,
+                "changePct": -0.20873630792657138,
+                "observedAt": "2026-10-21T19:58:46-04:00",
+                "collectedAt": "2026-10-22T01:09:05.044363+00:00",
+                "presentationPhase": "supplement",
+                "sourceIds": [
+                  "afterhours_20261021_NEE"
+                ],
+                "note": "당일 정규장 종가 대비 시간외 등락률. 07시 보고 이후 확인한 실제 관측이며 실적 발표와의 선후·인과관계를 뜻하지 않습니다."
               }
             },
             "consensusMetrics": [
@@ -18076,6 +18344,18 @@
                 "observedAt": null,
                 "sourceIds": [],
                 "note": "장전 발표 기업. 당일 정규장 반응은 발표 이후 움직임."
+              },
+              "subsequentAfterHours": {
+                "status": "verified",
+                "price": 166.91,
+                "changePct": -2.1940622429994505e-06,
+                "observedAt": "2026-10-21T16:36:17-04:00",
+                "collectedAt": "2026-10-22T01:09:05.106556+00:00",
+                "presentationPhase": "supplement",
+                "sourceIds": [
+                  "afterhours_20261021_NTRS"
+                ],
+                "note": "당일 정규장 종가 대비 시간외 등락률. 07시 보고 이후 확인한 실제 관측이며 실적 발표와의 선후·인과관계를 뜻하지 않습니다."
               }
             },
             "consensusMetrics": [
@@ -18340,6 +18620,18 @@
                 "observedAt": null,
                 "sourceIds": [],
                 "note": "장전 발표 기업. 당일 정규장 반응은 발표 이후 움직임."
+              },
+              "subsequentAfterHours": {
+                "status": "verified",
+                "price": 630.1,
+                "changePct": 3.874633147660234e-06,
+                "observedAt": "2026-10-21T16:05:46-04:00",
+                "collectedAt": "2026-10-22T01:09:05.048976+00:00",
+                "presentationPhase": "supplement",
+                "sourceIds": [
+                  "afterhours_20261021_TDY"
+                ],
+                "note": "당일 정규장 종가 대비 시간외 등락률. 07시 보고 이후 확인한 실제 관측이며 실적 발표와의 선후·인과관계를 뜻하지 않습니다."
               }
             },
             "consensusMetrics": [
@@ -18602,6 +18894,18 @@
                 "observedAt": null,
                 "sourceIds": [],
                 "note": "장전 발표 기업. 당일 정규장 반응은 발표 이후 움직임."
+              },
+              "subsequentAfterHours": {
+                "status": "verified",
+                "price": 288.95,
+                "changePct": -0.0034577295728088764,
+                "observedAt": "2026-10-21T19:46:47-04:00",
+                "collectedAt": "2026-10-22T01:09:05.056517+00:00",
+                "presentationPhase": "supplement",
+                "sourceIds": [
+                  "afterhours_20261021_WAB"
+                ],
+                "note": "당일 정규장 종가 대비 시간외 등락률. 07시 보고 이후 확인한 실제 관측이며 실적 발표와의 선후·인과관계를 뜻하지 않습니다."
               }
             },
             "consensusMetrics": [
@@ -18860,6 +19164,18 @@
                 "observedAt": null,
                 "sourceIds": [],
                 "note": "장전 발표 기업. 당일 정규장 반응은 발표 이후 움직임."
+              },
+              "subsequentAfterHours": {
+                "status": "verified",
+                "price": 197.99,
+                "changePct": 0.2684053824128618,
+                "observedAt": "2026-10-21T19:01:52-04:00",
+                "collectedAt": "2026-10-22T01:09:05.087524+00:00",
+                "presentationPhase": "supplement",
+                "sourceIds": [
+                  "afterhours_20261021_PM"
+                ],
+                "note": "당일 정규장 종가 대비 시간외 등락률. 07시 보고 이후 확인한 실제 관측이며 실적 발표와의 선후·인과관계를 뜻하지 않습니다."
               }
             },
             "consensusMetrics": [
@@ -19123,6 +19439,18 @@
               "afterHours": {
                 "status": "unverified",
                 "note": "발표 후 관측시각을 검증한 시간외 시세 미확인"
+              },
+              "subsequentAfterHours": {
+                "status": "verified",
+                "price": 712.6101,
+                "changePct": 2.1633903036777147,
+                "observedAt": "2026-10-21T19:59:58-04:00",
+                "collectedAt": "2026-10-22T01:08:05.076821+00:00",
+                "presentationPhase": "supplement",
+                "sourceIds": [
+                  "afterhours_20261021_META"
+                ],
+                "note": "당일 정규장 종가 대비 시간외 등락률. 07시 보고 이후 확인한 실제 관측이며 실적 발표와의 선후·인과관계를 뜻하지 않습니다."
               }
             },
             "consensusMetrics": [],
@@ -19372,6 +19700,18 @@
               "afterHours": {
                 "status": "unverified",
                 "note": "발표 후 관측시각을 검증한 시간외 시세 미확인"
+              },
+              "subsequentAfterHours": {
+                "status": "verified",
+                "price": 241.4776,
+                "changePct": -7.412444975101284,
+                "observedAt": "2026-10-21T19:59:34-04:00",
+                "collectedAt": "2026-10-22T01:08:59.712576+00:00",
+                "presentationPhase": "supplement",
+                "sourceIds": [
+                  "afterhours_20261021_LRCX"
+                ],
+                "note": "당일 정규장 종가 대비 시간외 등락률. 07시 보고 이후 확인한 실제 관측이며 실적 발표와의 선후·인과관계를 뜻하지 않습니다."
               }
             },
             "consensusMetrics": [
@@ -19638,6 +19978,18 @@
               "afterHours": {
                 "status": "unverified",
                 "note": "발표 후 관측시각을 검증한 시간외 시세 미확인"
+              },
+              "subsequentAfterHours": {
+                "status": "verified",
+                "price": 50.17,
+                "changePct": 3.6570215254532634,
+                "observedAt": "2026-10-21T19:59:29-04:00",
+                "collectedAt": "2026-10-22T01:08:59.716469+00:00",
+                "presentationPhase": "supplement",
+                "sourceIds": [
+                  "afterhours_20261021_CSX"
+                ],
+                "note": "당일 정규장 종가 대비 시간외 등락률. 07시 보고 이후 확인한 실제 관측이며 실적 발표와의 선후·인과관계를 뜻하지 않습니다."
               }
             },
             "consensusMetrics": [],
@@ -19881,6 +20233,18 @@
               "afterHours": {
                 "status": "unverified",
                 "note": "발표 후 관측시각을 검증한 시간외 시세 미확인"
+              },
+              "subsequentAfterHours": {
+                "status": "verified",
+                "price": 239.8001,
+                "changePct": -4.63688316334726,
+                "observedAt": "2026-10-21T19:59:51-04:00",
+                "collectedAt": "2026-10-22T01:08:59.660872+00:00",
+                "presentationPhase": "supplement",
+                "sourceIds": [
+                  "afterhours_20261021_IBM"
+                ],
+                "note": "당일 정규장 종가 대비 시간외 등락률. 07시 보고 이후 확인한 실제 관측이며 실적 발표와의 선후·인과관계를 뜻하지 않습니다."
               }
             },
             "consensusMetrics": [
@@ -20179,6 +20543,18 @@
               "afterHours": {
                 "status": "unverified",
                 "note": "발표 후 관측시각을 검증한 시간외 시세 미확인"
+              },
+              "subsequentAfterHours": {
+                "status": "verified",
+                "price": 1067.0,
+                "changePct": -0.18522147326667238,
+                "observedAt": "2026-10-21T19:29:01-04:00",
+                "collectedAt": "2026-10-22T01:08:59.656470+00:00",
+                "presentationPhase": "supplement",
+                "sourceIds": [
+                  "afterhours_20261021_URI"
+                ],
+                "note": "당일 정규장 종가 대비 시간외 등락률. 07시 보고 이후 확인한 실제 관측이며 실적 발표와의 선후·인과관계를 뜻하지 않습니다."
               }
             },
             "consensusMetrics": [
@@ -20430,6 +20806,18 @@
               "afterHours": {
                 "status": "unverified",
                 "note": "발표 후 관측시각을 검증한 시간외 시세 미확인"
+              },
+              "subsequentAfterHours": {
+                "status": "verified",
+                "price": 288.39,
+                "changePct": 1.3138964284944654,
+                "observedAt": "2026-10-21T19:58:06-04:00",
+                "collectedAt": "2026-10-22T01:08:59.600389+00:00",
+                "presentationPhase": "supplement",
+                "sourceIds": [
+                  "afterhours_20261021_TXN"
+                ],
+                "note": "당일 정규장 종가 대비 시간외 등락률. 07시 보고 이후 확인한 실제 관측이며 실적 발표와의 선후·인과관계를 뜻하지 않습니다."
               }
             },
             "consensusMetrics": [],
@@ -20681,6 +21069,18 @@
               "afterHours": {
                 "status": "unverified",
                 "note": "발표 후 관측시각을 검증한 시간외 시세 미확인"
+              },
+              "subsequentAfterHours": {
+                "status": "verified",
+                "price": 78.5,
+                "changePct": -0.19072030892401948,
+                "observedAt": "2026-10-21T19:51:29-04:00",
+                "collectedAt": "2026-10-22T01:08:59.656734+00:00",
+                "presentationPhase": "supplement",
+                "sourceIds": [
+                  "afterhours_20261021_CCI"
+                ],
+                "note": "당일 정규장 종가 대비 시간외 등락률. 07시 보고 이후 확인한 실제 관측이며 실적 발표와의 선후·인과관계를 뜻하지 않습니다."
               }
             },
             "consensusMetrics": [],
@@ -20786,7 +21186,8 @@
         },
         "explicitExceptions": [
           "SPCX"
-        ]
+        ],
+        "afterHoursUpdatedAt": "2026-10-22T01:11:10.548663+00:00"
       },
       "collectedAt": "2026-10-21T22:08:25.392010+00:00"
     },
@@ -70448,5 +70849,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-10-22T00:18:43.317001+00:00"
+  "updatedAt": "2026-10-22T01:11:10.548663+00:00"
 }

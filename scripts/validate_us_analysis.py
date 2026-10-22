@@ -136,6 +136,21 @@ def validate_earnings_prices(row):
         if after['status'] == 'not_applicable':
             assert session in ('before_open','during_session'), 'Unknown or after-close release is unverified, not inapplicable'
 
+    supplement = reaction.get('subsequentAfterHours')
+    if supplement:
+        assert supplement.get('status') == 'verified'
+        assert close_time, 'Session after-hours comparison needs verified regular close'
+        observed = market_time(supplement['observedAt'])
+        assert observed.date() == release_date, 'After-hours supplement must use the same ET trading date'
+        assert close_time < observed and observed.time() <= dt.time(20), 'After-hours supplement must be after close, not overnight'
+        assert supplement.get('sourceIds'), 'After-hours supplement requires timestamped source'
+        assert finite_number(supplement.get('price')) and supplement['price'] > 0
+        expected = (supplement['price'] / regular['close'] - 1) * 100
+        assert finite_number(supplement.get('changePct')) and math.isclose(supplement['changePct'], expected, abs_tol=0.005), 'After-hours supplement uses same-day regular close'
+        if supplement.get('collectedAt'):
+            assert market_time(supplement['collectedAt']) >= observed
+            assert supplement.get('presentationPhase') == 'supplement'
+
 
 def validate(payload):
     assert payload.get('schemaVersion') == 1
