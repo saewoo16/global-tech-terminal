@@ -41,3 +41,6 @@ test('semiannual figures display separately without invented quarters',()=>{asse
 run("chosen=COMPANIES.find(r=>r.symbol==='NYSE:DD');render()");
 test('issuer undisclosed operating income is explicit',()=>{assert.match(element('quarters').innerHTML,/미공시/);assert.match(element('finmsg').textContent,/연결 GAAP 영업이익 소계/)});
 console.log('\n'+count+' focused UI checks passed; '+new Set(companies.map(r=>r.symbol)).size+' catalog symbols rendered.');
+
+run("chosen.business='Atlas 데이터 플랫폼';render()");
+test('optional company business description is visible without changing other companies',()=>{assert.equal(element('business').textContent,'Atlas 데이터 플랫폼');assert.equal(element('business').hidden,false);run("delete chosen.business;render()");assert.equal(element('business').hidden,true)});

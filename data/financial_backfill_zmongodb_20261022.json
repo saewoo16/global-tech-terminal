@@ -1,0 +1,117 @@
+{
+  "asOf": "2026-10-22",
+  "unit": "millions of reporting currency",
+  "auditScope": "MongoDB company explorer only; four reported three-month quarters. No estimated or split half-year values.",
+  "companies": {
+    "NASDAQ:MDB": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": false,
+      "quarters": [
+        {
+          "date": "2026-07-31",
+          "periodStart": "2026-05-01",
+          "revenue": 771.773,
+          "operatingIncome": 28.4,
+          "sourceUrl": "https://investors.mongodb.com/news-releases/news-release-details/mongodb-inc-announces-second-quarter-fiscal-2027-financial",
+          "sourceType": "filing",
+          "source": "MongoDB official earnings release; condensed consolidated statements of operations",
+          "verifiedAt": "2026-10-22",
+          "publishedAt": "2026-09-01",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "basis": "US GAAP consolidated; unaudited",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Total revenue",
+              "rawValue": 771773,
+              "rawUnit": "thousands USD"
+            },
+            "operatingIncome": {
+              "lineItem": "Income (loss) from operations",
+              "rawValue": 28400,
+              "rawUnit": "thousands USD"
+            }
+          }
+        },
+        {
+          "date": "2026-04-30",
+          "periodStart": "2026-02-01",
+          "revenue": 687.616,
+          "operatingIncome": -24.804,
+          "sourceUrl": "https://investors.mongodb.com/news-releases/news-release-details/mongodb-inc-announces-first-quarter-fiscal-2027-financial",
+          "sourceType": "filing",
+          "source": "MongoDB official earnings release; condensed consolidated statements of operations",
+          "verifiedAt": "2026-10-22",
+          "publishedAt": "2026-05-28",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "basis": "US GAAP consolidated; unaudited",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Total revenue",
+              "rawValue": 687616,
+              "rawUnit": "thousands USD"
+            },
+            "operatingIncome": {
+              "lineItem": "Income (loss) from operations",
+              "rawValue": -24804,
+              "rawUnit": "thousands USD"
+            }
+          }
+        },
+        {
+          "date": "2026-01-31",
+          "periodStart": "2025-11-01",
+          "revenue": 695.072,
+          "operatingIncome": 0.304,
+          "sourceUrl": "https://investors.mongodb.com/news-releases/news-release-details/mongodb-inc-announces-fourth-quarter-fiscal-2026-financial",
+          "sourceType": "filing",
+          "source": "MongoDB official earnings release; condensed consolidated statements of operations",
+          "verifiedAt": "2026-10-22",
+          "publishedAt": "2026-03-02",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "basis": "US GAAP consolidated; unaudited",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Total revenue",
+              "rawValue": 695072,
+              "rawUnit": "thousands USD"
+            },
+            "operatingIncome": {
+              "lineItem": "Income (loss) from operations",
+              "rawValue": 304,
+              "rawUnit": "thousands USD"
+            }
+          }
+        },
+        {
+          "date": "2025-10-31",
+          "periodStart": "2025-08-01",
+          "revenue": 628.309,
+          "operatingIncome": -18.424,
+          "sourceUrl": "https://investors.mongodb.com/news-releases/news-release-details/mongodb-inc-announces-third-quarter-fiscal-2026-financial",
+          "sourceType": "filing",
+          "source": "MongoDB official earnings release; condensed consolidated statements of operations",
+          "verifiedAt": "2026-10-22",
+          "publishedAt": "2025-12-01",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "basis": "US GAAP consolidated; unaudited",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Total revenue",
+              "rawValue": 628309,
+              "rawUnit": "thousands USD"
+            },
+            "operatingIncome": {
+              "lineItem": "Income (loss) from operations",
+              "rawValue": -18424,
+              "rawUnit": "thousands USD"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

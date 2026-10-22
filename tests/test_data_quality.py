@@ -125,7 +125,7 @@ class DataQualityTests(unittest.TestCase):
         companies=json.loads((root/'data/companies.json').read_text())
         market=json.loads((root/'data/market.json').read_text())
         report=audit(companies,market)
-        self.assertEqual(report['summary']['companies'],246)
+        self.assertEqual(report['summary']['companies'],247)
         self.assertEqual(report['errors'],[])
 
 

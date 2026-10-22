@@ -2070,5 +2070,15 @@
     "ticker": "U",
     "symbol": "NYSE:U",
     "country": "미국"
+  },
+  {
+    "sector": "소프트웨어",
+    "category": "AI·데이터",
+    "name": "MongoDB",
+    "ticker": "MDB",
+    "symbol": "NASDAQ:MDB",
+    "country": "미국",
+    "business": "문서형 데이터베이스와 클라우드 데이터 플랫폼 Atlas, 검색·벡터 검색 및 AI 애플리케이션용 데이터 인프라를 제공합니다.",
+    "businessSourceUrl": "https://investors.mongodb.com/news-releases/news-release-details/mongodb-inc-announces-second-quarter-fiscal-2027-financial"
   }
 ]
