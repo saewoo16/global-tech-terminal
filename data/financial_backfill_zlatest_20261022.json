@@ -1,0 +1,40 @@
+{
+  "asOf": "2026-10-22",
+  "unit": "millions of reporting currency",
+  "auditScope": "Lam Research September 27, 2026 quarter only. Prior periods and all market analysis unchanged.",
+  "companies": {
+    "NASDAQ:LRCX": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": false,
+      "quarters": [
+        {
+          "date": "2026-09-27",
+          "periodStart": "2026-06-29",
+          "revenue": 8219.418,
+          "operatingIncome": 3283.727,
+          "sourceUrl": "https://investor.lamresearch.com/2026-10-21-Lam-Research-Corporation-Reports-Financial-Results-for-the-Quarter-Ended-September-27%2C-2026",
+          "sourceType": "filing",
+          "source": "Lam Research official earnings release, condensed consolidated statements of operations",
+          "verifiedAt": "2026-10-22",
+          "publishedAt": "2026-10-21",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "basis": "US GAAP consolidated; unaudited",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Revenue",
+              "rawValue": 8219418,
+              "rawUnit": "thousands USD"
+            },
+            "operatingIncome": {
+              "lineItem": "Operating income",
+              "rawValue": 3283727,
+              "rawUnit": "thousands USD"
+            }
+          }
+        }
+      ],
+      "financialNote": "US GAAP 연결 분기 실적, 단위 백만 USD. 2026년 9월 27일 종료 분기는 회사의 미감사 공식 발표 수치입니다. 이전 분기별 출처와 기준은 각 기록을 따릅니다."
+    }
+  }
+}

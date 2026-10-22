@@ -14,6 +14,15 @@ stocks=migrate_symbols(old.get('stocks',{}))
 # For KRX-only source entries, use a maintained KOSDAQ whitelist.
 KOSDAQ_CODES = {'033160', '095340', '183300', '005290', '089030', '101160', '357780', '104830', '356860', '074600', '166090', '036930', '058470', '222800', '102710', '092070', '077360'}
 
+def replace_market_cap(current, cap_usd, ticker, checked_at):
+    """Replace value and its provenance together; observation time is not a price date."""
+    for key in ('marketCapAsOf', 'marketCapLocal', 'marketCapFX', 'marketCapMethod',
+                'marketCapSource', 'marketCapSourceUrl'):
+        current.pop(key, None)
+    current.update(marketCapUSD=round(cap_usd), marketCapUpdated=checked_at,
+                   marketCapSource='Yahoo Finance marketCap; provider observation, not a certified closing-date capitalization',
+                   marketCapSourceUrl='https://finance.yahoo.com/quote/'+quote(ticker, safe='')+'/')
+
 def lookup(r):
     sym=r['symbol']; t=str(r['ticker']); country=r['country']
     ex=sym.split(':',1)[0]
@@ -201,8 +210,7 @@ def main():
                         if cap is not None:fx_cache[currency]=cap/original_cap
                 except Exception:cap=None
                 if cap is not None:
-                    current['marketCapUSD']=round(cap)
-                    current['marketCapUpdated']=now
+                    replace_market_cap(current, cap, ticker, now)
             current['priceCurrency']=info.get('currency') or current.get('priceCurrency') or ''
             current['reportingCurrency']=info.get('financialCurrency') or current.get('reportingCurrency') or info.get('currency') or ''
             # First run (or missing quarters): attempt regardless of weekday.
