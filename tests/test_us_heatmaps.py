@@ -9,7 +9,8 @@ class HeatmapTests(unittest.TestCase):
     def setUpClass(cls):
         cls.data=json.loads((ROOT/'data/us_heatmaps.json').read_text())
         cls.latest=max(e['date'] for e in cls.data['entries'])
-        candidate=dt.date.fromisoformat(cls.latest)+dt.timedelta(days=1)
+        analysis_latest=max(e['date'] for e in json.loads((ROOT/'data/us_analysis.json').read_text())['entries'])
+        candidate=dt.date.fromisoformat(max(cls.latest,analysis_latest))+dt.timedelta(days=1)
         while candidate.weekday()>4:candidate+=dt.timedelta(days=1)
         cls.future=candidate.isoformat()
     def test_valid(self):
@@ -38,6 +39,7 @@ class HeatmapTests(unittest.TestCase):
             root=Path(tmp);(root/'data').mkdir()
             for f in (ROOT/'data').glob('us-close-evidence-*.json'):shutil.copy(f,root/'data'/f.name)
             analysis=json.loads((ROOT/'data/us_analysis.json').read_text())
+            analysis['entries']=[e for e in analysis['entries'] if e['date'] in {x['date'] for x in self.data['entries']}]
             analysis['entries'].append({'date':self.future,'sessionVerification':{'previousSession':self.latest}})
             (root/'data/us_analysis.json').write_text(json.dumps(analysis))
             d=build(root,existing=self.data)

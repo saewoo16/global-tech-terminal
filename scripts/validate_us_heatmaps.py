@@ -44,8 +44,12 @@ def validate(data,root=ROOT):
     assert data['schemaVersion']==1
     entries=data['entries']; dates=[e['date'] for e in entries]
     assert len(dates)==len(set(dates))
-    requested={e['date'] for e in json.loads((root/'data/us_analysis.json').read_text())['entries']}
-    assert requested.issubset(dates)
+    analysis=json.loads((root/'data/us_analysis.json').read_text())
+    requested={e['date'] for e in analysis['entries']}
+    # FINVIZ mode no longer requires a separate proprietary map per report.
+    # Historical fixed maps remain fully validated against their own evidence.
+    if not analysis.get('heatmap',{}).get('provider','').startswith('FINVIZ'):
+        assert requested.issubset(dates)
     for e in entries: validate_entry(e,root)
     verified=[e['date'] for e in entries if e['status']=='verified']
     assert data['defaultDate']==(max(verified) if verified else None)

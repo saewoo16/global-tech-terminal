@@ -120,12 +120,22 @@ def validate_earnings_prices(row):
     after = reaction.get('afterHours') or {}
     assert after.get('status') in ('verified', 'unverified', 'not_applicable')
     if after['status'] == 'verified':
-        assert session == 'after_close', 'This reaction field is only for earnings released after close'
-        assert close_time and published, 'Post-earnings quote needs verified close and exact release time'
         observed = market_time(after['observedAt'])
         assert observed.date() == release_date, 'No next-day premarket or stale prior-day quote'
-        assert close_time <= published < observed, 'Quote must be strictly after the earnings release'
-        assert observed.time() < dt.time(20), 'Not an overnight-session quote'
+        if after.get('basis') == 'same_session_regular_close':
+            # Neutral same-day movement is valid for morning/unknown release times too.
+            assert close_time and close_time < observed, 'Session quote must be after verified regular close'
+            assert observed.time() <= dt.time(20), 'Not an overnight-session quote'
+            assert after.get('collectedAt'), 'Session quote requires actual collection time'
+            assert market_time(after['collectedAt']) >= observed
+            if row.get('reportCutoffAt'):
+                assert market_time(after['collectedAt']) <= market_time(row['reportCutoffAt']), 'Later collection belongs in subsequentAfterHours'
+        else:
+            # Preserve the stricter historical post-announcement reaction contract.
+            assert session == 'after_close', 'This reaction field is only for earnings released after close'
+            assert close_time and published, 'Post-earnings quote needs verified close and exact release time'
+            assert close_time <= published < observed, 'Quote must be strictly after the earnings release'
+            assert observed.time() < dt.time(20), 'Not an overnight-session quote'
         assert after.get('sourceIds'), 'After-hours quote requires timestamped source'
         assert finite_number(after.get('price')) and after['price'] > 0
         assert finite_number(after.get('changePct'))
