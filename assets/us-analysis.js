@@ -56,8 +56,8 @@ function earningsPrice(r){
  const validReg=isDate(reg.previousDate)&&reg.previousDate<reg.date&&reg.date===r.releaseDate&&close?.date===reg.date&&close.minutes>570&&close.minutes<=960&&finite(reg.close)&&reg.close>0&&finite(reg.previousClose)&&reg.previousClose>0&&finite(reg.changePct)&&Math.abs(reg.changePct-(reg.close/reg.previousClose-1)*100)<0.005&&list(reg.sourceIds).length>0;
  const validAfter=session==='after_close'&&ah.status==='verified'&&validReg&&published?.date===r.releaseDate&&observed?.date===r.releaseDate&&Date.parse(t.publishedAt)>=Date.parse(reg.closedAt)&&Date.parse(ah.observedAt)>Date.parse(t.publishedAt)&&observed.minutes<1200&&finite(ah.price)&&ah.price>0&&finite(ah.changePct)&&Math.abs(ah.changePct-(ah.price/reg.close-1)*100)<0.005&&list(t.sourceIds).length>0&&list(ah.sourceIds).length>0;
  const regularLabel=session==='after_close'?'발표 전 정규장':'정규장';
- const regular=`${regularLabel} ${validReg?'$'+fmt(reg.close)+' '+pct(reg.changePct):'<span class="muted">미확인</span>'}`;
- const after=session==='after_close'?` · 실적 발표 후 시간외 ${validAfter?'$'+fmt(ah.price)+' '+pct(ah.changePct)+' <small>('+esc(observed.time)+' ET)</small>':'<span class="muted">미확인</span>'}`:'';
+ const regular=`${regularLabel} ${validReg?pct(reg.changePct):'<span class="muted">미확인</span>'}`;
+ const after=session==='after_close'?` · 실적 발표 후 시간외 ${validAfter?pct(ah.changePct)+' <small>('+esc(observed.time)+' ET)</small>':'<span class="muted">미확인</span>'}`:'';
  const detail=[labels[session]||labels.unknown,validReg?`${reg.date} ${close.time} ET 종가 · 전일 종가 대비`:'정규장 가격 미확인',session==='after_close'?(validAfter?`시간외 ${observed.date} ${observed.time} ET 관측 · 당일 정규장 종가 대비`:'발표 이후 시간외 가격·관측 시각 미확인'):null].filter(Boolean).join(' · ');
  return {header:`<span class="us-earnings-prices">(${regular}${after})</span>`,detail,sourceIds:[...list(t.sourceIds),...list(reg.sourceIds),...list(ah.sourceIds)],note:[t.note,ah.note].filter(Boolean).join(' ')};
 }
