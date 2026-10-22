@@ -8,11 +8,12 @@ class ETFChartsTest(unittest.TestCase):
  def setUpClass(cls):cls.data=json.loads(PATH.read_text());cls.funds=cls.data['funds']
  def test_broad_coverage(self):
   self.assertGreaterEqual(len(self.funds),30)
-  self.assertTrue({'445290','305720','455850','449450','0207G0'}<={f['code'] for f in self.funds})
+  self.assertTrue({'0148J0','305720','455850','449450','0207G0','457990','0209D0'}<={f['code'] for f in self.funds})
  def test_user_exclusions_do_not_return(self):
   codes={f['code'] for f in self.funds}
-  self.assertFalse(codes & {'069500','229200','462010','471990','463250'})
+  self.assertFalse(codes & {'069500','229200','462010','471990','463250','445290','385510'})
   self.assertTrue({'455860','455850','475300','475310','449450','0207G0'} <= codes)
+  self.assertEqual(next(f for f in self.funds if f['code']=='0207G0')['category'],'우주')
  def test_representative_market_caps(self):
   for f in self.funds:
    r=f.get('representatives')
@@ -46,6 +47,14 @@ class ETFChartsTest(unittest.TestCase):
   with patch.object(rep,'fetch_market_snapshot',side_effect=ValueError('offline')):
    mod.refresh_representatives(funds,{'TEST':{'representatives':old}})
   got=funds[0]['representatives'];self.assertEqual(got['asOf'],old['asOf']);self.assertEqual(got['members'],old['members']);self.assertEqual(got['refreshStatus'],'stale')
+ def test_selection_evidence_retains_original_dates(self):
+  from scripts import update_korean_etf_charts as mod
+  fund=dict(self.funds[0]);fund.pop('selectionEvidence',None)
+  evidence={'asOf':'2026-10-21','observedAt':'2026-10-21T08:00:00Z','holdings':[]}
+  with tempfile.TemporaryDirectory() as tmp:
+   dest=pathlib.Path(tmp)/'snapshot.json';dest.write_text(json.dumps({'funds':[dict(fund,selectionEvidence=evidence)]}))
+   with patch.object(mod,'UNIVERSE',[(fund['code'],'x','industry')]),patch.object(mod,'fetch',return_value=b'{"result":{"etfItemList":[]}}'),patch.object(mod,'build_fund',return_value=dict(fund)),patch.object(mod,'refresh_representatives'),patch.object(sys,'argv',['collector','--output',str(dest)]):mod.main()
+   self.assertEqual(json.loads(dest.read_text())['funds'][0]['selectionEvidence'],evidence)
  def test_partial_refresh_preserves_previous_fund(self):
   script=ROOT/'scripts/update_korean_etf_charts.py'
   if not script.exists():script=pathlib.Path(__file__).with_name('update_korean_etf_charts.py')

@@ -13,11 +13,11 @@ UNIVERSE=[
 ('117700','건설','industry'),('117680','철강','industry'),('117460','에너지·화학','industry'),
 ('102960','기계·장비','industry'),('140710','운송','industry'),('143860','헬스케어','industry'),
 ('266410','필수소비재','industry'),('266390','경기소비재','industry'),('157490','소프트웨어','industry'),
-('445290','로봇','theme'),('305720','2차전지','theme'),
+('0148J0','로봇','theme'),('305720','2차전지','theme'),
 ('455860','2차전지 소부장','theme'),('455850','반도체 소부장','theme'),
 ('475300','반도체 전공정','theme'),('475310','반도체 후공정','theme'),('449450','방산','theme'),
-('0247S0','MLCC·AI기판(글로벌)','theme'),('0207G0','우주항공','theme'),('466920','조선','theme'),('487240','AI전력 설비','theme'),
-('0091P0','원자력','theme'),('385510','신재생에너지','theme'),('364970','바이오','theme'),
+('0247S0','MLCC·AI기판(글로벌)','theme'),('0207G0','우주','theme'),('466920','조선','theme'),('487240','AI전력 설비','theme'),
+('0091P0','원자력','theme'),('457990','태양광·신재생','theme'),('0209D0','ESS·전고체 배터리','theme'),('364970','바이오','theme'),
 ('228790','화장품','theme'),('228800','여행·레저','theme'),('228810','미디어·콘텐츠','theme'),
 ('365000','인터넷','theme'),('364990','게임','theme'),('329200','리츠·인프라','theme')]
 
@@ -33,6 +33,9 @@ def fetch(url):
 
 def iso(v):return f'{v[:4]}-{v[4:6]}-{v[6:8]}'
 def official(code,name):
+    if code=='0209D0':return 'https://www.samsungfund.com/etf/product/view.do?id=2ETFV7'
+    if code=='0148J0':return 'https://www.youtube.com/watch?v=TdlpU2qIzJM'
+    if code=='457990':return 'https://www.plusetf.co.kr/product/detail?n=006279'
     if name.startswith('KODEX'):return 'https://www.samsungfund.com/etf/product/list.do'
     if code=='0247S0':return 'https://www.kiwoometf.com/service/invest/KO04020102T?kijaGubun=10&kijaNo=695'
     if code=='449450':return 'https://www.plusetf.co.kr/product/detail?n=006192'
@@ -83,6 +86,9 @@ def build_fund(spec,quotes,today):
       'dailyCoverage':{'start':history[0]['date'] if history else None,'end':history[-1]['date'] if history else None,'count':len(history),'requestedMonths':12,'shortHistory':len(history)<200},
       'intraday':{'date':intraday_date,'interval':'1분 관측 · 무거래 구간 생략 · 시간외 포함','sourceUrl':intraday_url,'asOf':points[-1]['time'] if points else None,'status':'verified' if points else 'unavailable','exchange':raw.get('stockExchangeType'),'marketStatus':raw.get('marketStatus'),'points':points,'note':'실제 1분 관측값; 무거래 구간 생략, 시간외 거래 포함. volume은 직전 관측 이후 누적 거래량의 차이입니다.'},
       'selectionNote':'국내 상장·국내 주식/산업 노출 대표 ETF. 시가총액과 당일 거래량을 함께 제시하며 유동성 보장이나 전체 시장 최대규모 선언이 아닙니다.'}
+    if code=='0148J0':result['selectionNote']='레인보우로보틱스·로보티즈·에스피지·삼현과 국내 로봇 밸류체인 기업을 담는 TIGER 코리아휴머노이드로봇산업 ETF. 대표 기업 괄호는 편입비중 순위가 아닌 ETF 내 시가총액 순위입니다.'
+    if code=='457990':result['selectionNote']='한화솔루션·OCI홀딩스·HD현대에너지솔루션 중심의 태양광과 ESS 관련 국내 기업에 투자합니다. 순수 태양광 단일업종이 아니며 배터리·전력 기업도 포함됩니다.'
+    if code=='0209D0':result['selectionNote']='LG에너지솔루션·삼성SDI 중심의 국내 전고체 배터리 및 ESS 혼합 테마입니다. 순수 ESS 전수지수가 아니며 기존 태양광·신재생 ETF와 일부 구성종목이 겹칩니다. 실제 상장 이후 이력만 표시합니다.'
     if code=='449450':result['selectionNote']='한화에어로스페이스·현대로템·한국항공우주·한화시스템 등을 편입한 국내 방산 ETF. 방산과 우주는 별도로 표시하지만 복수 사업 기업의 편입은 겹칠 수 있습니다.'
     if code=='0207G0':result['selectionNote']='에이치브이엠·스피어·세아베스틸지주·쎄트렉아이·알멕을 편입한 국내 우주 밸류체인 ETF. 한화시스템 등 방산 사업 기업도 포함됩니다. 실제 상장 이후 차트만 표시합니다.'
     if code=='0247S0':result['selectionNote']='삼성전기·대덕전자·심텍·이수페타시스 등을 담는 MLCC·AI기판 테마. 한국·일본 혼합 글로벌 ETF이며 국내 업종 전수지수가 아닙니다. 2026-10-13 상장으로 실제 상장 이후 차트만 제공합니다.'
@@ -125,7 +131,11 @@ def main():
     with concurrent.futures.ThreadPoolExecutor(max_workers=5) as pool:
         jobs={pool.submit(build_fund,s,quotes,today):s for s in UNIVERSE}
         for job in concurrent.futures.as_completed(jobs):
-            try:funds.append(job.result())
+            try:
+                fund=job.result()
+                old_evidence=previous.get(fund['code'],{}).get('selectionEvidence')
+                if old_evidence and not fund.get('selectionEvidence'):fund['selectionEvidence']=old_evidence
+                funds.append(fund)
             except Exception as e:
                 code=jobs[job][0];errors.append({'code':code,'error':str(e)})
                 old=previous.get(code)
