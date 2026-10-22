@@ -8,7 +8,7 @@ class ETFChartsTest(unittest.TestCase):
  def setUpClass(cls):cls.data=json.loads(PATH.read_text());cls.funds=cls.data['funds']
  def test_broad_coverage(self):
   self.assertGreaterEqual(len(self.funds),30)
-  self.assertTrue({'0148J0','305720','455850','449450','0207G0','457990','0209D0'}<={f['code'] for f in self.funds})
+  self.assertTrue({'0148J0','305720','455850','449450','0207G0','457990','0209D0','0222F0'}<={f['code'] for f in self.funds})
  def test_user_exclusions_do_not_return(self):
   codes={f['code'] for f in self.funds}
   self.assertFalse(codes & {'069500','229200','462010','471990','463250','445290','385510'})
@@ -39,6 +39,44 @@ class ETFChartsTest(unittest.TestCase):
   for f in self.funds:self.assertIsNone(f['aumKRW']);self.assertGreater(f['marketCapKRW'],0);self.assertEqual(len(f['sourceUrls']),4)
  def test_short_history_is_honest(self):
   space=next(f for f in self.funds if f['code']=='0207G0');self.assertTrue(space['dailyCoverage']['shortHistory']);self.assertEqual(space['daily'][0]['date'],'2026-06-16')
+ def test_datacenter_is_added_without_replacing_selected_themes(self):
+  from scripts import update_korean_etf_charts as mod
+  codes=[f['code'] for f in self.funds];configured=[s[0] for s in mod.UNIVERSE]
+  self.assertEqual(len(codes),len(set(codes)));self.assertEqual(set(codes),set(configured))
+  self.assertGreaterEqual(len(codes),37)
+  self.assertEqual([s for s in mod.UNIVERSE if s[0]=='0222F0'],[('0222F0','데이터센터','theme')])
+  self.assertEqual(mod.official('0222F0','마이티 AI데이터센터밸류체인'),'https://db-asset.com/mob/kr/fund/41900')
+  f=next(f for f in self.funds if f['code']=='0222F0')
+  self.assertEqual(f['name'],'마이티 AI데이터센터밸류체인');self.assertEqual(f['listedAt'],'2026-08-04')
+  self.assertTrue(all(row['date']>=f['listedAt'] for row in f['daily']))
+  self.assertEqual(f['sourceUrls'][0],mod.official(f['code'],f['name']))
+  self.assertNotIn('https://www.tigeretf.com',f['representatives']['sourceUrls'])
+ def test_datacenter_dated_issuer_evidence_and_liquidity_are_separate(self):
+  f=next(f for f in self.funds if f['code']=='0222F0');e=f['selectionEvidence']
+  self.assertIsNone(f['aumKRW'])
+  self.assertEqual(e['asOf'],'2026-10-22');self.assertEqual(e['officialHoldings']['asOf'],e['asOf'])
+  self.assertEqual(e['officialHoldings']['equityCount'],22);self.assertEqual(e['officialHoldings']['cashCount'],1)
+  official=e['officialHoldings']['rows'];self.assertEqual(len(official),23)
+  self.assertEqual({r['code'] for r in official},{r['code'] for r in e['holdings']})
+  sdi=next(r for r in official if r['code']=='006400');self.assertEqual(sdi['unitsPerCreationUnit'],146);self.assertEqual(sdi['valuationKRW'],80884000)
+  self.assertEqual(e['officialAum']['asOf'],'2026-10-21');self.assertEqual(e['officialAum']['valueKRW'],12619250893)
+  liquidity=e['liquidity'];self.assertEqual(liquidity['asOf'],'2026-10-22');self.assertEqual(liquidity['marketCapKRW'],12100000000)
+  self.assertEqual(liquidity['volumeShares'],980);self.assertEqual(liquidity['intradayObservationCount'],11)
+  self.assertEqual(e['priceReverification']['dailyCount'],53)
+  for word in ('저거래량','AUM','2026-10-21','2026-10-22','상장 전','무거래'):
+   self.assertIn(word,e['disclosure'])
+  self.assertNotIn('저거래량',f['selectionNote'],'Detailed dated caveats belong in the folded source disclosure')
+ def test_datacenter_collector_keeps_actual_short_history(self):
+  from scripts import update_korean_etf_charts as mod
+  xml=b'<protocol><chartdata origintime="20260804"><item data="20261021|10880|11010|10875|11010|342"/><item data="20261022|10810|10865|10495|10555|980"/></chartdata></protocol>'
+  intraday={'tradeBaseAt':'20261022','stockExchangeType':'KRX','marketStatus':'CLOSE','priceInfos':[{'localDateTime':'202610220933','currentPrice':10810,'accumulatedTradingVolume':3},{'localDateTime':'202610221530','currentPrice':10555,'accumulatedTradingVolume':980}]}
+  q={'itemname':'마이티 AI데이터센터밸류체인','marketSum':121,'quant':980,'nowVal':10555,'changeRate':-4.13,'nav':10553}
+  with patch.object(mod,'fetch',side_effect=[xml,json.dumps(intraday).encode()]):f=mod.build_fund(('0222F0','데이터센터','theme'),{'0222F0':q},dt.date(2026,10,22))
+  self.assertEqual(len(f['daily']),2);self.assertEqual(len(f['intraday']['points']),2)
+  self.assertTrue(f['dailyCoverage']['shortHistory']);self.assertIsNone(f['aumKRW']);self.assertEqual(f['marketCapKRW'],12100000000)
+  self.assertEqual(sum(p['volume'] for p in f['intraday']['points']),980)
+  self.assertEqual(f['sourceUrls'][0],'https://db-asset.com/mob/kr/fund/41900')
+  self.assertIn('국내 AI 데이터센터',f['selectionNote'])
  def test_representative_refresh_failure_keeps_original_dates(self):
   from scripts import update_korean_etf_charts as mod
   from scripts import korean_etf_representatives as rep

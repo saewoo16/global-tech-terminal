@@ -41,6 +41,83 @@ def validate_fx(rows):
             market_time(row['observedAt'])
 
 
+def validate_breadth(breadth, entry, evidence=None):
+    """Recount securities from preserved regular closes, never rounded returns."""
+    assert isinstance(breadth, dict)
+    assert breadth.get('universe') == 'S&P 500', 'Breadth is not the whole US market'
+    assert breadth.get('asOf') == entry['date']
+    assert breadth.get('previousSession') == entry['sessionVerification']['previousSession']
+    assert dt.date.fromisoformat(breadth['previousSession']) < dt.date.fromisoformat(entry['date'])
+    assert breadth.get('universeAsOf') == entry['coverage']['universeAsOf']
+    assert breadth.get('denominator') == 'valid_securities'
+    assert breadth.get('priceBasis') == 'regular_close_vs_previous_regular_close'
+    assert breadth.get('sourceIds') and breadth.get('note')
+    for key in ('companies', 'securities', 'validCount', 'missingCount'):
+        value = breadth.get(key)
+        assert isinstance(value, int) and not isinstance(value, bool) and value >= 0
+    roster = entry['constituents']
+    members = {r['ticker'] for r in roster}
+    assert len(members) == len(roster), 'Duplicate membership ticker'
+    assert all(r.get('cik') for r in roster), 'Company count requires identified companies'
+    companies = {str(r['cik']).lstrip('0') for r in roster}
+    assert breadth['companies'] == len(companies)
+    assert breadth['securities'] == len(members), 'Keep multiple share classes as securities'
+    assert breadth['validCount'] + breadth['missingCount'] == breadth['securities']
+    expected_status = 'unavailable' if not breadth['validCount'] else 'partial' if breadth['missingCount'] else 'verified'
+    assert breadth.get('status') == expected_status
+    counts, percentages = breadth.get('counts', {}), breadth.get('percentages', {})
+    keys = {'advancing', 'declining', 'unchanged'}
+    assert set(counts) == set(percentages) == keys
+    for key in keys:
+        assert isinstance(counts[key], int) and not isinstance(counts[key], bool) and counts[key] >= 0
+        if breadth['validCount']:
+            assert finite_number(percentages[key]) and math.isclose(
+                percentages[key], counts[key] / breadth['validCount'] * 100,
+                rel_tol=0, abs_tol=1e-9), 'Use valid securities, not companies, as the denominator'
+        else:
+            assert percentages[key] is None, 'Unavailable breadth is not a zero percentage'
+    assert sum(counts.values()) == breadth['validCount']
+    missing = breadth.get('missingTickers')
+    assert isinstance(missing, list) and len(set(missing)) == len(missing) == breadth['missingCount']
+    assert set(missing) <= members
+    expected_path = f"data/us-close-evidence-{entry['date'].replace('-', '')}.json"
+    assert breadth.get('evidencePath') == expected_path
+    assert breadth.get('evidenceRows') == 'screens.dailyRows'
+    if evidence is None:
+        evidence = json.loads((ROOT / expected_path).read_text())
+    assert evidence.get('session') == entry['date']
+    screen = evidence.get('screens', {})
+    assert screen.get('date') == entry['date']
+    coverage = screen.get('coverage', {})
+    for key, value in [('asOf', breadth['asOf']), ('previousSession', breadth['previousSession']),
+                       ('universe', breadth['universe']), ('universeAsOf', breadth['universeAsOf']),
+                       ('companies', breadth['companies']), ('securities', breadth['securities']),
+                       ('dailyValid', breadth['validCount']), ('missingCount', breadth['missingCount'])]:
+        assert coverage.get(key) == value, f'Breadth/evidence coverage mismatch: {key}'
+    rows = screen.get('dailyRows')
+    assert isinstance(rows, list)
+    seen, valid = set(), set()
+    recounted = dict.fromkeys(keys, 0)
+    for row in rows:
+        ticker = row.get('ticker')
+        assert ticker in members and ticker not in seen, 'Unknown or duplicate breadth security'
+        seen.add(ticker)
+        assert row.get('asOf') == breadth['asOf'] and row.get('previousSession') == breadth['previousSession'], 'Do not mix closing sessions'
+        close, previous = row.get('close'), row.get('previousClose')
+        if not all(finite_number(value) and value > 0 for value in (close, previous)):
+            continue
+        # The compact report lists only sources used by displayed stock rows.
+        # Full-universe evidence preserves each additional security's own URL.
+        assert 'sp500_membership' in row.get('sourceIds', []) and f'us_price_{ticker}' in row['sourceIds']
+        source = urlparse(row.get('sourceUrl', ''))
+        assert source.scheme == 'https' and source.netloc and not source.username and not source.password
+        valid.add(ticker)
+        recounted['advancing' if close > previous else 'declining' if close < previous else 'unchanged'] += 1
+    assert breadth['validCount'] == len(valid)
+    assert set(missing) == members - valid, 'Missing prices must remain explicit, not unchanged'
+    assert counts == recounted, 'Breadth counts must match the preserved close comparisons'
+
+
 def validate_unusual_movers(screen, member_symbols, date, cap500=False):
     """Validate exact two-session volume and price filters within a stated universe."""
     assert isinstance(screen, dict)
@@ -200,6 +277,8 @@ def validate(payload):
         member_symbols={r['ticker'] for r in e.get('constituents',[])}
         if member_symbols:
             assert len(member_symbols)>=500
+        if 'breadth' in e:
+            validate_breadth(e['breadth'], e)
         if 'unusualMovers' in e:
             validate_unusual_movers(e['unusualMovers'], member_symbols, date)
         if 'marketCapUnusualMovers' in e:
