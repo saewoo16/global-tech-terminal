@@ -13,6 +13,7 @@ on:
         default: liquidity
   schedule:
     - cron: '30 8 * * 1-5' # 17:30 Asia/Seoul
+    - cron: '40 6-8 * * 1-5' # 15:40, 16:40, 17:40 Asia/Seoul; after verified market close
     - cron: '0 9,10 * * 1-5' # 18:00 and 19:00 Asia/Seoul
 permissions:
   contents: write

@@ -57,6 +57,15 @@ class OfficialLiquidity(unittest.TestCase):
         with self.assertRaises(ValueError):k.apply(p,self.release)
 
 class SessionGate(unittest.TestCase):
+    def test_liquidity_window_does_not_advance_etf_gate(self):
+        dates={'KOSPI':'2026-10-21','KOSDAQ':'2026-10-21'}
+        now=datetime.fromisoformat('2026-10-21T15:40:00+09:00')
+        self.assertTrue(is_completed_session(now,set(),dates,earliest=(15,30)))
+        self.assertFalse(is_completed_session(now,set(),dates))
+        self.assertFalse(is_completed_session(now,{'2026-10-21'},dates,earliest=(15,30)))
+        self.assertFalse(is_completed_session(now,set(),dict(dates,KOSDAQ='2026-10-20'),earliest=(15,30)))
+        source=(ROOT/'scripts/refresh_korean_scheduled.py').read_text()
+        self.assertIn("earliest=(15,30) if args.kind == 'liquidity' else (17,30)",source)
     def test_actual_session_calendar(self):
         holidays=holiday_dates(json.loads((ROOT/'tests/fixtures/krx-holidays-2026.json').read_text()),2026)
         for day in ('2026-06-03','2026-07-17','2026-10-09'):self.assertIn(day,holidays)
@@ -85,6 +94,7 @@ class WorkflowSafety(unittest.TestCase):
         self.assertIn('contents: read',workflow)
         self.assertIn("if: github.event_name == 'push'",workflow)
         self.assertIn("cron: '0 9,10",workflow)
+        self.assertIn("cron: '40 6-8 * * 1-5'",workflow)
     def test_timestamp_only_noop(self):
         from refresh_korean_scheduled import substantive
         self.assertEqual(substantive({'updatedAt':'a','funds':[{'metadataRetrievedAt':'a','representatives':{'marketCapObservedAt':'a','value':1}}]}),substantive({'updatedAt':'b','funds':[{'metadataRetrievedAt':'b','representatives':{'marketCapObservedAt':'b','value':1}}]}))

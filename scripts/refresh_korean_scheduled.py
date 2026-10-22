@@ -23,7 +23,9 @@ def main():
     parser.add_argument('--kind', choices=('etf','liquidity'), required=True)
     args = parser.parse_args()
     now = datetime.now(timezone.utc)
-    if not check(now):
+    # Liquidity reads only dated official statistics, never current-session prices.
+    # ETF retains its existing 17:30 completion gate.
+    if not check(now, earliest=(15,30) if args.kind == 'liquidity' else (17,30)):
         print('No confirmed completed Korean session today; unchanged.')
         return
     if args.kind == 'liquidity':

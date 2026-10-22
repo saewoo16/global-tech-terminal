@@ -36,17 +36,17 @@ def collect_holidays(year):
     return holiday_dates(json.loads(request('/contents/OPN/99/OPN99000001.jspx',
         {'search_bas_yy':str(year),'gridTp':'KRX','code':code}, post=True)), year)
 
-def is_completed_session(now, holidays, market_dates):
+def is_completed_session(now, holidays, market_dates, earliest=(17,30)):
     local = now.astimezone(KST)
     day = local.date().isoformat()
-    return (local.weekday() < 5 and day not in holidays and (local.hour,local.minute) >= (17,30)
+    return (local.weekday() < 5 and day not in holidays and (local.hour,local.minute) >= earliest
             and market_dates == {'KOSPI':day,'KOSDAQ':day})
 
-def check(now):
+def check(now, earliest=(17,30)):
     local = now.astimezone(KST)
     # Weekends need no publication and no source request.
     if local.weekday() >= 5: return False
     holidays = collect_holidays(local.year)
     if local.date().isoformat() in holidays: return False
     dates = {m:max(r['date'] for r in collect_flows(m,local.date().isoformat())) for m in ('KOSPI','KOSDAQ')}
-    return is_completed_session(now,holidays,dates)
+    return is_completed_session(now,holidays,dates,earliest)
