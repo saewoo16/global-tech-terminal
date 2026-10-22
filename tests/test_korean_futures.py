@@ -144,20 +144,35 @@ class KoreanFuturesTests(unittest.TestCase):
         rows = [row for part in self.data['heatmaps']['markets'].values() for row in part['rows']]
         codes = {row['code'] for row in rows}
         self.assertEqual(len(codes), len(rows))
-        self.assertEqual(set(mapping['byCode']), codes)
-        self.assertEqual(mapping['coverage']['total'], len(rows))
+        # The classification snapshot retains its true historical coverage.
+        # Newly priced codes must remain explicitly unclassified, never guessed.
+        self.assertEqual(mapping['coverage']['total'], len(mapping['byCode']))
         unknown = {r['code'] for r in rows if r['industry']['id'] == 'unclassified'}
-        self.assertEqual(mapping['coverage']['classified'], len(rows) - len(unknown))
-        self.assertEqual(mapping['coverage']['unclassified'], len(unknown))
+        snapshot_unknown = {c for c, v in mapping['byCode'].items() if v['id'] == 'unclassified'}
+        self.assertEqual(mapping['coverage']['classified'], len(mapping['byCode']) - len(snapshot_unknown))
+        self.assertEqual(mapping['coverage']['unclassified'], len(snapshot_unknown))
+        self.assertEqual(unknown, (codes - set(mapping['byCode'])) | (codes & snapshot_unknown))
+        current = self.data['heatmaps']['classification']['coverage']
+        self.assertEqual(current['total'], len(rows))
+        self.assertEqual(current['classified'], len(rows) - len(unknown))
+        self.assertEqual(current['unclassified'], len(unknown))
+        self.assertEqual(self.data['heatmaps']['classification']['priceAsOf'], self.data['heatmaps']['asOf'])
+        self.assertEqual(sum(v['total'] for v in current['byMarket'].values()), current['total'])
+        for market, part in self.data['heatmaps']['markets'].items():
+            cv = current['byMarket'][market]
+            self.assertEqual(cv['total'], len(part['rows']))
+            self.assertEqual(cv['classified'], sum(r['industry']['id'] != 'unclassified' for r in part['rows']))
+            self.assertEqual(cv['unclassified'], sum(r['industry']['id'] == 'unclassified' for r in part['rows']))
+            self.assertEqual(cv['industryCount'], len({r['industry']['id'] for r in part['rows'] if r['industry']['id'] != 'unclassified'}))
         self.assertEqual(mapping['asOf'], self.data['heatmaps']['classification']['asOf'])
         self.assertLessEqual(mapping['asOf'], self.data['heatmaps']['asOf'])
         self.assertEqual(mapping['conflictsInUniverse'], [])
-        self.assertEqual({r['code'] for r in mapping['unclassified']}, unknown)
+        self.assertEqual({r['code'] for r in mapping['unclassified']}, snapshot_unknown)
         self.assertTrue(all(r.get('reason') for r in mapping['unclassified']))
         for part in self.data['heatmaps']['markets'].values():
             self.assertEqual(sum(row['marketCapKRW'] for row in part['rows']), part['totalDisplayedMarketCapKRW'])
             for row in part['rows']:
-                self.assertEqual(row['industry'], mapping['byCode'][row['code']])
+                self.assertEqual(row['industry'], mapping['byCode'].get(row['code'], {'id': 'unclassified', 'name': '미분류'}))
         data = copy.deepcopy(self.data)
         data['heatmaps']['markets']['KOSPI']['rows'][0]['industry'] = {'id': 'unclassified', 'name': 'guess'}
         self.assertTrue(any('unknown cannot be guessed' in e for e in validate(data)))

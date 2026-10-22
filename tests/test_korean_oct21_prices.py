@@ -73,11 +73,39 @@ class PartialIndexPrices(unittest.TestCase):
   self.assertEqual(len(e['priceSeries']['KOSPI200']),201);self.assertEqual(len(e['priceSeries']['KOSDAQ150']),148)
   for group in list(d['indexMovers']['daily'].values())+[d['indexMovers']['aggregate5d'],d['indexMovers']['monthly']]:
    for index,item in group.items():
+    if item['comparisonEnd'] > '2026-10-21': continue  # This fixture certifies the archived October21 cohort only.
     partial=index=='KOSDAQ150';self.assertEqual(item['status'],'partial' if partial else 'verified')
     self.assertEqual(item['coverage']['missingCodes'],['056190','195940'] if partial else [])
     if partial:self.assertIn('전체 순위 아님',item['scopeLabel'])
     start,end=item['comparisonStart'],item['comparisonEnd']
     values=[{'code':r['code'],'changePct':(r['closes'][end]['close']/r['closes'][start]['close']-1)*100} for r in e['priceSeries'][index]]
+    for key,positive in [('gainers',True),('losers',False)]:
+     ranked=sorted([r for r in values if (r['changePct']>0 if positive else r['changePct']<0)],key=lambda r:((-1 if positive else 1)*r['changePct'],r['code']))[:10]
+     self.assertEqual([r['code']for r in item[key]],[r['code']for r in ranked])
+     for actual,expected in zip(item[key],ranked):self.assertAlmostEqual(actual['changePct'],expected['changePct'],places=10)
+ def test_current_index_recomputes_from_corresponding_evidence(self):
+  d=json.loads((ROOT/'data/korea-market.json').read_text());day=d['indexMovers']['asOf']
+  e=json.loads((ROOT/('data/korea-index-evidence-'+day.replace('-','')+'.json')).read_text())
+  self.assertEqual(e['asOf'],day)
+  conflicts={(r['code'],r['date']) for r in e.get('boundaryCrosschecks',[]) if not r['match']}
+  groups=[d['indexMovers']['daily'][day],d['indexMovers']['aggregate5d'],d['indexMovers']['monthly']]
+  for group in groups:
+   for index,item in group.items():
+    start,end=item['comparisonStart'],item['comparisonEnd'];self.assertEqual(end,day)
+    records=e['priceSeries'][index];values=[];missing=set()
+    for r in records:
+     a=r['closes'].get(start);b=r['closes'].get(end)
+     if (r['code'],start) in conflicts or not a or not b or not a.get('close') or not b.get('close'):
+      missing.add(r['code']);continue
+     values.append({'code':r['code'],'changePct':(b['close']/a['close']-1)*100})
+    declared=e.get('missingConstituents',{}).get(index,[])
+    missing.update(r['code'] for r in declared)
+    self.assertEqual(len(records)+len(declared),item['coverage']['expectedCount'])
+    self.assertEqual(set(item['coverage']['missingCodes']),missing)
+    self.assertEqual(item['coverage']['validCount'],len(values))
+    self.assertEqual(item['status'],'partial' if missing else 'verified')
+    self.assertEqual(item['coverage']['isComplete'],not missing)
+    if missing:self.assertIn('전체 순위 아님',item['scopeLabel'])
     for key,positive in [('gainers',True),('losers',False)]:
      ranked=sorted([r for r in values if (r['changePct']>0 if positive else r['changePct']<0)],key=lambda r:((-1 if positive else 1)*r['changePct'],r['code']))[:10]
      self.assertEqual([r['code']for r in item[key]],[r['code']for r in ranked])

@@ -79,7 +79,7 @@ class BriefingDataTests(unittest.TestCase):
     def test_call_highlights_must_be_an_array_of_strings(self):
         for value in ('not a list', None, [123]):
             payload = copy.deepcopy(self.payload)
-            payload['entries'][0]['earnings']['rows'][0]['callHighlights'] = value
+            next(entry for entry in payload['entries'] if entry.get('earnings', {}).get('rows'))['earnings']['rows'][0]['callHighlights'] = value
             with self.assertRaises(ValueError): module.validate_document(payload)
 
     def holdings_entry(self):

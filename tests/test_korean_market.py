@@ -208,8 +208,21 @@ class KoreanMarketTests(unittest.TestCase):
         self.assertTrue(any('strictly exceed' in e for e in validate(data)))
 
     def test_all_highs_are_union_of_actual300_screen(self):
-        evidence = json.loads((ROOT / 'data/korea-highs-evidence.json').read_text())
-        self.assertEqual(len(evidence['rows']), 300)
+        day = self.data['highsScreen']['asOf']
+        path = ROOT / ('data/korea-highs-evidence-' + day.replace('-', '') + '.json')
+        if not path.exists():
+            path = ROOT / 'data/korea-highs-evidence.json'
+        evidence = json.loads(path.read_text())
+        self.assertEqual(evidence['asOf'], day)
+        population = evidence.get('rankingProvenance', {}).get('selected', evidence['rows'])
+        self.assertEqual(len(population), 300)
+        self.assertEqual(len({r['code'] for r in population}), 300)
+        observed_codes = {r['code'] for r in evidence['rows']}
+        self.assertEqual(len(observed_codes), len(evidence['rows']))
+        missing_codes = {r['code'] for r in self.data['highsScreen']['coverage']['missing']}
+        self.assertEqual(observed_codes | missing_codes, {r['code'] for r in population})
+        self.assertEqual(sum(bool(r.get('freshDailyCoverage')) for r in evidence['rows']),
+                         self.data['highsScreen']['coverage']['dailyValid'])
         eligible = [r for r in evidence['rows'] if r.get('freshDailyCoverage') and r.get('fullHistoryCoverage')]
         self.assertEqual(len(eligible), self.data['highsScreen']['coverage']['full52WeekHistory'])
         expected = {r['code'] for r in eligible if r['close'] >= .97 * r['high52'] or r['sessionHigh'] > r['prior52WeekHigh']}

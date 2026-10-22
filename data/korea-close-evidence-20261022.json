@@ -1,0 +1,3033 @@
+{
+  "session": {
+    "observedAt": "2026-10-22T09:01:45.786227+00:00",
+    "holidays": [
+      "2026-01-01",
+      "2026-02-16",
+      "2026-02-17",
+      "2026-02-18",
+      "2026-03-02",
+      "2026-05-01",
+      "2026-05-05",
+      "2026-05-25",
+      "2026-06-03",
+      "2026-07-17",
+      "2026-08-17",
+      "2026-09-24",
+      "2026-09-25",
+      "2026-10-05",
+      "2026-10-09",
+      "2026-12-25",
+      "2026-12-31"
+    ],
+    "latest": {
+      "KOSPI": {
+        "date": "2026-10-22",
+        "foreign": 647.26,
+        "institution": -4601.51,
+        "individual": 3697.22,
+        "otherForeign": 10.86,
+        "otherCorporation": 246.16,
+        "source": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=KOSPI&bizdate=20261022&startIdx=0&pageSize=30"
+      },
+      "KOSDAQ": {
+        "date": "2026-10-22",
+        "foreign": -1163.33,
+        "institution": -988.76,
+        "individual": 2126.07,
+        "otherForeign": 29.69,
+        "otherCorporation": -3.66,
+        "source": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=KOSDAQ&bizdate=20261022&startIdx=0&pageSize=30"
+      }
+    },
+    "completed": true
+  },
+  "reportCutoffAt": "2026-10-22T18:00:00+09:00",
+  "collectedAt": "2026-10-22T09:07:35.121775+00:00",
+  "flows": [
+    {
+      "market": "KOSPI",
+      "foreign": 640.09,
+      "institution": -4604.09,
+      "individual": 3708.51,
+      "otherForeign": 10.86,
+      "otherCorporation": 244.63
+    },
+    {
+      "market": "KOSDAQ",
+      "foreign": -1164.19,
+      "institution": -986.63,
+      "individual": 2124.65,
+      "otherForeign": 29.75,
+      "otherCorporation": -3.59
+    }
+  ],
+  "observations": [
+    {
+      "url": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=KOSPI&bizdate=20261022&startIdx=0&pageSize=30",
+      "observedAt": "2026-10-22T09:06:15.285862+00:00",
+      "sha256": "e7e3a1fa0ed0d3664023dde2ec2f1fefb7d12c219c7651675424e2b9e21f429e",
+      "latestRows": [
+        {
+          "bizdate": "20261022",
+          "time": "",
+          "netAmounts": [
+            {
+              "investorGubun": "9001",
+              "diffValue": "1086000000",
+              "sellQuant": "461282",
+              "sellPrice": "12891000000",
+              "buyQuant": "462502",
+              "buyPrice": "13977000000"
+            },
+            {
+              "investorGubun": "9000",
+              "diffValue": "64009000000",
+              "sellQuant": "65109739",
+              "sellPrice": "5074881000000",
+              "buyQuant": "66495557",
+              "buyPrice": "5138890000000"
+            },
+            {
+              "investorGubun": "8000",
+              "diffValue": "370851000000",
+              "sellQuant": "111831988",
+              "sellPrice": "4264601000000",
+              "buyQuant": "107826546",
+              "buyPrice": "4635452000000"
+            },
+            {
+              "investorGubun": "7100",
+              "diffValue": "24463000000",
+              "sellQuant": "2128550",
+              "sellPrice": "78269000000",
+              "buyQuant": "2221486",
+              "buyPrice": "102732000000"
+            },
+            {
+              "investorGubun": "7000",
+              "diffValue": "0",
+              "sellQuant": "0",
+              "sellPrice": "0",
+              "buyQuant": "0",
+              "buyPrice": "0"
+            },
+            {
+              "investorGubun": "6000",
+              "diffValue": "131309000000",
+              "sellQuant": "12684990",
+              "sellPrice": "2699073000000",
+              "buyQuant": "14886586",
+              "buyPrice": "2830382000000"
+            },
+            {
+              "investorGubun": "5000",
+              "diffValue": "-4561000000",
+              "sellQuant": "140325",
+              "sellPrice": "9048000000",
+              "buyQuant": "60612",
+              "buyPrice": "4487000000"
+            },
+            {
+              "investorGubun": "4000",
+              "diffValue": "-1902000000",
+              "sellQuant": "35933",
+              "sellPrice": "6037000000",
+              "buyQuant": "9533",
+              "buyPrice": "4135000000"
+            },
+            {
+              "investorGubun": "3100",
+              "diffValue": "-44693000000",
+              "sellQuant": "3216138",
+              "sellPrice": "282382000000",
+              "buyQuant": "3877203",
+              "buyPrice": "237689000000"
+            },
+            {
+              "investorGubun": "3000",
+              "diffValue": "-246058000000",
+              "sellQuant": "4418692",
+              "sellPrice": "540202000000",
+              "buyQuant": "3034211",
+              "buyPrice": "294144000000"
+            },
+            {
+              "investorGubun": "2000",
+              "diffValue": "73918000000",
+              "sellQuant": "542745",
+              "sellPrice": "45698000000",
+              "buyQuant": "837340",
+              "buyPrice": "119616000000"
+            },
+            {
+              "investorGubun": "1000",
+              "diffValue": "-368422000000",
+              "sellQuant": "8262132",
+              "sellPrice": "997890000000",
+              "buyQuant": "9120938",
+              "buyPrice": "629468000000"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=KOSPI&bizdate=20261022&startIdx=1&pageSize=30",
+      "observedAt": "2026-10-22T09:06:19.138888+00:00",
+      "sha256": "40959deccabeae3e4fe35392bbe1d4f2c803af93fdc9eb08c99565e103cdb4df",
+      "latestRows": [
+        {
+          "bizdate": "20260904",
+          "time": "",
+          "netAmounts": [
+            {
+              "investorGubun": "9001",
+              "diffValue": "-24091000000",
+              "sellQuant": "673178",
+              "sellPrice": "39247000000",
+              "buyQuant": "575275",
+              "buyPrice": "15156000000"
+            },
+            {
+              "investorGubun": "9000",
+              "diffValue": "503699000000",
+              "sellQuant": "74814518",
+              "sellPrice": "5985651000000",
+              "buyQuant": "69847045",
+              "buyPrice": "6489350000000"
+            },
+            {
+              "investorGubun": "8000",
+              "diffValue": "-3722939000000",
+              "sellQuant": "135786132",
+              "sellPrice": "7309497000000",
+              "buyQuant": "121332585",
+              "buyPrice": "3586558000000"
+            },
+            {
+              "investorGubun": "7100",
+              "diffValue": "1573921000000",
+              "sellQuant": "1471905",
+              "sellPrice": "121056000000",
+              "buyQuant": "4893727",
+              "buyPrice": "1694977000000"
+            },
+            {
+              "investorGubun": "7000",
+              "diffValue": "0",
+              "sellQuant": "0",
+              "sellPrice": "0",
+              "buyQuant": "0",
+              "buyPrice": "0"
+            },
+            {
+              "investorGubun": "6000",
+              "diffValue": "84632000000",
+              "sellQuant": "12802692",
+              "sellPrice": "2826583000000",
+              "buyQuant": "15594695",
+              "buyPrice": "2911215000000"
+            },
+            {
+              "investorGubun": "5000",
+              "diffValue": "22047000000",
+              "sellQuant": "32139",
+              "sellPrice": "4163000000",
+              "buyQuant": "204451",
+              "buyPrice": "26210000000"
+            },
+            {
+              "investorGubun": "4000",
+              "diffValue": "2726000000",
+              "sellQuant": "5497",
+              "sellPrice": "1056000000",
+              "buyQuant": "37002",
+              "buyPrice": "3782000000"
+            },
+            {
+              "investorGubun": "3100",
+              "diffValue": "15160000000",
+              "sellQuant": "2475782",
+              "sellPrice": "294996000000",
+              "buyQuant": "3312158",
+              "buyPrice": "310156000000"
+            },
+            {
+              "investorGubun": "3000",
+              "diffValue": "321878000000",
+              "sellQuant": "2581248",
+              "sellPrice": "384054000000",
+              "buyQuant": "5183252",
+              "buyPrice": "705932000000"
+            },
+            {
+              "investorGubun": "2000",
+              "diffValue": "35939000000",
+              "sellQuant": "629278",
+              "sellPrice": "67107000000",
+              "buyQuant": "860071",
+              "buyPrice": "103046000000"
+            },
+            {
+              "investorGubun": "1000",
+              "diffValue": "1187026000000",
+              "sellQuant": "6879241",
+              "sellPrice": "690240000000",
+              "buyQuant": "16311349",
+              "buyPrice": "1877266000000"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=KOSDAQ&bizdate=20261022&startIdx=0&pageSize=30",
+      "observedAt": "2026-10-22T09:06:22.085815+00:00",
+      "sha256": "8e4daf2d8c3b9680f823388ab9c1d9a39acc9333de68dcacfe582311b0f8e424",
+      "latestRows": [
+        {
+          "bizdate": "20261022",
+          "time": "",
+          "netAmounts": [
+            {
+              "investorGubun": "9001",
+              "diffValue": "2975000000",
+              "sellQuant": "1827711",
+              "sellPrice": "15573000000",
+              "buyQuant": "2142297",
+              "buyPrice": "18548000000"
+            },
+            {
+              "investorGubun": "9000",
+              "diffValue": "-116419000000",
+              "sellQuant": "104850835",
+              "sellPrice": "1487035000000",
+              "buyQuant": "97681088",
+              "buyPrice": "1370616000000"
+            },
+            {
+              "investorGubun": "8000",
+              "diffValue": "212465000000",
+              "sellQuant": "394696234",
+              "sellPrice": "4367243000000",
+              "buyQuant": "401319874",
+              "buyPrice": "4579708000000"
+            },
+            {
+              "investorGubun": "7100",
+              "diffValue": "-359000000",
+              "sellQuant": "4233724",
+              "sellPrice": "47898000000",
+              "buyQuant": "4430015",
+              "buyPrice": "47539000000"
+            },
+            {
+              "investorGubun": "7000",
+              "diffValue": "0",
+              "sellQuant": "0",
+              "sellPrice": "0",
+              "buyQuant": "0",
+              "buyPrice": "0"
+            },
+            {
+              "investorGubun": "6000",
+              "diffValue": "-15233000000",
+              "sellQuant": "1567830",
+              "sellPrice": "127479000000",
+              "buyQuant": "1680751",
+              "buyPrice": "112246000000"
+            },
+            {
+              "investorGubun": "5000",
+              "diffValue": "-9029000000",
+              "sellQuant": "622576",
+              "sellPrice": "9129000000",
+              "buyQuant": "3381",
+              "buyPrice": "100000000"
+            },
+            {
+              "investorGubun": "4000",
+              "diffValue": "232000000",
+              "sellQuant": "30568",
+              "sellPrice": "335000000",
+              "buyQuant": "35781",
+              "buyPrice": "567000000"
+            },
+            {
+              "investorGubun": "3100",
+              "diffValue": "-5942000000",
+              "sellQuant": "3485744",
+              "sellPrice": "95096000000",
+              "buyQuant": "3236356",
+              "buyPrice": "89154000000"
+            },
+            {
+              "investorGubun": "3000",
+              "diffValue": "-61255000000",
+              "sellQuant": "4306197",
+              "sellPrice": "227060000000",
+              "buyQuant": "4939591",
+              "buyPrice": "165805000000"
+            },
+            {
+              "investorGubun": "2000",
+              "diffValue": "4692000000",
+              "sellQuant": "175824",
+              "sellPrice": "6626000000",
+              "buyQuant": "315460",
+              "buyPrice": "11318000000"
+            },
+            {
+              "investorGubun": "1000",
+              "diffValue": "-12128000000",
+              "sellQuant": "9693810",
+              "sellPrice": "278592000000",
+              "buyQuant": "9706459",
+              "buyPrice": "266464000000"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=KOSDAQ&bizdate=20261022&startIdx=1&pageSize=30",
+      "observedAt": "2026-10-22T09:06:25.292043+00:00",
+      "sha256": "8674ef4ca923bfe313a9764ab14be3dc8940b1d5a30399b26a3e8532df80a579",
+      "latestRows": [
+        {
+          "bizdate": "20260904",
+          "time": "",
+          "netAmounts": [
+            {
+              "investorGubun": "9001",
+              "diffValue": "-2097000000",
+              "sellQuant": "2283445",
+              "sellPrice": "21022000000",
+              "buyQuant": "1936589",
+              "buyPrice": "18925000000"
+            },
+            {
+              "investorGubun": "9000",
+              "diffValue": "261950000000",
+              "sellQuant": "95029071",
+              "sellPrice": "1276240000000",
+              "buyQuant": "104929232",
+              "buyPrice": "1538190000000"
+            },
+            {
+              "investorGubun": "8000",
+              "diffValue": "-412510000000",
+              "sellQuant": "415689601",
+              "sellPrice": "4803584000000",
+              "buyQuant": "405965091",
+              "buyPrice": "4391074000000"
+            },
+            {
+              "investorGubun": "7100",
+              "diffValue": "-8276000000",
+              "sellQuant": "3775830",
+              "sellPrice": "51559000000",
+              "buyQuant": "3817804",
+              "buyPrice": "43283000000"
+            },
+            {
+              "investorGubun": "7000",
+              "diffValue": "0",
+              "sellQuant": "0",
+              "sellPrice": "0",
+              "buyQuant": "0",
+              "buyPrice": "0"
+            },
+            {
+              "investorGubun": "6000",
+              "diffValue": "18291000000",
+              "sellQuant": "1230959",
+              "sellPrice": "81957000000",
+              "buyQuant": "1195017",
+              "buyPrice": "100248000000"
+            },
+            {
+              "investorGubun": "5000",
+              "diffValue": "-6145000000",
+              "sellQuant": "516526",
+              "sellPrice": "7192000000",
+              "buyQuant": "25728",
+              "buyPrice": "1047000000"
+            },
+            {
+              "investorGubun": "4000",
+              "diffValue": "573000000",
+              "sellQuant": "5279",
+              "sellPrice": "298000000",
+              "buyQuant": "21210",
+              "buyPrice": "871000000"
+            },
+            {
+              "investorGubun": "3100",
+              "diffValue": "55225000000",
+              "sellQuant": "3604685",
+              "sellPrice": "92049000000",
+              "buyQuant": "3177235",
+              "buyPrice": "147274000000"
+            },
+            {
+              "investorGubun": "3000",
+              "diffValue": "74272000000",
+              "sellQuant": "2505553",
+              "sellPrice": "101230000000",
+              "buyQuant": "3765973",
+              "buyPrice": "175502000000"
+            },
+            {
+              "investorGubun": "2000",
+              "diffValue": "1447000000",
+              "sellQuant": "177652",
+              "sellPrice": "12492000000",
+              "buyQuant": "347451",
+              "buyPrice": "13939000000"
+            },
+            {
+              "investorGubun": "1000",
+              "diffValue": "17268000000",
+              "sellQuant": "10342414",
+              "sellPrice": "247877000000",
+              "buyQuant": "9979685",
+              "buyPrice": "265145000000"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=FUT&bizdate=20261022&startIdx=0&pageSize=30",
+      "observedAt": "2026-10-22T09:06:27.809999+00:00",
+      "sha256": "19352d877ae920f5866792d8ff793da96be4daa62081ffa50400e14ffee43089",
+      "latestRows": [
+        {
+          "bizdate": "20261022",
+          "time": "",
+          "netAmounts": [
+            {
+              "investorGubun": "9999",
+              "diffValue": "0",
+              "sellQuant": "159354",
+              "sellPrice": "34837180",
+              "buyQuant": "159354",
+              "buyPrice": "34837180"
+            },
+            {
+              "investorGubun": "9000",
+              "diffValue": "1552",
+              "sellQuant": "117551",
+              "sellPrice": "25720210",
+              "buyQuant": "119103",
+              "buyPrice": "26033932"
+            },
+            {
+              "investorGubun": "8000",
+              "diffValue": "-434",
+              "sellQuant": "20341",
+              "sellPrice": "4460094",
+              "buyQuant": "19907",
+              "buyPrice": "4366772"
+            },
+            {
+              "investorGubun": "7100",
+              "diffValue": "-342",
+              "sellQuant": "1792",
+              "sellPrice": "389460",
+              "buyQuant": "1450",
+              "buyPrice": "316588"
+            },
+            {
+              "investorGubun": "7000",
+              "diffValue": "0",
+              "sellQuant": "0",
+              "sellPrice": "0",
+              "buyQuant": "0",
+              "buyPrice": "0"
+            },
+            {
+              "investorGubun": "6000",
+              "diffValue": "-274",
+              "sellQuant": "1223",
+              "sellPrice": "265824",
+              "buyQuant": "949",
+              "buyPrice": "206540"
+            },
+            {
+              "investorGubun": "5000",
+              "diffValue": "7",
+              "sellQuant": "16",
+              "sellPrice": "3446",
+              "buyQuant": "23",
+              "buyPrice": "5084"
+            },
+            {
+              "investorGubun": "4000",
+              "diffValue": "-25",
+              "sellQuant": "44",
+              "sellPrice": "9502",
+              "buyQuant": "19",
+              "buyPrice": "4090"
+            },
+            {
+              "investorGubun": "3000",
+              "diffValue": "-4063",
+              "sellQuant": "5580",
+              "sellPrice": "1200957",
+              "buyQuant": "1517",
+              "buyPrice": "329167"
+            },
+            {
+              "investorGubun": "2000",
+              "diffValue": "65",
+              "sellQuant": "79",
+              "sellPrice": "16947",
+              "buyQuant": "144",
+              "buyPrice": "31498"
+            },
+            {
+              "investorGubun": "1000",
+              "diffValue": "3514",
+              "sellQuant": "12728",
+              "sellPrice": "2770740",
+              "buyQuant": "16242",
+              "buyPrice": "3543509"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=FUT&bizdate=20261022&startIdx=1&pageSize=30",
+      "observedAt": "2026-10-22T09:06:30.514007+00:00",
+      "sha256": "df16b0402bb8be089adcd5d1285aed04d602fabf807932ad3d8e396d2e48ae0c",
+      "latestRows": [
+        {
+          "bizdate": "20260904",
+          "time": "",
+          "netAmounts": [
+            {
+              "investorGubun": "9999",
+              "diffValue": "0",
+              "sellQuant": "139683",
+              "sellPrice": "36630267",
+              "buyQuant": "139683",
+              "buyPrice": "36630267"
+            },
+            {
+              "investorGubun": "9000",
+              "diffValue": "7793",
+              "sellQuant": "95192",
+              "sellPrice": "24949097",
+              "buyQuant": "102985",
+              "buyPrice": "26998606"
+            },
+            {
+              "investorGubun": "8000",
+              "diffValue": "-395",
+              "sellQuant": "20206",
+              "sellPrice": "5293622",
+              "buyQuant": "19811",
+              "buyPrice": "5190308"
+            },
+            {
+              "investorGubun": "7100",
+              "diffValue": "-92",
+              "sellQuant": "1464",
+              "sellPrice": "384907",
+              "buyQuant": "1372",
+              "buyPrice": "360518"
+            },
+            {
+              "investorGubun": "7000",
+              "diffValue": "0",
+              "sellQuant": "0",
+              "sellPrice": "0",
+              "buyQuant": "0",
+              "buyPrice": "0"
+            },
+            {
+              "investorGubun": "6000",
+              "diffValue": "26",
+              "sellQuant": "937",
+              "sellPrice": "246446",
+              "buyQuant": "963",
+              "buyPrice": "253134"
+            },
+            {
+              "investorGubun": "5000",
+              "diffValue": "4",
+              "sellQuant": "1",
+              "sellPrice": "266",
+              "buyQuant": "5",
+              "buyPrice": "1308"
+            },
+            {
+              "investorGubun": "4000",
+              "diffValue": "11",
+              "sellQuant": "25",
+              "sellPrice": "6583",
+              "buyQuant": "36",
+              "buyPrice": "9461"
+            },
+            {
+              "investorGubun": "3000",
+              "diffValue": "914",
+              "sellQuant": "1485",
+              "sellPrice": "391015",
+              "buyQuant": "2399",
+              "buyPrice": "631147"
+            },
+            {
+              "investorGubun": "2000",
+              "diffValue": "-170",
+              "sellQuant": "422",
+              "sellPrice": "111115",
+              "buyQuant": "252",
+              "buyPrice": "66395"
+            },
+            {
+              "investorGubun": "1000",
+              "diffValue": "-8091",
+              "sellQuant": "19951",
+              "sellPrice": "5247215",
+              "buyQuant": "11860",
+              "buyPrice": "3119390"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://finance.daum.net/api/futures/masters",
+      "observedAt": "2026-10-22T09:06:34.083681+00:00",
+      "sha256": "5bf6b72ba2c0669a799c802bddf7b294d3edeed3b5cd52b11df3029e920299ee",
+      "latestRows": [
+        {
+          "symbolCode": "KR4A016C0004",
+          "name": "F 202612",
+          "basePrice": 893.05,
+          "baseDate": "2026-10-22",
+          "upperLimit": 964.45,
+          "lowerLimit": 821.65,
+          "prevClosingPrice": 893.05
+        }
+      ]
+    },
+    {
+      "url": "https://finance.daum.net/api/future/KR4A016C0004/days?page=1&perPage=60",
+      "observedAt": "2026-10-22T09:06:36.557783+00:00",
+      "sha256": "832a3c9b038130d9609872ad7da36e3eabc5ff84323635909383336c1756ab91",
+      "latestRows": [
+        {
+          "date": "2026-10-22 00:00:00",
+          "tradePrice": 857.0,
+          "change": "FALL",
+          "changeRate": -0.0403672807,
+          "changePrice": -36.05,
+          "accTradeVolume": 133023,
+          "accTradePrice": 28988003287500.0,
+          "foreignSettlement": 1552,
+          "institutionSettlement": -776,
+          "privateSettlement": -434,
+          "unsettledVolume": 143707
+        }
+      ]
+    }
+  ],
+  "news": {
+    "date": "2026-10-22",
+    "collectedAt": "2026-10-22T09:04:14.510847+00:00",
+    "indices": [
+      {
+        "name": "KOSPI",
+        "close": 5533.77,
+        "change": -201.89,
+        "changePct": -3.52
+      },
+      {
+        "name": "KOSDAQ",
+        "close": 764.1,
+        "change": -28.66,
+        "changePct": -3.62
+      }
+    ],
+    "news": [
+      {
+        "id": "blockmedia-close-20261022",
+        "url": "https://www.blockmedia.co.kr/archives/1154900",
+        "title": "[마감시황] 코스피, 하루 만에 상승분 반납…5500선 턱걸이",
+        "publishedAt": "2026-10-22T15:49:02+09:00",
+        "summary": "코스피는 기관 매도와 AI 투자 수익성 우려가 겹치며 전일 상승분을 반납했다. 삼성전자(-4.03%)·SK하이닉스(-5.49%)가 하락했고 코스닥에서는 에코프로비엠(-9.66%)·에코프로(-7.54%)의 낙폭이 컸다. 신한투자증권은 메타의 잉여현금흐름 적자와 램리서치 전망이 높아진 기대를 넘지 못한 점을 기술주 부담으로 설명했다."
+      },
+      {
+        "id": "yonhap-close-20261022",
+        "url": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022153000008",
+        "title": "코스피, 3.5% 급락한 5,533…메타 호실적에도 AI 의구심 지속(종합)",
+        "publishedAt": "2026-10-22T16:25:52+09:00",
+        "summary": "전일 급등 이후 차익실현과 AI 투자 수익성 우려가 겹치며 양 시장이 급락했다. 연합뉴스는 삼성전자·SK하이닉스의 자사주 매입 종료로 매물을 받아줄 수급이 줄어든 점도 부담으로 지목했다. 메타의 잉여현금흐름 적자와 테슬라의 설비투자 감소가 시장에 안도감을 주지 못했다는 대신증권 분석을 전했다."
+      }
+    ],
+    "reportedFlows": {
+      "unit": "억원",
+      "sourceId": "blockmedia-close-20261022",
+      "snapshotAt": null,
+      "note": "15:49 기사에 인용된 반올림 수치. 상세 투자자 분류 제외 여부 및 원화 정밀도 미공개. NAVER KRX 원자료로 대체/교차검증 권고.",
+      "KOSPI": {
+        "foreign": 614,
+        "institution": -4621,
+        "individual": 3802
+      },
+      "KOSDAQ": {
+        "foreign": -1200,
+        "institution": -997,
+        "individual": 2204
+      }
+    },
+    "fx": {
+      "name": "USD/KRW",
+      "value": 1324.2,
+      "change": -1.0,
+      "session": "주간거래 종가",
+      "date": "2026-10-22",
+      "sourceId": "yonhap-close-20261022",
+      "snapshotAt": "2026-10-22T15:30:00+09:00"
+    },
+    "crosscheckSources": [
+      {
+        "url": "https://fstc.co.kr/kr/sub/invest/stock.php",
+        "observationAt": "2026-10-22T17:17:18+09:00",
+        "note": "회사 공식 IR 시세 화면에 장마감, KOSPI5533.77/-201.89, KOSDAQ764.10/-28.66 표시. 웹 검색 본문 확인."
+      },
+      {
+        "url": "https://www.ph.co.kr/kr/sub/investor/stock/industrials.asp",
+        "observationAt": "2026-10-22T15:37:10+09:00",
+        "note": "공식 IR 화면 장마감 주요지수 동일."
+      }
+    ],
+    "stockNews": [
+      {
+        "ticker": "028050",
+        "name": "삼성E&A",
+        "sourceUrl": "https://samsungena.com/kr/newsroom/news/view?idx=15854",
+        "sourceDate": "2026-10-22",
+        "observedAt": "2026-10-22T09:06:28.664400+00:00",
+        "summary": "3분기 영업이익이 전년 대비 183.6% 늘었고 연간 수주·영업이익 전망을 상향했다. 7800억원 자사주 취득과 6900억원 소각 계획도 발표했다.",
+        "causalitySourceUrl": "https://m.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03030726645615544",
+        "causalityNote": "09:24 이데일리 특징주 기사는 호실적·자사주 취득을 강세 배경으로 지목; 종가 수익률은 별도 시세 원자료 사용"
+      },
+      {
+        "ticker": "293490",
+        "name": "카카오게임즈",
+        "sourceUrl": "https://www.newswhoplus.com/news/articleView.html?idxno=72236",
+        "publishedAt": "2026-10-22T05:00:00+09:00",
+        "summary": "관련 뉴스: 신작 도깨비의세계가 10월13일 구글플레이 매출1위에 오른 뒤 19일까지 선두를 유지했다는 보도가 나왔다. 외형·성장 요소를 분리한 과금 방식과 이용자 의견을 반영한 운영을 소개했다.",
+        "causalityVerified": false
+      },
+      {
+        "ticker": "247540",
+        "name": "에코프로비엠",
+        "sourceUrl": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+        "additionalSourceUrl": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+        "snapshotAt": "2026-10-22T15:30:00+09:00",
+        "summary": "외국인 약302억원, 기관 약134억원 순매도가 확인됐다. 이차전지 업종 동반 약세 속 매도 우위였으며, 개별 악재는 확인되지 않았다.",
+        "rawSellValueWon": {
+          "foreign": 30181639000,
+          "institution": 13379140000
+        },
+        "causalityVerified": false,
+        "note": "마지막 개별악재 미확인 문구는 사용자 선호에 따라 생략 가능. 수급은 방향·규모 사실이며 주가 인과관계 단정 아님."
+      }
+    ],
+    "stockFlowRankings": {
+      "date": "2026-10-22",
+      "status": "verified",
+      "artifact": "rankings-patch.json",
+      "checkedAt": "2026-10-22T09:12:19.654271+00:00"
+    }
+  },
+  "periodFlows": {
+    "observedAt": "2026-10-22T09:05:57.238040+00:00",
+    "scope": "WEEK10/15~10/21; MONTH9/18~10/21. DAY estimated foreign excluded.",
+    "rawSHA256": "6c0a3756a34fdc0d63a1ed431d0a95e48528604ba7082743163b5786aadbcf64"
+  },
+  "stockFlowRankings": {
+    "date": "2026-10-22",
+    "daily": {
+      "foreign": {
+        "status": "verified",
+        "unit": "억원",
+        "rows": [
+          {
+            "code": "028050",
+            "name": "삼성E&A",
+            "market": "KOSPI",
+            "value": 1294.1,
+            "sourceValue": "1,294.1",
+            "sourceUnit": "억원",
+            "valueWon": 129410000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+            "sourceId": "yonhap-2026-10-22-kospi-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "000660",
+            "name": "SK하이닉스",
+            "market": "KOSPI",
+            "value": 445.7,
+            "sourceValue": "445.7",
+            "sourceUnit": "억원",
+            "valueWon": 44570000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+            "sourceId": "yonhap-2026-10-22-kospi-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "079550",
+            "name": "LIG디펜스앤에어로스페이스",
+            "market": "KOSPI",
+            "value": 335.8,
+            "sourceValue": "335.8",
+            "sourceUnit": "억원",
+            "valueWon": 33580000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+            "sourceId": "yonhap-2026-10-22-kospi-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "005380",
+            "name": "현대차",
+            "market": "KOSPI",
+            "value": 216.5,
+            "sourceValue": "216.5",
+            "sourceUnit": "억원",
+            "valueWon": 21650000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+            "sourceId": "yonhap-2026-10-22-kospi-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "010950",
+            "name": "S-Oil",
+            "market": "KOSPI",
+            "value": 204.1,
+            "sourceValue": "204.1",
+            "sourceUnit": "억원",
+            "valueWon": 20410000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+            "sourceId": "yonhap-2026-10-22-kospi-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "267260",
+            "name": "HD현대일렉트릭",
+            "market": "KOSPI",
+            "value": 160.6,
+            "sourceValue": "160.6",
+            "sourceUnit": "억원",
+            "valueWon": 16060000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+            "sourceId": "yonhap-2026-10-22-kospi-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "319660",
+            "name": "피에스케이",
+            "market": "KOSDAQ",
+            "value": 148.33325,
+            "sourceValue": "1,483,332.5",
+            "sourceUnit": "만원",
+            "valueWon": 14833325000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "373220",
+            "name": "LG에너지솔루션",
+            "market": "KOSPI",
+            "value": 134.4,
+            "sourceValue": "134.4",
+            "sourceUnit": "억원",
+            "valueWon": 13440000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+            "sourceId": "yonhap-2026-10-22-kospi-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "403870",
+            "name": "HPSP",
+            "market": "KOSDAQ",
+            "value": 114.90868,
+            "sourceValue": "1,149,086.8",
+            "sourceUnit": "만원",
+            "valueWon": 11490868000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "078930",
+            "name": "GS",
+            "market": "KOSPI",
+            "value": 110.5,
+            "sourceValue": "110.5",
+            "sourceUnit": "억원",
+            "valueWon": 11050000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+            "sourceId": "yonhap-2026-10-22-kospi-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "035420",
+            "name": "NAVER",
+            "market": "KOSPI",
+            "value": 109.1,
+            "sourceValue": "109.1",
+            "sourceUnit": "억원",
+            "valueWon": 10910000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+            "sourceId": "yonhap-2026-10-22-kospi-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "068270",
+            "name": "셀트리온",
+            "market": "KOSPI",
+            "value": 108.5,
+            "sourceValue": "108.5",
+            "sourceUnit": "억원",
+            "valueWon": 10850000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+            "sourceId": "yonhap-2026-10-22-kospi-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "402340",
+            "name": "SK스퀘어",
+            "market": "KOSPI",
+            "value": 107.9,
+            "sourceValue": "107.9",
+            "sourceUnit": "억원",
+            "valueWon": 10790000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+            "sourceId": "yonhap-2026-10-22-kospi-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "000990",
+            "name": "DB하이텍",
+            "market": "KOSPI",
+            "value": 101.9,
+            "sourceValue": "101.9",
+            "sourceUnit": "억원",
+            "valueWon": 10190000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+            "sourceId": "yonhap-2026-10-22-kospi-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "095610",
+            "name": "테스",
+            "market": "KOSDAQ",
+            "value": 100.40098,
+            "sourceValue": "1,004,009.8",
+            "sourceUnit": "만원",
+            "valueWon": 10040098000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          }
+        ],
+        "byMarket": {
+          "KOSPI": [
+            {
+              "code": "028050",
+              "name": "삼성E&A",
+              "market": "KOSPI",
+              "value": 1294.1,
+              "sourceValue": "1,294.1",
+              "sourceUnit": "억원",
+              "valueWon": 129410000000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+              "sourceId": "yonhap-2026-10-22-kospi-foreign",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "000660",
+              "name": "SK하이닉스",
+              "market": "KOSPI",
+              "value": 445.7,
+              "sourceValue": "445.7",
+              "sourceUnit": "억원",
+              "valueWon": 44570000000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+              "sourceId": "yonhap-2026-10-22-kospi-foreign",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "079550",
+              "name": "LIG디펜스앤에어로스페이스",
+              "market": "KOSPI",
+              "value": 335.8,
+              "sourceValue": "335.8",
+              "sourceUnit": "억원",
+              "valueWon": 33580000000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+              "sourceId": "yonhap-2026-10-22-kospi-foreign",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "005380",
+              "name": "현대차",
+              "market": "KOSPI",
+              "value": 216.5,
+              "sourceValue": "216.5",
+              "sourceUnit": "억원",
+              "valueWon": 21650000000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+              "sourceId": "yonhap-2026-10-22-kospi-foreign",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "010950",
+              "name": "S-Oil",
+              "market": "KOSPI",
+              "value": 204.1,
+              "sourceValue": "204.1",
+              "sourceUnit": "억원",
+              "valueWon": 20410000000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+              "sourceId": "yonhap-2026-10-22-kospi-foreign",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "267260",
+              "name": "HD현대일렉트릭",
+              "market": "KOSPI",
+              "value": 160.6,
+              "sourceValue": "160.6",
+              "sourceUnit": "억원",
+              "valueWon": 16060000000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+              "sourceId": "yonhap-2026-10-22-kospi-foreign",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "373220",
+              "name": "LG에너지솔루션",
+              "market": "KOSPI",
+              "value": 134.4,
+              "sourceValue": "134.4",
+              "sourceUnit": "억원",
+              "valueWon": 13440000000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+              "sourceId": "yonhap-2026-10-22-kospi-foreign",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "078930",
+              "name": "GS",
+              "market": "KOSPI",
+              "value": 110.5,
+              "sourceValue": "110.5",
+              "sourceUnit": "억원",
+              "valueWon": 11050000000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+              "sourceId": "yonhap-2026-10-22-kospi-foreign",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "035420",
+              "name": "NAVER",
+              "market": "KOSPI",
+              "value": 109.1,
+              "sourceValue": "109.1",
+              "sourceUnit": "억원",
+              "valueWon": 10910000000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+              "sourceId": "yonhap-2026-10-22-kospi-foreign",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "068270",
+              "name": "셀트리온",
+              "market": "KOSPI",
+              "value": 108.5,
+              "sourceValue": "108.5",
+              "sourceUnit": "억원",
+              "valueWon": 10850000000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+              "sourceId": "yonhap-2026-10-22-kospi-foreign",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "402340",
+              "name": "SK스퀘어",
+              "market": "KOSPI",
+              "value": 107.9,
+              "sourceValue": "107.9",
+              "sourceUnit": "억원",
+              "valueWon": 10790000000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+              "sourceId": "yonhap-2026-10-22-kospi-foreign",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "000990",
+              "name": "DB하이텍",
+              "market": "KOSPI",
+              "value": 101.9,
+              "sourceValue": "101.9",
+              "sourceUnit": "억원",
+              "valueWon": 10190000000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+              "sourceId": "yonhap-2026-10-22-kospi-foreign",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "329180",
+              "name": "HD현대중공업",
+              "market": "KOSPI",
+              "value": 90.7,
+              "sourceValue": "90.7",
+              "sourceUnit": "억원",
+              "valueWon": 9070000000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+              "sourceId": "yonhap-2026-10-22-kospi-foreign",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "082740",
+              "name": "한화엔진",
+              "market": "KOSPI",
+              "value": 84.0,
+              "sourceValue": "84.0",
+              "sourceUnit": "억원",
+              "valueWon": 8400000000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+              "sourceId": "yonhap-2026-10-22-kospi-foreign",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "000720",
+              "name": "현대건설",
+              "market": "KOSPI",
+              "value": 75.3,
+              "sourceValue": "75.3",
+              "sourceUnit": "억원",
+              "valueWon": 7530000000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+              "sourceId": "yonhap-2026-10-22-kospi-foreign",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            }
+          ],
+          "KOSDAQ": [
+            {
+              "code": "319660",
+              "name": "피에스케이",
+              "market": "KOSDAQ",
+              "value": 148.33325,
+              "sourceValue": "1,483,332.5",
+              "sourceUnit": "만원",
+              "valueWon": 14833325000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+              "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "403870",
+              "name": "HPSP",
+              "market": "KOSDAQ",
+              "value": 114.90868,
+              "sourceValue": "1,149,086.8",
+              "sourceUnit": "만원",
+              "valueWon": 11490868000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+              "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "095610",
+              "name": "테스",
+              "market": "KOSDAQ",
+              "value": 100.40098,
+              "sourceValue": "1,004,009.8",
+              "sourceUnit": "만원",
+              "valueWon": 10040098000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+              "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "039030",
+              "name": "이오테크닉스",
+              "market": "KOSDAQ",
+              "value": 92.70121,
+              "sourceValue": "927,012.1",
+              "sourceUnit": "만원",
+              "valueWon": 9270121000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+              "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "058470",
+              "name": "리노공업",
+              "market": "KOSDAQ",
+              "value": 82.27021,
+              "sourceValue": "822,702.1",
+              "sourceUnit": "만원",
+              "valueWon": 8227021000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+              "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "214450",
+              "name": "파마리서치",
+              "market": "KOSDAQ",
+              "value": 80.60809,
+              "sourceValue": "806,080.9",
+              "sourceUnit": "만원",
+              "valueWon": 8060809000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+              "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "131290",
+              "name": "티에스이",
+              "market": "KOSDAQ",
+              "value": 64.50413,
+              "sourceValue": "645,041.3",
+              "sourceUnit": "만원",
+              "valueWon": 6450413000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+              "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "098120",
+              "name": "마이크로컨텍솔",
+              "market": "KOSDAQ",
+              "value": 59.0213,
+              "sourceValue": "590,213.0",
+              "sourceUnit": "만원",
+              "valueWon": 5902130000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+              "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "064760",
+              "name": "티씨케이",
+              "market": "KOSDAQ",
+              "value": 56.13359,
+              "sourceValue": "561,335.9",
+              "sourceUnit": "만원",
+              "valueWon": 5613359000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+              "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "083650",
+              "name": "비에이치아이",
+              "market": "KOSDAQ",
+              "value": 46.30116,
+              "sourceValue": "463,011.6",
+              "sourceUnit": "만원",
+              "valueWon": 4630116000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+              "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "080580",
+              "name": "오킨스전자",
+              "market": "KOSDAQ",
+              "value": 46.12561,
+              "sourceValue": "461,256.1",
+              "sourceUnit": "만원",
+              "valueWon": 4612561000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+              "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "440110",
+              "name": "파두",
+              "market": "KOSDAQ",
+              "value": 45.34975,
+              "sourceValue": "453,497.5",
+              "sourceUnit": "만원",
+              "valueWon": 4534975000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+              "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "089970",
+              "name": "브이엠",
+              "market": "KOSDAQ",
+              "value": 38.15527,
+              "sourceValue": "381,552.7",
+              "sourceUnit": "만원",
+              "valueWon": 3815527000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+              "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "031980",
+              "name": "피에스케이홀딩스",
+              "market": "KOSDAQ",
+              "value": 33.71374,
+              "sourceValue": "337,137.4",
+              "sourceUnit": "만원",
+              "valueWon": 3371374000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+              "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "078350",
+              "name": "한양디지텍",
+              "market": "KOSDAQ",
+              "value": 30.83507,
+              "sourceValue": "308,350.7",
+              "sourceUnit": "만원",
+              "valueWon": 3083507000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+              "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            }
+          ]
+        },
+        "sourceIds": [
+          "yonhap-2026-10-22-kospi-foreign",
+          "yonhap-2026-10-22-kosdaq-foreign"
+        ],
+        "coverage": {
+          "start": "2026-10-22",
+          "end": "2026-10-22",
+          "markets": [
+            "KOSPI",
+            "KOSDAQ"
+          ],
+          "snapshotAt": "2026-10-22T15:30:00+09:00",
+          "universe": "KOSPI + KOSDAQ · 보통주 중심, ST 스팩 포함"
+        },
+        "note": "KRX·연합인포맥스 인용 연합뉴스 15:30 실제 순매수대금 상위20에서 우선주 명칭·코드와 공급사 ST 유형 필터를 적용한 상위15. 시장 전체 합계나 테마 전체 수급으로 합산하지 않습니다. 시장별18시 조회 잠정 수급과 집계시점이 다릅니다."
+      },
+      "institution": {
+        "status": "verified",
+        "unit": "억원",
+        "rows": [
+          {
+            "code": "028050",
+            "name": "삼성E&A",
+            "market": "KOSPI",
+            "value": 888.5,
+            "sourceValue": "888.5",
+            "sourceUnit": "억원",
+            "valueWon": 88850000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+            "sourceId": "yonhap-2026-10-22-kospi-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "353200",
+            "name": "대덕전자",
+            "market": "KOSPI",
+            "value": 280.8,
+            "sourceValue": "280.8",
+            "sourceUnit": "억원",
+            "valueWon": 28080000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+            "sourceId": "yonhap-2026-10-22-kospi-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "064400",
+            "name": "LG씨엔에스",
+            "market": "KOSPI",
+            "value": 222.1,
+            "sourceValue": "222.1",
+            "sourceUnit": "억원",
+            "valueWon": 22210000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+            "sourceId": "yonhap-2026-10-22-kospi-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "034730",
+            "name": "SK",
+            "market": "KOSPI",
+            "value": 214.5,
+            "sourceValue": "214.5",
+            "sourceUnit": "억원",
+            "valueWon": 21450000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+            "sourceId": "yonhap-2026-10-22-kospi-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "018260",
+            "name": "삼성에스디에스",
+            "market": "KOSPI",
+            "value": 126.4,
+            "sourceValue": "126.4",
+            "sourceUnit": "억원",
+            "valueWon": 12640000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+            "sourceId": "yonhap-2026-10-22-kospi-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "028260",
+            "name": "삼성물산",
+            "market": "KOSPI",
+            "value": 108.4,
+            "sourceValue": "108.4",
+            "sourceUnit": "억원",
+            "valueWon": 10840000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+            "sourceId": "yonhap-2026-10-22-kospi-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "032830",
+            "name": "삼성생명",
+            "market": "KOSPI",
+            "value": 107.7,
+            "sourceValue": "107.7",
+            "sourceUnit": "억원",
+            "valueWon": 10770000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+            "sourceId": "yonhap-2026-10-22-kospi-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "119850",
+            "name": "지엔씨에너지",
+            "market": "KOSDAQ",
+            "value": 103.74958,
+            "sourceValue": "1,037,495.8",
+            "sourceUnit": "만원",
+            "valueWon": 10374958000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "0158S0",
+            "name": "엘리스",
+            "market": "KOSDAQ",
+            "value": 102.19812,
+            "sourceValue": "1,021,981.2",
+            "sourceUnit": "만원",
+            "valueWon": 10219812000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "000810",
+            "name": "삼성화재",
+            "market": "KOSPI",
+            "value": 96.7,
+            "sourceValue": "96.7",
+            "sourceUnit": "억원",
+            "valueWon": 9670000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+            "sourceId": "yonhap-2026-10-22-kospi-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "089890",
+            "name": "코세스",
+            "market": "KOSDAQ",
+            "value": 94.74496,
+            "sourceValue": "947,449.6",
+            "sourceUnit": "만원",
+            "valueWon": 9474496000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "222800",
+            "name": "심텍",
+            "market": "KOSDAQ",
+            "value": 89.53665,
+            "sourceValue": "895,366.5",
+            "sourceUnit": "만원",
+            "valueWon": 8953665000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "267270",
+            "name": "HD건설기계",
+            "market": "KOSPI",
+            "value": 83.8,
+            "sourceValue": "83.8",
+            "sourceUnit": "억원",
+            "valueWon": 8380000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+            "sourceId": "yonhap-2026-10-22-kospi-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "253590",
+            "name": "네오셈",
+            "market": "KOSDAQ",
+            "value": 82.5138,
+            "sourceValue": "825,138.0",
+            "sourceUnit": "만원",
+            "valueWon": 8251380000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "140860",
+            "name": "파크시스템스",
+            "market": "KOSDAQ",
+            "value": 78.87008,
+            "sourceValue": "788,700.8",
+            "sourceUnit": "만원",
+            "valueWon": 7887008000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          }
+        ],
+        "byMarket": {
+          "KOSPI": [
+            {
+              "code": "028050",
+              "name": "삼성E&A",
+              "market": "KOSPI",
+              "value": 888.5,
+              "sourceValue": "888.5",
+              "sourceUnit": "억원",
+              "valueWon": 88850000000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+              "sourceId": "yonhap-2026-10-22-kospi-institution",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "353200",
+              "name": "대덕전자",
+              "market": "KOSPI",
+              "value": 280.8,
+              "sourceValue": "280.8",
+              "sourceUnit": "억원",
+              "valueWon": 28080000000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+              "sourceId": "yonhap-2026-10-22-kospi-institution",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "064400",
+              "name": "LG씨엔에스",
+              "market": "KOSPI",
+              "value": 222.1,
+              "sourceValue": "222.1",
+              "sourceUnit": "억원",
+              "valueWon": 22210000000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+              "sourceId": "yonhap-2026-10-22-kospi-institution",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "034730",
+              "name": "SK",
+              "market": "KOSPI",
+              "value": 214.5,
+              "sourceValue": "214.5",
+              "sourceUnit": "억원",
+              "valueWon": 21450000000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+              "sourceId": "yonhap-2026-10-22-kospi-institution",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "018260",
+              "name": "삼성에스디에스",
+              "market": "KOSPI",
+              "value": 126.4,
+              "sourceValue": "126.4",
+              "sourceUnit": "억원",
+              "valueWon": 12640000000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+              "sourceId": "yonhap-2026-10-22-kospi-institution",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "028260",
+              "name": "삼성물산",
+              "market": "KOSPI",
+              "value": 108.4,
+              "sourceValue": "108.4",
+              "sourceUnit": "억원",
+              "valueWon": 10840000000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+              "sourceId": "yonhap-2026-10-22-kospi-institution",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "032830",
+              "name": "삼성생명",
+              "market": "KOSPI",
+              "value": 107.7,
+              "sourceValue": "107.7",
+              "sourceUnit": "억원",
+              "valueWon": 10770000000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+              "sourceId": "yonhap-2026-10-22-kospi-institution",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "000810",
+              "name": "삼성화재",
+              "market": "KOSPI",
+              "value": 96.7,
+              "sourceValue": "96.7",
+              "sourceUnit": "억원",
+              "valueWon": 9670000000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+              "sourceId": "yonhap-2026-10-22-kospi-institution",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "267270",
+              "name": "HD건설기계",
+              "market": "KOSPI",
+              "value": 83.8,
+              "sourceValue": "83.8",
+              "sourceUnit": "억원",
+              "valueWon": 8380000000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+              "sourceId": "yonhap-2026-10-22-kospi-institution",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "010120",
+              "name": "LS ELECTRIC",
+              "market": "KOSPI",
+              "value": 78.7,
+              "sourceValue": "78.7",
+              "sourceUnit": "억원",
+              "valueWon": 7870000000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+              "sourceId": "yonhap-2026-10-22-kospi-institution",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "229640",
+              "name": "LS에코에너지",
+              "market": "KOSPI",
+              "value": 70.9,
+              "sourceValue": "70.9",
+              "sourceUnit": "억원",
+              "valueWon": 7090000000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+              "sourceId": "yonhap-2026-10-22-kospi-institution",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "068270",
+              "name": "셀트리온",
+              "market": "KOSPI",
+              "value": 70.8,
+              "sourceValue": "70.8",
+              "sourceUnit": "억원",
+              "valueWon": 7080000000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+              "sourceId": "yonhap-2026-10-22-kospi-institution",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "003230",
+              "name": "삼양식품",
+              "market": "KOSPI",
+              "value": 70.0,
+              "sourceValue": "70.0",
+              "sourceUnit": "억원",
+              "valueWon": 7000000000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+              "sourceId": "yonhap-2026-10-22-kospi-institution",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "012750",
+              "name": "에스원",
+              "market": "KOSPI",
+              "value": 64.9,
+              "sourceValue": "64.9",
+              "sourceUnit": "억원",
+              "valueWon": 6490000000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+              "sourceId": "yonhap-2026-10-22-kospi-institution",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "272210",
+              "name": "한화시스템",
+              "market": "KOSPI",
+              "value": 61.0,
+              "sourceValue": "61.0",
+              "sourceUnit": "억원",
+              "valueWon": 6100000000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+              "sourceId": "yonhap-2026-10-22-kospi-institution",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            }
+          ],
+          "KOSDAQ": [
+            {
+              "code": "119850",
+              "name": "지엔씨에너지",
+              "market": "KOSDAQ",
+              "value": 103.74958,
+              "sourceValue": "1,037,495.8",
+              "sourceUnit": "만원",
+              "valueWon": 10374958000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+              "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "0158S0",
+              "name": "엘리스",
+              "market": "KOSDAQ",
+              "value": 102.19812,
+              "sourceValue": "1,021,981.2",
+              "sourceUnit": "만원",
+              "valueWon": 10219812000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+              "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "089890",
+              "name": "코세스",
+              "market": "KOSDAQ",
+              "value": 94.74496,
+              "sourceValue": "947,449.6",
+              "sourceUnit": "만원",
+              "valueWon": 9474496000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+              "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "222800",
+              "name": "심텍",
+              "market": "KOSDAQ",
+              "value": 89.53665,
+              "sourceValue": "895,366.5",
+              "sourceUnit": "만원",
+              "valueWon": 8953665000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+              "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "253590",
+              "name": "네오셈",
+              "market": "KOSDAQ",
+              "value": 82.5138,
+              "sourceValue": "825,138.0",
+              "sourceUnit": "만원",
+              "valueWon": 8251380000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+              "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "140860",
+              "name": "파크시스템스",
+              "market": "KOSDAQ",
+              "value": 78.87008,
+              "sourceValue": "788,700.8",
+              "sourceUnit": "만원",
+              "valueWon": 7887008000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+              "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "354320",
+              "name": "알멕",
+              "market": "KOSDAQ",
+              "value": 74.32528,
+              "sourceValue": "743,252.8",
+              "sourceUnit": "만원",
+              "valueWon": 7432528000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+              "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "441270",
+              "name": "파인엠텍",
+              "market": "KOSDAQ",
+              "value": 71.66919,
+              "sourceValue": "716,691.9",
+              "sourceUnit": "만원",
+              "valueWon": 7166919000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+              "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "456160",
+              "name": "지투지바이오",
+              "market": "KOSDAQ",
+              "value": 57.81165,
+              "sourceValue": "578,116.5",
+              "sourceUnit": "만원",
+              "valueWon": 5781165000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+              "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "458870",
+              "name": "씨어스",
+              "market": "KOSDAQ",
+              "value": 46.71852,
+              "sourceValue": "467,185.2",
+              "sourceUnit": "만원",
+              "valueWon": 4671852000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+              "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "226950",
+              "name": "올릭스",
+              "market": "KOSDAQ",
+              "value": 42.44762,
+              "sourceValue": "424,476.2",
+              "sourceUnit": "만원",
+              "valueWon": 4244762000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+              "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "107640",
+              "name": "한중엔시에스",
+              "market": "KOSDAQ",
+              "value": 41.82866,
+              "sourceValue": "418,286.6",
+              "sourceUnit": "만원",
+              "valueWon": 4182866000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+              "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "122640",
+              "name": "예스티",
+              "market": "KOSDAQ",
+              "value": 39.41765,
+              "sourceValue": "394,176.5",
+              "sourceUnit": "만원",
+              "valueWon": 3941765000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+              "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "219130",
+              "name": "타이거일렉",
+              "market": "KOSDAQ",
+              "value": 38.92882,
+              "sourceValue": "389,288.2",
+              "sourceUnit": "만원",
+              "valueWon": 3892882000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+              "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            },
+            {
+              "code": "144960",
+              "name": "뉴파워프라즈마",
+              "market": "KOSDAQ",
+              "value": 35.82799,
+              "sourceValue": "358,279.9",
+              "sourceUnit": "만원",
+              "valueWon": 3582799000,
+              "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+              "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+              "snapshotAt": "2026-10-22T15:30:00+09:00"
+            }
+          ]
+        },
+        "sourceIds": [
+          "yonhap-2026-10-22-kospi-institution",
+          "yonhap-2026-10-22-kosdaq-institution"
+        ],
+        "coverage": {
+          "start": "2026-10-22",
+          "end": "2026-10-22",
+          "markets": [
+            "KOSPI",
+            "KOSDAQ"
+          ],
+          "snapshotAt": "2026-10-22T15:30:00+09:00",
+          "universe": "KOSPI + KOSDAQ · 보통주 중심, ST 스팩 포함"
+        },
+        "note": "KRX·연합인포맥스 인용 연합뉴스 15:30 실제 순매수대금 상위20에서 우선주 명칭·코드와 공급사 ST 유형 필터를 적용한 상위15. 시장 전체 합계나 테마 전체 수급으로 합산하지 않습니다. 시장별18시 조회 잠정 수급과 집계시점이 다릅니다."
+      }
+    },
+    "sources": [
+      {
+        "id": "yonhap-2026-10-22-kospi-institution",
+        "title": "연합뉴스 / KRX·연합인포맥스 KOSPI institution 순매수대금 상위종목(22일)",
+        "url": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+        "publishedAt": "2026-10-22T15:45:16+09:00",
+        "snapshotAt": "2026-10-22T15:30:00+09:00",
+        "collectedAt": "2026-10-22T09:10:50.260763+00:00",
+        "unit": "억원",
+        "precision": "소수점 첫째 자리 억원"
+      },
+      {
+        "id": "yonhap-2026-10-22-kosdaq-institution",
+        "title": "연합뉴스 / KRX·연합인포맥스 KOSDAQ institution 순매수대금 상위종목(22일)",
+        "url": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+        "publishedAt": "2026-10-22T15:45:25+09:00",
+        "snapshotAt": "2026-10-22T15:30:00+09:00",
+        "collectedAt": "2026-10-22T09:10:50.261996+00:00",
+        "unit": "만원",
+        "precision": "소수점 첫째 자리 만원"
+      },
+      {
+        "id": "yonhap-2026-10-22-kospi-foreign",
+        "title": "연합뉴스 / KRX·연합인포맥스 KOSPI foreign 순매수대금 상위종목(22일)",
+        "url": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+        "publishedAt": "2026-10-22T15:45:32+09:00",
+        "snapshotAt": "2026-10-22T15:30:00+09:00",
+        "collectedAt": "2026-10-22T09:10:50.262997+00:00",
+        "unit": "억원",
+        "precision": "소수점 첫째 자리 억원"
+      },
+      {
+        "id": "yonhap-2026-10-22-kosdaq-foreign",
+        "title": "연합뉴스 / KRX·연합인포맥스 KOSDAQ foreign 순매수대금 상위종목(22일)",
+        "url": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+        "publishedAt": "2026-10-22T15:45:37+09:00",
+        "snapshotAt": "2026-10-22T15:30:00+09:00",
+        "collectedAt": "2026-10-22T09:10:50.264187+00:00",
+        "unit": "만원",
+        "precision": "소수점 첫째 자리 만원"
+      }
+    ],
+    "rawRankings": [
+      {
+        "market": "KOSPI",
+        "investor": "institution",
+        "rows": [
+          {
+            "code": "028050",
+            "name": "삼성E&A",
+            "market": "KOSPI",
+            "value": 888.5,
+            "sourceValue": "888.5",
+            "sourceUnit": "억원",
+            "valueWon": 88850000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+            "sourceId": "yonhap-2026-10-22-kospi-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "353200",
+            "name": "대덕전자",
+            "market": "KOSPI",
+            "value": 280.8,
+            "sourceValue": "280.8",
+            "sourceUnit": "억원",
+            "valueWon": 28080000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+            "sourceId": "yonhap-2026-10-22-kospi-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "064400",
+            "name": "LG씨엔에스",
+            "market": "KOSPI",
+            "value": 222.1,
+            "sourceValue": "222.1",
+            "sourceUnit": "억원",
+            "valueWon": 22210000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+            "sourceId": "yonhap-2026-10-22-kospi-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "034730",
+            "name": "SK",
+            "market": "KOSPI",
+            "value": 214.5,
+            "sourceValue": "214.5",
+            "sourceUnit": "억원",
+            "valueWon": 21450000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+            "sourceId": "yonhap-2026-10-22-kospi-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "018260",
+            "name": "삼성에스디에스",
+            "market": "KOSPI",
+            "value": 126.4,
+            "sourceValue": "126.4",
+            "sourceUnit": "억원",
+            "valueWon": 12640000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+            "sourceId": "yonhap-2026-10-22-kospi-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "028260",
+            "name": "삼성물산",
+            "market": "KOSPI",
+            "value": 108.4,
+            "sourceValue": "108.4",
+            "sourceUnit": "억원",
+            "valueWon": 10840000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+            "sourceId": "yonhap-2026-10-22-kospi-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "032830",
+            "name": "삼성생명",
+            "market": "KOSPI",
+            "value": 107.7,
+            "sourceValue": "107.7",
+            "sourceUnit": "억원",
+            "valueWon": 10770000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+            "sourceId": "yonhap-2026-10-22-kospi-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "000810",
+            "name": "삼성화재",
+            "market": "KOSPI",
+            "value": 96.7,
+            "sourceValue": "96.7",
+            "sourceUnit": "억원",
+            "valueWon": 9670000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+            "sourceId": "yonhap-2026-10-22-kospi-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "267270",
+            "name": "HD건설기계",
+            "market": "KOSPI",
+            "value": 83.8,
+            "sourceValue": "83.8",
+            "sourceUnit": "억원",
+            "valueWon": 8380000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+            "sourceId": "yonhap-2026-10-22-kospi-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "010120",
+            "name": "LS ELECTRIC",
+            "market": "KOSPI",
+            "value": 78.7,
+            "sourceValue": "78.7",
+            "sourceUnit": "억원",
+            "valueWon": 7870000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+            "sourceId": "yonhap-2026-10-22-kospi-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "229640",
+            "name": "LS에코에너지",
+            "market": "KOSPI",
+            "value": 70.9,
+            "sourceValue": "70.9",
+            "sourceUnit": "억원",
+            "valueWon": 7090000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+            "sourceId": "yonhap-2026-10-22-kospi-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "068270",
+            "name": "셀트리온",
+            "market": "KOSPI",
+            "value": 70.8,
+            "sourceValue": "70.8",
+            "sourceUnit": "억원",
+            "valueWon": 7080000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+            "sourceId": "yonhap-2026-10-22-kospi-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "003230",
+            "name": "삼양식품",
+            "market": "KOSPI",
+            "value": 70.0,
+            "sourceValue": "70.0",
+            "sourceUnit": "억원",
+            "valueWon": 7000000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+            "sourceId": "yonhap-2026-10-22-kospi-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "012750",
+            "name": "에스원",
+            "market": "KOSPI",
+            "value": 64.9,
+            "sourceValue": "64.9",
+            "sourceUnit": "억원",
+            "valueWon": 6490000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+            "sourceId": "yonhap-2026-10-22-kospi-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "272210",
+            "name": "한화시스템",
+            "market": "KOSPI",
+            "value": 61.0,
+            "sourceValue": "61.0",
+            "sourceUnit": "억원",
+            "valueWon": 6100000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+            "sourceId": "yonhap-2026-10-22-kospi-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "316140",
+            "name": "우리금융지주",
+            "market": "KOSPI",
+            "value": 58.5,
+            "sourceValue": "58.5",
+            "sourceUnit": "억원",
+            "valueWon": 5850000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+            "sourceId": "yonhap-2026-10-22-kospi-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "326030",
+            "name": "SK바이오팜",
+            "market": "KOSPI",
+            "value": 55.1,
+            "sourceValue": "55.1",
+            "sourceUnit": "억원",
+            "valueWon": 5510000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+            "sourceId": "yonhap-2026-10-22-kospi-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "030200",
+            "name": "KT",
+            "market": "KOSPI",
+            "value": 46.9,
+            "sourceValue": "46.9",
+            "sourceUnit": "억원",
+            "valueWon": 4690000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+            "sourceId": "yonhap-2026-10-22-kospi-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "000270",
+            "name": "기아",
+            "market": "KOSPI",
+            "value": 46.0,
+            "sourceValue": "46.0",
+            "sourceUnit": "억원",
+            "valueWon": 4600000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+            "sourceId": "yonhap-2026-10-22-kospi-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "000100",
+            "name": "유한양행",
+            "market": "KOSPI",
+            "value": 44.3,
+            "sourceValue": "44.3",
+            "sourceUnit": "억원",
+            "valueWon": 4430000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147500008",
+            "sourceId": "yonhap-2026-10-22-kospi-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          }
+        ],
+        "excluded": [],
+        "sourceUnit": "억원"
+      },
+      {
+        "market": "KOSDAQ",
+        "investor": "institution",
+        "rows": [
+          {
+            "code": "119850",
+            "name": "지엔씨에너지",
+            "market": "KOSDAQ",
+            "value": 103.74958,
+            "sourceValue": "1,037,495.8",
+            "sourceUnit": "만원",
+            "valueWon": 10374958000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "0158S0",
+            "name": "엘리스",
+            "market": "KOSDAQ",
+            "value": 102.19812,
+            "sourceValue": "1,021,981.2",
+            "sourceUnit": "만원",
+            "valueWon": 10219812000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "089890",
+            "name": "코세스",
+            "market": "KOSDAQ",
+            "value": 94.74496,
+            "sourceValue": "947,449.6",
+            "sourceUnit": "만원",
+            "valueWon": 9474496000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "222800",
+            "name": "심텍",
+            "market": "KOSDAQ",
+            "value": 89.53665,
+            "sourceValue": "895,366.5",
+            "sourceUnit": "만원",
+            "valueWon": 8953665000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "253590",
+            "name": "네오셈",
+            "market": "KOSDAQ",
+            "value": 82.5138,
+            "sourceValue": "825,138.0",
+            "sourceUnit": "만원",
+            "valueWon": 8251380000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "140860",
+            "name": "파크시스템스",
+            "market": "KOSDAQ",
+            "value": 78.87008,
+            "sourceValue": "788,700.8",
+            "sourceUnit": "만원",
+            "valueWon": 7887008000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "354320",
+            "name": "알멕",
+            "market": "KOSDAQ",
+            "value": 74.32528,
+            "sourceValue": "743,252.8",
+            "sourceUnit": "만원",
+            "valueWon": 7432528000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "441270",
+            "name": "파인엠텍",
+            "market": "KOSDAQ",
+            "value": 71.66919,
+            "sourceValue": "716,691.9",
+            "sourceUnit": "만원",
+            "valueWon": 7166919000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "456160",
+            "name": "지투지바이오",
+            "market": "KOSDAQ",
+            "value": 57.81165,
+            "sourceValue": "578,116.5",
+            "sourceUnit": "만원",
+            "valueWon": 5781165000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "458870",
+            "name": "씨어스",
+            "market": "KOSDAQ",
+            "value": 46.71852,
+            "sourceValue": "467,185.2",
+            "sourceUnit": "만원",
+            "valueWon": 4671852000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "226950",
+            "name": "올릭스",
+            "market": "KOSDAQ",
+            "value": 42.44762,
+            "sourceValue": "424,476.2",
+            "sourceUnit": "만원",
+            "valueWon": 4244762000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "107640",
+            "name": "한중엔시에스",
+            "market": "KOSDAQ",
+            "value": 41.82866,
+            "sourceValue": "418,286.6",
+            "sourceUnit": "만원",
+            "valueWon": 4182866000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "122640",
+            "name": "예스티",
+            "market": "KOSDAQ",
+            "value": 39.41765,
+            "sourceValue": "394,176.5",
+            "sourceUnit": "만원",
+            "valueWon": 3941765000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "219130",
+            "name": "타이거일렉",
+            "market": "KOSDAQ",
+            "value": 38.92882,
+            "sourceValue": "389,288.2",
+            "sourceUnit": "만원",
+            "valueWon": 3892882000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "144960",
+            "name": "뉴파워프라즈마",
+            "market": "KOSDAQ",
+            "value": 35.82799,
+            "sourceValue": "358,279.9",
+            "sourceUnit": "만원",
+            "valueWon": 3582799000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "420770",
+            "name": "기가비스",
+            "market": "KOSDAQ",
+            "value": 35.29637,
+            "sourceValue": "352,963.7",
+            "sourceUnit": "만원",
+            "valueWon": 3529637000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "059090",
+            "name": "미코",
+            "market": "KOSDAQ",
+            "value": 35.25788,
+            "sourceValue": "352,578.8",
+            "sourceUnit": "만원",
+            "valueWon": 3525788000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "293490",
+            "name": "카카오게임즈",
+            "market": "KOSDAQ",
+            "value": 33.43674,
+            "sourceValue": "334,367.4",
+            "sourceUnit": "만원",
+            "valueWon": 3343674000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "171090",
+            "name": "선익시스템",
+            "market": "KOSDAQ",
+            "value": 31.01806,
+            "sourceValue": "310,180.6",
+            "sourceUnit": "만원",
+            "valueWon": 3101806000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "340450",
+            "name": "지씨지놈",
+            "market": "KOSDAQ",
+            "value": 30.16126,
+            "sourceValue": "301,612.6",
+            "sourceUnit": "만원",
+            "valueWon": 3016126000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147600008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-institution",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          }
+        ],
+        "excluded": [],
+        "sourceUnit": "만원"
+      },
+      {
+        "market": "KOSPI",
+        "investor": "foreign",
+        "rows": [
+          {
+            "code": "028050",
+            "name": "삼성E&A",
+            "market": "KOSPI",
+            "value": 1294.1,
+            "sourceValue": "1,294.1",
+            "sourceUnit": "억원",
+            "valueWon": 129410000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+            "sourceId": "yonhap-2026-10-22-kospi-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "000660",
+            "name": "SK하이닉스",
+            "market": "KOSPI",
+            "value": 445.7,
+            "sourceValue": "445.7",
+            "sourceUnit": "억원",
+            "valueWon": 44570000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+            "sourceId": "yonhap-2026-10-22-kospi-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "079550",
+            "name": "LIG디펜스앤에어로스페이스",
+            "market": "KOSPI",
+            "value": 335.8,
+            "sourceValue": "335.8",
+            "sourceUnit": "억원",
+            "valueWon": 33580000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+            "sourceId": "yonhap-2026-10-22-kospi-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "005380",
+            "name": "현대차",
+            "market": "KOSPI",
+            "value": 216.5,
+            "sourceValue": "216.5",
+            "sourceUnit": "억원",
+            "valueWon": 21650000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+            "sourceId": "yonhap-2026-10-22-kospi-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "010950",
+            "name": "S-Oil",
+            "market": "KOSPI",
+            "value": 204.1,
+            "sourceValue": "204.1",
+            "sourceUnit": "억원",
+            "valueWon": 20410000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+            "sourceId": "yonhap-2026-10-22-kospi-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "267260",
+            "name": "HD현대일렉트릭",
+            "market": "KOSPI",
+            "value": 160.6,
+            "sourceValue": "160.6",
+            "sourceUnit": "억원",
+            "valueWon": 16060000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+            "sourceId": "yonhap-2026-10-22-kospi-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "373220",
+            "name": "LG에너지솔루션",
+            "market": "KOSPI",
+            "value": 134.4,
+            "sourceValue": "134.4",
+            "sourceUnit": "억원",
+            "valueWon": 13440000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+            "sourceId": "yonhap-2026-10-22-kospi-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "078930",
+            "name": "GS",
+            "market": "KOSPI",
+            "value": 110.5,
+            "sourceValue": "110.5",
+            "sourceUnit": "억원",
+            "valueWon": 11050000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+            "sourceId": "yonhap-2026-10-22-kospi-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "035420",
+            "name": "NAVER",
+            "market": "KOSPI",
+            "value": 109.1,
+            "sourceValue": "109.1",
+            "sourceUnit": "억원",
+            "valueWon": 10910000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+            "sourceId": "yonhap-2026-10-22-kospi-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "068270",
+            "name": "셀트리온",
+            "market": "KOSPI",
+            "value": 108.5,
+            "sourceValue": "108.5",
+            "sourceUnit": "억원",
+            "valueWon": 10850000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+            "sourceId": "yonhap-2026-10-22-kospi-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "402340",
+            "name": "SK스퀘어",
+            "market": "KOSPI",
+            "value": 107.9,
+            "sourceValue": "107.9",
+            "sourceUnit": "억원",
+            "valueWon": 10790000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+            "sourceId": "yonhap-2026-10-22-kospi-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "000990",
+            "name": "DB하이텍",
+            "market": "KOSPI",
+            "value": 101.9,
+            "sourceValue": "101.9",
+            "sourceUnit": "억원",
+            "valueWon": 10190000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+            "sourceId": "yonhap-2026-10-22-kospi-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "329180",
+            "name": "HD현대중공업",
+            "market": "KOSPI",
+            "value": 90.7,
+            "sourceValue": "90.7",
+            "sourceUnit": "억원",
+            "valueWon": 9070000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+            "sourceId": "yonhap-2026-10-22-kospi-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "082740",
+            "name": "한화엔진",
+            "market": "KOSPI",
+            "value": 84.0,
+            "sourceValue": "84.0",
+            "sourceUnit": "억원",
+            "valueWon": 8400000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+            "sourceId": "yonhap-2026-10-22-kospi-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "000720",
+            "name": "현대건설",
+            "market": "KOSPI",
+            "value": 75.3,
+            "sourceValue": "75.3",
+            "sourceUnit": "억원",
+            "valueWon": 7530000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+            "sourceId": "yonhap-2026-10-22-kospi-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "042660",
+            "name": "한화오션",
+            "market": "KOSPI",
+            "value": 73.7,
+            "sourceValue": "73.7",
+            "sourceUnit": "억원",
+            "valueWon": 7370000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+            "sourceId": "yonhap-2026-10-22-kospi-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "298040",
+            "name": "효성중공업",
+            "market": "KOSPI",
+            "value": 64.2,
+            "sourceValue": "64.2",
+            "sourceUnit": "억원",
+            "valueWon": 6420000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+            "sourceId": "yonhap-2026-10-22-kospi-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "047810",
+            "name": "한국항공우주",
+            "market": "KOSPI",
+            "value": 57.9,
+            "sourceValue": "57.9",
+            "sourceUnit": "억원",
+            "valueWon": 5790000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+            "sourceId": "yonhap-2026-10-22-kospi-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "018260",
+            "name": "삼성에스디에스",
+            "market": "KOSPI",
+            "value": 56.4,
+            "sourceValue": "56.4",
+            "sourceUnit": "억원",
+            "valueWon": 5640000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+            "sourceId": "yonhap-2026-10-22-kospi-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "036570",
+            "name": "NC",
+            "market": "KOSPI",
+            "value": 47.7,
+            "sourceValue": "47.7",
+            "sourceUnit": "억원",
+            "valueWon": 4770000000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147700008",
+            "sourceId": "yonhap-2026-10-22-kospi-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          }
+        ],
+        "excluded": [],
+        "sourceUnit": "억원"
+      },
+      {
+        "market": "KOSDAQ",
+        "investor": "foreign",
+        "rows": [
+          {
+            "code": "319660",
+            "name": "피에스케이",
+            "market": "KOSDAQ",
+            "value": 148.33325,
+            "sourceValue": "1,483,332.5",
+            "sourceUnit": "만원",
+            "valueWon": 14833325000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "403870",
+            "name": "HPSP",
+            "market": "KOSDAQ",
+            "value": 114.90868,
+            "sourceValue": "1,149,086.8",
+            "sourceUnit": "만원",
+            "valueWon": 11490868000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "095610",
+            "name": "테스",
+            "market": "KOSDAQ",
+            "value": 100.40098,
+            "sourceValue": "1,004,009.8",
+            "sourceUnit": "만원",
+            "valueWon": 10040098000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "039030",
+            "name": "이오테크닉스",
+            "market": "KOSDAQ",
+            "value": 92.70121,
+            "sourceValue": "927,012.1",
+            "sourceUnit": "만원",
+            "valueWon": 9270121000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "058470",
+            "name": "리노공업",
+            "market": "KOSDAQ",
+            "value": 82.27021,
+            "sourceValue": "822,702.1",
+            "sourceUnit": "만원",
+            "valueWon": 8227021000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "214450",
+            "name": "파마리서치",
+            "market": "KOSDAQ",
+            "value": 80.60809,
+            "sourceValue": "806,080.9",
+            "sourceUnit": "만원",
+            "valueWon": 8060809000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "131290",
+            "name": "티에스이",
+            "market": "KOSDAQ",
+            "value": 64.50413,
+            "sourceValue": "645,041.3",
+            "sourceUnit": "만원",
+            "valueWon": 6450413000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "098120",
+            "name": "마이크로컨텍솔",
+            "market": "KOSDAQ",
+            "value": 59.0213,
+            "sourceValue": "590,213.0",
+            "sourceUnit": "만원",
+            "valueWon": 5902130000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "064760",
+            "name": "티씨케이",
+            "market": "KOSDAQ",
+            "value": 56.13359,
+            "sourceValue": "561,335.9",
+            "sourceUnit": "만원",
+            "valueWon": 5613359000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "083650",
+            "name": "비에이치아이",
+            "market": "KOSDAQ",
+            "value": 46.30116,
+            "sourceValue": "463,011.6",
+            "sourceUnit": "만원",
+            "valueWon": 4630116000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "080580",
+            "name": "오킨스전자",
+            "market": "KOSDAQ",
+            "value": 46.12561,
+            "sourceValue": "461,256.1",
+            "sourceUnit": "만원",
+            "valueWon": 4612561000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "440110",
+            "name": "파두",
+            "market": "KOSDAQ",
+            "value": 45.34975,
+            "sourceValue": "453,497.5",
+            "sourceUnit": "만원",
+            "valueWon": 4534975000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "089970",
+            "name": "브이엠",
+            "market": "KOSDAQ",
+            "value": 38.15527,
+            "sourceValue": "381,552.7",
+            "sourceUnit": "만원",
+            "valueWon": 3815527000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "031980",
+            "name": "피에스케이홀딩스",
+            "market": "KOSDAQ",
+            "value": 33.71374,
+            "sourceValue": "337,137.4",
+            "sourceUnit": "만원",
+            "valueWon": 3371374000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "078350",
+            "name": "한양디지텍",
+            "market": "KOSDAQ",
+            "value": 30.83507,
+            "sourceValue": "308,350.7",
+            "sourceUnit": "만원",
+            "valueWon": 3083507000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "067310",
+            "name": "하나마이크론",
+            "market": "KOSDAQ",
+            "value": 29.02095,
+            "sourceValue": "290,209.5",
+            "sourceUnit": "만원",
+            "valueWon": 2902095000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "096530",
+            "name": "씨젠",
+            "market": "KOSDAQ",
+            "value": 26.84936,
+            "sourceValue": "268,493.6",
+            "sourceUnit": "만원",
+            "valueWon": 2684936000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "095340",
+            "name": "ISC",
+            "market": "KOSDAQ",
+            "value": 26.48728,
+            "sourceValue": "264,872.8",
+            "sourceUnit": "만원",
+            "valueWon": 2648728000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "141080",
+            "name": "리가켐바이오",
+            "market": "KOSDAQ",
+            "value": 23.88137,
+            "sourceValue": "238,813.7",
+            "sourceUnit": "만원",
+            "valueWon": 2388137000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          },
+          {
+            "code": "218410",
+            "name": "RFHIC",
+            "market": "KOSDAQ",
+            "value": 23.79428,
+            "sourceValue": "237,942.8",
+            "sourceUnit": "만원",
+            "valueWon": 2379428000,
+            "source": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261022147800008",
+            "sourceId": "yonhap-2026-10-22-kosdaq-foreign",
+            "snapshotAt": "2026-10-22T15:30:00+09:00"
+          }
+        ],
+        "excluded": [],
+        "sourceUnit": "만원"
+      }
+    ]
+  },
+  "verifiedAt": "2026-10-22T09:24:11.434205+00:00"
+}

@@ -84,7 +84,7 @@
   function freshnessSection() {
     const latest=list(window.TerminalBriefingData?.entries).filter(e=>e?.market==='KR'&&isDate(e.date)).sort((a,b)=>b.date.localeCompare(a.date))[0];
     const sector=payload?.sectorReturns,sectorRows=list(sector?.rows),sectorCurrent=sectorRows.filter(row=>(row.asOf||sector?.asOf)===sector?.asOf).length,sectorDate=sector?.asOf+(sectorRows.length&&sectorCurrent<sectorRows.length?' · '+sectorCurrent+'/'+sectorRows.length+'개 최신 · '+(sectorRows.length-sectorCurrent)+'개 이전일 유지':'');
-    const rows=[['최신 시황',latest?.date],['시장 수급',payload?.asOf],['업종 수익률',sector?.asOf?sectorDate:null],['신고가 선별',payload?.highsScreen?.asOf],['히트맵',payload?.heatmaps?.asOf],['종목 순매수',list(payload?.rankings?.dates).slice().sort().at(-1)],['테마 수급',list(payload?.themes?.dates).slice().sort().at(-1)],['지수 종목 등락',list(payload?.indexMovers?.dates).slice().sort().at(-1)],['예탁금·신용',payload?.liquidity?.series?.deposits?.coverage?.end]];
+    const rows=[['최신 시황',latest?.date],['시장 수급',payload?.asOf],['업종 수익률',sector?.asOf?sectorDate:null],['신고가 선별',payload?.highsScreen?.asOf],['히트맵',payload?.heatmaps?.asOf],['종목 순매수',list(payload?.rankings?.dates).slice().sort().at(-1)],['테마 수급',Object.values(payload?.themes?.daily||{}).filter(section=>list(section?.rows).length).map(section=>section?.coverage?.end).filter(isDate).sort().at(-1)],['지수 종목 등락',list(payload?.indexMovers?.dates).slice().sort().at(-1)],['예탁금·신용',payload?.liquidity?.series?.deposits?.coverage?.end]];
     return `<div class="kr-freshness" id="kr-latest-status" aria-label="항목별 최신 검증일">${rows.map(([label,value])=>`<span>${label} <strong>${esc(value||'미확인')}</strong></span>`).join('')}</div>`;
   }
   function unusualMoverNews(row, entry) {

@@ -22,7 +22,13 @@ class OfficialLiquidity(unittest.TestCase):
         for text,now in [(self.html.replace('백만원','억원'),'2026-10-21T17:00:00+09:00'),(self.html.replace('10/20','10/21',1),'2026-10-21T17:00:00+09:00'),(self.html,'2026-11-20T17:00:00+09:00'),(self.html,'2026-10-19T17:00:00+09:00')]:
             with self.assertRaises(ValueError):k.parse(text,now)
     def test_preserves_panels_splits_and_noop(self):
-        old=json.loads((ROOT/'data/korea-market.json').read_text());original=copy.deepcopy(old)
+        old=json.loads((ROOT/'data/korea-market.json').read_text())
+        # Keep this historical fixture independent of advancing production data.
+        old['liquidity']['validationSummary'].pop('latestOfficialRelease',None)
+        deposits=old['liquidity']['series']['deposits']
+        deposits['rows']=[row for row in deposits['rows'] if row['date']<=self.release['date']]
+        deposits['coverage'].update(start=deposits['rows'][0]['date'],end=deposits['rows'][-1]['date'],count=len(deposits['rows']))
+        original=copy.deepcopy(old)
         new=k.apply(old,self.release)
         self.assertEqual(old,original)
         for key in old.keys()-{'liquidity','sources'}:self.assertEqual(old[key],new[key])
