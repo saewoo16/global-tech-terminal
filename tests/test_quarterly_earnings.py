@@ -38,7 +38,12 @@ class QuarterlyEarningsTests(unittest.TestCase):
                                 self.assertTrue(math.isfinite(row[key]))
                         if company.get('presentationVersion') == 3:
                             if row['grossProfit'] is not None and row['revenue']:
-                                self.assertAlmostEqual(row['grossMargin'],100*row['grossProfit']/row['revenue'],delta=0.01)
+                                decimals = row.get('grossMarginDecimals')
+                                if decimals is not None:
+                                    self.assertIsInstance(decimals,int)
+                                    self.assertIn(decimals,range(0,5))
+                                tolerance = max(0.01, 0.5 * 10**(-decimals)) if decimals is not None else 0.01
+                                self.assertAlmostEqual(row['grossMargin'],100*row['grossProfit']/row['revenue'],delta=tolerance)
                             continue
                         if row['operatingIncome'] is None:
                             self.assertIsNone(row['operatingMargin'])

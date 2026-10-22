@@ -208,6 +208,28 @@ def normalize_rank(section):
     return section
 
 
+def merge_daily_rankings(existing, incoming, day):
+    """Keep independently verified, timestamped closing observations intact.
+
+    A later provider aggregation is not a correction of a published press
+    snapshot. Revisions to those snapshots need coordinated source review;
+    generic refreshes may still fill other sections and add later sessions.
+    """
+    merged = json.loads(json.dumps(existing))
+    for key, value in incoming.items():
+        previous = existing.get(key, {})
+        coverage = previous.get('coverage', {})
+        frozen = previous.get('snapshotPolicy') or (
+            previous.get('status') == 'verified'
+            and previous.get('sourceIds')
+            and coverage.get('start') == coverage.get('end') == day
+            and str(coverage.get('snapshotAt', '')).startswith(day + 'T')
+        )
+        if not frozen:
+            merged[key] = normalize_rank(value)
+    return merged
+
+
 def update_rankings(payload):
     incoming = collect_rankings(refresh=True)
     if incoming['asOf'] > payload['asOf']:
@@ -220,7 +242,7 @@ def update_rankings(payload):
             previous.update(source)
     target = payload['rankings']
     for day, section in incoming['rankings']['daily'].items():
-        target['daily'][day] = {key: normalize_rank(value) for key, value in section.items()}
+        target['daily'][day] = merge_daily_rankings(target['daily'].get(day, {}), section, day)
     target['note'] = ('최신 일간·주간·월간 순매수는 NAVER의 실제 기간 금액 응답입니다. '
                       '각 표에 공급사가 반환한 시작일·종료일을 표시하며, 일별 순위 상위종목을 더한 값이 아닙니다. '
                       '과거 기사 스냅샷 및 시장 수급 총액과는 집계시점이 다를 수 있습니다.')

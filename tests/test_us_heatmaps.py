@@ -1,4 +1,4 @@
-import copy,importlib.util,json,unittest,sys,tempfile,shutil
+import copy,importlib.util,json,unittest,sys,tempfile,shutil,datetime as dt
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 spec=importlib.util.spec_from_file_location('us_heatmap_validator',ROOT/'scripts/validate_us_heatmaps.py');v=importlib.util.module_from_spec(spec);spec.loader.exec_module(v)
@@ -8,8 +8,13 @@ class HeatmapTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.data=json.loads((ROOT/'data/us_heatmaps.json').read_text())
+        cls.latest=max(e['date'] for e in cls.data['entries'])
+        candidate=dt.date.fromisoformat(cls.latest)+dt.timedelta(days=1)
+        while candidate.weekday()>4:candidate+=dt.timedelta(days=1)
+        cls.future=candidate.isoformat()
     def test_valid(self):
-        self.assertEqual(v.validate(self.data)['verifiedRows'],1006)
+        self.assertEqual(v.validate(self.data)['verifiedRows'],sum(len(e['rows']) for e in self.data['entries'] if e['status']=='verified'))
+        self.assertGreaterEqual(v.validate(self.data)['verifiedRows'],1006)
         for e in self.data['entries']:
             if e['status']=='verified':
                 self.assertEqual(e['coverage']['securities'],503)
@@ -33,13 +38,13 @@ class HeatmapTests(unittest.TestCase):
             root=Path(tmp);(root/'data').mkdir()
             for f in (ROOT/'data').glob('us-close-evidence-*.json'):shutil.copy(f,root/'data'/f.name)
             analysis=json.loads((ROOT/'data/us_analysis.json').read_text())
-            analysis['entries'].append({'date':'2026-10-21','sessionVerification':{'previousSession':'2026-10-20'}})
+            analysis['entries'].append({'date':self.future,'sessionVerification':{'previousSession':self.latest}})
             (root/'data/us_analysis.json').write_text(json.dumps(analysis))
             d=build(root,existing=self.data)
-            self.assertEqual(d['defaultDate'],'2026-10-20')
+            self.assertEqual(d['defaultDate'],self.data['defaultDate'])
             self.assertEqual(d['entries'][-1]['status'],'unavailable')
             self.assertFalse(d['entries'][-1]['rows'])
-            self.assertEqual(d['entries'][1:3],self.data['entries'][1:3])
+            self.assertEqual(d['entries'][:-1],self.data['entries'])
             v.validate(d,root)
     def test_future_verified_date_uses_evidence_coverage(self):
         # Synthetic fixture exercises date expansion, not published market data.
@@ -47,16 +52,16 @@ class HeatmapTests(unittest.TestCase):
             root=Path(tmp);(root/'data').mkdir()
             for f in (ROOT/'data').glob('us-close-evidence-*.json'):shutil.copy(f,root/'data'/f.name)
             e=json.loads((root/'data/us-close-evidence-20261020.json').read_text())
-            e['session']='2026-10-21'
-            e['sessionVerification'].update(exchangeDate='2026-10-21',previousSession='2026-10-20',closedAt='2026-10-21T16:00:00-04:00')
-            c=e['screens']['coverage'];c.update(asOf='2026-10-21',previousSession='2026-10-20',universeAsOf='2026-10-21',retrievedAt='2026-10-21T22:00:00Z',selected=1,securities=1,companies=1,dailyValid=1)
+            e['session']=self.future
+            e['sessionVerification'].update(exchangeDate=self.future,previousSession=self.latest,closedAt=self.future+'T16:00:00-04:00')
+            c=e['screens']['coverage'];c.update(asOf=self.future,previousSession=self.latest,universeAsOf=self.future,retrievedAt=self.future+'T22:00:00Z',selected=1,securities=1,companies=1,dailyValid=1)
             e['screens']['dailyRows']=e['screens']['dailyRows'][:1]
-            e['screens']['dailyRows'][0].update(asOf='2026-10-21',previousSession='2026-10-20')
-            (root/'data/us-close-evidence-20261021.json').write_text(json.dumps(e))
-            (root/'data/us_analysis.json').write_text(json.dumps({'entries':[{'date':'2026-10-21'}]}))
+            e['screens']['dailyRows'][0].update(asOf=self.future,previousSession=self.latest)
+            (root/('data/us-close-evidence-'+self.future.replace('-','')+'.json')).write_text(json.dumps(e))
+            (root/'data/us_analysis.json').write_text(json.dumps({'entries':[{'date':self.future}]}))
             d=build(root,existing=self.data)
-            self.assertEqual(d['defaultDate'],'2026-10-21')
+            self.assertEqual(d['defaultDate'],self.future)
             self.assertEqual(d['entries'][-1]['coverage']['verified'],1)
-            self.assertEqual(d['entries'][1:3],self.data['entries'][1:3])
+            self.assertEqual(d['entries'][:-1],self.data['entries'])
             v.validate(d,root)
 if __name__=='__main__':unittest.main()

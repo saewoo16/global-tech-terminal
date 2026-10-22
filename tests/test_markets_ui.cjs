@@ -31,20 +31,17 @@ for(const id of ['BAMLH0A0HYM2','BAMLH0A0HYM2EY']){assert(html.includes('https:/
 for(const match of html.matchAll(/<iframe\b[^>]*>/g)){assert(match[0].includes('title='));assert(match[0].includes('loading="lazy"'));}
 console.log('PASS macro ranges, leap days, public-domain allowlist, lazy tab load, missing-image fallback, repeat visits, original links, and retired standalone heatmap');
 
-// Fixed US closing maps stay inside US analysis; FINVIZ is external only.
+// Latest user request: official free daily FINVIZ with week/month links, no standalone tab.
 const heatmap=fs.readFileSync(root+'/assets/us-analysis.js','utf8');
 assert(heatmap.includes('id="us-heatmap"'));
-assert(heatmap.includes('./data/us_heatmaps.json?ts='));
-assert(!heatmap.includes('finviz.com/widgets/map'));
-assert(!heatmap.includes('<iframe'));
-assert(heatmap.includes('동일 면적 · 시가총액 비중 아님'));
-assert(heatmap.includes('선택한 거래일의 종가 지도가 아닙니다'));
-for(const period of ['d1','w1','w4']){
- assert(heatmap.includes(`href="https://finviz.com/map.ashx?t=sec&amp;st=${period}" target="_blank" rel="noopener noreferrer"`));
- assert(!heatmap.includes(`widgets/map?t=sec&amp;st=${period}`));
-}
+assert(heatmap.includes('finviz.com/widgets/map?t=sec&amp;st=d1'));
+assert(!heatmap.includes('us-heatmap-grid'));
+assert(heatmap.includes('시점에 따라 변동 가능'));
+for(const period of ['d1','w1']) assert(heatmap.includes(`href="https://finviz.com/map?t=sec&amp;st=${period}"`));
+assert(heatmap.includes('href="https://finviz.com/map?st=w4&amp;t=sec"'));
+for(const period of ['w1','w4']) assert(!heatmap.includes(`widgets/map?t=sec&amp;st=${period}`));
 assert(fs.readFileSync(root+'/assets/korea.js','utf8').includes('id="kr-heatmaps"'));
-console.log('PASS domestic and fixed US closing maps, protected current FINVIZ links, and no dynamic FINVIZ iframes');
+console.log('PASS domestic heatmap, free official FINVIZ daily iframe, week/month links, and no standalone map');
 
 const cards=[...html.matchAll(/<article class="rate-card(?: rate-link-card)?" data-series="([^"]+)"/g)].map(m=>m[1]);
 assert.deepEqual(cards,['DGS10','BAMLH0A0HYM2EY','BAMLH0A0HYM2','HQMCB10YRP','US594918BC73','DCOILWTICO','DCOILBRENTEU','DTWEXBGS','DEXJPUS','DEXKOUS']);
