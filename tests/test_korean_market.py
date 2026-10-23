@@ -194,14 +194,23 @@ class KoreanMarketTests(unittest.TestCase):
         self.assertTrue(any('sectorReturns: return arithmetic mismatch' in e for e in validate(data)))
 
     def test_near_high_distance_and_true_high_checked(self):
-        data = copy.deepcopy(self.data)
+        # A real completed session may have no qualifying highs. Keep the
+        # negative mutation fixture separate from the live published screen.
+        def mutation_fixture():
+            data = copy.deepcopy(self.data)
+            if not data['highsScreen']['rows']:
+                evidence = json.loads((ROOT / 'data/korea-highs-evidence-20261022.json').read_text())
+                row = next(row for row in evidence['rows'] if row.get('isNearHigh') or row.get('isNewHigh'))
+                data['highsScreen']['rows'] = [copy.deepcopy(row)]
+            return data
+        data = mutation_fixture()
         row = next((row for row in data['highsScreen']['rows'] if row['classification'] == 'near_high'), data['highsScreen']['rows'][0])
         row['classification'] = 'near_high'
         row['distancePct'] = -5
         errors = validate(data)
         self.assertTrue(any('high-distance mismatch' in e for e in errors))
         self.assertTrue(any('near high must be within3pct' in e for e in errors))
-        data = copy.deepcopy(self.data)
+        data = mutation_fixture()
         row = data['highsScreen']['rows'][0]
         row['classification'] = 'new_high'
         row['sessionHigh'] = row['prior52WeekHigh']
