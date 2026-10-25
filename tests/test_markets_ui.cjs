@@ -49,7 +49,7 @@ assert(html.includes('<h3>하이일드 채권 수익률</h3>'));
 assert.equal(cards.filter(id=>id==='BAMLH0A0HYM2').length,1,'OAS chart must replace the final link-only card without duplication');
 console.log('PASS Treasury → HY yield → HY OAS → high-quality corporate → Microsoft individual bond order and unchanged remaining cards');
 
-assert.deepEqual(widgetDefinitions.map(item=>item.id),['BAMLH0A0HYM2EY','BAMLH0A0HYM2','US594918BC73','DXY']);
+assert.deepEqual(widgetDefinitions.map(item=>item.id),['BAMLH0A0HYM2EY','BAMLH0A0HYM2','US594918BC73']);
 for(const [index,widget] of widgets.entries()){
  assert.equal(widget.children.length,1);const fragment=widget.children[0],script=fragment.container.children[0];
  assert(fragment.original.removed,'Inert script is replaced once');
@@ -57,7 +57,7 @@ for(const [index,widget] of widgets.entries()){
  assert.equal(script.type,'text/javascript');assert.equal(script.async,true);
  assert.equal(script.textContent,widget.definition.textContent,'Generated config is copied verbatim');
  const config=JSON.parse(script.textContent);
- assert.equal(config.symbol,['FRED:BAMLH0A0HYM2EY','FRED:BAMLH0A0HYM2','MUN:US594918BC7','TVC:DXY'][index]);
+ assert.equal(config.symbol,['FRED:BAMLH0A0HYM2EY','FRED:BAMLH0A0HYM2','MUN:US594918BC7'][index]);
  assert.equal(config.range,'60M');assert.equal(config.autosize,true);assert.equal(config.theme,'light');
  assert.equal(config.interval,'D');assert.equal(config.timezone,'Etc/UTC');
  assert.match(widget.definition.markup,/tradingview-widget-container__widget/);
@@ -79,7 +79,7 @@ for(const route of ['#explorer','#heatmap','#rates','#briefing/US/2026-10-16','#
 const untrusted=mockWidget({...widgetDefinitions[0],src:'https://example.com/not-a-provider.js'});
 widgets.push(untrusted);api.load();assert.equal(untrusted.children.length,0);assert.equal(untrusted.dataset.loaded,undefined);
 assert.equal((html.match(/data-fred-series=/g)||[]).length,7,'Existing seven FRED charts stay intact');
-assert.match(html,/markets\.css\?v=20261025-macro/);assert.match(html,/markets\.js\?v=20261025-macro/);
+assert.match(html,/markets\.css\?v=20261025-macro2/);assert.match(html,/markets\.js\?v=20261025-macro2/);
 assert.match(fs.readFileSync(root+'/assets/markets.css','utf8'),/\.tradingview-chart\{height:440px;width:100%/);
 assert.match(html,/쿠폰 3\.5% · 만기 2035-02-12/);assert.match(html,/회사 전체 금리가 아닙니다/);
 assert(!html.includes('MUN:US023135'));assert(!html.includes('MUN:US02079K'));
@@ -92,8 +92,8 @@ for(const symbol of ['FINRA-AMZN6237343','FINRA-GOOG6065581']){
 assert.match(html,/두 채권은 제공사의 위젯 제한/);
 console.log('PASS Amazon and Alphabet compact original-source links without unsupported embeds');
 
-assert.equal((html.match(/기본 5년 차트는 주별 표본으로 표시될 수 있습니다/g)||[]).length,4);
-assert.equal((html.match(/최신 관측일은 차트\/원본을 확인하세요/g)||[]).length,4);
+assert.equal((html.match(/기본 5년 차트는 주별 표본으로 표시될 수 있습니다/g)||[]).length,3);
+assert.equal((html.match(/최신 관측일은 차트\/원본을 확인하세요/g)||[]).length,3);
 console.log('PASS five-year sampling and latest-observation notes on all three TradingView cards');
 
 const spreadCard=html.match(/<article class="rate-card" data-series="BAMLH0A0HYM2">[\s\S]*?<\/article>/)[0];
@@ -106,3 +106,5 @@ assert.match(spreadCard,/href="https:\/\/www\.tradingview\.com\/symbols\/FRED-BA
 assert.match(spreadCard,/href="https:\/\/fred\.stlouisfed\.org\/series\/BAMLH0A0HYM2" target="_blank" rel="noopener noreferrer"/);
 assert(!spreadCard.includes('rate-link-card'));
 console.log('PASS OAS title, percentage-point/basis-point explanation, distinction from yield, official attribution, and original-source fallback');
+
+assert(!widgetDefinitions.some(w=>w.id==="DXY"));assert(html.includes("DXY 차트 원본"));

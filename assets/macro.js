@@ -21,8 +21,8 @@ function validFedwatch(d){
 function quoteHTML(q,related){
  if(!q||!finite(q.value))return '<span class="quote-label">최신 수치 미확인</span>';
  let note=q.note||q.basisNote||'';
- if(related==='WTI_FUTURES'||related==='BRENT_FUTURES')note='위 숫자는 선물/파생 시세, 아래 FRED 차트는 현물입니다. 서로 다른 상품입니다. '+note;
- if(related==='UST10Y')note='위 숫자는 시장 국채 수익률, 아래 차트는 FRED 고정만기 수익률입니다. '+note;
+ if(related==='WTI_FUTURES'||related==='BRENT_FUTURES')note='위 숫자는 선물 연계 CFD, 아래 FRED 차트는 현물입니다. 서로 다른 상품이며 확정 결제가격이 아닙니다.';
+ if(related==='UST10Y')note='위 숫자는 시장 국채 수익률, 아래 차트는 FRED 고정만기 수익률로 산출 기준·관측시각이 다릅니다.';
  if(q.status==='stale')note='최신 조회 실패 · 이전 검증 수치 유지. '+note;
  return '<span class="quote-label">'+esc(q.quoteLabel||q.name||q.id)+'</span><strong>'+num(q.value,q.precision??2)+'</strong><span class="quote-unit">'+esc(q.unit||'')+'</span><span class="quote-asof">시세 기준 '+(q.observedAt?stamp(q.observedAt):esc(q.asOf||'미확인'))+' · <a href="'+esc(safeURL(q.sourceUrl))+'" target="_blank" rel="noopener noreferrer">'+esc(q.sourceName||q.source||'Investing.com')+' ↗</a></span>'+(note?'<span class="quote-note">'+esc(note)+'</span>':'');
 }
@@ -31,7 +31,7 @@ function renderQuotes(d){
  const map=Object.fromEntries(rows.map(q=>[q.id||q.key,q]));
  document.querySelectorAll('[data-macro-quote]').forEach(el=>{const id=el.dataset.macroQuote;el.innerHTML=quoteHTML(map[id],id);});
  document.querySelectorAll('.rate-card[data-series]').forEach(card=>{
-   const q=map[card.dataset.series];if(!q||!finite(q.value))return;
+   const q=map[card.dataset.series];if(!q||q.sourceName!=='FRED'||!finite(q.value))return;
    let el=card.querySelector('.macro-fred-value');
    if(!el){el=document.createElement('div');el.className='macro-fred-value rate-source';card.querySelector('.rate-head').after(el);}
    el.innerHTML='차트와 동일한 FRED 계열: <strong>'+num(q.value,q.precision??2)+' '+esc(q.unit||'')+'</strong> · 관측일 '+esc(q.asOf)+' · <a href="'+esc(safeURL(q.sourceUrl))+'" target="_blank" rel="noopener noreferrer">원본 ↗</a>'+(q.status==='stale'?' · 이전 검증값 유지':'');

@@ -17,3 +17,5 @@ for(const id of ['UST10Y','WTI_FUTURES','BRENT_FUTURES','DXY','USDJPY','USDKRW']
 assert(html.includes('data-series="DXY"'));assert(html.includes('data-series="DTWEXBGS"'));
 assert(!html.includes('quikstrike'));assert(!raw.includes('quikstrike'));
 console.log('PASS macro source safety, instrument distinction, verified CME distribution, correct cut/hold/hike and same-precision historical deltas');
+
+assert(raw.includes("q.sourceName!=='FRED'"));
