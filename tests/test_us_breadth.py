@@ -36,7 +36,7 @@ class USBreadthTests(unittest.TestCase):
         self.assertEqual(build(self.data), self.data)
         original = copy.deepcopy(self.data)
         self.entry.pop('breadth')
-        self.assertEqual(build(self.data), original)
+        self.assertEqual(build(self.data, self.entry['date']), original)
         self.assertNotIn('breadth', self.entry, 'Builder returns a candidate without mutating its input')
 
     def test_missing_latest_evidence_never_reuses_previous_breadth(self):
