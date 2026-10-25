@@ -79,7 +79,7 @@ for(const route of ['#explorer','#heatmap','#rates','#briefing/US/2026-10-16','#
 const untrusted=mockWidget({...widgetDefinitions[0],src:'https://example.com/not-a-provider.js'});
 widgets.push(untrusted);api.load();assert.equal(untrusted.children.length,0);assert.equal(untrusted.dataset.loaded,undefined);
 assert.equal((html.match(/data-fred-series=/g)||[]).length,2,'Two unchanged FRED charts stay intact');
-assert.match(html,/markets\.css\?v=20261025-external/);assert.match(html,/markets\.js\?v=20261025-external/);
+assert.match(html,/markets\.css\?v=20261025-external2/);assert.match(html,/markets\.js\?v=20261025-external2/);
 assert.match(fs.readFileSync(root+'/assets/markets.css','utf8'),/\.tradingview-chart\{height:440px;width:100%/);
 assert.match(html,/쿠폰 3\.5% · 만기 2035-02-12/);assert.match(html,/회사 전체 금리가 아닙니다/);
 assert(!html.includes('MUN:US023135'));assert(!html.includes('MUN:US02079K'));
@@ -111,18 +111,14 @@ assert(!widgetDefinitions.some(w=>w.id==="DXY"));assert(html.includes("DXY 차�
 
 const symbols=['OTCB:US10Y','FX:USOIL','FX:UKOIL','CAPITALCOM:DXY','FX:USDJPY','FX_IDC:USDKRW'];
 assert.deepEqual([...html.matchAll(/data-macro-chart="([^"]+)"/g)].map(m=>m[1]),symbols);
-const holders=symbols.map(symbol=>({dataset:{macroChart:symbol},children:[],querySelector:()=>({content:{symbol}}),append(node){this.children.push(node)}}));
-const bad={dataset:{macroChart:'TVC:DXY'},children:[],append(node){this.children.push(node)}};holders.push(bad);
-const scripts=[],statuses=[{textContent:''}],events={};
-const doc={readyState:'loading',addEventListener:(n,f)=>events[n]=f,querySelectorAll:s=>s==='[data-macro-chart]'?holders:s==='[data-macro-chart-status]'?statuses:[],importNode:x=>x,createElement:tag=>({tag}),head:{append:s=>scripts.push(s)}};
-const ctx={URL,Date,Set,Object,window:{location:{hash:'#explorer'},addEventListener:(n,f)=>events[n]=f},document:doc};
-vm.createContext(ctx);vm.runInContext(raw,ctx);events.DOMContentLoaded();assert.equal(scripts.length,0);
-ctx.window.location.hash='#rates';events.hashchange();assert.equal(scripts.length,1);
-assert.equal(scripts[0].type,'module');assert.equal(scripts[0].src,'https://widgets.tradingview-widget.com/w/en/tv-advanced-chart.js');
-assert(holders.slice(0,6).every(h=>h.children.length===1));assert.equal(bad.children.length,0);
-events.hashchange();assert.equal(scripts.length,1);assert(holders.slice(0,6).every(h=>h.children.length===1));
-scripts[0].onerror();assert(statuses[0].textContent.includes('원본 링크'));
+const defs=[...html.matchAll(/data-macro-chart="([^"]+)"[^>]*><template>([\s\S]*?)<\/template>/g)].map(([,id,markup])=>{const sc=markup.match(/<script type="([^"]+)" src="([^"]+)" async>([\s\S]*?)<\/script>/);return {id,label:id,markup,type:sc[1],src:sc[2],textContent:sc[3]}});
+const holders=defs.map(mockWidget);holders.forEach(h=>h.dataset={macroChart:h.definition.id});
+context.document.querySelectorAll=selector=>selector==='[data-macro-chart]'?holders:[];
+context.window.location.hash='#explorer';api.load();assert(holders.every(h=>h.children.length===0));
+context.window.location.hash='#rates';api.load();api.load();
+for(const h of holders){assert.equal(h.children.length,1);const sc=h.children[0].container.children[0];assert.equal(sc.src,'https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js');assert.equal(JSON.parse(sc.textContent).symbol,h.dataset.macroChart);assert.equal(JSON.parse(sc.textContent).theme,'light');sc.onerror();assert(h.status.textContent.includes('원본 링크'));}
+const badMacro=mockWidget(defs[0]);badMacro.dataset={macroChart:'TVC:DXY'};holders.push(badMacro);api.load();assert.equal(badMacro.children.length,0);
 assert.match(html,/달러인덱스 추종 CFD/);assert.match(html,/CAPITALCOM:DXY/);
 assert(!html.includes('symbol="TVC:DXY"'));assert.match(html,/1 USD당 일본 엔/);assert.match(html,/1 USD당 한국 원/);
 assert(fs.readFileSync(root+'/assets/macro.js','utf8').includes('card.dataset.externalMacro||!q')); 
-console.log('PASS six official external components, source/basis labels, lazy one-time module load, provider allowlist and link fallback');
+console.log('PASS six official external components, source/basis labels, lazy one-time widget load, provider allowlist and link fallback');

@@ -32,5 +32,5 @@
 @media(max-width:760px){.fedwatch-panel{padding:15px 10px}.fedwatch-heading h3{font-size:19px}.fedwatch-changes{grid-template-columns:1fr}.macro-quote strong{font-size:25px}.fedwatch-table{min-width:570px}.fedwatch-table th,.fedwatch-table td{padding:9px 8px}}
 .fedwatch-conditional{margin:18px 0;border-top:1px solid var(--line);padding-top:15px}.conditional-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.conditional-cards p{font-size:12px;line-height:1.8}.conditional-cards details{font-size:11px;color:var(--muted)}.conditional-cards summary{cursor:pointer;padding:6px 0}@media(max-width:760px){.conditional-cards{grid-template-columns:1fr}}
 
-/* Official web-component charts; provider renders data and attribution. */
-.macro-external-chart{width:100%;height:480px;min-width:0;background:#fff;color:#131722}.macro-external-chart tv-advanced-chart{display:block;width:100%;height:100%}.macro-chart-placeholder{padding:24px;font-size:12px;line-height:1.7}@media(max-width:760px){.macro-external-chart{height:420px}}
+/* Official embedded charts; provider renders data and attribution. */
+.macro-external-chart{width:100%;height:480px;min-width:0;background:#fff;color:#131722}@media(max-width:760px){.macro-external-chart{height:420px}}

@@ -3,29 +3,25 @@
   'use strict';
   const SERIES = new Set(['DGS10','HQMCB10YRP','DCOILWTICO','DCOILBRENTEU','DEXJPUS','DEXKOUS','DTWEXBGS']);
   const TRADINGVIEW_SCRIPT = 'https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js';
-  const MACRO_COMPONENT_SCRIPT = 'https://widgets.tradingview-widget.com/w/en/tv-advanced-chart.js';
   const MACRO_SYMBOLS = new Set(['OTCB:US10Y','FX:USOIL','FX:UKOIL','CAPITALCOM:DXY','FX:USDJPY','FX_IDC:USDKRW']);
-  let macroModuleRequested = false;
   function loadMacroComponents() {
-    const holders = Array.from(document.querySelectorAll('[data-macro-chart]'));
-    let activated = false;
-    holders.forEach(holder => {
+    document.querySelectorAll('[data-macro-chart]').forEach(holder => {
       if (holder.dataset.loaded || !MACRO_SYMBOLS.has(holder.dataset.macroChart)) return;
       const template = holder.querySelector('template');
       if (!template) return;
-      holder.append(document.importNode(template.content, true));
-      holder.dataset.loaded = 'true'; activated = true;
+      const fragment = document.importNode(template.content, true);
+      const original = fragment.querySelector('script');
+      if (!original || original.getAttribute('src') !== TRADINGVIEW_SCRIPT) return;
+      const script = document.createElement('script');
+      script.type = original.type; script.src = TRADINGVIEW_SCRIPT; script.async = true;
+      script.textContent = original.textContent;
+      const container = original.parentNode; original.remove();
+      script.onerror = () => {
+        const status = holder.parentElement.querySelector('[data-macro-chart-status]');
+        if (status) status.textContent = '외부 차트 연결 실패 · 아래 원본 링크에서 확인해 주세요.';
+      };
+      holder.dataset.loaded = 'true'; holder.append(fragment); container.append(script);
     });
-    if (!activated || macroModuleRequested) return;
-    macroModuleRequested = true;
-    const script = document.createElement('script');
-    script.type = 'module'; script.src = MACRO_COMPONENT_SCRIPT;
-    script.onerror = () => {
-      document.querySelectorAll('[data-macro-chart-status]').forEach(status => {
-        status.textContent = '외부 차트 연결 실패 · 아래 원본 링크에서 확인해 주세요.';
-      });
-    };
-    document.head.append(script);
   }
   function loadTradingView() {
     document.querySelectorAll('[data-tradingview-widget]').forEach(holder => {
