@@ -491,3 +491,10 @@ FreeSIS는 공식 HTML의 예탁금/신용융자 `백만원` 표제와 신용공
 - FedWatch 새 자료를 확인할 때는 공식 페이지에서 Aggregated 및 Current 날짜/기준금리를 함께 확인하고 전체 검증 스냅샷을 교체합니다. 옛 확률의 날짜만 오늘로 바꾸지 않습니다. `tests/test_fedwatch_snapshot.py`와 `tests/test_macro_snapshots.cjs`, 전체 publication 검사를 통과해야 합니다. 자동 조회가 검증되기 전에는 시세 collector가 FedWatch 시각을 갱신하지 않습니다.
 
 - TVC:DXY 위젯은 실제 배포 화면에서 외부 임베드가 제한됨을 확인하여 제거하고 원본 링크로 대체했습니다. DXY를 FRED 계열로 라벨링하지 않습니다.
+
+## 매크로 6종 외부 차트 연동 (2026-10-25 후속)
+
+- 미국채 10년물·WTI·Brent·DXY·USD/JPY·USD/KRW는 TradingView 공식 Advanced Chart Web Component로 전환했습니다. 매크로 탭 진입 때 한 번만 로드하고 방문 반복으로 중복 생성하지 않습니다. 숫자/기준시각과 FedWatch는 그대로 보존합니다.
+- 검증된 심볼은 OTCB:US10Y(국채 수익률, 가격 아님), FX:USOIL/FX:UKOIL(FXCM 원유 CFD), CAPITALCOM:DXY(Capital.com DXY 추종 CFD), FX:USDJPY, FX_IDC:USDKRW입니다. 제공사 원본 시각·지연·기간은 차트에서 확인합니다. DXY CFD는 ICE 공식 지수 자체나 연준 광의지수로 표시하지 않습니다. Investing 숫자와 각 차트의 서로 다른 제공사/상품/시각을 분리 표시합니다.
+- TVC:DXY 등 위젯 제한은 우회하지 않았습니다. 별도로 허용되는 제공사 심볼을 공식 설정 화면에서 확인했습니다. 원본 링크는 연결 실패 시에도 유지합니다. 기존 FRED 광의달러/우량채, 하이일드/개별채권 위젯은 보존합니다.
+- 공식 문서: https://www.tradingview.com/widget-docs/widgets/charts/advanced-chart/ 및 https://www.tradingview.com/widget-docs/tutorials/web-components/configuring/ . 새 결제·약관 명시적 수락·로그인·권한 변경 없이 공개 위젯만 사용합니다.
