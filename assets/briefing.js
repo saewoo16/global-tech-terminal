@@ -3,7 +3,7 @@
   'use strict';
   const el=id=>document.getElementById(id);
   const date=value=>typeof value==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(value)&&Number.isFinite(Date.parse(value))&&new Date(value).toISOString().slice(0,10)===value;
-  const views=['explorer','rates','korea','us','etf'];
+  const views=['explorer','rates','korea','us','etf','overseas-etf'];
   let entries=[], loading=false, failed=false, activeView='explorer', lastLoaded=0;
   function view(name) {
     activeView=views.includes(name)?name:'explorer';

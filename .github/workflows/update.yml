@@ -45,6 +45,9 @@ jobs:
           OFFICIAL_KR_LIQUIDITY: '1'
         run: python scripts/update_korean_market.py
 
+      - name: Refresh overseas sector and theme ETF charts
+        run: python scripts/update_overseas_etf_charts.py
+
       - name: Backfill Japanese financials
         run: python scripts/patch_japan_financials.py
 
