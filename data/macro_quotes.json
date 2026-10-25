@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-25T07:29:44Z",
+  "updatedAt": "2026-10-25T08:58:16Z",
   "note": "서버 수집 스냅샷이며 실시간 스트리밍이 아닙니다. 각 값의 관측시각과 원천을 확인하세요. 선물·CFD와 현물, DXY와 연준 광의 달러지수는 서로 다른 지표입니다.",
   "rows": [
     {
@@ -250,24 +250,6 @@
       "frequency": "daily"
     },
     {
-      "id": "DTWEXBGS",
-      "quoteLabel": "연준 광의 달러지수",
-      "unit": "2006년 1월=100",
-      "precision": 4,
-      "value": 121.4048,
-      "asOf": "2026-10-16",
-      "observedAt": null,
-      "observationTimezone": null,
-      "sourceTimeText": "2026-10-16 관측 · 일중 시각 미제공",
-      "retrievedAt": "2026-10-25T07:29:44Z",
-      "sourceName": "FRED",
-      "sourceUrl": "https://fred.stlouisfed.org/series/DTWEXBGS",
-      "status": "verified",
-      "marketStatus": null,
-      "note": "차트와 같은 FRED 시계열의 최근 공표 관측값. 조회일과 관측일은 다릅니다.",
-      "frequency": "daily"
-    },
-    {
       "id": "DEXJPUS",
       "quoteLabel": "달러/엔 · FRED",
       "unit": "엔/달러",
@@ -302,6 +284,46 @@
       "marketStatus": null,
       "note": "차트와 같은 FRED 시계열의 최근 공표 관측값. 조회일과 관측일은 다릅니다.",
       "frequency": "daily"
+    },
+    {
+      "id": "M1SL",
+      "quoteLabel": "미국 M1 통화량",
+      "unit": "십억 달러",
+      "precision": 1,
+      "value": 19991.1,
+      "asOf": "2026-08-01",
+      "observedAt": null,
+      "observationTimezone": null,
+      "sourceTimeText": "2026-08 월간 관측",
+      "frequency": "monthly",
+      "retrievedAt": "2026-10-25T08:58:16Z",
+      "sourceName": "FRED",
+      "sourceUrl": "https://fred.stlouisfed.org/series/M1SL",
+      "status": "verified",
+      "marketStatus": null,
+      "note": "월별 계절조정 통화량. 관측월·FRED 갱신시각·조회시각은 서로 다르며 자료는 수정될 수 있습니다.",
+      "sourceUpdatedAt": "2026-09-22T17:01:00Z",
+      "seasonalAdjustment": "seasonally_adjusted"
+    },
+    {
+      "id": "M2SL",
+      "quoteLabel": "미국 M2 통화량",
+      "unit": "십억 달러",
+      "precision": 1,
+      "value": 23342.8,
+      "asOf": "2026-08-01",
+      "observedAt": null,
+      "observationTimezone": null,
+      "sourceTimeText": "2026-08 월간 관측",
+      "frequency": "monthly",
+      "retrievedAt": "2026-10-25T08:58:16Z",
+      "sourceName": "FRED",
+      "sourceUrl": "https://fred.stlouisfed.org/series/M2SL",
+      "status": "verified",
+      "marketStatus": null,
+      "note": "월별 계절조정 통화량. 관측월·FRED 갱신시각·조회시각은 서로 다르며 자료는 수정될 수 있습니다.",
+      "sourceUpdatedAt": "2026-09-22T17:01:00Z",
+      "seasonalAdjustment": "seasonally_adjusted"
     }
   ]
 }

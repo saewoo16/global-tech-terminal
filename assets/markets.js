@@ -1,7 +1,7 @@
 /* Public-domain FRED images and official provider widgets. No copied ICE data. */
 (function () {
   'use strict';
-  const SERIES = new Set(['DGS10','HQMCB10YRP','DCOILWTICO','DCOILBRENTEU','DEXJPUS','DEXKOUS','DTWEXBGS']);
+  const SERIES = new Set(['DGS10','HQMCB10YRP','DCOILWTICO','DCOILBRENTEU','DEXJPUS','DEXKOUS','M1SL','M2SL']);
   const TRADINGVIEW_SCRIPT = 'https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js';
   const MACRO_SYMBOLS = new Set(['OTCB:US10Y','FX:USOIL','FX:UKOIL','CAPITALCOM:DXY','FX:USDJPY','FX_IDC:USDKRW']);
   function loadMacroComponents() {
@@ -70,7 +70,7 @@
   function imageUrl(series, dates, width) {
     if (!SERIES.has(series)) return '';
     const url = new URL('https://fred.stlouisfed.org/graph/fredgraph.png');
-    Object.entries({id:series,cosd:dates.start,coed:dates.end,width:String(width || (['DEXKOUS','DTWEXBGS'].includes(series)?1100:1000)),height:'500'}).forEach(([key,value])=>url.searchParams.set(key,value));
+    Object.entries({id:series,cosd:dates.start,coed:dates.end,width:String(width || (['DEXKOUS','M1SL','M2SL'].includes(series)?1100:1000)),height:'500'}).forEach(([key,value])=>url.searchParams.set(key,value));
     return url.href;
   }
   function load() {

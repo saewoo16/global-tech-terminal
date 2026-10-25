@@ -14,7 +14,7 @@ const q=a.quoteHTML({value:103.44,precision:2,quoteLabel:'<x>',unit:'USD/배럴'
 assert(q.includes('103.44'));assert(q.includes('&lt;x&gt;'));assert(q.includes('서로 다른 상품'));assert(q.includes('이전 검증 수치'));assert(!q.includes('javascript:'));
 assert(html.indexOf('id="fedwatch-panel"')<html.indexOf('id="rates-grid"'));
 for(const id of ['UST10Y','WTI_FUTURES','BRENT_FUTURES','DXY','USDJPY','USDKRW'])assert(html.includes('data-macro-quote="'+id+'"'));
-assert(html.includes('data-series="DXY"'));assert(html.includes('data-series="DTWEXBGS"'));
+assert(html.includes('data-series="DXY"'));assert(!html.includes('data-series="DTWEXBGS"'));assert(html.includes('data-series="M1SL"'));assert(html.includes('data-series="M2SL"'));
 assert(!html.includes('quikstrike'));assert(!raw.includes('quikstrike'));
 console.log('PASS macro source safety, instrument distinction, verified CME distribution, correct cut/hold/hike and same-precision historical deltas');
 

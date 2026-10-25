@@ -498,3 +498,11 @@ FreeSIS는 공식 HTML의 예탁금/신용융자 `백만원` 표제와 신용공
 - 검증된 심볼은 OTCB:US10Y(국채 수익률, 가격 아님), FX:USOIL/FX:UKOIL(FXCM 원유 CFD), CAPITALCOM:DXY(Capital.com DXY 추종 CFD), FX:USDJPY, FX_IDC:USDKRW입니다. 제공사 원본 시각·지연·기간은 차트에서 확인합니다. DXY CFD는 ICE 공식 지수 자체나 연준 광의지수로 표시하지 않습니다. Investing 숫자와 각 차트의 서로 다른 제공사/상품/시각을 분리 표시합니다.
 - TVC:DXY 등 위젯 제한은 우회하지 않았습니다. 별도로 허용되는 제공사 심볼을 공식 설정 화면에서 확인했습니다. 원본 링크는 연결 실패 시에도 유지합니다. 기존 FRED 광의달러/우량채, 하이일드/개별채권 위젯은 보존합니다.
 - 공식 문서: https://www.tradingview.com/widget-docs/widgets/charts/advanced-chart/ 및 https://www.tradingview.com/widget-docs/tutorials/web-components/configuring/ . 새 결제·약관 명시적 수락·로그인·권한 변경 없이 공개 위젯만 사용합니다.
+
+
+## 미국 통화량 유동성 지표 (2026-10-25)
+
+- 사용자 지정 제거 대상인 연준 광의 달러지수 DTWEXBGS 카드/수집을 제거하고 같은 위치에 M1SL·M2SL FRED 5년 원본 차트와 최근 관측값을 추가합니다. 별도 DXY CFD와 기존 6개 TradingView 차트·FedWatch는 보존합니다.
+- 두 시리즈는 Board of Governors H.6의 월별·계절조정 통화량이며 단위는 십억 달러입니다. 관측월, FRED 원천 갱신시각(dateModified), 실제 조회시각을 분리합니다. 미래 월/갱신시각을 거부하고 조회 실패 시 이전 값과 날짜를 보존합니다. 기존 macro quote 일일 수집에 포함하지만 새 값은 월별 공표될 때만 바뀝니다.
+- M1은 2020년 5월 정의 변경에 따른 단절이 있으므로 변경 이전과의 단순 비교에 유의합니다. M2는 M1에 소액 정기예금·소매 MMF 등을 포함한 광의 통화량이며 주식시장 유입금이나 연준 대차대조표와 같지 않습니다. 공개 도메인 FRED 원본의 출처·축·단위·로고를 유지합니다.
+- 공식 원본: https://fred.stlouisfed.org/series/M1SL 및 https://fred.stlouisfed.org/series/M2SL . 2026-10-25 확인 최신 관측은 2026-08, 원천 갱신은 2026-09-22 12:01 CDT입니다. 이는 고정 화면 날짜가 아니며 이후 수집에서 원천 시각과 실제 관측월을 검증해 갱신합니다.

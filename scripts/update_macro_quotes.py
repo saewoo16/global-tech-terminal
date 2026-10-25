@@ -32,10 +32,14 @@ FRED = {
  'HQMCB10YRP': ('10년 우량 회사채 액면수익률', '%', 2),
  'DCOILWTICO': ('WTI 원유 현물', 'USD/배럴', 2),
  'DCOILBRENTEU': ('Brent 원유 현물', 'USD/배럴', 2),
- 'DTWEXBGS': ('연준 광의 달러지수', '2006년 1월=100', 4),
+ 'M1SL': ('미국 M1 통화량', '십억 달러', 1),
+ 'M2SL': ('미국 M2 통화량', '십억 달러', 1),
  'DEXJPUS': ('달러/엔 · FRED', '엔/달러', 2),
  'DEXKOUS': ('달러/원 · FRED', '원/달러', 2),
 }
+
+MONTHLY = {'HQMCB10YRP', 'M1SL', 'M2SL'}
+MONEY_SUPPLY = {'M1SL', 'M2SL'}
 
 def iso(now):
     return now.astimezone(timezone.utc).replace(microsecond=0).isoformat().replace('+00:00','Z')
@@ -80,7 +84,21 @@ def parse_fred(text, key, now):
     if not observations: raise ValueError('No dated FRED observations')
     d,value = max(observations)
     label,unit,precision = FRED[key]
-    return {'id':key,'quoteLabel':label,'unit':unit,'precision':precision,'value':value,'asOf':d.isoformat(),'observedAt':None,'observationTimezone':None,'sourceTimeText':(d.strftime('%Y-%m')+' 월간 관측' if key=='HQMCB10YRP' else d.isoformat()+' 관측 · 일중 시각 미제공'),'frequency':('monthly' if key=='HQMCB10YRP' else 'daily'),'retrievedAt':iso(now),'sourceName':'FRED','sourceUrl':'https://fred.stlouisfed.org/series/'+key,'status':'verified','marketStatus':None,'note':'차트와 같은 FRED 시계열의 최근 공표 관측값. 조회일과 관측일은 다릅니다.'}
+    return {'id':key,'quoteLabel':label,'unit':unit,'precision':precision,'value':value,'asOf':d.isoformat(),'observedAt':None,'observationTimezone':None,'sourceTimeText':(d.strftime('%Y-%m')+' 월간 관측' if key in MONTHLY else d.isoformat()+' 관측 · 일중 시각 미제공'),'frequency':('monthly' if key in MONTHLY else 'daily'),'retrievedAt':iso(now),'sourceName':'FRED','sourceUrl':'https://fred.stlouisfed.org/series/'+key,'status':'verified','marketStatus':None,'note':'차트와 같은 FRED 시계열의 최근 공표 관측값. 조회일과 관측일은 다릅니다.'}
+
+def add_fred_release_metadata(row, html, now):
+    """Keep FRED's source update time distinct from observation month/retrieval."""
+    match = re.search(r'"dateModified"\s*:\s*"([^"]+)"', html)
+    if not match: raise ValueError('FRED source update time unavailable')
+    source_time = datetime.fromisoformat(match.group(1).replace('Z','+00:00'))
+    if source_time.tzinfo is None or source_time > now + timedelta(minutes=5):
+        raise ValueError('Invalid FRED source update time')
+    if source_time.date() < date.fromisoformat(row['asOf']):
+        raise ValueError('FRED update precedes observation')
+    row['sourceUpdatedAt'] = iso(source_time)
+    row['seasonalAdjustment'] = 'seasonally_adjusted'
+    row['note'] = '월별 계절조정 통화량. 관측월·FRED 갱신시각·조회시각은 서로 다르며 자료는 수정될 수 있습니다.'
+    return row
 
 def preserve_failure(previous, key, error, now):
     if previous and previous.get('value') is not None:
@@ -107,6 +125,8 @@ def collect(previous=None, fetcher=fetch_text, now=None):
                 start=(now.date()-timedelta(days=400)).isoformat()
                 url=f'https://fred.stlouisfed.org/graph/fredgraph.csv?id={key}&cosd={start}&coed={now.date().isoformat()}'
                 row=parse_fred(fetcher(url),key,now)
+                if key in MONEY_SUPPLY:
+                    row=add_fred_release_metadata(row,fetcher('https://fred.stlouisfed.org/series/'+key),now)
             prior=old.get(key)
             if prior and prior.get('asOf') and row['asOf'] < prior['asOf']: raise ValueError('Source observation regressed')
             if prior and prior.get('observedAt') and row.get('observedAt') and row['observedAt'] < prior['observedAt']: raise ValueError('Source timestamp regressed')

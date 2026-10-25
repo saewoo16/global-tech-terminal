@@ -34,7 +34,7 @@ function renderQuotes(d){
    const q=map[card.dataset.series];if(card.dataset.externalMacro||!q||q.sourceName!=='FRED'||!finite(q.value))return;
    let el=card.querySelector('.macro-fred-value');
    if(!el){el=document.createElement('div');el.className='macro-fred-value rate-source';card.querySelector('.rate-head').after(el);}
-   el.innerHTML='차트와 동일한 FRED 계열: <strong>'+num(q.value,q.precision??2)+' '+esc(q.unit||'')+'</strong> · 관측일 '+esc(q.asOf)+' · <a href="'+esc(safeURL(q.sourceUrl))+'" target="_blank" rel="noopener noreferrer">원본 ↗</a>'+(q.status==='stale'?' · 이전 검증값 유지':'');
+   el.innerHTML='차트와 동일한 FRED 계열: <strong>'+num(q.value,q.precision??2)+' '+esc(q.unit||'')+'</strong> · '+(q.frequency==='monthly'?'관측월 '+esc(q.asOf.slice(0,7)):'관측일 '+esc(q.asOf))+(q.sourceUpdatedAt?' · FRED 갱신 '+stamp(q.sourceUpdatedAt):'')+' · <a href="'+esc(safeURL(q.sourceUrl))+'" target="_blank" rel="noopener noreferrer">원본 ↗</a>'+(q.status==='stale'?' · 이전 검증값 유지':'');
  });
 }
 function conditionalHTML(d){

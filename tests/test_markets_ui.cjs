@@ -1,6 +1,6 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
 const root=path.resolve(__dirname,'..'),raw=fs.readFileSync(root+'/assets/markets.js','utf8'),html=fs.readFileSync(root+'/index.html','utf8');
-const elements=['DGS10','HQMCB10YRP','DCOILWTICO','DCOILBRENTEU','DEXJPUS','DEXKOUS','DTWEXBGS','BAMLH0A0HYM2'].map(id=>({dataset:{fredSeries:id},children:[],append(...items){this.children.push(...items)}}));
+const elements=['DGS10','HQMCB10YRP','DCOILWTICO','DCOILBRENTEU','DEXJPUS','DEXKOUS','M1SL','M2SL','BAMLH0A0HYM2'].map(id=>({dataset:{fredSeries:id},children:[],append(...items){this.children.push(...items)}}));
 const widgetDefinitions=[...html.matchAll(/<div class="tradingview-chart" data-tradingview-widget="([^"]+)" role="region" aria-label="([^"]+)"><template>\n([\s\S]*?)\n<\/template>/g)].map(([,id,label,markup])=>{
  const script=markup.match(/<script type="([^"]+)" src="([^"]+)" async>([\s\S]*?)<\/script>/);
  assert(script,'Official script must remain inside the inert template');
@@ -23,8 +23,8 @@ importNode:definition=>{
 vm.createContext(context);vm.runInContext(raw.replace('  if(document.readyState','  window.api={range,imageUrl,load,boot};\n  if(document.readyState'),context);const api=context.window.api;
 assert.equal(api.range(new Date('2026-10-17T08:00:00Z')).start,'2021-10-17');assert.equal(api.range(new Date('2024-02-29T08:00:00Z')).start,'2019-02-28');
 assert.equal(api.imageUrl('BAMLH0A0HYM2',api.range()),'');api.boot();assert(elements.every(item=>item.children.length===0));assert(widgets.every(item=>item.children.length===0),'No TradingView script activates outside rates');
-context.window.location.hash='#rates';listeners.get('hashchange')();assert.equal(elements[0].children.length,3);assert.equal(elements[7].children.length,0);
-for(const el of elements.slice(0,7)){const [image,status]=el.children;assert(image.src.startsWith('https://fred.stlouisfed.org/graph/fredgraph.png?'));assert(image.src.includes('cosd='));image.onload();assert(status.textContent.includes('최신 관측일'));image.onerror();assert(image.hidden);assert(status.textContent.includes('불러오지 못했습니다'));el.children[2].onclick();assert.equal(image.hidden,false);assert(image.src.includes('width=1200'));el.children[2].onclick();assert(image.src.includes('width=1100'));}
+context.window.location.hash='#rates';listeners.get('hashchange')();assert.equal(elements[0].children.length,3);assert.equal(elements[8].children.length,0);
+for(const el of elements.slice(0,8)){const [image,status]=el.children;assert(image.src.startsWith('https://fred.stlouisfed.org/graph/fredgraph.png?'));assert(image.src.includes('cosd='));image.onload();assert(status.textContent.includes('최신 관측일'));image.onerror();assert(image.hidden);assert(status.textContent.includes('불러오지 못했습니다'));el.children[2].onclick();assert.equal(image.hidden,false);assert(image.src.includes('width=1200'));el.children[2].onclick();assert(image.src.includes('width=1100'));}
 api.load();assert.equal(elements[0].children.length,3);
 assert(!html.includes('id="heatmap-panel"'));assert(!html.includes('data-view="heatmap"'));
 for(const id of ['BAMLH0A0HYM2','BAMLH0A0HYM2EY']){assert(html.includes('https://fred.stlouisfed.org/series/'+id));assert(!html.includes('data-fred-series="'+id+'"'));}
@@ -44,7 +44,7 @@ assert(fs.readFileSync(root+'/assets/korea.js','utf8').includes('id="kr-heatmaps
 console.log('PASS domestic heatmap, free official FINVIZ daily iframe, week/month links, and no standalone map');
 
 const cards=[...html.matchAll(/<article class="rate-card(?: rate-link-card)?" data-series="([^"]+)"/g)].map(m=>m[1]);
-assert.deepEqual(cards,['DGS10','BAMLH0A0HYM2EY','BAMLH0A0HYM2','HQMCB10YRP','US594918BC73','DCOILWTICO','DCOILBRENTEU','DXY','DTWEXBGS','DEXJPUS','DEXKOUS']);
+assert.deepEqual(cards,['DGS10','BAMLH0A0HYM2EY','BAMLH0A0HYM2','HQMCB10YRP','US594918BC73','DCOILWTICO','DCOILBRENTEU','DXY','M1SL','M2SL','DEXJPUS','DEXKOUS']);
 assert(html.includes('<h3>하이일드 채권 수익률</h3>'));
 assert.equal(cards.filter(id=>id==='BAMLH0A0HYM2').length,1,'OAS chart must replace the final link-only card without duplication');
 console.log('PASS Treasury → HY yield → HY OAS → high-quality corporate → Microsoft individual bond order and unchanged remaining cards');
@@ -78,8 +78,8 @@ for(const route of ['#explorer','#heatmap','#rates','#briefing/US/2026-10-16','#
 }
 const untrusted=mockWidget({...widgetDefinitions[0],src:'https://example.com/not-a-provider.js'});
 widgets.push(untrusted);api.load();assert.equal(untrusted.children.length,0);assert.equal(untrusted.dataset.loaded,undefined);
-assert.equal((html.match(/data-fred-series=/g)||[]).length,2,'Two unchanged FRED charts stay intact');
-assert.match(html,/markets\.css\?v=20261025-external2/);assert.match(html,/markets\.js\?v=20261025-external2/);
+assert.equal((html.match(/data-fred-series=/g)||[]).length,3,'Corporate and two money supply FRED charts stay intact');
+assert.match(html,/markets\.css\?v=20261025-external2/);assert.match(html,/markets\.js\?v=20261025-money/);
 assert.match(fs.readFileSync(root+'/assets/markets.css','utf8'),/\.tradingview-chart\{height:440px;width:100%/);
 assert.match(html,/쿠폰 3\.5% · 만기 2035-02-12/);assert.match(html,/회사 전체 금리가 아닙니다/);
 assert(!html.includes('MUN:US023135'));assert(!html.includes('MUN:US02079K'));
@@ -122,3 +122,6 @@ assert.match(html,/달러인덱스 추종 CFD/);assert.match(html,/CAPITALCOM:DX
 assert(!html.includes('symbol="TVC:DXY"'));assert.match(html,/1 USD당 일본 엔/);assert.match(html,/1 USD당 한국 원/);
 assert(fs.readFileSync(root+'/assets/macro.js','utf8').includes('card.dataset.externalMacro||!q')); 
 console.log('PASS six official external components, source/basis labels, lazy one-time widget load, provider allowlist and link fallback');
+
+assert(!html.includes('data-series="DTWEXBGS"'));
+for(const id of ["M1SL","M2SL"])assert(html.includes(`data-fred-series="${id}"`));

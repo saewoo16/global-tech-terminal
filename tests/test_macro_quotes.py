@@ -35,9 +35,22 @@ class MacroQuotesTests(unittest.TestCase):
  def test_futures_and_spot_and_dollar_indices_not_conflated(self):
     self.assertNotEqual(m.INVESTING['WTI_FUTURES']['quoteLabel'],m.FRED['DCOILWTICO'][0])
     self.assertEqual(m.INVESTING['DXY']['path'],'indices/usdollar')
-    self.assertIn('CFD',m.INVESTING['DXY']['quoteLabel']);self.assertIn('광의',m.FRED['DTWEXBGS'][0])
+    self.assertIn('CFD',m.INVESTING['DXY']['quoteLabel']);self.assertNotIn('DTWEXBGS',m.FRED)
  def test_restricted_ice_series_excluded(self):
     self.assertFalse(any(k.startswith('BAML') for k in m.FRED))
+ def test_money_supply_monthly_release_metadata(self):
+    for key in ['M1SL','M2SL']:
+     row=m.parse_fred('observation_date,'+key+'\n2026-08-01,19991.1\n',key,NOW)
+     row=m.add_fred_release_metadata(row,'{"dateModified":"2026-09-22T12:01:00-05:00"}',NOW)
+     self.assertEqual(row['asOf'],'2026-08-01');self.assertEqual(row['frequency'],'monthly')
+     self.assertEqual(row['sourceUpdatedAt'],'2026-09-22T17:01:00Z');self.assertEqual(row['unit'],'십억 달러')
+     self.assertEqual(row['seasonalAdjustment'],'seasonally_adjusted')
+     failed=m.preserve_failure(row,key,ValueError('source failed'),NOW)
+     for field in ['asOf','sourceUpdatedAt','retrievedAt','value']:self.assertEqual(failed[field],row[field])
+ def test_money_supply_source_metadata_rejects_missing_future_and_inconsistent(self):
+    row=m.parse_fred('observation_date,M1SL\n2026-08-01,19991.1\n','M1SL',NOW)
+    for html in ['', '{"dateModified":"2026-11-01T12:01:00-05:00"}', '{"dateModified":"2026-07-01T12:01:00-05:00"}']:
+     with self.assertRaises(ValueError):m.add_fred_release_metadata(row,html,NOW)
  def test_snapshot_integrity(self):
     p=json.loads((ROOT/'data/macro_quotes.json').read_text());ids=[r['id'] for r in p['rows']]
     self.assertEqual(set(ids),set(m.INVESTING)|set(m.FRED));self.assertEqual(len(ids),len(set(ids)))
