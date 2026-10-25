@@ -34,6 +34,11 @@ class OverseasETFTests(unittest.TestCase):
         self.assertEqual(fund['intraday']['asOf'],old['intraday']['asOf'])
         self.assertEqual(fund['intraday']['refreshStatus'],'stale')
 
+    def test_issuer_full_brand(self):
+        self.assertEqual(m.issuer_name('First Trust NASDAQ Cybersecurity ETF'),'First Trust')
+        self.assertEqual(m.issuer_name('State Street Energy ETF'),'State Street')
+        self.assertEqual(m.issuer_name('Global X Cloud Computing ETF'),'Global X')
+
     def test_intraday_filters_extended_hours_and_other_dates(self):
         times=['2026-10-23T09:25:00-04:00','2026-10-23T09:30:00-04:00','2026-10-23T15:55:00-04:00','2026-10-23T16:00:00-04:00','2026-10-22T12:00:00-04:00']
         raw={'timestamp':[int(dt.datetime.fromisoformat(t).timestamp()) for t in times],'indicators':{'quote':[{'close':[100]*5,'volume':[20]*5}]}}

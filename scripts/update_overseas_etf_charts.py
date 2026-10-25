@@ -10,6 +10,12 @@ NY = ZoneInfo('America/New_York')
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 THEMES={'LIT','BATT','ICLN','TAN','FAN','FDN','CIBR','CLOU'}
 
+def issuer_name(name):
+    # Brand prefixes come from the preserved verified issuer product name.
+    for brand in ('State Street','First Trust','Global X','iShares','VanEck','Invesco','Amplify'):
+        if name.startswith(brand+' '): return brand
+    return name
+
 def fetch_chart(ticker, interval, period):
     query=urllib.parse.urlencode({'range':period,'interval':interval,'includePrePost':'false','events':'div,splits'})
     last=None
@@ -80,7 +86,7 @@ def build_fund(row, sources, now, previous=None):
         intra,intra_url=fetch_chart(ticker,'5m','5d');points=intraday_points(intra,now,bars[-1]['date'])
     except Exception as exc:intraday_error=str(exc)
     holdings=row.get('holdings',{});hold_sources=[sources[sid]['url'] for sid in holdings.get('sourceIds',[]) if sid in sources and sources[sid].get('url')]
-    fund={'code':ticker,'name':row.get('benchmark') or meta.get('longName') or ticker,'issuer':(row.get('benchmark') or meta.get('longName') or ticker).split()[0],
+    fund={'code':ticker,'name':row.get('benchmark') or meta.get('longName') or ticker,'issuer':issuer_name(row.get('benchmark') or meta.get('longName') or ticker),
       'category':row['name'],'sourceGroup':row.get('group'),'group':'theme' if ticker in THEMES else 'industry','currency':'USD','exchange':meta.get('fullExchangeName') or meta.get('exchangeName'),'timezone':'America/New_York',
       'metadataAsOf':bars[-1]['date'],'metadataRetrievedAt':now.isoformat(),'aumUSD':None,'marketCapUSD':None,'volume':bars[-1].get('volume'),'quotePrice':bars[-1]['close'],'quoteChangePct':values['day'],
       'listedAt':dt.datetime.fromtimestamp(meta['firstTradeDate'],NY).date().isoformat() if meta.get('firstTradeDate') else None,
