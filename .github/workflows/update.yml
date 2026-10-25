@@ -48,6 +48,9 @@ jobs:
       - name: Refresh overseas sector and theme ETF charts
         run: python scripts/update_overseas_etf_charts.py
 
+      - name: Refresh source-dated macro quote snapshots
+        run: python scripts/update_macro_quotes.py
+
       - name: Backfill Japanese financials
         run: python scripts/patch_japan_financials.py
 

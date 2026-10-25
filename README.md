@@ -480,3 +480,12 @@ FreeSIS는 공식 HTML의 예탁금/신용융자 `백만원` 표제와 신용공
 - 차트 범위는 정렬과 별개로 당일·3개월·6개월·12개월을 유지합니다. 해외의 당일 시각은 미국 동부시간(ET), 자료 수집 시각은 KST로 표시하며 국내는 KST입니다. 실제 시세가 없는 장중 구간은 합성하지 않습니다.
 - 해외 편입 상위 종목은 기존 검증된 ETF 보유자료와 실제 구성 기준일을 보존합니다. 시세를 새로 수집했다고 보유자료의 기준일을 바꾸지 않습니다. 국내의 `ETF 내 시총 상위` 규칙과 해외의 편입비중 상위 규칙은 다릅니다.
 - `scripts/update_overseas_etf_charts.py`는 `data/overseas_etf_charts.json`만 갱신합니다. 일반 `Update market data` 작업에서 실행하며 미국/국내 분석 원문·실적·컨콜 파일은 수정하지 않습니다. 소스 오류·휴장·불완전한 당일 시세에서는 유효한 이전 자료와 원래 기준일을 보존합니다.
+
+## ETF 라벨 · 매크로 숫자 · FedWatch (2026-10-25)
+
+- 국내/해외 ETF 차트의 대표 편입종목은 접두 문구 없이 괄호로 표시합니다. 국내 시총순·해외 편입비중순의 서로 다른 근거와 실제 구성 기준일은 접힌 출처 및 원자료에 보존합니다. 해외 ETF 이름은 티커(풀네임) 형태입니다.
+- `scripts/update_macro_quotes.py`는 공개 Investing.com 페이지의 명시적 instrument ID·시세 타임스탬프와 공개 도메인 FRED CSV를 검사해 `data/macro_quotes.json`을 갱신합니다. 기존 일반 Update market data 작업에 연결했습니다. 각 값의 `observedAt/asOf`는 조회·게시시각과 별개이며, 실패하면 기존 값과 원래 날짜를 보존하고 stale로 표시합니다. 미래 시각·다른 종목·더 오래된 관측은 거부합니다.
+- Investing의 WTI/Brent는 선물 연계 CFD이고 FRED 차트는 현물입니다. 미 국채 시장 수익률과 FRED 고정만기 수익률도 구분합니다. DXY CFD 숫자와 TradingView DXY 차트를 별도 카드에 추가하고 연준 광의 달러지수는 기존 그대로 유지합니다. FX는 USD/JPY와 USD/KRW, 즉 1달러당 엔/원입니다. 하이일드 ICE 계열과 개별채권 숫자는 새로 복제하지 않고 기존 공식 위젯/원본을 보존합니다.
+- 매크로 상단 `data/fedwatch.json`은 공식 CME 화면에서 확인한 Aggregated 확률 스냅샷입니다. 숫자표의 각 열은 회의 시점의 누적 목표금리 구간입니다. 표 검증시각과 별도 Current 화면 provider시각을 구분하고 실시간·자동 수집을 주장하지 않습니다. 지원되는 무료 무인 API가 확인되지 않았으므로 원본 링크를 제공하며, 직접 접근을 제한하는 QuikStrike iframe에 Referer를 위조하거나 프록시 우회하지 않습니다.
+- 다음 회의 전일/전주/전월 변화는 Current 표의 같은 1자리 소수점끼리 계산하며 Aggregated의 2자리 확률과 섞지 않습니다. 12월·중기 Conditional 분포는 별도 접힘 영역에서 같은 방식끼리만 비교합니다. 99.9/100.1% 합계는 공급자 반올림을 보존하며 임의 정규화하지 않습니다.
+- FedWatch 새 자료를 확인할 때는 공식 페이지에서 Aggregated 및 Current 날짜/기준금리를 함께 확인하고 전체 검증 스냅샷을 교체합니다. 옛 확률의 날짜만 오늘로 바꾸지 않습니다. `tests/test_fedwatch_snapshot.py`와 `tests/test_macro_snapshots.cjs`, 전체 publication 검사를 통과해야 합니다. 자동 조회가 검증되기 전에는 시세 collector가 FedWatch 시각을 갱신하지 않습니다.

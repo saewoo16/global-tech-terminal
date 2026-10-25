@@ -20,3 +20,6 @@ assert.equal(a.representatives({holdings:{status:'unverified',top5:[{name:'unver
 console.log('PASS overseas isolated navigation, USD/ET display, weekly sorting, dated source holdings');
 
 assert.equal(a.returns({daily:[{date:'2026-02-27',close:100},{date:'2026-03-03',close:200},{date:'2026-03-31',close:110}]}).toFixed(2),'10.00');
+
+assert(a.representatives({holdings:{status:"verified",top5:[{name:"Apple"}]}}).includes(">(Apple)</span>"));
+assert(raw.includes("${esc(f.code)} (${esc(f.name)})"));
