@@ -14,7 +14,7 @@ class ETFChartsTest(unittest.TestCase):
   self.assertFalse(codes & {'069500','229200','462010','471990','463250','445290','385510'})
   self.assertTrue({'455860','455850','475300','475310','449450','0207G0'} <= codes)
   self.assertEqual(next(f for f in self.funds if f['code']=='0207G0')['category'],'우주')
- def test_representative_market_caps(self):
+ def test_representative_portfolio_weights(self):
   for f in self.funds:
    r=f.get('representatives')
    if not r or r.get('status')=='unavailable':continue
@@ -22,8 +22,8 @@ class ETFChartsTest(unittest.TestCase):
    if r['scope']=='etf':self.assertIn('ETF',r['label'])
    self.assertTrue(r['asOf']);self.assertTrue(r['universeAsOf']);self.assertTrue(r['sourceUrls'])
    self.assertLessEqual(len(r['members']),3)
-   caps=[m['marketCapKRW'] for m in r['members']]
-   self.assertTrue(all(c>0 for c in caps));self.assertEqual(caps,sorted(caps,reverse=True))
+   caps=[m['weightPct'] for m in r['members']]
+   self.assertTrue(all(c>=0 for c in caps));self.assertEqual(caps,sorted(caps,reverse=True))
    self.assertLessEqual(r['verifiedCount'],r['universeCount'])
  def test_real_ohlc(self):
   for f in self.funds:
@@ -80,9 +80,9 @@ class ETFChartsTest(unittest.TestCase):
  def test_representative_refresh_failure_keeps_original_dates(self):
   from scripts import update_korean_etf_charts as mod
   from scripts import korean_etf_representatives as rep
-  old={'scope':'etf','label':'ETF 내 시총 상위','asOf':'2026-10-20T07:00:00Z','universeAsOf':'2026-10-20','members':[{'name':'A','marketCapKRW':100}]}
+  old={'scope':'etf','basis':'portfolioWeight','label':'ETF 편입비중 상위','asOf':'2026-10-20T07:00:00Z','universeAsOf':'2026-10-20','members':[{'name':'A','marketCapKRW':100}]}
   funds=[{'code':'TEST','sourceUrls':['https://example.com'] }]
-  with patch.object(rep,'fetch_market_snapshot',side_effect=ValueError('offline')):
+  with patch.object(rep,'collect_weight_representatives',side_effect=ValueError('offline')):
    mod.refresh_representatives(funds,{'TEST':{'representatives':old}})
   got=funds[0]['representatives'];self.assertEqual(got['asOf'],old['asOf']);self.assertEqual(got['members'],old['members']);self.assertEqual(got['refreshStatus'],'stale')
  def test_selection_evidence_retains_original_dates(self):

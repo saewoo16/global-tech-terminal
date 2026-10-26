@@ -76,6 +76,22 @@ def intraday_points(raw, now, latest_daily):
         if number(price,True): points.append({'time':local.isoformat(),'price':price,'volume':volume if number(volume) else None})
     return sorted({p['time']:p for p in points}.values(),key=lambda p:p['time'])
 
+def ranked_holdings(holdings, source_urls, now):
+    """Preserve dated verified weights, never infer holdings from market caps."""
+    if holdings.get('status') != 'verified':
+        return {'status':'unverified','note':holdings.get('note') or 'Verified portfolio weights unavailable'}
+    rows=holdings.get('top5',[])
+    try:
+        as_of=dt.date.fromisoformat(holdings.get('asOf',''))
+    except (TypeError,ValueError):
+        as_of=None
+    if (not as_of or as_of>now.date() or not source_urls or not isinstance(rows,list) or len(rows)<3
+        or any(not isinstance(r,dict) or isinstance(r.get('weightPct'),bool)
+               or not number(r.get('weightPct'),True) or r['weightPct']>100
+               or not (r.get('name') or r.get('ticker')) for r in rows)):
+        return {'status':'unverified','note':'Dated source and valid portfolio weights required; no market-cap fallback'}
+    return dict(holdings,top5=sorted(rows,key=lambda r:r['weightPct'],reverse=True))
+
 def build_fund(row, sources, now, previous=None):
     ticker=row['ticker'];raw,daily_url=fetch_chart(ticker,'1d','1y');bars=daily_bars(raw,now)
     if len(bars)<2:raise ValueError('Fewer than two valid completed daily bars')
@@ -99,7 +115,8 @@ def build_fund(row, sources, now, previous=None):
     old_intra=(previous or {}).get('intraday',{})
     if len(points)<2 and old_intra.get('date')==bars[-1]['date'] and len(old_intra.get('points',[]))>=2:
         fund['intraday']=dict(old_intra,refreshStatus='stale',refreshError=intraday_error or 'No new valid observations; retained prior verified same-session series')
-    if holdings.get('status')=='verified':fund['holdings']=holdings;fund['holdingsSourceUrls']=hold_sources
+    fund['holdings']=ranked_holdings(holdings,hold_sources,now)
+    fund['holdingsSourceUrls']=hold_sources
     return fund
 
 def main():

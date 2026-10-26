@@ -74,3 +74,35 @@ def build_representatives(code, rows, market, observed_at, official_sources=None
 
 def collect_representatives(code, market, observed_at, official_sources=None):
     return build_representatives(code, fetch_json(f'https://stock.naver.com/api/domestic/detail/{code}/ETFComponent'), market, observed_at, official_sources)
+
+
+def build_weight_representatives(code, rows, observed_at, official_sources=None):
+    """Top three actual non-cash holdings by portfolio weight, including foreign assets."""
+    import math
+    dates={r.get('referenceDate') for r in rows}
+    counts={str(r.get('componentCount')) for r in rows}
+    holdings=[];excluded=[];missing=[];identities=set()
+    for row in rows:
+        name=row.get('componentName') or ''
+        isin=row.get('componentIsinCode') or ''
+        key=isin or row.get('componentItemCode') or name
+        if key in identities:
+            missing.append({'name':name,'reason':'중복 구성종목'})
+        identities.add(key)
+        if isin.startswith('KRD') or any(word in name.upper() for word in ['현금','예금','CASH']):
+            excluded.append({'name':name,'category':'cash'});continue
+        if isin.startswith(('KR4','KR5')):
+            excluded.append({'name':name,'category':'derivative'});continue
+        try:
+            weight=float(row['weight'])
+            if not math.isfinite(weight) or not 0<=weight<=100 or not name or not key:raise ValueError()
+            holdings.append({'code':row.get('componentItemCode'),'name':name,'isin':isin,'weightPct':weight})
+        except (KeyError,ValueError,TypeError):
+            missing.append({'name':name,'reason':'편입비중 미확인'})
+    holdings.sort(key=lambda r:(-r['weightPct'],r['isin'] or r['name']))
+    complete=bool(rows) and len(dates)==1 and None not in dates and len(counts)==1 and counts=={str(len(rows))} and not missing
+    return {'scope':'etf','basis':'portfolioWeight','label':'ETF 편입비중 상위','asOf':observed_at,'universeAsOf':next(iter(dates)) if len(dates)==1 else None,'members':holdings[:3] if complete else [],'holdings':holdings,'universeCount':len(holdings)+len(missing),'verifiedCount':len(holdings),'providerComponentCount':next(iter(counts)) if len(counts)==1 else None,'receivedComponentCount':len(rows),'status':'verified' if complete else 'partial','excludedComponents':excluded,'missingComponents':missing,'sourceUrls':[f'https://stock.naver.com/api/domestic/detail/{code}/ETFComponent']+list(official_sources or []),'methodology':'NAVER 구성목록의 실제 편입비중(%) 내림차순 상위 3종목입니다. 국내·해외 편입자산을 포함하고 현금·예금·파생상품은 제외합니다. 개별 기업 시가총액 순위가 아닙니다. 구성 기준일과 수집 시각을 분리하며, 비중이 미확인인 경우 시총으로 대체하지 않습니다.'}
+
+
+def collect_weight_representatives(code, observed_at, official_sources=None):
+    return build_weight_representatives(code,fetch_json(f'https://stock.naver.com/api/domestic/detail/{code}/ETFComponent'),observed_at,official_sources)

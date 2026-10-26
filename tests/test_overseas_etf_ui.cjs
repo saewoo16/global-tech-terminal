@@ -15,11 +15,15 @@ console.log('PASS ETF daily default, global numerical sort, missing last, month 
 
 assert(html.includes('<option value="week">1주일 수익률순'));assert(!html.includes('<option value="aum">'));assert(!html.includes('<option value="name">'));
 const wf={funds:[{code:'week',category:'Week',daily:[{date:'2026-10-16',close:100},{date:'2026-10-22',close:200},{date:'2026-10-23',close:150}]},{code:'day',category:'Day',daily:[{date:'2026-10-16',close:200},{date:'2026-10-22',close:100},{date:'2026-10-23',close:120}]},{code:'missing',category:'Missing',daily:[]}]};a.setData(wf);a.setSort('week');assert.equal(a.filtered()[0].code,'week');assert.equal(a.listReturn(wf.funds[0]),50);assert.equal(a.filtered().at(-1).code,'missing');a.setSort('day');assert.equal(a.filtered()[0].code,'day');
-assert(raw.includes('(ET)'));assert(raw.includes('USD'));assert(!raw.includes('KRX'));assert(!raw.includes('aumKRW'));assert(raw.includes("'#overseas-etf'"));assert(raw.includes('편입 상위'));
-assert.equal(a.representatives({holdings:{status:'unverified',top5:[{name:'unverified'}]}}),'');assert(a.representatives({holdings:{status:'verified',top5:[{name:'<unsafe>'}]}}).includes('&lt;unsafe&gt;'));assert(a.representativeSources({holdings:{status:'verified',asOf:'2026-10-22'}}).includes('2026-10-22'));
+assert(raw.includes('(ET)'));assert(raw.includes('USD'));assert(!raw.includes('KRX'));assert(!raw.includes('aumKRW'));assert(raw.includes("'#overseas-etf'"));assert(raw.includes('편입비중 상위 3종목'));
+assert.equal(a.representatives({holdings:{status:'unverified',top5:[{name:'unverified'}]}}),'');const weighted={holdings:{status:'verified',asOf:'2026-10-22',top5:[{name:'fourth',weightPct:1},{name:'<unsafe>',weightPct:4},{name:'third',weightPct:2},{name:'second',weightPct:3}]}};const unchanged=JSON.stringify(weighted);assert.equal(a.representatives(weighted),'<span class="etf-representatives">(&lt;unsafe&gt; / second / third)</span>');assert.equal(JSON.stringify(weighted),unchanged);assert(a.representativeSources(weighted).includes('2026-10-22'));
 console.log('PASS overseas isolated navigation, USD/ET display, weekly sorting, dated source holdings');
 
 assert.equal(a.returns({daily:[{date:'2026-02-27',close:100},{date:'2026-03-03',close:200},{date:'2026-03-31',close:110}]}).toFixed(2),'10.00');
 
-assert(a.representatives({holdings:{status:"verified",top5:[{name:"Apple"}]}}).includes(">(Apple)</span>"));
+assert.equal(a.representatives({holdings:{status:"verified",top5:[{name:"Apple",marketCapUSD:1e12}]}}),'');
+assert.equal(a.representatives({holdings:{status:"verified",top5:[{name:"A",weightPct:3},{name:"B",weightPct:2},{name:"C",weightPct:null}]}}),'');
+const snapshot=JSON.parse(fs.readFileSync(root+'/data/overseas_etf_charts.json','utf8'));
+for(const fund of snapshot.funds){const reps=a.representatives(fund);assert(reps.startsWith('<span class="etf-representatives">('));assert.equal(reps.split(' / ').length,3);const sorted=[...fund.holdings.top5].sort((a,b)=>b.weightPct-a.weightPct).slice(0,3);for(const h of sorted)assert(reps.includes(a.esc(h.name||h.ticker)));}
+console.log('PASS all 38 overseas ETFs render exactly three actual-weight-ranked holdings; missing weights never fall back to market cap');
 assert(raw.includes("${esc(f.code)} (${esc(f.name)})"));

@@ -13,10 +13,10 @@ UNIVERSE=[
 ('117700','건설','industry'),('117680','철강','industry'),('117460','에너지·화학','industry'),
 ('102960','기계·장비','industry'),('140710','운송','industry'),('143860','헬스케어','industry'),
 ('266410','필수소비재','industry'),('266390','경기소비재','industry'),('157490','소프트웨어','industry'),
-('0148J0','로봇','theme'),('305720','2차전지','theme'),
+('0148J0','로봇','theme'),('0177X0','로봇 TOP2+','theme'),('305720','2차전지','theme'),
 ('455860','2차전지 소부장','theme'),('455850','반도체 소부장','theme'),
 ('475300','반도체 전공정','theme'),('475310','반도체 후공정','theme'),('449450','방산','theme'),
-('0247S0','MLCC·AI기판(글로벌)','theme'),('0207G0','우주','theme'),('466920','조선','theme'),('487240','AI전력 설비','theme'),('0222F0','데이터센터','theme'),
+('0247S0','MLCC·AI기판(글로벌)','theme'),('0207G0','우주','theme'),('421320','우주항공','theme'),('466920','조선','theme'),('487240','AI전력 설비','theme'),('0222F0','데이터센터','theme'),
 ('0091P0','원자력','theme'),('457990','태양광·신재생','theme'),('0209D0','ESS·전고체 배터리','theme'),('364970','바이오','theme'),
 ('228790','화장품','theme'),('228800','여행·레저','theme'),('228810','미디어·콘텐츠','theme'),
 ('365000','인터넷','theme'),('364990','게임','theme'),('329200','리츠·인프라','theme')]
@@ -33,6 +33,8 @@ def fetch(url):
 
 def iso(v):return f'{v[:4]}-{v[4:6]}-{v[6:8]}'
 def official(code,name):
+    if code=='421320':return 'https://www.plusetf.co.kr/product/detail?n=006344'
+    if code=='0177X0':return 'https://www.aceetf.co.kr/'
     if code=='0222F0':return 'https://db-asset.com/mob/kr/fund/41900'
     if code=='0209D0':return 'https://www.samsungfund.com/etf/product/view.do?id=2ETFV7'
     if code=='0148J0':return 'https://www.youtube.com/watch?v=TdlpU2qIzJM'
@@ -46,6 +48,11 @@ def official(code,name):
     if code=='463250':return 'https://develop.investments.miraeasset.com/tigeretf/ko/product/search/detail/index.do?ksdFund=KR7463250001'
     if code=='462010':return 'https://kind.krx.co.kr/disclosure/etfisudetail.do?method=searchEtfIsuSummary&strIsurCd=46201'
     return 'https://www.tigeretf.com'
+def completed_daily(history, now):
+    local=now.astimezone(dt.timezone(dt.timedelta(hours=9)))
+    # KRX regular close is 15:30 KST; before it, today's candle is provisional.
+    return [row for row in history if row['date']<local.date().isoformat() or (row['date']==local.date().isoformat() and local.time()>=dt.time(15,30))]
+
 def build_fund(spec,quotes,today):
     code,category,group=spec;q=quotes[code]
     daily_url=f'https://fchart.stock.naver.com/sise.nhn?symbol={code}&timeframe=day&count=400&requestType=0'
@@ -74,6 +81,9 @@ def build_fund(spec,quotes,today):
         if cumulative is not None and cumulative>=previous_volume:
             point['volume']=cumulative-previous_volume
             previous_volume=cumulative
+    # A current-session daily close is provisional before the regular KRX close.
+    # Preserve genuine intraday observations, but never call them a completed close.
+    history=completed_daily(history,dt.datetime.now(dt.timezone.utc))
     if not history or len(points)<2:raise ValueError('Missing valid daily or intraday series; retain previous valid fund')
     orig=chart.attrib.get('origintime','') if chart is not None else ''
     result={'code':code,'name':q['itemname'],'issuer':q['itemname'].split()[0],'category':category,'group':group,
@@ -87,7 +97,9 @@ def build_fund(spec,quotes,today):
       'dailyCoverage':{'start':history[0]['date'] if history else None,'end':history[-1]['date'] if history else None,'count':len(history),'requestedMonths':12,'shortHistory':len(history)<200},
       'intraday':{'date':intraday_date,'interval':'1분 관측 · 무거래 구간 생략 · 시간외 포함','sourceUrl':intraday_url,'asOf':points[-1]['time'] if points else None,'status':'verified' if points else 'unavailable','exchange':raw.get('stockExchangeType'),'marketStatus':raw.get('marketStatus'),'points':points,'note':'실제 1분 관측값; 무거래 구간 생략, 시간외 거래 포함. volume은 직전 관측 이후 누적 거래량의 차이입니다.'},
       'selectionNote':'국내 상장·국내 주식/산업 노출 대표 ETF. 시가총액과 당일 거래량을 함께 제시하며 유동성 보장이나 전체 시장 최대규모 선언이 아닙니다.'}
-    if code=='0148J0':result['selectionNote']='레인보우로보틱스·로보티즈·에스피지·삼현과 국내 로봇 밸류체인 기업을 담는 TIGER 코리아휴머노이드로봇산업 ETF. 대표 기업 괄호는 편입비중 순위가 아닌 ETF 내 시가총액 순위입니다.'
+    if code=='421320':result['selectionNote']='국내 우주·항공·방산 혼합 ETF입니다. 에이치브이엠·스피어·인텔리안테크·쎄트렉아이 등과 한국항공우주·한화시스템·한화에어로스페이스 등을 함께 편입합니다. 순수 중소형 우주기업 ETF는 아닙니다.'
+    if code=='0177X0':result['selectionNote']='현대차·로보티즈를 핵심으로 로봇·부품 밸류체인에 투자합니다. 로보티즈·에스피지·레인보우로보틱스·삼현·디케이티·한국피아이엠을 포함하지만 현대차도 주요 편입종목이므로 순수 중소형주 ETF는 아닙니다. 대표 기업 괄호는 ETF 내 편입비중 상위 3종목입니다.'
+    if code=='0148J0':result['selectionNote']='레인보우로보틱스·로보티즈·에스피지·삼현과 국내 로봇 밸류체인 기업을 담는 TIGER 코리아휴머노이드로봇산업 ETF. 대표 기업 괄호는 ETF 내 편입비중 상위 3종목입니다.'
     if code=='457990':result['selectionNote']='한화솔루션·OCI홀딩스·HD현대에너지솔루션 중심의 태양광과 ESS 관련 국내 기업에 투자합니다. 순수 태양광 단일업종이 아니며 배터리·전력 기업도 포함됩니다.'
     if code=='0209D0':result['selectionNote']='LG에너지솔루션·삼성SDI 중심의 국내 전고체 배터리 및 ESS 혼합 테마입니다. 순수 ESS 전수지수가 아니며 기존 태양광·신재생 ETF와 일부 구성종목이 겹칩니다. 실제 상장 이후 이력만 표시합니다.'
     if code=='0222F0':result['selectionNote']='국내 AI 데이터센터 운영·반도체·전력·냉각·배터리 등 밸류체인 혼합 ETF입니다.'
@@ -99,27 +111,23 @@ def build_fund(spec,quotes,today):
 
 def refresh_representatives(funds, previous):
     try:
-        from korean_etf_representatives import fetch_market_snapshot, collect_representatives
+        from korean_etf_representatives import collect_weight_representatives
     except ImportError:
-        from scripts.korean_etf_representatives import fetch_market_snapshot, collect_representatives
-    try:
-        market, observed_at = fetch_market_snapshot()
-    except Exception:
-        market, observed_at = None, None
+        from scripts.korean_etf_representatives import collect_weight_representatives
+    observed_at=dt.datetime.now(dt.timezone.utc).isoformat()
     def collect(fund):
-        old = previous.get(fund['code'], {}).get('representatives')
+        old=previous.get(fund['code'],{}).get('representatives')
         try:
-            if market is None: raise ValueError('Market-cap snapshot unavailable')
-            result = collect_representatives(fund['code'], market, observed_at, [fund['sourceUrls'][0]])
-            if result.get('status') != 'verified': raise ValueError('Incomplete constituent market-cap verification')
-            fund['representatives'] = result
+            result=collect_weight_representatives(fund['code'],observed_at,[fund['sourceUrls'][0]])
+            if result.get('status')!='verified':raise ValueError('Incomplete portfolio-weight verification')
+            fund['representatives']=result
         except Exception:
-            if old:
-                fund['representatives'] = dict(old, refreshStatus='stale')
+            if old and old.get('basis')=='portfolioWeight':
+                fund['representatives']=dict(old,refreshStatus='stale')
             else:
-                fund['representatives'] = {'scope':'etf','label':'ETF 내 시총 상위','members':[], 'status':'unavailable', 'methodology':'구성종목 또는 시가총액 확인이 완료되지 않아 순위를 표시하지 않습니다.'}
+                fund['representatives']={'scope':'etf','basis':'portfolioWeight','label':'ETF 편입비중 상위','members':[],'status':'unavailable','methodology':'구성종목 편입비중 확인이 완료되지 않아 순위를 표시하지 않습니다. 시총 순위로 대체하지 않습니다.'}
     with concurrent.futures.ThreadPoolExecutor(max_workers=5) as pool:
-        list(pool.map(collect, funds))
+        list(pool.map(collect,funds))
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--output',default=str(pathlib.Path(__file__).resolve().parents[1]/'data/korean_etf_charts.json'));args=p.parse_args()

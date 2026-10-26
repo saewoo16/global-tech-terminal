@@ -10,6 +10,19 @@ PATH=pathlib.Path(__file__).resolve().parents[1]/'scripts/update_overseas_etf_ch
 spec=importlib.util.spec_from_file_location('overseas',PATH);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
 
 class OverseasETFTests(unittest.TestCase):
+    def test_holdings_rank_actual_weights_without_mutating_dates(self):
+        now=dt.datetime(2026,10,26,tzinfo=dt.timezone.utc)
+        h={'status':'verified','asOf':'2026-10-21','top5':[{'name':n,'weightPct':w,'marketCapUSD':cap} for n,w,cap in [('A',1,1e12),('B',5,1),('C',3,2)]]}
+        before=json.dumps(h)
+        result=m.ranked_holdings(h,['https://issuer.test/holdings'],now)
+        self.assertEqual([r['name'] for r in result['top5']],['B','C','A'])
+        self.assertEqual(result['asOf'],'2026-10-21');self.assertEqual(json.dumps(h),before)
+        for bad in [None,True,float('nan'),-1,101]:
+            broken=json.loads(before);broken['top5'][0]['weightPct']=bad
+            self.assertEqual(m.ranked_holdings(broken,['https://issuer.test'],now)['status'],'unverified')
+        self.assertEqual(m.ranked_holdings(h,[],now)['status'],'unverified')
+        self.assertEqual(m.ranked_holdings(dict(h,asOf='2026-10-27'),['https://issuer.test'],now)['status'],'unverified')
+
     def test_returns_have_actual_calendar_and_session_anchors(self):
         bars=[{'date':d,'close':p} for d,p in [('2026-09-23',100),('2026-10-16',102),('2026-10-19',103),('2026-10-20',104),('2026-10-21',105),('2026-10-22',106),('2026-10-23',107)]]
         values,anchors=m.period_returns(bars)
@@ -53,6 +66,15 @@ class OverseasETFTests(unittest.TestCase):
 class OverseasETFSnapshotTests(unittest.TestCase):
     def setUp(self):
         self.payload=json.loads((PATH.parents[1]/'data/overseas_etf_charts.json').read_text())
+    def test_all_snapshot_holdings_have_dated_sources_and_descending_weights(self):
+        for fund in self.payload['funds']:
+            h=fund['holdings'];self.assertEqual(h['status'],'verified')
+            self.assertTrue(fund['holdingsSourceUrls']);dt.date.fromisoformat(h['asOf'])
+            weights=[r['weightPct'] for r in h['top5']]
+            self.assertGreaterEqual(len(weights),3)
+            self.assertEqual(weights,sorted(weights,reverse=True))
+            self.assertTrue(all(isinstance(w,(int,float)) and math.isfinite(w) and 0<w<=100 for w in weights))
+
     def test_snapshot_actual_etfs_and_finite_prices(self):
         self.assertEqual(self.payload['timezone'],'America/New_York')
         self.assertEqual(self.payload['currency'],'USD')
