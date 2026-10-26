@@ -1,7 +1,7 @@
 ﻿symbol,name,country,quarters_with_both,has_latest_four,last_quarter,source,note
 EURONEXT:AI,Air Liquide,프랑스,0,0,2026-06-30,Published quarterly revenue; operating profit only H1/FY (not disclosed quarterly),Annual/semiannual reporting can prevent four comparable quarterly OP figures
 EURONEXT:ASM,ASM International,네덜란드,4,1,2026-06-30,Public filings / reported quarterly financial snapshot,
-EURONEXT:BESI,BESI,네덜란드,4,1,2026-06-30,Public filings / reported quarterly financial snapshot,
+EURONEXT:BESI,BESI,네덜란드,4,1,2026-09-30,Public filings / reported quarterly financial snapshot,
 EURONEXT:DSY,Dassault Systèmes,프랑스,4,1,2026-06-30,Public filings / reported quarterly financial snapshot,
 EURONEXT:SU,Schneider Electric,프랑스,0,0,2026-06-30,Published quarterly revenue; operating profit only H1/FY (not disclosed quarterly),Annual/semiannual reporting can prevent four comparable quarterly OP figures
 MIL:PRY,Prysmian,이탈리아,4,1,2026-06-30,Public filings / reported quarterly financial snapshot,
@@ -20,7 +20,7 @@ TSE:4901,Fujifilm,일본,4,1,2026-06-30,Public filings / reported quarterly fina
 TSE:5384,Fujimi,일본,4,1,2026-06-30,Public filings / reported quarterly financial snapshot,
 TSE:5801,Furukawa Electric,일본,4,1,2026-06-30,Public filings / reported quarterly financial snapshot,
 TSE:5802,Sumitomo Electric,일본,4,1,2026-06-30,Public filings / reported quarterly financial snapshot,
-TSE:6146,DISCO Corporation,일본,4,1,2026-06-30,Public filings / reported quarterly financial snapshot,
+TSE:6146,DISCO Corporation,일본,4,1,2026-09-30,Public filings / reported quarterly financial snapshot,
 TSE:6383,Daifuku,일본,4,1,2026-06-30,Public filings / reported quarterly financial snapshot,
 TSE:6506,Yaskawa Electric,일본,4,1,2026-08-31,Public filings / reported quarterly financial snapshot,
 TSE:6525,Kokusai Electric,일본,4,1,2026-06-30,Public filings / reported quarterly financial snapshot,
