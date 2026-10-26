@@ -7,6 +7,8 @@ not its freshness; retrievedAt never substitutes for observedAt/asOf.
 """
 from __future__ import annotations
 import argparse
+from http.client import IncompleteRead
+from urllib.error import HTTPError, URLError
 from concurrent.futures import ThreadPoolExecutor
 from copy import deepcopy
 import csv
@@ -50,11 +52,92 @@ def numeric(value):
     if not math.isfinite(number) or number <= 0: raise ValueError('Invalid quote value')
     return number
 
+class SourceUnavailable(Exception):
+    """A request failed before a source payload could be validated."""
+
+
 def fetch_text(url):
     req = Request(url, headers={'User-Agent':'Mozilla/5.0', 'Accept':'text/html,text/csv;q=0.9,*/*;q=0.8'})
-    with urlopen(req, timeout=30) as response:
-        if response.status != 200: raise ValueError('Source HTTP error')
-        return response.read(5_000_000).decode('utf-8')
+    try:
+        with urlopen(req, timeout=30) as response:
+            if response.status != 200:
+                raise SourceUnavailable(f'HTTP {response.status}')
+            body = response.read(5_000_001)
+    except (HTTPError, URLError, TimeoutError, ConnectionError, IncompleteRead) as error:
+        raise SourceUnavailable(f'{type(error).__name__}: {error}') from error
+    if len(body) > 5_000_000:
+        raise ValueError('Source payload exceeds size limit')
+    # Decoding/schema errors are not availability failures.
+    return body.decode('utf-8')
+
+
+def validate_snapshot(payload, now):
+    """Reject invalid retained data before fetching, and candidates before writing."""
+    if not isinstance(payload, dict) or type(payload.get('schemaVersion')) is not int or payload.get('schemaVersion') != 1:
+        raise ValueError('Invalid macro snapshot schema')
+    rows = payload.get('rows')
+    if not isinstance(rows, list) or len(rows) != len(INVESTING) + len(FRED):
+        raise ValueError('Incomplete macro snapshot')
+    ids = [row.get('id') if isinstance(row, dict) else None for row in rows]
+    if len(set(ids)) != len(ids) or set(ids) != set(INVESTING) | set(FRED):
+        raise ValueError('Unexpected or duplicate macro IDs')
+
+    def timestamp(value):
+        if not isinstance(value, str):
+            raise ValueError('Missing macro timestamp')
+        result = datetime.fromisoformat(value.replace('Z', '+00:00'))
+        if result.tzinfo is None or result.year < 2000 or result > now + timedelta(minutes=5):
+            raise ValueError('Invalid/future macro timestamp')
+        return result
+
+    timestamp(payload.get('updatedAt'))
+    if any(field in payload for field in ('collectionStatus', 'verifiedCount', 'staleCount')):
+        good = sum(row.get('status') == 'verified' for row in rows)
+        expected_status = 'complete' if good == len(rows) else 'partial' if good else 'source_unavailable'
+        if (payload.get('collectionStatus') != expected_status or type(payload.get('verifiedCount')) is not int
+                or payload['verifiedCount'] != good or type(payload.get('staleCount')) is not int
+                or payload['staleCount'] != len(rows)-good):
+            raise ValueError('Inconsistent macro collection status')
+    for row in rows:
+        key = row['id']
+        if row.get('status') not in ('verified', 'stale'):
+            raise ValueError(f'{key}: no verified observation available to retain')
+        if type(row.get('value')) not in (int, float):
+            raise ValueError(f'{key}: quote must be a JSON number')
+        numeric(row['value'])
+        observed_date = date.fromisoformat(row['asOf'])
+        retrieved = timestamp(row.get('retrievedAt'))
+        if observed_date.year < 2000 or observed_date > retrieved.date():
+            raise ValueError(f'{key}: invalid observation date')
+        if key in INVESTING:
+            spec = INVESTING[key]
+            expected = ('Investing.com', 'https://www.investing.com/'+spec['path'], spec['unit'], spec['precision'])
+            observed = timestamp(row.get('observedAt'))
+            source = row.get('sourceObservation', {})
+            if (observed.date() != observed_date or observed > retrieved + timedelta(minutes=5)
+                    or str(source.get('instrumentId')) != spec['instrumentId']
+                    or type(source.get('last')) not in (int, float) or source.get('last') != row['value']
+                    or not isinstance(source.get('isOpen'), bool)
+                    or abs(datetime.fromtimestamp(float(source['lastUpdateTime'])/1000, timezone.utc).timestamp()-observed.timestamp()) >= 1):
+                raise ValueError(f'{key}: inconsistent source observation')
+        else:
+            _, unit, precision = FRED[key]
+            expected = ('FRED', 'https://fred.stlouisfed.org/series/'+key, unit, precision)
+            if row.get('observedAt') is not None or row.get('frequency') != ('monthly' if key in MONTHLY else 'daily'):
+                raise ValueError(f'{key}: invalid FRED observation metadata')
+            if key in MONTHLY and observed_date.day != 1:
+                raise ValueError(f'{key}: invalid observation month')
+            if key in MONEY_SUPPLY:
+                released = timestamp(row.get('sourceUpdatedAt'))
+                if released.date() < observed_date or released > retrieved + timedelta(minutes=5) or row.get('seasonalAdjustment') != 'seasonally_adjusted':
+                    raise ValueError(f'{key}: invalid FRED release metadata')
+        actual = tuple(row.get(field) for field in ('sourceName','sourceUrl','unit','precision'))
+        if actual != expected or type(row.get('precision')) is not int:
+            raise ValueError(f'{key}: source identity or unit changed')
+        if row['status'] == 'stale':
+            if timestamp(row.get('lastAttemptAt')) < retrieved or not row.get('error'):
+                raise ValueError(f'{key}: missing stale collection metadata')
+    return payload
 
 def parse_investing(html, key, now):
     spec = INVESTING[key]
@@ -111,11 +194,13 @@ def preserve_failure(previous, key, error, now):
             label,unit,precision=FRED[key];sourceName='FRED';sourceUrl='https://fred.stlouisfed.org/series/'+key
         result={'id':key,'quoteLabel':label,'unit':unit,'precision':precision,'value':None,'asOf':None,'observedAt':None,'retrievedAt':None,'sourceName':sourceName,'sourceUrl':sourceUrl,'status':'unavailable'}
     result['lastAttemptAt']=iso(now)
-    result['error']='원천 자료 재확인 실패: '+str(error)[:180]
+    result['error']='원천 자료 재확인 실패: '+' '.join(str(error).split())[:180]
     return result
 
 def collect(previous=None, fetcher=fetch_text, now=None):
     now=now or datetime.now(timezone.utc)
+    if previous is not None:
+        validate_snapshot(previous, now)
     old={r['id']:r for r in (previous or {}).get('rows',[])}
     def one(key):
         try:
@@ -131,21 +216,33 @@ def collect(previous=None, fetcher=fetch_text, now=None):
             if prior and prior.get('asOf') and row['asOf'] < prior['asOf']: raise ValueError('Source observation regressed')
             if prior and prior.get('observedAt') and row.get('observedAt') and row['observedAt'] < prior['observedAt']: raise ValueError('Source timestamp regressed')
             return row
+        except SourceUnavailable as error:
+            if key not in old:
+                raise SourceUnavailable(f'{key}: no prior verified observation; {error}') from error
+            return preserve_failure(old[key],key,error,now)
         except Exception as error:
-            return preserve_failure(old.get(key),key,error,now)
+            # Add the series identity, but never downgrade invalid data to stale success.
+            raise ValueError(f'{key}: source validation failed ({type(error).__name__}): {error}') from error
     with ThreadPoolExecutor(max_workers=4) as pool:
         rows=list(pool.map(one,[*INVESTING,*FRED]))
-    return {'schemaVersion':1,'updatedAt':iso(now),'note':'서버 수집 스냅샷이며 실시간 스트리밍이 아닙니다. 각 값의 관측시각과 원천을 확인하세요. 선물·CFD와 현물, DXY와 연준 광의 달러지수는 서로 다른 지표입니다.','rows':rows}
+    good = sum(row['status'] == 'verified' for row in rows)
+    payload = {'schemaVersion':1,'updatedAt':iso(now),'collectionStatus':('complete' if good == len(rows) else 'partial' if good else 'source_unavailable'),'verifiedCount':good,'staleCount':len(rows)-good,'note':'서버 수집 스냅샷이며 실시간 스트리밍이 아닙니다. 각 값의 관측시각과 원천을 확인하세요. 선물·CFD와 현물, DXY와 연준 광의 달러지수는 서로 다른 지표입니다.','rows':rows}
+    return validate_snapshot(payload, now)
 
-def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--output',default=str(ROOT/'data/macro_quotes.json'));args=parser.parse_args()
+def main(argv=None):
+    parser=argparse.ArgumentParser();parser.add_argument('--output',default=str(ROOT/'data/macro_quotes.json'));args=parser.parse_args(argv)
     path=Path(args.output)
     previous=json.loads(path.read_text()) if path.exists() else None
     payload=collect(previous)
     path.parent.mkdir(parents=True,exist_ok=True)
     temp=path.with_suffix('.tmp');temp.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n');temp.replace(path)
     good=sum(r['status']=='verified' for r in payload['rows'])
-    print(f'Macro observations verified: {good}/{len(payload["rows"])}; prior observations retained on source errors')
-    return 0 if good else 1
+    print(f'Macro collection status: {payload["collectionStatus"]}; verified: {good}/{len(payload["rows"])}; retained: {payload["staleCount"]}')
+    for row in payload['rows']:
+        if row['status'] == 'stale':
+            print(f'MACRO_SOURCE_UNAVAILABLE {row["id"]}: {row["error"]}; retained asOf={row["asOf"]}')
+    if good < len(payload['rows']):
+        print('WARNING: macro refresh incomplete; validated prior source dates retained. Independent panels still require publication validation.')
+    return 0
 
 if __name__=='__main__': raise SystemExit(main())
