@@ -1,6 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-25T08:58:16Z",
+  "updatedAt": "2026-10-26T23:09:54Z",
+  "collectionStatus": "source_unavailable",
+  "verifiedCount": 0,
+  "staleCount": 14,
   "note": "서버 수집 스냅샷이며 실시간 스트리밍이 아닙니다. 각 값의 관측시각과 원천을 확인하세요. 선물·CFD와 현물, DXY와 연준 광의 달러지수는 서로 다른 지표입니다.",
   "rows": [
     {
@@ -16,7 +19,7 @@
       "retrievedAt": "2026-10-25T07:29:44Z",
       "sourceName": "Investing.com",
       "sourceUrl": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield",
-      "status": "verified",
+      "status": "stale",
       "marketStatus": "closed",
       "isDelayed": false,
       "note": "Investing.com 시장 수익률. FRED 고정만기 수익률과 산출 기준·관측시각이 다릅니다.",
@@ -30,7 +33,9 @@
         "isOpen": false,
         "isDelayed": false,
         "exchange": "NYSE"
-      }
+      },
+      "lastAttemptAt": "2026-10-26T23:09:54Z",
+      "error": "원천 자료 재확인 실패: HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "id": "WTI_FUTURES",
@@ -45,7 +50,7 @@
       "retrievedAt": "2026-10-25T07:29:44Z",
       "sourceName": "Investing.com",
       "sourceUrl": "https://www.investing.com/commodities/crude-oil",
-      "status": "verified",
+      "status": "stale",
       "marketStatus": "closed",
       "isDelayed": false,
       "note": "Investing.com 선물 연계 CFD 호가. 거래소 확정 결제가격이나 아래 FRED WTI 현물가격이 아닙니다.",
@@ -59,7 +64,9 @@
         "isOpen": false,
         "isDelayed": false,
         "exchange": "ICE"
-      }
+      },
+      "lastAttemptAt": "2026-10-26T23:09:54Z",
+      "error": "원천 자료 재확인 실패: HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "id": "BRENT_FUTURES",
@@ -74,7 +81,7 @@
       "retrievedAt": "2026-10-25T07:29:44Z",
       "sourceName": "Investing.com",
       "sourceUrl": "https://www.investing.com/commodities/brent-oil",
-      "status": "verified",
+      "status": "stale",
       "marketStatus": "closed",
       "isDelayed": false,
       "note": "Investing.com 선물 연계 CFD 호가. 거래소 확정 결제가격이나 아래 FRED Brent 현물가격이 아닙니다.",
@@ -88,7 +95,9 @@
         "isOpen": false,
         "isDelayed": false,
         "exchange": "ICE"
-      }
+      },
+      "lastAttemptAt": "2026-10-26T23:09:54Z",
+      "error": "원천 자료 재확인 실패: HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "id": "DXY",
@@ -103,7 +112,7 @@
       "retrievedAt": "2026-10-25T07:29:44Z",
       "sourceName": "Investing.com",
       "sourceUrl": "https://www.investing.com/indices/usdollar",
-      "status": "verified",
+      "status": "stale",
       "marketStatus": "closed",
       "isDelayed": false,
       "note": "Investing.com US Dollar Index CFD. 연준 광의 달러지수 및 달러인덱스 선물(DX)과 구분합니다.",
@@ -117,7 +126,9 @@
         "isOpen": false,
         "isDelayed": false,
         "exchange": "US Indexes"
-      }
+      },
+      "lastAttemptAt": "2026-10-26T23:09:54Z",
+      "error": "원천 자료 재확인 실패: HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "id": "USDJPY",
@@ -132,7 +143,7 @@
       "retrievedAt": "2026-10-25T07:29:44Z",
       "sourceName": "Investing.com",
       "sourceUrl": "https://www.investing.com/currencies/usd-jpy",
-      "status": "verified",
+      "status": "stale",
       "marketStatus": "closed",
       "isDelayed": false,
       "note": "1달러당 엔화. 역수인 JPY/USD와 다릅니다. FRED 환율과 관측시각이 다릅니다.",
@@ -146,7 +157,9 @@
         "isOpen": false,
         "isDelayed": false,
         "exchange": "Real-time Currencies"
-      }
+      },
+      "lastAttemptAt": "2026-10-26T23:09:54Z",
+      "error": "원천 자료 재확인 실패: HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "id": "USDKRW",
@@ -161,7 +174,7 @@
       "retrievedAt": "2026-10-25T07:29:44Z",
       "sourceName": "Investing.com",
       "sourceUrl": "https://www.investing.com/currencies/usd-krw",
-      "status": "verified",
+      "status": "stale",
       "marketStatus": "closed",
       "isDelayed": false,
       "note": "1달러당 원화. Investing.com 호가이며 서울 외환시장 공식 종가나 FRED 환율과 관측시각이 다를 수 있습니다.",
@@ -175,7 +188,9 @@
         "isOpen": false,
         "isDelayed": false,
         "exchange": "Real-time Currencies"
-      }
+      },
+      "lastAttemptAt": "2026-10-26T23:09:54Z",
+      "error": "원천 자료 재확인 실패: HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "id": "DGS10",
@@ -190,10 +205,12 @@
       "retrievedAt": "2026-10-25T07:29:44Z",
       "sourceName": "FRED",
       "sourceUrl": "https://fred.stlouisfed.org/series/DGS10",
-      "status": "verified",
+      "status": "stale",
       "marketStatus": null,
       "note": "차트와 같은 FRED 시계열의 최근 공표 관측값. 조회일과 관측일은 다릅니다.",
-      "frequency": "daily"
+      "frequency": "daily",
+      "lastAttemptAt": "2026-10-26T23:09:54Z",
+      "error": "원천 자료 재확인 실패: TimeoutError: The read operation timed out"
     },
     {
       "id": "HQMCB10YRP",
@@ -208,10 +225,12 @@
       "retrievedAt": "2026-10-25T07:29:44Z",
       "sourceName": "FRED",
       "sourceUrl": "https://fred.stlouisfed.org/series/HQMCB10YRP",
-      "status": "verified",
+      "status": "stale",
       "marketStatus": null,
       "note": "차트와 같은 FRED 시계열의 최근 공표 관측값. 조회일과 관측일은 다릅니다.",
-      "frequency": "monthly"
+      "frequency": "monthly",
+      "lastAttemptAt": "2026-10-26T23:09:54Z",
+      "error": "원천 자료 재확인 실패: TimeoutError: The read operation timed out"
     },
     {
       "id": "DCOILWTICO",
@@ -226,10 +245,12 @@
       "retrievedAt": "2026-10-25T07:29:44Z",
       "sourceName": "FRED",
       "sourceUrl": "https://fred.stlouisfed.org/series/DCOILWTICO",
-      "status": "verified",
+      "status": "stale",
       "marketStatus": null,
       "note": "차트와 같은 FRED 시계열의 최근 공표 관측값. 조회일과 관측일은 다릅니다.",
-      "frequency": "daily"
+      "frequency": "daily",
+      "lastAttemptAt": "2026-10-26T23:09:54Z",
+      "error": "원천 자료 재확인 실패: TimeoutError: The read operation timed out"
     },
     {
       "id": "DCOILBRENTEU",
@@ -244,46 +265,12 @@
       "retrievedAt": "2026-10-25T07:29:44Z",
       "sourceName": "FRED",
       "sourceUrl": "https://fred.stlouisfed.org/series/DCOILBRENTEU",
-      "status": "verified",
+      "status": "stale",
       "marketStatus": null,
       "note": "차트와 같은 FRED 시계열의 최근 공표 관측값. 조회일과 관측일은 다릅니다.",
-      "frequency": "daily"
-    },
-    {
-      "id": "DEXJPUS",
-      "quoteLabel": "달러/엔 · FRED",
-      "unit": "엔/달러",
-      "precision": 2,
-      "value": 158.0,
-      "asOf": "2026-10-16",
-      "observedAt": null,
-      "observationTimezone": null,
-      "sourceTimeText": "2026-10-16 관측 · 일중 시각 미제공",
-      "retrievedAt": "2026-10-25T07:29:44Z",
-      "sourceName": "FRED",
-      "sourceUrl": "https://fred.stlouisfed.org/series/DEXJPUS",
-      "status": "verified",
-      "marketStatus": null,
-      "note": "차트와 같은 FRED 시계열의 최근 공표 관측값. 조회일과 관측일은 다릅니다.",
-      "frequency": "daily"
-    },
-    {
-      "id": "DEXKOUS",
-      "quoteLabel": "달러/원 · FRED",
-      "unit": "원/달러",
-      "precision": 2,
-      "value": 1334.03,
-      "asOf": "2026-10-16",
-      "observedAt": null,
-      "observationTimezone": null,
-      "sourceTimeText": "2026-10-16 관측 · 일중 시각 미제공",
-      "retrievedAt": "2026-10-25T07:29:44Z",
-      "sourceName": "FRED",
-      "sourceUrl": "https://fred.stlouisfed.org/series/DEXKOUS",
-      "status": "verified",
-      "marketStatus": null,
-      "note": "차트와 같은 FRED 시계열의 최근 공표 관측값. 조회일과 관측일은 다릅니다.",
-      "frequency": "daily"
+      "frequency": "daily",
+      "lastAttemptAt": "2026-10-26T23:09:54Z",
+      "error": "원천 자료 재확인 실패: TimeoutError: The read operation timed out"
     },
     {
       "id": "M1SL",
@@ -299,11 +286,13 @@
       "retrievedAt": "2026-10-25T08:58:16Z",
       "sourceName": "FRED",
       "sourceUrl": "https://fred.stlouisfed.org/series/M1SL",
-      "status": "verified",
+      "status": "stale",
       "marketStatus": null,
       "note": "월별 계절조정 통화량. 관측월·FRED 갱신시각·조회시각은 서로 다르며 자료는 수정될 수 있습니다.",
       "sourceUpdatedAt": "2026-09-22T17:01:00Z",
-      "seasonalAdjustment": "seasonally_adjusted"
+      "seasonalAdjustment": "seasonally_adjusted",
+      "lastAttemptAt": "2026-10-26T23:09:54Z",
+      "error": "원천 자료 재확인 실패: TimeoutError: The read operation timed out"
     },
     {
       "id": "M2SL",
@@ -319,11 +308,53 @@
       "retrievedAt": "2026-10-25T08:58:16Z",
       "sourceName": "FRED",
       "sourceUrl": "https://fred.stlouisfed.org/series/M2SL",
-      "status": "verified",
+      "status": "stale",
       "marketStatus": null,
       "note": "월별 계절조정 통화량. 관측월·FRED 갱신시각·조회시각은 서로 다르며 자료는 수정될 수 있습니다.",
       "sourceUpdatedAt": "2026-09-22T17:01:00Z",
-      "seasonalAdjustment": "seasonally_adjusted"
+      "seasonalAdjustment": "seasonally_adjusted",
+      "lastAttemptAt": "2026-10-26T23:09:54Z",
+      "error": "원천 자료 재확인 실패: TimeoutError: The read operation timed out"
+    },
+    {
+      "id": "DEXJPUS",
+      "quoteLabel": "달러/엔 · FRED",
+      "unit": "엔/달러",
+      "precision": 2,
+      "value": 158.0,
+      "asOf": "2026-10-16",
+      "observedAt": null,
+      "observationTimezone": null,
+      "sourceTimeText": "2026-10-16 관측 · 일중 시각 미제공",
+      "retrievedAt": "2026-10-25T07:29:44Z",
+      "sourceName": "FRED",
+      "sourceUrl": "https://fred.stlouisfed.org/series/DEXJPUS",
+      "status": "stale",
+      "marketStatus": null,
+      "note": "차트와 같은 FRED 시계열의 최근 공표 관측값. 조회일과 관측일은 다릅니다.",
+      "frequency": "daily",
+      "lastAttemptAt": "2026-10-26T23:09:54Z",
+      "error": "원천 자료 재확인 실패: TimeoutError: The read operation timed out"
+    },
+    {
+      "id": "DEXKOUS",
+      "quoteLabel": "달러/원 · FRED",
+      "unit": "원/달러",
+      "precision": 2,
+      "value": 1334.03,
+      "asOf": "2026-10-16",
+      "observedAt": null,
+      "observationTimezone": null,
+      "sourceTimeText": "2026-10-16 관측 · 일중 시각 미제공",
+      "retrievedAt": "2026-10-25T07:29:44Z",
+      "sourceName": "FRED",
+      "sourceUrl": "https://fred.stlouisfed.org/series/DEXKOUS",
+      "status": "stale",
+      "marketStatus": null,
+      "note": "차트와 같은 FRED 시계열의 최근 공표 관측값. 조회일과 관측일은 다릅니다.",
+      "frequency": "daily",
+      "lastAttemptAt": "2026-10-26T23:09:54Z",
+      "error": "원천 자료 재확인 실패: TimeoutError: The read operation timed out"
     }
   ]
 }
