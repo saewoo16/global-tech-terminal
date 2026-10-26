@@ -1,0 +1,133 @@
+{
+  "asOf": "2026-10-25",
+  "checkedAt": "2026-10-25T00:38:43.386013+00:00",
+  "unit": "millions of reporting currency",
+  "baseCommit": "59e701a7cf2163e2ab3a568d09a1897202c00ab1",
+  "companies": {
+    "SIX:ABBN": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": true,
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "revenue": 9701,
+          "operatingIncome": 1846,
+          "sourceUrl": "https://attachment.news.eu.nasdaq.com/a432a6ff77b9f9e09c9fe0318fd0bbdee",
+          "sourceType": "filing",
+          "source": "ABB official Q3 2026 consolidated income statement, Notes 1 and 3",
+          "verifiedAt": "2026-10-25T00:38:43.386013+00:00",
+          "publishedAt": "2026-10-20",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "basis": "US GAAP continuing operations; Robotics excluded as discontinued operations",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Total revenues",
+              "rawValue": 9701,
+              "rawUnit": "millions USD"
+            },
+            "operatingIncome": {
+              "lineItem": "Income from operations",
+              "rawValue": 1846,
+              "rawUnit": "millions USD"
+            }
+          }
+        },
+        {
+          "date": "2026-06-30",
+          "periodStart": "2026-04-01",
+          "revenue": 9475,
+          "operatingIncome": 1585,
+          "sourceUrl": "https://attachment.news.eu.nasdaq.com/ae6ddc86c2f3dc2cfc71ccc2f903e17d0",
+          "sourceType": "filing",
+          "source": "ABB official Q2 2026 consolidated income statement, Notes 1 and 3",
+          "verifiedAt": "2026-10-25T00:38:43.386013+00:00",
+          "publishedAt": "2026-07-16",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "basis": "US GAAP continuing operations; Robotics excluded as discontinued operations",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Total revenues",
+              "rawValue": 9475,
+              "rawUnit": "millions USD"
+            },
+            "operatingIncome": {
+              "lineItem": "Income from operations",
+              "rawValue": 1585,
+              "rawUnit": "millions USD"
+            }
+          }
+        },
+        {
+          "date": "2026-03-31",
+          "periodStart": "2026-01-01",
+          "revenue": 8734,
+          "operatingIncome": 1780,
+          "sourceUrl": "https://www.abb.com/global/en/news/135137/q1-2026-results",
+          "sourceType": "filing",
+          "source": "ABB official Q1 2026 key figures; independently reconciled to Q2 six-month less Q2 standalone statement",
+          "verifiedAt": "2026-10-25T00:38:43.386013+00:00",
+          "publishedAt": "2026-04-22",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "basis": "US GAAP continuing operations; Robotics excluded as discontinued operations",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Total revenues",
+              "rawValue": 8734,
+              "rawUnit": "millions USD"
+            },
+            "operatingIncome": {
+              "lineItem": "Income from operations",
+              "rawValue": 1780,
+              "rawUnit": "millions USD"
+            }
+          },
+          "corroboration": {
+            "sourceUrl": "https://attachment.news.eu.nasdaq.com/ae6ddc86c2f3dc2cfc71ccc2f903e17d0",
+            "revenue": {
+              "sixMonths": 18209,
+              "secondQuarter": 9475,
+              "difference": 8734
+            },
+            "operatingIncome": {
+              "sixMonths": 3365,
+              "secondQuarter": 1585,
+              "difference": 1780
+            },
+            "note": "Standalone Q1 values are directly reported by issuer; subtraction is independent reconciliation, not arbitrary half-year division."
+          }
+        },
+        {
+          "date": "2025-12-31",
+          "periodStart": "2025-10-01",
+          "revenue": 9052,
+          "operatingIncome": 1505,
+          "sourceUrl": "https://library.e.abb.com/public/efa424a5e55545ef99275bfafc6ff638/ABB-Q4-2025-financial-information.pdf",
+          "sourceType": "filing",
+          "source": "ABB official Q4 2025 consolidated income statement, Notes 1 and 3",
+          "verifiedAt": "2026-10-25T00:38:43.386013+00:00",
+          "publishedAt": "2026-01-29",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "basis": "US GAAP continuing operations; Robotics excluded as discontinued operations",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Total revenues",
+              "rawValue": 9052,
+              "rawUnit": "millions USD"
+            },
+            "operatingIncome": {
+              "lineItem": "Income from operations",
+              "rawValue": 1505,
+              "rawUnit": "millions USD"
+            }
+          }
+        }
+      ],
+      "financialNote": "최근 4개 분기는 ABB 공식 US GAAP 계속영업 기준입니다. Robotics 중단영업을 제외하며 조정 Operational EBITA와 구분합니다. 분기 원문 수치를 사용했고 반기를 임의 분할하지 않았습니다."
+    }
+  }
+}

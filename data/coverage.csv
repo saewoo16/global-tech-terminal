@@ -1,7 +1,7 @@
 ﻿symbol,name,country,chart_points,latest_price,stale_price,price_age_calendar_days,verified_completed_session,behind_verified_session,market_cap,quarters,revenue_quarters,operating_quarters,complete_quarters,financial_status,latest_quarter,note
 EURONEXT:AI,Air Liquide,프랑스,1281,2026-10-26,False,0,2026-10-22,False,True,4,4,0,0,not_disclosed,2026-06-30,분기 매출은 공시되지만 영업이익은 반기·연간으로만 공시되어 분기 영업이익과 OPM은 N/A입니다.
 EURONEXT:ASM,ASM International,네덜란드,1281,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-EURONEXT:BESI,BESI,네덜란드,1281,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
+EURONEXT:BESI,BESI,네덜란드,1281,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-09-30,
 EURONEXT:DSY,Dassault Systèmes,프랑스,1281,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
 EURONEXT:SU,Schneider Electric,프랑스,1281,2026-10-26,False,0,2026-10-22,False,True,4,4,0,0,not_disclosed,2026-06-30,분기 매출은 공시되지만 영업이익은 반기·연간으로만 공시되어 분기 영업이익과 OPM은 N/A입니다.
 HKEX:1888,Kingboard Laminates,홍콩,1229,2026-10-26,False,0,2026-10-22,False,True,0,0,0,0,not_disclosed,,회사는 반기·연간 실적을 공시하며 독립 분기 매출·영업이익은 확인되지 않았습니다. 반기 수치를 임의로 분할하지 않습니다.
@@ -114,12 +114,12 @@ NASDAQ:TEAM,Atlassian,호주,1254,2026-10-26,False,0,2026-10-22,False,True,4,4,4
 NASDAQ:TER,Teradyne,미국,1254,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
 NASDAQ:TTD,The Trade Desk,미국,1254,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
 NASDAQ:TTMI,TTM Technologies,미국,1254,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-NASDAQ:TXN,Texas Instruments,미국,1254,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
+NASDAQ:TXN,Texas Instruments,미국,1254,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-09-30,Latest quarter independently checked against issuer statement. Existing earlier quarters retain their original sources and have not been independently reverified in this audit.
 NASDAQ:UCTT,Ultra Clean Holdings,미국,1254,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
 NASDAQ:VIAV,Viavi Solutions,미국,1254,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
 NASDAQ:VNET,VNET,중국,1254,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
 NASDAQ:WDAY,Workday,미국,1254,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-07-31,
-NASDAQ:WDC,Western Digital,미국,1254,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
+NASDAQ:WDC,Western Digital,미국,1254,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-10-02,"공식 분기 발표의 매출·영업이익, 단위 백만 USD. 실제 회계분기 종료일을 사용하며 조정 영업이익과 혼합하지 않습니다."
 NASDAQ:ZS,Zscaler,미국,1254,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-07-31,
 NYSE:ANET,Arista Networks,미국,1254,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
 NYSE:APD,Air Products,미국,1254,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
@@ -148,7 +148,7 @@ NYSE:ORCL,Oracle,미국,1254,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,co
 NYSE:P,Everpure (Pure Storage),미국,1254,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-08-02,Consolidated US GAAP revenue and operating income in millions of USD. Actual fiscal period ends; fiscal Q4 is derived from the annual result less standalone Q1–Q3.
 NYSE:RBLX,Roblox,미국,1254,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
 NYSE:ROK,Rockwell Automation,미국,1254,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-NYSE:SAP,SAP,독일,1254,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-09-30,
+NYSE:SAP,SAP,독일,1254,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-09-30,Latest quarter independently checked against issuer statement. Existing earlier quarters retain their original sources and have not been independently reverified in this audit.
 NYSE:SHOP,Shopify,캐나다,1254,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
 NYSE:SNOW,Snowflake,미국,1254,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-07-31,
 NYSE:STM,STMicroelectronics,스위스,1254,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
@@ -157,7 +157,7 @@ NYSE:TSM,Taiwan Semiconductor Manufacturing,대만,1254,2026-10-26,False,0,2026-
 NYSE:U,Unity Software,미국,1254,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
 NYSE:VEEV,Veeva Systems,미국,1254,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-07-31,
 NYSE:VRT,Vertiv,미국,1254,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-SIX:ABBN,ABB,스위스,1257,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-09-30,
+SIX:ABBN,ABB,스위스,1257,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-09-30,최근 4개 분기는 ABB 공식 US GAAP 계속영업 기준입니다. Robotics 중단영업을 제외하며 조정 Operational EBITA와 구분합니다. 분기 원문 수치를 사용했고 반기를 임의 분할하지 않았습니다.
 SIX:VACN,VAT Group,스위스,1257,2026-10-26,False,0,2026-10-22,False,True,4,4,0,0,not_disclosed,2026-09-30,분기 매출은 공시되지만 영업이익은 반기·연간으로만 공시되어 분기 영업이익과 OPM은 N/A입니다.
 SSE:600183,Shengyi Technology,중국,1212,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,누락 분기만 공식 공시로 보완. 중국 회계기준 연결 영업이익(营业利润)은 누적 9개월에서 상반기를 차감해 산출(1분기는 직접 공시).
 SSE:600584,JCET Group,중국,1212,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-09-30,
@@ -185,7 +185,7 @@ TSE:4901,Fujifilm,일본,1221,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,c
 TSE:5384,Fujimi,일본,1221,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
 TSE:5801,Furukawa Electric,일본,1221,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
 TSE:5802,Sumitomo Electric,일본,1221,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TSE:6146,DISCO Corporation,일본,1221,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
+TSE:6146,DISCO Corporation,일본,1221,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-09-30,
 TSE:6383,Daifuku,일본,1221,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
 TSE:6506,Yaskawa Electric,일본,1221,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-08-31,
 TSE:6525,Kokusai Electric,일본,731,2026-10-26,False,0,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,

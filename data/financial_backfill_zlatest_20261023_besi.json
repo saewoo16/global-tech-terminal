@@ -1,0 +1,110 @@
+{
+  "asOf": "2026-10-23",
+  "unit": "millions of reporting currency",
+  "auditScope": "Besi Q3 2026 actual single quarter plus Q1/Q2 source-precision corrections; no cumulative splitting.",
+  "companies": {
+    "EURONEXT:BESI": {
+      "reportingCurrency": "EUR",
+      "replaceQuarters": false,
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "revenue": 283.4,
+          "operatingIncome": 129.679,
+          "sourceUrl": "https://live.euronext.com/sites/default/files/company_press_releases/attachments/2026/10/22/Connect_pr-q3-2026.pdf?VersionId=3qVOy6CwpOwplXIyb8n5WUg_lX1M9CpV",
+          "sourceType": "filing",
+          "source": "Besi issuer earnings release, Consolidated Statements of Operations",
+          "verifiedAt": "2026-10-23",
+          "publishedAt": "2026-10-22",
+          "reportedCurrency": "EUR",
+          "unit": "millions of reporting currency",
+          "basis": "IFRS as adopted by EU; consolidated; unaudited",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Revenue",
+              "rawValue": 283400,
+              "rawUnit": "thousands EUR",
+              "conversion": "divide by 1000 to millions EUR",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30"
+            },
+            "operatingIncome": {
+              "lineItem": "Operating income",
+              "rawValue": 129679,
+              "rawUnit": "thousands EUR",
+              "conversion": "divide by 1000 to millions EUR",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30"
+            }
+          },
+          "sourcePage": 6
+        },
+        {
+          "date": "2026-06-30",
+          "periodStart": "2026-04-01",
+          "revenue": 249.866,
+          "operatingIncome": 108.786,
+          "sourceUrl": "https://www.globenewswire.com/news-release/2026/07/23/3331898/0/en/BE-Semiconductor-Industries-N-V-Announces-Q2-26-and-H1-26-Results.html",
+          "sourceType": "filing",
+          "source": "Besi issuer earnings release, Consolidated Statements of Operations",
+          "verifiedAt": "2026-10-23",
+          "publishedAt": "2026-07-23",
+          "reportedCurrency": "EUR",
+          "unit": "millions of reporting currency",
+          "basis": "IFRS as adopted by EU; consolidated; unaudited",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Revenue",
+              "rawValue": 249866,
+              "rawUnit": "thousands EUR",
+              "conversion": "divide by 1000 to millions EUR",
+              "periodStart": "2026-04-01",
+              "periodEnd": "2026-06-30"
+            },
+            "operatingIncome": {
+              "lineItem": "Operating income",
+              "rawValue": 108786,
+              "rawUnit": "thousands EUR",
+              "conversion": "divide by 1000 to millions EUR",
+              "periodStart": "2026-04-01",
+              "periodEnd": "2026-06-30"
+            }
+          }
+        },
+        {
+          "date": "2026-03-31",
+          "periodStart": "2026-01-01",
+          "revenue": 184.879,
+          "operatingIncome": 63.925,
+          "sourceUrl": "https://www.globenewswire.com/news-release/2026/04/23/3279584/0/en/be-semiconductor-industries-n-v-announces-q1-26-results.html",
+          "sourceType": "filing",
+          "source": "Besi issuer earnings release, Consolidated Statements of Operations",
+          "verifiedAt": "2026-10-23",
+          "publishedAt": "2026-04-23",
+          "reportedCurrency": "EUR",
+          "unit": "millions of reporting currency",
+          "basis": "IFRS as adopted by EU; consolidated; unaudited",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Revenue",
+              "rawValue": 184879,
+              "rawUnit": "thousands EUR",
+              "conversion": "divide by 1000 to millions EUR",
+              "periodStart": "2026-01-01",
+              "periodEnd": "2026-03-31"
+            },
+            "operatingIncome": {
+              "lineItem": "Operating income",
+              "rawValue": 63925,
+              "rawUnit": "thousands EUR",
+              "conversion": "divide by 1000 to millions EUR",
+              "periodStart": "2026-01-01",
+              "periodEnd": "2026-03-31"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

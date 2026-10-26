@@ -1,0 +1,133 @@
+{
+  "asOf": "2026-10-23",
+  "unit": "millions of reporting currency",
+  "auditScope": "DISCO four actual issuer-reported quarters; no cumulative-period splitting. Other companies unchanged.",
+  "companies": {
+    "TSE:6146": {
+      "reportingCurrency": "JPY",
+      "replaceQuarters": false,
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "revenue": 142750,
+          "operatingIncome": 67606,
+          "sourceUrl": "https://www.disco.co.jp/eg/ir/library/doc/fr/fr20261022.xlsx",
+          "sourceType": "filing",
+          "source": "DISCO official Consolidated Financial Information, Quarterly worksheet",
+          "verifiedAt": "2026-10-23",
+          "publishedAt": "2026-10-22",
+          "reportedCurrency": "JPY",
+          "unit": "millions of reporting currency",
+          "basis": "Japan GAAP consolidated; issuer-reported single quarter",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Net Sales",
+              "rawValue": 142750,
+              "rawUnit": "millions JPY",
+              "worksheet": "Quarterly",
+              "cell": "DC3"
+            },
+            "operatingIncome": {
+              "lineItem": "Operating Income",
+              "rawValue": 67606,
+              "rawUnit": "millions JPY",
+              "worksheet": "Quarterly",
+              "cell": "DC6"
+            }
+          }
+        },
+        {
+          "date": "2026-06-30",
+          "periodStart": "2026-04-01",
+          "revenue": 114308,
+          "operatingIncome": 49033,
+          "sourceUrl": "https://www.disco.co.jp/eg/ir/library/doc/fr/fr20261022.xlsx",
+          "sourceType": "filing",
+          "source": "DISCO official Consolidated Financial Information, Quarterly worksheet",
+          "verifiedAt": "2026-10-23",
+          "publishedAt": "2026-10-22",
+          "reportedCurrency": "JPY",
+          "unit": "millions of reporting currency",
+          "basis": "Japan GAAP consolidated; issuer-reported single quarter",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Net Sales",
+              "rawValue": 114308,
+              "rawUnit": "millions JPY",
+              "worksheet": "Quarterly",
+              "cell": "DB3"
+            },
+            "operatingIncome": {
+              "lineItem": "Operating Income",
+              "rawValue": 49033,
+              "rawUnit": "millions JPY",
+              "worksheet": "Quarterly",
+              "cell": "DB6"
+            }
+          }
+        },
+        {
+          "date": "2026-03-31",
+          "periodStart": "2026-01-01",
+          "revenue": 133060,
+          "operatingIncome": 58777,
+          "sourceUrl": "https://www.disco.co.jp/eg/ir/library/doc/fr/fr20261022.xlsx",
+          "sourceType": "filing",
+          "source": "DISCO official Consolidated Financial Information, Quarterly worksheet",
+          "verifiedAt": "2026-10-23",
+          "publishedAt": "2026-10-22",
+          "reportedCurrency": "JPY",
+          "unit": "millions of reporting currency",
+          "basis": "Japan GAAP consolidated; issuer-reported single quarter",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Net Sales",
+              "rawValue": 133060,
+              "rawUnit": "millions JPY",
+              "worksheet": "Quarterly",
+              "cell": "DA3"
+            },
+            "operatingIncome": {
+              "lineItem": "Operating Income",
+              "rawValue": 58777,
+              "rawUnit": "millions JPY",
+              "worksheet": "Quarterly",
+              "cell": "DA6"
+            }
+          }
+        },
+        {
+          "date": "2025-12-31",
+          "periodStart": "2025-10-01",
+          "revenue": 109291,
+          "operatingIncome": 47340,
+          "sourceUrl": "https://www.disco.co.jp/eg/ir/library/doc/fr/fr20261022.xlsx",
+          "sourceType": "filing",
+          "source": "DISCO official Consolidated Financial Information, Quarterly worksheet",
+          "verifiedAt": "2026-10-23",
+          "publishedAt": "2026-10-22",
+          "reportedCurrency": "JPY",
+          "unit": "millions of reporting currency",
+          "basis": "Japan GAAP consolidated; issuer-reported single quarter",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Net Sales",
+              "rawValue": 109291,
+              "rawUnit": "millions JPY",
+              "worksheet": "Quarterly",
+              "cell": "CZ3"
+            },
+            "operatingIncome": {
+              "lineItem": "Operating Income",
+              "rawValue": 47340,
+              "rawUnit": "millions JPY",
+              "worksheet": "Quarterly",
+              "cell": "CZ6"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

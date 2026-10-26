@@ -1,0 +1,75 @@
+{
+  "asOf": "2026-10-24",
+  "unit": "millions of reporting currency",
+  "auditScope": "Read-only candidate; only three months ended 2026-09-30 verified. Not a four-quarter audit. Do not apply ABB pending comparable historical continuing-operation values. No market-analysis changes.",
+  "baseCommit": "59e701a7cf2163e2ab3a568d09a1897202c00ab1",
+  "checkedAt": "2026-10-24T00:52:07.903159+00:00",
+  "companies": {
+    "NASDAQ:TXN": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": false,
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "revenue": 6055,
+          "operatingIncome": 2874,
+          "sourceUrl": "https://investor.ti.com/news-releases/news-release-details/ti-reports-third-quarter-2026-financial-results-and-shareholder",
+          "sourceType": "filing",
+          "source": "Texas Instruments official Q3 2026 consolidated statements of income",
+          "verifiedAt": "2026-10-24T00:52:07.903159+00:00",
+          "publishedAt": "2026-10-21",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "basis": "US GAAP consolidated; unaudited",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Revenue",
+              "rawValue": 6055,
+              "rawUnit": "millions USD"
+            },
+            "operatingIncome": {
+              "lineItem": "Operating profit",
+              "rawValue": 2874,
+              "rawUnit": "millions USD"
+            }
+          }
+        }
+      ],
+      "financialNote": "Latest quarter independently checked against issuer statement. Existing earlier quarters retain their original sources and have not been independently reverified in this audit."
+    },
+    "NYSE:SAP": {
+      "reportingCurrency": "EUR",
+      "replaceQuarters": false,
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "revenue": 10270,
+          "operatingIncome": 2930,
+          "sourceUrl": "https://www.sap.com/docs/download/investors/2026/sap-2026-q3-statement.pdf",
+          "sourceType": "filing",
+          "source": "SAP official Q3 2026 statement, three-month income statement",
+          "verifiedAt": "2026-10-24T00:52:07.903159+00:00",
+          "publishedAt": "2026-10-21",
+          "reportedCurrency": "EUR",
+          "unit": "millions of reporting currency",
+          "basis": "IFRS consolidated; preliminary and unaudited",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Total revenue",
+              "rawValue": 10270,
+              "rawUnit": "millions EUR"
+            },
+            "operatingIncome": {
+              "lineItem": "Operating profit (loss)",
+              "rawValue": 2930,
+              "rawUnit": "millions EUR"
+            }
+          }
+        }
+      ],
+      "financialNote": "Latest quarter independently checked against issuer statement. Existing earlier quarters retain their original sources and have not been independently reverified in this audit."
+    }
+  }
+}

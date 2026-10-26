@@ -1,0 +1,118 @@
+{
+  "asOf": "2026-10-23",
+  "unit": "millions of reporting currency",
+  "auditScope": "WDC latest four actually reported fiscal quarters only. Replace aggregator-normalized dates and non-GAAP-incompatible OP with issuer GAAP operating income; preserve all prices, capitalization and market analysis.",
+  "companies": {
+    "NASDAQ:WDC": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": true,
+      "quarters": [
+        {
+          "date": "2026-10-02",
+          "periodStart": "2026-07-04",
+          "revenue": 4381,
+          "operatingIncome": 2046,
+          "sourceUrl": "https://investor.wdc.com/node/28921/pdf",
+          "sourceType": "filing",
+          "source": "Western Digital official quarterly earnings release; consolidated statements of operations",
+          "verifiedAt": "2026-10-23",
+          "publishedAt": "2026-10-22",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "basis": "US GAAP consolidated; unaudited",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Revenue, net",
+              "rawValue": 4381,
+              "rawUnit": "millions USD"
+            },
+            "operatingIncome": {
+              "lineItem": "Operating income",
+              "rawValue": 2046,
+              "rawUnit": "millions USD"
+            }
+          }
+        },
+        {
+          "date": "2026-07-03",
+          "periodStart": "2026-04-04",
+          "revenue": 3747,
+          "operatingIncome": 1563,
+          "sourceUrl": "https://investor.wdc.com/node/28586/pdf",
+          "sourceType": "filing",
+          "source": "Western Digital official quarterly earnings release; consolidated statements of operations",
+          "verifiedAt": "2026-10-23",
+          "publishedAt": "2026-08-05",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "basis": "US GAAP consolidated; unaudited",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Revenue, net",
+              "rawValue": 3747,
+              "rawUnit": "millions USD"
+            },
+            "operatingIncome": {
+              "lineItem": "Operating income",
+              "rawValue": 1563,
+              "rawUnit": "millions USD"
+            }
+          }
+        },
+        {
+          "date": "2026-04-03",
+          "periodStart": "2026-01-03",
+          "revenue": 3337,
+          "operatingIncome": 1190,
+          "sourceUrl": "https://investor.wdc.com/news-releases/news-release-details/wd-reports-fiscal-third-quarter-2026-financial-results",
+          "sourceType": "filing",
+          "source": "Western Digital official quarterly earnings release; consolidated statements of operations",
+          "verifiedAt": "2026-10-23",
+          "publishedAt": "2026-04-30",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "basis": "US GAAP consolidated; unaudited",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Revenue, net",
+              "rawValue": 3337,
+              "rawUnit": "millions USD"
+            },
+            "operatingIncome": {
+              "lineItem": "Operating income",
+              "rawValue": 1190,
+              "rawUnit": "millions USD"
+            }
+          }
+        },
+        {
+          "date": "2026-01-02",
+          "periodStart": "2025-10-04",
+          "revenue": 3017,
+          "operatingIncome": 908,
+          "sourceUrl": "https://investor.wdc.com/news-releases/news-release-details/western-digital-reports-fiscal-second-quarter-2026-financial",
+          "sourceType": "filing",
+          "source": "Western Digital official quarterly earnings release; consolidated statements of operations",
+          "verifiedAt": "2026-10-23",
+          "publishedAt": "2026-01-29",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "basis": "US GAAP consolidated; unaudited",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Revenue, net",
+              "rawValue": 3017,
+              "rawUnit": "millions USD"
+            },
+            "operatingIncome": {
+              "lineItem": "Operating income",
+              "rawValue": 908,
+              "rawUnit": "millions USD"
+            }
+          }
+        }
+      ],
+      "financialNote": "공식 분기 발표의 매출·영업이익, 단위 백만 USD. 실제 회계분기 종료일을 사용하며 조정 영업이익과 혼합하지 않습니다."
+    }
+  }
+}
