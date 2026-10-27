@@ -1,0 +1,915 @@
+{
+  "cutoffCheck": {
+    "reportCutoffAt": "2026-10-28T07:00:00+09:00",
+    "checkStartedAt": "2026-10-27T22:00:00.000126+00:00",
+    "completedAt": "2026-10-27T22:00:36.641515+00:00",
+    "calendar": {
+      "url": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-27",
+      "observedAt": "2026-10-27T22:00:03.850008+00:00",
+      "added": [],
+      "removed": [],
+      "count": 170,
+      "eligibleSp500Count": 44,
+      "eligibleSp500Tickers": [
+        "ACGL",
+        "AMT",
+        "BA",
+        "BKR",
+        "BXP",
+        "CMS",
+        "CNC",
+        "CNP",
+        "CSGP",
+        "ECL",
+        "EQT",
+        "ESS",
+        "EXE",
+        "EXR",
+        "FCX",
+        "FE",
+        "FFIV",
+        "GLW",
+        "HCA",
+        "HLT",
+        "HOOD",
+        "HUBB",
+        "IQV",
+        "ITW",
+        "IVZ",
+        "JCI",
+        "KO",
+        "NXPI",
+        "OKE",
+        "PCAR",
+        "PNR",
+        "PPG",
+        "PYPL",
+        "RCL",
+        "SHW",
+        "SPGI",
+        "STX",
+        "TER",
+        "UHS",
+        "UPS",
+        "V",
+        "VTR",
+        "WM",
+        "XYL"
+      ],
+      "uncoveredSp500CalendarCandidates": []
+    },
+    "releaseChecks": [
+      {
+        "ticker": "UPS",
+        "url": "https://investors.ups.com/news-events/press-releases/detail/2172/ups-releases-3q-2026-earnings",
+        "startedAt": "2026-10-27T22:00:03.851106+00:00",
+        "observedAt": "2026-10-27T22:00:07.867410+00:00",
+        "httpStatus": "200",
+        "length": 32627,
+        "textSha256": "83eadd513ec1c1652a3e571fdc55082db2c98bdf0a2d239a1dae3a4cb5c66496",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "BA",
+        "url": "https://boeing.mediaroom.com/2026-10-27-Boeing-Reports-Third-Quarter-Results",
+        "startedAt": "2026-10-27T22:00:03.851667+00:00",
+        "observedAt": "2026-10-27T22:00:09.703327+00:00",
+        "httpStatus": "200",
+        "length": 27914,
+        "textSha256": "34d8b94890a29eaa58925230895394840ea2c87628eed28e18781b07ee678353",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "KO",
+        "url": "https://investors.coca-colacompany.com/filings-reports/all-sec-filings/content/0001628280-26-067403/a2026q3earningsreleaseex-9.htm",
+        "startedAt": "2026-10-27T22:00:03.851980+00:00",
+        "observedAt": "2026-10-27T22:00:09.153132+00:00",
+        "httpStatus": "200",
+        "length": 72201,
+        "textSha256": "fe23897ca982b28f3649170d42d7dfff31540e21a2b1e893ac4ef94b8edbccc1",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "PYPL",
+        "url": "https://www.sec.gov/Archives/edgar/data/1633917/000163391726000086/pypl3q-26earningsrelease.htm",
+        "startedAt": "2026-10-27T22:00:03.852668+00:00",
+        "observedAt": "2026-10-27T22:00:09.210338+00:00",
+        "httpStatus": "200",
+        "length": 38615,
+        "textSha256": "19622849552f6c4443443d8fb2b75f2d8f7a9d39c09ceddf82f0ce2c2acd96dc",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "GLW",
+        "url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000273/glw-20261027xex99xq32026.htm",
+        "startedAt": "2026-10-27T22:00:03.853358+00:00",
+        "observedAt": "2026-10-27T22:00:09.206472+00:00",
+        "httpStatus": "200",
+        "length": 46731,
+        "textSha256": "ef9c6bdbc9f57a7a3b5e1601087e77a77423e9981e021aacaf2b71eeff25c122",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "ECL",
+        "url": "https://www.sec.gov/Archives/edgar/data/31462/000162828026067418/ecl_ex99x1.htm",
+        "startedAt": "2026-10-27T22:00:03.853989+00:00",
+        "observedAt": "2026-10-27T22:00:09.198313+00:00",
+        "httpStatus": "200",
+        "length": 42160,
+        "textSha256": "403eccf7dc3b0d9f22aeaa77fefad6444faaf9ca6746696ab10e48a7e5d4a6cd",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "V",
+        "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000126/q42026earningsrelease.htm",
+        "startedAt": "2026-10-27T22:00:03.854559+00:00",
+        "observedAt": "2026-10-27T22:00:09.191140+00:00",
+        "httpStatus": "200",
+        "length": 33954,
+        "textSha256": "373695382bfb16eb7a1c4fd123ccffe498e2de57f8b7f2b9ef89edc5212c3122",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "STX",
+        "url": "https://investors.seagate.com/news/news-details/2026/Seagate-Technology-Reports-Fiscal-First-Quarter-2027-Financial-Results/default.aspx",
+        "startedAt": "2026-10-27T22:00:03.855028+00:00",
+        "observedAt": "2026-10-27T22:00:08.631267+00:00",
+        "httpStatus": "200",
+        "length": 29466,
+        "textSha256": "ffbb8cae16b4e779f45a456f3877ded1151aa2fecbdb3db071cf81acce402865",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "HOOD",
+        "url": "https://investors.robinhood.com/news-releases/news-release-details/robinhood-reports-third-quarter-2026-results",
+        "startedAt": "2026-10-27T22:00:07.868677+00:00",
+        "observedAt": "2026-10-27T22:00:11.986288+00:00",
+        "httpStatus": "200",
+        "length": 48034,
+        "textSha256": "d782e5c4e675abcadfce4f7b2d24cc862ddf8342fc90e2f2669aafb0a2bcc466",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "NXPI",
+        "url": "https://investors.nxp.com/news-releases/news-release-details/nxp-semiconductors-reports-third-quarter-2026-results",
+        "startedAt": "2026-10-27T22:00:08.632231+00:00",
+        "observedAt": "2026-10-27T22:00:12.854256+00:00",
+        "httpStatus": "200",
+        "length": 28465,
+        "textSha256": "7d32e91ca747d06323f09cfe26af9ae9e6bc5cc74b767ff5cec220e17521ed3c",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "TER",
+        "url": "https://investors.teradyne.com/news-events/press-releases/detail/455/teradyne-reports-third-quarter-2026-results",
+        "startedAt": "2026-10-27T22:00:09.154161+00:00",
+        "observedAt": "2026-10-27T22:00:14.712717+00:00",
+        "httpStatus": "200",
+        "length": 24660,
+        "textSha256": "865eb248b061495758db5fdc0b24b03e8ab7b1a52f3d3c2e0a0c37abb4208602",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "FFIV",
+        "url": "https://www.sec.gov/Archives/edgar/data/1048695/000104869526000074/ex991-q426earningsreleasef.htm",
+        "startedAt": "2026-10-27T22:00:09.192253+00:00",
+        "observedAt": "2026-10-27T22:00:15.361106+00:00",
+        "httpStatus": "200",
+        "length": 28284,
+        "textSha256": "a62ec43c786e00ce4f4341f138ef3e7b3e2a01c3b14dfddbb052194cb41563aa",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "AMT",
+        "url": "https://americantower.gcs-web.com/news-releases/news-release-details/american-tower-corporation-reports-third-quarter-2026-financial",
+        "startedAt": "2026-10-27T22:00:09.199583+00:00",
+        "observedAt": "2026-10-27T22:00:14.245734+00:00",
+        "httpStatus": "200",
+        "length": 55024,
+        "textSha256": "16334497dac159143c1f937bfc1055adbd1dd47e500f5f36784cd2aad675a524",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "CNC",
+        "url": "https://investors.centene.com/2026-10-27-CENTENE-CORPORATION-REPORTS-THIRD-QUARTER-2026-RESULTS",
+        "startedAt": "2026-10-27T22:00:09.207235+00:00",
+        "observedAt": "2026-10-27T22:00:13.842489+00:00",
+        "httpStatus": "200",
+        "length": 42145,
+        "textSha256": "dc2dc2a98d3a6eeb9a0af372769fa24146f236389daa15363263cc170a8989b6",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "CNP",
+        "url": "https://investors.centerpointenergy.com/news-releases/news-release-details/centerpoint-energy-reports-strong-q3-2026-results-raises",
+        "startedAt": "2026-10-27T22:00:09.210972+00:00",
+        "observedAt": "2026-10-27T22:00:13.536397+00:00",
+        "httpStatus": "200",
+        "length": 42272,
+        "textSha256": "c22fa086058218bd1fd5065b7a5a5838eb35bb19acd599d4ff8e9f8a237a93b7",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "CMS",
+        "url": "https://www.cmsenergy.com/investor-relations/news-releases/news-release-details/2026/CMS-Energy-Announces-Third-Quarter-Results-Reaffirms-2026-and-2027-Adjusted-EPS-Guidance/default.aspx",
+        "startedAt": "2026-10-27T22:00:09.704199+00:00",
+        "observedAt": "2026-10-27T22:00:15.320324+00:00",
+        "httpStatus": "200",
+        "length": 21405,
+        "textSha256": "aa6eb464083b99b4dda4042f8a6c1551830380d58d5d315a2f3f23c6d46dde1d",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": true,
+        "earningsContentChanged": false,
+        "comparisonNote": "변경은 IR 연락처 이메일의 보호문구/평문 렌더링 차이뿐이며 실적 본문 변경 없음."
+      },
+      {
+        "ticker": "FCX",
+        "url": "https://s22.q4cdn.com/529358580/files/doc_news/2026/FCX_261027_3Q_2026_Earnings_Release.pdf",
+        "startedAt": "2026-10-27T22:00:11.986879+00:00",
+        "observedAt": "2026-10-27T22:00:24.242590+00:00",
+        "httpStatus": "200",
+        "length": 133263,
+        "textSha256": "36049969d495d8b87e2175be9f36719ac358f695157bc9ae168ca1837e121db5",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "HCA",
+        "url": "https://investor.hcahealthcare.com/news/news-details/2026/HCA-Healthcare-Reports-Third-Quarter-2026-Results/default.aspx",
+        "startedAt": "2026-10-27T22:00:12.854782+00:00",
+        "observedAt": "2026-10-27T22:00:29.973558+00:00",
+        "httpStatus": "200",
+        "length": 32900,
+        "textSha256": "298cbd131cf6f5c088e5699c3d75a0b428aeff68fc352d9f2e7a353ac069d19c",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "SPGI",
+        "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404026000053/spgi3q2026-earningsrelease.htm",
+        "startedAt": "2026-10-27T22:00:13.537166+00:00",
+        "observedAt": "2026-10-27T22:00:15.266918+00:00",
+        "httpStatus": "200",
+        "length": 50607,
+        "textSha256": "1f381a475200591f526c0ca43317d4f43bb9b67cc24513c5b1e2ae77d1a6b2d5",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "HLT",
+        "url": "https://ir.hilton.com/news-events/investor-news/detail/419/hilton-reports-third-quarter-results",
+        "startedAt": "2026-10-27T22:00:13.843223+00:00",
+        "observedAt": "2026-10-27T22:00:23.259475+00:00",
+        "httpStatus": "200",
+        "length": 49803,
+        "textSha256": "c01b6ab0f7901959a777187d18bc479168dde3a89309364a277368d9515db523",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "ITW",
+        "url": "https://www.globenewswire.com/news-release/2026/10/27/3388906/31446/en/itw-reports-third-quarter-2026-results.html",
+        "startedAt": "2026-10-27T22:00:14.247396+00:00",
+        "observedAt": "2026-10-27T22:00:24.221365+00:00",
+        "httpStatus": "200",
+        "length": 21660,
+        "textSha256": "f66c37c5ef3364c9b4beb7e1f9c696b3786261f85764fb6f7d699d1e6bdc7bf1",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "PCAR",
+        "url": "https://www.businesswire.com/news/home/20261027887174/en/",
+        "startedAt": "2026-10-27T22:00:14.714041+00:00",
+        "observedAt": "2026-10-27T22:00:26.654317+00:00",
+        "httpStatus": "200",
+        "length": 20370,
+        "textSha256": "9b6c84146a078c53708af55011b7d91b8eddaa074cbf59e4016dfb0a4c49d15d",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "RCL",
+        "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488726000042/a2026q3earningsrelease.htm",
+        "startedAt": "2026-10-27T22:00:15.268892+00:00",
+        "observedAt": "2026-10-27T22:00:25.699457+00:00",
+        "httpStatus": "200",
+        "length": 40482,
+        "textSha256": "5d01849269a302f13db61dfa65288c6fe579d9a468ce6aabdd78927e54f5795a",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "SHW",
+        "url": "https://www.prnewswire.com/news-releases/the-sherwin-williams-company-reports-2026-third-quarter-financial-results-302920605.html",
+        "startedAt": "2026-10-27T22:00:15.320877+00:00",
+        "observedAt": "2026-10-27T22:00:27.130961+00:00",
+        "httpStatus": "200",
+        "length": 36581,
+        "textSha256": "87f54a02d9beb4e8195db000578852bedc276d8672a14d8dabe4eb5959db93aa",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "XYL",
+        "url": "https://xyleminc.gcs-web.com/news-releases/news-release-details/xylem-reports-third-quarter-2026-results-and-announces-strategic",
+        "startedAt": "2026-10-27T22:00:15.361514+00:00",
+        "observedAt": "2026-10-27T22:00:23.850547+00:00",
+        "httpStatus": "200",
+        "length": 29668,
+        "textSha256": "ba21c1027f95336751742f84be1f1504428b1950e6a5d79c26927243b759d99b",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "IVZ",
+        "url": "https://www.prnewswire.com/news-releases/invesco-reports-results-for-the-three-months-ended-september-30-2026-302920535.html",
+        "startedAt": "2026-10-27T22:00:23.262083+00:00",
+        "observedAt": "2026-10-27T22:00:27.138325+00:00",
+        "httpStatus": "200",
+        "length": 48275,
+        "textSha256": "9d621fc0aa73a188729edd4f15136e922002f3019f0e61a4e1fa66a4cf8a9282",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "JCI",
+        "url": "https://www.prnewswire.com/news-releases/johnson-controls-reports-q4-and-fy26-results-initiates-fy27-guidance-302920073.html",
+        "startedAt": "2026-10-27T22:00:23.851580+00:00",
+        "observedAt": "2026-10-27T22:00:27.153318+00:00",
+        "httpStatus": "200",
+        "length": 47838,
+        "textSha256": "50c21177cad5829447f16870a19594a9ac777202abdb473353320421d38635a6",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "IQV",
+        "url": "https://ir.iqvia.com/press-releases/press-release-details/2026/IQVIA-Reports-Third-Quarter-2026-Results/default.aspx",
+        "startedAt": "2026-10-27T22:00:24.221676+00:00",
+        "observedAt": "2026-10-27T22:00:26.989638+00:00",
+        "httpStatus": "200",
+        "length": 28357,
+        "textSha256": "30ec95940c97801062faf2c31ed4e3e68e196fb8963a288bcb110c99dec850be",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "HUBB",
+        "url": "https://hubbell.gcs-web.com/node/32291",
+        "startedAt": "2026-10-27T22:00:24.242994+00:00",
+        "observedAt": "2026-10-27T22:00:30.610953+00:00",
+        "httpStatus": "200",
+        "length": 38459,
+        "textSha256": "0632d2a8666b948b9f5f602a1719fe08313fe8c9e9cfd5f56e83ce321b109633",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "PNR",
+        "url": "https://investors.pentair.com/news-releases/news-release-details/pentair-reports-third-quarter-2026-results",
+        "startedAt": "2026-10-27T22:00:25.700238+00:00",
+        "observedAt": "2026-10-27T22:00:29.457507+00:00",
+        "httpStatus": "200",
+        "length": 23683,
+        "textSha256": "48a5d18416efdcc437a759c8b5fd8502393b9af52d3da54d49bcc941c5950d18",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "WM",
+        "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-third-quarter-2026-earnings",
+        "startedAt": "2026-10-27T22:00:26.654806+00:00",
+        "observedAt": "2026-10-27T22:00:30.182267+00:00",
+        "httpStatus": "200",
+        "length": 38734,
+        "textSha256": "7d09c1d99cf5add2f0b520be9bdeab75115977d50de355731e0c36edbd108384",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "OKE",
+        "url": "https://www.globenewswire.com/news-release/2026/10/27/3389643/0/en/oneok-announces-higher-third-quarter-2026-earnings-and-increases-2026-financial-guidance.html",
+        "startedAt": "2026-10-27T22:00:26.990654+00:00",
+        "observedAt": "2026-10-27T22:00:31.508747+00:00",
+        "httpStatus": "200",
+        "length": 27592,
+        "textSha256": "fbe784161476e12092c3859604ea5de635157e364f40d6da156d764f60ca1dbd",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "BKR",
+        "url": "https://investors.bakerhughes.com/news/press-releases/news-details/2026/Baker-Hughes-Announces-Third-Quarter-2026-Results/default.aspx",
+        "startedAt": "2026-10-27T22:00:27.131690+00:00",
+        "observedAt": "2026-10-27T22:00:33.073353+00:00",
+        "httpStatus": "200",
+        "length": 38231,
+        "textSha256": "fb6d70674e4059e696141de912ac4d190979c58e9e3b20f580f29b96c4efa779",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "VTR",
+        "url": "https://ir.ventasreit.com/news/news-details/2026/Ventas-Reports-2026-Third-Quarter-Results/default.aspx",
+        "startedAt": "2026-10-27T22:00:27.139949+00:00",
+        "observedAt": "2026-10-27T22:00:31.838653+00:00",
+        "httpStatus": "200",
+        "length": 49389,
+        "textSha256": "06c69a823638bffd8d0cca88912863bdad2a80c00a98cd213bc985cb2089a135",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "ACGL",
+        "url": "https://ir.archgroup.com/news/news-details/2026/Arch-Capital-Group-Ltd--Reports-2026-Third-Quarter-Results/default.aspx",
+        "startedAt": "2026-10-27T22:00:27.154492+00:00",
+        "observedAt": "2026-10-27T22:00:30.331731+00:00",
+        "httpStatus": "200",
+        "length": 39908,
+        "textSha256": "8da35bb3184a9db6f75863b7e4ecb55a4336fc45c913adb179b59584242a3425",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "EQT",
+        "url": "https://www.advfn.com/stock-market/NYSE/EQT/stock-news/99570484/eqt-reports-third-quarter-2026-results",
+        "startedAt": "2026-10-27T22:00:29.458757+00:00",
+        "observedAt": "2026-10-27T22:00:33.167290+00:00",
+        "httpStatus": "200",
+        "length": 58423,
+        "textSha256": "f3564637160da74241d54a75276057477a70720f1731826574991b5c184225da",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": true,
+        "earningsContentChanged": false,
+        "comparisonNote": "변경은 사이트 동적 지수·시간외 표시시각·광고·최근 종목 목록뿐이며 회사 실적 본문 변경 없음."
+      },
+      {
+        "ticker": "EXR",
+        "url": "https://www.prnewswire.com/news-releases/extra-space-storage-inc-reports-2026-third-quarter-results-302921164.html",
+        "startedAt": "2026-10-27T22:00:29.974598+00:00",
+        "observedAt": "2026-10-27T22:00:33.267298+00:00",
+        "httpStatus": "200",
+        "length": 46329,
+        "textSha256": "6d6c5b5b509a5d8fceeffa2c8ee7c8771119f360b8ea47e7ab913accc7530069",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "FE",
+        "url": "https://www.prnewswire.com/news-releases/firstenergy-delivers-strong-third-quarter-results-builds-momentum-for-long-term-growth-302921228.html",
+        "startedAt": "2026-10-27T22:00:30.183491+00:00",
+        "observedAt": "2026-10-27T22:00:33.260868+00:00",
+        "httpStatus": "200",
+        "length": 27770,
+        "textSha256": "2d7699b0457563db16caa4730d9a1c7782af013b484099309aee7455a7562ad9",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "PPG",
+        "url": "https://investor.ppg.com/news/news-details/2026/PPG-reports-record-third-quarter-2026-EPS-and-raises-midpoint-of-full-year-EPS-guidance/default.aspx",
+        "startedAt": "2026-10-27T22:00:30.332979+00:00",
+        "observedAt": "2026-10-27T22:00:35.037349+00:00",
+        "httpStatus": "200",
+        "length": 28367,
+        "textSha256": "b6bb6f0693711fb22186ca242500af51d6a34094c5d98ad2d3968e133ae879a8",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "EXE",
+        "url": "https://investors.expandenergy.com/news-releases/news-release-details/expand-energy-corporation-reports-third-quarter-2026-results",
+        "startedAt": "2026-10-27T22:00:30.611644+00:00",
+        "observedAt": "2026-10-27T22:00:33.936384+00:00",
+        "httpStatus": "200",
+        "length": 35017,
+        "textSha256": "0f6d7c246d237b18c4293eff47476aaa635d76ca8d23df7d2411b04e1ee87011",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "ESS",
+        "url": "https://www.marketscreener.com/news/essex-announces-third-quarter-2026-results-and-raises-full-year-2026-guidance-ce785cddd188f020",
+        "startedAt": "2026-10-27T22:00:31.509032+00:00",
+        "observedAt": "2026-10-27T22:00:35.555043+00:00",
+        "httpStatus": "200",
+        "length": 35056,
+        "textSha256": "181c48cc99fad2aa7eeba514a05539fcd7e52c329ab963dbb539a1d9d95895e4",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": true,
+        "earningsContentChanged": false,
+        "comparisonNote": "변경은 사이트 세션 토큰·메뉴·광고뿐이며 회사 실적 본문 변경 없음."
+      },
+      {
+        "ticker": "CSGP",
+        "url": "https://investors.costargroup.com/news-releases/news-release-details/costar-group-reports-record-third-quarter-revenue-952-million",
+        "startedAt": "2026-10-27T22:00:31.839832+00:00",
+        "observedAt": "2026-10-27T22:00:35.071664+00:00",
+        "httpStatus": "200",
+        "length": 35538,
+        "textSha256": "91c00c66ebd908118f7548d427e2c59cc24543d61e5f3335cff9028fd0d0a639",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "UHS",
+        "url": "https://ir.uhs.com/node/20916/pdf",
+        "startedAt": "2026-10-27T22:00:33.073807+00:00",
+        "observedAt": "2026-10-27T22:00:36.380053+00:00",
+        "httpStatus": "200",
+        "length": 46509,
+        "textSha256": "506d4c07986367a9e4428d480fb19f19bb2d0170ace92a4fb9de9fe4a81fa585",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      },
+      {
+        "ticker": "BXP",
+        "url": "https://investors.bxp.com/news-releases/news-release-details/bxp-announces-third-quarter-2026-results",
+        "startedAt": "2026-10-27T22:00:33.168461+00:00",
+        "observedAt": "2026-10-27T22:00:36.636231+00:00",
+        "httpStatus": "200",
+        "length": 25818,
+        "textSha256": "a111fd5742301691d8d58896d669ed8030df51bd9cd95ca1ceed4ce874c401b5",
+        "releaseYearPresent": true,
+        "error": "",
+        "textChanged": false,
+        "earningsContentChanged": false,
+        "comparisonNote": "정규화 본문 SHA256 동일."
+      }
+    ],
+    "limitations": [
+      "기존 44개 후보 발표 원문의 재조회 및 Nasdaq 캘린더 대조이며 모든 IR 목록·SEC 정정공시 전수 검색은 아니다.",
+      "회사 발표 재배포 원문 포함. 기존 대상 밖 신규 발표는 캘린더 신규 후보로 확인한 범위에 한정한다.",
+      "원문 재조회 실패를 신규 발표 없음으로 취급하지 않는다."
+    ],
+    "diffReviewedAt": "2026-10-27T22:00:59.243050+00:00",
+    "summary": "07:00 이후 실제 재조회에서 기존 44개 실적 원문 모두 HTTP200, 실적 본문 수정 없음. Nasdaq 170개 일정 후보 추가·삭제 없음."
+  },
+  "pmCutoffCheck": {
+    "reportCutoffAt": "2026-10-28T07:00:00+09:00",
+    "checks": [
+      {
+        "ticker": "V",
+        "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000126/q42026earningsrelease.htm",
+        "observedAt": "2026-10-27T22:00:22.707971+00:00",
+        "requestedAt": "2026-10-27T22:00:16.879810+00:00",
+        "httpStatus": 200,
+        "textSame": true,
+        "sha256": "1e63f4a0ee8cf66aadb1e5c2f84375c468180956018b2e8fe61a67d0af9a6a3f",
+        "containsActualDate": true
+      },
+      {
+        "ticker": "STX",
+        "url": "https://investors.seagate.com/news/news-details/2026/Seagate-Technology-Reports-Fiscal-First-Quarter-2027-Financial-Results/default.aspx",
+        "observedAt": "2026-10-27T22:00:21.184781+00:00",
+        "requestedAt": "2026-10-27T22:00:16.880741+00:00",
+        "httpStatus": 200,
+        "textSame": true,
+        "sha256": "99fa5c3bd01ca5392a0092c161877eba24d61b19b488f2c7aee02567c186566d",
+        "containsActualDate": true
+      },
+      {
+        "ticker": "HOOD",
+        "url": "https://investors.robinhood.com/news-releases/news-release-details/robinhood-reports-third-quarter-2026-results",
+        "observedAt": "2026-10-27T22:00:21.838989+00:00",
+        "requestedAt": "2026-10-27T22:00:16.881280+00:00",
+        "httpStatus": 200,
+        "textSame": true,
+        "sha256": "f57eba8150cbe7cd0764097c3ae19fe77a303524043bbf86d03eb5758dc18a5c",
+        "containsActualDate": true
+      },
+      {
+        "ticker": "NXPI",
+        "url": "https://investors.nxp.com/news-releases/news-release-details/nxp-semiconductors-reports-third-quarter-2026-results",
+        "observedAt": "2026-10-27T22:00:20.997719+00:00",
+        "requestedAt": "2026-10-27T22:00:16.881883+00:00",
+        "httpStatus": 200,
+        "textSame": true,
+        "sha256": "f42beb848db7c4b1494735cc39fee7b33e59d6499814c3c42f6e890872e8d26e",
+        "containsActualDate": true
+      },
+      {
+        "ticker": "TER",
+        "url": "https://investors.teradyne.com/news-events/press-releases/detail/455/teradyne-reports-third-quarter-2026-results",
+        "observedAt": "2026-10-27T22:00:21.690649+00:00",
+        "requestedAt": "2026-10-27T22:00:16.882703+00:00",
+        "httpStatus": 200,
+        "textSame": true,
+        "sha256": "51b56a4d7604b94a9e8ce5a391ecc28a1100c387726a3233ad8a154d76ab8672",
+        "containsActualDate": true
+      },
+      {
+        "ticker": "FFIV",
+        "url": "https://www.sec.gov/Archives/edgar/data/1048695/000104869526000074/ex991-q426earningsreleasef.htm",
+        "observedAt": "2026-10-27T22:00:22.695016+00:00",
+        "requestedAt": "2026-10-27T22:00:16.883507+00:00",
+        "httpStatus": 200,
+        "textSame": true,
+        "sha256": "ae5c9ce40b34c63a2e357c7219429b75e794c62ba375c4e1a3b21c3797e5510b",
+        "containsActualDate": true
+      }
+    ]
+  },
+  "topMarketCapChecks": {
+    "sources": [
+      {
+        "id": "earn_20261027_top10",
+        "title": "StockTitan 미국 상장 시가총액 순위 ·10/27 실제기준",
+        "url": "https://www.stocktitan.net/rankings/companies-market-cap",
+        "retrievedAt": "2026-10-27T21:45:02.023855+00:00",
+        "note": "미국상장·OTC/ADR 포함; 같은 CIK 대표주식종류 하나, 종가 확정 시총 전수독립검증 아님."
+      },
+      {
+        "id": "earn_20261027_topcheck_NVDA",
+        "title": "NVDA 공식 IR 발표일 확인",
+        "url": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/default.aspx",
+        "retrievedAt": "2026-10-27T21:47:12.350284+00:00",
+        "note": "최근 실적 FY2027 Q2, 당일 신규 발표는 확인하지 못함"
+      },
+      {
+        "id": "earn_20261027_topcheck_AAPL",
+        "title": "AAPL 공식 IR 발표일 확인",
+        "url": "https://investor.apple.com/investor-relations/",
+        "retrievedAt": "2026-10-27T21:47:12.350284+00:00",
+        "note": "FY2026 Q4 콜11/2예정"
+      },
+      {
+        "id": "earn_20261027_topcheck_MSFT",
+        "title": "MSFT 공식 IR 발표일 확인",
+        "url": "https://www.microsoft.com/en-us/investor/default",
+        "retrievedAt": "2026-10-27T21:47:12.350284+00:00",
+        "note": "FY2027 Q1 10/28예정"
+      },
+      {
+        "id": "earn_20261027_topcheck_GOOGL",
+        "title": "GOOGL 공식 IR 발표일 확인",
+        "url": "https://abc.xyz/investor/",
+        "retrievedAt": "2026-10-27T21:47:12.350284+00:00",
+        "note": "공식 IR 동적목록으로 당일 신규발표 확인하지 못함"
+      },
+      {
+        "id": "earn_20261027_topcheck_AMZN",
+        "title": "AMZN 공식 IR 발표일 확인",
+        "url": "https://press.aboutamazon.com/2026/10/amazon-com-to-webcast-third-quarter-2026-financial-results-conference-call",
+        "retrievedAt": "2026-10-27T21:47:12.350284+00:00",
+        "note": "Q3 10/29예정"
+      },
+      {
+        "id": "earn_20261027_topcheck_TSM",
+        "title": "TSM 공식 IR 발표일 확인",
+        "url": "https://investor.tsmc.com/english",
+        "retrievedAt": "2026-10-27T21:47:12.350284+00:00",
+        "note": "Q3 10/15발표"
+      },
+      {
+        "id": "earn_20261027_topcheck_SPCX",
+        "title": "SPCX 공식 IR 발표일 확인",
+        "url": "https://ir.spacex.com/events/event-details/2026/Q3-2026-Earnings/default.aspx",
+        "retrievedAt": "2026-10-27T21:47:12.350284+00:00",
+        "note": "Q3 10/20 귀속, 오늘복제제외"
+      },
+      {
+        "id": "earn_20261027_topcheck_AVGO",
+        "title": "AVGO 공식 IR 발표일 확인",
+        "url": "https://investors.broadcom.com/",
+        "retrievedAt": "2026-10-27T21:47:12.350284+00:00",
+        "note": "당일공지제품관련, 최근Q3 9/2발표"
+      },
+      {
+        "id": "earn_20261027_topcheck_TSLA",
+        "title": "TSLA 공식 IR 발표일 확인",
+        "url": "https://ir.tesla.com/",
+        "retrievedAt": "2026-10-27T21:47:12.350284+00:00",
+        "note": "Q3 10/21발표"
+      },
+      {
+        "id": "earn_20261027_topcheck_META",
+        "title": "META 공식 IR 발표일 확인",
+        "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+        "retrievedAt": "2026-10-27T21:47:12.350284+00:00",
+        "note": "Q3 10/21발표"
+      }
+    ],
+    "checks": [
+      {
+        "ticker": "NVDA",
+        "checkedAt": "2026-10-27T21:47:12.350284+00:00",
+        "finding": "최근 실적 FY2027 Q2, 당일 신규 발표는 확인하지 못함",
+        "sourceIds": [
+          "earn_20261027_topcheck_NVDA"
+        ]
+      },
+      {
+        "ticker": "AAPL",
+        "checkedAt": "2026-10-27T21:47:12.350284+00:00",
+        "finding": "FY2026 Q4 콜11/2예정",
+        "sourceIds": [
+          "earn_20261027_topcheck_AAPL"
+        ]
+      },
+      {
+        "ticker": "MSFT",
+        "checkedAt": "2026-10-27T21:47:12.350284+00:00",
+        "finding": "FY2027 Q1 10/28예정",
+        "sourceIds": [
+          "earn_20261027_topcheck_MSFT"
+        ]
+      },
+      {
+        "ticker": "GOOGL",
+        "checkedAt": "2026-10-27T21:47:12.350284+00:00",
+        "finding": "공식 IR 동적목록으로 당일 신규발표 확인하지 못함",
+        "sourceIds": [
+          "earn_20261027_topcheck_GOOGL"
+        ]
+      },
+      {
+        "ticker": "AMZN",
+        "checkedAt": "2026-10-27T21:47:12.350284+00:00",
+        "finding": "Q3 10/29예정",
+        "sourceIds": [
+          "earn_20261027_topcheck_AMZN"
+        ]
+      },
+      {
+        "ticker": "TSM",
+        "checkedAt": "2026-10-27T21:47:12.350284+00:00",
+        "finding": "Q3 10/15발표",
+        "sourceIds": [
+          "earn_20261027_topcheck_TSM"
+        ]
+      },
+      {
+        "ticker": "SPCX",
+        "checkedAt": "2026-10-27T21:47:12.350284+00:00",
+        "finding": "Q3 10/20 귀속, 오늘복제제외",
+        "sourceIds": [
+          "earn_20261027_topcheck_SPCX"
+        ]
+      },
+      {
+        "ticker": "AVGO",
+        "checkedAt": "2026-10-27T21:47:12.350284+00:00",
+        "finding": "당일공지제품관련, 최근Q3 9/2발표",
+        "sourceIds": [
+          "earn_20261027_topcheck_AVGO"
+        ]
+      },
+      {
+        "ticker": "TSLA",
+        "checkedAt": "2026-10-27T21:47:12.350284+00:00",
+        "finding": "Q3 10/21발표",
+        "sourceIds": [
+          "earn_20261027_topcheck_TSLA"
+        ]
+      },
+      {
+        "ticker": "META",
+        "checkedAt": "2026-10-27T21:47:12.350284+00:00",
+        "finding": "Q3 10/21발표",
+        "sourceIds": [
+          "earn_20261027_topcheck_META"
+        ]
+      }
+    ]
+  }
+}
