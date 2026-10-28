@@ -13,7 +13,8 @@ class TestChartUniverse(unittest.TestCase):
   market=copy.deepcopy(self.market);row=next(r for r in market['sectorReturns']['rows'] if r.get('ticker')=='091160.KS');row.update(asOf='2026-10-28',day=123.456);market['sectorReturns']['asOf']='2026-10-28'
   out=mod.sync(market,self.charts);new=next(r for r in out['sectorReturns']['rows'] if r.get('ticker')=='091160.KS');self.assertEqual(new['day'],123.456);self.assertEqual(new['calculation'],row['calculation'])
  def test_new_chart_rows_use_actual_calendar_boundaries(self):
-  out=mod.sync(self.market,self.charts)
+  market=copy.deepcopy(self.market);market['sectorReturns']['rows']=[r for r in market['sectorReturns']['rows'] if not r.get('id','').startswith('chart-etf-')]
+  out=mod.sync(market,self.charts)
   for row in out['sectorReturns']['rows']:
    if not row.get('id','').startswith('chart-etf-'):continue
    fund=copy.deepcopy(next(f for f in self.charts['funds'] if f['code']==row['ticker'].split('.')[0]));fund['daily']=[d for d in fund['daily'] if d['date'] <= out['sectorReturns']['asOf']];self.assertEqual(row['asOf'],fund['daily'][-1]['date'])
