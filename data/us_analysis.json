@@ -12830,7 +12830,8 @@
               "oct27-ups-facts",
               "oct27-ups-q4",
               "oct27-ups-call",
-              "oct27-ups-consensus"
+              "oct27-ups-consensus",
+              "oct28-ups-eps-basis-review"
             ],
             "releaseTiming": {
               "session": "before_open",
@@ -12957,7 +12958,7 @@
                 "label": "EPS",
                 "basis": "Non-GAAP · 조정 희석 EPS",
                 "value": "1.69 USD/주",
-                "consensus": "+0.06 USD/주 (+3.68%)",
+                "consensus": "1.63 USD/주 대비 +3.68%",
                 "raw": {
                   "value": 1.69,
                   "consensusValue": 1.63,
@@ -12967,7 +12968,7 @@
                 },
                 "sourceIds": [
                   "oct27-ups",
-                  "oct27-ups-consensus"
+                  "oct28-ups-eps-basis-review"
                 ]
               }
             ],
@@ -13081,7 +13082,38 @@
               }
             },
             "universeScope": "sp500",
-            "reportCutoffAt": "2026-10-28T07:00:00+09:00"
+            "reportCutoffAt": "2026-10-28T07:00:00+09:00",
+            "consensusEvidenceHistory": [
+              {
+                "observedBefore": "2026-10-28T08:53:10.234757+00:00",
+                "metric": {
+                  "label": "EPS",
+                  "basis": "Non-GAAP · 조정 희석 EPS",
+                  "value": "1.69 USD/주",
+                  "consensus": "+0.06 USD/주 (+3.68%)",
+                  "raw": {
+                    "value": 1.69,
+                    "consensusValue": 1.63,
+                    "consensusComparable": true,
+                    "surprisePct": 3.680981595092028,
+                    "unit": "USD/share"
+                  },
+                  "sourceIds": [
+                    "oct27-ups",
+                    "oct27-ups-consensus"
+                  ]
+                },
+                "note": "보존된 이전 공급자·관측 예상치. 최신 본문 비교와 합산하지 않음."
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:53:10.234757+00:00",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct28-ups-eps-basis-review"
+              ],
+              "note": " EPS 동일 기준 검증: 원문 adjusted diluted EPS 1.69 대 forecast 1.63 명시."
+            }
           },
           {
             "ticker": "BA",
@@ -13168,7 +13200,7 @@
                 "value": "354.00 USD million",
                 "yoy": "미확인",
                 "qoq": "+126.92%",
-                "consensus": "미확인",
+                "consensus": "575 USD million 대비 -38.43%",
                 "raw": {
                   "value": 354,
                   "previousQuarter": 156.0,
@@ -13176,13 +13208,14 @@
                   "unit": "USD million",
                   "yoyPct": null,
                   "qoqPct": 126.92307692307692,
-                  "consensusValue": null,
-                  "consensusComparable": false,
-                  "surprisePct": null
+                  "consensusValue": 575,
+                  "consensusComparable": true,
+                  "surprisePct": -38.43478260869565
                 },
                 "sourceIds": [
                   "oct27-ba",
-                  "oct27-ba-facts"
+                  "oct27-ba-facts",
+                  "oct28-ba-op-consensus-followup"
                 ]
               },
               {
@@ -13214,7 +13247,9 @@
               "oct27-ba-facts",
               "oct27-ba-q4",
               "oct27-ba-call",
-              "oct27-ba-consensus"
+              "oct27-ba-consensus",
+              "oct28-ba-op-consensus-followup",
+              "oct28-ba-eps-basis-review"
             ],
             "releaseTiming": {
               "session": "before_open",
@@ -13298,7 +13333,21 @@
               "unit": "%",
               "sourceIds": [
                 "oct27-ba"
-              ]
+              ],
+              "consensusCalculation": {
+                "value": 2.3594583504308577,
+                "unit": "%",
+                "method": "ratio_of_consensus_operating_income_to_consensus_revenue",
+                "operatingIncome": 575,
+                "revenue": 24370,
+                "inputUnit": "USD million",
+                "basis": "US GAAP · 연결",
+                "sourceIds": [
+                  "oct28-ba-op-consensus-followup"
+                ],
+                "observedAt": "2026-10-28T08:53:08.963692+00:00",
+                "note": "MarketScreener 보도 동일 분기 보고 OP·Rev 컨센서스의 비율. 조사기관별 OPM 예상치의 평균이 아니며 다른 공급자의 매출 컨센서스와 혼합하지 않음. 원문 조사기관과 표본 수는 미기재."
+              }
             },
             "guidance": "콜에서 FCF 2026 약 20억 달러·2027 약 30억 달러·2028 약 60억 달러·2029 약 100억 달러 목표. 777X 2027년 중반 인증 가정.",
             "guidanceSourceIds": [
@@ -13321,7 +13370,7 @@
             ],
             "callCheckedAt": "2026-10-27T21:49:31.086784+00:00",
             "statusLabel": "실적 발표",
-            "note": "금액 USD million, 연결 US GAAP, 희석 EPS. 2025 Q4는 공식 단독 분기 실적표, 2026 Q1/Q2는 SEC 단독 분기 XBRL 또는 공식 분기표. OPM은 같은 기간 OP/Rev×100. 손실 기저의 증감률·동일 기준 미검증 컨센서스는 미확인.",
+            "note": "금액 USD million, 연결 US GAAP, 희석 EPS. 2025 Q4는 공식 단독 분기 실적표, 2026 Q1/Q2는 SEC 단독 분기 XBRL 또는 공식 분기표. OPM은 같은 기간 OP/Rev×100. 손실 기저의 증감률·동일 기준 미검증 컨센서스는 미확인. OP 컨센서스는 MarketScreener 10/27 09:55 EDT 보도 575백만 USD와 동일 기준 실제 OP 354백만 USD를 비교. 같은 보도의 Rev 컨센서스 24,370백만 USD로 나눈 계산 OPM은 2.3594583504%이며 조사 OPM 평균이 아님. 원문 조사기관·표본 수 미기재. 기존 FactSet 매출·코어 EPS 추정치와 별도 출처이며 혼합 계산하지 않음.",
             "dataCheckedAt": "2026-10-27T21:47:30.330738+00:00",
             "callSourceIds": [
               "oct27-ba-call"
@@ -13341,7 +13390,7 @@
                 "label": "EPS",
                 "basis": "Non-GAAP · 코어 희석 EPS",
                 "value": "-0.34 USD/주",
-                "consensus": "-0.09 USD/주 (-36.00%)",
+                "consensus": "-0.25 USD/주 대비 -36.00%",
                 "raw": {
                   "value": -0.34,
                   "consensusValue": -0.25,
@@ -13351,7 +13400,7 @@
                 },
                 "sourceIds": [
                   "oct27-ba",
-                  "oct27-ba-consensus"
+                  "oct28-ba-eps-basis-review"
                 ]
               }
             ],
@@ -13465,7 +13514,39 @@
               }
             },
             "universeScope": "sp500",
-            "reportCutoffAt": "2026-10-28T07:00:00+09:00"
+            "reportCutoffAt": "2026-10-28T07:00:00+09:00",
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:53:10.234757+00:00",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct28-ba-op-consensus-followup",
+                "oct28-ba-eps-basis-review"
+              ],
+              "note": "07시 최초 보고 이후 확인한 추가 컨센서스 근거. 원래 발표일과 reportCutoffAt 유지. EPS 동일 기준 검증: 코어 조정 EPS -0.34 대 FactSet -0.25. 공식 GAAP -0.26과 구분."
+            },
+            "consensusEvidenceHistory": [
+              {
+                "observedBefore": "2026-10-28T08:53:10.234757+00:00",
+                "metric": {
+                  "label": "EPS",
+                  "basis": "Non-GAAP · 코어 희석 EPS",
+                  "value": "-0.34 USD/주",
+                  "consensus": "-0.09 USD/주 (-36.00%)",
+                  "raw": {
+                    "value": -0.34,
+                    "consensusValue": -0.25,
+                    "consensusComparable": true,
+                    "surprisePct": -36.00000000000001,
+                    "unit": "USD/share"
+                  },
+                  "sourceIds": [
+                    "oct27-ba",
+                    "oct27-ba-consensus"
+                  ]
+                },
+                "note": "보존된 이전 공급자·관측 예상치. 최신 본문 비교와 합산하지 않음."
+              }
+            ]
           },
           {
             "ticker": "KO",
@@ -13599,7 +13680,8 @@
               "oct27-ko-q4",
               "oct27-ko-q2",
               "oct27-ko-call",
-              "oct27-ko-consensus"
+              "oct27-ko-consensus",
+              "oct28-ko-eps-basis-review"
             ],
             "releaseTiming": {
               "session": "before_open",
@@ -13726,7 +13808,7 @@
                 "label": "EPS",
                 "basis": "Non-GAAP · 조정 희석 EPS",
                 "value": "0.91 USD/주",
-                "consensus": "+0.03 USD/주 (+3.41%)",
+                "consensus": "0.88 USD/주 대비 +3.41%",
                 "raw": {
                   "value": 0.91,
                   "consensusValue": 0.88,
@@ -13736,7 +13818,7 @@
                 },
                 "sourceIds": [
                   "oct27-ko-exhibit",
-                  "oct27-ko-consensus"
+                  "oct28-ko-eps-basis-review"
                 ]
               }
             ],
@@ -13865,7 +13947,38 @@
               }
             },
             "universeScope": "sp500",
-            "reportCutoffAt": "2026-10-28T07:00:00+09:00"
+            "reportCutoffAt": "2026-10-28T07:00:00+09:00",
+            "consensusEvidenceHistory": [
+              {
+                "observedBefore": "2026-10-28T08:53:10.234757+00:00",
+                "metric": {
+                  "label": "EPS",
+                  "basis": "Non-GAAP · 조정 희석 EPS",
+                  "value": "0.91 USD/주",
+                  "consensus": "+0.03 USD/주 (+3.41%)",
+                  "raw": {
+                    "value": 0.91,
+                    "consensusValue": 0.88,
+                    "consensusComparable": true,
+                    "surprisePct": 3.4090909090909123,
+                    "unit": "USD/share"
+                  },
+                  "sourceIds": [
+                    "oct27-ko-exhibit",
+                    "oct27-ko-consensus"
+                  ]
+                },
+                "note": "보존된 이전 공급자·관측 예상치. 최신 본문 비교와 합산하지 않음."
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:53:10.234757+00:00",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct28-ko-eps-basis-review"
+              ],
+              "note": " EPS 동일 기준 검증: 공개 제목이 Q3 Adjusted EPS 0.91 대 FactSet 0.88을 명시."
+            }
           },
           {
             "ticker": "PYPL",
@@ -13998,7 +14111,8 @@
               "oct27-pypl-facts",
               "oct27-pypl-q4",
               "oct27-pypl-call",
-              "oct27-pypl-consensus"
+              "oct27-pypl-consensus",
+              "oct28-pypl-eps-basis-review"
             ],
             "releaseTiming": {
               "session": "before_open",
@@ -14125,7 +14239,7 @@
                 "label": "EPS",
                 "basis": "Non-GAAP · 조정 희석 EPS",
                 "value": "1.45 USD/주",
-                "consensus": "+0.14 USD/주 (+10.69%)",
+                "consensus": "1.31 USD/주 대비 +10.69%",
                 "raw": {
                   "value": 1.45,
                   "consensusValue": 1.31,
@@ -14135,7 +14249,7 @@
                 },
                 "sourceIds": [
                   "oct27-pypl",
-                  "oct27-pypl-consensus"
+                  "oct28-pypl-eps-basis-review"
                 ]
               }
             ],
@@ -14249,7 +14363,38 @@
               }
             },
             "universeScope": "sp500",
-            "reportCutoffAt": "2026-10-28T07:00:00+09:00"
+            "reportCutoffAt": "2026-10-28T07:00:00+09:00",
+            "consensusEvidenceHistory": [
+              {
+                "observedBefore": "2026-10-28T08:53:10.234757+00:00",
+                "metric": {
+                  "label": "EPS",
+                  "basis": "Non-GAAP · 조정 희석 EPS",
+                  "value": "1.45 USD/주",
+                  "consensus": "+0.14 USD/주 (+10.69%)",
+                  "raw": {
+                    "value": 1.45,
+                    "consensusValue": 1.31,
+                    "consensusComparable": true,
+                    "surprisePct": 10.68702290076335,
+                    "unit": "USD/share"
+                  },
+                  "sourceIds": [
+                    "oct27-pypl",
+                    "oct27-pypl-consensus"
+                  ]
+                },
+                "note": "보존된 이전 공급자·관측 예상치. 최신 본문 비교와 합산하지 않음."
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:53:10.234757+00:00",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct28-pypl-eps-basis-review"
+              ],
+              "note": " EPS 동일 기준 검증: 원문 adjusted earnings 1.45 대 Street 1.31 명시."
+            }
           },
           {
             "ticker": "GLW",
@@ -14381,7 +14526,8 @@
               "oct27-glw-facts",
               "oct27-glw-q4-exhibit",
               "oct27-glw-call",
-              "oct27-glw-consensus"
+              "oct27-glw-consensus",
+              "oct28-glw-eps-basis-review"
             ],
             "releaseTiming": {
               "session": "before_open",
@@ -14508,7 +14654,7 @@
                 "label": "EPS",
                 "basis": "Non-GAAP · 코어 희석 EPS",
                 "value": "0.91 USD/주",
-                "consensus": "+0.03 USD/주 (+3.41%)",
+                "consensus": "0.88 USD/주 대비 +3.41%",
                 "raw": {
                   "value": 0.91,
                   "consensusValue": 0.88,
@@ -14518,7 +14664,7 @@
                 },
                 "sourceIds": [
                   "oct27-glw-exhibit",
-                  "oct27-glw-consensus"
+                  "oct28-glw-eps-basis-review"
                 ]
               }
             ],
@@ -14632,7 +14778,38 @@
               }
             },
             "universeScope": "sp500",
-            "reportCutoffAt": "2026-10-28T07:00:00+09:00"
+            "reportCutoffAt": "2026-10-28T07:00:00+09:00",
+            "consensusEvidenceHistory": [
+              {
+                "observedBefore": "2026-10-28T08:53:10.234757+00:00",
+                "metric": {
+                  "label": "EPS",
+                  "basis": "Non-GAAP · 코어 희석 EPS",
+                  "value": "0.91 USD/주",
+                  "consensus": "+0.03 USD/주 (+3.41%)",
+                  "raw": {
+                    "value": 0.91,
+                    "consensusValue": 0.88,
+                    "consensusComparable": true,
+                    "surprisePct": 3.4090909090909123,
+                    "unit": "USD/share"
+                  },
+                  "sourceIds": [
+                    "oct27-glw-exhibit",
+                    "oct27-glw-consensus"
+                  ]
+                },
+                "note": "보존된 이전 공급자·관측 예상치. 최신 본문 비교와 합산하지 않음."
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:53:10.234757+00:00",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct28-glw-eps-basis-review"
+              ],
+              "note": " EPS 동일 기준 검증: 원문 core EPS 0.91 대 analyst estimate 0.88 명시; GAAP EPS 0.78 별도 명시."
+            }
           },
           {
             "ticker": "ECL",
@@ -14765,7 +14942,8 @@
               "oct27-ecl-facts",
               "oct27-ecl-q4",
               "oct27-ecl-call",
-              "oct27-ecl-consensus"
+              "oct27-ecl-consensus",
+              "oct28-ecl-eps-basis-review"
             ],
             "releaseTiming": {
               "session": "before_open",
@@ -14906,7 +15084,7 @@
                 "label": "EPS",
                 "basis": "Non-GAAP · 조정 희석 EPS",
                 "value": "2.18 USD/주",
-                "consensus": "+0.01 USD/주 (+0.46%)",
+                "consensus": "2.17 USD/주 대비 +0.46%",
                 "raw": {
                   "value": 2.18,
                   "consensusValue": 2.17,
@@ -14916,7 +15094,7 @@
                 },
                 "sourceIds": [
                   "oct27-ecl-exhibit",
-                  "oct27-ecl-consensus"
+                  "oct28-ecl-eps-basis-review"
                 ]
               }
             ],
@@ -15030,7 +15208,38 @@
               }
             },
             "universeScope": "sp500",
-            "reportCutoffAt": "2026-10-28T07:00:00+09:00"
+            "reportCutoffAt": "2026-10-28T07:00:00+09:00",
+            "consensusEvidenceHistory": [
+              {
+                "observedBefore": "2026-10-28T08:53:10.234757+00:00",
+                "metric": {
+                  "label": "EPS",
+                  "basis": "Non-GAAP · 조정 희석 EPS",
+                  "value": "2.18 USD/주",
+                  "consensus": "+0.01 USD/주 (+0.46%)",
+                  "raw": {
+                    "value": 2.18,
+                    "consensusValue": 2.17,
+                    "consensusComparable": true,
+                    "surprisePct": 0.46082949308756826,
+                    "unit": "USD/share"
+                  },
+                  "sourceIds": [
+                    "oct27-ecl-exhibit",
+                    "oct27-ecl-consensus"
+                  ]
+                },
+                "note": "보존된 이전 공급자·관측 예상치. 최신 본문 비교와 합산하지 않음."
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:53:10.234757+00:00",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct28-ecl-eps-basis-review"
+              ],
+              "note": " EPS 동일 기준 검증: 원문 adjusted EPS 2.18 대 expected 2.17 명시."
+            }
           },
           {
             "ticker": "V",
@@ -15180,7 +15389,8 @@
               "oct27-v-history-q2",
               "oct27-v-history-q3",
               "oct27-v-consensus",
-              "oct27-v-call-supplement"
+              "oct27-v-call-supplement",
+              "oct28-v-eps-basis-review"
             ],
             "releaseTiming": {
               "session": "after_close",
@@ -15292,7 +15502,7 @@
               "Q&A: 에이전트 결제의 장기 기회는 크지만 FY2027 전체 손익에 미치는 영향은 아직 작다고 답했다."
             ],
             "statusLabel": "실적 발표",
-            "note": "연결 US GAAP 수치와 희석 EPS. 동일 기준 OP/Rev로 OPM 계산. 조정 EPS와 GAAP EPS를 혼합하지 않는다. 금융서비스 공시에서 GP 소계를 제공하지 않아 GP/GPM은 미공시. GAAP EPS 컨센서스는 미확인. 별도 조정 EPS 비교는 Earnings Whispers가 공식 조정 실적과 짝지어 제공하는 consensus를 사용하며 Whisper number와 구분한다. FY2027 실적 전망의 공식 프레젠테이션 원문은 미확인으로 추정치를 작성하지 않았다.",
+            "note": "연결 US GAAP 수치와 희석 EPS. 동일 기준 OP/Rev로 OPM 계산. 조정 EPS와 GAAP EPS를 혼합하지 않는다. 금융서비스 공시에서 GP 소계를 제공하지 않아 GP/GPM은 미공시. GAAP EPS 컨센서스는 미확인. 별도 조정 EPS 비교는 Earnings Whispers가 공식 조정 실적과 짝지어 제공하는 consensus를 사용하며 Whisper number와 구분한다. FY2027 실적 전망의 공식 프레젠테이션 원문은 미확인으로 추정치를 작성하지 않았다. 이전 EPS 예상치 3.43 USD/주와 출처·관측은 원자료로 보존. 최신 비교는 MT Newswires / FactSet 3.44 USD/주로 공급자별 값을 평균하지 않음.",
             "dataCheckedAt": "2026-10-27T21:49:32.945302+00:00",
             "operatingMargin": {
               "value": 59.82370870747179,
@@ -15307,17 +15517,17 @@
                 "label": "EPS",
                 "basis": "Non-GAAP · 조정 희석 EPS",
                 "value": "3.48 USD/주",
-                "consensus": "3.43 USD/주 대비 +1.46%",
+                "consensus": "3.44 USD/주 대비 +1.16%",
                 "raw": {
                   "value": 3.48,
-                  "consensusValue": 3.43,
+                  "consensusValue": 3.44,
                   "consensusComparable": true,
-                  "surprisePct": 1.4577259475218707,
+                  "surprisePct": 1.1627906976744196,
                   "unit": "USD/share"
                 },
                 "sourceIds": [
                   "oct27-v-release",
-                  "oct27-v-consensus"
+                  "oct28-v-eps-basis-review"
                 ]
               }
             ],
@@ -15461,6 +15671,37 @@
               "postCutoffSupplement": true,
               "observedAt": "2026-10-27T23:53:38.590366+00:00",
               "publishedAt": null
+            },
+            "consensusEvidenceHistory": [
+              {
+                "observedBefore": "2026-10-28T08:53:10.234757+00:00",
+                "metric": {
+                  "label": "EPS",
+                  "basis": "Non-GAAP · 조정 희석 EPS",
+                  "value": "3.48 USD/주",
+                  "consensus": "3.43 USD/주 대비 +1.46%",
+                  "raw": {
+                    "value": 3.48,
+                    "consensusValue": 3.43,
+                    "consensusComparable": true,
+                    "surprisePct": 1.4577259475218707,
+                    "unit": "USD/share"
+                  },
+                  "sourceIds": [
+                    "oct27-v-release",
+                    "oct27-v-consensus"
+                  ]
+                },
+                "note": "보존된 이전 공급자·관측 예상치. 최신 본문 비교와 합산하지 않음."
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:53:10.234757+00:00",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct28-v-eps-basis-review"
+              ],
+              "note": " EPS 동일 기준 검증: 원문 adjusted EPS 3.48 대 FactSet non-GAAP EPS 3.44 명시."
             }
           },
           {
@@ -15599,7 +15840,8 @@
               "oct27-stx-secfacts",
               "oct27-stx-history-q4",
               "oct27-stx-consensus",
-              "oct27-stx-call-supplement"
+              "oct27-stx-call-supplement",
+              "oct28-stx-eps-basis-review"
             ],
             "releaseTiming": {
               "session": "after_close",
@@ -15701,7 +15943,7 @@
               "Q&A: 9월 분기 출하 용량 성장 둔화는 제품 전환 시점 때문이지 수율·데이터센터 준비 문제는 아니라고 답했다. 12월 분기 출하 용량 확대를 예상했다."
             ],
             "statusLabel": "실적 발표",
-            "note": "연결 US GAAP 수치와 희석 EPS. 동일 기준 OP/Rev로 OPM 계산. 조정 EPS와 GAAP EPS를 혼합하지 않는다. GAAP EPS 컨센서스는 미확인. 별도 조정 EPS 비교는 Earnings Whispers가 공식 조정 실적과 짝지어 제공하는 consensus를 사용하며 Whisper number와 구분한다.",
+            "note": "연결 US GAAP 수치와 희석 EPS. 동일 기준 OP/Rev로 OPM 계산. 조정 EPS와 GAAP EPS를 혼합하지 않는다. GAAP EPS 컨센서스는 미확인. 별도 조정 EPS 비교는 Earnings Whispers가 공식 조정 실적과 짝지어 제공하는 consensus를 사용하며 Whisper number와 구분한다. 이전 EPS 예상치 7.4 USD/주와 출처·관측은 원자료로 보존. 최신 비교는 Dow Jones / FactSet 7.45 USD/주로 공급자별 값을 평균하지 않음.",
             "guidance": "FY2027 Q2 매출47억~49억 달러, 조정 희석 EPS9.00~9.40달러.",
             "guidanceSourceIds": [
               "oct27-stx-release"
@@ -15720,17 +15962,17 @@
                 "label": "EPS",
                 "basis": "Non-GAAP · 조정 희석 EPS",
                 "value": "7.68 USD/주",
-                "consensus": "7.40 USD/주 대비 +3.78%",
+                "consensus": "7.45 USD/주 대비 +3.09%",
                 "raw": {
                   "value": 7.68,
-                  "consensusValue": 7.4,
+                  "consensusValue": 7.45,
                   "consensusComparable": true,
-                  "surprisePct": 3.7837837837837673,
+                  "surprisePct": 3.0872483221476448,
                   "unit": "USD/share"
                 },
                 "sourceIds": [
                   "oct27-stx-release",
-                  "oct27-stx-consensus"
+                  "oct28-stx-eps-basis-review"
                 ]
               }
             ],
@@ -15859,6 +16101,37 @@
               "postCutoffSupplement": true,
               "observedAt": "2026-10-27T23:53:38.590366+00:00",
               "publishedAt": null
+            },
+            "consensusEvidenceHistory": [
+              {
+                "observedBefore": "2026-10-28T08:53:10.234757+00:00",
+                "metric": {
+                  "label": "EPS",
+                  "basis": "Non-GAAP · 조정 희석 EPS",
+                  "value": "7.68 USD/주",
+                  "consensus": "7.40 USD/주 대비 +3.78%",
+                  "raw": {
+                    "value": 7.68,
+                    "consensusValue": 7.4,
+                    "consensusComparable": true,
+                    "surprisePct": 3.7837837837837673,
+                    "unit": "USD/share"
+                  },
+                  "sourceIds": [
+                    "oct27-stx-release",
+                    "oct27-stx-consensus"
+                  ]
+                },
+                "note": "보존된 이전 공급자·관측 예상치. 최신 본문 비교와 합산하지 않음."
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:53:10.234757+00:00",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct28-stx-eps-basis-review"
+              ],
+              "note": " EPS 동일 기준 검증: 원문 adjusted EPS 7.68 대 FactSet 7.45 명시."
             }
           },
           {
@@ -15997,7 +16270,8 @@
               "oct27-hood-secfacts",
               "oct27-hood-history-q4",
               "oct27-hood-consensus",
-              "oct27-hood-call-public-transcript"
+              "oct27-hood-call-public-transcript",
+              "oct28-hood-eps-basis-review"
             ],
             "releaseTiming": {
               "session": "after_close",
@@ -16126,12 +16400,12 @@
                   "value": 0.6,
                   "consensusValue": 0.56,
                   "consensusComparable": true,
-                  "surprisePct": 7.14285714285714,
+                  "surprisePct": 7.142857142857128,
                   "unit": "USD/share"
                 },
                 "sourceIds": [
                   "oct27-hood-release",
-                  "oct27-hood-consensus"
+                  "oct28-hood-eps-basis-review"
                 ]
               }
             ],
@@ -16261,6 +16535,37 @@
               "qaVerified": true,
               "postCutoffSupplement": true,
               "note": "공식 IR 원문 직접 접근은403/503. 공식 transcript라고 주장하지 않음. 페이지 자동요약의 GPM·시세·컨센서스 및 인과 해석은 사용하지 않음. 기존 실적·시세 수치는 불변. 전문 Gold 가입자 수 표현이 4백만/5백만으로 불일치하므로 콜 보완에서 해당 수치 제외; 공식 실적5.2백만을 변경하지 않음. 거래량 본문 -5%와 Q&A ±5% 표현 차이는 최종 상세 Q&A에 따른 ±5%로 표기. 09시 정확시각 관측이 아닌09:24 실제 후속 확인;07시나08시 당시 검증으로 소급하지 않음."
+            },
+            "consensusEvidenceHistory": [
+              {
+                "observedBefore": "2026-10-28T08:53:10.234757+00:00",
+                "metric": {
+                  "label": "EPS",
+                  "basis": "Non-GAAP · 조정 희석 EPS",
+                  "value": "0.60 USD/주",
+                  "consensus": "0.56 USD/주 대비 +7.14%",
+                  "raw": {
+                    "value": 0.6,
+                    "consensusValue": 0.56,
+                    "consensusComparable": true,
+                    "surprisePct": 7.14285714285714,
+                    "unit": "USD/share"
+                  },
+                  "sourceIds": [
+                    "oct27-hood-release",
+                    "oct27-hood-consensus"
+                  ]
+                },
+                "note": "보존된 이전 공급자·관측 예상치. 최신 본문 비교와 합산하지 않음."
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:53:10.234757+00:00",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct28-hood-eps-basis-review"
+              ],
+              "note": " EPS 동일 기준 검증: 원문 adjusted EPS 0.60 대 consensus 0.56 명시. GAAP 0.51 비교 풀과 혼합하지 않음. 원문 2026-10-27 20:32 ET 공개로 최초 07시 보고 이후 후속 근거."
             }
           },
           {
@@ -16399,7 +16704,8 @@
               "oct27-nxpi-secfacts",
               "oct27-nxpi-history-q4",
               "oct27-nxpi-consensus",
-              "oct27-nxpi-call-supplement"
+              "oct27-nxpi-call-supplement",
+              "oct28-nxpi-eps-basis-review"
             ],
             "releaseTiming": {
               "session": "after_close",
@@ -16498,7 +16804,7 @@
               "가이던스: 2027년 두 자릿수 매출 성장을 추진한다. Q&A에서 설명한 1분기 통상 계절성은 확정 분기 가이던스가 아니라고 명시했다."
             ],
             "statusLabel": "실적 발표",
-            "note": "연결 US GAAP 수치와 희석 EPS. 동일 기준 OP/Rev로 OPM 계산. 조정 EPS와 GAAP EPS를 혼합하지 않는다. GAAP EPS 컨센서스는 미확인. 별도 조정 EPS 비교는 Earnings Whispers가 공식 조정 실적과 짝지어 제공하는 consensus를 사용하며 Whisper number와 구분한다.",
+            "note": "연결 US GAAP 수치와 희석 EPS. 동일 기준 OP/Rev로 OPM 계산. 조정 EPS와 GAAP EPS를 혼합하지 않는다. GAAP EPS 컨센서스는 미확인. 별도 조정 EPS 비교는 Earnings Whispers가 공식 조정 실적과 짝지어 제공하는 consensus를 사용하며 Whisper number와 구분한다. 이전 EPS 예상치 4.14 USD/주와 출처·관측은 원자료로 보존. 최신 비교는 MT Newswires / FactSet 4.12 USD/주로 공급자별 값을 평균하지 않음.",
             "guidance": "2026 Q4 매출37.50억~39.50억 달러, GAAP 희석 EPS3.36~3.79달러, 조정 희석 EPS4.14~4.58달러.",
             "guidanceSourceIds": [
               "oct27-nxpi-release"
@@ -16517,17 +16823,17 @@
                 "label": "EPS",
                 "basis": "Non-GAAP · 조정 희석 EPS",
                 "value": "4.20 USD/주",
-                "consensus": "4.14 USD/주 대비 +1.45%",
+                "consensus": "4.12 USD/주 대비 +1.94%",
                 "raw": {
                   "value": 4.2,
-                  "consensusValue": 4.14,
+                  "consensusValue": 4.12,
                   "consensusComparable": true,
-                  "surprisePct": 1.449275362318847,
+                  "surprisePct": 1.9417475728155356,
                   "unit": "USD/share"
                 },
                 "sourceIds": [
                   "oct27-nxpi-release",
-                  "oct27-nxpi-consensus"
+                  "oct28-nxpi-eps-basis-review"
                 ]
               }
             ],
@@ -16656,6 +16962,37 @@
               "postCutoffSupplement": true,
               "observedAt": "2026-10-27T23:53:38.590366+00:00",
               "publishedAt": null
+            },
+            "consensusEvidenceHistory": [
+              {
+                "observedBefore": "2026-10-28T08:53:10.234757+00:00",
+                "metric": {
+                  "label": "EPS",
+                  "basis": "Non-GAAP · 조정 희석 EPS",
+                  "value": "4.20 USD/주",
+                  "consensus": "4.14 USD/주 대비 +1.45%",
+                  "raw": {
+                    "value": 4.2,
+                    "consensusValue": 4.14,
+                    "consensusComparable": true,
+                    "surprisePct": 1.449275362318847,
+                    "unit": "USD/share"
+                  },
+                  "sourceIds": [
+                    "oct27-nxpi-release",
+                    "oct27-nxpi-consensus"
+                  ]
+                },
+                "note": "보존된 이전 공급자·관측 예상치. 최신 본문 비교와 합산하지 않음."
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:53:10.234757+00:00",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct28-nxpi-eps-basis-review"
+              ],
+              "note": " EPS 동일 기준 검증: 원문 adjusted EPS 4.20 대 FactSet 4.12 명시."
             }
           },
           {
@@ -16793,7 +17130,8 @@
               "oct27-ter-release",
               "oct27-ter-secfacts",
               "oct27-ter-history-q4",
-              "oct27-ter-consensus"
+              "oct27-ter-consensus",
+              "oct28-ter-eps-basis-review"
             ],
             "releaseTiming": {
               "session": "after_close",
@@ -16882,7 +17220,7 @@
             "callHighlights": [],
             "displayCallHighlights": [],
             "statusLabel": "실적 발표",
-            "note": "연결 US GAAP 수치와 희석 EPS. 동일 기준 OP/Rev로 OPM 계산. 조정 EPS와 GAAP EPS를 혼합하지 않는다. GAAP EPS 컨센서스는 미확인. 별도 조정 EPS 비교는 Earnings Whispers가 공식 조정 실적과 짝지어 제공하는 consensus를 사용하며 Whisper number와 구분한다.",
+            "note": "연결 US GAAP 수치와 희석 EPS. 동일 기준 OP/Rev로 OPM 계산. 조정 EPS와 GAAP EPS를 혼합하지 않는다. GAAP EPS 컨센서스는 미확인. 별도 조정 EPS 비교는 Earnings Whispers가 공식 조정 실적과 짝지어 제공하는 consensus를 사용하며 Whisper number와 구분한다. 이전 EPS 예상치 2.04 USD/주와 출처·관측은 원자료로 보존. 최신 비교는 MT Newswires / FactSet 2.09 USD/주로 공급자별 값을 평균하지 않음.",
             "guidance": "2026 Q4 매출12.50억~13.50억 달러, GAAP 희석 EPS1.88~2.18달러, 조정 희석 EPS1.95~2.25달러.",
             "guidanceSourceIds": [
               "oct27-ter-release"
@@ -16901,17 +17239,17 @@
                 "label": "EPS",
                 "basis": "Non-GAAP · 조정 희석 EPS",
                 "value": "2.29 USD/주",
-                "consensus": "2.04 USD/주 대비 +12.25%",
+                "consensus": "2.09 USD/주 대비 +9.57%",
                 "raw": {
                   "value": 2.29,
-                  "consensusValue": 2.04,
+                  "consensusValue": 2.09,
                   "consensusComparable": true,
-                  "surprisePct": 12.254901960784315,
+                  "surprisePct": 9.569377990430631,
                   "unit": "USD/share"
                 },
                 "sourceIds": [
                   "oct27-ter-release",
-                  "oct27-ter-consensus"
+                  "oct28-ter-eps-basis-review"
                 ]
               }
             ],
@@ -17025,7 +17363,38 @@
               }
             },
             "universeScope": "sp500",
-            "reportCutoffAt": "2026-10-28T07:00:00+09:00"
+            "reportCutoffAt": "2026-10-28T07:00:00+09:00",
+            "consensusEvidenceHistory": [
+              {
+                "observedBefore": "2026-10-28T08:53:10.234757+00:00",
+                "metric": {
+                  "label": "EPS",
+                  "basis": "Non-GAAP · 조정 희석 EPS",
+                  "value": "2.29 USD/주",
+                  "consensus": "2.04 USD/주 대비 +12.25%",
+                  "raw": {
+                    "value": 2.29,
+                    "consensusValue": 2.04,
+                    "consensusComparable": true,
+                    "surprisePct": 12.254901960784315,
+                    "unit": "USD/share"
+                  },
+                  "sourceIds": [
+                    "oct27-ter-release",
+                    "oct27-ter-consensus"
+                  ]
+                },
+                "note": "보존된 이전 공급자·관측 예상치. 최신 본문 비교와 합산하지 않음."
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:53:10.234757+00:00",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct28-ter-eps-basis-review"
+              ],
+              "note": " EPS 동일 기준 검증: 원문 adjusted EPS 2.29 대 FactSet 2.09 명시."
+            }
           },
           {
             "ticker": "FFIV",
@@ -17157,7 +17526,8 @@
               "oct27-ffiv-release",
               "oct27-ffiv-secfacts",
               "oct27-ffiv-consensus",
-              "oct27-ffiv-call-supplement"
+              "oct27-ffiv-call-supplement",
+              "oct28-ffiv-eps-basis-review"
             ],
             "releaseTiming": {
               "session": "after_close",
@@ -17253,7 +17623,7 @@
               "Q&A: 확보한 메모리·스토리지 재고는 가이던스와 추가 수요 대응을 지원하지만 공급망 위험이 완전히 해소된 것은 아니다. 하반기 기존 장비 교체 수요 둔화는 신규·확장 수요와 구분했다."
             ],
             "statusLabel": "실적 발표",
-            "note": "연결 US GAAP 수치와 희석 EPS. 동일 기준 OP/Rev로 OPM 계산. 조정 EPS와 GAAP EPS를 혼합하지 않는다. GAAP EPS 컨센서스는 미확인. 별도 조정 EPS 비교는 Earnings Whispers가 공식 조정 실적과 짝지어 제공하는 consensus를 사용하며 Whisper number와 구분한다.",
+            "note": "연결 US GAAP 수치와 희석 EPS. 동일 기준 OP/Rev로 OPM 계산. 조정 EPS와 GAAP EPS를 혼합하지 않는다. GAAP EPS 컨센서스는 미확인. 별도 조정 EPS 비교는 Earnings Whispers가 공식 조정 실적과 짝지어 제공하는 consensus를 사용하며 Whisper number와 구분한다. 이전 EPS 예상치 4.24 USD/주와 출처·관측은 원자료로 보존. 최신 비교는 Investing 4.26 USD/주로 공급자별 값을 평균하지 않음.",
             "guidance": "FY2027 Q1 매출8.75억~8.95억 달러, 조정 희석 EPS4.25~4.37달러.",
             "guidanceSourceIds": [
               "oct27-ffiv-release"
@@ -17272,17 +17642,17 @@
                 "label": "EPS",
                 "basis": "Non-GAAP · 조정 희석 EPS",
                 "value": "4.42 USD/주",
-                "consensus": "4.24 USD/주 대비 +4.25%",
+                "consensus": "4.26 USD/주 대비 +3.76%",
                 "raw": {
                   "value": 4.42,
-                  "consensusValue": 4.24,
+                  "consensusValue": 4.26,
                   "consensusComparable": true,
-                  "surprisePct": 4.245283018867907,
+                  "surprisePct": 3.7558685446009425,
                   "unit": "USD/share"
                 },
                 "sourceIds": [
                   "oct27-ffiv-release",
-                  "oct27-ffiv-consensus"
+                  "oct28-ffiv-eps-basis-review"
                 ]
               }
             ],
@@ -17426,6 +17796,37 @@
               "postCutoffSupplement": true,
               "observedAt": "2026-10-27T23:53:38.590366+00:00",
               "publishedAt": null
+            },
+            "consensusEvidenceHistory": [
+              {
+                "observedBefore": "2026-10-28T08:53:10.234757+00:00",
+                "metric": {
+                  "label": "EPS",
+                  "basis": "Non-GAAP · 조정 희석 EPS",
+                  "value": "4.42 USD/주",
+                  "consensus": "4.24 USD/주 대비 +4.25%",
+                  "raw": {
+                    "value": 4.42,
+                    "consensusValue": 4.24,
+                    "consensusComparable": true,
+                    "surprisePct": 4.245283018867907,
+                    "unit": "USD/share"
+                  },
+                  "sourceIds": [
+                    "oct27-ffiv-release",
+                    "oct27-ffiv-consensus"
+                  ]
+                },
+                "note": "보존된 이전 공급자·관측 예상치. 최신 본문 비교와 합산하지 않음."
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:53:10.234757+00:00",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct28-ffiv-eps-basis-review"
+              ],
+              "note": " EPS 동일 기준 검증: 원문 adjusted EPS 4.42 대 consensus 4.26 명시."
             }
           },
           {
@@ -17556,7 +17957,8 @@
             "sourceIds": [
               "oct27-extra-amt",
               "oct27-extra-amt-facts",
-              "oct27-amt-call-followup"
+              "oct27-amt-call-followup",
+              "oct28-amt-eps-consensus-check"
             ],
             "releaseTiming": {
               "session": "before_open",
@@ -17798,7 +18200,7 @@
             ],
             "callCheckedAt": "2026-10-27T23:53:43.544459+00:00",
             "statusLabel": "실적 발표",
-            "note": "금액 USD million, 연결 GAAP. EPS는 희석 기준. OPM은 동일 기간 OP/Rev×100. 미확인 과거 분기·GP·컨센서스는 추정하지 않았다. 반기·누적 수치를 임의 분할하지 않았다.",
+            "note": "금액 USD million, 연결 GAAP. EPS는 희석 기준. OPM은 동일 기간 OP/Rev×100. 미확인 과거 분기·GP·컨센서스는 추정하지 않았다. 반기·누적 수치를 임의 분할하지 않았다. 비교 보류 EPS 원문 예상치 1.64 USD/주: 실제치 1.64와 회계기준 일치가 확인되지 않아 본문 비교에서 제외. Official actual EPS basis is known, but retrieved consensus source does not explicitly establish estimate basis. Numeric equality to a GAAP actual is insufficient; withhold pending explicit same-basis evidence.",
             "dataCheckedAt": "2026-10-27T21:53:26.712073+00:00",
             "universeScope": "sp500",
             "priceReaction": {
@@ -17925,6 +18327,37 @@
               "qaVerified": true,
               "postCutoffSupplement": true,
               "localEvidencePath": "/workspace/shared/call-evidence/amt.json"
+            },
+            "consensusMetrics": [
+              {
+                "label": "EPS",
+                "basis": "US GAAP · 희석 EPS",
+                "value": "1.64 USD/주",
+                "consensus": "미확인",
+                "raw": {
+                  "value": 1.64,
+                  "consensusValue": 1.64,
+                  "consensusComparable": false,
+                  "surprisePct": null,
+                  "unit": "USD/share"
+                },
+                "sourceIds": [
+                  "oct27-extra-amt",
+                  "oct28-amt-eps-consensus-check"
+                ],
+                "consensusProvider": "StreetInsider",
+                "consensusObservedAt": "2026-10-28T08:39:53Z",
+                "postCutoffSupplement": true
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:39:53Z",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct27-extra-amt",
+                "oct28-amt-eps-consensus-check"
+              ],
+              "note": "07시 최초 보고 이후 확인한 동일 분기 EPS 컨센서스. GAAP EPS 1.64. AFFO 2.87 is not EPS. Rejected MarketBeat mixed-basis 2.87 vs 1.64."
             }
           },
           {
@@ -18055,7 +18488,8 @@
             "sourceIds": [
               "oct27-extra-cnc",
               "oct27-extra-cnc-facts",
-              "oct27-followup-cnc-call"
+              "oct27-followup-cnc-call",
+              "oct28-cnc-eps-consensus-check"
             ],
             "releaseTiming": {
               "session": "before_open",
@@ -18474,6 +18908,37 @@
               "publishedAt": null,
               "qaVerified": true,
               "postCutoffSupplement": true
+            },
+            "consensusMetrics": [
+              {
+                "label": "EPS",
+                "basis": "Non-GAAP · 조정 희석 EPS",
+                "value": "0.58 USD/주",
+                "consensus": "+0.48 USD/주 (+480.00%)",
+                "raw": {
+                  "value": 0.58,
+                  "consensusValue": 0.1,
+                  "consensusComparable": true,
+                  "surprisePct": 480.0,
+                  "unit": "USD/share"
+                },
+                "sourceIds": [
+                  "oct27-extra-cnc",
+                  "oct28-cnc-eps-consensus-check"
+                ],
+                "consensusProvider": "FactSet via MT Newswires",
+                "consensusObservedAt": "2026-10-28T08:37:58Z",
+                "postCutoffSupplement": true
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:37:58Z",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct27-extra-cnc",
+                "oct28-cnc-eps-consensus-check"
+              ],
+              "note": "07시 최초 보고 이후 확인한 동일 분기 EPS 컨센서스. Company release identifies actual EPS basis; financial source compares the same-quarter matching actual with its named analyst estimate."
             }
           },
           {
@@ -18610,7 +19075,8 @@
               "oct27-extra-cnp",
               "oct27-extra-cnp-facts",
               "oct27-extra-cnp-10q",
-              "oct27-followup-cnp-call"
+              "oct27-followup-cnp-call",
+              "oct28-cnp-eps-consensus-check"
             ],
             "releaseTiming": {
               "session": "before_open",
@@ -18909,6 +19375,37 @@
               "publishedAt": null,
               "qaVerified": true,
               "postCutoffSupplement": true
+            },
+            "consensusMetrics": [
+              {
+                "label": "EPS",
+                "basis": "Non-GAAP · 조정 희석 EPS",
+                "value": "0.53 USD/주",
+                "consensus": "+0.03 USD/주 (+6.00%)",
+                "raw": {
+                  "value": 0.53,
+                  "consensusValue": 0.5,
+                  "consensusComparable": true,
+                  "surprisePct": 6.000000000000005,
+                  "unit": "USD/share"
+                },
+                "sourceIds": [
+                  "oct27-extra-cnp",
+                  "oct28-cnp-eps-consensus-check"
+                ],
+                "consensusProvider": "Benzinga",
+                "consensusObservedAt": "2026-10-28T08:39:44Z",
+                "postCutoffSupplement": true
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:39:44Z",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct27-extra-cnp",
+                "oct28-cnp-eps-consensus-check"
+              ],
+              "note": "07시 최초 보고 이후 확인한 동일 분기 EPS 컨센서스. Company release identifies actual EPS basis; financial source compares the same-quarter matching actual with its named analyst estimate. Benzinga table .50 and contemporaneous news headline .49 differ; preserve table source snapshot and never silently mix."
             }
           },
           {
@@ -19039,7 +19536,8 @@
             "sourceIds": [
               "oct27-extra-cms",
               "oct27-extra-cms-facts",
-              "oct27-followup-cms-call"
+              "oct27-followup-cms-call",
+              "oct28-cms-eps-consensus-check"
             ],
             "releaseTiming": {
               "session": "before_open",
@@ -19371,6 +19869,37 @@
               "publishedAt": null,
               "qaVerified": true,
               "postCutoffSupplement": true
+            },
+            "consensusMetrics": [
+              {
+                "label": "EPS",
+                "basis": "Non-GAAP · 조정 EPS",
+                "value": "1.44 USD/주",
+                "consensus": "+0.10 USD/주 (+7.46%)",
+                "raw": {
+                  "value": 1.44,
+                  "consensusValue": 1.34,
+                  "consensusComparable": true,
+                  "surprisePct": 7.462686567164169,
+                  "unit": "USD/share"
+                },
+                "sourceIds": [
+                  "oct27-extra-cms",
+                  "oct28-cms-eps-consensus-check"
+                ],
+                "consensusProvider": "Zacks",
+                "consensusObservedAt": "2026-10-28T08:37:47Z",
+                "postCutoffSupplement": true
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:37:47Z",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct27-extra-cms",
+                "oct28-cms-eps-consensus-check"
+              ],
+              "note": "07시 최초 보고 이후 확인한 동일 분기 EPS 컨센서스. Zacks consensus 1.34 selected. StreetInsider/Investing use 1.23; provider cohorts differ. Do not blend."
             }
           },
           {
@@ -19501,7 +20030,8 @@
             "sourceIds": [
               "oct27-extra-fcx",
               "oct27-extra-fcx-facts",
-              "oct27-fcx-call-followup"
+              "oct27-fcx-call-followup",
+              "oct28-fcx-eps-consensus-check"
             ],
             "releaseTiming": {
               "session": "before_open",
@@ -19832,6 +20362,37 @@
               "qaVerified": true,
               "postCutoffSupplement": true,
               "localEvidencePath": "/workspace/shared/call-evidence/fcx.json"
+            },
+            "consensusMetrics": [
+              {
+                "label": "EPS",
+                "basis": "Non-GAAP · 조정 희석 EPS",
+                "value": "0.88 USD/주",
+                "consensus": "+0.06 USD/주 (+7.32%)",
+                "raw": {
+                  "value": 0.88,
+                  "consensusValue": 0.82,
+                  "consensusComparable": true,
+                  "surprisePct": 7.317073170731714,
+                  "unit": "USD/share"
+                },
+                "sourceIds": [
+                  "oct27-extra-fcx",
+                  "oct28-fcx-eps-consensus-check"
+                ],
+                "consensusProvider": "FactSet via MT Newswires",
+                "consensusObservedAt": "2026-10-28T08:52:03.039984Z",
+                "postCutoffSupplement": true
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:52:03.039984Z",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct27-extra-fcx",
+                "oct28-fcx-eps-consensus-check"
+              ],
+              "note": "07시 최초 보고 이후 확인한 동일 분기 EPS 컨센서스. Public headline explicitly states adjusted actual .88 versus FactSet .82. Company adjusted .88 excludes .07 charges from GAAP .81. Original EW .80 generic EPS was replaced for explicit-basis evidence, not performance direction; whisper .85 is not consensus."
             }
           },
           {
@@ -19962,7 +20523,8 @@
             "sourceIds": [
               "oct27-extra-hca",
               "oct27-extra-hca-facts",
-              "oct27-hca-call-followup"
+              "oct27-hca-call-followup",
+              "oct28-hca-eps-consensus-check"
             ],
             "releaseTiming": {
               "session": "before_open",
@@ -20262,6 +20824,37 @@
               "qaVerified": true,
               "postCutoffSupplement": true,
               "localEvidencePath": "/workspace/shared/call-evidence/hca-fool.json"
+            },
+            "consensusMetrics": [
+              {
+                "label": "EPS",
+                "basis": "Non-GAAP · 조정 희석 EPS",
+                "value": "7.22 USD/주",
+                "consensus": "+0.57 USD/주 (+8.57%)",
+                "raw": {
+                  "value": 7.22,
+                  "consensusValue": 6.65,
+                  "consensusComparable": true,
+                  "surprisePct": 8.571428571428562,
+                  "unit": "USD/share"
+                },
+                "sourceIds": [
+                  "oct27-extra-hca",
+                  "oct28-hca-eps-consensus-check"
+                ],
+                "consensusProvider": "Newsquawk",
+                "consensusObservedAt": "2026-10-28T08:49:24.404446Z",
+                "postCutoffSupplement": true
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:49:24.404446Z",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct27-extra-hca",
+                "oct28-hca-eps-consensus-check"
+              ],
+              "note": "07시 최초 보고 이후 확인한 동일 분기 EPS 컨센서스. MarketBeat consensus 6.65 selected; Earnings Whispers consensus 6.74 differs. Actual 7.22 matches company adjusted diluted EPS, not GAAP 7.27. Explicit-basis source replaces generic MarketBeat evidence, not because of beat/miss direction; disclosed estimate is unchanged."
             }
           },
           {
@@ -20392,7 +20985,8 @@
             "sourceIds": [
               "oct27-extra-spgi",
               "oct27-extra-spgi-facts",
-              "oct27-followup-spgi-call"
+              "oct27-followup-spgi-call",
+              "oct28-spgi-eps-consensus-check"
             ],
             "releaseTiming": {
               "session": "before_open",
@@ -20690,6 +21284,37 @@
               "publishedAt": null,
               "qaVerified": true,
               "postCutoffSupplement": true
+            },
+            "consensusMetrics": [
+              {
+                "label": "EPS",
+                "basis": "Non-GAAP · 계속사업 조정 희석 EPS",
+                "value": "4.58 USD/주",
+                "consensus": "+0.15 USD/주 (+3.39%)",
+                "raw": {
+                  "value": 4.58,
+                  "consensusValue": 4.43,
+                  "consensusComparable": true,
+                  "surprisePct": 3.386004514672694,
+                  "unit": "USD/share"
+                },
+                "sourceIds": [
+                  "oct27-extra-spgi",
+                  "oct28-spgi-eps-consensus-check"
+                ],
+                "consensusProvider": "Zacks",
+                "consensusObservedAt": "2026-10-28T08:49:24.404446Z",
+                "postCutoffSupplement": true
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:49:24.404446Z",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct27-extra-spgi",
+                "oct28-spgi-eps-consensus-check"
+              ],
+              "note": "07시 최초 보고 이후 확인한 동일 분기 EPS 컨센서스. Adjusted diluted EPS 4.58 is continuing operations after Mobility spin-off; primary source identifies scope. Do not overwrite GAAP EPS/history. MarketBeat secondary GAAP number differs from official and was not used. Explicit-basis source replaces generic MarketBeat evidence, not because of beat/miss direction; disclosed estimate is unchanged."
             }
           },
           {
@@ -20820,7 +21445,8 @@
             "sourceIds": [
               "oct27-extra-hlt",
               "oct27-extra-hlt-facts",
-              "oct27-followup-hlt-call"
+              "oct27-followup-hlt-call",
+              "oct28-hlt-eps-consensus-check"
             ],
             "releaseTiming": {
               "session": "before_open",
@@ -21203,6 +21829,37 @@
               "publishedAt": null,
               "qaVerified": true,
               "postCutoffSupplement": true
+            },
+            "consensusMetrics": [
+              {
+                "label": "EPS",
+                "basis": "Non-GAAP · 특별항목 조정 희석 EPS",
+                "value": "2.45 USD/주",
+                "consensus": "+0.09 USD/주 (+3.81%)",
+                "raw": {
+                  "value": 2.45,
+                  "consensusValue": 2.36,
+                  "consensusComparable": true,
+                  "surprisePct": 3.8135593220339112,
+                  "unit": "USD/share"
+                },
+                "sourceIds": [
+                  "oct27-extra-hlt",
+                  "oct28-hlt-eps-consensus-check"
+                ],
+                "consensusProvider": "Zacks",
+                "consensusObservedAt": "2026-10-28T08:38:03Z",
+                "postCutoffSupplement": true
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:38:03Z",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct27-extra-hlt",
+                "oct28-hlt-eps-consensus-check"
+              ],
+              "note": "07시 최초 보고 이후 확인한 동일 분기 EPS 컨센서스. Zacks consensus 2.36 selected; MarketBeat 2.37 differs. Actual 2.45 is adjusted, not GAAP 2.37."
             }
           },
           {
@@ -21333,7 +21990,8 @@
             "sourceIds": [
               "oct27-extra-itw",
               "oct27-extra-itw-facts",
-              "oct27-itw-call-supplement"
+              "oct27-itw-call-supplement",
+              "oct28-itw-eps-consensus-check"
             ],
             "releaseTiming": {
               "session": "before_open",
@@ -21663,6 +22321,37 @@
               "publishedAt": null,
               "qaVerified": true,
               "postCutoffSupplement": true
+            },
+            "consensusMetrics": [
+              {
+                "label": "EPS",
+                "basis": "US GAAP · 희석 EPS",
+                "value": "3.00 USD/주",
+                "consensus": "+0.03 USD/주 (+1.01%)",
+                "raw": {
+                  "value": 3.0,
+                  "consensusValue": 2.97,
+                  "consensusComparable": true,
+                  "surprisePct": 1.0101010101010035,
+                  "unit": "USD/share"
+                },
+                "sourceIds": [
+                  "oct27-extra-itw",
+                  "oct28-itw-eps-consensus-check"
+                ],
+                "consensusProvider": "Investing.com",
+                "consensusObservedAt": "2026-10-28T08:52:03.039984Z",
+                "postCutoffSupplement": true
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:52:03.039984Z",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct27-extra-itw",
+                "oct28-itw-eps-consensus-check"
+              ],
+              "note": "07시 최초 보고 이후 확인한 동일 분기 EPS 컨센서스. Financial report explicitly compares GAAP EPS3.00 with analyst expectations2.97. Original Zacks2.99 generic-basis estimate is superseded because new source explicitly names GAAP; do not blend."
             }
           },
           {
@@ -21793,7 +22482,9 @@
             "sourceIds": [
               "oct27-extra-pcar",
               "oct27-extra-pcar-facts",
-              "oct27-pcar-call-supplement"
+              "oct27-pcar-call-supplement",
+              "oct28-pcar-eps-primary-check",
+              "oct28-pcar-eps-consensus-check"
             ],
             "releaseTiming": {
               "session": "before_open",
@@ -22112,6 +22803,37 @@
               "publishedAt": null,
               "qaVerified": true,
               "postCutoffSupplement": true
+            },
+            "consensusMetrics": [
+              {
+                "label": "EPS",
+                "basis": "US GAAP · 희석 EPS",
+                "value": "1.61 USD/주",
+                "consensus": "+0.01 USD/주 (+0.63%)",
+                "raw": {
+                  "value": 1.61,
+                  "consensusValue": 1.6,
+                  "consensusComparable": true,
+                  "surprisePct": 0.6250000000000006,
+                  "unit": "USD/share"
+                },
+                "sourceIds": [
+                  "oct28-pcar-eps-primary-check",
+                  "oct28-pcar-eps-consensus-check"
+                ],
+                "consensusProvider": "S&P analysts via StockStory",
+                "consensusObservedAt": "2026-10-28T08:52:03.039984Z",
+                "postCutoffSupplement": true
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:52:03.039984Z",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct28-pcar-eps-primary-check",
+                "oct28-pcar-eps-consensus-check"
+              ],
+              "note": "07시 최초 보고 이후 확인한 동일 분기 EPS 컨센서스. StockStory explicitly labels comparison EPS (GAAP) 1.61 vs analysts consensus1.60 and says consensus GAAP EPS. Official SEC release reports GAAP1.61. Original StreetInsider1.61 generic consensus is retained only as superseded evidence; do not blend. Recalculate .625% from disclosed cents, not its .7% rounded/unrounded headline."
             }
           },
           {
@@ -22242,7 +22964,8 @@
             "sourceIds": [
               "oct27-extra-rcl",
               "oct27-extra-rcl-facts",
-              "oct27-rcl-call-supplement"
+              "oct27-rcl-call-supplement",
+              "oct28-rcl-eps-consensus-check"
             ],
             "releaseTiming": {
               "session": "before_open",
@@ -22608,6 +23331,37 @@
               "publishedAt": null,
               "qaVerified": true,
               "postCutoffSupplement": true
+            },
+            "consensusMetrics": [
+              {
+                "label": "EPS",
+                "basis": "Non-GAAP · 조정 희석 EPS",
+                "value": "6.57 USD/주",
+                "consensus": "+0.19 USD/주 (+2.98%)",
+                "raw": {
+                  "value": 6.57,
+                  "consensusValue": 6.38,
+                  "consensusComparable": true,
+                  "surprisePct": 2.9780564263322944,
+                  "unit": "USD/share"
+                },
+                "sourceIds": [
+                  "oct27-extra-rcl",
+                  "oct28-rcl-eps-consensus-check"
+                ],
+                "consensusProvider": "Zacks",
+                "consensusObservedAt": "2026-10-28T08:38:12Z",
+                "postCutoffSupplement": true
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:38:12Z",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct27-extra-rcl",
+                "oct28-rcl-eps-consensus-check"
+              ],
+              "note": "07시 최초 보고 이후 확인한 동일 분기 EPS 컨센서스. Company release identifies actual EPS basis; financial source compares the same-quarter matching actual with its named analyst estimate."
             }
           },
           {
@@ -22738,7 +23492,8 @@
             "sourceIds": [
               "oct27-extra-shw",
               "oct27-extra-shw-facts",
-              "oct27-shw-call-supplement"
+              "oct27-shw-call-supplement",
+              "oct28-shw-eps-consensus-check"
             ],
             "releaseTiming": {
               "session": "before_open",
@@ -23104,6 +23859,37 @@
               "publishedAt": null,
               "qaVerified": true,
               "postCutoffSupplement": true
+            },
+            "consensusMetrics": [
+              {
+                "label": "EPS",
+                "basis": "Non-GAAP · 조정 희석 EPS",
+                "value": "3.63 USD/주",
+                "consensus": "-0.02 USD/주 (-0.55%)",
+                "raw": {
+                  "value": 3.63,
+                  "consensusValue": 3.65,
+                  "consensusComparable": true,
+                  "surprisePct": -0.5479452054794526,
+                  "unit": "USD/share"
+                },
+                "sourceIds": [
+                  "oct27-extra-shw",
+                  "oct28-shw-eps-consensus-check"
+                ],
+                "consensusProvider": "Zacks",
+                "consensusObservedAt": "2026-10-28T08:38:12Z",
+                "postCutoffSupplement": true
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:38:12Z",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct27-extra-shw",
+                "oct28-shw-eps-consensus-check"
+              ],
+              "note": "07시 최초 보고 이후 확인한 동일 분기 EPS 컨센서스. Zacks 3.65 selected; StreetInsider/MarketBeat 3.69 differ. Both compare adjusted actual 3.63."
             }
           },
           {
@@ -23234,7 +24020,9 @@
             "sourceIds": [
               "oct27-extra-xyl",
               "oct27-extra-xyl-facts",
-              "oct27-xyl-call-supplement"
+              "oct27-xyl-call-supplement",
+              "oct28-xyl-eps-primary-check",
+              "oct28-xyl-eps-consensus-check"
             ],
             "releaseTiming": {
               "session": "before_open",
@@ -23637,6 +24425,37 @@
               "publishedAt": null,
               "qaVerified": true,
               "postCutoffSupplement": true
+            },
+            "consensusMetrics": [
+              {
+                "label": "EPS",
+                "basis": "Non-GAAP · 조정 희석 EPS",
+                "value": "1.44 USD/주",
+                "consensus": "-0.03 USD/주 (-2.04%)",
+                "raw": {
+                  "value": 1.44,
+                  "consensusValue": 1.47,
+                  "consensusComparable": true,
+                  "surprisePct": -2.040816326530614,
+                  "unit": "USD/share"
+                },
+                "sourceIds": [
+                  "oct28-xyl-eps-primary-check",
+                  "oct28-xyl-eps-consensus-check"
+                ],
+                "consensusProvider": "Zacks",
+                "consensusObservedAt": "2026-10-28T08:38:17Z",
+                "postCutoffSupplement": true
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:38:17Z",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct28-xyl-eps-primary-check",
+                "oct28-xyl-eps-consensus-check"
+              ],
+              "note": "07시 최초 보고 이후 확인한 동일 분기 EPS 컨센서스. Zacks 1.47 selected; MarketBeat/StreetInsider 1.45 differ. Actual 1.44 is adjusted, not GAAP 1.25."
             }
           },
           {
@@ -23767,7 +24586,8 @@
             "sourceIds": [
               "oct27-extra-ivz",
               "oct27-extra-ivz-facts",
-              "oct27-followup-ivz-call"
+              "oct27-followup-ivz-call",
+              "oct28-ivz-eps-consensus-check"
             ],
             "releaseTiming": {
               "session": "before_open",
@@ -24113,6 +24933,37 @@
               "publishedAt": null,
               "qaVerified": true,
               "postCutoffSupplement": true
+            },
+            "consensusMetrics": [
+              {
+                "label": "EPS",
+                "basis": "Non-GAAP · 조정 희석 EPS",
+                "value": "0.72 USD/주",
+                "consensus": "-0.02 USD/주 (-2.70%)",
+                "raw": {
+                  "value": 0.72,
+                  "consensusValue": 0.74,
+                  "consensusComparable": true,
+                  "surprisePct": -2.7027027027027053,
+                  "unit": "USD/share"
+                },
+                "sourceIds": [
+                  "oct27-extra-ivz",
+                  "oct28-ivz-eps-consensus-check"
+                ],
+                "consensusProvider": "FactSet via MT Newswires",
+                "consensusObservedAt": "2026-10-28T08:39:44Z",
+                "postCutoffSupplement": true
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:39:44Z",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct27-extra-ivz",
+                "oct28-ivz-eps-consensus-check"
+              ],
+              "note": "07시 최초 보고 이후 확인한 동일 분기 EPS 컨센서스. Company release identifies actual EPS basis; financial source compares the same-quarter matching actual with its named analyst estimate."
             }
           },
           {
@@ -24243,7 +25094,8 @@
             "sourceIds": [
               "oct27-extra-jci",
               "oct27-extra-jci-facts",
-              "oct27-followup-jci-call"
+              "oct27-followup-jci-call",
+              "oct28-jci-eps-consensus-check"
             ],
             "releaseTiming": {
               "session": "before_open",
@@ -24590,6 +25442,37 @@
               "publishedAt": null,
               "qaVerified": true,
               "postCutoffSupplement": true
+            },
+            "consensusMetrics": [
+              {
+                "label": "EPS",
+                "basis": "Non-GAAP · 계속사업 조정 희석 EPS",
+                "value": "1.66 USD/주",
+                "consensus": "+0.08 USD/주 (+5.06%)",
+                "raw": {
+                  "value": 1.66,
+                  "consensusValue": 1.58,
+                  "consensusComparable": true,
+                  "surprisePct": 5.063291139240497,
+                  "unit": "USD/share"
+                },
+                "sourceIds": [
+                  "oct27-extra-jci",
+                  "oct28-jci-eps-consensus-check"
+                ],
+                "consensusProvider": "Newsquawk",
+                "consensusObservedAt": "2026-10-28T08:38:17Z",
+                "postCutoffSupplement": true
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:38:17Z",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct27-extra-jci",
+                "oct28-jci-eps-consensus-check"
+              ],
+              "note": "07시 최초 보고 이후 확인한 동일 분기 EPS 컨센서스. Company release identifies actual EPS basis; financial source compares the same-quarter matching actual with its named analyst estimate."
             }
           },
           {
@@ -24720,7 +25603,8 @@
             "sourceIds": [
               "oct27-extra-iqv",
               "oct27-extra-iqv-facts",
-              "oct27-followup-iqv-call"
+              "oct27-followup-iqv-call",
+              "oct28-iqv-eps-consensus-check"
             ],
             "releaseTiming": {
               "session": "before_open",
@@ -25103,6 +25987,37 @@
               "publishedAt": null,
               "qaVerified": true,
               "postCutoffSupplement": true
+            },
+            "consensusMetrics": [
+              {
+                "label": "EPS",
+                "basis": "Non-GAAP · 조정 희석 EPS",
+                "value": "3.34 USD/주",
+                "consensus": "+0.08 USD/주 (+2.45%)",
+                "raw": {
+                  "value": 3.34,
+                  "consensusValue": 3.26,
+                  "consensusComparable": true,
+                  "surprisePct": 2.4539877300613524,
+                  "unit": "USD/share"
+                },
+                "sourceIds": [
+                  "oct27-extra-iqv",
+                  "oct28-iqv-eps-consensus-check"
+                ],
+                "consensusProvider": "FactSet / StreetAccount",
+                "consensusObservedAt": "2026-10-28T08:38:17Z",
+                "postCutoffSupplement": true
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:38:17Z",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct27-extra-iqv",
+                "oct28-iqv-eps-consensus-check"
+              ],
+              "note": "07시 최초 보고 이후 확인한 동일 분기 EPS 컨센서스. Company release identifies actual EPS basis; financial source compares the same-quarter matching actual with its named analyst estimate."
             }
           },
           {
@@ -25233,7 +26148,8 @@
             "sourceIds": [
               "oct27-extra-hubb",
               "oct27-extra-hubb-facts",
-              "oct27-hubb-call-supplement"
+              "oct27-hubb-call-supplement",
+              "oct28-hubb-eps-consensus-check"
             ],
             "releaseTiming": {
               "session": "before_open",
@@ -25575,6 +26491,37 @@
               "publishedAt": null,
               "qaVerified": true,
               "postCutoffSupplement": true
+            },
+            "consensusMetrics": [
+              {
+                "label": "EPS",
+                "basis": "Non-GAAP · 조정 희석 EPS",
+                "value": "5.91 USD/주",
+                "consensus": "+0.16 USD/주 (+2.78%)",
+                "raw": {
+                  "value": 5.91,
+                  "consensusValue": 5.75,
+                  "consensusComparable": true,
+                  "surprisePct": 2.7826086956521765,
+                  "unit": "USD/share"
+                },
+                "sourceIds": [
+                  "oct27-extra-hubb",
+                  "oct28-hubb-eps-consensus-check"
+                ],
+                "consensusProvider": "Zacks via Associated Press",
+                "consensusObservedAt": "2026-10-28T08:52:03.039984Z",
+                "postCutoffSupplement": true
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:52:03.039984Z",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct27-extra-hubb",
+                "oct28-hubb-eps-consensus-check"
+              ],
+              "note": "07시 최초 보고 이후 확인한 동일 분기 EPS 컨센서스. AP explicitly reports EPS adjusted for one-time gains and costs5.91 versus average estimate5.75 from five Zacks analysts. Official adjusted diluted EPS5.91. Same Zacks estimate, source strengthened."
             }
           },
           {
@@ -25705,7 +26652,8 @@
             "sourceIds": [
               "oct27-extra-pnr",
               "oct27-extra-pnr-facts",
-              "oct27-pnr-call-supplement"
+              "oct27-pnr-call-supplement",
+              "oct28-pnr-eps-consensus-check"
             ],
             "releaseTiming": {
               "session": "before_open",
@@ -26108,6 +27056,37 @@
               "publishedAt": null,
               "qaVerified": true,
               "postCutoffSupplement": true
+            },
+            "consensusMetrics": [
+              {
+                "label": "EPS",
+                "basis": "Non-GAAP · 계속사업 조정 희석 EPS",
+                "value": "1.18 USD/주",
+                "consensus": "+0.11 USD/주 (+10.28%)",
+                "raw": {
+                  "value": 1.18,
+                  "consensusValue": 1.07,
+                  "consensusComparable": true,
+                  "surprisePct": 10.280373831775687,
+                  "unit": "USD/share"
+                },
+                "sourceIds": [
+                  "oct27-extra-pnr",
+                  "oct28-pnr-eps-consensus-check"
+                ],
+                "consensusProvider": "FactSet via MT Newswires",
+                "consensusObservedAt": "2026-10-28T08:49:24.404446Z",
+                "postCutoffSupplement": true
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:49:24.404446Z",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct27-extra-pnr",
+                "oct28-pnr-eps-consensus-check"
+              ],
+              "note": "07시 최초 보고 이후 확인한 동일 분기 EPS 컨센서스. MarketBeat 1.07 selected; StreetInsider 1.08 differs. Actual is adjusted diluted continuing-operations EPS 1.18, not GAAP 0.91. Explicit-basis source replaces generic MarketBeat evidence, not because of beat/miss direction; disclosed estimate is unchanged."
             }
           },
           {
@@ -26242,7 +27221,8 @@
             "sourceIds": [
               "oct27-wm-q3",
               "oct27-wm-facts",
-              "oct27-wm-consensus"
+              "oct27-wm-consensus",
+              "oct28-wm-eps-basis-review"
             ],
             "releaseTiming": {
               "session": "after_close",
@@ -26424,17 +27404,17 @@
                 "label": "EPS",
                 "basis": "Non-GAAP · 조정 희석 EPS",
                 "value": "2.15 USD/share",
-                "consensus": "-1.38%",
+                "consensus": "2.18 USD/주 대비 -1.38%",
                 "raw": {
                   "value": 2.15,
                   "consensusValue": 2.18,
                   "consensusComparable": true,
-                  "surprisePct": -1.3761467889908396,
+                  "surprisePct": -1.376146788990837,
                   "unit": "USD/share"
                 },
                 "sourceIds": [
                   "oct27-wm-q3",
-                  "oct27-wm-consensus"
+                  "oct28-wm-eps-basis-review"
                 ]
               }
             ],
@@ -26548,7 +27528,38 @@
               }
             },
             "universeScope": "sp500",
-            "reportCutoffAt": "2026-10-28T07:00:00+09:00"
+            "reportCutoffAt": "2026-10-28T07:00:00+09:00",
+            "consensusEvidenceHistory": [
+              {
+                "observedBefore": "2026-10-28T08:53:10.234757+00:00",
+                "metric": {
+                  "label": "EPS",
+                  "basis": "Non-GAAP · 조정 희석 EPS",
+                  "value": "2.15 USD/share",
+                  "consensus": "-1.38%",
+                  "raw": {
+                    "value": 2.15,
+                    "consensusValue": 2.18,
+                    "consensusComparable": true,
+                    "surprisePct": -1.3761467889908396,
+                    "unit": "USD/share"
+                  },
+                  "sourceIds": [
+                    "oct27-wm-q3",
+                    "oct27-wm-consensus"
+                  ]
+                },
+                "note": "보존된 이전 공급자·관측 예상치. 최신 본문 비교와 합산하지 않음."
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:53:10.234757+00:00",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct28-wm-eps-basis-review"
+              ],
+              "note": " EPS 동일 기준 검증: 원문 adjusted EPS 2.15 대 consensus 2.18 명시."
+            }
           },
           {
             "ticker": "OKE",
@@ -26680,7 +27691,9 @@
             ],
             "sourceIds": [
               "oct27-oke-q3",
-              "oct27-oke-facts"
+              "oct27-oke-facts",
+              "oct28-oke-eps-primary-check",
+              "oct28-oke-eps-consensus-check"
             ],
             "releaseTiming": {
               "session": "after_close",
@@ -26847,7 +27860,7 @@
             "callCheckedAt": "2026-10-27T21:49:36.774598+00:00",
             "dataCheckedAt": "2026-10-27T21:49:36.774598+00:00",
             "statusLabel": "실적 발표",
-            "note": "확인하지 못한 지표·분기 값은 null이며 0 또는 추정값이 아니다. 과거 분기는 SEC 단독분기 보고값만 사용한다.",
+            "note": "확인하지 못한 지표·분기 값은 null이며 0 또는 추정값이 아니다. 과거 분기는 SEC 단독분기 보고값만 사용한다. 비교 보류 EPS 원문 예상치 1.5 USD/주: 실제치 2.13와 회계기준 일치가 확인되지 않아 본문 비교에서 제외. Official actual EPS basis is known, but retrieved consensus source does not explicitly establish estimate basis. Numeric equality to a GAAP actual is insufficient; withhold pending explicit same-basis evidence.",
             "callScheduledAt": "2026-10-28T11:00:00-04:00",
             "guidance": "2026 순이익40.9~42.7억 USD, 조정EBITDA85~86억 USD, 자본지출약35억 USD.",
             "guidanceSourceIds": [
@@ -26963,7 +27976,38 @@
               }
             },
             "universeScope": "sp500",
-            "reportCutoffAt": "2026-10-28T07:00:00+09:00"
+            "reportCutoffAt": "2026-10-28T07:00:00+09:00",
+            "consensusMetrics": [
+              {
+                "label": "EPS",
+                "basis": "US GAAP · 희석 EPS (일회성 세금혜택 포함)",
+                "value": "2.13 USD/주",
+                "consensus": "미확인",
+                "raw": {
+                  "value": 2.13,
+                  "consensusValue": 1.5,
+                  "consensusComparable": false,
+                  "surprisePct": null,
+                  "unit": "USD/share"
+                },
+                "sourceIds": [
+                  "oct28-oke-eps-primary-check",
+                  "oct28-oke-eps-consensus-check"
+                ],
+                "consensusProvider": "StreetInsider",
+                "consensusObservedAt": "2026-10-28T08:38:45Z",
+                "postCutoffSupplement": true
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:38:45Z",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct28-oke-eps-primary-check",
+                "oct28-oke-eps-consensus-check"
+              ],
+              "note": "07시 최초 보고 이후 확인한 동일 분기 EPS 컨센서스. Official GAAP 2.13 includes one-time noncash tax benefit 0.53/share. StreetInsider pairs this reported EPS with 1.50 estimate; no invented adjusted actual. Provider-specific comparison does not mean recurring beat was 42%."
+            }
           },
           {
             "ticker": "BKR",
@@ -27097,7 +28141,8 @@
             "sourceIds": [
               "oct27-bkr-q3",
               "oct27-bkr-facts",
-              "oct27-bkr-consensus"
+              "oct27-bkr-consensus",
+              "oct28-bkr-eps-basis-review"
             ],
             "releaseTiming": {
               "session": "after_close",
@@ -27213,24 +28258,24 @@
             "callCheckedAt": "2026-10-27T21:49:36.774598+00:00",
             "dataCheckedAt": "2026-10-27T21:49:36.774598+00:00",
             "statusLabel": "실적 발표",
-            "note": "확인하지 못한 지표·분기 값은 null이며 0 또는 추정값이 아니다. 과거 분기는 SEC 단독분기 보고값만 사용한다. GP는 공시 매출8,025−원가6,097=1,928백만 달러; 기타영업항목 분류가 불명확한 OP는 미확인. Chart인수로 비교범위 변화.",
+            "note": "확인하지 못한 지표·분기 값은 null이며 0 또는 추정값이 아니다. 과거 분기는 SEC 단독분기 보고값만 사용한다. GP는 공시 매출8,025−원가6,097=1,928백만 달러; 기타영업항목 분류가 불명확한 OP는 미확인. Chart인수로 비교범위 변화. 이전 EPS 예상치 0.601 USD/주와 출처·관측은 원자료로 보존. 최신 비교는 Investing 0.6 USD/주로 공급자별 값을 평균하지 않음.",
             "callScheduledAt": "2026-10-28T09:30:00-04:00",
             "consensusMetrics": [
               {
                 "label": "EPS",
                 "basis": "Non-GAAP · 조정 희석 EPS",
                 "value": "0.7 USD/share",
-                "consensus": "+16.47%",
+                "consensus": "0.6 USD/주 대비 +16.67%",
                 "raw": {
                   "value": 0.7,
-                  "consensusValue": 0.601,
+                  "consensusValue": 0.6,
                   "consensusComparable": true,
-                  "surprisePct": 16.472545757071554,
+                  "surprisePct": 16.666666666666664,
                   "unit": "USD/share"
                 },
                 "sourceIds": [
                   "oct27-bkr-q3",
-                  "oct27-bkr-consensus"
+                  "oct28-bkr-eps-basis-review"
                 ]
               }
             ],
@@ -27344,7 +28389,38 @@
               }
             },
             "universeScope": "sp500",
-            "reportCutoffAt": "2026-10-28T07:00:00+09:00"
+            "reportCutoffAt": "2026-10-28T07:00:00+09:00",
+            "consensusEvidenceHistory": [
+              {
+                "observedBefore": "2026-10-28T08:53:10.234757+00:00",
+                "metric": {
+                  "label": "EPS",
+                  "basis": "Non-GAAP · 조정 희석 EPS",
+                  "value": "0.7 USD/share",
+                  "consensus": "+16.47%",
+                  "raw": {
+                    "value": 0.7,
+                    "consensusValue": 0.601,
+                    "consensusComparable": true,
+                    "surprisePct": 16.472545757071554,
+                    "unit": "USD/share"
+                  },
+                  "sourceIds": [
+                    "oct27-bkr-q3",
+                    "oct27-bkr-consensus"
+                  ]
+                },
+                "note": "보존된 이전 공급자·관측 예상치. 최신 본문 비교와 합산하지 않음."
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:53:10.234757+00:00",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct28-bkr-eps-basis-review"
+              ],
+              "note": " EPS 동일 기준 검증: 동일 공급자 역사 표의 Q2 0.640는 공식 조정 희석 EPS 0.64이며 GAAP 0.68과 구분된다. 표 내 Q2 요약도 adjusted라고 명시. 현재 Q3 실제 0.700/예상 0.600; 이전 관측 0.601은 원자료로 보존."
+            }
           },
           {
             "ticker": "VTR",
@@ -27476,7 +28552,9 @@
             ],
             "sourceIds": [
               "oct27-vtr-q3",
-              "oct27-vtr-facts"
+              "oct27-vtr-facts",
+              "oct28-vtr-eps-primary-check",
+              "oct28-vtr-eps-consensus-check"
             ],
             "releaseTiming": {
               "session": "after_close",
@@ -27617,7 +28695,7 @@
             "callCheckedAt": "2026-10-27T21:49:36.774598+00:00",
             "dataCheckedAt": "2026-10-27T21:49:36.774598+00:00",
             "statusLabel": "실적 발표",
-            "note": "확인하지 못한 지표·분기 값은 null이며 0 또는 추정값이 아니다. 과거 분기는 SEC 단독분기 보고값만 사용한다.",
+            "note": "확인하지 못한 지표·분기 값은 null이며 0 또는 추정값이 아니다. 과거 분기는 SEC 단독분기 보고값만 사용한다. 비교 보류 EPS 원문 예상치 0.16 USD/주: 실제치 0.13와 회계기준 일치가 확인되지 않아 본문 비교에서 제외. Official actual EPS basis is known, but retrieved consensus source does not explicitly establish estimate basis. Numeric equality to a GAAP actual is insufficient; withhold pending explicit same-basis evidence.",
             "callScheduledAt": "2026-10-28T10:00:00-04:00",
             "guidance": "2026 EPS0.64~0.67, 정상화FFO3.87~3.90 USD/share.",
             "guidanceSourceIds": [
@@ -27733,7 +28811,38 @@
               }
             },
             "universeScope": "sp500",
-            "reportCutoffAt": "2026-10-28T07:00:00+09:00"
+            "reportCutoffAt": "2026-10-28T07:00:00+09:00",
+            "consensusMetrics": [
+              {
+                "label": "EPS",
+                "basis": "US GAAP · 희석 EPS (FFO 아님)",
+                "value": "0.13 USD/주",
+                "consensus": "미확인",
+                "raw": {
+                  "value": 0.13,
+                  "consensusValue": 0.16,
+                  "consensusComparable": false,
+                  "surprisePct": null,
+                  "unit": "USD/share"
+                },
+                "sourceIds": [
+                  "oct28-vtr-eps-primary-check",
+                  "oct28-vtr-eps-consensus-check"
+                ],
+                "consensusProvider": "Investing.com",
+                "consensusObservedAt": "2026-10-28T08:41:10Z",
+                "postCutoffSupplement": true
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:41:10Z",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct28-vtr-eps-primary-check",
+                "oct28-vtr-eps-consensus-check"
+              ],
+              "note": "07시 최초 보고 이후 확인한 동일 분기 EPS 컨센서스. Investing historical dated 2026-10-27 row pairs net-income EPS 0.13 with EPS forecast 0.16. FFO 0.99 vs 0.98 is separate and not used."
+            }
           },
           {
             "ticker": "ACGL",
@@ -27866,7 +28975,8 @@
             "sourceIds": [
               "oct27-acgl-q3",
               "oct27-acgl-facts",
-              "oct27-acgl-consensus"
+              "oct27-acgl-consensus",
+              "oct28-acgl-eps-basis-review"
             ],
             "releaseTiming": {
               "session": "after_close",
@@ -28014,17 +29124,17 @@
                 "label": "EPS",
                 "basis": "Non-GAAP · 세후 영업 희석 EPS",
                 "value": "2.67 USD/share",
-                "consensus": "+16.09%",
+                "consensus": "2.3 USD/주 대비 +16.09%",
                 "raw": {
                   "value": 2.67,
                   "consensusValue": 2.3,
                   "consensusComparable": true,
-                  "surprisePct": 16.086956521739125,
+                  "surprisePct": 16.086956521739136,
                   "unit": "USD/share"
                 },
                 "sourceIds": [
                   "oct27-acgl-q3",
-                  "oct27-acgl-consensus"
+                  "oct28-acgl-eps-basis-review"
                 ]
               }
             ],
@@ -28138,7 +29248,38 @@
               }
             },
             "universeScope": "sp500",
-            "reportCutoffAt": "2026-10-28T07:00:00+09:00"
+            "reportCutoffAt": "2026-10-28T07:00:00+09:00",
+            "consensusEvidenceHistory": [
+              {
+                "observedBefore": "2026-10-28T08:53:10.234757+00:00",
+                "metric": {
+                  "label": "EPS",
+                  "basis": "Non-GAAP · 세후 영업 희석 EPS",
+                  "value": "2.67 USD/share",
+                  "consensus": "+16.09%",
+                  "raw": {
+                    "value": 2.67,
+                    "consensusValue": 2.3,
+                    "consensusComparable": true,
+                    "surprisePct": 16.086956521739125,
+                    "unit": "USD/share"
+                  },
+                  "sourceIds": [
+                    "oct27-acgl-q3",
+                    "oct27-acgl-consensus"
+                  ]
+                },
+                "note": "보존된 이전 공급자·관측 예상치. 최신 본문 비교와 합산하지 않음."
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:53:10.234757+00:00",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct28-acgl-eps-basis-review"
+              ],
+              "note": " EPS 동일 기준 검증: 원문 조정 EPS 2.67 대 예상 2.30 명시; GAAP EPS 3.00 별도."
+            }
           },
           {
             "ticker": "EQT",
@@ -28271,7 +29412,8 @@
             "sourceIds": [
               "oct27-eqt-q3",
               "oct27-eqt-facts",
-              "oct27-eqt-call-cancellation-sec"
+              "oct27-eqt-call-cancellation-sec",
+              "oct28-eqt-eps-consensus-check"
             ],
             "releaseTiming": {
               "session": "after_close",
@@ -28571,6 +29713,37 @@
               "qaVerified": false,
               "postCutoffSupplement": true,
               "note": "Range 인수 발표에 따라10/28 예정 Q3 실적 콜을 취소한다고 SEC 공시 명시.10/26 08:00ET 인수거래 설명 콜은 별도 행사이므로10/27 실적 콜 요약으로 복제하지 않는다."
+            },
+            "consensusMetrics": [
+              {
+                "label": "EPS",
+                "basis": "Non-GAAP · 조정 희석 EPS",
+                "value": "0.42 USD/주",
+                "consensus": "+0.06 USD/주 (+16.67%)",
+                "raw": {
+                  "value": 0.42,
+                  "consensusValue": 0.36,
+                  "consensusComparable": true,
+                  "surprisePct": 16.666666666666664,
+                  "unit": "USD/share"
+                },
+                "sourceIds": [
+                  "oct27-eqt-q3",
+                  "oct28-eqt-eps-consensus-check"
+                ],
+                "consensusProvider": "S&P analysts via StockStory",
+                "consensusObservedAt": "2026-10-28T08:40:16Z",
+                "postCutoffSupplement": true
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:40:16Z",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct27-eqt-q3",
+                "oct28-eqt-eps-consensus-check"
+              ],
+              "note": "07시 최초 보고 이후 확인한 동일 분기 EPS 컨센서스. StockStory explicitly labels adjusted EPS 0.42 vs S&P analyst consensus 0.36. Its 16.3% reported surprise uses unrounded inputs; candidate recomputes 16.67% from disclosed cents."
             }
           },
           {
@@ -28703,7 +29876,9 @@
             ],
             "sourceIds": [
               "oct27-exr-q3",
-              "oct27-exr-facts"
+              "oct27-exr-facts",
+              "oct28-exr-eps-primary-check",
+              "oct28-exr-eps-consensus-check"
             ],
             "releaseTiming": {
               "session": "after_close",
@@ -28870,7 +30045,7 @@
             "callCheckedAt": "2026-10-27T21:49:36.774598+00:00",
             "dataCheckedAt": "2026-10-27T21:53:56.850219+00:00",
             "statusLabel": "실적 발표",
-            "note": "확인하지 못한 지표·분기 값은 null이며 0 또는 추정값이 아니다. 과거 분기는 SEC 단독분기 보고값만 사용한다.",
+            "note": "확인하지 못한 지표·분기 값은 null이며 0 또는 추정값이 아니다. 과거 분기는 SEC 단독분기 보고값만 사용한다. 비교 보류 EPS 원문 예상치 1.19 USD/주: 실제치 1.17와 회계기준 일치가 확인되지 않아 본문 비교에서 제외. Official actual EPS basis is known, but retrieved consensus source does not explicitly establish estimate basis. Numeric equality to a GAAP actual is insufficient; withhold pending explicit same-basis evidence.",
             "operatingMargin": {
               "value": 44.04051733438826,
               "basis": "US GAAP · 연결 OP/Rev",
@@ -28989,7 +30164,38 @@
               }
             },
             "universeScope": "sp500",
-            "reportCutoffAt": "2026-10-28T07:00:00+09:00"
+            "reportCutoffAt": "2026-10-28T07:00:00+09:00",
+            "consensusMetrics": [
+              {
+                "label": "EPS",
+                "basis": "US GAAP · 희석 EPS (FFO 아님)",
+                "value": "1.17 USD/주",
+                "consensus": "미확인",
+                "raw": {
+                  "value": 1.17,
+                  "consensusValue": 1.19,
+                  "consensusComparable": false,
+                  "surprisePct": null,
+                  "unit": "USD/share"
+                },
+                "sourceIds": [
+                  "oct28-exr-eps-primary-check",
+                  "oct28-exr-eps-consensus-check"
+                ],
+                "consensusProvider": "StreetInsider",
+                "consensusObservedAt": "2026-10-28T08:40:16Z",
+                "postCutoffSupplement": true
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:40:16Z",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct28-exr-eps-primary-check",
+                "oct28-exr-eps-consensus-check"
+              ],
+              "note": "07시 최초 보고 이후 확인한 동일 분기 EPS 컨센서스. GAAP EPS 1.17 vs 1.19. Core FFO 2.17 vs 2.10 excluded. Rejected RapidTradeView mixed Core FFO actual with GAAP estimate."
+            }
           },
           {
             "ticker": "FE",
@@ -29121,7 +30327,9 @@
             ],
             "sourceIds": [
               "oct27-fe-q3",
-              "oct27-fe-facts"
+              "oct27-fe-facts",
+              "oct28-fe-eps-primary-check",
+              "oct28-fe-eps-consensus-check"
             ],
             "releaseTiming": {
               "session": "after_close",
@@ -29365,7 +30573,38 @@
               }
             },
             "universeScope": "sp500",
-            "reportCutoffAt": "2026-10-28T07:00:00+09:00"
+            "reportCutoffAt": "2026-10-28T07:00:00+09:00",
+            "consensusMetrics": [
+              {
+                "label": "EPS",
+                "basis": "Non-GAAP · Core EPS",
+                "value": "0.98 USD/주",
+                "consensus": "+0.08 USD/주 (+8.89%)",
+                "raw": {
+                  "value": 0.98,
+                  "consensusValue": 0.9,
+                  "consensusComparable": true,
+                  "surprisePct": 8.888888888888884,
+                  "unit": "USD/share"
+                },
+                "sourceIds": [
+                  "oct28-fe-eps-primary-check",
+                  "oct28-fe-eps-consensus-check"
+                ],
+                "consensusProvider": "FactSet via MT Newswires",
+                "consensusObservedAt": "2026-10-28T08:40:16Z",
+                "postCutoffSupplement": true
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:40:16Z",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct28-fe-eps-primary-check",
+                "oct28-fe-eps-consensus-check"
+              ],
+              "note": "07시 최초 보고 이후 확인한 동일 분기 EPS 컨센서스. Company release identifies actual EPS basis; financial source compares the same-quarter matching actual with its named analyst estimate."
+            }
           },
           {
             "ticker": "PPG",
@@ -29499,7 +30738,8 @@
             "sourceIds": [
               "oct27-ppg-q3",
               "oct27-ppg-facts",
-              "oct27-ppg-consensus"
+              "oct27-ppg-consensus",
+              "oct28-ppg-eps-basis-review"
             ],
             "releaseTiming": {
               "session": "after_close",
@@ -29627,23 +30867,23 @@
             "callCheckedAt": "2026-10-27T21:49:36.774598+00:00",
             "dataCheckedAt": "2026-10-27T21:49:36.774598+00:00",
             "statusLabel": "실적 발표",
-            "note": "확인하지 못한 지표·분기 값은 null이며 0 또는 추정값이 아니다. 과거 분기는 SEC 단독분기 보고값만 사용한다. 원가에 감가상각 등이 별도 표시되어 완전한 GP/GPM을 임의로 만들지 않았다. 본문 EPS는 계속사업 GAAP 희석 2.12달러(전년1.96), 전체순익 희석2.02와 구분한다. 과거EPS는 계속사업 기준 확인분만 사용.",
+            "note": "확인하지 못한 지표·분기 값은 null이며 0 또는 추정값이 아니다. 과거 분기는 SEC 단독분기 보고값만 사용한다. 원가에 감가상각 등이 별도 표시되어 완전한 GP/GPM을 임의로 만들지 않았다. 본문 EPS는 계속사업 GAAP 희석 2.12달러(전년1.96), 전체순익 희석2.02와 구분한다. 과거EPS는 계속사업 기준 확인분만 사용. 이전 EPS 예상치 2.13 USD/주와 출처·관측은 원자료로 보존. 최신 비교는 MT Newswires / FactSet 2.12 USD/주로 공급자별 값을 평균하지 않음.",
             "consensusMetrics": [
               {
                 "label": "EPS",
                 "basis": "Non-GAAP · 조정 희석 EPS",
                 "value": "2.25 USD/share",
-                "consensus": "+5.63%",
+                "consensus": "2.12 USD/주 대비 +6.13%",
                 "raw": {
                   "value": 2.25,
-                  "consensusValue": 2.13,
+                  "consensusValue": 2.12,
                   "consensusComparable": true,
-                  "surprisePct": 5.633802816901423,
+                  "surprisePct": 6.132075471698108,
                   "unit": "USD/share"
                 },
                 "sourceIds": [
                   "oct27-ppg-q3",
-                  "oct27-ppg-consensus"
+                  "oct28-ppg-eps-basis-review"
                 ]
               }
             ],
@@ -29761,7 +31001,38 @@
               }
             },
             "universeScope": "sp500",
-            "reportCutoffAt": "2026-10-28T07:00:00+09:00"
+            "reportCutoffAt": "2026-10-28T07:00:00+09:00",
+            "consensusEvidenceHistory": [
+              {
+                "observedBefore": "2026-10-28T08:53:10.234757+00:00",
+                "metric": {
+                  "label": "EPS",
+                  "basis": "Non-GAAP · 조정 희석 EPS",
+                  "value": "2.25 USD/share",
+                  "consensus": "+5.63%",
+                  "raw": {
+                    "value": 2.25,
+                    "consensusValue": 2.13,
+                    "consensusComparable": true,
+                    "surprisePct": 5.633802816901423,
+                    "unit": "USD/share"
+                  },
+                  "sourceIds": [
+                    "oct27-ppg-q3",
+                    "oct27-ppg-consensus"
+                  ]
+                },
+                "note": "보존된 이전 공급자·관측 예상치. 최신 본문 비교와 합산하지 않음."
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:53:10.234757+00:00",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct28-ppg-eps-basis-review"
+              ],
+              "note": " EPS 동일 기준 검증: 원문 adjusted diluted EPS 2.25 대 FactSet 2.12 명시. 다른 공급자 2.13과 혼합하지 않음."
+            }
           },
           {
             "ticker": "EXE",
@@ -29893,7 +31164,8 @@
             ],
             "sourceIds": [
               "oct27-exe-q3",
-              "oct27-exe-facts"
+              "oct27-exe-facts",
+              "oct28-exe-eps-consensus-check"
             ],
             "releaseTiming": {
               "session": "after_close",
@@ -30184,7 +31456,38 @@
               }
             },
             "universeScope": "sp500",
-            "reportCutoffAt": "2026-10-28T07:00:00+09:00"
+            "reportCutoffAt": "2026-10-28T07:00:00+09:00",
+            "consensusMetrics": [
+              {
+                "label": "EPS",
+                "basis": "Non-GAAP · 조정 희석 EPS",
+                "value": "1.46 USD/주",
+                "consensus": "+0.19 USD/주 (+14.96%)",
+                "raw": {
+                  "value": 1.46,
+                  "consensusValue": 1.27,
+                  "consensusComparable": true,
+                  "surprisePct": 14.960629921259837,
+                  "unit": "USD/share"
+                },
+                "sourceIds": [
+                  "oct27-exe-q3",
+                  "oct28-exe-eps-consensus-check"
+                ],
+                "consensusProvider": "LSEG via Reuters / EnergyNow",
+                "consensusObservedAt": "2026-10-28T08:38:40Z",
+                "postCutoffSupplement": true
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:38:40Z",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct27-exe-q3",
+                "oct28-exe-eps-consensus-check"
+              ],
+              "note": "07시 최초 보고 이후 확인한 동일 분기 EPS 컨센서스. Reuters/LSEG 1.27 selected; Zacks 1.28 and Benzinga 1.31 differ. No blending."
+            }
           },
           {
             "ticker": "ESS",
@@ -30318,7 +31621,9 @@
             "sourceIds": [
               "oct27-ess-q3",
               "oct27-ess-facts",
-              "oct27-ess-official-pdf"
+              "oct27-ess-official-pdf",
+              "oct28-ess-eps-primary-check",
+              "oct28-ess-eps-consensus-check"
             ],
             "releaseTiming": {
               "session": "after_close",
@@ -30512,7 +31817,7 @@
             "callCheckedAt": "2026-10-27T21:49:36.774598+00:00",
             "dataCheckedAt": "2026-10-27T21:53:56.850219+00:00",
             "statusLabel": "실적 발표",
-            "note": "확인하지 못한 지표·분기 값은 null이며 0 또는 추정값이 아니다. 과거 분기는 SEC 단독분기 보고값만 사용한다.",
+            "note": "확인하지 못한 지표·분기 값은 null이며 0 또는 추정값이 아니다. 과거 분기는 SEC 단독분기 보고값만 사용한다. 비교 보류 EPS 원문 예상치 1.47 USD/주: 실제치 1.52와 회계기준 일치가 확인되지 않아 본문 비교에서 제외. Official actual EPS basis is known, but retrieved consensus source does not explicitly establish estimate basis. Numeric equality to a GAAP actual is insufficient; withhold pending explicit same-basis evidence.",
             "callScheduledAt": "2026-10-28T12:00:00-04:00",
             "guidance": "2026 GAAP희석EPS5.62~5.74, CoreFFO16.10~16.22 USD/share.",
             "guidanceSourceIds": [
@@ -30628,7 +31933,38 @@
               }
             },
             "universeScope": "sp500",
-            "reportCutoffAt": "2026-10-28T07:00:00+09:00"
+            "reportCutoffAt": "2026-10-28T07:00:00+09:00",
+            "consensusMetrics": [
+              {
+                "label": "EPS",
+                "basis": "US GAAP · 희석 EPS (FFO 아님)",
+                "value": "1.52 USD/주",
+                "consensus": "미확인",
+                "raw": {
+                  "value": 1.52,
+                  "consensusValue": 1.47,
+                  "consensusComparable": false,
+                  "surprisePct": null,
+                  "unit": "USD/share"
+                },
+                "sourceIds": [
+                  "oct28-ess-eps-primary-check",
+                  "oct28-ess-eps-consensus-check"
+                ],
+                "consensusProvider": "StreetInsider",
+                "consensusObservedAt": "2026-10-28T08:40:16Z",
+                "postCutoffSupplement": true
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:40:16Z",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct28-ess-eps-primary-check",
+                "oct28-ess-eps-consensus-check"
+              ],
+              "note": "07시 최초 보고 이후 확인한 동일 분기 EPS 컨센서스. GAAP EPS 1.52 vs 1.47. Core FFO 4.00 vs 4.01 is separate and not used."
+            }
           },
           {
             "ticker": "CSGP",
@@ -30763,7 +32099,8 @@
               "oct27-csgp-q3",
               "oct27-csgp-facts",
               "oct27-csgp-consensus",
-              "oct27-csgp-call-public-transcript"
+              "oct27-csgp-call-public-transcript",
+              "oct28-csgp-eps-basis-review"
             ],
             "releaseTiming": {
               "session": "after_close",
@@ -30968,7 +32305,7 @@
             "callCheckedAt": "2026-10-27T23:53:45.457400+00:00",
             "dataCheckedAt": "2026-10-27T21:49:36.774598+00:00",
             "statusLabel": "실적 발표",
-            "note": "확인하지 못한 지표·분기 값은 null이며 0 또는 추정값이 아니다. 과거 분기는 SEC 단독분기 보고값만 사용한다.",
+            "note": "확인하지 못한 지표·분기 값은 null이며 0 또는 추정값이 아니다. 과거 분기는 SEC 단독분기 보고값만 사용한다. 이전 EPS 예상치 0.337 USD/주와 출처·관측은 원자료로 보존. 최신 비교는 Earnings Whispers 0.34 USD/주로 공급자별 값을 평균하지 않음.",
             "callScheduledAt": "2026-10-27T17:00:00-04:00",
             "operatingMargin": {
               "value": 8.823529411764707,
@@ -30983,17 +32320,17 @@
                 "label": "EPS",
                 "basis": "Non-GAAP · 조정 희석 EPS",
                 "value": "0.38 USD/share",
-                "consensus": "+12.76%",
+                "consensus": "0.34 USD/주 대비 +11.76%",
                 "raw": {
                   "value": 0.38,
-                  "consensusValue": 0.337,
+                  "consensusValue": 0.34,
                   "consensusComparable": true,
-                  "surprisePct": 12.759643916913932,
+                  "surprisePct": 11.764705882352935,
                   "unit": "USD/share"
                 },
                 "sourceIds": [
                   "oct27-csgp-q3",
-                  "oct27-csgp-consensus"
+                  "oct28-csgp-eps-basis-review"
                 ]
               }
             ],
@@ -31127,6 +32464,37 @@
               "qaVerified": true,
               "postCutoffSupplement": true,
               "note": "본문 Full transcript와 Goldman Sachs/Citi/Baird/Jefferies/BNP Paribas 질의응답을 확인. 기사 자동요약·주가 수치는 사용하지 않음."
+            },
+            "consensusEvidenceHistory": [
+              {
+                "observedBefore": "2026-10-28T08:53:10.234757+00:00",
+                "metric": {
+                  "label": "EPS",
+                  "basis": "Non-GAAP · 조정 희석 EPS",
+                  "value": "0.38 USD/share",
+                  "consensus": "+12.76%",
+                  "raw": {
+                    "value": 0.38,
+                    "consensusValue": 0.337,
+                    "consensusComparable": true,
+                    "surprisePct": 12.759643916913932,
+                    "unit": "USD/share"
+                  },
+                  "sourceIds": [
+                    "oct27-csgp-q3",
+                    "oct27-csgp-consensus"
+                  ]
+                },
+                "note": "보존된 이전 공급자·관측 예상치. 최신 본문 비교와 합산하지 않음."
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:53:10.234757+00:00",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct28-csgp-eps-basis-review"
+              ],
+              "note": " EPS 동일 기준 검증: 원문 adjusted EPS 0.38 대 consensus 0.34 명시. Whisper 0.37과 구분; 이전 Investing 0.337과 별도 풀. 원문 2026-10-27 19:45 ET 공개로 07시 이후 후속 근거."
             }
           },
           {
@@ -31259,7 +32627,9 @@
             ],
             "sourceIds": [
               "oct27-uhs-q3",
-              "oct27-uhs-facts"
+              "oct27-uhs-facts",
+              "oct28-uhs-eps-primary-check",
+              "oct28-uhs-eps-consensus-check"
             ],
             "releaseTiming": {
               "session": "unknown",
@@ -31545,7 +32915,38 @@
               }
             },
             "universeScope": "sp500",
-            "reportCutoffAt": "2026-10-28T07:00:00+09:00"
+            "reportCutoffAt": "2026-10-28T07:00:00+09:00",
+            "consensusMetrics": [
+              {
+                "label": "EPS",
+                "basis": "Non-GAAP · 조정 희석 EPS",
+                "value": "5.22 USD/주",
+                "consensus": "-0.09 USD/주 (-1.69%)",
+                "raw": {
+                  "value": 5.22,
+                  "consensusValue": 5.31,
+                  "consensusComparable": true,
+                  "surprisePct": -1.6949152542372856,
+                  "unit": "USD/share"
+                },
+                "sourceIds": [
+                  "oct28-uhs-eps-primary-check",
+                  "oct28-uhs-eps-consensus-check"
+                ],
+                "consensusProvider": "Zacks",
+                "consensusObservedAt": "2026-10-28T08:47:27Z",
+                "postCutoffSupplement": true
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:47:27Z",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct28-uhs-eps-primary-check",
+                "oct28-uhs-eps-consensus-check"
+              ],
+              "note": "07시 최초 보고 이후 확인한 동일 분기 EPS 컨센서스. Official p5 supplemental table adjusted net income per diluted share is 5.22 (also equals GAAP this quarter). Zacks explicitly says figures are adjusted for non-recurring items and reports 5.22 vs 5.31. Other distinct pools: S&P/StockStory 5.15; Investing 5.20. Preserve provider; do not blend or select based on beat/miss."
+            }
           },
           {
             "ticker": "BXP",
@@ -31677,7 +33078,9 @@
             ],
             "sourceIds": [
               "oct27-bxp-q3",
-              "oct27-bxp-facts"
+              "oct27-bxp-facts",
+              "oct28-bxp-eps-primary-check",
+              "oct28-bxp-eps-consensus-check"
             ],
             "releaseTiming": {
               "session": "after_close",
@@ -31844,7 +33247,7 @@
             "callCheckedAt": "2026-10-27T21:49:36.774598+00:00",
             "dataCheckedAt": "2026-10-27T21:49:36.774598+00:00",
             "statusLabel": "실적 발표",
-            "note": "확인하지 못한 지표·분기 값은 null이며 0 또는 추정값이 아니다. 과거 분기는 SEC 단독분기 보고값만 사용한다.",
+            "note": "확인하지 못한 지표·분기 값은 null이며 0 또는 추정값이 아니다. 과거 분기는 SEC 단독분기 보고값만 사용한다. 비교 보류 EPS 원문 예상치 0.5 USD/주: 실제치 0.71와 회계기준 일치가 확인되지 않아 본문 비교에서 제외. Consensus estimate basis unproven; withhold.",
             "callScheduledAt": "2026-10-28T10:00:00-04:00",
             "guidance": "2026 EPS2.35~2.37, FFO7.06~7.08 USD/share.",
             "guidanceSourceIds": [
@@ -31960,7 +33363,38 @@
               }
             },
             "universeScope": "sp500",
-            "reportCutoffAt": "2026-10-28T07:00:00+09:00"
+            "reportCutoffAt": "2026-10-28T07:00:00+09:00",
+            "consensusMetrics": [
+              {
+                "label": "EPS",
+                "basis": "US GAAP · 희석 EPS (FFO 아님)",
+                "value": "0.71 USD/주",
+                "consensus": "미확인",
+                "raw": {
+                  "value": 0.71,
+                  "consensusValue": 0.5,
+                  "consensusComparable": false,
+                  "surprisePct": null,
+                  "unit": "USD/share"
+                },
+                "sourceIds": [
+                  "oct28-bxp-eps-primary-check",
+                  "oct28-bxp-eps-consensus-check"
+                ],
+                "consensusProvider": "TipRanks",
+                "consensusObservedAt": "2026-10-28T08:47:27Z",
+                "postCutoffSupplement": true
+              }
+            ],
+            "consensusSupplement": {
+              "observedAt": "2026-10-28T08:47:27Z",
+              "presentationPhase": "supplement",
+              "sourceIds": [
+                "oct28-bxp-eps-primary-check",
+                "oct28-bxp-eps-consensus-check"
+              ],
+              "note": "07시 최초 보고 이후 확인한 동일 분기 EPS 컨센서스. Company GAAP diluted EPS is .71. TipRanks historical Q3 2026 row displays consensus .50 and actual .71 but does not explicitly label the estimate GAAP. Numeric match alone does not establish comparability. FFO 1.89 and FFO estimate1.80 must not be substituted for EPS."
+            }
           }
         ],
         "topMarketCapUniverse": {
@@ -39618,6 +41052,661 @@
           "retrievedAt": "2026-10-28T01:01:29.933878+00:00",
           "sourceType": "primary",
           "note": "Conference Call and Webcast Information: 예정 Q3실적콜 취소; 실적발표는10/27장후 유지.10/28 10시KST 이후 실제확인한 상태정정."
+        },
+        {
+          "id": "oct28-ba-op-consensus-followup",
+          "title": "Boeing Q3 reported OP consensus · MarketScreener",
+          "url": "https://www.marketscreener.com/quote/stock/BOEING-4816/news/Boeing-slashes-losses-but-market-more-demanding-54574314/",
+          "publishedAt": "2026-10-27T09:55:00-04:00",
+          "accessedAt": "2026-10-28T08:53:08.963692+00:00",
+          "note": "보고 영업이익 354백만 USD 대 컨센서스 575백만 USD; 같은 보도 매출 컨센서스 24,370백만 USD. 조사기관·표본 수 미기재. 공식 GAAP 영업이익 실제치와 대조. OPM 비율은 계산값으로서 조사 OPM 평균이 아님."
+        },
+        {
+          "id": "oct28-amt-eps-consensus-check",
+          "title": "American Tower (AMT) Reports In-Line Q3 EPS",
+          "url": "https://new.streetinsider.com/Earnings/American%2BTower%2B%28AMT%29%2BReports%2BIn-Line%2BQ3%2BEPS/27236587.html",
+          "provider": "StreetInsider",
+          "sourceType": "consensus_financial_reporting",
+          "publishedAt": "2026-10-27T07:03:00-04:00",
+          "publishedDate": "2026-10-27",
+          "observedAt": "2026-10-28T08:39:53Z",
+          "retrievedAt": "2026-10-28T08:39:53Z",
+          "postCutoffSupplement": true,
+          "accessMethod": "public_page_or_indexed_excerpt",
+          "accessedAt": "2026-10-28T08:39:53Z",
+          "note": "GAAP EPS 1.64. AFFO 2.87 is not EPS. Rejected MarketBeat mixed-basis 2.87 vs 1.64. 비교 기준: Official actual EPS basis is known, but retrieved consensus source does not explicitly establish estimate basis. Numeric equality to a GAAP actual is insufficient; withhold pending explicit same-basis evidence. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "id": "oct28-cnc-eps-consensus-check",
+          "title": "Centene Q3 Adjusted Earnings, Revenue Increase; 2026 Adjusted EPS Outlook Increased",
+          "url": "https://finance.yahoo.com/healthcare/articles/centene-q3-adjusted-earnings-revenue-103909484.html",
+          "provider": "FactSet via MT Newswires",
+          "sourceType": "consensus_financial_reporting",
+          "publishedAt": "2026-10-27T06:39:00-04:00",
+          "publishedDate": "2026-10-27",
+          "observedAt": "2026-10-28T08:37:58Z",
+          "retrievedAt": "2026-10-28T08:37:58Z",
+          "postCutoffSupplement": true,
+          "accessMethod": "indexed_public_excerpt",
+          "accessedAt": "2026-10-28T08:37:58Z",
+          "note": "Company release identifies actual EPS basis; financial source compares the same-quarter matching actual with its named analyst estimate. 비교 기준: MT Newswires explicitly compares adjusted EPS .58 with FactSet .10; primary report confirms adjusted diluted .58 versus GAAP -.14. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "id": "oct28-cnp-eps-consensus-check",
+          "title": "CenterPoint Energy Earnings & Forecasts",
+          "url": "https://www.benzinga.com/quote/CNP/earnings-forecasts",
+          "provider": "Benzinga",
+          "sourceType": "consensus_financial_reporting",
+          "publishedAt": null,
+          "publishedDate": null,
+          "observedAt": "2026-10-28T08:39:44Z",
+          "retrievedAt": "2026-10-28T08:39:44Z",
+          "postCutoffSupplement": true,
+          "accessMethod": "public_page",
+          "lastVerifiedAt": "2026-10-28T08:52:03.039984Z",
+          "accessedAt": "2026-10-28T08:39:44Z",
+          "note": "Company release identifies actual EPS basis; financial source compares the same-quarter matching actual with its named analyst estimate. Benzinga table .50 and contemporaneous news headline .49 differ; preserve table source snapshot and never silently mix. 비교 기준: Benzinga historical Q3 2026 table is explicitly headed Earnings Per Share (Non-GAAP), estimate .50 actual .53; company confirms non-GAAP diluted .53 versus GAAP .50. Same page newswire uses .49, a distinct snapshot, not blended. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "id": "oct28-cms-eps-consensus-check",
+          "title": "CMS Energy Q3 Earnings Top Estimates, Revenues Increase Y/Y",
+          "url": "https://www.zacks.com/stock/news/3016130/cms-energy-q3-earnings-top-estimates-revenues-increase-yy",
+          "provider": "Zacks",
+          "sourceType": "consensus_financial_reporting",
+          "publishedAt": null,
+          "publishedDate": "2026-10-27",
+          "observedAt": "2026-10-28T08:37:47Z",
+          "retrievedAt": "2026-10-28T08:37:47Z",
+          "postCutoffSupplement": true,
+          "accessMethod": "indexed_public_excerpt",
+          "lastVerifiedAt": "2026-10-28T08:52:03.039984Z",
+          "accessedAt": "2026-10-28T08:37:47Z",
+          "note": "Zacks consensus 1.34 selected. StreetInsider/Investing use 1.23; provider cohorts differ. Do not blend. 비교 기준: Zacks explicitly compares Q3 2026 adjusted EPS1.44 with consensus1.34; official release distinguishes GAAP .39. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "id": "oct28-fcx-eps-consensus-check",
+          "title": "Earnings Flash: Freeport-McMoRan Posts Q3 Adjusted EPS $0.88, vs. FactSet Estimate of $0.82",
+          "url": "https://www.marketscreener.com/news/earnings-flash-fcx-freeport-mcmoran-posts-q3-adjusted-eps-0-88-vs-factset-estimate-of-0-82-ce785cddda8ef024",
+          "provider": "FactSet via MT Newswires",
+          "sourceType": "consensus_financial_reporting",
+          "publishedAt": "2026-10-27T08:16:00-04:00",
+          "publishedDate": "2026-10-27",
+          "observedAt": "2026-10-28T08:52:03.039984Z",
+          "retrievedAt": "2026-10-28T08:52:03.039984Z",
+          "postCutoffSupplement": true,
+          "accessMethod": "public_headline",
+          "accessedAt": "2026-10-28T08:52:03.039984Z",
+          "note": "Public headline explicitly states adjusted actual .88 versus FactSet .82. Company adjusted .88 excludes .07 charges from GAAP .81. Original EW .80 generic EPS was replaced for explicit-basis evidence, not performance direction; whisper .85 is not consensus. 비교 기준: Public headline explicitly states adjusted actual .88 versus FactSet .82. Company adjusted .88 excludes .07 charges from GAAP .81. Original EW .80 generic EPS was replaced for explicit-basis evidence, not performance direction; whisper .85 is not consensus. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "id": "oct28-hca-eps-consensus-check",
+          "title": "HCA Healthcare Q3 2026 adjusted EPS 7.22 expected 6.65",
+          "url": "https://www.newsquawk.com/headlines/hca-healthcare-inc-hca-q3-2026-usd-adj-eps-722-exp-665-revenue-198bln-exp-1933bln",
+          "provider": "Newsquawk",
+          "sourceType": "consensus_financial_reporting",
+          "publishedAt": "2026-10-27T11:21:00Z",
+          "publishedDate": "2026-10-27",
+          "observedAt": "2026-10-28T08:49:24.404446Z",
+          "retrievedAt": "2026-10-28T08:49:24.404446Z",
+          "postCutoffSupplement": true,
+          "accessMethod": "indexed_public_excerpt",
+          "accessedAt": "2026-10-28T08:49:24.404446Z",
+          "note": "MarketBeat consensus 6.65 selected; Earnings Whispers consensus 6.74 differs. Actual 7.22 matches company adjusted diluted EPS, not GAAP 7.27. Explicit-basis source replaces generic MarketBeat evidence, not because of beat/miss direction; disclosed estimate is unchanged. 비교 기준: Explicit adjusted EPS in same-quarter actual/expected headline. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "id": "oct28-spgi-eps-consensus-check",
+          "title": "S&P Global (SPGI) Q3 Earnings and Revenues Surpass Estimates",
+          "url": "https://www.zacks.com/stock/news/3015620/sp-global-spgi-q3-earnings-and-revenues-surpass-estimates",
+          "provider": "Zacks",
+          "sourceType": "consensus_financial_reporting",
+          "publishedAt": null,
+          "publishedDate": "2026-10-27",
+          "observedAt": "2026-10-28T08:49:24.404446Z",
+          "retrievedAt": "2026-10-28T08:49:24.404446Z",
+          "postCutoffSupplement": true,
+          "accessMethod": "indexed_public_excerpt",
+          "accessedAt": "2026-10-28T08:49:24.404446Z",
+          "note": "Adjusted diluted EPS 4.58 is continuing operations after Mobility spin-off; primary source identifies scope. Do not overwrite GAAP EPS/history. MarketBeat secondary GAAP number differs from official and was not used. Explicit-basis source replaces generic MarketBeat evidence, not because of beat/miss direction; disclosed estimate is unchanged. 비교 기준: Zacks explicitly says its 4.58 EPS versus 4.43 consensus figures are adjusted for non-recurring items; company identifies actual as continuing operations. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "id": "oct28-hlt-eps-consensus-check",
+          "title": "Hilton Worldwide Holdings Inc. (HLT) Q3 Earnings Surpass Estimates",
+          "url": "https://www.zacks.com/stock/news/3015525/hilton-worldwide-holdings-inc-hlt-q3-earnings-surpass-estimates",
+          "provider": "Zacks",
+          "sourceType": "consensus_financial_reporting",
+          "publishedAt": null,
+          "publishedDate": "2026-10-27",
+          "observedAt": "2026-10-28T08:38:03Z",
+          "retrievedAt": "2026-10-28T08:38:03Z",
+          "postCutoffSupplement": true,
+          "accessMethod": "indexed_public_excerpt",
+          "lastVerifiedAt": "2026-10-28T08:52:03.039984Z",
+          "accessedAt": "2026-10-28T08:38:03Z",
+          "note": "Zacks consensus 2.36 selected; MarketBeat 2.37 differs. Actual 2.45 is adjusted, not GAAP 2.37. 비교 기준: Zacks explicitly says figures2.45 versus2.36 are adjusted for non-recurring items; official release confirms adjusted diluted2.45 versus GAAP2.37. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "id": "oct28-itw-eps-consensus-check",
+          "title": "ITW Q3 2026 slides: margin expansion drives guidance raise",
+          "url": "https://www.investing.com/news/company-news/itw-q3-2026-slides-margin-expansion-drives-guidance-raise-93CH-4976257",
+          "provider": "Investing.com",
+          "sourceType": "consensus_financial_reporting",
+          "publishedAt": null,
+          "publishedDate": "2026-10-27",
+          "observedAt": "2026-10-28T08:52:03.039984Z",
+          "retrievedAt": "2026-10-28T08:52:03.039984Z",
+          "postCutoffSupplement": true,
+          "accessMethod": "indexed_public_excerpt",
+          "accessedAt": "2026-10-28T08:52:03.039984Z",
+          "note": "Financial report explicitly compares GAAP EPS3.00 with analyst expectations2.97. Original Zacks2.99 generic-basis estimate is superseded because new source explicitly names GAAP; do not blend. 비교 기준: Financial report explicitly compares GAAP EPS3.00 with analyst expectations2.97. Original Zacks2.99 generic-basis estimate is superseded because new source explicitly names GAAP; do not blend. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/75362/000119312526432729/pcar-ex99_1.htm",
+          "title": "PACCAR Achieves Excellent Quarterly Revenues and Profits — SEC Exhibit 99.1",
+          "id": "oct28-pcar-eps-primary-check",
+          "sourceType": "primary_release",
+          "publishedDate": "2026-10-27",
+          "publishedAt": null,
+          "observedAt": "2026-10-28T08:42:00Z",
+          "accessedAt": "2026-10-28T08:42:00Z",
+          "note": "StockStory explicitly labels comparison EPS (GAAP) 1.61 vs analysts consensus1.60 and says consensus GAAP EPS. Official SEC release reports GAAP1.61. Original StreetInsider1.61 generic consensus is retained only as superseded evidence; do not blend. Recalculate .625% from disclosed cents, not its .7% rounded/unrounded headline. 비교 기준: StockStory explicitly labels comparison EPS (GAAP) 1.61 vs analysts consensus1.60 and says consensus GAAP EPS. Official SEC release reports GAAP1.61. Original StreetInsider1.61 generic consensus is retained only as superseded evidence; do not blend. Recalculate .625% from disclosed cents, not its .7% rounded/unrounded headline. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "id": "oct28-pcar-eps-consensus-check",
+          "title": "PACCAR reports sales below analyst estimates in Q3 2026 earnings",
+          "url": "https://www.tradingview.com/news/stockstory%3A01246b970094b%3A0-paccar-nasdaq-pcar-reports-sales-below-analyst-estimates-in-q3-2026-earnings/",
+          "provider": "S&P analysts via StockStory",
+          "sourceType": "consensus_financial_reporting",
+          "publishedAt": null,
+          "publishedDate": null,
+          "observedAt": "2026-10-28T08:52:03.039984Z",
+          "retrievedAt": "2026-10-28T08:52:03.039984Z",
+          "postCutoffSupplement": true,
+          "accessMethod": "indexed_public_excerpt",
+          "accessedAt": "2026-10-28T08:52:03.039984Z",
+          "note": "StockStory explicitly labels comparison EPS (GAAP) 1.61 vs analysts consensus1.60 and says consensus GAAP EPS. Official SEC release reports GAAP1.61. Original StreetInsider1.61 generic consensus is retained only as superseded evidence; do not blend. Recalculate .625% from disclosed cents, not its .7% rounded/unrounded headline. 비교 기준: StockStory explicitly labels comparison EPS (GAAP) 1.61 vs analysts consensus1.60 and says consensus GAAP EPS. Official SEC release reports GAAP1.61. Original StreetInsider1.61 generic consensus is retained only as superseded evidence; do not blend. Recalculate .625% from disclosed cents, not its .7% rounded/unrounded headline. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "id": "oct28-rcl-eps-consensus-check",
+          "title": "RCL Q3 Earnings Beat Estimates on Strong Demand, Lower Costs",
+          "url": "https://www.zacks.com/stock/news/3016213/rcl-q3-earnings-beat-estimates-on-strong-demand-lower-costs",
+          "provider": "Zacks",
+          "sourceType": "consensus_financial_reporting",
+          "publishedAt": null,
+          "publishedDate": "2026-10-27",
+          "observedAt": "2026-10-28T08:38:12Z",
+          "retrievedAt": "2026-10-28T08:38:12Z",
+          "postCutoffSupplement": true,
+          "accessMethod": "indexed_public_excerpt",
+          "lastVerifiedAt": "2026-10-28T08:52:03.039984Z",
+          "accessedAt": "2026-10-28T08:38:12Z",
+          "note": "Company release identifies actual EPS basis; financial source compares the same-quarter matching actual with its named analyst estimate. 비교 기준: Zacks explicitly compares adjusted EPS6.57 with consensus6.38; official release confirms adjusted6.57 versus GAAP6.45. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "id": "oct28-shw-eps-consensus-check",
+          "title": "SHW Q3 Earnings Lag Estimates on Higher Costs, Sales Beat",
+          "url": "https://www.zacks.com/stock/news/3015669/shw-q3-earnings-lag-estimates-on-higher-costs-sales-beat",
+          "provider": "Zacks",
+          "sourceType": "consensus_financial_reporting",
+          "publishedAt": null,
+          "publishedDate": "2026-10-27",
+          "observedAt": "2026-10-28T08:38:12Z",
+          "retrievedAt": "2026-10-28T08:38:12Z",
+          "postCutoffSupplement": true,
+          "accessMethod": "indexed_public_excerpt",
+          "lastVerifiedAt": "2026-10-28T08:52:03.039984Z",
+          "accessedAt": "2026-10-28T08:38:12Z",
+          "note": "Zacks 3.65 selected; StreetInsider/MarketBeat 3.69 differ. Both compare adjusted actual 3.63. 비교 기준: Zacks explicitly compares adjusted EPS3.63 with consensus3.65 and separately reports GAAP3.38; official release agrees. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "url": "https://prod.xylem.com/en-tw/resources/press-releases/xylem-reports-third-quarter-2026-results-and-announces-strategic-actions-to-accelerate-growth/",
+          "title": "Xylem Reports Third Quarter 2026 Results and Announces Strategic Actions to Accelerate Growth",
+          "id": "oct28-xyl-eps-primary-check",
+          "sourceType": "primary_release",
+          "publishedDate": "2026-10-27",
+          "publishedAt": null,
+          "observedAt": "2026-10-28T08:41:22Z",
+          "accessedAt": "2026-10-28T08:41:22Z",
+          "note": "Zacks 1.47 selected; MarketBeat/StreetInsider 1.45 differ. Actual 1.44 is adjusted, not GAAP 1.25. 비교 기준: Zacks explicitly compares adjusted EPS1.44 with consensus1.47; official release agrees and distinguishes GAAP1.25. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "id": "oct28-xyl-eps-consensus-check",
+          "title": "Xylem Q3 Earnings Miss Estimates on Soft Metering and Projects",
+          "url": "https://www.zacks.com/stock/news/3016371/xylem-q3-earnings-miss-estimates-on-soft-metering-and-projects",
+          "provider": "Zacks",
+          "sourceType": "consensus_financial_reporting",
+          "publishedAt": null,
+          "publishedDate": "2026-10-27",
+          "observedAt": "2026-10-28T08:38:17Z",
+          "retrievedAt": "2026-10-28T08:38:17Z",
+          "postCutoffSupplement": true,
+          "accessMethod": "indexed_public_excerpt",
+          "lastVerifiedAt": "2026-10-28T08:52:03.039984Z",
+          "accessedAt": "2026-10-28T08:38:17Z",
+          "note": "Zacks 1.47 selected; MarketBeat/StreetInsider 1.45 differ. Actual 1.44 is adjusted, not GAAP 1.25. 비교 기준: Zacks explicitly compares adjusted EPS1.44 with consensus1.47; official release agrees and distinguishes GAAP1.25. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "id": "oct28-ivz-eps-consensus-check",
+          "title": "Invesco Posts Q3 Adjusted EPS $0.72 vs FactSet $0.74",
+          "url": "https://www.marketscreener.com/news/earnings-flash-ivz-invesco-ltd-posts-q3-adjusted-eps-0-72-per-share-vs-factset-est-of-0-74-ce785cdddb8ff321",
+          "provider": "FactSet via MT Newswires",
+          "sourceType": "consensus_financial_reporting",
+          "publishedAt": "2026-10-27T06:59:00-04:00",
+          "publishedDate": "2026-10-27",
+          "observedAt": "2026-10-28T08:39:44Z",
+          "retrievedAt": "2026-10-28T08:39:44Z",
+          "postCutoffSupplement": true,
+          "accessMethod": "public_page_or_indexed_excerpt",
+          "accessedAt": "2026-10-28T08:39:44Z",
+          "note": "Company release identifies actual EPS basis; financial source compares the same-quarter matching actual with its named analyst estimate. 비교 기준: MT Newswires/FactSet headline explicitly labels adjusted EPS .72 versus .74; official release confirms adjusted diluted .72 versus GAAP .65. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "id": "oct28-jci-eps-consensus-check",
+          "title": "Johnson Controls Q4 Adj. EPS 1.66 (exp. 1.58)",
+          "url": "https://www.newsquawk.com/headlines/johnson-controls-international-jci-q4-usd-adj-eps-166-exp-158-revenue-71bln-exp-704bln-next-qtr-eps-115-120-exp-113",
+          "provider": "Newsquawk",
+          "sourceType": "consensus_financial_reporting",
+          "publishedAt": "2026-10-27T11:15:00Z",
+          "publishedDate": "2026-10-27",
+          "observedAt": "2026-10-28T08:38:17Z",
+          "retrievedAt": "2026-10-28T08:38:17Z",
+          "postCutoffSupplement": true,
+          "accessMethod": "public_page_or_indexed_excerpt",
+          "accessedAt": "2026-10-28T08:38:17Z",
+          "note": "Company release identifies actual EPS basis; financial source compares the same-quarter matching actual with its named analyst estimate. 비교 기준: Newsquawk explicitly labels FYQ4 adjusted EPS1.66 versus expected1.58; official release identifies continuing-operations adjusted diluted1.66. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "id": "oct28-iqv-eps-consensus-check",
+          "title": "IQVIA Holdings Q3 EPS $3.34 ex-items vs FactSet $3.26",
+          "url": "https://www.streetaccount.com/EmailSearchHandler.axd?guid=a4e2c9b2-a15e-4390-9728-1ac24f92f1d2&ticker=IQV",
+          "provider": "FactSet / StreetAccount",
+          "sourceType": "consensus_financial_reporting",
+          "publishedAt": "2026-10-27T07:08:40-04:00",
+          "publishedDate": "2026-10-27",
+          "observedAt": "2026-10-28T08:38:17Z",
+          "retrievedAt": "2026-10-28T08:38:17Z",
+          "postCutoffSupplement": true,
+          "accessMethod": "public_page_or_indexed_excerpt",
+          "accessedAt": "2026-10-28T08:38:17Z",
+          "note": "Company release identifies actual EPS basis; financial source compares the same-quarter matching actual with its named analyst estimate. 비교 기준: FactSet StreetAccount explicitly compares EPS ex-items3.34 with FactSet3.26; official adjusted diluted3.34 differs from GAAP2.10. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "id": "oct28-hubb-eps-consensus-check",
+          "title": "Hubbell: Q3 Earnings Snapshot",
+          "url": "https://www.stamfordadvocate.com/business/article/hubbell-q3-earnings-snapshot-22496165.php",
+          "provider": "Zacks via Associated Press",
+          "sourceType": "consensus_financial_reporting",
+          "publishedAt": null,
+          "publishedDate": "2026-10-27",
+          "observedAt": "2026-10-28T08:52:03.039984Z",
+          "retrievedAt": "2026-10-28T08:52:03.039984Z",
+          "postCutoffSupplement": true,
+          "accessMethod": "indexed_public_excerpt",
+          "accessedAt": "2026-10-28T08:52:03.039984Z",
+          "note": "AP explicitly reports EPS adjusted for one-time gains and costs5.91 versus average estimate5.75 from five Zacks analysts. Official adjusted diluted EPS5.91. Same Zacks estimate, source strengthened. 비교 기준: AP explicitly reports EPS adjusted for one-time gains and costs5.91 versus average estimate5.75 from five Zacks analysts. Official adjusted diluted EPS5.91. Same Zacks estimate, source strengthened. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "id": "oct28-pnr-eps-consensus-check",
+          "title": "Pentair’s Q3 Adjusted Earnings, Net Sales Decline; Q4 Outlook Issued",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/pentair-apos-q3-adjusted-earnings-110939203.html",
+          "provider": "FactSet via MT Newswires",
+          "sourceType": "consensus_financial_reporting",
+          "publishedAt": "2026-10-27T07:09:00-04:00",
+          "publishedDate": "2026-10-27",
+          "observedAt": "2026-10-28T08:49:24.404446Z",
+          "retrievedAt": "2026-10-28T08:49:24.404446Z",
+          "postCutoffSupplement": true,
+          "accessMethod": "indexed_public_excerpt",
+          "accessedAt": "2026-10-28T08:49:24.404446Z",
+          "note": "MarketBeat 1.07 selected; StreetInsider 1.08 differs. Actual is adjusted diluted continuing-operations EPS 1.18, not GAAP 0.91. Explicit-basis source replaces generic MarketBeat evidence, not because of beat/miss direction; disclosed estimate is unchanged. 비교 기준: Financial report explicitly compares adjusted diluted EPS1.18 with FactSet1.07; official labels adjusted continuing operations. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "url": "https://ir.oneok.com/tools/viewpdf.aspx?page=%7B1BC565DE-17C5-4294-B335-275029F2BB91%7D",
+          "title": "ONEOK Announces Higher Third-Quarter 2026 Earnings and Increases 2026 Financial Guidance",
+          "id": "oct28-oke-eps-primary-check",
+          "sourceType": "primary_release",
+          "publishedDate": "2026-10-27",
+          "publishedAt": null,
+          "observedAt": "2026-10-28T08:40:04Z",
+          "accessedAt": "2026-10-28T08:40:04Z",
+          "note": "Official GAAP 2.13 includes one-time noncash tax benefit 0.53/share. StreetInsider pairs this reported EPS with 1.50 estimate; no invented adjusted actual. Provider-specific comparison does not mean recurring beat was 42%. 비교 기준: Official actual EPS basis is known, but retrieved consensus source does not explicitly establish estimate basis. Numeric equality to a GAAP actual is insufficient; withhold pending explicit same-basis evidence. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "id": "oct28-oke-eps-consensus-check",
+          "title": "ONEOK (OKE) Tops Q3 EPS by 63c; raises guidance",
+          "url": "https://new.streetinsider.com/Earnings/ONEOK%2B%28OKE%29%2BTops%2BQ3%2BEPS%2Bby%2B63c%3B%2Braises%2Bguidance/27242470.html",
+          "provider": "StreetInsider",
+          "sourceType": "consensus_financial_reporting",
+          "publishedAt": "2026-10-27T17:20:00-04:00",
+          "publishedDate": "2026-10-27",
+          "observedAt": "2026-10-28T08:38:45Z",
+          "retrievedAt": "2026-10-28T08:38:45Z",
+          "postCutoffSupplement": true,
+          "accessMethod": "public_page_or_indexed_excerpt",
+          "accessedAt": "2026-10-28T08:38:45Z",
+          "note": "Official GAAP 2.13 includes one-time noncash tax benefit 0.53/share. StreetInsider pairs this reported EPS with 1.50 estimate; no invented adjusted actual. Provider-specific comparison does not mean recurring beat was 42%. 비교 기준: Official actual EPS basis is known, but retrieved consensus source does not explicitly establish estimate basis. Numeric equality to a GAAP actual is insufficient; withhold pending explicit same-basis evidence. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/740260/000074026026000026/q32026earningsrelease.htm",
+          "title": "Ventas Reports 2026 Third Quarter Results — SEC Exhibit 99.1",
+          "id": "oct28-vtr-eps-primary-check",
+          "sourceType": "primary_release",
+          "publishedDate": "2026-10-27",
+          "publishedAt": null,
+          "observedAt": "2026-10-28T08:42:00Z",
+          "accessedAt": "2026-10-28T08:42:00Z",
+          "note": "Investing historical dated 2026-10-27 row pairs net-income EPS 0.13 with EPS forecast 0.16. FFO 0.99 vs 0.98 is separate and not used. 비교 기준: Official actual EPS basis is known, but retrieved consensus source does not explicitly establish estimate basis. Numeric equality to a GAAP actual is insufficient; withhold pending explicit same-basis evidence. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "id": "oct28-vtr-eps-consensus-check",
+          "title": "Ventas Earnings Date — historical Oct 27 2026 / Sep 2026 EPS row",
+          "url": "https://ca.investing.com/equities/ventas-inc-earnings",
+          "provider": "Investing.com",
+          "sourceType": "consensus_financial_reporting",
+          "publishedAt": null,
+          "publishedDate": null,
+          "observedAt": "2026-10-28T08:41:10Z",
+          "retrievedAt": "2026-10-28T08:41:10Z",
+          "postCutoffSupplement": true,
+          "accessMethod": "public_page_or_indexed_excerpt",
+          "accessedAt": "2026-10-28T08:41:10Z",
+          "note": "Investing historical dated 2026-10-27 row pairs net-income EPS 0.13 with EPS forecast 0.16. FFO 0.99 vs 0.98 is separate and not used. 비교 기준: Official actual EPS basis is known, but retrieved consensus source does not explicitly establish estimate basis. Numeric equality to a GAAP actual is insufficient; withhold pending explicit same-basis evidence. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "id": "oct28-eqt-eps-consensus-check",
+          "title": "EQT Q3 2026 sales top estimates",
+          "url": "https://www.tradingview.com/news/stockstory:eab70c105094b:0-eqt-s-nyse-eqt-q3-2026-sales-top-estimates/",
+          "provider": "S&P analysts via StockStory",
+          "sourceType": "consensus_financial_reporting",
+          "publishedAt": null,
+          "publishedDate": null,
+          "observedAt": "2026-10-28T08:40:16Z",
+          "retrievedAt": "2026-10-28T08:40:16Z",
+          "postCutoffSupplement": true,
+          "accessMethod": "public_page_or_indexed_excerpt",
+          "accessedAt": "2026-10-28T08:40:16Z",
+          "note": "StockStory explicitly labels adjusted EPS 0.42 vs S&P analyst consensus 0.36. Its 16.3% reported surprise uses unrounded inputs; candidate recomputes 16.67% from disclosed cents. 비교 기준: StockStory explicitly labels adjusted EPS .42 versus S&P analysts consensus .36; company adjusted .42 differs from GAAP .44. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1289490/000128949026000061/q32026ex991earningsrelease.htm",
+          "title": "Extra Space Storage Reports 2026 Third Quarter Results — SEC Exhibit 99.1",
+          "id": "oct28-exr-eps-primary-check",
+          "sourceType": "primary_release",
+          "publishedDate": "2026-10-27",
+          "publishedAt": null,
+          "observedAt": "2026-10-28T08:42:00Z",
+          "accessedAt": "2026-10-28T08:42:00Z",
+          "note": "GAAP EPS 1.17 vs 1.19. Core FFO 2.17 vs 2.10 excluded. Rejected RapidTradeView mixed Core FFO actual with GAAP estimate. 비교 기준: Official actual EPS basis is known, but retrieved consensus source does not explicitly establish estimate basis. Numeric equality to a GAAP actual is insufficient; withhold pending explicit same-basis evidence. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "id": "oct28-exr-eps-consensus-check",
+          "title": "Extra Space Storage (EXR) Misses Q3 EPS by 2c",
+          "url": "https://www.streetinsider.com/Earnings/Extra%2BSpace%2BStorage%2B%28EXR%29%2BMisses%2BQ3%2BEPS%2Bby%2B2c/27241414.html",
+          "provider": "StreetInsider",
+          "sourceType": "consensus_financial_reporting",
+          "publishedAt": "2026-10-27T16:12:00-04:00",
+          "publishedDate": "2026-10-27",
+          "observedAt": "2026-10-28T08:40:16Z",
+          "retrievedAt": "2026-10-28T08:40:16Z",
+          "postCutoffSupplement": true,
+          "accessMethod": "public_page_or_indexed_excerpt",
+          "accessedAt": "2026-10-28T08:40:16Z",
+          "note": "GAAP EPS 1.17 vs 1.19. Core FFO 2.17 vs 2.10 excluded. Rejected RapidTradeView mixed Core FFO actual with GAAP estimate. 비교 기준: Official actual EPS basis is known, but retrieved consensus source does not explicitly establish estimate basis. Numeric equality to a GAAP actual is insufficient; withhold pending explicit same-basis evidence. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "url": "https://www.firstenergycorp.com/newsroom/news_articles/firstenergy-delivers-strong-third-quarter-results.html",
+          "title": "FirstEnergy Delivers Strong Third Quarter Results, Builds Momentum for Long-Term Growth",
+          "id": "oct28-fe-eps-primary-check",
+          "sourceType": "primary_release",
+          "publishedDate": "2026-10-27",
+          "publishedAt": null,
+          "observedAt": "2026-10-28T08:38:40Z",
+          "accessedAt": "2026-10-28T08:38:40Z",
+          "note": "Company release identifies actual EPS basis; financial source compares the same-quarter matching actual with its named analyst estimate. 비교 기준: MT Newswires headline explicitly compares adjusted EPS .98 with FactSet .90; official release calls .98 core non-GAAP EPS, distinct from GAAP .96. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "id": "oct28-fe-eps-consensus-check",
+          "title": "FirstEnergy Posts Q3 Adjusted EPS $0.98 vs FactSet $0.90",
+          "url": "https://www.marketscreener.com/news/earnings-flash-fe-firstenergy-corp-posts-q3-adjusted-eps-0-98-per-share-vs-factset-est-of-0-9-ce785cddd18df52c",
+          "provider": "FactSet via MT Newswires",
+          "sourceType": "consensus_financial_reporting",
+          "publishedAt": "2026-10-27T16:44:00-04:00",
+          "publishedDate": "2026-10-27",
+          "observedAt": "2026-10-28T08:40:16Z",
+          "retrievedAt": "2026-10-28T08:40:16Z",
+          "postCutoffSupplement": true,
+          "accessMethod": "public_page_or_indexed_excerpt",
+          "accessedAt": "2026-10-28T08:40:16Z",
+          "note": "Company release identifies actual EPS basis; financial source compares the same-quarter matching actual with its named analyst estimate. 비교 기준: MT Newswires headline explicitly compares adjusted EPS .98 with FactSet .90; official release calls .98 core non-GAAP EPS, distinct from GAAP .96. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "id": "oct28-exe-eps-consensus-check",
+          "title": "Natgas Producer Expand Energy Tops Quarterly Profit Estimates",
+          "url": "https://energynow.com/2026/10/natgas-producer-expand-energy-tops-quarterly-profit-estimates/",
+          "provider": "LSEG via Reuters / EnergyNow",
+          "sourceType": "consensus_financial_reporting",
+          "publishedAt": null,
+          "publishedDate": "2026-10-27",
+          "observedAt": "2026-10-28T08:38:40Z",
+          "retrievedAt": "2026-10-28T08:38:40Z",
+          "postCutoffSupplement": true,
+          "accessMethod": "public_page_or_indexed_excerpt",
+          "accessedAt": "2026-10-28T08:38:40Z",
+          "note": "Reuters/LSEG 1.27 selected; Zacks 1.28 and Benzinga 1.31 differ. No blending. 비교 기준: Reuters explicitly reports adjusted EPS1.46 versus LSEG1.27; company confirms adjusted1.46 versus GAAP2.24. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "url": "https://www.earningswhispers.com/epsdetails/ESS/202609",
+          "title": "Essex Announces Third Quarter 2026 Results — Business Wire release reproduced below earnings summary",
+          "id": "oct28-ess-eps-primary-check",
+          "sourceType": "primary_release",
+          "publishedDate": "2026-10-27",
+          "publishedAt": "2026-10-27T16:19:00-04:00",
+          "observedAt": "2026-10-28T08:41:30Z",
+          "accessedAt": "2026-10-28T08:41:30Z",
+          "note": "GAAP EPS 1.52 vs 1.47. Core FFO 4.00 vs 4.01 is separate and not used. 비교 기준: Official actual EPS basis is known, but retrieved consensus source does not explicitly establish estimate basis. Numeric equality to a GAAP actual is insufficient; withhold pending explicit same-basis evidence. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "id": "oct28-ess-eps-consensus-check",
+          "title": "Essex Property Trust (ESS) Tops Q3 EPS by 5c",
+          "url": "https://www.streetinsider.com/Earnings/Essex%2BProperty%2BTrust%2B%28ESS%29%2BTops%2BQ3%2BEPS%2Bby%2B5c/27241640.html",
+          "provider": "StreetInsider",
+          "sourceType": "consensus_financial_reporting",
+          "publishedAt": "2026-10-27T16:20:00-04:00",
+          "publishedDate": "2026-10-27",
+          "observedAt": "2026-10-28T08:40:16Z",
+          "retrievedAt": "2026-10-28T08:40:16Z",
+          "postCutoffSupplement": true,
+          "accessMethod": "public_page_or_indexed_excerpt",
+          "accessedAt": "2026-10-28T08:40:16Z",
+          "note": "GAAP EPS 1.52 vs 1.47. Core FFO 4.00 vs 4.01 is separate and not used. 비교 기준: Official actual EPS basis is known, but retrieved consensus source does not explicitly establish estimate basis. Numeric equality to a GAAP actual is insufficient; withhold pending explicit same-basis evidence. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "id": "oct28-uhs-eps-primary-check",
+          "title": "Universal Health Services, Inc. Announces Financial Results for the Three and Nine-Month Periods Ended September 30, 2026",
+          "url": "https://ir.uhs.com/node/20916/pdf",
+          "sourceType": "primary_release",
+          "publishedDate": "2026-10-27",
+          "publishedAt": null,
+          "observedAt": "2026-10-28T08:47:27Z",
+          "accessedAt": "2026-10-28T08:47:27Z",
+          "note": "Official p5 supplemental table adjusted net income per diluted share is 5.22 (also equals GAAP this quarter). Zacks explicitly says figures are adjusted for non-recurring items and reports 5.22 vs 5.31. Other distinct pools: S&P/StockStory 5.15; Investing 5.20. Preserve provider; do not blend or select based on beat/miss. 비교 기준: Explicit adjusted basis in both primary supplemental table and financial report. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "id": "oct28-uhs-eps-consensus-check",
+          "title": "Universal Health Services (UHS) Misses Q3 Earnings Estimates",
+          "url": "https://finance.yahoo.com/healthcare/articles/universal-health-services-uhs-misses-212011614.html",
+          "sourceType": "consensus_financial_reporting",
+          "provider": "Zacks",
+          "publishedDate": "2026-10-27",
+          "publishedAt": "2026-10-27T17:20:00-04:00",
+          "observedAt": "2026-10-28T08:47:27Z",
+          "retrievedAt": "2026-10-28T08:47:27Z",
+          "postCutoffSupplement": true,
+          "accessMethod": "indexed_public_excerpt; direct page subsequently returned 429",
+          "lastVerifiedAt": "2026-10-28T08:52:03.039984Z",
+          "accessedAt": "2026-10-28T08:47:27Z",
+          "note": "Official p5 supplemental table adjusted net income per diluted share is 5.22 (also equals GAAP this quarter). Zacks explicitly says figures are adjusted for non-recurring items and reports 5.22 vs 5.31. Other distinct pools: S&P/StockStory 5.15; Investing 5.20. Preserve provider; do not blend or select based on beat/miss. 비교 기준: Explicit adjusted basis in both primary supplemental table and financial report. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "id": "oct28-bxp-eps-primary-check",
+          "title": "BXP Q3 2026 Supplemental Operating and Financial Data",
+          "url": "https://investors.bxp.com/static-files/240aa097-2c3f-46c5-8689-228837b214ff",
+          "sourceType": "primary_release",
+          "publishedDate": "2026-10-27",
+          "publishedAt": null,
+          "observedAt": "2026-10-28T08:47:50Z",
+          "accessedAt": "2026-10-28T08:47:50Z",
+          "note": "Company GAAP diluted EPS is .71. TipRanks historical Q3 2026 row displays consensus .50 and actual .71 but does not explicitly label the estimate GAAP. Numeric match alone does not establish comparability. FFO 1.89 and FFO estimate1.80 must not be substituted for EPS. 비교 기준: Consensus estimate basis unproven; withhold. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "id": "oct28-bxp-eps-consensus-check",
+          "title": "BXP (BXP) Q3 2026 Earnings Report",
+          "url": "https://www.tipranks.com/stocks/bxp/earnings/q3-2026-report",
+          "provider": "TipRanks",
+          "sourceType": "consensus_financial_reporting",
+          "publishedDate": null,
+          "publishedAt": null,
+          "observedAt": "2026-10-28T08:47:27Z",
+          "retrievedAt": "2026-10-28T08:47:27Z",
+          "postCutoffSupplement": true,
+          "accessMethod": "indexed_public_excerpt",
+          "accessedAt": "2026-10-28T08:47:27Z",
+          "note": "Company GAAP diluted EPS is .71. TipRanks historical Q3 2026 row displays consensus .50 and actual .71 but does not explicitly label the estimate GAAP. Numeric match alone does not establish comparability. FFO 1.89 and FFO estimate1.80 must not be substituted for EPS. 비교 기준: Consensus estimate basis unproven; withhold. 최초 보고 이후 검증된 후속 근거."
+        },
+        {
+          "id": "oct28-ups-eps-basis-review",
+          "title": "UPS EPS 동일 기준 검증 · Investing",
+          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-ups-beats-q3-2026-estimates-and-lifts-outlook-93CH-4975854",
+          "accessedAt": "2026-10-28T08:53:10.234757+00:00",
+          "accessMethod": "fulltext",
+          "note": "원문 adjusted diluted EPS 1.69 대 forecast 1.63 명시. 실제 확인 시점의 후속 보완이며 최초 보고시각으로 소급하지 않음."
+        },
+        {
+          "id": "oct28-ba-eps-basis-review",
+          "title": "BA EPS 동일 기준 검증 · MT Newswires / FactSet",
+          "url": "https://ca.finance.yahoo.com/news/top-midday-stories-ares-capital-155131560.html",
+          "accessedAt": "2026-10-28T08:53:10.234757+00:00",
+          "accessMethod": "indexed public text",
+          "note": "코어 조정 EPS -0.34 대 FactSet -0.25. 공식 GAAP -0.26과 구분. 실제 확인 시점의 후속 보완이며 최초 보고시각으로 소급하지 않음."
+        },
+        {
+          "id": "oct28-ko-eps-basis-review",
+          "title": "KO EPS 동일 기준 검증 · MT Newswires / FactSet",
+          "url": "https://www.marketscreener.com/news/earnings-flash-ko-the-coca-cola-company-posts-q3-adjusted-eps-0-91-per-share-vs-factset-est-of-ce785cdddb8ef723",
+          "accessedAt": "2026-10-28T08:53:10.234757+00:00",
+          "accessMethod": "public headline",
+          "note": "공개 제목이 Q3 Adjusted EPS 0.91 대 FactSet 0.88을 명시. 실제 확인 시점의 후속 보완이며 최초 보고시각으로 소급하지 않음."
+        },
+        {
+          "id": "oct28-pypl-eps-basis-review",
+          "title": "PYPL EPS 동일 기준 검증 · MT Newswires / FactSet",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/paypal-misses-third-quarter-revenue-162113356.html",
+          "accessedAt": "2026-10-28T08:53:10.234757+00:00",
+          "accessMethod": "indexed public text",
+          "note": "원문 adjusted earnings 1.45 대 Street 1.31 명시. 실제 확인 시점의 후속 보완이며 최초 보고시각으로 소급하지 않음."
+        },
+        {
+          "id": "oct28-glw-eps-basis-review",
+          "title": "GLW EPS 동일 기준 검증 · Investing",
+          "url": "https://www.investing.com/news/earnings/corning-shares-rise-3-in-premarket-trade-after-q3-eps-revenue-beat-estimates-4975090",
+          "accessedAt": "2026-10-28T08:53:10.234757+00:00",
+          "accessMethod": "public text",
+          "note": "원문 core EPS 0.91 대 analyst estimate 0.88 명시; GAAP EPS 0.78 별도 명시. 실제 확인 시점의 후속 보완이며 최초 보고시각으로 소급하지 않음."
+        },
+        {
+          "id": "oct28-ecl-eps-basis-review",
+          "title": "ECL EPS 동일 기준 검증 · Investing",
+          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-ecolab-posts-q3-2026-eps-beat-lifts-growth-outlook-93CH-4976612",
+          "accessedAt": "2026-10-28T08:53:10.234757+00:00",
+          "accessMethod": "fulltext",
+          "note": "원문 adjusted EPS 2.18 대 expected 2.17 명시. 실제 확인 시점의 후속 보완이며 최초 보고시각으로 소급하지 않음."
+        },
+        {
+          "id": "oct28-v-eps-basis-review",
+          "title": "V EPS 동일 기준 검증 · MT Newswires / FactSet",
+          "url": "https://ca.finance.yahoo.com/news/visa-beats-fourth-quarter-views-210825684.html",
+          "accessedAt": "2026-10-28T08:53:10.234757+00:00",
+          "accessMethod": "indexed public text",
+          "note": "원문 adjusted EPS 3.48 대 FactSet non-GAAP EPS 3.44 명시. 실제 확인 시점의 후속 보완이며 최초 보고시각으로 소급하지 않음."
+        },
+        {
+          "id": "oct28-nxpi-eps-basis-review",
+          "title": "NXPI EPS 동일 기준 검증 · MT Newswires / FactSet",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/nxp-semiconductors-q3-adjusted-earnings-202222504.html",
+          "accessedAt": "2026-10-28T08:53:10.234757+00:00",
+          "accessMethod": "indexed public text",
+          "note": "원문 adjusted EPS 4.20 대 FactSet 4.12 명시. 실제 확인 시점의 후속 보완이며 최초 보고시각으로 소급하지 않음."
+        },
+        {
+          "id": "oct28-ffiv-eps-basis-review",
+          "title": "FFIV EPS 동일 기준 검증 · Investing",
+          "url": "https://ca.investing.com/news/stock-market-news/f5-networks-falls-over-4-despite-q4-earnings-revenue-beat-93CH-4906995",
+          "accessedAt": "2026-10-28T08:53:10.234757+00:00",
+          "accessMethod": "fulltext",
+          "note": "원문 adjusted EPS 4.42 대 consensus 4.26 명시. 실제 확인 시점의 후속 보완이며 최초 보고시각으로 소급하지 않음."
+        },
+        {
+          "id": "oct28-ter-eps-basis-review",
+          "title": "TER EPS 동일 기준 검증 · MT Newswires / FactSet",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/teradyne-q3-adjusted-earnings-revenue-211401016.html",
+          "accessedAt": "2026-10-28T08:53:10.234757+00:00",
+          "accessMethod": "indexed public text",
+          "note": "원문 adjusted EPS 2.29 대 FactSet 2.09 명시. 실제 확인 시점의 후속 보완이며 최초 보고시각으로 소급하지 않음."
+        },
+        {
+          "id": "oct28-stx-eps-basis-review",
+          "title": "STX EPS 동일 기준 검증 · Dow Jones / FactSet",
+          "url": "https://ae.marketscreener.com/news/seagate-posts-soaring-1q-profit-on-continued-data-storage-demand-ce785cddd18df125",
+          "accessedAt": "2026-10-28T08:53:10.234757+00:00",
+          "accessMethod": "public text",
+          "note": "원문 adjusted EPS 7.68 대 FactSet 7.45 명시. 실제 확인 시점의 후속 보완이며 최초 보고시각으로 소급하지 않음."
+        },
+        {
+          "id": "oct28-hood-eps-basis-review",
+          "title": "HOOD EPS 동일 기준 검증 · Earnings Whispers",
+          "url": "https://www.earningswhispers.com/article/HOOD/r510",
+          "accessedAt": "2026-10-28T08:53:10.234757+00:00",
+          "accessMethod": "fulltext",
+          "note": "원문 adjusted EPS 0.60 대 consensus 0.56 명시. GAAP 0.51 비교 풀과 혼합하지 않음. 원문 2026-10-27 20:32 ET 공개로 최초 07시 보고 이후 후속 근거. 실제 확인 시점의 후속 보완이며 최초 보고시각으로 소급하지 않음."
+        },
+        {
+          "id": "oct28-wm-eps-basis-review",
+          "title": "WM EPS 동일 기준 검증 · GuruFocus",
+          "url": "https://www.gurufocus.com/news/9145742/waste-management-wm-shares-slip-after-q3-earnings-miss-analysts-eps-estimates",
+          "accessedAt": "2026-10-28T08:53:10.234757+00:00",
+          "accessMethod": "fulltext",
+          "note": "원문 adjusted EPS 2.15 대 consensus 2.18 명시. 실제 확인 시점의 후속 보완이며 최초 보고시각으로 소급하지 않음."
+        },
+        {
+          "id": "oct28-bkr-eps-basis-review",
+          "title": "BKR EPS 동일 기준 검증 · Investing",
+          "url": "https://www.investing.com/equities/baker-hughes-earnings",
+          "accessedAt": "2026-10-28T08:53:10.234757+00:00",
+          "accessMethod": "fulltext",
+          "note": "동일 공급자 역사 표의 Q2 0.640는 공식 조정 희석 EPS 0.64이며 GAAP 0.68과 구분된다. 표 내 Q2 요약도 adjusted라고 명시. 현재 Q3 실제 0.700/예상 0.600; 이전 관측 0.601은 원자료로 보존. 실제 확인 시점의 후속 보완이며 최초 보고시각으로 소급하지 않음."
+        },
+        {
+          "id": "oct28-acgl-eps-basis-review",
+          "title": "ACGL EPS 동일 기준 검증 · Investing",
+          "url": "https://kr.investing.com/news/earnings/article-93CH-2144195",
+          "accessedAt": "2026-10-28T08:53:10.234757+00:00",
+          "accessMethod": "fulltext",
+          "note": "원문 조정 EPS 2.67 대 예상 2.30 명시; GAAP EPS 3.00 별도. 실제 확인 시점의 후속 보완이며 최초 보고시각으로 소급하지 않음."
+        },
+        {
+          "id": "oct28-ppg-eps-basis-review",
+          "title": "PPG EPS 동일 기준 검증 · MT Newswires / FactSet",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/ppg-industries-q3-adjusted-earnings-202529829.html",
+          "accessedAt": "2026-10-28T08:53:10.234757+00:00",
+          "accessMethod": "indexed public text",
+          "note": "원문 adjusted diluted EPS 2.25 대 FactSet 2.12 명시. 다른 공급자 2.13과 혼합하지 않음. 실제 확인 시점의 후속 보완이며 최초 보고시각으로 소급하지 않음."
+        },
+        {
+          "id": "oct28-csgp-eps-basis-review",
+          "title": "CSGP EPS 동일 기준 검증 · Earnings Whispers",
+          "url": "https://www.earningswhispers.com/article/CSGP/r507",
+          "accessedAt": "2026-10-28T08:53:10.234757+00:00",
+          "accessMethod": "indexed public text",
+          "note": "원문 adjusted EPS 0.38 대 consensus 0.34 명시. Whisper 0.37과 구분; 이전 Investing 0.337과 별도 풀. 원문 2026-10-27 19:45 ET 공개로 07시 이후 후속 근거. 실제 확인 시점의 후속 보완이며 최초 보고시각으로 소급하지 않음."
         }
       ],
       "limitations": [
@@ -171949,5 +174038,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-10-28T01:01:29.933878+00:00"
+  "updatedAt": "2026-10-28T08:53:10.234757+00:00"
 }
