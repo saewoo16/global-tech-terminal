@@ -1,0 +1,28 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+const root=require('node:path').resolve(__dirname,'..'),html=fs.readFileSync(root+'/index.html','utf8');
+const script=html.match(/<script>\n([\s\S]*?)<\/script>/)[1];
+const controls=html.match(/<div class="periods">([\s\S]*?)<\/div>/)[1];
+const buttons=[...controls.matchAll(/<button data-range="([^"]+)"([^>]*)>([^<]+)<\/button>/g)].map(([,range,attrs,label])=>({dataset:{range},label,active:attrs.includes('class="active"'),classList:{toggle(name,value){assert.equal(name,'active');this.button.active=value}}}));
+for(const button of buttons)button.classList.button=button;
+const elements=new Map();
+function element(id){if(!elements.has(id))elements.set(id,{innerHTML:'',textContent:'',value:'',hidden:false,append(){},scrollIntoView(){}});return elements.get(id)}
+class Chart{constructor(canvas,options){this.options=options;Chart.latest=this}destroy(){this.destroyed=true}}
+const context={URL,Map,Set,Date,Number,String,Array,Math,console,Chart,window:{Chart,innerWidth:1200},document:{readyState:'loading',getElementById:element,querySelectorAll:selector=>selector==='[data-range]'?buttons:[],addEventListener(){},createElement:()=>({}),createTextNode:()=>({})}};
+vm.createContext(context);vm.runInContext(script,context);
+const run=code=>vm.runInContext(code,context),click=range=>buttons.find(button=>button.dataset.range===range).onclick();
+let count=0;function test(name,fn){fn();count++;console.log('PASS',name)}
+const latest='2020-10-28',day=86400000,date=days=>new Date(Date.parse(latest+'T00:00:00Z')-days*day).toISOString().slice(0,10);
+// Deliberately old quotes prove that range selection uses the stored latest date, not today.
+const offsets=[1200,1101,1100,371,370,187,186,94,93,1,0],prices=offsets.map((days,i)=>[date(days),100+i]);
+context.fixture=prices;
+run("chosen={symbol:'TEST',ticker:'TEST',name:'Test',sector:'Tech',category:'Test',country:'미국'};COMPANIES=[chosen,{...chosen,symbol:'OTHER'}];MARKET={stocks:{TEST:{prices:fixture,priceCurrency:'USD'},OTHER:{prices:fixture.slice(-2),priceCurrency:'USD'}}}");
+test('six-month button sits between three months and one year; one year remains the default',()=>{assert.deepEqual(buttons.map(b=>[b.dataset.range,b.label]),[['3M','3개월'],['6M','6개월'],['1Y','1년'],['3Y','3년'],['ALL','전체']]);assert.equal(run('range'),'1Y');assert.deepEqual(buttons.filter(b=>b.active).map(b=>b.dataset.range),['1Y'])});
+test('period buttons can wrap at narrow widths',()=>assert.match(html,/\.periods\{[^}]*flex-wrap:wrap/));
+test('every range keeps its inclusive stored-date boundary, without changing source quotes',()=>{const before=JSON.stringify(prices);for(const [range,days] of [['3M',93],['6M',186],['1Y',370],['3Y',1100],['ALL',Infinity]]){click(range);assert.deepEqual(Array.from(Chart.latest.options.data.labels),prices.filter((_,i)=>offsets[i]<=days).map(row=>row[0]));assert.equal(element('chart').hidden,false);assert.equal(element('chartempty').hidden,true);assert.match(element('chartnote').textContent,/2020-10-28/);assert.deepEqual(buttons.filter(b=>b.active).map(b=>b.dataset.range),[range])}assert.equal(JSON.stringify(prices),before)});
+test('repeated switching destroys the previous chart and renders only the chosen range',()=>{for(const range of ['6M','6M','3M','1Y','6M','ALL','6M']){const old=Chart.latest;click(range);assert(old.destroyed);assert.equal(run('range'),range);assert.deepEqual(buttons.filter(b=>b.active).map(b=>b.dataset.range),[range])}assert.match(element('chartstat').textContent,new RegExp(date(186)+' → '+latest))});
+test('company changes retain six-month selection and never invent missing history',()=>{click('6M');run("select('OTHER')");assert.equal(run('range'),'6M');assert.deepEqual(Array.from(Chart.latest.options.data.labels),prices.slice(-2).map(row=>row[0]));assert.deepEqual(buttons.filter(b=>b.active).map(b=>b.dataset.range),['6M']);run("select('TEST')");assert.equal(Chart.latest.options.data.labels[0],date(186))});
+test('six-month chart keeps missing, single-quote, and library-error fallbacks',()=>{run("MARKET.stocks.TEST={priceStatus:'missing',priceNote:'시세 확인 필요'}");click('6M');assert.equal(element('chart').hidden,true);assert.match(element('chartempty').innerHTML,/시세 확인 필요/);run("MARKET.stocks.TEST={prices:fixture.slice(-1)}");click('6M');assert.match(element('chartempty').innerHTML,/유효한 시세가 1개/);run("MARKET.stocks.TEST={prices:fixture};window.Chart=null");click('6M');assert.match(element('chartempty').innerHTML,/차트 라이브러리를 불러오지 못했습니다/);run('window.Chart=Chart');click('6M');assert.equal(element('chart').hidden,false);assert.equal(element('chartempty').hidden,true)});
+const companies=JSON.parse(fs.readFileSync(root+'/data/companies.json')),market=JSON.parse(fs.readFileSync(root+'/data/market.json'));
+context.realCompanies=companies;context.realMarket=market;run("COMPANIES=realCompanies;MARKET=realMarket;range='6M'");
+test('six-month selection renders every real catalog symbol without altering stored data',()=>{const before=JSON.stringify(market);for(const symbol of new Set(companies.map(r=>r.symbol))){run(`select(${JSON.stringify(symbol)})`);assert.equal(run('range'),'6M');assert.equal((element('performance').innerHTML.match(/class="perfcard"/g)||[]).length,4);const rows=run('validPrices(data(chosen))'),cutoff=Date.parse(rows.at(-1)?.[0]+'T00:00:00Z')-186*day,expected=Array.from(rows).filter(row=>Date.parse(row[0]+'T00:00:00Z')>=cutoff);if(expected.length>=2)assert.deepEqual(Array.from(Chart.latest.options.data.labels),expected.map(row=>row[0]));else assert.equal(element('chart').hidden,true)}assert.equal(JSON.stringify(market),before)});
+console.log(`\n${count} company chart range checks passed.`);
