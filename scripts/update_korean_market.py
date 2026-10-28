@@ -246,7 +246,9 @@ def update_rankings(payload):
     target['note'] = ('최신 일간·주간·월간 순매수는 NAVER의 실제 기간 금액 응답입니다. '
                       '각 표에 공급사가 반환한 시작일·종료일을 표시하며, 일별 순위 상위종목을 더한 값이 아닙니다. '
                       '과거 기사 스냅샷 및 시장 수급 총액과는 집계시점이 다를 수 있습니다.')
-    target['dates'] = sorted(target['daily'])[-5:]
+    # Daily observations are an archive, not the provider's rolling week window.
+    # Keep all source-dated snapshots; the UI independently selects the latest.
+    target['dates'] = sorted(target['daily'])
     target['daily'] = {day: target['daily'][day] for day in target['dates']}
     for key, source in [('aggregate5d', incoming['rankings']['periods']['week']), ('monthly', incoming['rankings']['periods']['month'])]:
         target[key] = {k: normalize_rank(v) for k, v in source.items()}

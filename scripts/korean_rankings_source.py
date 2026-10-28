@@ -93,5 +93,6 @@ def build(refresh=False,previous=None):
      sources.append({'id':sid,'title':z['sourceName']+' '+date+' '+z['market']+' '+key,'url':z['url'],'note':'15:30 집계, 원자료 단위 '+z['sourceUnit']+'. 원화로 변환. NAVER 최신값과 집계시점이 다릅니다.'})
     daily[date][key]={'status':'verified','unit':'KRW','rows':sorted(rows,key=lambda x:x['value'],reverse=True)[:15],'byMarket':bymarket,'sourceIds':sids,'coverage':{'start':date,'end':date,'markets':['KOSPI','KOSDAQ'],'snapshotAt':date+'T15:30:00+09:00'},'note':'연합뉴스가 KRX·연합인포맥스를 인용한 15:30 순매수 상위20에서 우선주 명칭·코드 필터를 적용한 상위15. 코스피 원자료 억원, 코스닥 만원을 원화로 변환. NAVER의 최신 및 기간 집계와 값·시점이 다를 수 있습니다.'}
    daily[date]['tradedValue']={'status':'unavailable','unit':'KRW','rows':[],'byMarket':{},'sourceIds':[],'coverage':{'start':date,'end':date},'note':'이 날짜의 실제 거래대금 상위20 전체 순위를 검증하지 못했습니다. 종가×거래량으로 대체하지 않았습니다.'}
- dates=sorted(daily)[-5:]
+ # Preserve the complete supplied archive, independently of WEEK/MONTH windows.
+ dates=sorted(daily)
  return {'schemaVersion':1,'asOf':asof,'generatedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'unit':'KRW','sources':list({s['id']:s for s in reversed(sources)}.values()),'rankings':{'unit':'KRW','dates':dates,'daily':{d:daily[d]for d in dates},'aggregate5d':periods['week'],'periods':periods},'limitations':['기간 합계는 공급사의 직접 WEEK/MONTH 집계이며 일별 상위10 합이 아닙니다.','과거 일별 순위는 15:30 기사 스냅샷, 최신과 기간 순위는 NAVER KRX 파라미터 조회입니다.','과거 4거래일 거래대금 상위20은 미확보입니다.','순매수 목록은 상위100 제한으로 시장 전체 또는 테마 합산의 모수가 아닙니다.']}
