@@ -218,7 +218,7 @@ def validate(payload):
         obj = payload.get(group, {})
         check(obj.get("unit") == "억원", f"{group} unit must be 억원")
         dates = obj.get("dates", [])
-        check(isinstance(dates, list) and len(dates) <= 5 and len(set(dates)) == len(dates) and all(valid_date(d) for d in dates), f"{group}: invalid recent trading dates")
+        check(isinstance(dates, list) and dates == sorted(dates) and len(set(dates)) == len(dates) and all(valid_date(d) for d in dates), f"{group}: invalid recent trading dates")
         daily = obj.get("daily", {})
         check(isinstance(daily, dict) and set(daily) == set(dates), f"{group}: dates and daily keys mismatch")
         periods = list(daily.items()) + [("5d", obj.get("aggregate5d", {}))]
@@ -289,7 +289,7 @@ def validate(payload):
             check(bool(row.get('name')) and row['name'] not in names, 'sectorReturns: duplicate/missing sector name')
             names.add(row.get('name'))
             check(row.get('instrumentType') in ('etf', 'basket'), 'sectorReturns: explicit calculation type required')
-            check(all(number(row.get(key)) for key in ('day', 'week', 'month')), 'sectorReturns: finite returns required')
+            check(all(number(row.get(key)) or (row.get(key) is None and row.get('periodStatus', {}).get(key) == 'insufficient_history') for key in ('day', 'week', 'month')), 'sectorReturns: finite returns or explicit unavailable history required')
             check(bool(row.get('sourceIds')) and all(sid in ids for sid in row['sourceIds']), 'sectorReturns: row sources required')
             calculation = row.get('calculation', {})
             components = calculation.get('constituentData', [])
@@ -298,6 +298,11 @@ def validate(payload):
                 row_date = row.get('asOf', sectors.get('asOf'))
                 window = {'baseDate': calculation.get('bases', {}).get(period), 'endDate': calculation.get('end')}
                 check(valid_date(row_date) and row_date <= sectors.get('asOf', ''), 'sectorReturns: invalid row observation date')
+                if row.get(period) is None:
+                    target = calculation.get('targetDates', {}).get(period)
+                    start = calculation.get('availableHistoryStart')
+                    check(row.get('chartUniverseMember') is True and row.get('periodStatus', {}).get(period) == 'insufficient_history' and window.get('baseDate') is None and valid_date(target) and valid_date(start) and start > target, 'sectorReturns: unavailable history must precede actual start')
+                    continue
                 check(valid_date(window.get('baseDate')) and window.get('endDate') == row_date, 'sectorReturns: verified window required')
                 if row_date != sectors.get('asOf'):
                     check(row.get('refreshStatus') == 'retained_previous' and bool(row.get('refreshNote')), 'sectorReturns: stale row must be explicit')
@@ -310,7 +315,7 @@ def validate(payload):
                     # Legacy Yahoo path explicitly names indicators.adjclose; fresh NAVER declares close.
                     price_field = 'close' if price_field == 'close' else 'adjustedClose'
                     if price_field == 'close':
-                        check(bool(component.get('priceBasis')) and component.get('collectionMethod') == 'fresh_naver_daily_chart', 'sectorReturns: non-adjusted source basis required')
+                        check(bool(component.get('priceBasis')) and (component.get('collectionMethod') == 'fresh_naver_daily_chart' or (component.get('collectionMethod') == 'reused_verified_etf_chart' and len(component.get('sourceSnapshotSha256', '')) == 64)), 'sectorReturns: non-adjusted source basis required')
                     base = observations.get(window.get('baseDate'), {}).get(price_field)
                     end = observations.get(window.get('endDate'), {}).get(price_field)
                     check(number(base) and base > 0 and number(end) and end > 0, 'sectorReturns: positive declared-basis prices required')
