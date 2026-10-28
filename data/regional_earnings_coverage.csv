@@ -1,6 +1,6 @@
 ﻿symbol,name,country,quarters_with_both,has_latest_four,last_quarter,source,note
 EURONEXT:AI,Air Liquide,프랑스,0,0,2026-06-30,Published quarterly revenue; operating profit only H1/FY (not disclosed quarterly),Annual/semiannual reporting can prevent four comparable quarterly OP figures
-EURONEXT:ASM,ASM International,네덜란드,4,1,2026-06-30,Public filings / reported quarterly financial snapshot,
+EURONEXT:ASM,ASM International,네덜란드,4,1,2026-09-30,Public filings / reported quarterly financial snapshot,
 EURONEXT:BESI,BESI,네덜란드,4,1,2026-09-30,Public filings / reported quarterly financial snapshot,
 EURONEXT:DSY,Dassault Systèmes,프랑스,4,1,2026-06-30,Public filings / reported quarterly financial snapshot,
 EURONEXT:SU,Schneider Electric,프랑스,0,0,2026-06-30,Published quarterly revenue; operating profit only H1/FY (not disclosed quarterly),Annual/semiannual reporting can prevent four comparable quarterly OP figures
@@ -13,7 +13,7 @@ TSE:3433,Tocalo,일본,4,1,2026-06-30,Public filings / reported quarterly financ
 TSE:3436,SUMCO,일본,4,1,2026-06-30,Public filings / reported quarterly financial snapshot,
 TSE:4004,Resonac Holdings,일본,4,1,2026-06-30,Public filings / reported quarterly financial snapshot,
 TSE:4062,Ibiden,일본,4,1,2026-06-30,Public filings / reported quarterly financial snapshot,
-TSE:4063,Shin-Etsu Chemical,일본,4,1,2026-06-30,Public filings / reported quarterly financial snapshot,
+TSE:4063,Shin-Etsu Chemical,일본,4,1,2026-09-30,Public filings / reported quarterly financial snapshot,
 TSE:4186,Tokyo Ohka Kogyo,일본,4,1,2026-06-30,Public filings / reported quarterly financial snapshot,
 TSE:4203,Sumitomo Bakelite,일본,4,1,2026-06-30,Public filings / reported quarterly financial snapshot,
 TSE:4901,Fujifilm,일본,4,1,2026-06-30,Public filings / reported quarterly financial snapshot,
@@ -43,7 +43,7 @@ TSE:6981,Murata Manufacturing,일본,4,1,2026-06-30,Public filings / reported qu
 TSE:7729,Tokyo Seimitsu,일본,4,1,2026-06-30,Public filings / reported quarterly financial snapshot,
 TSE:7731,Nikon,일본,4,1,2026-06-30,Public filings / reported quarterly financial snapshot,
 TSE:7735,SCREEN Holdings,일본,4,1,2026-06-30,Public filings / reported quarterly financial snapshot,
-TSE:7751,Canon,일본,4,1,2026-06-30,Public filings / reported quarterly financial snapshot,
+TSE:7751,Canon,일본,4,1,2026-09-30,Public filings / reported quarterly financial snapshot,
 TSE:8035,Tokyo Electron,일본,4,1,2026-06-30,Public filings / reported quarterly financial snapshot,
 VIE:ATS,AT&S,오스트리아,4,1,2026-06-30,Public filings / reported quarterly financial snapshot,
 XETR:HEN3,Henkel,독일,0,0,2026-06-30,Published quarterly revenue; operating profit only H1/FY (not disclosed quarterly),Annual/semiannual reporting can prevent four comparable quarterly OP figures
