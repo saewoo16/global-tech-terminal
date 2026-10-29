@@ -1,0 +1,611 @@
+{
+  "releaseDate": "2026-10-29",
+  "checkedAt": "2026-10-29T22:10:13.864408+00:00",
+  "coverage": {
+    "releaseDate": "2026-10-29",
+    "companyCount": 59,
+    "securityCount": 59,
+    "mergedAt": "2026-10-29T22:10:13.864408+00:00",
+    "basis": "당일 ET실적 후보와 검증된 S&P500·미국상장시총상위10·명시예외 합집합에서 공식발표 원문 확인. 미확인 후보는 확인완료/없음으로 간주하지 않음.",
+    "epsConsensusCount": 49
+  },
+  "evidence": [
+    [
+      {
+        "ticker": "LLY",
+        "url": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-third-quarter-2026-financial-results-raises-full",
+        "checkedAt": "2026-10-29T21:50:59.250282+00:00",
+        "bytes": 508444,
+        "sha256": "eb23ccef0b2fa7ba6493b8fd02e2d7dfaa51e99d02d91919d169bcabbfc641c6",
+        "localPath": "/workspace/shared/oct29-am-sources/LLY.html",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 24397,
+          "grossProfit": 20464,
+          "operatingIncome": 8608,
+          "eps": 7.22
+        }
+      },
+      {
+        "ticker": "MA",
+        "url": "https://investor.mastercard.com/investor-news/investor-news-details/2026/Mastercard-Incorporated-Third-Quarter-2026-Financial-Results-Available-on-Companys-Website/default.aspx",
+        "checkedAt": "2026-10-29T21:50:59.250282+00:00",
+        "bytes": 117495,
+        "sha256": "401247a82f56da64c0a1fc77b111a39fa323e3c942b3d202d47c91bec79df8e3",
+        "localPath": "/workspace/shared/oct29-am-sources/MA.html",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 9807,
+          "grossProfit": null,
+          "operatingIncome": 5862,
+          "eps": 5.28
+        }
+      },
+      {
+        "ticker": "MRK",
+        "url": "https://www.merck.com/news/merck-co-inc-rahway-n-j-usa-announces-third-quarter-2026-financial-results-highlights-multiple-milestones-advancing-broad-diverse-pipeline/",
+        "checkedAt": "2026-10-29T21:50:59.250282+00:00",
+        "bytes": 439849,
+        "sha256": "0b32ae26410784b42f25e80b2151a50fa424f19e3fca772847135aaf91ea917f",
+        "localPath": "/workspace/shared/oct29-am-sources/MRK.html",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 18085,
+          "grossProfit": 13193,
+          "operatingIncome": 5586,
+          "eps": 2.04
+        }
+      },
+      {
+        "ticker": "LIN",
+        "url": "https://www.linde.com/news-and-media/2026/linde-reports-third-quarter-2026-results",
+        "checkedAt": "2026-10-29T21:50:59.250282+00:00",
+        "bytes": 532556,
+        "sha256": "0e9b050a4d97d193a7c36f4d93618a9307e7cf98b52eaf07dee09e3eacf7511f",
+        "localPath": "/workspace/shared/oct29-am-sources/LIN.html",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 9404,
+          "grossProfit": null,
+          "operatingIncome": 2150,
+          "eps": 3.66
+        }
+      },
+      {
+        "ticker": "BMY",
+        "url": "https://news.bms.com/news/corporate-financial/2026/Bristol-Myers-Squibb-Reports-Third-Quarter-Financial-Results-for-2026/default.aspx",
+        "checkedAt": "2026-10-29T21:50:59.250282+00:00",
+        "bytes": 49351,
+        "sha256": "b27f5b2307fe1de058c5597458091435c746e9bc35d4fe14aa6ff5ad12a5595f",
+        "localPath": "/workspace/shared/oct29-am-sources/BMY.html",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 13069,
+          "grossProfit": 8923,
+          "operatingIncome": 2843,
+          "eps": 1.05
+        }
+      },
+      {
+        "ticker": "MO",
+        "url": "https://investor.altria.com/press-releases/news-details/2026/Altria-Reports-2026-Third-Quarter-and-Nine-Months-Results-Announces-Expanded-Share-Repurchase-Program-Raises-2026-Full-Year-Earnings-Guidance/default.aspx",
+        "checkedAt": "2026-10-29T21:50:59.250282+00:00",
+        "bytes": 775601,
+        "sha256": "bd61a1acdc8f157813d00c06b6e63ad9a4c115af7cd23394fc97e9ee61b66b09",
+        "localPath": "/workspace/shared/oct29-am-sources/MO.html",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 6132,
+          "grossProfit": 3941,
+          "operatingIncome": 3313,
+          "eps": 1.51
+        }
+      },
+      {
+        "ticker": "ICE",
+        "url": "https://ir.theice.com/press/news-details/2026/Intercontinental-Exchange-Reports-Third-Quarter-2026/default.aspx",
+        "checkedAt": "2026-10-29T21:50:59.250282+00:00",
+        "bytes": 363330,
+        "sha256": "82a33e50f58d7f03cb9e8c9d016d6929477a804095b19003301a1df7e8d61874",
+        "localPath": "/workspace/shared/oct29-am-sources/ICE.html",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 3630,
+          "grossProfit": null,
+          "operatingIncome": 1410,
+          "eps": 1.67
+        }
+      },
+      {
+        "ticker": "XEL",
+        "url": "https://www.nasdaq.com/press-release/xcel-energy-third-quarter-2026-earnings-report-2026-10-29",
+        "checkedAt": "2026-10-29T21:50:59.250282+00:00",
+        "bytes": 997620,
+        "sha256": "28a1de07f06546e97a569463b1909551d39f9c6370c61e686ccf1fcb64828848",
+        "localPath": "/workspace/shared/oct29-am-sources/XEL.html",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 4172,
+          "grossProfit": null,
+          "operatingIncome": 1191,
+          "eps": 1.52
+        }
+      },
+      {
+        "ticker": "AMP",
+        "url": "https://s205.q4cdn.com/618704162/files/content_files/AMP-Q3-2026-Earnings-Release.pdf",
+        "checkedAt": "2026-10-29T21:50:59.250282+00:00",
+        "bytes": 374620,
+        "sha256": "85aa1efb51535a04732715b26c6e1ab4d32388e7cab6ae69eba4850137a6d1a2",
+        "localPath": "/workspace/shared/oct29-am-sources/AMP.pdf",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 5117,
+          "grossProfit": null,
+          "operatingIncome": null,
+          "eps": 12.32
+        }
+      },
+      {
+        "ticker": "ARES",
+        "url": "https://www.ir.ares.com/news/ares-management-corporation-reports-third-quarter-2026-results/9365ada6-f26c-478b-b3b8-f5532df289f6",
+        "checkedAt": "2026-10-29T21:50:59.250282+00:00",
+        "bytes": 3644,
+        "sha256": "c4bee725815f97a92c53f9e59e675490770421a400a8bf25411c5c378597c8dd",
+        "localPath": "/workspace/shared/oct29-am-sources/ARES.html",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": null,
+          "grossProfit": null,
+          "operatingIncome": null,
+          "eps": 0.21
+        }
+      },
+      {
+        "ticker": "WEC",
+        "url": "https://www.prnewswire.com/news-releases/wec-energy-group-reports-third-quarter-results-302922792.html",
+        "checkedAt": "2026-10-29T21:50:59.250282+00:00",
+        "bytes": 259867,
+        "sha256": "53c389959fc120e6c4e5759ecc11a9530b596ac9ecb36e55ab5cb9f1e9a8c880",
+        "localPath": "/workspace/shared/oct29-am-sources/WEC.html",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 2290.6,
+          "grossProfit": null,
+          "operatingIncome": 563.7,
+          "eps": 1.18
+        }
+      },
+      {
+        "ticker": "HSY",
+        "url": "https://hershey.gcs-web.com/news-releases/news-release-details/hershey-reports-third-quarter-2026-financial-results",
+        "checkedAt": "2026-10-29T21:50:59.250282+00:00",
+        "bytes": 649646,
+        "sha256": "2fbcf1682ef5ebf99aad379a5abdd9fa5e6a0f50dba98e30749ec954b5bade79",
+        "localPath": "/workspace/shared/oct29-am-sources/HSY.html",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 3275.51,
+          "grossProfit": 1511.027,
+          "operatingIncome": 817.653,
+          "eps": 2.88
+        }
+      },
+      {
+        "ticker": "CTSH",
+        "url": "https://investors.cognizant.com/news-and-events/news/news-details/2026/Cognizant-Reports-Third-Quarter-2026-Results/default.aspx",
+        "checkedAt": "2026-10-29T21:50:59.250282+00:00",
+        "bytes": 358981,
+        "sha256": "475711d2d97fc31373d529b9935f1020829ee412dba7be33fb51a3720bc94268",
+        "localPath": "/workspace/shared/oct29-am-sources/CTSH.html",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 5664,
+          "grossProfit": null,
+          "operatingIncome": 872,
+          "eps": 1.39
+        }
+      },
+      {
+        "ticker": "WTW",
+        "url": "https://investors.wtwco.com/news-releases/news-release-details/wtw-reports-third-quarter-2026-earnings",
+        "checkedAt": "2026-10-29T21:50:59.250282+00:00",
+        "bytes": 405986,
+        "sha256": "ee886e56acf974068df9b18629d35a50dce814f6142cbdac3825123ead6e42af",
+        "localPath": "/workspace/shared/oct29-am-sources/WTW.html",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 2460,
+          "grossProfit": null,
+          "operatingIncome": 429,
+          "eps": 3.24
+        }
+      },
+      {
+        "ticker": "INCY",
+        "url": "https://www.nasdaq.com/press-release/incyte-reports-third-quarter-2026-financial-results-and-provides-business-updates",
+        "checkedAt": "2026-10-29T21:50:59.250282+00:00",
+        "bytes": 821705,
+        "sha256": "9b2bc43421f032e1b6b4a85b9ec9297d818e7435b4ec6d32b6a7a2f68f0baa7b",
+        "localPath": "/workspace/shared/oct29-am-sources/INCY.html",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 1557.204,
+          "grossProfit": null,
+          "operatingIncome": -708.361,
+          "eps": -3.86
+        }
+      },
+      {
+        "ticker": "TROW",
+        "url": "https://investors.troweprice.com/node/28911/html",
+        "checkedAt": "2026-10-29T21:50:59.250282+00:00",
+        "bytes": 899516,
+        "sha256": "8b925ffa84513f1be0fdb88f0a415bf9887a441c025214f0db6a28ad43af9e81",
+        "localPath": "/workspace/shared/oct29-am-sources/TROW.html",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 2004.9,
+          "grossProfit": null,
+          "operatingIncome": 769.8,
+          "eps": 2.79
+        }
+      },
+      {
+        "ticker": "BG",
+        "url": "https://bunge.com/press-releases/bunge-reports-third-quarter-2026-results",
+        "checkedAt": "2026-10-29T21:50:59.250282+00:00",
+        "bytes": 65855,
+        "sha256": "f614727fbe3c566f3d067fa4c27dea9fc2443dc94c3d690f7b6d9e458e7d1dd0",
+        "localPath": "/workspace/shared/oct29-am-sources/BG.html",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 23804,
+          "grossProfit": 1332,
+          "operatingIncome": null,
+          "eps": 1.64
+        }
+      },
+      {
+        "ticker": "KIM",
+        "url": "https://www.globenewswire.com/news-release/2026/10/29/3391073/27734/en/kimco-realty-announces-third-quarter-2026-results.html",
+        "checkedAt": "2026-10-29T21:50:59.250282+00:00",
+        "bytes": 282982,
+        "sha256": "0165e940e92835c8b827f243d1cbda2e3233cd6b1a14224014f29b0ed6c17239",
+        "localPath": "/workspace/shared/oct29-am-sources/KIM.html",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 546.147,
+          "grossProfit": null,
+          "operatingIncome": 279.984,
+          "eps": 0.41
+        }
+      },
+      {
+        "ticker": "BAX",
+        "url": "https://www.nasdaq.com/press-release/baxter-reports-third-quarter-2026-results-2026-10-29",
+        "checkedAt": "2026-10-29T21:50:59.250282+00:00",
+        "bytes": 1386057,
+        "sha256": "59f4ed537c5050383a1fb27c3cf5e9edf27dc97a03d49e70efa6826e7596725c",
+        "localPath": "/workspace/shared/oct29-am-sources/BAX.html",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 2976,
+          "grossProfit": 994,
+          "operatingIncome": 225,
+          "eps": 0.57
+        }
+      },
+      {
+        "ticker": "CAT",
+        "url": "https://www.caterpillar.com/en/news/corporate-press-releases/h/3q26-results-caterpillar-inc.html",
+        "checkedAt": "2026-10-29T21:56:27.481770+00:00",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 20682,
+          "grossProfit": null,
+          "operatingIncome": 4214,
+          "eps": 7.13
+        },
+        "bytes": 238898,
+        "sha256": "087f2467b6292691455cc421c6781648dd7173a9c952e57f14a397a277910cbf",
+        "localPath": "/workspace/shared/oct29-industrial/CAT.html"
+      },
+      {
+        "ticker": "TT",
+        "url": "https://investors.tranetechnologies.com/news-and-events/news-releases/news-release-details/2026/Trane-Technologies-Reports-Strong-Third-Quarter-Results-Raises-Full-Year-Revenue-Guidance-Reaffirms-Full-Year-EPS-Guidance/default.aspx",
+        "checkedAt": "2026-10-29T21:56:27.481770+00:00",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 6759.7,
+          "grossProfit": 2384.8,
+          "operatingIncome": 1343.1,
+          "eps": 4.79
+        },
+        "verification": "회사 원문 공개 검색 본문과 SEC companyfacts 교차확인"
+      },
+      {
+        "ticker": "PWR",
+        "url": "https://investors.quantaservices.com/news-events/press-releases/detail/407/quanta-services-reports-third-quarter-2026-results",
+        "checkedAt": "2026-10-29T21:56:27.481770+00:00",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 12014.877,
+          "grossProfit": 2008.282,
+          "operatingIncome": 1026.547,
+          "eps": 4.55
+        },
+        "bytes": 300443,
+        "sha256": "17221f2156532a427cbe66985e8e8c371c91ecaeeffc0657a2261d1ed75d6bd8",
+        "localPath": "/workspace/shared/oct29-industrial/PWR.html"
+      },
+      {
+        "ticker": "HWM",
+        "url": "https://www.howmet.com/press-release/2026-10-29/howmet-aerospace-reports-third-quarter-2026-results/",
+        "checkedAt": "2026-10-29T21:56:27.481770+00:00",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 2703,
+          "grossProfit": null,
+          "operatingIncome": 777,
+          "eps": 1.42
+        },
+        "bytes": 379494,
+        "sha256": "e587418141fbd5bf13124f8af12de4a13c7bb03098af06f28c9698362cdb54c7",
+        "localPath": "/workspace/shared/oct29-industrial/HWM.html"
+      },
+      {
+        "ticker": "CRH",
+        "url": "https://www.crh.com/media/press-releases/2026/crh-reports-third-quarter-2026-results/",
+        "checkedAt": "2026-10-29T21:56:27.481770+00:00",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 11396,
+          "grossProfit": 4421,
+          "operatingIncome": 1896,
+          "eps": 1.86
+        },
+        "bytes": 311829,
+        "sha256": "0b778fad7a1176de2fec2106ff0880ff748a9966c317cf9f02618603656a8da9",
+        "localPath": "/workspace/shared/oct29-industrial/CRH.html"
+      },
+      {
+        "ticker": "LHX",
+        "url": "https://www.l3harris.com/newsroom/press-release/2026/10/l3harris-delivers-record-backlog-and-strong-third-quarter-results",
+        "checkedAt": "2026-10-29T21:56:27.481770+00:00",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 6060,
+          "grossProfit": null,
+          "operatingIncome": 786,
+          "eps": 3.28
+        },
+        "bytes": 102603,
+        "sha256": "6b5b22f987cb1d11c4a2920895cf90a62b548f19a1f627eaf0be0c15538624c7",
+        "localPath": "/workspace/shared/oct29-industrial/LHX.html"
+      },
+      {
+        "ticker": "CARR",
+        "url": "https://www.carrier.com/us/en/news/corporate/2026/carrierreports-third-quarter-2026-results/",
+        "checkedAt": "2026-10-29T21:56:27.481770+00:00",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 6263,
+          "grossProfit": 1683,
+          "operatingIncome": -2273,
+          "eps": -3.16
+        },
+        "verification": "회사 원문 공개 검색 본문과 SEC companyfacts 교차확인"
+      },
+      {
+        "ticker": "DHI",
+        "url": "https://investor.drhorton.com/news-and-events/press-releases/2026/10-29-2026-103058484",
+        "checkedAt": "2026-10-29T21:56:27.481770+00:00",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 9371.3,
+          "grossProfit": 1916.6,
+          "operatingIncome": null,
+          "eps": 2.67
+        },
+        "verification": "회사 원문 공개 검색 본문과 SEC companyfacts 교차확인"
+      },
+      {
+        "ticker": "VMC",
+        "url": "https://www.prnewswire.com/news-releases/vulcan-reports-third-quarter-2026-results-302922797.html",
+        "checkedAt": "2026-10-29T21:56:27.481770+00:00",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 2184.6,
+          "grossProfit": 665.6,
+          "operatingIncome": 524.6,
+          "eps": 2.8
+        },
+        "verification": "회사 원문 공개 검색 본문과 SEC companyfacts 교차확인"
+      },
+      {
+        "ticker": "EME",
+        "url": "https://www.businesswire.com/news/home/20261029032382/en/",
+        "checkedAt": "2026-10-29T21:56:27.481770+00:00",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 5541.52,
+          "grossProfit": 1108.218,
+          "operatingIncome": 545.792,
+          "eps": 9.04
+        },
+        "bytes": 1123956,
+        "sha256": "8eeee59d45364e779994094419a396a1d8b7255e243160a9c4d67fdbd04ce095",
+        "localPath": "/workspace/shared/oct29-industrial/EME.html"
+      },
+      {
+        "ticker": "WST",
+        "url": "https://www.prnewswire.com/news-releases/west-reports-third-quarter-2026-results-302922802.html",
+        "checkedAt": "2026-10-29T21:56:27.481770+00:00",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 874.5,
+          "grossProfit": 347.4,
+          "operatingIncome": 267.4,
+          "eps": 3.02
+        },
+        "verification": "회사 원문 공개 검색 본문과 SEC companyfacts 교차확인"
+      },
+      {
+        "ticker": "AVY",
+        "url": "https://www.businesswire.com/news/home/20261029572868/en/",
+        "checkedAt": "2026-10-29T21:56:27.481770+00:00",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 2331.5,
+          "grossProfit": 654.8,
+          "operatingIncome": 272.5,
+          "eps": 2.24
+        },
+        "verification": "회사 원문 공개 검색 본문과 SEC companyfacts 교차확인",
+        "localPath": "/workspace/shared/oct29-industrial/AVY.html",
+        "bytes": 1491801,
+        "sha256": "bc7d3eaeeb6c010e4444f46e9ac8c281b31b734167c2902b7f31b61df685e26f"
+      },
+      {
+        "ticker": "TXT",
+        "url": "https://investor.textron.com/news-releases/news-details/2026/Textron-Reports-Third-Quarter-2026-Results-Raises-Full-Year-Adjusted-EPS-and-Cash-Flow-Outlook/default.aspx",
+        "checkedAt": "2026-10-29T21:56:27.481770+00:00",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 3751,
+          "grossProfit": null,
+          "operatingIncome": null,
+          "eps": 1.56
+        },
+        "verification": "회사 원문 공개 검색 본문과 SEC companyfacts 교차확인"
+      },
+      {
+        "ticker": "HII",
+        "url": "https://www.hii.com/news/hii-reports-third-quarter-2026-results",
+        "checkedAt": "2026-10-29T21:56:27.481770+00:00",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 3537,
+          "grossProfit": 480,
+          "operatingIncome": 246,
+          "eps": 5.48
+        },
+        "bytes": 95198,
+        "sha256": "143c98e436ff443d6b08c07bcce0f2c576f52410c6a8c8c229ace08dc331d2b2",
+        "localPath": "/workspace/shared/oct29-industrial/HII.html"
+      },
+      {
+        "ticker": "AOS",
+        "url": "https://investor.aosmith.com/news-releases/news-release-details/o-smith-reports-third-quarter-2026-results",
+        "checkedAt": "2026-10-29T21:56:27.481770+00:00",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 940.5,
+          "grossProfit": 364.7,
+          "operatingIncome": 174.4,
+          "eps": 0.93
+        },
+        "bytes": 601277,
+        "sha256": "390e1582c824fd7c4f273aece594b8e56f289f223580ba497b4f52d5cc530dcf",
+        "localPath": "/workspace/shared/oct29-industrial/AOS.html"
+      },
+      {
+        "ticker": "NCLH",
+        "url": "https://www.nclhltd.com/news-media/press-releases/detail/835/norwegian-cruise-line-holdings-reports-third-quarter-2026",
+        "checkedAt": "2026-10-29T21:56:27.481770+00:00",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 2946.763,
+          "grossProfit": 1012.747,
+          "operatingIncome": 624.274,
+          "eps": 1.07
+        },
+        "bytes": 335701,
+        "sha256": "72a82fcab29e6dce65c9c20ece08712138f4b1fd77cafb7fb4dc48a31d328526",
+        "localPath": "/workspace/shared/oct29-industrial/NCLH.html"
+      },
+      {
+        "ticker": "AMZN",
+        "url": "https://press.aboutamazon.com/2026/10/amazon-com-announces-third-quarter-results",
+        "checkedAt": "2026-10-29T21:49:27.110412+00:00",
+        "bytes": 638395,
+        "sha256": "3e008e32021dfe6f38cd467f422dcfd9bddaea8241edfcb0084349fd95f7fdbd",
+        "localPath": "/workspace/shared/oct29-pm/AMZN.html",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 201944,
+          "grossProfit": 107371,
+          "operatingIncome": 28076,
+          "eps": 1.89
+        }
+      },
+      {
+        "ticker": "INTC",
+        "url": "https://www.intc.com/news-events/press-releases/detail/1786/intel-reports-third-quarter-2026-financial-results",
+        "checkedAt": "2026-10-29T21:49:27.110412+00:00",
+        "bytes": 348869,
+        "sha256": "d24b662b0b28b5d84a8b8c067da93fb529e2e584b798a75a6dba7490d01ab6b1",
+        "localPath": "/workspace/shared/oct29-pm/INTC.html",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 16513,
+          "grossProfit": 7096,
+          "operatingIncome": 2522,
+          "eps": 0.6
+        }
+      },
+      {
+        "ticker": "SNDK",
+        "url": "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-10-29-sandisk-reports-fiscal-first-quarter-2027-financial-results",
+        "checkedAt": "2026-10-29T21:49:27.110412+00:00",
+        "bytes": 1317888,
+        "sha256": "4847f748e5606a7099f830552dbb8c0c049cd00b07e29a3b469d7835e0ae9adf",
+        "localPath": "/workspace/shared/oct29-pm/SNDK.html",
+        "releaseDate": "2026-10-29",
+        "values": {
+          "revenue": 11031,
+          "grossProfit": 9378,
+          "operatingIncome": 8780,
+          "eps": 52.6
+        }
+      }
+    ],
+    {
+      "rawDirectory": "/workspace/shared/oct29-pm-extra/"
+    },
+    [
+      {
+        "path": "/workspace/shared/dash-release.html",
+        "sha256": "a182b55929c9564b3f763c92d8af3625ea8d358e68f105705914f30baf901646"
+      },
+      {
+        "path": "/workspace/shared/dash-facts.json",
+        "sha256": "65039da6798eaf0dd48ffbe16201d88408b8144f52af63a1d3ce85b3d21237a7"
+      },
+      {
+        "path": "/workspace/shared/dash-q4.pdf",
+        "sha256": "8052fd5abc48a15e51e8fbd80d47941d98ee37ab58057207d4b2fd550f295bfb"
+      }
+    ]
+  ],
+  "checks": [
+    {
+      "ticker": "TSM",
+      "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/526b65af7305df2dde6b9ece6812b1fdf1e49f9b/3Q26%20EarningsRelease.pdf",
+      "checkedAt": "2026-10-29T21:47:13.245875+00:00",
+      "result": "공식 2026Q3 발표문 날짜10/15 확인.10/29신규로복제하지않음."
+    },
+    {
+      "ticker": "SPCX",
+      "url": "https://ir.spacex.com/events/event-details/2026/Q3-2026-Earnings/default.aspx",
+      "checkedAt": "2026-10-29T21:47:13.245875+00:00",
+      "result": "공식Q3실적이벤트10/20 15:30CT.명시예외지만10/29신규로복제하지않음."
+    }
+  ],
+  "limitations": [
+    "LNT 공식 발표 본문은 2026-10-29T22:00:14+00:00 확인 시 미확인; 발표 없음으로 단정하지 않음.",
+    "DASH는 공식 장전 발표이나 실제 원문 대조는 2026-10-29T22:07:16.216285+00:00 후속 검증. 07:00 KST 당시 확인으로 소급하지 않음."
+  ],
+  "reportCutoffAt": "2026-10-30T07:00:00+09:00"
+}

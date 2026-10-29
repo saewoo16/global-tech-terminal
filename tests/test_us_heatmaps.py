@@ -10,7 +10,9 @@ class HeatmapTests(unittest.TestCase):
         cls.data=json.loads((ROOT/'data/us_heatmaps.json').read_text())
         cls.latest=max(e['date'] for e in cls.data['entries'])
         analysis_latest=max(e['date'] for e in json.loads((ROOT/'data/us_analysis.json').read_text())['entries'])
-        candidate=dt.date.fromisoformat(max(cls.latest,analysis_latest))+dt.timedelta(days=1)
+        evidence_latest=max((p.stem.rsplit('-',1)[-1] for p in (ROOT/'data').glob('us-close-evidence-*.json')),default='19000101')
+        evidence_latest=dt.datetime.strptime(evidence_latest,'%Y%m%d').date().isoformat()
+        candidate=dt.date.fromisoformat(max(cls.latest,analysis_latest,evidence_latest))+dt.timedelta(days=1)
         while candidate.weekday()>4:candidate+=dt.timedelta(days=1)
         cls.future=candidate.isoformat()
     def test_valid(self):
