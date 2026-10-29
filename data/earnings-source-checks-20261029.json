@@ -3,11 +3,13 @@
   "checkedAt": "2026-10-29T22:10:13.864408+00:00",
   "coverage": {
     "releaseDate": "2026-10-29",
-    "companyCount": 59,
-    "securityCount": 59,
+    "companyCount": 60,
+    "securityCount": 60,
     "mergedAt": "2026-10-29T22:10:13.864408+00:00",
     "basis": "당일 ET실적 후보와 검증된 S&P500·미국상장시총상위10·명시예외 합집합에서 공식발표 원문 확인. 미확인 후보는 확인완료/없음으로 간주하지 않음.",
-    "epsConsensusCount": 49
+    "epsConsensusCount": 50,
+    "supplementCheckedAt": "2026-10-29T22:44:10.134484+00:00",
+    "supplementNote": "LNT 공식18:00 ET 발표를 보고 cutoff 이후 실제 확인하여 원래 ET 발표일에 추가."
   },
   "evidence": [
     [
@@ -607,5 +609,655 @@
     "LNT 공식 발표 본문은 2026-10-29T22:00:14+00:00 확인 시 미확인; 발표 없음으로 단정하지 않음.",
     "DASH는 공식 장전 발표이나 실제 원문 대조는 2026-10-29T22:07:16.216285+00:00 후속 검증. 07:00 KST 당시 확인으로 소급하지 않음."
   ],
-  "reportCutoffAt": "2026-10-30T07:00:00+09:00"
+  "reportCutoffAt": "2026-10-30T07:00:00+09:00",
+  "followup": {
+    "actualCheckedAt": "2026-10-29T23:01:05.531347+00:00",
+    "scheduledCheckAt": "2026-10-30T08:00:00+09:00",
+    "state": "08_check_completed",
+    "marketPanelsUnchanged": true,
+    "originalReportCutoffPreserved": true,
+    "calls": [
+      {
+        "date": "2026-10-29",
+        "ticker": "LLY",
+        "observedAt": "2026-10-29T22:43:35.469130+00:00",
+        "sourceIds": [
+          "us_call_20261029_lly_supplement"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "MA",
+        "observedAt": "2026-10-29T22:43:35.469130+00:00",
+        "sourceIds": [
+          "us_call_20261029_ma_supplement"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "MRK",
+        "observedAt": "2026-10-29T22:43:35.469130+00:00",
+        "sourceIds": [
+          "us_call_20261029_mrk_supplement"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "LIN",
+        "observedAt": "2026-10-29T22:43:35.469130+00:00",
+        "sourceIds": [
+          "us_call_20261029_lin_supplement"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "BMY",
+        "observedAt": "2026-10-29T22:43:35.469130+00:00",
+        "sourceIds": [
+          "us_call_20261029_bmy_supplement"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "MO",
+        "observedAt": "2026-10-29T22:43:35.469130+00:00",
+        "sourceIds": [
+          "us_call_20261029_mo_supplement"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "ICE",
+        "observedAt": "2026-10-29T22:43:35.469130+00:00",
+        "sourceIds": [
+          "us_call_20261029_ice_supplement"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "XEL",
+        "observedAt": "2026-10-29T22:43:35.469130+00:00",
+        "sourceIds": [
+          "us_call_20261029_xel_supplement"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "AMP",
+        "observedAt": "2026-10-29T22:43:35.469130+00:00",
+        "sourceIds": [
+          "us_call_20261029_amp_supplement"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "ARES",
+        "observedAt": "2026-10-29T22:43:35.469130+00:00",
+        "sourceIds": [
+          "us_call_20261029_ares_supplement"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "WEC",
+        "observedAt": "2026-10-29T22:43:35.469130+00:00",
+        "sourceIds": [
+          "us_call_20261029_wec_supplement"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "HSY",
+        "observedAt": "2026-10-29T22:45:27.890585+00:00",
+        "sourceIds": [
+          "us_call_20261029_hsy_supplement"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "CTSH",
+        "observedAt": "2026-10-29T22:43:35.469130+00:00",
+        "sourceIds": [
+          "us_call_20261029_ctsh_supplement"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "WTW",
+        "observedAt": "2026-10-29T22:43:35.469130+00:00",
+        "sourceIds": [
+          "us_call_20261029_wtw_supplement"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "INCY",
+        "observedAt": "2026-10-29T22:43:35.469130+00:00",
+        "sourceIds": [
+          "us_call_20261029_incy_supplement"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "TROW",
+        "observedAt": "2026-10-29T22:45:27.890585+00:00",
+        "sourceIds": [
+          "us_call_20261029_trow_supplement"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "BG",
+        "observedAt": "2026-10-29T22:43:35.469130+00:00",
+        "sourceIds": [
+          "us_call_20261029_bg_supplement"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "KIM",
+        "observedAt": "2026-10-29T22:43:35.469130+00:00",
+        "sourceIds": [
+          "us_call_20261029_kim_supplement"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "BAX",
+        "observedAt": "2026-10-29T22:45:27.890585+00:00",
+        "sourceIds": [
+          "us_call_20261029_bax_supplement"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "CAT",
+        "observedAt": "2026-10-29T22:41:47.600603+00:00",
+        "sourceIds": [
+          "oct29-call-cat"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "PWR",
+        "observedAt": "2026-10-29T22:41:47.600720+00:00",
+        "sourceIds": [
+          "oct29-call-pwr"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "HWM",
+        "observedAt": "2026-10-29T22:41:47.600726+00:00",
+        "sourceIds": [
+          "oct29-call-hwm"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "DASH",
+        "observedAt": "2026-10-29T22:44:15.128310+00:00",
+        "sourceIds": [
+          "oct29-call-dash"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "LHX",
+        "observedAt": "2026-10-29T22:41:47.600733+00:00",
+        "sourceIds": [
+          "oct29-call-lhx"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "TT",
+        "observedAt": "2026-10-29T22:42:31.438089+00:00",
+        "sourceIds": [
+          "oct29-call-tt"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "CARR",
+        "observedAt": "2026-10-29T22:42:31.438104+00:00",
+        "sourceIds": [
+          "oct29-call-carr"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "CRH",
+        "observedAt": "2026-10-29T22:42:31.438108+00:00",
+        "sourceIds": [
+          "oct29-call-crh"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "EME",
+        "observedAt": "2026-10-29T22:42:31.438111+00:00",
+        "sourceIds": [
+          "oct29-call-eme"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "WST",
+        "observedAt": "2026-10-29T22:43:18.684847+00:00",
+        "sourceIds": [
+          "oct29-call-wst"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "AVY",
+        "observedAt": "2026-10-29T22:43:18.684864+00:00",
+        "sourceIds": [
+          "oct29-call-avy"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "TXT",
+        "observedAt": "2026-10-29T22:43:18.684870+00:00",
+        "sourceIds": [
+          "oct29-call-txt"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "HII",
+        "observedAt": "2026-10-29T22:43:18.684875+00:00",
+        "sourceIds": [
+          "oct29-call-hii"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "DHI",
+        "observedAt": "2026-10-29T22:43:59.199049+00:00",
+        "sourceIds": [
+          "oct29-call-dhi"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "VMC",
+        "observedAt": "2026-10-29T22:43:59.199070+00:00",
+        "sourceIds": [
+          "oct29-call-vmc"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "AOS",
+        "observedAt": "2026-10-29T22:43:59.199074+00:00",
+        "sourceIds": [
+          "oct29-call-aos"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "NCLH",
+        "observedAt": "2026-10-29T22:43:59.199077+00:00",
+        "sourceIds": [
+          "oct29-call-nclh"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "SNDK",
+        "observedAt": "2026-10-29T22:41:18Z",
+        "sourceIds": [
+          "oct29-call-sndk"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "COIN",
+        "observedAt": "2026-10-29T22:41:18Z",
+        "sourceIds": [
+          "oct29-call-coin"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "SYK",
+        "observedAt": "2026-10-29T22:41:18Z",
+        "sourceIds": [
+          "oct29-call-syk"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "DXCM",
+        "observedAt": "2026-10-29T22:41:18Z",
+        "sourceIds": [
+          "oct29-call-dxcm"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "GILD",
+        "observedAt": "2026-10-29T22:41:18Z",
+        "sourceIds": [
+          "oct29-call-gild"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "SBUX",
+        "observedAt": "2026-10-29T22:41:18Z",
+        "sourceIds": [
+          "oct29-call-sbux"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "EIX",
+        "observedAt": "2026-10-29T22:41:18Z",
+        "sourceIds": [
+          "oct29-call-eix"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "AMZN",
+        "observedAt": "2026-10-29T22:42:43Z",
+        "sourceIds": [
+          "oct29-call-amzn"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "INTC",
+        "observedAt": "2026-10-29T22:42:43Z",
+        "sourceIds": [
+          "oct29-call-intc"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "MPWR",
+        "observedAt": "2026-10-29T22:42:43Z",
+        "sourceIds": [
+          "oct29-call-mpwr"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "DLR",
+        "observedAt": "2026-10-29T22:45:17Z",
+        "sourceIds": [
+          "oct29-call-dlr"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "RMD",
+        "observedAt": "2026-10-29T22:45:17Z",
+        "sourceIds": [
+          "oct29-call-rmd"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "FSLR",
+        "observedAt": "2026-10-29T22:45:17Z",
+        "sourceIds": [
+          "oct29-call-fslr"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "FDXF",
+        "observedAt": "2026-10-29T22:45:17Z",
+        "sourceIds": [
+          "oct29-call-fdxf"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "MDLZ",
+        "observedAt": "2026-10-29T23:01:05.531347+00:00",
+        "sourceIds": [
+          "oct29-call-mdlz",
+          "oct29-call-mdlz-08"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "DVA",
+        "observedAt": "2026-10-29T23:01:05.531347+00:00",
+        "sourceIds": [
+          "oct29-call-dva-08"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "ticker": "RSG",
+        "observedAt": "2026-10-29T23:01:05.531347+00:00",
+        "sourceIds": [
+          "oct29-call-rsg-08"
+        ]
+      },
+      {
+        "date": "2026-10-28",
+        "ticker": "ORLY",
+        "observedAt": "2026-10-29T22:43:29.432740+00:00",
+        "sourceIds": [
+          "oct29-archive-orly-call"
+        ]
+      },
+      {
+        "date": "2026-10-28",
+        "ticker": "AWK",
+        "observedAt": "2026-10-29T22:43:29.432740+00:00",
+        "sourceIds": [
+          "oct29-archive-awk-call",
+          "oct29-archive-awk-call-crosscheck"
+        ]
+      },
+      {
+        "date": "2026-10-28",
+        "ticker": "VICI",
+        "observedAt": "2026-10-29T22:43:29.432740+00:00",
+        "sourceIds": [
+          "oct29-archive-vici-call"
+        ]
+      },
+      {
+        "date": "2026-10-28",
+        "ticker": "INVH",
+        "observedAt": "2026-10-29T22:43:29.432740+00:00",
+        "sourceIds": [
+          "oct29-archive-invh-call"
+        ]
+      },
+      {
+        "date": "2026-10-28",
+        "ticker": "TYL",
+        "observedAt": "2026-10-29T22:43:29.432740+00:00",
+        "sourceIds": [
+          "oct29-archive-tyl-call"
+        ]
+      },
+      {
+        "date": "2026-10-28",
+        "ticker": "EG",
+        "observedAt": "2026-10-29T22:43:29.432740+00:00",
+        "sourceIds": [
+          "oct29-archive-eg-call"
+        ]
+      },
+      {
+        "date": "2026-10-28",
+        "ticker": "MAA",
+        "observedAt": "2026-10-29T22:43:29.432740+00:00",
+        "sourceIds": [
+          "oct29-archive-maa-call"
+        ]
+      },
+      {
+        "date": "2026-10-26",
+        "ticker": "WELL",
+        "observedAt": "2026-10-29T22:43:29.432740+00:00",
+        "sourceIds": [
+          "oct29-archive-well-call"
+        ]
+      },
+      {
+        "date": "2026-10-26",
+        "ticker": "NUE",
+        "observedAt": "2026-10-29T22:43:29.432740+00:00",
+        "sourceIds": [
+          "oct29-archive-nue-call"
+        ]
+      },
+      {
+        "date": "2026-10-26",
+        "ticker": "PSA",
+        "observedAt": "2026-10-29T22:43:29.432740+00:00",
+        "sourceIds": [
+          "oct29-archive-psa-call"
+        ]
+      },
+      {
+        "date": "2026-10-26",
+        "ticker": "HIG",
+        "observedAt": "2026-10-29T22:44:05.542872+00:00",
+        "sourceIds": [
+          "oct29-archive-hig-call",
+          "oct29-archive-hig-call-benzinga"
+        ]
+      },
+      {
+        "date": "2026-10-26",
+        "ticker": "CINF",
+        "observedAt": "2026-10-29T22:43:29.432740+00:00",
+        "sourceIds": [
+          "oct29-archive-cinf-call"
+        ]
+      },
+      {
+        "date": "2026-10-26",
+        "ticker": "BRO",
+        "observedAt": "2026-10-29T22:43:29.432740+00:00",
+        "sourceIds": [
+          "oct29-archive-bro-call"
+        ]
+      },
+      {
+        "date": "2026-10-26",
+        "ticker": "PFG",
+        "observedAt": "2026-10-29T22:43:29.432740+00:00",
+        "sourceIds": [
+          "oct29-archive-pfg-call"
+        ]
+      },
+      {
+        "date": "2026-10-26",
+        "ticker": "ARE",
+        "observedAt": "2026-10-29T22:43:29.432740+00:00",
+        "sourceIds": [
+          "oct29-archive-are-call"
+        ]
+      }
+    ],
+    "sourceScope": "회사 공식 음성을 직접 청취했다고 주장하지 않음. 실제 공개 제3자 콜 전사문 경영진 발언 및 관련 Q&A 확인. 원문 공표시각 미확인은 추정하지 않음.",
+    "additionalRelease": {
+      "ticker": "LNT",
+      "releaseDate": "2026-10-29",
+      "publishedAt": "2026-10-29T18:00:00-04:00",
+      "observedAt": "2026-10-29T22:44:10.134484+00:00",
+      "revenue": 1285,
+      "operatingIncome": 389,
+      "dilutedEPS": 1.52,
+      "unit": "USD million, USD/share",
+      "newCardSourceIds": [
+        "oct29-followup-lnt-q3",
+        "oct29-followup-lnt-q2",
+        "oct29-followup-lnt-q1",
+        "oct29-followup-lnt-q4",
+        "oct29-followup-lnt-consensus",
+        "oct29-followup-lnt-session-price"
+      ],
+      "primaryFeedUrl": "https://investors.alliantenergy.com/feed/PressRelease.svc/GetPressReleaseList?LanguageId=1&pressReleaseDateFilter=3&categoryId=00000000-0000-0000-0000-000000000000&bodyType=2&pageSize=100&pageNumber=0&year=2026",
+      "primaryFeedSha256": "794d66cd7a1f30c3afb0a8271dfca0ce781a31b7e051c8e1e6586e30fd7f1569",
+      "note": "현재/직전3분기의 회사 원문에 명시된 3개월 수치. 반기임의분할 없음. 당일call은 ET다음날10시예정."
+    },
+    "recheck": {
+      "checkedAt": "2026-10-29T23:01:05.531347+00:00",
+      "scheduledCheckAt": "2026-10-30T08:00:00+09:00",
+      "newPublicCalls": [
+        "DVA",
+        "RSG"
+      ],
+      "upgradedPreparedRemarksToQA": [
+        "MDLZ"
+      ],
+      "stillUnconfirmed": [
+        "AJG",
+        "GDDY"
+      ],
+      "nextETDayScheduled": [
+        "IR",
+        "VLTO",
+        "WY",
+        "ERIE",
+        "LNT"
+      ],
+      "sourcesChecked": [
+        "https://stockanalysis.com/stocks/ajg/transcripts/",
+        "https://stockanalysis.com/stocks/rsg/transcripts/",
+        "https://stockanalysis.com/stocks/gddy/transcripts/",
+        "https://stockanalysis.com/stocks/dva/transcripts/",
+        "https://stockanalysis.com/stocks/mdlz/transcripts/"
+      ]
+    },
+    "pendingDetails": [
+      {
+        "ticker": "IR",
+        "callScheduledAt": "2026-10-30T08:00:00-04:00",
+        "status": "future_scheduled_call",
+        "source": "https://www.stocktitan.net/sec-filings/IR/8-k-ingersoll-rand-inc-reports-material-event-36ab77da1986.html",
+        "sourceNote": "SEC 8-K 발행사 보도자료 재현. 공식 IR 원문 직접 링크 미확보; 검증된 문서 내용 기준"
+      },
+      {
+        "ticker": "VLTO",
+        "callScheduledAt": "2026-10-30T07:30:00-04:00",
+        "status": "future_scheduled_call",
+        "source": "https://investors.veralto.com/?trk=public_post_main-feed-card-text",
+        "sourceNote": "공식 IR 이벤트: 07:30~08:15 EDT"
+      },
+      {
+        "ticker": "WY",
+        "callScheduledAt": "2026-10-30T10:00:00-04:00",
+        "status": "future_scheduled_call",
+        "source": "https://investor.weyerhaeuser.com/2026-10-29-Weyerhaeuser-Reports-Third-Quarter-2026-Results"
+      },
+      {
+        "ticker": "ERIE",
+        "callScheduledAt": "2026-10-30T10:00:00-04:00",
+        "status": "future_scheduled_prerecorded_webcast",
+        "source": "https://www.prnewswire.com/news-releases/erie-indemnity-reports-third-quarter-2026-results-302922102.html",
+        "sourceNote": "회사 배포 보도자료. 일부 보조 캘린더 08:00 ET는 상충하여 채택하지 않음"
+      },
+      {
+        "ticker": "AJG",
+        "callScheduledAt": "2026-10-29T17:15:00-04:00",
+        "status": "public_call_text_unconfirmed",
+        "source": "https://investor.ajg.com/news/news-details/2026/Arthur-J--Gallagher--Co--Announces-Third-Quarter-2026-Earnings-Release-And-Conference-Call-Date/default.aspx",
+        "sourceNote": "공식 공지 replay 방송 약 2시간 후. StockAnalysis 최신은 9월 investor update; Q3 본문 미확인"
+      },
+      {
+        "ticker": "GDDY",
+        "callScheduledAt": "2026-10-29T17:00:00-04:00",
+        "status": "public_call_text_unconfirmed",
+        "source": "https://aboutus.godaddy.net/newsroom/news-releases/press-release-details/2026/GoDaddy-Inc--to-Announce-Third-Quarter-2026-Financial-Results-on-Thursday-October-29-2026/default.aspx",
+        "sourceNote": "공식 공지 17:00 ET; IR landing 12:00 ET 라벨은 상충하여 미채택. StockAnalysis·검색 Q3 실제 콜 본문 미확인"
+      }
+    ]
+  }
 }
