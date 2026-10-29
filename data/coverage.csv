@@ -4,38 +4,38 @@ EURONEXT:ASM,ASM International,네덜란드,1281,2026-10-28,False,1,2026-10-22,F
 EURONEXT:BESI,BESI,네덜란드,1281,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-09-30,
 EURONEXT:DSY,Dassault Systèmes,프랑스,1281,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
 EURONEXT:SU,Schneider Electric,프랑스,1281,2026-10-28,False,1,2026-10-22,False,True,4,4,0,0,not_disclosed,2026-06-30,분기 매출은 공시되지만 영업이익은 반기·연간으로만 공시되어 분기 영업이익과 OPM은 N/A입니다.
-HKEX:1888,Kingboard Laminates,홍콩,1229,2026-10-28,False,1,2026-10-22,False,True,0,0,0,0,not_disclosed,,회사는 반기·연간 실적을 공시하며 독립 분기 매출·영업이익은 확인되지 않았습니다. 반기 수치를 임의로 분할하지 않습니다.
-HKEX:522,ASMPT,홍콩,1229,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-09-30,공식 3개월 계속사업 수치 HKD천 단위를 백만으로 환산. 조정 OP922.350와 혼합하지 않음. 미감사 공표.
-HKEX:700,Tencent,중국,1229,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,"회사 IFRS 연결 분기 실적. 2026년 2분기 영업이익은 공식 공시 67,276백만 CNY로 정정. 비IFRS 조정 수치 제외."
-HKEX:981,SMIC,중국,1229,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,회사 공시 IFRS 연결 분기 실적. 원문 USD 천 단위를 백만 단위로 환산.
-HKEX:992,Lenovo,중국,1229,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,회사 공식 분기 연결 손익계산서. USD 천 단위를 백만 단위로 환산. 세그먼트·조정 영업이익 제외.
-KRX:000150,Doosan Corporation,한국,1220,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-KRX:000660,SK hynix,한국,1220,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-09-30,회사 3Q26 잠정 실적(검토 미완료·향후 변경 가능). 공식 백십억원 단위104615.5/83333.8을 백만원으로 변환. 확정 공시로 표시하지 않음. EPS 미확인.
-KRX:005290,Dongjin Semichem,한국,1220,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-KRX:005930,Samsung Electronics,한국,1220,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-KRX:007660,ISU Petasys,한국,1220,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-KRX:007810,Korea Circuit,한국,1220,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-KRX:009150,Samsung Electro-Mechanics,한국,1220,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-09-30,2026년 3분기 연결 실적은 회사 10월 28일 발표의 십억 원 소수 1자리 정밀도를 백만 원으로 환산했습니다. 공시되지 않은 추가 정밀도를 만들지 않았습니다.
-KRX:033160,MK Electron,한국,1220,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-KRX:036930,Jusung Engineering,한국,1220,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-KRX:042700,Hanmi Semiconductor,한국,1220,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-KRX:058470,Leeno Industrial,한국,1220,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-KRX:074600,Wonik QnC,한국,1220,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-KRX:077360,Duk San Hi Metal,한국,1220,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-KRX:089030,Techwing,한국,1220,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-KRX:090460,BH Co.,한국,1220,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-KRX:092070,DNF,한국,1220,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-KRX:095340,ISC,한국,1220,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-KRX:101160,Worldex,한국,1220,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-KRX:102710,ENF Technology,한국,1220,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-KRX:104830,Wonik Materials,한국,1220,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-KRX:108320,LX Semicon,한국,1220,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,회사 IFRS 연결 실적 발표. 원문 억원 단위 반올림 수치를 백만원으로 환산. 잠정·미감사 실적.
-KRX:166090,Hana Materials,한국,1220,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-KRX:183300,Komico,한국,1220,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-KRX:222800,Simmtech,한국,1220,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-KRX:353200,Daeduck Electronics,한국,1220,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-KRX:356860,TLB,한국,1220,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-KRX:357780,Soulbrain,한국,1220,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
+HKEX:1888,Kingboard Laminates,홍콩,1230,2026-10-29,False,0,2026-10-29,False,True,0,0,0,0,not_disclosed,,회사는 반기·연간 실적을 공시하며 독립 분기 매출·영업이익은 확인되지 않았습니다. 반기 수치를 임의로 분할하지 않습니다.
+HKEX:522,ASMPT,홍콩,1230,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-09-30,공식 3개월 계속사업 수치 HKD천 단위를 백만으로 환산. 조정 OP922.350와 혼합하지 않음. 미감사 공표.
+HKEX:700,Tencent,중국,1230,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,"회사 IFRS 연결 분기 실적. 2026년 2분기 영업이익은 공식 공시 67,276백만 CNY로 정정. 비IFRS 조정 수치 제외."
+HKEX:981,SMIC,중국,1230,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,회사 공시 IFRS 연결 분기 실적. 원문 USD 천 단위를 백만 단위로 환산.
+HKEX:992,Lenovo,중국,1230,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,회사 공식 분기 연결 손익계산서. USD 천 단위를 백만 단위로 환산. 세그먼트·조정 영업이익 제외.
+KRX:000150,Doosan Corporation,한국,1221,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+KRX:000660,SK hynix,한국,1221,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-09-30,회사 3Q26 잠정 실적(검토 미완료·향후 변경 가능). 공식 백십억원 단위104615.5/83333.8을 백만원으로 변환. 확정 공시로 표시하지 않음. EPS 미확인.
+KRX:005290,Dongjin Semichem,한국,1221,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+KRX:005930,Samsung Electronics,한국,1221,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+KRX:007660,ISU Petasys,한국,1221,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+KRX:007810,Korea Circuit,한국,1221,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+KRX:009150,Samsung Electro-Mechanics,한국,1221,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-09-30,2026년 3분기 연결 실적은 회사 10월 28일 발표의 십억 원 소수 1자리 정밀도를 백만 원으로 환산했습니다. 공시되지 않은 추가 정밀도를 만들지 않았습니다.
+KRX:033160,MK Electron,한국,1221,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+KRX:036930,Jusung Engineering,한국,1221,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+KRX:042700,Hanmi Semiconductor,한국,1221,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+KRX:058470,Leeno Industrial,한국,1221,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+KRX:074600,Wonik QnC,한국,1221,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+KRX:077360,Duk San Hi Metal,한국,1221,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+KRX:089030,Techwing,한국,1221,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+KRX:090460,BH Co.,한국,1221,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+KRX:092070,DNF,한국,1221,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+KRX:095340,ISC,한국,1221,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+KRX:101160,Worldex,한국,1221,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+KRX:102710,ENF Technology,한국,1221,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+KRX:104830,Wonik Materials,한국,1221,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+KRX:108320,LX Semicon,한국,1221,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,회사 IFRS 연결 실적 발표. 원문 억원 단위 반올림 수치를 백만원으로 환산. 잠정·미감사 실적.
+KRX:166090,Hana Materials,한국,1221,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+KRX:183300,Komico,한국,1221,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+KRX:222800,Simmtech,한국,1221,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+KRX:353200,Daeduck Electronics,한국,1221,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+KRX:356860,TLB,한국,1221,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+KRX:357780,Soulbrain,한국,1221,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
 MIL:PRY,Prysmian,이탈리아,1271,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
 MIL:TPRO,Technoprobe,이탈리아,1195,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
 NASDAQ:AAOI,Applied Optoelectronics,미국,1254,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
@@ -159,87 +159,87 @@ NYSE:VEEV,Veeva Systems,미국,1254,2026-10-28,False,1,2026-10-22,False,True,4,4
 NYSE:VRT,Vertiv,미국,1254,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-09-30,"연결 US GAAP 실제 단일 분기 매출·영업이익, 백만 USD. 출처와 실제 확인시각은 분기별 보존합니다."
 SIX:ABBN,ABB,스위스,1257,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-09-30,최근 4개 분기는 ABB 공식 US GAAP 계속영업 기준입니다. Robotics 중단영업을 제외하며 조정 Operational EBITA와 구분합니다. 분기 원문 수치를 사용했고 반기를 임의 분할하지 않았습니다.
 SIX:VACN,VAT Group,스위스,1257,2026-10-28,False,1,2026-10-22,False,True,4,4,0,0,not_disclosed,2026-09-30,분기 매출은 공시되지만 영업이익은 반기·연간으로만 공시되어 분기 영업이익과 OPM은 N/A입니다.
-SSE:600183,Shengyi Technology,중국,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,누락 분기만 공식 공시로 보완. 중국 회계기준 연결 영업이익(营业利润)은 누적 9개월에서 상반기를 차감해 산출(1분기는 직접 공시).
-SSE:600584,JCET Group,중국,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-09-30,
-SSE:603893,Rockchip Electronics,중국,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-09-30,
-SSE:688012,AMEC,중국,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-SSE:688256,Cambricon Technologies,중국,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-09-30,누락 분기만 공식 공시로 보완. 중국 회계기준 연결 영업이익(营业利润)은 누적 9개월에서 상반기를 차감해 산출(1분기는 직접 공시).
-SZSE:002371,NAURA Technology,중국,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-SZSE:002463,WUS Printed Circuit,중국,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,누락 분기만 공식 공시로 보완. 중국 회계기준 연결 영업이익(营业利润)은 누적 9개월에서 상반기를 차감해 산출(1분기는 직접 공시).
-SZSE:002475,Luxshare Precision,중국,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,누락 분기만 공식 공시로 보완. 중국 회계기준 연결 영업이익(营业利润)은 누적 9개월에서 상반기를 차감해 산출(1분기는 직접 공시).
-SZSE:002916,Shennan Circuits,중국,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-09-30,누락 분기만 공식 공시로 보완. 중국 회계기준 연결 영업이익(营业利润)은 누적 9개월에서 상반기를 차감해 산출(1분기는 직접 공시).
-SZSE:300308,Zhongji Innolight,중국,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,누락 분기만 공식 공시로 보완. 중국 회계기준 연결 영업이익(营业利润)은 누적 9개월에서 상반기를 차감해 산출(1분기는 직접 공시).
-SZSE:300502,Eoptolink,중국,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-SZSE:301200,Han’s CNC,중국,1131,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-09-30,누락 분기만 공식 공시로 보완. 중국 회계기준 연결 영업이익(营业利润)은 누적 9개월에서 상반기를 차감해 산출(1분기는 직접 공시).
-TPEX:6488,GlobalWafers,대만,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TPEX:8299,Phison Electronics,대만,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TSE:285A,Kioxia Holdings,일본,451,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TSE:3433,Tocalo,일본,1221,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TSE:3436,SUMCO,일본,1221,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TSE:4004,Resonac Holdings,일본,1221,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TSE:4062,Ibiden,일본,1221,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TSE:4063,Shin-Etsu Chemical,일본,1221,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-09-30,"동일 회계기준 공식 6개월 누적에서 실제 공시된 1Q 차감: Rev1420684−662424, OP385918−173798(백만JPY). 단순 반기 분할 아님. 공식 단일분기 절사 표758.2/212.1십억과 일치."
-TSE:4186,Tokyo Ohka Kogyo,일본,1221,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TSE:4203,Sumitomo Bakelite,일본,1221,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TSE:4901,Fujifilm,일본,1221,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TSE:5384,Fujimi,일본,1221,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TSE:5801,Furukawa Electric,일본,1221,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TSE:5802,Sumitomo Electric,일본,1221,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TSE:6146,DISCO Corporation,일본,1221,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-09-30,
-TSE:6383,Daifuku,일본,1221,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TSE:6506,Yaskawa Electric,일본,1221,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-08-31,
-TSE:6525,Kokusai Electric,일본,733,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TSE:6526,Socionext,일본,989,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TSE:6723,Renesas Electronics,일본,1221,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-09-30,"2026년 3분기 연결 IFRS 실적입니다. 영업이익에는 타이밍 사업 매각이익이 포함되어 매출보다 크며, 회사의 비GAAP 영업이익과 구분합니다. 실제 단일분기 백만 JPY 수치입니다."
-TSE:6758,Sony Group,일본,1221,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TSE:6762,TDK,일본,1221,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TSE:6855,Japan Electronic Materials,일본,1221,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TSE:6857,Advantest,일본,1221,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TSE:6861,Keyence,일본,1221,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TSE:6890,Ferrotec Holdings,일본,1221,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TSE:6920,Lasertec,일본,1221,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TSE:6941,Yamaichi Electronics,일본,1221,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TSE:6954,FANUC,일본,1221,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TSE:6963,ROHM,일본,1221,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TSE:6965,Hamamatsu Photonics,일본,1221,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TSE:6971,Kyocera,일본,1221,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TSE:6976,Taiyo Yuden,일본,1221,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TSE:6981,Murata Manufacturing,일본,1221,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TSE:7729,Tokyo Seimitsu,일본,1221,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TSE:7731,Nikon,일본,1221,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TSE:7735,SCREEN Holdings,일본,1221,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TSE:7751,Canon,일본,1221,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-09-30,회사 공식 보충자료 연결합계 단일분기 수치(백만 JPY). 소수 0.1십억 표가 아닌 원문 정밀도.
-TSE:8035,Tokyo Electron,일본,1221,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TWSE:2308,Delta Electronics,대만,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TWSE:2313,Compeq Manufacturing,대만,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TWSE:2317,Hon Hai Precision (Foxconn),대만,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TWSE:2327,Yageo,대만,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TWSE:2337,Macronix International,대만,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TWSE:2344,Winbond Electronics,대만,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TWSE:2356,Inventec,대만,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TWSE:2360,Chroma ATE,대만,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TWSE:2368,Gold Circuit Electronics,대만,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TWSE:2382,Quanta Computer,대만,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TWSE:2383,Elite Material,대만,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TWSE:2408,Nanya Technology,대만,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-09-30,"최신 분기만 Nanya의 2026년 3분기 공식 실적자료로 확인했습니다. 단위는 백만 TWD(NTD), 미감사 수치입니다. 유지된 이전 분기는 이번에 독립적으로 재검증하지 않았으므로 분기별 출처·확인일을 참조하세요."
-TWSE:2449,King Yuan Electronics,대만,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TWSE:2454,MediaTek,대만,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TWSE:3034,Novatek Microelectronics,대만,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TWSE:3035,Faraday Technology,대만,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TWSE:3037,Unimicron Technology,대만,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,2025년 3분기 연결 실적은 TWSE에 제출한 회사 발표자료로 보완. 원문 백만 TWD 단위 반올림 수치.
-TWSE:3044,Tripod Technology,대만,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TWSE:3189,Kinsus Interconnect,대만,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,2025년 3분기 연결 실적은 회사 원문 공시로 보완. 원문 TWD 천 단위를 백만 단위로 환산.
-TWSE:3231,Wistron,대만,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TWSE:3443,Global Unichip,대만,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TWSE:3661,Alchip Technologies,대만,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TWSE:3702,WPG Holdings,대만,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TWSE:4958,Zhen Ding Technology,대만,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TWSE:6213,ITEQ,대만,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TWSE:6239,Powertech Technology,대만,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TWSE:6269,Flexium Interconnect,대만,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TWSE:6669,Wiwynn,대만,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TWSE:8039,Taiflex Scientific,대만,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
-TWSE:8046,Nan Ya PCB,대만,1212,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
+SSE:600183,Shengyi Technology,중국,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,누락 분기만 공식 공시로 보완. 중국 회계기준 연결 영업이익(营业利润)은 누적 9개월에서 상반기를 차감해 산출(1분기는 직접 공시).
+SSE:600584,JCET Group,중국,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-09-30,
+SSE:603893,Rockchip Electronics,중국,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-09-30,
+SSE:688012,AMEC,중국,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+SSE:688256,Cambricon Technologies,중국,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-09-30,누락 분기만 공식 공시로 보완. 중국 회계기준 연결 영업이익(营业利润)은 누적 9개월에서 상반기를 차감해 산출(1분기는 직접 공시).
+SZSE:002371,NAURA Technology,중국,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+SZSE:002463,WUS Printed Circuit,중국,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,누락 분기만 공식 공시로 보완. 중국 회계기준 연결 영업이익(营业利润)은 누적 9개월에서 상반기를 차감해 산출(1분기는 직접 공시).
+SZSE:002475,Luxshare Precision,중국,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,누락 분기만 공식 공시로 보완. 중국 회계기준 연결 영업이익(营业利润)은 누적 9개월에서 상반기를 차감해 산출(1분기는 직접 공시).
+SZSE:002916,Shennan Circuits,중국,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-09-30,누락 분기만 공식 공시로 보완. 중국 회계기준 연결 영업이익(营业利润)은 누적 9개월에서 상반기를 차감해 산출(1분기는 직접 공시).
+SZSE:300308,Zhongji Innolight,중국,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,누락 분기만 공식 공시로 보완. 중국 회계기준 연결 영업이익(营业利润)은 누적 9개월에서 상반기를 차감해 산출(1분기는 직접 공시).
+SZSE:300502,Eoptolink,중국,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+SZSE:301200,Han’s CNC,중국,1132,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-09-30,누락 분기만 공식 공시로 보완. 중국 회계기준 연결 영업이익(营业利润)은 누적 9개월에서 상반기를 차감해 산출(1분기는 직접 공시).
+TPEX:6488,GlobalWafers,대만,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TPEX:8299,Phison Electronics,대만,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TSE:285A,Kioxia Holdings,일본,452,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TSE:3433,Tocalo,일본,1222,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TSE:3436,SUMCO,일본,1222,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TSE:4004,Resonac Holdings,일본,1222,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TSE:4062,Ibiden,일본,1222,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TSE:4063,Shin-Etsu Chemical,일본,1222,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-09-30,"동일 회계기준 공식 6개월 누적에서 실제 공시된 1Q 차감: Rev1420684−662424, OP385918−173798(백만JPY). 단순 반기 분할 아님. 공식 단일분기 절사 표758.2/212.1십억과 일치."
+TSE:4186,Tokyo Ohka Kogyo,일본,1222,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TSE:4203,Sumitomo Bakelite,일본,1222,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TSE:4901,Fujifilm,일본,1222,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TSE:5384,Fujimi,일본,1222,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TSE:5801,Furukawa Electric,일본,1222,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TSE:5802,Sumitomo Electric,일본,1222,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TSE:6146,DISCO Corporation,일본,1222,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-09-30,
+TSE:6383,Daifuku,일본,1222,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TSE:6506,Yaskawa Electric,일본,1222,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-08-31,
+TSE:6525,Kokusai Electric,일본,734,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TSE:6526,Socionext,일본,990,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TSE:6723,Renesas Electronics,일본,1222,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-09-30,"2026년 3분기 연결 IFRS 실적입니다. 영업이익에는 타이밍 사업 매각이익이 포함되어 매출보다 크며, 회사의 비GAAP 영업이익과 구분합니다. 실제 단일분기 백만 JPY 수치입니다."
+TSE:6758,Sony Group,일본,1222,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TSE:6762,TDK,일본,1222,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TSE:6855,Japan Electronic Materials,일본,1222,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TSE:6857,Advantest,일본,1222,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TSE:6861,Keyence,일본,1222,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TSE:6890,Ferrotec Holdings,일본,1222,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TSE:6920,Lasertec,일본,1222,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TSE:6941,Yamaichi Electronics,일본,1222,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TSE:6954,FANUC,일본,1222,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TSE:6963,ROHM,일본,1222,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TSE:6965,Hamamatsu Photonics,일본,1222,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TSE:6971,Kyocera,일본,1222,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TSE:6976,Taiyo Yuden,일본,1222,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TSE:6981,Murata Manufacturing,일본,1222,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TSE:7729,Tokyo Seimitsu,일본,1222,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TSE:7731,Nikon,일본,1222,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TSE:7735,SCREEN Holdings,일본,1222,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TSE:7751,Canon,일본,1222,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-09-30,회사 공식 보충자료 연결합계 단일분기 수치(백만 JPY). 소수 0.1십억 표가 아닌 원문 정밀도.
+TSE:8035,Tokyo Electron,일본,1222,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TWSE:2308,Delta Electronics,대만,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TWSE:2313,Compeq Manufacturing,대만,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TWSE:2317,Hon Hai Precision (Foxconn),대만,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TWSE:2327,Yageo,대만,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TWSE:2337,Macronix International,대만,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TWSE:2344,Winbond Electronics,대만,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TWSE:2356,Inventec,대만,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TWSE:2360,Chroma ATE,대만,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TWSE:2368,Gold Circuit Electronics,대만,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TWSE:2382,Quanta Computer,대만,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TWSE:2383,Elite Material,대만,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TWSE:2408,Nanya Technology,대만,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-09-30,"최신 분기만 Nanya의 2026년 3분기 공식 실적자료로 확인했습니다. 단위는 백만 TWD(NTD), 미감사 수치입니다. 유지된 이전 분기는 이번에 독립적으로 재검증하지 않았으므로 분기별 출처·확인일을 참조하세요."
+TWSE:2449,King Yuan Electronics,대만,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TWSE:2454,MediaTek,대만,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TWSE:3034,Novatek Microelectronics,대만,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TWSE:3035,Faraday Technology,대만,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TWSE:3037,Unimicron Technology,대만,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,2025년 3분기 연결 실적은 TWSE에 제출한 회사 발표자료로 보완. 원문 백만 TWD 단위 반올림 수치.
+TWSE:3044,Tripod Technology,대만,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TWSE:3189,Kinsus Interconnect,대만,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,2025년 3분기 연결 실적은 회사 원문 공시로 보완. 원문 TWD 천 단위를 백만 단위로 환산.
+TWSE:3231,Wistron,대만,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TWSE:3443,Global Unichip,대만,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TWSE:3661,Alchip Technologies,대만,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TWSE:3702,WPG Holdings,대만,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TWSE:4958,Zhen Ding Technology,대만,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TWSE:6213,ITEQ,대만,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TWSE:6239,Powertech Technology,대만,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TWSE:6269,Flexium Interconnect,대만,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TWSE:6669,Wiwynn,대만,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TWSE:8039,Taiflex Scientific,대만,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
+TWSE:8046,Nan Ya PCB,대만,1213,2026-10-29,False,0,2026-10-29,False,True,4,4,4,4,complete,2026-06-30,
 VIE:ATS,AT&S,오스트리아,1271,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
 XETR:HEN3,Henkel,독일,1275,2026-10-28,False,1,2026-10-22,False,True,4,4,0,0,not_disclosed,2026-06-30,분기 매출은 공시되지만 영업이익은 반기·연간으로만 공시되어 분기 영업이익과 OPM은 N/A입니다.
 XETR:IFX,Infineon Technologies,독일,1275,2026-10-28,False,1,2026-10-22,False,True,4,4,4,4,complete,2026-06-30,
