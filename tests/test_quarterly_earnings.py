@@ -24,14 +24,14 @@ class QuarterlyEarningsTests(unittest.TestCase):
                     self.assertEqual(len({r['period'] for r in rows}), 4)
                     self.assertEqual([r['period'] for r in rows], sorted(r['period'] for r in rows))
                     for row in rows:
-                        numeric_keys = ('revenue','grossProfit','grossMargin','operatingIncome','eps') if company.get('presentationVersion') == 3 else ('revenue','operatingIncome','operatingMargin','netIncome')
+                        numeric_keys = ('revenue','grossProfit','grossMargin','operatingIncome','eps') if company.get('presentationVersion') == 3 else (('revenue','operatingIncome','operatingMargin') if entry.get('earnings',{}).get('scope')=='KOSPI200_KOSDAQ150' else ('revenue','operatingIncome','operatingMargin','netIncome'))
                         if any(row.get(key) is not None for key in numeric_keys):
                             self.assertTrue(row['sourceIds'])
                         else:
                             self.assertEqual(row.get('status'), 'unverified')
                             self.assertTrue(row.get('note'))
                         self.assertLessEqual(set(row['sourceIds']), sources)
-                        keys = ['revenue','grossProfit','grossMargin','operatingIncome','eps'] if company.get('presentationVersion') == 3 else ['revenue','operatingIncome','operatingMargin','netIncome']
+                        keys = ['revenue','grossProfit','grossMargin','operatingIncome','eps'] if company.get('presentationVersion') == 3 else (['revenue','operatingIncome','operatingMargin'] if entry.get('earnings',{}).get('scope')=='KOSPI200_KOSDAQ150' else ['revenue','operatingIncome','operatingMargin','netIncome'])
                         for key in keys:
                             self.assertTrue(row[key] is None or isinstance(row[key], (int, float)))
                             if row[key] is not None:

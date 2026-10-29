@@ -26,6 +26,9 @@ def number(value):
 
 def validate(payload):
     errors = []
+    if "marketTurnover" in payload:
+        from korean_turnover import validate as validate_turnover
+        errors.extend(validate_turnover(payload["marketTurnover"], payload.get("sources", [])))
     def check(ok, message):
         if not ok:
             errors.append(message)

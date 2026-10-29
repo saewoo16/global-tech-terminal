@@ -128,6 +128,8 @@ class BriefingDataTests(unittest.TestCase):
         result = module.upsert(self.payload, replacement)
         self.assertEqual(len(result['entries']), len(self.payload['entries']))
         replacement['date'] = (date.fromisoformat(max(e['date'] for e in self.payload['entries'])) + timedelta(days=1)).isoformat()
+        # A new report cannot republish yesterday's actual release dates.
+        replacement['earnings'] = {'rows': []}
         result = module.upsert(result, replacement)
         self.assertEqual(len(result['entries']), len(self.payload['entries'])+1)
         self.assertEqual(result['entries'][0]['date'], replacement['date'])

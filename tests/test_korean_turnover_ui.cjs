@@ -1,0 +1,9 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
+const root=path.resolve(__dirname,'..'),raw=fs.readFileSync(root+'/assets/korea.js','utf8');
+const ctx={URL,Date,Number,String,Array,Set,Map,Math,console,window:{addEventListener(){}},document:{readyState:'loading',addEventListener(){}}};vm.createContext(ctx);
+vm.runInContext(raw.replace('  if(document.readyState',`  window.api={marketTurnoverSection,rangeRows,chartModel,setData:v=>payload=v,setRange:v=>turnoverRange=v};\n  if(document.readyState`),ctx);const a=ctx.window.api;
+const rows=[{date:'2025-10-29',turnover:100},{date:'2026-04-29',turnover:200},{date:'2026-07-29',turnover:300},{date:'2026-09-29',turnover:null},{date:'2026-10-29',turnover:400}];
+assert.equal(a.rangeRows(rows,'1M').length,2);assert.equal(a.rangeRows(rows,'3M').length,3);assert.equal(a.rangeRows(rows,'6M').length,4);assert.equal(a.rangeRows(rows,'1Y').length,5);
+assert.equal(a.rangeRows([{date:'2026-02-28'},{date:'2026-03-31'}],'1M').length,2);
+const model=a.chartModel(rows,['turnover'],'1Y',false);assert.equal((model.paths[0].path.match(/M/g)||[]).length,2);
+a.setData({sources:[],marketTurnover:{markets:{KOSPI:{rows},KOSDAQ:{rows}}}});const h=a.marketTurnoverSection();for(const label of ['1개월','3개월','6개월','12개월','KOSPI','KOSDAQ','400억원','미확인'])assert(h.includes(label),label);assert(h.includes('aria-pressed="true"'));assert(h.includes('kr-chart-table'));assert(!h.includes('NaN'));assert(raw.indexOf('marketTurnoverSection()+dailyFlowSummary()')>=0);console.log('PASS market turnover ranges, calendar clamping, gaps, accessible charts and placement');

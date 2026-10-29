@@ -100,6 +100,39 @@ def validate_entry(entry):
                 require(isinstance(row.get('metrics', []), list), 'metrics must be an array')
                 for metric in row.get('metrics', []):
                     require(isinstance(metric, dict) and isinstance(metric.get('label'), str) and isinstance(metric.get('value'), str), 'metrics need string label and value')
+    earnings = entry.get('earnings', {})
+    if entry.get('market') == 'KR' and earnings.get('scope') == 'KOSPI200_KOSDAQ150':
+        seen = set()
+        for row in earnings.get('rows', []):
+            require(row.get('releaseDate') == entry['date'], 'KR earnings must belong to actual KST release date')
+            require(row.get('membershipVerified') is True and row.get('universeScope') in ('KOSPI200','KOSDAQ150'), 'KR earnings need verified eligible membership')
+            identifier = row.get('companyId') or row['ticker']
+            require(identifier not in seen, 'Duplicate KR earnings company')
+            seen.add(identifier)
+            require(row.get('sourceIds'), 'KR earnings require release sources')
+            require(row.get('observedAt') and row.get('membershipAsOf'), 'KR earnings require actual observation and membership dates')
+            history = row.get('quarterlyHistory', {})
+            require(history.get('currency') == 'KRW' and history.get('unit') and history.get('basis'), 'KR history requires currency/unit/accounting basis')
+            quarters = history.get('rows', [])
+            require(len(quarters) == 4 and len({q.get('period') for q in quarters}) == 4, 'KR history must contain four distinct quarters (null allowed)')
+            require([q['period'] for q in quarters] == sorted(q['period'] for q in quarters), 'KR quarters must be chronological')
+            try:
+                ordinals = [int(q['period'][:4])*4+int(q['period'][-1]) for q in quarters]
+                require(all(q['period'][4:6] == ' Q' and q['period'][-1] in '1234' and len(q['period']) == 7 for q in quarters), 'Invalid KR quarter label')
+                require(ordinals == list(range(ordinals[0], ordinals[0]+4)) and quarters[-1]['period'] == row.get('period'), 'KR history must be four consecutive quarters ending at release period')
+            except (ValueError, TypeError, KeyError) as exc:
+                raise ValueError('Invalid KR consecutive-quarter history') from exc
+            for q in quarters:
+                revenue, profit, margin = q.get('revenue'), q.get('operatingIncome'), q.get('operatingMargin')
+                require(all(v is None or valid_number(v) for v in (revenue, profit, margin)), 'KR quarter inputs must be finite or null')
+                if revenue is None or profit is None or revenue == 0:
+                    require(margin is None, 'Missing KR inputs cannot imply a margin')
+                else:
+                    require(valid_number(margin) and abs(margin-profit/revenue*100)<1e-8, 'KR OPM must equal same-basis OP / Rev')
+                    require(q.get('sourceIds') and q.get('basis') and q.get('currency') == history['currency'], 'KR numeric quarters need same-basis sources and currency')
+            require(row.get('callStatus') in ('transcript_verified','release_summary'), 'KR summary type must be explicit')
+            if row.get('callStatus') != 'transcript_verified':
+                require(not row.get('callHighlights'), 'Unverified KR calls cannot have call summaries')
     numeric_fields = {'close', 'changePct', 'day', 'week', 'month', 'marketCapUSD', 'volumeCurrent', 'volumePrevious', 'volumeChangePct', 'foreign', 'institution', 'individual'}
     nonnegative = {'close', 'marketCapUSD', 'volumeCurrent', 'volumePrevious'}
     returns = {'changePct', 'day', 'week', 'month', 'volumeChangePct'}
