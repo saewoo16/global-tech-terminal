@@ -20,6 +20,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -75,5 +77,5 @@ jobs:
           git add data/
           if ! git diff --cached --quiet; then
             git commit -m "Update market data"
-            git push
+            bash scripts/publish_collected_data.sh
           fi
