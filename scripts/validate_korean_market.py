@@ -315,7 +315,7 @@ def validate(payload):
                     # Legacy Yahoo path explicitly names indicators.adjclose; fresh NAVER declares close.
                     price_field = 'close' if price_field == 'close' else 'adjustedClose'
                     if price_field == 'close':
-                        check(bool(component.get('priceBasis')) and (component.get('collectionMethod') == 'fresh_naver_daily_chart' or (component.get('collectionMethod') == 'reused_verified_etf_chart' and len(component.get('sourceSnapshotSha256', '')) == 64)), 'sectorReturns: non-adjusted source basis required')
+                        check(bool(component.get('priceBasis')) and (component.get('collectionMethod') == 'fresh_naver_daily_chart' or (component.get('collectionMethod') == 'naver_mobile_daily_actual_close_crosschecked_yahoo_raw' and len(component.get('evidenceSha256', '')) == 64 and component.get('sourceId') in ids) or (component.get('collectionMethod') == 'reused_verified_etf_chart' and len(component.get('sourceSnapshotSha256', '')) == 64)), 'sectorReturns: non-adjusted source basis required')
                     base = observations.get(window.get('baseDate'), {}).get(price_field)
                     end = observations.get(window.get('endDate'), {}).get(price_field)
                     check(number(base) and base > 0 and number(end) and end > 0, 'sectorReturns: positive declared-basis prices required')

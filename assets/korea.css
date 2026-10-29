@@ -49,3 +49,6 @@
 /* Earnings columns are numeric, unlike the shared ranking table's name column. */
 .kr-quarterly .kr-table th:first-child{width:112px;text-align:left;white-space:nowrap}
 .kr-quarterly .kr-table th:nth-child(n+2),.kr-quarterly .kr-table td:nth-child(n+2){text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}.kr-call{margin-top:24px;padding-top:18px;border-top:1px solid var(--line)}.kr-call li{margin-bottom:10px}.kr-earnings-summary{font-size:13px!important;line-height:1.9!important}.kr-quarterly-key{margin-top:8px!important}@media(max-width:760px){.kr-earnings-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.kr-earnings-metrics strong{font-size:15px}.kr-earnings-card h4{font-size:17px}}
+
+/* Never visually rank retained observations alongside a newer session. */
+.kr-sector-return-table .kr-sector-date-group th{background:var(--surface-2,#f1f5f9);color:var(--text,#172033);font-weight:700;text-align:left;border-top:2px solid var(--border,#cbd5e1);padding:12px}
