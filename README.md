@@ -578,3 +578,6 @@ FreeSIS는 공식 HTML의 예탁금/신용융자 `백만원` 표제와 신용공
 - 근거는 `data/us-close-evidence-20261028.json`과 실적 원문 확인 기록에 보존합니다. 통합 후 `python scripts/build_us_breadth.py`, `python scripts/build_us_breadth.py --check`, `bash scripts/validate_publication.sh`를 실행합니다. 캐시 키는 `20261029-us-close07`이며 국내 분석·ETF 차트·기업 탐색6개월 기능·기존 날짜 원자료를 보존합니다.
 
 - 최초 07:00 기준 자료의 검증은 실제22:00 UTC 재확인 뒤 완료했지만 blob 승인 대기로07:15 게시 기한을 넘겼습니다. 복구 시 `updatedAt`을 실제 통합 시각으로 기록하고 원래 `reportCutoffAt`·수집·관측시각과 이후 커밋/Pages 게시시각을 구분합니다. 새 수집기 커밋의 국내 수급 보존 수정·기업/ETF/매크로 갱신은 그대로 유지합니다.
+
+### 2026-10-29 기업 탐색 실적 점검
+13개 회사의 새 분기 실적을 공식 발표에서 대조하여 `financial_backfill_zlatest_20261029.json`에 보존했습니다. TEL·EQIX·VRT의 비교분기 영업이익 6건도 실제 공시로 정정했습니다. ADP는 연결 영업이익 소계 미공시를 유지하며 EBIT로 대체하지 않습니다. KLA 영업이익은 동일 분기 매출에서 공시된 영업비용을 차감한 계산값입니다. Renesas IFRS 영업이익에는 타이밍 사업 매각이익이 포함되어 비GAAP 값과 다릅니다. 원래 시세·시총 관측시각, 미수정 회사와 과거 분기 출처 확인일을 보존합니다. 기업 시세 JSON은 기존 `?ts=Date.now()` 캐시 회피 경로를 그대로 사용합니다. 미국·국내 시장 분석 자료는 이 점검에서 변경하지 않습니다.
