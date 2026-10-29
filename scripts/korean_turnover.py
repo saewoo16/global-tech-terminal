@@ -34,4 +34,17 @@ def validate(section, sources):
         if seen:
             c=s.get('coverage',{})
             if (c.get('start'),c.get('end'),c.get('count'))!=(seen[0],seen[-1],len(seen)):errors.append(f'{market} turnover coverage mismatch')
+    for market in ('KOSPI','KOSDAQ'):
+        observation=section.get('markets',{}).get(market,{}).get('currentObservation')
+        if observation:
+            if observation.get('marketVenue')!='KRX' or observation.get('session')!='regular-close':errors.append('current turnover needs KRX regular-close scope')
+            errors.extend(validate_observation(observation, sources))
+    nxt=section.get('nxtObservation')
+    if nxt:
+        if nxt.get('marketVenue')!='NXT' or nxt.get('session')!='premarket-and-regular':errors.append('NXT scope must remain separate premarket-and-regular')
+        errors.extend(validate_observation(nxt,sources))
     return errors
+
+def validate_observation(row,sources):
+    series={'unit':'억원','scope':'whole-market','sourceIds':row.get('sourceIds',[]),'rows':[row],'coverage':{'start':row.get('date'),'end':row.get('date'),'count':1}}
+    return validate({'markets':{'KOSPI':series,'KOSDAQ':series}},sources)
