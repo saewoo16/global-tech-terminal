@@ -10,6 +10,68 @@ PATH=pathlib.Path(__file__).resolve().parents[1]/'scripts/update_overseas_etf_ch
 spec=importlib.util.spec_from_file_location('overseas',PATH);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
 
 class OverseasETFTests(unittest.TestCase):
+    def test_coverage_exposes_stale_tail_under_fresh_latest(self):
+        funds=[{'code':c,'daily':[{'date':d,'close':100}]} for c,d in [('A','2026-10-29'),('B','2026-10-28')]]
+        original=json.loads(json.dumps(funds))
+        coverage=m.apply_session_coverage(funds,['A','B'],'2026-10-29',dt.datetime.fromisoformat('2026-10-29T23:00:00+00:00'))
+        self.assertEqual(coverage['targetSession'],'2026-10-29')
+        self.assertEqual(coverage['commonThrough'],'2026-10-28')
+        self.assertEqual(coverage['latestAvailable'],'2026-10-29')
+        self.assertEqual(coverage['status'],'partial');self.assertEqual(coverage['staleCodes'],['B'])
+        self.assertEqual(funds[1]['refreshStatus'],'stale')
+        self.assertEqual([f['daily'] for f in funds],[f['daily'] for f in original])
+
+    def test_coverage_missing_fund_not_counted_complete(self):
+        funds=[{'code':'A','daily':[{'date':'2026-10-29'}]}]
+        coverage=m.apply_session_coverage(funds,['A','B'],'2026-10-29',dt.datetime.fromisoformat('2026-10-29T23:00:00+00:00'))
+        self.assertIsNone(coverage['commonThrough']);self.assertEqual(coverage['missingCodes'],['B'])
+        self.assertEqual(coverage['currentFundCount'],1);self.assertEqual(coverage['status'],'partial')
+
+    def test_analysis_future_or_uncompleted_date_is_not_target(self):
+        for date in ['2026-10-29','2026-10-30','invalid',None]:
+            funds=[{'code':'A','daily':[{'date':'2026-10-28'}]}]
+            coverage=m.apply_session_coverage(funds,['A'],date,dt.datetime.fromisoformat('2026-10-29T12:00:00-04:00'))
+            self.assertEqual(coverage['targetSession'],'2026-10-28')
+            self.assertEqual(coverage['status'],'complete')
+
+    def test_completed_analysis_target_flags_all_old_funds(self):
+        funds=[{'code':'A','daily':[{'date':'2026-10-28'}]}]
+        coverage=m.apply_session_coverage(funds,['A'],'2026-10-29',dt.datetime.fromisoformat('2026-10-29T16:01:00-04:00'))
+        self.assertEqual(coverage['targetSession'],'2026-10-29');self.assertEqual(coverage['currentFundCount'],0)
+        self.assertEqual(coverage['staleFundCount'],1)
+
+    def test_intraday_coverage_requires_actual_same_session_points(self):
+        funds=[{'code':'A','daily':[{'date':'2026-10-29'}], 'intraday':{'date':'2026-10-29','points':[{'time':'2026-10-28T09:30:00-04:00'},{'time':'2026-10-28T15:55:00-04:00'}]}}]
+        coverage=m.apply_session_coverage(funds,['A'],'2026-10-29',dt.datetime.fromisoformat('2026-10-29T23:00:00+00:00'))
+        self.assertEqual(coverage['intradayCurrentFundCount'],0)
+        self.assertEqual(coverage['intradayUnverifiedCodes'],['A'])
+        for point in funds[0]['intraday']['points']:point['time']=point['time'].replace('2026-10-28','2026-10-29')
+        coverage=m.apply_session_coverage(funds,['A'],'2026-10-29',dt.datetime.fromisoformat('2026-10-29T23:00:00+00:00'))
+        self.assertEqual(coverage['intradayCurrentFundCount'],1)
+
+    def test_previous_whole_verified_bar_survives_malformed_yahoo(self):
+        stamps=[int(dt.datetime.fromisoformat(t).timestamp()) for t in ['2026-10-28T09:30:00-04:00','2026-10-29T09:30:00-04:00']]
+        raw={'timestamp':stamps,'meta':{'instrumentType':'ETF','currency':'USD','currentTradingPeriod':{'regular':{'end':int(dt.datetime.fromisoformat('2026-10-29T16:00:00-04:00').timestamp())}}},'indicators':{'quote':[{'open':[100,90],'high':[102,110],'low':[99,95],'close':[101,105],'volume':[1,999]}]}}
+        whole={'date':'2026-10-29','open':100,'high':107,'low':98,'close':105,'volume':123}
+        source={'date':'2026-10-29','sourceUrl':'https://scanner.tradingview.com/america/scan','observedAt':'2026-10-29T23:00:00+00:00'}
+        old={'daily':[{'date':'2026-10-28','open':100,'high':102,'low':99,'close':101,'volume':1},whole], 'dailyBarSources':[source], 'dailyAdjustment':'Verified complete TradingView bar', 'sourceUrls':[source['sourceUrl']], 'sourceTitles':['TradingView whole candle']}
+        before=json.dumps(old)
+        with patch.object(m,'fetch_chart',side_effect=[(raw,'https://example.test/daily'),RuntimeError('unavailable')]):
+            fund=m.build_fund({'ticker':'TEST','name':'Test'}, {}, dt.datetime.fromisoformat('2026-10-29T23:30:00+00:00'),old)
+        self.assertEqual(fund['daily'][-1],whole)
+        self.assertEqual(fund['dailyBarSources'],[source]);self.assertEqual(json.dumps(old),before)
+        self.assertIn(source['sourceUrl'],fund['sourceUrls']);self.assertIn('TradingView whole candle',fund['sourceTitles'])
+        self.assertIn(old['dailyAdjustment'],fund['dailyAdjustment'])
+        self.assertEqual(fund['volume'],123)
+        # Fresh valid candles win, and unfinished sessions are not recovered.
+        fresh=[dict(whole,close=106)]
+        self.assertEqual(m.retain_verified_missing_bars(fresh,raw,old,dt.datetime.fromisoformat('2026-10-29T23:30:00+00:00'))[0],fresh)
+        prior=m.daily_bars(raw,dt.datetime.fromisoformat('2026-10-29T12:00:00-04:00'))
+        self.assertEqual(m.retain_verified_missing_bars(prior,raw,old,dt.datetime.fromisoformat('2026-10-29T12:00:00-04:00'))[1],[])
+        # A split/revised basis is not mixed with prior unadjusted candles.
+        revised=[dict(old['daily'][0],close=50.5)]
+        self.assertEqual(m.retain_verified_missing_bars(revised,raw,old,dt.datetime.fromisoformat('2026-10-29T23:30:00+00:00'))[1],[])
+
     def test_holdings_rank_actual_weights_without_mutating_dates(self):
         now=dt.datetime(2026,10,26,tzinfo=dt.timezone.utc)
         h={'status':'verified','asOf':'2026-10-21','top5':[{'name':n,'weightPct':w,'marketCapUSD':cap} for n,w,cap in [('A',1,1e12),('B',5,1),('C',3,2)]]}
@@ -66,6 +128,22 @@ class OverseasETFTests(unittest.TestCase):
 class OverseasETFSnapshotTests(unittest.TestCase):
     def setUp(self):
         self.payload=json.loads((PATH.parents[1]/'data/overseas_etf_charts.json').read_text())
+    def test_persisted_coverage_matches_actual_tail_dates(self):
+        coverage=self.payload.get('coverage')
+        if coverage is None:
+            self.skipTest('Legacy snapshot predates per-fund coverage')
+        funds=self.payload['funds'];tails={f['code']:f['daily'][-1]['date'] for f in funds}
+        self.assertEqual(coverage['actualSessions'],tails)
+        self.assertEqual(self.payload['asOf'],coverage['commonThrough'])
+        self.assertEqual(coverage['latestAvailable'],max(tails.values()))
+        if not coverage['missingCodes']:self.assertEqual(coverage['commonThrough'],min(tails.values()))
+        target=coverage['targetSession']
+        self.assertEqual(set(coverage['currentCodes']),{code for code,day in tails.items() if day==target})
+        self.assertEqual(set(coverage['staleCodes']),{code for code,day in tails.items() if day!=target})
+        for fund in funds:
+            self.assertEqual(fund['sessionCoverage']['actualSession'],tails[fund['code']])
+            self.assertEqual(fund['sessionCoverage']['targetSession'],target)
+
     def test_all_snapshot_holdings_have_dated_sources_and_descending_weights(self):
         for fund in self.payload['funds']:
             h=fund['holdings'];self.assertEqual(h['status'],'verified')

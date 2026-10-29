@@ -55,6 +55,30 @@ def daily_bars(raw, now):
         bars.append({'date':local.date().isoformat(),**values})
     return sorted({b['date']:b for b in bars}.values(),key=lambda b:b['date'])
 
+def retain_verified_missing_bars(bars, raw, previous, now):
+    """Retain whole validated prior candles, never repair fields by inference.
+
+    Only gaps within this response's dated range are eligible. A fresh valid
+    candle always wins. The latest session must have ended before reuse too.
+    """
+    if not previous or not raw.get('timestamp'):return bars,[]
+    dates=[dt.datetime.fromtimestamp(stamp,NY).date().isoformat() for stamp in raw['timestamp']]
+    first,last=min(dates),max(dates);by_date={b['date']:b for b in bars};retained=[]
+    local=now.astimezone(NY);end=raw.get('meta',{}).get('currentTradingPeriod',{}).get('regular',{}).get('end')
+    for bar in previous.get('daily',[]):
+        date=bar.get('date','')
+        if date in by_date or not first<=date<=last or date>local.date().isoformat():continue
+        if date==local.date().isoformat() and (end is None or now.timestamp()<end):continue
+        if not all(number(bar.get(k),True) for k in ('open','high','low','close')):continue
+        if not bar['low']<=min(bar['open'],bar['close'])<=max(bar['open'],bar['close'])<=bar['high']:continue
+        if bar.get('volume') is not None and not number(bar['volume']):continue
+        # A split can change historical OHLC basis. Do not mix old and fresh
+        # bases when any overlapping fresh close differs from the prior close.
+        old={b['date']:b for b in previous.get('daily',[])}
+        if any(d in old and not math.isclose(b['close'],old[d].get('close',float('nan')),rel_tol=1e-7,abs_tol=1e-6) for d,b in by_date.items()):continue
+        by_date[date]=dict(bar);retained.append(date)
+    return sorted(by_date.values(),key=lambda b:b['date']),retained
+
 def period_returns(bars):
     result={'day':None,'week':None,'month':None};anchors={}
     if not bars:return result,anchors
@@ -94,6 +118,7 @@ def ranked_holdings(holdings, source_urls, now):
 
 def build_fund(row, sources, now, previous=None):
     ticker=row['ticker'];raw,daily_url=fetch_chart(ticker,'1d','1y');bars=daily_bars(raw,now)
+    bars,retained_dates=retain_verified_missing_bars(bars,raw,previous,now)
     if len(bars)<2:raise ValueError('Fewer than two valid completed daily bars')
     meta=raw['meta']
     if meta.get('instrumentType')!='ETF' or meta.get('currency')!='USD':raise ValueError('Unexpected instrument type/currency')
@@ -112,12 +137,74 @@ def build_fund(row, sources, now, previous=None):
       'dailyCoverage':{'start':bars[0]['date'],'end':bars[-1]['date'],'count':len(bars),'requestedMonths':12,'shortHistory':len(bars)<200},
       'intraday':{'date':bars[-1]['date'],'interval':'정규장 5분 관측 · 미국 동부시간','sourceUrl':intra_url,'asOf':points[-1]['time'] if points else None,'status':'verified' if len(points)>=2 else 'unavailable','points':points,'note':'실제 정규장 5분 구간 종가·구간 거래량. 장전·시간외 제외. 거래 없는 구간이나 누락 구간은 합성하지 않습니다.','refreshError':intraday_error},
       'selectionNote':'미국 상장 업종·테마 대표 ETF이며 글로벌 투자 상품은 미국 외 기업도 포함합니다. 전체 해외 업종을 전수 포함하지 않으며 ETF 간 구성종목이 겹칠 수 있습니다.'}
+    if retained_dates:
+        prior=previous or {};provenance={p['date']:p for p in prior.get('dailyBarSources',[])}
+        fund['dailyBarSources']=[dict(provenance[date]) if date in provenance else
+            {'date':date,'sourceUrl':prior.get('dailySourceUrl'),'observedAt':prior.get('metadataRetrievedAt')}
+            for date in retained_dates]
+        fund['retainedDailyDates']=retained_dates
+        original_adjustment=prior.get('retainedDailyAdjustment') or prior.get('dailyAdjustment')
+        fund['retainedDailyAdjustment']=original_adjustment
+        if original_adjustment:fund['dailyAdjustment']+=' 보존 일봉('+', '.join(retained_dates)+') 원래 기준: '+original_adjustment
+        old_titles=dict(zip(prior.get('sourceUrls',[]),prior.get('sourceTitles',[])))
+        for source in fund['dailyBarSources']:
+            url=source.get('sourceUrl')
+            if url and url not in fund['sourceUrls']:
+                fund['sourceUrls'].append(url);fund['sourceTitles'].append(old_titles.get(url,'기존 검증 전체 일봉 원천'))
     old_intra=(previous or {}).get('intraday',{})
     if len(points)<2 and old_intra.get('date')==bars[-1]['date'] and len(old_intra.get('points',[]))>=2:
         fund['intraday']=dict(old_intra,refreshStatus='stale',refreshError=intraday_error or 'No new valid observations; retained prior verified same-session series')
     fund['holdings']=ranked_holdings(holdings,hold_sources,now)
     fund['holdingsSourceUrls']=hold_sources
     return fund
+
+def apply_session_coverage(funds, expected_codes, analysis_date, now):
+    """Expose actual per-fund tails; a newest header never means all funds current.
+
+    An analysis date is only a target once it is in the past in New York, or
+    today's normal regular close has passed. This conservative gate does not
+    infer early-close/holiday calendars from a wall-clock date. Source-verified
+    completed daily bars remain independent evidence of the available session.
+    """
+    local=now.astimezone(NY)
+    eligible_analysis=None
+    try:
+        date=dt.date.fromisoformat(analysis_date)
+        if date<local.date() or (date==local.date() and local.time()>=dt.time(16)):
+            eligible_analysis=date.isoformat()
+    except (TypeError,ValueError):
+        pass
+    tails={f['code']:f['daily'][-1]['date'] for f in funds if f.get('daily')}
+    dates=list(tails.values())
+    target=max(dates+([eligible_analysis] if eligible_analysis else []),default=None)
+    expected=list(dict.fromkeys(expected_codes))
+    stale=[];missing=[];current=[];intraday_current=[]
+    by_code={f['code']:f for f in funds}
+    for code in expected:
+        fund=by_code.get(code);tail=tails.get(code)
+        if not tail:
+            missing.append(code)
+            continue
+        status='current' if tail==target else 'stale'
+        fund['sessionCoverage']={'targetSession':target,'actualSession':tail,'status':status}
+        if status=='stale':
+            stale.append(code)
+            fund['refreshStatus']='stale'
+            fund['refreshError']=fund.get('refreshError') or f'Latest valid daily session {tail}; target {target} not verified'
+        else:
+            current.append(code)
+        intra=fund.get('intraday',{});points=intra.get('points',[])
+        if (tail==target and intra.get('date')==target and len(points)>=2
+            and all(p.get('time','')[:10]==target for p in points)):
+            intraday_current.append(code)
+    common=min(dates) if dates and not missing else None
+    return {'targetSession':target,'latestAvailable':max(dates) if dates else None,
+            'commonThrough':common,'expectedFundCount':len(expected),'currentFundCount':len(current),
+            'staleFundCount':len(stale),'missingFundCount':len(missing),
+            'currentCodes':current,'staleCodes':stale,'missingCodes':missing,
+            'actualSessions':tails,'intradayCurrentFundCount':len(intraday_current),
+            'intradayUnverifiedCodes':[code for code in expected if code not in intraday_current],
+            'status':'complete' if len(current)==len(expected) and not missing else 'partial'}
 
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--output',default=str(ROOT/'data/overseas_etf_charts.json'));parser.add_argument('--analysis',default=str(ROOT/'data/us_analysis.json'));args=parser.parse_args()
@@ -137,7 +224,8 @@ def main():
     if not funds or len(errors)==len(rows):raise RuntimeError('All ETF requests failed; existing snapshot preserved')
     # Partial source failure retains valid prior funds, never empties existing charts.
     order={r['ticker']:i for i,r in enumerate(rows)};funds.sort(key=lambda f:order[f['code']])
-    payload={'schemaVersion':1,'updatedAt':now.isoformat(),'asOf':max(f['daily'][-1]['date'] for f in funds),'timezone':'America/New_York','currency':'USD','funds':funds,'errors':errors,'universeSourceDate':entry['date'],'methodology':['미국 상장 실제 ETF만 포함하며 화장품·화학 대표 종목 바스켓은 제외합니다.','가격은 Yahoo Finance 공개 비공식 시세입니다. 확정된 정규장 일봉과 실제 5분 관측만 사용하며 휴장일·상장 전·누락 구간을 합성하지 않습니다.','수익률은 일봉 close 기준 가격 수익률이며 분배금 재투자 총수익률이 아닙니다.','보유종목은 기존 분석의 운용사 검증 스냅샷과 실제 보유내역 기준일을 유지합니다. 가격 갱신이 보유내역 재검증을 의미하지 않습니다.']}
+    coverage=apply_session_coverage(funds,[r['ticker'] for r in rows],entry['date'],now)
+    payload={'schemaVersion':1,'updatedAt':now.isoformat(),'asOf':coverage['commonThrough'],'coverage':coverage,'timezone':'America/New_York','currency':'USD','funds':funds,'errors':errors,'universeSourceDate':entry['date'],'methodology':['미국 상장 실제 ETF만 포함하며 화장품·화학 대표 종목 바스켓은 제외합니다.','가격은 Yahoo Finance 공개 비공식 시세입니다. 확정된 정규장 일봉과 실제 5분 관측만 사용하며 휴장일·상장 전·누락 구간을 합성하지 않습니다.','수익률은 일봉 close 기준 가격 수익률이며 분배금 재투자 총수익률이 아닙니다.','보유종목은 기존 분석의 운용사 검증 스냅샷과 실제 보유내역 기준일을 유지합니다. 가격 갱신이 보유내역 재검증을 의미하지 않습니다.']}
     dest.parent.mkdir(parents=True,exist_ok=True);temp=dest.with_suffix('.tmp');temp.write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':'))+'\n');temp.replace(dest)
     print('Saved',dest,len(funds),'funds',len(errors),'errors')
 if __name__=='__main__':main()

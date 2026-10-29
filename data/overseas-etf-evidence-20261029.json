@@ -1,0 +1,1108 @@
+{
+  "targetSession": "2026-10-29",
+  "comparisonSession": "2026-10-28",
+  "collectedAt": "2026-10-29T23:13:49.072871+00:00",
+  "funds": [
+    {
+      "code": "XME",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:54.627141+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XME?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 100.25,
+            "high": 101.75499725341797,
+            "low": 100.16999816894531,
+            "close": 101.05000305175781,
+            "volume": 885363
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XME?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:45:54.627141+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XME?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:13:55.614116+00:00",
+      "intradayCount": 78,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "de35f04768674e3e8bf1ff0f5dc894276426fe0212c9b216615b697a8a81b995"
+    },
+    {
+      "code": "SOXX",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:36.301214+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/SOXX?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 512.030029296875,
+            "high": 518.739990234375,
+            "low": 506.6199951171875,
+            "close": 513.8599853515625,
+            "volume": 6189944
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/SOXX?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:45:36.301214+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/SOXX?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:13:55.665829+00:00",
+      "intradayCount": 78,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "505c9c61361499211c9d192d9d5453c94f9885a2e8062f4dbd482b28f32bb3ab"
+    },
+    {
+      "code": "TAN",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:40.362765+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/TAN?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 40.7400016784668,
+            "high": 41.380001068115234,
+            "low": 40.68000030517578,
+            "close": 41.18000030517578,
+            "volume": 606642
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/TAN?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:45:40.362765+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/TAN?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:13:55.618498+00:00",
+      "intradayCount": 78,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "d64e781a7cf3e175c56ec5a1a06341ee93619596747a3e463fedc6f3a3b843ac"
+    },
+    {
+      "code": "SMH",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:36.185069+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/SMH?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 559.0910034179688,
+            "high": 565.8300170898438,
+            "low": 555.5006103515625,
+            "close": 561.6699829101562,
+            "volume": 5883746
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/SMH?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:45:36.185069+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/SMH?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:13:55.657766+00:00",
+      "intradayCount": 78,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "63a179be6a8a45442c48c8e809388a06a89cb4105bc0d98b66d284e40588732e"
+    },
+    {
+      "code": "XBI",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:49.105739+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XBI?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 157.63999938964844,
+            "high": 160.27000427246094,
+            "low": 156.42999267578125,
+            "close": 157.7899932861328,
+            "volume": 10871767
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XBI?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:45:49.105739+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XBI?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:13:55.621596+00:00",
+      "intradayCount": 78,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "56ff318a4c19bd36d7f396f806a8c2b375f3dcb00deaf894971c8b49f3ee6c04"
+    },
+    {
+      "code": "BATT",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:44:54.029546+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/BATT?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 12.979999542236328,
+            "high": 13.09000015258789,
+            "low": 12.899999618530273,
+            "close": 13.09000015258789,
+            "volume": 28433
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/BATT?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:44:54.029546+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/BATT?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:14:01.327204+00:00",
+      "intradayCount": 47,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "deec2da69636a4991fcd371bb33f69f40c8f89e14f897f364c4b3da327214108"
+    },
+    {
+      "code": "LIT",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:19.406054+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/LIT?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 61.209999084472656,
+            "high": 61.650001525878906,
+            "low": 60.529998779296875,
+            "close": 60.939998626708984,
+            "volume": 124072
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/LIT?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:45:19.406054+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/LIT?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:14:01.189539+00:00",
+      "intradayCount": 69,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "466273d10d7c02752107adcc5ea48d70feda08990bac70e09100f5387f5779f5"
+    },
+    {
+      "code": "ICLN",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:14.152774+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/ICLN?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 15.6899995803833,
+            "high": 15.805100440979004,
+            "low": 15.598199844360352,
+            "close": 15.6899995803833,
+            "volume": 6098388
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/ICLN?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:45:14.152774+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/ICLN?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:14:01.339456+00:00",
+      "intradayCount": 78,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "5bd0ee1451c406cf938462ca610804e2c712761cb0b97d2eb818ca7f3effdfe6"
+    },
+    {
+      "code": "IYT",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:17.138827+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IYT?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 81.47000122070312,
+            "high": 81.93000030517578,
+            "low": 80.70999908447266,
+            "close": 81.61000061035156,
+            "volume": 506052
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IYT?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:45:17.138827+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IYT?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:14:01.333812+00:00",
+      "intradayCount": 78,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "9750c321c1f664fc254fb517c88bfeab28c1f747b7d3e96425736e8a81ab6514"
+    },
+    {
+      "code": "XLK",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:48.901888+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLK?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 188.9199981689453,
+            "high": 189.33999633789062,
+            "low": 187.69000244140625,
+            "close": 188.74000549316406,
+            "volume": 7375616
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLK?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:45:48.901888+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLK?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:14:01.336036+00:00",
+      "intradayCount": 78,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "4124b266daa4b8eed8a367a141ac0965294be9c14da3b030524628fb7c3d3f14"
+    },
+    {
+      "code": "XPH",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:54.560715+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XPH?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-28",
+            "open": 63.41999816894531,
+            "high": 64.55000305175781,
+            "low": 63.41999816894531,
+            "close": 64.55000305175781,
+            "volume": 94800
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XPH?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:45:54.560715+00:00"
+        },
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 65.30999755859375,
+            "high": 66.0,
+            "low": 64.65139770507812,
+            "close": 65.18000030517578,
+            "volume": 227701
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XPH?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:45:54.560715+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XPH?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:14:04.643328+00:00",
+      "intradayCount": 47,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "7134437757da8ef002cd72f3a938eba080800a586a76d060a36bc8ea02fd40d6"
+    },
+    {
+      "code": "IBB",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:14.174164+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IBB?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 217.3350067138672,
+            "high": 220.30999755859375,
+            "low": 215.84500122070312,
+            "close": 217.86000061035156,
+            "volume": 2889169
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IBB?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:45:14.174164+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IBB?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:14:04.617494+00:00",
+      "intradayCount": 78,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "526aed769145822f8d68cfc1c2f2560ad41b451a928446dcd45d46841e406d1d"
+    },
+    {
+      "code": "FAN",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:06.909861+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/FAN?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 21.97,
+            "high": 22.16,
+            "low": 21.97,
+            "close": 22.1322,
+            "volume": 28935
+          },
+          "sourceUrl": "https://scanner.tradingview.com/america/scan",
+          "observedAt": "2026-10-29T23:10:40.296897+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/FAN?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:14:04.638371+00:00",
+      "intradayCount": 22,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:35:00-04:00",
+      "intradayRawSHA256": "8cc1193f45fb374b1a4b00d2b0ab6c413e60db99a1cbb8d3948fc41c8e5c1d2b"
+    },
+    {
+      "code": "XHB",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:48.930990+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XHB?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 97.8499984741211,
+            "high": 101.29000091552734,
+            "low": 97.44999694824219,
+            "close": 101.2699966430664,
+            "volume": 3577385
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XHB?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:45:48.930990+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XHB?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:14:04.622941+00:00",
+      "intradayCount": 78,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "68d2da2fc4812b5ee234f431ad9312c440744fa843300d4996258c66ccaaa125"
+    },
+    {
+      "code": "CIBR",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:44:59.178275+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/CIBR?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 102.5250015258789,
+            "high": 105.9000015258789,
+            "low": 101.43000030517578,
+            "close": 105.0,
+            "volume": 3467773
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/CIBR?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:44:59.178275+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/CIBR?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:14:04.606826+00:00",
+      "intradayCount": 78,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "94cfbf367472e5ec2c3cde23d021b1ab9767dbe717334f2480fd4f3f919932fa"
+    },
+    {
+      "code": "XLY",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:54.585226+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLY?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 115.76000213623047,
+            "high": 116.7699966430664,
+            "low": 115.12750244140625,
+            "close": 116.19999694824219,
+            "volume": 6372541
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLY?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:45:54.585226+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLY?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:14:08.275759+00:00",
+      "intradayCount": 78,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "7611e6d5e9d2597c2a15fb171fa72ca1a400d4afa1915815530dc2ab76762efd"
+    },
+    {
+      "code": "XLB",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:49.011854+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLB?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 51.720001220703125,
+            "high": 52.529998779296875,
+            "low": 51.720001220703125,
+            "close": 52.529998779296875,
+            "volume": 14642245
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLB?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:45:49.011854+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLB?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:14:08.279092+00:00",
+      "intradayCount": 78,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "49802bf81c5c67a332a9a991079c4759b47607db561bd03d421e99ea2df9b27d"
+    },
+    {
+      "code": "XLU",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:49.018830+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLU?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 42.900001525878906,
+            "high": 43.25,
+            "low": 42.86000061035156,
+            "close": 43.13999938964844,
+            "volume": 24813991
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLU?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:45:49.018830+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLU?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:14:08.270615+00:00",
+      "intradayCount": 78,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "4af97b68eb446ba804c44b839e416c37b23c9a23194cba3f937dbdc4ce0bc905"
+    },
+    {
+      "code": "XLI",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:49.072178+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLI?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 167.6199951171875,
+            "high": 170.375,
+            "low": 167.4600067138672,
+            "close": 170.1300048828125,
+            "volume": 7742194
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLI?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:45:49.072178+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLI?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:14:08.281727+00:00",
+      "intradayCount": 78,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "7361f7bac55e331bbc95373f6b7aa0f2839a227a6bde4e1fcfb85676ce60a9d3"
+    },
+    {
+      "code": "XAR",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:48.890243+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XAR?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 227.05,
+            "high": 237.7,
+            "low": 226.98,
+            "close": 235.29,
+            "volume": 503235
+          },
+          "sourceUrl": "https://scanner.tradingview.com/america/scan",
+          "observedAt": "2026-10-29T23:10:40.296897+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XAR?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:14:08.286761+00:00",
+      "intradayCount": 78,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "19be00116be657c72cb073706327efe17d6afd55fcd48cfd339872e662b4eb03"
+    },
+    {
+      "code": "IGV",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:17.276716+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IGV?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 107.56500244140625,
+            "high": 109.0199966430664,
+            "low": 105.94000244140625,
+            "close": 107.97000122070312,
+            "volume": 10931226
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IGV?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:45:17.276716+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IGV?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:14:11.465470+00:00",
+      "intradayCount": 78,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "981a7cabf58a62222052508ea97f2167e587f070b84d051675cfcf222e50b9b8"
+    },
+    {
+      "code": "FDN",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:06.850240+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/FDN?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 276.4200134277344,
+            "high": 278.1449890136719,
+            "low": 273.1050109863281,
+            "close": 275.70001220703125,
+            "volume": 216776
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/FDN?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:45:06.850240+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/FDN?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:14:11.453703+00:00",
+      "intradayCount": 72,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "c769adb2e8c2675ab9d410e00dd3b5a3a70a8dfd95eb233955cc71e6d2389df1"
+    },
+    {
+      "code": "IAI",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:14.126882+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IAI?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 180.0399932861328,
+            "high": 181.4149932861328,
+            "low": 179.57000732421875,
+            "close": 180.3000030517578,
+            "volume": 111251
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IAI?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:45:14.126882+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IAI?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:14:11.518188+00:00",
+      "intradayCount": 63,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "bdbd29a67f9f5c46ee5a99e0520b0ba43e5b093751fa01a83d29adeefe99485e"
+    },
+    {
+      "code": "XLV",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:49.039293+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLV?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 182.97000122070312,
+            "high": 184.8300018310547,
+            "low": 182.10000610351562,
+            "close": 184.0399932861328,
+            "volume": 14982397
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLV?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:45:49.039293+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLV?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:14:11.406373+00:00",
+      "intradayCount": 78,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "795f3bc97cb6560fdd39cf08071f412a09144e8cdd7c1362b5656d9a5f62f936"
+    },
+    {
+      "code": "KBE",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:17.280889+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/KBE?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 66.37000274658203,
+            "high": 66.87999725341797,
+            "low": 66.16999816894531,
+            "close": 66.45999908447266,
+            "volume": 1067703
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/KBE?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:45:17.280889+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/KBE?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:14:11.459437+00:00",
+      "intradayCount": 78,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "ef045a4d50f3d579cf906abf509ef4d38653453b6340b74b4d7123637f88dc7f"
+    },
+    {
+      "code": "XRT",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:54.586858+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XRT?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 87.29,
+            "high": 89.02,
+            "low": 87.29,
+            "close": 89.01,
+            "volume": 4022923
+          },
+          "sourceUrl": "https://scanner.tradingview.com/america/scan",
+          "observedAt": "2026-10-29T23:10:40.296897+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XRT?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:14:14.829700+00:00",
+      "intradayCount": 78,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "bf4b607a4e7b4baf4a5d41e88648e5cb9a525b80bbfd421f750b9a9a2950f020"
+    },
+    {
+      "code": "KRE",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:19.341038+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/KRE?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 72.75,
+            "high": 73.45500183105469,
+            "low": 72.54499816894531,
+            "close": 72.86000061035156,
+            "volume": 9136465
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/KRE?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:45:19.341038+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/KRE?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:14:14.733476+00:00",
+      "intradayCount": 78,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "5475e7dbbc35a3ddfe875289d7d0e74b19faf8e2f243d9b34ee45c3ddbae860e"
+    },
+    {
+      "code": "XLF",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:48.927993+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLF?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 56.720001220703125,
+            "high": 57.22999954223633,
+            "low": 56.66999816894531,
+            "close": 56.939998626708984,
+            "volume": 32819585
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLF?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:45:48.927993+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLF?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:14:14.662316+00:00",
+      "intradayCount": 78,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "ec62f9ca90507f60f94a4bef714fa940b687f2b9de03d1ab64f5737ee6b3d02f"
+    },
+    {
+      "code": "XLC",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:48.998851+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLC?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 101.18000030517578,
+            "high": 101.76000213623047,
+            "low": 100.12999725341797,
+            "close": 101.20999908447266,
+            "volume": 10501589
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLC?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:45:48.998851+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLC?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:14:14.637548+00:00",
+      "intradayCount": 78,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "0e4d6c15476270508d2d139c2543c99ef1cedeadfc2727b7dc53a41aec685ec8"
+    },
+    {
+      "code": "ITA",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:17.133979+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/ITA?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 209.1300048828125,
+            "high": 215.75999450683594,
+            "low": 209.1300048828125,
+            "close": 214.3000030517578,
+            "volume": 1146786
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/ITA?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:45:17.133979+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/ITA?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:14:14.745971+00:00",
+      "intradayCount": 78,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "24e9f52aa5cd5158ecc74aa46e87b73c8929b9f995022f52807af6035fac17d8"
+    },
+    {
+      "code": "XLRE",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:48.944567+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLRE?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 42.43,
+            "high": 43.15,
+            "low": 42.43,
+            "close": 43.06,
+            "volume": 6726692
+          },
+          "sourceUrl": "https://scanner.tradingview.com/america/scan",
+          "observedAt": "2026-10-29T23:10:40.296897+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLRE?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:14:18.030035+00:00",
+      "intradayCount": 78,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "0aefe7ea0f0efb3f9f803af05a8197ddc7dd2b99a7ed49ec1e0b5e3250ad07eb"
+    },
+    {
+      "code": "CLOU",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:44:59.148305+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/CLOU?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 29.040000915527344,
+            "high": 29.4950008392334,
+            "low": 28.655000686645508,
+            "close": 29.239999771118164,
+            "volume": 255038
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/CLOU?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:44:59.148305+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/CLOU?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:14:18.106128+00:00",
+      "intradayCount": 64,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "083e539f0a8e57d72452f734bfc56fbbfa75bde11dcb177b369396f92a16306e"
+    },
+    {
+      "code": "XLP",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:48.921535+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLP?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 87.83000183105469,
+            "high": 88.24500274658203,
+            "low": 87.3949966430664,
+            "close": 88.18000030517578,
+            "volume": 14987222
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLP?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:45:48.921535+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLP?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:14:17.981538+00:00",
+      "intradayCount": 78,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "d292a99c72dc50ce0d31ab6912ac8b2d95ad4d92f0bd46e9dbf2b84b65555614"
+    },
+    {
+      "code": "IHF",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:17.202035+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IHF?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-28",
+            "open": 59.040000915527344,
+            "high": 60.34000015258789,
+            "low": 59.040000915527344,
+            "close": 59.5099983215332,
+            "volume": 816300
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IHF?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:45:17.202035+00:00"
+        },
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 60.18000030517578,
+            "high": 60.20500183105469,
+            "low": 59.650001525878906,
+            "close": 60.16999816894531,
+            "volume": 604287
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IHF?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:45:17.202035+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IHF?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:14:18.070549+00:00",
+      "intradayCount": 78,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "f23d8cdf77f82412c0e2c80604617d7bc63df592676d9b9d41aa0b6156cd7c05"
+    },
+    {
+      "code": "IHI",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:17.211177+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IHI?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 55.220001220703125,
+            "high": 55.70000076293945,
+            "low": 55.05149841308594,
+            "close": 55.689998626708984,
+            "volume": 2301001
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IHI?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:45:17.211177+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IHI?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:14:18.124255+00:00",
+      "intradayCount": 78,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "b1e845b9b6b7590659926f9b7e46b3da59922b905257fc375347c8f8e4fd4f59"
+    },
+    {
+      "code": "XLE",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:49.044557+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLE?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 69.12999725341797,
+            "high": 69.22000122070312,
+            "low": 67.9749984741211,
+            "close": 68.70999908447266,
+            "volume": 25037138
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLE?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:45:49.044557+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLE?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:14:22.153469+00:00",
+      "intradayCount": 78,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "0d9dd4ecd60d28750093e1a08e0f20815d0867b3291789146a6172c6d3d8497e"
+    },
+    {
+      "code": "XOP",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:54.593641+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XOP?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 201.07000732421875,
+            "high": 201.5800018310547,
+            "low": 197.97000122070312,
+            "close": 199.52000427246094,
+            "volume": 1051957
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XOP?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:45:54.593641+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XOP?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:14:22.150834+00:00",
+      "intradayCount": 78,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "d82cf65619590a21bf4253182d62f212fcf024c6e88380e56215ad1ace83af2d"
+    },
+    {
+      "code": "CRAK",
+      "dailyRegularEnd": 1793304000,
+      "dailySourceObservedAt": "2026-10-29T21:45:01.438826+00:00",
+      "dailySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/CRAK?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+      "addedBars": [
+        {
+          "bar": {
+            "date": "2026-10-29",
+            "open": 62.060001373291016,
+            "high": 62.060001373291016,
+            "low": 60.779998779296875,
+            "close": 61.29999923706055,
+            "volume": 1036225
+          },
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/CRAK?period1=1760918400&period2=1793318400&interval=1d&events=div%2Csplits",
+          "observedAt": "2026-10-29T21:45:01.438826+00:00"
+        }
+      ],
+      "intradaySourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/CRAK?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "intradayObservedAt": "2026-10-29T23:14:22.146213+00:00",
+      "intradayCount": 78,
+      "intradayFirst": "2026-10-29T09:30:00-04:00",
+      "intradayLast": "2026-10-29T15:55:00-04:00",
+      "intradayRawSHA256": "2224ee73580c1f3413eb8753c3b5605842d271c80f9c58362f5f16a6bcb9c5be"
+    }
+  ],
+  "wholeBarFallback": {
+    "retrievedAt": "2026-10-29T23:10:40.296897+00:00",
+    "url": "https://scanner.tradingview.com/america/scan",
+    "request": {
+      "filter": [
+        {
+          "left": "name",
+          "operation": "in_range",
+          "right": [
+            "XAR",
+            "XRT",
+            "XLRE",
+            "FAN"
+          ]
+        }
+      ],
+      "columns": [
+        "name",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "time",
+        "exchange"
+      ],
+      "range": [
+        0,
+        100
+      ]
+    },
+    "response": {
+      "totalCount": 4,
+      "data": [
+        {
+          "s": "AMEX:XRT",
+          "d": [
+            "XRT",
+            87.29,
+            89.02,
+            87.29,
+            89.01,
+            4022923,
+            1793280600,
+            "AMEX"
+          ]
+        },
+        {
+          "s": "AMEX:XAR",
+          "d": [
+            "XAR",
+            227.05,
+            237.7,
+            226.98,
+            235.29,
+            503235,
+            1793280600,
+            "AMEX"
+          ]
+        },
+        {
+          "s": "AMEX:XLRE",
+          "d": [
+            "XLRE",
+            42.43,
+            43.15,
+            42.43,
+            43.06,
+            6726692,
+            1793280600,
+            "AMEX"
+          ]
+        },
+        {
+          "s": "AMEX:FAN",
+          "d": [
+            "FAN",
+            21.97,
+            22.16,
+            21.97,
+            22.1322,
+            28935,
+            1793280600,
+            "AMEX"
+          ]
+        }
+      ]
+    }
+  }
+}
