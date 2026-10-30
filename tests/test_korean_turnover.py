@@ -25,3 +25,26 @@ class UpdaterTests(unittest.TestCase):
   with patch.object(u,'collect',return_value=[newer]):
    changed=u.update(payload,'2026-10-30');self.assertEqual(changed['otherPanel'],payload['otherPanel']);self.assertEqual(len(payload['marketTurnover']['markets']['KOSPI']['rows']),1);self.assertEqual(len(changed['marketTurnover']['markets']['KOSPI']['rows']),2)
 if __name__=='__main__': unittest.main()
+
+class ComparisonTurnoverTests(unittest.TestCase):
+ def fixture(self):
+  import copy
+  s,ids=TurnoverTests().fixture()
+  for market,legacy in s['markets'].items():
+   legacy['comparisonSeries']={}
+   for key in ('regular','integrated'):
+    row=copy.deepcopy(legacy['rows'][0]);row.update(scopeVerified=True,valueStatus='final',sourceIds=['src'])
+    legacy['comparisonSeries'][key]={'market':market,'unit':'억원','scope':'whole-market','venues':['KRX'] if key=='regular' else ['KRX','NXT'],'sessionScope':'regular' if key=='regular' else 'all-sessions','label':key,'scopeNote':'verified source coverage','status':'verified','asOf':row['date'],'rows':[row],'sourceIds':['src'],'coverage':{'start':row['date'],'end':row['date'],'count':1}}
+  return s,ids
+ def test_independent_series_valid(self):
+  s,ids=self.fixture();self.assertEqual(validate(s,ids),[])
+ def test_no_scope_guess(self):
+  s,ids=self.fixture();s['markets']['KOSPI']['comparisonSeries']['regular']['sessionScope']='unverified';self.assertTrue(validate(s,ids))
+ def test_integrated_no_double_add_scope(self):
+  s,ids=self.fixture();s['markets']['KOSPI']['comparisonSeries']['integrated']['venues']=['KRX','NXT','NXT'];self.assertTrue(validate(s,ids))
+ def test_actual_asof_and_precision(self):
+  s,ids=self.fixture();s['markets']['KOSPI']['comparisonSeries']['integrated']['asOf']='2026-10-30';self.assertTrue(validate(s,ids))
+ def test_unverified_observation_rejected(self):
+  s,ids=self.fixture();s['markets']['KOSPI']['comparisonSeries']['regular']['rows'][0]['scopeVerified']=False;self.assertTrue(validate(s,ids))
+ def test_unavailable_not_zero(self):
+  s,ids=self.fixture();a=s['markets']['KOSPI']['comparisonSeries']['integrated'];a.update(rows=[],coverage={'count':0},asOf=None,status='unavailable');self.assertEqual(validate(s,ids),[])

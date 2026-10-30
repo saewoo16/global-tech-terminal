@@ -655,3 +655,9 @@ FreeSIS는 공식 HTML의 예탁금/신용융자 `백만원` 표제와 신용공
 - 당일 종목 금액 순위는15:30 기사 원표, 시장 수급은 실제17:30 공급사 잠정 스냅샷입니다. 시간외 포함 범위가 미확인인 자료를 정규장 단독 확정값으로 표시하지 않습니다. 일간 거래대금 상위는 실제 조회시각의 공급사 범위를 별도 표시합니다.
 - ECOS 시장 거래대금 이력은10/29까지,10/30 한경 시장전체 값은 별도 관측점으로 보존합니다. 신용 시장별10/29 합계는 기존 공식 수집의 동일 통계일 총액과 대조했습니다. 테마·기간 수급 등 지연 패널은 이전 실제 기준일을 유지하며19시까지 새 원천만 후속 보완합니다.
 - 실적은10/30 실제 공시17기업의 최근4분기 매출·영업이익·OPM입니다. 연결/별도·잠정·IFRS18 재작성 및 분기차감 기준을 보존하고, 검증하지 못한 콜 전문은 발표 요약과 구분합니다. 구성 확인 방법과 직접 KRX 원장 인증 미확보·전수미완료 한계는 근거에 표시합니다.
+
+### 국내 거래대금 두 선 비교 (2026-10-30)
+- KOSPI / KOSDAQ 각각 `marketTurnover.markets.*.comparisonSeries.regular`(KRX 09:00~15:30)와 `integrated`(같은 KRX 정규장 + NXT 프리·메인·애프터)를 표시합니다. KRX 시간외는 합계에서 제외합니다. 기존 ECOS 이력은 집계 범위 동일성이 확인되지 않아 별도 참고이며 정규장 이력으로 재표시하지 않습니다.
+- 18시 작업: 원천·실제 거래일·정규장 범위가 검증된 JSON bundle을 `python scripts/manage_korean_turnover_comparison.py --entry <bundle.json> --mode regular --as-of YYYY-MM-DD`로 병합합니다. bundle은 `sources` 및 `markets.KOSPI/KOSDAQ.regular` 구조이며 각 행은 `date, turnover, sourceValue, sourceUnit, conversionToEokKRW, observedAt, sourceIds, scopeVerified: true, valueStatus: final`을 보존합니다. 검증되지 않은 날짜는 비워 두며 기존 합산 이력을 삭제하지 않습니다.
+- 20:30 작업: `python scripts/update_korean_turnover_comparison.py --as-of YYYY-MM-DD`. NXT 상태 API가 해당일 애프터마켓 종료를 확인한 뒤 venue=NXT 전체 종목, 독립 페이지 전수, 시장별 조회의 코드·금액·거래량을 대조합니다. 동일일 검증 KRX 정규장 값 없이는 합산하지 않습니다. 공급사 표시 정밀도(현재 NXT KOSPI 백만원, KOSDAQ 천원)를 합산한 재구성 값이며 거래소 공식 확정 총액이 아닙니다. 세션 종료 후 값이라는 뜻의 `valueStatus: final`과 `officialAggregate: false`를 구분합니다.
+- 실제 관측시각과 공개 원자료는 `data/korea-turnover-comparison-evidence-YYYYMMDD.json`에 보존합니다. 이전 값·부분합·결측을 0으로 채우지 않습니다. 동일 검증 값의 반복 수집은 재게시하지 않습니다. 2026-10-30 최초 반영 당시 정규장 이력은 10/29~30, 합산은 10/30만 확보되어 단일 점으로 보이며 이후 검증 날짜만 누적합니다. 새 수집기가 다른 탭·시장 패널을 재작성하지 않습니다.
