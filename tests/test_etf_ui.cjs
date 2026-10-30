@@ -38,3 +38,10 @@ a.setSort('week');assert.equal(a.filtered().at(-1)?.code===undefined,false);cons
 console.log('PASS domestic daily/weekly/monthly only and displayed selected-period return');
 
 assert.equal(a.returns({daily:[{date:'2026-02-27',close:100},{date:'2026-03-03',close:200},{date:'2026-03-31',close:110}]}).toFixed(2),'10.00');
+
+const adjustedFund={code:'adjusted',name:'Adjusted',category:'Test',issuer:'Test',daily:f.daily,intraday:f.intraday,dailyAdjustment:'과거 분배락 조정가격 <script>',sourceUrls:[]};
+a.setData({funds:[adjustedFund]});a.setSelected('adjusted');a.setPeriod('3');a.detail();const adjustedDetail=nodes['etf-detail'].innerHTML;
+assert(adjustedDetail.indexOf('과거 분배락 조정가격 &lt;script&gt;')>=0);
+assert(adjustedDetail.indexOf('과거 분배락 조정가격 &lt;script&gt;')<adjustedDetail.indexOf('<details class="etf-sources">'),'Price basis must be foreground, not hidden source notes');
+assert(raw.includes('공급사 일별 가격계열(과거 분배락 조정 포함)'));
+console.log('PASS provider-adjusted historical price basis is explicit and escaped in foreground');

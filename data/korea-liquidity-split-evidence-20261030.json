@@ -1,0 +1,61 @@
+{
+  "observedAt": "2026-10-30T08:37:57.745652+00:00",
+  "release": {
+    "schemaVersion": 1,
+    "date": "2026-10-29",
+    "retrievedAt": "2026-10-30T07:41:04.307395+00:00",
+    "url": "https://freesis.kofia.or.kr/stat/main.do",
+    "acquisition": "Official FreeSIS HTML headline",
+    "unit": "million KRW",
+    "officialInvestorDeposits": 88713283,
+    "officialMarginLoans": 29088592,
+    "publicationTimeRule": "Credit balances next day15:00–18:00; exact deposits release time unverified",
+    "ruleSource": "https://www.kofia.or.kr/voc/m_113/view.do?answer_seq=2298&voc_id=3009",
+    "acquisitionUrl": "https://freesis.kofia.or.kr/stat/main.do",
+    "transport": "https",
+    "sourceSha256": "ba3d5818d1b0e4ec06708e23517f988e10c6b69cf889380c4e6daf6255a20ea1"
+  },
+  "verifiedRows": {
+    "creditKOSPI": [
+      {
+        "date": "2026-10-29",
+        "value": 225478.05,
+        "rawMillionKRW": 22547805,
+        "sourceId": "chun-crosschecked",
+        "verificationMethod": "same-day direct official KOFIA total",
+        "officialSourceUrl": "https://freesis.kofia.or.kr/stat/main.do",
+        "officialMarginLoansMillionKRW": 29088592,
+        "splitMinusOfficialMillionKRW": 0
+      }
+    ],
+    "creditKOSDAQ": [
+      {
+        "date": "2026-10-29",
+        "value": 65407.87,
+        "rawMillionKRW": 6540787,
+        "sourceId": "chun-crosschecked",
+        "verificationMethod": "same-day direct official KOFIA total",
+        "officialSourceUrl": "https://freesis.kofia.or.kr/stat/main.do",
+        "officialMarginLoansMillionKRW": 29088592,
+        "splitMinusOfficialMillionKRW": 0
+      }
+    ]
+  },
+  "sourceUrl": "https://chunsystem.com/free/chun-index-score",
+  "parsedCanonicalSha256": "53c75a692bf0667104034f1a09d7913f50ae7d2ad9e581dc2e62e9f87335e08d",
+  "hashMethod": "SHA256 of JSON parsed object sorted keys UTF8 compact encoding",
+  "rawTargetRows": {
+    "kospiList": [
+      {
+        "stdDate": "2026-10-29",
+        "sinyong": "22547805"
+      }
+    ],
+    "kosdaqList": [
+      {
+        "stdDate": "2026-10-29",
+        "sinyong": "6540787"
+      }
+    ]
+  }
+}

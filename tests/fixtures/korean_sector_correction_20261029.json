@@ -1,0 +1,3111 @@
+{
+  "fixtureCommit": "638c1a1dec07caa06211bb24bc4e1c0584007413",
+  "evidenceFile": "data/korea-sector-correction-evidence-20261029.json",
+  "sectorReturns": {
+    "schemaVersion": 1,
+    "asOf": "2026-10-29",
+    "collectedAt": "2026-10-29T14:55:24.865769+00:00",
+    "title": "한국 세부 업종 수익률",
+    "currency": "KRW",
+    "classificationType": "selected_granular_etf_and_fixed_representative_basket_proxies",
+    "methodology": "업종별 실제 기준일은 각 행에 표시합니다. 최신 1일10/28→10/29, 1주10/22→10/29(5거래일), 1개월9/29→10/29. ETF는 NAVER 동일 일별 종가계열, 대표 바스켓은 Yahoo 동일 조정종가계열의 기간 시작 동일가중 가격상대 평균입니다. 달력 한 달 전9/29 완료일을 비교일로 사용합니다.",
+    "note": "60개 업종·테마 모두10/29 완료 세션으로 갱신. 자동차·철강·IT·에너지화학4개는 NAVER 실제 일별종가와 Yahoo 비조정 종가의 네 경계일을 대조해 복구했습니다. 이4개 가격수익률은 분배금 재투자·분배락 기준가 수익률과 구분합니다. MLCC·AI기판은 상장 전1개월 비교가격 미확보로 null을 유지합니다.",
+    "priceAdjustment": "ETF는 NAVER 공급사 일별 종가로 분배금 재투자 제외 가격수익률입니다. 주식 바스켓은 Yahoo adjclose의 공급사 배당·분할 조정계열입니다. 한 행에서 두 공급사 가격을 혼합하지 않으며 자체 기업행사 조정계수 검증은 하지 않았습니다. 자동차(091180)·철강(117680)·IT(139260)·에너지화학(117460)은 독립 대조한 비조정 실제 종가의 가격수익률로 별도 명시하며 분배금 재투자 수익률이 아닙니다.",
+    "priceSessionScope": "날짜별 종가계열, 실시간 현재가·시간외 호가를 대입하지 않음. 원천별 독립 종가 대조와 미확인 범위는 출처에 보존합니다.",
+    "windows": {
+      "day": {
+        "baseDate": "2026-10-28",
+        "endDate": "2026-10-29",
+        "label": "1일",
+        "tradingSessions": 1
+      },
+      "week": {
+        "baseDate": "2026-10-22",
+        "endDate": "2026-10-29",
+        "label": "1주 · 5거래일",
+        "tradingSessions": 5
+      },
+      "month": {
+        "baseDate": "2026-09-29",
+        "endDate": "2026-10-29",
+        "label": "1개월 · 달력기준"
+      }
+    },
+    "rows": [
+      {
+        "id": "chart-etf-139260",
+        "name": "IT",
+        "ticker": "139260.KS",
+        "benchmark": "TIGER 200 IT",
+        "group": "세부업종 ETF",
+        "instrumentType": "etf",
+        "holdings": {
+          "status": "verified",
+          "asOf": "2026-10-26",
+          "sourceIds": [
+            "kr-chart-holdings-139260"
+          ],
+          "top5": [
+            {
+              "name": "SK하이닉스",
+              "ticker": "000660",
+              "code": "000660",
+              "isin": "KR7000660001",
+              "identifierType": "ticker",
+              "weightPct": 19.85
+            },
+            {
+              "name": "SK스퀘어",
+              "ticker": "402340",
+              "code": "402340",
+              "isin": "KR7402340004",
+              "identifierType": "ticker",
+              "weightPct": 19.09
+            },
+            {
+              "name": "삼성전자",
+              "ticker": "005930",
+              "code": "005930",
+              "isin": "KR7005930003",
+              "identifierType": "ticker",
+              "weightPct": 18.54
+            },
+            {
+              "name": "삼성전기",
+              "ticker": "009150",
+              "code": "009150",
+              "isin": "KR7009150004",
+              "identifierType": "ticker",
+              "weightPct": 16.76
+            },
+            {
+              "name": "삼성SDI",
+              "ticker": "006400",
+              "code": "006400",
+              "isin": "KR7006400006",
+              "identifierType": "ticker",
+              "weightPct": 8.01
+            }
+          ],
+          "retrievedAt": "2026-10-26T09:16:21.288277+00:00",
+          "methodology": "NAVER 구성목록의 실제 편입비중(%) 내림차순 상위 3종목입니다. 국내·해외 편입자산을 포함하고 현금·예금·파생상품은 제외합니다. 개별 기업 시가총액 순위가 아닙니다. 구성 기준일과 수집 시각을 분리하며, 비중이 미확인인 경우 시총으로 대체하지 않습니다."
+        },
+        "sourceIds": [
+          "kr-chart-holdings-139260",
+          "sector-price-139260.KS-20261028",
+          "sector-raw-close-139260-20261029"
+        ],
+        "asOf": "2026-10-29",
+        "currency": "KRW",
+        "proxyTypeLabel": "ETF 대용지표",
+        "chartUniverseMember": true,
+        "scopeNote": "국내 상장·국내 주식/산업 노출 대표 ETF. 시가총액과 당일 거래량을 함께 제시하며 유동성 보장이나 전체 시장 최대규모 선언이 아닙니다. ETF 투자범위의 대용지표이며 업종 전수지수가 아닙니다.",
+        "methodology": "전기간 비조정 실제 정규장 종가 대비 가격수익률. 분배금 재투자 제외. ETF 내재 구성비를 따르며 상위 구성종목 동일가중 수익률이 아닙니다.",
+        "calculation": {
+          "formula": "100 * (close[end] / close[base] - 1)",
+          "weighting": "ETF market price; embedded fund methodology, not equal-weight top-five",
+          "priceField": "NAVER historical closePrice cross-checked with Yahoo quote.close",
+          "currency": "KRW",
+          "end": "2026-10-29",
+          "bases": {
+            "day": "2026-10-28",
+            "week": "2026-10-22",
+            "month": "2026-09-29"
+          },
+          "priceBasis": "Unadjusted dated market closing prices; distributions excluded; not exchange ex-distribution reference-price return",
+          "constituentData": [
+            {
+              "ticker": "139260.KS",
+              "providerName": "TIGER 200 IT",
+              "currency": "KRW",
+              "exchangeTimezone": "Asia/Seoul",
+              "priceField": "close",
+              "priceBasis": "Unadjusted dated market closing prices; distributions excluded; not exchange ex-distribution reference-price return",
+              "sourceId": "sector-raw-close-139260-20261029",
+              "observations": {
+                "2026-10-28": {
+                  "close": 122215.0
+                },
+                "2026-10-22": {
+                  "close": 107030.0
+                },
+                "2026-09-29": {
+                  "close": 142105.0
+                },
+                "2026-10-29": {
+                  "close": 121645.0
+                }
+              },
+              "evidenceSha256": "9b2b14c3fdcbd0b3d0eeee79608846fc622c1bb3c5bfbe8eec4da605d94cc60e",
+              "collectionMethod": "naver_mobile_daily_actual_close_crosschecked_yahoo_raw",
+              "retrievedAt": "2026-10-29T14:53:31.254373+00:00",
+              "unroundedReturnsPct": {
+                "day": -0.4663911958433853,
+                "week": 13.655049985985235,
+                "month": -14.397804440378593
+              }
+            }
+          ]
+        },
+        "periodStatus": {
+          "day": "verified",
+          "week": "verified",
+          "month": "verified"
+        },
+        "refreshStatus": "updated",
+        "day": -0.4663911958433853,
+        "week": 13.655049985985235,
+        "month": -14.397804440378593,
+        "refreshNote": "네 경계일 실제 종가를 두 공개 원천으로 교차검증. 분배락 기준 등락률이 아닌 비조정 종가 대비 가격수익률입니다."
+      },
+      {
+        "name": "철강",
+        "ticker": "117680.KS",
+        "day": -0.8110687022900742,
+        "week": -3.9279112754158962,
+        "month": -13.447127393838464,
+        "sourceIds": [
+          "holdings-117680-KS",
+          "sector-price-117680.KS-20261028",
+          "sector-raw-close-117680-20261029"
+        ],
+        "benchmark": "KODEX 철강",
+        "group": "세부업종 ETF",
+        "instrumentType": "etf",
+        "holdings": {
+          "status": "verified",
+          "asOf": "2026-10-26",
+          "sourceIds": [
+            "kr-chart-holdings-117680"
+          ],
+          "top5": [
+            {
+              "name": "현대제철",
+              "ticker": "004020",
+              "code": "004020",
+              "isin": "KR7004020004",
+              "identifierType": "ticker",
+              "weightPct": 20.65
+            },
+            {
+              "name": "POSCO홀딩스",
+              "ticker": "005490",
+              "code": "005490",
+              "isin": "KR7005490008",
+              "identifierType": "ticker",
+              "weightPct": 18.76
+            },
+            {
+              "name": "고려아연",
+              "ticker": "010130",
+              "code": "010130",
+              "isin": "KR7010130003",
+              "identifierType": "ticker",
+              "weightPct": 16.87
+            },
+            {
+              "name": "풍산",
+              "ticker": "103140",
+              "code": "103140",
+              "isin": "KR7103140000",
+              "identifierType": "ticker",
+              "weightPct": 13.27
+            },
+            {
+              "name": "삼아알미늄",
+              "ticker": "006110",
+              "code": "006110",
+              "isin": "KR7006110001",
+              "identifierType": "ticker",
+              "weightPct": 7.58
+            }
+          ],
+          "retrievedAt": "2026-10-26T09:16:21.288277+00:00",
+          "methodology": "NAVER 구성목록의 실제 편입비중(%) 내림차순 상위 3종목입니다. 국내·해외 편입자산을 포함하고 현금·예금·파생상품은 제외합니다. 개별 기업 시가총액 순위가 아닙니다. 구성 기준일과 수집 시각을 분리하며, 비중이 미확인인 경우 시총으로 대체하지 않습니다."
+        },
+        "id": "steel",
+        "displayLabel": "철강 (현대제철 / POSCO홀딩스 / 고려아연 / 풍산 / 삼아알미늄)",
+        "proxyTypeLabel": "ETF 대용지표",
+        "currency": "KRW",
+        "asOf": "2026-10-29",
+        "coverageStatus": "complete",
+        "memberCount": null,
+        "representativeBasket": false,
+        "methodology": "전기간 비조정 실제 정규장 종가 대비 가격수익률. 분배금 재투자 제외. ETF 내재 구성비를 따르며 상위 구성종목 동일가중 수익률이 아닙니다.",
+        "scopeNote": "ETF 투자범위의 대용지표이며 전체 업종의 공식 수익률이 아닙니다. 다른 행과 구성종목이 겹칠 수 있습니다.",
+        "calculation": {
+          "formula": "100 * (close[end] / close[base] - 1)",
+          "weighting": "ETF market price; embedded fund methodology, not equal-weight top-five",
+          "priceField": "NAVER historical closePrice cross-checked with Yahoo quote.close",
+          "currency": "KRW",
+          "end": "2026-10-29",
+          "bases": {
+            "day": "2026-10-28",
+            "week": "2026-10-22",
+            "month": "2026-09-29"
+          },
+          "priceBasis": "Unadjusted dated market closing prices; distributions excluded; not exchange ex-distribution reference-price return",
+          "constituentData": [
+            {
+              "ticker": "117680.KS",
+              "providerName": "KODEX 철강",
+              "currency": "KRW",
+              "exchangeTimezone": "Asia/Seoul",
+              "priceField": "close",
+              "priceBasis": "Unadjusted dated market closing prices; distributions excluded; not exchange ex-distribution reference-price return",
+              "sourceId": "sector-raw-close-117680-20261029",
+              "observations": {
+                "2026-10-28": {
+                  "close": 10480.0
+                },
+                "2026-10-22": {
+                  "close": 10820.0
+                },
+                "2026-09-29": {
+                  "close": 12010.0
+                },
+                "2026-10-29": {
+                  "close": 10395.0
+                }
+              },
+              "evidenceSha256": "997a1c986f79eba5913c90f820081a92d71be05a4ef047696e61d27d29d3b500",
+              "collectionMethod": "naver_mobile_daily_actual_close_crosschecked_yahoo_raw",
+              "retrievedAt": "2026-10-29T14:53:31.167212+00:00",
+              "unroundedReturnsPct": {
+                "day": -0.8110687022900742,
+                "week": -3.9279112754158962,
+                "month": -13.447127393838464
+              }
+            }
+          ]
+        },
+        "refreshStatus": "updated",
+        "chartUniverseMember": true,
+        "refreshNote": "네 경계일 실제 종가를 두 공개 원천으로 교차검증. 분배락 기준 등락률이 아닌 비조정 종가 대비 가격수익률입니다.",
+        "periodStatus": {
+          "day": "verified",
+          "week": "verified",
+          "month": "verified"
+        }
+      },
+      {
+        "name": "자동차",
+        "ticker": "091180.KS",
+        "day": -0.9843783436764397,
+        "week": -2.198266751215383,
+        "month": -8.32177531206657,
+        "sourceIds": [
+          "holdings-091180-KS",
+          "sector-price-091180.KS-20261028",
+          "sector-raw-close-091180-20261029"
+        ],
+        "benchmark": "KODEX 자동차",
+        "group": "세부업종 ETF",
+        "instrumentType": "etf",
+        "holdings": {
+          "status": "verified",
+          "asOf": "2026-10-26",
+          "sourceIds": [
+            "kr-chart-holdings-091180"
+          ],
+          "top5": [
+            {
+              "name": "기아",
+              "ticker": "000270",
+              "code": "000270",
+              "isin": "KR7000270009",
+              "identifierType": "ticker",
+              "weightPct": 19.79
+            },
+            {
+              "name": "현대모비스",
+              "ticker": "012330",
+              "code": "012330",
+              "isin": "KR7012330007",
+              "identifierType": "ticker",
+              "weightPct": 16.44
+            },
+            {
+              "name": "현대차",
+              "ticker": "005380",
+              "code": "005380",
+              "isin": "KR7005380001",
+              "identifierType": "ticker",
+              "weightPct": 16.32
+            },
+            {
+              "name": "한국타이어앤테크놀로지",
+              "ticker": "161390",
+              "code": "161390",
+              "isin": "KR7161390000",
+              "identifierType": "ticker",
+              "weightPct": 16.24
+            },
+            {
+              "name": "한온시스템",
+              "ticker": "018880",
+              "code": "018880",
+              "isin": "KR7018880005",
+              "identifierType": "ticker",
+              "weightPct": 4.83
+            }
+          ],
+          "retrievedAt": "2026-10-26T09:16:21.288277+00:00",
+          "methodology": "NAVER 구성목록의 실제 편입비중(%) 내림차순 상위 3종목입니다. 국내·해외 편입자산을 포함하고 현금·예금·파생상품은 제외합니다. 개별 기업 시가총액 순위가 아닙니다. 구성 기준일과 수집 시각을 분리하며, 비중이 미확인인 경우 시총으로 대체하지 않습니다."
+        },
+        "id": "autos",
+        "displayLabel": "자동차 (기아 / 한국타이어앤테크놀로지 / 현대모비스 / 현대차 / 한온시스템)",
+        "proxyTypeLabel": "ETF 대용지표",
+        "currency": "KRW",
+        "asOf": "2026-10-29",
+        "coverageStatus": "complete",
+        "memberCount": null,
+        "representativeBasket": false,
+        "methodology": "전기간 비조정 실제 정규장 종가 대비 가격수익률. 분배금 재투자 제외. ETF 내재 구성비를 따르며 상위 구성종목 동일가중 수익률이 아닙니다.",
+        "scopeNote": "ETF 투자범위의 대용지표이며 전체 업종의 공식 수익률이 아닙니다. 다른 행과 구성종목이 겹칠 수 있습니다.",
+        "calculation": {
+          "formula": "100 * (close[end] / close[base] - 1)",
+          "weighting": "ETF market price; embedded fund methodology, not equal-weight top-five",
+          "priceField": "NAVER historical closePrice cross-checked with Yahoo quote.close",
+          "currency": "KRW",
+          "end": "2026-10-29",
+          "bases": {
+            "day": "2026-10-28",
+            "week": "2026-10-22",
+            "month": "2026-09-29"
+          },
+          "priceBasis": "Unadjusted dated market closing prices; distributions excluded; not exchange ex-distribution reference-price return",
+          "constituentData": [
+            {
+              "ticker": "091180.KS",
+              "providerName": "KODEX 자동차",
+              "currency": "KRW",
+              "exchangeTimezone": "Asia/Seoul",
+              "priceField": "close",
+              "priceBasis": "Unadjusted dated market closing prices; distributions excluded; not exchange ex-distribution reference-price return",
+              "sourceId": "sector-raw-close-091180-20261029",
+              "observations": {
+                "2026-10-28": {
+                  "close": 23365.0
+                },
+                "2026-10-22": {
+                  "close": 23655.0
+                },
+                "2026-09-29": {
+                  "close": 25235.0
+                },
+                "2026-10-29": {
+                  "close": 23135.0
+                }
+              },
+              "evidenceSha256": "909b11aac8e6a72b56ebd4ee211d5815a8a815a66b2e3dc6608e757b0ed35c74",
+              "collectionMethod": "naver_mobile_daily_actual_close_crosschecked_yahoo_raw",
+              "retrievedAt": "2026-10-29T14:53:31.086584+00:00",
+              "unroundedReturnsPct": {
+                "day": -0.9843783436764397,
+                "week": -2.198266751215383,
+                "month": -8.32177531206657
+              }
+            }
+          ]
+        },
+        "refreshStatus": "updated",
+        "chartUniverseMember": true,
+        "refreshNote": "네 경계일 실제 종가를 두 공개 원천으로 교차검증. 분배락 기준 등락률이 아닌 비조정 종가 대비 가격수익률입니다.",
+        "periodStatus": {
+          "day": "verified",
+          "week": "verified",
+          "month": "verified"
+        }
+      },
+      {
+        "id": "chart-etf-117460",
+        "name": "에너지·화학",
+        "ticker": "117460.KS",
+        "benchmark": "KODEX 에너지화학",
+        "group": "세부업종 ETF",
+        "instrumentType": "etf",
+        "holdings": {
+          "status": "verified",
+          "asOf": "2026-10-26",
+          "sourceIds": [
+            "kr-chart-holdings-117460"
+          ],
+          "top5": [
+            {
+              "name": "LG화학",
+              "ticker": "051910",
+              "code": "051910",
+              "isin": "KR7051910008",
+              "identifierType": "ticker",
+              "weightPct": 17.82
+            },
+            {
+              "name": "SK이노베이션",
+              "ticker": "096770",
+              "code": "096770",
+              "isin": "KR7096770003",
+              "identifierType": "ticker",
+              "weightPct": 17.43
+            },
+            {
+              "name": "HD현대",
+              "ticker": "267250",
+              "code": "267250",
+              "isin": "KR7267250009",
+              "identifierType": "ticker",
+              "weightPct": 10.52
+            },
+            {
+              "name": "S-Oil",
+              "ticker": "010950",
+              "code": "010950",
+              "isin": "KR7010950004",
+              "identifierType": "ticker",
+              "weightPct": 9.35
+            },
+            {
+              "name": "한화솔루션",
+              "ticker": "009830",
+              "code": "009830",
+              "isin": "KR7009830001",
+              "identifierType": "ticker",
+              "weightPct": 6.84
+            }
+          ],
+          "retrievedAt": "2026-10-26T09:16:21.288277+00:00",
+          "methodology": "NAVER 구성목록의 실제 편입비중(%) 내림차순 상위 3종목입니다. 국내·해외 편입자산을 포함하고 현금·예금·파생상품은 제외합니다. 개별 기업 시가총액 순위가 아닙니다. 구성 기준일과 수집 시각을 분리하며, 비중이 미확인인 경우 시총으로 대체하지 않습니다."
+        },
+        "sourceIds": [
+          "kr-chart-holdings-117460",
+          "sector-price-117460.KS-20261028",
+          "sector-raw-close-117460-20261029"
+        ],
+        "asOf": "2026-10-29",
+        "currency": "KRW",
+        "proxyTypeLabel": "ETF 대용지표",
+        "chartUniverseMember": true,
+        "scopeNote": "국내 상장·국내 주식/산업 노출 대표 ETF. 시가총액과 당일 거래량을 함께 제시하며 유동성 보장이나 전체 시장 최대규모 선언이 아닙니다. ETF 투자범위의 대용지표이며 업종 전수지수가 아닙니다.",
+        "methodology": "전기간 비조정 실제 정규장 종가 대비 가격수익률. 분배금 재투자 제외. ETF 내재 구성비를 따르며 상위 구성종목 동일가중 수익률이 아닙니다.",
+        "calculation": {
+          "formula": "100 * (close[end] / close[base] - 1)",
+          "weighting": "ETF market price; embedded fund methodology, not equal-weight top-five",
+          "priceField": "NAVER historical closePrice cross-checked with Yahoo quote.close",
+          "currency": "KRW",
+          "end": "2026-10-29",
+          "bases": {
+            "day": "2026-10-28",
+            "week": "2026-10-22",
+            "month": "2026-09-29"
+          },
+          "priceBasis": "Unadjusted dated market closing prices; distributions excluded; not exchange ex-distribution reference-price return",
+          "constituentData": [
+            {
+              "ticker": "117460.KS",
+              "providerName": "KODEX 에너지화학",
+              "currency": "KRW",
+              "exchangeTimezone": "Asia/Seoul",
+              "priceField": "close",
+              "priceBasis": "Unadjusted dated market closing prices; distributions excluded; not exchange ex-distribution reference-price return",
+              "sourceId": "sector-raw-close-117460-20261029",
+              "observations": {
+                "2026-10-28": {
+                  "close": 12065.0
+                },
+                "2026-10-22": {
+                  "close": 12385.0
+                },
+                "2026-09-29": {
+                  "close": 13870.0
+                },
+                "2026-10-29": {
+                  "close": 11545.0
+                }
+              },
+              "evidenceSha256": "8477d37f45f699f124a01a6077f99ec9c192cf5b81af1ca60eab454e02f668a1",
+              "collectionMethod": "naver_mobile_daily_actual_close_crosschecked_yahoo_raw",
+              "retrievedAt": "2026-10-29T14:53:31.218727+00:00",
+              "unroundedReturnsPct": {
+                "day": -4.309987567343554,
+                "week": -6.782398062171979,
+                "month": -16.762797404470074
+              }
+            }
+          ]
+        },
+        "periodStatus": {
+          "day": "verified",
+          "week": "verified",
+          "month": "verified"
+        },
+        "refreshStatus": "updated",
+        "day": -4.309987567343554,
+        "week": -6.782398062171979,
+        "month": -16.762797404470074,
+        "refreshNote": "네 경계일 실제 종가를 두 공개 원천으로 교차검증. 분배락 기준 등락률이 아닌 비조정 종가 대비 가격수익률입니다."
+      }
+    ],
+    "selectionChanges": {
+      "removedTickers": [
+        "091230.KS",
+        "139220.KS",
+        "266370.KS",
+        "266390.KS",
+        "102960.KS",
+        "117460.KS",
+        "228800.KS",
+        "377990.KS",
+        "385510.KS",
+        "266360.KS",
+        "157490.KS"
+      ],
+      "reasons": "반도체·건설 중복 제거. IT종합·경기소비재·기계장비·여행레저·에너지화학과 배터리/전력/원전 혼합 신재생 ETF를 세부 표본으로 대체. 콘텐츠/소프트웨어 ETF의 혼합 노출은 엔터/인터넷/소프트웨어/IT서비스로 분리.",
+      "supersededBy": "2026-10-28 사용자 요청에 따라 기존 차트39ETF 전체를 재포함; 아래 removedTickers는 과거 선택 변경 기록입니다."
+    },
+    "validation": {
+      "status": "partial",
+      "rowCount": 60,
+      "etfCount": 41,
+      "basketCount": 19,
+      "currentDateCount": 56,
+      "retainedCount": 4,
+      "retainedRows": [
+        {
+          "id": "autos",
+          "tickers": [
+            "091180.KS"
+          ],
+          "asOf": "2026-10-28"
+        },
+        {
+          "id": "steel",
+          "tickers": [
+            "117680.KS"
+          ],
+          "asOf": "2026-10-28"
+        },
+        {
+          "id": "chart-etf-139260",
+          "tickers": [
+            "139260.KS"
+          ],
+          "asOf": "2026-10-28"
+        },
+        {
+          "id": "chart-etf-117460",
+          "tickers": [
+            "117460.KS"
+          ],
+          "asOf": "2026-10-28"
+        }
+      ],
+      "completeBoundaryPrices": false,
+      "directKrxLedgerCrossCheck": false,
+      "unavailablePeriods": [
+        {
+          "ticker": "0247S0.KS",
+          "period": "month",
+          "reason": "insufficient_history"
+        }
+      ]
+    },
+    "status": "partial",
+    "sourceIds": [
+      "holdings-091160-KS",
+      "sector-price-091160.KS-20261029",
+      "sector-membership-naver-upjong-282",
+      "sector-membership-naver-upjong-307",
+      "sector-price-009150.KS-20261029",
+      "sector-price-011070.KS-20261029",
+      "sector-price-353200.KS-20261029",
+      "sector-price-066570.KS-20261029",
+      "sector-membership-naver-upjong-287",
+      "sector-price-053800.KQ-20261029",
+      "sector-price-030520.KQ-20261029",
+      "sector-price-058970.KQ-20261029",
+      "sector-membership-naver-upjong-267",
+      "sector-membership-naver-theme-17",
+      "sector-price-018260.KS-20261029",
+      "sector-price-307950.KS-20261029",
+      "sector-price-064400.KS-20261029",
+      "sector-membership-naver-theme-49",
+      "sector-price-035420.KS-20261029",
+      "sector-price-035720.KS-20261029",
+      "sector-membership-naver-theme-126",
+      "sector-price-017670.KS-20261029",
+      "sector-price-030200.KS-20261029",
+      "sector-price-032640.KS-20261029",
+      "holdings-091180-KS",
+      "sector-price-091180.KS-20261028",
+      "holdings-305720-KS",
+      "sector-price-305720.KS-20261029",
+      "sector-membership-naver-theme-30",
+      "sector-price-329180.KS-20261029",
+      "sector-price-042660.KS-20261029",
+      "sector-price-009540.KS-20261029",
+      "sector-price-010140.KS-20261029",
+      "sector-membership-naver-theme-205",
+      "sector-price-034020.KS-20261029",
+      "sector-price-052690.KS-20261029",
+      "sector-price-051600.KS-20261029",
+      "sector-membership-naver-theme-123",
+      "sector-price-267260.KS-20261029",
+      "sector-price-298040.KS-20261029",
+      "sector-price-010120.KS-20261029",
+      "sector-membership-naver-theme-191",
+      "sector-price-009830.KS-20261029",
+      "sector-price-010060.KS-20261029",
+      "sector-price-322000.KS-20261029",
+      "sector-membership-naver-theme-188",
+      "sector-price-112610.KS-20261029",
+      "sector-price-100090.KS-20261029",
+      "sector-price-100130.KQ-20261029",
+      "sector-membership-naver-theme-505",
+      "sector-price-277810.KQ-20261029",
+      "sector-price-454910.KS-20261029",
+      "sector-price-108490.KQ-20261029",
+      "sector-membership-naver-theme-200",
+      "sector-price-012450.KS-20261029",
+      "sector-price-047810.KS-20261029",
+      "sector-price-099320.KQ-20261029",
+      "sector-membership-naver-theme-144",
+      "sector-price-064350.KS-20261029",
+      "sector-price-079550.KS-20261029",
+      "holdings-091170-KS",
+      "sector-price-091170.KS-20261029",
+      "holdings-102970-KS",
+      "sector-price-102970.KS-20261029",
+      "holdings-140700-KS",
+      "sector-price-140700.KS-20261029",
+      "sector-membership-naver-theme-185",
+      "sector-price-010950.KS-20261029",
+      "sector-price-096770.KS-20261029",
+      "sector-price-078930.KS-20261029",
+      "sector-membership-naver-theme-180",
+      "sector-membership-naver-upjong-272",
+      "sector-price-051910.KS-20261029",
+      "sector-price-011170.KS-20261029",
+      "sector-price-011780.KS-20261029",
+      "holdings-117680-KS",
+      "sector-price-117680.KS-20261028",
+      "holdings-117700-KS",
+      "sector-price-117700.KS-20261029",
+      "holdings-140710-KS",
+      "sector-price-140710.KS-20261029",
+      "sector-membership-naver-theme-407",
+      "sector-price-008770.KS-20261029",
+      "sector-price-025980.KQ-20261029",
+      "sector-price-070960.KS-20261029",
+      "sector-membership-naver-theme-47",
+      "sector-price-035250.KS-20261029",
+      "sector-price-034230.KS-20261029",
+      "sector-price-114090.KS-20261029",
+      "sector-price-032350.KS-20261029",
+      "sector-membership-naver-theme-318",
+      "sector-price-004170.KS-20261029",
+      "sector-price-069960.KS-20261029",
+      "sector-price-023530.KS-20261029",
+      "holdings-228790-KS",
+      "sector-price-228790.KS-20261029",
+      "sector-membership-naver-theme-128",
+      "sector-price-352820.KS-20261029",
+      "sector-price-041510.KQ-20261029",
+      "sector-price-035900.KQ-20261029",
+      "sector-price-122870.KQ-20261029",
+      "holdings-244580-KS",
+      "sector-price-244580.KS-20261029",
+      "holdings-266420-KS",
+      "sector-price-266420.KS-20261029",
+      "holdings-266410-KS",
+      "sector-price-266410.KS-20261029",
+      "kr-chart-holdings-139260",
+      "sector-price-139260.KS-20261028",
+      "kr-chart-holdings-117460",
+      "sector-price-117460.KS-20261028",
+      "kr-chart-holdings-102960",
+      "sector-price-102960.KS-20261029",
+      "kr-chart-holdings-143860",
+      "sector-price-143860.KS-20261029",
+      "kr-chart-holdings-266390",
+      "kr-etf-266390-closed-20261028",
+      "sector-price-266390.KS-20261029",
+      "kr-chart-holdings-157490",
+      "sector-price-157490.KS-20261029",
+      "kr-chart-holdings-0148J0",
+      "sector-price-0148J0.KS-20261029",
+      "kr-chart-holdings-0177X0",
+      "sector-price-0177X0.KS-20261029",
+      "kr-chart-holdings-455860",
+      "sector-price-455860.KS-20261029",
+      "kr-chart-holdings-455850",
+      "sector-price-455850.KS-20261029",
+      "kr-chart-holdings-475300",
+      "sector-price-475300.KS-20261029",
+      "kr-chart-holdings-475310",
+      "sector-price-475310.KS-20261029",
+      "kr-chart-holdings-449450",
+      "sector-price-449450.KS-20261029",
+      "kr-chart-holdings-0247S0",
+      "sector-price-0247S0.KS-20261029",
+      "kr-chart-holdings-0207G0",
+      "sector-price-0207G0.KS-20261029",
+      "kr-chart-holdings-421320",
+      "sector-price-421320.KS-20261029",
+      "kr-chart-holdings-466920",
+      "sector-price-466920.KS-20261029",
+      "kr-chart-holdings-487240",
+      "sector-price-487240.KS-20261029",
+      "kr-chart-holdings-0222F0",
+      "sector-price-0222F0.KS-20261029",
+      "kr-chart-holdings-0091P0",
+      "sector-price-0091P0.KS-20261029",
+      "kr-chart-holdings-457990",
+      "sector-price-457990.KS-20261029",
+      "kr-chart-holdings-0209D0",
+      "sector-price-0209D0.KS-20261029",
+      "kr-chart-holdings-364970",
+      "sector-price-364970.KS-20261029",
+      "kr-chart-holdings-228800",
+      "sector-price-228800.KS-20261029",
+      "kr-chart-holdings-228810",
+      "sector-price-228810.KS-20261029",
+      "kr-chart-holdings-365000",
+      "sector-price-365000.KS-20261029",
+      "kr-chart-holdings-364990",
+      "sector-price-364990.KS-20261029",
+      "kr-chart-holdings-329200",
+      "sector-price-329200.KS-20261029"
+    ],
+    "independentChecks": {
+      "attempted": 99,
+      "matched": 94,
+      "mismatches": 4,
+      "unverified": 1,
+      "rows": [
+        {
+          "ticker": "091160.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=091160",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:36:45.213214+00:00",
+          "sha256": "da57b6408b4dc7f4a1528865fb361b01659c18c2c4b0f9254a855e733124e92e",
+          "close": 114170.0,
+          "previousClose": 117005.0,
+          "match": true
+        },
+        {
+          "ticker": "009150.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=009150",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:36:45.399709+00:00",
+          "sha256": "ebd23407a37c0fd3d3d665dd9cab3ddf1703e9e6b29f383b130f816c868c4f9b",
+          "close": 1293000.0,
+          "previousClose": 1306000.0,
+          "match": true
+        },
+        {
+          "ticker": "011070.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=011070",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:36:45.234043+00:00",
+          "sha256": "799b7fae0a11604df6504dddc1b836a3dae91e96610881d9d90415c71d98f0bf",
+          "close": 347500.0,
+          "previousClose": 368000.0,
+          "match": true
+        },
+        {
+          "ticker": "353200.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=353200",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:36:45.237878+00:00",
+          "sha256": "c439ea4bbdbbcced91803d29ee0cd1ea5c5b1cdc4d86195f0b4ee426be19d9bc",
+          "close": 138200.0,
+          "previousClose": 138000.0,
+          "match": true
+        },
+        {
+          "ticker": "066570.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=066570",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:36:45.267296+00:00",
+          "sha256": "7c773c7f6c2ff8b7799c729f2aee770087e49fe0b4e6441f5bc10e640102a9ef",
+          "close": 155200.0,
+          "previousClose": 161700.0,
+          "match": true
+        },
+        {
+          "ticker": "053800.KQ",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=053800",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:36:45.240185+00:00",
+          "sha256": "46b011b453a07ea31e964453f1e16f1231562b6a37001bae22828a00289f1942",
+          "close": 100100.0,
+          "previousClose": 110900.0,
+          "match": true
+        },
+        {
+          "ticker": "030520.KQ",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=030520",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:36:45.226728+00:00",
+          "sha256": "ca30a1ba962b8394e5599457fff3a850fcb032d7bbba17d43f7566d2244bc1fe",
+          "close": 15680.0,
+          "previousClose": 16100.0,
+          "match": true
+        },
+        {
+          "ticker": "058970.KQ",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=058970",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:36:45.203371+00:00",
+          "sha256": "54fe0e715e6775d18ed47a7651fea7e6edb920170ef708f349d5da4e98ba87d5",
+          "close": 13650.0,
+          "previousClose": 14570.0,
+          "match": true
+        },
+        {
+          "ticker": "018260.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=018260",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:36:45.209162+00:00",
+          "sha256": "2a3ab6bef663bdc3d0384cc0be38f65cf43343f743c6bc832e3fb74d2a9d77ac",
+          "close": 206500.0,
+          "previousClose": 222500.0,
+          "match": true
+        },
+        {
+          "ticker": "307950.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=307950",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:36:45.211496+00:00",
+          "sha256": "69cdf2b891293e8a7c5a94b0ca2e908d577a4a04d503871646914537674acc79",
+          "close": 332500.0,
+          "previousClose": 350000.0,
+          "match": true
+        },
+        {
+          "ticker": "064400.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=064400",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:36:49.403792+00:00",
+          "sha256": "2b72afb1d4d58c8fed2b1e9b481b26f15da5378033b350e90ca9771f3b234e87",
+          "close": 77200.0,
+          "previousClose": 79000.0,
+          "match": true
+        },
+        {
+          "ticker": "035420.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=035420",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:36:49.545404+00:00",
+          "sha256": "466a0db9702969a59e1e08e8f93817ba55a8dadb35ce8ea480f800cd2c8d8b73",
+          "close": 174900.0,
+          "previousClose": 178000.0,
+          "match": true
+        },
+        {
+          "ticker": "035720.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=035720",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:36:49.566157+00:00",
+          "sha256": "f006b913f23d35f910023ce5ef3914955286aff311d860ba71ed80daff2757e1",
+          "close": 29300.0,
+          "previousClose": 29800.0,
+          "match": true
+        },
+        {
+          "ticker": "017670.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=017670",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:36:49.378116+00:00",
+          "sha256": "7332cbe10ce69fa4aa5fd3d4fe59f9572fe1d4b8b2f338cd6a2f11541a237c9e",
+          "close": 76600.0,
+          "previousClose": 78000.0,
+          "match": true
+        },
+        {
+          "ticker": "030200.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=030200",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:36:49.560236+00:00",
+          "sha256": "62b5511dce47db5815b37b0c2dfdea1723ad3dd8aff51c18152434e2a0e5b3b2",
+          "close": 45750.0,
+          "previousClose": 45350.0,
+          "match": true
+        },
+        {
+          "ticker": "032640.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=032640",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:36:49.375692+00:00",
+          "sha256": "3a812d5c9a7ad949c336cb903affa381addbcbcd4b2991f8243438816f543038",
+          "close": 13940.0,
+          "previousClose": 13790.0,
+          "match": true
+        },
+        {
+          "ticker": "091180.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=091180",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:36:49.536504+00:00",
+          "sha256": "77d69fa13bc7f13b998cdf234fd66d41977d53582fbf28a2b66d67eeb854b516",
+          "close": 23135.0,
+          "previousClose": 23265.0,
+          "match": false
+        },
+        {
+          "ticker": "305720.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=305720",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:36:49.398386+00:00",
+          "sha256": "3379ee55488f53d448582bfca55edda19a253f4c54bcb956b796186aef7875fd",
+          "close": 13430.0,
+          "previousClose": 14065.0,
+          "match": true
+        },
+        {
+          "ticker": "329180.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=329180",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:36:49.387401+00:00",
+          "sha256": "509097a7e652af2b7cf47abf86074312d26551752c3c8ec43a490f3c858e44e5",
+          "close": 272000.0,
+          "previousClose": 285500.0,
+          "match": true
+        },
+        {
+          "ticker": "042660.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=042660",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:36:49.409595+00:00",
+          "sha256": "a7b36f2763e5e5206bb3fa9a5bdeb3992881fe592159d47f61240a86e43612b5",
+          "close": 50500.0,
+          "previousClose": 52500.0,
+          "match": true
+        },
+        {
+          "ticker": "009540.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=009540",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:36:59.653366+00:00",
+          "sha256": "67b0adff9b8b7bfa113eec47b2c4b878428998f6f154ba2aee75462de99c488e",
+          "close": 233000.0,
+          "previousClose": 241500.0,
+          "match": true
+        },
+        {
+          "ticker": "010140.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=010140",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:00.353287+00:00",
+          "sha256": "2b77af26cb63c46abf23d85f09cd0c16f11ee364668837a36a2c3ebf7aa5d51a",
+          "close": 15720.0,
+          "previousClose": 16510.0,
+          "match": true
+        },
+        {
+          "ticker": "034020.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=034020",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:00.576754+00:00",
+          "sha256": "71b654da9e45eb72a7cdeb7246a55e9c8c9a45e447d5f9b4cc0b870a825f8970",
+          "close": 56700.0,
+          "previousClose": 61400.0,
+          "match": true
+        },
+        {
+          "ticker": "052690.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=052690",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:00.356196+00:00",
+          "sha256": "f15ffae2ca8262b03027979930328445c17bd3a817980576e8af5edb8994920d",
+          "close": 88700.0,
+          "previousClose": 96200.0,
+          "match": true
+        },
+        {
+          "ticker": "051600.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=051600",
+          "checkedAt": "2026-10-29T08:37:00.795486+00:00",
+          "error": "AssertionError('2026.10.29 17:37')",
+          "match": null
+        },
+        {
+          "ticker": "267260.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=267260",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:00.119993+00:00",
+          "sha256": "75cc39682614fcbeee9f937996170963834de2ff1f04b11827e48f7f554e5e6d",
+          "close": 440500.0,
+          "previousClose": 462500.0,
+          "match": true
+        },
+        {
+          "ticker": "298040.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=298040",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:36:59.639136+00:00",
+          "sha256": "4a66eb47afbc8bd6525ada9d6b6af839c7c448e890da32178ab33962673ff3fe",
+          "close": 1911000.0,
+          "previousClose": 1998000.0,
+          "match": true
+        },
+        {
+          "ticker": "010120.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=010120",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:00.099197+00:00",
+          "sha256": "bc089845e0715fbf96150251943c5b2c7d47c01826fd2d605a6fa650d3691f1d",
+          "close": 158400.0,
+          "previousClose": 164600.0,
+          "match": true
+        },
+        {
+          "ticker": "009830.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=009830",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:00.935970+00:00",
+          "sha256": "f65dd87e1d34b1b44ff9181212b34882c190840a9e37f6f67658f6a904e04f06",
+          "close": 23600.0,
+          "previousClose": 26700.0,
+          "match": true
+        },
+        {
+          "ticker": "010060.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=010060",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:00.420880+00:00",
+          "sha256": "d2500bb9005f8272cde82d29a4f69bc6777a74da06291b1cbc54fd11b4378867",
+          "close": 180500.0,
+          "previousClose": 180300.0,
+          "match": true
+        },
+        {
+          "ticker": "322000.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=322000",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:03.960769+00:00",
+          "sha256": "93efe3c7c1a1848fdf0ed784cfc73c3295eed36f9293a8863f98e0b43bf3cccc",
+          "close": 78700.0,
+          "previousClose": 84300.0,
+          "match": true
+        },
+        {
+          "ticker": "112610.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=112610",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:04.748722+00:00",
+          "sha256": "2a9145b5b85423224455a488658e499867c5e336d1960939350fea5b8702abc2",
+          "close": 38200.0,
+          "previousClose": 39200.0,
+          "match": true
+        },
+        {
+          "ticker": "100090.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=100090",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:03.831707+00:00",
+          "sha256": "c617af0ae6b280a061788b19d889da271af003956e538f6d68b0472306974b52",
+          "close": 9190.0,
+          "previousClose": 9600.0,
+          "match": true
+        },
+        {
+          "ticker": "100130.KQ",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=100130",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:03.818216+00:00",
+          "sha256": "6fb33954b2865f8a3ac25d57d9285207fabdf61c882705c4548d2926627b1383",
+          "close": 1372.0,
+          "previousClose": 1419.0,
+          "match": true
+        },
+        {
+          "ticker": "277810.KQ",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=277810",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:03.989012+00:00",
+          "sha256": "ac5457348555c79fe7ffabb3c1b36dc6fb7f63182f1ac656131296eb239374d3",
+          "close": 378000.0,
+          "previousClose": 404500.0,
+          "match": true
+        },
+        {
+          "ticker": "454910.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=454910",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:04.301963+00:00",
+          "sha256": "07d100765ac000fd68078e4ad22be38626b6c0c208c12d2ce1c3dbc530a05c22",
+          "close": 57500.0,
+          "previousClose": 60500.0,
+          "match": true
+        },
+        {
+          "ticker": "108490.KQ",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=108490",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:04.482600+00:00",
+          "sha256": "1ad72583e2820d830b23fbda35c386d6adb8aa955d77606a255d17fbcdbf2d10",
+          "close": 265500.0,
+          "previousClose": 275500.0,
+          "match": true
+        },
+        {
+          "ticker": "012450.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=012450",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:03.951874+00:00",
+          "sha256": "7895f315e03b3ac3b259eac7a28fb6814e5e69d276abaf425fc93f87c6dbc051",
+          "close": 760000.0,
+          "previousClose": 787000.0,
+          "match": true
+        },
+        {
+          "ticker": "047810.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=047810",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:03.826287+00:00",
+          "sha256": "8b29f7daa579111b33105f9c89cee3a2576798b9f527360ba560540ae080ba91",
+          "close": 100400.0,
+          "previousClose": 102700.0,
+          "match": true
+        },
+        {
+          "ticker": "099320.KQ",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=099320",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:03.989564+00:00",
+          "sha256": "36d0a4df039c42c924a32b1348d7604e7b5bfc602e6e43bc330899cb8700e278",
+          "close": 56900.0,
+          "previousClose": 54700.0,
+          "match": true
+        },
+        {
+          "ticker": "064350.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=064350",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:09.121738+00:00",
+          "sha256": "c48561ef2ea9e7e8a32bd122e02daf17bfa12b14e6ef7c7b6c660042a1ae0579",
+          "close": 79000.0,
+          "previousClose": 82800.0,
+          "match": true
+        },
+        {
+          "ticker": "079550.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=079550",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:08.915100+00:00",
+          "sha256": "2be5a82507dcc990c017c54dc41828aec3f729aa1e2ce908d003076cb6a4ee04",
+          "close": 427500.0,
+          "previousClose": 449000.0,
+          "match": true
+        },
+        {
+          "ticker": "091170.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=091170",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:08.950433+00:00",
+          "sha256": "5773f04beb4d2975dfb13e0bb2d7d2acc7ee7a850e646e616d710f78dc51d6bc",
+          "close": 14300.0,
+          "previousClose": 14005.0,
+          "match": true
+        },
+        {
+          "ticker": "102970.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=102970",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:09.131602+00:00",
+          "sha256": "9717351dd15d972e46f6e42d836a994a7d986fcf0ff0c909a06298f31066390e",
+          "close": 15700.0,
+          "previousClose": 15425.0,
+          "match": true
+        },
+        {
+          "ticker": "140700.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=140700",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:09.111482+00:00",
+          "sha256": "09c13b43b5bf428b4aba7f2d9e29db2fe843632877e4887613813c2f5118e489",
+          "close": 19410.0,
+          "previousClose": 19240.0,
+          "match": true
+        },
+        {
+          "ticker": "010950.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=010950",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:09.096611+00:00",
+          "sha256": "fd164f63a9b47d7b64bcf40a2a731a674bd78950407065c8d28b7b7dc57a8e81",
+          "close": 122300.0,
+          "previousClose": 125600.0,
+          "match": true
+        },
+        {
+          "ticker": "096770.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=096770",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:09.133419+00:00",
+          "sha256": "052148bac94abd41238bddc2f0e19aee71d137e97b0c7e3335c7f20cdeff2f0c",
+          "close": 129800.0,
+          "previousClose": 139700.0,
+          "match": true
+        },
+        {
+          "ticker": "078930.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=078930",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:09.052205+00:00",
+          "sha256": "dbd6019e8f9c8957474062b27e6f5611cf2fe9cc25b44a48ad787bbd57b77836",
+          "close": 82600.0,
+          "previousClose": 82300.0,
+          "match": true
+        },
+        {
+          "ticker": "051910.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=051910",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:08.992212+00:00",
+          "sha256": "1c8f4c42bcb0cbf16dd72b9ad595b86a9e569293bb965739ae5295cb34605eb0",
+          "close": 234000.0,
+          "previousClose": 236000.0,
+          "match": true
+        },
+        {
+          "ticker": "011170.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=011170",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:08.954785+00:00",
+          "sha256": "0e5d7399938db8746469986ee3f5739b5707552717c9ba94bc9bafd185c577da",
+          "close": 47000.0,
+          "previousClose": 47900.0,
+          "match": true
+        },
+        {
+          "ticker": "011780.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=011780",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:12.433212+00:00",
+          "sha256": "7bf6e8d0c9c54653f32afdea25abd422f3869ba35babf434158e0fe6ce403708",
+          "close": 106300.0,
+          "previousClose": 106800.0,
+          "match": true
+        },
+        {
+          "ticker": "117680.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=117680",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:12.546026+00:00",
+          "sha256": "b16f03825d37e2cdd25d3ac9c5c5f0be9a89ea8797da5bd5e7f57ec6e7e7d545",
+          "close": 10395.0,
+          "previousClose": 10460.0,
+          "match": false
+        },
+        {
+          "ticker": "117700.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=117700",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:12.406508+00:00",
+          "sha256": "6d38ea371849ce4a31283c265fc47c3cb93c48d2ab42b1db21f086b7ffe1a0fb",
+          "close": 6030.0,
+          "previousClose": 6335.0,
+          "match": true
+        },
+        {
+          "ticker": "140710.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=140710",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:12.466021+00:00",
+          "sha256": "a2f6fe6708078424892eb8533f06cba8c669510c404ae6cc97cc9a79c094b21a",
+          "close": 6250.0,
+          "previousClose": 6295.0,
+          "match": true
+        },
+        {
+          "ticker": "008770.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=008770",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:12.465870+00:00",
+          "sha256": "a844633e633daa9717f74d2d903e24661dcda1c2f39ac0b4f832a0189de35ab4",
+          "close": 34850.0,
+          "previousClose": 36500.0,
+          "match": true
+        },
+        {
+          "ticker": "025980.KQ",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=025980",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:12.525857+00:00",
+          "sha256": "9d1553ad7261785c99c6af9f63da59846890775cb3c28929285ccc257eb59c43",
+          "close": 4060.0,
+          "previousClose": 4320.0,
+          "match": true
+        },
+        {
+          "ticker": "070960.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=070960",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:12.527182+00:00",
+          "sha256": "631796e4071242818636e8b352419a01d2d324f3a367d0c562258e4f87d7b6d9",
+          "close": 1811.0,
+          "previousClose": 1828.0,
+          "match": true
+        },
+        {
+          "ticker": "035250.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=035250",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:12.560548+00:00",
+          "sha256": "ae8f505591567f70c8f7e985072e8c943c3a403b56af5d3bdc6147d1c56082fc",
+          "close": 13640.0,
+          "previousClose": 13680.0,
+          "match": true
+        },
+        {
+          "ticker": "034230.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=034230",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:12.391444+00:00",
+          "sha256": "63b1c6833fb8ade4ae602d35376a807d268594e1e5ef42ba9db52cd85e5b74a6",
+          "close": 9520.0,
+          "previousClose": 9640.0,
+          "match": true
+        },
+        {
+          "ticker": "114090.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=114090",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:12.431415+00:00",
+          "sha256": "b8dd6feac40262f04fa0922c5dfffcee9361f83f35dfa2e40e2a12664daac027",
+          "close": 8020.0,
+          "previousClose": 8220.0,
+          "match": true
+        },
+        {
+          "ticker": "032350.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=032350",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:17.273735+00:00",
+          "sha256": "4adb24383546ba6627e070bc711b29b5fbee6230f680bd820cbe70e5bb4abdfe",
+          "close": 10190.0,
+          "previousClose": 10590.0,
+          "match": true
+        },
+        {
+          "ticker": "004170.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=004170",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:17.257210+00:00",
+          "sha256": "d3b9e24def7bc9a1576b2909c991637039fb671dba44174af1a47ceddf4eba3b",
+          "close": 248000.0,
+          "previousClose": 257500.0,
+          "match": true
+        },
+        {
+          "ticker": "069960.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=069960",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:17.259142+00:00",
+          "sha256": "d5a0ee082fe5e568c885adf0f76f74660a04a2cb5da8dadbe933b0facf40fdb5",
+          "close": 75100.0,
+          "previousClose": 75800.0,
+          "match": true
+        },
+        {
+          "ticker": "023530.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=023530",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:17.282082+00:00",
+          "sha256": "ef060b0542771d666807cb7b49b2885f66fcec89e2469aeceabec84bd85a95fd",
+          "close": 82300.0,
+          "previousClose": 83700.0,
+          "match": true
+        },
+        {
+          "ticker": "228790.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=228790",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:17.127118+00:00",
+          "sha256": "4754bbff3ef550d0c27ad9f2527a64da3348a983518c291e3ae565738488933b",
+          "close": 3495.0,
+          "previousClose": 3605.0,
+          "match": true
+        },
+        {
+          "ticker": "352820.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=352820",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:17.103505+00:00",
+          "sha256": "7a9323ac32fe7fead6f1b07a243942168d89a2226161fdb70f8e7865730a5b91",
+          "close": 158000.0,
+          "previousClose": 168000.0,
+          "match": true
+        },
+        {
+          "ticker": "041510.KQ",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=041510",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:17.269335+00:00",
+          "sha256": "4eae97f6a167d8fceda7d4903e7c3214fd7926e0ab369382f13442ecac40ccf9",
+          "close": 78800.0,
+          "previousClose": 80300.0,
+          "match": true
+        },
+        {
+          "ticker": "035900.KQ",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=035900",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:17.094147+00:00",
+          "sha256": "035677675cc41439cf5f624b7a42cc56ee9ff391d1741e1085eab4b234da518b",
+          "close": 38900.0,
+          "previousClose": 40050.0,
+          "match": true
+        },
+        {
+          "ticker": "122870.KQ",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=122870",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:17.125829+00:00",
+          "sha256": "4f43af9aea76f8e7f8ed4a5868b2c3e8c83c3edbc9746480c5ee9d5d433a8157",
+          "close": 39250.0,
+          "previousClose": 39800.0,
+          "match": true
+        },
+        {
+          "ticker": "244580.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=244580",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:17.077263+00:00",
+          "sha256": "e790a692e6f700e86984c3413685b6bd7ee58623481edcac13f688670a0716d9",
+          "close": 7360.0,
+          "previousClose": 7465.0,
+          "match": true
+        },
+        {
+          "ticker": "266420.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=266420",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:20.999079+00:00",
+          "sha256": "cf87d06959e47e5887b99e2964df5d651e3ef4bbc3bbe7a422703a10a0c5d58e",
+          "close": 14925.0,
+          "previousClose": 15125.0,
+          "match": true
+        },
+        {
+          "ticker": "266410.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=266410",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:20.880462+00:00",
+          "sha256": "968b81a2fbffc1163698185ecad9f8b2421423ccbc8a26e0862361e63906583a",
+          "close": 8840.0,
+          "previousClose": 8860.0,
+          "match": true
+        },
+        {
+          "ticker": "139260.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=139260",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:20.867670+00:00",
+          "sha256": "15efbda8f7f2fb3bf57ed0951c1d7d314434d3f8765f80b239fff83e5d6e030f",
+          "close": 121645.0,
+          "previousClose": 121865.0,
+          "match": false
+        },
+        {
+          "ticker": "117460.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=117460",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:20.903214+00:00",
+          "sha256": "3be4f3005edc9a2e381eef7334e13e15e6e957d0a547c8229282cc0c7416e5e1",
+          "close": 11545.0,
+          "previousClose": 12055.0,
+          "match": false
+        },
+        {
+          "ticker": "102960.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=102960",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:20.894889+00:00",
+          "sha256": "cd3bb55328f41130339d793afe60c24c8b0b7748eb56e7670dda7b3f9e3c894a",
+          "close": 9835.0,
+          "previousClose": 10485.0,
+          "match": true
+        },
+        {
+          "ticker": "143860.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=143860",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:21.010614+00:00",
+          "sha256": "53d92fd2ddacaf5c235ae8c4d89d39824dcc6bafa48ce49648153759d00022fb",
+          "close": 33010.0,
+          "previousClose": 33175.0,
+          "match": true
+        },
+        {
+          "ticker": "266390.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=266390",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:20.891535+00:00",
+          "sha256": "999fc1abc8cbd2a772dfbf041480c60c13952cd62d91c5ba8a409aece399f23f",
+          "close": 12845.0,
+          "previousClose": 13125.0,
+          "match": true
+        },
+        {
+          "ticker": "157490.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=157490",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:21.036185+00:00",
+          "sha256": "b63480f4d3021e010d382f1d81cdc89537d99fb30fa81ed15ec5838534b4195a",
+          "close": 7290.0,
+          "previousClose": 7520.0,
+          "match": true
+        },
+        {
+          "ticker": "0148J0.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=0148J0",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:20.882841+00:00",
+          "sha256": "9207aea0cb999ff08016ef5045226fb1bcb18a1f3010090ed17bc593661f279a",
+          "close": 8185.0,
+          "previousClose": 8555.0,
+          "match": true
+        },
+        {
+          "ticker": "0177X0.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=0177X0",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:20.887637+00:00",
+          "sha256": "e7fe0586433bb00379d83ec8b727d207a95e1c16e08f4f604f2c21da1972ea10",
+          "close": 8240.0,
+          "previousClose": 8570.0,
+          "match": true
+        },
+        {
+          "ticker": "455860.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=455860",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:24.038148+00:00",
+          "sha256": "4a56fa121746057296bbd70ca8f5909ed9491d074e80b4f5d179c1f3cc981cbc",
+          "close": 3910.0,
+          "previousClose": 4080.0,
+          "match": true
+        },
+        {
+          "ticker": "455850.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=455850",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:23.971112+00:00",
+          "sha256": "302e6f4ccf426375da6f541baddf97b9fbe9cbeb66969747be17b794d5973876",
+          "close": 22935.0,
+          "previousClose": 23745.0,
+          "match": true
+        },
+        {
+          "ticker": "475300.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=475300",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:24.019017+00:00",
+          "sha256": "8ac5d3459288c00bb84a78efd18cff8404afd866bb882236a627242326397249",
+          "close": 19415.0,
+          "previousClose": 20185.0,
+          "match": true
+        },
+        {
+          "ticker": "475310.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=475310",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:24.045090+00:00",
+          "sha256": "3a1e0e8579c066c6b276f67d5e7ca12eb7fdd0fcf8a861973eacfdcfbde1c9f9",
+          "close": 25970.0,
+          "previousClose": 26585.0,
+          "match": true
+        },
+        {
+          "ticker": "449450.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=449450",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:23.972585+00:00",
+          "sha256": "6c13f450dc0b977b86aa21ebea214242a6cba96a8aff550aa952d63c65eed2b7",
+          "close": 35620.0,
+          "previousClose": 36980.0,
+          "match": true
+        },
+        {
+          "ticker": "0207G0.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=0207G0",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:24.040652+00:00",
+          "sha256": "5e8653086b4b47cf04b4f12422ff8b859616b727aa36bddec7a3ca993d198a18",
+          "close": 6770.0,
+          "previousClose": 6740.0,
+          "match": true
+        },
+        {
+          "ticker": "421320.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=421320",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:24.033707+00:00",
+          "sha256": "b8073a7c3128b380c6d890f3d7dc79f0cf7d89800d3aa5f54f4e315abdcf7313",
+          "close": 23085.0,
+          "previousClose": 23180.0,
+          "match": true
+        },
+        {
+          "ticker": "466920.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=466920",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:23.968315+00:00",
+          "sha256": "a1feb553c97ea960b6eaeab1fdbbb48274d98b37bff7a06cdb2216e2e9c85f63",
+          "close": 18280.0,
+          "previousClose": 19135.0,
+          "match": true
+        },
+        {
+          "ticker": "487240.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=487240",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:23.959048+00:00",
+          "sha256": "0e4bd238fa5ffc4f26a44a8062fa5719837d4ac82005cfd2b38d982e68740d63",
+          "close": 25850.0,
+          "previousClose": 27260.0,
+          "match": true
+        },
+        {
+          "ticker": "0222F0.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=0222F0",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:24.132872+00:00",
+          "sha256": "d19c22f3a56c35e2ac68f411960a20d140571192f3458138f6721e80c22a52d4",
+          "close": 10715.0,
+          "previousClose": 11045.0,
+          "match": true
+        },
+        {
+          "ticker": "0091P0.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=0091P0",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:33.693863+00:00",
+          "sha256": "1571eecb582e1d9ebec88927e239c807acf3c8d04beb2b5dea50375ee6f83d98",
+          "close": 12520.0,
+          "previousClose": 13425.0,
+          "match": true
+        },
+        {
+          "ticker": "457990.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=457990",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:34.189189+00:00",
+          "sha256": "5f6d386ded00a3277e40ffbe10a69ac95743dc73974132d3130315c4ba9b332b",
+          "close": 28885.0,
+          "previousClose": 30680.0,
+          "match": true
+        },
+        {
+          "ticker": "0209D0.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=0209D0",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:35.344857+00:00",
+          "sha256": "251c2c12b9745662a9fa374b429613b8493eb8e0a7d7ae2e7c547093e5d781aa",
+          "close": 8155.0,
+          "previousClose": 8515.0,
+          "match": true
+        },
+        {
+          "ticker": "364970.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=364970",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:34.866896+00:00",
+          "sha256": "0afd5577ea2a40b60249feaae329d039ad3370c0b0835470ae43a247aa122230",
+          "close": 6510.0,
+          "previousClose": 6570.0,
+          "match": true
+        },
+        {
+          "ticker": "228800.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=228800",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:34.408497+00:00",
+          "sha256": "1c139d3a06857974dc316de6d39c3f49e3d0551fd68a151131147cca70955386",
+          "close": 2410.0,
+          "previousClose": 2470.0,
+          "match": true
+        },
+        {
+          "ticker": "228810.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=228810",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:34.549265+00:00",
+          "sha256": "b4cd49908fff8f847d9e526bff02bd94e2851e74aa8586279ecf5eec91c753d2",
+          "close": 3040.0,
+          "previousClose": 3100.0,
+          "match": true
+        },
+        {
+          "ticker": "365000.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=365000",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:34.425276+00:00",
+          "sha256": "489b69bfeb7d6c1e096eeddd9c84c700c5568d6f2812a22d3a58695106e0ad2e",
+          "close": 3190.0,
+          "previousClose": 3245.0,
+          "match": true
+        },
+        {
+          "ticker": "364990.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=364990",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:35.003238+00:00",
+          "sha256": "9329511217efc81772b3293ea9a74e2e6396252fabddafcf5636045bb5c8c387",
+          "close": 4220.0,
+          "previousClose": 4240.0,
+          "match": true
+        },
+        {
+          "ticker": "329200.KS",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=329200",
+          "observedAt": "2026.10.29 15:30",
+          "retrievedAt": "2026-10-29T08:37:35.003385+00:00",
+          "sha256": "fce50e189352f9771afee7aa5284a7a411620616019612cda1cf317175f41324",
+          "close": 3940.0,
+          "previousClose": 3960.0,
+          "match": true
+        }
+      ],
+      "note": "동일세션15:30 표시 종가와전일가 대조. 공통상위데이터공급자 가능성을 배제하지 않으며 KRX원장직접인증이 아님."
+    },
+    "chartUniverseCoverage": {
+      "count": 39,
+      "codes": [
+        "091160",
+        "139260",
+        "091180",
+        "091170",
+        "102970",
+        "140700",
+        "117700",
+        "117680",
+        "117460",
+        "102960",
+        "140710",
+        "143860",
+        "266410",
+        "266390",
+        "157490",
+        "0148J0",
+        "0177X0",
+        "305720",
+        "455860",
+        "455850",
+        "475300",
+        "475310",
+        "449450",
+        "0247S0",
+        "0207G0",
+        "421320",
+        "466920",
+        "487240",
+        "0222F0",
+        "0091P0",
+        "457990",
+        "0209D0",
+        "364970",
+        "228790",
+        "228800",
+        "228810",
+        "365000",
+        "364990",
+        "329200"
+      ],
+      "snapshotUpdatedAt": "2026-10-28T09:19:48.909667+00:00",
+      "snapshotAsOf": "2026-10-28",
+      "method": "reuse_published_chart_snapshot_no_collection"
+    },
+    "chartUniverseNote": "국내 업종별/테마별 차트 전체 ETF를 포함합니다. 각 행의 실제 가격 기준일을 확인하세요. 신규 상장으로 비교기간 이력이 부족한 값은 미확인으로 남기며 과거 가격을 만들지 않습니다.",
+    "followUp": {
+      "observedAt": "2026-10-28T09:08:46.229227+00:00",
+      "priceDate": "2026-10-28",
+      "updatedRows": 28,
+      "evidencePath": "data/korea-etf-analysis-followup-20261028.json"
+    },
+    "originalCollectedAt": "2026-10-28T08:35:56.987500+00:00"
+  },
+  "sources": [
+    {
+      "id": "holdings-091160-KS",
+      "title": "KODEX 반도체 구성종목(PDF)",
+      "url": "https://www.funetf.co.kr/product/etf/view/KR7091160002",
+      "note": "FunETF (삼성자산운용 ETF 정보 플랫폼) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+    },
+    {
+      "id": "holdings-091180-KS",
+      "title": "KODEX 자동차 구성종목(PDF)",
+      "url": "https://www.funetf.co.kr/product/etf/view/KR7091180000",
+      "note": "FunETF (삼성자산운용 ETF 정보 플랫폼) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+    },
+    {
+      "id": "holdings-091170-KS",
+      "title": "KODEX 은행 구성종목(PDF)",
+      "url": "https://www.funetf.co.kr/product/etf/view/KR7091170001",
+      "note": "FunETF (삼성자산운용 ETF 정보 플랫폼) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+    },
+    {
+      "id": "holdings-117680-KS",
+      "title": "KODEX 철강 구성종목(PDF)",
+      "url": "https://www.funetf.co.kr/product/etf/view/KR7117680009",
+      "note": "FunETF (삼성자산운용 ETF 정보 플랫폼) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+    },
+    {
+      "id": "holdings-117700-KS",
+      "title": "KODEX 건설 구성종목(PDF)",
+      "url": "https://www.funetf.co.kr/product/etf/view/KR7117700005",
+      "note": "FunETF (삼성자산운용 ETF 정보 플랫폼) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+    },
+    {
+      "id": "holdings-266420-KS",
+      "title": "KODEX 헬스케어 구성종목(PDF)",
+      "url": "https://www.funetf.co.kr/product/etf/view/KR7266420009",
+      "note": "FunETF (삼성자산운용 ETF 정보 플랫폼) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+    },
+    {
+      "id": "holdings-140700-KS",
+      "title": "KODEX 보험 구성종목(PDF)",
+      "url": "https://www.funetf.co.kr/product/etf/view/KR7140700006",
+      "note": "FunETF (삼성자산운용 ETF 정보 플랫폼) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+    },
+    {
+      "id": "holdings-102970-KS",
+      "title": "KODEX 증권 구성종목(PDF)",
+      "url": "https://www.funetf.co.kr/product/etf/view/KR7102970001",
+      "note": "FunETF (삼성자산운용 ETF 정보 플랫폼) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+    },
+    {
+      "id": "holdings-266410-KS",
+      "title": "KODEX 필수소비재 구성종목(PDF)",
+      "url": "https://www.funetf.co.kr/product/etf/view/KR7266410000",
+      "note": "FunETF (삼성자산운용 ETF 정보 플랫폼) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+    },
+    {
+      "id": "holdings-305720-KS",
+      "title": "KODEX 2차전지산업 구성종목(PDF)",
+      "url": "https://www.funetf.co.kr/product/etf/view/KR7305720005",
+      "note": "FunETF (삼성자산운용 ETF 정보 플랫폼) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+    },
+    {
+      "id": "holdings-228790-KS",
+      "title": "TIGER 화장품 구성종목(PDF)",
+      "url": "https://www.funetf.co.kr/product/etf/view/KR7228790002",
+      "note": "FunETF (삼성자산운용 ETF 정보 플랫폼, 운용사 외 자료) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+    },
+    {
+      "id": "holdings-244580-KS",
+      "title": "KODEX 바이오 구성종목(PDF)",
+      "url": "https://www.funetf.co.kr/product/etf/view/KR7244580007",
+      "note": "FunETF (삼성자산운용 ETF 정보 플랫폼) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+    },
+    {
+      "id": "holdings-140710-KS",
+      "title": "KODEX 운송 구성종목(PDF)",
+      "url": "https://www.funetf.co.kr/product/etf/view/KR7140710005",
+      "note": "FunETF (삼성자산운용 ETF 정보 플랫폼) · 실제 보유내역 2026-10-16 기준. 수익률 거래일과 다를 수 있습니다. FunETF 제공 공시 구성종목, 표시 기준일 2026-10-16. 비중은 설정현금 제외·현금성 자산 포함(해당 페이지 산식). 운용사 직접 공시와 분모가 다를 수 있음."
+    },
+    {
+      "id": "sector-membership-naver-theme-30",
+      "title": "NAVER 조선 구성목록",
+      "url": "https://stock.naver.com/api/domestic/market/theme/30/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "endpointUrl": "https://stock.naver.com/api/domestic/market/theme/30/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "retrievedAt": "2026-10-17T14:04:35.852853+00:00",
+      "note": "구성 분류 확인용이며 가격자료로 사용하지 않음. 2026-10-17 조회. 공급사 분류가 기업 사업의 순수 노출을 보증하지 않음."
+    },
+    {
+      "id": "sector-membership-naver-theme-205",
+      "title": "NAVER 원자력발전 구성목록",
+      "url": "https://stock.naver.com/api/domestic/market/theme/205/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "endpointUrl": "https://stock.naver.com/api/domestic/market/theme/205/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "retrievedAt": "2026-10-17T15:22:43.199632+00:00",
+      "note": "구성 분류 확인용이며 가격자료로 사용하지 않음. 2026-10-17 조회. 공급사 분류가 기업 사업의 순수 노출을 보증하지 않음."
+    },
+    {
+      "id": "sector-membership-naver-theme-123",
+      "title": "NAVER 전력설비 구성목록",
+      "url": "https://stock.naver.com/api/domestic/market/theme/123/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "endpointUrl": "https://stock.naver.com/api/domestic/market/theme/123/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "retrievedAt": "2026-10-17T15:22:43.175727+00:00",
+      "note": "구성 분류 확인용이며 가격자료로 사용하지 않음. 2026-10-17 조회. 공급사 분류가 기업 사업의 순수 노출을 보증하지 않음."
+    },
+    {
+      "id": "sector-membership-naver-upjong-282",
+      "title": "NAVER 전자장비와기기 구성목록",
+      "url": "https://stock.naver.com/api/domestic/market/upjong/282/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "endpointUrl": "https://stock.naver.com/api/domestic/market/upjong/282/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "retrievedAt": "2026-10-17T14:04:17.357487+00:00",
+      "note": "구성 분류 확인용이며 가격자료로 사용하지 않음. 2026-10-17 조회. 공급사 분류가 기업 사업의 순수 노출을 보증하지 않음."
+    },
+    {
+      "id": "sector-membership-naver-upjong-307",
+      "title": "NAVER 전자제품 구성목록",
+      "url": "https://stock.naver.com/api/domestic/market/upjong/307/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "endpointUrl": "https://stock.naver.com/api/domestic/market/upjong/307/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "retrievedAt": "2026-10-17T14:04:17.738330+00:00",
+      "note": "구성 분류 확인용이며 가격자료로 사용하지 않음. 2026-10-17 조회. 공급사 분류가 기업 사업의 순수 노출을 보증하지 않음."
+    },
+    {
+      "id": "sector-membership-naver-theme-191",
+      "title": "NAVER 태양광에너지 구성목록",
+      "url": "https://stock.naver.com/api/domestic/market/theme/191/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "endpointUrl": "https://stock.naver.com/api/domestic/market/theme/191/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "retrievedAt": "2026-10-17T15:22:43.063646+00:00",
+      "note": "구성 분류 확인용이며 가격자료로 사용하지 않음. 2026-10-17 조회. 공급사 분류가 기업 사업의 순수 노출을 보증하지 않음."
+    },
+    {
+      "id": "sector-membership-naver-theme-188",
+      "title": "NAVER 풍력에너지 구성목록",
+      "url": "https://stock.naver.com/api/domestic/market/theme/188/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "endpointUrl": "https://stock.naver.com/api/domestic/market/theme/188/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "retrievedAt": "2026-10-17T15:22:43.050671+00:00",
+      "note": "구성 분류 확인용이며 가격자료로 사용하지 않음. 2026-10-17 조회. 공급사 분류가 기업 사업의 순수 노출을 보증하지 않음."
+    },
+    {
+      "id": "sector-membership-naver-theme-407",
+      "title": "NAVER 호텔/리조트 구성목록",
+      "url": "https://stock.naver.com/api/domestic/market/theme/407/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "endpointUrl": "https://stock.naver.com/api/domestic/market/theme/407/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "retrievedAt": "2026-10-17T15:22:47.197064+00:00",
+      "note": "구성 분류 확인용이며 가격자료로 사용하지 않음. 2026-10-17 조회. 공급사 분류가 기업 사업의 순수 노출을 보증하지 않음."
+    },
+    {
+      "id": "sector-membership-naver-theme-47",
+      "title": "NAVER 카지노 구성목록",
+      "url": "https://stock.naver.com/api/domestic/market/theme/47/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "endpointUrl": "https://stock.naver.com/api/domestic/market/theme/47/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "retrievedAt": "2026-10-17T15:22:46.777996+00:00",
+      "note": "구성 분류 확인용이며 가격자료로 사용하지 않음. 2026-10-17 조회. 공급사 분류가 기업 사업의 순수 노출을 보증하지 않음."
+    },
+    {
+      "id": "sector-membership-naver-theme-318",
+      "title": "NAVER 백화점 구성목록",
+      "url": "https://stock.naver.com/api/domestic/market/theme/318/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "endpointUrl": "https://stock.naver.com/api/domestic/market/theme/318/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "retrievedAt": "2026-10-17T15:22:46.945675+00:00",
+      "note": "구성 분류 확인용이며 가격자료로 사용하지 않음. 2026-10-17 조회. 공급사 분류가 기업 사업의 순수 노출을 보증하지 않음."
+    },
+    {
+      "id": "sector-membership-naver-theme-128",
+      "title": "NAVER 엔터테인먼트 구성목록",
+      "url": "https://stock.naver.com/api/domestic/market/theme/128/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "endpointUrl": "https://stock.naver.com/api/domestic/market/theme/128/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "retrievedAt": "2026-10-17T14:04:30.885174+00:00",
+      "note": "구성 분류 확인용이며 가격자료로 사용하지 않음. 2026-10-17 조회. 공급사 분류가 기업 사업의 순수 노출을 보증하지 않음."
+    },
+    {
+      "id": "sector-membership-naver-theme-200",
+      "title": "NAVER 우주항공산업(누리호/인공위성 등) 구성목록",
+      "url": "https://stock.naver.com/api/domestic/market/theme/200/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "endpointUrl": "https://stock.naver.com/api/domestic/market/theme/200/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "retrievedAt": "2026-10-17T14:04:30.933455+00:00",
+      "note": "구성 분류 확인용이며 가격자료로 사용하지 않음. 2026-10-17 조회. 공급사 분류가 기업 사업의 순수 노출을 보증하지 않음."
+    },
+    {
+      "id": "sector-membership-naver-theme-505",
+      "title": "NAVER 로봇(산업용/협동로봇 등) 구성목록",
+      "url": "https://stock.naver.com/api/domestic/market/theme/505/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "endpointUrl": "https://stock.naver.com/api/domestic/market/theme/505/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "retrievedAt": "2026-10-17T14:04:30.938831+00:00",
+      "note": "구성 분류 확인용이며 가격자료로 사용하지 않음. 2026-10-17 조회. 공급사 분류가 기업 사업의 순수 노출을 보증하지 않음."
+    },
+    {
+      "id": "sector-membership-naver-theme-144",
+      "title": "NAVER 방위산업/전쟁 및 테러 구성목록",
+      "url": "https://stock.naver.com/api/domestic/market/theme/144/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "endpointUrl": "https://stock.naver.com/api/domestic/market/theme/144/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "retrievedAt": "2026-10-17T14:04:30.929081+00:00",
+      "note": "구성 분류 확인용이며 가격자료로 사용하지 않음. 2026-10-17 조회. 공급사 분류가 기업 사업의 순수 노출을 보증하지 않음."
+    },
+    {
+      "id": "sector-membership-naver-theme-49",
+      "title": "NAVER 인터넷 대표주 구성목록",
+      "url": "https://stock.naver.com/api/domestic/market/theme/49/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "endpointUrl": "https://stock.naver.com/api/domestic/market/theme/49/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "retrievedAt": "2026-10-17T15:22:47.050486+00:00",
+      "note": "구성 분류 확인용이며 가격자료로 사용하지 않음. 2026-10-17 조회. 공급사 분류가 기업 사업의 순수 노출을 보증하지 않음."
+    },
+    {
+      "id": "sector-membership-naver-upjong-267",
+      "title": "NAVER IT서비스 구성목록",
+      "url": "https://stock.naver.com/api/domestic/market/upjong/267/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "endpointUrl": "https://stock.naver.com/api/domestic/market/upjong/267/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "retrievedAt": "2026-10-17T15:22:58.519583+00:00",
+      "note": "구성 분류 확인용이며 가격자료로 사용하지 않음. 2026-10-17 조회. 공급사 분류가 기업 사업의 순수 노출을 보증하지 않음."
+    },
+    {
+      "id": "sector-membership-naver-theme-17",
+      "title": "NAVER SI(시스템통합) 구성목록",
+      "url": "https://stock.naver.com/api/domestic/market/theme/17/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "endpointUrl": "https://stock.naver.com/api/domestic/market/theme/17/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "retrievedAt": "2026-10-17T15:22:51.049364+00:00",
+      "note": "구성 분류 확인용이며 가격자료로 사용하지 않음. 2026-10-17 조회. 공급사 분류가 기업 사업의 순수 노출을 보증하지 않음."
+    },
+    {
+      "id": "sector-membership-naver-upjong-287",
+      "title": "NAVER 소프트웨어 구성목록",
+      "url": "https://stock.naver.com/api/domestic/market/upjong/287/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "endpointUrl": "https://stock.naver.com/api/domestic/market/upjong/287/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "retrievedAt": "2026-10-17T15:22:51.155617+00:00",
+      "note": "구성 분류 확인용이며 가격자료로 사용하지 않음. 2026-10-17 조회. 공급사 분류가 기업 사업의 순수 노출을 보증하지 않음."
+    },
+    {
+      "id": "sector-membership-naver-theme-126",
+      "title": "NAVER 통신 구성목록",
+      "url": "https://stock.naver.com/api/domestic/market/theme/126/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "endpointUrl": "https://stock.naver.com/api/domestic/market/theme/126/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "retrievedAt": "2026-10-17T15:22:50.734567+00:00",
+      "note": "구성 분류 확인용이며 가격자료로 사용하지 않음. 2026-10-17 조회. 공급사 분류가 기업 사업의 순수 노출을 보증하지 않음."
+    },
+    {
+      "id": "sector-membership-naver-theme-185",
+      "title": "NAVER 정유 구성목록",
+      "url": "https://stock.naver.com/api/domestic/market/theme/185/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "endpointUrl": "https://stock.naver.com/api/domestic/market/theme/185/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "retrievedAt": "2026-10-17T14:04:17.152339+00:00",
+      "note": "구성 분류 확인용이며 가격자료로 사용하지 않음. 2026-10-17 조회. 공급사 분류가 기업 사업의 순수 노출을 보증하지 않음."
+    },
+    {
+      "id": "sector-membership-naver-theme-180",
+      "title": "NAVER 석유화학 구성목록",
+      "url": "https://stock.naver.com/api/domestic/market/theme/180/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "endpointUrl": "https://stock.naver.com/api/domestic/market/theme/180/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "retrievedAt": "2026-10-17T14:04:44.461338+00:00",
+      "note": "구성 분류 확인용이며 가격자료로 사용하지 않음. 2026-10-17 조회. 공급사 분류가 기업 사업의 순수 노출을 보증하지 않음."
+    },
+    {
+      "id": "sector-membership-naver-upjong-272",
+      "title": "NAVER 화학 구성목록",
+      "url": "https://stock.naver.com/api/domestic/market/upjong/272/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "endpointUrl": "https://stock.naver.com/api/domestic/market/upjong/272/stocklist?sortType=tradingVolume&sortDirection=desc&size=100",
+      "retrievedAt": "2026-10-17T14:04:21.428679+00:00",
+      "note": "구성 분류 확인용이며 가격자료로 사용하지 않음. 2026-10-17 조회. 공급사 분류가 기업 사업의 순수 노출을 보증하지 않음."
+    },
+    {
+      "id": "sector-price-091180.KS-20261028",
+      "title": "자동차 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=091180&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-28T08:35:07.023549+00:00",
+      "asOf": "2026-10-28",
+      "note": "10/28·10/27·10/21·9/28 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-117680.KS-20261028",
+      "title": "철강 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=117680&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-28T08:35:17.510349+00:00",
+      "asOf": "2026-10-28",
+      "note": "10/28·10/27·10/21·9/28 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "kr-chart-holdings-139260",
+      "title": "TIGER 200 IT 실제 편입비중",
+      "url": "https://stock.naver.com/api/domestic/detail/139260/ETFComponent",
+      "note": "기존 ETF 차트 검증 자료 재사용. 구성 기준일 2026-10-28; 실제 확인 2026-10-28T09:20:01.807862+00:00"
+    },
+    {
+      "id": "kr-chart-holdings-091180",
+      "title": "KODEX 자동차 실제 편입비중",
+      "url": "https://stock.naver.com/api/domestic/detail/091180/ETFComponent",
+      "note": "기존 ETF 차트 검증 자료 재사용. 구성 기준일 2026-10-28; 실제 확인 2026-10-28T09:20:01.807862+00:00"
+    },
+    {
+      "id": "kr-chart-holdings-117680",
+      "title": "KODEX 철강 실제 편입비중",
+      "url": "https://stock.naver.com/api/domestic/detail/117680/ETFComponent",
+      "note": "기존 ETF 차트 검증 자료 재사용. 구성 기준일 2026-10-28; 실제 확인 2026-10-28T09:20:01.807862+00:00"
+    },
+    {
+      "id": "kr-chart-holdings-117460",
+      "title": "KODEX 에너지화학 실제 편입비중",
+      "url": "https://stock.naver.com/api/domestic/detail/117460/ETFComponent",
+      "note": "기존 ETF 차트 검증 자료 재사용. 구성 기준일 2026-10-28; 실제 확인 2026-10-28T09:20:01.807862+00:00"
+    },
+    {
+      "id": "kr-chart-holdings-102960",
+      "title": "KODEX 기계장비 실제 편입비중",
+      "url": "https://stock.naver.com/api/domestic/detail/102960/ETFComponent",
+      "note": "기존 ETF 차트 검증 자료 재사용. 구성 기준일 2026-10-28; 실제 확인 2026-10-28T09:20:01.807862+00:00"
+    },
+    {
+      "id": "kr-chart-holdings-143860",
+      "title": "TIGER 헬스케어 실제 편입비중",
+      "url": "https://stock.naver.com/api/domestic/detail/143860/ETFComponent",
+      "note": "기존 ETF 차트 검증 자료 재사용. 구성 기준일 2026-10-28; 실제 확인 2026-10-28T09:20:01.807862+00:00"
+    },
+    {
+      "id": "kr-chart-holdings-266390",
+      "title": "KODEX 경기소비재 실제 편입비중",
+      "url": "https://stock.naver.com/api/domestic/detail/266390/ETFComponent",
+      "note": "기존 ETF 차트 검증 자료 재사용. 구성 기준일 2026-10-28; 실제 확인 2026-10-28T09:20:01.807862+00:00"
+    },
+    {
+      "id": "kr-chart-holdings-157490",
+      "title": "TIGER 소프트웨어 실제 편입비중",
+      "url": "https://stock.naver.com/api/domestic/detail/157490/ETFComponent",
+      "note": "기존 ETF 차트 검증 자료 재사용. 구성 기준일 2026-10-28; 실제 확인 2026-10-28T09:20:01.807862+00:00"
+    },
+    {
+      "id": "kr-chart-holdings-0148J0",
+      "title": "TIGER 코리아휴머노이드로봇산업 실제 편입비중",
+      "url": "https://stock.naver.com/api/domestic/detail/0148J0/ETFComponent",
+      "note": "기존 ETF 차트 검증 자료 재사용. 구성 기준일 2026-10-28; 실제 확인 2026-10-28T09:20:01.807862+00:00"
+    },
+    {
+      "id": "kr-chart-holdings-0177X0",
+      "title": "ACE K휴머노이드로봇산업TOP2+ 실제 편입비중",
+      "url": "https://stock.naver.com/api/domestic/detail/0177X0/ETFComponent",
+      "note": "기존 ETF 차트 검증 자료 재사용. 구성 기준일 2026-10-28; 실제 확인 2026-10-28T09:20:01.807862+00:00"
+    },
+    {
+      "id": "kr-chart-holdings-455860",
+      "title": "SOL 2차전지소부장Fn 실제 편입비중",
+      "url": "https://stock.naver.com/api/domestic/detail/455860/ETFComponent",
+      "note": "기존 ETF 차트 검증 자료 재사용. 구성 기준일 2026-10-28; 실제 확인 2026-10-28T09:20:01.807862+00:00"
+    },
+    {
+      "id": "kr-chart-holdings-455850",
+      "title": "SOL AI반도체소부장 실제 편입비중",
+      "url": "https://stock.naver.com/api/domestic/detail/455850/ETFComponent",
+      "note": "기존 ETF 차트 검증 자료 재사용. 구성 기준일 2026-10-28; 실제 확인 2026-10-28T09:20:01.807862+00:00"
+    },
+    {
+      "id": "kr-chart-holdings-475300",
+      "title": "SOL 반도체전공정 실제 편입비중",
+      "url": "https://stock.naver.com/api/domestic/detail/475300/ETFComponent",
+      "note": "기존 ETF 차트 검증 자료 재사용. 구성 기준일 2026-10-28; 실제 확인 2026-10-28T09:20:01.807862+00:00"
+    },
+    {
+      "id": "kr-chart-holdings-475310",
+      "title": "SOL 반도체후공정 실제 편입비중",
+      "url": "https://stock.naver.com/api/domestic/detail/475310/ETFComponent",
+      "note": "기존 ETF 차트 검증 자료 재사용. 구성 기준일 2026-10-28; 실제 확인 2026-10-28T09:20:01.807862+00:00"
+    },
+    {
+      "id": "kr-chart-holdings-449450",
+      "title": "PLUS K방산 실제 편입비중",
+      "url": "https://stock.naver.com/api/domestic/detail/449450/ETFComponent",
+      "note": "기존 ETF 차트 검증 자료 재사용. 구성 기준일 2026-10-28; 실제 확인 2026-10-28T09:20:01.807862+00:00"
+    },
+    {
+      "id": "kr-chart-holdings-0247S0",
+      "title": "KIWOOM 글로벌MLCC&AI기판TOP4+ 실제 편입비중",
+      "url": "https://stock.naver.com/api/domestic/detail/0247S0/ETFComponent",
+      "note": "기존 ETF 차트 검증 자료 재사용. 구성 기준일 2026-10-28; 실제 확인 2026-10-28T09:20:01.807862+00:00"
+    },
+    {
+      "id": "kr-chart-holdings-0207G0",
+      "title": "SOL 우주항공밸류체인 실제 편입비중",
+      "url": "https://stock.naver.com/api/domestic/detail/0207G0/ETFComponent",
+      "note": "기존 ETF 차트 검증 자료 재사용. 구성 기준일 2026-10-28; 실제 확인 2026-10-28T09:20:01.807862+00:00"
+    },
+    {
+      "id": "kr-chart-holdings-421320",
+      "title": "PLUS 우주항공 실제 편입비중",
+      "url": "https://stock.naver.com/api/domestic/detail/421320/ETFComponent",
+      "note": "기존 ETF 차트 검증 자료 재사용. 구성 기준일 2026-10-28; 실제 확인 2026-10-28T09:20:01.807862+00:00"
+    },
+    {
+      "id": "kr-chart-holdings-466920",
+      "title": "SOL 조선TOP3플러스 실제 편입비중",
+      "url": "https://stock.naver.com/api/domestic/detail/466920/ETFComponent",
+      "note": "기존 ETF 차트 검증 자료 재사용. 구성 기준일 2026-10-28; 실제 확인 2026-10-28T09:20:01.807862+00:00"
+    },
+    {
+      "id": "kr-chart-holdings-487240",
+      "title": "KODEX AI전력핵심설비 실제 편입비중",
+      "url": "https://stock.naver.com/api/domestic/detail/487240/ETFComponent",
+      "note": "기존 ETF 차트 검증 자료 재사용. 구성 기준일 2026-10-28; 실제 확인 2026-10-28T09:20:01.807862+00:00"
+    },
+    {
+      "id": "kr-chart-holdings-0222F0",
+      "title": "마이티 AI데이터센터밸류체인 실제 편입비중",
+      "url": "https://stock.naver.com/api/domestic/detail/0222F0/ETFComponent",
+      "note": "기존 ETF 차트 검증 자료 재사용. 구성 기준일 2026-10-28; 실제 확인 2026-10-28T09:20:01.807862+00:00"
+    },
+    {
+      "id": "kr-chart-holdings-0091P0",
+      "title": "TIGER 코리아원자력 실제 편입비중",
+      "url": "https://stock.naver.com/api/domestic/detail/0091P0/ETFComponent",
+      "note": "기존 ETF 차트 검증 자료 재사용. 구성 기준일 2026-10-28; 실제 확인 2026-10-28T09:20:01.807862+00:00"
+    },
+    {
+      "id": "kr-chart-holdings-457990",
+      "title": "PLUS 태양광&ESS 실제 편입비중",
+      "url": "https://stock.naver.com/api/domestic/detail/457990/ETFComponent",
+      "note": "기존 ETF 차트 검증 자료 재사용. 구성 기준일 2026-10-28; 실제 확인 2026-10-28T09:20:01.807862+00:00"
+    },
+    {
+      "id": "kr-chart-holdings-0209D0",
+      "title": "KODEX 전고체배터리ESS TOP2플러스 실제 편입비중",
+      "url": "https://stock.naver.com/api/domestic/detail/0209D0/ETFComponent",
+      "note": "기존 ETF 차트 검증 자료 재사용. 구성 기준일 2026-10-28; 실제 확인 2026-10-28T09:20:01.807862+00:00"
+    },
+    {
+      "id": "kr-chart-holdings-364970",
+      "title": "TIGER 바이오TOP10 실제 편입비중",
+      "url": "https://stock.naver.com/api/domestic/detail/364970/ETFComponent",
+      "note": "기존 ETF 차트 검증 자료 재사용. 구성 기준일 2026-10-28; 실제 확인 2026-10-28T09:20:01.807862+00:00"
+    },
+    {
+      "id": "kr-chart-holdings-228800",
+      "title": "TIGER 여행레저 실제 편입비중",
+      "url": "https://stock.naver.com/api/domestic/detail/228800/ETFComponent",
+      "note": "기존 ETF 차트 검증 자료 재사용. 구성 기준일 2026-10-28; 실제 확인 2026-10-28T09:20:01.807862+00:00"
+    },
+    {
+      "id": "kr-chart-holdings-228810",
+      "title": "TIGER 미디어컨텐츠 실제 편입비중",
+      "url": "https://stock.naver.com/api/domestic/detail/228810/ETFComponent",
+      "note": "기존 ETF 차트 검증 자료 재사용. 구성 기준일 2026-10-28; 실제 확인 2026-10-28T09:20:01.807862+00:00"
+    },
+    {
+      "id": "kr-chart-holdings-365000",
+      "title": "TIGER 인터넷TOP10 실제 편입비중",
+      "url": "https://stock.naver.com/api/domestic/detail/365000/ETFComponent",
+      "note": "기존 ETF 차트 검증 자료 재사용. 구성 기준일 2026-10-28; 실제 확인 2026-10-28T09:20:01.807862+00:00"
+    },
+    {
+      "id": "kr-chart-holdings-364990",
+      "title": "TIGER 게임TOP10 실제 편입비중",
+      "url": "https://stock.naver.com/api/domestic/detail/364990/ETFComponent",
+      "note": "기존 ETF 차트 검증 자료 재사용. 구성 기준일 2026-10-28; 실제 확인 2026-10-28T09:20:01.807862+00:00"
+    },
+    {
+      "id": "kr-chart-holdings-329200",
+      "title": "TIGER 리츠부동산인프라 실제 편입비중",
+      "url": "https://stock.naver.com/api/domestic/detail/329200/ETFComponent",
+      "note": "기존 ETF 차트 검증 자료 재사용. 구성 기준일 2026-10-28; 실제 확인 2026-10-28T09:20:01.807862+00:00"
+    },
+    {
+      "id": "sector-price-139260.KS-20261028",
+      "title": "TIGER 200 IT · NAVER 실제 날짜 일봉",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=139260&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-28T09:05:23.476644+00:00",
+      "asOf": "2026-10-28",
+      "note": "10/28 종가와10/27·10/21·9/28 비교. 신규상장 전 월간 경계는 미확인으로 보존."
+    },
+    {
+      "id": "sector-price-117460.KS-20261028",
+      "title": "KODEX 에너지화학 · NAVER 실제 날짜 일봉",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=117460&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-28T09:05:23.494410+00:00",
+      "asOf": "2026-10-28",
+      "note": "10/28 종가와10/27·10/21·9/28 비교. 신규상장 전 월간 경계는 미확인으로 보존."
+    },
+    {
+      "id": "kr-etf-266390-closed-20261028",
+      "title": "KODEX 경기소비재 · 종료 상태 및 마지막 체결 구분",
+      "url": "https://m.stock.naver.com/api/stock/266390/basic",
+      "retrievedAt": "2026-10-28T09:06:06.589016+00:00",
+      "asOf": "2026-10-28",
+      "note": "장 종료 상태의 10/28 일봉 종가와 제공된 마지막 체결15:13의 가격·전일가가 일치합니다. 15:30 체결 관측이나 전체 체결이력 검증을 주장하지 않습니다. NAVER localTradedAt 2026-10-28T15:13:49+09:00; MBN https://mbnmoney.mbn.co.kr/stock/item?code=266390"
+    },
+    {
+      "id": "sector-price-091160.KS-20261029",
+      "title": "반도체 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=091160&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:06.840842+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-009150.KS-20261029",
+      "title": "전기전자 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/009150.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:05.910569+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-011070.KS-20261029",
+      "title": "전기전자 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/011070.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:05.791700+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-353200.KS-20261029",
+      "title": "전기전자 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/353200.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:05.840889+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-066570.KS-20261029",
+      "title": "전기전자 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/066570.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:05.845566+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-053800.KQ-20261029",
+      "title": "소프트웨어 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/053800.KQ?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:05.807288+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-030520.KQ-20261029",
+      "title": "소프트웨어 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/030520.KQ?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:05.844519+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-058970.KQ-20261029",
+      "title": "소프트웨어 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/058970.KQ?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:05.834047+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-018260.KS-20261029",
+      "title": "IT서비스 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/018260.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:05.800107+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-307950.KS-20261029",
+      "title": "IT서비스 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/307950.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:05.835201+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-064400.KS-20261029",
+      "title": "IT서비스 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/064400.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:09.623990+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-035420.KS-20261029",
+      "title": "인터넷 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/035420.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:09.652488+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-035720.KS-20261029",
+      "title": "인터넷 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/035720.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:09.651465+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-017670.KS-20261029",
+      "title": "통신 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/017670.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:09.643850+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-030200.KS-20261029",
+      "title": "통신 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/030200.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:09.605589+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-032640.KS-20261029",
+      "title": "통신 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/032640.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:09.639101+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-305720.KS-20261029",
+      "title": "2차전지 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=305720&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:10.783068+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-329180.KS-20261029",
+      "title": "조선 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/329180.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:09.640176+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-042660.KS-20261029",
+      "title": "조선 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/042660.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:09.643527+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-009540.KS-20261029",
+      "title": "조선 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/009540.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:13.566415+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-010140.KS-20261029",
+      "title": "조선 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/010140.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:13.582349+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-034020.KS-20261029",
+      "title": "원자력 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/034020.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:13.550280+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-052690.KS-20261029",
+      "title": "원자력 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/052690.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:13.542781+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-051600.KS-20261029",
+      "title": "원자력 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/051600.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:13.541983+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-267260.KS-20261029",
+      "title": "전력설비 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/267260.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:13.541274+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-298040.KS-20261029",
+      "title": "전력설비 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/298040.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:13.477577+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-010120.KS-20261029",
+      "title": "전력설비 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/010120.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:13.543398+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-009830.KS-20261029",
+      "title": "태양광 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/009830.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:13.540612+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-010060.KS-20261029",
+      "title": "태양광 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/010060.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:13.497139+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-322000.KS-20261029",
+      "title": "태양광 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/322000.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:17.843500+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-112610.KS-20261029",
+      "title": "풍력 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/112610.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:17.856217+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-100090.KS-20261029",
+      "title": "풍력 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/100090.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:17.858889+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-100130.KQ-20261029",
+      "title": "풍력 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/100130.KQ?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:17.858185+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-277810.KQ-20261029",
+      "title": "로봇 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/277810.KQ?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:17.835994+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-454910.KS-20261029",
+      "title": "로봇 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/454910.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:17.751895+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-108490.KQ-20261029",
+      "title": "로봇 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/108490.KQ?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:17.749018+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-012450.KS-20261029",
+      "title": "방산 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/012450.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:17.853195+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-047810.KS-20261029",
+      "title": "우주 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/047810.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:17.838006+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-099320.KQ-20261029",
+      "title": "우주 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/099320.KQ?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:17.838229+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-064350.KS-20261029",
+      "title": "방산 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/064350.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:21.241238+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-079550.KS-20261029",
+      "title": "방산 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/079550.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:21.194930+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-091170.KS-20261029",
+      "title": "은행 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=091170&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:23.129949+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-102970.KS-20261029",
+      "title": "증권 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=102970&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:22.992712+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-140700.KS-20261029",
+      "title": "보험 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=140700&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:23.175237+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-010950.KS-20261029",
+      "title": "정유 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/010950.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:21.220061+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-096770.KS-20261029",
+      "title": "정유 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/096770.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:21.201075+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-078930.KS-20261029",
+      "title": "정유 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/078930.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:21.221665+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-051910.KS-20261029",
+      "title": "화학 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/051910.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:21.164491+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-011170.KS-20261029",
+      "title": "화학 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/011170.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:21.218394+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-011780.KS-20261029",
+      "title": "화학 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/011780.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:23.718871+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-117700.KS-20261029",
+      "title": "건설 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=117700&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:22.989432+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-140710.KS-20261029",
+      "title": "운송 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=140710&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:23.193262+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-008770.KS-20261029",
+      "title": "호텔·리조트 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/008770.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:23.775705+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-025980.KQ-20261029",
+      "title": "호텔·리조트 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/025980.KQ?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:23.759528+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-070960.KS-20261029",
+      "title": "호텔·리조트 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/070960.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:23.763128+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-035250.KS-20261029",
+      "title": "카지노 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/035250.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:23.774983+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-034230.KS-20261029",
+      "title": "카지노 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/034230.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:23.764728+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-114090.KS-20261029",
+      "title": "카지노 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/114090.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:23.774100+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-032350.KS-20261029",
+      "title": "카지노 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/032350.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:23.709657+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-004170.KS-20261029",
+      "title": "백화점 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/004170.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:23.770599+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-069960.KS-20261029",
+      "title": "백화점 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/069960.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:23.780034+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-023530.KS-20261029",
+      "title": "백화점 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/023530.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:31.511449+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-228790.KS-20261029",
+      "title": "화장품 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=228790&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:28.429877+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-352820.KS-20261029",
+      "title": "엔터 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/352820.KS?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:31.495622+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-041510.KQ-20261029",
+      "title": "엔터 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/041510.KQ?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:31.472875+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-035900.KQ-20261029",
+      "title": "엔터 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/035900.KQ?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:31.502178+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-122870.KQ-20261029",
+      "title": "엔터 · Yahoo Finance 일봉 조정종가",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/122870.KQ?period1=1789862400&period2=1793318400&interval=1d",
+      "retrievedAt": "2026-10-29T08:36:31.565781+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-244580.KS-20261029",
+      "title": "바이오 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=244580&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:28.445204+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-266420.KS-20261029",
+      "title": "헬스케어 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=266420&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:28.630233+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-266410.KS-20261029",
+      "title": "필수소비재 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=266410&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:28.629979+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-102960.KS-20261029",
+      "title": "기계·장비 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=102960&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:33.765470+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-143860.KS-20261029",
+      "title": "헬스케어 · TIGER 헬스케어 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=143860&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:33.924139+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-266390.KS-20261029",
+      "title": "경기소비재 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=266390&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:33.813397+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-157490.KS-20261029",
+      "title": "소프트웨어 · TIGER 소프트웨어 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=157490&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:33.900987+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-0148J0.KS-20261029",
+      "title": "로봇 · TIGER 코리아휴머노이드로봇산업 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=0148J0&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:33.737582+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-0177X0.KS-20261029",
+      "title": "로봇 TOP2+ · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=0177X0&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:33.924979+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-455860.KS-20261029",
+      "title": "2차전지 소부장 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=455860&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:33.898488+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-455850.KS-20261029",
+      "title": "반도체 소부장 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=455850&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:33.969033+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-475300.KS-20261029",
+      "title": "반도체 전공정 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=475300&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:33.738039+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-475310.KS-20261029",
+      "title": "반도체 후공정 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=475310&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:37.355179+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-449450.KS-20261029",
+      "title": "방산 · PLUS K방산 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=449450&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:37.354456+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-0207G0.KS-20261029",
+      "title": "우주 · SOL 우주항공밸류체인 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=0207G0&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:37.285345+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-421320.KS-20261029",
+      "title": "우주항공 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=421320&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:37.530541+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-466920.KS-20261029",
+      "title": "조선 · SOL 조선TOP3플러스 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=466920&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:37.278492+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-487240.KS-20261029",
+      "title": "AI전력 설비 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=487240&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:37.536897+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-0222F0.KS-20261029",
+      "title": "데이터센터 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=0222F0&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:37.466899+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-0091P0.KS-20261029",
+      "title": "원자력 · TIGER 코리아원자력 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=0091P0&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:37.515342+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-457990.KS-20261029",
+      "title": "태양광·신재생 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=457990&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:37.515113+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-0209D0.KS-20261029",
+      "title": "ESS·전고체 배터리 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=0209D0&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:40.237866+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-364970.KS-20261029",
+      "title": "바이오 · TIGER 바이오TOP10 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=364970&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:40.115929+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-228800.KS-20261029",
+      "title": "여행·레저 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=228800&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:40.327516+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-228810.KS-20261029",
+      "title": "미디어·콘텐츠 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=228810&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:40.073811+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-365000.KS-20261029",
+      "title": "인터넷 · TIGER 인터넷TOP10 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=365000&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:40.293187+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-364990.KS-20261029",
+      "title": "게임 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=364990&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:40.293043+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-329200.KS-20261029",
+      "title": "리츠·인프라 · NAVER ETF 일별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=329200&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:40.286463+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/29·10/28·10/22·9/29 동일 공급사 일봉 경계. 실시간/시간외 현재가를 사용하지 않음. 원천 조정정책 독립 인증하지 않음."
+    },
+    {
+      "id": "sector-price-0247S0.KS-20261029",
+      "title": "MLCC·AI기판(글로벌) NAVER 날짜별 종가",
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=0247S0&timeframe=day&count=400&requestType=0",
+      "retrievedAt": "2026-10-29T08:36:37.472258+00:00",
+      "asOf": "2026-10-29",
+      "note": "10/13 상장 이후 실제 일봉. 1개월 전 가격 없음; 임의 보간하지 않음."
+    },
+    {
+      "id": "sector-raw-close-091180-20261029",
+      "name": "NAVER 091180 실제 일별 종가 · Yahoo raw close 교차확인",
+      "url": "https://m.stock.naver.com/api/stock/091180/price?page=1&pageSize=60",
+      "asOf": "2026-10-29",
+      "retrievedAt": "2026-10-29T14:53:31.086584+00:00",
+      "note": "날짜별 closePrice 사용. 공급자 표시 등락률의 분배락 기준가격과 구분; 분배금 재투자 및 과거가격 소급조정 제외. Sep29/Oct22/Oct28/Oct29 네 경계종가를 Yahoo quote.close와 일치 확인.",
+      "title": "NAVER 091180 실제 일별 종가 · Yahoo raw close 교차확인"
+    },
+    {
+      "id": "sector-raw-close-117680-20261029",
+      "name": "NAVER 117680 실제 일별 종가 · Yahoo raw close 교차확인",
+      "url": "https://m.stock.naver.com/api/stock/117680/price?page=1&pageSize=60",
+      "asOf": "2026-10-29",
+      "retrievedAt": "2026-10-29T14:53:31.167212+00:00",
+      "note": "날짜별 closePrice 사용. 공급자 표시 등락률의 분배락 기준가격과 구분; 분배금 재투자 및 과거가격 소급조정 제외. Sep29/Oct22/Oct28/Oct29 네 경계종가를 Yahoo quote.close와 일치 확인.",
+      "title": "NAVER 117680 실제 일별 종가 · Yahoo raw close 교차확인"
+    },
+    {
+      "id": "sector-raw-close-139260-20261029",
+      "name": "NAVER 139260 실제 일별 종가 · Yahoo raw close 교차확인",
+      "url": "https://m.stock.naver.com/api/stock/139260/price?page=1&pageSize=60",
+      "asOf": "2026-10-29",
+      "retrievedAt": "2026-10-29T14:53:31.254373+00:00",
+      "note": "날짜별 closePrice 사용. 공급자 표시 등락률의 분배락 기준가격과 구분; 분배금 재투자 및 과거가격 소급조정 제외. Sep29/Oct22/Oct28/Oct29 네 경계종가를 Yahoo quote.close와 일치 확인.",
+      "title": "NAVER 139260 실제 일별 종가 · Yahoo raw close 교차확인"
+    },
+    {
+      "id": "sector-raw-close-117460-20261029",
+      "name": "NAVER 117460 실제 일별 종가 · Yahoo raw close 교차확인",
+      "url": "https://m.stock.naver.com/api/stock/117460/price?page=1&pageSize=60",
+      "asOf": "2026-10-29",
+      "retrievedAt": "2026-10-29T14:53:31.218727+00:00",
+      "note": "날짜별 closePrice 사용. 공급자 표시 등락률의 분배락 기준가격과 구분; 분배금 재투자 및 과거가격 소급조정 제외. Sep29/Oct22/Oct28/Oct29 네 경계종가를 Yahoo quote.close와 일치 확인.",
+      "title": "NAVER 117460 실제 일별 종가 · Yahoo raw close 교차확인"
+    }
+  ]
+}
