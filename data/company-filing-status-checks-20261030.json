@@ -1,0 +1,62 @@
+{
+  "checkedAt": "2026-10-30T22:05:10.698292+00:00",
+  "scope": "Targeted missing-quarter review only, not whole247company exhaustive audit. Published company quarters are supplemented separately; future reporting dates do not certify current estimates.",
+  "futureOfficialReleases": [
+    {
+      "ticker": "VIAV",
+      "scheduledReleaseDate": "2026-11-04",
+      "url": "https://investor.viavisolutions.com/news-events/news-releases/news-details/2026/VIAVI-Announces-Date-for-Fiscal-First-Quarter-2027-Financial-Results/default.aspx",
+      "state": "not yet released on official current notice"
+    },
+    {
+      "ticker": "AEHR",
+      "scheduledReleaseDate": "2026-11-02",
+      "url": "https://www.aehr.com/investor-relations/",
+      "state": "not yet released on official current notice"
+    },
+    {
+      "ticker": "FISV",
+      "scheduledReleaseDate": "2026-11-03",
+      "url": "https://fiserv.gcs-web.com/news-releases/news-release-details/fiserv-release-third-quarter-earnings-results-november-3-2026",
+      "state": "not yet released on official current notice"
+    },
+    {
+      "ticker": "TEAM",
+      "scheduledReleaseDate": "2026-11-05",
+      "url": "https://investors.atlassian.com/news/news-details/2026/Atlassian-Announces-Date-for-First-Quarter-of-Fiscal-Year-2027-Financial-Results/default.aspx",
+      "state": "not yet released on official current notice"
+    },
+    {
+      "ticker": "AVT",
+      "scheduledReleaseDate": "2026-11-04",
+      "url": "https://ir.avnet.com/news-releases/news-release-details/avnet-report-first-quarter-fiscal-year-2027-earnings-november-4",
+      "state": "not yet released on official current notice"
+    },
+    {
+      "ticker": "BKNG",
+      "scheduledReleaseDate": "2026-11-03",
+      "url": "https://www.bookingholdings.com/press-releases/booking-holdings-to-webcast-third-quarter-2026-financial-results-on-november-3/",
+      "state": "not yet released on official current notice"
+    },
+    {
+      "ticker": "AEIS",
+      "scheduledReleaseDate": "2026-11-02",
+      "url": "https://ir.advanced-energy.com/",
+      "state": "not yet released on official current notice"
+    },
+    {
+      "ticker": "ONTO",
+      "scheduledReleaseDate": "2026-11-09",
+      "url": "https://investors.ontoinnovation.com/news/2026/",
+      "state": "not yet released on official current notice"
+    }
+  ],
+  "newQuarterBackfills": [
+    "UCTT",
+    "RBLX"
+  ],
+  "historicalCorrection": [
+    "VIAV"
+  ],
+  "backfill": "financial_backfill_zlatest_20261030_us_extra.json"
+}

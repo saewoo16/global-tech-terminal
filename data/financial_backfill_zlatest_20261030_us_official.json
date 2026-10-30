@@ -1,0 +1,442 @@
+{
+  "asOf": "2026-10-30",
+  "observedAt": "2026-10-30T22:06:03.456817+00:00",
+  "unit": "million reportingCurrency",
+  "companies": {
+    "NASDAQ:FORM": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": true,
+      "quarters": [
+        {
+          "date": "2026-09-26",
+          "revenue": 280.547,
+          "operatingIncome": 81.597,
+          "sourceUrl": "https://investors.formfactor.com/news-releases/news-release-details/formfactor-inc-reports-2026-third-quarter-results",
+          "sourceType": "filing",
+          "source": "Official issuer consolidated financial statement",
+          "verifiedAt": "2026-10-30",
+          "observedAt": "2026-10-30T22:02:08.584098+00:00",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "basis": "US GAAP; consolidated; standalone fiscal quarter",
+          "sourcePrecision": "Published USD thousands divided by 1000 without rounding",
+          "sourceFacts": {
+            "revenue": {
+              "rawValue": 280547,
+              "rawUnit": "USD thousand"
+            },
+            "operatingIncome": {
+              "rawValue": 81597,
+              "rawUnit": "USD thousand"
+            }
+          },
+          "publishedAt": "2026-10-28",
+          "sourceSha256": "a86fc70b7c5a4e2335ba48cdb285ff83c618b0f728ff28b3f8608084820c73d9"
+        },
+        {
+          "date": "2026-06-27",
+          "revenue": 258.242,
+          "operatingIncome": 57.799,
+          "sourceUrl": "https://investors.formfactor.com/news-releases/news-release-details/formfactor-inc-reports-2026-third-quarter-results",
+          "sourceType": "filing",
+          "source": "Official issuer consolidated financial statement",
+          "verifiedAt": "2026-10-30",
+          "observedAt": "2026-10-30T22:02:08.584098+00:00",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "basis": "US GAAP; consolidated; standalone fiscal quarter",
+          "sourcePrecision": "Published USD thousands divided by 1000 without rounding",
+          "sourceFacts": {
+            "revenue": {
+              "rawValue": 258242,
+              "rawUnit": "USD thousand"
+            },
+            "operatingIncome": {
+              "rawValue": 57799,
+              "rawUnit": "USD thousand"
+            }
+          },
+          "publishedAt": "2026-10-28",
+          "sourceSha256": "a86fc70b7c5a4e2335ba48cdb285ff83c618b0f728ff28b3f8608084820c73d9"
+        },
+        {
+          "date": "2026-03-28",
+          "revenue": 226.144,
+          "operatingIncome": 16.648,
+          "sourceUrl": "https://investors.formfactor.com/news-releases/news-release-details/formfactor-inc-reports-2026-first-quarter-results",
+          "sourceType": "filing",
+          "source": "Official issuer consolidated financial statement",
+          "verifiedAt": "2026-10-30",
+          "observedAt": "2026-10-30T22:02:51.619324+00:00",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "basis": "US GAAP; consolidated; standalone fiscal quarter",
+          "sourcePrecision": "Published USD thousands divided by 1000 without rounding",
+          "sourceFacts": {
+            "revenue": {
+              "rawValue": 226144,
+              "rawUnit": "USD thousand"
+            },
+            "operatingIncome": {
+              "rawValue": 16648,
+              "rawUnit": "USD thousand"
+            }
+          },
+          "publishedAt": "2026-04-29",
+          "sourceSha256": "7e9bf53cad79333e1694b8590f4a9287ca636deaab70a07a6b722286a8b80591"
+        },
+        {
+          "date": "2025-12-27",
+          "revenue": 215.163,
+          "operatingIncome": 23.49,
+          "sourceUrl": "https://investors.formfactor.com/news-releases/news-release-details/formfactor-inc-reports-2025-fourth-quarter-results/",
+          "sourceType": "filing",
+          "source": "Official issuer consolidated financial statement",
+          "verifiedAt": "2026-10-30",
+          "observedAt": "2026-10-30T22:02:51.609542+00:00",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "basis": "US GAAP; consolidated; standalone fiscal quarter",
+          "sourcePrecision": "Published USD thousands divided by 1000 without rounding",
+          "sourceFacts": {
+            "revenue": {
+              "rawValue": 215163,
+              "rawUnit": "USD thousand"
+            },
+            "operatingIncome": {
+              "rawValue": 23490,
+              "rawUnit": "USD thousand"
+            }
+          },
+          "publishedAt": "2026-02-04",
+          "sourceSha256": "a4644c76ab8f319fa808bc207ad3377a7d62f3848622277af4dbc62498962594"
+        }
+      ],
+      "financialNote": "공식 연결 US GAAP 매출·영업이익. 실제 회계분기 종료일을 사용하며 제공자의 달력 말일·표준화 영업이익을 공식 원문으로 교정했습니다."
+    },
+    "NASDAQ:TTMI": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": true,
+      "quarters": [
+        {
+          "date": "2026-09-28",
+          "revenue": 1203.855,
+          "operatingIncome": 162.253,
+          "sourceUrl": "https://investors.ttm.com/news-events/press-releases/detail/420/ttm-technologies-inc-reports-third-quarter-2026-results",
+          "sourceType": "filing",
+          "source": "Official issuer consolidated financial statement",
+          "verifiedAt": "2026-10-30",
+          "observedAt": "2026-10-30T22:02:12.523946+00:00",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "basis": "US GAAP; consolidated; standalone fiscal quarter",
+          "sourcePrecision": "Published USD thousands divided by 1000 without rounding",
+          "sourceFacts": {
+            "revenue": {
+              "rawValue": 1203855,
+              "rawUnit": "USD thousand"
+            },
+            "operatingIncome": {
+              "rawValue": 162253,
+              "rawUnit": "USD thousand"
+            }
+          },
+          "publishedAt": "2026-10-22",
+          "sourceSha256": "69d2101cb2863620ba79819eeaaf5bf70ac14a76771c5618a3ff77cea6279bc0"
+        },
+        {
+          "date": "2026-06-29",
+          "revenue": 1004.054,
+          "operatingIncome": 109.055,
+          "sourceUrl": "https://investors.ttm.com/news-events/press-releases/detail/411/ttm-technologies-inc-reports-second-quarter-2026-results",
+          "sourceType": "filing",
+          "source": "Official issuer consolidated financial statement",
+          "verifiedAt": "2026-10-30",
+          "observedAt": "2026-10-30T22:02:51.309292+00:00",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "basis": "US GAAP; consolidated; standalone fiscal quarter",
+          "sourcePrecision": "Published USD thousands divided by 1000 without rounding",
+          "sourceFacts": {
+            "revenue": {
+              "rawValue": 1004054,
+              "rawUnit": "USD thousand"
+            },
+            "operatingIncome": {
+              "rawValue": 109055,
+              "rawUnit": "USD thousand"
+            }
+          },
+          "publishedAt": "2026-08-05",
+          "sourceSha256": "d0940a1268a42c459c175613041406cd0103ba311b6124ca117605392f26267c"
+        },
+        {
+          "date": "2026-03-30",
+          "revenue": 845.976,
+          "operatingIncome": 72.449,
+          "sourceUrl": "https://investors.ttm.com/news-events/press-releases/detail/403/ttm-technologies-inc-reports-first-quarter-2026-results",
+          "sourceType": "filing",
+          "source": "Official issuer consolidated financial statement",
+          "verifiedAt": "2026-10-30",
+          "observedAt": "2026-10-30T22:05:21.801242+00:00",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "basis": "US GAAP; consolidated; standalone fiscal quarter",
+          "sourcePrecision": "Published USD thousands divided by 1000 without rounding",
+          "sourceFacts": {
+            "revenue": {
+              "rawValue": 845976,
+              "rawUnit": "USD thousand"
+            },
+            "operatingIncome": {
+              "rawValue": 72449,
+              "rawUnit": "USD thousand"
+            }
+          },
+          "publishedAt": "2026-04-29",
+          "sourceSha256": "bdef704c60ef0366f68abd0b4206762f10fc513852963b849e53fa41495176c1"
+        },
+        {
+          "date": "2025-12-29",
+          "revenue": 774.32,
+          "operatingIncome": 80.749,
+          "sourceUrl": "https://investors.ttm.com/news-events/press-releases/detail/400/ttm-technologies-inc-reports-fourth-quarter-fiscal-year",
+          "sourceType": "filing",
+          "source": "Official issuer consolidated financial statement",
+          "verifiedAt": "2026-10-30",
+          "observedAt": "2026-10-30T22:02:51.217887+00:00",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "basis": "US GAAP; consolidated; standalone fiscal quarter",
+          "sourcePrecision": "Published USD thousands divided by 1000 without rounding",
+          "sourceFacts": {
+            "revenue": {
+              "rawValue": 774320,
+              "rawUnit": "USD thousand"
+            },
+            "operatingIncome": {
+              "rawValue": 80749,
+              "rawUnit": "USD thousand"
+            }
+          },
+          "publishedAt": "2026-02-04",
+          "sourceSha256": "861b73379442369b0e1f3bce6780fa3dba561dcc1e462854c0797d434f7a2b68"
+        }
+      ],
+      "financialNote": "공식 연결 US GAAP 매출·영업이익. 실제 회계분기 종료일과 원문 천 달러 정밀도를 보존했습니다."
+    },
+    "EURONEXT:AI": {
+      "reportingCurrency": "EUR",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "revenue": 7259,
+          "operatingIncome": null,
+          "sourceUrl": "https://www.airliquide.com/sites/airliquide.com/files/2026-10/air-liquide-pr-q3-2026-air-liquide-accelerates-driven-by-sales-growth-and-the-launch-of-its-strategic-plan.pdf",
+          "sourceType": "filing",
+          "source": "Official issuer consolidated financial statement",
+          "verifiedAt": "2026-10-30",
+          "observedAt": "2026-10-30T22:02:52.526913+00:00",
+          "reportedCurrency": "EUR",
+          "unit": "millions of reporting currency",
+          "basis": "IFRS; consolidated; actual calendar quarter",
+          "sourcePrecision": "Published EUR millions, unchanged",
+          "sourceFacts": {
+            "revenue": {
+              "rawValue": 7259,
+              "rawUnit": "EUR million"
+            }
+          },
+          "operatingIncomeNotDisclosed": true,
+          "publishedAt": "2026-10-29",
+          "sourceSha256": "098d7e72b694360499c0126dcd22d2330e006386a6f79e21c1e15e671900bcfa"
+        }
+      ],
+      "financialStatus": "not_disclosed",
+      "financialNote": "공식 연결 분기 매출은 공시되지만 단독 분기 영업이익은 미공시입니다. 반기 영업이익을 임의로 나누지 않았습니다. 이전 분기 원자료·확인일은 보존합니다."
+    },
+    "EURONEXT:SU": {
+      "reportingCurrency": "EUR",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "revenue": 11460,
+          "operatingIncome": null,
+          "sourceUrl": "https://www.se.com/ww/en/assets/pdf/release-Q3-revenues-2026",
+          "sourceType": "filing",
+          "source": "Official issuer consolidated financial statement",
+          "verifiedAt": "2026-10-30",
+          "observedAt": "2026-10-30T22:05:11+00:00",
+          "reportedCurrency": "EUR",
+          "unit": "millions of reporting currency",
+          "basis": "IFRS; consolidated; actual calendar quarter",
+          "sourcePrecision": "Published EUR millions, unchanged",
+          "sourceFacts": {
+            "revenue": {
+              "rawValue": 11460,
+              "rawUnit": "EUR million"
+            }
+          },
+          "operatingIncomeNotDisclosed": true,
+          "publishedAt": "2026-10-16"
+        },
+        {
+          "date": "2026-06-30",
+          "revenue": 11459,
+          "operatingIncome": null,
+          "sourceUrl": "https://www.se.com/ww/en/assets/pdf/release-hy-results-2026",
+          "sourceType": "filing",
+          "source": "Official issuer consolidated financial statement",
+          "verifiedAt": "2026-10-30",
+          "observedAt": "2026-10-30T22:05:11+00:00",
+          "reportedCurrency": "EUR",
+          "unit": "millions of reporting currency",
+          "basis": "IFRS; consolidated; actual calendar quarter",
+          "sourcePrecision": "Published EUR millions, unchanged",
+          "sourceFacts": {
+            "revenue": {
+              "rawValue": 11459,
+              "rawUnit": "EUR million"
+            }
+          },
+          "operatingIncomeNotDisclosed": true,
+          "publishedAt": "2026-07-30"
+        }
+      ],
+      "financialStatus": "not_disclosed",
+      "financialNote": "공식 연결 분기 매출. 2026년 2분기 매출은 공식 11,459백만 유로로 교정했습니다. 단독 분기 영업이익은 미공시이며 반기 수치를 임의 분할하지 않았습니다. 이전 분기 원자료·확인일을 보존합니다."
+    },
+    "MIL:PRY": {
+      "reportingCurrency": "EUR",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "revenue": 6417,
+          "operatingIncome": 614,
+          "sourceUrl": "https://www.prysmian.com/sites/www.prysmian.com/files/media/documents/PR_Q326_ENGLISH.pdf",
+          "sourceType": "filing-derived",
+          "source": "Official issuer consolidated financial statement",
+          "verifiedAt": "2026-10-30",
+          "observedAt": "2026-10-30T22:02:53.554043+00:00",
+          "reportedCurrency": "EUR",
+          "unit": "millions of reporting currency",
+          "basis": "IFRS; consolidated; actual calendar quarter",
+          "sourcePrecision": "Published EUR millions, unchanged",
+          "sourceFacts": {
+            "revenue": {
+              "rawValue": 6417,
+              "rawUnit": "EUR million"
+            },
+            "operatingIncome": {
+              "rawValue": 614,
+              "rawUnit": "EUR million",
+              "calculated": true
+            }
+          },
+          "publishedAt": "2026-10-29",
+          "sourceSha256": "a599a1b89d8603aa363935e1ee374a3a576151b230ff9cb6e2688034c38d4f40",
+          "derivation": {
+            "metric": "operatingIncome",
+            "formula": "1520 - 906 = 614",
+            "inputs": {
+              "nineMonthOperatingIncome": 1520,
+              "halfYearOperatingIncome": 906
+            },
+            "unit": "EUR million",
+            "basis": "Consolidated IFRS operating income, matching 2026 cumulative reporting periods; not adjusted EBITDA",
+            "sourceUrls": [
+              "https://www.prysmian.com/sites/www.prysmian.com/files/media/documents/PR_Q326_ENGLISH.pdf",
+              "https://www.prysmian.com/sites/www.prysmian.com/files/media/documents/PR_Q2%2726_EN_FINAL.pdf"
+            ]
+          },
+          "supportingSources": [
+            {
+              "url": "https://www.prysmian.com/sites/www.prysmian.com/files/media/documents/PR_Q326_ENGLISH.pdf",
+              "observedAt": "2026-10-30T22:05:11+00:00"
+            },
+            {
+              "url": "https://www.prysmian.com/sites/www.prysmian.com/files/media/documents/PR_Q2%2726_EN_FINAL.pdf",
+              "observedAt": "2026-10-30T22:05:11+00:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-30",
+          "revenue": 6021,
+          "operatingIncome": 500,
+          "sourceUrl": "https://www.prysmian.com/sites/www.prysmian.com/files/media/documents/PR_Q2%2726_EN_FINAL.pdf",
+          "sourceType": "filing-derived",
+          "source": "Official issuer consolidated financial statement",
+          "verifiedAt": "2026-10-30",
+          "observedAt": "2026-10-30T22:05:11+00:00",
+          "reportedCurrency": "EUR",
+          "unit": "millions of reporting currency",
+          "basis": "IFRS; consolidated; actual calendar quarter",
+          "sourcePrecision": "Published EUR millions, unchanged",
+          "sourceFacts": {
+            "revenue": {
+              "rawValue": 6021,
+              "rawUnit": "EUR million"
+            },
+            "operatingIncome": {
+              "rawValue": 500,
+              "rawUnit": "EUR million",
+              "calculated": true
+            }
+          },
+          "publishedAt": "2026-07-30",
+          "derivation": {
+            "metric": "operatingIncome",
+            "formula": "906 - 406 = 500",
+            "inputs": {
+              "halfYearOperatingIncome": 906,
+              "firstQuarterOperatingIncome": 406
+            },
+            "unit": "EUR million",
+            "basis": "Consolidated IFRS operating income, matching 2026 cumulative reporting periods; not adjusted EBITDA",
+            "sourceUrls": [
+              "https://www.prysmian.com/sites/www.prysmian.com/files/media/documents/PR_Q2%2726_EN_FINAL.pdf",
+              "https://www.prysmian.com/sites/www.prysmian.com/files/media/documents/investors/ENG-Financial-Report-31-march-2026-v3004_0.pdf"
+            ]
+          },
+          "supportingSources": [
+            {
+              "url": "https://www.prysmian.com/sites/www.prysmian.com/files/media/documents/PR_Q2%2726_EN_FINAL.pdf",
+              "observedAt": "2026-10-30T22:05:11+00:00"
+            },
+            {
+              "url": "https://www.prysmian.com/sites/www.prysmian.com/files/media/documents/investors/ENG-Financial-Report-31-march-2026-v3004_0.pdf",
+              "observedAt": "2026-10-30T22:05:11+00:00"
+            }
+          ]
+        },
+        {
+          "date": "2026-03-31",
+          "revenue": 5218,
+          "operatingIncome": 406,
+          "sourceUrl": "https://www.prysmian.com/sites/www.prysmian.com/files/media/documents/investors/ENG-Financial-Report-31-march-2026-v3004_0.pdf",
+          "sourceType": "filing",
+          "source": "Official issuer consolidated financial statement",
+          "verifiedAt": "2026-10-30",
+          "observedAt": "2026-10-30T22:05:11+00:00",
+          "reportedCurrency": "EUR",
+          "unit": "millions of reporting currency",
+          "basis": "IFRS; consolidated; actual calendar quarter",
+          "sourcePrecision": "Published EUR millions, unchanged",
+          "sourceFacts": {
+            "revenue": {
+              "rawValue": 5218,
+              "rawUnit": "EUR million"
+            },
+            "operatingIncome": {
+              "rawValue": 406,
+              "rawUnit": "EUR million"
+            }
+          }
+        }
+      ],
+      "financialNote": "2026년 공식 연결 IFRS 매출·영업이익. 2·3분기 영업이익은 동일 회계범위 누적 공시의 차감으로 계산했습니다(상반기−1분기, 9개월−상반기). 조정 EBITDA와 구분합니다. 2025년 4분기는 기존 원자료·검증일을 보존했으며 이번 공식 원문 재검증 범위에는 포함되지 않습니다."
+    }
+  },
+  "verificationScope": "Targeted missing releases and quarterly statement corrections for five companies; not exhaustive 134-company official filing audit."
+}
