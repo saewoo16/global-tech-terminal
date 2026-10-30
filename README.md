@@ -661,3 +661,10 @@ FreeSIS는 공식 HTML의 예탁금/신용융자 `백만원` 표제와 신용공
 - 18시 작업: 원천·실제 거래일·정규장 범위가 검증된 JSON bundle을 `python scripts/manage_korean_turnover_comparison.py --entry <bundle.json> --mode regular --as-of YYYY-MM-DD`로 병합합니다. bundle은 `sources` 및 `markets.KOSPI/KOSDAQ.regular` 구조이며 각 행은 `date, turnover, sourceValue, sourceUnit, conversionToEokKRW, observedAt, sourceIds, scopeVerified: true, valueStatus: final`을 보존합니다. 검증되지 않은 날짜는 비워 두며 기존 합산 이력을 삭제하지 않습니다.
 - 20:30 작업: `python scripts/update_korean_turnover_comparison.py --as-of YYYY-MM-DD`. NXT 상태 API가 해당일 애프터마켓 종료를 확인한 뒤 venue=NXT 전체 종목, 독립 페이지 전수, 시장별 조회의 코드·금액·거래량을 대조합니다. 동일일 검증 KRX 정규장 값 없이는 합산하지 않습니다. 공급사 표시 정밀도(현재 NXT KOSPI 백만원, KOSDAQ 천원)를 합산한 재구성 값이며 거래소 공식 확정 총액이 아닙니다. 세션 종료 후 값이라는 뜻의 `valueStatus: final`과 `officialAggregate: false`를 구분합니다.
 - 실제 관측시각과 공개 원자료는 `data/korea-turnover-comparison-evidence-YYYYMMDD.json`에 보존합니다. 이전 값·부분합·결측을 0으로 채우지 않습니다. 동일 검증 값의 반복 수집은 재게시하지 않습니다. 2026-10-30 최초 반영 당시 정규장 이력은 10/29~30, 합산은 10/30만 확보되어 단일 점으로 보이며 이후 검증 날짜만 누적합니다. 새 수집기가 다른 탭·시장 패널을 재작성하지 않습니다.
+
+### 국내 거래대금 전체 기간 단일선 정정 (2026-10-30)
+- 앞선 두 선은 정규장 2일/합산 1일밖에 없어 1·3·6·12개월 추이를 충족하지 못했습니다. 이를 대체해 KOSPI·KOSDAQ 각각 **KRX+NXT 한 선**을 표시합니다. 2025-10-30~2026-10-30 실제245개 일별 값이며 선택 기간은21/62/122/245개입니다.
+- 새 `marketTurnover.markets.*.integratedHistory`는 Npay의 동일 투자자별 일별 API에서 KRX/NXT를 각각 조회하고, 상호배타12개 분류의 **매수대금 한쪽만** 합산합니다. 매수+매도를 더하지 않으며 순매수나 종목 상위 일부 합계가 아닙니다. 모든 날짜에 같은 원천·분류·단위를 사용합니다. 분류별 순매수=매수−매도, 양쪽 주식수 합계, 금액 반올림 차이와 완전한 거래일 집합을 검증합니다.
+- 화면 및 데이터에 **공급자 재구성 합계이지 거래소 공식 확정 총액이 아님**을 명시합니다. NXT 개별종목 현재가 합계와 차이가 있으며 그 원인을 임의로 특정하지 않습니다. 기존 ECOS 공식 각주는 KRX 시간외 포함·NXT 제외입니다. 2026-09-14 이후 NAVER KRX 금액과 ECOS 간 차이가 있어 두 원천을 이어 붙이지 않습니다. 기존 ECOS 및 정규장/합산 관측·증거는 보존합니다.
+- `python scripts/update_korean_turnover_history.py --as-of YYYY-MM-DD`는 KRX/NXT 모두 해당일 애프터마켓 종료 상태를 수집 전후 확인한 뒤 같은 네 개(거래소×시장) 이력을 검증합니다. 각 날짜의 두 거래소 구성값·원단위 정밀도·출처·실제 관측시각과 증거 파일을 보존합니다. 같은 값/근거의 재수집은 게시하지 않으며 결측·불완전 분류·서로 다른 거래일은 합산하지 않습니다.
+- 18시 시장 분석은 기존 최신 완료 합산선을 유지하고, 20:30 기존 작업이 하루 완료 자료를 보완합니다. 18시 KRX값이나 NXT 부분합으로 합산선을 덮어쓰지 않습니다. 기존 `update_korean_turnover_comparison.py`는 이전 증거 재현용이며 현재 공개선 갱신에는 사용하지 않습니다.

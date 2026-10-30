@@ -31,6 +31,8 @@ def validate(section, sources):
                 if t.tzinfo is None:raise ValueError()
             except (ValueError,TypeError):errors.append(f'{market} turnover observedAt needs offset')
         if seen!=sorted(set(seen)):errors.append(f'{market} turnover dates must be unique and sorted')
+        history=s.get('integratedHistory')
+        if history is not None: errors.extend(validate_history(history,sources,market))
         comparison=s.get('comparisonSeries')
         if comparison is not None:
             errors.extend(validate_comparison(comparison, sources, market))
@@ -86,4 +88,27 @@ def validate_comparison(comparison, sources, market):
             if not row.get('sourceIds') or not set(row['sourceIds'])<={s.get('id') for s in sources}:
                 errors.append(f'{market} {key} observation sources missing')
         if not valid and series.get('status')!='unavailable': errors.append(f'{market} {key} empty series must be unavailable')
+    return errors
+
+
+def validate_history(series,sources,market):
+    errors=[]
+    if series.get('sessionScope')!='provider-investor-gross-buy-krx-plus-nxt' or series.get('venues')!=['KRX','NXT'] or series.get('market')!=market:
+        errors.append(f'{market} history source scope mismatch')
+    base={k:series[k] for k in ('unit','scope','sourceIds','rows','coverage') if k in series}
+    errors.extend(validate({'markets':{'KOSPI':base,'KOSDAQ':base}},sources))
+    rows=series.get('rows',[])
+    if not rows or series.get('asOf')!=rows[-1].get('date'):errors.append(f'{market} history asOf mismatch')
+    for r in rows:
+        c=r.get('components',{})
+        try:
+            if set(c)!={'KRX','NXT'}:raise ValueError()
+            total=Decimal(0)
+            for venue in c.values():
+                b=Decimal(venue['grossBuyKRW']);s=Decimal(venue['grossSellKRW'])
+                if venue['categoryCount']!=12 or b<=0 or abs(b-s)>12000000 or Decimal(venue['buyShares'])!=Decimal(venue['sellShares']):raise ValueError()
+                if not venue.get('source') or not venue.get('observedAt'):raise ValueError()
+                total+=b
+            if total!=Decimal(r['sourceValue']) or r.get('officialAggregate') is not False or r.get('valueStatus')!='provider-end-of-day':raise ValueError()
+        except (KeyError,ValueError,InvalidOperation,TypeError):errors.append(f'{market} history component reconciliation failed {r.get("date")}')
     return errors
