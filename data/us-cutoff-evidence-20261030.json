@@ -1,0 +1,635 @@
+{
+  "reportCutoffAt": "2026-10-31T07:00:00+09:00",
+  "checkStartedAt": "2026-10-30T22:00:00.000141+00:00",
+  "checkCompletedAt": "2026-10-30T22:00:16.772167+00:00",
+  "originalEarningsTickers": [
+    "XOM",
+    "ABBV",
+    "CVX",
+    "GD",
+    "REGN",
+    "CL",
+    "D",
+    "EXC",
+    "KVUE",
+    "CHD",
+    "LYB",
+    "CBOE",
+    "FRT"
+  ],
+  "calendarPriorTickers": [
+    "ABBV",
+    "ABR",
+    "ABVC",
+    "AMST",
+    "AN",
+    "AZN",
+    "BCH",
+    "BP",
+    "BSAC",
+    "BTSG",
+    "CBOE",
+    "CCEC",
+    "CCJ",
+    "CHD",
+    "CL",
+    "CNI",
+    "COFS",
+    "CPRI",
+    "CRI",
+    "CVX",
+    "D",
+    "EXC",
+    "FBLG",
+    "FRT",
+    "GD",
+    "GTES",
+    "HESM",
+    "HOST",
+    "IMO",
+    "IRMD",
+    "JKS",
+    "KRG",
+    "KVUE",
+    "LEA",
+    "LYB",
+    "MGA",
+    "MHH",
+    "MSGK",
+    "NVT",
+    "NWG",
+    "NWL",
+    "OABI",
+    "OIS",
+    "OMF",
+    "PIPR",
+    "PW",
+    "RBC",
+    "REGN",
+    "SMP",
+    "SNY",
+    "SONM",
+    "SXT",
+    "TXNM",
+    "VRRM",
+    "WT",
+    "XOM"
+  ],
+  "calendarCurrentTickers": [
+    "ABBV",
+    "ABR",
+    "ABVC",
+    "AMST",
+    "AN",
+    "AZN",
+    "BCH",
+    "BP",
+    "BSAC",
+    "BTSG",
+    "CBOE",
+    "CCEC",
+    "CCJ",
+    "CHD",
+    "CL",
+    "CNI",
+    "COFS",
+    "CPRI",
+    "CRI",
+    "CVX",
+    "D",
+    "EXC",
+    "FBLG",
+    "FRT",
+    "GD",
+    "GTES",
+    "HESM",
+    "HOST",
+    "IMO",
+    "IRMD",
+    "JKS",
+    "KRG",
+    "KVUE",
+    "LEA",
+    "LYB",
+    "MGA",
+    "MHH",
+    "MSGK",
+    "NVT",
+    "NWG",
+    "NWL",
+    "OABI",
+    "OIS",
+    "OMF",
+    "PIPR",
+    "PW",
+    "RBC",
+    "REGN",
+    "SMP",
+    "SNY",
+    "SONM",
+    "SXT",
+    "TXNM",
+    "VRRM",
+    "WT",
+    "XOM"
+  ],
+  "newCalendarTickers": [],
+  "removedCalendarTickers": [],
+  "newCalendarTickersWithinKnownScope": [],
+  "knownScopeCount": 505,
+  "checks": [
+    {
+      "url": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-30",
+      "requestedAt": "2026-10-30T22:00:00.011429+00:00",
+      "observedAt": "2026-10-30T22:00:05.832823+00:00",
+      "status": "retrieved",
+      "sha256": "5e5308c502db6bc3ec50cdabc9c6fc08d46be9db6309d52658f12a910a63311f",
+      "bytes": 12893
+    },
+    {
+      "url": "https://investor.exxonmobil.com/company-information/press-releases/detail/1213/exxonmobil-announces-third-quarter-2026-results",
+      "requestedAt": "2026-10-30T22:00:06.015092+00:00",
+      "observedAt": "2026-10-30T22:00:11.215403+00:00",
+      "status": "retrieved",
+      "sha256": "d463f0deaa723542e3a6cf28b7c52cd7fb4af42095724798710fcbea90212a55",
+      "bytes": 253106,
+      "ticker": "XOM",
+      "releaseDateEvidence": [
+        "ontacts FAQ ExxonMobil Announces Third-Quarter 2026 Results October 30, 2026 5:30 AM CDT Download as PDF Related documents Earnings webcast Audio Presentation PDF Cautionary st",
+        "other matters during a webcast at 8:30 a.m. Central Time on October 30, 2026. To listen to the event or access an archived replay, please visit www.exxonmobil.com . Cautionary ",
+        "tions 737-272-1452 Source: Exxon Mobil Corporation Released October 30, 2026 .bwalignc { text-align: center; list-style-position: inside } .bwalignr { text-align: right; list-s"
+      ]
+    },
+    {
+      "url": "https://news.abbvie.com/2026-10-30-AbbVie-Reports-Third-Quarter-2026-Financial-Results",
+      "requestedAt": "2026-10-30T22:00:06.015855+00:00",
+      "observedAt": "2026-10-30T22:00:10.769287+00:00",
+      "status": "retrieved",
+      "sha256": "47f0ec3f3c0ff3699cfdd2d9c581ce454b10704a761e8a2c0415d93c0ec63dc8",
+      "bytes": 286844,
+      "ticker": "ABBV",
+      "releaseDateEvidence": [
+        " 0; } AbbVie Reports Third-Quarter 2026 Financial Results - Oct 30, 2026 (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});va",
+        "ard https://news.abbvie.com/email-alerts --> Corporate News October 30, 2026 AbbVie Reports Third-Quarter 2026 Financial Results Open a printable version of this page Email the",
+        "ith Dividend Payable in February 2027 NORTH CHICAGO, Ill. , Oct. 30, 2026 / PRNewswire / -- AbbVie (NYSE:ABBV) announced financial results for the third quarter ended Septem"
+      ]
+    },
+    {
+      "url": "https://chevroncorp.gcs-web.com/node/38811",
+      "requestedAt": "2026-10-30T22:00:06.016333+00:00",
+      "observedAt": "2026-10-30T22:00:09.249101+00:00",
+      "status": "retrieved",
+      "sha256": "40fe0a2540034baed96717d6c847430f82cb11c1865466f1bac462d95a968d06",
+      "bytes": 546506,
+      "ticker": "CVX",
+      "releaseDateEvidence": [
+        "enhancing Bakken competitiveness HOUSTON --(BUSINESS WIRE)--Oct. 30, 2026-- Chevron Corporation (NYSE: CVX) reported earnings of $9.9 billion ( $5.06 per share - diluted) fo",
+        " earnings with security analysts will take place on Friday, October 30, 2026 , at 10:00 a.m. CT . A webcast of the meeting will be available in a listen-only mode to individual"
+      ]
+    },
+    {
+      "url": "https://investorrelations.gd.com/news/press-release-details/2026/General-Dynamics-Reports-Third-Quarter-2026-Financial-Results/default.aspx",
+      "requestedAt": "2026-10-30T22:00:06.017690+00:00",
+      "observedAt": "2026-10-30T22:00:12.341114+00:00",
+      "status": "retrieved",
+      "sha256": "3ff98dc0e799212fa7af3541047368a145aceeba7d1e36ef440daa40407fcbdb",
+      "bytes": 330449,
+      "ticker": "GD",
+      "releaseDateEvidence": [
+        "neral Dynamics Reports Third-Quarter 2026 Financial Results October 30, 2026 .q4default span.prnews_span { font-size: 8pt; font-family: \"Arial\"; color: rgb(0, 0, 0) } .q4defaul",
+        "s 6.8-to-1 book-to-bill, $220 billion backlog RESTON, Va. , Oct. 30, 2026 /PRNewswire/ -- General Dynamics (NYSE: GD) today reported third-quarter 2026 operating earnings of",
+        "' financial results conference call will be held on Friday, October 30, 2026, at 9:00 a.m. EDT. A link to the live webcast will be available at www.gd.com and will be available"
+      ]
+    },
+    {
+      "url": "https://investor.regeneron.com/news-releases/news-release-details/regeneron-reports-third-quarter-2026-financial-and-operating",
+      "requestedAt": "2026-10-30T22:00:06.018301+00:00",
+      "observedAt": "2026-10-30T22:00:10.245310+00:00",
+      "status": "retrieved",
+      "sha256": "a95328dd04d219184d12bb823cf4977f96ce4f9a05376c1485d64d6c127bebae",
+      "bytes": 511187,
+      "ticker": "REGN",
+      "releaseDateEvidence": [
+        "ibrodysplasia ossificans progressiva (FOP) TARRYTOWN, N.Y., Oct. 30, 2026 (GLOBE NEWSWIRE) -- Regeneron Pharmaceuticals, Inc. (Nasdaq: REGN ) today announced financial resul",
+        "ird quarter 2026 financial and operating results on Friday, October 30, 2026, at 8:30 AM Eastern Time. Participants may access the conference call live via webcast, or register",
+        " Reports Third Quarter 2026 Financial and Operating Results October 30, 2026 at 6:30 AM EDT PDF Version Third quarter 2026 revenues increased 36% to $5.1 billion versus third q",
+        "brodysplasia ossificans progressiva (FOP) TARRYTOWN, N.Y. , Oct. 30, 2026 (GLOBE NEWSWIRE) -- Regeneron Pharmaceuticals, Inc. (Nasdaq: REGN ) today announced financial resul",
+        "ird quarter 2026 financial and operating results on Friday, October 30, 2026 , at 8:30 AM Eastern Time . Participants may access the conference call live via webcast, or regist"
+      ]
+    },
+    {
+      "url": "https://investor.colgatepalmolive.com/news-releases/news-release-details/colgate-palmolive-announces-3rd-quarter-2026-results",
+      "requestedAt": "2026-10-30T22:00:06.018872+00:00",
+      "observedAt": "2026-10-30T22:00:10.737465+00:00",
+      "status": "retrieved",
+      "sha256": "be04f8b957aee0a9d278f4e4c05ec8ab19c250e13c217522786a2c03235e137c",
+      "bytes": 636522,
+      "ticker": "CL",
+      "releaseDateEvidence": [
+        "olive Company\", \"description\": \"NEW YORK --(BUSINESS WIRE)--Oct. 30, 2026-- Colgate-Palmolive Company (NYSE:CL): Net sales increased 4.6%; Organic sales* increased 3.6%, inc",
+        "; Back Colgate-Palmolive Announces 3rd Quarter 2026 Results October 30, 2026 3Q 2026 Earnings Press Release 251.3 KB NEW YORK --(BUSINESS WIRE)--Oct. 30, 2026-- Colgate-Palmoli",
+        "e on the basis of the Company’s views and assumptions as of October 30, 2026. The Company undertakes no obligation to update these statements whether as a result of new informa"
+      ]
+    },
+    {
+      "url": "https://news.dominionenergy.com/press-releases/press-releases/2026/Dominion-Energy-Announces-Third-Quarter-2026-Results/default.aspx",
+      "requestedAt": "2026-10-30T22:00:06.019511+00:00",
+      "observedAt": "2026-10-30T22:00:11.769091+00:00",
+      "status": "retrieved",
+      "sha256": "789f020e4c32538aa438d58fb6295246f9d3c79cc9d82ba78c28598dab43160f",
+      "bytes": 380292,
+      "ticker": "D",
+      "releaseDateEvidence": [
+        "s third-quarter 2026 earnings call at 11 a.m. ET on Friday, Oct. 30, 2026. Management will discuss matters of interest to financial and other stakeholders including recent f"
+      ]
+    },
+    {
+      "url": "https://www.exeloncorp.com/newsroom/exelon-reports-third-quarter-2026-results",
+      "requestedAt": "2026-10-30T22:00:06.020396+00:00",
+      "observedAt": "2026-10-30T22:00:10.779925+00:00",
+      "status": "retrieved",
+      "sha256": "806c1e4293318ae8329a1e7c048c3d932b80ce696d3f413f4fa6df351e846bfb",
+      "bytes": 76756,
+      "ticker": "EXC",
+      "releaseDateEvidence": [
+        "ed its financial results for the third quarter of 2026. --> October 30, 2026 --> --> Earnings Release Highlights GAAP net income of $0.70 per share and Adjusted (non-GAAP) oper",
+        "cent Developments and Third Quarter Highlights Dividend: On October 30, 2026, Exelon&#39;s Board of Directors declared a regular quarterly dividend of $0.42 per share on Exelon",
+        "ed to the Securities and Exchange Commission on Form 8-K on October 30, 2026. Cautionary Statements Regarding Forward-Looking Information This press release contains certain fo"
+      ]
+    },
+    {
+      "url": "https://www.kenvue.com/media/kenvue-reports-third-quarter-2026-results",
+      "requestedAt": "2026-10-30T22:00:09.260346+00:00",
+      "observedAt": "2026-10-30T22:00:13.132909+00:00",
+      "status": "retrieved",
+      "sha256": "16f017169ff79f7db916afa645aeb131f95ee0995eea847c02f2afc8b6b3fda7",
+      "bytes": 622959,
+      "ticker": "KVUE",
+      "releaseDateEvidence": [
+        "d 5% to $0.22; Adjusted Diluted EPS 1 Increased 4% to $0.29 October 30, 2026 Email Print Copy Story link copied to clipboard. SUMMIT, N.J. October 30, 2026 – Kenvue Inc. (NYSE:"
+      ]
+    },
+    {
+      "url": "https://www.nasdaq.com/press-release/church-dwight-delivers-strong-third-quarter-results-2026-10-30",
+      "requestedAt": "2026-10-30T22:00:10.260668+00:00",
+      "observedAt": "2026-10-30T22:00:13.297630+00:00",
+      "status": "retrieved",
+      "sha256": "c73bfccb32245e42b35841642b1fcc6e651ad614653d57cbe97aade13d37e49c",
+      "bytes": 826622,
+      "ticker": "CHD",
+      "releaseDateEvidence": [
+        "ch & Dwight Delivers Strong Third Quarter Results Published Oct 30, 2026 6:55am EDT linkedin facebook x email reddit 2026 Third Quarter Results Net Sales +1.0% reflecting s",
+        "ill host a webcast to discuss third quarter 2026 results on October 30, 2026 , at 10:00 a.m. (ET) . The webcast will be broadcast online and available for replay until October "
+      ]
+    },
+    {
+      "url": "https://www.lyondellbasell.com/en/who-we-are/updates-events/corporate--financial-news/lyondellbasell-reports-third-quarter-2026-earnings/",
+      "requestedAt": "2026-10-30T22:00:10.748363+00:00",
+      "observedAt": "2026-10-30T22:00:13.872767+00:00",
+      "status": "retrieved",
+      "sha256": "9b4a51e749b620a0ea9bb490555579e1aa0f9de5d7a467a90ea1740a74d7ab56",
+      "bytes": 249497,
+      "ticker": "LYB",
+      "releaseDateEvidence": [
+        " reducing global structural fixed costs HOUSTON and LONDON, Oct. 30, 2026 (GLOBE NEWSWIRE) -- LyondellBasell Industries (NYSE: LYB) (the \\u0022company\\u0022) today announced",
+        "earnings LyondellBasell reports third quarter 2026 earnings October 30, 2026 lang: en_US Tweet Net income: $758 million, $828 million excluding identified items 1 Diluted earni",
+        " reducing global structural fixed costs HOUSTON and LONDON, Oct. 30, 2026 (GLOBE NEWSWIRE) -- LyondellBasell Industries (NYSE: LYB) (the \"company\") today announced results f",
+        "ondellBasell agrees to sell former refinery site in Houston October 30, 2026 Tag der offenen T&#xFC;r im Ausbildungszentrum von LYB am 7. November 2026 October 13, 2026 LYB and"
+      ]
+    },
+    {
+      "url": "https://ir.cboe.com/news/news-details/2026/Cboe-Global-Markets-Reports-Results-for-Third-Quarter-2026/default.aspx",
+      "requestedAt": "2026-10-30T22:00:10.779345+00:00",
+      "observedAt": "2026-10-30T22:00:13.914440+00:00",
+      "status": "retrieved",
+      "sha256": "4f03afa84bedb627ec32edae2b602ccecb66edb2545f8bfbb2ee9595787d04c5",
+      "bytes": 603021,
+      "ticker": "CBOE",
+      "releaseDateEvidence": [
+        " Cboe Global Markets Reports Results for Third Quarter 2026 October 30, 2026 .q4default span.prnews_span { font-size: 8pt; font-family: \"Arial\"; color: rgb(0, 0, 0) } .q4defaul",
+        "to $830 to $845 million from $838 to $853 million CHICAGO , Oct. 30, 2026 /PRNewswire/ -- Cboe Global Markets, Inc. (Cboe: CBOE) today reported financial results for the thi",
+        "e call to review its third quarter financial results today, October 30, 2026, at 8:30 a.m. ET/7:30 a.m. CT. The conference call and any accompanying slides will be publicly ava"
+      ]
+    },
+    {
+      "url": "https://federalrealty.gcs-web.com/news-releases/news-release-details/federal-realty-investment-trust-reports-strong-third-quarter",
+      "requestedAt": "2026-10-30T22:00:10.783522+00:00",
+      "observedAt": "2026-10-30T22:00:14.113225+00:00",
+      "status": "retrieved",
+      "sha256": "03b737931531627ca8ec7bc4b41a761fcff21cb7aacafedded1b5f3547cc7b1d",
+      "bytes": 388290,
+      "ticker": "FRT",
+      "releaseDateEvidence": [
+        "lty Investment Trust\", \"description\": \"NORTH BETHESDA, Md., Oct. 30, 2026 /PRNewswire/ -- Federal Realty Investment Trust (NYSE: FRT) today reported its results for the thir",
+        "ommitment Featured Awards Current Job Openings Contact BACK October 30, 2026 Press Release Federal Realty Investment Trust Reports Strong Third Quarter 2026 Results and Guidanc",
+        "e Raise NORTH BETHESDA, Md. , Oct. 30, 2026 /PRNewswire/ -- Federal Realty Investment Trust (NYSE: FRT) today reported its results for the thir",
+        "26 earnings conference call, which is scheduled for Friday, October 30, 2026 at 9:00 AM ET . To participate, please call 833-821-4548 or 412-652-1258 prior to the call start ti"
+      ]
+    },
+    {
+      "url": "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+      "requestedAt": "2026-10-30T22:00:11.227793+00:00",
+      "observedAt": "2026-10-30T22:00:16.766697+00:00",
+      "status": "retrieved",
+      "sha256": "56a00c5dd909315786d23e132cefe12244e7326bd525e75010f7c48d57b5611d",
+      "bytes": 205245,
+      "ticker": "TSM",
+      "releaseDateEvidence": []
+    },
+    {
+      "url": "https://ir.spacex.com/events/event-details/2026/Q3-2026-Earnings/default.aspx",
+      "requestedAt": "2026-10-30T22:00:11.779936+00:00",
+      "observedAt": "2026-10-30T22:00:14.453867+00:00",
+      "status": "retrieved",
+      "sha256": "9f97cac1083164ad723f5713a61a509fe8c1dddb8e97e0b81e5a38d944c6dd49",
+      "bytes": 85592,
+      "ticker": "SPCX",
+      "releaseDateEvidence": [
+        "em-date-time.evergreen-event-date-time { } Q3 2026 Earnings October 20, 2026 3:30 PM CT Listen (opens in new window) Earnings Update (opens in new window) 10-Q (opens in new wi"
+      ]
+    }
+  ],
+  "limitations": [
+    "Calendar plus official identified release pages checked. A missing calendar result is not proof of absence; no fulluniverse allissuer feed claim.",
+    "HTTP or content change alone is not a numerical restatement. Source evidence checked separately; original financial values are not overwritten."
+  ],
+  "calendarConfirmedScopeTickers": [
+    "XOM",
+    "ABBV",
+    "CVX",
+    "GD",
+    "REGN",
+    "CL",
+    "D",
+    "EXC",
+    "KVUE",
+    "CHD",
+    "LYB",
+    "CBOE",
+    "FRT"
+  ],
+  "newTargetDateReleaseFound": false,
+  "conclusion": "22:00UTC 실제 최종 확인에서 기존13건 외 새 대상 발표 또는 검증된 변경 발표를 발견하지 못함. 공식13개 발표·TSM/SPCX 페이지 모두 수신. 전수 부재 증명 아님.",
+  "releaseRefreshAudit": [
+    {
+      "ticker": "XOM",
+      "rawResponseSameAsEarlier": false,
+      "numericTokenCheck": {
+        "매출": {
+          "value": 113164,
+          "matchingNumericTokenInRefreshedSource": false
+        },
+        "EPS": {
+          "value": 3.72,
+          "matchingNumericTokenInRefreshedSource": true
+        }
+      },
+      "note": "단순 토큰 존재는 표의 전체 동일성을 증명하지 않음. 변경 공시/재작성 주장 없음."
+    },
+    {
+      "ticker": "ABBV",
+      "rawResponseSameAsEarlier": false,
+      "numericTokenCheck": {
+        "매출": {
+          "value": 17404,
+          "matchingNumericTokenInRefreshedSource": true
+        },
+        "매출총이익": {
+          "value": 13119,
+          "matchingNumericTokenInRefreshedSource": false
+        },
+        "영업이익": {
+          "value": 6267,
+          "matchingNumericTokenInRefreshedSource": true
+        },
+        "EPS": {
+          "value": 2.37,
+          "matchingNumericTokenInRefreshedSource": true
+        }
+      },
+      "note": "단순 토큰 존재는 표의 전체 동일성을 증명하지 않음. 변경 공시/재작성 주장 없음."
+    },
+    {
+      "ticker": "CVX",
+      "rawResponseSameAsEarlier": false,
+      "numericTokenCheck": {
+        "매출": {
+          "value": 65237,
+          "matchingNumericTokenInRefreshedSource": true
+        },
+        "EPS": {
+          "value": 5.06,
+          "matchingNumericTokenInRefreshedSource": true
+        }
+      },
+      "note": "단순 토큰 존재는 표의 전체 동일성을 증명하지 않음. 변경 공시/재작성 주장 없음."
+    },
+    {
+      "ticker": "GD",
+      "rawResponseSameAsEarlier": false,
+      "numericTokenCheck": {
+        "매출": {
+          "value": 14566,
+          "matchingNumericTokenInRefreshedSource": true
+        },
+        "영업이익": {
+          "value": 1527,
+          "matchingNumericTokenInRefreshedSource": true
+        },
+        "EPS": {
+          "value": 4.49,
+          "matchingNumericTokenInRefreshedSource": true
+        }
+      },
+      "note": "단순 토큰 존재는 표의 전체 동일성을 증명하지 않음. 변경 공시/재작성 주장 없음."
+    },
+    {
+      "ticker": "REGN",
+      "rawResponseSameAsEarlier": false,
+      "numericTokenCheck": {
+        "매출": {
+          "value": 5115.8,
+          "matchingNumericTokenInRefreshedSource": true
+        },
+        "영업이익": {
+          "value": 2048.2,
+          "matchingNumericTokenInRefreshedSource": true
+        },
+        "EPS": {
+          "value": 18.45,
+          "matchingNumericTokenInRefreshedSource": true
+        }
+      },
+      "note": "단순 토큰 존재는 표의 전체 동일성을 증명하지 않음. 변경 공시/재작성 주장 없음."
+    },
+    {
+      "ticker": "CL",
+      "rawResponseSameAsEarlier": false,
+      "numericTokenCheck": {
+        "매출": {
+          "value": 5369.0,
+          "matchingNumericTokenInRefreshedSource": true
+        },
+        "매출총이익": {
+          "value": 3233.0,
+          "matchingNumericTokenInRefreshedSource": true
+        },
+        "영업이익": {
+          "value": 1088.0,
+          "matchingNumericTokenInRefreshedSource": true
+        },
+        "EPS": {
+          "value": 0.94,
+          "matchingNumericTokenInRefreshedSource": true
+        }
+      },
+      "note": "단순 토큰 존재는 표의 전체 동일성을 증명하지 않음. 변경 공시/재작성 주장 없음."
+    },
+    {
+      "ticker": "D",
+      "rawResponseSameAsEarlier": false,
+      "numericTokenCheck": {
+        "매출": {
+          "value": 5617,
+          "matchingNumericTokenInRefreshedSource": true
+        },
+        "영업이익": {
+          "value": 1842,
+          "matchingNumericTokenInRefreshedSource": true
+        },
+        "EPS": {
+          "value": 1.3,
+          "matchingNumericTokenInRefreshedSource": true
+        }
+      },
+      "note": "단순 토큰 존재는 표의 전체 동일성을 증명하지 않음. 변경 공시/재작성 주장 없음."
+    },
+    {
+      "ticker": "EXC",
+      "rawResponseSameAsEarlier": false,
+      "numericTokenCheck": {
+        "매출": {
+          "value": 7319,
+          "matchingNumericTokenInRefreshedSource": false
+        },
+        "영업이익": {
+          "value": 1379,
+          "matchingNumericTokenInRefreshedSource": false
+        },
+        "EPS": {
+          "value": 0.7,
+          "matchingNumericTokenInRefreshedSource": true
+        }
+      },
+      "note": "단순 토큰 존재는 표의 전체 동일성을 증명하지 않음. 변경 공시/재작성 주장 없음."
+    },
+    {
+      "ticker": "KVUE",
+      "rawResponseSameAsEarlier": true,
+      "numericTokenCheck": {
+        "매출": {
+          "value": 3886.0,
+          "matchingNumericTokenInRefreshedSource": true
+        },
+        "매출총이익": {
+          "value": 2314.0,
+          "matchingNumericTokenInRefreshedSource": true
+        },
+        "영업이익": {
+          "value": 706.0,
+          "matchingNumericTokenInRefreshedSource": true
+        },
+        "EPS": {
+          "value": 0.22,
+          "matchingNumericTokenInRefreshedSource": true
+        }
+      },
+      "note": "단순 토큰 존재는 표의 전체 동일성을 증명하지 않음. 변경 공시/재작성 주장 없음."
+    },
+    {
+      "ticker": "CHD",
+      "rawResponseSameAsEarlier": false,
+      "numericTokenCheck": {
+        "매출": {
+          "value": 1602.1,
+          "matchingNumericTokenInRefreshedSource": true
+        },
+        "매출총이익": {
+          "value": 749.4,
+          "matchingNumericTokenInRefreshedSource": true
+        },
+        "영업이익": {
+          "value": 291.4,
+          "matchingNumericTokenInRefreshedSource": true
+        },
+        "EPS": {
+          "value": 0.89,
+          "matchingNumericTokenInRefreshedSource": true
+        }
+      },
+      "note": "단순 토큰 존재는 표의 전체 동일성을 증명하지 않음. 변경 공시/재작성 주장 없음."
+    },
+    {
+      "ticker": "LYB",
+      "rawResponseSameAsEarlier": false,
+      "numericTokenCheck": {
+        "매출": {
+          "value": 8499,
+          "matchingNumericTokenInRefreshedSource": true
+        },
+        "매출총이익": {
+          "value": 1496,
+          "matchingNumericTokenInRefreshedSource": false
+        },
+        "영업이익": {
+          "value": 1067,
+          "matchingNumericTokenInRefreshedSource": false
+        },
+        "EPS": {
+          "value": 2.32,
+          "matchingNumericTokenInRefreshedSource": true
+        }
+      },
+      "note": "단순 토큰 존재는 표의 전체 동일성을 증명하지 않음. 변경 공시/재작성 주장 없음."
+    },
+    {
+      "ticker": "CBOE",
+      "rawResponseSameAsEarlier": false,
+      "numericTokenCheck": {
+        "매출": {
+          "value": 712.2,
+          "matchingNumericTokenInRefreshedSource": true
+        },
+        "영업이익": {
+          "value": 534.3,
+          "matchingNumericTokenInRefreshedSource": true
+        },
+        "EPS": {
+          "value": 4.08,
+          "matchingNumericTokenInRefreshedSource": true
+        }
+      },
+      "note": "단순 토큰 존재는 표의 전체 동일성을 증명하지 않음. 변경 공시/재작성 주장 없음."
+    },
+    {
+      "ticker": "FRT",
+      "rawResponseSameAsEarlier": false,
+      "numericTokenCheck": {
+        "매출": {
+          "value": 339.024,
+          "matchingNumericTokenInRefreshedSource": true
+        },
+        "영업이익": {
+          "value": 116.855,
+          "matchingNumericTokenInRefreshedSource": true
+        },
+        "EPS": {
+          "value": 0.74,
+          "matchingNumericTokenInRefreshedSource": true
+        }
+      },
+      "note": "단순 토큰 존재는 표의 전체 동일성을 증명하지 않음. 변경 공시/재작성 주장 없음."
+    }
+  ],
+  "auditCompletedAt": "2026-10-30T22:00:54.796688+00:00"
+}
