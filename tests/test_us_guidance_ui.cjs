@@ -1,0 +1,15 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+const raw=fs.readFileSync(require('node:path').join(__dirname,'../assets/us-analysis.js'),'utf8');
+const ctx={console,URL,window:{addEventListener(){}},document:{readyState:'loading',addEventListener(){}}};vm.createContext(ctx);
+vm.runInContext(raw.replace("if(document.readyState==='loading')","window.api={earningsGuidance,guidanceComparison,earnings};if(document.readyState==='loading')"),ctx);
+const a=ctx.window.api,g={label:'EPS',period:'FY2027',basis:'Adjusted diluted EPS',unit:'USD/share',low:3,high:4,consensusValue:3.5,consensusComparable:true,sourceIds:['official','consensus']};
+assert.equal(a.guidanceComparison(g),'-14.29% ~ +14.29%');
+assert.equal(a.guidanceComparison({...g,unit:'%',low:10,high:12,consensusValue:11}),'-1pp ~ +1pp');
+assert.equal(a.guidanceComparison({...g,consensusValue:0}),'+3 ~ +4 USD/share 차이');
+assert.equal(a.guidanceComparison({...g,consensusComparable:false}),'미확인');
+let html=a.earningsGuidance({ticker:'TEST',guidanceMetrics:[g]});assert(html.includes('3 ~ 4 USD/share'));assert(!html.includes('3.5 ~'));
+const row={ticker:'TEST',name:'TEST',suppressPresentationSummary:true,presentationSummary:'DUPLICATE',guidanceMetrics:[g],metrics:[],quarterlyHistory:{rows:[]}};
+html=a.earnings({earnings:{rows:[row]}});assert(!html.includes('DUPLICATE'));assert(html.indexOf('가이던스')>html.indexOf('컨센서스 대비'));
+assert.equal(a.earningsGuidance({guidance:'Unsupported text',guidanceSourceIds:[]}), '');
+assert(a.earningsGuidance({guidanceMetrics:[{...g,period:'<unsafe>'}]}).includes('&lt;unsafe&gt;'));
+console.log('PASS guidance ranges, zero denominator, margin pp, ordering, deduplication and source guard');

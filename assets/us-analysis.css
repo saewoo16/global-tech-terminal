@@ -17,3 +17,5 @@
 
 /* Shared monetary scale belongs beside the earnings table heading, not each value. */
 .us-earnings th .us-money-unit{display:inline-block;margin-left:12px;font-size:11px;font-weight:400;color:var(--muted);white-space:nowrap}
+
+.us-guidance{margin:20px 0 24px}.us-guidance h4{font-size:14px;margin:0 0 10px}.us-guidance table{min-width:600px}.us-guidance th:first-child{text-align:left}.us-guidance td{font-variant-numeric:tabular-nums}.us-guidance .us-date-note{margin:10px 0;line-height:1.7}

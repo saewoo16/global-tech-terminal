@@ -337,6 +337,13 @@ def validate(payload):
                 assert len(history.get('rows', [])) == 4, 'Four reported quarters required'
             else:
                 assert len(metrics) >= 8
+            for g in r.get('guidanceMetrics', []):
+                assert g.get('label') and g.get('period') and g.get('basis') and g.get('unit') and g.get('sourceIds'), 'Guidance requires period, accounting basis, unit and sources'
+                numeric = lambda v: isinstance(v, (int, float)) and not isinstance(v, bool) and math.isfinite(v)
+                assert numeric(g.get('value')) or (numeric(g.get('low')) and numeric(g.get('high')) and g['low'] <= g['high']), 'Guidance must preserve a numeric point or full range'
+                assert not (numeric(g.get('value')) and ('low' in g or 'high' in g)), 'Do not substitute an invented midpoint for a guidance range'
+                if g.get('consensusComparable'):
+                    assert numeric(g.get('consensusValue')), 'Comparable guidance requires a numeric same-basis estimate'
             validate_earnings_prices(r)
     return len(entries)
 

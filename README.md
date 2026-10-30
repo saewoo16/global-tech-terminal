@@ -633,3 +633,12 @@ FreeSIS는 공식 HTML의 예탁금/신용융자 `백만원` 표제와 신용공
 - `overseas_etf_charts.json`의 `coverage`는 ETF별 실제 마지막 일봉 날짜, 최신 완료 대상 세션, 현재/지연/미확인 종목 수와 코드를 별도로 보존합니다. `asOf`는 가장 최근 ETF 한 종목의 날짜가 아닌 전체 확보 종목의 공통 기준일(`commonThrough`)이며, 빠진 종목이 있으면 null입니다. `latestAvailable`만으로 전 종목 최신화를 주장하지 않습니다.
 - `sessionCoverage`가 지연인 ETF는 실제 일봉 날짜와 기존 유효 가격을 유지하고 stale로 표시합니다. 정규장 5분 자료도 실제 날짜를 대조해 별도 집계하며 이전 날짜의 시각을 당일로 바꾸지 않습니다. 기존 보유내역 기준일은 시세 갱신과 무관합니다.
 - 국내 시장 분석을 갱신할 때 국내 ETF 차트도 같은 완료 세션으로 확인·갱신하며, 한국시간 오전 7시 무렵 미국 시장 분석 게시 때 해외 ETF 차트도 같은 미국 완료 세션으로 확인·갱신합니다. 기존 GitHub 수집 작업의 같은 세션 검증 결과를 먼저 재사용하고 미확보 범위만 보완하며, 별도 중복 예약 작업은 만들지 않습니다. 기존 수집 작업과 다른 탭의 원자료·구성은 보존합니다.
+
+### 미국 실적 비교·가이던스 후속 보완 (2026-10-30)
+
+- `guidanceMetrics`는 기존 schemaVersion 1의 선택적 배열입니다. 회사별 실제 공시 지표만 저장하며 각 행은 `label`, `period`, `basis`, `unit`, `sourceIds`와 `value` 또는 `low`/`high`를 가집니다. 가이던스 표는 당기 실적 숫자표 바로 아래에 표시합니다. 범위는 양 끝값을 유지하며 임의 중간값을 만들지 않습니다.
+- `consensusValue`는 같은 기간·통화·회계기준의 원천을 확인한 경우에만 `consensusComparable: true`로 비교합니다. 금액·EPS는 양 끝값의 컨센서스 대비 %, 마진·성장률은 pp 차이를 표시합니다. 0 또는 음수 컨센서스는 금액 차이로 표시하고 비율로 왜곡하지 않습니다.
+- `scripts/earnings_comparisons.py`는 검증된 같은 기준의 전년/전분기 값을 사용합니다. 적자·흑자 전환, 적자 축소/확대는 의미 있는 문구로 표시하고 음수·0 기준에서 오해를 유발하는 성장률을 만들지 않습니다. 마진 변화는 pp입니다.
+- `suppressPresentationSummary`와 `displayReleaseHighlights`는 중복된 본문 표시만 제어합니다. 원래 `summary`, `presentationSummary`, `releaseHighlights`는 원자료로 보존하며 고유한 실적 발표 내용은 삭제하지 않습니다.
+- 미공시와 미확인은 구분합니다. 원가 범위가 맞지 않는 비용을 매출에서 빼서 GP를 만들지 않습니다. 같은 기준의 공시 Rev·OP로만 OPM을 계산합니다. 후속 비교·가이던스 확인시각은 `financialReview.observedAt`에 보존하며 원래 ET 발표일과 보고 cutoff를 바꾸지 않습니다.
+- 검증: 기존 전체 검사와 `python -m unittest tests/test_earnings_comparisons.py`, `node tests/test_us_guidance_ui.cjs`.
