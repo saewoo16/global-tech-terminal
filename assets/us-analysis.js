@@ -79,6 +79,13 @@ function earningsSurprise(m){
  const raw=m.raw||{};
  if(raw.consensusComparable!==true)return '—';
  const isMargin=/^(매출총이익률|영업이익률)$/.test(m.label);
+ if(!isMargin&&finite(raw.value)&&finite(raw.consensusValue)&&raw.consensusValue<=0){
+  if(raw.consensusValue===0)return (raw.value>0?'+':'')+fmt(raw.value,2)+' '+String(raw.unit||'').replace('/share','/주')+' 차이';
+  if(raw.value>=0)return raw.value===0?'손익분기 (컨센서스 적자)':'흑자 전환 (컨센서스 적자)';
+  const improvement=(raw.value-raw.consensusValue)/Math.abs(raw.consensusValue)*100;
+  return improvement===0?'적자폭 동일':'적자폭 '+fmt(Math.abs(improvement),2)+'% '+(improvement>0?'축소':'확대');
+ }
+
  const change=isMargin?(finite(raw.value)&&finite(raw.consensusValue)?raw.value-raw.consensusValue:null):raw.surprisePct;
  if(finite(change)){const rounded=Number(change.toFixed(2))||0;return (rounded>0?'+':'')+fmt(rounded,2)+(isMargin?'pp':'%');}
  // Older verified records can lack raw surprise fields. Never expose the estimate,

@@ -1,7 +1,7 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
 const raw=fs.readFileSync(require('node:path').join(__dirname,'../assets/us-analysis.js'),'utf8');
 const ctx={console,URL,window:{addEventListener(){}},document:{readyState:'loading',addEventListener(){}}};vm.createContext(ctx);
-vm.runInContext(raw.replace("if(document.readyState==='loading')","window.api={earningsGuidance,guidanceComparison,earnings};if(document.readyState==='loading')"),ctx);
+vm.runInContext(raw.replace("if(document.readyState==='loading')","window.api={earningsGuidance,guidanceComparison,earnings,earningsSurprise};if(document.readyState==='loading')"),ctx);
 const a=ctx.window.api,g={label:'EPS',period:'FY2027',basis:'Adjusted diluted EPS',unit:'USD/share',low:3,high:4,consensusValue:3.5,consensusComparable:true,sourceIds:['official','consensus']};
 assert.equal(a.guidanceComparison(g),'-14.29% ~ +14.29%');
 assert.equal(a.guidanceComparison({...g,unit:'%',low:10,high:12,consensusValue:11}),'-1pp ~ +1pp');
@@ -13,3 +13,9 @@ html=a.earnings({earnings:{rows:[row]}});assert(!html.includes('DUPLICATE'));ass
 assert.equal(a.earningsGuidance({guidance:'Unsupported text',guidanceSourceIds:[]}), '');
 assert(a.earningsGuidance({guidanceMetrics:[{...g,period:'<unsafe>'}]}).includes('&lt;unsafe&gt;'));
 console.log('PASS guidance ranges, zero denominator, margin pp, ordering, deduplication and source guard');
+
+assert.equal(a.earningsSurprise({label:'EPS',raw:{value:-3.60,consensusValue:-3.99,consensusComparable:true,unit:'USD/share',surprisePct:9.77}}),'적자폭 9.77% 축소');
+assert.equal(a.earningsSurprise({label:'EPS',raw:{value:-4,consensusValue:-2,consensusComparable:true}}),'적자폭 100% 확대');
+assert.equal(a.earningsSurprise({label:'EPS',raw:{value:1,consensusValue:-2,consensusComparable:true}}),'흑자 전환 (컨센서스 적자)');
+assert.equal(a.earningsSurprise({label:'EPS',raw:{value:.4,consensusValue:0,consensusComparable:true,unit:'USD/share'}}),'+0.4 USD/주 차이');
+console.log('PASS negative and zero consensus use explicit loss or absolute-difference wording');
