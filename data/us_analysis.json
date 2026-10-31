@@ -14486,7 +14486,9 @@
               "oct30-energy-xomoldfacts",
               "oct30-energy-xomfacts",
               "oct30-energy-xomsupp",
-              "oct30-energy-xom-prepared"
+              "oct30-energy-xom-prepared",
+              "call-followup-20261031-08-xom-0",
+              "call-followup-20261031-08-xom-1"
             ],
             "releaseTiming": {
               "session": "before_open",
@@ -14713,23 +14715,37 @@
               "가격·마진: 러시아·중동 정제설비 차질로 세계 정제능력 약10%가 멈추면서 제품 공급이 타이트해졌다고 설명했다. 정제마진은 기록적 수준으로 높아졌지만 원유가격은 전분기보다 낮아졌고 화학 마진은 약해졌다.",
               "운영·수요: Permian 생산은 하루180만 환산배럴을 소폭 웃돌았으며 가이아나 성장과 함께 중동 차질을 일부 상쇄했다. 중동의 선적 제약으로 UAE 일부 매출·판매가 이후로 이연됐다.",
               "투자·현금: 분기 현금 설비투자는70억 달러, 연초누적200억 달러였다. 2019년 이후 정제에 약170억 달러를 투자했고 정제 처리능력은 약10% 확대됐다고 설명했다.",
-              "전망: 4분기 가이아나 다섯 번째 FPSO 가동을 예상한다. 중동 차질 지속 가정 아래 하루35만 환산배럴의 생산 중단을 예상하며 Product Solutions 정기보수가 전분기보다 늘어날 전망이다."
+              "전망: 4분기 가이아나 다섯 번째 FPSO 가동을 예상한다. 중동 차질 지속 가정 아래 하루35만 환산배럴의 생산 중단을 예상하며 Product Solutions 정기보수가 전분기보다 늘어날 전망이다.",
+              "정제 투자 Q&A: 기존 설비·인프라를 활용하면 신규 부지 건설 대비 약 절반의 비용으로 생산능력을 늘릴 수 있다고 설명했다. Baytown에 투자 중이며 Baton Rouge·Beaumont에서도 경유·화학 원료·윤활유 생산 확대를 계획한다.",
+              "마진 Q&A: 2019년 대비 개선된 경유 수율이 이번 분기 약15억 달러, 연초 누적 약35억 달러의 마진 기여를 했다고 설명했다.",
+              "환원 Q&A: 배당 성장과 꾸준한 자사주 매입을 경기순환 전반에 유지하는 전략이다. CFO는 분기 순부채를90억 달러 이상 줄였고, 재무 여력이 환원 변동성을 낮추는 기반이라고 설명했다.",
+              "LNG Q&A: Golden Pass Train2는12월까지 대부분 완공한 뒤 시운전을 시작하고 Train3는2027년 중반 기계적 완공을 예상한다. Train1의 시공·가동 경험을 후속 설비에 적용한다고 밝혔다.",
+              "Permian Q&A: 단기 생산량 목표보다 자본 효율과 기술 적용을 중시한다. 회수율 개선의 초기 징후는 있지만 대규모 기존 생산에 효과가 반영되기까지 시간이 필요하다고 설명했다.",
+              "회수 기술 Q&A: 2차 회수는 1차 개발 설계부터 함께 고려해야 하며, 회사는 관련 기술의 더 큰 기여가2030년 이후 나타날 것으로 봤다."
             ],
-            "callStatus": "공식 실적 설명 사전발언 확인 · Q&A 미확인",
+            "callStatus": "공식 사전발언·공개 제3자 Q&A 발췌 확인",
             "dataCheckedAt": "2026-10-30T21:47:25.019954+00:00",
             "universeScope": "sp500",
             "note": "Rev는 Sales and other operating revenue가 아니라 공시 Total revenues and other income이며 지분법·기타수익을 포함한다. GP 및 독립 OP 소계는 미공시이고, 감가상각 등 전체 매출원가의 기능별 배분을 확인할 수 없어 부분 구매비만 차감하지 않았다.",
             "statusLabel": "실적 발표",
             "reportCutoffAt": "2026-10-31T07:00:00+09:00",
             "callSourceIds": [
-              "oct30-energy-xom-prepared"
+              "oct30-energy-xom-prepared",
+              "call-followup-20261031-08-xom-0",
+              "call-followup-20261031-08-xom-1"
             ],
-            "callCheckedAt": "2026-10-30T21:48:29.974838+00:00",
+            "callCheckedAt": "2026-10-30T22:45:55+00:00",
             "displayCallHighlights": [
               "가격·마진: 러시아·중동 정제설비 차질로 세계 정제능력 약10%가 멈추면서 제품 공급이 타이트해졌다고 설명했다. 정제마진은 기록적 수준으로 높아졌지만 원유가격은 전분기보다 낮아졌고 화학 마진은 약해졌다.",
               "운영·수요: Permian 생산은 하루180만 환산배럴을 소폭 웃돌았으며 가이아나 성장과 함께 중동 차질을 일부 상쇄했다. 중동의 선적 제약으로 UAE 일부 매출·판매가 이후로 이연됐다.",
               "투자·현금: 분기 현금 설비투자는70억 달러, 연초누적200억 달러였다. 2019년 이후 정제에 약170억 달러를 투자했고 정제 처리능력은 약10% 확대됐다고 설명했다.",
-              "전망: 4분기 가이아나 다섯 번째 FPSO 가동을 예상한다. 중동 차질 지속 가정 아래 하루35만 환산배럴의 생산 중단을 예상하며 Product Solutions 정기보수가 전분기보다 늘어날 전망이다."
+              "전망: 4분기 가이아나 다섯 번째 FPSO 가동을 예상한다. 중동 차질 지속 가정 아래 하루35만 환산배럴의 생산 중단을 예상하며 Product Solutions 정기보수가 전분기보다 늘어날 전망이다.",
+              "정제 투자 Q&A: 기존 설비·인프라를 활용하면 신규 부지 건설 대비 약 절반의 비용으로 생산능력을 늘릴 수 있다고 설명했다. Baytown에 투자 중이며 Baton Rouge·Beaumont에서도 경유·화학 원료·윤활유 생산 확대를 계획한다.",
+              "마진 Q&A: 2019년 대비 개선된 경유 수율이 이번 분기 약15억 달러, 연초 누적 약35억 달러의 마진 기여를 했다고 설명했다.",
+              "환원 Q&A: 배당 성장과 꾸준한 자사주 매입을 경기순환 전반에 유지하는 전략이다. CFO는 분기 순부채를90억 달러 이상 줄였고, 재무 여력이 환원 변동성을 낮추는 기반이라고 설명했다.",
+              "LNG Q&A: Golden Pass Train2는12월까지 대부분 완공한 뒤 시운전을 시작하고 Train3는2027년 중반 기계적 완공을 예상한다. Train1의 시공·가동 경험을 후속 설비에 적용한다고 밝혔다.",
+              "Permian Q&A: 단기 생산량 목표보다 자본 효율과 기술 적용을 중시한다. 회수율 개선의 초기 징후는 있지만 대규모 기존 생산에 효과가 반영되기까지 시간이 필요하다고 설명했다.",
+              "회수 기술 Q&A: 2차 회수는 1차 개발 설계부터 함께 고려해야 하며, 회사는 관련 기술의 더 큰 기여가2030년 이후 나타날 것으로 봤다."
             ],
             "suppressPresentationSummary": true,
             "displayReleaseHighlights": [],
@@ -14833,6 +14849,36 @@
                 },
                 "collectedAt": "2026-10-30T21:45:05.996045+00:00"
               }
+            },
+            "callUpdatedAt": "2026-10-30T23:01:53.807234+00:00",
+            "callVerifiedAt": "2026-10-30T22:45:55+00:00",
+            "callPresentationPhase": "supplement",
+            "callEvidence": {
+              "type": "third_party_transcript_selected_passages",
+              "qaVerified": true,
+              "fullTranscriptVerified": false,
+              "postCutoffSupplement": true,
+              "observedAt": "2026-10-30T22:45:55+00:00",
+              "publishedAt": null,
+              "qaSourceIds": [
+                "call-followup-20261031-08-xom-0",
+                "call-followup-20261031-08-xom-1"
+              ],
+              "scope": "공개 검색 결과의 실제 전사 질문·답변 발췌를 확인. 전체 전문·음성 직접 검증 아님.",
+              "limitations": "선택적 제3자 전사 발췌이며 전체 콜 전수 요약은 아님. 표기 EST를 실제 ET/DST로 임의 환산하지 않음.",
+              "pendingScope": "전체 공식 전사·음성 대조 미확인",
+              "scheduledFollowupCheck": {
+                "startedAt": "2026-10-30T23:00:00.000420+00:00",
+                "checkedAt": "2026-10-30T23:01:53.439511+00:00",
+                "target": "2026-10-31T08:00:00+09:00",
+                "scope": "XOM·IR·VLTO·WY·ERIE·LNT 공개 전사 선택 발췌 재확인; 전체 공식 전사·음성 확인은 아님",
+                "result": "기존 원래 발표일 귀속으로 새로운 콜 발췌 보완. 시장 패널과 원래 cutoff 유지."
+              }
+            },
+            "callSupplement": {
+              "observedAt": "2026-10-30T22:45:55+00:00",
+              "displayTime": "2026-10-31 07:45 KST",
+              "note": "ET 2026-10-30 발표 항목의 후속 확인. 원래 보고 cutoff와 발표일 유지. 선택적 공개 전사 발췌 요약."
             }
           },
           {
@@ -27324,6 +27370,22 @@
           "id": "move-cohr",
           "title": "COHR 당일 관련 보도·공시",
           "url": "https://247wallst.com/investing/2026/10/30/applied-optoelectronics-plunges-15-coherent-tumbles-13-as-hyperscaler-spending-fears-hit-ai-optics-stocks-lumentum-and-marvell-sink-10/"
+        },
+        {
+          "id": "call-followup-20261031-08-xom-0",
+          "title": "ExxonMobil Q3 2026 selected public Q&A passages · Motley Fool",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/10/30/exxonmobil-xom-q3-2026-earnings-call-transcript/",
+          "retrievedAt": "2026-10-30T22:45:55+00:00",
+          "sourceType": "secondary",
+          "note": "공개 검색 결과의 실제 전사 질문·답변 발췌를 확인. 전체 전문·음성 직접 검증 아님. 선택적 제3자 전사 발췌이며 전체 콜 전수 요약은 아님. 표기 EST를 실제 ET/DST로 임의 환산하지 않음. 원문 공표 표기: Oct 30, 2026 at 3:31PM EST"
+        },
+        {
+          "id": "call-followup-20261031-08-xom-1",
+          "title": "ExxonMobil Q3 2026 · Stock Analysis/Quartr Golden Pass Q&A",
+          "url": "https://stockanalysis.com/stocks/xom/transcripts/721367-q3-2026/",
+          "retrievedAt": "2026-10-30T22:45:55+00:00",
+          "sourceType": "secondary",
+          "note": "공개 검색 결과의 실제 전사 질문·답변 발췌를 확인. 전체 전문·음성 직접 검증 아님. 선택적 제3자 전사 발췌이며 전체 콜 전수 요약은 아님. 표기 EST를 실제 ET/DST로 임의 환산하지 않음."
         }
       ],
       "limitations": [
@@ -70859,7 +70921,9 @@
               "oct29-pmx-ir-facts",
               "oct29-pmx-ir-consensus",
               "oct29-pmx-ir-q425",
-              "oct29-repair-ir-q2"
+              "oct29-repair-ir-q2",
+              "call-followup-20261031-08-ir-0",
+              "call-followup-20261031-08-ir-1"
             ],
             "releaseTiming": {
               "session": "after_close",
@@ -71067,10 +71131,22 @@
             "guidanceSourceIds": [
               "oct29-pmx-ir"
             ],
-            "callStatus": "공개 콜 원문 확인 대기",
-            "callHighlights": [],
-            "displayCallHighlights": [],
-            "callCheckedAt": "2026-10-29T21:53:24.231182+00:00",
+            "callStatus": "공개 전사 발췌·Q&A 확인",
+            "callHighlights": [
+              "수요: 유기적 수주는 18%, 매출은 4% 증가했다. 데이터센터 대형 계약을 제외해도 ITS 유기적 수주는 높은 한 자릿수 증가, 장기 프로젝트 수주는 20% 이상 늘어 2027년 수주잔고를 쌓았다.",
+              "마진: 관세 환급을 제외한 조정 EBITDA 마진은 26.7%로 전분기보다 1.3%p 개선됐지만, 인플레이션과 중국 가격 압력으로 전년보다 낮았다. 환급 3,200만 달러를 포함한 실적과 구분해야 한다.",
+              "PST Q&A: 바이오의약품 물량과 가격 효과로 분기 마진이 32%를 웃돌았고 4분기도 비슷한 수준을 예상했다. 장기적으로 30%대 중반 마진 목표에 접근할 수 있다고 설명했다.",
+              "주문 전환 Q&A: 고객 의사결정은 개선됐으나 견적에서 주문까지의 기간이 의미 있게 단축되지는 않았다. 취소 증가보다 견적 요청 건수·금액과 프로젝트 전환을 관찰한다고 설명했다.",
+              "전망: 4분기 전사와 두 부문의 유기적 매출 성장률은 약 2% 이상을 예상했다. 데이터센터 신규 사업은 초기 증설·인력 비용 때문에 출하 초기에 회사 평균보다 낮은 마진을 예상했다."
+            ],
+            "displayCallHighlights": [
+              "수요: 유기적 수주는 18%, 매출은 4% 증가했다. 데이터센터 대형 계약을 제외해도 ITS 유기적 수주는 높은 한 자릿수 증가, 장기 프로젝트 수주는 20% 이상 늘어 2027년 수주잔고를 쌓았다.",
+              "마진: 관세 환급을 제외한 조정 EBITDA 마진은 26.7%로 전분기보다 1.3%p 개선됐지만, 인플레이션과 중국 가격 압력으로 전년보다 낮았다. 환급 3,200만 달러를 포함한 실적과 구분해야 한다.",
+              "PST Q&A: 바이오의약품 물량과 가격 효과로 분기 마진이 32%를 웃돌았고 4분기도 비슷한 수준을 예상했다. 장기적으로 30%대 중반 마진 목표에 접근할 수 있다고 설명했다.",
+              "주문 전환 Q&A: 고객 의사결정은 개선됐으나 견적에서 주문까지의 기간이 의미 있게 단축되지는 않았다. 취소 증가보다 견적 요청 건수·금액과 프로젝트 전환을 관찰한다고 설명했다.",
+              "전망: 4분기 전사와 두 부문의 유기적 매출 성장률은 약 2% 이상을 예상했다. 데이터센터 신규 사업은 초기 증설·인력 비용 때문에 출하 초기에 회사 평균보다 낮은 마진을 예상했다."
+            ],
+            "callCheckedAt": "2026-10-30T22:46:29.396057+00:00",
             "statusLabel": "실적 발표",
             "note": "금액 USD million, 연결 GAAP 및 희석 EPS. OPM=동일 기간 OP/Rev×100. 미확인 GP와 직접 분기 자료는 추정하지 않음.",
             "dataCheckedAt": "2026-10-29T23:43:24.330924+00:00",
@@ -71256,6 +71332,40 @@
               "observedAt": "2026-10-29T23:49:54.553036+00:00",
               "phase": "post_cutoff_supplement",
               "note": "공식 당기·비교분기 공시와 동일 EPS 기준을 대조한 후속 보완. GP 미공시는 불완전한 비용 차감으로 추정하지 않음. 가이던스 범위와 실제 비교 컨센서스 기준을 보존함."
+            },
+            "callUpdatedAt": "2026-10-30T23:01:53.807234+00:00",
+            "callVerifiedAt": "2026-10-30T22:46:29.396057+00:00",
+            "callPresentationPhase": "supplement",
+            "callSourceIds": [
+              "call-followup-20261031-08-ir-0",
+              "call-followup-20261031-08-ir-1"
+            ],
+            "callEvidence": {
+              "type": "third_party_transcript_selected_passages",
+              "qaVerified": true,
+              "fullTranscriptVerified": false,
+              "postCutoffSupplement": true,
+              "observedAt": "2026-10-30T22:46:29.396057+00:00",
+              "publishedAt": null,
+              "qaSourceIds": [
+                "call-followup-20261031-08-ir-0",
+                "call-followup-20261031-08-ir-1"
+              ],
+              "scope": "웹 검색 도구에 반환된 색인 전사 발췌 본문을 읽고 확인. 전체 원문 페이지 직접 열람이나 음성 청취는 아님.",
+              "limitations": "제3자 전사 오류 가능성이 있으며 선택적으로 요약했습니다. 원래 실적 발표일 2026-10-29에만 보완합니다.",
+              "pendingScope": "전체 공식 전사·음성 대조 미확인",
+              "scheduledFollowupCheck": {
+                "startedAt": "2026-10-30T23:00:00.000420+00:00",
+                "checkedAt": "2026-10-30T23:01:53.439511+00:00",
+                "target": "2026-10-31T08:00:00+09:00",
+                "scope": "XOM·IR·VLTO·WY·ERIE·LNT 공개 전사 선택 발췌 재확인; 전체 공식 전사·음성 확인은 아님",
+                "result": "기존 원래 발표일 귀속으로 새로운 콜 발췌 보완. 시장 패널과 원래 cutoff 유지."
+              }
+            },
+            "callSupplement": {
+              "observedAt": "2026-10-30T22:46:29.396057+00:00",
+              "displayTime": "2026-10-31 07:46 KST",
+              "note": "ET 2026-10-29 발표 항목의 후속 확인. 원래 보고 cutoff와 발표일 유지. 선택적 공개 전사 발췌 요약."
             }
           },
           {
@@ -71393,7 +71503,9 @@
               "oct29-pmx-vlto-q425",
               "oct29-pmx-vlto-q226",
               "oct29-repair-vlto-q2",
-              "oct29-repair-vlto-guidance-consensus"
+              "oct29-repair-vlto-guidance-consensus",
+              "call-followup-20261031-08-vlto-0",
+              "call-followup-20261031-08-vlto-1"
             ],
             "releaseTiming": {
               "session": "after_close",
@@ -71551,10 +71663,22 @@
               "oct29-pmx-vlto",
               "oct29-repair-vlto-guidance-consensus"
             ],
-            "callStatus": "공개 콜 원문 확인 대기",
-            "callHighlights": [],
-            "displayCallHighlights": [],
-            "callCheckedAt": "2026-10-29T21:53:24.231182+00:00",
+            "callStatus": "공개 전사 발췌·Q&A 확인",
+            "callHighlights": [
+              "수요: Water Quality 핵심 매출은 6.4%, PQI는 3.2% 성장했다. 북미 산업용 수처리와 디지털 인프라 투자가 수질 사업을 이끌었다.",
+              "데이터센터 Q&A: 관련 매출이 두 배 늘었지만 아직 작은 기반이다. ChemTreat는 설계 초기부터 물 사용량과 전력 효율을 함께 최적화하며, 수처리·분석과 직접칩 액체냉각 영역에 참여한다고 설명했다.",
+              "디지털 워크플로 Q&A: TraceGains·GlobalVision을 Esko 기반에 통합하면서 수주가 견조했다. 계약 기간에 걸쳐 매출을 인식하는 구조가 가시성을 높이며, 마킹·코딩의 안정적 수요와 낮은 비교 기준도 4분기를 뒷받침한다.",
+              "마진·전망: 조정 OPM은 25.6%로 1.7%p 개선됐다. 연간 조정 EPS 전망을 4.49~4.52달러로 높이고, 4분기 핵심 매출 성장률 5.5~6.5%를 예상했다.",
+              "자본배분 Q&A: 10월까지 자사주 5.5억달러를 매입했다. 인수 후보군도 활발하며 자사주와 M&A를 균형 있게 집행한다는 방침을 유지했다."
+            ],
+            "displayCallHighlights": [
+              "수요: Water Quality 핵심 매출은 6.4%, PQI는 3.2% 성장했다. 북미 산업용 수처리와 디지털 인프라 투자가 수질 사업을 이끌었다.",
+              "데이터센터 Q&A: 관련 매출이 두 배 늘었지만 아직 작은 기반이다. ChemTreat는 설계 초기부터 물 사용량과 전력 효율을 함께 최적화하며, 수처리·분석과 직접칩 액체냉각 영역에 참여한다고 설명했다.",
+              "디지털 워크플로 Q&A: TraceGains·GlobalVision을 Esko 기반에 통합하면서 수주가 견조했다. 계약 기간에 걸쳐 매출을 인식하는 구조가 가시성을 높이며, 마킹·코딩의 안정적 수요와 낮은 비교 기준도 4분기를 뒷받침한다.",
+              "마진·전망: 조정 OPM은 25.6%로 1.7%p 개선됐다. 연간 조정 EPS 전망을 4.49~4.52달러로 높이고, 4분기 핵심 매출 성장률 5.5~6.5%를 예상했다.",
+              "자본배분 Q&A: 10월까지 자사주 5.5억달러를 매입했다. 인수 후보군도 활발하며 자사주와 M&A를 균형 있게 집행한다는 방침을 유지했다."
+            ],
+            "callCheckedAt": "2026-10-30T22:46:29.396057+00:00",
             "statusLabel": "실적 발표",
             "note": "금액 USD million, 연결 GAAP 및 희석 EPS. OPM=동일 기간 OP/Rev×100. 미확인 GP와 직접 분기 자료는 추정하지 않음.",
             "dataCheckedAt": "2026-10-29T23:43:24.330924+00:00",
@@ -71774,6 +71898,40 @@
               "observedAt": "2026-10-29T23:49:54.553036+00:00",
               "phase": "post_cutoff_supplement",
               "note": "공식 당기·비교분기 공시와 동일 EPS 기준을 대조한 후속 보완. GP 미공시는 불완전한 비용 차감으로 추정하지 않음. 가이던스 범위와 실제 비교 컨센서스 기준을 보존함."
+            },
+            "callUpdatedAt": "2026-10-30T23:01:53.807234+00:00",
+            "callVerifiedAt": "2026-10-30T22:46:29.396057+00:00",
+            "callPresentationPhase": "supplement",
+            "callSourceIds": [
+              "call-followup-20261031-08-vlto-0",
+              "call-followup-20261031-08-vlto-1"
+            ],
+            "callEvidence": {
+              "type": "third_party_transcript_selected_passages",
+              "qaVerified": true,
+              "fullTranscriptVerified": false,
+              "postCutoffSupplement": true,
+              "observedAt": "2026-10-30T22:46:29.396057+00:00",
+              "publishedAt": null,
+              "qaSourceIds": [
+                "call-followup-20261031-08-vlto-0",
+                "call-followup-20261031-08-vlto-1"
+              ],
+              "scope": "웹 검색 도구에 반환된 색인 전사 발췌 본문을 읽고 확인. 전체 원문 페이지 직접 열람이나 음성 청취는 아님.",
+              "limitations": "제3자 전사 오류 가능성이 있으며 선택적으로 요약했습니다. 원래 실적 발표일 2026-10-29에만 보완합니다.",
+              "pendingScope": "전체 공식 전사·음성 대조 미확인",
+              "scheduledFollowupCheck": {
+                "startedAt": "2026-10-30T23:00:00.000420+00:00",
+                "checkedAt": "2026-10-30T23:01:53.439511+00:00",
+                "target": "2026-10-31T08:00:00+09:00",
+                "scope": "XOM·IR·VLTO·WY·ERIE·LNT 공개 전사 선택 발췌 재확인; 전체 공식 전사·음성 확인은 아님",
+                "result": "기존 원래 발표일 귀속으로 새로운 콜 발췌 보완. 시장 패널과 원래 cutoff 유지."
+              }
+            },
+            "callSupplement": {
+              "observedAt": "2026-10-30T22:46:29.396057+00:00",
+              "displayTime": "2026-10-31 07:46 KST",
+              "note": "ET 2026-10-29 발표 항목의 후속 확인. 원래 보고 cutoff와 발표일 유지. 선택적 공개 전사 발췌 요약."
             }
           },
           {
@@ -73625,7 +73783,9 @@
               "oct29-pmx-wy",
               "oct29-pmx-wy-facts",
               "oct29-pmx-wy-consensus",
-              "oct29-pmx-wy-q425"
+              "oct29-pmx-wy-q425",
+              "call-followup-20261031-08-wy-0",
+              "call-followup-20261031-08-wy-1"
             ],
             "releaseTiming": {
               "session": "after_close",
@@ -73833,10 +73993,22 @@
             "guidanceSourceIds": [
               "oct29-pmx-wy"
             ],
-            "callStatus": "공개 콜 원문 확인 대기",
-            "callHighlights": [],
-            "displayCallHighlights": [],
-            "callCheckedAt": "2026-10-29T21:53:24.231182+00:00",
+            "callStatus": "공개 전사 발췌·Q&A 확인",
+            "callHighlights": [
+              "수요·가격 Q&A: 단독주택 수요가 약한 가운데 최근 OSB 가격 상승은 수요 회복보다 공급 감축의 영향이라고 설명했다. 향후 3~6개월 가격이 개선되지 않으면 추가 감산 가능성이 있다고 봤다.",
+              "비용 Q&A: 운송·연료·수지 등 비용 압력이 월 총 2,000만~2,500만달러로 커졌고 약 절반은 고객·공급사와 분담한다고 설명했다. 4분기 전망은 3분기 말 비용 환경이 유지되는 가정이다.",
+              "설비투자: 2026년 통상적 유지·개선 투자 전망을 3.75억달러로 낮췄다. Monticello 공학목재 공장은 2027년 중반 가동을 유지하지만 총비용은 최초 5억달러 추정보다 다소 높아질 전망이다.",
+              "수출 Q&A: 중국 주택 경기는 여전히 약하지만 고객 주문에 따라 4분기 서부 원목 출하를 늘릴 계획이다. 중국의 10% 관세가 없어지면 수출가격·마진 기회가 확대될 수 있다는 조건부 설명이다.",
+              "성장사업: 바이오카본 첫 공장 착공과 태양광 사업을 진행 중이다. 바이오카본의 의미 있는 EBITDA 기여는 아직 수년 뒤이며, 기존 목재·임지 사업과의 부산물·물류 시너지를 강조했다."
+            ],
+            "displayCallHighlights": [
+              "수요·가격 Q&A: 단독주택 수요가 약한 가운데 최근 OSB 가격 상승은 수요 회복보다 공급 감축의 영향이라고 설명했다. 향후 3~6개월 가격이 개선되지 않으면 추가 감산 가능성이 있다고 봤다.",
+              "비용 Q&A: 운송·연료·수지 등 비용 압력이 월 총 2,000만~2,500만달러로 커졌고 약 절반은 고객·공급사와 분담한다고 설명했다. 4분기 전망은 3분기 말 비용 환경이 유지되는 가정이다.",
+              "설비투자: 2026년 통상적 유지·개선 투자 전망을 3.75억달러로 낮췄다. Monticello 공학목재 공장은 2027년 중반 가동을 유지하지만 총비용은 최초 5억달러 추정보다 다소 높아질 전망이다.",
+              "수출 Q&A: 중국 주택 경기는 여전히 약하지만 고객 주문에 따라 4분기 서부 원목 출하를 늘릴 계획이다. 중국의 10% 관세가 없어지면 수출가격·마진 기회가 확대될 수 있다는 조건부 설명이다.",
+              "성장사업: 바이오카본 첫 공장 착공과 태양광 사업을 진행 중이다. 바이오카본의 의미 있는 EBITDA 기여는 아직 수년 뒤이며, 기존 목재·임지 사업과의 부산물·물류 시너지를 강조했다."
+            ],
+            "callCheckedAt": "2026-10-30T22:46:29.396057+00:00",
             "statusLabel": "실적 발표",
             "note": "금액 USD million, 연결 GAAP 및 희석 EPS. OPM=동일 기간 OP/Rev×100. 미확인 GP와 직접 분기 자료는 추정하지 않음.",
             "dataCheckedAt": "2026-10-29T23:43:24.330924+00:00",
@@ -74001,6 +74173,40 @@
               "observedAt": "2026-10-29T23:49:54.553036+00:00",
               "phase": "post_cutoff_supplement",
               "note": "공식 당기·비교분기 공시와 동일 EPS 기준을 대조한 후속 보완. GP 미공시는 불완전한 비용 차감으로 추정하지 않음. 가이던스 범위와 실제 비교 컨센서스 기준을 보존함."
+            },
+            "callUpdatedAt": "2026-10-30T23:01:53.807234+00:00",
+            "callVerifiedAt": "2026-10-30T22:46:29.396057+00:00",
+            "callPresentationPhase": "supplement",
+            "callSourceIds": [
+              "call-followup-20261031-08-wy-0",
+              "call-followup-20261031-08-wy-1"
+            ],
+            "callEvidence": {
+              "type": "third_party_transcript_selected_passages",
+              "qaVerified": true,
+              "fullTranscriptVerified": false,
+              "postCutoffSupplement": true,
+              "observedAt": "2026-10-30T22:46:29.396057+00:00",
+              "publishedAt": null,
+              "qaSourceIds": [
+                "call-followup-20261031-08-wy-0",
+                "call-followup-20261031-08-wy-1"
+              ],
+              "scope": "웹 검색 도구에 반환된 색인 전사 발췌 본문을 읽고 확인. 전체 원문 페이지 직접 열람이나 음성 청취는 아님.",
+              "limitations": "제3자 전사 오류 가능성이 있으며 선택적으로 요약했습니다. 원래 실적 발표일 2026-10-29에만 보완합니다.",
+              "pendingScope": "전체 공식 전사·음성 대조 미확인",
+              "scheduledFollowupCheck": {
+                "startedAt": "2026-10-30T23:00:00.000420+00:00",
+                "checkedAt": "2026-10-30T23:01:53.439511+00:00",
+                "target": "2026-10-31T08:00:00+09:00",
+                "scope": "XOM·IR·VLTO·WY·ERIE·LNT 공개 전사 선택 발췌 재확인; 전체 공식 전사·음성 확인은 아님",
+                "result": "기존 원래 발표일 귀속으로 새로운 콜 발췌 보완. 시장 패널과 원래 cutoff 유지."
+              }
+            },
+            "callSupplement": {
+              "observedAt": "2026-10-30T22:46:29.396057+00:00",
+              "displayTime": "2026-10-31 07:46 KST",
+              "note": "ET 2026-10-29 발표 항목의 후속 확인. 원래 보고 cutoff와 발표일 유지. 선택적 공개 전사 발췌 요약."
             }
           },
           {
@@ -75270,7 +75476,8 @@
               "oct29-pmx-erie-facts",
               "oct29-repair-erie-q2",
               "oct29-repair-erie-q425",
-              "oct29-repair-erie-q1"
+              "oct29-repair-erie-q1",
+              "call-followup-20261031-08-erie-0"
             ],
             "releaseTiming": {
               "session": "after_close",
@@ -75482,10 +75689,22 @@
             },
             "guidance": "",
             "guidanceSourceIds": [],
-            "callStatus": "공개 콜 원문 확인 대기",
-            "callHighlights": [],
-            "displayCallHighlights": [],
-            "callCheckedAt": "2026-10-29T21:53:24.231182+00:00",
+            "callStatus": "공개 사전녹음 전사 발췌 확인 · Q&A 미실시",
+            "callHighlights": [
+              "수요·가격: 관리 대상 Exchange의 원수보험료는 1.8% 증가했지만 계약 수는 약 1.9% 감소했다. 계약당 평균 보험료는 5.4% 올랐고 유지율은 87.2%였다.",
+              "보험 손익: Exchange 합산비율은 105%로 전년 100.6%보다 높았다. 재해손실 기여가 3%p에서 14.1%p로 커진 영향이며, Indemnity 자체의 영업마진과는 다른 지표다.",
+              "수수료·비용: Indemnity 관리수수료 매출은 2.6% 늘었으나 보험대리점 인센티브 등으로 수수료 비용이 5.2% 증가했다. 기술 인프라 비용 증가는 다른 비용 감소로 일부 상쇄됐다.",
+              "상품·운영: Erie Secure Auto의 초기 적용 지역에서 신규 계약과 유지율 개선을 관찰했다. 생명보험 LifeWeb과 전자문서 확대로 견적·서비스 절차를 간소화하고 있다.",
+              "경영·콜 형식: CEO·CFO는 연말 은퇴 예정으로 승계 절차를 진행 중이다. 이번 콜은 사전녹음이며 회사가 Q&A를 실시하지 않았다고 명시했다."
+            ],
+            "displayCallHighlights": [
+              "수요·가격: 관리 대상 Exchange의 원수보험료는 1.8% 증가했지만 계약 수는 약 1.9% 감소했다. 계약당 평균 보험료는 5.4% 올랐고 유지율은 87.2%였다.",
+              "보험 손익: Exchange 합산비율은 105%로 전년 100.6%보다 높았다. 재해손실 기여가 3%p에서 14.1%p로 커진 영향이며, Indemnity 자체의 영업마진과는 다른 지표다.",
+              "수수료·비용: Indemnity 관리수수료 매출은 2.6% 늘었으나 보험대리점 인센티브 등으로 수수료 비용이 5.2% 증가했다. 기술 인프라 비용 증가는 다른 비용 감소로 일부 상쇄됐다.",
+              "상품·운영: Erie Secure Auto의 초기 적용 지역에서 신규 계약과 유지율 개선을 관찰했다. 생명보험 LifeWeb과 전자문서 확대로 견적·서비스 절차를 간소화하고 있다.",
+              "경영·콜 형식: CEO·CFO는 연말 은퇴 예정으로 승계 절차를 진행 중이다. 이번 콜은 사전녹음이며 회사가 Q&A를 실시하지 않았다고 명시했다."
+            ],
+            "callCheckedAt": "2026-10-30T22:46:29.396057+00:00",
             "statusLabel": "실적 발표",
             "note": "금액 USD million, 연결 GAAP 및 희석 EPS. OPM=동일 기간 OP/Rev×100. GP/GPM 별도 미공시. 보험관리서비스의 수익·영업비용을 공시하며 GP/GPM 소계를 별도 공시하지 않음.",
             "dataCheckedAt": "2026-10-29T23:43:24.330924+00:00",
@@ -75610,6 +75829,36 @@
               "observedAt": "2026-10-29T23:49:54.553036+00:00",
               "phase": "post_cutoff_supplement",
               "note": "공식 당기·비교분기 공시와 동일 EPS 기준을 대조한 후속 보완. GP 미공시는 불완전한 비용 차감으로 추정하지 않음. 가이던스 범위와 실제 비교 컨센서스 기준을 보존함."
+            },
+            "callUpdatedAt": "2026-10-30T23:01:53.807234+00:00",
+            "callVerifiedAt": "2026-10-30T22:46:29.396057+00:00",
+            "callPresentationPhase": "supplement",
+            "callSourceIds": [
+              "call-followup-20261031-08-erie-0"
+            ],
+            "callEvidence": {
+              "type": "third_party_transcript_selected_passages",
+              "qaVerified": false,
+              "fullTranscriptVerified": false,
+              "postCutoffSupplement": true,
+              "observedAt": "2026-10-30T22:46:29.396057+00:00",
+              "publishedAt": null,
+              "qaSourceIds": [],
+              "scope": "웹 검색 도구에 반환된 색인 전사 발췌 본문을 읽고 확인. 전체 원문 페이지 직접 열람이나 음성 청취는 아님.",
+              "limitations": "제3자 전사 오류 가능성이 있으며 선택적으로 요약했습니다. 원래 실적 발표일 2026-10-29에만 보완합니다.",
+              "pendingScope": "사전녹음·Q&A 미실시; 공식 전체 전사 대조 미확인",
+              "scheduledFollowupCheck": {
+                "startedAt": "2026-10-30T23:00:00.000420+00:00",
+                "checkedAt": "2026-10-30T23:01:53.439511+00:00",
+                "target": "2026-10-31T08:00:00+09:00",
+                "scope": "XOM·IR·VLTO·WY·ERIE·LNT 공개 전사 선택 발췌 재확인; 전체 공식 전사·음성 확인은 아님",
+                "result": "기존 원래 발표일 귀속으로 새로운 콜 발췌 보완. 시장 패널과 원래 cutoff 유지."
+              }
+            },
+            "callSupplement": {
+              "observedAt": "2026-10-30T22:46:29.396057+00:00",
+              "displayTime": "2026-10-31 07:46 KST",
+              "note": "ET 2026-10-29 발표 항목의 후속 확인. 원래 보고 cutoff와 발표일 유지. 선택적 공개 전사 발췌 요약."
             }
           },
           {
@@ -76150,7 +76399,10 @@
               "oct29-followup-lnt-q1",
               "oct29-followup-lnt-q4",
               "oct29-followup-lnt-consensus",
-              "oct29-followup-lnt-session-price"
+              "oct29-followup-lnt-session-price",
+              "call-followup-20261031-08-lnt-0",
+              "call-followup-20261031-08-lnt-1",
+              "call-followup-20261031-08-lnt-2"
             ],
             "releaseTiming": {
               "session": "after_close",
@@ -76178,10 +76430,22 @@
             "guidanceSourceIds": [
               "oct29-followup-lnt-q3"
             ],
-            "callStatus": "2026-10-30 10:00 ET 콜 예정 · 공개 원문 확인 대기",
-            "callHighlights": [],
-            "displayCallHighlights": [],
-            "callCheckedAt": "2026-10-29T22:44:10.134484+00:00",
+            "callStatus": "공개 전사 발췌·Q&A 확인",
+            "callHighlights": [
+              "수요: 계약된 데이터센터 전력 수요는 3.4GW다. 대형 부하 증가와 아이오와 데이터센터 가동, 위스콘신 산업·상업 수요가 투자 확대를 뒷받침한다.",
+              "설비투자: 2027~2030년 투자 계획은 종전보다 19% 늘어난 159억달러다. 가스 터빈 1.2GW와 저장장치 200MW 등을 추가하며 요금기저와 건설중자산의 연평균 증가율을 13%로 제시했다.",
+              "이익·배당 전망: 2026년 ongoing EPS 범위를 3.41~3.46달러로 좁히고, 2027년은 3.63~3.73달러를 제시했다. 투자 확대에 맞춰 배당 증가 속도를 조절하고 지급성향은 목표 60~70%의 하단을 지향한다.",
+              "자금조달: 2027~2030년 8% 이상 이익 성장 목표는 신주 발행과 차환에 따른 희석을 반영한다. 51억달러의 에너지부 대출은 장기 고객 비용 절감에 활용할 계획이다.",
+              "추가 투자 Q&A: 부하가 더 늘면 투자 계획을 보완할 여지가 있다. 경영진은 후반기 현금흐름이 강화되면 추가 투자 대비 신규 보통주 조달 필요가 낮아질 수 있다고 설명했다."
+            ],
+            "displayCallHighlights": [
+              "수요: 계약된 데이터센터 전력 수요는 3.4GW다. 대형 부하 증가와 아이오와 데이터센터 가동, 위스콘신 산업·상업 수요가 투자 확대를 뒷받침한다.",
+              "설비투자: 2027~2030년 투자 계획은 종전보다 19% 늘어난 159억달러다. 가스 터빈 1.2GW와 저장장치 200MW 등을 추가하며 요금기저와 건설중자산의 연평균 증가율을 13%로 제시했다.",
+              "이익·배당 전망: 2026년 ongoing EPS 범위를 3.41~3.46달러로 좁히고, 2027년은 3.63~3.73달러를 제시했다. 투자 확대에 맞춰 배당 증가 속도를 조절하고 지급성향은 목표 60~70%의 하단을 지향한다.",
+              "자금조달: 2027~2030년 8% 이상 이익 성장 목표는 신주 발행과 차환에 따른 희석을 반영한다. 51억달러의 에너지부 대출은 장기 고객 비용 절감에 활용할 계획이다.",
+              "추가 투자 Q&A: 부하가 더 늘면 투자 계획을 보완할 여지가 있다. 경영진은 후반기 현금흐름이 강화되면 추가 투자 대비 신규 보통주 조달 필요가 낮아질 수 있다고 설명했다."
+            ],
+            "callCheckedAt": "2026-10-30T22:46:29.396057+00:00",
             "statusLabel": "실적 발표",
             "note": "금액 USD million, 연결 GAAP, 희석 EPS. GP/GPM은 별도 공시하지 않아 미공시. OPM은 동일 분기 OP/Rev×100. Q3 ongoing EPS와 GAAP EPS는1.52로 같으나 컨센서스 비교는 ongoing 기준을 별도 보존. 07시 이후 확인한 후속 자료.",
             "dataCheckedAt": "2026-10-29T23:43:24.330924+00:00",
@@ -76564,6 +76828,42 @@
               "observedAt": "2026-10-29T23:49:54.553036+00:00",
               "phase": "post_cutoff_supplement",
               "note": "공식 당기·비교분기 공시와 동일 EPS 기준을 대조한 후속 보완. GP 미공시는 불완전한 비용 차감으로 추정하지 않음. 가이던스 범위와 실제 비교 컨센서스 기준을 보존함."
+            },
+            "callUpdatedAt": "2026-10-30T23:01:53.807234+00:00",
+            "callVerifiedAt": "2026-10-30T22:46:29.396057+00:00",
+            "callPresentationPhase": "supplement",
+            "callSourceIds": [
+              "call-followup-20261031-08-lnt-0",
+              "call-followup-20261031-08-lnt-1",
+              "call-followup-20261031-08-lnt-2"
+            ],
+            "callEvidence": {
+              "type": "third_party_transcript_selected_passages",
+              "qaVerified": true,
+              "fullTranscriptVerified": false,
+              "postCutoffSupplement": true,
+              "observedAt": "2026-10-30T22:46:29.396057+00:00",
+              "publishedAt": null,
+              "qaSourceIds": [
+                "call-followup-20261031-08-lnt-0",
+                "call-followup-20261031-08-lnt-1",
+                "call-followup-20261031-08-lnt-2"
+              ],
+              "scope": "웹 검색 도구에 반환된 색인 전사 발췌 본문을 읽고 확인. 전체 원문 페이지 직접 열람이나 음성 청취는 아님.",
+              "limitations": "제3자 전사 오류 가능성이 있으며 선택적으로 요약했습니다. 원래 실적 발표일 2026-10-29에만 보완합니다.",
+              "pendingScope": "전체 공식 전사·음성 대조 미확인",
+              "scheduledFollowupCheck": {
+                "startedAt": "2026-10-30T23:00:00.000420+00:00",
+                "checkedAt": "2026-10-30T23:01:53.439511+00:00",
+                "target": "2026-10-31T08:00:00+09:00",
+                "scope": "XOM·IR·VLTO·WY·ERIE·LNT 공개 전사 선택 발췌 재확인; 전체 공식 전사·음성 확인은 아님",
+                "result": "기존 원래 발표일 귀속으로 새로운 콜 발췌 보완. 시장 패널과 원래 cutoff 유지."
+              }
+            },
+            "callSupplement": {
+              "observedAt": "2026-10-30T22:46:29.396057+00:00",
+              "displayTime": "2026-10-31 07:46 KST",
+              "note": "ET 2026-10-29 발표 항목의 후속 확인. 원래 보고 cutoff와 발표일 유지. 선택적 공개 전사 발췌 요약."
             }
           }
         ],
@@ -86454,6 +86754,86 @@
           "retrievedAt": "2026-10-30T02:33:06.821141+00:00",
           "sourceType": "secondary",
           "note": "Quartr 제공 제3자 공개 전문의 실제 Q&A와 종료 발언 확인. 원문 날짜 October 29, 2026, 정확한 공표시각 미표기. 기존 공식 준비 발언을 보존하고 Q&A만 후속 보완."
+        },
+        {
+          "id": "call-followup-20261031-08-ir-0",
+          "title": "Ingersoll Rand Q3 2026 transcript · Stock Analysis/Quartr",
+          "url": "https://stockanalysis.com/stocks/ir/transcripts/721344-q3-2026/",
+          "retrievedAt": "2026-10-30T22:46:29.396057+00:00",
+          "sourceType": "secondary",
+          "note": "웹 검색 도구에 반환된 색인 전사 발췌 본문을 읽고 확인. 전체 원문 페이지 직접 열람이나 음성 청취는 아님. 제3자 전사 오류 가능성이 있으며 선택적으로 요약했습니다. 원래 실적 발표일 2026-10-29에만 보완합니다."
+        },
+        {
+          "id": "call-followup-20261031-08-ir-1",
+          "title": "Ingersoll Rand Q3 2026 transcript · Motley Fool",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/10/30/ingersoll-rand-ir-q3-2026-earnings-call-transcript/",
+          "retrievedAt": "2026-10-30T22:46:29.396057+00:00",
+          "sourceType": "secondary",
+          "note": "웹 검색 도구에 반환된 색인 전사 발췌 본문을 읽고 확인. 전체 원문 페이지 직접 열람이나 음성 청취는 아님. 제3자 전사 오류 가능성이 있으며 선택적으로 요약했습니다. 원래 실적 발표일 2026-10-29에만 보완합니다."
+        },
+        {
+          "id": "call-followup-20261031-08-vlto-0",
+          "title": "Veralto Q3 2026 transcript · Benzinga",
+          "url": "https://www.benzinga.com/news/26/10/62735937/veralto-q3-2026-earnings-call-transcript",
+          "retrievedAt": "2026-10-30T22:46:29.396057+00:00",
+          "sourceType": "secondary",
+          "note": "웹 검색 도구에 반환된 색인 전사 발췌 본문을 읽고 확인. 전체 원문 페이지 직접 열람이나 음성 청취는 아님. 제3자 전사 오류 가능성이 있으며 선택적으로 요약했습니다. 원래 실적 발표일 2026-10-29에만 보완합니다."
+        },
+        {
+          "id": "call-followup-20261031-08-vlto-1",
+          "title": "Veralto Q3 2026 transcript · Motley Fool",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/10/30/veralto-vlto-q3-2026-earnings-call-transcript/",
+          "retrievedAt": "2026-10-30T22:46:29.396057+00:00",
+          "sourceType": "secondary",
+          "note": "웹 검색 도구에 반환된 색인 전사 발췌 본문을 읽고 확인. 전체 원문 페이지 직접 열람이나 음성 청취는 아님. 제3자 전사 오류 가능성이 있으며 선택적으로 요약했습니다. 원래 실적 발표일 2026-10-29에만 보완합니다."
+        },
+        {
+          "id": "call-followup-20261031-08-wy-0",
+          "title": "Weyerhaeuser Q3 2026 transcript · Stock Analysis/Quartr",
+          "url": "https://stockanalysis.com/stocks/wy/transcripts/721387-q3-2026/",
+          "retrievedAt": "2026-10-30T22:46:29.396057+00:00",
+          "sourceType": "secondary",
+          "note": "웹 검색 도구에 반환된 색인 전사 발췌 본문을 읽고 확인. 전체 원문 페이지 직접 열람이나 음성 청취는 아님. 제3자 전사 오류 가능성이 있으며 선택적으로 요약했습니다. 원래 실적 발표일 2026-10-29에만 보완합니다."
+        },
+        {
+          "id": "call-followup-20261031-08-wy-1",
+          "title": "Weyerhaeuser official Q3 2026 call event",
+          "url": "https://investor.weyerhaeuser.com/events-and-presentations?item=205",
+          "retrievedAt": "2026-10-30T22:46:29.396057+00:00",
+          "sourceType": "primary",
+          "note": "웹 검색 도구에 반환된 색인 전사 발췌 본문을 읽고 확인. 전체 원문 페이지 직접 열람이나 음성 청취는 아님. 제3자 전사 오류 가능성이 있으며 선택적으로 요약했습니다. 원래 실적 발표일 2026-10-29에만 보완합니다."
+        },
+        {
+          "id": "call-followup-20261031-08-erie-0",
+          "title": "Erie Indemnity Q3 2026 prerecorded call transcript · Benzinga",
+          "url": "https://www.benzinga.com/news/26/10/62742167/erie-indemnity-q3-2026-earnings-call-transcript",
+          "retrievedAt": "2026-10-30T22:46:29.396057+00:00",
+          "sourceType": "secondary",
+          "note": "웹 검색 도구에 반환된 색인 전사 발췌 본문을 읽고 확인. 전체 원문 페이지 직접 열람이나 음성 청취는 아님. 제3자 전사 오류 가능성이 있으며 선택적으로 요약했습니다. 원래 실적 발표일 2026-10-29에만 보완합니다."
+        },
+        {
+          "id": "call-followup-20261031-08-lnt-0",
+          "title": "Alliant Energy Q3 2026 transcript · Motley Fool",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/10/30/alliant-energy-lnt-q3-2026-earnings-call-transcript/",
+          "retrievedAt": "2026-10-30T22:46:29.396057+00:00",
+          "sourceType": "secondary",
+          "note": "웹 검색 도구에 반환된 색인 전사 발췌 본문을 읽고 확인. 전체 원문 페이지 직접 열람이나 음성 청취는 아님. 제3자 전사 오류 가능성이 있으며 선택적으로 요약했습니다. 원래 실적 발표일 2026-10-29에만 보완합니다."
+        },
+        {
+          "id": "call-followup-20261031-08-lnt-1",
+          "title": "Alliant Energy Q3 2026 transcript · Earnings Whispers",
+          "url": "https://www.earningswhispers.com/transcript/LNT/Q32026",
+          "retrievedAt": "2026-10-30T22:46:29.396057+00:00",
+          "sourceType": "secondary",
+          "note": "웹 검색 도구에 반환된 색인 전사 발췌 본문을 읽고 확인. 전체 원문 페이지 직접 열람이나 음성 청취는 아님. 제3자 전사 오류 가능성이 있으며 선택적으로 요약했습니다. 원래 실적 발표일 2026-10-29에만 보완합니다."
+        },
+        {
+          "id": "call-followup-20261031-08-lnt-2",
+          "title": "Alliant Energy official Q3 results and 2027 guidance, released Oct29",
+          "url": "https://investors.alliantenergy.com/News--Presentations/news/news-details/2026/Alliant-Energy-Announces-Third-Quarter-2026-Results-and-2027-Guidance/default.aspx",
+          "retrievedAt": "2026-10-30T22:46:29.396057+00:00",
+          "sourceType": "primary",
+          "note": "웹 검색 도구에 반환된 색인 전사 발췌 본문을 읽고 확인. 전체 원문 페이지 직접 열람이나 음성 청취는 아님. 제3자 전사 오류 가능성이 있으며 선택적으로 요약했습니다. 원래 실적 발표일 2026-10-29에만 보완합니다."
         }
       ],
       "limitations": [
@@ -309107,5 +309487,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-10-30T22:14:41.402827+00:00"
+  "updatedAt": "2026-10-30T23:01:53.807234+00:00"
 }
