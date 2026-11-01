@@ -62,9 +62,9 @@ function fedwatchHTML(d){
  ageWarning+'<div class="fedwatch-table-wrap"><table class="fedwatch-table"><thead><tr><th>FOMC 회의일</th>'+d.columnsBps.map(b=>'<th>'+range(b)+'</th>').join('')+'</tr></thead><tbody>'+d.meetings.map(m=>'<tr><td>'+esc(m.date)+'</td>'+m.probabilities.map(p=>'<td class="'+(p===0?'prob-zero':p>=50?'prob-high':'prob-mid')+'">'+percent(p)+'</td>').join('')+'</tr>').join('')+'</tbody></table></div>'+
  '<div class="fedwatch-commentary"><h4>금리 경로 해석</h4><p>'+esc(first.date)+' 회의는 <strong>동결 '+percent(dirs.hold)+'</strong>, 인상 '+percent(dirs.hike)+', 인하 '+percent(dirs.cut)+'입니다. '+(dirs.hold>=dirs.hike&&dirs.hold>=dirs.cut?'현재 금리 유지 기대가 우세합니다.':dirs.hike>dirs.cut?'현재보다 높은 목표금리 기대가 우세합니다.':'현재보다 낮은 목표금리 기대가 우세합니다.')+'</p>'+
  '<div class="fedwatch-changes">'+changes+'</div>'+
- (thirdDir?'<p>'+esc(third.date)+'까지 현재보다 높은 목표금리에 도달할 확률은 '+percent(thirdDir.hike)+'입니다. 다음 회의의 동결 기대가 높더라도 이후 인상 경로 기대는 함께 존재할 수 있습니다.</p>':'')+
+ (thirdDir?'<p>'+esc(third.date)+'까지 현재보다 높은 목표금리에 도달할 확률은 '+percent(thirdDir.hike)+'입니다. 각 회의의 확률은 해당 시점의 누적 목표금리 구간이며 회의별 단독 결정 확률과 구분합니다.</p>':'')+
  conditionalHTML(d)+'<p class="fedwatch-caveat">표는 현재 대비 누적 목표금리 수준의 Aggregated 확률이며 각 회의 한 번의 인상 확률이 아닙니다. 전일·전주·전월 변화는 다음 회의에 한정해 CME Current 비교표의 동일한 한 자리 소수점 수치를 사용합니다. 주말 비교 기준일은 CME 표시 날짜를 그대로 따릅니다.</p>'+
- '<p class="fedwatch-caveat">선물가격에서 계산한 시장 내재 확률이며 연준의 약속·예측이 아닙니다. CME 공개 화면 검증 스냅샷으로 자동 실시간 갱신되지 않습니다. '+(d.providerAsOf?'CME Current 화면 시각 '+stamp(d.providerAsOf)+'; 위 Aggregated 표는 별도 시각이 표시되지 않아 검증 시각을 사용합니다. ':'')+'<a href="'+esc(safeURL(d.methodologyUrl))+'" target="_blank" rel="noopener noreferrer">CME 산출 방식 ↗</a></p></div>';
+ '<p class="fedwatch-caveat">선물가격에서 계산한 시장 내재 확률이며 연준의 약속·예측이 아닙니다. CME 공개 화면 검증 스냅샷으로 자동 실시간 갱신되지 않습니다. '+(d.providerAsOf?'CME Current 화면 시각 '+stamp(d.providerAsOf)+'; 위 Aggregated 표는 별도 시각이 표시되지 않아 검증 시각을 사용합니다. ':'')+(d.providerAsOfLabel&&!d.providerAsOf?'CME Current 원문 시각 '+esc(d.providerAsOfLabel)+' (CT 일광절약 종료일 중복시각: UTC 오프셋 미확인). ':'')+'<a href="'+esc(safeURL(d.methodologyUrl))+'" target="_blank" rel="noopener noreferrer">CME 산출 방식 ↗</a></p></div>';
 }
 let lastLoad=0;
 async function load(){

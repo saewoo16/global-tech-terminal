@@ -11,3 +11,6 @@ python scripts/validate_us_heatmaps.py
 python scripts/validate_korean_market.py
 # No --entry: validate the preserved archive without rewriting it.
 python scripts/manage_briefings.py
+
+python scripts/manage_korean_short_balance.py
+python scripts/import_krx_short_balance_csv.py --manifest data/short-balance-evidence/manifest.json --check

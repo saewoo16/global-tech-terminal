@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-01T07:43:50Z",
+  "method": "Existing collector plus publicly accessible official FRED series pages/full CSV; CME official parent browser Current and Aggregated views. No auth or access-control workaround.",
+  "macroRows": [
+    {
+      "id": "UST10Y",
+      "value": 4.929,
+      "asOf": "2026-10-30",
+      "observedAt": "2026-10-30T20:59:59Z",
+      "retrievedAt": "2026-11-01T07:41:22Z",
+      "sourceUrl": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "WTI_FUTURES",
+      "value": 102.95,
+      "asOf": "2026-10-30",
+      "observedAt": "2026-10-30T20:59:59Z",
+      "retrievedAt": "2026-11-01T07:41:22Z",
+      "sourceUrl": "https://www.investing.com/commodities/crude-oil",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "BRENT_FUTURES",
+      "value": 113.1,
+      "asOf": "2026-10-30",
+      "observedAt": "2026-10-30T21:43:57Z",
+      "retrievedAt": "2026-11-01T07:41:22Z",
+      "sourceUrl": "https://www.investing.com/commodities/brent-oil",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "DXY",
+      "value": 101.88,
+      "asOf": "2026-10-30",
+      "observedAt": "2026-10-30T03:58:59Z",
+      "retrievedAt": "2026-11-01T07:41:22Z",
+      "sourceUrl": "https://www.investing.com/indices/usdollar",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "USDJPY",
+      "value": 157.58,
+      "asOf": "2026-10-30",
+      "observedAt": "2026-10-30T20:58:59Z",
+      "retrievedAt": "2026-11-01T07:41:22Z",
+      "sourceUrl": "https://www.investing.com/currencies/usd-jpy",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "USDKRW",
+      "value": 1333.88,
+      "asOf": "2026-10-30",
+      "observedAt": "2026-10-30T20:59:56Z",
+      "retrievedAt": "2026-11-01T07:41:22Z",
+      "sourceUrl": "https://www.investing.com/currencies/usd-krw",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "DGS10",
+      "value": 4.98,
+      "asOf": "2026-10-29",
+      "observedAt": null,
+      "retrievedAt": "2026-11-01T07:41:22Z",
+      "sourceUrl": "https://fred.stlouisfed.org/series/DGS10",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "HQMCB10YRP",
+      "value": 5.77,
+      "asOf": "2026-09-01",
+      "observedAt": null,
+      "retrievedAt": "2026-11-01T07:41:36Z",
+      "sourceUrl": "https://fred.stlouisfed.org/series/HQMCB10YRP",
+      "sourceUpdatedAt": "2026-10-06T19:34:00Z"
+    },
+    {
+      "id": "DCOILWTICO",
+      "value": 103.37,
+      "asOf": "2026-10-27",
+      "observedAt": null,
+      "retrievedAt": "2026-11-01T07:41:22Z",
+      "sourceUrl": "https://fred.stlouisfed.org/series/DCOILWTICO",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "DCOILBRENTEU",
+      "value": 123.1,
+      "asOf": "2026-10-27",
+      "observedAt": null,
+      "retrievedAt": "2026-11-01T07:43:17Z",
+      "sourceUrl": "https://fred.stlouisfed.org/series/DCOILBRENTEU",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "M1SL",
+      "value": 20061.2,
+      "asOf": "2026-09-01",
+      "observedAt": null,
+      "retrievedAt": "2026-11-01T07:41:36Z",
+      "sourceUrl": "https://fred.stlouisfed.org/series/M1SL",
+      "sourceUpdatedAt": "2026-10-27T17:01:00Z"
+    },
+    {
+      "id": "M2SL",
+      "value": 23413.9,
+      "asOf": "2026-09-01",
+      "observedAt": null,
+      "retrievedAt": "2026-11-01T07:41:36Z",
+      "sourceUrl": "https://fred.stlouisfed.org/series/M2SL",
+      "sourceUpdatedAt": "2026-10-27T17:01:00Z"
+    },
+    {
+      "id": "DEXJPUS",
+      "value": 156.87,
+      "asOf": "2026-10-23",
+      "observedAt": null,
+      "retrievedAt": "2026-11-01T07:43:17Z",
+      "sourceUrl": "https://fred.stlouisfed.org/series/DEXJPUS",
+      "sourceUpdatedAt": null
+    },
+    {
+      "id": "DEXKOUS",
+      "value": 1325.06,
+      "asOf": "2026-10-23",
+      "observedAt": null,
+      "retrievedAt": "2026-11-01T07:43:17Z",
+      "sourceUrl": "https://fred.stlouisfed.org/series/DEXKOUS",
+      "sourceUpdatedAt": null
+    }
+  ],
+  "fallbacks": {
+    "FRED": "Windowed CSV unavailable for six series. M1SL/M2SL/HQMCB10YRP official series pages verified; DCOILBRENTEU/DEXJPUS/DEXKOUS public full CSV verified.",
+    "fedwatch": "Provider CT local labels ambiguous on DST fall-back; no UTC offset asserted. Different Current reload showed 01:46:28 CT; probabilities and comparison dates unchanged. Aggregated observed 07:42:37Z; June Current observed 07:43:04Z."
+  },
+  "externalOnly": [
+    {
+      "id": "BAMLH0A0HYM2",
+      "sourceUrl": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
+      "sourceObservationDate": "2026-10-29",
+      "sourceUpdatedLabel": "Oct 30, 2026 9:21 AM CDT",
+      "note": "Official page accessible. Existing licensed provider widget retained; no index values/series replicated."
+    },
+    {
+      "id": "BAMLH0A0HYM2EY",
+      "sourceUrl": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2EY",
+      "sourceObservationDate": null,
+      "note": "Official source request returned 500. Existing widget retained; latest date not certified."
+    },
+    {
+      "id": "MUN:US594918BC7",
+      "sourceUrl": "https://www.tradingview.com/symbols/MUN-US594918BC7/",
+      "sourceObservationDate": null,
+      "note": "Source identifies correct bond, maturity and coupon; retrieved page did not verify current trade date. No new value copied."
+    }
+  ],
+  "preserved": "All other data panels and chart layout unchanged; source freshness is not equivalent to same-day observation.",
+  "csvEvidence": [
+    {
+      "id": "DCOILBRENTEU",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DCOILBRENTEU",
+      "sha256": "f3ad22ec3aa8800fc5edfa638d364ae388a5612ed895d233f0b2af67c807a393",
+      "bytes": 170273
+    },
+    {
+      "id": "DEXJPUS",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXJPUS",
+      "sha256": "c359b1700c8175b5ca3f857439d965c022e9cc5c222e08f747760a3aa4b61155",
+      "bytes": 257165
+    },
+    {
+      "id": "DEXKOUS",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXKOUS",
+      "sha256": "0257f9e7f21bcb0bff94b8bb77c9e01369bf18ecd7d8673632a56db2370f8c64",
+      "bytes": 217534
+    }
+  ]
+}

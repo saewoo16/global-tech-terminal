@@ -46,14 +46,16 @@ class PublicationPipelineTests(unittest.TestCase):
         self.assertEqual(calls[0], 'python -m unittest discover -s tests -v')
         for path in (ROOT / 'tests').glob('test_*.cjs'):
             self.assertIn('node tests/'+path.name, calls)
-        self.assertEqual(calls[-4:], ['python scripts/validate_us_analysis.py',
+        self.assertEqual(calls[-6:], ['python scripts/validate_us_analysis.py',
                                      'python scripts/validate_us_heatmaps.py',
                                      'python scripts/validate_korean_market.py',
-                                     'python scripts/manage_briefings.py'])
+                                     'python scripts/manage_briefings.py',
+                                     'python scripts/manage_korean_short_balance.py',
+                                     'python scripts/import_krx_short_balance_csv.py --manifest data/short-balance-evidence/manifest.json --check'])
 
     def test_each_validation_failure_stops_publication_guard(self):
         for failed in ('unittest', 'test_korea_ui.cjs', 'validate_us_analysis.py',
-                       'validate_us_heatmaps.py', 'validate_korean_market.py', 'manage_briefings.py'):
+                       'validate_us_heatmaps.py', 'validate_korean_market.py', 'manage_briefings.py', 'manage_korean_short_balance.py', 'import_krx_short_balance_csv.py'):
             with self.subTest(failed=failed):
                 status, calls = self.run_guard_with_stub_commands(failed)
                 self.assertEqual(status, 37)

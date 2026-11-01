@@ -6,9 +6,10 @@ const a=c.window.TerminalMacro,d=JSON.parse(fs.readFileSync(root+'/data/fedwatch
 assert(a.validFedwatch(d));assert(!a.validFedwatch({...d,meetings:[{date:'2026-10-28',probabilities:[90,20,0,0]}]}));
 assert.deepEqual(JSON.parse(JSON.stringify(a.direction([[375,400],[400,425]],[90,10],[375,400]))),{cut:0,hold:90,hike:10});
 assert.deepEqual(JSON.parse(JSON.stringify(a.direction([[350,375],[375,400],[400,425]],[60,30,10],[375,400]))),{cut:60,hold:30,hike:10});
-const output=a.fedwatchHTML(d);assert(output.includes('동결 90.04%'));assert(output.includes('인상 9.96%'));assert(output.includes('인하 0.00%'));
-assert(output.includes('-5.5%p'));assert(output.includes('-54.2%p'));assert(output.includes('0.0%p'));assert(output.includes('실시간 아님'));
-assert(output.includes('83.52%'));assert(output.includes('각 회의 한 번의 인상 확률이 아닙니다'));assert(output.includes('자동 실시간 갱신되지 않습니다'));
+const output=a.fedwatchHTML(d), firstDirection=a.direction(d.columnsBps,d.meetings[0].probabilities,d.currentTargetBps);
+for(const [label,key] of [['동결','hold'],['인상','hike'],['인하','cut']])assert(output.includes(label+' '+firstDirection[key].toFixed(2)+'%'));
+for(const value of Object.values(d.nextMeetingComparison.hikeChangePp))assert(output.includes(value.toFixed(1)+'%p'));assert(output.includes('실시간 아님'));
+assert(output.includes(d.meetings[0].probabilities[1].toFixed(2)+'%'));assert(output.includes('각 회의 한 번의 인상 확률이 아닙니다'));assert(output.includes('자동 실시간 갱신되지 않습니다'));
 assert.equal(a.safeURL('javascript:alert(1)'),'#');
 const q=a.quoteHTML({value:103.44,precision:2,quoteLabel:'<x>',unit:'USD/배럴',sourceUrl:'javascript:x',asOf:'2026-10-23',status:'stale'},'WTI_FUTURES');
 assert(q.includes('103.44'));assert(q.includes('&lt;x&gt;'));assert(q.includes('서로 다른 상품'));assert(q.includes('이전 검증 수치'));assert(!q.includes('javascript:'));
@@ -19,3 +20,6 @@ assert(!html.includes('quikstrike'));assert(!raw.includes('quikstrike'));
 console.log('PASS macro source safety, instrument distinction, verified CME distribution, correct cut/hold/hike and same-precision historical deltas');
 
 assert(raw.includes("q.sourceName!=='FRED'"));
+
+const ambiguous=a.fedwatchHTML({...d,providerAsOf:null,providerAsOfLabel:'1 11 2026 01:45:01 CT'});
+assert(ambiguous.includes('1 11 2026 01:45:01 CT'));assert(ambiguous.includes('UTC 오프셋 미확인'));

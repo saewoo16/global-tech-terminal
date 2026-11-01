@@ -1,0 +1,382 @@
+{
+  "snapshots": [
+    {
+      "market": "KOSDAQ",
+      "date": "2026-09-28",
+      "observedAt": "2026-11-01T07:54:14Z",
+      "path": "krx-kosdaq-20260928.csv",
+      "expectedRows": 1821,
+      "sha256": "cc356410cbc16d633568b5d3ba44f3960d8afb73dee927ce362dab05433e6075",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSPI",
+      "date": "2026-09-28",
+      "observedAt": "2026-11-01T07:54:07Z",
+      "path": "krx-kospi-20260928.csv",
+      "expectedRows": 942,
+      "sha256": "29d09af0a4041c0aac817ebabb03d383d41f239fba4c009d237b9d806ca0a8b7",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSDAQ",
+      "date": "2026-09-29",
+      "observedAt": "2026-11-01T07:54:44.553Z",
+      "path": "krx-kosdaq-20260929.csv",
+      "expectedRows": 1823,
+      "sha256": "f67971cc0a49599d913c983d727ed0553a4f596ebf66ab797d0de2128c792d61",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSPI",
+      "date": "2026-09-29",
+      "observedAt": "2026-11-01T07:54:46.489Z",
+      "path": "krx-kospi-20260929.csv",
+      "expectedRows": 942,
+      "sha256": "692dd73afb9dc4844a84374d7bca088b2a8364eef2d0855003c57160d06d82cb",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSDAQ",
+      "date": "2026-09-30",
+      "observedAt": "2026-11-01T07:54:48.523Z",
+      "path": "krx-kosdaq-20260930.csv",
+      "expectedRows": 1824,
+      "sha256": "06b6ed7ea42bf49054f128da6295e9443cdc9eba9d0739b97a98ff2108e48d02",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSPI",
+      "date": "2026-09-30",
+      "observedAt": "2026-11-01T07:54:50.358Z",
+      "path": "krx-kospi-20260930.csv",
+      "expectedRows": 942,
+      "sha256": "53c691c9a30dd3861c107a4e873711ccf9941ff0ffbb7593627d40ec49a2df3c",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSDAQ",
+      "date": "2026-10-01",
+      "observedAt": "2026-11-01T07:54:52.400Z",
+      "path": "krx-kosdaq-20261001.csv",
+      "expectedRows": 1824,
+      "sha256": "7bb8bdb1a8c103de9616f7b0d117a37e62063294c13b0bb8cc38feeb791dc9c1",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSPI",
+      "date": "2026-10-01",
+      "observedAt": "2026-11-01T07:54:54.638Z",
+      "path": "krx-kospi-20261001.csv",
+      "expectedRows": 942,
+      "sha256": "f35e44c35826517d1eb9100fbe7fdbfe9c77f50500ee86d4b6be457a6c6c1096",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSDAQ",
+      "date": "2026-10-02",
+      "observedAt": "2026-11-01T07:55:13.227Z",
+      "path": "krx-kosdaq-20261002.csv",
+      "expectedRows": 1824,
+      "sha256": "a7b70f65a91264aaf15fe0f18aea85f0a406b70224beec5ce390afbfeab00e67",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSPI",
+      "date": "2026-10-02",
+      "observedAt": "2026-11-01T07:55:15.196Z",
+      "path": "krx-kospi-20261002.csv",
+      "expectedRows": 942,
+      "sha256": "526c11f3297c7c4dc011ebcc0f162a7a860626eafec3079e2085c456d02ccbd9",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSDAQ",
+      "date": "2026-10-06",
+      "observedAt": "2026-11-01T07:55:17.137Z",
+      "path": "krx-kosdaq-20261006.csv",
+      "expectedRows": 1824,
+      "sha256": "701b1d7666ea089a732f66038c8cb746bb010bed954f2193d1ae754537439c37",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSPI",
+      "date": "2026-10-06",
+      "observedAt": "2026-11-01T07:55:19.085Z",
+      "path": "krx-kospi-20261006.csv",
+      "expectedRows": 942,
+      "sha256": "c911d0f2e0a11c5a63d845bc9c28b124e8d8a7173f4eca117c532d1ca2d677e8",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSDAQ",
+      "date": "2026-10-07",
+      "observedAt": "2026-11-01T07:55:21.215Z",
+      "path": "krx-kosdaq-20261007.csv",
+      "expectedRows": 1823,
+      "sha256": "393bd23c6e2a03be6e0773a5e851e2dd291023786bf122c95c4636daa01f9865",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSPI",
+      "date": "2026-10-07",
+      "observedAt": "2026-11-01T07:55:22.998Z",
+      "path": "krx-kospi-20261007.csv",
+      "expectedRows": 942,
+      "sha256": "c6ee7e55b538f03df07f24ef4529c2c6678cb79d2236f63843221c521acb9719",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSDAQ",
+      "date": "2026-10-08",
+      "observedAt": "2026-11-01T07:55:25.079Z",
+      "path": "krx-kosdaq-20261008.csv",
+      "expectedRows": 1823,
+      "sha256": "d7389806b11d85d1127f3a097f4ba11f9385965f2489191db634c8c0e412dd48",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSPI",
+      "date": "2026-10-08",
+      "observedAt": "2026-11-01T07:55:26.914Z",
+      "path": "krx-kospi-20261008.csv",
+      "expectedRows": 942,
+      "sha256": "9d212e4e02b7ba33e97b5b92250eb42700f816c54c78ee2351a7ac481428b341",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSDAQ",
+      "date": "2026-10-12",
+      "observedAt": "2026-11-01T07:55:31.646Z",
+      "path": "krx-kosdaq-20261012.csv",
+      "expectedRows": 1821,
+      "sha256": "28f27bda6823eec0ff79b6e75f763386ef5da2fdf855ae9440387cfb6c0e56f5",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSPI",
+      "date": "2026-10-12",
+      "observedAt": "2026-11-01T07:55:33.436Z",
+      "path": "krx-kospi-20261012.csv",
+      "expectedRows": 941,
+      "sha256": "a22b853ad9bb5066435f05dace1c408508926d756b4422e4ac8132562e348aa0",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSDAQ",
+      "date": "2026-10-13",
+      "observedAt": "2026-11-01T07:55:38.026Z",
+      "path": "krx-kosdaq-20261013.csv",
+      "expectedRows": 1820,
+      "sha256": "61860e6d4515c7dd9cd43639b96652c0705be6db9a6b503683734843c220fce6",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSPI",
+      "date": "2026-10-13",
+      "observedAt": "2026-11-01T07:55:39.901Z",
+      "path": "krx-kospi-20261013.csv",
+      "expectedRows": 941,
+      "sha256": "5c412720d1cbab83c8610df8d0ad55089dd54eae0112cd403bcbcc9eee6e6aac",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSDAQ",
+      "date": "2026-10-14",
+      "observedAt": "2026-11-01T07:56:05.497Z",
+      "path": "krx-kosdaq-20261014.csv",
+      "expectedRows": 1820,
+      "sha256": "59ae98069da44cf5fc0c07379076aa1e733dfbb456a493045fbb073fdeae7d3d",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSPI",
+      "date": "2026-10-14",
+      "observedAt": "2026-11-01T07:56:08.211Z",
+      "path": "krx-kospi-20261014.csv",
+      "expectedRows": 941,
+      "sha256": "2d1b03ddd247e0b2a7c9a3b8e4d646bc3fc7001280732a59ee18ad76772ed038",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSDAQ",
+      "date": "2026-10-15",
+      "observedAt": "2026-11-01T07:56:10.253Z",
+      "path": "krx-kosdaq-20261015.csv",
+      "expectedRows": 1822,
+      "sha256": "030e5227055f1bd72910f12d8f89080e0f2d852139237f1b3796d4460b210345",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSPI",
+      "date": "2026-10-15",
+      "observedAt": "2026-11-01T07:56:12.467Z",
+      "path": "krx-kospi-20261015.csv",
+      "expectedRows": 940,
+      "sha256": "b6aaaf444c0f2344deaf19d5611ce7bf8bf9d69bdc41a4c41fe00da9cee1120c",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSDAQ",
+      "date": "2026-10-16",
+      "observedAt": "2026-11-01T07:56:14.599Z",
+      "path": "krx-kosdaq-20261016.csv",
+      "expectedRows": 1822,
+      "sha256": "2b3c4a4fc7d670c6109f9866276d0b9990208226b7158745830ccf4624d50b6e",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSPI",
+      "date": "2026-10-16",
+      "observedAt": "2026-11-01T07:56:19.049Z",
+      "path": "krx-kospi-20261016.csv",
+      "expectedRows": 940,
+      "sha256": "5129dda85bf971a4c64ed61de9515ac6e7899fdc4f9596c0799fda792ada179d",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSDAQ",
+      "date": "2026-10-19",
+      "observedAt": "2026-11-01T07:56:21.049Z",
+      "path": "krx-kosdaq-20261019.csv",
+      "expectedRows": 1821,
+      "sha256": "7636e1d860162a361edef4529f548fe41f6b91137fa3e25f3880e4a8da897138",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSPI",
+      "date": "2026-10-19",
+      "observedAt": "2026-11-01T07:56:22.854Z",
+      "path": "krx-kospi-20261019.csv",
+      "expectedRows": 940,
+      "sha256": "3bf65eb06e2357bc8ee0e736f57c8060ff2db70cd83ea5fe3f2a29dd49ab4977",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSDAQ",
+      "date": "2026-10-20",
+      "observedAt": "2026-11-01T07:56:25.086Z",
+      "path": "krx-kosdaq-20261020.csv",
+      "expectedRows": 1822,
+      "sha256": "63a648393b6a6bf00b5120227a27a5724811c243f417a8b8ad78a55cf0725e16",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSPI",
+      "date": "2026-10-20",
+      "observedAt": "2026-11-01T07:56:26.956Z",
+      "path": "krx-kospi-20261020.csv",
+      "expectedRows": 940,
+      "sha256": "f5db4bbfd51793bd15abdceba27854dd554078f9c78f4748eec96d51e74841d2",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSDAQ",
+      "date": "2026-10-21",
+      "observedAt": "2026-11-01T07:53:47Z",
+      "path": "krx-kosdaq-20261021.csv",
+      "expectedRows": 1822,
+      "sha256": "a57978b7176a7a1e40125f411eefcc4d8b521f8c550ad8b17e2f98a77ceb4414",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSPI",
+      "date": "2026-10-21",
+      "observedAt": "2026-11-01T07:53:55Z",
+      "path": "krx-kospi-20261021.csv",
+      "expectedRows": 940,
+      "sha256": "7eca7ba24f1ddb317b6c6c2313b95cf5624625a547d77b9244fc55b3d5320818",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSDAQ",
+      "date": "2026-10-22",
+      "observedAt": "2026-11-01T07:56:29.296Z",
+      "path": "krx-kosdaq-20261022.csv",
+      "expectedRows": 1823,
+      "sha256": "fba2cd4759c4f829813e3cf843977ac4e43c7d9e4472e25446599cbae44168d4",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSPI",
+      "date": "2026-10-22",
+      "observedAt": "2026-11-01T07:56:33.765Z",
+      "path": "krx-kospi-20261022.csv",
+      "expectedRows": 940,
+      "sha256": "1083f443bf807ee0231588283340f0d4b02825d13f0615bd101a3a811ea6b047",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSDAQ",
+      "date": "2026-10-23",
+      "observedAt": "2026-11-01T07:56:35.943Z",
+      "path": "krx-kosdaq-20261023.csv",
+      "expectedRows": 1824,
+      "sha256": "2d8d3b22f6cedd9730e5b87e86110501aa8872e2f4aac1cbde9899a5dd9d8899",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSPI",
+      "date": "2026-10-23",
+      "observedAt": "2026-11-01T07:56:37.993Z",
+      "path": "krx-kospi-20261023.csv",
+      "expectedRows": 940,
+      "sha256": "1a8efbace04fbde3b3772d1a72c395ef421512eb9cb0c04a792e5afb9ac88c5b",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSDAQ",
+      "date": "2026-10-26",
+      "observedAt": "2026-11-01T07:56:42.589Z",
+      "path": "krx-kosdaq-20261026.csv",
+      "expectedRows": 1824,
+      "sha256": "d8522226ae1e93421c15d03616999641329bb14730f11672cc89f116569ec6e7",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSPI",
+      "date": "2026-10-26",
+      "observedAt": "2026-11-01T07:56:44.398Z",
+      "path": "krx-kospi-20261026.csv",
+      "expectedRows": 940,
+      "sha256": "bfb78d48e3e8b94a8863ce781593b5c3139827f700ebec8617e1703fc638f57b",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSDAQ",
+      "date": "2026-10-27",
+      "observedAt": "2026-11-01T07:56:49.178Z",
+      "path": "krx-kosdaq-20261027.csv",
+      "expectedRows": 1825,
+      "sha256": "ce1c5590eea8d5e7c1851ab451339a508cd3b5a05ff1a4ea0feb6a0381abd321",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSPI",
+      "date": "2026-10-27",
+      "observedAt": "2026-11-01T07:56:53.732Z",
+      "path": "krx-kospi-20261027.csv",
+      "expectedRows": 940,
+      "sha256": "73ddfbedc3d4479c3760fca642405730db90028f04c2c4b36c6b803e5a6047e5",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSDAQ",
+      "date": "2026-10-28",
+      "observedAt": "2026-11-01T07:53:26Z",
+      "path": "krx-kosdaq-20261028.csv",
+      "expectedRows": 1824,
+      "sha256": "cc2552fc5a497321a1bf2548a41d70cc74887fc9e67ec0bc974f378f1d4aedbf",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSPI",
+      "date": "2026-10-28",
+      "observedAt": "2026-11-01T07:53:03Z",
+      "path": "krx-kospi-20261028.csv",
+      "expectedRows": 940,
+      "sha256": "56c94fb9ae5d49dde29918947828f20a784a23c8e6decbb1b59c46419f4e99d3",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    }
+  ]
+}
