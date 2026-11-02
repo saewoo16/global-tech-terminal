@@ -87,7 +87,21 @@ def build(payload,evidence,target_date):
  for market in ('KOSPI','KOSDAQ'):
   target=result['marketTurnover']['markets'][market]
   expected={r['date'] for r in payload['flows']['markets'][market]['rows'] if start<=r['date']<=target_date}
-  if target_date not in expected:raise ValueError('Target not in preserved verified completed-session dates')
+  # Turnover is independent of a delayed flows panel. A new date requires
+  # both actual venue-close snapshots, before and after collection, not a
+  # synthetic flow row or a calendar-only assumption.
+  if target_date not in expected:
+   if evidence.get('targetDate')!=target_date:raise ValueError('Evidence target date mismatch')
+   for phase in ('statusBefore','statusAfter'):
+    for venue in ('KRX','NXT'):
+     item=evidence.get(phase,{}).get(venue)
+     if not item:raise ValueError('Independent completed-session evidence required')
+     validate_venue_status(item['data'],target_date,venue)
+   expected.add(target_date)
+  old_dates={r['date'] for r in target.get('integratedHistory',{}).get('rows',[]) if start<=r['date']<=target_date}
+  expected.update(old_dates)
+  window_sets=[{d for d in lookup[v,m] if start<=d<=target_date} for v in ('KRX','NXT') for m in ('KOSPI','KOSDAQ')]
+  if any(dates!=window_sets[0] for dates in window_sets):raise ValueError('Venue/market completed-date sets disagree')
   for venue in ('KRX','NXT'):
    missing=expected-lookup[venue,market].keys()
    if missing:raise ValueError(f'{venue} {market} missing completed dates: {sorted(missing)}')

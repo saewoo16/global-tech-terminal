@@ -168,6 +168,23 @@ class HistoryBuildTests(unittest.TestCase):
         self.assertEqual(new['turnover'], old['turnover'])
         self.assertEqual(int(new['components']['KRX']['buyShares']), int(old['components']['KRX']['buyShares']) + 12)
 
+    def test_turnover_can_advance_without_mutating_delayed_flows(self):
+        payload=payload_fixture()
+        for market in payload['flows']['markets'].values():market['rows'].pop()
+        evidence=evidence_fixture()
+        for phase in ('statusBefore','statusAfter'):
+            evidence[phase]={v:{'data':venue_status(v)} for v in ('KRX','NXT')}
+        result=build(payload,evidence,'2026-10-30')
+        self.assertEqual(result['flows'],payload['flows'])
+        self.assertEqual(result['marketTurnover']['markets']['KOSPI']['integratedHistory']['asOf'],'2026-10-30')
+        del evidence['statusAfter']['KRX']
+        with self.assertRaises(ValueError):build(payload,evidence,'2026-10-30')
+
+    def test_unmatched_extra_date_not_silently_ignored(self):
+        evidence=evidence_fixture()
+        evidence['snapshots'][0]['data']['content'].append(daily_row('20261028'))
+        with self.assertRaises(ValueError):build(payload_fixture(),evidence,'2026-10-30')
+
     def test_year_window_clamps_leap_day(self):
         self.assertEqual(year_start('2024-02-29'), '2023-02-28')
 
