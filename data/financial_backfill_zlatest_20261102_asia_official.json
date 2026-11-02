@@ -1,0 +1,345 @@
+{
+  "asOf": "2026-11-02",
+  "observedAt": "2026-11-02T09:16:47.159101+00:00",
+  "unit": "million reportingCurrency",
+  "companies": {
+    "TSE:6971": {
+      "reportingCurrency": "JPY",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "revenue": 552954,
+          "operatingIncome": 16508,
+          "sourceUrl": "https://global.kyocera.com/ir/news/pdf/FY27_2Q_FinancialResults.pdf",
+          "sourceType": "filing",
+          "source": "KYOCERA official consolidated IFRS six-month results less official first-quarter results",
+          "verifiedAt": "2026-11-02",
+          "observedAt": "2026-11-02T09:09:08.505686+00:00",
+          "publishedAt": "2026-11-02",
+          "reportedCurrency": "JPY",
+          "unit": "millions of reporting currency",
+          "basis": "IFRS; consolidated; derived standalone quarter from same-basis cumulative six-month and first-quarter results",
+          "sourcePrecision": "Published million-yen values, rounded amounts less than one million yen",
+          "calculation": {
+            "revenue": "1078337 - 525383 = 552954 million JPY",
+            "operatingIncome": "65609 - 49101 = 16508 million JPY",
+            "sixMonthsSource": "https://global.kyocera.com/ir/news/pdf/FY27_2Q_FinancialResults.pdf",
+            "firstQuarterSource": "https://global.kyocera.com/ir/news/pdf/FY27_1Q_FinancialResults.pdf",
+            "sixMonthsPeriod": "2026-04-01/2026-09-30",
+            "firstQuarterPeriod": "2026-04-01/2026-06-30"
+          },
+          "sourceSha256": "06e47aed228f2ea5e6712d65a2c38b8b027c7a73c4efa8848125e1ac347ac688",
+          "firstQuarterSourceSha256": "6a5adbec28b75c120bad8bf4615ce95b9fe54efa6dd42919baa7468a7ec1488f"
+        }
+      ],
+      "financialNote": "2026년7~9월은 공식 동일 IFRS 연결 반기 누계에서 공식1분기를 차감한 단독 분기입니다. 이전3개분기 원자료·출처를 보존합니다. 반기증권보고서11/13제출예정과11/2실적공표를 구분합니다."
+    },
+    "TSE:6861": {
+      "reportingCurrency": "JPY",
+      "replaceQuarters": true,
+      "quarters": [
+        {
+          "date": "2026-09-20",
+          "periodStart": "2026-06-21",
+          "revenue": 388778,
+          "operatingIncome": 221186,
+          "sourceUrl": "https://www.keyence.co.jp/pdf/EarningsRelease_202610_ja.pdf",
+          "sourceType": "filing",
+          "source": "KEYENCE official consolidated JP GAAP earnings release; same-basis cumulative subtraction where stated",
+          "verifiedAt": "2026-11-02",
+          "observedAt": "2026-11-02T09:14:03.498646+00:00",
+          "publishedAt": "2026-10-29",
+          "reportedCurrency": "JPY",
+          "unit": "millions of reporting currency",
+          "basis": "JP GAAP; consolidated; standalone fiscal quarter",
+          "sourcePrecision": "Published million JPY; sub-million amounts truncated; derived differences preserve published input precision",
+          "calculation": {
+            "revenue": "735399 - 346621 = 388778",
+            "operatingIncome": "408262 - 187076 = 221186",
+            "inputs": [
+              "keyence-h1",
+              "keyence-q1"
+            ]
+          },
+          "sourceSha256": "959d860c02d72f592989acddbfeec51a2cee7c8353f75daea3cf3572803e7eff"
+        },
+        {
+          "date": "2026-06-20",
+          "periodStart": "2026-03-21",
+          "revenue": 346621,
+          "operatingIncome": 187076,
+          "sourceUrl": "https://www.keyence.co.jp/pdf/EarningsRelease_202607_ja.pdf",
+          "sourceType": "filing",
+          "source": "KEYENCE official consolidated JP GAAP earnings release; same-basis cumulative subtraction where stated",
+          "verifiedAt": "2026-11-02",
+          "observedAt": "2026-11-02T09:14:03.498646+00:00",
+          "publishedAt": "2026-07-28",
+          "reportedCurrency": "JPY",
+          "unit": "millions of reporting currency",
+          "basis": "JP GAAP; consolidated; standalone fiscal quarter",
+          "sourcePrecision": "Published million JPY; sub-million amounts truncated; derived differences preserve published input precision",
+          "calculation": {
+            "method": "direct standalone Q1"
+          },
+          "sourceSha256": "8497f91c8f09ee5003be1dde06111163567c8d6b6c95e10bc86d6f6baa9758bb"
+        },
+        {
+          "date": "2026-03-20",
+          "periodStart": "2025-12-21",
+          "revenue": 334684,
+          "operatingIncome": 179378,
+          "sourceUrl": "https://www.keyence.co.jp/pdf/EarningsRelease_202604_ja.pdf",
+          "sourceType": "filing",
+          "source": "KEYENCE official consolidated JP GAAP earnings release; same-basis cumulative subtraction where stated",
+          "verifiedAt": "2026-11-02",
+          "observedAt": "2026-11-02T09:14:03.498646+00:00",
+          "publishedAt": "2026-04-24",
+          "reportedCurrency": "JPY",
+          "unit": "millions of reporting currency",
+          "basis": "JP GAAP; consolidated; standalone fiscal quarter",
+          "sourcePrecision": "Published million JPY; sub-million amounts truncated; derived differences preserve published input precision",
+          "calculation": {
+            "revenue": "1169289 - 834605 = 334684",
+            "operatingIncome": "595759 - 416381 = 179378",
+            "inputs": [
+              "keyence-fy",
+              "keyence-9m"
+            ]
+          },
+          "sourceSha256": "cb9b4a819968e939e8fdb7cebde04b04b4a20587c6903cdf29ecb83a2cb7f5b8"
+        },
+        {
+          "date": "2025-12-20",
+          "periodStart": "2025-09-21",
+          "revenue": 289305,
+          "operatingIncome": 144202,
+          "sourceUrl": "https://www.keyence.co.jp/pdf/EarningsRelease_202601_ja.pdf",
+          "sourceType": "filing",
+          "source": "KEYENCE official consolidated JP GAAP earnings release; same-basis cumulative subtraction where stated",
+          "verifiedAt": "2026-11-02",
+          "observedAt": "2026-11-02T09:14:03.498646+00:00",
+          "publishedAt": "2026-01-29",
+          "reportedCurrency": "JPY",
+          "unit": "millions of reporting currency",
+          "basis": "JP GAAP; consolidated; standalone fiscal quarter",
+          "sourcePrecision": "Published million JPY; sub-million amounts truncated; derived differences preserve published input precision",
+          "calculation": {
+            "revenue": "834605 - 545300 = 289305",
+            "operatingIncome": "416381 - 272179 = 144202",
+            "inputs": [
+              "keyence-9m",
+              "keyence-prevh1"
+            ]
+          },
+          "sourceSha256": "a32657058402899d7aadd263ec2ab47ca68007026d58b64f9be503e6cb7108b9"
+        }
+      ],
+      "sources": {
+        "keyence-h1": {
+          "url": "https://www.keyence.co.jp/pdf/EarningsRelease_202610_ja.pdf",
+          "publishedAt": "2026-10-29",
+          "sha256": "959d860c02d72f592989acddbfeec51a2cee7c8353f75daea3cf3572803e7eff"
+        },
+        "keyence-q1": {
+          "url": "https://www.keyence.co.jp/pdf/EarningsRelease_202607_ja.pdf",
+          "publishedAt": "2026-07-28",
+          "sha256": "8497f91c8f09ee5003be1dde06111163567c8d6b6c95e10bc86d6f6baa9758bb"
+        },
+        "keyence-fy": {
+          "url": "https://www.keyence.co.jp/pdf/EarningsRelease_202604_ja.pdf",
+          "publishedAt": "2026-04-24",
+          "sha256": "cb9b4a819968e939e8fdb7cebde04b04b4a20587c6903cdf29ecb83a2cb7f5b8"
+        },
+        "keyence-9m": {
+          "url": "https://www.keyence.co.jp/pdf/EarningsRelease_202601_ja.pdf",
+          "publishedAt": "2026-01-29",
+          "sha256": "a32657058402899d7aadd263ec2ab47ca68007026d58b64f9be503e6cb7108b9"
+        },
+        "keyence-prevh1": {
+          "url": "https://www.keyence.co.jp/pdf/EarningsRelease_202510_ja.pdf",
+          "publishedAt": "2025-10-29",
+          "sha256": "caf5ed9595c74746256fe3c954d46ae34e49132b61e17eb545799ae5e649ff9f"
+        }
+      },
+      "financialNote": "공식 최근4분기 연결JP GAAP 원문 검증. 회계분기 종료는9/20·6/20·3/20·12/20이며 달력월말이 아닙니다. 동일기준 누계차감은 분기별 근거에 보존.10/29원발표일 유지,11/21예정5:1분할을 현재시세·주식수에 적용하지 않았습니다."
+    },
+    "TWSE:2308": {
+      "reportingCurrency": "TWD",
+      "replaceQuarters": true,
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "revenue": 197100,
+          "operatingIncome": 32600,
+          "sourceUrl": "https://filecenter.deltaww.com/ir/download/calendar/3Q26_Analyst%20Meeting.pdf",
+          "sourceType": "filing",
+          "source": "Delta Electronics official Q3 2026 analyst presentation; source-rounded financial results",
+          "verifiedAt": "2026-11-02",
+          "observedAt": "2026-11-02T09:16:22.000207+00:00",
+          "reportedCurrency": "TWD",
+          "unit": "millions of reporting currency",
+          "basis": "IFRS as endorsed by Taiwan FSC; consolidated; standalone quarter; operating profit after expected credit impairment",
+          "sourcePrecision": "Official presentation reports Rev197.1 / OP32.6 in billion TWD; precision 0.1 billion TWD (100 million); converted by ×1000, not exact underlying amounts",
+          "sourceSha256": "321e6eb54c9b4fc5cba6db95f2275977e99b47f8615d124bd5bbe4a2f19c9220",
+          "sourceDocumentDate": "2026-10-29",
+          "publishedAt": "2026-10-28",
+          "releaseSourceUrl": "https://www.deltaww.com/en-US/press/41195",
+          "sourcePublishedAt": "2026-10-29",
+          "rawValues": {
+            "revenue": 197.1,
+            "operatingIncome": 32.6,
+            "unit": "billion TWD"
+          },
+          "limitations": "Q3 detailed financial statement not retrieved; official rounded IFRS consolidated presentation values only. Derived OPM from rounded inputs is approximate and can differ from issuer displayed16.6%."
+        },
+        {
+          "date": "2026-06-30",
+          "periodStart": "2026-04-01",
+          "revenue": 183256.08,
+          "operatingIncome": 30570.042,
+          "sourceUrl": "https://filecenter.deltaww.com/ir/download/financial_report/Q22026_eng_Consolidated%20Financial%20Report.pdf",
+          "sourceType": "filing",
+          "source": "Delta Electronics official consolidated IFRS financial statements",
+          "verifiedAt": "2026-11-02",
+          "observedAt": "2026-11-02T09:16:22.000207+00:00",
+          "reportedCurrency": "TWD",
+          "unit": "millions of reporting currency",
+          "basis": "IFRS as endorsed by Taiwan FSC; consolidated; standalone quarter; operating profit after expected credit impairment",
+          "sourcePrecision": "thousand TWD converted to million TWD by division by 1000",
+          "sourceSha256": "6a7016ec45f51cc510006e7f206195bff645f9769bf4f9da31a725068fd6def4",
+          "sourceDocumentDate": "2026-07-29",
+          "rawValues": {
+            "revenue": 183256080,
+            "operatingIncome": 30570042,
+            "unit": "thousand TWD"
+          }
+        },
+        {
+          "date": "2026-03-31",
+          "periodStart": "2026-01-01",
+          "revenue": 159352.652,
+          "operatingIncome": 28417.303,
+          "sourceUrl": "https://filecenter.deltaww.com/ir/download/financial_report/Q1%202026_eng_%20Consolidated%20Financial%20Report.pdf",
+          "sourceType": "filing",
+          "source": "Delta Electronics official consolidated IFRS financial statements",
+          "verifiedAt": "2026-11-02",
+          "observedAt": "2026-11-02T09:16:22.000207+00:00",
+          "reportedCurrency": "TWD",
+          "unit": "millions of reporting currency",
+          "basis": "IFRS as endorsed by Taiwan FSC; consolidated; standalone quarter; operating profit after expected credit impairment",
+          "sourcePrecision": "thousand TWD converted to million TWD by division by 1000",
+          "sourceSha256": "76a54e006d5646acb282cbb4902e94a0faa9a74de08f119577348a14d9502186",
+          "sourceDocumentDate": "2026-04-29",
+          "rawValues": {
+            "revenue": 159352652,
+            "operatingIncome": 28417303,
+            "unit": "thousand TWD"
+          }
+        },
+        {
+          "date": "2025-12-31",
+          "periodStart": "2025-10-01",
+          "revenue": 161613.099,
+          "operatingIncome": 26418.465,
+          "sourceUrl": "https://filecenter.deltaww.com/ir/download/financial_report/Q4%202025_eng_%20Consolidated%20Financial%20Report.pdf",
+          "sourceType": "filing",
+          "source": "Delta Electronics official consolidated IFRS financial statements",
+          "verifiedAt": "2026-11-02",
+          "observedAt": "2026-11-02T09:16:22.000207+00:00",
+          "reportedCurrency": "TWD",
+          "unit": "millions of reporting currency",
+          "basis": "IFRS as endorsed by Taiwan FSC; consolidated; standalone quarter; operating profit after expected credit impairment",
+          "sourcePrecision": "thousand TWD converted to million TWD by division by 1000",
+          "sourceSha256": "c2e8b47cccbc5188376e635791b1f42a68f996290fcce104d669cf799b5ee006",
+          "sourceDocumentDate": "2026-02-25",
+          "rawValues": {
+            "revenue": 161613099,
+            "operatingIncome": 26418465,
+            "unit": "thousand TWD"
+          },
+          "calculation": {
+            "revenue": "(554885168 - 393272069) /1000 =161613.099 million TWD",
+            "operatingIncome": "(83932074 -57513609) /1000 =26418.465 million TWD",
+            "method": "same-basis consolidated full-year less nine-month cumulative, not arbitrary division",
+            "sources": [
+              "https://filecenter.deltaww.com/ir/download/financial_report/Q4%202025_eng_%20Consolidated%20Financial%20Report.pdf",
+              "https://filecenter.deltaww.com/ir/download/financial_report/Q32025_eng_Consolidated%20Financial%20Report.pdf"
+            ]
+          }
+        }
+      ],
+      "sources": {
+        "q3": {
+          "url": "https://filecenter.deltaww.com/ir/download/calendar/3Q26_Analyst%20Meeting.pdf",
+          "file": "delta-q3.pdf",
+          "documentDate": "2026-10-29",
+          "sha256": "321e6eb54c9b4fc5cba6db95f2275977e99b47f8615d124bd5bbe4a2f19c9220"
+        },
+        "q2": {
+          "url": "https://filecenter.deltaww.com/ir/download/financial_report/Q22026_eng_Consolidated%20Financial%20Report.pdf",
+          "file": "delta-fin-q2.pdf",
+          "documentDate": "2026-07-29",
+          "sha256": "6a7016ec45f51cc510006e7f206195bff645f9769bf4f9da31a725068fd6def4"
+        },
+        "q1": {
+          "url": "https://filecenter.deltaww.com/ir/download/financial_report/Q1%202026_eng_%20Consolidated%20Financial%20Report.pdf",
+          "file": "delta-fin-q1.pdf",
+          "documentDate": "2026-04-29",
+          "sha256": "76a54e006d5646acb282cbb4902e94a0faa9a74de08f119577348a14d9502186"
+        },
+        "fy": {
+          "url": "https://filecenter.deltaww.com/ir/download/financial_report/Q4%202025_eng_%20Consolidated%20Financial%20Report.pdf",
+          "file": "delta-fy.pdf",
+          "documentDate": "2026-02-25",
+          "sha256": "c2e8b47cccbc5188376e635791b1f42a68f996290fcce104d669cf799b5ee006"
+        },
+        "9m": {
+          "url": "https://filecenter.deltaww.com/ir/download/financial_report/Q32025_eng_Consolidated%20Financial%20Report.pdf",
+          "file": "delta-Q32025_eng_Consolidated_Financial_Report.pdf",
+          "sha256": "eb08b556bafa75b725f96909c2dcc19e62f552648dbc932eb4e7faf3c7edc3bb"
+        }
+      },
+      "previousValues": [
+        {
+          "date": "2026-06-30",
+          "revenue": 183256.08,
+          "operatingIncome": 31589.786,
+          "source": "Yahoo Finance",
+          "sourceType": "financial_aggregator",
+          "sourceUrl": "https://finance.yahoo.com/quote/2308.TW/financials/",
+          "reportedCurrency": "TWD"
+        },
+        {
+          "date": "2026-03-31",
+          "revenue": 159352.652,
+          "operatingIncome": 28458.794,
+          "source": "Yahoo Finance",
+          "sourceType": "financial_aggregator",
+          "sourceUrl": "https://finance.yahoo.com/quote/2308.TW/financials/",
+          "reportedCurrency": "TWD"
+        },
+        {
+          "date": "2025-12-31",
+          "revenue": 161613.099,
+          "operatingIncome": 26485.96,
+          "source": "Yahoo Finance",
+          "sourceType": "financial_aggregator",
+          "sourceUrl": "https://finance.yahoo.com/quote/2308.TW/financials/",
+          "reportedCurrency": "TWD"
+        },
+        {
+          "date": "2025-06-30",
+          "revenue": 124035.086,
+          "operatingIncome": 18880.199,
+          "source": "Yahoo Finance",
+          "sourceType": "financial_aggregator",
+          "sourceUrl": "https://finance.yahoo.com/quote/2308.TW/financials/",
+          "reportedCurrency": "TWD"
+        }
+      ],
+      "financialNote": "2026 Q3은 10/28 발표·10/29 공식 IR의 0.1십억 TWD 반올림값(매출 197.1·OP 32.6)을 백만 단위로 환산했습니다. OPM은 반올림 입력으로 계산한 근사치이므로 공식 16.6%와 차이날 수 있습니다. Q2·Q1·2025 Q4 OP는 공식 연결 손익계산서의 신용손실 포함값으로 교정했습니다. Q4는 공식 연간−9개월 누계 차감입니다. 원문 정밀도·원발표일·실제 확인시각은 분기 근거에 보존합니다."
+    }
+  }
+}
