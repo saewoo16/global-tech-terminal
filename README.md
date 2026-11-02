@@ -725,3 +725,24 @@ FreeSIS는 공식 HTML의 예탁금/신용융자 `백만원` 표제와 신용공
 ### 공매도 잔고 2026-11-02 정기 갱신
 - 로그인 복구 후 실제 23:33 KST에 공식 전종목 CSV를 확인했습니다. 최신 공표 기준일은10/29(KOSPI940·KOSDAQ1,825)이며10/30은 양 시장 모두 미공표였습니다. 통계일을11/2로 바꾸거나 실제 확인시각을18시로 소급하지 않습니다.
 - 기존42원표를 재사용하고 새2원표만 추가했습니다. 두TOP15의1주·30일비교는 실제10/22·9/29, 최근30일 그래프는9/29~10/29의21개 실제관측입니다. 종목별 합계·정밀도·원본해시를 유지하고 다른탭자료는 변경하지 않습니다. 접근지연 및 다음날자 미공표 근거는`data/short-balance-evidence/update-20261102.json`입니다.
+
+### 커넥터 게시 요청 묶기 (2026-11-02)
+
+GitHub 커넥터로 게시할 때 작은 UTF-8 텍스트 변경은 `create_tree.tree_elements`의 `content`에 함께 넣는다. 파일별 `create_blob` 호출을 줄이는 GitHub 공식 Trees API 기능이며, 승인 절차를 끄거나 우회하는 기능이 아니다. 필수 승인은 각 실제 요청에 그대로 적용되므로 승인 창 개수나 무승인 게시를 보장하지 않는다.
+
+읽기 전용 준비 도구 예시:
+
+```sh
+python scripts/prepare_connector_publication.py --root . \
+  --expected-head <검증한-main-40자리-SHA> \
+  --base-tree <해당-main의-tree-40자리-SHA> \
+  README.md scripts/prepare_connector_publication.py tests/test_connector_publication.py > /tmp/publication-plan.json
+```
+
+- 명시한 파일만 읽으며 네트워크·Git 쓰기·게시·설정 변경을 수행하지 않는다. 파일 경로, UTF-8, 원시 크기, SHA-256 및 Git blob SHA를 점검·기록한다. 삭제·심볼릭 링크는 지원하지 않는다. 비 UTF-8/바이너리는 변환하지 않고 별도 blob 대상으로 표시하여 원시 바이트를 보존한다.
+- 기본 1 MiB는 **로컬 inline 항목의 JSON 전송 예산**이지 GitHub 공식 API 제한이 아니다. 예산 밖 파일은 `separateBlobFiles`에 표시하며, 기존 승인된 blob 업로드 절차를 유지한다. 예산을 넘겼다는 이유로 승인 거절 뒤 다른 경로로 재시도하지 않는다.
+- `inlineEntries`와 별도 업로드에서 검증한 blob SHA 항목을 **한 create_tree**에 넣고, 확인한 최신 `base_tree_sha`를 반드시 지정한다. 같은 항목에 `content`와 `sha`를 동시에 넣지 않는다. 준비 당시 head와 현재 main이 다르면 겹치는 변경을 보존·통합하고 전체 검증 및 계획 생성을 다시 한다.
+- 이후 단일 `create_commit`, `update_ref(expected_sha=<검증한-main>, force=false)`를 사용한다. 실패 또는 결과 불명은 실제 원격 상태를 확인하고 무조건 재실행하지 않는다. 승인 거절은 우회하지 않고 정확한 차단을 보고한다.
+- 기존 전체 테스트·스키마 검증·캐시 자산키 규칙·해당 커밋 Pages 성공·공개 파일/화면 확인은 생략하지 않는다. 문서/준비 도구만 변경하면 불필요한 데이터·캐시 버전키 변경은 하지 않는다. 이미 게시된 동일 자료를 이 방식 시험을 위해 다시 게시하지 않는다.
+
+공식 API 근거: https://docs.github.com/en/rest/git/trees#create-a-tree (`content`, `base_tree`). 기존 Actions용 `publish_collected_data.sh`와 수집 일정은 변경하지 않는다.
