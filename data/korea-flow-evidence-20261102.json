@@ -1,0 +1,4389 @@
+{
+  "observedAt": "2026-11-02T08:40:19.946557+00:00",
+  "gateEvidence": "session-evidence.json",
+  "pressRankings": [
+    {
+      "url": "https://www.yna.co.kr/view/AKR20261102134200008",
+      "market": "KOSPI",
+      "investor": "foreign",
+      "snapshotAt": "2026-11-02T15:30:00+09:00",
+      "observedAt": "2026-11-02T08:43:00.514131+00:00",
+      "facts": [
+        {
+          "name": "삼성전자",
+          "code": "005930",
+          "sourceValue": "1210.2",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "SK스퀘어",
+          "code": "402340",
+          "sourceValue": "231.7",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "대우건설",
+          "code": "047040",
+          "sourceValue": "152.0",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "한미반도체",
+          "code": "042700",
+          "sourceValue": "144.4",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "현대건설",
+          "code": "000720",
+          "sourceValue": "130.4",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "LS ELECTRIC",
+          "code": "010120",
+          "sourceValue": "126.2",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "NAVER",
+          "code": "035420",
+          "sourceValue": "101.0",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "현대차",
+          "code": "005380",
+          "sourceValue": "92.5",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "DB하이텍",
+          "code": "000990",
+          "sourceValue": "89.2",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "삼성중공업",
+          "code": "010140",
+          "sourceValue": "87.4",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "삼성에스디에스",
+          "code": "018260",
+          "sourceValue": "74.6",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "GS건설",
+          "code": "006360",
+          "sourceValue": "74.2",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "HD현대마린엔진",
+          "code": "071970",
+          "sourceValue": "65.6",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "LG이노텍",
+          "code": "011070",
+          "sourceValue": "61.0",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "LG씨엔에스",
+          "code": "064400",
+          "sourceValue": "58.8",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "SK이노베이션",
+          "code": "096770",
+          "sourceValue": "49.7",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "대한항공",
+          "code": "003490",
+          "sourceValue": "47.2",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "현대오토에버",
+          "code": "307950",
+          "sourceValue": "43.7",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "LIG디펜스앤에어로스페이스",
+          "code": "079550",
+          "sourceValue": "41.0",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "현대제철",
+          "code": "004020",
+          "sourceValue": "39.7",
+          "sourceUnit": "억원"
+        }
+      ],
+      "sourceMethod": "web source full factual numeric table"
+    },
+    {
+      "url": "https://www.yna.co.kr/view/AKR20261102134000008",
+      "market": "KOSDAQ",
+      "investor": "foreign",
+      "snapshotAt": "2026-11-02T15:30:00+09:00",
+      "observedAt": "2026-11-02T08:43:00.514131+00:00",
+      "facts": [
+        {
+          "name": "원익홀딩스",
+          "code": "030530",
+          "sourceValue": "1403093.5",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "알테오젠",
+          "code": "196170",
+          "sourceValue": "580320.1",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "티씨케이",
+          "code": "064760",
+          "sourceValue": "548635.6",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "케어젠",
+          "code": "214370",
+          "sourceValue": "475370.7",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "심텍",
+          "code": "222800",
+          "sourceValue": "378867.3",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "파두",
+          "code": "440110",
+          "sourceValue": "363372.9",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "원익IPS",
+          "code": "240810",
+          "sourceValue": "304366.2",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "HPSP",
+          "code": "403870",
+          "sourceValue": "248868.6",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "슈프리마",
+          "code": "236200",
+          "sourceValue": "232279.6",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "펄어비스",
+          "code": "263750",
+          "sourceValue": "231946.4",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "우리기술",
+          "code": "032820",
+          "sourceValue": "220503.3",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "펩트론",
+          "code": "087010",
+          "sourceValue": "217942.7",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "피에스케이",
+          "code": "319660",
+          "sourceValue": "205092.2",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "삼현",
+          "code": "437730",
+          "sourceValue": "163857.5",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "현대무벡스",
+          "code": "319400",
+          "sourceValue": "159932.7",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "멜콘",
+          "code": "179880",
+          "sourceValue": "146276.4",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "비에이치아이",
+          "code": "083650",
+          "sourceValue": "145061.6",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "씨엠티엑스",
+          "code": "388210",
+          "sourceValue": "132685.3",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "코스메카코리아",
+          "code": "241710",
+          "sourceValue": "119216.2",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "티에스이",
+          "code": "131290",
+          "sourceValue": "117095.4",
+          "sourceUnit": "만원"
+        }
+      ],
+      "sourceMethod": "web source full factual numeric table"
+    },
+    {
+      "url": "https://www.yna.co.kr/view/AKR20261102134300008",
+      "market": "KOSPI",
+      "investor": "institution",
+      "snapshotAt": "2026-11-02T15:30:00+09:00",
+      "observedAt": "2026-11-02T08:43:00.514131+00:00",
+      "facts": [
+        {
+          "name": "SK하이닉스",
+          "code": "000660",
+          "sourceValue": "2557.6",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "삼성전자",
+          "code": "005930",
+          "sourceValue": "1628.0",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "삼성전기",
+          "code": "009150",
+          "sourceValue": "523.4",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "효성중공업",
+          "code": "298040",
+          "sourceValue": "463.5",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "삼성전자우",
+          "code": "005935",
+          "sourceValue": "379.9",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "현대글로비스",
+          "code": "086280",
+          "sourceValue": "349.3",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "한화에어로스페이스",
+          "code": "012450",
+          "sourceValue": "343.3",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "SK스퀘어",
+          "code": "402340",
+          "sourceValue": "325.6",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "HD한국조선해양",
+          "code": "009540",
+          "sourceValue": "273.5",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "대한항공",
+          "code": "003490",
+          "sourceValue": "267.8",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "삼성물산",
+          "code": "028260",
+          "sourceValue": "260.5",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "한화오션",
+          "code": "042660",
+          "sourceValue": "197.6",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "삼성중공업",
+          "code": "010140",
+          "sourceValue": "185.1",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "OCI홀딩스",
+          "code": "010060",
+          "sourceValue": "181.1",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "LS ELECTRIC",
+          "code": "010120",
+          "sourceValue": "160.2",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "LG씨엔에스",
+          "code": "064400",
+          "sourceValue": "158.1",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "LG에너지솔루션",
+          "code": "373220",
+          "sourceValue": "151.7",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "HD현대중공업",
+          "code": "329180",
+          "sourceValue": "150.0",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "우리금융지주",
+          "code": "316140",
+          "sourceValue": "149.4",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "NAVER",
+          "code": "035420",
+          "sourceValue": "143.8",
+          "sourceUnit": "억원"
+        }
+      ],
+      "sourceMethod": "web source full factual numeric table"
+    },
+    {
+      "url": "https://www.yna.co.kr/view/AKR20261102134100008",
+      "market": "KOSDAQ",
+      "investor": "institution",
+      "snapshotAt": "2026-11-02T15:30:00+09:00",
+      "observedAt": "2026-11-02T08:43:00.514131+00:00",
+      "facts": [
+        {
+          "name": "나노신소재",
+          "code": "121600",
+          "sourceValue": "891440.4",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "에코프로",
+          "code": "086520",
+          "sourceValue": "705084.2",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "케이아이엔엑스",
+          "code": "093320",
+          "sourceValue": "604512.2",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "ISC",
+          "code": "095340",
+          "sourceValue": "505246.8",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "파크시스템스",
+          "code": "140860",
+          "sourceValue": "484429.7",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "원익홀딩스",
+          "code": "030530",
+          "sourceValue": "452002.4",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "태광",
+          "code": "023160",
+          "sourceValue": "435465.7",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "올릭스",
+          "code": "226950",
+          "sourceValue": "425472.9",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "성광벤드",
+          "code": "014620",
+          "sourceValue": "383404.3",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "RFHIC",
+          "code": "218410",
+          "sourceValue": "347000.8",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "티엘비",
+          "code": "356860",
+          "sourceValue": "299919.4",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "로보티즈",
+          "code": "108490",
+          "sourceValue": "283637.7",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "알테오젠",
+          "code": "196170",
+          "sourceValue": "281219.3",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "에스피지",
+          "code": "058610",
+          "sourceValue": "239770.2",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "아모텍",
+          "code": "052710",
+          "sourceValue": "228565.0",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "에코프로에이치엔",
+          "code": "383310",
+          "sourceValue": "218355.0",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "동국제약",
+          "code": "086450",
+          "sourceValue": "215005.6",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "이오테크닉스",
+          "code": "039030",
+          "sourceValue": "214417.2",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "원익IPS",
+          "code": "240810",
+          "sourceValue": "213808.7",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "지씨지놈",
+          "code": "340450",
+          "sourceValue": "204430.3",
+          "sourceUnit": "만원"
+        }
+      ],
+      "sourceMethod": "web source full factual numeric table"
+    }
+  ],
+  "rankingError": "Estimated share ranking has no verified net-buy amount; retain prior amount ranking",
+  "responses": [
+    {
+      "url": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=KOSPI&bizdate=20261102&startIdx=0&pageSize=30",
+      "observedAt": "2026-11-02T08:40:07.563064+00:00",
+      "sha256": "20367cc2e5995e053403c0484123e5f0d656ba293c1d1b832c4bcfad8f4f7646",
+      "targetRows": [
+        {
+          "bizdate": "20261102",
+          "time": "",
+          "netAmounts": [
+            {
+              "investorGubun": "9001",
+              "diffValue": "-4750000000",
+              "sellQuant": "489025",
+              "sellPrice": "18728000000",
+              "buyQuant": "371121",
+              "buyPrice": "13978000000"
+            },
+            {
+              "investorGubun": "9000",
+              "diffValue": "-382748000000",
+              "sellQuant": "64754955",
+              "sellPrice": "5892855000000",
+              "buyQuant": "70888352",
+              "buyPrice": "5510107000000"
+            },
+            {
+              "investorGubun": "8000",
+              "diffValue": "-1331915000000",
+              "sellQuant": "94947569",
+              "sellPrice": "4811383000000",
+              "buyQuant": "75883202",
+              "buyPrice": "3479468000000"
+            },
+            {
+              "investorGubun": "7100",
+              "diffValue": "488354000000",
+              "sellQuant": "1461799",
+              "sellPrice": "113696000000",
+              "buyQuant": "3612135",
+              "buyPrice": "602050000000"
+            },
+            {
+              "investorGubun": "7000",
+              "diffValue": "0",
+              "sellQuant": "0",
+              "sellPrice": "0",
+              "buyQuant": "0",
+              "buyPrice": "0"
+            },
+            {
+              "investorGubun": "6000",
+              "diffValue": "169908000000",
+              "sellQuant": "14450005",
+              "sellPrice": "2954744000000",
+              "buyQuant": "15926809",
+              "buyPrice": "3124652000000"
+            },
+            {
+              "investorGubun": "5000",
+              "diffValue": "20244000000",
+              "sellQuant": "105233",
+              "sellPrice": "3914000000",
+              "buyQuant": "230981",
+              "buyPrice": "24158000000"
+            },
+            {
+              "investorGubun": "4000",
+              "diffValue": "3857000000",
+              "sellQuant": "19018",
+              "sellPrice": "2412000000",
+              "buyQuant": "271779",
+              "buyPrice": "6269000000"
+            },
+            {
+              "investorGubun": "3100",
+              "diffValue": "165970000000",
+              "sellQuant": "2617955",
+              "sellPrice": "204533000000",
+              "buyQuant": "4462737",
+              "buyPrice": "370503000000"
+            },
+            {
+              "investorGubun": "3000",
+              "diffValue": "264398000000",
+              "sellQuant": "2981021",
+              "sellPrice": "238374000000",
+              "buyQuant": "4150347",
+              "buyPrice": "502772000000"
+            },
+            {
+              "investorGubun": "2000",
+              "diffValue": "30943000000",
+              "sellQuant": "377998",
+              "sellPrice": "64985000000",
+              "buyQuant": "871802",
+              "buyPrice": "95928000000"
+            },
+            {
+              "investorGubun": "1000",
+              "diffValue": "575740000000",
+              "sellQuant": "8121481",
+              "sellPrice": "730810000000",
+              "buyQuant": "13656794",
+              "buyPrice": "1306550000000"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=KOSPI&bizdate=20261102&startIdx=1&pageSize=30",
+      "observedAt": "2026-11-02T08:40:11.781641+00:00",
+      "sha256": "fc8ad105cc75690bd94c678e920aac01c0e7bfa9403878b16325b92a9b9e05de",
+      "targetRows": []
+    },
+    {
+      "url": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=KOSDAQ&bizdate=20261102&startIdx=0&pageSize=30",
+      "observedAt": "2026-11-02T08:40:16.353031+00:00",
+      "sha256": "aaece96633f215a0b68e2d649c43510cee947a65eef8e10b517e0118d4442719",
+      "targetRows": [
+        {
+          "bizdate": "20261102",
+          "time": "",
+          "netAmounts": [
+            {
+              "investorGubun": "9001",
+              "diffValue": "-81000000",
+              "sellQuant": "1107996",
+              "sellPrice": "14051000000",
+              "buyQuant": "1039028",
+              "buyPrice": "13970000000"
+            },
+            {
+              "investorGubun": "9000",
+              "diffValue": "-34962000000",
+              "sellQuant": "77293457",
+              "sellPrice": "1103995000000",
+              "buyQuant": "81457255",
+              "buyPrice": "1069033000000"
+            },
+            {
+              "investorGubun": "8000",
+              "diffValue": "-23116000000",
+              "sellQuant": "247925048",
+              "sellPrice": "3415166000000",
+              "buyQuant": "242404165",
+              "buyPrice": "3392050000000"
+            },
+            {
+              "investorGubun": "7100",
+              "diffValue": "-4155000000",
+              "sellQuant": "2693637",
+              "sellPrice": "34436000000",
+              "buyQuant": "2970277",
+              "buyPrice": "30281000000"
+            },
+            {
+              "investorGubun": "7000",
+              "diffValue": "0",
+              "sellQuant": "0",
+              "sellPrice": "0",
+              "buyQuant": "0",
+              "buyPrice": "0"
+            },
+            {
+              "investorGubun": "6000",
+              "diffValue": "-3985000000",
+              "sellQuant": "952137",
+              "sellPrice": "73583000000",
+              "buyQuant": "1088337",
+              "buyPrice": "69598000000"
+            },
+            {
+              "investorGubun": "5000",
+              "diffValue": "-9198000000",
+              "sellQuant": "346081",
+              "sellPrice": "9366000000",
+              "buyQuant": "6042",
+              "buyPrice": "168000000"
+            },
+            {
+              "investorGubun": "4000",
+              "diffValue": "-616000000",
+              "sellQuant": "11605",
+              "sellPrice": "666000000",
+              "buyQuant": "811",
+              "buyPrice": "50000000"
+            },
+            {
+              "investorGubun": "3100",
+              "diffValue": "-58000000",
+              "sellQuant": "2920822",
+              "sellPrice": "70292000000",
+              "buyQuant": "2495209",
+              "buyPrice": "70234000000"
+            },
+            {
+              "investorGubun": "3000",
+              "diffValue": "-2230000000",
+              "sellQuant": "2482383",
+              "sellPrice": "71441000000",
+              "buyQuant": "1950739",
+              "buyPrice": "69211000000"
+            },
+            {
+              "investorGubun": "2000",
+              "diffValue": "727000000",
+              "sellQuant": "114842",
+              "sellPrice": "5277000000",
+              "buyQuant": "132005",
+              "buyPrice": "6004000000"
+            },
+            {
+              "investorGubun": "1000",
+              "diffValue": "77672000000",
+              "sellQuant": "6710884",
+              "sellPrice": "139269000000",
+              "buyQuant": "9015024",
+              "buyPrice": "216941000000"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=KOSDAQ&bizdate=20261102&startIdx=1&pageSize=30",
+      "observedAt": "2026-11-02T08:40:19.945154+00:00",
+      "sha256": "21e364c933b380f0ee2f3be18cc24ffca5166f904d28b8f87b588651c1dec3c0",
+      "targetRows": []
+    }
+  ],
+  "rankingChecks": {
+    "KOSPI_ORGANIZATION_DAY": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=ORGANIZATION&tradeType=KRX&marketType=KOSPI&startIdx=0&pageSize=100&periodType=DAY",
+      "retrievedAt": "2026-11-02T08:40:27.620178+00:00",
+      "parsedCanonicalSha256": "b9cef0b501faff3f5308606b977b165a87a8c25a818f921cb176b34bee297938",
+      "sections": {
+        "buyRankList": {
+          "count": 100,
+          "dates": [
+            [
+              "20261030",
+              "20261030"
+            ]
+          ],
+          "estimatedCount": 0,
+          "rows": [
+            {
+              "itemcode": "005930",
+              "itemname": "삼성전자",
+              "bizdateFrom": "20261030",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "390802280000"
+            },
+            {
+              "itemcode": "006400",
+              "itemname": "삼성SDI",
+              "bizdateFrom": "20261030",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "94364842000"
+            }
+          ]
+        },
+        "sellRankList": {
+          "count": 100,
+          "dates": [
+            [
+              "20261030",
+              "20261030"
+            ]
+          ],
+          "estimatedCount": 0,
+          "rows": [
+            {
+              "itemcode": "000660",
+              "itemname": "SK하이닉스",
+              "bizdateFrom": "20261030",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-184964061000"
+            },
+            {
+              "itemcode": "009150",
+              "itemname": "삼성전기",
+              "bizdateFrom": "20261030",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-86428220000"
+            }
+          ]
+        }
+      }
+    },
+    "KOSPI_FOREIGNER_WEEK": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=FOREIGNER&tradeType=KRX&marketType=KOSPI&startIdx=0&pageSize=100&periodType=WEEK",
+      "retrievedAt": "2026-11-02T08:40:27.796095+00:00",
+      "parsedCanonicalSha256": "221305671dd2307a33b67be36ade6f6552ce4a8555e7411a80f69f2828c8f19d",
+      "sections": {
+        "buyRankList": {
+          "count": 100,
+          "dates": [
+            [
+              "20261026",
+              "20261030"
+            ]
+          ],
+          "estimatedCount": 0,
+          "rows": [
+            {
+              "itemcode": "034730",
+              "itemname": "SK",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "480752135000"
+            },
+            {
+              "itemcode": "028050",
+              "itemname": "삼성E&A",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "178957781000"
+            },
+            {
+              "itemcode": "079550",
+              "itemname": "LIG디펜스앤에어로스페이스",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "97377322000"
+            },
+            {
+              "itemcode": "012450",
+              "itemname": "한화에어로스페이스",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "86608029000"
+            },
+            {
+              "itemcode": "0193T0",
+              "itemname": "KODEX SK하이닉스단일종목레버리지",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "67569137000"
+            },
+            {
+              "itemcode": "010950",
+              "itemname": "S-Oil",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "52109797000"
+            },
+            {
+              "itemcode": "000720",
+              "itemname": "현대건설",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "50597294000"
+            },
+            {
+              "itemcode": "000150",
+              "itemname": "두산",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "42924611000"
+            },
+            {
+              "itemcode": "005930",
+              "itemname": "삼성전자",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "37831112000"
+            },
+            {
+              "itemcode": "0195S0",
+              "itemname": "TIGER SK하이닉스단일종목레버리지",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "37009388000"
+            },
+            {
+              "itemcode": "064350",
+              "itemname": "현대로템",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "33503788000"
+            },
+            {
+              "itemcode": "047810",
+              "itemname": "한국항공우주",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "32277529000"
+            },
+            {
+              "itemcode": "207940",
+              "itemname": "삼성바이오로직스",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "29804366000"
+            },
+            {
+              "itemcode": "010140",
+              "itemname": "삼성중공업",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "27486177000"
+            },
+            {
+              "itemcode": "120110",
+              "itemname": "코오롱인더",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "26327784000"
+            },
+            {
+              "itemcode": "078930",
+              "itemname": "GS",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "25958615000"
+            },
+            {
+              "itemcode": "011070",
+              "itemname": "LG이노텍",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "25691496000"
+            },
+            {
+              "itemcode": "229200",
+              "itemname": "KODEX 코스닥150",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "25324661000"
+            },
+            {
+              "itemcode": "001040",
+              "itemname": "CJ",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "25238505000"
+            },
+            {
+              "itemcode": "252670",
+              "itemname": "KODEX 200선물인버스2X",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "24575907000"
+            }
+          ]
+        },
+        "sellRankList": {
+          "count": 100,
+          "dates": [
+            [
+              "20261026",
+              "20261030"
+            ]
+          ],
+          "estimatedCount": 0,
+          "rows": [
+            {
+              "itemcode": "402340",
+              "itemname": "SK스퀘어",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-305760368000"
+            },
+            {
+              "itemcode": "005935",
+              "itemname": "삼성전자우",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-178740285000"
+            },
+            {
+              "itemcode": "069500",
+              "itemname": "KODEX 200",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-164361008000"
+            },
+            {
+              "itemcode": "006400",
+              "itemname": "삼성SDI",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-149507705000"
+            },
+            {
+              "itemcode": "032830",
+              "itemname": "삼성생명",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-148218336000"
+            },
+            {
+              "itemcode": "353200",
+              "itemname": "대덕전자",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-98566661000"
+            },
+            {
+              "itemcode": "009150",
+              "itemname": "삼성전기",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-96160592000"
+            },
+            {
+              "itemcode": "102110",
+              "itemname": "TIGER 200",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-90359281000"
+            },
+            {
+              "itemcode": "028260",
+              "itemname": "삼성물산",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-78330874000"
+            },
+            {
+              "itemcode": "000660",
+              "itemname": "SK하이닉스",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-64837996000"
+            },
+            {
+              "itemcode": "042700",
+              "itemname": "한미반도체",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-63811144000"
+            },
+            {
+              "itemcode": "000270",
+              "itemname": "기아",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-55342802000"
+            },
+            {
+              "itemcode": "068270",
+              "itemname": "셀트리온",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-49287411000"
+            },
+            {
+              "itemcode": "009830",
+              "itemname": "한화솔루션",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-45553781000"
+            },
+            {
+              "itemcode": "128940",
+              "itemname": "한미약품",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-44933633000"
+            },
+            {
+              "itemcode": "316140",
+              "itemname": "우리금융지주",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-42151510000"
+            },
+            {
+              "itemcode": "018260",
+              "itemname": "삼성에스디에스",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-38857231000"
+            },
+            {
+              "itemcode": "055550",
+              "itemname": "신한지주",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-36595160000"
+            },
+            {
+              "itemcode": "034020",
+              "itemname": "두산에너빌리티",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-33080466000"
+            },
+            {
+              "itemcode": "086790",
+              "itemname": "하나금융지주",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-31127418000"
+            }
+          ]
+        }
+      }
+    },
+    "KOSPI_FOREIGNER_MONTH": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=FOREIGNER&tradeType=KRX&marketType=KOSPI&startIdx=0&pageSize=100&periodType=MONTH",
+      "retrievedAt": "2026-11-02T08:40:27.806090+00:00",
+      "parsedCanonicalSha256": "7ceb056cff2f8e8a125d43bce35879ea72397ca3474cde515678ff1f5aefd247",
+      "sections": {
+        "buyRankList": {
+          "count": 100,
+          "dates": [
+            [
+              "20261001",
+              "20261030"
+            ]
+          ],
+          "estimatedCount": 0,
+          "rows": [
+            {
+              "itemcode": "028050",
+              "itemname": "삼성E&A",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "470991838000"
+            },
+            {
+              "itemcode": "316140",
+              "itemname": "우리금융지주",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "420241287000"
+            },
+            {
+              "itemcode": "034730",
+              "itemname": "SK",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "381601489000"
+            },
+            {
+              "itemcode": "122630",
+              "itemname": "KODEX 레버리지",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "170866624000"
+            },
+            {
+              "itemcode": "011200",
+              "itemname": "HMM",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "142617049000"
+            },
+            {
+              "itemcode": "007660",
+              "itemname": "이수페타시스",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "141546097000"
+            },
+            {
+              "itemcode": "000720",
+              "itemname": "현대건설",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "129947027000"
+            },
+            {
+              "itemcode": "010950",
+              "itemname": "S-Oil",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "122907366000"
+            },
+            {
+              "itemcode": "000990",
+              "itemname": "DB하이텍",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "118026062000"
+            },
+            {
+              "itemcode": "329180",
+              "itemname": "HD현대중공업",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "113645541000"
+            },
+            {
+              "itemcode": "078930",
+              "itemname": "GS",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "98784090000"
+            },
+            {
+              "itemcode": "252670",
+              "itemname": "KODEX 200선물인버스2X",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "75486040000"
+            },
+            {
+              "itemcode": "017670",
+              "itemname": "SK텔레콤",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "75311115000"
+            },
+            {
+              "itemcode": "009540",
+              "itemname": "HD한국조선해양",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "74739163000"
+            },
+            {
+              "itemcode": "381180",
+              "itemname": "TIGER 미국필라델피아반도체나스닥",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "74485455000"
+            },
+            {
+              "itemcode": "001820",
+              "itemname": "삼화콘덴서",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "67868023000"
+            },
+            {
+              "itemcode": "486290",
+              "itemname": "TIGER 미국나스닥100타겟데일리커버드콜",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "63516801000"
+            },
+            {
+              "itemcode": "006360",
+              "itemname": "GS건설",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "58637426000"
+            },
+            {
+              "itemcode": "114800",
+              "itemname": "KODEX 인버스",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "53904753000"
+            },
+            {
+              "itemcode": "278470",
+              "itemname": "에이피알",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "53136027000"
+            }
+          ]
+        },
+        "sellRankList": {
+          "count": 100,
+          "dates": [
+            [
+              "20261001",
+              "20261030"
+            ]
+          ],
+          "estimatedCount": 0,
+          "rows": [
+            {
+              "itemcode": "000660",
+              "itemname": "SK하이닉스",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-10378374276000"
+            },
+            {
+              "itemcode": "005930",
+              "itemname": "삼성전자",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-3867785856000"
+            },
+            {
+              "itemcode": "402340",
+              "itemname": "SK스퀘어",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-1108790239000"
+            },
+            {
+              "itemcode": "005935",
+              "itemname": "삼성전자우",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-568856346000"
+            },
+            {
+              "itemcode": "009150",
+              "itemname": "삼성전기",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-559362012000"
+            },
+            {
+              "itemcode": "006400",
+              "itemname": "삼성SDI",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-480969948000"
+            },
+            {
+              "itemcode": "298040",
+              "itemname": "효성중공업",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-388434778000"
+            },
+            {
+              "itemcode": "034020",
+              "itemname": "두산에너빌리티",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-317806230000"
+            },
+            {
+              "itemcode": "105560",
+              "itemname": "KB금융",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-278003968000"
+            },
+            {
+              "itemcode": "353200",
+              "itemname": "대덕전자",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-268415175000"
+            },
+            {
+              "itemcode": "207940",
+              "itemname": "삼성바이오로직스",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-262906954000"
+            },
+            {
+              "itemcode": "066570",
+              "itemname": "LG전자",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-236906716000"
+            },
+            {
+              "itemcode": "042700",
+              "itemname": "한미반도체",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-192997235000"
+            },
+            {
+              "itemcode": "032830",
+              "itemname": "삼성생명",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-171760220000"
+            },
+            {
+              "itemcode": "012330",
+              "itemname": "현대모비스",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-170213883000"
+            },
+            {
+              "itemcode": "055550",
+              "itemname": "신한지주",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-159441195000"
+            },
+            {
+              "itemcode": "272210",
+              "itemname": "한화시스템",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-139365375000"
+            },
+            {
+              "itemcode": "373220",
+              "itemname": "LG에너지솔루션",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-116882011000"
+            },
+            {
+              "itemcode": "001440",
+              "itemname": "대한전선",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-111236217000"
+            },
+            {
+              "itemcode": "005830",
+              "itemname": "DB손해보험",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-110510806000"
+            }
+          ]
+        }
+      }
+    },
+    "KOSPI_FOREIGNER_DAY": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=FOREIGNER&tradeType=KRX&marketType=KOSPI&startIdx=0&pageSize=100&periodType=DAY",
+      "retrievedAt": "2026-11-02T08:40:27.816446+00:00",
+      "parsedCanonicalSha256": "32307fb1b605974342eced58f0473b0653e1304ac0796be77e5e4a57f67f0d0e",
+      "sections": {
+        "buyRankList": {
+          "count": 100,
+          "dates": [
+            [
+              "20261102",
+              "20261102"
+            ]
+          ],
+          "estimatedCount": 100,
+          "rows": [
+            {
+              "itemcode": "005930",
+              "itemname": "삼성전자",
+              "bizdateFrom": "20261102",
+              "bizdateTo": "20261102",
+              "estimated": true,
+              "accTradeAmount": "0"
+            },
+            {
+              "itemcode": "005880",
+              "itemname": "대한해운",
+              "bizdateFrom": "20261102",
+              "bizdateTo": "20261102",
+              "estimated": true,
+              "accTradeAmount": "0"
+            }
+          ]
+        },
+        "sellRankList": {
+          "count": 100,
+          "dates": [
+            [
+              "20261102",
+              "20261102"
+            ]
+          ],
+          "estimatedCount": 100,
+          "rows": [
+            {
+              "itemcode": "316140",
+              "itemname": "우리금융지주",
+              "bizdateFrom": "20261102",
+              "bizdateTo": "20261102",
+              "estimated": true,
+              "accTradeAmount": "0"
+            },
+            {
+              "itemcode": "005935",
+              "itemname": "삼성전자우",
+              "bizdateFrom": "20261102",
+              "bizdateTo": "20261102",
+              "estimated": true,
+              "accTradeAmount": "0"
+            }
+          ]
+        }
+      }
+    },
+    "KOSDAQ_FOREIGNER_DAY": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=FOREIGNER&tradeType=KRX&marketType=KOSDAQ&startIdx=0&pageSize=100&periodType=DAY",
+      "retrievedAt": "2026-11-02T08:40:32.869898+00:00",
+      "parsedCanonicalSha256": "a021e2f2643cfbd2ec33e930c9a28a58529e9f79b909f9f3e70e8e6324b4fc3e",
+      "sections": {
+        "buyRankList": {
+          "count": 100,
+          "dates": [
+            [
+              "20261102",
+              "20261102"
+            ]
+          ],
+          "estimatedCount": 100,
+          "rows": [
+            {
+              "itemcode": "101670",
+              "itemname": "하이드로리튬",
+              "bizdateFrom": "20261102",
+              "bizdateTo": "20261102",
+              "estimated": true,
+              "accTradeAmount": "0"
+            },
+            {
+              "itemcode": "032820",
+              "itemname": "우리기술",
+              "bizdateFrom": "20261102",
+              "bizdateTo": "20261102",
+              "estimated": true,
+              "accTradeAmount": "0"
+            }
+          ]
+        },
+        "sellRankList": {
+          "count": 100,
+          "dates": [
+            [
+              "20261102",
+              "20261102"
+            ]
+          ],
+          "estimatedCount": 100,
+          "rows": [
+            {
+              "itemcode": "046890",
+              "itemname": "서울반도체",
+              "bizdateFrom": "20261102",
+              "bizdateTo": "20261102",
+              "estimated": true,
+              "accTradeAmount": "0"
+            },
+            {
+              "itemcode": "200470",
+              "itemname": "에이팩트",
+              "bizdateFrom": "20261102",
+              "bizdateTo": "20261102",
+              "estimated": true,
+              "accTradeAmount": "0"
+            }
+          ]
+        }
+      }
+    },
+    "KOSDAQ_FOREIGNER_WEEK": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=FOREIGNER&tradeType=KRX&marketType=KOSDAQ&startIdx=0&pageSize=100&periodType=WEEK",
+      "retrievedAt": "2026-11-02T08:40:32.910484+00:00",
+      "parsedCanonicalSha256": "e38e2f938d7960d85f42df018eea4bf1c1927e20506e42fff7f28022f60cbf8e",
+      "sections": {
+        "buyRankList": {
+          "count": 100,
+          "dates": [
+            [
+              "20261026",
+              "20261030"
+            ]
+          ],
+          "estimatedCount": 0,
+          "rows": [
+            {
+              "itemcode": "214450",
+              "itemname": "파마리서치",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "27616881000"
+            },
+            {
+              "itemcode": "119850",
+              "itemname": "지엔씨에너지",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "27568210000"
+            },
+            {
+              "itemcode": "445680",
+              "itemname": "큐리옥스바이오시스템즈",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "24148248000"
+            },
+            {
+              "itemcode": "319660",
+              "itemname": "피에스케이",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "17222892000"
+            },
+            {
+              "itemcode": "083650",
+              "itemname": "비에이치아이",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "17184731000"
+            },
+            {
+              "itemcode": "141080",
+              "itemname": "리가켐바이오",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "16769097000"
+            },
+            {
+              "itemcode": "196170",
+              "itemname": "알테오젠",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "14142988000"
+            },
+            {
+              "itemcode": "084370",
+              "itemname": "유진테크",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "11790266000"
+            },
+            {
+              "itemcode": "078600",
+              "itemname": "대주전자재료",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "10907192000"
+            },
+            {
+              "itemcode": "058470",
+              "itemname": "리노공업",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "10773398000"
+            },
+            {
+              "itemcode": "298380",
+              "itemname": "에이비엘바이오",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "10614241000"
+            },
+            {
+              "itemcode": "087010",
+              "itemname": "펩트론",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "10583693000"
+            },
+            {
+              "itemcode": "095610",
+              "itemname": "테스",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "10193607000"
+            },
+            {
+              "itemcode": "086450",
+              "itemname": "동국제약",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "9343995000"
+            },
+            {
+              "itemcode": "032820",
+              "itemname": "우리기술",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "8693952000"
+            },
+            {
+              "itemcode": "441270",
+              "itemname": "파인엠텍",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "8106401000"
+            },
+            {
+              "itemcode": "240810",
+              "itemname": "원익IPS",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "7815539000"
+            },
+            {
+              "itemcode": "241710",
+              "itemname": "코스메카코리아",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "7739710000"
+            },
+            {
+              "itemcode": "053800",
+              "itemname": "안랩",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "7100735000"
+            },
+            {
+              "itemcode": "417200",
+              "itemname": "LS머트리얼즈",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "6725813000"
+            }
+          ]
+        },
+        "sellRankList": {
+          "count": 99,
+          "dates": [
+            [
+              "20261026",
+              "20261030"
+            ]
+          ],
+          "estimatedCount": 0,
+          "rows": [
+            {
+              "itemcode": "031980",
+              "itemname": "피에스케이홀딩스",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-45604635000"
+            },
+            {
+              "itemcode": "222800",
+              "itemname": "심텍",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-43876480000"
+            },
+            {
+              "itemcode": "327260",
+              "itemname": "RF머트리얼즈",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-30274309000"
+            },
+            {
+              "itemcode": "218410",
+              "itemname": "RFHIC",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-26749838000"
+            },
+            {
+              "itemcode": "098120",
+              "itemname": "마이크로컨텍솔",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-22452303000"
+            },
+            {
+              "itemcode": "067310",
+              "itemname": "하나마이크론",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-22428718000"
+            },
+            {
+              "itemcode": "030530",
+              "itemname": "원익홀딩스",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-20901457000"
+            },
+            {
+              "itemcode": "036930",
+              "itemname": "주성엔지니어링",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-18169068000"
+            },
+            {
+              "itemcode": "252990",
+              "itemname": "샘씨엔에스",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-17727813000"
+            },
+            {
+              "itemcode": "098460",
+              "itemname": "고영",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-15996464000"
+            },
+            {
+              "itemcode": "092870",
+              "itemname": "엑시콘",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-15422100000"
+            },
+            {
+              "itemcode": "039030",
+              "itemname": "이오테크닉스",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-14571950000"
+            },
+            {
+              "itemcode": "080580",
+              "itemname": "오킨스전자",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-14149147000"
+            },
+            {
+              "itemcode": "420770",
+              "itemname": "기가비스",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-13973499000"
+            },
+            {
+              "itemcode": "425420",
+              "itemname": "티에프이",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-11710752000"
+            },
+            {
+              "itemcode": "108490",
+              "itemname": "로보티즈",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-11008665000"
+            },
+            {
+              "itemcode": "078350",
+              "itemname": "한양디지텍",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-10792350000"
+            },
+            {
+              "itemcode": "046890",
+              "itemname": "서울반도체",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-10089239000"
+            },
+            {
+              "itemcode": "095340",
+              "itemname": "ISC",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-8162436000"
+            },
+            {
+              "itemcode": "0158S0",
+              "itemname": "엘리스",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-7840854000"
+            }
+          ]
+        }
+      }
+    },
+    "KOSPI_ORGANIZATION_MONTH": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=ORGANIZATION&tradeType=KRX&marketType=KOSPI&startIdx=0&pageSize=100&periodType=MONTH",
+      "retrievedAt": "2026-11-02T08:40:33.047291+00:00",
+      "parsedCanonicalSha256": "f854654c325e504ec16a720f1916e40128ccf6dd9ebc713a1450ab01769c02be",
+      "sections": {
+        "buyRankList": {
+          "count": 100,
+          "dates": [
+            [
+              "20261001",
+              "20261030"
+            ]
+          ],
+          "estimatedCount": 0,
+          "rows": [
+            {
+              "itemcode": "402340",
+              "itemname": "SK스퀘어",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "777420311000"
+            },
+            {
+              "itemcode": "034730",
+              "itemname": "SK",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "580450604000"
+            },
+            {
+              "itemcode": "006400",
+              "itemname": "삼성SDI",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "536693516000"
+            },
+            {
+              "itemcode": "000660",
+              "itemname": "SK하이닉스",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "535128719000"
+            },
+            {
+              "itemcode": "373220",
+              "itemname": "LG에너지솔루션",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "436164533000"
+            },
+            {
+              "itemcode": "042660",
+              "itemname": "한화오션",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "404162250000"
+            },
+            {
+              "itemcode": "207940",
+              "itemname": "삼성바이오로직스",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "361741479000"
+            },
+            {
+              "itemcode": "068270",
+              "itemname": "셀트리온",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "279103799000"
+            },
+            {
+              "itemcode": "105560",
+              "itemname": "KB금융",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "263515175000"
+            },
+            {
+              "itemcode": "012330",
+              "itemname": "현대모비스",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "253061000000"
+            },
+            {
+              "itemcode": "032830",
+              "itemname": "삼성생명",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "236664778000"
+            },
+            {
+              "itemcode": "316140",
+              "itemname": "우리금융지주",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "212461097000"
+            },
+            {
+              "itemcode": "096770",
+              "itemname": "SK이노베이션",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "209145846000"
+            },
+            {
+              "itemcode": "064400",
+              "itemname": "LG씨엔에스",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "181618298000"
+            },
+            {
+              "itemcode": "353200",
+              "itemname": "대덕전자",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "177876598000"
+            },
+            {
+              "itemcode": "272210",
+              "itemname": "한화시스템",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "175724316000"
+            },
+            {
+              "itemcode": "352820",
+              "itemname": "하이브",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "137463492000"
+            },
+            {
+              "itemcode": "005830",
+              "itemname": "DB손해보험",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "115003676000"
+            },
+            {
+              "itemcode": "028260",
+              "itemname": "삼성물산",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "114056890000"
+            },
+            {
+              "itemcode": "055550",
+              "itemname": "신한지주",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "113097688000"
+            }
+          ]
+        },
+        "sellRankList": {
+          "count": 100,
+          "dates": [
+            [
+              "20261001",
+              "20261030"
+            ]
+          ],
+          "estimatedCount": 0,
+          "rows": [
+            {
+              "itemcode": "122630",
+              "itemname": "KODEX 레버리지",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-989423777000"
+            },
+            {
+              "itemcode": "069500",
+              "itemname": "KODEX 200",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-576426240000"
+            },
+            {
+              "itemcode": "233740",
+              "itemname": "KODEX 코스닥150레버리지",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-574560639000"
+            },
+            {
+              "itemcode": "005930",
+              "itemname": "삼성전자",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-517691699000"
+            },
+            {
+              "itemcode": "498400",
+              "itemname": "KODEX 200타겟위클리커버드콜",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-507515609000"
+            },
+            {
+              "itemcode": "472150",
+              "itemname": "TIGER 배당커버드콜액티브",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-324632090000"
+            },
+            {
+              "itemcode": "360750",
+              "itemname": "TIGER 미국S&P500",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-313569874000"
+            },
+            {
+              "itemcode": "0219E0",
+              "itemname": "KODEX 200커버드콜액티브",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-307357967000"
+            },
+            {
+              "itemcode": "494310",
+              "itemname": "KODEX 반도체레버리지",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-232301287000"
+            },
+            {
+              "itemcode": "133690",
+              "itemname": "TIGER 미국나스닥100",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-215069874000"
+            },
+            {
+              "itemcode": "379810",
+              "itemname": "KODEX 미국나스닥100",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-197711505000"
+            },
+            {
+              "itemcode": "0094M0",
+              "itemname": "RISE 코리아밸류업위클리고정커버드콜",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-182847086000"
+            },
+            {
+              "itemcode": "000720",
+              "itemname": "현대건설",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-178371961000"
+            },
+            {
+              "itemcode": "379800",
+              "itemname": "KODEX 미국S&P500",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-174402674000"
+            },
+            {
+              "itemcode": "329180",
+              "itemname": "HD현대중공업",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-169610357000"
+            },
+            {
+              "itemcode": "000150",
+              "itemname": "두산",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-166628855000"
+            },
+            {
+              "itemcode": "007660",
+              "itemname": "이수페타시스",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-161675469000"
+            },
+            {
+              "itemcode": "488080",
+              "itemname": "TIGER 반도체TOP10레버리지",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-154749868000"
+            },
+            {
+              "itemcode": "010950",
+              "itemname": "S-Oil",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-137348036000"
+            },
+            {
+              "itemcode": "267270",
+              "itemname": "HD건설기계",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-135636770000"
+            }
+          ]
+        }
+      }
+    },
+    "KOSPI_ORGANIZATION_WEEK": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=ORGANIZATION&tradeType=KRX&marketType=KOSPI&startIdx=0&pageSize=100&periodType=WEEK",
+      "retrievedAt": "2026-11-02T08:40:33.056902+00:00",
+      "parsedCanonicalSha256": "8527d98c33fdd73f4beb2b87e43a8a92f4de18610dd4954326f57869805e90dc",
+      "sections": {
+        "buyRankList": {
+          "count": 100,
+          "dates": [
+            [
+              "20261026",
+              "20261030"
+            ]
+          ],
+          "estimatedCount": 0,
+          "rows": [
+            {
+              "itemcode": "005930",
+              "itemname": "삼성전자",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "1060714886000"
+            },
+            {
+              "itemcode": "402340",
+              "itemname": "SK스퀘어",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "521739226000"
+            },
+            {
+              "itemcode": "034730",
+              "itemname": "SK",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "491114543000"
+            },
+            {
+              "itemcode": "069500",
+              "itemname": "KODEX 200",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "293706653000"
+            },
+            {
+              "itemcode": "006400",
+              "itemname": "삼성SDI",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "253062659000"
+            },
+            {
+              "itemcode": "000660",
+              "itemname": "SK하이닉스",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "243603002000"
+            },
+            {
+              "itemcode": "122630",
+              "itemname": "KODEX 레버리지",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "238312697000"
+            },
+            {
+              "itemcode": "032830",
+              "itemname": "삼성생명",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "164936475000"
+            },
+            {
+              "itemcode": "009150",
+              "itemname": "삼성전기",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "163535727000"
+            },
+            {
+              "itemcode": "028260",
+              "itemname": "삼성물산",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "121332814000"
+            },
+            {
+              "itemcode": "064400",
+              "itemname": "LG씨엔에스",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "110852830000"
+            },
+            {
+              "itemcode": "102110",
+              "itemname": "TIGER 200",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "95377493000"
+            },
+            {
+              "itemcode": "018260",
+              "itemname": "삼성에스디에스",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "63516410000"
+            },
+            {
+              "itemcode": "068270",
+              "itemname": "셀트리온",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "48303839000"
+            },
+            {
+              "itemcode": "128940",
+              "itemname": "한미약품",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "44613086000"
+            },
+            {
+              "itemcode": "012330",
+              "itemname": "현대모비스",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "43825065000"
+            },
+            {
+              "itemcode": "316140",
+              "itemname": "우리금융지주",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "42354657000"
+            },
+            {
+              "itemcode": "0193T0",
+              "itemname": "KODEX SK하이닉스단일종목레버리지",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "40364683000"
+            },
+            {
+              "itemcode": "042700",
+              "itemname": "한미반도체",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "38935229000"
+            },
+            {
+              "itemcode": "055550",
+              "itemname": "신한지주",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "34646432000"
+            }
+          ]
+        },
+        "sellRankList": {
+          "count": 100,
+          "dates": [
+            [
+              "20261026",
+              "20261030"
+            ]
+          ],
+          "estimatedCount": 0,
+          "rows": [
+            {
+              "itemcode": "233740",
+              "itemname": "KODEX 코스닥150레버리지",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-136965423000"
+            },
+            {
+              "itemcode": "034020",
+              "itemname": "두산에너빌리티",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-106609887000"
+            },
+            {
+              "itemcode": "252670",
+              "itemname": "KODEX 200선물인버스2X",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-88576730000"
+            },
+            {
+              "itemcode": "010950",
+              "itemname": "S-Oil",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-80451831000"
+            },
+            {
+              "itemcode": "012450",
+              "itemname": "한화에어로스페이스",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-80135083000"
+            },
+            {
+              "itemcode": "360750",
+              "itemname": "TIGER 미국S&P500",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-68354596000"
+            },
+            {
+              "itemcode": "079550",
+              "itemname": "LIG디펜스앤에어로스페이스",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-67247481000"
+            },
+            {
+              "itemcode": "035420",
+              "itemname": "NAVER",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-63133153000"
+            },
+            {
+              "itemcode": "379810",
+              "itemname": "KODEX 미국나스닥100",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-59992545000"
+            },
+            {
+              "itemcode": "000720",
+              "itemname": "현대건설",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-59991789000"
+            },
+            {
+              "itemcode": "009830",
+              "itemname": "한화솔루션",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-58040535000"
+            },
+            {
+              "itemcode": "011070",
+              "itemname": "LG이노텍",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-54375884000"
+            },
+            {
+              "itemcode": "379800",
+              "itemname": "KODEX 미국S&P500",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-50445204000"
+            },
+            {
+              "itemcode": "133690",
+              "itemname": "TIGER 미국나스닥100",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-50229398000"
+            },
+            {
+              "itemcode": "000150",
+              "itemname": "두산",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-48122954000"
+            },
+            {
+              "itemcode": "267270",
+              "itemname": "HD건설기계",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-44067810000"
+            },
+            {
+              "itemcode": "047040",
+              "itemname": "대우건설",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-40844988000"
+            },
+            {
+              "itemcode": "472150",
+              "itemname": "TIGER 배당커버드콜액티브",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-39577996000"
+            },
+            {
+              "itemcode": "329180",
+              "itemname": "HD현대중공업",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-38770991000"
+            },
+            {
+              "itemcode": "028050",
+              "itemname": "삼성E&A",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-35186536000"
+            }
+          ]
+        }
+      }
+    },
+    "KOSDAQ_ORGANIZATION_DAY": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=ORGANIZATION&tradeType=KRX&marketType=KOSDAQ&startIdx=0&pageSize=100&periodType=DAY",
+      "retrievedAt": "2026-11-02T08:40:38.826719+00:00",
+      "parsedCanonicalSha256": "226e16b9e6bed32871ad10dad08c672dff1dc8b8df310403d9898acd93478122",
+      "sections": {
+        "buyRankList": {
+          "count": 100,
+          "dates": [
+            [
+              "20261030",
+              "20261030"
+            ]
+          ],
+          "estimatedCount": 0,
+          "rows": [
+            {
+              "itemcode": "218410",
+              "itemname": "RFHIC",
+              "bizdateFrom": "20261030",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "10510615000"
+            },
+            {
+              "itemcode": "030530",
+              "itemname": "원익홀딩스",
+              "bizdateFrom": "20261030",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "8876541000"
+            }
+          ]
+        },
+        "sellRankList": {
+          "count": 100,
+          "dates": [
+            [
+              "20261030",
+              "20261030"
+            ]
+          ],
+          "estimatedCount": 0,
+          "rows": [
+            {
+              "itemcode": "222800",
+              "itemname": "심텍",
+              "bizdateFrom": "20261030",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-22551036000"
+            },
+            {
+              "itemcode": "196170",
+              "itemname": "알테오젠",
+              "bizdateFrom": "20261030",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-12059045000"
+            }
+          ]
+        }
+      }
+    },
+    "KOSDAQ_ORGANIZATION_MONTH": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=ORGANIZATION&tradeType=KRX&marketType=KOSDAQ&startIdx=0&pageSize=100&periodType=MONTH",
+      "retrievedAt": "2026-11-02T08:40:38.933604+00:00",
+      "parsedCanonicalSha256": "bb907644d0b1980e5078f46879b0dc9271a87dd16df4ddb146fd10e5f756ee8a",
+      "sections": {
+        "buyRankList": {
+          "count": 99,
+          "dates": [
+            [
+              "20261001",
+              "20261030"
+            ]
+          ],
+          "estimatedCount": 0,
+          "rows": [
+            {
+              "itemcode": "058470",
+              "itemname": "리노공업",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "141486630000"
+            },
+            {
+              "itemcode": "196170",
+              "itemname": "알테오젠",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "64738497000"
+            },
+            {
+              "itemcode": "425420",
+              "itemname": "티에프이",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "54901468000"
+            },
+            {
+              "itemcode": "226950",
+              "itemname": "올릭스",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "49546374000"
+            },
+            {
+              "itemcode": "059090",
+              "itemname": "미코",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "48066327000"
+            },
+            {
+              "itemcode": "253590",
+              "itemname": "네오셈",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "45414822000"
+            },
+            {
+              "itemcode": "131290",
+              "itemname": "티에스이",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "36427517000"
+            },
+            {
+              "itemcode": "078350",
+              "itemname": "한양디지텍",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "36329710000"
+            },
+            {
+              "itemcode": "171090",
+              "itemname": "선익시스템",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "36197978000"
+            },
+            {
+              "itemcode": "030530",
+              "itemname": "원익홀딩스",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "35430909000"
+            },
+            {
+              "itemcode": "277810",
+              "itemname": "레인보우로보틱스",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "34280852000"
+            },
+            {
+              "itemcode": "218410",
+              "itemname": "RFHIC",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "33099565000"
+            },
+            {
+              "itemcode": "078600",
+              "itemname": "대주전자재료",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "33085604000"
+            },
+            {
+              "itemcode": "089890",
+              "itemname": "코세스",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "30599851000"
+            },
+            {
+              "itemcode": "328130",
+              "itemname": "루닛",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "29258051000"
+            },
+            {
+              "itemcode": "098120",
+              "itemname": "마이크로컨텍솔",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "28560601000"
+            },
+            {
+              "itemcode": "144960",
+              "itemname": "뉴파워프라즈마",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "28268269000"
+            },
+            {
+              "itemcode": "140860",
+              "itemname": "파크시스템스",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "26439834000"
+            },
+            {
+              "itemcode": "086450",
+              "itemname": "동국제약",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "25893882000"
+            },
+            {
+              "itemcode": "108490",
+              "itemname": "로보티즈",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "25540771000"
+            }
+          ]
+        },
+        "sellRankList": {
+          "count": 100,
+          "dates": [
+            [
+              "20261001",
+              "20261030"
+            ]
+          ],
+          "estimatedCount": 0,
+          "rows": [
+            {
+              "itemcode": "222800",
+              "itemname": "심텍",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-176252016000"
+            },
+            {
+              "itemcode": "214450",
+              "itemname": "파마리서치",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-117562602000"
+            },
+            {
+              "itemcode": "095610",
+              "itemname": "테스",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-104517782000"
+            },
+            {
+              "itemcode": "036930",
+              "itemname": "주성엔지니어링",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-83898220000"
+            },
+            {
+              "itemcode": "089970",
+              "itemname": "브이엠",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-79902004000"
+            },
+            {
+              "itemcode": "240810",
+              "itemname": "원익IPS",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-72366606000"
+            },
+            {
+              "itemcode": "119850",
+              "itemname": "지엔씨에너지",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-71815531000"
+            },
+            {
+              "itemcode": "468670",
+              "itemname": "브릴스",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-58678486000"
+            },
+            {
+              "itemcode": "064760",
+              "itemname": "티씨케이",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-51767648000"
+            },
+            {
+              "itemcode": "319660",
+              "itemname": "피에스케이",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-45286482000"
+            },
+            {
+              "itemcode": "083650",
+              "itemname": "비에이치아이",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-39014367000"
+            },
+            {
+              "itemcode": "141080",
+              "itemname": "리가켐바이오",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-35413187000"
+            },
+            {
+              "itemcode": "0158S0",
+              "itemname": "엘리스",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-33666306000"
+            },
+            {
+              "itemcode": "095340",
+              "itemname": "ISC",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-30804467000"
+            },
+            {
+              "itemcode": "247540",
+              "itemname": "에코프로비엠",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-30744533000"
+            },
+            {
+              "itemcode": "183300",
+              "itemname": "코미코",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-29383658000"
+            },
+            {
+              "itemcode": "036540",
+              "itemname": "SFA반도체",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-25162497000"
+            },
+            {
+              "itemcode": "440110",
+              "itemname": "파두",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-24127192000"
+            },
+            {
+              "itemcode": "060370",
+              "itemname": "LS마린솔루션",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-22189904000"
+            },
+            {
+              "itemcode": "039030",
+              "itemname": "이오테크닉스",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-21813142000"
+            }
+          ]
+        }
+      }
+    },
+    "KOSDAQ_ORGANIZATION_WEEK": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=ORGANIZATION&tradeType=KRX&marketType=KOSDAQ&startIdx=0&pageSize=100&periodType=WEEK",
+      "retrievedAt": "2026-11-02T08:40:39.049749+00:00",
+      "parsedCanonicalSha256": "7cf1b64baa43dc5c213b5528f4a071bdaaf98f7dc053633a16fa776eb2983ff7",
+      "sections": {
+        "buyRankList": {
+          "count": 100,
+          "dates": [
+            [
+              "20261026",
+              "20261030"
+            ]
+          ],
+          "estimatedCount": 0,
+          "rows": [
+            {
+              "itemcode": "108490",
+              "itemname": "로보티즈",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "46643021000"
+            },
+            {
+              "itemcode": "031980",
+              "itemname": "피에스케이홀딩스",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "36734441000"
+            },
+            {
+              "itemcode": "425420",
+              "itemname": "티에프이",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "32717108000"
+            },
+            {
+              "itemcode": "218410",
+              "itemname": "RFHIC",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "29695006000"
+            },
+            {
+              "itemcode": "030530",
+              "itemname": "원익홀딩스",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "28544824000"
+            },
+            {
+              "itemcode": "098120",
+              "itemname": "마이크로컨텍솔",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "21402096000"
+            },
+            {
+              "itemcode": "092870",
+              "itemname": "엑시콘",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "18657861000"
+            },
+            {
+              "itemcode": "059090",
+              "itemname": "미코",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "16752107000"
+            },
+            {
+              "itemcode": "222800",
+              "itemname": "심텍",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "16637557000"
+            },
+            {
+              "itemcode": "253590",
+              "itemname": "네오셈",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "16182039000"
+            },
+            {
+              "itemcode": "093320",
+              "itemname": "케이아이엔엑스",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "14946645000"
+            },
+            {
+              "itemcode": "078350",
+              "itemname": "한양디지텍",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "13453191000"
+            },
+            {
+              "itemcode": "328130",
+              "itemname": "루닛",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "13349542000"
+            },
+            {
+              "itemcode": "058610",
+              "itemname": "에스피지",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "13024249000"
+            },
+            {
+              "itemcode": "064290",
+              "itemname": "인텍플러스",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "12309202000"
+            },
+            {
+              "itemcode": "468530",
+              "itemname": "프로티나",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "10497698000"
+            },
+            {
+              "itemcode": "200470",
+              "itemname": "에이팩트",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "9183660000"
+            },
+            {
+              "itemcode": "089890",
+              "itemname": "코세스",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "8695492000"
+            },
+            {
+              "itemcode": "277810",
+              "itemname": "레인보우로보틱스",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "8551483000"
+            },
+            {
+              "itemcode": "327260",
+              "itemname": "RF머트리얼즈",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "8545662000"
+            }
+          ]
+        },
+        "sellRankList": {
+          "count": 99,
+          "dates": [
+            [
+              "20261026",
+              "20261030"
+            ]
+          ],
+          "estimatedCount": 0,
+          "rows": [
+            {
+              "itemcode": "403870",
+              "itemname": "HPSP",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-28609593000"
+            },
+            {
+              "itemcode": "119850",
+              "itemname": "지엔씨에너지",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-21050264000"
+            },
+            {
+              "itemcode": "058470",
+              "itemname": "리노공업",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-20533865000"
+            },
+            {
+              "itemcode": "214450",
+              "itemname": "파마리서치",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-20473320000"
+            },
+            {
+              "itemcode": "141080",
+              "itemname": "리가켐바이오",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-18030327000"
+            },
+            {
+              "itemcode": "237690",
+              "itemname": "에스티팜",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-17525427000"
+            },
+            {
+              "itemcode": "247540",
+              "itemname": "에코프로비엠",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-17391217000"
+            },
+            {
+              "itemcode": "441270",
+              "itemname": "파인엠텍",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-15989961000"
+            },
+            {
+              "itemcode": "036930",
+              "itemname": "주성엔지니어링",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-13803701000"
+            },
+            {
+              "itemcode": "0205H0",
+              "itemname": "에스케이증권제14호기업인수목적",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-13251356000"
+            },
+            {
+              "itemcode": "084370",
+              "itemname": "유진테크",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-11964216000"
+            },
+            {
+              "itemcode": "298380",
+              "itemname": "에이비엘바이오",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-11887590000"
+            },
+            {
+              "itemcode": "445680",
+              "itemname": "큐리옥스바이오시스템즈",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-10734626000"
+            },
+            {
+              "itemcode": "319660",
+              "itemname": "피에스케이",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-10564948000"
+            },
+            {
+              "itemcode": "240810",
+              "itemname": "원익IPS",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-10404854000"
+            },
+            {
+              "itemcode": "083650",
+              "itemname": "비에이치아이",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-10378580000"
+            },
+            {
+              "itemcode": "456160",
+              "itemname": "지투지바이오",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-10017947000"
+            },
+            {
+              "itemcode": "354320",
+              "itemname": "알멕",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-9320346000"
+            },
+            {
+              "itemcode": "439270",
+              "itemname": "크리에이츠",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-9030590000"
+            },
+            {
+              "itemcode": "0158S0",
+              "itemname": "엘리스",
+              "bizdateFrom": "20261026",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-8871501000"
+            }
+          ]
+        }
+      }
+    },
+    "KOSDAQ_FOREIGNER_MONTH": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=FOREIGNER&tradeType=KRX&marketType=KOSDAQ&startIdx=0&pageSize=100&periodType=MONTH",
+      "retrievedAt": "2026-11-02T08:40:39.052845+00:00",
+      "parsedCanonicalSha256": "b8bebb7e3998f8911f45da82106da17c2e886f5336418a4a458187cf376fdf36",
+      "sections": {
+        "buyRankList": {
+          "count": 100,
+          "dates": [
+            [
+              "20261001",
+              "20261030"
+            ]
+          ],
+          "estimatedCount": 0,
+          "rows": [
+            {
+              "itemcode": "214450",
+              "itemname": "파마리서치",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "133461594000"
+            },
+            {
+              "itemcode": "196170",
+              "itemname": "알테오젠",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "120576063000"
+            },
+            {
+              "itemcode": "095610",
+              "itemname": "테스",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "74711236000"
+            },
+            {
+              "itemcode": "098460",
+              "itemname": "고영",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "66502127000"
+            },
+            {
+              "itemcode": "119850",
+              "itemname": "지엔씨에너지",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "56335064000"
+            },
+            {
+              "itemcode": "064760",
+              "itemname": "티씨케이",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "48980543000"
+            },
+            {
+              "itemcode": "039030",
+              "itemname": "이오테크닉스",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "44048598000"
+            },
+            {
+              "itemcode": "083650",
+              "itemname": "비에이치아이",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "43678018000"
+            },
+            {
+              "itemcode": "222800",
+              "itemname": "심텍",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "36876740000"
+            },
+            {
+              "itemcode": "089970",
+              "itemname": "브이엠",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "36384155000"
+            },
+            {
+              "itemcode": "036540",
+              "itemname": "SFA반도체",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "30632374000"
+            },
+            {
+              "itemcode": "096530",
+              "itemname": "씨젠",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "24841226000"
+            },
+            {
+              "itemcode": "141080",
+              "itemname": "리가켐바이오",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "20786366000"
+            },
+            {
+              "itemcode": "263750",
+              "itemname": "펄어비스",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "18537656000"
+            },
+            {
+              "itemcode": "145020",
+              "itemname": "휴젤",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "18050564000"
+            },
+            {
+              "itemcode": "087010",
+              "itemname": "펩트론",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "17873249000"
+            },
+            {
+              "itemcode": "319660",
+              "itemname": "피에스케이",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "15047056000"
+            },
+            {
+              "itemcode": "058610",
+              "itemname": "에스피지",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "14414506000"
+            },
+            {
+              "itemcode": "053800",
+              "itemname": "안랩",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "13628217000"
+            },
+            {
+              "itemcode": "356860",
+              "itemname": "티엘비",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "13499335000"
+            }
+          ]
+        },
+        "sellRankList": {
+          "count": 99,
+          "dates": [
+            [
+              "20261001",
+              "20261030"
+            ]
+          ],
+          "estimatedCount": 0,
+          "rows": [
+            {
+              "itemcode": "058470",
+              "itemname": "리노공업",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-175736244000"
+            },
+            {
+              "itemcode": "000250",
+              "itemname": "삼천당제약",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-102294853000"
+            },
+            {
+              "itemcode": "178320",
+              "itemname": "서진시스템",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-79225912000"
+            },
+            {
+              "itemcode": "036930",
+              "itemname": "주성엔지니어링",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-74215911000"
+            },
+            {
+              "itemcode": "290650",
+              "itemname": "엘앤씨바이오",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-65942512000"
+            },
+            {
+              "itemcode": "247540",
+              "itemname": "에코프로비엠",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-54594382000"
+            },
+            {
+              "itemcode": "028300",
+              "itemname": "HLB",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-47818135000"
+            },
+            {
+              "itemcode": "131970",
+              "itemname": "두산테스나",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-46562119000"
+            },
+            {
+              "itemcode": "078600",
+              "itemname": "대주전자재료",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-44415342000"
+            },
+            {
+              "itemcode": "327260",
+              "itemname": "RF머트리얼즈",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-41289054000"
+            },
+            {
+              "itemcode": "101490",
+              "itemname": "에스앤에스텍",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-38460534000"
+            },
+            {
+              "itemcode": "226950",
+              "itemname": "올릭스",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-37419523000"
+            },
+            {
+              "itemcode": "417200",
+              "itemname": "LS머트리얼즈",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-37211253000"
+            },
+            {
+              "itemcode": "131290",
+              "itemname": "티에스이",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-35418002000"
+            },
+            {
+              "itemcode": "084370",
+              "itemname": "유진테크",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-32020682000"
+            },
+            {
+              "itemcode": "031980",
+              "itemname": "피에스케이홀딩스",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-31298071000"
+            },
+            {
+              "itemcode": "323280",
+              "itemname": "태성",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-30351254000"
+            },
+            {
+              "itemcode": "218410",
+              "itemname": "RFHIC",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-30293878000"
+            },
+            {
+              "itemcode": "038500",
+              "itemname": "삼표시멘트",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-29428748000"
+            },
+            {
+              "itemcode": "086520",
+              "itemname": "에코프로",
+              "bizdateFrom": "20261001",
+              "bizdateTo": "20261030",
+              "estimated": null,
+              "accTradeAmount": "-27462342000"
+            }
+          ]
+        }
+      }
+    },
+    "exchange_status": {
+      "url": "https://stock.naver.com/api/stockSecurity/exchanges/market-status?exchanges=KRX",
+      "retrievedAt": "2026-11-02T08:40:44.256931+00:00",
+      "parsedCanonicalSha256": "6bb57cae8050f026b60b46a04c5dc2e0575f09cab5a2cbb5bd9a0eaa56017930",
+      "data": {
+        "serverTime": "2026-11-02T17:40:44+09:00",
+        "exchanges": [
+          {
+            "exchange": "krx",
+            "zoneId": "Asia/Seoul",
+            "isDaylightSavingTime": false,
+            "statuses": [
+              {
+                "marketType": "KOSPI",
+                "stockType": "stock",
+                "delayMinutes": "0",
+                "today": {
+                  "date": "2026-11-02",
+                  "isTradingDay": true,
+                  "isWeekdayHoliday": false,
+                  "holidayDescription": null
+                },
+                "latest": {
+                  "tradeBaseAt": "2026-11-02",
+                  "session": {
+                    "marketStatusDetailType": "open",
+                    "marketSessionType": "afterMarket",
+                    "displayLabel": "애프터마켓",
+                    "openAt": "2026-11-02T16:00:00+09:00",
+                    "closeAt": "2026-11-02T20:00:00+09:00"
+                  }
+                },
+                "next": {
+                  "tradeBaseAt": "2026-11-02",
+                  "session": {
+                    "marketStatusDetailType": "close",
+                    "marketSessionType": "afterMarket",
+                    "displayLabel": "애프터마켓 마감",
+                    "openAt": "2026-11-02T20:00:00+09:00",
+                    "closeAt": "2026-11-03T08:00:00+09:00"
+                  }
+                }
+              },
+              {
+                "marketType": "KOSDAQ",
+                "stockType": "stock",
+                "delayMinutes": "0",
+                "today": {
+                  "date": "2026-11-02",
+                  "isTradingDay": true,
+                  "isWeekdayHoliday": false,
+                  "holidayDescription": null
+                },
+                "latest": {
+                  "tradeBaseAt": "2026-11-02",
+                  "session": {
+                    "marketStatusDetailType": "open",
+                    "marketSessionType": "afterMarket",
+                    "displayLabel": "애프터마켓",
+                    "openAt": "2026-11-02T16:00:00+09:00",
+                    "closeAt": "2026-11-02T20:00:00+09:00"
+                  }
+                },
+                "next": {
+                  "tradeBaseAt": "2026-11-02",
+                  "session": {
+                    "marketStatusDetailType": "close",
+                    "marketSessionType": "afterMarket",
+                    "displayLabel": "애프터마켓 마감",
+                    "openAt": "2026-11-02T20:00:00+09:00",
+                    "closeAt": "2026-11-03T08:00:00+09:00"
+                  }
+                }
+              },
+              {
+                "marketType": "KONEX",
+                "stockType": "stock",
+                "delayMinutes": "0",
+                "today": {
+                  "date": "2026-11-02",
+                  "isTradingDay": true,
+                  "isWeekdayHoliday": false,
+                  "holidayDescription": null
+                },
+                "latest": {
+                  "tradeBaseAt": "2026-11-02",
+                  "session": {
+                    "marketStatusDetailType": "close",
+                    "marketSessionType": "regularMarket",
+                    "displayLabel": "장마감",
+                    "openAt": "2026-11-02T15:30:00+09:00",
+                    "closeAt": "2026-11-03T08:00:00+09:00"
+                  }
+                },
+                "next": {
+                  "tradeBaseAt": "2026-11-03",
+                  "session": {
+                    "marketStatusDetailType": "preopen",
+                    "marketSessionType": null,
+                    "displayLabel": "개장전",
+                    "openAt": "2026-11-03T08:00:00+09:00",
+                    "closeAt": "2026-11-03T09:00:00+09:00"
+                  }
+                }
+              },
+              {
+                "marketType": "KOSPI",
+                "stockType": "etf",
+                "delayMinutes": "0",
+                "today": {
+                  "date": "2026-11-02",
+                  "isTradingDay": true,
+                  "isWeekdayHoliday": false,
+                  "holidayDescription": null
+                },
+                "latest": {
+                  "tradeBaseAt": "2026-11-02",
+                  "session": {
+                    "marketStatusDetailType": "close",
+                    "marketSessionType": "regularMarket",
+                    "displayLabel": "장마감",
+                    "openAt": "2026-11-02T15:30:00+09:00",
+                    "closeAt": "2026-11-03T08:00:00+09:00"
+                  }
+                },
+                "next": {
+                  "tradeBaseAt": "2026-11-03",
+                  "session": {
+                    "marketStatusDetailType": "preopen",
+                    "marketSessionType": null,
+                    "displayLabel": "개장전",
+                    "openAt": "2026-11-03T08:00:00+09:00",
+                    "closeAt": "2026-11-03T09:00:00+09:00"
+                  }
+                }
+              },
+              {
+                "marketType": "KOSPI",
+                "stockType": "etn",
+                "delayMinutes": "0",
+                "today": {
+                  "date": "2026-11-02",
+                  "isTradingDay": true,
+                  "isWeekdayHoliday": false,
+                  "holidayDescription": null
+                },
+                "latest": {
+                  "tradeBaseAt": "2026-11-02",
+                  "session": {
+                    "marketStatusDetailType": "close",
+                    "marketSessionType": "regularMarket",
+                    "displayLabel": "장마감",
+                    "openAt": "2026-11-02T15:30:00+09:00",
+                    "closeAt": "2026-11-03T08:00:00+09:00"
+                  }
+                },
+                "next": {
+                  "tradeBaseAt": "2026-11-03",
+                  "session": {
+                    "marketStatusDetailType": "preopen",
+                    "marketSessionType": null,
+                    "displayLabel": "개장전",
+                    "openAt": "2026-11-03T08:00:00+09:00",
+                    "closeAt": "2026-11-03T09:00:00+09:00"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "turnover": {
+      "url": "https://stock.naver.com/api/domestic/market/stock/default?tradeType=KRX&marketType=ALL&orderType=priceTop&startIdx=0&pageSize=100",
+      "retrievedAt": "2026-11-02T08:40:44.726316+00:00",
+      "parsedCanonicalSha256": "ed589f76a4b726121249e7e90fe9b95b30e50026440c635c3f7d97660f2ee11f",
+      "rowCount": 100,
+      "targetRows": [
+        {
+          "itemcode": "000660",
+          "itemname": "SK하이닉스",
+          "sosok": "0",
+          "type": "ST",
+          "tradeAmount": "3600342000000"
+        },
+        {
+          "itemcode": "005930",
+          "itemname": "삼성전자",
+          "sosok": "0",
+          "type": "ST",
+          "tradeAmount": "3178165000000"
+        },
+        {
+          "itemcode": "359410",
+          "itemname": "영광",
+          "sosok": "1",
+          "type": "ST",
+          "tradeAmount": "1139792640000"
+        },
+        {
+          "itemcode": "009150",
+          "itemname": "삼성전기",
+          "sosok": "0",
+          "type": "ST",
+          "tradeAmount": "679827000000"
+        },
+        {
+          "itemcode": "402340",
+          "itemname": "SK스퀘어",
+          "sosok": "0",
+          "type": "ST",
+          "tradeAmount": "437137000000"
+        },
+        {
+          "itemcode": "030530",
+          "itemname": "원익홀딩스",
+          "sosok": "1",
+          "type": "ST",
+          "tradeAmount": "253468126000"
+        },
+        {
+          "itemcode": "006400",
+          "itemname": "삼성SDI",
+          "sosok": "0",
+          "type": "ST",
+          "tradeAmount": "236393000000"
+        },
+        {
+          "itemcode": "420610",
+          "itemname": "인텔리빅스",
+          "sosok": "1",
+          "type": "ST",
+          "tradeAmount": "226737286000"
+        },
+        {
+          "itemcode": "298040",
+          "itemname": "효성중공업",
+          "sosok": "0",
+          "type": "ST",
+          "tradeAmount": "197414000000"
+        },
+        {
+          "itemcode": "012450",
+          "itemname": "한화에어로스페이스",
+          "sosok": "0",
+          "type": "ST",
+          "tradeAmount": "181643000000"
+        },
+        {
+          "itemcode": "034020",
+          "itemname": "두산에너빌리티",
+          "sosok": "0",
+          "type": "ST",
+          "tradeAmount": "154160000000"
+        },
+        {
+          "itemcode": "179880",
+          "itemname": "멜콘",
+          "sosok": "1",
+          "type": "ST",
+          "tradeAmount": "149896753000"
+        },
+        {
+          "itemcode": "000270",
+          "itemname": "기아",
+          "sosok": "0",
+          "type": "ST",
+          "tradeAmount": "148440000000"
+        },
+        {
+          "itemcode": "353200",
+          "itemname": "대덕전자",
+          "sosok": "0",
+          "type": "ST",
+          "tradeAmount": "147581000000"
+        },
+        {
+          "itemcode": "329180",
+          "itemname": "HD현대중공업",
+          "sosok": "0",
+          "type": "ST",
+          "tradeAmount": "131967000000"
+        },
+        {
+          "itemcode": "036930",
+          "itemname": "주성엔지니어링",
+          "sosok": "1",
+          "type": "ST",
+          "tradeAmount": "130135469000"
+        },
+        {
+          "itemcode": "042660",
+          "itemname": "한화오션",
+          "sosok": "0",
+          "type": "ST",
+          "tradeAmount": "129695000000"
+        },
+        {
+          "itemcode": "042700",
+          "itemname": "한미반도체",
+          "sosok": "0",
+          "type": "ST",
+          "tradeAmount": "123551000000"
+        },
+        {
+          "itemcode": "105560",
+          "itemname": "KB금융",
+          "sosok": "0",
+          "type": "ST",
+          "tradeAmount": "118429000000"
+        },
+        {
+          "itemcode": "278470",
+          "itemname": "에이피알",
+          "sosok": "0",
+          "type": "ST",
+          "tradeAmount": "117288000000"
+        }
+      ]
+    },
+    "universe": {
+      "url": "https://stock.naver.com/api/domestic/market/stock/default?tradeType=KRX&marketType=ALL&orderType=marketSum&startIdx=0&pageSize=4000",
+      "retrievedAt": "2026-11-02T08:40:46.042655+00:00",
+      "parsedCanonicalSha256": "e668fa8febc81b55855e2cb717a4bde2833ac6cd0e1a1ef804d6148ab25672a1",
+      "rowCount": 2876,
+      "targetRows": [
+        {
+          "itemcode": "005930",
+          "itemname": "삼성전자",
+          "sosok": "0",
+          "type": "ST",
+          "tradeAmount": "3178165000000"
+        },
+        {
+          "itemcode": "000660",
+          "itemname": "SK하이닉스",
+          "sosok": "0",
+          "type": "ST",
+          "tradeAmount": "3600342000000"
+        },
+        {
+          "itemcode": "402340",
+          "itemname": "SK스퀘어",
+          "sosok": "0",
+          "type": "ST",
+          "tradeAmount": "437137000000"
+        },
+        {
+          "itemcode": "009150",
+          "itemname": "삼성전기",
+          "sosok": "0",
+          "type": "ST",
+          "tradeAmount": "679827000000"
+        },
+        {
+          "itemcode": "105560",
+          "itemname": "KB금융",
+          "sosok": "0",
+          "type": "ST",
+          "tradeAmount": "118429000000"
+        },
+        {
+          "itemcode": "006400",
+          "itemname": "삼성SDI",
+          "sosok": "0",
+          "type": "ST",
+          "tradeAmount": "236393000000"
+        },
+        {
+          "itemcode": "012450",
+          "itemname": "한화에어로스페이스",
+          "sosok": "0",
+          "type": "ST",
+          "tradeAmount": "181643000000"
+        },
+        {
+          "itemcode": "000270",
+          "itemname": "기아",
+          "sosok": "0",
+          "type": "ST",
+          "tradeAmount": "148440000000"
+        },
+        {
+          "itemcode": "034020",
+          "itemname": "두산에너빌리티",
+          "sosok": "0",
+          "type": "ST",
+          "tradeAmount": "154160000000"
+        },
+        {
+          "itemcode": "329180",
+          "itemname": "HD현대중공업",
+          "sosok": "0",
+          "type": "ST",
+          "tradeAmount": "131967000000"
+        },
+        {
+          "itemcode": "298040",
+          "itemname": "효성중공업",
+          "sosok": "0",
+          "type": "ST",
+          "tradeAmount": "197414000000"
+        },
+        {
+          "itemcode": "042700",
+          "itemname": "한미반도체",
+          "sosok": "0",
+          "type": "ST",
+          "tradeAmount": "123551000000"
+        },
+        {
+          "itemcode": "042660",
+          "itemname": "한화오션",
+          "sosok": "0",
+          "type": "ST",
+          "tradeAmount": "129695000000"
+        },
+        {
+          "itemcode": "278470",
+          "itemname": "에이피알",
+          "sosok": "0",
+          "type": "ST",
+          "tradeAmount": "117288000000"
+        },
+        {
+          "itemcode": "036930",
+          "itemname": "주성엔지니어링",
+          "sosok": "1",
+          "type": "ST",
+          "tradeAmount": "130135469000"
+        },
+        {
+          "itemcode": "353200",
+          "itemname": "대덕전자",
+          "sosok": "0",
+          "type": "ST",
+          "tradeAmount": "147581000000"
+        },
+        {
+          "itemcode": "030530",
+          "itemname": "원익홀딩스",
+          "sosok": "1",
+          "type": "ST",
+          "tradeAmount": "253468126000"
+        },
+        {
+          "itemcode": "420610",
+          "itemname": "인텔리빅스",
+          "sosok": "1",
+          "type": "ST",
+          "tradeAmount": "226737286000"
+        },
+        {
+          "itemcode": "179880",
+          "itemname": "멜콘",
+          "sosok": "1",
+          "type": "ST",
+          "tradeAmount": "149896753000"
+        },
+        {
+          "itemcode": "359410",
+          "itemname": "영광",
+          "sosok": "1",
+          "type": "ST",
+          "tradeAmount": "1139792640000"
+        }
+      ]
+    }
+  },
+  "futures": {
+    "url": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=FUT&bizdate=20261102&startIdx=0&pageSize=30",
+    "observedAt": "2026-11-02T08:40:23.941817+00:00",
+    "targetRows": [
+      {
+        "bizdate": "20261102",
+        "time": "",
+        "netAmounts": [
+          {
+            "investorGubun": "9999",
+            "diffValue": "0",
+            "sellQuant": "164925",
+            "sellPrice": "37276918",
+            "buyQuant": "164925",
+            "buyPrice": "37276918"
+          },
+          {
+            "investorGubun": "9000",
+            "diffValue": "1535",
+            "sellQuant": "124064",
+            "sellPrice": "28022061",
+            "buyQuant": "125599",
+            "buyPrice": "28362871"
+          },
+          {
+            "investorGubun": "8000",
+            "diffValue": "-529",
+            "sellQuant": "21535",
+            "sellPrice": "4855452",
+            "buyQuant": "21006",
+            "buyPrice": "4736086"
+          },
+          {
+            "investorGubun": "7100",
+            "diffValue": "-149",
+            "sellQuant": "1651",
+            "sellPrice": "374593",
+            "buyQuant": "1502",
+            "buyPrice": "340995"
+          },
+          {
+            "investorGubun": "7000",
+            "diffValue": "0",
+            "sellQuant": "0",
+            "sellPrice": "0",
+            "buyQuant": "0",
+            "buyPrice": "0"
+          },
+          {
+            "investorGubun": "6000",
+            "diffValue": "642",
+            "sellQuant": "1088",
+            "sellPrice": "246287",
+            "buyQuant": "1730",
+            "buyPrice": "392686"
+          },
+          {
+            "investorGubun": "5000",
+            "diffValue": "-12",
+            "sellQuant": "36",
+            "sellPrice": "8159",
+            "buyQuant": "24",
+            "buyPrice": "5541"
+          },
+          {
+            "investorGubun": "4000",
+            "diffValue": "-60",
+            "sellQuant": "82",
+            "sellPrice": "18350",
+            "buyQuant": "22",
+            "buyPrice": "5031"
+          },
+          {
+            "investorGubun": "3000",
+            "diffValue": "2656",
+            "sellQuant": "2141",
+            "sellPrice": "487507",
+            "buyQuant": "4797",
+            "buyPrice": "1098895"
+          },
+          {
+            "investorGubun": "2000",
+            "diffValue": "-219",
+            "sellQuant": "256",
+            "sellPrice": "58591",
+            "buyQuant": "37",
+            "buyPrice": "8450"
+          },
+          {
+            "investorGubun": "1000",
+            "diffValue": "-3864",
+            "sellQuant": "14072",
+            "sellPrice": "3205918",
+            "buyQuant": "10208",
+            "buyPrice": "2326363"
+          }
+        ]
+      }
+    ]
+  }
+}

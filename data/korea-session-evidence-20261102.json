@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-02",
+  "observedAt": "2026-11-02T08:41:24.425750+00:00",
+  "status": "verified-via-existing-executed-official-gate",
+  "workflowRun": 41409674670,
+  "job": 125159599684,
+  "url": "https://github.com/saewoo16/global-tech-terminal/actions/runs/41409674670",
+  "stepStartedAt": "2026-11-02T07:59:41Z",
+  "stepCompletedAt": "2026-11-02T07:59:49Z",
+  "conclusion": "success",
+  "sourceCommit": "4719497f52e8280c07ec2f7072c7598a836e1c14",
+  "publicationCommit": "81806cc1c9e92e2d1f7b70db7536bb117bdbfee7",
+  "inspectedScripts": {
+    "scripts/korean_session_gate.py": "61c2cfb13f973a8b521765ff5a037785d83e412ad5c5888aa569e0defedb56ab",
+    "scripts/refresh_korean_scheduled.py": "ad1fdd49abe5f459b4de76834f3c36cdf0f479137f6becc68ba863d188aaef63"
+  },
+  "inference": "Existing scheduled collector reached FreeSIS collection and changed data after fresh official KRX annual-holiday and same-day both-market gate; executable control flow proves successful gate. Not a raw calendar re-download in this run.",
+  "limitation": "Local fresh calendar request HTTP403; no raw annual calendar retained from existing workflow.",
+  "latestObservedMarketDates": {
+    "KOSPI": "2026-11-02",
+    "KOSDAQ": "2026-11-02"
+  }
+}
