@@ -1,0 +1,99 @@
+{
+  "checkedAt": "2026-11-02T14:35:00Z",
+  "scheduledAt": "2026-11-02T09:00:00Z",
+  "completionTimingNote": "User-assisted authentication recovery delayed actual acquisition; do not backdate verification to scheduled18KST.",
+  "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203",
+  "screen": "33001 개별종목 공매도 순보유잔고",
+  "latestAvailable": "2026-10-29",
+  "followingSessionChecks": [
+    {
+      "market": "KOSDAQ",
+      "date": "2026-10-30",
+      "observedAt": "2026-11-02T14:34:43Z",
+      "visibleResult": "데이터가 없습니다."
+    },
+    {
+      "market": "KOSPI",
+      "date": "2026-10-30",
+      "observedAt": "2026-11-02T14:35:00Z",
+      "visibleResult": "데이터가 없습니다."
+    }
+  ],
+  "coverage": {
+    "markets": [
+      "KOSPI",
+      "KOSDAQ"
+    ],
+    "complete": true,
+    "scope": "whole-market",
+    "count": 2765,
+    "countByMarket": {
+      "KOSPI": 940,
+      "KOSDAQ": 1825
+    },
+    "historyDates": [
+      "2026-09-28",
+      "2026-09-29",
+      "2026-09-30",
+      "2026-10-01",
+      "2026-10-02",
+      "2026-10-06",
+      "2026-10-07",
+      "2026-10-08",
+      "2026-10-12",
+      "2026-10-13",
+      "2026-10-14",
+      "2026-10-15",
+      "2026-10-16",
+      "2026-10-19",
+      "2026-10-20",
+      "2026-10-21",
+      "2026-10-22",
+      "2026-10-23",
+      "2026-10-26",
+      "2026-10-27",
+      "2026-10-28"
+    ],
+    "snapshotDates": [
+      "2026-09-28",
+      "2026-09-29",
+      "2026-09-30",
+      "2026-10-01",
+      "2026-10-02",
+      "2026-10-06",
+      "2026-10-07",
+      "2026-10-08",
+      "2026-10-12",
+      "2026-10-13",
+      "2026-10-14",
+      "2026-10-15",
+      "2026-10-16",
+      "2026-10-19",
+      "2026-10-20",
+      "2026-10-21",
+      "2026-10-22",
+      "2026-10-23",
+      "2026-10-26",
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29"
+    ],
+    "historyScope": "current-ranking-union",
+    "historySecurityCount": 26,
+    "evidenceNote": "KRX 공식 CSV 양 시장 전체 행. 우선주·리츠·스팩 등 원표 종목 포함, 종목 단위이며 발행사별 합산 아님. 과거에만 존재한 종목은 현재 순위에서 제외하며 신규 종목의 과거 값을 채우지 않음."
+  },
+  "originalExportsReused": 42,
+  "newExports": 2,
+  "comparisonDates": {
+    "week": "2026-10-22",
+    "month30days": "2026-09-29"
+  },
+  "units": {
+    "balance": "KRW",
+    "marketCap": "KRW",
+    "shares": "shares",
+    "ratio": "percent"
+  },
+  "investorScope": "All reported net short positions; no issuer-level investor-type split in source.",
+  "definition": "Balance amount equals reported net-short quantity times closing price. Published ratio uses quantity/listed shares and reconciles with same-date amount/marketcap."
+}
