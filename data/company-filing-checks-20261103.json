@@ -1,0 +1,83 @@
+{
+  "observedAt": "2026-11-02T23:43:12.923690+00:00",
+  "confirmedCurrentQuarterRows": [
+    {
+      "symbol": "NASDAQ:SIMO",
+      "periodStart": "2026-07-01",
+      "periodEnd": "2026-09-30",
+      "revenue": 560.216,
+      "operatingIncome": 162.551,
+      "currency": "USD",
+      "unit": "millions",
+      "basis": "US GAAP consolidated unaudited",
+      "sourceUrl": "https://ir.siliconmotion.com/news-releases/news-release-details/silicon-motion-announces-results-quarterly-period-ended",
+      "sourceDate": "2026-10-29",
+      "rawUnit": "thousand USD",
+      "rawRevenue": 560216,
+      "rawOperatingIncome": 162551,
+      "result": "Both values exactly match current Yahoo sourced record; preserve provider/source fields.",
+      "observedAt": "2026-11-02T23:43:12.923690+00:00"
+    },
+    {
+      "symbol": "NYSE:ASX",
+      "periodStart": "2026-07-01",
+      "periodEnd": "2026-09-30",
+      "revenue": 244161,
+      "operatingIncome": 33142,
+      "currency": "TWD",
+      "unit": "millions",
+      "basis": "consolidated unaudited",
+      "sourceUrl": "https://www.prnewswire.com/news-releases/ase-technology-holding-co-ltd-reports-its-unaudited-consolidated-financial-results-for-the-third-quarter-of-2026-302923021.html",
+      "sourceDate": "2026-10-29",
+      "sourceType": "issuer-authored official release distributed via PRNewswire",
+      "result": "Both current-quarter values match official release rounded million TWD; preserve provider/source fields.",
+      "priorQuarterCaution": "Official release marks Q2 retrospectively adjusted and gives OP21130 million TWD, versus stored21134. No old-quarter change made.",
+      "observedAt": "2026-11-02T23:43:12.923690+00:00"
+    }
+  ],
+  "chinaPartialOnly": [
+    {
+      "code": "002371",
+      "officialUrl": "https://static.cninfo.com.cn/finalpage/2026-10-30/1225641389.PDF",
+      "officialQuarterRevenueCNY": 11305675488.89,
+      "quarter": "2026Q3",
+      "status": "Quarter revenue matches provider rounding; operating profit NOT independently certified (requires same-basis9M minus H1); do not mark whole quarter verified."
+    },
+    {
+      "code": "002463",
+      "officialUrl": "https://static.cninfo.com.cn/finalpage/2026-10-28/1225627804.PDF",
+      "officialQuarterRevenueCNY": 9536012843,
+      "quarter": "2026Q3",
+      "status": "Quarter revenue matches provider rounding; operating profit NOT independently certified (requires same-basis9M minus H1); do not mark whole quarter verified."
+    },
+    {
+      "code": "300308",
+      "officialUrl": "https://static.cninfo.com.cn/finalpage/2026-10-30/1225643953.PDF",
+      "officialQuarterRevenueCNY": 27769195927.06,
+      "quarter": "2026Q3",
+      "status": "Quarter revenue matches provider rounding; operating profit NOT independently certified (requires same-basis9M minus H1); do not mark whole quarter verified."
+    },
+    {
+      "code": "300502",
+      "officialUrl": "https://static.cninfo.com.cn/finalpage/2026-10-30/1225642947.PDF",
+      "officialQuarterRevenueCNY": 10940148779.03,
+      "quarter": "2026Q3",
+      "status": "Quarter revenue matches provider rounding; operating profit NOT independently certified (requires same-basis9M minus H1); do not mark whole quarter verified."
+    },
+    {
+      "code": "002475",
+      "officialUrl": "https://static.cninfo.com.cn/finalpage/2026-10-30/1225645369.PDF",
+      "officialQuarterRevenueCNY": 110507438321.43,
+      "quarter": "2026Q3",
+      "status": "Quarter revenue matches provider rounding; operating profit NOT independently certified (requires same-basis9M minus H1); do not mark whole quarter verified."
+    },
+    {
+      "code": "600183",
+      "officialUrl": "https://static.cninfo.com.cn/finalpage/2026-10-30/1225644504.PDF",
+      "officialQuarterRevenueCNY": 14181922440.2,
+      "quarter": "2026Q3",
+      "status": "Quarter revenue matches provider rounding; operating profit NOT independently certified (requires same-basis9M minus H1); do not mark whole quarter verified."
+    }
+  ],
+  "changesMade": "None; repository, values, source labels and timestamps unchanged."
+}
