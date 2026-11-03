@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "source": "CME FedWatch",
   "sourceUrl": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html",
-  "observedAt": "2026-11-01T07:42:37Z",
-  "providerAsOf": null,
-  "providerAsOfLabel": "1 11 2026 01:45:01 CT",
-  "providerTimestampScope": "Current view provider label retained verbatim. CT 01:45 occurs twice on DST fall-back day; UTC offset is unverified, so no UTC conversion is asserted. Aggregated table has no separate visible timestamp.",
+  "observedAt": "2026-11-02T21:39:55Z",
+  "providerAsOf": "2026-11-02T09:27:25Z",
+  "providerAsOfLabel": "2 11 2026 03:27:25 CT",
+  "providerTimestampScope": "Current view provider label retained verbatim, converted using America/Chicago standard time (UTC-06:00) on 2026-11-02. Aggregated table has no separate visible timestamp. Provider timestamp precedes this retrieval and is not the US session close.",
   "currentTargetBps": [
     375,
     400
@@ -33,8 +33,8 @@
     {
       "date": "2026-12-09",
       "probabilities": [
-        29.26,
-        70.74,
+        27.06,
+        72.94,
         0,
         0
       ]
@@ -42,9 +42,9 @@
     {
       "date": "2027-01-27",
       "probabilities": [
-        4,
-        96,
         0,
+        99.5,
+        0.5,
         0
       ]
     },
@@ -52,8 +52,8 @@
       "date": "2027-03-17",
       "probabilities": [
         0,
-        51.71,
-        48.29,
+        43.36,
+        56.64,
         0
       ]
     },
@@ -61,8 +61,8 @@
       "date": "2027-04-28",
       "probabilities": [
         0,
-        26,
-        74,
+        15.5,
+        84.5,
         0
       ]
     },
@@ -71,8 +71,8 @@
       "probabilities": [
         0,
         0,
-        92.86,
-        7.14
+        82.36,
+        17.64
       ]
     },
     {
@@ -80,8 +80,8 @@
       "probabilities": [
         0,
         0,
-        84,
-        16
+        73.5,
+        26.5
       ]
     },
     {
@@ -89,8 +89,8 @@
       "probabilities": [
         0,
         0,
-        73.7,
-        26.3
+        65.2,
+        34.8
       ]
     },
     {
@@ -98,8 +98,8 @@
       "probabilities": [
         0,
         0,
-        76,
-        24
+        67.5,
+        32.5
       ]
     },
     {
@@ -107,8 +107,8 @@
       "probabilities": [
         0,
         0,
-        84.09,
-        15.91
+        79.63,
+        20.37
       ]
     }
   ],
@@ -133,8 +133,8 @@
     "now": {
       "date": null,
       "probabilities": [
-        29.3,
-        70.7,
+        27.1,
+        72.9,
         0
       ]
     },
@@ -147,37 +147,37 @@
       ]
     },
     "week": {
-      "date": "2026-10-23",
+      "date": "2026-10-26",
       "probabilities": [
-        23.8,
-        68.9,
-        7.3
+        18.4,
+        72.8,
+        8.8
       ]
     },
     "month": {
-      "date": "2026-10-01",
+      "date": "2026-10-02",
       "probabilities": [
-        20.2,
-        61.9,
-        17.8
+        14.8,
+        67.3,
+        17.9
       ]
     },
     "hikeChangePp": {
-      "day": 0,
-      "week": -5.5,
-      "month": -9
+      "day": 2.2,
+      "week": -8.7,
+      "month": -12.3
     },
-    "notes": "CME Current 표시값과 비교일을 그대로 보존. 전월 합계 99.9%는 공급자 반올림이며 임의 정규화하지 않음. 인상확률은 현 목표구간보다 높은 모든 구간 합계."
+    "notes": "CME Current 표시값과 비교일을 그대로 보존. 인상확률은 현 목표구간보다 높은 모든 구간 합계이며 같은 Current 정밀도로 비교했습니다."
   },
   "interpretation": [
-    "12월 9일 Aggregated 기준 동결 29.26%, 25bp 인상 70.74%입니다.",
-    "Current 동일 정밀도 기준 현 목표보다 높은 구간 확률은 전일 동일, 전주 대비 5.5%p·전월 대비 9.0%p 낮습니다.",
-    "2027년 6월 Aggregated 최빈 목표구간은 4.25~4.50%(92.86%)이며 그 회의 단독 인상 확률이 아닙니다."
+    "12월 9일 Aggregated 기준 동결 27.06%, 25bp 인상 72.94%입니다.",
+    "Current 동일 정밀도 기준 현 목표보다 높은 구간 확률은 전일 대비 2.2%p 높고, 전주 대비 8.7%p·전월 대비 12.3%p 낮습니다.",
+    "2027년 6월 Aggregated 최빈 목표구간은 4.25~4.50%(82.36%)이며 그 회의 단독 인상 확률이 아닙니다."
   ],
   "refresh": {
     "method": "manual official-browser snapshot",
     "automatedApiVerified": false,
-    "notes": "Official CME parent page and its normally loaded embedded Current/Aggregated views inspected. No direct-link referrer spoofing, credentials, licensed API, or bypass. CT fall-back label is kept without guessing an offset."
+    "notes": "Official CME parent page and normally loaded embedded Current/Aggregated views inspected. No authentication, API or access bypass. Actual retrieval time and the older displayed provider timestamp are distinct; this is not a closing or live probability claim."
   },
   "methodologyUrl": "https://www.cmegroup.com/articles/2024/the-cme-fedwatch-tool-aggregated-enhancement-explained.html",
   "conditionalComparisons": {
@@ -185,17 +185,17 @@
     "methodology": "Conditional cumulative target-rate distribution; not Aggregated",
     "precisionDecimalPlaces": 1,
     "sourceUrl": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html",
-    "providerAsOf": null,
+    "providerAsOf": "2026-11-02T09:27:25Z",
     "currentTargetBps": [
       375,
       400
     ],
     "comparisonDates": {
       "day": "2026-10-30",
-      "week": "2026-10-23",
-      "month": "2026-10-01"
+      "week": "2026-10-26",
+      "month": "2026-10-02"
     },
-    "observedAt": "2026-11-01T07:43:04Z",
+    "observedAt": "2026-11-02T21:41:44Z",
     "comparisons": [
       {
         "meetingDate": "2026-12-09",
@@ -214,8 +214,8 @@
           ]
         ],
         "now": [
-          29.3,
-          70.7,
+          27.1,
+          72.9,
           0
         ],
         "day": [
@@ -224,17 +224,17 @@
           0
         ],
         "week": [
-          23.8,
-          68.9,
-          7.3
+          18.4,
+          72.8,
+          8.8
         ],
         "month": [
-          20.2,
-          61.9,
-          17.8
+          14.8,
+          67.3,
+          17.9
         ],
-        "interpretation": "12월 최빈 구간은 4.00~4.25%(70.7%)입니다. 현 목표보다 높은 구간 합계는 70.7%로 전일 동일, 전주 대비 5.5%p·전월 대비 9.0%p 낮습니다.",
-        "rowSumRoundingNote": "전월 표시값 합계 99.9%는 CME 1자리 반올림입니다."
+        "interpretation": "12월 최빈 구간은 4.00~4.25%(72.9%)입니다. 현 목표보다 높은 구간 합계는 72.9%로 전일 대비 2.2%p 높고 전주 대비 8.7%p·전월 대비 12.3%p 낮습니다.",
+        "rowSumRoundingNote": "CME 소수점 1자리 표시값 그대로이며 합계는 100.0%입니다."
       },
       {
         "meetingDate": "2027-06-09",
@@ -269,12 +269,12 @@
           ]
         ],
         "now": [
-          5.2,
-          24.3,
-          37.6,
-          24.8,
-          7.3,
-          0.8,
+          4.1,
+          21.7,
+          37.3,
+          27,
+          8.7,
+          1,
           0
         ],
         "day": [
@@ -287,32 +287,32 @@
           0
         ],
         "week": [
-          2.7,
-          16.1,
-          33.1,
-          31,
-          14.1,
-          2.9,
-          0.2
+          1.7,
+          12.5,
+          31.3,
+          33.5,
+          16.9,
+          3.8,
+          0.3
         ],
         "month": [
-          1.6,
-          10.8,
-          27.5,
-          33.1,
-          20.3,
-          6,
-          0.7
+          0.8,
+          7.3,
+          24,
+          34.7,
+          24.3,
+          8,
+          1
         ],
-        "interpretation": "2027년 6월 최빈 구간은 4.25~4.50%(37.6%)입니다. 4.75~5.00% 확률은 7.3%로 전일 동일, 전주 대비 6.8%p·전월 대비 13.0%p 낮습니다.",
-        "rowSumRoundingNote": "전주 표시값 합계 100.1%는 CME 1자리 반올림입니다."
+        "interpretation": "2027년 6월 최빈 구간은 4.25~4.50%(37.3%)입니다. 4.75~5.00% 확률은 8.7%로 전일 대비 1.4%p 높고 전주 대비 8.2%p·전월 대비 15.6%p 낮습니다.",
+        "rowSumRoundingNote": "현재 표시값 합계 99.8%, 전월 100.1%는 CME 소수점 1자리 반올림 결과이며 임의 정규화하지 않았습니다."
       }
     ],
     "notes": [
       "Aggregate 표와 별도 섹션으로 표시. Conditional 역사와 Aggregate 현재를 빼서 변화량 산출 금지.",
-      "모든 수치는 공급자 표시값을 그대로 보존. 반올림 때문에 합계가99.9~100.1%일 수 있음.",
+      "모든 수치는 공급자 표시값을 그대로 보존. 소수점 1자리 반올림 때문에 합계가 정확히 100%가 아닐 수 있음.",
       "현재보다 높은 금리수준의 확률은 그 회의 단독 인상 확률이 아님. 누적 목표구간 확률."
     ],
-    "providerAsOfLabel": "1 11 2026 01:45:01 CT"
+    "providerAsOfLabel": "2 11 2026 03:27:25 CT"
   }
 }
