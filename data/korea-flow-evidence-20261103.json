@@ -1,0 +1,1161 @@
+{
+  "session": {
+    "date": "2026-11-03",
+    "observedAt": "2026-11-03T08:31:42.427389+00:00",
+    "status": "verified-direct-official-calendar-and-both-market-session",
+    "calendar": {
+      "url": "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp",
+      "holidays": [
+        "2026-01-01",
+        "2026-02-16",
+        "2026-02-17",
+        "2026-02-18",
+        "2026-03-02",
+        "2026-05-01",
+        "2026-05-05",
+        "2026-05-25",
+        "2026-06-03",
+        "2026-07-17",
+        "2026-08-17",
+        "2026-09-24",
+        "2026-09-25",
+        "2026-10-05",
+        "2026-10-09",
+        "2026-12-25",
+        "2026-12-31"
+      ],
+      "observedAt": "2026-11-03T08:31:23.128785+00:00"
+    },
+    "latestObservedMarketDates": {
+      "KOSPI": "2026-11-03",
+      "KOSDAQ": "2026-11-03"
+    },
+    "officialGateImplementationSha256": "61c2cfb13f973a8b521765ff5a037785d83e412ad5c5888aa569e0defedb56ab",
+    "sameDayEvidence": [
+      {
+        "url": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=KOSPI&bizdate=20261103&startIdx=0&pageSize=30",
+        "observedAt": "2026-11-03T08:31:27.677889+00:00",
+        "sha256": "f03211f18c125e4be368f45c2c71ebbafafa7c430ebf1214027ceb3334cb3cf4"
+      },
+      {
+        "url": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=KOSDAQ&bizdate=20261103&startIdx=0&pageSize=30",
+        "observedAt": "2026-11-03T08:31:38.277932+00:00",
+        "sha256": "b56e4ec1d791b5da829306375f2ea5509afe033c9320b70608fa612b86aa709f"
+      }
+    ],
+    "exchangeStatus": {
+      "url": "https://stock.naver.com/api/stockSecurity/exchanges/market-status?exchanges=KRX",
+      "retrievedAt": "2026-11-03T08:32:00.321467+00:00",
+      "data": {
+        "serverTime": "2026-11-03T17:32:00+09:00",
+        "exchanges": [
+          {
+            "exchange": "krx",
+            "zoneId": "Asia/Seoul",
+            "isDaylightSavingTime": false,
+            "statuses": [
+              {
+                "marketType": "KOSPI",
+                "stockType": "stock",
+                "delayMinutes": "0",
+                "today": {
+                  "date": "2026-11-03",
+                  "isTradingDay": true,
+                  "isWeekdayHoliday": false,
+                  "holidayDescription": null
+                },
+                "latest": {
+                  "tradeBaseAt": "2026-11-03",
+                  "session": {
+                    "marketStatusDetailType": "open",
+                    "marketSessionType": "afterMarket",
+                    "displayLabel": "애프터마켓",
+                    "openAt": "2026-11-03T16:00:00+09:00",
+                    "closeAt": "2026-11-03T20:00:00+09:00"
+                  }
+                },
+                "next": {
+                  "tradeBaseAt": "2026-11-03",
+                  "session": {
+                    "marketStatusDetailType": "close",
+                    "marketSessionType": "afterMarket",
+                    "displayLabel": "애프터마켓 마감",
+                    "openAt": "2026-11-03T20:00:00+09:00",
+                    "closeAt": "2026-11-04T08:00:00+09:00"
+                  }
+                }
+              },
+              {
+                "marketType": "KOSDAQ",
+                "stockType": "stock",
+                "delayMinutes": "0",
+                "today": {
+                  "date": "2026-11-03",
+                  "isTradingDay": true,
+                  "isWeekdayHoliday": false,
+                  "holidayDescription": null
+                },
+                "latest": {
+                  "tradeBaseAt": "2026-11-03",
+                  "session": {
+                    "marketStatusDetailType": "open",
+                    "marketSessionType": "afterMarket",
+                    "displayLabel": "애프터마켓",
+                    "openAt": "2026-11-03T16:00:00+09:00",
+                    "closeAt": "2026-11-03T20:00:00+09:00"
+                  }
+                },
+                "next": {
+                  "tradeBaseAt": "2026-11-03",
+                  "session": {
+                    "marketStatusDetailType": "close",
+                    "marketSessionType": "afterMarket",
+                    "displayLabel": "애프터마켓 마감",
+                    "openAt": "2026-11-03T20:00:00+09:00",
+                    "closeAt": "2026-11-04T08:00:00+09:00"
+                  }
+                }
+              },
+              {
+                "marketType": "KONEX",
+                "stockType": "stock",
+                "delayMinutes": "0",
+                "today": {
+                  "date": "2026-11-03",
+                  "isTradingDay": true,
+                  "isWeekdayHoliday": false,
+                  "holidayDescription": null
+                },
+                "latest": {
+                  "tradeBaseAt": "2026-11-03",
+                  "session": {
+                    "marketStatusDetailType": "close",
+                    "marketSessionType": "regularMarket",
+                    "displayLabel": "장마감",
+                    "openAt": "2026-11-03T15:30:00+09:00",
+                    "closeAt": "2026-11-04T08:00:00+09:00"
+                  }
+                },
+                "next": {
+                  "tradeBaseAt": "2026-11-04",
+                  "session": {
+                    "marketStatusDetailType": "preopen",
+                    "marketSessionType": null,
+                    "displayLabel": "개장전",
+                    "openAt": "2026-11-04T08:00:00+09:00",
+                    "closeAt": "2026-11-04T09:00:00+09:00"
+                  }
+                }
+              },
+              {
+                "marketType": "KOSPI",
+                "stockType": "etf",
+                "delayMinutes": "0",
+                "today": {
+                  "date": "2026-11-03",
+                  "isTradingDay": true,
+                  "isWeekdayHoliday": false,
+                  "holidayDescription": null
+                },
+                "latest": {
+                  "tradeBaseAt": "2026-11-03",
+                  "session": {
+                    "marketStatusDetailType": "close",
+                    "marketSessionType": "regularMarket",
+                    "displayLabel": "장마감",
+                    "openAt": "2026-11-03T15:30:00+09:00",
+                    "closeAt": "2026-11-04T08:00:00+09:00"
+                  }
+                },
+                "next": {
+                  "tradeBaseAt": "2026-11-04",
+                  "session": {
+                    "marketStatusDetailType": "preopen",
+                    "marketSessionType": null,
+                    "displayLabel": "개장전",
+                    "openAt": "2026-11-04T08:00:00+09:00",
+                    "closeAt": "2026-11-04T09:00:00+09:00"
+                  }
+                }
+              },
+              {
+                "marketType": "KOSPI",
+                "stockType": "etn",
+                "delayMinutes": "0",
+                "today": {
+                  "date": "2026-11-03",
+                  "isTradingDay": true,
+                  "isWeekdayHoliday": false,
+                  "holidayDescription": null
+                },
+                "latest": {
+                  "tradeBaseAt": "2026-11-03",
+                  "session": {
+                    "marketStatusDetailType": "close",
+                    "marketSessionType": "regularMarket",
+                    "displayLabel": "장마감",
+                    "openAt": "2026-11-03T15:30:00+09:00",
+                    "closeAt": "2026-11-04T08:00:00+09:00"
+                  }
+                },
+                "next": {
+                  "tradeBaseAt": "2026-11-04",
+                  "session": {
+                    "marketStatusDetailType": "preopen",
+                    "marketSessionType": null,
+                    "displayLabel": "개장전",
+                    "openAt": "2026-11-04T08:00:00+09:00",
+                    "closeAt": "2026-11-04T09:00:00+09:00"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "note": "Official 2026 KRX calendar fetched directly; target day not a holiday. Both same-day KRX-parametric market flow responses and local time after17:30 satisfy existing completion gate. Provider current stock session labels afterMarket/open, so market flows and stock turnover are timestamped snapshots, not regular-session-only or final20:00 statistics."
+  },
+  "verifiedAt": "2026-11-03T08:34:16.669085+00:00",
+  "marketFlows": {
+    "unit": "억원",
+    "asOf": "2026-11-03",
+    "note": "NAVER KRX 파라미터 실제 확인시각 잠정 수급. 정규장 단독/시간외 포함 범위 미확인. 외국인9000, 기관1000·2000·3000·3100·4000·5000·6000·7000, 개인8000; 기타법인7100·기타외국인9001 제외·별도 보존.",
+    "sourceIds": [
+      "naver-flow-kospi-20261103",
+      "naver-flow-kosdaq-20261103"
+    ],
+    "rows": [
+      {
+        "market": "KOSPI",
+        "foreign": -15400.33,
+        "institution": -5078.55,
+        "individual": 16675.32,
+        "otherForeign": 144.29,
+        "otherCorporation": 3659.26,
+        "observedAt": "2026-11-03T08:31:27.677889+00:00"
+      },
+      {
+        "market": "KOSDAQ",
+        "foreign": -755.94,
+        "institution": -2343.49,
+        "individual": 3189.77,
+        "otherForeign": 14.72,
+        "otherCorporation": -105.08,
+        "observedAt": "2026-11-03T08:31:38.277932+00:00"
+      }
+    ]
+  },
+  "categoryMapping": {
+    "foreign": [
+      "9000"
+    ],
+    "institution": [
+      "1000",
+      "2000",
+      "3000",
+      "3100",
+      "4000",
+      "5000",
+      "6000",
+      "7000"
+    ],
+    "individual": [
+      "8000"
+    ],
+    "excludedOtherCorporation": [
+      "7100"
+    ],
+    "excludedOtherForeign": [
+      "9001"
+    ],
+    "rawUnit": "KRW",
+    "displayUnit": "억원",
+    "divisor": 100000000
+  },
+  "futures": {
+    "url": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=FUT&bizdate=20261103&startIdx=0&pageSize=30",
+    "observedAt": "2026-11-03T08:31:45.714160+00:00",
+    "row": {
+      "date": "2026-11-03",
+      "foreign": -1552,
+      "buy": 101976,
+      "sell": 103528,
+      "sourceId": "naver-futures-investor-daily-20261103",
+      "observedAt": "2026-11-03T08:31:45.714978+00:00"
+    },
+    "windowChecks": {
+      "5": {
+        "sessions": 5,
+        "start": "2026-10-28",
+        "end": "2026-11-03",
+        "foreignTotal": 4595,
+        "flaggedDates": []
+      },
+      "21": {
+        "sessions": 21,
+        "start": "2026-10-02",
+        "end": "2026-11-03",
+        "foreignTotal": 12944,
+        "flaggedDates": []
+      },
+      "63": {
+        "sessions": 63,
+        "start": "2026-07-31",
+        "end": "2026-11-03",
+        "foreignTotal": 14646,
+        "flaggedDates": []
+      },
+      "126": {
+        "sessions": 126,
+        "start": "2026-04-28",
+        "end": "2026-11-03",
+        "foreignTotal": 19454,
+        "flaggedDates": []
+      },
+      "252": {
+        "sessions": 252,
+        "start": "2025-10-23",
+        "end": "2026-11-03",
+        "foreignTotal": -3703,
+        "flaggedDates": [
+          "2025-10-23"
+        ]
+      }
+    },
+    "scope": "공급사가 보고한 외국인 매수 계약−매도 계약의 일별 순매수입니다. 과거 일부 날짜는 투자자 전체 순매수 합계가 0과 달라 품질주의 표시를 유지하며 외국인 수치를 임의 보정하지 않았습니다. 누적값은 선택 구간 합계이며 현재 보유잔고나 미결제약정이 아닙니다. 원문은 월물·미니·야간 포함 범위를 별도 명시하지 않아 공급사 FUT 집계로 표시합니다."
+  },
+  "pressRankings": [
+    {
+      "url": "https://www.yna.co.kr/view/AKR20261103140700008",
+      "market": "KOSPI",
+      "investor": "foreign",
+      "snapshotAt": "2026-11-03T15:30:00+09:00",
+      "observedAt": "2026-11-03T08:31:48+00:00",
+      "facts": [
+        {
+          "name": "대덕전자",
+          "code": "353200",
+          "sourceValue": "374.8",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "SK이노베이션",
+          "code": "096770",
+          "sourceValue": "149.6",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "기아",
+          "code": "000270",
+          "sourceValue": "117.3",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "한화에어로스페이스",
+          "code": "012450",
+          "sourceValue": "96.0",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "케이씨텍",
+          "code": "281820",
+          "sourceValue": "88.9",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "HD현대일렉트릭",
+          "code": "267260",
+          "sourceValue": "86.4",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "LG화학",
+          "code": "051910",
+          "sourceValue": "69.9",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "GS",
+          "code": "078930",
+          "sourceValue": "65.6",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "두산",
+          "code": "000150",
+          "sourceValue": "64.9",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "CJ",
+          "code": "001040",
+          "sourceValue": "58.5",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "롯데에너지머티리얼즈",
+          "code": "020150",
+          "sourceValue": "53.1",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "한국금융지주",
+          "code": "071050",
+          "sourceValue": "49.4",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "삼성전자우",
+          "code": "005935",
+          "sourceValue": "49.1",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "에이피알",
+          "code": "278470",
+          "sourceValue": "45.4",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "LIG디펜스앤에어로스페이스",
+          "code": "079550",
+          "sourceValue": "42.7",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "삼성중공업",
+          "code": "010140",
+          "sourceValue": "42.6",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "LX인터내셔널",
+          "code": "001120",
+          "sourceValue": "39.2",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "삼화콘덴서",
+          "code": "001820",
+          "sourceValue": "33.7",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "SK텔레콤",
+          "code": "017670",
+          "sourceValue": "30.7",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "SK",
+          "code": "034730",
+          "sourceValue": "26.3",
+          "sourceUnit": "억원"
+        }
+      ],
+      "sourceMethod": "web source full factual numeric table",
+      "mirrorUrl": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261103140700008",
+      "verifiedAt": "2026-11-03T08:34:16.669085+00:00"
+    },
+    {
+      "url": "https://www.yna.co.kr/view/AKR20261103140400008",
+      "market": "KOSDAQ",
+      "investor": "foreign",
+      "snapshotAt": "2026-11-03T15:30:00+09:00",
+      "observedAt": "2026-11-03T08:31:18+00:00",
+      "facts": [
+        {
+          "name": "티에스이",
+          "code": "131290",
+          "sourceValue": "1091552.2",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "두산테스나",
+          "code": "131970",
+          "sourceValue": "931966.0",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "알테오젠",
+          "code": "196170",
+          "sourceValue": "790134.0",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "RF머트리얼즈",
+          "code": "327260",
+          "sourceValue": "747111.1",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "피에스케이",
+          "code": "319660",
+          "sourceValue": "691538.4",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "원익IPS",
+          "code": "240810",
+          "sourceValue": "678217.3",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "테스",
+          "code": "095610",
+          "sourceValue": "551737.9",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "ISC",
+          "code": "095340",
+          "sourceValue": "494484.8",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "티에프이",
+          "code": "425420",
+          "sourceValue": "455523.9",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "인텍플러스",
+          "code": "064290",
+          "sourceValue": "450532.6",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "에스티팜",
+          "code": "237690",
+          "sourceValue": "444248.0",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "코세스",
+          "code": "089890",
+          "sourceValue": "368956.4",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "티씨케이",
+          "code": "064760",
+          "sourceValue": "351754.3",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "엑시콘",
+          "code": "092870",
+          "sourceValue": "334764.2",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "HPSP",
+          "code": "403870",
+          "sourceValue": "326440.5",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "피에스케이홀딩스",
+          "code": "031980",
+          "sourceValue": "297956.8",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "리가켐바이오",
+          "code": "141080",
+          "sourceValue": "285103.0",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "샘씨엔에스",
+          "code": "252990",
+          "sourceValue": "262154.8",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "리노공업",
+          "code": "058470",
+          "sourceValue": "253652.8",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "마이크로컨텍솔",
+          "code": "098120",
+          "sourceValue": "244906.2",
+          "sourceUnit": "만원"
+        }
+      ],
+      "sourceMethod": "web source full factual numeric table",
+      "mirrorUrl": null,
+      "verifiedAt": "2026-11-03T08:34:16.669085+00:00"
+    },
+    {
+      "url": "https://www.yna.co.kr/view/AKR20261103140600008",
+      "market": "KOSPI",
+      "investor": "institution",
+      "snapshotAt": "2026-11-03T15:30:00+09:00",
+      "observedAt": "2026-11-03T08:31:48+00:00",
+      "facts": [
+        {
+          "name": "대한항공",
+          "code": "003490",
+          "sourceValue": "398.0",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "삼성바이오로직스",
+          "code": "207940",
+          "sourceValue": "215.1",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "DB하이텍",
+          "code": "000990",
+          "sourceValue": "202.6",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "HD현대중공업",
+          "code": "329180",
+          "sourceValue": "173.4",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "삼성물산",
+          "code": "028260",
+          "sourceValue": "150.6",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "HD한국조선해양",
+          "code": "009540",
+          "sourceValue": "116.8",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "삼성E&A",
+          "code": "028050",
+          "sourceValue": "105.9",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "우리금융지주",
+          "code": "316140",
+          "sourceValue": "98.6",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "현대모비스",
+          "code": "012330",
+          "sourceValue": "94.3",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "삼성생명",
+          "code": "032830",
+          "sourceValue": "91.7",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "한진칼",
+          "code": "180640",
+          "sourceValue": "83.0",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "신한지주",
+          "code": "055550",
+          "sourceValue": "82.5",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "한미약품",
+          "code": "128940",
+          "sourceValue": "76.7",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "SK바이오팜",
+          "code": "326030",
+          "sourceValue": "69.9",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "에스원",
+          "code": "012750",
+          "sourceValue": "69.3",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "삼성화재",
+          "code": "000810",
+          "sourceValue": "67.9",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "OCI홀딩스",
+          "code": "010060",
+          "sourceValue": "60.1",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "삼양식품",
+          "code": "003230",
+          "sourceValue": "55.2",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "한국전력",
+          "code": "015760",
+          "sourceValue": "53.9",
+          "sourceUnit": "억원"
+        },
+        {
+          "name": "KT&G",
+          "code": "033780",
+          "sourceValue": "52.9",
+          "sourceUnit": "억원"
+        }
+      ],
+      "sourceMethod": "web source full factual numeric table",
+      "mirrorUrl": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261103140600008",
+      "verifiedAt": "2026-11-03T08:34:16.669085+00:00"
+    },
+    {
+      "url": "https://www.yna.co.kr/view/AKR20261103140500008",
+      "market": "KOSDAQ",
+      "investor": "institution",
+      "snapshotAt": "2026-11-03T15:30:00+09:00",
+      "observedAt": "2026-11-03T08:31:42+00:00",
+      "facts": [
+        {
+          "name": "원익홀딩스",
+          "code": "030530",
+          "sourceValue": "715795.4",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "동국제약",
+          "code": "086450",
+          "sourceValue": "507497.3",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "나노신소재",
+          "code": "121600",
+          "sourceValue": "410097.5",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "루닛",
+          "code": "328130",
+          "sourceValue": "351069.3",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "케이아이엔엑스",
+          "code": "093320",
+          "sourceValue": "346894.7",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "코스메카코리아",
+          "code": "241710",
+          "sourceValue": "282292.6",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "한양디지텍",
+          "code": "078350",
+          "sourceValue": "243555.4",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "펩트론",
+          "code": "087010",
+          "sourceValue": "201382.3",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "휴젤",
+          "code": "145020",
+          "sourceValue": "196058.1",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "에코프로에이치엔",
+          "code": "383310",
+          "sourceValue": "186634.9",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "파인엠텍",
+          "code": "441270",
+          "sourceValue": "166325.0",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "프로티나",
+          "code": "468530",
+          "sourceValue": "165338.3",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "카카오게임즈",
+          "code": "293490",
+          "sourceValue": "153912.5",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "동진쎄미켐",
+          "code": "005290",
+          "sourceValue": "132324.1",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "라온시큐어",
+          "code": "042510",
+          "sourceValue": "120101.2",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "타이거일렉",
+          "code": "219130",
+          "sourceValue": "118333.6",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "서부T&D",
+          "code": "006730",
+          "sourceValue": "106874.6",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "디앤디파마텍",
+          "code": "347850",
+          "sourceValue": "102647.9",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "오킨스전자",
+          "code": "080580",
+          "sourceValue": "87746.7",
+          "sourceUnit": "만원"
+        },
+        {
+          "name": "에스엠",
+          "code": "041510",
+          "sourceValue": "75419.5",
+          "sourceUnit": "만원"
+        }
+      ],
+      "sourceMethod": "web source full factual numeric table",
+      "mirrorUrl": null,
+      "verifiedAt": "2026-11-03T08:34:16.669085+00:00"
+    }
+  ],
+  "stockTradedValue": {
+    "coverage": {
+      "start": "2026-11-03",
+      "end": "2026-11-03",
+      "observedAt": "2026-11-03T08:32:00.658386+00:00",
+      "sourceUniverseCount": 2877,
+      "eligibleStockCount": 2608,
+      "marketUniverseCount": 2770,
+      "excludedOtherMarketCount": 107,
+      "universeDefinition": "KOSPI/KOSDAQ only; Naver ST ordinary-stock-focused preferred filter; ST SPAC included; RT/FS/DR/funds excluded",
+      "returnedTop": 20,
+      "universe": "KOSPI + KOSDAQ · 보통주 중심, ST 스팩 포함"
+    },
+    "note": "실제 2026-11-03T08:32:00.658386+00:00 KRX 파라미터 거래대금 순위. 애프터마켓 진행 중 공급사 스냅샷이며 정규장 단독·최종 확정으로 표시하지 않음. 전체 목록과 상위20 코드 대조. 시장전체 KRX+NXT 통합 추이와 별개.",
+    "sourceUrls": [
+      "https://stock.naver.com/api/domestic/market/stock/default?tradeType=KRX&marketType=ALL&orderType=priceTop&startIdx=0&pageSize=100",
+      "https://stock.naver.com/api/domestic/market/stock/default?tradeType=KRX&marketType=ALL&orderType=marketSum&startIdx=0&pageSize=4000"
+    ],
+    "observedAt": [
+      "2026-11-03T08:32:00.658386+00:00",
+      "2026-11-03T08:32:00.966307+00:00"
+    ]
+  },
+  "periodChecks": {
+    "KOSPI_ORGANIZATION_DAY": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=ORGANIZATION&tradeType=KRX&marketType=KOSPI&startIdx=0&pageSize=100&periodType=DAY",
+      "observedAt": "2026-11-03T08:31:49.185633+00:00",
+      "periods": [
+        [
+          "20261102",
+          "20261102",
+          false
+        ]
+      ],
+      "sha256ParsedPayload": "699c6265cc7f189e08a8bbe1cdf047c3326f7e5df53338308ab84dc83f14f1ab"
+    },
+    "KOSPI_FOREIGNER_WEEK": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=FOREIGNER&tradeType=KRX&marketType=KOSPI&startIdx=0&pageSize=100&periodType=WEEK",
+      "observedAt": "2026-11-03T08:31:49.364443+00:00",
+      "periods": [
+        [
+          "20261027",
+          "20261102",
+          false
+        ]
+      ],
+      "sha256ParsedPayload": "93fe4021a9aa019846076f825cdda7d132a23e16a4b950073b9b1df9771b6816"
+    },
+    "KOSPI_FOREIGNER_MONTH": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=FOREIGNER&tradeType=KRX&marketType=KOSPI&startIdx=0&pageSize=100&periodType=MONTH",
+      "observedAt": "2026-11-03T08:31:49.365820+00:00",
+      "periods": [
+        [
+          "20261002",
+          "20261102",
+          false
+        ]
+      ],
+      "sha256ParsedPayload": "ba97fdf048e6ac7eaec211de5e3e6d9a8962c7daffb3ff2eabe70fbb82c97cf4"
+    },
+    "KOSPI_FOREIGNER_DAY": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=FOREIGNER&tradeType=KRX&marketType=KOSPI&startIdx=0&pageSize=100&periodType=DAY",
+      "observedAt": "2026-11-03T08:31:49.371077+00:00",
+      "periods": [
+        [
+          "20261103",
+          "20261103",
+          true
+        ]
+      ],
+      "sha256ParsedPayload": "7f296732ae123a380d76d40ec6c665765a834b1f7f81bde933987b2fc997fc48"
+    },
+    "KOSDAQ_FOREIGNER_WEEK": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=FOREIGNER&tradeType=KRX&marketType=KOSDAQ&startIdx=0&pageSize=100&periodType=WEEK",
+      "observedAt": "2026-11-03T08:31:53.959160+00:00",
+      "periods": [
+        [
+          "20261027",
+          "20261102",
+          false
+        ]
+      ],
+      "sha256ParsedPayload": "4683d518646442a6e31e02ae9b1798fb284531b6d81ae7623e9dcf648972af1e"
+    },
+    "KOSDAQ_FOREIGNER_DAY": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=FOREIGNER&tradeType=KRX&marketType=KOSDAQ&startIdx=0&pageSize=100&periodType=DAY",
+      "observedAt": "2026-11-03T08:31:54.182892+00:00",
+      "periods": [
+        [
+          "20261103",
+          "20261103",
+          true
+        ]
+      ],
+      "sha256ParsedPayload": "c905edcc6d17f94d15b93f69fd38496a60178d66d3f61ea07c3f5099f946aa97"
+    },
+    "KOSPI_ORGANIZATION_MONTH": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=ORGANIZATION&tradeType=KRX&marketType=KOSPI&startIdx=0&pageSize=100&periodType=MONTH",
+      "observedAt": "2026-11-03T08:31:54.967150+00:00",
+      "periods": [
+        [
+          "20261002",
+          "20261102",
+          false
+        ]
+      ],
+      "sha256ParsedPayload": "00b8bbe119e50b410b6248fcddc1442e1956a199de1fbfd6d687eb8c69c2b850"
+    },
+    "KOSPI_ORGANIZATION_WEEK": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=ORGANIZATION&tradeType=KRX&marketType=KOSPI&startIdx=0&pageSize=100&periodType=WEEK",
+      "observedAt": "2026-11-03T08:31:54.978099+00:00",
+      "periods": [
+        [
+          "20261027",
+          "20261102",
+          false
+        ]
+      ],
+      "sha256ParsedPayload": "5840b85e888d1bf9505bc23b4eba935d446f052743b016c2ec3abe8c9315b1c4"
+    },
+    "KOSDAQ_FOREIGNER_MONTH": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=FOREIGNER&tradeType=KRX&marketType=KOSDAQ&startIdx=0&pageSize=100&periodType=MONTH",
+      "observedAt": "2026-11-03T08:31:57.337031+00:00",
+      "periods": [
+        [
+          "20261002",
+          "20261102",
+          false
+        ]
+      ],
+      "sha256ParsedPayload": "8161480296e059fea2f48c43307ca8fcc621fa7908dd03035d7aaeb2fc7e236b"
+    },
+    "KOSDAQ_ORGANIZATION_MONTH": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=ORGANIZATION&tradeType=KRX&marketType=KOSDAQ&startIdx=0&pageSize=100&periodType=MONTH",
+      "observedAt": "2026-11-03T08:31:57.347979+00:00",
+      "periods": [
+        [
+          "20261002",
+          "20261102",
+          false
+        ]
+      ],
+      "sha256ParsedPayload": "221734a3f89dc3aa16b6ce80e9bad5e70e5a459db68ae1290143eeaa2ce96808"
+    },
+    "KOSDAQ_ORGANIZATION_DAY": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=ORGANIZATION&tradeType=KRX&marketType=KOSDAQ&startIdx=0&pageSize=100&periodType=DAY",
+      "observedAt": "2026-11-03T08:31:57.438172+00:00",
+      "periods": [
+        [
+          "20261102",
+          "20261102",
+          false
+        ]
+      ],
+      "sha256ParsedPayload": "f5e04f0e447cbc5bd3fe296a9ac90221af95b5b08aaed55451bc2079e7cd877e"
+    },
+    "KOSDAQ_ORGANIZATION_WEEK": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=ORGANIZATION&tradeType=KRX&marketType=KOSDAQ&startIdx=0&pageSize=100&periodType=WEEK",
+      "observedAt": "2026-11-03T08:31:57.534286+00:00",
+      "periods": [
+        [
+          "20261027",
+          "20261102",
+          false
+        ]
+      ],
+      "sha256ParsedPayload": "cca21fe5af8bbf93144b1b920288cd0b6ec9e3ea7ea36c0a1d2797e9468b757e"
+    }
+  },
+  "liquidity": {
+    "observedAt": "2026-11-03T08:32:49.029377+00:00",
+    "url": "https://chunsystem.com/free/chun-index-score",
+    "sourceSha256": "ba80fe2c84aa096f5f935b211c0ef2986fb4e9c3732cbda020a9d712ed945093",
+    "existingOfficialRelease": {
+      "schemaVersion": 1,
+      "date": "2026-11-02",
+      "retrievedAt": "2026-11-03T07:51:47.914961+00:00",
+      "url": "https://freesis.kofia.or.kr/stat/main.do",
+      "acquisition": "Official FreeSIS HTML headline",
+      "unit": "million KRW",
+      "officialInvestorDeposits": 90462878,
+      "officialMarginLoans": 29215987,
+      "publicationTimeRule": "Credit balances next day15:00–18:00; exact deposits release time unverified",
+      "ruleSource": "https://www.kofia.or.kr/voc/m_113/view.do?answer_seq=2298&voc_id=3009",
+      "acquisitionUrl": "http://freesis.kofia.or.kr/stat/main.do",
+      "transport": "http",
+      "sourceSha256": "102d68460fe5fbc65f92a934006c246aefcc4534e96819e51b13b173161e341a"
+    },
+    "rawTargetRows": {
+      "kospiList": [
+        {
+          "stdDate": "2026-11-02",
+          "type": null,
+          "endPrice": "5859.08",
+          "per": "9.76",
+          "pbr": "1.46",
+          "sichong": "4853815578",
+          "debt": "0.47",
+          "upCnt": "0",
+          "downCnt": "1",
+          "stdDept": null,
+          "avgPer": "17.74879286694103",
+          "avgPbr": "1.2482578875171464",
+          "maxSichong": "7449592793",
+          "chunScore": "0",
+          "capScore": "60.21",
+          "perScore": "35.06",
+          "pbrScore": "61.96",
+          "debtScore": "92.78",
+          "totalScore": "42.08",
+          "sinyong": "22577601",
+          "years": 0,
+          "months": 0,
+          "days": 0,
+          "row": 0
+        }
+      ],
+      "kosdaqList": [
+        {
+          "stdDate": "2026-11-02",
+          "type": null,
+          "endPrice": "734.36",
+          "per": "31.69",
+          "pbr": "1.62",
+          "sichong": "417191479",
+          "debt": "1.59",
+          "upCnt": "0",
+          "downCnt": "2",
+          "stdDept": null,
+          "avgPer": "95.81181069958849",
+          "avgPbr": "1.9232784636488327",
+          "maxSichong": "679545243",
+          "chunScore": "0",
+          "capScore": "57.44",
+          "perScore": "22.86",
+          "pbrScore": "48.88",
+          "debtScore": "81.9",
+          "totalScore": "28.23",
+          "sinyong": "6638386",
+          "years": 0,
+          "months": 0,
+          "days": 0,
+          "row": 0
+        }
+      ]
+    },
+    "verifiedRows": {
+      "creditKOSPI": [
+        {
+          "date": "2026-11-02",
+          "value": 225776.01,
+          "rawMillionKRW": 22577601,
+          "sourceId": "chun-crosschecked",
+          "verificationMethod": "same-day direct official KOFIA total",
+          "officialSourceUrl": "https://freesis.kofia.or.kr/stat/main.do",
+          "officialMarginLoansMillionKRW": 29215987,
+          "splitMinusOfficialMillionKRW": 0
+        }
+      ],
+      "creditKOSDAQ": [
+        {
+          "date": "2026-11-02",
+          "value": 66383.86,
+          "rawMillionKRW": 6638386,
+          "sourceId": "chun-crosschecked",
+          "verificationMethod": "same-day direct official KOFIA total",
+          "officialSourceUrl": "https://freesis.kofia.or.kr/stat/main.do",
+          "officialMarginLoansMillionKRW": 29215987,
+          "splitMinusOfficialMillionKRW": 0
+        }
+      ]
+    },
+    "existingCollectorVerification": {
+      "runId": 41598933738,
+      "jobId": 125792803274,
+      "url": "https://github.com/saewoo16/global-tech-terminal/actions/runs/41598933738",
+      "conclusion": "success",
+      "sourceCommit": "54b339ac005baba094bd7625c5f2ef45782a2162",
+      "publicationCommit": "f805240062b009d9097a02528ade20b9016a6fc3",
+      "collectionStartedAt": "2026-11-03T07:51:47.914961+00:00",
+      "officialResponseObservedAt": "2026-11-03T07:51:56.7058799Z",
+      "sourceSha256": "102d68460fe5fbc65f92a934006c246aefcc4534e96819e51b13b173161e341a",
+      "note": "Existing collector reused read-only; exact source body digest matches stored official release; no new official collector requested."
+    }
+  },
+  "preservationChecks": {
+    "priorFlowRows": true,
+    "priorFuturesRows": true,
+    "fixedOpenInterest": true,
+    "marketTurnoverIncludingIntegratedHistory": true,
+    "existingNov2PeriodRankings": true,
+    "existingNov2ThemePeriods": true
+  },
+  "limitations": [
+    "Foreign DAY is estimated share quantity, accTradeAmount=0 placeholder. Institution DAY remains Nov2. Neither used for target-day money rankings or themes.",
+    "Rolling WEEK/MONTH end Nov2, unchanged from stored verified data. Their collection time is not a new statistic date.",
+    "Official liquidity remains Nov2, not Nov3; no duplicate official collector run."
+  ],
+  "rawCategorySumResidualKRW": {
+    "KOSPI": -1000000,
+    "KOSDAQ": -2000000
+  },
+  "rawCategorySumNote": "Raw provider categories sum to−1 millionKRW(KOSPI) and−2 millionKRW(KOSDAQ). Kept as observed; no balancing adjustment or asserted cause."
+}

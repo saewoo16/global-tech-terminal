@@ -1,0 +1,217 @@
+{
+  "date": "2026-11-03",
+  "observedAt": "2026-11-03T08:31:42.427389+00:00",
+  "status": "verified-direct-official-calendar-and-both-market-session",
+  "calendar": {
+    "url": "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp",
+    "holidays": [
+      "2026-01-01",
+      "2026-02-16",
+      "2026-02-17",
+      "2026-02-18",
+      "2026-03-02",
+      "2026-05-01",
+      "2026-05-05",
+      "2026-05-25",
+      "2026-06-03",
+      "2026-07-17",
+      "2026-08-17",
+      "2026-09-24",
+      "2026-09-25",
+      "2026-10-05",
+      "2026-10-09",
+      "2026-12-25",
+      "2026-12-31"
+    ],
+    "observedAt": "2026-11-03T08:31:23.128785+00:00"
+  },
+  "latestObservedMarketDates": {
+    "KOSPI": "2026-11-03",
+    "KOSDAQ": "2026-11-03"
+  },
+  "officialGateImplementationSha256": "61c2cfb13f973a8b521765ff5a037785d83e412ad5c5888aa569e0defedb56ab",
+  "sameDayEvidence": [
+    {
+      "url": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=KOSPI&bizdate=20261103&startIdx=0&pageSize=30",
+      "observedAt": "2026-11-03T08:31:27.677889+00:00",
+      "sha256": "f03211f18c125e4be368f45c2c71ebbafafa7c430ebf1214027ceb3334cb3cf4"
+    },
+    {
+      "url": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=KOSDAQ&bizdate=20261103&startIdx=0&pageSize=30",
+      "observedAt": "2026-11-03T08:31:38.277932+00:00",
+      "sha256": "b56e4ec1d791b5da829306375f2ea5509afe033c9320b70608fa612b86aa709f"
+    }
+  ],
+  "exchangeStatus": {
+    "url": "https://stock.naver.com/api/stockSecurity/exchanges/market-status?exchanges=KRX",
+    "retrievedAt": "2026-11-03T08:32:00.321467+00:00",
+    "data": {
+      "serverTime": "2026-11-03T17:32:00+09:00",
+      "exchanges": [
+        {
+          "exchange": "krx",
+          "zoneId": "Asia/Seoul",
+          "isDaylightSavingTime": false,
+          "statuses": [
+            {
+              "marketType": "KOSPI",
+              "stockType": "stock",
+              "delayMinutes": "0",
+              "today": {
+                "date": "2026-11-03",
+                "isTradingDay": true,
+                "isWeekdayHoliday": false,
+                "holidayDescription": null
+              },
+              "latest": {
+                "tradeBaseAt": "2026-11-03",
+                "session": {
+                  "marketStatusDetailType": "open",
+                  "marketSessionType": "afterMarket",
+                  "displayLabel": "애프터마켓",
+                  "openAt": "2026-11-03T16:00:00+09:00",
+                  "closeAt": "2026-11-03T20:00:00+09:00"
+                }
+              },
+              "next": {
+                "tradeBaseAt": "2026-11-03",
+                "session": {
+                  "marketStatusDetailType": "close",
+                  "marketSessionType": "afterMarket",
+                  "displayLabel": "애프터마켓 마감",
+                  "openAt": "2026-11-03T20:00:00+09:00",
+                  "closeAt": "2026-11-04T08:00:00+09:00"
+                }
+              }
+            },
+            {
+              "marketType": "KOSDAQ",
+              "stockType": "stock",
+              "delayMinutes": "0",
+              "today": {
+                "date": "2026-11-03",
+                "isTradingDay": true,
+                "isWeekdayHoliday": false,
+                "holidayDescription": null
+              },
+              "latest": {
+                "tradeBaseAt": "2026-11-03",
+                "session": {
+                  "marketStatusDetailType": "open",
+                  "marketSessionType": "afterMarket",
+                  "displayLabel": "애프터마켓",
+                  "openAt": "2026-11-03T16:00:00+09:00",
+                  "closeAt": "2026-11-03T20:00:00+09:00"
+                }
+              },
+              "next": {
+                "tradeBaseAt": "2026-11-03",
+                "session": {
+                  "marketStatusDetailType": "close",
+                  "marketSessionType": "afterMarket",
+                  "displayLabel": "애프터마켓 마감",
+                  "openAt": "2026-11-03T20:00:00+09:00",
+                  "closeAt": "2026-11-04T08:00:00+09:00"
+                }
+              }
+            },
+            {
+              "marketType": "KONEX",
+              "stockType": "stock",
+              "delayMinutes": "0",
+              "today": {
+                "date": "2026-11-03",
+                "isTradingDay": true,
+                "isWeekdayHoliday": false,
+                "holidayDescription": null
+              },
+              "latest": {
+                "tradeBaseAt": "2026-11-03",
+                "session": {
+                  "marketStatusDetailType": "close",
+                  "marketSessionType": "regularMarket",
+                  "displayLabel": "장마감",
+                  "openAt": "2026-11-03T15:30:00+09:00",
+                  "closeAt": "2026-11-04T08:00:00+09:00"
+                }
+              },
+              "next": {
+                "tradeBaseAt": "2026-11-04",
+                "session": {
+                  "marketStatusDetailType": "preopen",
+                  "marketSessionType": null,
+                  "displayLabel": "개장전",
+                  "openAt": "2026-11-04T08:00:00+09:00",
+                  "closeAt": "2026-11-04T09:00:00+09:00"
+                }
+              }
+            },
+            {
+              "marketType": "KOSPI",
+              "stockType": "etf",
+              "delayMinutes": "0",
+              "today": {
+                "date": "2026-11-03",
+                "isTradingDay": true,
+                "isWeekdayHoliday": false,
+                "holidayDescription": null
+              },
+              "latest": {
+                "tradeBaseAt": "2026-11-03",
+                "session": {
+                  "marketStatusDetailType": "close",
+                  "marketSessionType": "regularMarket",
+                  "displayLabel": "장마감",
+                  "openAt": "2026-11-03T15:30:00+09:00",
+                  "closeAt": "2026-11-04T08:00:00+09:00"
+                }
+              },
+              "next": {
+                "tradeBaseAt": "2026-11-04",
+                "session": {
+                  "marketStatusDetailType": "preopen",
+                  "marketSessionType": null,
+                  "displayLabel": "개장전",
+                  "openAt": "2026-11-04T08:00:00+09:00",
+                  "closeAt": "2026-11-04T09:00:00+09:00"
+                }
+              }
+            },
+            {
+              "marketType": "KOSPI",
+              "stockType": "etn",
+              "delayMinutes": "0",
+              "today": {
+                "date": "2026-11-03",
+                "isTradingDay": true,
+                "isWeekdayHoliday": false,
+                "holidayDescription": null
+              },
+              "latest": {
+                "tradeBaseAt": "2026-11-03",
+                "session": {
+                  "marketStatusDetailType": "close",
+                  "marketSessionType": "regularMarket",
+                  "displayLabel": "장마감",
+                  "openAt": "2026-11-03T15:30:00+09:00",
+                  "closeAt": "2026-11-04T08:00:00+09:00"
+                }
+              },
+              "next": {
+                "tradeBaseAt": "2026-11-04",
+                "session": {
+                  "marketStatusDetailType": "preopen",
+                  "marketSessionType": null,
+                  "displayLabel": "개장전",
+                  "openAt": "2026-11-04T08:00:00+09:00",
+                  "closeAt": "2026-11-04T09:00:00+09:00"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "note": "Official 2026 KRX calendar fetched directly; target day not a holiday. Both same-day KRX-parametric market flow responses and local time after17:30 satisfy existing completion gate. Provider current stock session labels afterMarket/open, so market flows and stock turnover are timestamped snapshots, not regular-session-only or final20:00 statistics."
+}
