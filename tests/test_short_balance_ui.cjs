@@ -14,10 +14,10 @@ const p={schemaVersion:1,metric:'net-short-outstanding-balance',unit:'KRW',inves
 (async()=>{listeners.DOMContentLoaded();await new Promise(setImmediate);assert.match(el('short-content').innerHTML,/아직 확보하지 못했습니다/);response=p;await el('short-refresh').onclick();assert.match(el('short-content').innerHTML,/잔고 금액 TOP 15/);assert.match(el('short-content').innerHTML,/시총 대비 잔고 TOP 15/);assert.match(el('short-content').innerHTML,/-25.00%/);assert.match(el('short-content').innerHTML,/&lt;unsafe&gt;/);assert(!el('short-content').innerHTML.includes('<unsafe>'));c.fetch=async()=>{throw Error('offline')};await el('short-refresh').onclick();assert.match(el('short-content').innerHTML,/이전 기준일/);assert.match(el('short-content').innerHTML,/잔고 금액 TOP 15/);const n=requests;c.window.location.hash='#rates';listeners.hashchange();assert.equal(requests,n);console.log('PASS short balance precision, exact ranking, provenance guard, actual comparison dates, missing/zero data, escaped sparkline, reload failure preservation and tab isolation');})().catch(e=>{console.error(e);process.exitCode=1});
 const published=JSON.parse(fs.readFileSync('data/korean_short_balance.json','utf8'));
 assert(a.valid(published));assert.equal(published.status,'verified');
-assert.equal(published.coverage.count,2765);assert.equal(published.asOf,'2026-10-29');
+assert.equal(published.coverage.count,2767);assert.equal(published.asOf,'2026-10-30');
 for(const metric of ['amount','ratio']){
  const top=[...published.rows].sort((a1,b1)=>a.compare(a1,b1,metric)).slice(0,15);
- assert.equal(top.length,15);for(const row of top){assert.notEqual(a.delta(row,7,published.asOf).value,null);assert.notEqual(a.delta(row,30,published.asOf).value,null);assert.equal(a.delta(row,7,published.asOf).date,'2026-10-22');assert.equal(a.delta(row,30,published.asOf).date,'2026-09-29');}
+ assert.equal(top.length,15);for(const row of top){assert.notEqual(a.delta(row,7,published.asOf).value,null);assert.notEqual(a.delta(row,30,published.asOf).value,null);assert.equal(a.delta(row,7,published.asOf).date,'2026-10-23');assert.equal(a.delta(row,30,published.asOf).date,'2026-09-30');}
  assert.equal(top[0].code,metric==='amount'?'373220':'086520');
 }
 console.log('PASS real official combined universe and all TOP15 exact-date comparison coverage');

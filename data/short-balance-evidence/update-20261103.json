@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-11-04T00:00:00Z",
+  "scheduledAt": "2026-11-03T09:00:00Z",
+  "completionTimingNote": "Authentication recovery delayed acquisition; actual KRX query times are recorded, not backdated.",
+  "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203",
+  "screen": "33001 개별종목 공매도 순보유잔고",
+  "latestAvailable": "2026-10-30",
+  "followingSessionChecks": [
+    {
+      "market": "KOSDAQ",
+      "date": "2026-11-02",
+      "observedAt": "2026-11-03T23:59:42Z",
+      "visibleResult": "데이터가 없습니다."
+    },
+    {
+      "market": "KOSPI",
+      "date": "2026-11-02",
+      "observedAt": "2026-11-03T23:59:58Z",
+      "visibleResult": "데이터가 없습니다."
+    }
+  ],
+  "coverage": {
+    "KOSPI": 939,
+    "KOSDAQ": 1828
+  },
+  "newExports": 2
+}
