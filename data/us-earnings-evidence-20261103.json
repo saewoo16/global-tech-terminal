@@ -1,0 +1,411 @@
+{
+  "sessionDate": "2026-11-03",
+  "reportCutoffAt": "2026-11-04T07:00:00+09:00",
+  "reviewedAt": "2026-11-03T22:11:52.317563+00:00",
+  "sourceManifest": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0000007084/000000708426000054/adm-20261103.htm",
+      "rawFile": "ADM8k1.raw",
+      "sha256": "379de23fa5668bb6eced7f353f3e3f2a6398a054baee91183f955955a485ffea",
+      "bytes": 29665,
+      "collectedAt": "2026-11-03T21:46:16.129551+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0000007084/000000708426000054/adm-ex991_20260930xq3.htm",
+      "rawFile": "ADMrelease0.raw",
+      "sha256": "ab77e94881f15b4885e5d1bdf5959eefca7a0fb247a76b6bb2dc561d6d8e6904",
+      "bytes": 471767,
+      "collectedAt": "2026-11-03T21:46:25.097874+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0000005272/000000527226000101/aig-20261103.htm",
+      "rawFile": "AIG8k0.raw",
+      "sha256": "032ba75a46745f6e20a764ef8cf22d053e252b9c703b84b5f83870c830e7d027",
+      "bytes": 33893,
+      "collectedAt": "2026-11-03T21:48:20.853793+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0000005272/000000527226000101/q32026earningsrelease.htm",
+      "rawFile": "AIGrelease0.raw",
+      "sha256": "a532384adf347513948d7788e7872f74bbec234022dc6798d431ac5b2bc45713",
+      "bytes": 757831,
+      "collectedAt": "2026-11-03T21:48:28.529849+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001037868/000103786826000194/ame-20261103.htm",
+      "rawFile": "AME8k1.raw",
+      "sha256": "61cd14501d96d17b6be975873165fa8896cbe61d86891cd7b9cbc03b9b19f9c9",
+      "bytes": 27101,
+      "collectedAt": "2026-11-03T21:46:16.113676+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001037868/000103786826000194/ametek8kexhibit99111032026.htm",
+      "rawFile": "AMErelease0.raw",
+      "sha256": "a1c70d8afeee4233b38fa6942f26a4cfe90539be2d3fa6fabcbdd0513508c58f",
+      "bytes": 220534,
+      "collectedAt": "2026-11-03T21:46:25.165936+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001858681/000185868126000063/apo-20261103.htm",
+      "rawFile": "APO8k0.raw",
+      "sha256": "4d88db67301602daa3b7b90adff0c47ffc9a26197e5179224dad18f94526cf60",
+      "bytes": 30067,
+      "collectedAt": "2026-11-03T21:46:16.161321+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001858681/000185868126000063/erex9913q2026.htm",
+      "rawFile": "APOrelease0.raw",
+      "sha256": "5997151ce4bed13ea55026b9981672451a76ac6f1cb5c2932d8f867455cc5a89",
+      "bytes": 15634,
+      "collectedAt": "2026-11-03T21:46:25.061811+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001521332/000152133226000071/aptv-20261103.htm",
+      "rawFile": "APTV8k0.raw",
+      "sha256": "980f8f65f9bab5ffd621750a38f7c8cff39f195abcf3ec0292226ad149e1e017",
+      "bytes": 46912,
+      "collectedAt": "2026-11-03T21:46:16.193586+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001521332/000152133226000071/aptvq32026ex991.htm",
+      "rawFile": "APTVrelease0.raw",
+      "sha256": "306e2d2cd3b8729c318a278c201b1ff04a9d8952e3c9f2ace3da9af644ffcc1d",
+      "bytes": 48984,
+      "collectedAt": "2026-11-03T21:46:25.121632+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0000009389/000110465926121661/ball-20261103x8k.htm",
+      "rawFile": "BALL8k1.raw",
+      "sha256": "e70d9b0dcd082ad73136465b5cd52a8acb694541d3a4550ee7d061b25f11f240",
+      "bytes": 48435,
+      "collectedAt": "2026-11-03T21:46:16.209201+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0000009389/000110465926121661/ball-ex99d1.htm",
+      "rawFile": "BALLrelease0.raw",
+      "sha256": "477578611295f50aa7a09eddcdb64df20ffe3afa6899c6176372c6a5c79aa204",
+      "bytes": 985470,
+      "collectedAt": "2026-11-03T21:46:25.153791+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001383312/000138331226000030/br-20261103.htm",
+      "rawFile": "BR8k1.raw",
+      "sha256": "313286480507ac622a256b7ffefd0afa07829b0f9170ca0f29837cff902f48df",
+      "bytes": 42124,
+      "collectedAt": "2026-11-03T21:46:16.173263+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001383312/000138331226000030/ex991earningsrelease1q2027.htm",
+      "rawFile": "BRrelease0.raw",
+      "sha256": "db91f8d3c601addf326a359daf7a9ee35856d3e7a92d7115ba94c910d2f58fc6",
+      "bytes": 361228,
+      "collectedAt": "2026-11-03T21:46:25.089319+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001666700/000166670026000058/dd-20261103.htm",
+      "rawFile": "DD8k1.raw",
+      "sha256": "c672b310bd4320cf44465fb3c7a5642348c57bb4f187f4fe2323375e37bfcdf3",
+      "bytes": 27156,
+      "collectedAt": "2026-11-03T21:46:39.718122+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001666700/000166670026000058/exhibit991enrschedules-3q26.htm",
+      "rawFile": "DDrelease0.raw",
+      "sha256": "3dd50a348209f8c9734a5c1c608c01f899a23ddc62eea895059ec8bd6510eca6",
+      "bytes": 502983,
+      "collectedAt": "2026-11-03T21:46:49.853566+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001551182/000155118226000037/etn-20261103.htm",
+      "rawFile": "ETN8k1.raw",
+      "sha256": "2eb86fba99c194ef39692ba4b6c92db309fa5d15b4449517934a7d90d06d243e",
+      "bytes": 45300,
+      "collectedAt": "2026-11-03T21:46:39.833831+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001551182/000155118226000037/etn09302026exhibit99.htm",
+      "rawFile": "ETNrelease0.raw",
+      "sha256": "6f1cfa39903fa6039d24d4d9ea54046bd65de1abf114cbee6ddb3ea053869049",
+      "bytes": 282084,
+      "collectedAt": "2026-11-03T21:46:49.897208+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0000746515/000119312526445448/expd-20261102.htm",
+      "rawFile": "EXPD8k0.raw",
+      "sha256": "88caa1f33bc5c944935176d6b6eddfe89688a72839fc02e217289c5e82073f7e",
+      "bytes": 43193,
+      "collectedAt": "2026-11-03T21:46:39.823433+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0000746515/000119312526444872/expd-20261103.htm",
+      "rawFile": "EXPD8k1.raw",
+      "sha256": "80dfb98aa249001cf1ba0e759dc4562d6a45cba5761464835d93beb5dba3d645",
+      "bytes": 49731,
+      "collectedAt": "2026-11-03T21:46:49.841407+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0000746515/000119312526445448/expd-ex99_1.htm",
+      "rawFile": "EXPDrelease0.raw",
+      "sha256": "a35488529b7de97de8caee4ad7de1437f5c1431a462067fc4036d83307f432af",
+      "bytes": 26699,
+      "collectedAt": "2026-11-03T21:46:57.225622+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0000746515/000119312526444872/expd-ex99_1.htm",
+      "rawFile": "EXPDrelease1.raw",
+      "sha256": "99bfc36a308a1e5e7530eb3d2fb715d02d69e9e0dbeb6598961db1031c4588b5",
+      "bytes": 977650,
+      "collectedAt": "2026-11-03T21:47:10.018099+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0000798354/000079835426000039/fi-20261103.htm",
+      "rawFile": "FISV8k0.raw",
+      "sha256": "4d8e72bb636b1fe07f0f8cd7d2fc7954ab719b7ec1281caf95007ba76d26022c",
+      "bytes": 43040,
+      "collectedAt": "2026-11-03T21:46:39.793622+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0000798354/000079835426000039/fisvq326earningsrelease.htm",
+      "rawFile": "FISVrelease0.raw",
+      "sha256": "67651edae3d290af66faa0348715b767c87b3a8dbc2eef571c06d07106f09f9d",
+      "bytes": 658138,
+      "collectedAt": "2026-11-03T21:46:49.893578+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001123360/000110465926121506/tm2628691d1_8k.htm",
+      "rawFile": "GPN8k0.raw",
+      "sha256": "5896a831dc3ce93ef9b6f665b118e3e0edebaeb64b88d7c99d9627b1564873f5",
+      "bytes": 29897,
+      "collectedAt": "2026-11-03T21:48:12.937773+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001000228/000100022826000059/hsic-20261103.htm",
+      "rawFile": "HSIC8k1.raw",
+      "sha256": "bb3425c8ca2235889573be2b6878b37c4d851644334ae659ffd8500c3753b7ce",
+      "bytes": 27000,
+      "collectedAt": "2026-11-03T21:46:53.625395+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001000228/000100022826000059/exhibit991.htm",
+      "rawFile": "HSICrelease0.raw",
+      "sha256": "18f7fff1d8d1f7911baeab1fb02d1556348155e967901dbd73a8a8c6a77be666",
+      "bytes": 344075,
+      "collectedAt": "2026-11-03T21:47:02.209533+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0000051253/000114036126041833/ef20084809_8k.htm",
+      "rawFile": "IFF8k0.raw",
+      "sha256": "55b8e465de5ac538ca4fdfe616afdfee61ab2eacb5b66823b106816891948a19",
+      "bytes": 31839,
+      "collectedAt": "2026-11-03T21:48:24.769706+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0000051253/000005125326000039/iff-20261103.htm",
+      "rawFile": "IFF8k2.raw",
+      "sha256": "b35ec09306f5cc540684195640b7de6c74fa408f15520349d6496ce81e31f1e4",
+      "bytes": 31335,
+      "collectedAt": "2026-11-03T21:48:49.665696+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0000051253/000005125326000039/q32026991pressreleaseofiff.htm",
+      "rawFile": "IFFrelease0.raw",
+      "sha256": "a3482b1bc37e6db46bd7aa916d68faacec0245e6d0e2fd8207072fae9f879c85",
+      "bytes": 774987,
+      "collectedAt": "2026-11-03T21:48:58.501719+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0000749251/000074925126000305/it-20261103.htm",
+      "rawFile": "IT8k1.raw",
+      "sha256": "91220edf316dde63bbd9176dae815337271776596eca0d07b54ec12b77480604",
+      "bytes": 30999,
+      "collectedAt": "2026-11-03T21:46:39.721330+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0000749251/000074925126000305/it-09302026xex991.htm",
+      "rawFile": "ITrelease0.raw",
+      "sha256": "36bb5407b8ae5c167670b0034910f8be48ebac0b9ac831552d04399d6ddfefe6",
+      "bytes": 174873,
+      "collectedAt": "2026-11-03T21:46:49.833238+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001418135/000141813526000064/kdp-20261103.htm",
+      "rawFile": "KDP8k0.raw",
+      "sha256": "26ccb0714d7eb8e09dee8f4901857b207fe76c94dac0793d82cbfb77b01cd47c",
+      "bytes": 26663,
+      "collectedAt": "2026-11-03T21:47:09.761208+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001418135/000141813526000064/ex991-keurigdrpepperreport.htm",
+      "rawFile": "KDPrelease0.raw",
+      "sha256": "7656841220a207fe3ea0d3a0bcbdafcaa7cb45474a9ac71d65ece3e4f0399a80",
+      "bytes": 1876773,
+      "collectedAt": "2026-11-03T21:47:39.289622+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001336920/000133692026000290/ldos-20261103.htm",
+      "rawFile": "LDOS8k1.raw",
+      "sha256": "ece0380fe7d10232314f790a304cc42bd1281207fb822c9bd321651815f64113",
+      "bytes": 32539,
+      "collectedAt": "2026-11-03T21:47:09.753563+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001336920/000133692026000290/ldos100226q3pressreleaseex.htm",
+      "rawFile": "LDOSrelease0.raw",
+      "sha256": "210b8cb9eff08a5bc1054f116d5a3537c27efcbbbd2889ec7a83a4e9c005368e",
+      "bytes": 832993,
+      "collectedAt": "2026-11-03T21:47:39.213860+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001285785/000128578526000139/mos-20261103.htm",
+      "rawFile": "MOS8k0.raw",
+      "sha256": "e2dee34d1b2db42521850370379bca128e142859dd729df555e557361e4e5573",
+      "bytes": 37662,
+      "collectedAt": "2026-11-03T21:48:28.453511+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001285785/000128578526000139/pressreleaseq32026-ex991.htm",
+      "rawFile": "MOSrelease0.raw",
+      "sha256": "a88dfad6bae3cae803e27d39a1ba614b824b1db1fa8ed7e98548e7f8a70ac2fb",
+      "bytes": 585397,
+      "collectedAt": "2026-11-03T21:48:55.021878+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001510295/000151029526000069/mpc-20261103.htm",
+      "rawFile": "MPC8k1.raw",
+      "sha256": "db93805e06e121ad8cdd40138ad19b39065941d5998d7b5984b9bb5b26209de1",
+      "bytes": 27959,
+      "collectedAt": "2026-11-03T21:47:09.789400+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001510295/000151029526000069/mpcq32026earningsrelease.htm",
+      "rawFile": "MPCrelease0.raw",
+      "sha256": "5802cbef6536fe0025e2284af48b437e054abe24660b9f852c3f3fcd59f89534",
+      "bytes": 647757,
+      "collectedAt": "2026-11-03T21:47:39.121472+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0000078003/000007800326000132/pfe-20261030.htm",
+      "rawFile": "PFE8k0.raw",
+      "sha256": "a5b33854d35508ab54fbe970537ed6ad2713c7f9a6be0aacafc193c99f800ac0",
+      "bytes": 38762,
+      "collectedAt": "2026-11-03T21:47:09.821648+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0000078003/000007800326000125/pfe-20261103.htm",
+      "rawFile": "PFE8k3.raw",
+      "sha256": "284274b000b70c845563ace84dd6faf8e500afd588cd5a6d0321ad7f8aa3acd5",
+      "bytes": 37950,
+      "collectedAt": "2026-11-03T21:47:39.213576+00:00"
+    },
+    {
+      "url": "https://www.pfizer.com/news/press-release/press-release-detail/pfizer-reports-strong-third-quarter-2026-results-and-raises",
+      "rawFile": "PFEearn.raw",
+      "sha256": "44e12564b8d02ae0095023297637de2e40a56cf27cccac5769c88c27c19a290e",
+      "bytes": 247434,
+      "collectedAt": "2026-11-03T21:49:04.638529+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0000078003/000007800326000132/pfizerappointscecileguegan.htm",
+      "rawFile": "PFErelease0.raw",
+      "sha256": "1bcc52c47f96fcfe2ec5b1d8b17a8dca79c603c088de7fba8b8f83eff55c0a4d",
+      "bytes": 12831,
+      "collectedAt": "2026-11-03T21:47:49.225688+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0000764622/000076462226000051/pnw-20261103.htm",
+      "rawFile": "PNW8k0.raw",
+      "sha256": "6bc2717a7235cb6e17b63b575984d11b93d4eca188b0608fbdd013037aea2b3c",
+      "bytes": 45220,
+      "collectedAt": "2026-11-03T21:47:44.970567+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/764622/000076462226000051/a8-kpnw093026exhibit991.htm",
+      "rawFile": "PNWrelease0.raw",
+      "sha256": "a28371a4ad4aa099db774707f53869a67e2a8928ca0cf7af46205f7dd48c1f22",
+      "bytes": 99894,
+      "collectedAt": "2026-11-03T21:48:37.625809+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0000031791/000003179126000031/q32026pressrelease.htm",
+      "rawFile": "RVTYmore0.raw",
+      "sha256": "0f8c1abf9fadd2bd12dc1f7f974724a38c530da00099ed85b6b4bf6a9f68d5bb",
+      "bytes": 484724,
+      "collectedAt": "2026-11-03T21:49:41.241782+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0000031791/000003179126000031/pki-20261103.htm",
+      "rawFile": "RVTYmore8k.raw",
+      "sha256": "39bad44b301b24d87e729d1be1739ec16a05976a0a22370133ca8ee725fd9010",
+      "bytes": 38683,
+      "collectedAt": "2026-11-03T21:49:33.449937+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0000096021/000009602126000046/syy-20261103.htm",
+      "rawFile": "SYY8k3.raw",
+      "sha256": "44fb939b87e6a8475224d4537e33cfcfbeb405741f0ff4e7228b4f20416d1c89",
+      "bytes": 33782,
+      "collectedAt": "2026-11-03T21:48:01.653322+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0000096021/000009602126000046/syy2027q1pressrelease.htm",
+      "rawFile": "SYYrelease0.raw",
+      "sha256": "05eaab271a6bd32fe43d391189e615a3004a54da9f5fe65ba618e942860ff5c8",
+      "bytes": 614965,
+      "collectedAt": "2026-11-03T21:48:09.073830+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0000096021/000009602126000046/ex992_syycfoprx1103261405.htm",
+      "rawFile": "SYYrelease1.raw",
+      "sha256": "24e8b13c60d07d9a5614ca42d08f063a0e059ac99797c79fa8511b050b549eae",
+      "bytes": 13853,
+      "collectedAt": "2026-11-03T21:48:16.818595+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001000697/000119312526444400/d22941d8k.htm",
+      "rawFile": "WAT8k0.raw",
+      "sha256": "62e8b79bb31cf1c4bea2e47b9f3f5f2ef3467e8f093e7a7a1418eeb8822b5a5d",
+      "bytes": 24383,
+      "collectedAt": "2026-11-03T21:48:01.637229+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001000697/000119312526444400/d22941dex991.htm",
+      "rawFile": "WATrelease0.raw",
+      "sha256": "172380c0775c7a9d67d3f677a15bae5fbe25ce1030f9aba173f6591feae0f0b0",
+      "bytes": 304988,
+      "collectedAt": "2026-11-03T21:48:09.041748+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001041061/000104106126000195/yum-20261103.htm",
+      "rawFile": "YUM8k0.raw",
+      "sha256": "3a8dae50e911f53c3dbf8a7902d9e35cd02d81220e27f1378a5e6567de8547a6",
+      "bytes": 30761,
+      "collectedAt": "2026-11-03T21:48:01.601500+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001041061/000104106126000195/a8kex9919302026.htm",
+      "rawFile": "YUMrelease0.raw",
+      "sha256": "5cf35af780864996d2b470ffda80f60b27aed45c1963d7cb0669f70b6b9d47f0",
+      "bytes": 795744,
+      "collectedAt": "2026-11-03T21:48:09.085346+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0000877212/000162828026069148/zbra-20261103.htm",
+      "rawFile": "ZBRA8k1.raw",
+      "sha256": "efad008a038a2d572682a69639dd0b025e5ab15741786395fb27016c00db831a",
+      "bytes": 38822,
+      "collectedAt": "2026-11-03T21:48:01.617505+00:00"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0000877212/000162828026069148/zbraex99120261003.htm",
+      "rawFile": "ZBRArelease0.raw",
+      "sha256": "a6078b474e1b8d7a12379541075c180849fa1a91f0b0a6a4b88babb0a2ce3a7e",
+      "bytes": 423652,
+      "collectedAt": "2026-11-03T21:48:09.137362+00:00"
+    }
+  ],
+  "limitations": [
+    "실행이21:51UTC에중단되고22:08UTC에재개됨. 실제확인·검토시각을07:00으로소급하지않음.",
+    "실제발표확인과4분기재무표·콜·컨센서스완료는별개.미검증값은null.",
+    "공식연간공시에서확인한실제회계종료일을최근4분기에포함하되단독분기미대조값은null."
+  ]
+}

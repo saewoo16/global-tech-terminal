@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-10-17",
+  "asOf": "2026-11-03",
   "unit": "millions of reporting currency",
   "companies": {
     "NASDAQ:FLEX": {
@@ -785,6 +785,39 @@
       "replaceQuarters": true,
       "quarters": [
         {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "revenue": 5196,
+          "operatingIncome": -5494,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/0000798354/000079835426000039/fisvq326earningsrelease.htm",
+          "sourceType": "filing",
+          "source": "Official issuer earnings release furnished to SEC EDGAR",
+          "verifiedAt": "2026-11-03",
+          "basis": "US GAAP",
+          "reportedCurrency": "USD",
+          "releaseDate": "2026-11-03",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "value": 5196,
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/0000798354/000079835426000039/fisvq326earningsrelease.htm",
+              "filed": "2026-11-03",
+              "sourceUnit": "USD millions",
+              "normalization": "Published USD millions"
+            },
+            "operatingIncome": {
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "value": -5494,
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/0000798354/000079835426000039/fisvq326earningsrelease.htm",
+              "filed": "2026-11-03",
+              "sourceUnit": "USD millions",
+              "normalization": "Published USD millions"
+            }
+          }
+        },
+        {
           "date": "2026-06-30",
           "periodStart": "2026-04-01",
           "revenue": 5292.0,
@@ -1092,6 +1125,32 @@
       "replaceQuarters": true,
       "quarters": [
         {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "revenue": 1868,
+          "operatingIncome": null,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/0001666700/000166670026000058/exhibit991enrschedules-3q26.htm",
+          "sourceType": "filing",
+          "source": "Official issuer earnings release furnished to SEC EDGAR",
+          "verifiedAt": "2026-11-03",
+          "basis": "US GAAP continuing operations",
+          "reportedCurrency": "USD",
+          "releaseDate": "2026-11-03",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "value": 1868,
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/0001666700/000166670026000058/exhibit991enrschedules-3q26.htm",
+              "filed": "2026-11-03",
+              "sourceUnit": "USD millions",
+              "normalization": "Published USD millions"
+            }
+          },
+          "operatingIncomeNotDisclosed": true,
+          "operatingIncomeNote": "Consolidated GAAP operating income is not separately reported. Segment operating profit, Operating EBITDA, income from continuing operations and net income are not substitutes."
+        },
+        {
           "date": "2026-06-30",
           "periodStart": "2026-04-01",
           "revenue": 1819.0,
@@ -1186,6 +1245,194 @@
       ],
       "financialNote": "Electronics(Qnity)·Aramids 분사 사업을 제외한 계속영업 기준으로 재작성된 매출입니다. 2025년 3·4분기는 연차보고서의 독립 분기 수치입니다. 회사가 연결 GAAP 영업이익 소계를 별도 제시하지 않아 미공시로 표시하며, EBITDA·세전이익으로 대체하지 않습니다.",
       "financialStatus": "not_disclosed"
+    },
+    "NYSE:ETN": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": false,
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "revenue": 8947,
+          "operatingIncome": null,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/0001551182/000155118226000037/etn09302026exhibit99.htm",
+          "sourceType": "filing",
+          "source": "Official issuer earnings release furnished to SEC EDGAR",
+          "verifiedAt": "2026-11-03",
+          "basis": "US GAAP",
+          "reportedCurrency": "USD",
+          "releaseDate": "2026-11-03",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "value": 8947,
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/0001551182/000155118226000037/etn09302026exhibit99.htm",
+              "filed": "2026-11-03",
+              "sourceUnit": "USD millions",
+              "normalization": "Published USD millions"
+            }
+          },
+          "operatingIncomeNotDisclosed": true,
+          "operatingIncomeNote": "Consolidated GAAP operating income is not separately reported. Segment operating profit, Operating EBITDA, income from continuing operations and net income are not substitutes."
+        }
+      ]
+    },
+    "NASDAQ:AMD": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": false,
+      "quarters": [
+        {
+          "date": "2026-09-26",
+          "periodStart": "2026-06-28",
+          "revenue": 13377,
+          "operatingIncome": 2832,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000188/q32026991.htm",
+          "sourceType": "filing",
+          "source": "Official issuer earnings release furnished to SEC EDGAR",
+          "verifiedAt": "2026-11-03",
+          "basis": "US GAAP",
+          "reportedCurrency": "USD",
+          "releaseDate": "2026-11-03",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2026-06-28",
+              "periodEnd": "2026-09-26",
+              "value": 13377,
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000188/q32026991.htm",
+              "filed": "2026-11-03",
+              "sourceUnit": "USD millions",
+              "normalization": "Published USD millions"
+            },
+            "operatingIncome": {
+              "periodStart": "2026-06-28",
+              "periodEnd": "2026-09-26",
+              "value": 2832,
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000188/q32026991.htm",
+              "filed": "2026-11-03",
+              "sourceUnit": "USD millions",
+              "normalization": "Published USD millions"
+            }
+          }
+        }
+      ]
+    },
+    "NASDAQ:SMCI": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": false,
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "revenue": 19945.832,
+          "operatingIncome": 2064.493,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000026/exhibit991_20260930.htm",
+          "sourceType": "filing",
+          "source": "Official issuer earnings release furnished to SEC EDGAR",
+          "verifiedAt": "2026-11-03",
+          "basis": "US GAAP",
+          "reportedCurrency": "USD",
+          "releaseDate": "2026-11-03",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "value": 19945.832,
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000026/exhibit991_20260930.htm",
+              "filed": "2026-11-03",
+              "sourceUnit": "USD thousands",
+              "normalization": "Divide published amounts by 1000 to USD millions"
+            },
+            "operatingIncome": {
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "value": 2064.493,
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000026/exhibit991_20260930.htm",
+              "filed": "2026-11-03",
+              "sourceUnit": "USD thousands",
+              "normalization": "Divide published amounts by 1000 to USD millions"
+            }
+          }
+        }
+      ]
+    },
+    "NYSE:ANET": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": false,
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "revenue": 3657.6,
+          "operatingIncome": 1642.4,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000252/ex991q326-earningsrelease.htm",
+          "sourceType": "filing",
+          "source": "Official issuer earnings release furnished to SEC EDGAR",
+          "verifiedAt": "2026-11-03",
+          "basis": "US GAAP",
+          "reportedCurrency": "USD",
+          "releaseDate": "2026-11-03",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "value": 3657.6,
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000252/ex991q326-earningsrelease.htm",
+              "filed": "2026-11-03",
+              "sourceUnit": "USD millions",
+              "normalization": "Published USD millions"
+            },
+            "operatingIncome": {
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "value": 1642.4,
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000252/ex991q326-earningsrelease.htm",
+              "filed": "2026-11-03",
+              "sourceUnit": "USD millions",
+              "normalization": "Published USD millions"
+            }
+          }
+        }
+      ]
+    },
+    "NASDAQ:BKNG": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": false,
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "revenue": 8893,
+          "operatingIncome": 3418,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1075531/000107553126000044/q3-26bkngearningsrelease.htm",
+          "sourceType": "filing",
+          "source": "Official issuer earnings release furnished to SEC EDGAR",
+          "verifiedAt": "2026-11-03",
+          "basis": "US GAAP",
+          "reportedCurrency": "USD",
+          "releaseDate": "2026-11-03",
+          "sourceFacts": {
+            "revenue": {
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "value": 8893,
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1075531/000107553126000044/q3-26bkngearningsrelease.htm",
+              "filed": "2026-11-03",
+              "sourceUnit": "USD millions",
+              "normalization": "Published USD millions"
+            },
+            "operatingIncome": {
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "value": 3418,
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1075531/000107553126000044/q3-26bkngearningsrelease.htm",
+              "filed": "2026-11-03",
+              "sourceUnit": "USD millions",
+              "normalization": "Published USD millions"
+            }
+          }
+        }
+      ]
     }
   }
 }

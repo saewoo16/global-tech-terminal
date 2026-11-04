@@ -1,0 +1,5008 @@
+{
+  "asOf": "2026-11-03",
+  "observedAt": "2026-11-03T21:49:41.965879+00:00",
+  "coverage": {
+    "targetSession": "2026-11-03",
+    "latestAvailable": "2026-11-03",
+    "commonThrough": "2026-11-03",
+    "expectedFundCount": 38,
+    "currentFundCount": 38,
+    "staleFundCount": 0,
+    "missingFundCount": 0,
+    "currentCodes": [
+      "XOP",
+      "XLE",
+      "XLP",
+      "CRAK",
+      "XLU",
+      "XLV",
+      "XLB",
+      "XLRE",
+      "IYT",
+      "IBB",
+      "XHB",
+      "XRT",
+      "IHF",
+      "XPH",
+      "XLY",
+      "XLF",
+      "KBE",
+      "XBI",
+      "KRE",
+      "XLC",
+      "FAN",
+      "IAI",
+      "XLI",
+      "LIT",
+      "IHI",
+      "ITA",
+      "TAN",
+      "ICLN",
+      "XME",
+      "BATT",
+      "XAR",
+      "IGV",
+      "FDN",
+      "CIBR",
+      "CLOU",
+      "XLK",
+      "SMH",
+      "SOXX"
+    ],
+    "staleCodes": [],
+    "missingCodes": [],
+    "actualSessions": {
+      "XOP": "2026-11-03",
+      "XLE": "2026-11-03",
+      "XLP": "2026-11-03",
+      "CRAK": "2026-11-03",
+      "XLU": "2026-11-03",
+      "XLV": "2026-11-03",
+      "XLB": "2026-11-03",
+      "XLRE": "2026-11-03",
+      "IYT": "2026-11-03",
+      "IBB": "2026-11-03",
+      "XHB": "2026-11-03",
+      "XRT": "2026-11-03",
+      "IHF": "2026-11-03",
+      "XPH": "2026-11-03",
+      "XLY": "2026-11-03",
+      "XLF": "2026-11-03",
+      "KBE": "2026-11-03",
+      "XBI": "2026-11-03",
+      "KRE": "2026-11-03",
+      "XLC": "2026-11-03",
+      "FAN": "2026-11-03",
+      "IAI": "2026-11-03",
+      "XLI": "2026-11-03",
+      "LIT": "2026-11-03",
+      "IHI": "2026-11-03",
+      "ITA": "2026-11-03",
+      "TAN": "2026-11-03",
+      "ICLN": "2026-11-03",
+      "XME": "2026-11-03",
+      "BATT": "2026-11-03",
+      "XAR": "2026-11-03",
+      "IGV": "2026-11-03",
+      "FDN": "2026-11-03",
+      "CIBR": "2026-11-03",
+      "CLOU": "2026-11-03",
+      "XLK": "2026-11-03",
+      "SMH": "2026-11-03",
+      "SOXX": "2026-11-03"
+    },
+    "intradayCurrentFundCount": 38,
+    "intradayUnverifiedCodes": [],
+    "status": "complete"
+  },
+  "rows": [
+    {
+      "ticker": "XOP",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:45:20.247182+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XOP?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "dfe119f8f99ab5da1255366eb9829d3688d8a557ef9c6fd75467dbfd4acd6d45",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 192.22000122070312,
+        "high": 194.24000549316406,
+        "low": 191.42999267578125,
+        "close": 191.52000427246094,
+        "volume": 3217630
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 199.47999572753906,
+          "high": 201.1300048828125,
+          "low": 193.30999755859375,
+          "close": 193.55999755859375,
+          "volume": 5625300
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 203.74000549316406,
+          "high": 205.13999938964844,
+          "low": 199.0399932861328,
+          "close": 200.00999450683594,
+          "volume": 2636200
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 182.1699981689453,
+          "high": 185.5,
+          "low": 181.72000122070312,
+          "close": 184.92999267578125,
+          "volume": 2265100
+        }
+      },
+      "returns": {
+        "day": -1.0539333084643498,
+        "week": -4.244782994624218,
+        "month": 3.5635169294757185
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 78,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 191.52,
+      "regularCloseDifference": 4.272460927268185e-06,
+      "holdingsObservedAt": "2026-11-03T21:48:43.890016+00:00",
+      "holdingsTop5": [
+        {
+          "name": "RANGE RESOURCES CORP",
+          "ticker": "RRC",
+          "weightPct": 3.471533,
+          "shortName": "RANGE RESOURCES CORP"
+        },
+        {
+          "name": "EXXONMOBIL HOLDINGS CORP",
+          "ticker": "XOM",
+          "weightPct": 2.910379,
+          "shortName": "EXXONMOBIL HOLDINGS CORP"
+        },
+        {
+          "name": "APA CORP",
+          "ticker": "APA",
+          "weightPct": 2.896306,
+          "shortName": "APA CORP"
+        },
+        {
+          "name": "MARATHON PETROLEUM CORP",
+          "ticker": "MPC",
+          "weightPct": 2.866524,
+          "shortName": "Marathon Petroleum Corp"
+        },
+        {
+          "name": "CONOCOPHILLIPS",
+          "ticker": "COP",
+          "weightPct": 2.861109,
+          "shortName": "CONOCOPHILLIPS"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "XLE",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:45:10.598282+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLE?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "7dfc071adc234772edf495bc2a05ba231347c75d6a6fa8d39370a37f904df31c",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 66.62999725341797,
+        "high": 67.48500061035156,
+        "low": 66.45999908447266,
+        "close": 66.68000030517578,
+        "volume": 30385473
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 68.8499984741211,
+          "high": 69.13999938964844,
+          "low": 67.2300033569336,
+          "close": 67.25,
+          "volume": 50875300
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 69.27999877929688,
+          "high": 69.69999694824219,
+          "low": 68.05000305175781,
+          "close": 68.20999908447266,
+          "volume": 31600200
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 61.86000061035156,
+          "high": 62.95000076293945,
+          "low": 61.86000061035156,
+          "close": 62.81999969482422,
+          "volume": 29238100
+        }
+      },
+      "returns": {
+        "day": -0.8475831893296926,
+        "week": -2.2430711036985795,
+        "month": 6.144540956865985
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 78,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 66.68,
+      "regularCloseDifference": 3.0517577442878974e-07,
+      "holdingsObservedAt": "2026-11-03T21:48:43.871563+00:00",
+      "holdingsTop5": [
+        {
+          "name": "EXXONMOBIL HOLDINGS CORP",
+          "ticker": "XOM",
+          "weightPct": 24.320268,
+          "shortName": "EXXONMOBIL HOLDINGS CORP"
+        },
+        {
+          "name": "CHEVRON CORP",
+          "ticker": "CVX",
+          "weightPct": 18.458479,
+          "shortName": "CHEVRON CORP"
+        },
+        {
+          "name": "CONOCOPHILLIPS",
+          "ticker": "COP",
+          "weightPct": 7.235551,
+          "shortName": "CONOCOPHILLIPS"
+        },
+        {
+          "name": "MARATHON PETROLEUM CORP",
+          "ticker": "MPC",
+          "weightPct": 4.686407,
+          "shortName": "Marathon Petroleum Corp"
+        },
+        {
+          "name": "PHILLIPS 66",
+          "ticker": "PSX",
+          "weightPct": 4.587246,
+          "shortName": "Phillips 66"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "XLP",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:45:10.654310+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLP?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "f623a37b645d323a4ebf3a6ca2cb8052dde1acb3a8e2603391634bd7d58460e1",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 89.9020004272461,
+        "high": 90.11499786376953,
+        "low": 88.9000015258789,
+        "close": 88.94999694824219,
+        "volume": 22242360
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 89.83999633789062,
+          "high": 90.98999786376953,
+          "low": 89.73999786376953,
+          "close": 90.83000183105469,
+          "volume": 24873400
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 87.37000274658203,
+          "high": 87.62000274658203,
+          "low": 87.0,
+          "close": 87.1500015258789,
+          "volume": 12845800
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 80.47000122070312,
+          "high": 80.73999786376953,
+          "low": 80.12999725341797,
+          "close": 80.52999877929688,
+          "volume": 9318800
+        }
+      },
+      "returns": {
+        "day": -2.069806060677326,
+        "week": 2.065399186285477,
+        "month": 10.455728668295938
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 78,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 88.95,
+      "regularCloseDifference": -3.051757815342171e-06,
+      "holdingsObservedAt": "2026-11-03T21:48:39.606434+00:00",
+      "holdingsTop5": [
+        {
+          "name": "WALMART INC",
+          "ticker": "WMT",
+          "weightPct": 11.34853,
+          "shortName": "WALMART INC"
+        },
+        {
+          "name": "COSTCO WHOLESALE CORP",
+          "ticker": "COST",
+          "weightPct": 9.202641,
+          "shortName": "COSTCO WHOLESALE CORP"
+        },
+        {
+          "name": "PROCTER + GAMBLE CO/THE",
+          "ticker": "PG",
+          "weightPct": 7.581926,
+          "shortName": "PROCTER + GAMBLE CO/THE"
+        },
+        {
+          "name": "COCA COLA CO/THE",
+          "ticker": "KO",
+          "weightPct": 7.400416,
+          "shortName": "COCA COLA CO/THE"
+        },
+        {
+          "name": "PHILIP MORRIS INTERNATIONAL",
+          "ticker": "PM",
+          "weightPct": 6.474274,
+          "shortName": "PHILIP MORRIS INTERNATIONAL"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "CRAK",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:44:42.358577+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/CRAK?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "25a93e56735b785352a9a3eb9132dc88eecd80d35c1e4d0172b19dcdcc080c2e",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 60.72999954223633,
+        "high": 61.11000061035156,
+        "low": 60.404998779296875,
+        "close": 60.599998474121094,
+        "volume": 494802
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 61.779998779296875,
+          "high": 62.29999923706055,
+          "low": 60.900001525878906,
+          "close": 60.970001220703125,
+          "volume": 878300
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 64.37999725341797,
+          "high": 64.70999908447266,
+          "low": 62.11000061035156,
+          "close": 62.18000030517578,
+          "volume": 879500
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 63.900001525878906,
+          "high": 64.44000244140625,
+          "low": 63.29999923706055,
+          "close": 64.23999786376953,
+          "volume": 302500
+        }
+      },
+      "returns": {
+        "day": -0.6068603233952197,
+        "week": -2.541012903345341,
+        "month": -5.666250794976047
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 77,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 60.6,
+      "regularCloseDifference": -1.5258789076710855e-06,
+      "holdingsObservedAt": "2026-11-03T21:45:23.469310+00:00",
+      "holdingsTop5": [
+        {
+          "ticker": "MPC",
+          "name": "Marathon Petroleum Corp",
+          "weightPct": 9.32,
+          "shortName": "Marathon Petroleum Corp"
+        },
+        {
+          "ticker": "VLO",
+          "name": "Valero Energy Corp",
+          "weightPct": 8.48,
+          "shortName": "Valero Energy Corp"
+        },
+        {
+          "ticker": "RIGD LI",
+          "name": "Reliance Industries Ltd",
+          "weightPct": 7.64,
+          "shortName": "Reliance Industries Ltd"
+        },
+        {
+          "ticker": "PSX",
+          "name": "Phillips 66",
+          "weightPct": 7.41,
+          "shortName": "Phillips 66"
+        },
+        {
+          "ticker": "5020 JP",
+          "name": "Eneos Holdings Inc",
+          "weightPct": 5.52,
+          "shortName": "Eneos Holdings Inc"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "XLU",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:45:20.166401+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLU?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "1730dfe604c38275dd523556e23b8fa9cd67c2059bd96a39fc67ed3240468be1",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 43.52000045776367,
+        "high": 43.720001220703125,
+        "low": 43.290000915527344,
+        "close": 43.41999816894531,
+        "volume": 25637355
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 43.310001373291016,
+          "high": 43.79999923706055,
+          "low": 43.2400016784668,
+          "close": 43.66999816894531,
+          "volume": 29808900
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 42.63999938964844,
+          "high": 42.88999938964844,
+          "low": 42.5099983215332,
+          "close": 42.849998474121094,
+          "volume": 16929800
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 39.880001068115234,
+          "high": 40.209999084472656,
+          "low": 39.68000030517578,
+          "close": 39.83000183105469,
+          "volume": 63663300
+        }
+      },
+      "returns": {
+        "day": -0.5724754075620231,
+        "week": 1.3302210387906133,
+        "month": 9.013296944143189
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 78,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 43.42,
+      "regularCloseDifference": -1.8310546892053026e-06,
+      "holdingsObservedAt": "2026-11-03T21:48:39.630289+00:00",
+      "holdingsTop5": [
+        {
+          "name": "NEXTERA ENERGY INC",
+          "ticker": "NEE",
+          "weightPct": 12.915124,
+          "shortName": "NEXTERA ENERGY INC"
+        },
+        {
+          "name": "SOUTHERN CO/THE",
+          "ticker": "SO",
+          "weightPct": 7.924792,
+          "shortName": "SOUTHERN CO/THE"
+        },
+        {
+          "name": "DUKE ENERGY CORP",
+          "ticker": "DUK",
+          "weightPct": 7.288501,
+          "shortName": "DUKE ENERGY CORP"
+        },
+        {
+          "name": "CONSTELLATION ENERGY",
+          "ticker": "CEG",
+          "weightPct": 6.172018,
+          "shortName": "CONSTELLATION ENERGY"
+        },
+        {
+          "name": "AMERICAN ELECTRIC POWER",
+          "ticker": "AEP",
+          "weightPct": 5.166257,
+          "shortName": "AMERICAN ELECTRIC POWER"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "XLV",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:45:20.174749+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLV?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "bb6ce98e7818570d2819c8671a39daf95112aed97351abc594cef55b3d0a9c44",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 183.67999267578125,
+        "high": 185.7100067138672,
+        "low": 183.57000732421875,
+        "close": 184.02000427246094,
+        "volume": 11270227
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 184.69000244140625,
+          "high": 185.55999755859375,
+          "low": 183.3800048828125,
+          "close": 184.60000610351562,
+          "volume": 14056600
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 178.33999633789062,
+          "high": 179.72000122070312,
+          "low": 177.92999267578125,
+          "close": 179.17999267578125,
+          "volume": 7831300
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 166.5500030517578,
+          "high": 166.85000610351562,
+          "low": 165.27000427246094,
+          "close": 166.17999267578125,
+          "volume": 7148000
+        }
+      },
+      "returns": {
+        "day": -0.31419383091972897,
+        "week": 2.7012009122232117,
+        "month": 10.7353546653993
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 78,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 184.02,
+      "regularCloseDifference": 4.272460927268185e-06,
+      "holdingsObservedAt": "2026-11-03T21:48:39.670138+00:00",
+      "holdingsTop5": [
+        {
+          "name": "ELI LILLY + CO",
+          "ticker": "LLY",
+          "weightPct": 16.849801,
+          "shortName": "ELI LILLY + CO"
+        },
+        {
+          "name": "JOHNSON + JOHNSON",
+          "ticker": "JNJ",
+          "weightPct": 9.731173,
+          "shortName": "JOHNSON + JOHNSON"
+        },
+        {
+          "name": "ABBVIE INC",
+          "ticker": "ABBV",
+          "weightPct": 7.61773,
+          "shortName": "ABBVIE INC"
+        },
+        {
+          "name": "MERCK + CO. INC.",
+          "ticker": "MRK",
+          "weightPct": 5.462887,
+          "shortName": "MERCK + CO. INC."
+        },
+        {
+          "name": "UNITEDHEALTH GROUP INC",
+          "ticker": "UNH",
+          "weightPct": 5.364424,
+          "shortName": "UNITEDHEALTH GROUP"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "XLB",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:45:05.178555+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLB?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "3a4d7f148fc2cc67113080c226892f1aa0fc6f1b36455c4f7f4f97f82f36628f",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 53.5,
+        "high": 53.52000045776367,
+        "low": 52.529998779296875,
+        "close": 52.59000015258789,
+        "volume": 13691190
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 53.22999954223633,
+          "high": 54.029998779296875,
+          "low": 53.130001068115234,
+          "close": 53.66999816894531,
+          "volume": 18745600
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 51.22999954223633,
+          "high": 51.880001068115234,
+          "low": 51.209999084472656,
+          "close": 51.779998779296875,
+          "volume": 11536100
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 48.83000183105469,
+          "high": 49.36000061035156,
+          "low": 48.79999923706055,
+          "close": 48.86000061035156,
+          "volume": 13935700
+        }
+      },
+      "returns": {
+        "day": -2.0122937454883916,
+        "week": 1.5643132336551568,
+        "month": 7.634055455672839
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 78,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 52.59,
+      "regularCloseDifference": 1.5258788721439487e-07,
+      "holdingsObservedAt": "2026-11-03T21:48:10.679637+00:00",
+      "holdingsTop5": [
+        {
+          "name": "LINDE PLC",
+          "ticker": "LIN",
+          "weightPct": 12.785331,
+          "shortName": "LINDE PLC"
+        },
+        {
+          "name": "NEWMONT CORP",
+          "ticker": "NEM",
+          "weightPct": 6.134227,
+          "shortName": "NEWMONT CORP"
+        },
+        {
+          "name": "VULCAN MATERIALS CO",
+          "ticker": "VMC",
+          "weightPct": 5.201047,
+          "shortName": "VULCAN MATERIALS CO"
+        },
+        {
+          "name": "ECOLAB INC",
+          "ticker": "ECL",
+          "weightPct": 5.092305,
+          "shortName": "ECOLAB INC"
+        },
+        {
+          "name": "SHERWIN WILLIAMS CO/THE",
+          "ticker": "SHW",
+          "weightPct": 4.939782,
+          "shortName": "SHERWIN WILLIAMS CO/THE"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "XLRE",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:45:20.154975+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLRE?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "1dc91660bba85cca6d3043fd356c42e094ba7b1240b672e4e5ad5b8236317f9a",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 43.5,
+        "high": 43.66999816894531,
+        "low": 43.29999923706055,
+        "close": 43.66999816894531,
+        "volume": 7267088
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 43.15999984741211,
+          "high": 43.71500015258789,
+          "low": 43.09000015258789,
+          "close": 43.63999938964844,
+          "volume": 9085600
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 42.54499816894531,
+          "high": 42.689998626708984,
+          "low": 42.2599983215332,
+          "close": 42.439998626708984,
+          "volume": 7226000
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 40.959999084472656,
+          "high": 41.29499816894531,
+          "low": 40.75199890136719,
+          "close": 40.810001373291016,
+          "volume": 6394600
+        }
+      },
+      "returns": {
+        "day": 0.06874147506059636,
+        "week": 2.8982082517369445,
+        "month": 7.0080781656775
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 78,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 43.67,
+      "regularCloseDifference": -1.8310546892053026e-06,
+      "holdingsObservedAt": "2026-11-03T21:48:39.614335+00:00",
+      "holdingsTop5": [
+        {
+          "name": "WELLTOWER INC",
+          "ticker": "WELL",
+          "weightPct": 11.417726,
+          "shortName": "WELLTOWER INC"
+        },
+        {
+          "name": "PROLOGIS INC",
+          "ticker": "PLD",
+          "weightPct": 8.166835,
+          "shortName": "PROLOGIS INC"
+        },
+        {
+          "name": "EQUINIX INC",
+          "ticker": "EQIX",
+          "weightPct": 6.49908,
+          "shortName": "EQUINIX INC"
+        },
+        {
+          "name": "AMERICAN TOWER CORP",
+          "ticker": "AMT",
+          "weightPct": 5.815752,
+          "shortName": "AMERICAN TOWER CORP"
+        },
+        {
+          "name": "PUBLIC STORAGE",
+          "ticker": "PSA",
+          "weightPct": 5.046953,
+          "shortName": "PUBLIC STORAGE"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "IYT",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:45:01.792200+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IYT?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "7f0b27ae668ce6cfb785c4b1300ca5b6bc81c3978b760cafc1d0290f5fe5edc2",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 82.98999786376953,
+        "high": 83.30000305175781,
+        "low": 82.32669830322266,
+        "close": 82.68000030517578,
+        "volume": 674485
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 82.41999816894531,
+          "high": 83.5999984741211,
+          "low": 82.4000015258789,
+          "close": 83.08000183105469,
+          "volume": 1232500
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 80.87000274658203,
+          "high": 82.3499984741211,
+          "low": 80.52999877929688,
+          "close": 82.16000366210938,
+          "volume": 736000
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 79.5199966430664,
+          "high": 80.33000183105469,
+          "low": 79.5199966430664,
+          "close": 80.19999694824219,
+          "volume": 689100
+        }
+      },
+      "returns": {
+        "day": -0.48146547552119223,
+        "week": 0.6329072783454848,
+        "month": 3.092273630052733
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 78,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 82.68,
+      "regularCloseDifference": 3.0517577442878974e-07,
+      "holdingsObservedAt": "2026-11-03T21:45:12.127851+00:00",
+      "holdingsTop5": [
+        {
+          "ticker": "UNP",
+          "name": "UNION PACIFIC",
+          "weightPct": 18.6,
+          "shortName": "UNION PACIFIC CORP"
+        },
+        {
+          "ticker": "UBER",
+          "name": "UBER TECHNOLOGIES",
+          "weightPct": 13.9,
+          "shortName": "UBER TECHNOLOGIES"
+        },
+        {
+          "ticker": "CSX",
+          "name": "CSX",
+          "weightPct": 9.75,
+          "shortName": "CSX"
+        },
+        {
+          "ticker": "UPS",
+          "name": "UNITED PARCEL SERVICE INC CLASS B",
+          "weightPct": 4.88,
+          "shortName": "UNITED PARCEL SERVICE INC CLASS B"
+        },
+        {
+          "ticker": "NSC",
+          "name": "NORFOLK SOUTHERN CORP",
+          "weightPct": 4.72,
+          "shortName": "NORFOLK SOUTHERN CORP"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "IBB",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:44:58.078566+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IBB?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "78f2554aa32c3fabb903b9e99cbdd3284dcc9885134c322755bd88c275dde676",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 214.9600067138672,
+        "high": 218.10000610351562,
+        "low": 214.52000427246094,
+        "close": 215.47000122070312,
+        "volume": 1680442
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 217.89999389648438,
+          "high": 219.49000549316406,
+          "low": 213.55999755859375,
+          "close": 213.7899932861328,
+          "volume": 2044900
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 208.22999572753906,
+          "high": 212.1999969482422,
+          "low": 206.02000427246094,
+          "close": 212.1999969482422,
+          "volume": 1639100
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 206.85000610351562,
+          "high": 206.99000549316406,
+          "low": 204.13999938964844,
+          "close": 205.2899932861328,
+          "volume": 2090300
+        }
+      },
+      "returns": {
+        "day": 0.7858215947094571,
+        "week": 1.5410010930671847,
+        "month": 4.9588427431927595
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 78,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 215.47,
+      "regularCloseDifference": 1.2207031261368684e-06,
+      "holdingsObservedAt": "2026-11-03T21:45:23.354000+00:00",
+      "holdingsTop5": [
+        {
+          "ticker": "GILD",
+          "name": "GILEAD SCIENCES",
+          "weightPct": 9.08,
+          "shortName": "GILEAD SCIENCES"
+        },
+        {
+          "ticker": "AMGN",
+          "name": "AMGEN INC",
+          "weightPct": 8.44,
+          "shortName": "AMGEN INC"
+        },
+        {
+          "ticker": "VRTX",
+          "name": "VERTEX PHARMACEUTICALS",
+          "weightPct": 7.92,
+          "shortName": "VERTEX PHARMACEUTICALS"
+        },
+        {
+          "ticker": "REGN",
+          "name": "REGENERON PHARMACEUTICALS",
+          "weightPct": 6.57,
+          "shortName": "REGENERON PHARMACEUTICALS"
+        },
+        {
+          "ticker": "MRNA",
+          "name": "MODERNA",
+          "weightPct": 5.57,
+          "shortName": "MODERNA INC"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "XHB",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:45:05.130593+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XHB?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "65da6b78ee44d4e280fdc33475d8b11bdc616fbd0ed5dc4b12055da73d7ce3e8",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 104.0199966430664,
+        "high": 104.60800170898438,
+        "low": 101.88500213623047,
+        "close": 101.9800033569336,
+        "volume": 1805243
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 102.52999877929688,
+          "high": 104.9000015258789,
+          "low": 102.52999877929688,
+          "close": 104.58000183105469,
+          "volume": 2413600
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 98.45999908447266,
+          "high": 99.29000091552734,
+          "low": 97.25,
+          "close": 99.16000366210938,
+          "volume": 1522600
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 98.41000366210938,
+          "high": 99.12999725341797,
+          "low": 96.11000061035156,
+          "close": 96.69999694824219,
+          "volume": 2464400
+        }
+      },
+      "returns": {
+        "day": -2.4861335136724283,
+        "week": 2.843888251994686,
+        "month": 5.4601929424232365
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 78,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 101.98,
+      "regularCloseDifference": 3.3569335897709607e-06,
+      "holdingsObservedAt": "2026-11-03T21:48:10.670294+00:00",
+      "holdingsTop5": [
+        {
+          "name": "ALLEGION PLC",
+          "ticker": "ALLE",
+          "weightPct": 3.856407,
+          "shortName": "ALLEGION PLC"
+        },
+        {
+          "name": "SHARKNINJA INC",
+          "ticker": "SN",
+          "weightPct": 3.8438,
+          "shortName": "SHARKNINJA INC"
+        },
+        {
+          "name": "CAVCO INDUSTRIES INC",
+          "ticker": "CVCO",
+          "weightPct": 3.754812,
+          "shortName": "CAVCO INDUSTRIES INC"
+        },
+        {
+          "name": "MASCO CORP",
+          "ticker": "MAS",
+          "weightPct": 3.673702,
+          "shortName": "MASCO CORP"
+        },
+        {
+          "name": "CARLISLE COS INC",
+          "ticker": "CSL",
+          "weightPct": 3.548002,
+          "shortName": "CARLISLE COS INC"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "XRT",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:45:23.715380+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XRT?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "660bbcbdba1820a1eae2cd2f89f8e4f9ec2c40d280ba5c8911cc373b60d8e415",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 90.38999938964844,
+        "high": 90.56999969482422,
+        "low": 88.75,
+        "close": 88.80000305175781,
+        "volume": 5237737
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 89.36000061035156,
+          "high": 91.06999969482422,
+          "low": 89.36000061035156,
+          "close": 90.54000091552734,
+          "volume": 4776200
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 87.51000213623047,
+          "high": 87.6500015258789,
+          "low": 86.5999984741211,
+          "close": 87.30999755859375,
+          "volume": 2814600
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 83.36000061035156,
+          "high": 83.61000061035156,
+          "low": 82.48999786376953,
+          "close": 82.62999725341797,
+          "volume": 2541600
+        }
+      },
+      "returns": {
+        "day": -1.9218001393582096,
+        "week": 1.706569161411453,
+        "month": 7.4670289282680935
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 78,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 88.8,
+      "regularCloseDifference": 3.051757815342171e-06,
+      "holdingsObservedAt": "2026-11-03T21:48:10.684057+00:00",
+      "holdingsTop5": [
+        {
+          "name": "KOHLS CORP",
+          "ticker": "KSS",
+          "weightPct": 1.813802,
+          "shortName": "KOHLS CORP"
+        },
+        {
+          "name": "REALREAL INC/THE",
+          "ticker": "REAL",
+          "weightPct": 1.793062,
+          "shortName": "REALREAL INC/THE"
+        },
+        {
+          "name": "BATH + BODY WORKS INC",
+          "ticker": "BBWI",
+          "weightPct": 1.723112,
+          "shortName": "BATH + BODY WORKS INC"
+        },
+        {
+          "name": "VICTORIA S SECRET + CO",
+          "ticker": "VSXY",
+          "weightPct": 1.712592,
+          "shortName": "VICTORIA S SECRET + CO"
+        },
+        {
+          "name": "ETSY INC",
+          "ticker": "ETSY",
+          "weightPct": 1.708791,
+          "shortName": "ETSY INC"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "IHF",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:44:58.132444+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IHF?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "bfff69676dfe5d1e7712b1c6cbe47bb19ab4c4b30fe520606bcfdacb18139fd7",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 58.84000015258789,
+        "high": 59.59000015258789,
+        "low": 58.810001373291016,
+        "close": 59.40999984741211,
+        "volume": 1594591
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 60.08000183105469,
+          "high": 60.130001068115234,
+          "low": 58.439998626708984,
+          "close": 59.0,
+          "volume": 1577200
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 59.86000061035156,
+          "high": 60.08000183105469,
+          "low": 59.060001373291016,
+          "close": 59.290000915527344,
+          "volume": 1758300
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 54.52000045776367,
+          "high": 55.15999984741211,
+          "low": 54.439998626708984,
+          "close": 55.09000015258789,
+          "volume": 337100
+        }
+      },
+      "returns": {
+        "day": 0.6949149956137379,
+        "week": 0.2023932029546316,
+        "month": 7.841712983951199
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 78,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 59.41,
+      "regularCloseDifference": -1.5258788721439487e-07,
+      "holdingsObservedAt": "2026-11-03T21:45:23.323039+00:00",
+      "holdingsTop5": [
+        {
+          "ticker": "UNH",
+          "name": "UNITEDHEALTH GROUP",
+          "weightPct": 22.04,
+          "shortName": "UNITEDHEALTH GROUP"
+        },
+        {
+          "ticker": "CVS",
+          "name": "CVS HEALTH",
+          "weightPct": 11.77,
+          "shortName": "CVS HEALTH"
+        },
+        {
+          "ticker": "ELV",
+          "name": "ELEVANCE HEALTH INC",
+          "weightPct": 9.32,
+          "shortName": "ELEVANCE HEALTH INC"
+        },
+        {
+          "ticker": "VEEV",
+          "name": "VEEVA SYSTEMS CLASS A",
+          "weightPct": 5.09,
+          "shortName": "VEEVA SYSTEMS CLASS A"
+        },
+        {
+          "ticker": "HCA",
+          "name": "HCA HEALTHCARE",
+          "weightPct": 4.8,
+          "shortName": "HCA HEALTHCARE"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "XPH",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:45:23.658825+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XPH?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "0530ae39ff142a430e6e8617ad506776ef8ea9085081fc84cedc9721db8ca818",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 64.03,
+        "high": 65.12,
+        "low": 64.03,
+        "close": 64.3,
+        "volume": 728198
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 64.91000366210938,
+          "high": 65.3499984741211,
+          "low": 63.5099983215332,
+          "close": 63.61000061035156,
+          "volume": 780300
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 62.88999938964844,
+          "high": 63.959999084472656,
+          "low": 62.790000915527344,
+          "close": 63.959999084472656,
+          "volume": 50900
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 64.30000305175781,
+          "high": 64.48999786376953,
+          "low": 63.43000030517578,
+          "close": 63.63999938964844,
+          "volume": 312500
+        }
+      },
+      "returns": {
+        "day": 1.0847341346136519,
+        "week": 0.5315836779145267,
+        "month": 1.0370845642385662
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 76,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": true,
+      "independentRegularClose": 64.3,
+      "regularCloseDifference": 0.0,
+      "holdingsObservedAt": "2026-11-03T21:48:39.698519+00:00",
+      "holdingsTop5": [
+        {
+          "name": "INDIVIOR PHARMACEUTICALS INC",
+          "ticker": "INDV",
+          "weightPct": 3.735758,
+          "shortName": "INDIVIOR PHARMACEUTICALS INC"
+        },
+        {
+          "name": "XERIS BIOPHARMA HOLDINGS INC",
+          "ticker": "XERS",
+          "weightPct": 2.745966,
+          "shortName": "XERIS BIOPHARMA HOLDINGS INC"
+        },
+        {
+          "name": "VERADERMICS INC",
+          "ticker": "MANE",
+          "weightPct": 2.705363,
+          "shortName": "VERADERMICS INC"
+        },
+        {
+          "name": "PACIRA BIOSCIENCES INC",
+          "ticker": "PCRX",
+          "weightPct": 2.640943,
+          "shortName": "PACIRA BIOSCIENCES INC"
+        },
+        {
+          "name": "ELI LILLY + CO",
+          "ticker": "LLY",
+          "weightPct": 2.613487,
+          "shortName": "ELI LILLY + CO"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252,
+      "rejectedYahooLatestOHLCV": {
+        "open": 64.02999877929688,
+        "high": 65.12000274658203,
+        "low": 64.12000274658203,
+        "close": 64.30000305175781,
+        "volume": 728198
+      }
+    },
+    {
+      "ticker": "XLY",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:45:20.178543+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLY?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "3b38c68781bade644d6d6c61fdcc0e4ef14a1ba5ed61b8698466f182f634a7c8",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 118.31999969482422,
+        "high": 118.38999938964844,
+        "low": 116.8499984741211,
+        "close": 117.33000183105469,
+        "volume": 10245875
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 116.88999938964844,
+          "high": 119.20999908447266,
+          "low": 116.80999755859375,
+          "close": 118.16000366210938,
+          "volume": 11711600
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 114.8499984741211,
+          "high": 115.66999816894531,
+          "low": 114.30999755859375,
+          "close": 115.44999694824219,
+          "volume": 5892400
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 109.88999938964844,
+          "high": 110.63999938964844,
+          "low": 109.61000061035156,
+          "close": 110.04000091552734,
+          "volume": 8619400
+        }
+      },
+      "returns": {
+        "day": -0.7024389009229859,
+        "week": 1.628414839764214,
+        "month": 6.624864462808877
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 78,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 117.33,
+      "regularCloseDifference": 1.8310546892053026e-06,
+      "holdingsObservedAt": "2026-11-03T21:48:10.672199+00:00",
+      "holdingsTop5": [
+        {
+          "name": "AMAZON.COM INC",
+          "ticker": "AMZN",
+          "weightPct": 21.272893,
+          "shortName": "Amazon.com, Inc."
+        },
+        {
+          "name": "TESLA INC",
+          "ticker": "TSLA",
+          "weightPct": 18.550472,
+          "shortName": "Tesla"
+        },
+        {
+          "name": "HOME DEPOT INC",
+          "ticker": "HD",
+          "weightPct": 5.545475,
+          "shortName": "HOME DEPOT INC"
+        },
+        {
+          "name": "MCDONALD S CORP",
+          "ticker": "MCD",
+          "weightPct": 4.48281,
+          "shortName": "MCDONALD S CORP"
+        },
+        {
+          "name": "TJX COMPANIES INC",
+          "ticker": "TJX",
+          "weightPct": 4.002851,
+          "shortName": "TJX COMPANIES INC"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "XLF",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:45:10.620577+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLF?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "2e8e1d060c8f052ac2fc41503e17b4837c5ebab2a9d5d494423afdc2a16ca52c",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 57.36000061035156,
+        "high": 57.470001220703125,
+        "low": 56.959999084472656,
+        "close": 57.189998626708984,
+        "volume": 30314652
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 56.959999084472656,
+          "high": 57.70000076293945,
+          "low": 56.869998931884766,
+          "close": 57.560001373291016,
+          "volume": 41193100
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 56.27000045776367,
+          "high": 56.31999969482422,
+          "low": 55.75,
+          "close": 55.880001068115234,
+          "volume": 27310500
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 53.540000915527344,
+          "high": 53.7599983215332,
+          "low": 53.209999084472656,
+          "close": 53.4900016784668,
+          "volume": 30292500
+        }
+      },
+      "returns": {
+        "day": -0.6428122615607212,
+        "week": 2.344304820246723,
+        "month": 6.917174859113295
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 78,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 57.19,
+      "regularCloseDifference": -1.3732910133512632e-06,
+      "holdingsObservedAt": "2026-11-03T21:48:10.678200+00:00",
+      "holdingsTop5": [
+        {
+          "name": "BERKSHIRE HATHAWAY INC CL B",
+          "ticker": "BRK.B",
+          "weightPct": 12.772711,
+          "shortName": "BERKSHIRE HATHAWAY INC CL B"
+        },
+        {
+          "name": "JPMORGAN CHASE + CO",
+          "ticker": "JPM",
+          "weightPct": 11.164685,
+          "shortName": "JPMORGAN CHASE + CO"
+        },
+        {
+          "name": "VISA INC CLASS A SHARES",
+          "ticker": "V",
+          "weightPct": 8.942276,
+          "shortName": "VISA INC CLASS A SHARES"
+        },
+        {
+          "name": "MASTERCARD INC   A",
+          "ticker": "MA",
+          "weightPct": 6.56247,
+          "shortName": "MASTERCARD INC A"
+        },
+        {
+          "name": "BANK OF AMERICA CORP",
+          "ticker": "BAC",
+          "weightPct": 3.975567,
+          "shortName": "BANK OF AMERICA CORP"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "KBE",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:45:01.792966+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/KBE?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "0611caaa7d031ed066195b73c2af40e9c45b4da0c506b521fda9f1cde6af025c",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 67.16999816894531,
+        "high": 67.38500213623047,
+        "low": 66.43000030517578,
+        "close": 66.58999633789062,
+        "volume": 1498123
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 66.22000122070312,
+          "high": 67.58999633789062,
+          "low": 66.06999969482422,
+          "close": 67.2300033569336,
+          "volume": 3660500
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 66.22000122070312,
+          "high": 66.43000030517578,
+          "low": 65.70999908447266,
+          "close": 66.05999755859375,
+          "volume": 1135200
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 64.08999633789062,
+          "high": 64.7699966430664,
+          "low": 63.97999954223633,
+          "close": 64.36000061035156,
+          "volume": 3965900
+        }
+      },
+      "returns": {
+        "day": -0.9519663648461796,
+        "week": 0.8022991203213037,
+        "month": 3.4648783505144776
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 78,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 66.59,
+      "regularCloseDifference": -3.662109378410605e-06,
+      "holdingsObservedAt": "2026-11-03T21:48:10.675138+00:00",
+      "holdingsTop5": [
+        {
+          "name": "CENTRAL BANCOMPANY",
+          "ticker": "CBC",
+          "weightPct": 1.077165,
+          "shortName": "CENTRAL BANCOMPANY"
+        },
+        {
+          "name": "FIRST CITIZENS BCSHS   CL A",
+          "ticker": "FCNCA",
+          "weightPct": 1.043308,
+          "shortName": "FIRST CITIZENS BCSHS CL A"
+        },
+        {
+          "name": "CUSTOMERS BANCORP INC",
+          "ticker": "CUBI",
+          "weightPct": 1.033928,
+          "shortName": "CUSTOMERS BANCORP INC"
+        },
+        {
+          "name": "GLACIER BANCORP INC",
+          "ticker": "GBCI",
+          "weightPct": 1.022896,
+          "shortName": "GLACIER BANCORP INC"
+        },
+        {
+          "name": "UNITED COMMUNITY BANKS/GA",
+          "ticker": "UCB",
+          "weightPct": 1.00636,
+          "shortName": "UNITED COMMUNITY BANKS/GA"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "XBI",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:45:05.118754+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XBI?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "6c06f3243588410b4ab6723f79a526244b4ef84f681e6382eebed5d229488372",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 152.9600067138672,
+        "high": 156.9199981689453,
+        "low": 152.8300018310547,
+        "close": 154.97000122070312,
+        "volume": 6377333
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 156.41000366210938,
+          "high": 157.1199951171875,
+          "low": 151.69000244140625,
+          "close": 152.0500030517578,
+          "volume": 7667100
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 150.35000610351562,
+          "high": 154.9199981689453,
+          "low": 149.27000427246094,
+          "close": 154.83999633789062,
+          "volume": 8664000
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 156.41000366210938,
+          "high": 156.74000549316406,
+          "low": 153.5800018310547,
+          "close": 154.42999267578125,
+          "volume": 8747700
+        }
+      },
+      "returns": {
+        "day": 1.9204196713835886,
+        "week": 0.08396078912893401,
+        "month": 0.3496785407842262
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 78,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 154.97,
+      "regularCloseDifference": 1.2207031261368684e-06,
+      "holdingsObservedAt": "2026-11-03T21:48:43.866062+00:00",
+      "holdingsTop5": [
+        {
+          "name": "MODERNA INC",
+          "ticker": "MRNA",
+          "weightPct": 2.4255,
+          "shortName": "MODERNA INC"
+        },
+        {
+          "name": "EXELIXIS INC",
+          "ticker": "EXEL",
+          "weightPct": 1.790739,
+          "shortName": "EXELIXIS INC"
+        },
+        {
+          "name": "HALOZYME THERAPEUTICS INC",
+          "ticker": "HALO",
+          "weightPct": 1.788403,
+          "shortName": "HALOZYME THERAPEUTICS INC"
+        },
+        {
+          "name": "REGENERON PHARMACEUTICALS",
+          "ticker": "REGN",
+          "weightPct": 1.772608,
+          "shortName": "REGENERON PHARMACEUTICALS"
+        },
+        {
+          "name": "AMGEN INC",
+          "ticker": "AMGN",
+          "weightPct": 1.771994,
+          "shortName": "AMGEN INC"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "KRE",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:45:01.798337+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/KRE?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "c6704fdd071d5db19ddab65ed8d045bac3527789f39f835ffa79709c337991cf",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 73.68000030517578,
+        "high": 73.78500366210938,
+        "low": 72.69999694824219,
+        "close": 72.87999725341797,
+        "volume": 12048935
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 72.54000091552734,
+          "high": 74.19000244140625,
+          "low": 72.48999786376953,
+          "close": 73.7300033569336,
+          "volume": 19492800
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 73.0199966430664,
+          "high": 73.12999725341797,
+          "low": 72.18000030517578,
+          "close": 72.58000183105469,
+          "volume": 12754000
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 70.55000305175781,
+          "high": 71.36000061035156,
+          "low": 70.33999633789062,
+          "close": 70.77999877929688,
+          "volume": 18654200
+        }
+      },
+      "returns": {
+        "day": -1.1528632372369119,
+        "week": 0.4133306899903211,
+        "month": 2.966937708870576
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 78,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 72.88,
+      "regularCloseDifference": -2.7465820267025265e-06,
+      "holdingsObservedAt": "2026-11-03T21:48:10.673214+00:00",
+      "holdingsTop5": [
+        {
+          "name": "GLACIER BANCORP INC",
+          "ticker": "GBCI",
+          "weightPct": 1.204499,
+          "shortName": "GLACIER BANCORP INC"
+        },
+        {
+          "name": "UNITED COMMUNITY BANKS/GA",
+          "ticker": "UCB",
+          "weightPct": 1.183984,
+          "shortName": "UNITED COMMUNITY BANKS/GA"
+        },
+        {
+          "name": "BANK OZK",
+          "ticker": "OZK",
+          "weightPct": 1.177312,
+          "shortName": "BANK OZK"
+        },
+        {
+          "name": "TEXAS CAPITAL BANCSHARES INC",
+          "ticker": "TCBI",
+          "weightPct": 1.176353,
+          "shortName": "TEXAS CAPITAL BANCSHARES INC"
+        },
+        {
+          "name": "EASTERN BANKSHARES INC",
+          "ticker": "EBC",
+          "weightPct": 1.165311,
+          "shortName": "EASTERN BANKSHARES INC"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "XLC",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:45:10.586891+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLC?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "719680e2b29962def384ff45f4b403386ed1033d1c5ace5c4e7c37a09658a0fe",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 100.49199676513672,
+        "high": 101.63500213623047,
+        "low": 100.17500305175781,
+        "close": 101.44000244140625,
+        "volume": 13240320
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 100.3499984741211,
+          "high": 101.50499725341797,
+          "low": 100.18499755859375,
+          "close": 100.26000213623047,
+          "volume": 9064900
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 103.56999969482422,
+          "high": 104.11000061035156,
+          "low": 103.19999694824219,
+          "close": 103.58000183105469,
+          "volume": 7405100
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 110.30999755859375,
+          "high": 111.125,
+          "low": 109.95999908447266,
+          "close": 110.31999969482422,
+          "volume": 5598000
+        }
+      },
+      "returns": {
+        "day": 1.1769402354215197,
+        "week": -2.0660352884902533,
+        "month": -8.049308627612861
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 78,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 101.44,
+      "regularCloseDifference": 2.4414062522737368e-06,
+      "holdingsObservedAt": "2026-11-03T21:48:39.666567+00:00",
+      "holdingsTop5": [
+        {
+          "name": "META PLATFORMS INC CLASS A",
+          "ticker": "META",
+          "weightPct": 21.669234,
+          "shortName": "Meta Platforms, Inc. (Class A)"
+        },
+        {
+          "name": "ALPHABET INC CL A",
+          "ticker": "GOOGL",
+          "weightPct": 11.025987,
+          "shortName": "Alphabet Inc. (Class A)"
+        },
+        {
+          "name": "ALPHABET INC CL C",
+          "ticker": "GOOG",
+          "weightPct": 8.900935,
+          "shortName": "ALPHABET INC CL C"
+        },
+        {
+          "name": "WALT DISNEY CO/THE",
+          "ticker": "DIS",
+          "weightPct": 5.651582,
+          "shortName": "WALT DISNEY CO/THE"
+        },
+        {
+          "name": "COMCAST CORP CLASS A",
+          "ticker": "CMCSA",
+          "weightPct": 5.052992,
+          "shortName": "COMCAST CORP CLASS A"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "FAN",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:44:53.470620+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/FAN?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "5d1297b3aba267361f9c2845e84b0ba81601edc84812dfa6617f4dcb77116fcf",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 22.26,
+        "high": 22.34,
+        "low": 22.26,
+        "close": 22.34,
+        "volume": 13435
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 21.979999542236328,
+          "high": 22.280000686645508,
+          "low": 21.959999084472656,
+          "close": 22.040000915527344,
+          "volume": 22900
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 21.719999313354492,
+          "high": 21.950000762939453,
+          "low": 21.719999313354492,
+          "close": 21.920000076293945,
+          "volume": 6900
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 22.649999618530273,
+          "high": 22.899999618530273,
+          "low": 22.649999618530273,
+          "close": 22.809999465942383,
+          "volume": 22100
+        }
+      },
+      "returns": {
+        "day": 1.3611573140239974,
+        "week": 1.9160580394353088,
+        "month": -2.060497487709889
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 16,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": true,
+      "independentRegularClose": 22.34,
+      "regularCloseDifference": 0.0,
+      "holdingsObservedAt": "2026-11-03T21:45:16.824241+00:00",
+      "holdingsTop5": [
+        {
+          "name": "Nordex SE",
+          "ticker": "NDX1.GY",
+          "weightPct": 8.42,
+          "shortName": "Nordex SE"
+        },
+        {
+          "name": "Orsted A/S",
+          "ticker": "ORSTED.DC",
+          "weightPct": 8.41,
+          "shortName": "Orsted A/S"
+        },
+        {
+          "name": "EDP Renewables SA",
+          "ticker": "EDPR.PL",
+          "weightPct": 7.78,
+          "shortName": "EDP Renewables SA"
+        },
+        {
+          "name": "Vestas Wind Systems A/S",
+          "ticker": "VWS.DC",
+          "weightPct": 7.57,
+          "shortName": "Vestas Wind Systems A/S"
+        },
+        {
+          "name": "China Longyuan Power Group Corporation Limited (Class H)",
+          "ticker": "916.HK",
+          "weightPct": 5.79,
+          "shortName": "China Longyuan Power Group Corporation Limited (Class H)"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252,
+      "rejectedYahooLatestOHLCV": {
+        "open": 22.260000228881836,
+        "high": 22.34000015258789,
+        "low": 22.270099639892578,
+        "close": 22.34000015258789,
+        "volume": 13435
+      }
+    },
+    {
+      "ticker": "IAI",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:44:53.519870+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IAI?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "5d3c06b2826e442c810fdd8f672a7d6ae1d09ead28aed634aac3d8653f1cfd70",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 179.55999755859375,
+        "high": 180.33810424804688,
+        "low": 178.83999633789062,
+        "close": 179.66000366210938,
+        "volume": 49375
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 179.02000427246094,
+          "high": 181.1999969482422,
+          "low": 178.75,
+          "close": 179.74000549316406,
+          "volume": 121500
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 179.89999389648438,
+          "high": 180.6300048828125,
+          "low": 178.13999938964844,
+          "close": 178.16000366210938,
+          "volume": 55600
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 177.22000122070312,
+          "high": 178.3000030517578,
+          "low": 175.2899932861328,
+          "close": 175.88999938964844,
+          "volume": 58500
+        }
+      },
+      "returns": {
+        "day": -0.044509752203014674,
+        "week": 0.8419398120606436,
+        "month": 2.1433875067048413
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 51,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 179.66,
+      "regularCloseDifference": 3.662109378410605e-06,
+      "holdingsObservedAt": "2026-11-03T21:45:12.765711+00:00",
+      "holdingsTop5": [
+        {
+          "ticker": "GS",
+          "name": "GOLDMAN SACHS GROUP",
+          "weightPct": 17.73,
+          "shortName": "GOLDMAN SACHS GROUP"
+        },
+        {
+          "ticker": "MS",
+          "name": "MORGAN STANLEY",
+          "weightPct": 15.02,
+          "shortName": "MORGAN STANLEY"
+        },
+        {
+          "ticker": "SCHW",
+          "name": "CHARLES SCHWAB",
+          "weightPct": 8.42,
+          "shortName": "CHARLES SCHWAB"
+        },
+        {
+          "ticker": "SPGI",
+          "name": "S&P GLOBAL",
+          "weightPct": 5.43,
+          "shortName": "S&P GLOBAL"
+        },
+        {
+          "ticker": "CME",
+          "name": "CME GROUP CLASS A",
+          "weightPct": 5.33,
+          "shortName": "CME GROUP CLASS A"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "XLI",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:45:10.621255+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLI?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "b54eb4752762ba29f7c4f2ee17cc33061cb52cbc5280932902d5d871421dedd7",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 170.7100067138672,
+        "high": 172.39999389648438,
+        "low": 170.33999633789062,
+        "close": 171.32000732421875,
+        "volume": 9820551
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 169.0399932861328,
+          "high": 171.02999877929688,
+          "low": 168.74000549316406,
+          "close": 169.7100067138672,
+          "volume": 9280800
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 167.85000610351562,
+          "high": 168.2100067138672,
+          "low": 166.92999267578125,
+          "close": 167.9199981689453,
+          "volume": 6284300
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 170.1999969482422,
+          "high": 171.0,
+          "low": 168.80999755859375,
+          "close": 169.9499969482422,
+          "volume": 6115800
+        }
+      },
+      "returns": {
+        "day": 0.9486774772603956,
+        "week": 2.024779176005387,
+        "month": 0.8061255666828915
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 78,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 171.32,
+      "regularCloseDifference": 7.32421875682121e-06,
+      "holdingsObservedAt": "2026-11-03T21:48:39.610227+00:00",
+      "holdingsTop5": [
+        {
+          "name": "GENERAL ELECTRIC",
+          "ticker": "GE",
+          "weightPct": 6.072889,
+          "shortName": "GE AEROSPACE"
+        },
+        {
+          "name": "CATERPILLAR INC",
+          "ticker": "CAT",
+          "weightPct": 5.228115,
+          "shortName": "CATERPILLAR INC"
+        },
+        {
+          "name": "RTX CORP",
+          "ticker": "RTX",
+          "weightPct": 5.065891,
+          "shortName": "RTX"
+        },
+        {
+          "name": "GE VERNOVA INC",
+          "ticker": "GEV",
+          "weightPct": 4.256569,
+          "shortName": "GE VERNOVA INC"
+        },
+        {
+          "name": "UNION PACIFIC CORP",
+          "ticker": "UNP",
+          "weightPct": 3.380605,
+          "shortName": "UNION PACIFIC CORP"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "LIT",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:45:01.802196+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/LIT?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "fe7e4367e7b1061cda10c9fc622131c6e48f0aef76fa9d5e7a270b2e8b49fdf9",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 60.38999938964844,
+        "high": 60.58000183105469,
+        "low": 59.970001220703125,
+        "close": 60.099998474121094,
+        "volume": 220506
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 60.880001068115234,
+          "high": 61.47999954223633,
+          "low": 59.970001220703125,
+          "close": 60.04999923706055,
+          "volume": 131500
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 61.7599983215332,
+          "high": 62.65999984741211,
+          "low": 61.380001068115234,
+          "close": 62.630001068115234,
+          "volume": 204600
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 68.75,
+          "high": 69.6500015258789,
+          "low": 68.75,
+          "close": 69.27999877929688,
+          "volume": 129500
+        }
+      },
+      "returns": {
+        "day": 0.08326267726193048,
+        "week": -4.039601709798079,
+        "month": -13.250578041174943
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 75,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 60.1,
+      "regularCloseDifference": -1.5258789076710855e-06,
+      "holdingsObservedAt": "2026-11-03T21:45:17.410427+00:00",
+      "holdingsTop5": [
+        {
+          "ticker": "RIO",
+          "name": "RIO TINTO PLC-SPON ADR",
+          "weightPct": 19.57,
+          "shortName": "Rio Tinto ADR"
+        },
+        {
+          "ticker": "ALB",
+          "name": "ALBEMARLE CORP",
+          "weightPct": 5.25,
+          "shortName": "ALBEMARLE CORP"
+        },
+        {
+          "ticker": "TSLA",
+          "name": "TESLA INC",
+          "weightPct": 4.87,
+          "shortName": "Tesla"
+        },
+        {
+          "ticker": "300014 C2",
+          "name": "EVE ENERGY CO LTD-A",
+          "weightPct": 4.39,
+          "shortName": "EVE ENERGY CO LTD-A"
+        },
+        {
+          "ticker": "006400 KS",
+          "name": "SAMSUNG SDI CO LTD",
+          "weightPct": 4.3,
+          "shortName": "Samsung SDI"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "IHI",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:44:58.174709+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IHI?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "c791ff2181152a75e092e74aa6fa419c1307df7d0c2681626edda4754953c179",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 56.209999084472656,
+        "high": 56.790000915527344,
+        "low": 55.97999954223633,
+        "close": 56.43000030517578,
+        "volume": 2690178
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 55.400001525878906,
+          "high": 56.630001068115234,
+          "low": 55.27000045776367,
+          "close": 56.5099983215332,
+          "volume": 4452600
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 54.65999984741211,
+          "high": 54.81999969482422,
+          "low": 54.380001068115234,
+          "close": 54.529998779296875,
+          "volume": 1454300
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 50.88999938964844,
+          "high": 50.970001220703125,
+          "low": 50.189998626708984,
+          "close": 50.45000076293945,
+          "volume": 2507700
+        }
+      },
+      "returns": {
+        "day": -0.1415643580490733,
+        "week": 3.484323433728509,
+        "month": 11.853319032314523
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 78,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 56.43,
+      "regularCloseDifference": 3.051757815342171e-07,
+      "holdingsObservedAt": "2026-11-03T21:45:06.358630+00:00",
+      "holdingsTop5": [
+        {
+          "ticker": "ABT",
+          "name": "ABBOTT LABORATORIES",
+          "weightPct": 18.05,
+          "shortName": "ABBOTT LABORATORIES"
+        },
+        {
+          "ticker": "ISRG",
+          "name": "INTUITIVE SURGICAL",
+          "weightPct": 14.61,
+          "shortName": "INTUITIVE SURGICAL"
+        },
+        {
+          "ticker": "MDT",
+          "name": "MEDTRONIC PLC",
+          "weightPct": 11.51,
+          "shortName": "MEDTRONIC PLC"
+        },
+        {
+          "ticker": "IDXX",
+          "name": "IDEXX LABORATORIES",
+          "weightPct": 5.36,
+          "shortName": "IDEXX LABORATORIES"
+        },
+        {
+          "ticker": "SYK",
+          "name": "STRYKER",
+          "weightPct": 4.58,
+          "shortName": "STRYKER"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "ITA",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:44:58.207011+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/ITA?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "85fb60e1c6826011c0c3f27067f80d9f0c2f8b593165616718d8402e7dc7c92f",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 214.8699951171875,
+        "high": 218.72999572753906,
+        "low": 214.77000427246094,
+        "close": 216.1699981689453,
+        "volume": 1267614
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 212.07000732421875,
+          "high": 215.69000244140625,
+          "low": 211.80999755859375,
+          "close": 214.67999267578125,
+          "volume": 1071700
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 207.1199951171875,
+          "high": 207.77999877929688,
+          "low": 204.86000061035156,
+          "close": 206.22000122070312,
+          "volume": 893100
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 209.4499969482422,
+          "high": 209.89999389648438,
+          "low": 206.6999969482422,
+          "close": 207.7899932861328,
+          "volume": 882500
+        }
+      },
+      "returns": {
+        "day": 0.6940588522444724,
+        "week": 4.824942725896597,
+        "month": 4.032920329937628
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 78,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 216.17,
+      "regularCloseDifference": -1.8310546749944479e-06,
+      "holdingsObservedAt": "2026-11-03T21:45:06.361318+00:00",
+      "holdingsTop5": [
+        {
+          "ticker": "GE",
+          "name": "GE AEROSPACE",
+          "weightPct": 20.45,
+          "shortName": "GE AEROSPACE"
+        },
+        {
+          "ticker": "RTX",
+          "name": "RTX",
+          "weightPct": 17.06,
+          "shortName": "RTX"
+        },
+        {
+          "ticker": "BA",
+          "name": "BOEING",
+          "weightPct": 6.81,
+          "shortName": "BOEING"
+        },
+        {
+          "ticker": "LMT",
+          "name": "LOCKHEED MARTIN",
+          "weightPct": 5.61,
+          "shortName": "LOCKHEED MARTIN CORP"
+        },
+        {
+          "ticker": "TDG",
+          "name": "TRANSDIGM GROUP",
+          "weightPct": 4.93,
+          "shortName": "TRANSDIGM GROUP INC"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "TAN",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:45:05.071102+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/TAN?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "adc80382853302279d90f78567bc7139f1d77e43e6a7be9dc7544124d39123aa",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 42.40999984741211,
+        "high": 43.53300094604492,
+        "low": 42.29999923706055,
+        "close": 43.34000015258789,
+        "volume": 4354367
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 41.06999969482422,
+          "high": 42.66999816894531,
+          "low": 40.970001220703125,
+          "close": 42.06999969482422,
+          "volume": 3053600
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 41.27000045776367,
+          "high": 42.459999084472656,
+          "low": 41.15999984741211,
+          "close": 42.02000045776367,
+          "volume": 1962700
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 43.9900016784668,
+          "high": 44.43000030517578,
+          "low": 43.77000045776367,
+          "close": 44.04999923706055,
+          "volume": 345000
+        }
+      },
+      "returns": {
+        "day": 3.0187793367631555,
+        "week": 3.141360496059531,
+        "month": -1.6118027168438909
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 78,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 43.34,
+      "regularCloseDifference": 1.5258788721439487e-07,
+      "holdingsObservedAt": "2026-11-03T21:45:06.357120+00:00",
+      "holdingsTop5": [
+        {
+          "ticker": "NXT",
+          "name": "Nextpower Inc",
+          "weightPct": 12.324486,
+          "shortName": "NEXTPOWER INC"
+        },
+        {
+          "ticker": "FSLR",
+          "name": "First Solar Inc",
+          "weightPct": 9.763114,
+          "shortName": "FIRST SOLAR"
+        },
+        {
+          "ticker": "ENLT",
+          "name": "Enlight Renewable Energy Ltd",
+          "weightPct": 8.015541,
+          "shortName": "Enlight Renewable Energy Ltd"
+        },
+        {
+          "ticker": "ENPH",
+          "name": "Enphase Energy Inc",
+          "weightPct": 6.341467,
+          "shortName": "Enphase Energy"
+        },
+        {
+          "ticker": "HASI",
+          "name": "HA Sustainable Infrastructure Capital Inc",
+          "weightPct": 5.353424,
+          "shortName": "HA Sustainable Infrastructure Capital"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "ICLN",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:44:58.102537+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/ICLN?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "fd4ff6debb0c111c6731daa3d2f3e6e812fdb485a9fcc256a9cf566f22128527",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 15.914999961853027,
+        "high": 16.130300521850586,
+        "low": 15.880000114440918,
+        "close": 16.110000610351562,
+        "volume": 8306131
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 15.640000343322754,
+          "high": 15.970000267028809,
+          "low": 15.569999694824219,
+          "close": 15.729999542236328,
+          "volume": 8034000
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 15.649999618530273,
+          "high": 15.9399995803833,
+          "low": 15.649999618530273,
+          "close": 15.859999656677246,
+          "volume": 7623300
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 17.1200008392334,
+          "high": 17.290000915527344,
+          "low": 17.06999969482422,
+          "close": 17.190000534057617,
+          "volume": 6080900
+        }
+      },
+      "returns": {
+        "day": 2.4157729127384897,
+        "week": 1.5762986071003127,
+        "month": -6.2827218740703845
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 78,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 16.11,
+      "regularCloseDifference": 6.103515630684342e-07,
+      "holdingsObservedAt": "2026-11-03T21:45:06.359119+00:00",
+      "holdingsTop5": [
+        {
+          "ticker": "NXT",
+          "name": "NEXTPOWER INC",
+          "weightPct": 9.0,
+          "shortName": "NEXTPOWER INC"
+        },
+        {
+          "ticker": "FSLR",
+          "name": "FIRST SOLAR",
+          "weightPct": 8.76,
+          "shortName": "FIRST SOLAR"
+        },
+        {
+          "ticker": "IBE",
+          "name": "IBERDROLA",
+          "weightPct": 6.91,
+          "shortName": "IBERDROLA"
+        },
+        {
+          "ticker": "BE",
+          "name": "BLOOM ENERGY CLASS A",
+          "weightPct": 5.84,
+          "shortName": "BLOOM ENERGY CLASS A"
+        },
+        {
+          "ticker": "600900",
+          "name": "CHINA YANGTZE POWER LTD A",
+          "weightPct": 5.66,
+          "shortName": "CHINA YANGTZE POWER LTD A"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "XME",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:45:20.196822+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XME?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "1f8f7af52d31251cf49d4e9f3ef696e0d719394b5b9aa4737c7ed80636e3fdd0",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 97.97000122070312,
+        "high": 98.12999725341797,
+        "low": 96.48999786376953,
+        "close": 96.76000213623047,
+        "volume": 1229395
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 99.37000274658203,
+          "high": 101.47000122070312,
+          "low": 97.37999725341797,
+          "close": 97.66000366210938,
+          "volume": 1687700
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 97.27999877929688,
+          "high": 100.54000091552734,
+          "low": 97.27999877929688,
+          "close": 100.5,
+          "volume": 2351600
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 105.66000366210938,
+          "high": 106.86000061035156,
+          "low": 105.36000061035156,
+          "close": 105.73999786376953,
+          "volume": 1835300
+        }
+      },
+      "returns": {
+        "day": -0.9215661398014996,
+        "week": -3.72139090922341,
+        "month": -8.492524975372584
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 78,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 96.76,
+      "regularCloseDifference": 2.1362304636340923e-06,
+      "holdingsObservedAt": "2026-11-03T21:48:39.678293+00:00",
+      "holdingsTop5": [
+        {
+          "name": "CLEVELAND CLIFFS INC",
+          "ticker": "CLF",
+          "weightPct": 6.823022,
+          "shortName": "CLEVELAND CLIFFS INC"
+        },
+        {
+          "name": "RELIANCE INC",
+          "ticker": "RS",
+          "weightPct": 6.557551,
+          "shortName": "RELIANCE INC"
+        },
+        {
+          "name": "NUCOR CORP",
+          "ticker": "NUE",
+          "weightPct": 6.223041,
+          "shortName": "NUCOR CORP"
+        },
+        {
+          "name": "STEEL DYNAMICS INC",
+          "ticker": "STLD",
+          "weightPct": 6.050155,
+          "shortName": "STEEL DYNAMICS INC"
+        },
+        {
+          "name": "COMMERCIAL METALS CO",
+          "ticker": "CMC",
+          "weightPct": 5.519231,
+          "shortName": "COMMERCIAL METALS CO"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "BATT",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:44:42.355375+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/BATT?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "6ff764057ee82868922ca0178624708240712f4d73d0fe5b202557975f671c80",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 12.800000190734863,
+        "high": 12.824999809265137,
+        "low": 12.701000213623047,
+        "close": 12.739999771118164,
+        "volume": 41330
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 12.800000190734863,
+          "high": 13.045000076293945,
+          "low": 12.720000267028809,
+          "close": 12.729999542236328,
+          "volume": 39200
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 12.869999885559082,
+          "high": 13.220000267028809,
+          "low": 12.869999885559082,
+          "close": 13.199999809265137,
+          "volume": 40200
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 14.399999618530273,
+          "high": 14.630000114440918,
+          "low": 14.399999618530273,
+          "close": 14.574999809265137,
+          "volume": 14700
+        }
+      },
+      "returns": {
+        "day": 0.078556396240681,
+        "week": -3.484848824195408,
+        "month": -12.59005188446375
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 16,
+      "holdingsAsOf": "2026-11-03",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 12.74,
+      "regularCloseDifference": -2.2888183615066282e-07,
+      "holdingsObservedAt": "2026-11-03T21:45:17.393793+00:00",
+      "holdingsTop5": [
+        {
+          "name": "Tesla Inc",
+          "ticker": "TSLA",
+          "weightPct": 9.89,
+          "shortName": "Tesla"
+        },
+        {
+          "name": "BHP Group Ltd",
+          "ticker": "BHP AU",
+          "weightPct": 7.3,
+          "shortName": "BHP Group"
+        },
+        {
+          "name": "Freeport-McMoRan Inc",
+          "ticker": "FCX",
+          "weightPct": 6.4,
+          "shortName": "Freeport-McMoRan"
+        },
+        {
+          "name": "Contemporary Amperex Technology Co Ltd",
+          "ticker": "300750 C2",
+          "weightPct": 5.03,
+          "shortName": "CATL"
+        },
+        {
+          "name": "BYD Co Ltd",
+          "ticker": "1211 HK",
+          "weightPct": 4.75,
+          "shortName": "BYD H"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "XAR",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:45:05.114487+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XAR?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "d53c87b4bbbe2bd4de9db1baca356e65b332d296af94c095fdd5a849352c9d18",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 232.72999572753906,
+        "high": 237.36000061035156,
+        "low": 232.2100067138672,
+        "close": 234.07000732421875,
+        "volume": 279477
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 229.88999938964844,
+          "high": 234.3000030517578,
+          "low": 229.77000427246094,
+          "close": 231.08999633789062,
+          "volume": 284600
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 223.77999877929688,
+          "high": 225.27000427246094,
+          "low": 221.74000549316406,
+          "close": 224.4499969482422,
+          "volume": 275700
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 234.16000366210938,
+          "high": 235.0399932861328,
+          "low": 231.0,
+          "close": 233.08999633789062,
+          "volume": 215600
+        }
+      },
+      "returns": {
+        "day": 1.2895456460914279,
+        "week": 4.286037205068416,
+        "month": 0.4204431771956063
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 76,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 234.07,
+      "regularCloseDifference": 7.32421875682121e-06,
+      "holdingsObservedAt": "2026-11-03T21:48:10.685074+00:00",
+      "holdingsTop5": [
+        {
+          "name": "LOCKHEED MARTIN CORP",
+          "ticker": "LMT",
+          "weightPct": 3.694499,
+          "shortName": "LOCKHEED MARTIN CORP"
+        },
+        {
+          "name": "HUNTINGTON INGALLS INDUSTRIE",
+          "ticker": "HII",
+          "weightPct": 3.365078,
+          "shortName": "HUNTINGTON INGALLS INDUSTRIE"
+        },
+        {
+          "name": "L3HARRIS TECHNOLOGIES INC",
+          "ticker": "LHX",
+          "weightPct": 3.355999,
+          "shortName": "L3HARRIS TECHNOLOGIES INC"
+        },
+        {
+          "name": "TEXTRON INC",
+          "ticker": "TXT",
+          "weightPct": 3.338382,
+          "shortName": "TEXTRON INC"
+        },
+        {
+          "name": "HEICO CORP",
+          "ticker": "HEI",
+          "weightPct": 3.256291,
+          "shortName": "HEICO CORP"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "IGV",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:44:58.131935+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IGV?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "f5357cb8956f4a448f0dfddafd4c2d6daadc40b6e2541a1c00cfe51f3db08c43",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 101.0,
+        "high": 103.27999877929688,
+        "low": 100.55999755859375,
+        "close": 102.66000366210938,
+        "volume": 7839631
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 104.54000091552734,
+          "high": 104.8499984741211,
+          "low": 101.73999786376953,
+          "close": 101.9000015258789,
+          "volume": 10736300
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 110.7699966430664,
+          "high": 112.37999725341797,
+          "low": 110.7300033569336,
+          "close": 111.77999877929688,
+          "volume": 7357900
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 109.55000305175781,
+          "high": 110.12999725341797,
+          "low": 108.05000305175781,
+          "close": 108.43000030517578,
+          "volume": 6263200
+        }
+      },
+      "returns": {
+        "day": 0.7458313295878094,
+        "week": -8.158879242067629,
+        "month": -5.3214024041563945
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 78,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 102.66,
+      "regularCloseDifference": 3.662109378410605e-06,
+      "holdingsObservedAt": "2026-11-03T21:45:23.571170+00:00",
+      "holdingsTop5": [
+        {
+          "ticker": "PLTR",
+          "name": "PALANTIR TECHNOLOGIES CLASS A",
+          "weightPct": 8.95,
+          "shortName": "PALANTIR TECHNOLOGIES CLASS A"
+        },
+        {
+          "ticker": "PANW",
+          "name": "PALO ALTO NETWORKS",
+          "weightPct": 8.93,
+          "shortName": "Palo Alto Networks, Inc."
+        },
+        {
+          "ticker": "MSFT",
+          "name": "MICROSOFT",
+          "weightPct": 8.77,
+          "shortName": "MICROSOFT CORP"
+        },
+        {
+          "ticker": "CRWD",
+          "name": "CROWDSTRIKE HOLDINGS CLASS A",
+          "weightPct": 8.45,
+          "shortName": "CrowdStrike Holdings, Inc. (Class A)"
+        },
+        {
+          "ticker": "ORCL",
+          "name": "ORACLE",
+          "weightPct": 6.27,
+          "shortName": "ORACLE"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "FDN",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:44:53.494945+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/FDN?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "d56f9fa00418c26df1df7aea88cbf69903a41762f325950e0fee90105b810a9b",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 263.8800048828125,
+        "high": 266.9399108886719,
+        "low": 263.0409851074219,
+        "close": 266.3800048828125,
+        "volume": 158282
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 267.1400146484375,
+          "high": 269.260009765625,
+          "low": 262.760009765625,
+          "close": 263.1300048828125,
+          "volume": 182300
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 281.19000244140625,
+          "high": 283.69000244140625,
+          "low": 280.0,
+          "close": 282.1700134277344,
+          "volume": 162500
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 292.5,
+          "high": 293.1300048828125,
+          "low": 290.7799987792969,
+          "close": 291.75,
+          "volume": 109300
+        }
+      },
+      "returns": {
+        "day": 1.235130900958037,
+        "week": -5.5959201167794514,
+        "month": -8.695799526028281
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 77,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 266.38,
+      "regularCloseDifference": 4.8828125045474735e-06,
+      "holdingsObservedAt": "2026-11-03T21:45:22.635498+00:00",
+      "holdingsTop5": [
+        {
+          "name": "Amazon.com, Inc.",
+          "ticker": "AMZN",
+          "weightPct": 10.65,
+          "shortName": "Amazon.com, Inc."
+        },
+        {
+          "name": "Meta Platforms, Inc. (Class A)",
+          "ticker": "META",
+          "weightPct": 10.15,
+          "shortName": "Meta Platforms, Inc. (Class A)"
+        },
+        {
+          "name": "Cisco Systems, Inc.",
+          "ticker": "CSCO",
+          "weightPct": 8.84,
+          "shortName": "Cisco Systems, Inc."
+        },
+        {
+          "name": "Netflix, Inc.",
+          "ticker": "NFLX",
+          "weightPct": 5.65,
+          "shortName": "Netflix, Inc."
+        },
+        {
+          "name": "Alphabet Inc. (Class A)",
+          "ticker": "GOOGL",
+          "weightPct": 5.12,
+          "shortName": "Alphabet Inc. (Class A)"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "CIBR",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:44:42.356674+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/CIBR?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "e3f6e8cf94761abe04ccf831b431ad29eb91b3b79a86171e98cb54754e2f9911",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 96.36000061035156,
+        "high": 98.05380249023438,
+        "low": 95.77010345458984,
+        "close": 97.22000122070312,
+        "volume": 2684974
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 101.38999938964844,
+          "high": 101.38999938964844,
+          "low": 96.56999969482422,
+          "close": 96.75,
+          "volume": 3267700
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 108.08999633789062,
+          "high": 110.08000183105469,
+          "low": 108.08999633789062,
+          "close": 109.6500015258789,
+          "volume": 1447000
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 105.0199966430664,
+          "high": 105.66999816894531,
+          "low": 104.51000213623047,
+          "close": 104.69999694824219,
+          "volume": 2509300
+        }
+      },
+      "returns": {
+        "day": 0.48578937540375566,
+        "week": -11.336069432011941,
+        "month": -7.1442177130499385
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 78,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 97.22,
+      "regularCloseDifference": 1.2207031261368684e-06,
+      "holdingsObservedAt": "2026-11-03T21:45:31.292533+00:00",
+      "holdingsTop5": [
+        {
+          "name": "CrowdStrike Holdings, Inc. (Class A)",
+          "ticker": "CRWD",
+          "weightPct": 8.65,
+          "shortName": "CrowdStrike Holdings, Inc. (Class A)"
+        },
+        {
+          "name": "Cisco Systems, Inc.",
+          "ticker": "CSCO",
+          "weightPct": 7.6,
+          "shortName": "Cisco Systems, Inc."
+        },
+        {
+          "name": "Palo Alto Networks, Inc.",
+          "ticker": "PANW",
+          "weightPct": 7.6,
+          "shortName": "Palo Alto Networks, Inc."
+        },
+        {
+          "name": "Broadcom Inc.",
+          "ticker": "AVGO",
+          "weightPct": 7.19,
+          "shortName": "BROADCOM INC"
+        },
+        {
+          "name": "Fortinet, Inc.",
+          "ticker": "FTNT",
+          "weightPct": 6.1,
+          "shortName": "Fortinet, Inc."
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "CLOU",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:44:42.357304+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/CLOU?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "c04101ccb7e76171d976a300959dec8fdc59e782d46313700ff2b8e9c9485fea",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 26.96500015258789,
+        "high": 27.59000015258789,
+        "low": 26.860000610351562,
+        "close": 27.43000030517578,
+        "volume": 212261
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 28.1299991607666,
+          "high": 28.15999984741211,
+          "low": 27.290000915527344,
+          "close": 27.350000381469727,
+          "volume": 143000
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 30.479999542236328,
+          "high": 30.780000686645508,
+          "low": 30.219999313354492,
+          "close": 30.3799991607666,
+          "volume": 402500
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 29.239999771118164,
+          "high": 29.31999969482422,
+          "low": 28.739999771118164,
+          "close": 28.809999465942383,
+          "volume": 351000
+        }
+      },
+      "returns": {
+        "day": 0.2925042873500594,
+        "week": -9.710332248463372,
+        "month": -4.790000646816961
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 76,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 27.43,
+      "regularCloseDifference": 3.051757815342171e-07,
+      "holdingsObservedAt": "2026-11-03T21:45:24.785672+00:00",
+      "holdingsTop5": [
+        {
+          "ticker": "SNOW",
+          "name": "SNOWFLAKE INC",
+          "weightPct": 6.4,
+          "shortName": "Snowflake"
+        },
+        {
+          "ticker": "PAYC",
+          "name": "PAYCOM SOFTWARE INC",
+          "weightPct": 6.31,
+          "shortName": "Paycom Software"
+        },
+        {
+          "ticker": "ZS",
+          "name": "ZSCALER INC",
+          "weightPct": 5.15,
+          "shortName": "ZSCALER INC"
+        },
+        {
+          "ticker": "DDOG",
+          "name": "DATADOG INC - CLASS A",
+          "weightPct": 4.91,
+          "shortName": "Datadog A"
+        },
+        {
+          "ticker": "WDAY",
+          "name": "WORKDAY INC-CLASS A",
+          "weightPct": 4.86,
+          "shortName": "WORKDAY INC-CLASS A"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "XLK",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:45:10.634960+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLK?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "328753eff1ab1b12405cc65e86985c0b9a8d0c8078e356cde6e0caac668beae7",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 175.1999969482422,
+        "high": 177.47000122070312,
+        "low": 174.8000030517578,
+        "close": 176.50999450683594,
+        "volume": 10775148
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 180.39999389648438,
+          "high": 180.88999938964844,
+          "low": 173.91000366210938,
+          "close": 174.22000122070312,
+          "volume": 15284100
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 187.57000732421875,
+          "high": 190.10000610351562,
+          "low": 187.10000610351562,
+          "close": 189.49000549316406,
+          "volume": 7725700
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 201.16000366210938,
+          "high": 201.38999938964844,
+          "low": 199.35000610351562,
+          "close": 199.80999755859375,
+          "volume": 8941200
+        }
+      },
+      "returns": {
+        "day": 1.314426168113636,
+        "week": -6.849971296663659,
+        "month": -11.661079693935307
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 78,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 176.51,
+      "regularCloseDifference": -5.493164053405053e-06,
+      "holdingsObservedAt": "2026-11-03T21:48:43.870644+00:00",
+      "holdingsTop5": [
+        {
+          "name": "APPLE INC",
+          "ticker": "AAPL",
+          "weightPct": 15.50188,
+          "shortName": "APPLE INC"
+        },
+        {
+          "name": "NVIDIA CORP",
+          "ticker": "NVDA",
+          "weightPct": 15.352274,
+          "shortName": "NVIDIA"
+        },
+        {
+          "name": "MICROSOFT CORP",
+          "ticker": "MSFT",
+          "weightPct": 11.822676,
+          "shortName": "MICROSOFT CORP"
+        },
+        {
+          "name": "BROADCOM INC",
+          "ticker": "AVGO",
+          "weightPct": 4.813149,
+          "shortName": "BROADCOM INC"
+        },
+        {
+          "name": "ADVANCED MICRO DEVICES",
+          "ticker": "AMD",
+          "weightPct": 4.331395,
+          "shortName": "ADVANCED MICRO DEVICES"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "SMH",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:45:01.855981+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/SMH?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "366e70ed942970fd64af6a0b39563975c83052f67fb327ecd2263034f88a704d",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 520.6799926757812,
+        "high": 524.7000122070312,
+        "low": 515.5,
+        "close": 518.52001953125,
+        "volume": 8674185
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 529.0499877929688,
+          "high": 532.760009765625,
+          "low": 506.44000244140625,
+          "close": 508.30999755859375,
+          "volume": 8865800
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 549.1699829101562,
+          "high": 559.8099975585938,
+          "low": 546.6699829101562,
+          "close": 557.97998046875,
+          "volume": 8067100
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 632.27001953125,
+          "high": 636.25,
+          "low": 628.5499877929688,
+          "close": 630.5999755859375,
+          "volume": 7324900
+        }
+      },
+      "returns": {
+        "day": 2.0086211213029115,
+        "week": -7.071931309139501,
+        "month": -17.77354272025552
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 78,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 518.52,
+      "regularCloseDifference": 1.9531250018189894e-05,
+      "holdingsObservedAt": "2026-11-03T21:45:27.416372+00:00",
+      "holdingsTop5": [
+        {
+          "ticker": "NVDA",
+          "name": "Nvidia Corp",
+          "weightPct": 20.52,
+          "shortName": "NVIDIA"
+        },
+        {
+          "ticker": "TSM",
+          "name": "Taiwan Semiconductor Manufacturing Co L",
+          "weightPct": 9.67,
+          "shortName": "Taiwan Semiconductor Manufacturing Co L"
+        },
+        {
+          "ticker": "TXN",
+          "name": "Texas Instruments Inc",
+          "weightPct": 5.89,
+          "shortName": "Texas Instruments Inc"
+        },
+        {
+          "ticker": "AVGO",
+          "name": "Broadcom Inc",
+          "weightPct": 5.71,
+          "shortName": "BROADCOM INC"
+        },
+        {
+          "ticker": "AMD",
+          "name": "Advanced Micro Devices Inc",
+          "weightPct": 5.09,
+          "shortName": "ADVANCED MICRO DEVICES"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    },
+    {
+      "ticker": "SOXX",
+      "actualLastSession": "2026-11-03",
+      "regularSessionEnd": "2026-11-03T21:00:00+00:00",
+      "observedAt": "2026-11-03T21:45:05.063443+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/SOXX?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "99317c7d9ea14ae3e3eb8c28f50820b57640b19fcc63fb21666fbe1d60cc284a",
+      "lastOHLCV": {
+        "date": "2026-11-03",
+        "open": 466.010009765625,
+        "high": 472.6300048828125,
+        "low": 461.8299865722656,
+        "close": 465.0,
+        "volume": 12804593
+      },
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-02",
+          "open": 476.5799865722656,
+          "high": 479.9200134277344,
+          "low": 452.1000061035156,
+          "close": 453.6499938964844,
+          "volume": 10805300
+        },
+        "week": {
+          "date": "2026-10-27",
+          "open": 499.8399963378906,
+          "high": 513.1599731445312,
+          "low": 498.3500061035156,
+          "close": 511.05999755859375,
+          "volume": 8684800
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 590.9099731445312,
+          "high": 596.4400024414062,
+          "low": 587.25,
+          "close": 588.9000244140625,
+          "volume": 6877400
+        }
+      },
+      "returns": {
+        "day": 2.501930178820966,
+        "week": -9.012639959814683,
+        "month": -21.03922894846867
+      },
+      "intradayDate": "2026-11-03",
+      "intradayPointCount": 78,
+      "holdingsAsOf": "2026-11-02",
+      "wholeBarReplacement": false,
+      "independentRegularClose": 465,
+      "regularCloseDifference": 0.0,
+      "holdingsObservedAt": "2026-11-03T21:45:31.122028+00:00",
+      "holdingsTop5": [
+        {
+          "ticker": "AMD",
+          "name": "ADVANCED MICRO DEVICES",
+          "weightPct": 8.88,
+          "shortName": "ADVANCED MICRO DEVICES"
+        },
+        {
+          "ticker": "NVDA",
+          "name": "NVIDIA",
+          "weightPct": 8.19,
+          "shortName": "NVIDIA"
+        },
+        {
+          "ticker": "AVGO",
+          "name": "BROADCOM INC",
+          "weightPct": 7.79,
+          "shortName": "BROADCOM INC"
+        },
+        {
+          "ticker": "MU",
+          "name": "MICRON TECHNOLOGY",
+          "weightPct": 7.79,
+          "shortName": "MICRON TECHNOLOGY"
+        },
+        {
+          "ticker": "INTC",
+          "name": "INTEL CORPORATION",
+          "weightPct": 6.0,
+          "shortName": "INTEL CORPORATION"
+        }
+      ],
+      "retainedHistoricalDates": [
+        "2025-11-03"
+      ],
+      "overlappingPriceBasisCheckCount": 250,
+      "dailyBarCount": 252
+    }
+  ],
+  "tradingViewCheck": {
+    "observedAt": "2026-11-03T21:45:37.525667+00:00",
+    "url": "https://scanner.tradingview.com/america/scan",
+    "columns": [
+      "name",
+      "exchange",
+      "close",
+      "open",
+      "high",
+      "low",
+      "volume",
+      "change",
+      "type",
+      "currency",
+      "update_mode",
+      "last_bar_update_time"
+    ],
+    "response": {
+      "totalCount": 44,
+      "data": [
+        {
+          "s": "AMEX:XRT",
+          "d": [
+            "XRT",
+            "AMEX",
+            88.8,
+            90.39,
+            90.57,
+            88.75,
+            5237743,
+            -1.9218025182239993,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793742164
+          ]
+        },
+        {
+          "s": "NYSE:EL",
+          "d": [
+            "EL",
+            "NYSE",
+            105.39,
+            105.58,
+            107.099,
+            104.34,
+            4348121,
+            0.5917724539467448,
+            "stock",
+            "USD",
+            "delayed_streaming_900",
+            1793742268
+          ]
+        },
+        {
+          "s": "AMEX:IAI",
+          "d": [
+            "IAI",
+            "AMEX",
+            179.66,
+            179.56,
+            180.37,
+            178.67,
+            49375,
+            -0.04450873483921915,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793741135
+          ]
+        },
+        {
+          "s": "AMEX:XLE",
+          "d": [
+            "XLE",
+            "AMEX",
+            66.68,
+            66.63,
+            67.485,
+            66.46,
+            30424446,
+            -0.8475836431226664,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793742288
+          ]
+        },
+        {
+          "s": "NASDAQ:SOXX",
+          "d": [
+            "SOXX",
+            "NASDAQ",
+            465,
+            466.01,
+            472.63,
+            461.83,
+            12883071,
+            2.501928799735484,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793742333
+          ]
+        },
+        {
+          "s": "AMEX:LIT",
+          "d": [
+            "LIT",
+            "AMEX",
+            60.1,
+            60.39,
+            60.61,
+            59.97,
+            220515,
+            0.08326394671108121,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793741688
+          ]
+        },
+        {
+          "s": "AMEX:XLU",
+          "d": [
+            "XLU",
+            "AMEX",
+            43.42,
+            43.52,
+            43.73,
+            43.29,
+            25663327,
+            -0.572475383558507,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793742317
+          ]
+        },
+        {
+          "s": "AMEX:XLB",
+          "d": [
+            "XLB",
+            "AMEX",
+            52.59,
+            53.5,
+            53.53,
+            52.53,
+            13692697,
+            -2.012297372833982,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793741945
+          ]
+        },
+        {
+          "s": "AMEX:XLK",
+          "d": [
+            "XLK",
+            "AMEX",
+            176.51,
+            175.2,
+            177.48,
+            174.8,
+            10782534,
+            1.3144300309952888,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793742302
+          ]
+        },
+        {
+          "s": "AMEX:XHB",
+          "d": [
+            "XHB",
+            "AMEX",
+            101.98,
+            104.02,
+            104.608,
+            101.885,
+            1805251,
+            -2.486135016255493,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793741679
+          ]
+        },
+        {
+          "s": "AMEX:FAN",
+          "d": [
+            "FAN",
+            "AMEX",
+            22.34,
+            22.26,
+            22.34,
+            22.26,
+            13435,
+            1.3611615245009108,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793741072
+          ]
+        },
+        {
+          "s": "AMEX:XLY",
+          "d": [
+            "XLY",
+            "AMEX",
+            117.33,
+            118.32,
+            118.39,
+            116.83,
+            10245875,
+            -0.7024373730534853,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793741447
+          ]
+        },
+        {
+          "s": "AMEX:IHF",
+          "d": [
+            "IHF",
+            "AMEX",
+            59.41,
+            58.84,
+            59.59,
+            58.81,
+            1594591,
+            0.6949152542372824,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793741135
+          ]
+        },
+        {
+          "s": "AMEX:CRAK",
+          "d": [
+            "CRAK",
+            "AMEX",
+            60.6,
+            60.73,
+            61.11,
+            60.405,
+            494802,
+            -0.6068558307364236,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793741135
+          ]
+        },
+        {
+          "s": "AMEX:XPH",
+          "d": [
+            "XPH",
+            "AMEX",
+            64.3,
+            64.03,
+            65.12,
+            64.03,
+            728198,
+            1.0847351045433071,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793741105
+          ]
+        },
+        {
+          "s": "AMEX:KBE",
+          "d": [
+            "KBE",
+            "AMEX",
+            66.59,
+            67.17,
+            67.41,
+            66.43,
+            1498123,
+            -0.9519559720362941,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793741147
+          ]
+        },
+        {
+          "s": "NYSE:DD",
+          "d": [
+            "DD",
+            "NYSE",
+            153.46,
+            149.95,
+            155.61,
+            143.36,
+            2885573,
+            8.605803255484782,
+            "stock",
+            "USD",
+            "delayed_streaming_900",
+            1793742287
+          ]
+        },
+        {
+          "s": "NASDAQ:SMH",
+          "d": [
+            "SMH",
+            "NASDAQ",
+            518.52,
+            520.68,
+            524.7,
+            515.49,
+            8722647,
+            2.0086167889673585,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793742332
+          ]
+        },
+        {
+          "s": "AMEX:XAR",
+          "d": [
+            "XAR",
+            "AMEX",
+            234.07,
+            232.73,
+            237.36,
+            232.21,
+            279486,
+            1.2895408715219134,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793742087
+          ]
+        },
+        {
+          "s": "NYSE:ELF",
+          "d": [
+            "ELF",
+            "NYSE",
+            111.5,
+            110.5975,
+            113.336,
+            110.425,
+            1215431,
+            0.740874593422473,
+            "stock",
+            "USD",
+            "delayed_streaming_900",
+            1793742228
+          ]
+        },
+        {
+          "s": "NASDAQ:CIBR",
+          "d": [
+            "CIBR",
+            "NASDAQ",
+            97.22,
+            96.36,
+            98.0538,
+            95.7701,
+            2686053,
+            0.4857881136950893,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793742229
+          ]
+        },
+        {
+          "s": "AMEX:XME",
+          "d": [
+            "XME",
+            "AMEX",
+            96.76,
+            97.97,
+            98.13,
+            96.49,
+            1229397,
+            -0.9215646119188936,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793742047
+          ]
+        },
+        {
+          "s": "AMEX:XLI",
+          "d": [
+            "XLI",
+            "AMEX",
+            171.32,
+            170.71,
+            172.4,
+            170.34,
+            9822251,
+            0.9486771551470067,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793741756
+          ]
+        },
+        {
+          "s": "AMEX:TAN",
+          "d": [
+            "TAN",
+            "AMEX",
+            43.34,
+            42.41,
+            43.533,
+            42.22,
+            4358736,
+            3.018778226764923,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793742281
+          ]
+        },
+        {
+          "s": "CBOE:IYT",
+          "d": [
+            "IYT",
+            "CBOE",
+            82.68,
+            82.99,
+            83.3,
+            82.32,
+            674485,
+            -0.48146364949445297,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793741155
+          ]
+        },
+        {
+          "s": "CBOE:IGV",
+          "d": [
+            "IGV",
+            "CBOE",
+            102.66,
+            101,
+            103.28,
+            100.56,
+            7847176,
+            0.745829244357204,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793742329
+          ]
+        },
+        {
+          "s": "CBOE:ITA",
+          "d": [
+            "ITA",
+            "CBOE",
+            216.17,
+            214.87,
+            218.75,
+            214.77,
+            1268117,
+            0.694056269796898,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793742007
+          ]
+        },
+        {
+          "s": "NYSE:COTY",
+          "d": [
+            "COTY",
+            "NYSE",
+            3.29,
+            3.47,
+            3.475,
+            3.2,
+            9862499,
+            -5.459770114942527,
+            "stock",
+            "USD",
+            "delayed_streaming_900",
+            1793741277
+          ]
+        },
+        {
+          "s": "AMEX:XBI",
+          "d": [
+            "XBI",
+            "AMEX",
+            154.97,
+            152.96,
+            156.92,
+            152.83,
+            6380198,
+            1.9204209141729611,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793742287
+          ]
+        },
+        {
+          "s": "NASDAQ:CLOU",
+          "d": [
+            "CLOU",
+            "NASDAQ",
+            27.43,
+            26.965,
+            27.59,
+            26.86,
+            212566,
+            0.292504570383906,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793741829
+          ]
+        },
+        {
+          "s": "AMEX:XLP",
+          "d": [
+            "XLP",
+            "AMEX",
+            88.95,
+            89.902,
+            90.24,
+            88.9,
+            22248935,
+            -2.069800726632165,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793742066
+          ]
+        },
+        {
+          "s": "AMEX:XLRE",
+          "d": [
+            "XLRE",
+            "AMEX",
+            43.67,
+            43.5,
+            43.67,
+            43.3,
+            7268092,
+            0.0687442713107267,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793741507
+          ]
+        },
+        {
+          "s": "AMEX:BATT",
+          "d": [
+            "BATT",
+            "AMEX",
+            12.74,
+            12.8,
+            12.85,
+            12.69,
+            41330,
+            0.0785545954438318,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793741288
+          ]
+        },
+        {
+          "s": "NYSE:LYB",
+          "d": [
+            "LYB",
+            "NYSE",
+            66.09,
+            66.355,
+            67.19,
+            64.745,
+            3761098,
+            -1.181220095693768,
+            "stock",
+            "USD",
+            "delayed_streaming_900",
+            1793742227
+          ]
+        },
+        {
+          "s": "NASDAQ:IBB",
+          "d": [
+            "IBB",
+            "NASDAQ",
+            215.47,
+            214.96,
+            218.12,
+            214.52,
+            1680549,
+            0.7858178586463384,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793742297
+          ]
+        },
+        {
+          "s": "AMEX:XLC",
+          "d": [
+            "XLC",
+            "AMEX",
+            101.44,
+            100.492,
+            101.635,
+            100.175,
+            13240324,
+            1.1769399561140959,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793742200
+          ]
+        },
+        {
+          "s": "NASDAQ:ICLN",
+          "d": [
+            "ICLN",
+            "NASDAQ",
+            16.11,
+            15.915,
+            16.14,
+            15.88,
+            8306147,
+            2.4157660521296824,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793742071
+          ]
+        },
+        {
+          "s": "AMEX:KRE",
+          "d": [
+            "KRE",
+            "AMEX",
+            72.88,
+            73.68,
+            73.79,
+            72.7,
+            12063794,
+            -1.1528550115285616,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793742213
+          ]
+        },
+        {
+          "s": "AMEX:XLV",
+          "d": [
+            "XLV",
+            "AMEX",
+            184.02,
+            183.68,
+            185.72,
+            183.57,
+            11274239,
+            -0.3141928494041084,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793742311
+          ]
+        },
+        {
+          "s": "AMEX:XOP",
+          "d": [
+            "XOP",
+            "AMEX",
+            191.52,
+            192.22,
+            194.24,
+            191.43,
+            3217646,
+            -1.0539367637941683,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793741567
+          ]
+        },
+        {
+          "s": "AMEX:XLF",
+          "d": [
+            "XLF",
+            "AMEX",
+            57.19,
+            57.36,
+            57.47,
+            56.96,
+            30403817,
+            -0.6428075052119606,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793742317
+          ]
+        },
+        {
+          "s": "AMEX:IHI",
+          "d": [
+            "IHI",
+            "AMEX",
+            56.43,
+            56.21,
+            56.795,
+            55.98,
+            2691330,
+            -0.14156786409484745,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793742072
+          ]
+        },
+        {
+          "s": "AMEX:FDN",
+          "d": [
+            "FDN",
+            "AMEX",
+            266.38,
+            263.88,
+            266.9399,
+            263.04,
+            158322,
+            1.235130923877931,
+            "fund",
+            "USD",
+            "delayed_streaming_900",
+            1793742316
+          ]
+        },
+        {
+          "s": "NYSE:DOW",
+          "d": [
+            "DOW",
+            "NYSE",
+            33.79,
+            34.03,
+            34.218,
+            33.19,
+            6876621,
+            -1.1410181392627285,
+            "stock",
+            "USD",
+            "delayed_streaming_900",
+            1793742229
+          ]
+        }
+      ]
+    }
+  },
+  "methodology": "All 38 actual completed-session daily tails, regular-session intraday dates, OHLC and price-only return anchors inspected. Adjusted-close analysis returns are distinct from price-only charts. All 38 issuer holdings re-read with actual issuer dates (Nov2, and BATT Nov3), not price date relabeling. Full-candle TradingView alternatives only for malformed Yahoo bars. Preserve previous historical candles outside rolling window only after all overlapping close prices confirm unchanged split-adjustment basis.",
+  "holdingsChecks": [
+    {
+      "ticker": "TAN",
+      "previousAsOf": "2026-10-23",
+      "checks": [
+        {
+          "url": "https://dng-api.invesco.com/cache/v1/accounts/en_US/shareclasses/46138G706/holdings/fund?idType=cusip&productType=ETF",
+          "observedAt": "2026-11-03T21:45:06.357120+00:00",
+          "status": 200,
+          "contentType": "text/plain;charset=UTF-8",
+          "sha256": "0a99c6056811eade44a22e1cf09c5f3dce5da4b53f0a6cb7724cb22b71d427d7",
+          "bytes": 15436
+        }
+      ]
+    },
+    {
+      "ticker": "XHB",
+      "previousAsOf": "2026-10-28",
+      "checks": [
+        {
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-homebuilders-etf-xhb",
+          "observedAt": "2026-11-03T21:45:06.358125+00:00",
+          "status": 200,
+          "contentType": "text/html;charset=utf-8",
+          "sha256": "532ee9d9f99d719e047a30308ee9bc6e85db37b3861fc76d716c283bf8a17a59",
+          "bytes": 237636
+        }
+      ]
+    },
+    {
+      "ticker": "IHI",
+      "previousAsOf": "2026-10-28",
+      "checks": [
+        {
+          "url": "https://www.ishares.com/us/products/239516/ishares-u-s-medical-devices-etf/latest-holdings.csv",
+          "observedAt": "2026-11-03T21:45:06.358630+00:00",
+          "status": 200,
+          "contentType": "text/plain; charset=utf-8",
+          "sha256": "e8e819407f1116cbc969a61efc4c297e5c864d784e7700e0a1b6288e39da8097",
+          "bytes": 8816
+        }
+      ]
+    },
+    {
+      "ticker": "ICLN",
+      "previousAsOf": "2026-10-27",
+      "checks": [
+        {
+          "url": "https://www.ishares.com/us/products/239738/ishares-global-clean-energy-etf/latest-holdings.csv",
+          "observedAt": "2026-11-03T21:45:06.359119+00:00",
+          "status": 200,
+          "contentType": "text/plain; charset=utf-8",
+          "sha256": "ff0e0e17086bfe0a1a86622afa58bfb769dbb7ae4b701b184376da6d79febcee",
+          "bytes": 23483
+        }
+      ]
+    },
+    {
+      "ticker": "XLY",
+      "previousAsOf": "2026-10-28",
+      "checks": [
+        {
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-consumer-discretionary-select-sector-spdr-etf-xly",
+          "observedAt": "2026-11-03T21:45:06.359815+00:00",
+          "status": 200,
+          "contentType": "text/html;charset=utf-8",
+          "sha256": "656ffd8bc7d70afa1dde6b96710fab24e3fb052a9acabd8483190ed99963e73c",
+          "bytes": 242683
+        }
+      ]
+    },
+    {
+      "ticker": "KRE",
+      "previousAsOf": "2026-10-28",
+      "checks": [
+        {
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-regional-banking-etf-kre",
+          "observedAt": "2026-11-03T21:45:06.360602+00:00",
+          "status": 200,
+          "contentType": "text/html;charset=utf-8",
+          "sha256": "89c69490548acbae62a0db0c0cd666e2f157ca6ec1ac368593a1aa1a27b0b5f9",
+          "bytes": 232049
+        }
+      ]
+    },
+    {
+      "ticker": "ITA",
+      "previousAsOf": "2026-10-28",
+      "checks": [
+        {
+          "url": "https://www.ishares.com/us/products/239502/ishares-u-s-aerospace-defense-etf/latest-holdings.csv",
+          "observedAt": "2026-11-03T21:45:06.361318+00:00",
+          "status": 200,
+          "contentType": "text/plain; charset=utf-8",
+          "sha256": "070ef9851616d00095496beacc90eb8f6786157dfbdf106aec03228a6f48cad6",
+          "bytes": 8917
+        }
+      ]
+    },
+    {
+      "ticker": "KBE",
+      "previousAsOf": "2026-10-28",
+      "checks": [
+        {
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-bank-etf-kbe",
+          "observedAt": "2026-11-03T21:45:06.363045+00:00",
+          "status": 200,
+          "contentType": "text/html;charset=utf-8",
+          "sha256": "8acb4f1d74f23e6ad032f21db2e739f80baa5bde3aeedd7fc19f74b2afaf3ae1",
+          "bytes": 233879
+        }
+      ]
+    },
+    {
+      "ticker": "XRT",
+      "previousAsOf": "2026-10-28",
+      "checks": [
+        {
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-retail-etf-xrt",
+          "observedAt": "2026-11-03T21:45:12.106141+00:00",
+          "status": 200,
+          "contentType": "text/html;charset=utf-8",
+          "sha256": "2a0599ed9abda081114d0efe8681d90084b5ae823f358565ee0de3ed170a0cd1",
+          "bytes": 233161
+        }
+      ]
+    },
+    {
+      "ticker": "XLF",
+      "previousAsOf": "2026-10-28",
+      "checks": [
+        {
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-financial-select-sector-spdr-etf-xlf",
+          "observedAt": "2026-11-03T21:45:12.109896+00:00",
+          "status": 200,
+          "contentType": "text/html;charset=utf-8",
+          "sha256": "4b6f13f173d717224033935982a8b0fd2c93892206c3054afa6f528b4a25e0e3",
+          "bytes": 238618
+        }
+      ]
+    },
+    {
+      "ticker": "IYT",
+      "previousAsOf": "2026-10-28",
+      "checks": [
+        {
+          "url": "https://www.ishares.com/us/products/239501/ishares-u-s-transportation-etf/latest-holdings.csv",
+          "observedAt": "2026-11-03T21:45:12.127851+00:00",
+          "status": 200,
+          "contentType": "text/plain; charset=utf-8",
+          "sha256": "63f22f43d3765996fe7a73191ce8cf2cfe2391e4b2b00091dd160e043d41d700",
+          "bytes": 8139
+        }
+      ]
+    },
+    {
+      "ticker": "XLB",
+      "previousAsOf": "2026-10-28",
+      "checks": [
+        {
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-materials-select-sector-spdr-etf-xlb",
+          "observedAt": "2026-11-03T21:45:12.203172+00:00",
+          "status": 200,
+          "contentType": "text/html;charset=utf-8",
+          "sha256": "c1bf9ad672744f7f750174cdd8af55f8a0095074c1ecb0bf39dd1d559a295fa5",
+          "bytes": 237484
+        }
+      ]
+    },
+    {
+      "ticker": "XAR",
+      "previousAsOf": "2026-10-28",
+      "checks": [
+        {
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-aerospace-defense-etf-xar",
+          "observedAt": "2026-11-03T21:45:12.213332+00:00",
+          "status": 200,
+          "contentType": "text/html;charset=utf-8",
+          "sha256": "2bde63db75b98ee70d13a699105bc4018fbdbaee64ca897603e39c509a889634",
+          "bytes": 234338
+        }
+      ]
+    },
+    {
+      "ticker": "XLP",
+      "previousAsOf": "2026-10-28",
+      "checks": [
+        {
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-consumer-staples-select-sector-spdr-etf-xlp",
+          "observedAt": "2026-11-03T21:45:12.221769+00:00",
+          "status": 200,
+          "contentType": "text/html;charset=utf-8",
+          "sha256": "ebe87f13920b883f101579052dcf6a2f24780a544ba28b4cfc8e583c93d2adcb",
+          "bytes": 238961
+        }
+      ]
+    },
+    {
+      "ticker": "XLI",
+      "previousAsOf": "2026-10-28",
+      "checks": [
+        {
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-industrial-select-sector-spdr-etf-xli",
+          "observedAt": "2026-11-03T21:45:12.285484+00:00",
+          "status": 200,
+          "contentType": "text/html;charset=utf-8",
+          "sha256": "54a9cf4b93218e299e093e62501ce5f21d8b11d1e3fbff29d6d3b085ef7ebd98",
+          "bytes": 244915
+        }
+      ]
+    },
+    {
+      "ticker": "IAI",
+      "previousAsOf": "2026-10-28",
+      "checks": [
+        {
+          "url": "https://www.ishares.com/us/products/239504/ishares-u-s-broker-dealers-securities-exchanges-etf/latest-holdings.csv",
+          "observedAt": "2026-11-03T21:45:12.765711+00:00",
+          "status": 200,
+          "contentType": "text/plain; charset=utf-8",
+          "sha256": "acb23383c58c27e9d278875196d3b76380f9c72f735288ec9cc7ca1e38c58873",
+          "bytes": 7412
+        }
+      ]
+    },
+    {
+      "ticker": "FAN",
+      "previousAsOf": "2026-10-28",
+      "checks": [
+        {
+          "url": "https://www.ftportfolios.com/Retail/Etf/EtfHoldings.aspx?Ticker=FAN",
+          "observedAt": "2026-11-03T21:45:16.824241+00:00",
+          "status": 200,
+          "contentType": "text/html; charset=utf-8",
+          "sha256": "2273a3edbb4c0e06813b665a38ca7ca006b9b53084d9c5423ade3e7e54aec6fd",
+          "bytes": 413254
+        }
+      ]
+    },
+    {
+      "ticker": "XLRE",
+      "previousAsOf": "2026-10-28",
+      "checks": [
+        {
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-real-estate-select-sector-spdr-etf-xlre",
+          "observedAt": "2026-11-03T21:45:16.833733+00:00",
+          "status": 200,
+          "contentType": "text/html;charset=utf-8",
+          "sha256": "76e4680327d82979430292d87a9e38e7083531316df1761f3cae338930f29be5",
+          "bytes": 240916
+        }
+      ]
+    },
+    {
+      "ticker": "BATT",
+      "previousAsOf": "2026-10-26",
+      "checks": [
+        {
+          "url": "https://amplifyetfs.com/BATT/",
+          "observedAt": "2026-11-03T21:45:17.393793+00:00",
+          "status": 200,
+          "contentType": "text/html; charset=UTF-8",
+          "sha256": "58a8d74fb7497b84fb92a65a1896dde50b59a7f751781621ab057085ef82ba70",
+          "bytes": 222232
+        }
+      ]
+    },
+    {
+      "ticker": "XLU",
+      "previousAsOf": "2026-10-28",
+      "checks": [
+        {
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-utilities-select-sector-spdr-etf-xlu",
+          "observedAt": "2026-11-03T21:45:17.410057+00:00",
+          "status": 200,
+          "contentType": "text/html;charset=utf-8",
+          "sha256": "9d19595e787c732694c5d464cc838a4a68d4b43a14fad78476edb51bd1fb67d3",
+          "bytes": 238430
+        }
+      ]
+    },
+    {
+      "ticker": "LIT",
+      "previousAsOf": "2026-10-23",
+      "checks": [
+        {
+          "url": "https://www.globalxetfs.com/funds/lit/",
+          "observedAt": "2026-11-03T21:45:17.410427+00:00",
+          "status": 200,
+          "contentType": "text/html; charset=utf-8",
+          "sha256": "2ca49822393b39f9bcd9e9b6c3bd0841ab4b4f6ba43acd55fc3f242eb7d1ba4e",
+          "bytes": 613251
+        }
+      ]
+    },
+    {
+      "ticker": "XLC",
+      "previousAsOf": "2026-10-28",
+      "checks": [
+        {
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-communication-services-select-sector-spdr-etf-xlc",
+          "observedAt": "2026-11-03T21:45:17.433831+00:00",
+          "status": 200,
+          "contentType": "text/html;charset=utf-8",
+          "sha256": "773c314e7899a00f9410e479924337802bc318508a729db010e6152222af2906",
+          "bytes": 238818
+        }
+      ]
+    },
+    {
+      "ticker": "XLV",
+      "previousAsOf": "2026-10-28",
+      "checks": [
+        {
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-health-care-select-sector-spdr-etf-xlv",
+          "observedAt": "2026-11-03T21:45:17.490317+00:00",
+          "status": 200,
+          "contentType": "text/html;charset=utf-8",
+          "sha256": "be23fa18fa7576fe0ae896db427cbb4d5e8985971331db9001e6437c810a7a49",
+          "bytes": 239066
+        }
+      ]
+    },
+    {
+      "ticker": "XME",
+      "previousAsOf": "2026-10-28",
+      "checks": [
+        {
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-metals-mining-etf-xme",
+          "observedAt": "2026-11-03T21:45:17.574738+00:00",
+          "status": 200,
+          "contentType": "text/html;charset=utf-8",
+          "sha256": "c13a235345699b5dd1128525a7361921b6c75001ce5794ee32faae53bc509948",
+          "bytes": 238509
+        }
+      ]
+    },
+    {
+      "ticker": "FDN",
+      "previousAsOf": "2026-10-28",
+      "checks": [
+        {
+          "url": "https://www.ftportfolios.com/Retail/Etf/EtfHoldings.aspx?Ticker=FDN",
+          "observedAt": "2026-11-03T21:45:22.635498+00:00",
+          "status": 200,
+          "contentType": "text/html; charset=utf-8",
+          "sha256": "e5704d1e7efbc83a4efe74e1b24c4177bb97b83cb6950747b9aa4ca66455147d",
+          "bytes": 339502
+        }
+      ]
+    },
+    {
+      "ticker": "IHF",
+      "previousAsOf": "2026-10-28",
+      "checks": [
+        {
+          "url": "https://www.ishares.com/us/products/239510/ishares-u-s-healthcare-providers-etf/latest-holdings.csv",
+          "observedAt": "2026-11-03T21:45:23.323039+00:00",
+          "status": 200,
+          "contentType": "text/plain; charset=utf-8",
+          "sha256": "7782a2be911030d37b2bb5bd0e5b72c9afdc53c3dbe32f25e4d5717d81b95c3f",
+          "bytes": 10517
+        }
+      ]
+    },
+    {
+      "ticker": "IBB",
+      "previousAsOf": "2026-10-28",
+      "checks": [
+        {
+          "url": "https://www.ishares.com/us/products/239699/ishares-biotechnology-etf/latest-holdings.csv",
+          "observedAt": "2026-11-03T21:45:23.354000+00:00",
+          "status": 200,
+          "contentType": "text/plain; charset=utf-8",
+          "sha256": "43eaa8f0cb3b15f9e1a29b5854e08d6f135b2184c053136b7cfd2604cf3ccef0",
+          "bytes": 39551
+        }
+      ]
+    },
+    {
+      "ticker": "XPH",
+      "previousAsOf": "2026-10-28",
+      "checks": [
+        {
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-pharmaceuticals-etf-xph",
+          "observedAt": "2026-11-03T21:45:23.375096+00:00",
+          "status": 200,
+          "contentType": "text/html;charset=utf-8",
+          "sha256": "78a5f2881b9c9740b9b4411c8ec0bd8b04941e575559c97d470e7f1056fe68e3",
+          "bytes": 227982
+        }
+      ]
+    },
+    {
+      "ticker": "CRAK",
+      "previousAsOf": "2026-10-28",
+      "checks": [
+        {
+          "url": "https://www.vaneck.com/us/en/investments/oil-refiners-etf-crak/",
+          "observedAt": "2026-11-03T21:45:23.469310+00:00",
+          "status": 200,
+          "contentType": "text/html; charset=utf-8",
+          "sha256": "7ca00065e89d052199eb404c6cc571d1cee5b99b82d6fc6de0aac64b13510b01",
+          "bytes": 329240
+        }
+      ]
+    },
+    {
+      "ticker": "IGV",
+      "previousAsOf": "2026-10-28",
+      "checks": [
+        {
+          "url": "https://www.ishares.com/us/products/239771/ishares-expanded-tech-software-sector-etf/latest-holdings.csv",
+          "observedAt": "2026-11-03T21:45:23.571170+00:00",
+          "status": 200,
+          "contentType": "text/plain; charset=utf-8",
+          "sha256": "42292027889c755ce422050dc58e4fdb8b59cade26bd77a148f6b4f2571dda0a",
+          "bytes": 18708
+        }
+      ]
+    },
+    {
+      "ticker": "CLOU",
+      "previousAsOf": "2026-10-23",
+      "checks": [
+        {
+          "url": "https://www.globalxetfs.com/funds/clou/",
+          "observedAt": "2026-11-03T21:45:24.785672+00:00",
+          "status": 200,
+          "contentType": "text/html; charset=utf-8",
+          "sha256": "85d1e9c09ff3c7acaf2148d3125f1a1ea0a74a6d552241c61020d2fffd40d648",
+          "bytes": 596526
+        }
+      ]
+    },
+    {
+      "ticker": "XBI",
+      "previousAsOf": "2026-10-28",
+      "checks": [
+        {
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-biotech-etf-xbi",
+          "observedAt": "2026-11-03T21:45:27.415518+00:00",
+          "status": 200,
+          "contentType": "text/html;charset=utf-8",
+          "sha256": "1b03c92a52ccdac212b8ad89799a3ef1d5934d9125c85a0752661e68e0becacf",
+          "bytes": 227748
+        }
+      ]
+    },
+    {
+      "ticker": "SMH",
+      "previousAsOf": "2026-10-28",
+      "checks": [
+        {
+          "url": "https://www.vaneck.com/us/en/investments/semiconductor-etf-smh/holdings/",
+          "observedAt": "2026-11-03T21:45:27.416372+00:00",
+          "status": 200,
+          "contentType": "text/html; charset=utf-8",
+          "sha256": "4c4e6a6b971258035fdf585c88ad0948f951aa75faf8af975f884f048e2e0862",
+          "bytes": 335775
+        }
+      ]
+    },
+    {
+      "ticker": "XLK",
+      "previousAsOf": "2026-10-28",
+      "checks": [
+        {
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-technology-select-sector-spdr-etf-xlk",
+          "observedAt": "2026-11-03T21:45:27.449766+00:00",
+          "status": 200,
+          "contentType": "text/html;charset=utf-8",
+          "sha256": "0531bbe17dceb694cb5c6bdc32398fe22e27cc3d437150b55c462c18d687e21c",
+          "bytes": 239888
+        }
+      ]
+    },
+    {
+      "ticker": "SOXX",
+      "previousAsOf": "2026-10-28",
+      "checks": [
+        {
+          "url": "https://www.ishares.com/us/products/239705/ishares-semiconductor-etf/latest-holdings.csv",
+          "observedAt": "2026-11-03T21:45:31.122028+00:00",
+          "status": 200,
+          "contentType": "text/plain; charset=utf-8",
+          "sha256": "d5aaa8c21dbd79521bc84bdb57698dd8c0d9a9a6404f96c207cc24ce5e111de8",
+          "bytes": 6397
+        }
+      ]
+    },
+    {
+      "ticker": "XLE",
+      "previousAsOf": "2026-10-28",
+      "checks": [
+        {
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-energy-select-sector-spdr-etf-xle",
+          "observedAt": "2026-11-03T21:45:31.281286+00:00",
+          "status": 200,
+          "contentType": "text/html;charset=utf-8",
+          "sha256": "67992c70dafc970b393b07c4044d6b1f1660e27584367791308eddd8f94ac354",
+          "bytes": 235612
+        }
+      ]
+    },
+    {
+      "ticker": "CIBR",
+      "previousAsOf": "2026-10-28",
+      "checks": [
+        {
+          "url": "https://www.ftportfolios.com/Retail/Etf/EtfHoldings.aspx?Ticker=CIBR",
+          "observedAt": "2026-11-03T21:45:31.292533+00:00",
+          "status": 200,
+          "contentType": "text/html; charset=utf-8",
+          "sha256": "3ab27ba552b5e39c33b00126e7b2c3456f1ea70477dde85b85b31b079050b833",
+          "bytes": 332154
+        }
+      ]
+    },
+    {
+      "ticker": "XOP",
+      "previousAsOf": "2026-10-28",
+      "checks": [
+        {
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-oil-gas-exploration-production-etf-xop",
+          "observedAt": "2026-11-03T21:45:31.909949+00:00",
+          "status": 200,
+          "contentType": "text/html;charset=utf-8",
+          "sha256": "0c2a29fef983462277bd16604d7998f2a40e23085e36823fadb36bcc41d52029",
+          "bytes": 231088
+        }
+      ]
+    }
+  ],
+  "holdingsXlsxChecks": [
+    {
+      "ticker": "XHB",
+      "url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xhb.xlsx",
+      "observedAt": "2026-11-03T21:48:10.670294+00:00",
+      "sha256": "8c5b3e69204b4fded8d561fd9e8dd70f51805740c2a257d501116aafdf498836"
+    },
+    {
+      "ticker": "XLY",
+      "url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xly.xlsx",
+      "observedAt": "2026-11-03T21:48:10.672199+00:00",
+      "sha256": "61efcd4ed17fbc624557734257a30be55bf3c5d986c32731a76f298c0a924cfa"
+    },
+    {
+      "ticker": "KRE",
+      "url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-kre.xlsx",
+      "observedAt": "2026-11-03T21:48:10.673214+00:00",
+      "sha256": "91e70b72d1fd02cc26081f0c038e7de00980a6dee260711b5798e10a330433a9"
+    },
+    {
+      "ticker": "KBE",
+      "url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-kbe.xlsx",
+      "observedAt": "2026-11-03T21:48:10.675138+00:00",
+      "sha256": "b581da7d3e63eb239cc6df5da7290fce5887eb5169de442b0e0cc96624cb9122"
+    },
+    {
+      "ticker": "XRT",
+      "url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xrt.xlsx",
+      "observedAt": "2026-11-03T21:48:10.684057+00:00",
+      "sha256": "3e23f9da2264711bc0b5d74dcb29f37595b31b9561b482c5cee6ae7b4d7fd911"
+    },
+    {
+      "ticker": "XLF",
+      "url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xlf.xlsx",
+      "observedAt": "2026-11-03T21:48:10.678200+00:00",
+      "sha256": "0c1e7bfeb168c8c8d2d1b4f74065b32bc6c76d74a2f5429ff9f0fc50f914a632"
+    },
+    {
+      "ticker": "XLB",
+      "url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xlb.xlsx",
+      "observedAt": "2026-11-03T21:48:10.679637+00:00",
+      "sha256": "28193ef0a5fb1ce19d613d06016dbb2f13d5ed8c9f2634f6a7382f8cf447a186"
+    },
+    {
+      "ticker": "XAR",
+      "url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xar.xlsx",
+      "observedAt": "2026-11-03T21:48:10.685074+00:00",
+      "sha256": "4ee255edd836c25daeceabf7c9e81afa7b74b7213ed6669328dd1ef023fe209d"
+    },
+    {
+      "ticker": "XLP",
+      "url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xlp.xlsx",
+      "observedAt": "2026-11-03T21:48:39.606434+00:00",
+      "sha256": "1df5fb741715dbf38d138c7e06bdcd5a70674ac1f77c1a0eb9d9ab11baab049e"
+    },
+    {
+      "ticker": "XLI",
+      "url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xli.xlsx",
+      "observedAt": "2026-11-03T21:48:39.610227+00:00",
+      "sha256": "2c27556a26b549de401fc10c6204d96da7980fd4d45c0323551b0ebd212fc820"
+    },
+    {
+      "ticker": "XLRE",
+      "url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xlre.xlsx",
+      "observedAt": "2026-11-03T21:48:39.614335+00:00",
+      "sha256": "041e631a9a6f7e9b80fe9609cfddfd4edbf866aa93b4607d4ed2c44701110087"
+    },
+    {
+      "ticker": "XLU",
+      "url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xlu.xlsx",
+      "observedAt": "2026-11-03T21:48:39.630289+00:00",
+      "sha256": "fd579ca88be7e413f223bf05fc73a3d7cdf05620a8fca3e2dc718a9b25374a78"
+    },
+    {
+      "ticker": "XLC",
+      "url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xlc.xlsx",
+      "observedAt": "2026-11-03T21:48:39.666567+00:00",
+      "sha256": "333db2f5ecbaae706cc051fd6cf17151801fdb9f927f8b20e34380abadcbc574"
+    },
+    {
+      "ticker": "XLV",
+      "url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xlv.xlsx",
+      "observedAt": "2026-11-03T21:48:39.670138+00:00",
+      "sha256": "4e964e32db4cb3af2825c7e28dda9b434645402b1b574dd895b231ef6a87e4f4"
+    },
+    {
+      "ticker": "XME",
+      "url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xme.xlsx",
+      "observedAt": "2026-11-03T21:48:39.678293+00:00",
+      "sha256": "7e9af65f47a9eea0fcb5e343a5c7a3d1fea9536c8450f567df148e143c4d89e9"
+    },
+    {
+      "ticker": "XPH",
+      "url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xph.xlsx",
+      "observedAt": "2026-11-03T21:48:39.698519+00:00",
+      "sha256": "26c75ed773d0cc464af00a367477f91ac2cbfb2d3ffd2ff7409978dca3a5171f"
+    },
+    {
+      "ticker": "XBI",
+      "url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xbi.xlsx",
+      "observedAt": "2026-11-03T21:48:43.866062+00:00",
+      "sha256": "de5613857a6024405ccfffe3a46912a496b57ce2b9c77ac22640590c83e2748f"
+    },
+    {
+      "ticker": "XLK",
+      "url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xlk.xlsx",
+      "observedAt": "2026-11-03T21:48:43.870644+00:00",
+      "sha256": "98c44652f0df4103e7b47df8f1b3fcc2710ba82c6b3ff26ffec68a4028d1c8cd"
+    },
+    {
+      "ticker": "XLE",
+      "url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xle.xlsx",
+      "observedAt": "2026-11-03T21:48:43.871563+00:00",
+      "sha256": "8c7de91e953724b6701f06a5ccc1bdc05e32b9c23833b8424e15fb47a4376aee"
+    },
+    {
+      "ticker": "XOP",
+      "url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xop.xlsx",
+      "observedAt": "2026-11-03T21:48:43.890016+00:00",
+      "sha256": "bd441c77d3c9ccb3a165729a7ea91e77079aeda4993a6b547ed477cbf207d810"
+    }
+  ],
+  "holdingsVerification": {
+    "count": 38,
+    "actualAsOfCounts": {
+      "2026-11-03": 1,
+      "2026-11-02": 37
+    },
+    "observedAt": "2026-11-03T21:49:41.965879+00:00"
+  }
+}
