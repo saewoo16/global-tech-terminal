@@ -1,0 +1,1969 @@
+{
+  "schemaVersion": 1,
+  "sessionDate": "2026-11-04",
+  "originalReportCutoffAt": "2026-11-05T07:00:00+09:00",
+  "supplementCheckedAt": "2026-11-04T23:01:40.683181+00:00",
+  "additions": {
+    "rows": [
+      {
+        "ticker": "SWK",
+        "name": "Stanley Black & Decker",
+        "period": "2026 Q3",
+        "releaseDate": "2026-11-04",
+        "presentationVersion": 3,
+        "summary": "GAAP 매출 37.32억 달러, 영업이익 4.15억 달러, 희석 EPS 1.83달러. 조정 EPS 2.31달러와 구분한다. 관세 환급 혜택과 CAM 매각으로 분기 간 단순 비교에 주의가 필요하다.",
+        "presentationSummary": "GAAP 매출 37.32억 달러, 영업이익 4.15억 달러, 희석 EPS 1.83달러. 조정 EPS 2.31달러와 구분한다. 관세 환급 혜택과 CAM 매각으로 분기 간 단순 비교에 주의가 필요하다.",
+        "metrics": [
+          {
+            "label": "매출",
+            "basis": "US GAAP · 연결",
+            "value": "3,731.6000 USD million",
+            "yoy": "-0.65%",
+            "qoq": "-5.78%",
+            "consensus": "미확인",
+            "raw": {
+              "value": 3731.6,
+              "previousQuarter": 3960.7,
+              "yearAgoQuarter": 3756.0,
+              "unit": "USD million",
+              "status": "verified",
+              "consensusValue": null,
+              "consensusComparable": false,
+              "yoyPct": -0.6496272630457933,
+              "qoqPct": -5.784331052591707
+            },
+            "sourceIds": [
+              "nov04-supp-swk-0",
+              "nov04-supp-swk-1",
+              "nov04-supp-swk-2",
+              "nov04-supp-swk-3"
+            ]
+          },
+          {
+            "label": "매출총이익",
+            "basis": "US GAAP · 연결",
+            "value": "1,453.5000 USD million",
+            "yoy": "+23.27%",
+            "qoq": "+11.31%",
+            "consensus": "미확인",
+            "raw": {
+              "value": 1453.5,
+              "previousQuarter": 1305.8,
+              "yearAgoQuarter": 1179.1,
+              "unit": "USD million",
+              "status": "verified",
+              "consensusValue": null,
+              "consensusComparable": false,
+              "yoyPct": 23.27198710881182,
+              "qoqPct": 11.31107367131261
+            },
+            "sourceIds": [
+              "nov04-supp-swk-0",
+              "nov04-supp-swk-1",
+              "nov04-supp-swk-2",
+              "nov04-supp-swk-3"
+            ]
+          },
+          {
+            "label": "매출총이익률",
+            "basis": "US GAAP · 연결",
+            "value": "38.9511 %",
+            "yoy": "+7.56pp",
+            "qoq": "+5.98pp",
+            "consensus": "미확인",
+            "raw": {
+              "value": 38.95112016293279,
+              "previousQuarter": 32.96891963541798,
+              "yearAgoQuarter": 31.39243876464323,
+              "unit": "%",
+              "status": "verified",
+              "consensusValue": null,
+              "consensusComparable": false,
+              "yoyPp": 7.558681398289558,
+              "qoqPp": 5.982200527514806
+            },
+            "sourceIds": [
+              "nov04-supp-swk-0",
+              "nov04-supp-swk-1",
+              "nov04-supp-swk-2",
+              "nov04-supp-swk-3"
+            ]
+          },
+          {
+            "label": "영업이익",
+            "basis": "US GAAP · 연결",
+            "value": "415.1000 USD million",
+            "yoy": "+261.90%",
+            "qoq": "-25.65%",
+            "consensus": "미확인",
+            "raw": {
+              "value": 415.1,
+              "previousQuarter": 558.3,
+              "yearAgoQuarter": 114.7,
+              "unit": "USD million",
+              "status": "verified",
+              "consensusValue": null,
+              "consensusComparable": false,
+              "yoyPct": 261.9006102877071,
+              "qoqPct": -25.649292495074327
+            },
+            "sourceIds": [
+              "nov04-supp-swk-0",
+              "nov04-supp-swk-1",
+              "nov04-supp-swk-2",
+              "nov04-supp-swk-3"
+            ]
+          },
+          {
+            "label": "EPS",
+            "basis": "US GAAP · 연결",
+            "value": "1.8300 USD/share",
+            "yoy": "+438.24%",
+            "qoq": "-21.46%",
+            "consensus": "미확인",
+            "raw": {
+              "value": 1.83,
+              "previousQuarter": 2.33,
+              "yearAgoQuarter": 0.34,
+              "unit": "USD/share",
+              "status": "verified",
+              "consensusValue": null,
+              "consensusComparable": false,
+              "yoyPct": 438.235294117647,
+              "qoqPct": -21.45922746781116
+            },
+            "sourceIds": [
+              "nov04-supp-swk-0",
+              "nov04-supp-swk-1",
+              "nov04-supp-swk-2",
+              "nov04-supp-swk-3"
+            ]
+          }
+        ],
+        "sourceIds": [
+          "nov04-supp-swk-0",
+          "nov04-supp-swk-1",
+          "nov04-supp-swk-2",
+          "nov04-supp-swk-3"
+        ],
+        "releaseTiming": {
+          "session": "before_open",
+          "publishedAt": null,
+          "knownPublicBy": "2026-11-04T21:50:24.005776+00:00",
+          "sourceIds": [
+            "nov04-supp-swk-3"
+          ],
+          "note": "11월4일 공식 발표; 07:00 KST 전 수집한 원문. 최초 배포 분단위는 미확인."
+        },
+        "quarterlyHistory": {
+          "unit": "USD million",
+          "currency": "USD",
+          "basis": "US GAAP · 연결",
+          "epsUnit": "USD/share",
+          "epsBasis": "US GAAP · 희석 EPS",
+          "rows": [
+            {
+              "period": "2026-01-03",
+              "periodEnd": "2026-01-03",
+              "fiscalPeriod": "2025 Q4",
+              "revenue": 3684.6,
+              "grossProfit": 1221.9,
+              "grossMargin": 33.162351408565385,
+              "operatingIncome": 309.4,
+              "operatingMargin": 8.397112305270586,
+              "eps": 1.04,
+              "epsBasis": "US GAAP · 희석 EPS",
+              "sourceIds": [
+                "nov04-supp-swk-0"
+              ],
+              "rawEvidence": {
+                "sourceUrl": "https://s29.q4cdn.com/245094436/files/doc_financials/2025/q4/4Q25-Earnings-Release-With-Financials.pdf",
+                "observedAt": "2026-11-04T22:47:35.737135+00:00",
+                "values": {
+                  "revenue": 3684.6,
+                  "grossProfit": 1221.9,
+                  "operatingIncome": 309.4,
+                  "eps": 1.04
+                }
+              },
+              "note": "해당 분기 공식 발표자료의 단독 분기 값."
+            },
+            {
+              "period": "2026-04-04",
+              "periodEnd": "2026-04-04",
+              "fiscalPeriod": "2026 Q1",
+              "revenue": 3846.4,
+              "grossProfit": 1157.3,
+              "grossMargin": 30.08787437603993,
+              "operatingIncome": 160.7,
+              "operatingMargin": 4.177932612312811,
+              "eps": 0.39,
+              "epsBasis": "US GAAP · 희석 EPS",
+              "sourceIds": [
+                "nov04-supp-swk-1"
+              ],
+              "rawEvidence": {
+                "sourceUrl": "https://ir.stanleyblackanddecker.com/news-events/press-releases/news-details/2026/Stanley-Black--Decker-Reports-Strong-1Q-2026-Results/default.aspx",
+                "observedAt": "2026-11-04T22:47:35.737135+00:00",
+                "values": {
+                  "revenue": 3846.4,
+                  "grossProfit": 1157.3,
+                  "operatingIncome": 160.7,
+                  "eps": 0.39
+                }
+              },
+              "note": "해당 분기 공식 발표자료의 단독 분기 값."
+            },
+            {
+              "period": "2026-07-04",
+              "periodEnd": "2026-07-04",
+              "fiscalPeriod": "2026 Q2",
+              "revenue": 3960.7,
+              "grossProfit": 1305.8,
+              "grossMargin": 32.96891963541798,
+              "operatingIncome": 558.3,
+              "operatingMargin": 14.095993132527079,
+              "eps": 2.33,
+              "epsBasis": "US GAAP · 희석 EPS",
+              "sourceIds": [
+                "nov04-supp-swk-2"
+              ],
+              "rawEvidence": {
+                "sourceUrl": "https://newsroom.stanleyblackanddecker.com/2026-07-29-Stanley-Black-Decker-Reports-Solid-2Q-2026-Results",
+                "observedAt": "2026-11-04T22:47:35.737135+00:00",
+                "values": {
+                  "revenue": 3960.7,
+                  "grossProfit": 1305.8,
+                  "operatingIncome": 558.3,
+                  "eps": 2.33
+                }
+              },
+              "note": "해당 분기 공식 발표자료의 단독 분기 값."
+            },
+            {
+              "period": "2026-10-03",
+              "periodEnd": "2026-10-03",
+              "fiscalPeriod": "2026 Q3",
+              "revenue": 3731.6,
+              "grossProfit": 1453.5,
+              "grossMargin": 38.95112016293279,
+              "operatingIncome": 415.1,
+              "operatingMargin": 11.123914674670383,
+              "eps": 1.83,
+              "epsBasis": "US GAAP · 희석 EPS",
+              "sourceIds": [
+                "nov04-supp-swk-3"
+              ],
+              "rawEvidence": {
+                "sourceUrl": "https://newsroom.stanleyblackanddecker.com/2026-11-04-Stanley-Black-Decker-Reports-3Q-2026-Results",
+                "observedAt": "2026-11-04T21:50:24.005776+00:00",
+                "values": {
+                  "revenue": 3731.6,
+                  "grossProfit": 1453.5,
+                  "operatingIncome": 415.1,
+                  "eps": 1.83
+                }
+              },
+              "note": "해당 분기 공식 발표자료의 단독 분기 값."
+            }
+          ],
+          "note": "최근 실제 회계종료 4개 분기, GAAP 연결/희석 EPS. 연간에서 누적 EPS를 빼지 않음."
+        },
+        "releaseHighlights": [
+          "GAAP 매출 37.32억 달러, 영업이익 4.15억 달러, 희석 EPS 1.83달러. 조정 EPS 2.31달러와 구분한다. 관세 환급 혜택과 CAM 매각으로 분기 간 단순 비교에 주의가 필요하다."
+        ],
+        "guidanceMetrics": [
+          {
+            "label": "EPS",
+            "period": "2026 연간",
+            "low": 5.45,
+            "high": 5.85,
+            "unit": "USD/share",
+            "basis": "GAAP 희석 EPS",
+            "sourceIds": [
+              "nov04-supp-swk-3"
+            ]
+          },
+          {
+            "label": "조정 EPS",
+            "period": "2026 연간",
+            "low": 5.95,
+            "high": 6.25,
+            "unit": "USD/share",
+            "basis": "non-GAAP 희석 EPS",
+            "sourceIds": [
+              "nov04-supp-swk-3"
+            ]
+          }
+        ],
+        "consensusMetrics": [],
+        "callHighlights": [],
+        "displayCallHighlights": false,
+        "callStatus": "공식 콜 원문 확인 중 · 발표자료를 콜 요약으로 표시하지 않음",
+        "dataCheckedAt": "2026-11-04T22:47:35.737135+00:00",
+        "universeScope": "sp500",
+        "note": "07:00 기준 공식 원문을 후속 검토한 보완자료. 과거 발표일을 오늘로 바꾸지 않음.",
+        "statusLabel": "공식 실적 발표 · 4분기 비교",
+        "reportCutoffAt": "2026-11-05T07:00:00+09:00",
+        "supplementReviewedAt": "2026-11-04T22:47:35.737135+00:00"
+      },
+      {
+        "ticker": "TRMB",
+        "name": "Trimble",
+        "period": "2026 Q3",
+        "releaseDate": "2026-11-04",
+        "presentationVersion": 3,
+        "summary": "GAAP 매출 9.67억 달러, 영업이익 1.42억 달러, 희석 EPS 0.25달러. 조정 EPS 0.86달러와 구분한다. 직전 분기 GAAP 손실에는 영업권 손상 5.62억 달러가 포함되어 EPS QoQ 백분율은 단순 표시하지 않는다.",
+        "presentationSummary": "GAAP 매출 9.67억 달러, 영업이익 1.42억 달러, 희석 EPS 0.25달러. 조정 EPS 0.86달러와 구분한다. 직전 분기 GAAP 손실에는 영업권 손상 5.62억 달러가 포함되어 EPS QoQ 백분율은 단순 표시하지 않는다.",
+        "metrics": [
+          {
+            "label": "매출",
+            "basis": "US GAAP · 연결",
+            "value": "966.8000 USD million",
+            "yoy": "+7.28%",
+            "qoq": "-0.53%",
+            "consensus": "미확인",
+            "raw": {
+              "value": 966.8,
+              "previousQuarter": 972,
+              "yearAgoQuarter": 901.2,
+              "unit": "USD million",
+              "status": "verified",
+              "consensusValue": null,
+              "consensusComparable": false,
+              "yoyPct": 7.27918331114068,
+              "qoqPct": -0.5349794238683203
+            },
+            "sourceIds": [
+              "nov04-supp-trmb-0",
+              "nov04-supp-trmb-1",
+              "nov04-supp-trmb-2",
+              "nov04-supp-trmb-3",
+              "nov04-supp-trmb-periods-q2",
+              "nov04-supp-trmb-periods-q1",
+              "nov04-supp-trmb-periods-q3"
+            ]
+          },
+          {
+            "label": "매출총이익",
+            "basis": "US GAAP · 연결",
+            "value": "659.1000 USD million",
+            "yoy": "+6.12%",
+            "qoq": "-2.34%",
+            "consensus": "미확인",
+            "raw": {
+              "value": 659.1,
+              "previousQuarter": 674.9,
+              "yearAgoQuarter": 621.1,
+              "unit": "USD million",
+              "status": "verified",
+              "consensusValue": null,
+              "consensusComparable": false,
+              "yoyPct": 6.118177427145377,
+              "qoqPct": -2.341087568528666
+            },
+            "sourceIds": [
+              "nov04-supp-trmb-0",
+              "nov04-supp-trmb-1",
+              "nov04-supp-trmb-2",
+              "nov04-supp-trmb-3",
+              "nov04-supp-trmb-periods-q2",
+              "nov04-supp-trmb-periods-q1",
+              "nov04-supp-trmb-periods-q3"
+            ]
+          },
+          {
+            "label": "매출총이익률",
+            "basis": "US GAAP · 연결",
+            "value": "68.1734 %",
+            "yoy": "-0.75pp",
+            "qoq": "-1.26pp",
+            "consensus": "미확인",
+            "raw": {
+              "value": 68.17335539925527,
+              "previousQuarter": 69.43415637860082,
+              "yearAgoQuarter": 68.91921881935198,
+              "unit": "%",
+              "status": "verified",
+              "consensusValue": null,
+              "consensusComparable": false,
+              "yoyPp": -0.7458634200967111,
+              "qoqPp": -1.2608009793455466
+            },
+            "sourceIds": [
+              "nov04-supp-trmb-0",
+              "nov04-supp-trmb-1",
+              "nov04-supp-trmb-2",
+              "nov04-supp-trmb-3",
+              "nov04-supp-trmb-periods-q2",
+              "nov04-supp-trmb-periods-q1",
+              "nov04-supp-trmb-periods-q3"
+            ]
+          },
+          {
+            "label": "영업이익",
+            "basis": "US GAAP · 연결",
+            "value": "142.0000 USD million",
+            "yoy": "-5.65%",
+            "qoq": "+7.58%",
+            "consensus": "미확인",
+            "raw": {
+              "value": 142,
+              "previousQuarter": 132,
+              "yearAgoQuarter": 150.5,
+              "unit": "USD million",
+              "status": "verified",
+              "consensusValue": null,
+              "consensusComparable": false,
+              "yoyPct": -5.6478405315614655,
+              "qoqPct": 7.575757575757569
+            },
+            "sourceIds": [
+              "nov04-supp-trmb-0",
+              "nov04-supp-trmb-1",
+              "nov04-supp-trmb-2",
+              "nov04-supp-trmb-3",
+              "nov04-supp-trmb-periods-q2",
+              "nov04-supp-trmb-periods-q1",
+              "nov04-supp-trmb-periods-q3"
+            ]
+          },
+          {
+            "label": "EPS",
+            "basis": "US GAAP · 연결",
+            "value": "0.2500 USD/share",
+            "yoy": "-45.65%",
+            "qoq": "흑자 전환",
+            "consensus": "미확인",
+            "raw": {
+              "value": 0.25,
+              "previousQuarter": -2.02,
+              "yearAgoQuarter": 0.46,
+              "unit": "USD/share",
+              "status": "verified",
+              "consensusValue": null,
+              "consensusComparable": false,
+              "yoyPct": -45.652173913043484,
+              "qoqPct": null
+            },
+            "sourceIds": [
+              "nov04-supp-trmb-0",
+              "nov04-supp-trmb-1",
+              "nov04-supp-trmb-2",
+              "nov04-supp-trmb-3",
+              "nov04-supp-trmb-periods-q2",
+              "nov04-supp-trmb-periods-q1",
+              "nov04-supp-trmb-periods-q3"
+            ]
+          }
+        ],
+        "sourceIds": [
+          "nov04-supp-trmb-0",
+          "nov04-supp-trmb-1",
+          "nov04-supp-trmb-2",
+          "nov04-supp-trmb-3",
+          "nov04-supp-trmb-periods-q2",
+          "nov04-supp-trmb-periods-q1",
+          "nov04-supp-trmb-periods-q3"
+        ],
+        "releaseTiming": {
+          "session": "before_open",
+          "publishedAt": null,
+          "knownPublicBy": "2026-11-04T21:50:35.272082+00:00",
+          "sourceIds": [
+            "nov04-supp-trmb-3"
+          ],
+          "note": "11월4일 공식 발표; 07:00 KST 전 수집한 원문. 최초 배포 분단위는 미확인."
+        },
+        "quarterlyHistory": {
+          "unit": "USD million",
+          "currency": "USD",
+          "basis": "US GAAP · 연결",
+          "epsUnit": "USD/share",
+          "epsBasis": "US GAAP · 희석 EPS",
+          "rows": [
+            {
+              "period": "2026-01-02",
+              "periodEnd": "2026-01-02",
+              "fiscalPeriod": "2025 Q4",
+              "revenue": 969.8,
+              "grossProfit": 698.1,
+              "grossMargin": 71.98391420911528,
+              "operatingIncome": 216.2,
+              "operatingMargin": 22.293256341513715,
+              "eps": 0.65,
+              "epsBasis": "US GAAP · 희석 EPS",
+              "sourceIds": [
+                "nov04-supp-trmb-0"
+              ],
+              "rawEvidence": {
+                "sourceUrl": "https://investor.trimble.com/news/news-details/2026/Trimble-Announces-Fourth-Quarter-and-Full-Year-2025-Results-and-Initiates-2026-Guidance/default.aspx",
+                "observedAt": "2026-11-04T22:47:35.737135+00:00",
+                "values": {
+                  "revenue": 969.8,
+                  "grossProfit": 698.1,
+                  "operatingIncome": 216.2,
+                  "eps": 0.65
+                }
+              },
+              "note": "해당 분기 공식 발표자료의 단독 분기 값."
+            },
+            {
+              "period": "2026-04-03",
+              "periodEnd": "2026-04-03",
+              "fiscalPeriod": "2026 Q1",
+              "revenue": 939.9,
+              "grossProfit": 646.3,
+              "grossMargin": 68.7626343228003,
+              "operatingIncome": 144.0,
+              "operatingMargin": 15.320778806255985,
+              "eps": 0.42,
+              "epsBasis": "US GAAP · 희석 EPS",
+              "sourceIds": [
+                "nov04-supp-trmb-1"
+              ],
+              "rawEvidence": {
+                "sourceUrl": "https://investor.trimble.com/news/news-details/2026/Trimble-Announces-First-Quarter-2026-Results/default.aspx",
+                "observedAt": "2026-11-04T22:47:35.737135+00:00",
+                "values": {
+                  "revenue": 939.9,
+                  "grossProfit": 646.3,
+                  "operatingIncome": 144.0,
+                  "eps": 0.42
+                }
+              },
+              "note": "해당 분기 공식 발표자료의 단독 분기 값."
+            },
+            {
+              "period": "2026-07-03",
+              "periodEnd": "2026-07-03",
+              "fiscalPeriod": "2026 Q2",
+              "revenue": 972,
+              "grossProfit": 674.9,
+              "grossMargin": 69.43415637860082,
+              "operatingIncome": 132,
+              "operatingMargin": 13.580246913580247,
+              "eps": -2.02,
+              "epsBasis": "US GAAP · 희석 EPS",
+              "sourceIds": [
+                "nov04-supp-trmb-2"
+              ],
+              "rawEvidence": {
+                "sourceUrl": "https://investor.trimble.com/news/news-details/2026/Trimble-Announces-Second-Quarter-2026-Results-and-Raises-Full-Year-Guidance/default.aspx",
+                "observedAt": "2026-11-04T22:47:35.737135+00:00",
+                "values": {
+                  "revenue": 972,
+                  "grossProfit": 674.9,
+                  "operatingIncome": 132,
+                  "eps": -2.02
+                }
+              },
+              "note": "해당 분기 공식 발표자료의 단독 분기 값."
+            },
+            {
+              "period": "2026-10-02",
+              "periodEnd": "2026-10-02",
+              "fiscalPeriod": "2026 Q3",
+              "revenue": 966.8,
+              "grossProfit": 659.1,
+              "grossMargin": 68.17335539925527,
+              "operatingIncome": 142,
+              "operatingMargin": 14.687629292511378,
+              "eps": 0.25,
+              "epsBasis": "US GAAP · 희석 EPS",
+              "sourceIds": [
+                "nov04-supp-trmb-3"
+              ],
+              "rawEvidence": {
+                "sourceUrl": "https://investor.trimble.com/news/news-details/2026/Trimble-Announces-Third-Quarter-2026-Results-and-Updates-Full-Year-Guidance/default.aspx",
+                "observedAt": "2026-11-04T21:50:35.272082+00:00",
+                "values": {
+                  "revenue": 966.8,
+                  "grossProfit": 659.1,
+                  "operatingIncome": 142,
+                  "eps": 0.25
+                }
+              },
+              "note": "해당 분기 공식 발표자료의 단독 분기 값."
+            }
+          ],
+          "note": "최근 실제 회계종료 4개 분기, GAAP 연결/희석 EPS. 연간에서 누적 EPS를 빼지 않음."
+        },
+        "releaseHighlights": [
+          "GAAP 매출 9.67억 달러, 영업이익 1.42억 달러, 희석 EPS 0.25달러. 조정 EPS 0.86달러와 구분한다. 직전 분기 GAAP 손실에는 영업권 손상 5.62억 달러가 포함되어 EPS QoQ 백분율은 단순 표시하지 않는다."
+        ],
+        "guidanceMetrics": [
+          {
+            "label": "매출",
+            "period": "2026 Q4",
+            "low": 1031,
+            "high": 1061,
+            "unit": "USD million",
+            "basis": "GAAP 매출",
+            "sourceIds": [
+              "nov04-supp-trmb-3"
+            ]
+          },
+          {
+            "label": "EPS",
+            "period": "2026 Q4",
+            "low": 0.83,
+            "high": 0.89,
+            "unit": "USD/share",
+            "basis": "GAAP 희석 EPS",
+            "sourceIds": [
+              "nov04-supp-trmb-3"
+            ]
+          },
+          {
+            "label": "조정 EPS",
+            "period": "2026 Q4",
+            "low": 1.13,
+            "high": 1.19,
+            "unit": "USD/share",
+            "basis": "non-GAAP 희석 EPS",
+            "sourceIds": [
+              "nov04-supp-trmb-3"
+            ]
+          },
+          {
+            "label": "매출",
+            "period": "2026 연간",
+            "low": 3910,
+            "high": 3940,
+            "unit": "USD million",
+            "basis": "GAAP 매출",
+            "sourceIds": [
+              "nov04-supp-trmb-3"
+            ]
+          },
+          {
+            "label": "EPS",
+            "period": "2026 연간",
+            "low": -0.55,
+            "high": -0.49,
+            "unit": "USD/share",
+            "basis": "GAAP 희석 EPS",
+            "sourceIds": [
+              "nov04-supp-trmb-3"
+            ]
+          },
+          {
+            "label": "조정 EPS",
+            "period": "2026 연간",
+            "low": 3.63,
+            "high": 3.69,
+            "unit": "USD/share",
+            "basis": "non-GAAP 희석 EPS",
+            "sourceIds": [
+              "nov04-supp-trmb-3"
+            ]
+          }
+        ],
+        "consensusMetrics": [],
+        "callHighlights": [],
+        "displayCallHighlights": false,
+        "callStatus": "공식 콜 원문 확인 중 · 발표자료를 콜 요약으로 표시하지 않음",
+        "dataCheckedAt": "2026-11-04T22:47:35.737135+00:00",
+        "universeScope": "sp500",
+        "note": "07:00 기준 공식 원문을 후속 검토한 보완자료. 과거 발표일을 오늘로 바꾸지 않음.",
+        "statusLabel": "공식 실적 발표 · 4분기 비교",
+        "reportCutoffAt": "2026-11-05T07:00:00+09:00",
+        "supplementReviewedAt": "2026-11-04T22:47:35.737135+00:00"
+      },
+      {
+        "ticker": "ZBH",
+        "name": "Zimmer Biomet",
+        "period": "2026 Q3",
+        "releaseDate": "2026-11-04",
+        "presentationVersion": 3,
+        "summary": "GAAP 매출 20.63억 달러, 영업이익 3.08억 달러, 희석 EPS 1.00달러. 매출총이익은 무형자산 상각을 포함한 공시 GAAP 소계다. 조정 EPS 1.90달러 및 연간 조정 전망과 구분한다.",
+        "presentationSummary": "GAAP 매출 20.63억 달러, 영업이익 3.08억 달러, 희석 EPS 1.00달러. 매출총이익은 무형자산 상각을 포함한 공시 GAAP 소계다. 조정 EPS 1.90달러 및 연간 조정 전망과 구분한다.",
+        "metrics": [
+          {
+            "label": "매출",
+            "basis": "US GAAP · 연결",
+            "value": "2,062.9000 USD million",
+            "yoy": "+3.07%",
+            "qoq": "-5.24%",
+            "consensus": "미확인",
+            "raw": {
+              "value": 2062.9,
+              "previousQuarter": 2177,
+              "yearAgoQuarter": 2001.4,
+              "unit": "USD million",
+              "status": "verified",
+              "consensusValue": null,
+              "consensusComparable": false,
+              "yoyPct": 3.072849005696021,
+              "qoqPct": -5.2411575562700925
+            },
+            "sourceIds": [
+              "nov04-supp-zbh-0",
+              "nov04-supp-zbh-1",
+              "nov04-supp-zbh-2",
+              "nov04-supp-zbh-3"
+            ]
+          },
+          {
+            "label": "매출총이익",
+            "basis": "US GAAP · 연결",
+            "value": "1,302.4000 USD million",
+            "yoy": "+2.91%",
+            "qoq": "-5.49%",
+            "consensus": "미확인",
+            "raw": {
+              "value": 1302.4,
+              "previousQuarter": 1378.1,
+              "yearAgoQuarter": 1265.6,
+              "unit": "USD million",
+              "status": "verified",
+              "consensusValue": null,
+              "consensusComparable": false,
+              "yoyPct": 2.9077117572692934,
+              "qoqPct": -5.493070169073344
+            },
+            "sourceIds": [
+              "nov04-supp-zbh-0",
+              "nov04-supp-zbh-1",
+              "nov04-supp-zbh-2",
+              "nov04-supp-zbh-3"
+            ]
+          },
+          {
+            "label": "매출총이익률",
+            "basis": "US GAAP · 연결",
+            "value": "63.1344 %",
+            "yoy": "-0.10pp",
+            "qoq": "-0.17pp",
+            "consensus": "미확인",
+            "raw": {
+              "value": 63.13442241504678,
+              "previousQuarter": 63.30271015158474,
+              "yearAgoQuarter": 63.23573498551014,
+              "unit": "%",
+              "status": "verified",
+              "consensusValue": null,
+              "consensusComparable": false,
+              "yoyPp": -0.10131257046336373,
+              "qoqPp": -0.16828773653796247
+            },
+            "sourceIds": [
+              "nov04-supp-zbh-0",
+              "nov04-supp-zbh-1",
+              "nov04-supp-zbh-2",
+              "nov04-supp-zbh-3"
+            ]
+          },
+          {
+            "label": "영업이익",
+            "basis": "US GAAP · 연결",
+            "value": "307.6000 USD million",
+            "yoy": "-12.44%",
+            "qoq": "-5.67%",
+            "consensus": "미확인",
+            "raw": {
+              "value": 307.6,
+              "previousQuarter": 326.1,
+              "yearAgoQuarter": 351.3,
+              "unit": "USD million",
+              "status": "verified",
+              "consensusValue": null,
+              "consensusComparable": false,
+              "yoyPct": -12.439510389980068,
+              "qoqPct": -5.673106409076967
+            },
+            "sourceIds": [
+              "nov04-supp-zbh-0",
+              "nov04-supp-zbh-1",
+              "nov04-supp-zbh-2",
+              "nov04-supp-zbh-3"
+            ]
+          },
+          {
+            "label": "EPS",
+            "basis": "US GAAP · 연결",
+            "value": "1.0000 USD/share",
+            "yoy": "-13.79%",
+            "qoq": "-2.91%",
+            "consensus": "미확인",
+            "raw": {
+              "value": 1.0,
+              "previousQuarter": 1.03,
+              "yearAgoQuarter": 1.16,
+              "unit": "USD/share",
+              "status": "verified",
+              "consensusValue": null,
+              "consensusComparable": false,
+              "yoyPct": -13.793103448275856,
+              "qoqPct": -2.9126213592232997
+            },
+            "sourceIds": [
+              "nov04-supp-zbh-0",
+              "nov04-supp-zbh-1",
+              "nov04-supp-zbh-2",
+              "nov04-supp-zbh-3"
+            ]
+          }
+        ],
+        "sourceIds": [
+          "nov04-supp-zbh-0",
+          "nov04-supp-zbh-1",
+          "nov04-supp-zbh-2",
+          "nov04-supp-zbh-3"
+        ],
+        "releaseTiming": {
+          "session": "before_open",
+          "publishedAt": null,
+          "knownPublicBy": "2026-11-04T21:50:24.107519+00:00",
+          "sourceIds": [
+            "nov04-supp-zbh-3"
+          ],
+          "note": "11월4일 공식 발표; 07:00 KST 전 수집한 원문. 최초 배포 분단위는 미확인."
+        },
+        "quarterlyHistory": {
+          "unit": "USD million",
+          "currency": "USD",
+          "basis": "US GAAP · 연결",
+          "epsUnit": "USD/share",
+          "epsBasis": "US GAAP · 희석 EPS",
+          "rows": [
+            {
+              "period": "2025-12-31",
+              "periodEnd": "2025-12-31",
+              "fiscalPeriod": "2025 Q4",
+              "revenue": 2243.8,
+              "grossProfit": 1273.7,
+              "grossMargin": 56.76530885105624,
+              "operatingIncome": 154.5,
+              "operatingMargin": 6.885640431410998,
+              "eps": 0.7,
+              "epsBasis": "US GAAP · 희석 EPS",
+              "sourceIds": [
+                "nov04-supp-zbh-0"
+              ],
+              "rawEvidence": {
+                "sourceUrl": "https://investor.zimmerbiomet.com/news-and-events/news/2026/02-10-2026-113027310",
+                "observedAt": "2026-11-04T22:47:35.737135+00:00",
+                "values": {
+                  "revenue": 2243.8,
+                  "grossProfit": 1273.7,
+                  "operatingIncome": 154.5,
+                  "eps": 0.7
+                }
+              },
+              "note": "해당 분기 공식 발표자료의 단독 분기 값."
+            },
+            {
+              "period": "2026-03-31",
+              "periodEnd": "2026-03-31",
+              "fiscalPeriod": "2026 Q1",
+              "revenue": 2086.7,
+              "grossProfit": 1348.4,
+              "grossMargin": 64.61877605789046,
+              "operatingIncome": 373.2,
+              "operatingMargin": 17.884698327502758,
+              "eps": 1.22,
+              "epsBasis": "US GAAP · 희석 EPS",
+              "sourceIds": [
+                "nov04-supp-zbh-1"
+              ],
+              "rawEvidence": {
+                "sourceUrl": "https://investor.zimmerbiomet.com/news-and-events/news/2026/04-28-2026-113031821",
+                "observedAt": "2026-11-04T22:47:35.737135+00:00",
+                "values": {
+                  "revenue": 2086.7,
+                  "grossProfit": 1348.4,
+                  "operatingIncome": 373.2,
+                  "eps": 1.22
+                }
+              },
+              "note": "4월28일 최초 실적발표 값. 해당 발표에 영업권 평가가 잠정이라는 주의 문구가 있음; 최신 재작성 여부는 별도 확인 필요."
+            },
+            {
+              "period": "2026-06-30",
+              "periodEnd": "2026-06-30",
+              "fiscalPeriod": "2026 Q2",
+              "revenue": 2177,
+              "grossProfit": 1378.1,
+              "grossMargin": 63.30271015158474,
+              "operatingIncome": 326.1,
+              "operatingMargin": 14.979329352319706,
+              "eps": 1.03,
+              "epsBasis": "US GAAP · 희석 EPS",
+              "sourceIds": [
+                "nov04-supp-zbh-2"
+              ],
+              "rawEvidence": {
+                "sourceUrl": "https://investor.zimmerbiomet.com/news-and-events/news/2026/08-05-2026-113057327",
+                "observedAt": "2026-11-04T22:47:35.737135+00:00",
+                "values": {
+                  "revenue": 2177,
+                  "grossProfit": 1378.1,
+                  "operatingIncome": 326.1,
+                  "eps": 1.03
+                }
+              },
+              "note": "해당 분기 공식 발표자료의 단독 분기 값."
+            },
+            {
+              "period": "2026-09-30",
+              "periodEnd": "2026-09-30",
+              "fiscalPeriod": "2026 Q3",
+              "revenue": 2062.9,
+              "grossProfit": 1302.4,
+              "grossMargin": 63.13442241504678,
+              "operatingIncome": 307.6,
+              "operatingMargin": 14.91104755441369,
+              "eps": 1.0,
+              "epsBasis": "US GAAP · 희석 EPS",
+              "sourceIds": [
+                "nov04-supp-zbh-3"
+              ],
+              "rawEvidence": {
+                "sourceUrl": "https://investor.zimmerbiomet.com/news-and-events/news/2026/11-04-2026-113102289",
+                "observedAt": "2026-11-04T21:50:24.107519+00:00",
+                "values": {
+                  "revenue": 2062.9,
+                  "grossProfit": 1302.4,
+                  "operatingIncome": 307.6,
+                  "eps": 1.0
+                }
+              },
+              "note": "해당 분기 공식 발표자료의 단독 분기 값."
+            }
+          ],
+          "note": "최근 실제 회계종료 4개 분기, GAAP 연결/희석 EPS. 연간에서 누적 EPS를 빼지 않음."
+        },
+        "releaseHighlights": [
+          "GAAP 매출 20.63억 달러, 영업이익 3.08억 달러, 희석 EPS 1.00달러. 매출총이익은 무형자산 상각을 포함한 공시 GAAP 소계다. 조정 EPS 1.90달러 및 연간 조정 전망과 구분한다."
+        ],
+        "guidanceMetrics": [
+          {
+            "label": "조정 EPS",
+            "period": "2026 연간",
+            "low": 8.5,
+            "high": 8.6,
+            "unit": "USD/share",
+            "basis": "non-GAAP 희석 EPS",
+            "sourceIds": [
+              "nov04-supp-zbh-3"
+            ]
+          },
+          {
+            "label": "매출 성장률",
+            "period": "2026 연간",
+            "low": 4.4,
+            "high": 4.9,
+            "unit": "%",
+            "basis": "보고 매출 전년 대비 성장률",
+            "sourceIds": [
+              "nov04-supp-zbh-3"
+            ]
+          }
+        ],
+        "consensusMetrics": [],
+        "callHighlights": [],
+        "displayCallHighlights": false,
+        "callStatus": "공식 콜 원문 확인 중 · 발표자료를 콜 요약으로 표시하지 않음",
+        "dataCheckedAt": "2026-11-04T22:47:35.737135+00:00",
+        "universeScope": "sp500",
+        "note": "07:00 기준 공식 원문을 후속 검토한 보완자료. 과거 발표일을 오늘로 바꾸지 않음.",
+        "statusLabel": "공식 실적 발표 · 4분기 비교",
+        "reportCutoffAt": "2026-11-05T07:00:00+09:00",
+        "supplementReviewedAt": "2026-11-04T22:47:35.737135+00:00"
+      },
+      {
+        "ticker": "KHC",
+        "name": "Kraft Heinz",
+        "period": "2026 Q3",
+        "releaseDate": "2026-11-04",
+        "presentationVersion": 3,
+        "summary": "GAAP 매출 61.15억 달러, 영업이익 8.75억 달러, 희석 EPS 0.46달러. 조정 EPS 0.53달러와 구분한다. 직전 분기의 대규모 비현금 손상차손으로 OP·EPS 전분기 백분율 대신 흑자전환을 표시한다.",
+        "presentationSummary": "GAAP 매출 61.15억 달러, 영업이익 8.75억 달러, 희석 EPS 0.46달러. 조정 EPS 0.53달러와 구분한다. 직전 분기의 대규모 비현금 손상차손으로 OP·EPS 전분기 백분율 대신 흑자전환을 표시한다.",
+        "metrics": [
+          {
+            "label": "매출",
+            "basis": "US GAAP · 연결",
+            "value": "6,115.0000 USD million",
+            "yoy": "-1.96%",
+            "qoq": "-2.35%",
+            "consensus": "미확인",
+            "raw": {
+              "value": 6115,
+              "previousQuarter": 6262,
+              "yearAgoQuarter": 6237,
+              "unit": "USD million",
+              "status": "verified",
+              "consensusValue": null,
+              "consensusComparable": false,
+              "yoyPct": -1.9560686227352853,
+              "qoqPct": -2.3474928137975137
+            },
+            "sourceIds": [
+              "nov04-supp-khc-0",
+              "nov04-supp-khc-1",
+              "nov04-supp-khc-2",
+              "nov04-supp-khc-3"
+            ]
+          },
+          {
+            "label": "매출총이익",
+            "basis": "US GAAP · 연결",
+            "value": "1,988.0000 USD million",
+            "yoy": "-0.10%",
+            "qoq": "-1.97%",
+            "consensus": "미확인",
+            "raw": {
+              "value": 1988,
+              "previousQuarter": 2028,
+              "yearAgoQuarter": 1990,
+              "unit": "USD million",
+              "status": "verified",
+              "consensusValue": null,
+              "consensusComparable": false,
+              "yoyPct": -0.10050251256281673,
+              "qoqPct": -1.9723865877712021
+            },
+            "sourceIds": [
+              "nov04-supp-khc-0",
+              "nov04-supp-khc-1",
+              "nov04-supp-khc-2",
+              "nov04-supp-khc-3"
+            ]
+          },
+          {
+            "label": "매출총이익률",
+            "basis": "US GAAP · 연결",
+            "value": "32.5102 %",
+            "yoy": "+0.60pp",
+            "qoq": "+0.12pp",
+            "consensus": "미확인",
+            "raw": {
+              "value": 32.5102207686018,
+              "previousQuarter": 32.385819227084,
+              "yearAgoQuarter": 31.906365239698577,
+              "unit": "%",
+              "status": "verified",
+              "consensusValue": null,
+              "consensusComparable": false,
+              "yoyPp": 0.603855528903221,
+              "qoqPp": 0.12440154151779836
+            },
+            "sourceIds": [
+              "nov04-supp-khc-0",
+              "nov04-supp-khc-1",
+              "nov04-supp-khc-2",
+              "nov04-supp-khc-3"
+            ]
+          },
+          {
+            "label": "영업이익",
+            "basis": "US GAAP · 연결",
+            "value": "875.0000 USD million",
+            "yoy": "-14.63%",
+            "qoq": "흑자 전환",
+            "consensus": "미확인",
+            "raw": {
+              "value": 875,
+              "previousQuarter": -6431,
+              "yearAgoQuarter": 1025,
+              "unit": "USD million",
+              "status": "verified",
+              "consensusValue": null,
+              "consensusComparable": false,
+              "yoyPct": -14.634146341463417,
+              "qoqPct": null
+            },
+            "sourceIds": [
+              "nov04-supp-khc-0",
+              "nov04-supp-khc-1",
+              "nov04-supp-khc-2",
+              "nov04-supp-khc-3"
+            ]
+          },
+          {
+            "label": "EPS",
+            "basis": "US GAAP · 연결",
+            "value": "0.4600 USD/share",
+            "yoy": "-11.54%",
+            "qoq": "흑자 전환",
+            "consensus": "미확인",
+            "raw": {
+              "value": 0.46,
+              "previousQuarter": -4.6,
+              "yearAgoQuarter": 0.52,
+              "unit": "USD/share",
+              "status": "verified",
+              "consensusValue": null,
+              "consensusComparable": false,
+              "yoyPct": -11.538461538461542,
+              "qoqPct": null
+            },
+            "sourceIds": [
+              "nov04-supp-khc-0",
+              "nov04-supp-khc-1",
+              "nov04-supp-khc-2",
+              "nov04-supp-khc-3"
+            ]
+          }
+        ],
+        "sourceIds": [
+          "nov04-supp-khc-0",
+          "nov04-supp-khc-1",
+          "nov04-supp-khc-2",
+          "nov04-supp-khc-3",
+          "nov04-supp-khc-prepared-remarks",
+          "nov04-supp-khc-qa-transcript"
+        ],
+        "releaseTiming": {
+          "session": "before_open",
+          "publishedAt": null,
+          "knownPublicBy": "2026-11-04T22:49:55.316162+00:00",
+          "sourceIds": [
+            "nov04-supp-khc-3"
+          ],
+          "note": "공식 발표일 ET11월4일. 07:00 이후 처음 확인한 자료로 08:00 후속 보완 대상."
+        },
+        "quarterlyHistory": {
+          "unit": "USD million",
+          "currency": "USD",
+          "basis": "US GAAP · 연결",
+          "epsUnit": "USD/share",
+          "epsBasis": "US GAAP · 희석 EPS",
+          "rows": [
+            {
+              "period": "2025-12-27",
+              "periodEnd": "2025-12-27",
+              "fiscalPeriod": "2025 Q4",
+              "revenue": 6354,
+              "grossProfit": 2072,
+              "grossMargin": 32.60937991816179,
+              "operatingIncome": 1084,
+              "operatingMargin": 17.06011960969468,
+              "eps": 0.55,
+              "epsBasis": "US GAAP · 희석 EPS",
+              "sourceIds": [
+                "nov04-supp-khc-0"
+              ],
+              "rawEvidence": {
+                "sourceUrl": "https://ir.kraftheinzcompany.com/news/kraft-heinz-reports-fourth-quarter-and-full-year-2025-results/9ab50a62-8397-48cb-949c-eb1648570fd6",
+                "observedAt": "2026-11-04T22:49:55.316162+00:00",
+                "values": {
+                  "revenue": 6354,
+                  "grossProfit": 2072,
+                  "operatingIncome": 1084,
+                  "eps": 0.55
+                }
+              },
+              "note": "해당 분기 공식 발표자료의 단독 분기 값."
+            },
+            {
+              "period": "2026-03-28",
+              "periodEnd": "2026-03-28",
+              "fiscalPeriod": "2026 Q1",
+              "revenue": 6047,
+              "grossProfit": 2219,
+              "grossMargin": 36.69588225566397,
+              "operatingIncome": 1145,
+              "operatingMargin": 18.93500909541922,
+              "eps": 0.67,
+              "epsBasis": "US GAAP · 희석 EPS",
+              "sourceIds": [
+                "nov04-supp-khc-1"
+              ],
+              "rawEvidence": {
+                "sourceUrl": "https://ir.kraftheinzcompany.com/news/kraft-heinz-reports-first-quarter-2026-results-maintains-2026-full-year-outlook/201c3b0e-079f-4900-a4f5-356dae8d742d",
+                "observedAt": "2026-11-04T22:49:55.316162+00:00",
+                "values": {
+                  "revenue": 6047,
+                  "grossProfit": 2219,
+                  "operatingIncome": 1145,
+                  "eps": 0.67
+                }
+              },
+              "note": "해당 분기 공식 발표자료의 단독 분기 값."
+            },
+            {
+              "period": "2026-06-27",
+              "periodEnd": "2026-06-27",
+              "fiscalPeriod": "2026 Q2",
+              "revenue": 6262,
+              "grossProfit": 2028,
+              "grossMargin": 32.385819227084,
+              "operatingIncome": -6431,
+              "operatingMargin": -102.69881826892366,
+              "eps": -4.6,
+              "epsBasis": "US GAAP · 희석 EPS",
+              "sourceIds": [
+                "nov04-supp-khc-2"
+              ],
+              "rawEvidence": {
+                "sourceUrl": "https://ir.kraftheinzcompany.com/media/document/589a33c3-8064-4bd5-8362-e7b35b1cb864/assets/EX_99.1_-_ER_Q2_2026_vFinal2.pdf?disposition=inline",
+                "observedAt": "2026-11-04T22:49:55.316162+00:00",
+                "values": {
+                  "revenue": 6262,
+                  "grossProfit": 2028,
+                  "operatingIncome": -6431,
+                  "eps": -4.6
+                }
+              },
+              "note": "해당 분기 공식 발표자료의 단독 분기 값."
+            },
+            {
+              "period": "2026-09-26",
+              "periodEnd": "2026-09-26",
+              "fiscalPeriod": "2026 Q3",
+              "revenue": 6115,
+              "grossProfit": 1988,
+              "grossMargin": 32.5102207686018,
+              "operatingIncome": 875,
+              "operatingMargin": 14.309076042518399,
+              "eps": 0.46,
+              "epsBasis": "US GAAP · 희석 EPS",
+              "sourceIds": [
+                "nov04-supp-khc-3"
+              ],
+              "rawEvidence": {
+                "sourceUrl": "https://ir.kraftheinzcompany.com/media/document/4da1f969-7485-48b1-99a1-6732690250a4/assets/EX_99.1_-_ER_Q3_2026_vFinal.pdf?disposition=inline",
+                "observedAt": "2026-11-04T22:49:55.316162+00:00",
+                "values": {
+                  "revenue": 6115,
+                  "grossProfit": 1988,
+                  "operatingIncome": 875,
+                  "eps": 0.46
+                }
+              },
+              "note": "해당 분기 공식 발표자료의 단독 분기 값."
+            }
+          ],
+          "note": "최근 실제 회계종료 4개 분기, GAAP 연결/희석 EPS. 연간에서 누적 EPS를 빼지 않음."
+        },
+        "releaseHighlights": [
+          "GAAP 매출 61.15억 달러, 영업이익 8.75억 달러, 희석 EPS 0.46달러. 조정 EPS 0.53달러와 구분한다. 직전 분기의 대규모 비현금 손상차손으로 OP·EPS 전분기 백분율 대신 흑자전환을 표시한다.",
+          "공식 사전녹화 발언: 연간 유기적 매출 성장률 전망 하단을 -2%에서 -1.25%로 올리고 상단 -0.5%를 유지했다. 조정 EPS 상향의 주된 배경은 낮아진 예상 유효세율이다.",
+          "공식 사전녹화 발언: 3분기 일부 판촉·마케팅 지출이 계획보다 적었고 4분기에는 증가할 것으로 예상했다. 크림치즈 가격 투자가 기대한 판매량 반응을 얻지 못해 재배치할 계획이다."
+        ],
+        "guidanceMetrics": [
+          {
+            "label": "조정 EPS",
+            "period": "2026 연간",
+            "low": 2.07,
+            "high": 2.13,
+            "unit": "USD/share",
+            "basis": "non-GAAP 희석 EPS",
+            "sourceIds": [
+              "nov04-supp-khc-3"
+            ]
+          },
+          {
+            "label": "유기적 매출 성장률",
+            "period": "2026 연간",
+            "low": -1.25,
+            "high": -0.5,
+            "unit": "%",
+            "basis": "non-GAAP 유기적 매출 YoY",
+            "sourceIds": [
+              "nov04-supp-khc-3"
+            ]
+          },
+          {
+            "label": "고정환율 조정 영업이익 성장률",
+            "period": "2026 연간",
+            "low": -18,
+            "high": -16,
+            "unit": "%",
+            "basis": "non-GAAP 고정환율 OP YoY",
+            "sourceIds": [
+              "nov04-supp-khc-3"
+            ]
+          }
+        ],
+        "consensusMetrics": [],
+        "callHighlights": [
+          "공식 Nov4 Q&A: 2027년 투입원가 상승 전망은 기존 4~5%에서 5%를 소폭 웃도는 수준으로 높아졌다. 생산성 개선과 가격 인상을 추진하되 가격 반영 시차가 단기 마진을 압박할 수 있다고 설명했다.",
+          "경영진은 연간 7억 달러 투자 계획을 유지하며 내년에도 같은 수준을 예상했다. 3분기까지 판촉·마케팅 예산 약 70%를 집행했고 성수기를 앞두고 4분기에 나머지를 집중할 계획이다.",
+          "미국 소매 판매속도는 개선되고 있으나 유통 진열 확대 효과는 2027년 봄 매대 재편부터 기대한다고 설명했다. 크림치즈 가격 조치의 일부는 기대에 못 미쳐 투자 배분을 조정한다."
+        ],
+        "displayCallHighlights": true,
+        "callStatus": "공식 Nov4 Q&A 전사 확인 · 08:00 KST 이후 실제 재확인",
+        "dataCheckedAt": "2026-11-04T22:49:55.316162+00:00",
+        "universeScope": "sp500",
+        "note": "07:00 수집 완료로 소급하지 않은 후속 확인. 최초 본 검토 07:48 이후; 실제 발표일 ET11월4일. 원래 시장 마감 스냅샷은 유지.",
+        "statusLabel": "공식 실적 발표 · 4분기 비교",
+        "reportCutoffAt": "2026-11-05T08:00:00+09:00",
+        "supplementReviewedAt": "2026-11-04T22:49:55.316162+00:00",
+        "preparedRemarksHighlights": [
+          "공식 사전녹화 발언: 연간 유기적 매출 성장률 전망 하단을 -2%에서 -1.25%로 올리고 상단 -0.5%를 유지했다. 조정 EPS 상향의 주된 배경은 낮아진 예상 유효세율이다.",
+          "공식 사전녹화 발언: 3분기 일부 판촉·마케팅 지출이 계획보다 적었고 4분기에는 증가할 것으로 예상했다. 크림치즈 가격 투자가 기대한 판매량 반응을 얻지 못해 재배치할 계획이다."
+        ],
+        "preparedRemarksSourceIds": [
+          "nov04-supp-khc-prepared-remarks"
+        ],
+        "preparedRemarksType": "official_pre_recorded_management_discussion",
+        "callSourceIds": [
+          "nov04-supp-khc-qa-transcript"
+        ],
+        "callCheckedAt": "2026-11-04T23:01:19.498033+00:00"
+      },
+      {
+        "ticker": "UBER",
+        "name": "Uber Technologies",
+        "period": "2026 Q3",
+        "releaseDate": "2026-11-04",
+        "presentationVersion": 3,
+        "summary": "GAAP 매출 147.66억 달러, 영업이익 14.47억 달러, 희석 EPS 0.25달러. 조정 EPS 0.88달러와 구분한다. 감가상각·상각이 매출원가와 별도 표시되어 검증된 GAAP 매출총이익 소계는 미확인으로 유지한다.",
+        "presentationSummary": "GAAP 매출 147.66억 달러, 영업이익 14.47억 달러, 희석 EPS 0.25달러. 조정 EPS 0.88달러와 구분한다. 감가상각·상각이 매출원가와 별도 표시되어 검증된 GAAP 매출총이익 소계는 미확인으로 유지한다.",
+        "metrics": [
+          {
+            "label": "매출",
+            "basis": "US GAAP · 연결",
+            "value": "14,766.0000 USD million",
+            "yoy": "+9.65%",
+            "qoq": "+4.05%",
+            "consensus": "미확인",
+            "raw": {
+              "value": 14766,
+              "previousQuarter": 14191,
+              "yearAgoQuarter": 13467,
+              "unit": "USD million",
+              "status": "verified",
+              "consensusValue": null,
+              "consensusComparable": false,
+              "yoyPct": 9.645800846513698,
+              "qoqPct": 4.051863857374394
+            },
+            "sourceIds": [
+              "nov04-supp-uber-0",
+              "nov04-supp-uber-1",
+              "nov04-supp-uber-2",
+              "nov04-supp-uber-3"
+            ]
+          },
+          {
+            "label": "매출총이익",
+            "basis": "US GAAP · 연결",
+            "value": "미확인 · 감가상각·상각 포함 GAAP 소계 미확보",
+            "yoy": "+23.27%",
+            "qoq": "+11.31%",
+            "consensus": "미확인",
+            "raw": {
+              "value": null,
+              "previousQuarter": null,
+              "yearAgoQuarter": null,
+              "unit": "USD million",
+              "status": "unverified",
+              "consensusValue": null,
+              "consensusComparable": false,
+              "yoyPct": 23.27198710881182,
+              "qoqPct": 11.31107367131261
+            },
+            "sourceIds": [
+              "nov04-supp-uber-0",
+              "nov04-supp-uber-1",
+              "nov04-supp-uber-2",
+              "nov04-supp-uber-3"
+            ]
+          },
+          {
+            "label": "매출총이익률",
+            "basis": "US GAAP · 연결",
+            "value": "미확인 · 감가상각·상각 포함 GAAP 소계 미확보",
+            "yoy": "+7.56pp",
+            "qoq": "+5.98pp",
+            "consensus": "미확인",
+            "raw": {
+              "value": null,
+              "previousQuarter": null,
+              "yearAgoQuarter": null,
+              "unit": "%",
+              "status": "unverified",
+              "consensusValue": null,
+              "consensusComparable": false,
+              "yoyPp": 7.558681398289558,
+              "qoqPp": 5.982200527514806
+            },
+            "sourceIds": [
+              "nov04-supp-uber-0",
+              "nov04-supp-uber-1",
+              "nov04-supp-uber-2",
+              "nov04-supp-uber-3"
+            ]
+          },
+          {
+            "label": "영업이익",
+            "basis": "US GAAP · 연결",
+            "value": "1,447.0000 USD million",
+            "yoy": "+30.01%",
+            "qoq": "-23.44%",
+            "consensus": "미확인",
+            "raw": {
+              "value": 1447,
+              "previousQuarter": 1890,
+              "yearAgoQuarter": 1113,
+              "unit": "USD million",
+              "status": "verified",
+              "consensusValue": null,
+              "consensusComparable": false,
+              "yoyPct": 30.00898472596585,
+              "qoqPct": -23.439153439153436
+            },
+            "sourceIds": [
+              "nov04-supp-uber-0",
+              "nov04-supp-uber-1",
+              "nov04-supp-uber-2",
+              "nov04-supp-uber-3"
+            ]
+          },
+          {
+            "label": "EPS",
+            "basis": "US GAAP · 연결",
+            "value": "0.2500 USD/share",
+            "yoy": "-91.96%",
+            "qoq": "-78.63%",
+            "consensus": "미확인",
+            "raw": {
+              "value": 0.25,
+              "previousQuarter": 1.17,
+              "yearAgoQuarter": 3.11,
+              "unit": "USD/share",
+              "status": "verified",
+              "consensusValue": null,
+              "consensusComparable": false,
+              "yoyPct": -91.96141479099678,
+              "qoqPct": -78.63247863247864
+            },
+            "sourceIds": [
+              "nov04-supp-uber-0",
+              "nov04-supp-uber-1",
+              "nov04-supp-uber-2",
+              "nov04-supp-uber-3"
+            ]
+          }
+        ],
+        "sourceIds": [
+          "nov04-supp-uber-0",
+          "nov04-supp-uber-1",
+          "nov04-supp-uber-2",
+          "nov04-supp-uber-3"
+        ],
+        "releaseTiming": {
+          "session": "before_open",
+          "publishedAt": null,
+          "knownPublicBy": "2026-11-04T22:51:36.377129+00:00",
+          "sourceIds": [
+            "nov04-supp-uber-3"
+          ],
+          "note": "SEC 공식 발표의 공개 검색 색인에서 검증. 07:00 이전 확인으로 소급하지 않음."
+        },
+        "quarterlyHistory": {
+          "unit": "USD million",
+          "currency": "USD",
+          "basis": "US GAAP · 연결",
+          "epsUnit": "USD/share",
+          "epsBasis": "US GAAP · 희석 EPS",
+          "rows": [
+            {
+              "period": "2025-12-31",
+              "periodEnd": "2025-12-31",
+              "fiscalPeriod": "2025 Q4",
+              "revenue": 14366,
+              "grossProfit": null,
+              "grossMargin": null,
+              "operatingIncome": 1774,
+              "operatingMargin": 12.348600863149102,
+              "eps": 0.14,
+              "epsBasis": "US GAAP · 희석 EPS",
+              "sourceIds": [
+                "nov04-supp-uber-0"
+              ],
+              "rawEvidence": {
+                "sourceUrl": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Results-for-Fourth-Quarter-and-Full-Year-2025/",
+                "observedAt": "2026-11-04T22:51:36.377129+00:00",
+                "values": {
+                  "revenue": 14366,
+                  "grossProfit": null,
+                  "operatingIncome": 1774,
+                  "eps": 0.14
+                }
+              },
+              "note": "GAAP 연결 단독 분기. 매출원가가 감가상각·상각을 제외하므로 검증 없는 GP를 계산하지 않음."
+            },
+            {
+              "period": "2026-03-31",
+              "periodEnd": "2026-03-31",
+              "fiscalPeriod": "2026 Q1",
+              "revenue": 13203,
+              "grossProfit": null,
+              "grossMargin": null,
+              "operatingIncome": 1923,
+              "operatingMargin": 14.564871620086345,
+              "eps": 0.13,
+              "epsBasis": "US GAAP · 희석 EPS",
+              "sourceIds": [
+                "nov04-supp-uber-1"
+              ],
+              "rawEvidence": {
+                "sourceUrl": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Results-for-First-Quarter-2026/default.aspx",
+                "observedAt": "2026-11-04T22:51:36.377129+00:00",
+                "values": {
+                  "revenue": 13203,
+                  "grossProfit": null,
+                  "operatingIncome": 1923,
+                  "eps": 0.13
+                }
+              },
+              "note": "GAAP 연결 단독 분기. 매출원가가 감가상각·상각을 제외하므로 검증 없는 GP를 계산하지 않음."
+            },
+            {
+              "period": "2026-06-30",
+              "periodEnd": "2026-06-30",
+              "fiscalPeriod": "2026 Q2",
+              "revenue": 14191,
+              "grossProfit": null,
+              "grossMargin": null,
+              "operatingIncome": 1890,
+              "operatingMargin": 13.318300331195829,
+              "eps": 1.17,
+              "epsBasis": "US GAAP · 희석 EPS",
+              "sourceIds": [
+                "nov04-supp-uber-2"
+              ],
+              "rawEvidence": {
+                "sourceUrl": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Results-for-Second-Quarter-2026/default.aspx",
+                "observedAt": "2026-11-04T22:51:36.377129+00:00",
+                "values": {
+                  "revenue": 14191,
+                  "grossProfit": null,
+                  "operatingIncome": 1890,
+                  "eps": 1.17
+                }
+              },
+              "note": "GAAP 연결 단독 분기. 매출원가가 감가상각·상각을 제외하므로 검증 없는 GP를 계산하지 않음."
+            },
+            {
+              "period": "2026-09-30",
+              "periodEnd": "2026-09-30",
+              "fiscalPeriod": "2026 Q3",
+              "revenue": 14766,
+              "grossProfit": null,
+              "grossMargin": null,
+              "operatingIncome": 1447,
+              "operatingMargin": 9.79953948259515,
+              "eps": 0.25,
+              "epsBasis": "US GAAP · 희석 EPS",
+              "sourceIds": [
+                "nov04-supp-uber-3"
+              ],
+              "rawEvidence": {
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000039/uberq326earningspressrelea.htm",
+                "observedAt": "2026-11-04T22:51:36.377129+00:00",
+                "values": {
+                  "revenue": 14766,
+                  "grossProfit": null,
+                  "operatingIncome": 1447,
+                  "eps": 0.25
+                }
+              },
+              "note": "GAAP 연결 단독 분기. 매출원가가 감가상각·상각을 제외하므로 검증 없는 GP를 계산하지 않음."
+            }
+          ],
+          "note": "최근 실제 회계종료 4개 분기, GAAP 연결/희석 EPS. 연간에서 누적 EPS를 빼지 않음."
+        },
+        "releaseHighlights": [
+          "GAAP 매출 147.66억 달러, 영업이익 14.47억 달러, 희석 EPS 0.25달러. 조정 EPS 0.88달러와 구분한다. 감가상각·상각이 매출원가와 별도 표시되어 검증된 GAAP 매출총이익 소계는 미확인으로 유지한다."
+        ],
+        "guidanceMetrics": [],
+        "consensusMetrics": [],
+        "callHighlights": [],
+        "displayCallHighlights": false,
+        "callStatus": "공식 콜 원문 확인 중 · 발표자료를 콜 요약으로 표시하지 않음",
+        "dataCheckedAt": "2026-11-04T22:51:36.377129+00:00",
+        "universeScope": "sp500",
+        "note": "07:00 이후 확인한 공식 발표/SEC 공개 검색 색인. 실제 발표일 ET11월4일 유지; 원문 접근 실패를 우회하지 않음.",
+        "statusLabel": "공식 실적 발표 · 4분기 비교",
+        "reportCutoffAt": "2026-11-05T08:00:00+09:00",
+        "supplementReviewedAt": "2026-11-04T22:51:36.377129+00:00"
+      }
+    ],
+    "sources": [
+      {
+        "id": "nov04-supp-swk-0",
+        "title": "SWK 공식 2026-01-03 종료 분기 실적",
+        "url": "https://s29.q4cdn.com/245094436/files/doc_financials/2025/q4/4Q25-Earnings-Release-With-Financials.pdf",
+        "observedAt": "2026-11-04T22:47:35.737135+00:00",
+        "note": "공식 연결 GAAP 단독 분기. 이번 검토 2026-11-04T22:47:35.737135+00:00"
+      },
+      {
+        "id": "nov04-supp-swk-1",
+        "title": "SWK 공식 2026-04-04 종료 분기 실적",
+        "url": "https://ir.stanleyblackanddecker.com/news-events/press-releases/news-details/2026/Stanley-Black--Decker-Reports-Strong-1Q-2026-Results/default.aspx",
+        "observedAt": "2026-11-04T22:47:35.737135+00:00",
+        "note": "공식 연결 GAAP 단독 분기. 이번 검토 2026-11-04T22:47:35.737135+00:00"
+      },
+      {
+        "id": "nov04-supp-swk-2",
+        "title": "SWK 공식 2026-07-04 종료 분기 실적",
+        "url": "https://newsroom.stanleyblackanddecker.com/2026-07-29-Stanley-Black-Decker-Reports-Solid-2Q-2026-Results",
+        "observedAt": "2026-11-04T22:47:35.737135+00:00",
+        "note": "공식 연결 GAAP 단독 분기. 이번 검토 2026-11-04T22:47:35.737135+00:00"
+      },
+      {
+        "id": "nov04-supp-swk-3",
+        "title": "SWK 공식 2026-10-03 종료 분기 실적",
+        "url": "https://newsroom.stanleyblackanddecker.com/2026-11-04-Stanley-Black-Decker-Reports-3Q-2026-Results",
+        "observedAt": "2026-11-04T21:50:24.005776+00:00",
+        "note": "공식 연결 GAAP 단독 분기. 이번 검토 2026-11-04T22:47:35.737135+00:00"
+      },
+      {
+        "id": "nov04-supp-trmb-0",
+        "title": "TRMB 공식 2026-01-02 종료 분기 실적",
+        "url": "https://investor.trimble.com/news/news-details/2026/Trimble-Announces-Fourth-Quarter-and-Full-Year-2025-Results-and-Initiates-2026-Guidance/default.aspx",
+        "observedAt": "2026-11-04T22:47:35.737135+00:00",
+        "note": "공식 연결 GAAP 단독 분기. 이번 검토 2026-11-04T22:47:35.737135+00:00"
+      },
+      {
+        "id": "nov04-supp-trmb-1",
+        "title": "TRMB 공식 2026-04-03 종료 분기 실적",
+        "url": "https://investor.trimble.com/news/news-details/2026/Trimble-Announces-First-Quarter-2026-Results/default.aspx",
+        "observedAt": "2026-11-04T22:47:35.737135+00:00",
+        "note": "공식 연결 GAAP 단독 분기. 이번 검토 2026-11-04T22:47:35.737135+00:00"
+      },
+      {
+        "id": "nov04-supp-trmb-2",
+        "title": "TRMB 공식 2026-07-03 종료 분기 실적",
+        "url": "https://investor.trimble.com/news/news-details/2026/Trimble-Announces-Second-Quarter-2026-Results-and-Raises-Full-Year-Guidance/default.aspx",
+        "observedAt": "2026-11-04T22:47:35.737135+00:00",
+        "note": "공식 연결 GAAP 단독 분기. 이번 검토 2026-11-04T22:47:35.737135+00:00"
+      },
+      {
+        "id": "nov04-supp-trmb-3",
+        "title": "TRMB 공식 2026-10-02 종료 분기 실적",
+        "url": "https://investor.trimble.com/news/news-details/2026/Trimble-Announces-Third-Quarter-2026-Results-and-Updates-Full-Year-Guidance/default.aspx",
+        "observedAt": "2026-11-04T21:50:35.272082+00:00",
+        "note": "공식 연결 GAAP 단독 분기. 이번 검토 2026-11-04T22:47:35.737135+00:00"
+      },
+      {
+        "id": "nov04-supp-zbh-0",
+        "title": "ZBH 공식 2025-12-31 종료 분기 실적",
+        "url": "https://investor.zimmerbiomet.com/news-and-events/news/2026/02-10-2026-113027310",
+        "observedAt": "2026-11-04T22:47:35.737135+00:00",
+        "note": "공식 연결 GAAP 단독 분기. 이번 검토 2026-11-04T22:47:35.737135+00:00"
+      },
+      {
+        "id": "nov04-supp-zbh-1",
+        "title": "ZBH 공식 2026-03-31 종료 분기 실적",
+        "url": "https://investor.zimmerbiomet.com/news-and-events/news/2026/04-28-2026-113031821",
+        "observedAt": "2026-11-04T22:47:35.737135+00:00",
+        "note": "공식 연결 GAAP 단독 분기. 이번 검토 2026-11-04T22:47:35.737135+00:00"
+      },
+      {
+        "id": "nov04-supp-zbh-2",
+        "title": "ZBH 공식 2026-06-30 종료 분기 실적",
+        "url": "https://investor.zimmerbiomet.com/news-and-events/news/2026/08-05-2026-113057327",
+        "observedAt": "2026-11-04T22:47:35.737135+00:00",
+        "note": "공식 연결 GAAP 단독 분기. 이번 검토 2026-11-04T22:47:35.737135+00:00"
+      },
+      {
+        "id": "nov04-supp-zbh-3",
+        "title": "ZBH 공식 2026-09-30 종료 분기 실적",
+        "url": "https://investor.zimmerbiomet.com/news-and-events/news/2026/11-04-2026-113102289",
+        "observedAt": "2026-11-04T21:50:24.107519+00:00",
+        "note": "공식 연결 GAAP 단독 분기. 이번 검토 2026-11-04T22:47:35.737135+00:00"
+      },
+      {
+        "id": "nov04-supp-trmb-periods-q2",
+        "title": "Trimble 공식 Q2 회계종료일과 연간 기준일",
+        "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0000864749/36d755e7-72c6-4827-9ee5-9b630f33335e.html",
+        "observedAt": "2026-11-04T22:47:35.737135+00:00"
+      },
+      {
+        "id": "nov04-supp-trmb-periods-q1",
+        "title": "Trimble Q1 회계종료일 · SEC 검색 색인만 확인",
+        "url": "https://www.sec.gov/Archives/edgar/data/864749/000086474926000063/trmb-20260403.htm",
+        "observedAt": "2026-11-04T22:47:35.737135+00:00"
+      },
+      {
+        "id": "nov04-supp-trmb-periods-q3",
+        "title": "Trimble 공식 계약상 2026 Q3 종료일 · SEC 검색 색인만 확인",
+        "url": "https://www.sec.gov/Archives/edgar/data/864749/000086474926000111/trimble_termloancreditagre.htm",
+        "observedAt": "2026-11-04T22:47:35.737135+00:00"
+      },
+      {
+        "id": "nov04-supp-khc-0",
+        "title": "KHC 공식 2025-12-27 종료 분기 발표",
+        "url": "https://ir.kraftheinzcompany.com/news/kraft-heinz-reports-fourth-quarter-and-full-year-2025-results/9ab50a62-8397-48cb-949c-eb1648570fd6",
+        "observedAt": "2026-11-04T22:49:55.316162+00:00",
+        "note": "현재 확인시각은07:00 이후. GAAP 단독 분기."
+      },
+      {
+        "id": "nov04-supp-khc-1",
+        "title": "KHC 공식 2026-03-28 종료 분기 발표",
+        "url": "https://ir.kraftheinzcompany.com/news/kraft-heinz-reports-first-quarter-2026-results-maintains-2026-full-year-outlook/201c3b0e-079f-4900-a4f5-356dae8d742d",
+        "observedAt": "2026-11-04T22:49:55.316162+00:00",
+        "note": "현재 확인시각은07:00 이후. GAAP 단독 분기."
+      },
+      {
+        "id": "nov04-supp-khc-2",
+        "title": "KHC 공식 2026-06-27 종료 분기 발표",
+        "url": "https://ir.kraftheinzcompany.com/media/document/589a33c3-8064-4bd5-8362-e7b35b1cb864/assets/EX_99.1_-_ER_Q2_2026_vFinal2.pdf?disposition=inline",
+        "observedAt": "2026-11-04T22:49:55.316162+00:00",
+        "note": "현재 확인시각은07:00 이후. GAAP 단독 분기."
+      },
+      {
+        "id": "nov04-supp-khc-3",
+        "title": "KHC 공식 2026-09-26 종료 분기 발표",
+        "url": "https://ir.kraftheinzcompany.com/media/document/4da1f969-7485-48b1-99a1-6732690250a4/assets/EX_99.1_-_ER_Q3_2026_vFinal.pdf?disposition=inline",
+        "observedAt": "2026-11-04T22:49:55.316162+00:00",
+        "note": "현재 확인시각은07:00 이후. GAAP 단독 분기."
+      },
+      {
+        "id": "nov04-supp-khc-prepared-remarks",
+        "title": "KHC 공식 Nov4 사전녹화 경영진 발언 · Q&A 아님",
+        "url": "https://ir.kraftheinzcompany.com/media/document/c07aa99f-2d55-4891-bdba-daeafc32af86/assets/Q3_2026_Earnings_Pre_Recorded_Management_Discussion_vFINAL2.pdf?disposition=inline",
+        "observedAt": "2026-11-04T22:49:55.316162+00:00",
+        "note": "원문 슬라이드4·20·21. 전체 콜 전문으로 표기하지 않는다."
+      },
+      {
+        "id": "nov04-supp-uber-0",
+        "title": "UBER 공식 2025-12-31 종료 분기 발표",
+        "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Results-for-Fourth-Quarter-and-Full-Year-2025/",
+        "observedAt": "2026-11-04T22:51:36.377129+00:00",
+        "note": "실제07:00 이후 검토. Q3는공식 SEC 자료의 검색 색인 확인이며 직접 원문 재요청 없음."
+      },
+      {
+        "id": "nov04-supp-uber-1",
+        "title": "UBER 공식 2026-03-31 종료 분기 발표",
+        "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Results-for-First-Quarter-2026/default.aspx",
+        "observedAt": "2026-11-04T22:51:36.377129+00:00",
+        "note": "실제07:00 이후 검토. Q3는공식 SEC 자료의 검색 색인 확인이며 직접 원문 재요청 없음."
+      },
+      {
+        "id": "nov04-supp-uber-2",
+        "title": "UBER 공식 2026-06-30 종료 분기 발표",
+        "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Results-for-Second-Quarter-2026/default.aspx",
+        "observedAt": "2026-11-04T22:51:36.377129+00:00",
+        "note": "실제07:00 이후 검토. Q3는공식 SEC 자료의 검색 색인 확인이며 직접 원문 재요청 없음."
+      },
+      {
+        "id": "nov04-supp-uber-3",
+        "title": "UBER 공식 2026-09-30 종료 분기 발표",
+        "url": "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000039/uberq326earningspressrelea.htm",
+        "observedAt": "2026-11-04T22:51:36.377129+00:00",
+        "note": "실제07:00 이후 검토. Q3는공식 SEC 자료의 검색 색인 확인이며 직접 원문 재요청 없음."
+      },
+      {
+        "id": "nov04-supp-khc-qa-transcript",
+        "title": "KHC 공식 2026년11월4일 Q&A 전체 전사",
+        "url": "https://ir.kraftheinzcompany.com/media/document/892807e2-b59a-465d-a9cb-9683485df09f/assets/3Q26_KHC_QA_Transcript_vF.pdf?disposition=inline",
+        "observedAt": "2026-11-04T23:01:19.498033+00:00",
+        "note": "공식 분기자료 페이지의 Q3 Q&A 링크에서 실제 08:00 KST 이후 확인. 페이지3·5·7·8."
+      }
+    ],
+    "reviewedAt": "2026-11-04T22:47:35.737135+00:00",
+    "originalReportCutoffAt": "2026-11-05T07:00:00+09:00",
+    "supplementRecheckedAt": "2026-11-04T23:01:40.683181+00:00",
+    "publicationStatus": "verified_supplement"
+  },
+  "callChecks": {
+    "checkedAt": "2026-11-04T23:01:40.683181+00:00",
+    "startedAt": "2026-11-04T23:00:13Z",
+    "scheduledFor": "2026-11-05T08:00:00+09:00",
+    "scope": "Targeted official source recheck, not exhaustive coverage of all S&P500 calls",
+    "checks": [
+      {
+        "ticker": "KHC",
+        "status": "official_qa_transcript_verified",
+        "url": "https://ir.kraftheinzcompany.com/media/document/892807e2-b59a-465d-a9cb-9683485df09f/assets/3Q26_KHC_QA_Transcript_vF.pdf?disposition=inline",
+        "observedAt": "2026-11-04T23:01:19.498033+00:00",
+        "evidence": "15-page official Q3 Q&A transcript dated November4; pages3/5/7/8 checked. Official quarterly page also reopens release and prepared remarks."
+      },
+      {
+        "ticker": "DDOG",
+        "status": "webcast_only_no_official_transcript_verified",
+        "url": "https://investors.datadoghq.com/events/event-details/q3-2026-datadog-earnings-conference-call"
+      },
+      {
+        "ticker": "COHR",
+        "status": "webcast_only_no_official_transcript_verified",
+        "url": "https://ir.coherent.com/events/event-details/first-quarter-fiscal-year-2027-conference-call"
+      },
+      {
+        "ticker": "CVS",
+        "status": "no_transcript_in_accessible_page",
+        "url": "https://investors.cvshealth.com/overview/default.aspx"
+      },
+      {
+        "ticker": "APP",
+        "status": "dynamic_page_did_not_expose_transcript",
+        "url": "https://investors.applovin.com/events-and-presentations/default.aspx"
+      },
+      {
+        "ticker": "QCOM",
+        "status": "official_page_fetch_failed_no_transcript_verified",
+        "url": "https://investor.qualcomm.com/financial-information/historical-results"
+      },
+      {
+        "ticker": "UBER",
+        "status": "release_reverified_in_public_SEC_search_index",
+        "url": "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000039/uberq326earningspressrelea.htm",
+        "evidence": "Indexed GAAP revenue14766 OP1447 dilutedEPS.25 and actualNov4 filing date verified. No denied directSEC fetch attempted."
+      },
+      {
+        "ticker": "SWK",
+        "status": "fresh_open_internal_error_existing_downloaded_official_release_retained",
+        "url": "https://newsroom.stanleyblackanddecker.com/2026-11-04-Stanley-Black-Decker-Reports-3Q-2026-Results",
+        "evidence": "Previously downloaded official Nov4 release and exact pre07:00 collection provenance retained; failed recheck is not claimed as new successful retrieval."
+      },
+      {
+        "ticker": "TRMB",
+        "status": "fresh_open_internal_error_existing_downloaded_official_release_retained",
+        "url": "https://investor.trimble.com/news/news-details/2026/Trimble-Announces-Third-Quarter-2026-Results-and-Updates-Full-Year-Guidance/default.aspx",
+        "evidence": "Previously downloaded official Nov4 release and exact pre07:00 collection provenance retained; failed recheck is not claimed as new successful retrieval."
+      },
+      {
+        "ticker": "ZBH",
+        "status": "fresh_open_internal_error_existing_downloaded_official_release_retained",
+        "url": "https://investor.zimmerbiomet.com/news-and-events/news/2026/11-04-2026-113102289",
+        "evidence": "Previously downloaded official Nov4 release and exact pre07:00 collection provenance retained; failed recheck is not claimed as new successful retrieval."
+      }
+    ],
+    "limitations": [
+      "Web search/open can expose cached provider content; actual check time is not issuer publication time.",
+      "No claim that unverified official transcript does not exist.",
+      "Other candidate reporters remain partial; GWW and MET syndication observed, primary fetch unavailable."
+    ]
+  },
+  "originalEvidence": {
+    "rows": [
+      {
+        "ticker": "SWK",
+        "originalCollection": {
+          "id": "mover-context-SWK",
+          "rawPath": "/workspace/scratch/0972ad4926a7/us-nov04-research/mover-raw/mover-context-SWK.html",
+          "url": "https://newsroom.stanleyblackanddecker.com/2026-11-04-Stanley-Black-Decker-Reports-3Q-2026-Results",
+          "retrievedAt": "2026-11-04T21:50:24.005776+00:00",
+          "sha256": "2813ab897c3053d3dcfdf6b0f17d36b54fa4413cf4264c240f6d7a027456fb2d"
+        },
+        "currentValues": [
+          3731.6,
+          1453.5,
+          415.1,
+          1.83
+        ],
+        "sameTablePriorYear": [
+          3756.0,
+          1179.1,
+          114.7,
+          0.34
+        ],
+        "fourQuarterEnds": [
+          "2026-01-03",
+          "2026-04-04",
+          "2026-07-04",
+          "2026-10-03"
+        ],
+        "priorReleaseUrls": [
+          "https://s29.q4cdn.com/245094436/files/doc_financials/2025/q4/4Q25-Earnings-Release-With-Financials.pdf",
+          "https://ir.stanleyblackanddecker.com/news-events/press-releases/news-details/2026/Stanley-Black--Decker-Reports-Strong-1Q-2026-Results/default.aspx",
+          "https://newsroom.stanleyblackanddecker.com/2026-07-29-Stanley-Black-Decker-Reports-Solid-2Q-2026-Results"
+        ],
+        "reviewedAt": "2026-11-04T22:47:35.737135+00:00"
+      },
+      {
+        "ticker": "TRMB",
+        "originalCollection": {
+          "id": "mover-context-TRMB",
+          "rawPath": "/workspace/scratch/0972ad4926a7/us-nov04-research/mover-raw/mover-context-TRMB.html",
+          "url": "https://investor.trimble.com/news/news-details/2026/Trimble-Announces-Third-Quarter-2026-Results-and-Updates-Full-Year-Guidance/default.aspx",
+          "retrievedAt": "2026-11-04T21:50:35.272082+00:00",
+          "sha256": "fb5e758fb4f9d65cbd770030b17d8171cb66cdcbb545329b4961fb962b6348c3"
+        },
+        "currentValues": [
+          966.8,
+          659.1,
+          142,
+          0.25
+        ],
+        "sameTablePriorYear": [
+          901.2,
+          621.1,
+          150.5,
+          0.46
+        ],
+        "fourQuarterEnds": [
+          "2026-01-02",
+          "2026-04-03",
+          "2026-07-03",
+          "2026-10-02"
+        ],
+        "priorReleaseUrls": [
+          "https://investor.trimble.com/news/news-details/2026/Trimble-Announces-Fourth-Quarter-and-Full-Year-2025-Results-and-Initiates-2026-Guidance/default.aspx",
+          "https://investor.trimble.com/news/news-details/2026/Trimble-Announces-First-Quarter-2026-Results/default.aspx",
+          "https://investor.trimble.com/news/news-details/2026/Trimble-Announces-Second-Quarter-2026-Results-and-Raises-Full-Year-Guidance/default.aspx"
+        ],
+        "reviewedAt": "2026-11-04T22:47:35.737135+00:00"
+      },
+      {
+        "ticker": "ZBH",
+        "originalCollection": {
+          "id": "mover-context-ZBH",
+          "rawPath": "/workspace/scratch/0972ad4926a7/us-nov04-research/mover-raw/mover-context-ZBH.html",
+          "url": "https://investor.zimmerbiomet.com/news-and-events/news/2026/11-04-2026-113102289",
+          "retrievedAt": "2026-11-04T21:50:24.107519+00:00",
+          "sha256": "eb3dbbbfa2128b9f487bf8a916de2c49d9f49162e54ee5ab64a11ec68d178b5c"
+        },
+        "currentValues": [
+          2062.9,
+          1302.4,
+          307.6,
+          1.0
+        ],
+        "sameTablePriorYear": [
+          2001.4,
+          1265.6,
+          351.3,
+          1.16
+        ],
+        "fourQuarterEnds": [
+          "2025-12-31",
+          "2026-03-31",
+          "2026-06-30",
+          "2026-09-30"
+        ],
+        "priorReleaseUrls": [
+          "https://investor.zimmerbiomet.com/news-and-events/news/2026/02-10-2026-113027310",
+          "https://investor.zimmerbiomet.com/news-and-events/news/2026/04-28-2026-113031821",
+          "https://investor.zimmerbiomet.com/news-and-events/news/2026/08-05-2026-113057327"
+        ],
+        "reviewedAt": "2026-11-04T22:47:35.737135+00:00"
+      }
+    ],
+    "reviewedAt": "2026-11-04T22:47:35.737135+00:00",
+    "limitations": [
+      "Prior-quarter issuer pages checked after07:00, not retroactively observed before cutoff.",
+      "No SEC denied endpoint retried; fiscal dates used public search-index excerpts and independently hosted issuer documents.",
+      "Official call transcripts not verified yet; no call summary invented."
+    ],
+    "additionalReviewNotes": {
+      "GWW": {
+        "status": "issuer_release_syndicated_observed_primary_fetch_unavailable",
+        "syndicatedUrl": "https://www.marketscreener.com/news/grainger-reports-results-for-the-third-quarter-2026-ce785fdfda89f322",
+        "primaryUrl": "https://www.prnewswire.com/news-releases/grainger-reports-results-for-the-third-quarter-2026-302928505.html",
+        "reason": "Primary open returned Internal Error; current numerical row not integrated under official-source verification requirement."
+      },
+      "MET": {
+        "status": "issuer_release_syndicated_observed_primary_fetch_unavailable",
+        "syndicatedUrl": "https://www.marketscreener.com/news/metlife-announces-3q-2026-results-ce785fdfd188f427",
+        "primaryUrl": "https://www.businesswire.com/news/home/20261104856533/en/",
+        "reason": "Primary open returned Internal Error. Official schedule confirms call Nov5 09:00 ET, not Nov4."
+      }
+    }
+  },
+  "preservationChecks": {
+    "existing26RowsUnchanged": true,
+    "allEarlierDatesUnchanged": true,
+    "marketPanelsUnchanged": true,
+    "cutoffAndCollectionUnchanged": true
+  }
+}
