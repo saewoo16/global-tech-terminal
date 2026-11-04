@@ -1,0 +1,209 @@
+{
+  "asOf": "2026-11-04",
+  "auditedAt": "2026-11-04T08:47:56.469422+00:00",
+  "heatmaps": {
+    "KOSPI": {
+      "eligibleCount": 801,
+      "validCount": 777,
+      "haltedCount": 23,
+      "missingCount": 1,
+      "excludedReasonCounts": {
+        "halted": 23,
+        "missing_or_invalid_dated_ohlc": 1
+      }
+    },
+    "KOSDAQ": {
+      "eligibleCount": 1809,
+      "validCount": 1718,
+      "haltedCount": 85,
+      "missingCount": 6,
+      "excludedReasonCounts": {
+        "missing_or_invalid_dated_ohlc": 6,
+        "halted": 85
+      }
+    }
+  },
+  "indexCoverage": {
+    "daily": {
+      "KOSPI200": 201,
+      "KOSDAQ150": 149
+    },
+    "aggregate5d": {
+      "KOSPI200": 201,
+      "KOSDAQ150": 149
+    },
+    "monthly": {
+      "KOSPI200": 201,
+      "KOSDAQ150": 149
+    }
+  },
+  "screening": {
+    "requested": 300,
+    "dailyValid": 299,
+    "full52WeekHistory": 276,
+    "missingCount": 1,
+    "shortHistoryCount": 23,
+    "intradayNewHighCount": 3,
+    "nearHighCount": 1,
+    "moverCount": 26
+  },
+  "movers": [
+    {
+      "code": "373220",
+      "name": "LG에너지솔루션",
+      "changePct": 5.02958579881656,
+      "volumeRatio": 2.248796588096114
+    },
+    {
+      "code": "068270",
+      "name": "셀트리온",
+      "changePct": 5.318588730911,
+      "volumeRatio": 3.4563344722427067
+    },
+    {
+      "code": "028050",
+      "name": "삼성E&A",
+      "changePct": 6.331168831168821,
+      "volumeRatio": 2.0201842420415392
+    },
+    {
+      "code": "047810",
+      "name": "한국항공우주",
+      "changePct": 11.819116135662888,
+      "volumeRatio": 3.4823183098813857
+    },
+    {
+      "code": "086520",
+      "name": "에코프로",
+      "changePct": 9.544159544159548,
+      "volumeRatio": 2.0408696161101383
+    },
+    {
+      "code": "259960",
+      "name": "크래프톤",
+      "changePct": 16.547553600879606,
+      "volumeRatio": 4.715376888628469
+    },
+    {
+      "code": "000500",
+      "name": "가온전선",
+      "changePct": 7.300884955752207,
+      "volumeRatio": 2.284819119611242
+    },
+    {
+      "code": "032640",
+      "name": "LG유플러스",
+      "changePct": 7.113259668508287,
+      "volumeRatio": 6.430474517084384
+    },
+    {
+      "code": "009830",
+      "name": "한화솔루션",
+      "changePct": 18.644067796610166,
+      "volumeRatio": 6.530325880287522
+    },
+    {
+      "code": "352820",
+      "name": "하이브",
+      "changePct": -11.481719050673512,
+      "volumeRatio": 3.899144417367794
+    },
+    {
+      "code": "222800",
+      "name": "심텍",
+      "changePct": 9.52804986642921,
+      "volumeRatio": 2.166947196525991
+    },
+    {
+      "code": "028300",
+      "name": "HLB",
+      "changePct": -17.690417690417693,
+      "volumeRatio": 6.428972598231719
+    },
+    {
+      "code": "010060",
+      "name": "OCI홀딩스",
+      "changePct": 10.375275938189855,
+      "volumeRatio": 3.1266018227409473
+    },
+    {
+      "code": "066970",
+      "name": "엘앤에프",
+      "changePct": 12.83950617283951,
+      "volumeRatio": 2.074531191467795
+    },
+    {
+      "code": "051900",
+      "name": "LG생활건강",
+      "changePct": -11.832061068702293,
+      "volumeRatio": 5.338758504930611
+    },
+    {
+      "code": "022100",
+      "name": "포스코DX",
+      "changePct": 9.195402298850585,
+      "volumeRatio": 2.9166245728717874
+    },
+    {
+      "code": "450080",
+      "name": "에코프로머티",
+      "changePct": 7.942238267148016,
+      "volumeRatio": 2.233677927899568
+    },
+    {
+      "code": "336260",
+      "name": "두산퓨얼셀",
+      "changePct": 12.739965095986028,
+      "volumeRatio": 2.5081914963768384
+    },
+    {
+      "code": "178320",
+      "name": "서진시스템",
+      "changePct": 8.11808118081181,
+      "volumeRatio": 2.341224132840501
+    },
+    {
+      "code": "112610",
+      "name": "씨에스윈드",
+      "changePct": 7.590361445783134,
+      "volumeRatio": 4.538394210974001
+    },
+    {
+      "code": "347850",
+      "name": "디앤디파마텍",
+      "changePct": -5.243902439024395,
+      "volumeRatio": 2.1190139315727476
+    },
+    {
+      "code": "140410",
+      "name": "메지온",
+      "changePct": 13.026052104208418,
+      "volumeRatio": 6.824232358927612
+    },
+    {
+      "code": "041510",
+      "name": "에스엠",
+      "changePct": -7.2083879423328945,
+      "volumeRatio": 4.969979986657772
+    },
+    {
+      "code": "475150",
+      "name": "SK이터닉스",
+      "changePct": 8.05555555555555,
+      "volumeRatio": 7.03576128950087
+    },
+    {
+      "code": "322000",
+      "name": "HD현대에너지솔루션",
+      "changePct": 12.468193384223913,
+      "volumeRatio": 6.720655497499402
+    },
+    {
+      "code": "000210",
+      "name": "DL",
+      "changePct": 10.9159347553325,
+      "volumeRatio": 2.725513012319684
+    }
+  ],
+  "validation": "All formula, price-date, coverage, provenance-link, index-ranking and screening assertions passed."
+}

@@ -47,8 +47,12 @@ await test('delayed daily theme and turnover keep last usable actual dates witho
   assert(old,'regression requires a preserved earlier theme snapshot');
   fixture.themes.daily[day]={status:'unavailable',rows:[],coverage:{start:day,end:day},note:'Current source is not confirmed money'};
   fixture.rankings.daily[day].tradedValue={status:'unavailable',rows:[],coverage:{start:day,end:day},note:'Regular-session data not verified'};
-  const turnoverDate=Object.keys(fixture.rankings.daily).filter(d=>d<day&&fixture.rankings.daily[d].tradedValue.rows.length).sort().at(-1),before=JSON.stringify(fixture);
-  assert(turnoverDate);api.setData(fixture);
+  const turnoverDate=Object.keys(fixture.rankings.daily).filter(d=>d<day&&fixture.rankings.daily[d].tradedValue.rows.length).sort().at(-1);
+  assert(turnoverDate);
+  // Explicitly model the post-after-market fallback; a newly archived snapshot may be earlier.
+  fixture.rankings.daily[turnoverDate].tradedValue.coverage.sourceTradeSession='AFTER_MARKET';
+  fixture.rankings.daily[turnoverDate].tradedValue.coverage.regularSessionOnlyVerified=false;
+  const before=JSON.stringify(fixture);api.setData(fixture);
   try{for(const period of [day,'5d','1m',day])for(const market of ['ALL','KOSPI','KOSDAQ']){
     api.setDate(period);api.setRankMarket(market);const h=api.rankingsSection(),theme=api.themesSection();
     assert(h.includes(turnoverDate+' · 최신 확인 자료'));assert(h.includes('정규장 단독 집계 여부 미확인'));assert(h.includes('AFTER_MARKET'));

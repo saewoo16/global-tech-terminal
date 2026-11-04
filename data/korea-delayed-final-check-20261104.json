@@ -1,0 +1,193 @@
+{
+  "startedAt": "2026-11-04T10:25:27.146456+00:00",
+  "completedAt": "2026-11-04T10:25:48.734580+00:00",
+  "note": "One final fresh check at actual19:xx KST; missed18:00/19:00 deadline, no backdating.",
+  "themeDecision": "Preserved: Estimated share ranking has no verified net-buy amount; retain prior theme snapshot",
+  "liquiditySplitVerification": {
+    "officialRelease": {
+      "schemaVersion": 1,
+      "date": "2026-11-03",
+      "retrievedAt": "2026-11-04T07:54:20.623239+00:00",
+      "url": "https://freesis.kofia.or.kr/stat/main.do",
+      "acquisition": "Official FreeSIS HTML headline",
+      "unit": "million KRW",
+      "officialInvestorDeposits": 88241278,
+      "officialMarginLoans": 28950185,
+      "publicationTimeRule": "Credit balances next day15:00–18:00; exact deposits release time unverified",
+      "ruleSource": "https://www.kofia.or.kr/voc/m_113/view.do?answer_seq=2298&voc_id=3009",
+      "acquisitionUrl": "https://freesis.kofia.or.kr/stat/main.do",
+      "transport": "https",
+      "sourceSha256": "138a4a335aaeef06dc076f712db9de35c36fd6df687a356dcb808fd9a66ef231"
+    },
+    "matchedRows": {
+      "creditKOSPI": [
+        {
+          "date": "2026-11-03",
+          "value": 224130.07,
+          "rawMillionKRW": 22413007,
+          "sourceId": "chun-crosschecked",
+          "verificationMethod": "same-day direct official KOFIA total",
+          "officialSourceUrl": "https://freesis.kofia.or.kr/stat/main.do",
+          "officialMarginLoansMillionKRW": 28950185,
+          "splitMinusOfficialMillionKRW": 0,
+          "observedAt": "2026-11-04T10:25:48.730913+00:00"
+        }
+      ],
+      "creditKOSDAQ": [
+        {
+          "date": "2026-11-03",
+          "value": 65371.78,
+          "rawMillionKRW": 6537178,
+          "sourceId": "chun-crosschecked",
+          "verificationMethod": "same-day direct official KOFIA total",
+          "officialSourceUrl": "https://freesis.kofia.or.kr/stat/main.do",
+          "officialMarginLoansMillionKRW": 28950185,
+          "splitMinusOfficialMillionKRW": 0,
+          "observedAt": "2026-11-04T10:25:48.730913+00:00"
+        }
+      ]
+    },
+    "sourceLatestDates": {
+      "kospiList": "2026-11-03",
+      "kosdaqList": "2026-11-03"
+    }
+  },
+  "changes": [
+    "Credit market splits 2026-11-03"
+  ],
+  "validation": "passed; integratedHistory, frozen flows, daily ranks and futures preserved",
+  "periodSummary": {
+    "KOSPI_FOREIGNER_DAY": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=FOREIGNER&tradeType=KRX&marketType=KOSPI&startIdx=0&pageSize=100&periodType=DAY",
+      "observedAt": "2026-11-04T10:25:35.960615+00:00",
+      "periods": [
+        [
+          "20261104",
+          "20261104",
+          true
+        ]
+      ]
+    },
+    "KOSPI_FOREIGNER_WEEK": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=FOREIGNER&tradeType=KRX&marketType=KOSPI&startIdx=0&pageSize=100&periodType=WEEK",
+      "observedAt": "2026-11-04T10:25:35.888900+00:00",
+      "periods": [
+        [
+          "20261028",
+          "20261103",
+          false
+        ]
+      ]
+    },
+    "KOSPI_FOREIGNER_MONTH": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=FOREIGNER&tradeType=KRX&marketType=KOSPI&startIdx=0&pageSize=100&periodType=MONTH",
+      "observedAt": "2026-11-04T10:25:35.890263+00:00",
+      "periods": [
+        [
+          "20261006",
+          "20261103",
+          false
+        ]
+      ]
+    },
+    "KOSPI_ORGANIZATION_DAY": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=ORGANIZATION&tradeType=KRX&marketType=KOSPI&startIdx=0&pageSize=100&periodType=DAY",
+      "observedAt": "2026-11-04T10:25:35.602603+00:00",
+      "periods": [
+        [
+          "20261103",
+          "20261103",
+          false
+        ]
+      ]
+    },
+    "KOSPI_ORGANIZATION_WEEK": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=ORGANIZATION&tradeType=KRX&marketType=KOSPI&startIdx=0&pageSize=100&periodType=WEEK",
+      "observedAt": "2026-11-04T10:25:35.635822+00:00",
+      "periods": [
+        [
+          "20261028",
+          "20261103",
+          false
+        ]
+      ]
+    },
+    "KOSPI_ORGANIZATION_MONTH": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=ORGANIZATION&tradeType=KRX&marketType=KOSPI&startIdx=0&pageSize=100&periodType=MONTH",
+      "observedAt": "2026-11-04T10:25:35.348685+00:00",
+      "periods": [
+        [
+          "20261006",
+          "20261103",
+          false
+        ]
+      ]
+    },
+    "KOSDAQ_FOREIGNER_DAY": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=FOREIGNER&tradeType=KRX&marketType=KOSDAQ&startIdx=0&pageSize=100&periodType=DAY",
+      "observedAt": "2026-11-04T10:25:42.322136+00:00",
+      "periods": [
+        [
+          "20261104",
+          "20261104",
+          true
+        ]
+      ]
+    },
+    "KOSDAQ_FOREIGNER_WEEK": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=FOREIGNER&tradeType=KRX&marketType=KOSDAQ&startIdx=0&pageSize=100&periodType=WEEK",
+      "observedAt": "2026-11-04T10:25:42.283588+00:00",
+      "periods": [
+        [
+          "20261028",
+          "20261103",
+          false
+        ]
+      ]
+    },
+    "KOSDAQ_FOREIGNER_MONTH": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=FOREIGNER&tradeType=KRX&marketType=KOSDAQ&startIdx=0&pageSize=100&periodType=MONTH",
+      "observedAt": "2026-11-04T10:25:42.069804+00:00",
+      "periods": [
+        [
+          "20261006",
+          "20261103",
+          false
+        ]
+      ]
+    },
+    "KOSDAQ_ORGANIZATION_DAY": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=ORGANIZATION&tradeType=KRX&marketType=KOSDAQ&startIdx=0&pageSize=100&periodType=DAY",
+      "observedAt": "2026-11-04T10:25:42.276812+00:00",
+      "periods": [
+        [
+          "20261103",
+          "20261103",
+          false
+        ]
+      ]
+    },
+    "KOSDAQ_ORGANIZATION_WEEK": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=ORGANIZATION&tradeType=KRX&marketType=KOSDAQ&startIdx=0&pageSize=100&periodType=WEEK",
+      "observedAt": "2026-11-04T10:25:42.047639+00:00",
+      "periods": [
+        [
+          "20261028",
+          "20261103",
+          false
+        ]
+      ]
+    },
+    "KOSDAQ_ORGANIZATION_MONTH": {
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=ORGANIZATION&tradeType=KRX&marketType=KOSDAQ&startIdx=0&pageSize=100&periodType=MONTH",
+      "observedAt": "2026-11-04T10:25:42.251269+00:00",
+      "periods": [
+        [
+          "20261006",
+          "20261103",
+          false
+        ]
+      ]
+    }
+  }
+}

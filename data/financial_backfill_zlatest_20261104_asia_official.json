@@ -1,0 +1,83 @@
+{
+  "asOf": "2026-11-04",
+  "cutoff": "2026-11-04T18:00:00+09:00",
+  "observedAt": "2026-11-04T09:00:52+00:00",
+  "unit": "million reportingCurrency",
+  "companies": {
+    "KRX:036930": {
+      "reportingCurrency": "KRW",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "revenue": 78076,
+          "operatingIncome": 17667,
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "sourceUrl": "https://kind.krx.co.kr/external/2026/11/04/000314/20261026001894/70956.htm",
+          "sourceType": "filing",
+          "source": "KRX KIND official preliminary consolidated earnings disclosure",
+          "publishedAt": "2026-11-04T14:37:00+09:00",
+          "verifiedAt": "2026-11-04",
+          "observedAt": "2026-11-04T08:39:30.622740+00:00",
+          "basis": "K-IFRS consolidated; preliminary standalone three-month results",
+          "sourceSha256": "fbd2aacb796a5a4bc39c0ac74b0adfaf2b84772dca669b13f342822f8b5db6ef"
+        }
+      ],
+      "financialNote": "공식 연결 잠정 2026년3분기 단독 실적. 기존 비교분기의 더 정밀한 확정 수치와 원출처는 보존합니다."
+    },
+    "TSE:5802": {
+      "reportingCurrency": "JPY",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "revenue": 1434321,
+          "operatingIncome": 122508,
+          "reportedCurrency": "JPY",
+          "unit": "millions of reporting currency",
+          "sourceUrl": "https://sumitomoelectric.com/sites/default/files/2026-10/download_documents/2026_2m.pdf",
+          "sourceType": "filing",
+          "source": "Official issuer financial results",
+          "publishedAt": "2026-10-30",
+          "verifiedAt": "2026-11-04",
+          "observedAt": "2026-11-04T09:00:52+00:00",
+          "basis": "Japanese GAAP consolidated; standalone quarter derived from official H1 less official Q1",
+          "calculation": {
+            "revenue": "2764912 - 1330591 = 1434321 million JPY",
+            "operatingIncome": "219567 - 97059 = 122508 million JPY",
+            "sixMonthsSource": "https://sumitomoelectric.com/sites/default/files/2026-10/download_documents/2026_2m.pdf",
+            "firstQuarterSource": "https://sumitomoelectric.com/sites/default/files/2026-07/download_documents/2026_1g.pdf"
+          },
+          "sourceSha256": "34c75e0b4079c55dcd4d8a4b46c01684ab799790a7fd5e7e2a9b66ec561dc9d4",
+          "firstQuarterSourceSha256": "855f5ada7a0ea8b8de0b36b67939b9652e47e0cfa31e3175263746d529ce2ce1",
+          "sourcePrecision": "Published million-yen values rounded to nearest million"
+        }
+      ],
+      "financialNote": "공식 일본회계기준 연결 반기에서 동일 기준1분기를 차감한7~9월 단독분기입니다. 2026-07-01 주식4대1분할은 기업 매출·영업이익 단위에 영향이 없습니다."
+    },
+    "TWSE:2344": {
+      "reportingCurrency": "TWD",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "revenue": 82331,
+          "operatingIncome": 43784,
+          "reportedCurrency": "TWD",
+          "unit": "millions of reporting currency",
+          "sourceUrl": "https://www.winbond.com/export/sites/winbond/about-winbond/investor/investor-conference/3Q26-investor-conference_EN_Final.pdf",
+          "sourceType": "filing",
+          "source": "Winbond 3Q26 official investor presentation, page 5",
+          "publishedAt": "2026-11-03",
+          "verifiedAt": "2026-11-04",
+          "observedAt": "2026-11-04T09:00:52+00:00",
+          "basis": "Consolidated standalone quarter; official investor presentation unaudited figures",
+          "sourcePrecision": "Published whole million New Taiwan dollars",
+          "crossCheckUrl": "https://www.winbond.com/hq/about-winbond/news-and-events/news/news00593.html?__locale=en"
+        }
+      ],
+      "financialNote": "공식 3Q26 IR자료의 연결 매출·영업이익. 미감사 수치이며 과거 분기의 더 정밀한 수치·출처는 보존합니다."
+    }
+  }
+}

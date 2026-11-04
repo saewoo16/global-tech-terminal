@@ -1,0 +1,235 @@
+{
+  "date": "2026-11-04",
+  "title": "코스피 0.62%·코스닥 1.50% 반등…미 중간선거 변동성 속 2차전지·신재생 강세",
+  "newsUpdatedAt": "2026-11-04T08:40:01.803894+00:00",
+  "summary": [
+    {
+      "title": "급락을 되돌린 양 시장, 기관 매수 유입",
+      "text": "11월4일 코스피는 5,683.80(+0.62%), 코스닥은 714.95(+1.50%)로 마감했다. 코스피는 장중 5,421.72까지 밀렸다가 반등했다. 외국인이 순매도한 가운데 개인과 기관은 순매수했다. 기관과 기타법인은 별도 범주다.",
+      "sourceIds": [
+        "kr-close-newsis-nov04",
+        "kr-close-analysis-nov04",
+        "kr-close-crosscheck-nov04"
+      ]
+    },
+    {
+      "title": "미 중간선거 개표와 정책 불확실성",
+      "text": "마감 보도는 미국 중간선거 개표 중 민주당 우세 전망과 AI 데이터센터 규제 우려를 장중 변동성의 배경으로 전했다. 실제 정책 시행이나 AI 투자 감소가 확정됐다는 뜻은 아니며, 보도·시장 전문가의 해석이다.",
+      "sourceIds": [
+        "kr-close-newsis-nov04",
+        "kr-close-analysis-nov04"
+      ]
+    },
+    {
+      "title": "2차전지·신재생 강세, 반도체 대형주는 약보합",
+      "text": "삼성SDI(+11.57%)·한화솔루션(+18.64%)이 올랐고 LG에너지솔루션도 5.03% 상승했다. 마감 보도는 친환경 정책 기대를 관련 배경으로 들었다. 삼성전자는 21만8,000원(-0.68%), SK하이닉스는 139만6,000원(-0.14%)으로 마감했다.",
+      "sourceIds": [
+        "kr-close-newsis-nov04",
+        "kr-close-analysis-nov04",
+        "kr-close-crosscheck-nov04"
+      ]
+    },
+    {
+      "title": "HLB 심사 일정과 크래프톤 주주환원 계획",
+      "text": "HLB는 간암 신약 FDA 본심사 재개와 2027년4월9일 심사 목표일 소식이 나온 날 17.69% 하락했다. 심사 목표일은 승인 보장이 아니다. 크래프톤은 전날 발표한 약 3,000억원 자사주 취득·소각 계획이 관련 배경으로 보도됐다.",
+      "sourceIds": [
+        "kr-hlb-close-nov04",
+        "kr-hlb-background-nov04",
+        "kr-krafton-background-nov04"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.newsis.com/view/NISX20261104_0003854904",
+      "status": 200,
+      "observedAt": "2026-11-04T08:38:26.940292+00:00",
+      "sha256": "21a24978b28250a93a5f750cc74a7750b34f49e30eb42e534f09d663077508ec",
+      "id": "kr-close-newsis-nov04",
+      "title": "뉴시스 11월4일 정규장 마감시황",
+      "date": "2026-11-04",
+      "publishedAt": "2026-11-04T15:58:44+09:00",
+      "verification": "공개 기사 HTML 본문·발행시각 직접 확인; 수집 원문 SHA256 보존",
+      "note": "보도된 관련 배경과 확정 사실을 구분. 개별 종목 등락의 인과관계를 확정하지 않음.",
+      "limitation": "기사별 투자자 수급은 잠정집계 시점이 달라 숫자 원천으로 혼합하지 않음. 별도 검증 수급 스냅샷 사용."
+    },
+    {
+      "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4443028",
+      "status": 200,
+      "observedAt": "2026-11-04T08:38:27.479177+00:00",
+      "sha256": "c30ea31d0ad9ba92b5d04122dcb088d2c31de25ee7ff511abdf7757b2a65d82d",
+      "id": "kr-close-analysis-nov04",
+      "title": "연합인포맥스 11월4일 마감 배경 분석",
+      "date": "2026-11-04",
+      "publishedAt": "2026-11-04T16:17:56+09:00",
+      "verification": "공개 기사 HTML 본문·발행시각 직접 확인; 수집 원문 SHA256 보존",
+      "note": "보도된 관련 배경과 확정 사실을 구분. 개별 종목 등락의 인과관계를 확정하지 않음.",
+      "limitation": "기사별 투자자 수급은 잠정집계 시점이 달라 숫자 원천으로 혼합하지 않음. 별도 검증 수급 스냅샷 사용."
+    },
+    {
+      "url": "https://www.newsway.co.kr/news/view?ud=2026110415425221208",
+      "status": 200,
+      "observedAt": "2026-11-04T08:38:25.557396+00:00",
+      "sha256": "de901ca37368a6dfb19cd9473d489419c2f245cbb9cdbcd282f48044b5f98fc4",
+      "id": "kr-close-crosscheck-nov04",
+      "title": "뉴스웨이 11월4일 정규장 마감 교차확인",
+      "date": "2026-11-04",
+      "publishedAt": "2026-11-04T15:55:00+09:00",
+      "verification": "공개 기사 HTML 본문·발행시각 직접 확인; 수집 원문 SHA256 보존",
+      "note": "보도된 관련 배경과 확정 사실을 구분. 개별 종목 등락의 인과관계를 확정하지 않음.",
+      "limitation": "기사별 투자자 수급은 잠정집계 시점이 달라 숫자 원천으로 혼합하지 않음. 별도 검증 수급 스냅샷 사용."
+    },
+    {
+      "url": "https://biz.chosun.com/stock/stock_general/2026/11/04/VSPTQAEXUNFHZLB6QRA5PRFMSI/",
+      "status": 200,
+      "observedAt": "2026-11-04T08:39:09.833891+00:00",
+      "sha256": "dcca364c7537886a1edb6d191d6d6d98656db3315bd528c9b8689f97fcae7acd",
+      "id": "kr-krafton-background-nov04",
+      "title": "조선비즈 크래프톤 전일 자사주 취득·소각 계획 보도",
+      "date": "2026-11-04",
+      "publishedAt": "2026-11-04T09:39:00+09:00",
+      "verification": "공개 기사 HTML 본문·발행시각 직접 확인; 수집 원문 SHA256 보존",
+      "note": "보도된 관련 배경과 확정 사실을 구분. 개별 종목 등락의 인과관계를 확정하지 않음.",
+      "eventDate": "2026-11-03",
+      "limitation": "전일 장 마감 후 공시를 인용한 보도. 오늘 신규 공시나 취득·소각 완료로 표시하지 않음. 장중 주가는 종가로 사용하지 않음."
+    },
+    {
+      "url": "https://www.hitnews.co.kr/news/articleView.html?idxno=80507",
+      "status": 200,
+      "observedAt": "2026-11-04T08:39:10.728097+00:00",
+      "sha256": "c797bc8695df22d882ee4a8037de4895efb55023f6c545823dd38b6f0b3d4003",
+      "id": "kr-hlb-close-nov04",
+      "title": "히트뉴스 11월4일 제약바이오 마감 브리핑",
+      "date": "2026-11-04",
+      "publishedAt": "2026-11-04T16:15:00+09:00",
+      "verification": "공개 기사 HTML 본문·발행시각 직접 확인; 수집 원문 SHA256 보존",
+      "note": "보도된 관련 배경과 확정 사실을 구분. 개별 종목 등락의 인과관계를 확정하지 않음."
+    },
+    {
+      "url": "https://v1.inews24.com/view/2022383",
+      "status": 200,
+      "observedAt": "2026-11-04T08:39:08.069238+00:00",
+      "sha256": "a2ed71f6ff8ad1d55db88e0e53338cbdbf59a27a20c5713ecb74315d488495f4",
+      "id": "kr-hlb-background-nov04",
+      "title": "아이뉴스24 HLB FDA 심사 일정 관련 보도",
+      "date": "2026-11-04",
+      "publishedAt": "2026-11-04T09:52:00+09:00",
+      "verification": "공개 기사 HTML 본문·발행시각 직접 확인; 수집 원문 SHA256 보존",
+      "note": "보도된 관련 배경과 확정 사실을 구분. 개별 종목 등락의 인과관계를 확정하지 않음.",
+      "limitation": "회사 발표 인용 보도이며 FDA 원문 직접 검증은 아님. 2027년4월9일은 심사 목표일로 승인 확정일이 아님. 장중 주가는 종가로 사용하지 않음."
+    }
+  ],
+  "moverNews": {
+    "006400.KS": {
+      "text": "미국 중간선거 개표에서 민주당 우세 전망이 부각되며 친환경 정책 기대 속 2차전지·신재생에너지 관련주가 강세를 보였다는 마감 보도다. 정책 변화의 확정이나 해당 기업의 실적 개선을 단정하지 않는다.",
+      "date": "2026-11-04",
+      "kind": "reported-context",
+      "sourceIds": [
+        "kr-close-analysis-nov04"
+      ]
+    },
+    "003670.KS": {
+      "text": "미국 중간선거 개표에서 민주당 우세 전망이 부각되며 친환경 정책 기대 속 2차전지·신재생에너지 관련주가 강세를 보였다는 마감 보도다. 정책 변화의 확정이나 해당 기업의 실적 개선을 단정하지 않는다.",
+      "date": "2026-11-04",
+      "kind": "reported-context",
+      "sourceIds": [
+        "kr-close-analysis-nov04"
+      ]
+    },
+    "373220.KS": {
+      "text": "미국 중간선거 개표에서 민주당 우세 전망이 부각되며 친환경 정책 기대 속 2차전지·신재생에너지 관련주가 강세를 보였다는 마감 보도다. 정책 변화의 확정이나 해당 기업의 실적 개선을 단정하지 않는다.",
+      "date": "2026-11-04",
+      "kind": "reported-context",
+      "sourceIds": [
+        "kr-close-analysis-nov04"
+      ]
+    },
+    "066970.KS": {
+      "text": "미국 중간선거 개표에서 민주당 우세 전망이 부각되며 친환경 정책 기대 속 2차전지·신재생에너지 관련주가 강세를 보였다는 마감 보도다. 정책 변화의 확정이나 해당 기업의 실적 개선을 단정하지 않는다.",
+      "date": "2026-11-04",
+      "kind": "reported-context",
+      "sourceIds": [
+        "kr-close-analysis-nov04"
+      ]
+    },
+    "009830.KS": {
+      "text": "미국 중간선거 개표에서 민주당 우세 전망이 부각되며 친환경 정책 기대 속 2차전지·신재생에너지 관련주가 강세를 보였다는 마감 보도다. 정책 변화의 확정이나 해당 기업의 실적 개선을 단정하지 않는다.",
+      "date": "2026-11-04",
+      "kind": "reported-context",
+      "sourceIds": [
+        "kr-close-analysis-nov04"
+      ]
+    },
+    "010060.KS": {
+      "text": "미국 중간선거 개표에서 민주당 우세 전망이 부각되며 친환경 정책 기대 속 2차전지·신재생에너지 관련주가 강세를 보였다는 마감 보도다. 정책 변화의 확정이나 해당 기업의 실적 개선을 단정하지 않는다.",
+      "date": "2026-11-04",
+      "kind": "reported-context",
+      "sourceIds": [
+        "kr-close-analysis-nov04"
+      ]
+    },
+    "259960.KS": {
+      "text": "전날 장 마감 후 발표한 약 3,000억원 자사주 취득·소각 계획이 주가 관련 배경으로 보도됐다. 취득 예정기간은 11월4일부터 2027년2월3일까지이며 취득·소각 완료를 뜻하지 않는다.",
+      "date": "2026-11-04",
+      "kind": "reported-context",
+      "sourceIds": [
+        "kr-krafton-background-nov04"
+      ]
+    },
+    "028300.KQ": {
+      "text": "회사 발표 인용 보도에 따르면 간암 신약 FDA 본심사가 재개되고 심사 목표일이 2027년4월9일로 지정됐다. 시장 기대보다 늦어진 일정에 대한 우려가 주가 관련 배경으로 보도됐으며 승인 여부는 미확정이다.",
+      "date": "2026-11-04",
+      "kind": "reported-context",
+      "sourceIds": [
+        "kr-hlb-background-nov04",
+        "kr-hlb-close-nov04"
+      ]
+    }
+  },
+  "indices": [
+    {
+      "name": "KOSPI",
+      "close": 5683.8,
+      "change": 35.01,
+      "changePct": 0.62,
+      "previousClose": 5648.79,
+      "sourceIds": [
+        "kr-close-newsis-nov04",
+        "kr-close-analysis-nov04",
+        "kr-close-crosscheck-nov04"
+      ]
+    },
+    {
+      "name": "KOSDAQ",
+      "close": 714.95,
+      "change": 10.56,
+      "changePct": 1.5,
+      "previousClose": 704.39,
+      "sourceIds": [
+        "kr-close-newsis-nov04",
+        "kr-close-analysis-nov04",
+        "kr-close-crosscheck-nov04"
+      ]
+    }
+  ],
+  "sessionDate": "2026-11-04",
+  "comparisonDate": "2026-11-03",
+  "session": "KRX regular close",
+  "marketDayVerification": {
+    "status": "verified_by_actual_completed_session",
+    "date": "2026-11-04",
+    "verifiedAt": "2026-11-04T08:40:01.803894+00:00",
+    "sourceIds": [
+      "kr-close-newsis-nov04",
+      "kr-close-analysis-nov04",
+      "kr-close-crosscheck-nov04"
+    ],
+    "note": "17시 이후 실제 당일 정규장 마감 기사 3곳 직접 확인. 공식 KRX 휴장일 게이트는 별도 수집기 증거를 사용."
+  },
+  "limitations": [
+    "투자자별 수급 숫자는 잠정집계 시점 차이 때문에 기사 수치를 혼합하지 않고 별도 검증 스냅샷 사용. 기관과 기타법인을 구분.",
+    "관련 뉴스는 보도된 배경이며 개별 종목 등락의 확정 원인으로 단정하지 않음.",
+    "장중·시간외 시세와 정규장 종가를 혼합하지 않음.",
+    "미 중간선거 개표 당시 시장 전망을 기록하며 선거 최종 인증 결과나 정책 시행 확정으로 표시하지 않음."
+  ]
+}

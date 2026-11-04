@@ -1,0 +1,32 @@
+{
+  "sessionDate": "2026-11-04",
+  "previousSession": "2026-11-03",
+  "preparedAt": "2026-11-04T08:49:24.706398+00:00",
+  "baseCommit": "fbe32b22bac20b5302dcc2b2afe5a3a9a20ee857",
+  "sessionEvidence": "data/korea-session-evidence-20261104.json",
+  "etfEvidence": "data/korean-etf-audit-20261104.json",
+  "earningsEvidence": "data/korea-earnings-evidence-20261104.json",
+  "flowEvidence": "data/korea-flow-evidence-20261104.json",
+  "priceEvidence": "data/korea-price-evidence-20261104.json",
+  "scopePreservation": {
+    "priorDailyEntriesUnchanged": true,
+    "otherDataFilesUnchanged": 207,
+    "integratedHistoryUnchanged": true,
+    "turnoverSha256": "544200ee525fb96c096948dfcba1edfad64c0d38afcadc747e05ca076610b993",
+    "companyDataChangedOnlyUnderSeparateCompanyRefresh": true
+  },
+  "coverage": {
+    "etfs": 39,
+    "sectorRows": 60,
+    "earningsCompanies": 16,
+    "quarterlyRows": 64
+  },
+  "pendingPanels": [
+    "Nov4 themes",
+    "weekly and monthly amount rankings ending Nov4"
+  ],
+  "publication": "Publication and public display verified separately at actual times, not backdated.",
+  "reconciledAt": "2026-11-04T10:26:55.126081+00:00",
+  "publicationBase": "16e0894f070f6134f8ebe237967b576bf7563263",
+  "additionalAuthorizedScope": "Separate Nov4 evening company refresh merged; company-only source data and tests are independently validated."
+}

@@ -1,0 +1,104 @@
+{
+  "checkedAt": "2026-11-04T08:45:08.841215+00:00",
+  "companies": 4,
+  "quarters": 16,
+  "results": [
+    {
+      "name": "SK텔레콤",
+      "ticker": "017670",
+      "source": "q1",
+      "url": "https://kind.krx.co.kr/external/2026/05/07/000134/20260504000784/99626.htm",
+      "quarterValuesAndMargins": "PASS",
+      "basis": "K-IFRS 연결",
+      "freshHttpStatus": 200,
+      "freshSha256": "716df63288074e781abab5fd41eac0b9a3e6fb72113f34c81815280e574ebcc1",
+      "freshRetrievedAt": "2026-11-04T08:45:08.389254+00:00",
+      "freshMatchesLocal": true
+    },
+    {
+      "name": "SK텔레콤",
+      "ticker": "017670",
+      "source": "q3",
+      "url": "https://kind.krx.co.kr/external/2026/11/04/000085/20261102000304/99626.htm",
+      "quarterValuesAndMargins": "PASS",
+      "basis": "K-IFRS 연결",
+      "freshHttpStatus": 200,
+      "freshSha256": "da254d75156d6e9a996a211e6dddf464fabf7f46ebe733942aa1382be5b40c1e",
+      "freshRetrievedAt": "2026-11-04T08:45:08.833401+00:00",
+      "freshMatchesLocal": true
+    },
+    {
+      "name": "LG유플러스",
+      "ticker": "032640",
+      "source": "q1",
+      "url": "https://kind.krx.co.kr/external/2026/05/07/000172/20260506000707/99626.htm",
+      "quarterValuesAndMargins": "PASS",
+      "basis": "K-IFRS 연결",
+      "freshHttpStatus": 200,
+      "freshSha256": "132f91cb4f2a10a9d7f9357b4faaab0633bacba14cdedb13b68fd90c99884b02",
+      "freshRetrievedAt": "2026-11-04T08:45:08.785668+00:00",
+      "freshMatchesLocal": true
+    },
+    {
+      "name": "LG유플러스",
+      "ticker": "032640",
+      "source": "q3",
+      "url": "https://kind.krx.co.kr/external/2026/11/04/000119/20261012000858/99626.htm",
+      "quarterValuesAndMargins": "PASS",
+      "basis": "K-IFRS 연결",
+      "freshHttpStatus": 200,
+      "freshSha256": "bef7e4b7236a2ae3db99eebad2cb5ef7afc3e5b5f96bc1a7c6103d262147effe",
+      "freshRetrievedAt": "2026-11-04T08:45:08.821138+00:00",
+      "freshMatchesLocal": true
+    },
+    {
+      "name": "고려아연",
+      "ticker": "010130",
+      "source": "q1_consolidated",
+      "url": "https://kind.krx.co.kr/external/2026/05/06/000995/20260424001018/99626.htm",
+      "quarterValuesAndMargins": "PASS",
+      "basis": "K-IFRS 연결",
+      "freshHttpStatus": 200,
+      "freshSha256": "00c14edb88b673e1fb4e3df42d200d5f583214b1c78306ce83e7ad247a44bd31",
+      "freshRetrievedAt": "2026-11-04T08:45:08.841090+00:00",
+      "freshMatchesLocal": true
+    },
+    {
+      "name": "고려아연",
+      "ticker": "010130",
+      "source": "q3",
+      "url": "https://kind.krx.co.kr/external/2026/11/04/000476/20261019001326/99626.htm",
+      "quarterValuesAndMargins": "PASS",
+      "basis": "K-IFRS 연결",
+      "freshHttpStatus": 200,
+      "freshSha256": "771ea928e11a1f9f2262bd76f1844ff1b5427ce1e586023c9dd3c7918ba9a891",
+      "freshRetrievedAt": "2026-11-04T08:45:08.469538+00:00",
+      "freshMatchesLocal": true
+    },
+    {
+      "name": "카카오뱅크",
+      "ticker": "323410",
+      "source": "q1",
+      "url": "https://kind.krx.co.kr/external/2026/05/06/000005/20260430002322/99620.htm",
+      "quarterValuesAndMargins": "PASS",
+      "basis": "K-IFRS 개별 · 은행 영업수익",
+      "freshHttpStatus": 200,
+      "freshSha256": "3c537fd0325e577a03ac3daa95f78693fdaa64f866f2622047d1af04e4638b6d",
+      "freshRetrievedAt": "2026-11-04T08:45:08.809168+00:00",
+      "freshMatchesLocal": true
+    },
+    {
+      "name": "카카오뱅크",
+      "ticker": "323410",
+      "source": "q3",
+      "url": "https://kind.krx.co.kr/external/2026/11/04/000002/20261030000701/99620.htm",
+      "quarterValuesAndMargins": "PASS",
+      "basis": "K-IFRS 개별 · 은행 영업수익",
+      "freshHttpStatus": 200,
+      "freshSha256": "46185743361941a818bd2bc04190222888995062a65053d6d1985a5211195f9e",
+      "freshRetrievedAt": "2026-11-04T08:45:08.833162+00:00",
+      "freshMatchesLocal": true
+    }
+  ],
+  "conclusion": "No numeric, conversion, quarter-label, or accounting-scope mismatch found in sampled companies. Considered only four requested companies; no all-company completeness certification."
+}

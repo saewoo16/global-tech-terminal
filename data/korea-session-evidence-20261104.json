@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-04",
+  "status": "verified-direct-official-calendar-and-both-market-session",
+  "calendar": {
+    "url": "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp",
+    "holidays": [
+      "2026-01-01",
+      "2026-02-16",
+      "2026-02-17",
+      "2026-02-18",
+      "2026-03-02",
+      "2026-05-01",
+      "2026-05-05",
+      "2026-05-25",
+      "2026-06-03",
+      "2026-07-17",
+      "2026-08-17",
+      "2026-09-24",
+      "2026-09-25",
+      "2026-10-05",
+      "2026-10-09",
+      "2026-12-25",
+      "2026-12-31"
+    ],
+    "observedAt": "2026-11-04T08:39:10.885284+00:00"
+  },
+  "latestObservedMarketDates": {
+    "KOSPI": "2026-11-04",
+    "KOSDAQ": "2026-11-04"
+  },
+  "sameDayEvidence": [
+    {
+      "url": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=KOSPI&bizdate=20261104&startIdx=0&pageSize=30",
+      "observedAt": "2026-11-04T08:39:14.620093+00:00",
+      "sha256": "c8ac2e21873956f3c5091ee653bf8003d1f84cec4f21bbd238bcb477c67c46fd"
+    },
+    {
+      "url": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=KOSDAQ&bizdate=20261104&startIdx=0&pageSize=30",
+      "observedAt": "2026-11-04T08:39:18.258857+00:00",
+      "sha256": "994f3237ed7a93cd8638ab8eef7b36a76356b650df1e6ecd2adbca6963257d9b"
+    }
+  ],
+  "officialGateImplementationSha256": "61c2cfb13f973a8b521765ff5a037785d83e412ad5c5888aa569e0defedb56ab",
+  "observedAt": "2026-11-04T08:39:18.258909+00:00"
+}

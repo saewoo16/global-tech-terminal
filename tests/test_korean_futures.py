@@ -100,7 +100,10 @@ class KoreanFuturesTests(unittest.TestCase):
             lambda part: part.update(unit='억원'),
             lambda part: next(row for row in part['rows'] if row.get('sourceBalanceWarning')).pop('sourceBalanceWarning'),
             lambda part: part['qualityFlags'].update(count=0),
-            lambda part: part['windowChecks']['252'].update(flaggedDates=[]),
+            # A clean rolling window is valid; always make this mutation non-identical.
+            lambda part: part['windowChecks']['252'].update(
+                flaggedDates=[] if part['windowChecks']['252']['flaggedDates']
+                else [part['windowChecks']['252']['start']]),
             lambda part: part['windowChecks']['252'].update(foreignTotal=0)]
         for mutate in mutations:
             data = copy.deepcopy(self.data)

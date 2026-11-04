@@ -1,0 +1,89 @@
+{
+  "asOf": "2026-11-04",
+  "cutoff": "2026-11-04T18:00:00+09:00",
+  "observedAt": "2026-11-04T09:00:52+00:00",
+  "scope": "Targeted missing-quarter review within Asia company universe; not all113 financial or ticker audit",
+  "verifiedNewQuarters": [
+    "KRX:036930",
+    "TSE:5802",
+    "TWSE:2344"
+  ],
+  "sourceEvidence": {
+    "KRX:036930": {
+      "reusedEvidence": "data/korea-earnings-evidence-20261104.json",
+      "original": "https://kind.krx.co.kr/external/2026/11/04/000314/20261026001894/70956.htm",
+      "qa": "Frozen same-day Korean earnings collection passed raw quarter, accounting scope, source uniqueness and schema QA.",
+      "metrics": {
+        "revenue": 78076,
+        "operatingIncome": 17667
+      },
+      "unit": "million KRW",
+      "publishedAt": "2026-11-04T14:37:00+09:00"
+    },
+    "TSE:5802": {
+      "H1": "https://sumitomoelectric.com/sites/default/files/2026-10/download_documents/2026_2m.pdf",
+      "Q1": "https://sumitomoelectric.com/sites/default/files/2026-07/download_documents/2026_1g.pdf",
+      "H1Revenue": 2764912,
+      "H1OperatingIncome": 219567,
+      "Q1Revenue": 1330591,
+      "Q1OperatingIncome": 97059,
+      "derivedQ2Revenue": 1434321,
+      "derivedQ2OperatingIncome": 122508,
+      "unit": "million JPY",
+      "securitiesCodeConfirmed": "5802",
+      "historicalSplit": "4-for-1 effective July1,2026; no ticker change evidenced",
+      "historicalPriceSplitCheck": {
+        "source": "Existing market.json prices for5802.T",
+        "points": [
+          [
+            "2026-06-26",
+            2957.9812
+          ],
+          [
+            "2026-06-29",
+            2869.50195
+          ],
+          [
+            "2026-06-30",
+            2901.72144
+          ],
+          [
+            "2026-07-01",
+            2809.52466
+          ]
+        ],
+        "finding": "Existing prices remain on same approximatelyJPY2800-3000 scale through split/ex-date window; no75% mechanical drop. Consistent with already split-adjusted historical prices. Do not apply second4-for-1 adjustment. This continuity check does not re-certify provider full adjustment history."
+      }
+    },
+    "TWSE:2344": {
+      "presentation": "https://www.winbond.com/export/sites/winbond/about-winbond/investor/investor-conference/3Q26-investor-conference_EN_Final.pdf",
+      "presentationPage": 5,
+      "pressRelease": "https://www.winbond.com/hq/about-winbond/news-and-events/news/news00593.html?__locale=en",
+      "revenue": 82331,
+      "operatingIncome": 43784,
+      "unit": "million TWD",
+      "publishedAt": "2026-11-03",
+      "crossCheck": "Official investor presentation page5 explicitly labels consolidated, in NT$ millions: 3Q26 Net Sales82,331, Operating Profit43,784. Operating margin53.2% matches derived53.18045% rounded to one decimal; official press release independently confirms consolidated revenue NT$82.331 billion. No memory-only segment figures used.",
+      "artifactStatus": "Primary PDF read successfully with web tool; local PDF download returned HTTP403, so no invented file hash."
+    }
+  },
+  "limitedStatusChecks": [
+    {
+      "symbol": "TSE:3433",
+      "status": "future_release_scheduled",
+      "date": "2026-11-05T15:30:00+09:00",
+      "sourceUrl": "https://www.tocalo.co.jp/ja/ir.html"
+    },
+    {
+      "symbol": "TSE:6963",
+      "status": "official_IR_page_latest_visible_Q1_not_proof_no_filing",
+      "sourceUrl": "https://www.rohm.com/ir"
+    },
+    {
+      "symbol": "TWSE:3034",
+      "status": "official_news_latest_visible_Q2_not_proof_no_filing",
+      "sourceUrl": "https://www.novatek.com.tw/en-global/News/news_activity/Index/News03"
+    }
+  ],
+  "preservation": "Do not globally stamp financialCheckedAt or financialVerifiedAt; only stamp individually verified rows. No ticker changes proposed. Preserve previous quarters and exact source precision."
+}
