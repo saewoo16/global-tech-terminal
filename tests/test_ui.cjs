@@ -44,3 +44,7 @@ console.log('\n'+count+' focused UI checks passed; '+new Set(companies.map(r=>r.
 
 run("chosen.business='Atlas 데이터 플랫폼';render()");
 test('optional company business description is visible without changing other companies',()=>{assert.equal(element('business').textContent,'Atlas 데이터 플랫폼');assert.equal(element('business').hidden,false);run("delete chosen.business;render()");assert.equal(element('business').hidden,true)});
+run("chosen={symbol:'TEST',ticker:'TEST',name:'Test',sector:'Tech',category:'Test',country:'미국'};COMPANIES=[chosen];MARKET={fx:1345.74,stocks:{TEST:{marketCapUSD:1000000,marketCapUpdated:'2026-11-02T22:30:48+00:00',prices:[['2026-11-04',10]],priceCurrency:'USD'}}};render()");
+test('cap observation never becomes certified latest-session cap or FX',()=>{assert.match(element('capinfo').innerHTML,/공급자 관측 2026-11-02/);assert.match(element('capinfo').innerHTML,/종가 기준 미확인/);assert.match(element('capinfo').innerHTML,/환율 기준일 미확인/);assert.doesNotMatch(element('capinfo').innerHTML,/2026-11-04/)});
+run("MARKET.stocks.TEST.marketCapAsOf='2026-11-03';MARKET.fxAsOf='2026-11-02';render()");
+test('certified cap and FX dates remain independently displayed',()=>{assert.match(element('capinfo').innerHTML,/시가총액 기준 2026-11-03/);assert.match(element('capinfo').innerHTML,/환율 기준 2026-11-02/);assert.doesNotMatch(element('capinfo').innerHTML,/종가 기준 미확인|환율 기준일 미확인/)});
