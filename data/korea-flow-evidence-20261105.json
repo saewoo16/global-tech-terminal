@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-05",
+  "observedAt": "2026-11-05T08:31:23.373827+00:00",
+  "marketFlows": {
+    "KOSPI": {
+      "date": "2026-11-05",
+      "foreign": -34422.33,
+      "institution": 8484.3,
+      "individual": 22849.09,
+      "otherForeign": 315.6,
+      "otherCorporation": 2773.33,
+      "source": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=KOSPI&bizdate=20261105&startIdx=0&pageSize=30"
+    },
+    "KOSDAQ": {
+      "date": "2026-11-05",
+      "foreign": -754.09,
+      "institution": -1027.01,
+      "individual": 1714.02,
+      "otherForeign": 26.63,
+      "otherCorporation": 40.45,
+      "source": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=KOSDAQ&bizdate=20261105&startIdx=0&pageSize=30"
+    }
+  },
+  "futuresForeign": {
+    "date": "2026-11-05",
+    "foreign": 6830,
+    "buy": 157814,
+    "sell": 150984,
+    "sourceId": "naver-futures-investor-daily"
+  },
+  "rawPrecisionPreserved": true,
+  "scope": "NAVER tradeType=KRX; observed post-close; regular-only versus after-hours not independently certified",
+  "excludedFromThreeInvestorTotals": [
+    "otherCorporation",
+    "otherForeign"
+  ],
+  "collectorOutcome": {
+    "attemptedAt": "2026-11-05T08:31:23.373827+00:00",
+    "status": "partial",
+    "refreshedSections": [
+      "flows.KOSPI",
+      "flows.KOSDAQ",
+      "futures.foreignFlows",
+      "futures.openInterest"
+    ],
+    "failures": [
+      {
+        "section": "rankings",
+        "message": "ValueError: Estimated share ranking has no verified net-buy amount; retain prior amount ranking"
+      },
+      {
+        "section": "themes",
+        "message": "ValueError: Estimated share ranking has no verified net-buy amount; retain prior theme snapshot"
+      }
+    ],
+    "note": "수급·NAVER 선물 외국인 순매수·고정 12월물 미결제약정·예탁금·신용융자와 순매수 종목을 갱신합니다. 확장 테마의 확인분 수급도 같은 공급사 응답으로 갱신합니다. 구성목록과 시총 순위는 별도 검증 스냅샷의 날짜를 유지합니다. 지수 구성종목 분석은 별도 검증 스냅샷 기준일을 유지합니다."
+  }
+}

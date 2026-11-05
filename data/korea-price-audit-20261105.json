@@ -1,0 +1,179 @@
+{
+  "asOf": "2026-11-05",
+  "auditedAt": "2026-11-05T08:47:27.197181+00:00",
+  "heatmaps": {
+    "KOSPI": {
+      "eligibleCount": 801,
+      "validCount": 776,
+      "haltedCount": 23,
+      "missingCount": 2,
+      "excludedReasonCounts": {
+        "halted": 23,
+        "missing_or_invalid_dated_ohlc": 2
+      }
+    },
+    "KOSDAQ": {
+      "eligibleCount": 1809,
+      "validCount": 1714,
+      "haltedCount": 85,
+      "missingCount": 10,
+      "excludedReasonCounts": {
+        "halted": 85,
+        "missing_or_invalid_dated_ohlc": 10
+      }
+    }
+  },
+  "indexCoverage": {
+    "daily": {
+      "KOSPI200": 201,
+      "KOSDAQ150": 150
+    },
+    "aggregate5d": {
+      "KOSPI200": 201,
+      "KOSDAQ150": 150
+    },
+    "monthly": {
+      "KOSPI200": 201,
+      "KOSDAQ150": 150
+    }
+  },
+  "screening": {
+    "requested": 300,
+    "dailyValid": 299,
+    "full52WeekHistory": 268,
+    "missingCount": 1,
+    "shortHistoryCount": 31,
+    "intradayNewHighCount": 3,
+    "nearHighCount": 1,
+    "moverCount": 20
+  },
+  "movers": [
+    {
+      "code": "035420",
+      "name": "NAVER",
+      "changePct": 8.255269320843084,
+      "volumeRatio": 2.2459422913576867
+    },
+    {
+      "code": "316140",
+      "name": "우리금융지주",
+      "changePct": 5.271828665568368,
+      "volumeRatio": 2.1194403370353982
+    },
+    {
+      "code": "010130",
+      "name": "고려아연",
+      "changePct": 10.998877665544327,
+      "volumeRatio": 4.667543354976576
+    },
+    {
+      "code": "035720",
+      "name": "카카오",
+      "changePct": 10.65292096219932,
+      "volumeRatio": 3.1035307220297113
+    },
+    {
+      "code": "010950",
+      "name": "S-Oil",
+      "changePct": -6.152512998266902,
+      "volumeRatio": 2.4189677843524
+    },
+    {
+      "code": "0126Z0",
+      "name": "삼성에피스홀딩스",
+      "changePct": 14.330218068535828,
+      "volumeRatio": 4.282566543275163
+    },
+    {
+      "code": "161390",
+      "name": "한국타이어앤테크놀로지",
+      "changePct": 12.982456140350873,
+      "volumeRatio": 2.4469718124446502
+    },
+    {
+      "code": "326030",
+      "name": "SK바이오팜",
+      "changePct": 12.267657992565063,
+      "volumeRatio": 2.82284315369828
+    },
+    {
+      "code": "128940",
+      "name": "한미약품",
+      "changePct": 9.799291617473438,
+      "volumeRatio": 2.964813120752744
+    },
+    {
+      "code": "006260",
+      "name": "LS",
+      "changePct": -8.99521531100479,
+      "volumeRatio": 2.1594248807701106
+    },
+    {
+      "code": "031980",
+      "name": "피에스케이홀딩스",
+      "changePct": -19.377568995889604,
+      "volumeRatio": 2.197985551011047
+    },
+    {
+      "code": "161890",
+      "name": "한국콜마",
+      "changePct": 7.440212577502225,
+      "volumeRatio": 2.144732187335302
+    },
+    {
+      "code": "462870",
+      "name": "시프트업",
+      "changePct": 6.5326633165829096,
+      "volumeRatio": 2.4142768722921395
+    },
+    {
+      "code": "068760",
+      "name": "셀트리온제약",
+      "changePct": 6.605019815059454,
+      "volumeRatio": 2.1929476036751923
+    },
+    {
+      "code": "095610",
+      "name": "테스",
+      "changePct": -17.059377945334585,
+      "volumeRatio": 2.2063413342049945
+    },
+    {
+      "code": "006040",
+      "name": "동원산업",
+      "changePct": 5.660377358490565,
+      "volumeRatio": 2.8678363499544535
+    },
+    {
+      "code": "181710",
+      "name": "NHN",
+      "changePct": 5.133470225872694,
+      "volumeRatio": 3.094968762174095
+    },
+    {
+      "code": "293490",
+      "name": "카카오게임즈",
+      "changePct": 6.192468619246871,
+      "volumeRatio": 2.030123178086507
+    },
+    {
+      "code": "001120",
+      "name": "LX인터내셔널",
+      "changePct": -11.557177615571778,
+      "volumeRatio": 2.4791256695581576
+    },
+    {
+      "code": "005300",
+      "name": "롯데칠성",
+      "changePct": 7.499999999999996,
+      "volumeRatio": 5.590370913663034
+    }
+  ],
+  "validation": {
+    "independentCloseMismatchCount": 0,
+    "highDiscrepancyExcluded": [
+      "033780"
+    ],
+    "priceAndPreviousDatesExplicit": true
+  }
+}
