@@ -234,7 +234,9 @@ class KoreanMarketTests(unittest.TestCase):
                          self.data['highsScreen']['coverage']['dailyValid'])
         eligible = [r for r in evidence['rows'] if r.get('freshDailyCoverage') and r.get('fullHistoryCoverage')]
         self.assertEqual(len(eligible), self.data['highsScreen']['coverage']['full52WeekHistory'])
-        expected = {r['code'] for r in eligible if r['close'] >= .97 * r['high52'] or r['sessionHigh'] > r['prior52WeekHigh']}
+        expected = {r['code'] for r in eligible if not r.get('independentHighDiscrepancy') and (r['close'] >= .97 * r['high52'] or r['sessionHigh'] > r['prior52WeekHigh'])}
+        ambiguous = {r['code'] for r in eligible if r.get('independentHighDiscrepancy')}
+        self.assertFalse(ambiguous & {r['code'] for r in self.data['highsScreen']['rows']})
         self.assertEqual(expected, {r['code'] for r in self.data['highsScreen']['rows']})
 
     def test_latest_turnover_excludes_konex_from_denominator(self):
