@@ -1,0 +1,125 @@
+{
+  "asOf": "2026-11-05",
+  "observedAt": "2026-11-05T21:45:27.265859+00:00",
+  "methodology": "Official 3:1 forward splits effective at 2026-11-05 open. Pre-split verified raw close and adjusted close divided by 3. No dividends in the 2026-10-05 to 2026-11-05 comparison interval. Do not combine Yahoo response historical mixed split bases. Raw precision retained.",
+  "funds": {
+    "SOXX": {
+      "split": {
+        "numerator": 3,
+        "denominator": 1,
+        "exDate": "2026-11-05",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1100663/000119312526430480/d156277d497.htm"
+      },
+      "prices": [
+        {
+          "date": "2026-10-05",
+          "close": 196.50333658854166,
+          "adjustedClose": 196.50333658854166,
+          "originalClose": 589.510009765625,
+          "originalAdjustedClose": 589.510009765625,
+          "priceDivisor": 3,
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/SOXX?period1=1760918400&period2=1793836800&interval=1d&events=div%2Csplits&includePrePost=false",
+          "sourceObservedAt": "2026-11-04T21:45:21.411005+00:00",
+          "sourceSha256": "a3c43174fb03bb617c2b29619db890116533e7b2080c6d489971249c87612147"
+        },
+        {
+          "date": "2026-10-29",
+          "close": 171.28666178385416,
+          "adjustedClose": 171.28666178385416,
+          "originalClose": 513.8599853515625,
+          "originalAdjustedClose": 513.8599853515625,
+          "priceDivisor": 3,
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/SOXX?period1=1760918400&period2=1793836800&interval=1d&events=div%2Csplits&includePrePost=false",
+          "sourceObservedAt": "2026-11-04T21:45:21.411005+00:00",
+          "sourceSha256": "a3c43174fb03bb617c2b29619db890116533e7b2080c6d489971249c87612147"
+        },
+        {
+          "date": "2026-11-04",
+          "close": 150.13666788736978,
+          "adjustedClose": 150.13666788736978,
+          "originalClose": 450.4100036621094,
+          "originalAdjustedClose": 450.4100036621094,
+          "priceDivisor": 3,
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/SOXX?period1=1760918400&period2=1793836800&interval=1d&events=div%2Csplits&includePrePost=false",
+          "sourceObservedAt": "2026-11-04T21:45:21.411005+00:00",
+          "sourceSha256": "a3c43174fb03bb617c2b29619db890116533e7b2080c6d489971249c87612147"
+        },
+        {
+          "date": "2026-11-05",
+          "close": 131.89999389648438,
+          "adjustedClose": 131.89999389648438,
+          "originalClose": 131.89999389648438,
+          "originalAdjustedClose": 131.89999389648438,
+          "priceDivisor": 1,
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/SOXX?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "sourceObservedAt": "2026-11-05T21:42:32.331306+00:00",
+          "sourceSha256": "2459e1e7304ab55701b7af4fcc73579be2c3700fed78ca5ab12a979a76018ba7"
+        }
+      ],
+      "returns": {
+        "day": -12.146715554235076,
+        "week": -22.994591334304616,
+        "month": -32.87646093629964
+      }
+    },
+    "ITA": {
+      "split": {
+        "numerator": 3,
+        "denominator": 1,
+        "exDate": "2026-11-05",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1100663/000119312526414100/R2.htm"
+      },
+      "prices": [
+        {
+          "date": "2026-10-05",
+          "close": 68.99333190917969,
+          "adjustedClose": 68.99333190917969,
+          "originalClose": 206.97999572753906,
+          "originalAdjustedClose": 206.97999572753906,
+          "priceDivisor": 3,
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/ITA?period1=1760918400&period2=1793836800&interval=1d&events=div%2Csplits&includePrePost=false",
+          "sourceObservedAt": "2026-11-04T21:44:10.929290+00:00",
+          "sourceSha256": "41706ab3272c4b58c466d8ffe06d86e82535eb5feae22ae517b0c92b3e8ef510"
+        },
+        {
+          "date": "2026-10-29",
+          "close": 71.43333435058594,
+          "adjustedClose": 71.43333435058594,
+          "originalClose": 214.3000030517578,
+          "originalAdjustedClose": 214.3000030517578,
+          "priceDivisor": 3,
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/ITA?period1=1760918400&period2=1793836800&interval=1d&events=div%2Csplits&includePrePost=false",
+          "sourceObservedAt": "2026-11-04T21:44:10.929290+00:00",
+          "sourceSha256": "41706ab3272c4b58c466d8ffe06d86e82535eb5feae22ae517b0c92b3e8ef510"
+        },
+        {
+          "date": "2026-11-04",
+          "close": 70.94666544596355,
+          "adjustedClose": 70.94666544596355,
+          "originalClose": 212.83999633789062,
+          "originalAdjustedClose": 212.83999633789062,
+          "priceDivisor": 3,
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/ITA?period1=1760918400&period2=1793836800&interval=1d&events=div%2Csplits&includePrePost=false",
+          "sourceObservedAt": "2026-11-04T21:44:10.929290+00:00",
+          "sourceSha256": "41706ab3272c4b58c466d8ffe06d86e82535eb5feae22ae517b0c92b3e8ef510"
+        },
+        {
+          "date": "2026-11-05",
+          "close": 68.11000061035156,
+          "adjustedClose": 68.11000061035156,
+          "originalClose": 68.11000061035156,
+          "originalAdjustedClose": 68.11000061035156,
+          "priceDivisor": 1,
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/ITA?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "sourceObservedAt": "2026-11-05T21:42:32.195537+00:00",
+          "sourceSha256": "e40745f3bb2f3334d9451500e967769496c976d045d7aee7ba346d364e532936"
+        }
+      ],
+      "returns": {
+        "day": -3.9983060765167666,
+        "week": -4.652357012937214,
+        "month": -1.2803140164196036
+      }
+    }
+  }
+}

@@ -1,0 +1,3835 @@
+{
+  "asOf": "2026-11-05",
+  "observedAt": "2026-11-05T21:47:13.067226+00:00",
+  "baseCommit": "03801c6da88b8cc86a57d1f2c667228627dd3940",
+  "baselineSourceUrl": "https://github.com/saewoo16/global-tech-terminal/blob/03801c6da88b8cc86a57d1f2c667228627dd3940/data/overseas_etf_charts.json",
+  "baselineSha256": "4a5abf600d7370f4d7792f669427f0070101a542d0012c2a8c19b525311cc24d",
+  "coverage": {
+    "targetSession": "2026-11-05",
+    "latestAvailable": "2026-11-05",
+    "commonThrough": "2026-11-05",
+    "expectedFundCount": 38,
+    "currentFundCount": 38,
+    "staleFundCount": 0,
+    "missingFundCount": 0,
+    "currentCodes": [
+      "IHI",
+      "TAN",
+      "XRT",
+      "XHB",
+      "XLY",
+      "XLF",
+      "IAI",
+      "XLC",
+      "XLP",
+      "XLRE",
+      "FAN",
+      "XLV",
+      "ICLN",
+      "LIT",
+      "IYT",
+      "XBI",
+      "IBB",
+      "XLB",
+      "FDN",
+      "BATT",
+      "IHF",
+      "KBE",
+      "KRE",
+      "XPH",
+      "IGV",
+      "CLOU",
+      "XLU",
+      "CIBR",
+      "XLK",
+      "XME",
+      "XLI",
+      "ITA",
+      "SMH",
+      "CRAK",
+      "SOXX",
+      "XAR",
+      "XLE",
+      "XOP"
+    ],
+    "staleCodes": [],
+    "missingCodes": [],
+    "actualSessions": {
+      "IHI": "2026-11-05",
+      "TAN": "2026-11-05",
+      "XRT": "2026-11-05",
+      "XHB": "2026-11-05",
+      "XLY": "2026-11-05",
+      "XLF": "2026-11-05",
+      "IAI": "2026-11-05",
+      "XLC": "2026-11-05",
+      "XLP": "2026-11-05",
+      "XLRE": "2026-11-05",
+      "FAN": "2026-11-05",
+      "XLV": "2026-11-05",
+      "ICLN": "2026-11-05",
+      "LIT": "2026-11-05",
+      "IYT": "2026-11-05",
+      "XBI": "2026-11-05",
+      "IBB": "2026-11-05",
+      "XLB": "2026-11-05",
+      "FDN": "2026-11-05",
+      "BATT": "2026-11-05",
+      "IHF": "2026-11-05",
+      "KBE": "2026-11-05",
+      "KRE": "2026-11-05",
+      "XPH": "2026-11-05",
+      "IGV": "2026-11-05",
+      "CLOU": "2026-11-05",
+      "XLU": "2026-11-05",
+      "CIBR": "2026-11-05",
+      "XLK": "2026-11-05",
+      "XME": "2026-11-05",
+      "XLI": "2026-11-05",
+      "ITA": "2026-11-05",
+      "SMH": "2026-11-05",
+      "CRAK": "2026-11-05",
+      "SOXX": "2026-11-05",
+      "XAR": "2026-11-05",
+      "XLE": "2026-11-05",
+      "XOP": "2026-11-05"
+    },
+    "intradayCurrentFundCount": 38,
+    "intradayUnverifiedCodes": [],
+    "status": "complete"
+  },
+  "sessionVerification": {
+    "date": "2026-11-05",
+    "closedAt": "2026-11-05T16:00:00-05:00",
+    "status": "completed",
+    "sourceUrls": [
+      "https://www.nyse.com/markets/hours-calendars",
+      "https://www.nasdaq.com/market-activity/stock-market-holiday-schedule"
+    ],
+    "note": "11/5는 공식 2026 휴장·단축장 목록에 없는 목요일. 정규장 09:30–16:00 ET이며 DST 종료 후 UTC-05:00."
+  },
+  "rows": [
+    {
+      "ticker": "IHI",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:41:20.383821+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IHI?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "2d3f339d993feb95af66ebb57f09aadc19fac644bf9426b733e128dcce3f2368",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 60.63999938964844,
+        "high": 60.9900016784668,
+        "low": 58.334999084472656,
+        "close": 59.029998779296875,
+        "volume": 5750753
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "IHI",
+        "time": 1793889000,
+        "open": 60.64,
+        "high": 61,
+        "low": 58.33,
+        "close": 59.03,
+        "volume": 5767753,
+        "change": -1.9760876785121184,
+        "change_abs": -1.1899999999999977,
+        "currency": "USD",
+        "exchange": "AMEX",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": -4.01408840500217e-06,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 58.0,
+          "high": 60.56999969482422,
+          "low": 58.0,
+          "close": 60.220001220703125,
+          "volume": 8299174
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 55.220001220703125,
+          "high": 55.709999084472656,
+          "low": 55.04999923706055,
+          "close": 55.689998626708984,
+          "volume": 2308400
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 50.41999816894531,
+          "high": 51.720001220703125,
+          "low": 50.34000015258789,
+          "close": 51.59000015258789,
+          "volume": 4817300
+        }
+      },
+      "returns": {
+        "day": -1.9760916926005234,
+        "week": 5.997486505568017,
+        "month": 14.421396791439589
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 78,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:41:29.569049+00:00",
+      "intradayRawSha256": "41541f4892f6c7cff77449dbee3d30695fe3c2494b00c41355896b1c2d85119c",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "TAN",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:41:20.389620+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/TAN?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "3b22a5d337888290791ff1da5064341b26b191118ff3a4ad0cb30e1ce7d0db18",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 46.41999816894531,
+        "high": 46.80590057373047,
+        "low": 42.830101013183594,
+        "close": 44.09000015258789,
+        "volume": 4870775
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "TAN",
+        "time": 1793889000,
+        "open": 46.42,
+        "high": 46.81,
+        "low": 42.8301,
+        "close": 44.09,
+        "volume": 4871146,
+        "change": -3.7126010045861446,
+        "change_abs": -1.6999999999999957,
+        "currency": "USD",
+        "exchange": "AMEX",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": -1.5919405260689246e-06,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 46.20000076293945,
+          "high": 47.790000915527344,
+          "low": 45.630001068115234,
+          "close": 45.790000915527344,
+          "volume": 7914498
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 40.7400016784668,
+          "high": 41.380001068115234,
+          "low": 40.68000030517578,
+          "close": 41.18000030517578,
+          "volume": 608100
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 43.70000076293945,
+          "high": 43.86000061035156,
+          "low": 42.88999938964844,
+          "close": 43.66999816894531,
+          "volume": 297500
+        }
+      },
+      "returns": {
+        "day": -3.7126025965266707,
+        "week": 7.066536731050865,
+        "month": 0.9617632270505716
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 78,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:41:29.409378+00:00",
+      "intradayRawSha256": "af8c6d0c2620702adb78bbfbd193363a1009f052b27d1264fdd65ed2df77ad71",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "XRT",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:41:20.390669+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XRT?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "acf812a4174b40651db741ebb448f0218e716e7b9f2bbe2f238b5701bd742928",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 94.4800033569336,
+        "high": 94.93000030517578,
+        "low": 90.47000122070312,
+        "close": 91.06999969482422,
+        "volume": 7304783
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "XRT",
+        "time": 1793889000,
+        "open": 94.48,
+        "high": 94.93,
+        "low": 90.47,
+        "close": 91.07,
+        "volume": 7304783,
+        "change": -2.8275714895433266,
+        "change_abs": -2.6500000000000057,
+        "currency": "USD",
+        "exchange": "AMEX",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": -1.5912960140695986e-06,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 90.63999938964844,
+          "high": 93.98500061035156,
+          "low": 90.41500091552734,
+          "close": 93.72000122070312,
+          "volume": 8170615
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 87.29000091552734,
+          "high": 89.0199966430664,
+          "low": 87.29000091552734,
+          "close": 89.01000213623047,
+          "volume": 4022900
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 82.73999786376953,
+          "high": 83.06999969482422,
+          "low": 82.01000213623047,
+          "close": 82.91999816894531,
+          "volume": 2206600
+        }
+      },
+      "returns": {
+        "day": -2.8275730808393407,
+        "week": 2.3143439042287772,
+        "month": 9.828752660213148
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 78,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:41:29.466378+00:00",
+      "intradayRawSha256": "6c8829b5dee7fbb7179441df7ce41c4d458049e299fc1c25a490926a03915e94",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "XHB",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:41:20.391845+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XHB?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "f4fe003aeba664648e87a067f8bae51146fb6c7edb4977fd633c49fbf960952f",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 107.44000244140625,
+        "high": 108.77999877929688,
+        "low": 103.38999938964844,
+        "close": 103.8499984741211,
+        "volume": 2771443
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "XHB",
+        "time": 1793889000,
+        "open": 107.44,
+        "high": 108.78,
+        "low": 103.36,
+        "close": 103.85,
+        "volume": 2774337,
+        "change": -3.4133184523809543,
+        "change_abs": -3.6700000000000017,
+        "currency": "USD",
+        "exchange": "AMEX",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": 1.5964210517971367e-06,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 104.91000366210938,
+          "high": 108.03500366210938,
+          "low": 104.0,
+          "close": 107.5199966430664,
+          "volume": 4045529
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 97.8499984741211,
+          "high": 101.29000091552734,
+          "low": 97.41999816894531,
+          "close": 101.2699966430664,
+          "volume": 3645700
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 96.5999984741211,
+          "high": 96.98999786376953,
+          "low": 95.33999633789062,
+          "close": 96.30000305175781,
+          "volume": 1607900
+        }
+      },
+      "returns": {
+        "day": -3.4133168559599025,
+        "week": 2.5476468021896848,
+        "month": 7.8400780717581275
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 78,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:41:29.550628+00:00",
+      "intradayRawSha256": "aaf5a02d664607cac9ae4235a21e1ebf7d1c0975c95229a97151e16f96b4bc0e",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "XLY",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:41:20.392930+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLY?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "6479422f45245deb4e1c886bd4abe8688c1e0bcbedbd637a625879ed9736f9a2",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 122.6500015258789,
+        "high": 122.91000366210938,
+        "low": 116.62950134277344,
+        "close": 117.63999938964844,
+        "volume": 20120668
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "XLY",
+        "time": 1793889000,
+        "open": 122.65,
+        "high": 122.91,
+        "low": 116.6295,
+        "close": 117.64,
+        "volume": 20702609,
+        "change": -3.8338919316602613,
+        "change_abs": -4.689999999999998,
+        "currency": "USD",
+        "exchange": "AMEX",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": -1.938367987452949e-06,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 119.77999877929688,
+          "high": 122.92459869384766,
+          "low": 119.62000274658203,
+          "close": 122.33000183105469,
+          "volume": 18134754
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 115.76000213623047,
+          "high": 116.7699966430664,
+          "low": 115.12999725341797,
+          "close": 116.19999694824219,
+          "volume": 6413700
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 109.7699966430664,
+          "high": 110.86000061035156,
+          "low": 109.5,
+          "close": 110.41999816894531,
+          "volume": 7061400
+        }
+      },
+      "returns": {
+        "day": -3.8338938700282488,
+        "week": 1.2392448186101523,
+        "month": 6.538671744638447
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 78,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:41:29.369199+00:00",
+      "intradayRawSha256": "13e7d380d58b2ed5d940b6b80acac7601d65ae9f62c7f6507bcf87c4d195da9e",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "XLF",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:41:36.694462+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLF?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "348853661e042cdb617ab2bb4c81f05c25b88fe3ad27a873ccb569e88b90d2df",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 59.939998626708984,
+        "high": 60.040000915527344,
+        "low": 57.41999816894531,
+        "close": 57.5,
+        "volume": 71111277
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "XLF",
+        "time": 1793889000,
+        "open": 59.94,
+        "high": 60.04,
+        "low": 57.42,
+        "close": 57.5,
+        "volume": 71296176,
+        "change": -2.8716216216216264,
+        "change_abs": -1.7000000000000028,
+        "currency": "USD",
+        "exchange": "AMEX",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": -1.2517410628021253e-06,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 58.40999984741211,
+          "high": 59.20000076293945,
+          "low": 57.939998626708984,
+          "close": 59.20000076293945,
+          "volume": 51666790
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 56.720001220703125,
+          "high": 57.22999954223633,
+          "low": 56.66999816894531,
+          "close": 56.939998626708984,
+          "volume": 32915800
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 53.5,
+          "high": 53.970001220703125,
+          "low": 53.29999923706055,
+          "close": 53.880001068115234,
+          "volume": 28810700
+        }
+      },
+      "returns": {
+        "day": -2.871622873362689,
+        "week": 0.9834938299916551,
+        "month": 6.718631885898363
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 78,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:41:42.055993+00:00",
+      "intradayRawSha256": "f7f2f9d061d0bc2e5e8d7a853af10c3cfe737cf8401be8c8e77d642f04a01646",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "IAI",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:41:36.700498+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IAI?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "6e2863ed69a7ad9ed6a0bb4b607e1d77d7c091768d122ae542e6cd069bc11e3d",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 187.75,
+        "high": 188.02999877929688,
+        "low": 177.27000427246094,
+        "close": 178.64999389648438,
+        "volume": 147514
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "IAI",
+        "time": 1793889000,
+        "open": 187.75,
+        "high": 188.03,
+        "low": 177.27,
+        "close": 178.65,
+        "volume": 147514,
+        "change": -3.9051153784089028,
+        "change_abs": -7.259999999999991,
+        "currency": "USD",
+        "exchange": "AMEX",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": -5.1759535373285814e-06,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 182.75,
+          "high": 186.16000366210938,
+          "low": 182.61000061035156,
+          "close": 185.91000366210938,
+          "volume": 102763
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 180.0399932861328,
+          "high": 181.4199981689453,
+          "low": 179.57000732421875,
+          "close": 180.3000030517578,
+          "volume": 111700
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 176.13999938964844,
+          "high": 178.05999755859375,
+          "low": 174.97000122070312,
+          "close": 177.67999267578125,
+          "volume": 56100
+        }
+      },
+      "returns": {
+        "day": -3.90512055436244,
+        "week": -0.9151464932586673,
+        "month": 0.5459259684196027
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 63,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:41:41.999730+00:00",
+      "intradayRawSha256": "af7a943b34da1711c89bee8e6aa4252646370e7d250e0faca6c905c97380a867",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "XLC",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:41:36.722155+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLC?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "ab2689274bda37f81c77afe9b7d9830318b6dd9ba7f0df931dc87778ec108d0f",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 107.13999938964844,
+        "high": 107.59500122070312,
+        "low": 103.22000122070312,
+        "close": 104.33999633789062,
+        "volume": 13754689
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "XLC",
+        "time": 1793889000,
+        "open": 107.14,
+        "high": 107.595,
+        "low": 103.2,
+        "close": 104.34,
+        "volume": 13761622,
+        "change": -0.5907012195121859,
+        "change_abs": -0.6199999999999903,
+        "currency": "USD",
+        "exchange": "AMEX",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": -2.621941779690218e-06,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 103.38999938964844,
+          "high": 105.87999725341797,
+          "low": 103.38999938964844,
+          "close": 104.95999908447266,
+          "volume": 11570961
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 101.18000030517578,
+          "high": 101.76000213623047,
+          "low": 100.12999725341797,
+          "close": 101.20999908447266,
+          "volume": 10512300
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 110.22000122070312,
+          "high": 111.73500061035156,
+          "low": 110.22000122070312,
+          "close": 111.61000061035156,
+          "volume": 6240400
+        }
+      },
+      "returns": {
+        "day": -0.5907038414539656,
+        "week": 3.0925770988354584,
+        "month": -6.513757040322654
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 78,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:41:42.043860+00:00",
+      "intradayRawSha256": "3be8cd816e3452f8d648a108fe4936339b00e9d09bb9ec4140a3727260967eec",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "XLP",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:41:36.891640+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLP?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "dd13f3ce2901fb214e4d84e57a335d00d6eb181ba201e3c2e1dfc5b63e5a98fb",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 92.94000244140625,
+        "high": 93.4000015258789,
+        "low": 91.2249984741211,
+        "close": 91.25,
+        "volume": 35821276
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "XLP",
+        "time": 1793889000,
+        "open": 92.94,
+        "high": 93.4,
+        "low": 91.22,
+        "close": 91.25,
+        "volume": 35837703,
+        "change": -0.7504894496410678,
+        "change_abs": -0.6899999999999977,
+        "currency": "USD",
+        "exchange": "AMEX",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": -2.6355054246751664e-06,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 90.5199966430664,
+          "high": 92.48999786376953,
+          "low": 90.2699966430664,
+          "close": 91.94000244140625,
+          "volume": 23584745
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 87.83000183105469,
+          "high": 88.25,
+          "low": 87.4000015258789,
+          "close": 88.18000030517578,
+          "volume": 15100600
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 80.51000213623047,
+          "high": 81.04000091552734,
+          "low": 80.0999984741211,
+          "close": 81.04000091552734,
+          "volume": 9270000
+        }
+      },
+      "returns": {
+        "day": -0.7504920851464925,
+        "week": 3.4815147246535227,
+        "month": 12.598715411066097
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 78,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:41:41.943325+00:00",
+      "intradayRawSha256": "5cdfbd913cecb98bb80da32f308ed9d1ebdada959e9421de1047c79e006cd01c",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "XLRE",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:41:37.319846+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLRE?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "9440391cde980ac7f81d3666ce26e547ca5d4c590742859c15aabf583007ac9d",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 45.220001220703125,
+        "high": 45.341800689697266,
+        "low": 44.09000015258789,
+        "close": 44.29999923706055,
+        "volume": 11932210
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "XLRE",
+        "time": 1793889000,
+        "open": 45.22,
+        "high": 45.3418,
+        "low": 44.09,
+        "close": 44.3,
+        "volume": 11932220,
+        "change": -1.8173758865248235,
+        "change_abs": -0.8200000000000003,
+        "currency": "USD",
+        "exchange": "AMEX",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": 6.333424606985716e-07,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 44.27000045776367,
+          "high": 45.150001525878906,
+          "low": 44.099998474121094,
+          "close": 45.119998931884766,
+          "volume": 9024539
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 42.43000030517578,
+          "high": 43.150001525878906,
+          "low": 42.43000030517578,
+          "close": 43.060001373291016,
+          "volume": 6726600
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 40.77000045776367,
+          "high": 40.88999938964844,
+          "low": 40.430999755859375,
+          "close": 40.66999816894531,
+          "volume": 9105800
+        }
+      },
+      "returns": {
+        "day": -1.8173752531823628,
+        "week": 2.8796976874660984,
+        "month": 8.925500938151053
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 78,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:41:41.994759+00:00",
+      "intradayRawSha256": "6fc6e47f15613bb50f13d4487de9e7c5bf35c6ab1c8cd244cd5a57f74af78cb3",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "FAN",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:41:49.635159+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/FAN?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "eef503594dc1c0dc33367f26bb81eaa7015e47a2d5a1a673a543b3038a6a5e0a",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 23.040000915527344,
+        "high": 23.049999237060547,
+        "low": 22.655000686645508,
+        "close": 22.655899047851562,
+        "volume": 20021
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "FAN",
+        "time": 1793889000,
+        "open": 23.04,
+        "high": 23.05,
+        "low": 22.655,
+        "close": 22.6559,
+        "volume": 20022,
+        "change": -1.6244029526704389,
+        "change_abs": -0.3741000000000021,
+        "currency": "USD",
+        "exchange": "AMEX",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": -7.067477220790153e-06,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 23.020000457763672,
+          "high": 23.08989906311035,
+          "low": 22.899999618530273,
+          "close": 23.030000686645508,
+          "volume": 82760
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 21.969999313354492,
+          "high": 22.15999984741211,
+          "low": 21.969999313354492,
+          "close": 22.1299991607666,
+          "volume": 28900
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 22.469999313354492,
+          "high": 22.5,
+          "low": 22.3700008392334,
+          "close": 22.469999313354492,
+          "volume": 11800
+        }
+      },
+      "returns": {
+        "day": -1.6244100201476597,
+        "week": 2.376411690142799,
+        "month": 0.8273241663455888
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 26,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:41:56.571032+00:00",
+      "intradayRawSha256": "ede1f20b779ee5a0a7ff3d0cc8442b06f3f13a730007c81d284a64b80fd0214b",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "XLV",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:41:49.798582+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLV?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "54ff4c576fc120d5e3ac39f8409d9d710bfe324e14bdc946f04bae7ffa96cffb",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 191.4550018310547,
+        "high": 192.30999755859375,
+        "low": 184.82000732421875,
+        "close": 184.91000366210938,
+        "volume": 23936302
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "XLV",
+        "time": 1793889000,
+        "open": 191.455,
+        "high": 192.32,
+        "low": 184.82,
+        "close": 184.91,
+        "volume": 24462112,
+        "change": -2.5044817041020773,
+        "change_abs": -4.75,
+        "currency": "USD",
+        "exchange": "AMEX",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": 4.8358570481354946e-08,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 187.7100067138672,
+          "high": 190.2050018310547,
+          "low": 185.3300018310547,
+          "close": 189.66000366210938,
+          "volume": 16767496
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 182.97000122070312,
+          "high": 184.85000610351562,
+          "low": 182.10000610351562,
+          "close": 184.0399932861328,
+          "volume": 15100800
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 166.0,
+          "high": 167.77999877929688,
+          "low": 165.49000549316406,
+          "close": 167.3699951171875,
+          "volume": 7301100
+        }
+      },
+      "returns": {
+        "day": -2.504481655743507,
+        "week": 0.47272897615462384,
+        "month": 10.47978075917424
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 78,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:41:56.415308+00:00",
+      "intradayRawSha256": "fa3d092e896dacde93e4ff64dad6d19054e5fa43bf6a1c9f2a6aa9bdb2b710a3",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "ICLN",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:41:49.835757+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/ICLN?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "8ddd90c2c2766d0d722bcc0d8431013fdaa78dd30d0f2236717b0e09abdcae11",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 16.725000381469727,
+        "high": 16.815000534057617,
+        "low": 15.890000343322754,
+        "close": 16.139999389648438,
+        "volume": 12272083
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "ICLN",
+        "time": 1793889000,
+        "open": 16.725,
+        "high": 16.815,
+        "low": 15.89,
+        "close": 16.14,
+        "volume": 12272096,
+        "change": -2.7710843373494027,
+        "change_abs": -0.46000000000000085,
+        "currency": "USD",
+        "exchange": "NASDAQ",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": -5.91114709669327e-06,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 16.780000686645508,
+          "high": 17.06999969482422,
+          "low": 16.56999969482422,
+          "close": 16.600000381469727,
+          "volume": 13387231
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 15.640000343322754,
+          "high": 15.8100004196167,
+          "low": 15.600000381469727,
+          "close": 15.6899995803833,
+          "volume": 6100100
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 17.309999465942383,
+          "high": 17.34000015258789,
+          "low": 17.1200008392334,
+          "close": 17.290000915527344,
+          "volume": 7223800
+        }
+      },
+      "returns": {
+        "day": -2.7710902484964994,
+        "week": 2.8680676947101746,
+        "month": -6.651251966367122
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 78,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:41:56.453962+00:00",
+      "intradayRawSha256": "bf32f47862d5bc6dc8b51b686adb82e1351461fbb774e876baa3bf9749a3c482",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "LIT",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:41:49.846177+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/LIT?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "980d54ea3db0d885b17a4e92e38d1e61b7187797dfe69d263cf4963c0bde7304",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 62.630001068115234,
+        "high": 62.69499969482422,
+        "low": 60.130001068115234,
+        "close": 60.18000030517578,
+        "volume": 155630
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "LIT",
+        "time": 1793889000,
+        "open": 62.63,
+        "high": 62.74,
+        "low": 60.13,
+        "close": 60.18,
+        "volume": 155632,
+        "change": -2.7472527472527517,
+        "change_abs": -1.7000000000000028,
+        "currency": "USD",
+        "exchange": "AMEX",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": -1.1855132733273877e-06,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 61.619998931884766,
+          "high": 62.27000045776367,
+          "low": 61.459999084472656,
+          "close": 61.880001068115234,
+          "volume": 235669
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 61.209999084472656,
+          "high": 61.650001525878906,
+          "low": 60.5099983215332,
+          "close": 60.939998626708984,
+          "volume": 124200
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 69.41999816894531,
+          "high": 70.33999633789062,
+          "low": 69.25,
+          "close": 70.12999725341797,
+          "volume": 109100
+        }
+      },
+      "returns": {
+        "day": -2.747253932766025,
+        "week": -1.2471255967506867,
+        "month": -14.18793289309198
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 76,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:41:56.477869+00:00",
+      "intradayRawSha256": "757c913008c3f2582ee4d277294ed5476cd5acbc236b54e08860e2a1feacf718",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "IYT",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:41:49.862338+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IYT?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "9f8dbd4c935d64c5d4feed3f04960b1ac5270bb2e290fe69f8b26630516b0ff7",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 85.19,
+        "high": 85.19,
+        "low": 81.495,
+        "close": 82.01,
+        "volume": 1350792
+      },
+      "rejectedYahooBar": {
+        "date": "2026-11-05",
+        "open": 85.19000244140625,
+        "high": 84.87999725341797,
+        "low": 81.51000213623047,
+        "close": 82.01000213623047,
+        "volume": 1350792
+      },
+      "independentTradingViewBar": {
+        "name": "IYT",
+        "time": 1793889000,
+        "open": 85.19,
+        "high": 85.19,
+        "low": 81.495,
+        "close": 82.01,
+        "volume": 1350792,
+        "change": -3.5403434486003187,
+        "change_abs": -3.009999999999991,
+        "currency": "USD",
+        "exchange": "CBOE",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": 3.808617670575387e-06,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 84.19999694824219,
+          "high": 85.20999908447266,
+          "low": 83.32499694824219,
+          "close": 85.0199966430664,
+          "volume": 2333727
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 81.47000122070312,
+          "high": 81.94999694824219,
+          "low": 80.68000030517578,
+          "close": 81.61000061035156,
+          "volume": 506100
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 80.30999755859375,
+          "high": 80.4000015258789,
+          "low": 79.44999694824219,
+          "close": 79.8499984741211,
+          "volume": 983400
+        }
+      },
+      "returns": {
+        "day": -3.540339639982648,
+        "week": 0.49013526118968365,
+        "month": 2.7050739726425244
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 78,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:41:56.472646+00:00",
+      "intradayRawSha256": "b210747b2a6bc214e4ae4d7f8602c5c1c5de203d95e4150eaf83148aa5ccd0fb",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "XBI",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:42:03.993851+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XBI?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "c8e1b7db67be5619c712a22e8c9c958b52b78870708060b8c7ec13a4845a0df7",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 157.44500732421875,
+        "high": 157.61000061035156,
+        "low": 148.25,
+        "close": 148.39999389648438,
+        "volume": 13608062
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "XBI",
+        "time": 1793889000,
+        "open": 157.445,
+        "high": 157.61,
+        "low": 148.25,
+        "close": 148.4,
+        "volume": 13644829,
+        "change": -6.725329981143928,
+        "change_abs": -10.699999999999989,
+        "currency": "USD",
+        "exchange": "AMEX",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": -7.414550124984487e-06,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 158.35000610351562,
+          "high": 159.3000030517578,
+          "low": 152.64999389648438,
+          "close": 159.10000610351562,
+          "volume": 12057534
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 157.63999938964844,
+          "high": 160.2899932861328,
+          "low": 156.42999267578125,
+          "close": 157.7899932861328,
+          "volume": 10925600
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 155.55999755859375,
+          "high": 156.72999572753906,
+          "low": 152.55999755859375,
+          "close": 156.19000244140625,
+          "volume": 6989500
+        }
+      },
+      "returns": {
+        "day": -6.725337395694053,
+        "week": -5.950947328212896,
+        "month": -4.987520598729899
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 78,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:42:08.300615+00:00",
+      "intradayRawSha256": "2ee39845f8264141bfc74d22e33c19b19a6c86c6e81761356d79cf722b393553",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "IBB",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:42:04.215689+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IBB?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "27b74683bc5bbbd13c4d287334f29fc5eec7373685ae45e92dd7df6f89269095",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 220.3000030517578,
+        "high": 220.88999938964844,
+        "low": 209.99000549316406,
+        "close": 209.99000549316406,
+        "volume": 3674922
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "IBB",
+        "time": 1793889000,
+        "open": 220.3,
+        "high": 220.89,
+        "low": 209.99,
+        "close": 209.99,
+        "volume": 3676377,
+        "change": -5.037760593316143,
+        "change_abs": -11.139999999999986,
+        "currency": "USD",
+        "exchange": "NASDAQ",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": 3.872545288885476e-07,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 220.10000610351562,
+          "high": 221.1999969482422,
+          "low": 214.0399932861328,
+          "close": 221.1300048828125,
+          "volume": 2108213
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 217.33999633789062,
+          "high": 220.30999755859375,
+          "low": 215.82000732421875,
+          "close": 217.86000061035156,
+          "volume": 2928200
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 205.2899932861328,
+          "high": 208.60000610351562,
+          "low": 203.7899932861328,
+          "close": 207.9600067138672,
+          "volume": 1549400
+        }
+      },
+      "returns": {
+        "day": -5.0377602060616145,
+        "week": -3.6124093891210407,
+        "month": 0.9761486409691988
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 78,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:42:08.334255+00:00",
+      "intradayRawSha256": "3d517d6aa68f7aa3dd5a98babc4d351ecea2c39658e3dcdedd02129df7a1ae59",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "XLB",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:42:04.232966+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLB?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "e2e312c20a9739e4fdb2843c4c76268df042749027bd3045fb84bc36d6826068",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 54.31999969482422,
+        "high": 54.630001068115234,
+        "low": 51.89500045776367,
+        "close": 52.33000183105469,
+        "volume": 23318499
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "XLB",
+        "time": 1793889000,
+        "open": 54.32,
+        "high": 54.63,
+        "low": 51.8941,
+        "close": 52.33,
+        "volume": 23330337,
+        "change": -2.9128014842300565,
+        "change_abs": -1.5700000000000003,
+        "currency": "USD",
+        "exchange": "AMEX",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": 6.486486037182715e-07,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 53.369998931884766,
+          "high": 53.95000076293945,
+          "low": 53.0015983581543,
+          "close": 53.900001525878906,
+          "volume": 21237435
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 51.720001220703125,
+          "high": 52.529998779296875,
+          "low": 51.720001220703125,
+          "close": 52.529998779296875,
+          "volume": 14681000
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 48.83000183105469,
+          "high": 49.77000045776367,
+          "low": 48.5099983215332,
+          "close": 49.5,
+          "volume": 13539600
+        }
+      },
+      "returns": {
+        "day": -2.9128008355814528,
+        "week": -0.3807290174943079,
+        "month": 5.717175416272102
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 78,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:42:08.275595+00:00",
+      "intradayRawSha256": "6ea7e2cf4ed108102138588d1462d5913ac1bd9144482eac01f5d72cc3695d36",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "FDN",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:42:04.233719+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/FDN?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "ed91895450802818620cdd092a11d9553ce9be2e2abc9f2b41b3132715752109",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 271.6700134277344,
+        "high": 271.6700134277344,
+        "low": 256.6499938964844,
+        "close": 260.3699951171875,
+        "volume": 282520
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "FDN",
+        "time": 1793889000,
+        "open": 271.67,
+        "high": 271.67,
+        "low": 256.64,
+        "close": 260.37,
+        "volume": 282520,
+        "change": -4.50744516980856,
+        "change_abs": -12.29000000000002,
+        "currency": "USD",
+        "exchange": "AMEX",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": -3.0733712970132387e-06,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 270.7099914550781,
+          "high": 276.8500061035156,
+          "low": 270.3699951171875,
+          "close": 272.6600036621094,
+          "volume": 180089
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 276.4200134277344,
+          "high": 278.1499938964844,
+          "low": 273.1099853515625,
+          "close": 275.70001220703125,
+          "volume": 220100
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 291.8999938964844,
+          "high": 294.7900085449219,
+          "low": 291.8999938964844,
+          "close": 293.8299865722656,
+          "volume": 110600
+        }
+      },
+      "returns": {
+        "day": -4.507448243179857,
+        "week": -5.560397682656603,
+        "month": -11.387534623478214
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 78,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:42:08.207315+00:00",
+      "intradayRawSha256": "463e8928c6f992b27e420d9fc5b5142f84b38a1daa2473df7ef6557b937bcd2c",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "BATT",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:42:04.243220+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/BATT?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "b3c450dd6520223d15a5ecff1d16bfd5cf7c93808a35f7fd250e822ac8f7ddc2",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 12.989999771118164,
+        "high": 13.0,
+        "low": 12.309300422668457,
+        "close": 12.3100004196167,
+        "volume": 32086
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "BATT",
+        "time": 1793889000,
+        "open": 12.99,
+        "high": 13,
+        "low": 12.3093,
+        "close": 12.31,
+        "volume": 32518,
+        "change": -5.234795996920706,
+        "change_abs": -0.6799999999999997,
+        "currency": "USD",
+        "exchange": "AMEX",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": 4.90005426367901e-06,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 12.920000076293945,
+          "high": 13.099900245666504,
+          "low": 12.909600257873535,
+          "close": 12.989999771118164,
+          "volume": 43786
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 12.979999542236328,
+          "high": 13.09000015258789,
+          "low": 12.899999618530273,
+          "close": 13.09000015258789,
+          "volume": 28400
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 14.510000228881836,
+          "high": 14.760000228881836,
+          "low": 14.510000228881836,
+          "close": 14.6899995803833,
+          "volume": 72200
+        }
+      },
+      "returns": {
+        "day": -5.234791096866442,
+        "week": -5.958745025812595,
+        "month": -16.20149236726187
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 37,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:42:08.361413+00:00",
+      "intradayRawSha256": "a1a3cc8e1a85cf5475b01c06b19d6fb9256afa22d0269bdec6e704d41a3832ae",
+      "holdingsAsOf": "2026-11-04",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "IHF",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:42:12.335552+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IHF?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "b383098f548551f07ef2c02052157c6635f19153edf8abb0ca9df0483247d51f",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 61.255001068115234,
+        "high": 61.56999969482422,
+        "low": 59.119998931884766,
+        "close": 59.5099983215332,
+        "volume": 3952441
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "IHF",
+        "time": 1793889000,
+        "open": 61.255,
+        "high": 61.57,
+        "low": 59.12,
+        "close": 59.51,
+        "volume": 3952442,
+        "change": -1.7338177014531113,
+        "change_abs": -1.0500000000000043,
+        "currency": "USD",
+        "exchange": "AMEX",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": -4.999913105319109e-06,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 59.65999984741211,
+          "high": 61.15140151977539,
+          "low": 58.810001373291016,
+          "close": 60.560001373291016,
+          "volume": 1534718
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 60.18000030517578,
+          "high": 60.209999084472656,
+          "low": 59.650001525878906,
+          "close": 60.16999816894531,
+          "volume": 604300
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 55.06999969482422,
+          "high": 56.25,
+          "low": 55.04999923706055,
+          "close": 56.040000915527344,
+          "volume": 1194300
+        }
+      },
+      "returns": {
+        "day": -1.7338227013662166,
+        "week": -1.0968919187249515,
+        "month": 6.19200098022199
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 78,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:42:16.600107+00:00",
+      "intradayRawSha256": "2586706174d2576f8569536ab091f138cbe8c2291ed50b1ada48f35e23a7df14",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "KBE",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:42:12.356452+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/KBE?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "e6ea97d59ea848f0ef19b7eb5f15224a4bcfecffa443a1fcdb3baebb4086108d",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 68.62000274658203,
+        "high": 69.33000183105469,
+        "low": 65.95999908447266,
+        "close": 66.22000122070312,
+        "volume": 3614819
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "KBE",
+        "time": 1793889000,
+        "open": 68.62,
+        "high": 69.33,
+        "low": 65.96,
+        "close": 66.22,
+        "volume": 3614819,
+        "change": -2.3735810113519085,
+        "change_abs": -1.6099999999999994,
+        "currency": "USD",
+        "exchange": "AMEX",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": -8.357511149803543e-07,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 68.1500015258789,
+          "high": 69.01000213623047,
+          "low": 67.19999694824219,
+          "close": 67.83000183105469,
+          "volume": 2456215
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 66.37000274658203,
+          "high": 66.87999725341797,
+          "low": 66.16999816894531,
+          "close": 66.45999908447266,
+          "volume": 1115000
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 64.37999725341797,
+          "high": 64.5199966430664,
+          "low": 63.72999954223633,
+          "close": 64.1500015258789,
+          "volume": 1886400
+        }
+      },
+      "returns": {
+        "day": -2.3735818471030234,
+        "week": -0.3611162610226426,
+        "month": 3.2268116065268693
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 78,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:42:16.658333+00:00",
+      "intradayRawSha256": "a1fe600f93a39638db7ca744ae0a41165a40c01df1a97dd3012f4618d44e4a56",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "KRE",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:42:12.389805+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/KRE?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "938b1676b72604069253300018a61372c87d65e364388a4e718d6dc30a5b0043",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 74.97000122070312,
+        "high": 75.80000305175781,
+        "low": 72.0199966430664,
+        "close": 72.30999755859375,
+        "volume": 23816232
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "KRE",
+        "time": 1793889000,
+        "open": 74.97,
+        "high": 75.8,
+        "low": 72.02,
+        "close": 72.31,
+        "volume": 23832285,
+        "change": -2.455146364494797,
+        "change_abs": -1.8199999999999932,
+        "currency": "USD",
+        "exchange": "AMEX",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": 3.207111456404732e-07,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 74.62000274658203,
+          "high": 75.66999816894531,
+          "low": 73.625,
+          "close": 74.12999725341797,
+          "volume": 17560314
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 72.75,
+          "high": 73.45999908447266,
+          "low": 72.55000305175781,
+          "close": 72.86000061035156,
+          "volume": 9292900
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 70.77999877929688,
+          "high": 71.05000305175781,
+          "low": 69.91999816894531,
+          "close": 70.38999938964844,
+          "volume": 9793600
+        }
+      },
+      "returns": {
+        "day": -2.4551460437836514,
+        "week": -0.7548765401460544,
+        "month": 2.7276576013547604
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 78,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:42:16.583539+00:00",
+      "intradayRawSha256": "7f2e80e2d59c62d253b101d52894b45c3bdc5e90afa44c7dcbcb7ea813571fbf",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "XPH",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:42:12.413307+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XPH?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "da7914c567b9e782fd5ff5096c4ed238679dff601a0eae79f6cfd6f18f8d31d6",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 65.8499984741211,
+        "high": 66.2300033569336,
+        "low": 62.599998474121094,
+        "close": 62.650001525878906,
+        "volume": 247236
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "XPH",
+        "time": 1793889000,
+        "open": 65.85,
+        "high": 66.23,
+        "low": 62.6,
+        "close": 62.65,
+        "volume": 247445,
+        "change": -4.146266829865362,
+        "change_abs": -2.710000000000001,
+        "currency": "USD",
+        "exchange": "AMEX",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": 1.4394647234183822e-06,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 65.55000305175781,
+          "high": 65.65499877929688,
+          "low": 63.90999984741211,
+          "close": 65.36000061035156,
+          "volume": 192740
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 65.30999755859375,
+          "high": 66.01000213623047,
+          "low": 64.6500015258789,
+          "close": 65.18000030517578,
+          "volume": 227700
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 63.560001373291016,
+          "high": 64.08000183105469,
+          "low": 63.029998779296875,
+          "close": 63.65999984741211,
+          "volume": 427100
+        }
+      },
+      "returns": {
+        "day": -4.146265390400639,
+        "week": -3.881556869363767,
+        "month": -1.5865509330098782
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 71,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:42:16.638828+00:00",
+      "intradayRawSha256": "8a11c785d3563e52bbd4382f9ac24104b2b57fff4565d6f8a3aeb0a65f511eca",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "IGV",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:42:12.418053+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IGV?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "fda81f3f140b663b4b2f56ae9dfe96fbb7057355ba5556433356a6471435ae94",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 103.11000061035156,
+        "high": 103.3499984741211,
+        "low": 98.5,
+        "close": 99.01000213623047,
+        "volume": 15419161
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "IGV",
+        "time": 1793889000,
+        "open": 103.11,
+        "high": 103.35,
+        "low": 98.5,
+        "close": 99.01,
+        "volume": 15443439,
+        "change": -4.393588258014675,
+        "change_abs": -4.549999999999997,
+        "currency": "USD",
+        "exchange": "CBOE",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": 4.316697071793385e-06,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 102.69000244140625,
+          "high": 105.75,
+          "low": 102.37999725341797,
+          "close": 103.55999755859375,
+          "volume": 11673021
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 107.56999969482422,
+          "high": 109.0199966430664,
+          "low": 105.91999816894531,
+          "close": 107.97000122070312,
+          "volume": 11011600
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 109.4000015258789,
+          "high": 110.43000030517578,
+          "low": 108.79000091552734,
+          "close": 109.72000122070312,
+          "volume": 5467700
+        }
+      },
+      "returns": {
+        "day": -4.393583941317603,
+        "week": -8.298600521599875,
+        "month": -9.76120941060633
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 78,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:42:16.645787+00:00",
+      "intradayRawSha256": "8973e000114ebae3795c8e5e60382d39beb7a25d084e41da36fe279f83e1d145",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "CLOU",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:42:22.358026+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/CLOU?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "c05d07c99d517265b0a372b9299efc0e2fce71d39e75b5795704ce05750aa134",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 27.280000686645508,
+        "high": 27.280000686645508,
+        "low": 26.100000381469727,
+        "close": 26.149999618530273,
+        "volume": 338999
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "CLOU",
+        "time": 1793889000,
+        "open": 27.28,
+        "high": 27.28,
+        "low": 26.08,
+        "close": 26.15,
+        "volume": 338999,
+        "change": -5.4249547920434,
+        "change_abs": -1.5,
+        "currency": "USD",
+        "exchange": "NASDAQ",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": -7.484469843888064e-08,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 27.520000457763672,
+          "high": 28.135000228881836,
+          "low": 27.5,
+          "close": 27.649999618530273,
+          "volume": 250593
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 29.040000915527344,
+          "high": 29.510000228881836,
+          "low": 28.649999618530273,
+          "close": 29.239999771118164,
+          "volume": 255000
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 28.8700008392334,
+          "high": 29.260000228881836,
+          "low": 28.809999465942383,
+          "close": 29.200000762939453,
+          "volume": 152100
+        }
+      },
+      "returns": {
+        "day": -5.424954866888099,
+        "week": -10.567716062843612,
+        "month": -10.44520912574849
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 72,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:42:28.093815+00:00",
+      "intradayRawSha256": "7bade96b8db686a25687a07eaf3ea30c9a04df0f4ea07d725dda8cb7c674205d",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "XLU",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:42:22.365592+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLU?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "002d521169b7884e6bdbf1b5cab408bb4477b2c6b5dfc343d5707fb6b703c925",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 44.005001068115234,
+        "high": 44.09000015258789,
+        "low": 43.04130172729492,
+        "close": 43.29999923706055,
+        "volume": 47503464
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "XLU",
+        "time": 1793889000,
+        "open": 44.005,
+        "high": 44.09,
+        "low": 43.0413,
+        "close": 43.3,
+        "volume": 47628269,
+        "change": -0.7108461362072971,
+        "change_abs": -0.3100000000000023,
+        "currency": "USD",
+        "exchange": "AMEX",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": -3.139078954550456e-06,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 43.36000061035156,
+          "high": 43.78969955444336,
+          "low": 42.79999923706055,
+          "close": 43.61000061035156,
+          "volume": 41099645
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 42.900001525878906,
+          "high": 43.25,
+          "low": 42.86000061035156,
+          "close": 43.13999938964844,
+          "volume": 24851100
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 39.869998931884766,
+          "high": 40.209999084472656,
+          "low": 39.58000183105469,
+          "close": 39.970001220703125,
+          "volume": 38491800
+        }
+      },
+      "returns": {
+        "day": -0.7108492752862516,
+        "week": 0.37088514064862466,
+        "month": 8.331243219058493
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 78,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:42:28.112941+00:00",
+      "intradayRawSha256": "93d20072c0c8a7965e94575601ded60ac2d7e0e8c7434c700dde5a8c86dacb92",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "CIBR",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:42:22.399862+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/CIBR?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "2be78d038e38aa68cfe017cb1e0b2d413bd85a85c3cb10301f18faf7c52ba6af",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 95.19999694824219,
+        "high": 95.31999969482422,
+        "low": 90.6449966430664,
+        "close": 91.01000213623047,
+        "volume": 4409053
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "CIBR",
+        "time": 1793889000,
+        "open": 95.2,
+        "high": 95.32,
+        "low": 90.645,
+        "close": 91.01,
+        "volume": 4410946,
+        "change": -6.522185702547241,
+        "change_abs": -6.349999999999994,
+        "currency": "USD",
+        "exchange": "NASDAQ",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": 1.6081421039260135e-06,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 97.31999969482422,
+          "high": 99.16000366210938,
+          "low": 96.05999755859375,
+          "close": 97.36000061035156,
+          "volume": 1684562
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 102.5199966430664,
+          "high": 105.9000015258789,
+          "low": 101.43000030517578,
+          "close": 105.0,
+          "volume": 3496100
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 104.91999816894531,
+          "high": 106.31999969482422,
+          "low": 104.38999938964844,
+          "close": 106.01000213623047,
+          "volume": 2810700
+        }
+      },
+      "returns": {
+        "day": -6.522184094405137,
+        "week": -13.323807489304318,
+        "month": -14.149608242365586
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 78,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:42:28.072109+00:00",
+      "intradayRawSha256": "16700d194d26f20301ef4f0a607011d8f454eabe7eca1c7544fd22d8cb055441",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "XLK",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:42:22.409993+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLK?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "b85759c7fecf48897ca04681bc0a7151849f33daddf00070087519a5e1222947",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 172.3300018310547,
+        "high": 172.72000122070312,
+        "low": 162.13999938964844,
+        "close": 162.3800048828125,
+        "volume": 33093951
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "XLK",
+        "time": 1793889000,
+        "open": 172.33,
+        "high": 172.72,
+        "low": 162.14,
+        "close": 162.38,
+        "volume": 33136233,
+        "change": -8.000000000000004,
+        "change_abs": -14.120000000000005,
+        "currency": "USD",
+        "exchange": "AMEX",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": 2.7664660082749037e-06,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 176.67999267578125,
+          "high": 180.19000244140625,
+          "low": 175.74000549316406,
+          "close": 176.5,
+          "volume": 12597890
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 188.9199981689453,
+          "high": 189.33999633789062,
+          "low": 187.69000244140625,
+          "close": 188.74000549316406,
+          "volume": 7527800
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 200.27000427246094,
+          "high": 201.3000030517578,
+          "low": 199.9499969482422,
+          "close": 200.92999267578125,
+          "volume": 6587400
+        }
+      },
+      "returns": {
+        "day": -7.999997233533995,
+        "week": -13.96630276738351,
+        "month": -19.185780718746482
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 78,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:42:28.097364+00:00",
+      "intradayRawSha256": "94b13229cfed6b2e70ba7d762d0bb95135c842afc1c59e2e0e0288e75565b794",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "XME",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:42:22.439902+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XME?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "d2b778ecb2c3651dc8e3d1f4c47a857caf0c02c7ac112f4625fadf1a2403b5b8",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 96.44999694824219,
+        "high": 97.17500305175781,
+        "low": 89.58000183105469,
+        "close": 90.41999816894531,
+        "volume": 2339725
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "XME",
+        "time": 1793889000,
+        "open": 96.45,
+        "high": 97.175,
+        "low": 89.58,
+        "close": 90.42,
+        "volume": 2343439,
+        "change": -5.596157861766548,
+        "change_abs": -5.359999999999999,
+        "currency": "USD",
+        "exchange": "AMEX",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": -7.085655067129437e-07,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 99.0999984741211,
+          "high": 99.63999938964844,
+          "low": 93.7686996459961,
+          "close": 95.77999877929688,
+          "volume": 2776372
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 100.25,
+          "high": 101.76000213623047,
+          "low": 100.13999938964844,
+          "close": 101.05000305175781,
+          "volume": 900300
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 105.98999786376953,
+          "high": 108.9800033569336,
+          "low": 105.20999908447266,
+          "close": 107.76000213623047,
+          "volume": 1611100
+        }
+      },
+      "returns": {
+        "day": -5.596158570332054,
+        "week": -10.51954929419231,
+        "month": -16.09131739378019
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 78,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:42:28.156593+00:00",
+      "intradayRawSha256": "32fb2a513722c8a2b2c913fc613733b9649f5d90e2772790131c0e701a49241a",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "XLI",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:42:32.193897+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLI?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "dc4fd54e0c787f7a84050d00b041669439c35aa6a32e7804927f6511f1c04c69",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 167.99000549316406,
+        "high": 168.8350067138672,
+        "low": 162.0399932861328,
+        "close": 162.47000122070312,
+        "volume": 19200346
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "XLI",
+        "time": 1793889000,
+        "open": 167.99,
+        "high": 168.835,
+        "low": 162.04,
+        "close": 162.47,
+        "volume": 19229557,
+        "change": -4.124867225303912,
+        "change_abs": -6.990000000000009,
+        "currency": "USD",
+        "exchange": "AMEX",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": -3.0781457232009757e-06,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 170.8300018310547,
+          "high": 170.9600067138672,
+          "low": 167.2100067138672,
+          "close": 169.4600067138672,
+          "volume": 12223429
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 167.6199951171875,
+          "high": 170.3800048828125,
+          "low": 167.4499969482422,
+          "close": 170.1300048828125,
+          "volume": 7782700
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 169.63999938964844,
+          "high": 170.8300018310547,
+          "low": 168.14999389648438,
+          "close": 170.10000610351562,
+          "volume": 6406200
+        }
+      },
+      "returns": {
+        "day": -4.124870303449635,
+        "week": -4.502441334428731,
+        "month": -4.485599417421071
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 78,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:42:37.240966+00:00",
+      "intradayRawSha256": "f9c5fe4a9b36ffbdffac4552b2834702409feac28c50e5254842f46f9cff7d12",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "ITA",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:42:32.195537+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/ITA?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "e40745f3bb2f3334d9451500e967769496c976d045d7aee7ba346d364e532936",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 70.43000030517578,
+        "high": 71.30000305175781,
+        "low": 67.55999755859375,
+        "close": 68.11000061035156,
+        "volume": 3045500
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "ITA",
+        "time": 1793889000,
+        "open": 70.43,
+        "high": 71.3,
+        "low": 67.56,
+        "close": 68.11,
+        "volume": 3046030,
+        "change": -3.9982125868237572,
+        "change_abs": -2.8365957200000054,
+        "currency": "USD",
+        "exchange": "CBOE",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": -9.348969300937426e-05,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 71.80999755859375,
+          "high": 72.42999776204427,
+          "low": 69.89666748046875,
+          "close": 70.94666544596355,
+          "volume": 3774927
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 69.71000162760417,
+          "high": 71.91999816894531,
+          "low": 69.71000162760417,
+          "close": 71.43333435058594,
+          "volume": 3442800
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 69.16333516438802,
+          "high": 69.36666870117188,
+          "low": 68.5433349609375,
+          "close": 68.99333190917969,
+          "volume": 2295000
+        }
+      },
+      "returns": {
+        "day": -3.9983060765167666,
+        "week": -4.652357012937214,
+        "month": -1.2803140164196036
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": [
+        {
+          "numerator": 3,
+          "denominator": 1,
+          "exDate": "2026-11-05",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1100663/000119312526414100/R2.htm",
+          "adjustedThrough": "2026-11-04",
+          "priceDivisor": 3,
+          "volumeMultiplier": 3,
+          "sourceSnapshotUrl": "https://github.com/saewoo16/global-tech-terminal/blob/03801c6da88b8cc86a57d1f2c667228627dd3940/data/overseas_etf_charts.json",
+          "sourceSnapshotSha256": "4a5abf600d7370f4d7792f669427f0070101a542d0012c2a8c19b525311cc24d"
+        }
+      ],
+      "intradayDate": "2026-11-05",
+      "intradayCount": 78,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:42:37.242942+00:00",
+      "intradayRawSha256": "5e3acc190d2148ab7f0caf10dfb4d54ad4fe87f7c7113dad4734ed2b26db5f81",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "SMH",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:42:32.199737+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/SMH?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "8700f7ea09a3f706b133237bede0ebf7f574db0aa731a69ea27351eab5eed46a",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 482.1400146484375,
+        "high": 483.8900146484375,
+        "low": 445.5945129394531,
+        "close": 447.7300109863281,
+        "volume": 28599106
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "SMH",
+        "time": 1793889000,
+        "open": 482.14,
+        "high": 483.93,
+        "low": 445.59,
+        "close": 447.73,
+        "volume": 28630810,
+        "change": -11.212247407142991,
+        "change_abs": -56.539999999999964,
+        "currency": "USD",
+        "exchange": "NASDAQ",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": 4.1130430918912e-06,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 511.1700134277344,
+          "high": 522.1799926757812,
+          "low": 497.3299865722656,
+          "close": 504.2699890136719,
+          "volume": 13103446
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 558.9299926757812,
+          "high": 565.8699951171875,
+          "low": 555.5,
+          "close": 561.6699829101562,
+          "volume": 6017500
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 631.469970703125,
+          "high": 634.780029296875,
+          "low": 626.9600219726562,
+          "close": 633.9000244140625,
+          "volume": 3598700
+        }
+      },
+      "returns": {
+        "day": -11.212243294099899,
+        "week": -20.285928639710438,
+        "month": -29.368986631577787
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 78,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:42:37.139545+00:00",
+      "intradayRawSha256": "0a63d0f349df06d56e0633e66a663bad9e74a2493b6d0e647853b33813487aaa",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "CRAK",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:42:32.291911+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/CRAK?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "e5ef39c3563d7b9282b3fed0f4067aced9557bff31a9fdc73b1bf3120c1b4777",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 58.395,
+        "high": 58.395,
+        "low": 56.535,
+        "close": 56.6,
+        "volume": 1145807
+      },
+      "rejectedYahooBar": {
+        "date": "2026-11-05",
+        "open": 58.39500045776367,
+        "high": 58.31999969482422,
+        "low": 56.53499984741211,
+        "close": 56.599998474121094,
+        "volume": 1145593
+      },
+      "independentTradingViewBar": {
+        "name": "CRAK",
+        "time": 1793889000,
+        "open": 58.395,
+        "high": 58.395,
+        "low": 56.535,
+        "close": 56.6,
+        "volume": 1145807,
+        "change": -3.8232795242141036,
+        "change_abs": -2.25,
+        "currency": "USD",
+        "exchange": "AMEX",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": 2.493696401373313e-06,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 60.41999816894531,
+          "high": 60.52000045776367,
+          "low": 58.04999923706055,
+          "close": 58.849998474121094,
+          "volume": 1843128
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 62.060001373291016,
+          "high": 62.08000183105469,
+          "low": 60.779998779296875,
+          "close": 61.29999923706055,
+          "volume": 1036200
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 64.25,
+          "high": 65.375,
+          "low": 64.04900360107422,
+          "close": 65.05000305175781,
+          "volume": 373700
+        }
+      },
+      "returns": {
+        "day": -3.823277030517702,
+        "week": -7.667209291283372,
+        "month": -12.990011768384491
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 78,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:42:37.175419+00:00",
+      "intradayRawSha256": "afca97bd6112b658aaa291977cac96cb0ec1f42ad96122d80571f41a3a6b97b2",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "SOXX",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:42:32.331306+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/SOXX?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "2459e1e7304ab55701b7af4fcc73579be2c3700fed78ca5ab12a979a76018ba7",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 143.0800018310547,
+        "high": 143.72549438476562,
+        "low": 130.75,
+        "close": 131.89999389648438,
+        "volume": 64317849
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "SOXX",
+        "time": 1793889000,
+        "open": 143.08,
+        "high": 143.73,
+        "low": 130.745,
+        "close": 131.9,
+        "volume": 64500526,
+        "change": -12.146622921250476,
+        "change_abs": -18.23651652999999,
+        "currency": "USD",
+        "exchange": "NASDAQ",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": -9.263298460027158e-05,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 152.75999959309897,
+          "high": 156.40666707356772,
+          "low": 147.2266642252604,
+          "close": 150.13666788736978,
+          "volume": 49740699
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 170.67667643229166,
+          "high": 172.913330078125,
+          "low": 168.86333211263022,
+          "close": 171.28666178385416,
+          "volume": 19446000
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 195.53666178385416,
+          "high": 196.66666666666666,
+          "low": 194.02667236328125,
+          "close": 196.50333658854166,
+          "volume": 12699000
+        }
+      },
+      "returns": {
+        "day": -12.146715554235076,
+        "week": -22.994591334304616,
+        "month": -32.87646093629964
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": [
+        {
+          "numerator": 3,
+          "denominator": 1,
+          "exDate": "2026-11-05",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1100663/000119312526430480/d156277d497.htm",
+          "adjustedThrough": "2026-11-04",
+          "priceDivisor": 3,
+          "volumeMultiplier": 3,
+          "sourceSnapshotUrl": "https://github.com/saewoo16/global-tech-terminal/blob/03801c6da88b8cc86a57d1f2c667228627dd3940/data/overseas_etf_charts.json",
+          "sourceSnapshotSha256": "4a5abf600d7370f4d7792f669427f0070101a542d0012c2a8c19b525311cc24d"
+        }
+      ],
+      "intradayDate": "2026-11-05",
+      "intradayCount": 78,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:42:37.316381+00:00",
+      "intradayRawSha256": "7305c0b127f2481399d33ae511f001d1062e0abf875c66a79c8486a9c976ddd5",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "XAR",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:42:41.113842+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XAR?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "95192ff318b6dc7da66913a3e4147710d832ef5cf5609603aab372c08e323e72",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 223.77499389648438,
+        "high": 226.38999938964844,
+        "low": 212.5,
+        "close": 214.22999572753906,
+        "volume": 579238
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "XAR",
+        "time": 1793889000,
+        "open": 223.775,
+        "high": 226.39,
+        "low": 212.4,
+        "close": 214.23,
+        "volume": 579245,
+        "change": -5.010419899791607,
+        "change_abs": -11.300000000000011,
+        "currency": "USD",
+        "exchange": "AMEX",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": -1.3802687774955302e-06,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 232.89999389648438,
+          "high": 234.07000732421875,
+          "low": 221.67919921875,
+          "close": 225.52999877929688,
+          "volume": 431889
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 227.0500030517578,
+          "high": 237.6999969482422,
+          "low": 226.97999572753906,
+          "close": 235.2899932861328,
+          "volume": 502500
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 233.0800018310547,
+          "high": 233.83999633789062,
+          "low": 230.2100067138672,
+          "close": 231.27999877929688,
+          "volume": 315100
+        }
+      },
+      "returns": {
+        "day": -5.010421280060385,
+        "week": -8.950655854277233,
+        "month": -7.372017961669086
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 78,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:42:47.402320+00:00",
+      "intradayRawSha256": "75bbdbc7b1806f5c4b2eddcdf65eecd9c1d2237bc2ef30ffd80a0d182afe44e8",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "XLE",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:42:41.174269+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLE?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "0c57992f2717f5f622ff0a33c234d474f2a0d9dda09fb821d9fca1d8bf184857",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 64.12999725341797,
+        "high": 64.53500366210938,
+        "low": 61.630001068115234,
+        "close": 61.630001068115234,
+        "volume": 66796731
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "XLE",
+        "time": 1793889000,
+        "open": 64.13,
+        "high": 64.535,
+        "low": 61.63,
+        "close": 61.63,
+        "volume": 66956690,
+        "change": -2.975440806045341,
+        "change_abs": -1.8900000000000006,
+        "currency": "USD",
+        "exchange": "AMEX",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": 9.82323748122127e-07,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 65.83000183105469,
+          "high": 65.94000244140625,
+          "low": 62.65999984741211,
+          "close": 63.52000045776367,
+          "volume": 68240576
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 69.12999725341797,
+          "high": 69.22000122070312,
+          "low": 67.9800033569336,
+          "close": 68.70999908447266,
+          "volume": 25090300
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 62.75,
+          "high": 63.75,
+          "low": 62.04999923706055,
+          "close": 63.45000076293945,
+          "volume": 29430100
+        }
+      },
+      "returns": {
+        "day": -2.975439823721593,
+        "week": -10.304174226015073,
+        "month": -2.868399799747934
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 78,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:42:47.409206+00:00",
+      "intradayRawSha256": "6baee8dc9058eb8efbab4b641f73e7b68aee761d3ec2b91b32966209e39dd0a5",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    },
+    {
+      "ticker": "XOP",
+      "actualLastSession": "2026-11-05",
+      "closedAt": "2026-11-05T16:00:00-05:00",
+      "observedAt": "2026-11-05T21:42:41.203126+00:00",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XOP?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "rawSha256": "1a3dfa65be19e77fc6f92c2e09f61d711f91997de0d8e5b35a1435f2b28b5725",
+      "lastOHLCV": {
+        "date": "2026-11-05",
+        "open": 181.3000030517578,
+        "high": 183.11500549316406,
+        "low": 174.02000427246094,
+        "close": 174.10000610351562,
+        "volume": 4070658
+      },
+      "rejectedYahooBar": null,
+      "independentTradingViewBar": {
+        "name": "XOP",
+        "time": 1793889000,
+        "open": 181.3,
+        "high": 183.165,
+        "low": 174.02,
+        "close": 174.1,
+        "volume": 4097769,
+        "change": -2.894751519883986,
+        "change_abs": -5.189999999999998,
+        "currency": "USD",
+        "exchange": "AMEX",
+        "update_mode": "delayed_streaming_900"
+      },
+      "independentDayReturnDifferencePctPoints": 7.040567516991558e-06,
+      "comparisonBars": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 188.52000427246094,
+          "high": 189.5,
+          "low": 177.25999450683594,
+          "close": 179.2899932861328,
+          "volume": 6481435
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 201.07000732421875,
+          "high": 201.5800018310547,
+          "low": 197.97000122070312,
+          "close": 199.52000427246094,
+          "volume": 1058600
+        },
+        "month": {
+          "date": "2026-10-05",
+          "open": 184.67999267578125,
+          "high": 189.08999633789062,
+          "low": 182.3800048828125,
+          "close": 187.44000244140625,
+          "volume": 2505200
+        }
+      },
+      "returns": {
+        "day": -2.894744479316469,
+        "week": -12.740576195173004,
+        "month": -7.1169420423266905
+      },
+      "dailyCount": 254,
+      "retainedHistoricalCount": 253,
+      "historicalAdjustment": null,
+      "intradayDate": "2026-11-05",
+      "intradayCount": 78,
+      "intradayAsOf": "2026-11-05T15:55:00-05:00",
+      "intradayObservedAt": "2026-11-05T21:42:47.385635+00:00",
+      "intradayRawSha256": "ab00a57b3c0152a7ad52d230da1cbe510c837235a729181b4341937f1883f635",
+      "holdingsAsOf": "2026-11-03",
+      "holdingsReverified": false
+    }
+  ],
+  "tradingViewCheck": {
+    "url": "https://scanner.tradingview.com/america/scan",
+    "observedAt": "2026-11-05T21:41:38.930438+00:00",
+    "sha256": "b7e5a388f74cd886344a335ed5c39186ea6d622d31eccfe4c396b7070c2e6a64",
+    "columns": [
+      "name",
+      "time",
+      "open",
+      "high",
+      "low",
+      "close",
+      "volume",
+      "change",
+      "change_abs",
+      "currency",
+      "exchange",
+      "update_mode"
+    ],
+    "response": {
+      "totalCount": 44,
+      "data": [
+        {
+          "s": "AMEX:XRT",
+          "d": [
+            "XRT",
+            1793889000,
+            94.48,
+            94.93,
+            90.47,
+            91.07,
+            7304783,
+            -2.8275714895433266,
+            -2.6500000000000057,
+            "USD",
+            "AMEX",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "NYSE:EL",
+          "d": [
+            "EL",
+            1793889000,
+            113.32,
+            115.255,
+            107.485,
+            107.65,
+            4569082,
+            -3.9182434844698326,
+            -4.390000000000001,
+            "USD",
+            "NYSE",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "AMEX:IAI",
+          "d": [
+            "IAI",
+            1793889000,
+            187.75,
+            188.03,
+            177.27,
+            178.65,
+            147514,
+            -3.9051153784089028,
+            -7.259999999999991,
+            "USD",
+            "AMEX",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "AMEX:XLE",
+          "d": [
+            "XLE",
+            1793889000,
+            64.13,
+            64.535,
+            61.63,
+            61.63,
+            66956690,
+            -2.975440806045341,
+            -1.8900000000000006,
+            "USD",
+            "AMEX",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "NASDAQ:SOXX",
+          "d": [
+            "SOXX",
+            1793889000,
+            143.08,
+            143.73,
+            130.745,
+            131.9,
+            64500526,
+            -12.146622921250476,
+            -18.23651652999999,
+            "USD",
+            "NASDAQ",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "AMEX:LIT",
+          "d": [
+            "LIT",
+            1793889000,
+            62.63,
+            62.74,
+            60.13,
+            60.18,
+            155632,
+            -2.7472527472527517,
+            -1.7000000000000028,
+            "USD",
+            "AMEX",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "AMEX:XLU",
+          "d": [
+            "XLU",
+            1793889000,
+            44.005,
+            44.09,
+            43.0413,
+            43.3,
+            47628269,
+            -0.7108461362072971,
+            -0.3100000000000023,
+            "USD",
+            "AMEX",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "AMEX:XLB",
+          "d": [
+            "XLB",
+            1793889000,
+            54.32,
+            54.63,
+            51.8941,
+            52.33,
+            23330337,
+            -2.9128014842300565,
+            -1.5700000000000003,
+            "USD",
+            "AMEX",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "AMEX:XLK",
+          "d": [
+            "XLK",
+            1793889000,
+            172.33,
+            172.72,
+            162.14,
+            162.38,
+            33136233,
+            -8.000000000000004,
+            -14.120000000000005,
+            "USD",
+            "AMEX",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "AMEX:XHB",
+          "d": [
+            "XHB",
+            1793889000,
+            107.44,
+            108.78,
+            103.36,
+            103.85,
+            2774337,
+            -3.4133184523809543,
+            -3.6700000000000017,
+            "USD",
+            "AMEX",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "AMEX:FAN",
+          "d": [
+            "FAN",
+            1793889000,
+            23.04,
+            23.05,
+            22.655,
+            22.6559,
+            20022,
+            -1.6244029526704389,
+            -0.3741000000000021,
+            "USD",
+            "AMEX",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "AMEX:XLY",
+          "d": [
+            "XLY",
+            1793889000,
+            122.65,
+            122.91,
+            116.6295,
+            117.64,
+            20702609,
+            -3.8338919316602613,
+            -4.689999999999998,
+            "USD",
+            "AMEX",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "AMEX:IHF",
+          "d": [
+            "IHF",
+            1793889000,
+            61.255,
+            61.57,
+            59.12,
+            59.51,
+            3952442,
+            -1.7338177014531113,
+            -1.0500000000000043,
+            "USD",
+            "AMEX",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "AMEX:CRAK",
+          "d": [
+            "CRAK",
+            1793889000,
+            58.395,
+            58.395,
+            56.535,
+            56.6,
+            1145807,
+            -3.8232795242141036,
+            -2.25,
+            "USD",
+            "AMEX",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "AMEX:XPH",
+          "d": [
+            "XPH",
+            1793889000,
+            65.85,
+            66.23,
+            62.6,
+            62.65,
+            247445,
+            -4.146266829865362,
+            -2.710000000000001,
+            "USD",
+            "AMEX",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "AMEX:KBE",
+          "d": [
+            "KBE",
+            1793889000,
+            68.62,
+            69.33,
+            65.96,
+            66.22,
+            3614819,
+            -2.3735810113519085,
+            -1.6099999999999994,
+            "USD",
+            "AMEX",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "NYSE:DD",
+          "d": [
+            "DD",
+            1793889000,
+            150.27,
+            152.79,
+            144.04,
+            144.93,
+            1872084,
+            -3.8479400252106304,
+            -5.799999999999983,
+            "USD",
+            "NYSE",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "NASDAQ:SMH",
+          "d": [
+            "SMH",
+            1793889000,
+            482.14,
+            483.93,
+            445.59,
+            447.73,
+            28630810,
+            -11.212247407142991,
+            -56.539999999999964,
+            "USD",
+            "NASDAQ",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "AMEX:XAR",
+          "d": [
+            "XAR",
+            1793889000,
+            223.775,
+            226.39,
+            212.4,
+            214.23,
+            579245,
+            -5.010419899791607,
+            -11.300000000000011,
+            "USD",
+            "AMEX",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "NYSE:ELF",
+          "d": [
+            "ELF",
+            1793889000,
+            114,
+            123.13,
+            108.48,
+            109.85,
+            2972753,
+            -3.3265862888321758,
+            -3.780000000000001,
+            "USD",
+            "NYSE",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "NASDAQ:CIBR",
+          "d": [
+            "CIBR",
+            1793889000,
+            95.2,
+            95.32,
+            90.645,
+            91.01,
+            4410946,
+            -6.522185702547241,
+            -6.349999999999994,
+            "USD",
+            "NASDAQ",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "AMEX:XME",
+          "d": [
+            "XME",
+            1793889000,
+            96.45,
+            97.175,
+            89.58,
+            90.42,
+            2343439,
+            -5.596157861766548,
+            -5.359999999999999,
+            "USD",
+            "AMEX",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "AMEX:XLI",
+          "d": [
+            "XLI",
+            1793889000,
+            167.99,
+            168.835,
+            162.04,
+            162.47,
+            19229557,
+            -4.124867225303912,
+            -6.990000000000009,
+            "USD",
+            "AMEX",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "AMEX:TAN",
+          "d": [
+            "TAN",
+            1793889000,
+            46.42,
+            46.81,
+            42.8301,
+            44.09,
+            4871146,
+            -3.7126010045861446,
+            -1.6999999999999957,
+            "USD",
+            "AMEX",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "CBOE:IYT",
+          "d": [
+            "IYT",
+            1793889000,
+            85.19,
+            85.19,
+            81.495,
+            82.01,
+            1350792,
+            -3.5403434486003187,
+            -3.009999999999991,
+            "USD",
+            "CBOE",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "CBOE:IGV",
+          "d": [
+            "IGV",
+            1793889000,
+            103.11,
+            103.35,
+            98.5,
+            99.01,
+            15443439,
+            -4.393588258014675,
+            -4.549999999999997,
+            "USD",
+            "CBOE",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "CBOE:ITA",
+          "d": [
+            "ITA",
+            1793889000,
+            70.43,
+            71.3,
+            67.56,
+            68.11,
+            3046030,
+            -3.9982125868237572,
+            -2.8365957200000054,
+            "USD",
+            "CBOE",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "NYSE:COTY",
+          "d": [
+            "COTY",
+            1793889000,
+            3.8,
+            4.09,
+            3.8,
+            3.91,
+            14926777,
+            12.680115273775213,
+            0.43999999999999995,
+            "USD",
+            "NYSE",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "AMEX:XBI",
+          "d": [
+            "XBI",
+            1793889000,
+            157.445,
+            157.61,
+            148.25,
+            148.4,
+            13644829,
+            -6.725329981143928,
+            -10.699999999999989,
+            "USD",
+            "AMEX",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "NASDAQ:CLOU",
+          "d": [
+            "CLOU",
+            1793889000,
+            27.28,
+            27.28,
+            26.08,
+            26.15,
+            338999,
+            -5.4249547920434,
+            -1.5,
+            "USD",
+            "NASDAQ",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "AMEX:XLP",
+          "d": [
+            "XLP",
+            1793889000,
+            92.94,
+            93.4,
+            91.22,
+            91.25,
+            35837703,
+            -0.7504894496410678,
+            -0.6899999999999977,
+            "USD",
+            "AMEX",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "AMEX:XLRE",
+          "d": [
+            "XLRE",
+            1793889000,
+            45.22,
+            45.3418,
+            44.09,
+            44.3,
+            11932220,
+            -1.8173758865248235,
+            -0.8200000000000003,
+            "USD",
+            "AMEX",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "AMEX:BATT",
+          "d": [
+            "BATT",
+            1793889000,
+            12.99,
+            13,
+            12.3093,
+            12.31,
+            32518,
+            -5.234795996920706,
+            -0.6799999999999997,
+            "USD",
+            "AMEX",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "NYSE:LYB",
+          "d": [
+            "LYB",
+            1793889000,
+            63.81,
+            64.53,
+            61.32,
+            61.63,
+            5388165,
+            -2.1124523506988537,
+            -1.3299999999999983,
+            "USD",
+            "NYSE",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "NASDAQ:IBB",
+          "d": [
+            "IBB",
+            1793889000,
+            220.3,
+            220.89,
+            209.99,
+            209.99,
+            3676377,
+            -5.037760593316143,
+            -11.139999999999986,
+            "USD",
+            "NASDAQ",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "AMEX:XLC",
+          "d": [
+            "XLC",
+            1793889000,
+            107.14,
+            107.595,
+            103.2,
+            104.34,
+            13761622,
+            -0.5907012195121859,
+            -0.6199999999999903,
+            "USD",
+            "AMEX",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "NASDAQ:ICLN",
+          "d": [
+            "ICLN",
+            1793889000,
+            16.725,
+            16.815,
+            15.89,
+            16.14,
+            12272096,
+            -2.7710843373494027,
+            -0.46000000000000085,
+            "USD",
+            "NASDAQ",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "AMEX:KRE",
+          "d": [
+            "KRE",
+            1793889000,
+            74.97,
+            75.8,
+            72.02,
+            72.31,
+            23832285,
+            -2.455146364494797,
+            -1.8199999999999932,
+            "USD",
+            "AMEX",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "AMEX:XLV",
+          "d": [
+            "XLV",
+            1793889000,
+            191.455,
+            192.32,
+            184.82,
+            184.91,
+            24462112,
+            -2.5044817041020773,
+            -4.75,
+            "USD",
+            "AMEX",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "AMEX:XOP",
+          "d": [
+            "XOP",
+            1793889000,
+            181.3,
+            183.165,
+            174.02,
+            174.1,
+            4097769,
+            -2.894751519883986,
+            -5.189999999999998,
+            "USD",
+            "AMEX",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "AMEX:XLF",
+          "d": [
+            "XLF",
+            1793889000,
+            59.94,
+            60.04,
+            57.42,
+            57.5,
+            71296176,
+            -2.8716216216216264,
+            -1.7000000000000028,
+            "USD",
+            "AMEX",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "AMEX:IHI",
+          "d": [
+            "IHI",
+            1793889000,
+            60.64,
+            61,
+            58.33,
+            59.03,
+            5767753,
+            -1.9760876785121184,
+            -1.1899999999999977,
+            "USD",
+            "AMEX",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "AMEX:FDN",
+          "d": [
+            "FDN",
+            1793889000,
+            271.67,
+            271.67,
+            256.64,
+            260.37,
+            282520,
+            -4.50744516980856,
+            -12.29000000000002,
+            "USD",
+            "AMEX",
+            "delayed_streaming_900"
+          ]
+        },
+        {
+          "s": "NYSE:DOW",
+          "d": [
+            "DOW",
+            1793889000,
+            33.08,
+            33.445,
+            31.87,
+            31.98,
+            9899619,
+            -2.2018348623853283,
+            -0.7200000000000024,
+            "USD",
+            "NYSE",
+            "delayed_streaming_900"
+          ]
+        }
+      ]
+    }
+  },
+  "corporateActionComparisons": {
+    "asOf": "2026-11-05",
+    "observedAt": "2026-11-05T21:45:27.265859+00:00",
+    "methodology": "Official 3:1 forward splits effective at 2026-11-05 open. Pre-split verified raw close and adjusted close divided by 3. No dividends in the 2026-10-05 to 2026-11-05 comparison interval. Do not combine Yahoo response historical mixed split bases. Raw precision retained.",
+    "funds": {
+      "SOXX": {
+        "split": {
+          "numerator": 3,
+          "denominator": 1,
+          "exDate": "2026-11-05",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1100663/000119312526430480/d156277d497.htm"
+        },
+        "prices": [
+          {
+            "date": "2026-10-05",
+            "close": 196.50333658854166,
+            "adjustedClose": 196.50333658854166,
+            "originalClose": 589.510009765625,
+            "originalAdjustedClose": 589.510009765625,
+            "priceDivisor": 3,
+            "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/SOXX?period1=1760918400&period2=1793836800&interval=1d&events=div%2Csplits&includePrePost=false",
+            "sourceObservedAt": "2026-11-04T21:45:21.411005+00:00",
+            "sourceSha256": "a3c43174fb03bb617c2b29619db890116533e7b2080c6d489971249c87612147"
+          },
+          {
+            "date": "2026-10-29",
+            "close": 171.28666178385416,
+            "adjustedClose": 171.28666178385416,
+            "originalClose": 513.8599853515625,
+            "originalAdjustedClose": 513.8599853515625,
+            "priceDivisor": 3,
+            "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/SOXX?period1=1760918400&period2=1793836800&interval=1d&events=div%2Csplits&includePrePost=false",
+            "sourceObservedAt": "2026-11-04T21:45:21.411005+00:00",
+            "sourceSha256": "a3c43174fb03bb617c2b29619db890116533e7b2080c6d489971249c87612147"
+          },
+          {
+            "date": "2026-11-04",
+            "close": 150.13666788736978,
+            "adjustedClose": 150.13666788736978,
+            "originalClose": 450.4100036621094,
+            "originalAdjustedClose": 450.4100036621094,
+            "priceDivisor": 3,
+            "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/SOXX?period1=1760918400&period2=1793836800&interval=1d&events=div%2Csplits&includePrePost=false",
+            "sourceObservedAt": "2026-11-04T21:45:21.411005+00:00",
+            "sourceSha256": "a3c43174fb03bb617c2b29619db890116533e7b2080c6d489971249c87612147"
+          },
+          {
+            "date": "2026-11-05",
+            "close": 131.89999389648438,
+            "adjustedClose": 131.89999389648438,
+            "originalClose": 131.89999389648438,
+            "originalAdjustedClose": 131.89999389648438,
+            "priceDivisor": 1,
+            "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/SOXX?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+            "sourceObservedAt": "2026-11-05T21:42:32.331306+00:00",
+            "sourceSha256": "2459e1e7304ab55701b7af4fcc73579be2c3700fed78ca5ab12a979a76018ba7"
+          }
+        ],
+        "returns": {
+          "day": -12.146715554235076,
+          "week": -22.994591334304616,
+          "month": -32.87646093629964
+        }
+      },
+      "ITA": {
+        "split": {
+          "numerator": 3,
+          "denominator": 1,
+          "exDate": "2026-11-05",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1100663/000119312526414100/R2.htm"
+        },
+        "prices": [
+          {
+            "date": "2026-10-05",
+            "close": 68.99333190917969,
+            "adjustedClose": 68.99333190917969,
+            "originalClose": 206.97999572753906,
+            "originalAdjustedClose": 206.97999572753906,
+            "priceDivisor": 3,
+            "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/ITA?period1=1760918400&period2=1793836800&interval=1d&events=div%2Csplits&includePrePost=false",
+            "sourceObservedAt": "2026-11-04T21:44:10.929290+00:00",
+            "sourceSha256": "41706ab3272c4b58c466d8ffe06d86e82535eb5feae22ae517b0c92b3e8ef510"
+          },
+          {
+            "date": "2026-10-29",
+            "close": 71.43333435058594,
+            "adjustedClose": 71.43333435058594,
+            "originalClose": 214.3000030517578,
+            "originalAdjustedClose": 214.3000030517578,
+            "priceDivisor": 3,
+            "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/ITA?period1=1760918400&period2=1793836800&interval=1d&events=div%2Csplits&includePrePost=false",
+            "sourceObservedAt": "2026-11-04T21:44:10.929290+00:00",
+            "sourceSha256": "41706ab3272c4b58c466d8ffe06d86e82535eb5feae22ae517b0c92b3e8ef510"
+          },
+          {
+            "date": "2026-11-04",
+            "close": 70.94666544596355,
+            "adjustedClose": 70.94666544596355,
+            "originalClose": 212.83999633789062,
+            "originalAdjustedClose": 212.83999633789062,
+            "priceDivisor": 3,
+            "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/ITA?period1=1760918400&period2=1793836800&interval=1d&events=div%2Csplits&includePrePost=false",
+            "sourceObservedAt": "2026-11-04T21:44:10.929290+00:00",
+            "sourceSha256": "41706ab3272c4b58c466d8ffe06d86e82535eb5feae22ae517b0c92b3e8ef510"
+          },
+          {
+            "date": "2026-11-05",
+            "close": 68.11000061035156,
+            "adjustedClose": 68.11000061035156,
+            "originalClose": 68.11000061035156,
+            "originalAdjustedClose": 68.11000061035156,
+            "priceDivisor": 1,
+            "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/ITA?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+            "sourceObservedAt": "2026-11-05T21:42:32.195537+00:00",
+            "sourceSha256": "e40745f3bb2f3334d9451500e967769496c976d045d7aee7ba346d364e532936"
+          }
+        ],
+        "returns": {
+          "day": -3.9983060765167666,
+          "week": -4.652357012937214,
+          "month": -1.2803140164196036
+        }
+      }
+    }
+  },
+  "sourceLimitations": [
+    "Yahoo Finance는 무료 비공식 시세이고 TradingView 독립 대조는 15분 지연 표시. 수집은 정규장 종료 40분 이후.",
+    "보유내역은 이번 가격 수집에서 재검증하지 않았으며 실제 기존 검증일과 원본을 보존."
+  ],
+  "methodology": [
+    "미국 상장 실제 ETF만 포함하며 화장품·화학 대표 종목 바스켓은 제외합니다.",
+    "가격은 Yahoo Finance 공개 비공식 시세입니다. 확정된 정규장 일봉과 실제 5분 관측만 사용하며 휴장일·상장 전·누락 구간을 합성하지 않습니다.",
+    "수익률은 일봉 close 기준 가격 수익률이며 분배금 재투자 총수익률이 아닙니다.",
+    "보유종목은 기존 분석의 운용사 검증 스냅샷과 실제 보유내역 기준일을 유지합니다. 가격 갱신이 보유내역 재검증을 의미하지 않습니다.",
+    "38개 ETF의 11/5 완료 일봉·실제 정규장 5분 시세를 확인했습니다. 기존 253일 관측은 모두 보존하며 SOXX·ITA 과거 자료만 공식 3:1 분할 비율로 통일했습니다.",
+    "SOXX는 공급사 과거 조정기준 혼재, ITA는 분할 조정 지연이 확인되어 기존 검증 OHLC÷3·거래량×3을 적용했습니다. 분할은 수익/손실이 아니며 임의 가격 추정이 아닙니다.",
+    "IYT·CRAK의 11/5 Yahoo open>high 모순 봉은 같은 세션 독립 TradingView 완전 OHLCV로 대체했습니다. 모든 38개 종가와 1일 수익률을 TradingView와 대조했습니다."
+  ]
+}
