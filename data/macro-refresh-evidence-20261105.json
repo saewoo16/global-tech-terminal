@@ -1,0 +1,774 @@
+{
+  "checkedAt": "2026-11-05T21:45:20Z",
+  "targetUsSession": "2026-11-05",
+  "baseCommit": "03801c6da88b8cc86a57d1f2c667228627dd3940",
+  "collectionStartedAt": "2026-11-05T21:41:08Z",
+  "macroQuotes": {
+    "collector": "scripts/update_macro_quotes.py",
+    "verifiedCount": 14,
+    "staleCount": 0,
+    "changedObservations": [
+      "UST10Y",
+      "WTI_FUTURES",
+      "BRENT_FUTURES",
+      "DXY",
+      "USDJPY",
+      "USDKRW",
+      "DGS10",
+      "HQMCB10YRP"
+    ],
+    "unchangedObservationsRetained": [
+      "DCOILWTICO",
+      "DCOILBRENTEU",
+      "M1SL",
+      "M2SL",
+      "DEXJPUS",
+      "DEXKOUS"
+    ],
+    "notes": [
+      "All 14 existing series reverified. Six unchanged observations retain the full previous row including its actual retrieval time.",
+      "Investing quotes are source-timestamped snapshots, not official closing/settlement prices. FRED asOf denotes the statistical observation day/month, not retrieval.",
+      "HQM October observation was published Nov 5; direct official CSV and live series HTML agree. An older search-cache page still showed September and was rejected in favor of both direct sources.",
+      "H.10 FX has daily observations released weekly. M1/M2 and HQM are monthly. No new date is invented when the latest observation is unchanged."
+    ],
+    "observations": [
+      {
+        "id": "UST10Y",
+        "quoteLabel": "미국 10년 국채 시장 수익률",
+        "unit": "%",
+        "precision": 3,
+        "value": 4.836,
+        "asOf": "2026-11-05",
+        "observedAt": "2026-11-05T21:33:23Z",
+        "observationTimezone": "UTC",
+        "sourceTimeText": "2026-11-05 21:33:23 UTC",
+        "retrievedAt": "2026-11-05T21:41:26Z",
+        "sourceName": "Investing.com",
+        "sourceUrl": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield",
+        "status": "verified",
+        "marketStatus": "open",
+        "isDelayed": false,
+        "note": "Investing.com 시장 수익률. FRED 고정만기 수익률과 산출 기준·관측시각이 다릅니다.",
+        "sourceObservation": {
+          "instrumentId": "23705",
+          "instrumentName": "United States 10-Year",
+          "symbol": "US10YT",
+          "isCfd": false,
+          "last": 4.836,
+          "lastUpdateTime": "1793914403000",
+          "isOpen": true,
+          "isDelayed": false,
+          "exchange": "NYSE"
+        }
+      },
+      {
+        "id": "WTI_FUTURES",
+        "quoteLabel": "WTI 선물 연계 CFD",
+        "unit": "USD/배럴",
+        "precision": 2,
+        "value": 91.07,
+        "asOf": "2026-11-05",
+        "observedAt": "2026-11-05T21:41:05Z",
+        "observationTimezone": "UTC",
+        "sourceTimeText": "2026-11-05 21:41:05 UTC",
+        "retrievedAt": "2026-11-05T21:41:26Z",
+        "sourceName": "Investing.com",
+        "sourceUrl": "https://www.investing.com/commodities/crude-oil",
+        "status": "verified",
+        "marketStatus": "open",
+        "isDelayed": false,
+        "note": "Investing.com 선물 연계 CFD 호가. 거래소 확정 결제가격이나 아래 FRED WTI 현물가격이 아닙니다.",
+        "sourceObservation": {
+          "instrumentId": "8849",
+          "instrumentName": "Crude Oil WTI Futures",
+          "symbol": "OIL",
+          "isCfd": true,
+          "last": 91.07,
+          "lastUpdateTime": "1793914865879",
+          "isOpen": true,
+          "isDelayed": false,
+          "exchange": "ICE"
+        }
+      },
+      {
+        "id": "BRENT_FUTURES",
+        "quoteLabel": "Brent 선물 연계 CFD",
+        "unit": "USD/배럴",
+        "precision": 2,
+        "value": 98.9,
+        "asOf": "2026-11-05",
+        "observedAt": "2026-11-05T21:40:52Z",
+        "observationTimezone": "UTC",
+        "sourceTimeText": "2026-11-05 21:40:52 UTC",
+        "retrievedAt": "2026-11-05T21:41:26Z",
+        "sourceName": "Investing.com",
+        "sourceUrl": "https://www.investing.com/commodities/brent-oil",
+        "status": "verified",
+        "marketStatus": "open",
+        "isDelayed": false,
+        "note": "Investing.com 선물 연계 CFD 호가. 거래소 확정 결제가격이나 아래 FRED Brent 현물가격이 아닙니다.",
+        "sourceObservation": {
+          "instrumentId": "8833",
+          "instrumentName": "Brent Oil Futures",
+          "symbol": "LCOF7",
+          "isCfd": true,
+          "last": 98.9,
+          "lastUpdateTime": "1793914852665",
+          "isOpen": true,
+          "isDelayed": false,
+          "exchange": "ICE"
+        }
+      },
+      {
+        "id": "DXY",
+        "quoteLabel": "달러인덱스 DXY · CFD",
+        "unit": "지수",
+        "precision": 2,
+        "value": 101.6,
+        "asOf": "2026-11-05",
+        "observedAt": "2026-11-05T21:40:20Z",
+        "observationTimezone": "UTC",
+        "sourceTimeText": "2026-11-05 21:40:20 UTC",
+        "retrievedAt": "2026-11-05T21:41:26Z",
+        "sourceName": "Investing.com",
+        "sourceUrl": "https://www.investing.com/indices/usdollar",
+        "status": "verified",
+        "marketStatus": "open",
+        "isDelayed": false,
+        "note": "Investing.com US Dollar Index CFD. 연준 광의 달러지수 및 달러인덱스 선물(DX)과 구분합니다.",
+        "sourceObservation": {
+          "instrumentId": "942611",
+          "instrumentName": "US Dollar Index",
+          "symbol": "DXY",
+          "isCfd": true,
+          "last": 101.6,
+          "lastUpdateTime": "1793914820000",
+          "isOpen": true,
+          "isDelayed": false,
+          "exchange": "US Indexes"
+        }
+      },
+      {
+        "id": "USDJPY",
+        "quoteLabel": "달러/엔 (USD/JPY)",
+        "unit": "엔/달러",
+        "precision": 2,
+        "value": 157.67,
+        "asOf": "2026-11-05",
+        "observedAt": "2026-11-05T21:40:09Z",
+        "observationTimezone": "UTC",
+        "sourceTimeText": "2026-11-05 21:40:09 UTC",
+        "retrievedAt": "2026-11-05T21:41:26Z",
+        "sourceName": "Investing.com",
+        "sourceUrl": "https://www.investing.com/currencies/usd-jpy",
+        "status": "verified",
+        "marketStatus": "open",
+        "isDelayed": false,
+        "note": "1달러당 엔화. 역수인 JPY/USD와 다릅니다. FRED 환율과 관측시각이 다릅니다.",
+        "sourceObservation": {
+          "instrumentId": "3",
+          "instrumentName": "US Dollar Japanese Yen",
+          "symbol": "",
+          "isCfd": false,
+          "last": 157.67,
+          "lastUpdateTime": "1793914809612",
+          "isOpen": true,
+          "isDelayed": false,
+          "exchange": "Real-time Currencies"
+        }
+      },
+      {
+        "id": "USDKRW",
+        "quoteLabel": "달러/원 (USD/KRW)",
+        "unit": "원/달러",
+        "precision": 2,
+        "value": 1356.16,
+        "asOf": "2026-11-05",
+        "observedAt": "2026-11-05T21:31:03Z",
+        "observationTimezone": "UTC",
+        "sourceTimeText": "2026-11-05 21:31:03 UTC",
+        "retrievedAt": "2026-11-05T21:41:26Z",
+        "sourceName": "Investing.com",
+        "sourceUrl": "https://www.investing.com/currencies/usd-krw",
+        "status": "verified",
+        "marketStatus": "open",
+        "isDelayed": false,
+        "note": "1달러당 원화. Investing.com 호가이며 서울 외환시장 공식 종가나 FRED 환율과 관측시각이 다를 수 있습니다.",
+        "sourceObservation": {
+          "instrumentId": "650",
+          "instrumentName": "US Dollar Korean Won",
+          "symbol": "",
+          "isCfd": false,
+          "last": 1356.16,
+          "lastUpdateTime": "1793914263000",
+          "isOpen": true,
+          "isDelayed": false,
+          "exchange": "Real-time Currencies"
+        }
+      },
+      {
+        "id": "DGS10",
+        "quoteLabel": "미국 10년 고정만기 국채 수익률",
+        "unit": "%",
+        "precision": 2,
+        "value": 4.9,
+        "asOf": "2026-11-04",
+        "observedAt": null,
+        "observationTimezone": null,
+        "sourceTimeText": "2026-11-04 관측 · 일중 시각 미제공",
+        "frequency": "daily",
+        "retrievedAt": "2026-11-05T21:41:26Z",
+        "sourceName": "FRED",
+        "sourceUrl": "https://fred.stlouisfed.org/series/DGS10",
+        "status": "verified",
+        "marketStatus": null,
+        "note": "차트와 같은 FRED 시계열의 최근 공표 관측값. 조회일과 관측일은 다릅니다."
+      },
+      {
+        "id": "HQMCB10YRP",
+        "quoteLabel": "10년 우량 회사채 액면수익률",
+        "unit": "%",
+        "precision": 2,
+        "value": 5.92,
+        "asOf": "2026-10-01",
+        "observedAt": null,
+        "observationTimezone": null,
+        "sourceTimeText": "2026-10 월간 관측",
+        "frequency": "monthly",
+        "retrievedAt": "2026-11-05T21:42:37Z",
+        "sourceName": "FRED",
+        "sourceUrl": "https://fred.stlouisfed.org/series/HQMCB10YRP",
+        "status": "verified",
+        "marketStatus": null,
+        "note": "차트와 같은 FRED 시계열의 최근 공표 관측값. 조회일과 관측일은 다릅니다.",
+        "sourceUpdatedAt": "2026-11-05T19:49:00Z",
+        "verificationMethod": "official FRED CSV observation and series-page release metadata"
+      },
+      {
+        "id": "DCOILWTICO",
+        "quoteLabel": "WTI 원유 현물",
+        "unit": "USD/배럴",
+        "precision": 2,
+        "value": 99.64,
+        "asOf": "2026-11-03",
+        "observedAt": null,
+        "observationTimezone": null,
+        "sourceTimeText": "2026-11-03 관측 · 일중 시각 미제공",
+        "frequency": "daily",
+        "retrievedAt": "2026-11-04T21:43:04Z",
+        "sourceName": "FRED",
+        "sourceUrl": "https://fred.stlouisfed.org/series/DCOILWTICO",
+        "status": "verified",
+        "marketStatus": null,
+        "note": "차트와 같은 FRED 시계열의 최근 공표 관측값. 조회일과 관측일은 다릅니다."
+      },
+      {
+        "id": "DCOILBRENTEU",
+        "quoteLabel": "Brent 원유 현물",
+        "unit": "USD/배럴",
+        "precision": 2,
+        "value": 107.03,
+        "asOf": "2026-11-03",
+        "observedAt": null,
+        "observationTimezone": null,
+        "sourceTimeText": "2026-11-03 관측 · 일중 시각 미제공",
+        "frequency": "daily",
+        "retrievedAt": "2026-11-04T21:43:04Z",
+        "sourceName": "FRED",
+        "sourceUrl": "https://fred.stlouisfed.org/series/DCOILBRENTEU",
+        "status": "verified",
+        "marketStatus": null,
+        "note": "차트와 같은 FRED 시계열의 최근 공표 관측값. 조회일과 관측일은 다릅니다."
+      },
+      {
+        "id": "M1SL",
+        "quoteLabel": "미국 M1 통화량",
+        "unit": "십억 달러",
+        "precision": 1,
+        "value": 20061.2,
+        "asOf": "2026-09-01",
+        "observedAt": null,
+        "observationTimezone": null,
+        "sourceTimeText": "2026-09 월간 관측",
+        "frequency": "monthly",
+        "retrievedAt": "2026-11-01T07:41:36Z",
+        "sourceName": "FRED",
+        "sourceUrl": "https://fred.stlouisfed.org/series/M1SL",
+        "status": "verified",
+        "marketStatus": null,
+        "note": "월별 계절조정 통화량. 관측월·FRED 갱신시각·조회시각은 서로 다르며 자료는 수정될 수 있습니다.",
+        "sourceUpdatedAt": "2026-10-27T17:01:00Z",
+        "seasonalAdjustment": "seasonally_adjusted",
+        "verificationMethod": "official FRED series page observation and release metadata"
+      },
+      {
+        "id": "M2SL",
+        "quoteLabel": "미국 M2 통화량",
+        "unit": "십억 달러",
+        "precision": 1,
+        "value": 23413.9,
+        "asOf": "2026-09-01",
+        "observedAt": null,
+        "observationTimezone": null,
+        "sourceTimeText": "2026-09 월간 관측",
+        "frequency": "monthly",
+        "retrievedAt": "2026-11-01T07:41:36Z",
+        "sourceName": "FRED",
+        "sourceUrl": "https://fred.stlouisfed.org/series/M2SL",
+        "status": "verified",
+        "marketStatus": null,
+        "note": "월별 계절조정 통화량. 관측월·FRED 갱신시각·조회시각은 서로 다르며 자료는 수정될 수 있습니다.",
+        "sourceUpdatedAt": "2026-10-27T17:01:00Z",
+        "seasonalAdjustment": "seasonally_adjusted",
+        "verificationMethod": "official FRED series page observation and release metadata"
+      },
+      {
+        "id": "DEXJPUS",
+        "quoteLabel": "달러/엔 · FRED",
+        "unit": "엔/달러",
+        "precision": 2,
+        "value": 157.47,
+        "asOf": "2026-10-30",
+        "observedAt": null,
+        "observationTimezone": null,
+        "sourceTimeText": "2026-10-30 관측 · 일중 시각 미제공",
+        "frequency": "daily",
+        "retrievedAt": "2026-11-03T21:45:18Z",
+        "sourceName": "FRED",
+        "sourceUrl": "https://fred.stlouisfed.org/series/DEXJPUS",
+        "status": "verified",
+        "marketStatus": null,
+        "note": "차트와 같은 FRED 시계열의 최근 공표 관측값. 조회일과 관측일은 다릅니다."
+      },
+      {
+        "id": "DEXKOUS",
+        "quoteLabel": "달러/원 · FRED",
+        "unit": "원/달러",
+        "precision": 2,
+        "value": 1333.99,
+        "asOf": "2026-10-30",
+        "observedAt": null,
+        "observationTimezone": null,
+        "sourceTimeText": "2026-10-30 관측 · 일중 시각 미제공",
+        "frequency": "daily",
+        "retrievedAt": "2026-11-03T21:45:18Z",
+        "sourceName": "FRED",
+        "sourceUrl": "https://fred.stlouisfed.org/series/DEXKOUS",
+        "status": "verified",
+        "marketStatus": null,
+        "note": "차트와 같은 FRED 시계열의 최근 공표 관측값. 조회일과 관측일은 다릅니다."
+      }
+    ],
+    "canonicalObservationSha256": "43269774599931ef7bb1ffc7b10f2c75ad5a0db2fe84038d581f273962706317",
+    "sourceFetches": [
+      {
+        "url": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield",
+        "startedAt": "2026-11-05T21:41:08Z",
+        "completedAt": "2026-11-05T21:41:12Z",
+        "sha256": "2b21d1d58f216ee94fbf749dbfd9d2f7971e7bc9cbcf6f5120021a5545528f16",
+        "bytes": 930743,
+        "status": "fetched"
+      },
+      {
+        "url": "https://www.investing.com/commodities/crude-oil",
+        "startedAt": "2026-11-05T21:41:08Z",
+        "completedAt": "2026-11-05T21:41:12Z",
+        "sha256": "ff756e22ffd084d47d32db6669ee3ec6c7fa6abcad1cd54d813efe4e60b1b9e3",
+        "bytes": 1004165,
+        "status": "fetched"
+      },
+      {
+        "url": "https://www.investing.com/commodities/brent-oil",
+        "startedAt": "2026-11-05T21:41:08Z",
+        "completedAt": "2026-11-05T21:41:12Z",
+        "sha256": "09f15c7a885481d2535d6d2970aab0b2b51c9d6bd1208d69637a4721f67d7176",
+        "bytes": 979668,
+        "status": "fetched"
+      },
+      {
+        "url": "https://www.investing.com/indices/usdollar",
+        "startedAt": "2026-11-05T21:41:08Z",
+        "completedAt": "2026-11-05T21:41:13Z",
+        "sha256": "6e1fcbf2fa36c0f76ee262b29150440d32fc2de6a7f91a3c17da416fe3110f90",
+        "bytes": 1017585,
+        "status": "fetched"
+      },
+      {
+        "url": "https://www.investing.com/currencies/usd-jpy",
+        "startedAt": "2026-11-05T21:41:12Z",
+        "completedAt": "2026-11-05T21:41:16Z",
+        "sha256": "5c5b14264a7294e71ab3b8b35c9a597bf0f56a425e006d6517bea63f751d9f67",
+        "bytes": 1510299,
+        "status": "fetched"
+      },
+      {
+        "url": "https://www.investing.com/currencies/usd-krw",
+        "startedAt": "2026-11-05T21:41:12Z",
+        "completedAt": "2026-11-05T21:41:17Z",
+        "sha256": "5ba61f3fee3030395310cbfde4d549e2fa6c63863e66da39cf5d1fff06867af3",
+        "bytes": 1234742,
+        "status": "fetched"
+      },
+      {
+        "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DCOILWTICO&cosd=2025-10-01&coed=2026-11-05",
+        "startedAt": "2026-11-05T21:41:16Z",
+        "completedAt": "2026-11-05T21:41:17Z",
+        "sha256": "2fde1ed9086a394bb0fd581cd08bb0885e68bf7e9b4f6c9c6e36b3d23568f086",
+        "bytes": 4857,
+        "status": "fetched"
+      },
+      {
+        "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=HQMCB10YRP&cosd=2025-10-01&coed=2026-11-05",
+        "startedAt": "2026-11-05T21:41:13Z",
+        "completedAt": "2026-11-05T21:41:17Z",
+        "sha256": "174bfdf3cc2938f8e6901299ccc11a392052b8322e40cf20ad73753642471423",
+        "bytes": 236,
+        "status": "fetched"
+      },
+      {
+        "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS10&cosd=2025-10-01&coed=2026-11-05",
+        "startedAt": "2026-11-05T21:41:12Z",
+        "completedAt": "2026-11-05T21:41:17Z",
+        "sha256": "ae8163c9036ebb654d6dd0a99361ab04c51397396d296745e36b102de7ff26d1",
+        "bytes": 4551,
+        "status": "fetched"
+      },
+      {
+        "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=M2SL&cosd=2025-10-01&coed=2026-11-05",
+        "startedAt": "2026-11-05T21:41:17Z",
+        "completedAt": "2026-11-05T21:41:22Z",
+        "sha256": "d6b4cd54b61ac859e7629d3f7b93b02c60aa5f0f3b444c23820cb44ab0c2d210",
+        "bytes": 250,
+        "status": "fetched"
+      },
+      {
+        "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXJPUS&cosd=2025-10-01&coed=2026-11-05",
+        "startedAt": "2026-11-05T21:41:17Z",
+        "completedAt": "2026-11-05T21:41:22Z",
+        "sha256": "87bd8f90be5ff6cb3703ba471b455d9c34c93d6dd496f5de69ed85c31ce4d488",
+        "bytes": 5047,
+        "status": "fetched"
+      },
+      {
+        "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=M1SL&cosd=2025-10-01&coed=2026-11-05",
+        "startedAt": "2026-11-05T21:41:17Z",
+        "completedAt": "2026-11-05T21:41:22Z",
+        "sha256": "22eca7e516c0f55a8fe58ca5e93de9916390ed610ead1edc784f054022c07db1",
+        "bytes": 250,
+        "status": "fetched"
+      },
+      {
+        "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DCOILBRENTEU&cosd=2025-10-01&coed=2026-11-05",
+        "startedAt": "2026-11-05T21:41:17Z",
+        "completedAt": "2026-11-05T21:41:22Z",
+        "sha256": "b71bac0817c303023f0880e2e9db1f596e01359ebf0497f2cdc8949c3841ac90",
+        "bytes": 4931,
+        "status": "fetched"
+      },
+      {
+        "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXKOUS&cosd=2025-10-01&coed=2026-11-05",
+        "startedAt": "2026-11-05T21:41:22Z",
+        "completedAt": "2026-11-05T21:41:26Z",
+        "sha256": "ed7537d79bceca758b090a75ddaf3d528b2aac45722e7b7bacc4041be9f3cc7d",
+        "bytes": 5318,
+        "status": "fetched"
+      },
+      {
+        "url": "https://fred.stlouisfed.org/series/M1SL",
+        "startedAt": "2026-11-05T21:41:22Z",
+        "completedAt": "2026-11-05T21:41:26Z",
+        "sha256": "13f94945b428c779f0a3c4321074243e999df7e188a272f801e8614df35e2cb0",
+        "bytes": 78512,
+        "status": "fetched"
+      },
+      {
+        "url": "https://fred.stlouisfed.org/series/M2SL",
+        "startedAt": "2026-11-05T21:41:22Z",
+        "completedAt": "2026-11-05T21:41:26Z",
+        "sha256": "5fe3077f0c1dbdda52f491171f296a052a1c98180d03d164cd89cedd0ac367bc",
+        "bytes": 78971,
+        "status": "fetched"
+      }
+    ],
+    "hqmMonthlyRelease": {
+      "url": "https://fred.stlouisfed.org/series/HQMCB10YRP",
+      "checkedAt": "2026-11-05T21:42:37Z",
+      "sha256": "f1e805355782f489146d674d6df78ce8ce1ca27ca29ab89d55400a9c46531964",
+      "dateModified": [
+        "2026-11-05T13:49:00-06:00"
+      ],
+      "visibleObservation": "Observations Oct 2026: 5.92 | Percent, Not Seasonally Adjusted | Monthly Updated: Nov 5, 2026 1:49 PM CST Next Release Date: Not Available Observations Oct 2026: 5.92 Updated: Nov 5, 2026 1:49 PM CST Next Release Date: Not Available Oct 2026: 5.92 Sep 2026: 5.77 Aug 2026: 5.47 Jul 2026: 5.35 Jun 2026: 5.18 View All Units: Percent , Not Seasonally Adjusted Frequency: Monthly Fullscreen Data in this graph are copyrighted. Please review the copyright information in the series notes before sharing. Share Graph Custom Graph Link Embed in Website Graph Image Link Account Tools Add to Data List Get Email Notification Notes Source: U.S. Department of the Treasury Release: Corporate Bond Yield Curve Units: Percent , Not Seasonally Adjusted Frequency: Monthly Notes: The basic type of selected bond is analogous to conventional Treasury coupon issues: a bond that pays a fixed semiannual nominal coupon denominated in U.S. dollars until maturity, when the principal is returned. The HQM yield curve uses data from a set of high quality corporate bonds rated AAA, AA, or A that accurately represent the high quality corporate bond market. For more information see https://www.treasury.gov/resource-center/economic-policy/corp-bond-yield/Pages/Corp-Yield-Bond-Curve-Papers.aspx Suggested Citation: U.S."
+    }
+  },
+  "fedwatch": {
+    "sourceUrl": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html",
+    "method": "Official CME parent page and normally loaded embed; browser-read displayed Aggregated, December Current and June Current tables. No direct-iframe bypass.",
+    "aggregatedObservedAt": "2026-11-05T21:42:07.523Z",
+    "decemberCurrentObservedAt": "2026-11-05T21:42:42.112Z",
+    "juneCurrentObservedAt": "2026-11-05T21:43:06.182Z",
+    "providerTimestampScope": "December Current view provider label retained verbatim and converted using America/Chicago standard time (UTC-06:00) on 2026-11-05. June Current has its own provider timestamp on the comparison row. Aggregated has no separate visible timestamp. Provider timestamps precede retrieval and are not the US session close.",
+    "columnsBps": [
+      [
+        375,
+        400
+      ],
+      [
+        400,
+        425
+      ],
+      [
+        425,
+        450
+      ]
+    ],
+    "aggregatedRows": [
+      {
+        "date": "2026-12-09",
+        "probabilities": [
+          31.28,
+          68.72,
+          0.0
+        ]
+      },
+      {
+        "date": "2027-01-27",
+        "probabilities": [
+          17.5,
+          82.5,
+          0.0
+        ]
+      },
+      {
+        "date": "2027-03-17",
+        "probabilities": [
+          0.0,
+          83.43,
+          16.57
+        ]
+      },
+      {
+        "date": "2027-04-28",
+        "probabilities": [
+          0.0,
+          69.5,
+          30.5
+        ]
+      },
+      {
+        "date": "2027-06-09",
+        "probabilities": [
+          0.0,
+          46.82,
+          53.18
+        ]
+      },
+      {
+        "date": "2027-07-28",
+        "probabilities": [
+          0.0,
+          43.5,
+          56.5
+        ]
+      },
+      {
+        "date": "2027-09-15",
+        "probabilities": [
+          0.0,
+          36.5,
+          63.5
+        ]
+      },
+      {
+        "date": "2027-10-27",
+        "probabilities": [
+          0.0,
+          36.5,
+          63.5
+        ]
+      },
+      {
+        "date": "2027-12-08",
+        "probabilities": [
+          0.0,
+          44.59,
+          55.41
+        ]
+      }
+    ],
+    "conditionalComparisons": {
+      "view": "Current",
+      "methodology": "Conditional cumulative target-rate distribution; not Aggregated",
+      "precisionDecimalPlaces": 1,
+      "sourceUrl": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html",
+      "providerAsOf": "2026-11-05T09:32:06Z",
+      "currentTargetBps": [
+        375,
+        400
+      ],
+      "comparisonDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "observedAt": "2026-11-05T21:43:06.182Z",
+      "comparisons": [
+        {
+          "meetingDate": "2026-12-09",
+          "columnsBps": [
+            [
+              375,
+              400
+            ],
+            [
+              400,
+              425
+            ],
+            [
+              425,
+              450
+            ]
+          ],
+          "now": [
+            31.4,
+            68.6,
+            0.0
+          ],
+          "day": [
+            17.3,
+            82.7,
+            0.0
+          ],
+          "week": [
+            20.1,
+            79.9,
+            0.0
+          ],
+          "month": [
+            13.5,
+            68.2,
+            18.3
+          ],
+          "interpretation": "12월 최빈 구간은 4.00~4.25%(68.6%)입니다. 현 목표보다 높은 구간 합계는 68.6%로 전일 대비 14.1%p·전주 대비 11.3%p·전월 대비 17.9%p 낮습니다.",
+          "rowSumRoundingNote": "CME 소수점 1자리 표시값 그대로이며 합계는 100.0%입니다.",
+          "providerAsOfLabel": "5 11 2026 03:32:06 CT",
+          "providerAsOf": "2026-11-05T09:32:06Z",
+          "observedAt": "2026-11-05T21:42:42.112Z"
+        },
+        {
+          "meetingDate": "2027-06-09",
+          "columnsBps": [
+            [
+              375,
+              400
+            ],
+            [
+              400,
+              425
+            ],
+            [
+              425,
+              450
+            ],
+            [
+              450,
+              475
+            ],
+            [
+              475,
+              500
+            ],
+            [
+              500,
+              525
+            ],
+            [
+              525,
+              550
+            ]
+          ],
+          "now": [
+            11.8,
+            39.4,
+            34.6,
+            12.2,
+            1.9,
+            0.1,
+            0.0
+          ],
+          "day": [
+            2.9,
+            21.2,
+            39.3,
+            27.6,
+            8.2,
+            0.9,
+            0.0
+          ],
+          "week": [
+            2.5,
+            17.2,
+            36.1,
+            30.9,
+            11.7,
+            1.6,
+            0.0
+          ],
+          "month": [
+            0.7,
+            7.1,
+            23.6,
+            34.6,
+            24.7,
+            8.3,
+            1.0
+          ],
+          "interpretation": "2027년 6월 최빈 구간은 4.00~4.25%(39.4%)입니다. 4.75~5.00% 확률은 1.9%로 전일 대비 6.3%p·전주 대비 9.8%p·전월 대비 22.8%p 낮습니다.",
+          "rowSumRoundingNote": "전일 표시값 합계 100.1%는 CME 소수점 1자리 반올림 결과이며 임의 정규화하지 않았습니다. 현재·전주·전월은 100.0%입니다.",
+          "providerAsOfLabel": "5 11 2026 03:31:55 CT",
+          "providerAsOf": "2026-11-05T09:31:55Z",
+          "observedAt": "2026-11-05T21:43:06.182Z"
+        }
+      ],
+      "notes": [
+        "Aggregate 표와 별도 섹션으로 표시. Conditional 역사와 Aggregate 현재를 빼서 변화량 산출 금지.",
+        "모든 수치는 공급자 표시값을 그대로 보존. 소수점 1자리 반올림 때문에 합계가 정확히 100%가 아닐 수 있음.",
+        "현재보다 높은 금리수준의 확률은 그 회의 단독 인상 확률이 아님. 누적 목표구간 확률."
+      ],
+      "providerAsOfLabel": "5 11 2026 03:32:06 CT",
+      "providerTimestampScope": "Top-level provider timestamp refers only to December Current. Each comparison carries its independently displayed timestamp and actual verification time."
+    },
+    "canonicalDisplayedTableSha256": "b51965acca0842f4a03b4476f01dfc7ee4b27f2dd0968892806383eb7322f299",
+    "hashScope": "Canonical transcribed displayed source tables, not HTTP response bytes",
+    "sourceTableHashes": {
+      "cme-aggregated.txt": "42a66c8c010e2357cb941f2a3e4494497b07814a2a21265ce802cb1aea2eb801",
+      "cme-current-dec-final.txt": "e95987f35a47ab22620e737130aadfc8550241d8b939d27ecde3b69100d380de",
+      "cme-current-june.txt": "92fc646db6bf1953eedac7e2457000b536e67959cd2565c0ad757d1844ddb478"
+    },
+    "notes": [
+      "Aggregated source displays three target ranges today, not four. No unobserved zero column was added.",
+      "Current and Aggregated methods/precision are distinct; comparisons use Current only.",
+      "December and June provider labels differ by 11 seconds and are retained separately. Aggregated has no provider timestamp.",
+      "Snapshot retrieval is not proof of session-closing probability."
+    ]
+  },
+  "externalOnlyChecks": [
+    {
+      "sourceUrl": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
+      "checkedAt": "2026-11-05T21:45:16Z",
+      "latestObservationDate": "2026-11-04",
+      "sourceUpdatedAt": "2026-11-05T09:08:00-06:00",
+      "status": "official live page accessible; existing external-only widget preserved; ICE numeric values not stored or republished"
+    },
+    {
+      "sourceUrl": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2EY",
+      "checkedAt": "2026-11-05T21:45:20Z",
+      "latestObservationDate": "2026-11-04",
+      "sourceUpdatedAt": "2026-11-05T09:08:00-06:00",
+      "status": "official live page accessible; existing external-only widget preserved; ICE numeric values not stored or republished"
+    }
+  ],
+  "preserved": [
+    "All other tabs/data and external chart configurations remain unchanged.",
+    "Individual Microsoft bond widget preserved; its latest transaction date was not independently reverified during this pass."
+  ]
+}
