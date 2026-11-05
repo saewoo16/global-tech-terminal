@@ -1,0 +1,51 @@
+{
+  "scheduledAt": "2026-11-05T09:00:00Z",
+  "checkedAt": "2026-11-05T09:49:29Z",
+  "completedKRXSession": "2026-11-05",
+  "sessionEvidence": "data/korea-session-evidence-20261105.json",
+  "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203",
+  "screen": "33001 개별종목 공매도 순보유잔고",
+  "latestAvailable": "2026-11-02",
+  "completionTimingNote": "18:14 KST authentication-required was not treated as unpublished. User completed login, followed by verified official CSV acquisition at 18:47–18:48 KST. Source observation times were not backdated to the scheduled start.",
+  "accessBeforeRecovery": {
+    "observedAt": "2026-11-05T09:14:41Z",
+    "visibleResult": "로그인 또는 회원가입이 필요합니다.",
+    "status": "authentication-required; publication status unverified"
+  },
+  "followingSessionChecks": [
+    {
+      "market": "KOSDAQ",
+      "date": "2026-11-03",
+      "observedAt": "2026-11-05T09:48:52Z",
+      "sourceDisplayTime": "2026.11.05 PM 06:48:44",
+      "visibleResult": "데이터가 없습니다."
+    },
+    {
+      "market": "KOSPI",
+      "date": "2026-11-03",
+      "observedAt": "2026-11-05T09:49:29Z",
+      "sourceDisplayTime": "2026.11.05 PM 06:49:05",
+      "visibleResult": "데이터가 없습니다."
+    }
+  ],
+  "coverage": {
+    "KOSPI": 939,
+    "KOSDAQ": 1828
+  },
+  "sourceUnits": {
+    "quantity": "shares",
+    "amount": "KRW",
+    "ratio": "percent"
+  },
+  "newExports": 2,
+  "reusedExports": 46,
+  "history": {
+    "weekComparisonDate": "2026-10-26",
+    "monthComparisonDate": "2026-10-02",
+    "chartFirstDate": "2026-10-06",
+    "chartLastDate": "2026-11-02",
+    "chartActualObservations": 19,
+    "rankingUnionSecurities": 26
+  },
+  "publicationDelayNote": "The official page states reporting by T+2 and possible later correction after 18:00; data availability was checked directly rather than inferred from that rule."
+}

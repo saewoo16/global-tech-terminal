@@ -413,6 +413,24 @@
       "expectedRows": 1828,
       "sha256": "4be095b43fdb171b08866dbbedfc1b91fc03fb224b386b160a40495ca7850f7c",
       "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSPI",
+      "date": "2026-11-02",
+      "observedAt": "2026-11-05T09:47:47Z",
+      "path": "krx-kospi-20261102.csv",
+      "expectedRows": 939,
+      "sha256": "48ccfaca2f28ff57f776e4eb58627c229ee5459782b461e9577a605f7f508fa0",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
+    },
+    {
+      "market": "KOSDAQ",
+      "date": "2026-11-02",
+      "observedAt": "2026-11-05T09:48:26Z",
+      "path": "krx-kosdaq-20261102.csv",
+      "expectedRows": 1828,
+      "sha256": "108a7279352dddb40aed44e5f43a2b81d7fbd5a6f9d44f66dd0a30ea7b7a29d6",
+      "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203"
     }
   ]
 }
