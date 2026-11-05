@@ -12,7 +12,14 @@ class FedWatchSnapshotTests(unittest.TestCase):
         self.assertEqual(d['view'],'Aggregated')
         self.assertTrue(d['sourceUrl'].startswith('https://www.cmegroup.com/'))
         datetime.fromisoformat(d['observedAt'].replace('Z','+00:00'))
-        self.assertEqual(len(d['columnsBps']),4)
+        # CME publishes only the ranges present in that day's Aggregated view.
+        self.assertGreater(len(d['columnsBps']), 0)
+        for i, bounds in enumerate(d['columnsBps']):
+            self.assertEqual(len(bounds), 2)
+            self.assertTrue(all(type(value) is int for value in bounds))
+            self.assertEqual(bounds[1] - bounds[0], 25)
+            if i:
+                self.assertEqual(d['columnsBps'][i - 1][1], bounds[0])
         for m in d['meetings']:
             self.assertEqual(len(m['probabilities']),len(d['columnsBps']))
             self.assertAlmostEqual(sum(m['probabilities']),100,places=1)

@@ -23,3 +23,15 @@ assert(raw.includes("q.sourceName!=='FRED'"));
 
 const ambiguous=a.fedwatchHTML({...d,providerAsOf:null,providerAsOfLabel:'1 11 2026 01:45:01 CT'});
 assert(ambiguous.includes('1 11 2026 01:45:01 CT'));assert(ambiguous.includes('UTC 오프셋 미확인'));
+
+// The supplier may add or remove zero-probability target ranges between snapshots.
+for(const columnCount of [2,3,4,5]){
+ const columns=Array.from({length:columnCount},(_,i)=>[375+25*i,400+25*i]);
+ const probabilities=Array.from({length:columnCount},(_,i)=>i===0?100:0);
+ const sample={...d,columnsBps:columns,meetings:[{date:'2026-12-09',probabilities}]};
+ assert(a.validFedwatch(sample));
+ const rendered=a.fedwatchHTML({...sample,nextMeetingComparison:null,conditionalComparisons:null});
+ assert.equal((rendered.match(/<th>/g)||[]).length,columnCount+1);
+ assert(!a.validFedwatch({...sample,meetings:[{date:'2026-12-09',probabilities:probabilities.slice(1)}]}));
+}
+console.log('PASS changing CME source column counts without invented probability cells');
