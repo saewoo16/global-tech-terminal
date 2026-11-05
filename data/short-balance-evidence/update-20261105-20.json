@@ -1,0 +1,59 @@
+{
+  "scheduledAt": "2026-11-05T11:00:00Z",
+  "checkedAt": "2026-11-05T11:41:34Z",
+  "completedKRXSession": "2026-11-05",
+  "sessionEvidence": "data/korea-session-evidence-20261105.json",
+  "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203",
+  "screen": "33001 개별종목 공매도 순보유잔고",
+  "latestAvailable": "2026-11-03",
+  "completionTimingNote": "20:04 KST authentication-required was not treated as unpublished. Secure login completed and actual source acquisition followed at 20:40 KST. Observation and publication were not backdated to the scheduled 20:00 start.",
+  "accessBeforeRecovery": {
+    "observedAt": "2026-11-05T11:04:56Z",
+    "visibleResult": "로그인 또는 회원가입이 필요합니다.",
+    "status": "authentication-required; publication status unverified"
+  },
+  "followingSessionChecks": [
+    {
+      "market": "KOSDAQ",
+      "date": "2026-11-04",
+      "observedAt": "2026-11-05T11:41:07Z",
+      "sourceDisplayTime": "2026.11.05 PM 08:41:06",
+      "visibleResult": "데이터가 없습니다."
+    },
+    {
+      "market": "KOSPI",
+      "date": "2026-11-04",
+      "observedAt": "2026-11-05T11:41:34Z",
+      "sourceDisplayTime": "2026.11.05 PM 08:41:21",
+      "visibleResult": "데이터가 없습니다."
+    }
+  ],
+  "coverage": {
+    "KOSPI": 939,
+    "KOSDAQ": 1829
+  },
+  "sourceUnits": {
+    "quantity": "shares",
+    "amount": "KRW",
+    "ratio": "percent"
+  },
+  "newExports": 2,
+  "reusedExports": 48,
+  "newUniverseSecurities": [
+    {
+      "code": "0147B0",
+      "name": "래블업",
+      "market": "KOSDAQ",
+      "historyPolicy": "No pre-source observations invented."
+    }
+  ],
+  "history": {
+    "weekComparisonDate": "2026-10-27",
+    "monthComparisonDate": "2026-10-02",
+    "chartFirstDate": "2026-10-06",
+    "chartLastDate": "2026-11-03",
+    "chartActualObservations": 20,
+    "rankingUnionSecurities": 26
+  },
+  "publicationDelayNote": "Earlier 18:48–18:49 checks showed November 3 unavailable. The later authenticated query returned November 3 for both markets. These are separate actual observations, not evidence of an exact publication time."
+}
