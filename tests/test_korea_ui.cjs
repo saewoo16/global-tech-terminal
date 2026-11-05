@@ -56,7 +56,7 @@ await test('delayed daily theme and turnover keep last usable actual dates witho
   try{for(const period of [day,'5d','1m',day])for(const market of ['ALL','KOSPI','KOSDAQ']){
     api.setDate(period);api.setRankMarket(market);const h=api.rankingsSection(),theme=api.themesSection();
     assert(h.includes(turnoverDate+' · 최신 확인 자료'));assert(h.includes('정규장 단독 집계 여부 미확인'));assert(h.includes('AFTER_MARKET'));
-    if(period===day){assert(theme.includes(old+' · 억원'));assert(theme.includes(day+' 테마 순매수금액 미확보'));assert(theme.includes('오늘 자료가 아닙니다.'));assert(theme.includes('kr-theme-table'));assert(theme.includes('전체 합계 미확인'));
+    if(period===day){assert(theme.includes(old+' · 억원'));assert(theme.includes(day+' 테마 순매수금액 미확보'));assert(theme.includes('오늘 자료가 아닙니다.'));assert(theme.includes('kr-theme-table'));const hasMissing=fixture.themes.daily[old].rows.some(r=>r.foreign==null||r.institution==null);assert.equal(theme.includes('전체 합계 미확인'),hasMissing);
       for(const investor of ['foreign','institution']){const rows=market==='ALL'?fixture.rankings.daily[day][investor].rows:fixture.rankings.daily[day][investor].byMarket[market];assert(h.includes(api.esc(rows[0].name)));}}
     else {assert(!theme.includes('data-kr-delayed-snapshot'));assert(theme.includes(fixture.themes[period==='5d'?'aggregate5d':'monthly'].coverage.end+' · 억원'));}
   }assert.equal(JSON.stringify(fixture),before);
