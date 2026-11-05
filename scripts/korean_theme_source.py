@@ -151,7 +151,11 @@ def normalize(result, dates, previous=None):
             if not all(row.get('members') for row in saved['rows']):
                 continue
         daily[day] = saved
-    daily[result['asOf']] = period('1d')
+    # An explicit official full-market import is a frozen daily observation.
+    # The regular top-100 provider refresh may update other windows, but cannot
+    # silently replace this date with incomplete constituent amounts.
+    if daily.get(result['asOf'], {}).get('snapshotPolicy') != 'verified_official_krx_daily':
+        daily[result['asOf']] = period('1d')
     catalog = [{k: copy.deepcopy(b[k]) for k in ('id', 'name', 'memberCount', 'members', 'displayMembers', 'displayMembersByMarket', 'marketCapAsOf', 'sourceCategories', 'scopeNote', 'excludedMembers', 'providerUnionCount')} for b in result['baskets']]
     metadata = {k: copy.deepcopy(result[k]) for k in ('basketDefinitionVersion', 'membershipAsOf', 'marketCapAsOf', 'marketCapPolicy', 'marketCapDateEvidence', 'membershipCounts', 'membershipVerification')}
     return {**metadata, 'unit': '억원', 'dates': dates, 'daily': {d: daily.get(d, absent(d)) for d in dates},
