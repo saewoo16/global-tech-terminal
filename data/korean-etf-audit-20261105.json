@@ -1,0 +1,3625 @@
+{
+  "asOf": "2026-11-05",
+  "verifiedAt": "2026-11-05T09:35:02.609743+00:00",
+  "status": "verified_snapshot_with_partial_independent_crosscheck",
+  "snapshot": {
+    "commit": "db696452ec8e0690ce5c936ae90030e224222728",
+    "workflowRunUrl": "https://github.com/saewoo16/global-tech-terminal/actions/runs/42002776355",
+    "sha256": "8cbd5c779028817fbfbfdf3d6b082b924a1d1520936ddb89bcb8ef3e43180776",
+    "asOf": "2026-11-05",
+    "updatedAt": "2026-11-05T09:31:15.306399+00:00"
+  },
+  "fundCount": 39,
+  "latestBarDateCounts": {
+    "2026-11-05": 39
+  },
+  "allOHLCValid": true,
+  "universeUnchanged": true,
+  "rows": [
+    {
+      "code": "091160",
+      "name": "KODEX 반도체",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 101055,
+        "high": 102210,
+        "low": 92430,
+        "close": 93110,
+        "volume": 3178730
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2025-11-04",
+        "end": "2026-11-05",
+        "count": 246,
+        "requestedMonths": 12,
+        "shortHistory": false
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:54:00+09:00",
+      "intradayCount": 389,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.samsungfund.com/etf/product/list.do",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=091160&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/091160?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 107055,
+          "high": 108500,
+          "low": 100385,
+          "close": 104930,
+          "volume": 2686915
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 116000,
+          "high": 118560,
+          "low": 111280,
+          "close": 114170,
+          "volume": 1603013
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 149900,
+          "high": 152310,
+          "low": 147555,
+          "close": 148780,
+          "volume": 2124162
+        }
+      },
+      "returnsPct": {
+        "day": -11.2646526255599,
+        "week": -18.446176753963385,
+        "month": -37.417663664471036
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "independentNaver": {
+        "source": {
+          "code": "091160",
+          "provider": "naver",
+          "url": "https://fchart.stock.naver.com/sise.nhn?symbol=091160&timeframe=day&count=400&requestType=0",
+          "sha256": "d14fe7c80242ede951f1fe0ac50418d2111814efaf1a3f33764a8387fd621e2d",
+          "observedAt": "2026-11-05T08:32:41.234343+00:00",
+          "observationTimeSource": "raw response file write time",
+          "file": "raw/091160-naver.bin",
+          "sizeBytes": 26712,
+          "error": null
+        },
+        "latestRaw": "2026-11-05",
+        "latestOHLCMatches": true,
+        "boundaryClosesMatch": {
+          "day": true,
+          "week": true,
+          "month": true
+        }
+      },
+      "independentYahoo": {
+        "source": {
+          "code": "091160",
+          "provider": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/091160.KS?period1=1790812800&period2=1793923200&interval=1d",
+          "sha256": "9ea11d2ec854b7d51addee11c9d99d45ba36b5a7f0435ef23c7ed8d79c59ff01",
+          "observedAt": "2026-11-05T08:32:39.568077+00:00",
+          "observationTimeSource": "raw response file write time",
+          "file": "raw/091160-yahoo.bin",
+          "sizeBytes": 2729,
+          "error": null
+        },
+        "checks": [
+          {
+            "period": "end",
+            "date": "2026-11-05",
+            "naverOHLC": {
+              "open": 101055,
+              "high": 102210,
+              "low": 92430,
+              "close": 93110
+            },
+            "yahooOHLC": {
+              "open": 101055.0,
+              "high": 102210.0,
+              "low": 92430.0,
+              "close": 93110.0
+            },
+            "closeMatches": true,
+            "ohlcMatches": true
+          },
+          {
+            "period": "day",
+            "date": "2026-11-04",
+            "naverOHLC": {
+              "open": 107055,
+              "high": 108500,
+              "low": 100385,
+              "close": 104930
+            },
+            "yahooOHLC": {
+              "open": 107055.0,
+              "high": 108500.0,
+              "low": 100385.0,
+              "close": 104930.0
+            },
+            "closeMatches": true,
+            "ohlcMatches": true
+          },
+          {
+            "period": "week",
+            "date": "2026-10-29",
+            "naverOHLC": {
+              "open": 116000,
+              "high": 118560,
+              "low": 111280,
+              "close": 114170
+            },
+            "yahooOHLC": {
+              "open": 116000.0,
+              "high": 118560.0,
+              "low": 111280.0,
+              "close": 114170.0
+            },
+            "closeMatches": true,
+            "ohlcMatches": true
+          },
+          {
+            "period": "month",
+            "date": "2026-10-02",
+            "naverOHLC": {
+              "open": 149900,
+              "high": 152310,
+              "low": 147555,
+              "close": 148780
+            },
+            "yahooOHLC": {
+              "open": 149900.0,
+              "high": 152310.0,
+              "low": 147555.0,
+              "close": 148780.0
+            },
+            "closeMatches": true,
+            "ohlcMatches": true
+          }
+        ]
+      },
+      "independentMBN": {
+        "source": {
+          "code": "091160",
+          "provider": "mbn",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=091160",
+          "sha256": "bc49616290106bfdcc9716ca72e200a6e26554607779cd03f22e8ed1900b57f7",
+          "observedAt": "2026-11-05T08:32:42.199712+00:00",
+          "observationTimeSource": "raw response file write time",
+          "file": "raw/091160-mbn.bin",
+          "sizeBytes": 36630,
+          "error": null
+        },
+        "observedAt": "2026.11.05 15:30",
+        "close": 93110.0,
+        "open": 101055.0,
+        "high": 102210.0,
+        "low": 92430.0,
+        "previousClose": 104930.0,
+        "correctSession": true,
+        "ohlcMatches": true,
+        "previousCloseMatches": true
+      },
+      "revisedHistoricalBars": [
+        {
+          "date": "2026-11-04",
+          "previous": {
+            "date": "2026-11-04",
+            "open": 107055,
+            "high": 108500,
+            "low": 100385,
+            "close": 104930,
+            "volume": 2506915
+          },
+          "current": {
+            "date": "2026-11-04",
+            "open": 107055,
+            "high": 108500,
+            "low": 100385,
+            "close": 104930,
+            "volume": 2686915
+          }
+        }
+      ],
+      "removedRollingWindowDates": [
+        "2025-11-03"
+      ]
+    },
+    {
+      "code": "139260",
+      "name": "TIGER 200 IT",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 108320,
+        "high": 108830,
+        "low": 101315,
+        "close": 102500,
+        "volume": 550317
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2025-11-04",
+        "end": "2026-11-05",
+        "count": 246,
+        "requestedMonths": 12,
+        "shortHistory": false
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:57:00+09:00",
+      "intradayCount": 384,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.tigeretf.com",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=139260&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/139260?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 115425,
+          "high": 116680,
+          "low": 106070,
+          "close": 112190,
+          "volume": 426815
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 122575,
+          "high": 125125,
+          "low": 117335,
+          "close": 121645,
+          "volume": 400959
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 143731,
+          "high": 145915,
+          "low": 143333,
+          "close": 145461,
+          "volume": 324624
+        }
+      },
+      "returnsPct": {
+        "day": -8.637133434352439,
+        "week": -15.73841917053722,
+        "month": -29.53437691202453
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "independentNaver": {
+        "source": {
+          "code": "139260",
+          "provider": "naver",
+          "url": "https://fchart.stock.naver.com/sise.nhn?symbol=139260&timeframe=day&count=400&requestType=0",
+          "sha256": "6f41cfba526761fd2b9a485148d8d3e6f6d51f908602b39525f6c983e54f9f63",
+          "observedAt": "2026-11-05T08:32:41.249912+00:00",
+          "observationTimeSource": "raw response file write time",
+          "file": "raw/139260-naver.bin",
+          "sizeBytes": 26296,
+          "error": null
+        },
+        "latestRaw": "2026-11-05",
+        "latestOHLCMatches": true,
+        "boundaryClosesMatch": {
+          "day": true,
+          "week": true,
+          "month": true
+        }
+      },
+      "independentYahoo": {
+        "source": {
+          "code": "139260",
+          "provider": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/139260.KS?period1=1790812800&period2=1793923200&interval=1d",
+          "sha256": "d76c12c47585caab18d82c525d6b8293896104cecd8c331e6bd2f138dc83f216",
+          "observedAt": "2026-11-05T08:32:39.570106+00:00",
+          "observationTimeSource": "raw response file write time",
+          "file": "raw/139260-yahoo.bin",
+          "sizeBytes": 2796,
+          "error": null
+        },
+        "checks": [
+          {
+            "period": "end",
+            "date": "2026-11-05",
+            "naverOHLC": {
+              "open": 108320,
+              "high": 108830,
+              "low": 101315,
+              "close": 102500
+            },
+            "yahooOHLC": {
+              "open": 108320.0,
+              "high": 108830.0,
+              "low": 101315.0,
+              "close": 102500.0
+            },
+            "closeMatches": true,
+            "ohlcMatches": true
+          },
+          {
+            "period": "day",
+            "date": "2026-11-04",
+            "naverOHLC": {
+              "open": 115425,
+              "high": 116680,
+              "low": 106070,
+              "close": 112190
+            },
+            "yahooOHLC": {
+              "open": 115425.0,
+              "high": 116680.0,
+              "low": 106070.0,
+              "close": 112190.0
+            },
+            "closeMatches": true,
+            "ohlcMatches": true
+          },
+          {
+            "period": "week",
+            "date": "2026-10-29",
+            "naverOHLC": {
+              "open": 122575,
+              "high": 125125,
+              "low": 117335,
+              "close": 121645
+            },
+            "yahooOHLC": {
+              "open": 122575.0,
+              "high": 125125.0,
+              "low": 117335.0,
+              "close": 121645.0
+            },
+            "closeMatches": true,
+            "ohlcMatches": true
+          },
+          {
+            "period": "month",
+            "date": "2026-10-02",
+            "naverOHLC": {
+              "open": 143731,
+              "high": 145915,
+              "low": 143333,
+              "close": 145461
+            },
+            "yahooOHLC": {
+              "open": 144145.0,
+              "high": 146335.0,
+              "low": 143745.0,
+              "close": 145880.0
+            },
+            "closeMatches": false,
+            "ohlcMatches": false,
+            "yahooAdjustedClose": 145462.21875,
+            "differenceNote": "NAVER 과거 분배락 조정계열과 Yahoo 비조정 체결종가 차이입니다. NAVER 동일 공급사 계열의 비교종가를 유지하며 비조정 종가로 섞지 않습니다. Yahoo 조정종가도 공급사 계산 차이로 미세하게 다를 수 있습니다."
+          }
+        ]
+      },
+      "independentMBN": {
+        "source": {
+          "code": "139260",
+          "provider": "mbn",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=139260",
+          "sha256": "efe6bc1c2778e94f225d74810d7fbf9e66eeeb3b44f4057d5d28e36f0fac4cc5",
+          "observedAt": "2026-11-05T08:32:42.658113+00:00",
+          "observationTimeSource": "raw response file write time",
+          "file": "raw/139260-mbn.bin",
+          "sizeBytes": 36294,
+          "error": null
+        },
+        "observedAt": "2026.11.05 15:30",
+        "close": 102500.0,
+        "open": 108320.0,
+        "high": 108830.0,
+        "low": 101315.0,
+        "previousClose": 112190.0,
+        "correctSession": true,
+        "ohlcMatches": true,
+        "previousCloseMatches": true
+      },
+      "revisedHistoricalBars": [
+        {
+          "date": "2026-11-04",
+          "previous": {
+            "date": "2026-11-04",
+            "open": 115425,
+            "high": 116680,
+            "low": 106070,
+            "close": 112190,
+            "volume": 426670
+          },
+          "current": {
+            "date": "2026-11-04",
+            "open": 115425,
+            "high": 116680,
+            "low": 106070,
+            "close": 112190,
+            "volume": 426815
+          }
+        }
+      ],
+      "removedRollingWindowDates": [
+        "2025-11-03"
+      ]
+    },
+    {
+      "code": "091180",
+      "name": "KODEX 자동차",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 22890,
+        "high": 23315,
+        "low": 22570,
+        "close": 23040,
+        "volume": 267480
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2025-11-04",
+        "end": "2026-11-05",
+        "count": 246,
+        "requestedMonths": 12,
+        "shortHistory": false
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:58:00+09:00",
+      "intradayCount": 347,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.samsungfund.com/etf/product/list.do",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=091180&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/091180?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 22060,
+          "high": 22330,
+          "low": 21410,
+          "close": 22150,
+          "volume": 99225
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 23115,
+          "high": 23550,
+          "low": 22760,
+          "close": 23135,
+          "volume": 114637
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 25146,
+          "high": 25524,
+          "low": 25051,
+          "close": 25489,
+          "volume": 109283
+        }
+      },
+      "returnsPct": {
+        "day": 4.018058690744919,
+        "week": -0.410633239680136,
+        "month": -9.608066224645928
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "independentNaver": {
+        "source": {
+          "code": "091180",
+          "provider": "naver",
+          "url": "https://fchart.stock.naver.com/sise.nhn?symbol=091180&timeframe=day&count=400&requestType=0",
+          "sha256": "ef8a32394ef05c4426ec53de6773a04a8eee1029ed6dbcd670372d2745938508",
+          "observedAt": "2026-11-05T08:32:41.254160+00:00",
+          "observationTimeSource": "raw response file write time",
+          "file": "raw/091180-naver.bin",
+          "sizeBytes": 25913,
+          "error": null
+        },
+        "latestRaw": "2026-11-05",
+        "latestOHLCMatches": true,
+        "boundaryClosesMatch": {
+          "day": true,
+          "week": true,
+          "month": true
+        }
+      },
+      "independentYahoo": {
+        "source": {
+          "code": "091180",
+          "provider": "yahoo",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/091180.KS?period1=1790812800&period2=1793923200&interval=1d",
+          "sha256": "7b14bd7c2cb46e6d548af81604ed92fef6483919a490248f9beee60fd12122ec",
+          "observedAt": "2026-11-05T08:32:39.568077+00:00",
+          "observationTimeSource": "raw response file write time",
+          "file": "raw/091180-yahoo.bin",
+          "sizeBytes": 2686,
+          "error": null
+        },
+        "checks": [
+          {
+            "period": "end",
+            "date": "2026-11-05",
+            "naverOHLC": {
+              "open": 22890,
+              "high": 23315,
+              "low": 22570,
+              "close": 23040
+            },
+            "yahooOHLC": {
+              "open": 22890.0,
+              "high": 23315.0,
+              "low": 22570.0,
+              "close": 23040.0
+            },
+            "closeMatches": true,
+            "ohlcMatches": true
+          },
+          {
+            "period": "day",
+            "date": "2026-11-04",
+            "naverOHLC": {
+              "open": 22060,
+              "high": 22330,
+              "low": 21410,
+              "close": 22150
+            },
+            "yahooOHLC": {
+              "open": 22060.0,
+              "high": 22330.0,
+              "low": 21410.0,
+              "close": 22150.0
+            },
+            "closeMatches": true,
+            "ohlcMatches": true
+          },
+          {
+            "period": "week",
+            "date": "2026-10-29",
+            "naverOHLC": {
+              "open": 23115,
+              "high": 23550,
+              "low": 22760,
+              "close": 23135
+            },
+            "yahooOHLC": {
+              "open": 23115.0,
+              "high": 23550.0,
+              "low": 22760.0,
+              "close": 23135.0
+            },
+            "closeMatches": true,
+            "ohlcMatches": true
+          },
+          {
+            "period": "month",
+            "date": "2026-10-02",
+            "naverOHLC": {
+              "open": 25146,
+              "high": 25524,
+              "low": 25051,
+              "close": 25489
+            },
+            "yahooOHLC": {
+              "open": 25255.0,
+              "high": 25635.0,
+              "low": 25160.0,
+              "close": 25600.0
+            },
+            "closeMatches": false,
+            "ohlcMatches": false,
+            "yahooAdjustedClose": 25487.1484375,
+            "differenceNote": "NAVER 과거 분배락 조정계열과 Yahoo 비조정 체결종가 차이입니다. NAVER 동일 공급사 계열의 비교종가를 유지하며 비조정 종가로 섞지 않습니다. Yahoo 조정종가도 공급사 계산 차이로 미세하게 다를 수 있습니다."
+          }
+        ]
+      },
+      "independentMBN": {
+        "source": {
+          "code": "091180",
+          "provider": "mbn",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=091180",
+          "sha256": "cbefcb561490c63c0533ec043c7135b8a7f65f5d4f01c26ca242faa5e24630af",
+          "observedAt": "2026-11-05T08:32:42.664094+00:00",
+          "observationTimeSource": "raw response file write time",
+          "file": "raw/091180-mbn.bin",
+          "sizeBytes": 36374,
+          "error": null
+        },
+        "observedAt": "2026.11.05 15:30",
+        "close": 23040.0,
+        "open": 22890.0,
+        "high": 23315.0,
+        "low": 22570.0,
+        "previousClose": 22150.0,
+        "correctSession": true,
+        "ohlcMatches": true,
+        "previousCloseMatches": true
+      },
+      "revisedHistoricalBars": [
+        {
+          "date": "2026-11-04",
+          "previous": {
+            "date": "2026-11-04",
+            "open": 22060,
+            "high": 22330,
+            "low": 21410,
+            "close": 22150,
+            "volume": 99134
+          },
+          "current": {
+            "date": "2026-11-04",
+            "open": 22060,
+            "high": 22330,
+            "low": 21410,
+            "close": 22150,
+            "volume": 99225
+          }
+        }
+      ],
+      "removedRollingWindowDates": [
+        "2025-11-03"
+      ]
+    },
+    {
+      "code": "091170",
+      "name": "KODEX 은행",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 14440,
+        "high": 14845,
+        "low": 14440,
+        "close": 14530,
+        "volume": 468929
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2025-11-04",
+        "end": "2026-11-05",
+        "count": 246,
+        "requestedMonths": 12,
+        "shortHistory": false
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:44:00+09:00",
+      "intradayCount": 381,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.samsungfund.com/etf/product/list.do",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=091170&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/091170?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 13925,
+          "high": 14230,
+          "low": 13845,
+          "close": 14050,
+          "volume": 331822
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 13865,
+          "high": 14315,
+          "low": 13810,
+          "close": 14300,
+          "volume": 492704
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 15678,
+          "high": 15812,
+          "low": 15618,
+          "close": 15698,
+          "volume": 578799
+        }
+      },
+      "returnsPct": {
+        "day": 3.416370106761568,
+        "week": 1.6083916083916128,
+        "month": -7.4404382723913915
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "independentNaver": {
+        "source": {
+          "code": "091170",
+          "provider": "naver",
+          "url": "https://fchart.stock.naver.com/sise.nhn?symbol=091170&timeframe=day&count=400&requestType=0",
+          "sha256": "1349163aea29fd252786a832ecc6c01e074d3a5fe79a4c9a3f2b1139e16aa6e1",
+          "observedAt": "2026-11-05T08:32:41.213899+00:00",
+          "observationTimeSource": "raw response file write time",
+          "file": "raw/091170-naver.bin",
+          "sizeBytes": 25742,
+          "error": null
+        },
+        "latestRaw": "2026-11-05",
+        "latestOHLCMatches": true,
+        "boundaryClosesMatch": {
+          "day": true,
+          "week": true,
+          "month": true
+        }
+      },
+      "independentMBN": {
+        "source": {
+          "code": "091170",
+          "provider": "mbn",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=091170",
+          "sha256": "c93a4b21f6ff459034eee894383279007d91ed30402e9c0d1686d3ce323d3f8c",
+          "observedAt": "2026-11-05T08:32:42.206080+00:00",
+          "observationTimeSource": "raw response file write time",
+          "file": "raw/091170-mbn.bin",
+          "sizeBytes": 36583,
+          "error": null
+        },
+        "observedAt": "2026.11.05 15:30",
+        "close": 14530.0,
+        "open": 14440.0,
+        "high": 14845.0,
+        "low": 14440.0,
+        "previousClose": 14050.0,
+        "correctSession": true,
+        "ohlcMatches": true,
+        "previousCloseMatches": true
+      },
+      "revisedHistoricalBars": [],
+      "removedRollingWindowDates": [
+        "2025-11-03"
+      ]
+    },
+    {
+      "code": "102970",
+      "name": "KODEX 증권",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 14815,
+        "high": 15160,
+        "low": 14400,
+        "close": 14495,
+        "volume": 338827
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2025-11-04",
+        "end": "2026-11-05",
+        "count": 246,
+        "requestedMonths": 12,
+        "shortHistory": false
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:48:00+09:00",
+      "intradayCount": 356,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.samsungfund.com/etf/product/list.do",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=102970&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/102970?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 14700,
+          "high": 14910,
+          "low": 14120,
+          "close": 14640,
+          "volume": 527604
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 15280,
+          "high": 15800,
+          "low": 15195,
+          "close": 15700,
+          "volume": 404144
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 17510,
+          "high": 17615,
+          "low": 17345,
+          "close": 17600,
+          "volume": 391358
+        }
+      },
+      "returnsPct": {
+        "day": -0.9904371584699478,
+        "week": -7.675159235668794,
+        "month": -17.642045454545453
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "independentMBN": {
+        "source": {
+          "code": "102970",
+          "provider": "mbn",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=102970",
+          "sha256": "a0bd66d5369251425e8549563c0cb9dae3c852ba1554ab13d19617cf910f3a89",
+          "observedAt": "2026-11-05T08:32:45.046715+00:00",
+          "observationTimeSource": "raw response file write time",
+          "file": "raw/102970-mbn.bin",
+          "sizeBytes": 36288,
+          "error": null
+        },
+        "observedAt": "2026.11.05 15:30",
+        "close": 14495.0,
+        "open": 14815.0,
+        "high": 15160.0,
+        "low": 14400.0,
+        "previousClose": 14640.0,
+        "correctSession": true,
+        "ohlcMatches": true,
+        "previousCloseMatches": true
+      },
+      "revisedHistoricalBars": [],
+      "removedRollingWindowDates": [
+        "2025-11-03"
+      ]
+    },
+    {
+      "code": "140700",
+      "name": "KODEX 보험",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 19260,
+        "high": 19640,
+        "low": 18900,
+        "close": 18995,
+        "volume": 108363
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2025-11-04",
+        "end": "2026-11-05",
+        "count": 246,
+        "requestedMonths": 12,
+        "shortHistory": false
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:51:00+09:00",
+      "intradayCount": 195,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.samsungfund.com/etf/product/list.do",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=140700&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/140700?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 18980,
+          "high": 19480,
+          "low": 18735,
+          "close": 18995,
+          "volume": 47149
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 19240,
+          "high": 19460,
+          "low": 19025,
+          "close": 19410,
+          "volume": 59416
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 20080,
+          "high": 20180,
+          "low": 19870,
+          "close": 20165,
+          "volume": 62285
+        }
+      },
+      "returnsPct": {
+        "day": 0.0,
+        "week": -2.1380731581658985,
+        "month": -5.802132407636995
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "independentMBN": {
+        "source": {
+          "code": "140700",
+          "provider": "mbn",
+          "url": "https://mbnmoney.mbn.co.kr/stock/item?code=140700",
+          "sha256": "2bd57d30f2e7e0584694232993c3585b2b482c3deacb00d3f87e43f4cb0affbc",
+          "observedAt": "2026-11-05T08:32:45.205764+00:00",
+          "observationTimeSource": "raw response file write time",
+          "file": "raw/140700-mbn.bin",
+          "sizeBytes": 36271,
+          "error": null
+        },
+        "observedAt": "2026.11.05 17:32",
+        "close": 18995.0,
+        "open": 19260.0,
+        "high": 19640.0,
+        "low": 18900.0,
+        "previousClose": 18995.0,
+        "correctSession": false,
+        "ohlcMatches": true,
+        "previousCloseMatches": true
+      },
+      "revisedHistoricalBars": [],
+      "removedRollingWindowDates": [
+        "2025-11-03"
+      ]
+    },
+    {
+      "code": "117700",
+      "name": "KODEX 건설",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 6050,
+        "high": 6140,
+        "low": 5790,
+        "close": 5850,
+        "volume": 2189912
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2025-11-04",
+        "end": "2026-11-05",
+        "count": 246,
+        "requestedMonths": 12,
+        "shortHistory": false
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:54:00+09:00",
+      "intradayCount": 370,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.samsungfund.com/etf/product/list.do",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=117700&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/117700?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 5855,
+          "high": 6055,
+          "low": 5770,
+          "close": 6000,
+          "volume": 2509760
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 6275,
+          "high": 6335,
+          "low": 5875,
+          "close": 6030,
+          "volume": 1987048
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 6740,
+          "high": 6740,
+          "low": 6650,
+          "close": 6705,
+          "volume": 1445622
+        }
+      },
+      "returnsPct": {
+        "day": -2.500000000000002,
+        "week": -2.985074626865669,
+        "month": -12.751677852348998
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "revisedHistoricalBars": [],
+      "removedRollingWindowDates": [
+        "2025-11-03"
+      ]
+    },
+    {
+      "code": "117680",
+      "name": "KODEX 철강",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 10390,
+        "high": 10600,
+        "low": 10180,
+        "close": 10300,
+        "volume": 26560
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2025-11-04",
+        "end": "2026-11-05",
+        "count": 246,
+        "requestedMonths": 12,
+        "shortHistory": false
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:30:00+09:00",
+      "intradayCount": 181,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.samsungfund.com/etf/product/list.do",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=117680&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/117680?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 10240,
+          "high": 10355,
+          "low": 9880,
+          "close": 10310,
+          "volume": 14792
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 10320,
+          "high": 10405,
+          "low": 10210,
+          "close": 10395,
+          "volume": 6982
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 12131,
+          "high": 12345,
+          "low": 12081,
+          "close": 12345,
+          "volume": 37676
+        }
+      },
+      "returnsPct": {
+        "day": -0.09699321047527132,
+        "week": -0.9139009139009113,
+        "month": -16.565411097610372
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "revisedHistoricalBars": [],
+      "removedRollingWindowDates": [
+        "2025-11-03"
+      ]
+    },
+    {
+      "code": "117460",
+      "name": "KODEX 에너지화학",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 11755,
+        "high": 11755,
+        "low": 11200,
+        "close": 11315,
+        "volume": 52776
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2025-11-04",
+        "end": "2026-11-05",
+        "count": 246,
+        "requestedMonths": 12,
+        "shortHistory": false
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:30:00+09:00",
+      "intradayCount": 198,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.samsungfund.com/etf/product/list.do",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=117460&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/117460?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 11360,
+          "high": 11755,
+          "low": 11015,
+          "close": 11755,
+          "volume": 36552
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 12045,
+          "high": 12050,
+          "low": 11485,
+          "close": 11545,
+          "volume": 49700
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 14152,
+          "high": 14621,
+          "low": 14047,
+          "close": 14621,
+          "volume": 78137
+        }
+      },
+      "returnsPct": {
+        "day": -3.743088047639298,
+        "week": -1.9922044174967568,
+        "month": -22.611312495725322
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "revisedHistoricalBars": [],
+      "removedRollingWindowDates": [
+        "2025-11-03"
+      ]
+    },
+    {
+      "code": "102960",
+      "name": "KODEX 기계장비",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 9975,
+        "high": 9975,
+        "low": 9280,
+        "close": 9435,
+        "volume": 24425
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2025-11-04",
+        "end": "2026-11-05",
+        "count": 246,
+        "requestedMonths": 12,
+        "shortHistory": false
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:30:00+09:00",
+      "intradayCount": 134,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.samsungfund.com/etf/product/list.do",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=102960&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/102960?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 9875,
+          "high": 10020,
+          "low": 9415,
+          "close": 10015,
+          "volume": 13222
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 10235,
+          "high": 10305,
+          "low": 9735,
+          "close": 9835,
+          "volume": 11879
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 13164,
+          "high": 13323,
+          "low": 13164,
+          "close": 13273,
+          "volume": 5145
+        }
+      },
+      "returnsPct": {
+        "day": -5.791313030454315,
+        "week": -4.06710726995424,
+        "month": -28.9158441949823
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "revisedHistoricalBars": [],
+      "removedRollingWindowDates": [
+        "2025-11-03"
+      ]
+    },
+    {
+      "code": "140710",
+      "name": "KODEX 운송",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 6755,
+        "high": 6800,
+        "low": 6605,
+        "close": 6660,
+        "volume": 65999
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2025-11-04",
+        "end": "2026-11-05",
+        "count": 246,
+        "requestedMonths": 12,
+        "shortHistory": false
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:59:00+09:00",
+      "intradayCount": 145,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.samsungfund.com/etf/product/list.do",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=140710&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/140710?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 6615,
+          "high": 6715,
+          "low": 6530,
+          "close": 6700,
+          "volume": 34949
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 6270,
+          "high": 6280,
+          "low": 6195,
+          "close": 6250,
+          "volume": 2223
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 6685,
+          "high": 6730,
+          "low": 6660,
+          "close": 6720,
+          "volume": 13239
+        }
+      },
+      "returnsPct": {
+        "day": -0.5970149253731294,
+        "week": 6.56000000000001,
+        "month": -0.8928571428571397
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "revisedHistoricalBars": [],
+      "removedRollingWindowDates": [
+        "2025-11-03"
+      ]
+    },
+    {
+      "code": "143860",
+      "name": "TIGER 헬스케어",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 34330,
+        "high": 35490,
+        "low": 34255,
+        "close": 34480,
+        "volume": 89567
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2025-11-04",
+        "end": "2026-11-05",
+        "count": 246,
+        "requestedMonths": 12,
+        "shortHistory": false
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:57:00+09:00",
+      "intradayCount": 247,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.tigeretf.com",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=143860&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/143860?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 32325,
+          "high": 33150,
+          "low": 31615,
+          "close": 33055,
+          "volume": 12677
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 33400,
+          "high": 33570,
+          "low": 32665,
+          "close": 33010,
+          "volume": 17632
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 36105,
+          "high": 36540,
+          "low": 35450,
+          "close": 35620,
+          "volume": 8006
+        }
+      },
+      "returnsPct": {
+        "day": 4.310996823476021,
+        "week": 4.4531960012117455,
+        "month": -3.200449185850651
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "revisedHistoricalBars": [
+        {
+          "date": "2026-11-04",
+          "previous": {
+            "date": "2026-11-04",
+            "open": 32325,
+            "high": 33150,
+            "low": 31615,
+            "close": 33055,
+            "volume": 12547
+          },
+          "current": {
+            "date": "2026-11-04",
+            "open": 32325,
+            "high": 33150,
+            "low": 31615,
+            "close": 33055,
+            "volume": 12677
+          }
+        }
+      ],
+      "removedRollingWindowDates": [
+        "2025-11-03"
+      ]
+    },
+    {
+      "code": "266410",
+      "name": "KODEX 필수소비재",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 9050,
+        "high": 9250,
+        "low": 9050,
+        "close": 9055,
+        "volume": 40539
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2025-11-04",
+        "end": "2026-11-05",
+        "count": 246,
+        "requestedMonths": 12,
+        "shortHistory": false
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:40:00+09:00",
+      "intradayCount": 288,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.samsungfund.com/etf/product/list.do",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=266410&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/266410?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 8770,
+          "high": 8805,
+          "low": 8605,
+          "close": 8790,
+          "volume": 6771
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 8875,
+          "high": 8875,
+          "low": 8710,
+          "close": 8840,
+          "volume": 13077
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 9471,
+          "high": 9471,
+          "low": 9237,
+          "close": 9356,
+          "volume": 25626
+        }
+      },
+      "returnsPct": {
+        "day": 3.0147895335608688,
+        "week": 2.4321266968325705,
+        "month": -3.2171868319794794
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "revisedHistoricalBars": [],
+      "removedRollingWindowDates": [
+        "2025-11-03"
+      ]
+    },
+    {
+      "code": "266390",
+      "name": "KODEX 경기소비재",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 14570,
+        "high": 14725,
+        "low": 14265,
+        "close": 14510,
+        "volume": 81899
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2025-11-04",
+        "end": "2026-11-05",
+        "count": 246,
+        "requestedMonths": 12,
+        "shortHistory": false
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:30:00+09:00",
+      "intradayCount": 145,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.samsungfund.com/etf/product/list.do",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=266390&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/266390?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 14065,
+          "high": 14300,
+          "low": 13330,
+          "close": 14075,
+          "volume": 64805
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 12830,
+          "high": 12915,
+          "low": 12665,
+          "close": 12845,
+          "volume": 484
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 14546,
+          "high": 14660,
+          "low": 14441,
+          "close": 14631,
+          "volume": 433
+        }
+      },
+      "returnsPct": {
+        "day": 3.090586145648322,
+        "week": 12.962242117555478,
+        "month": -0.8270111407285952
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "revisedHistoricalBars": [],
+      "removedRollingWindowDates": [
+        "2025-11-03"
+      ]
+    },
+    {
+      "code": "157490",
+      "name": "TIGER 소프트웨어",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 7505,
+        "high": 7675,
+        "low": 7440,
+        "close": 7655,
+        "volume": 102131
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2025-11-04",
+        "end": "2026-11-05",
+        "count": 246,
+        "requestedMonths": 12,
+        "shortHistory": false
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:40:00+09:00",
+      "intradayCount": 249,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.tigeretf.com",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=157490&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/157490?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 7200,
+          "high": 7305,
+          "low": 7055,
+          "close": 7295,
+          "volume": 60407
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 7440,
+          "high": 7495,
+          "low": 7200,
+          "close": 7290,
+          "volume": 53513
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 7855,
+          "high": 7910,
+          "low": 7820,
+          "close": 7910,
+          "volume": 39016
+        }
+      },
+      "returnsPct": {
+        "day": 4.934886908841674,
+        "week": 5.006858710562412,
+        "month": -3.223767383059417
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "revisedHistoricalBars": [],
+      "removedRollingWindowDates": [
+        "2025-11-03"
+      ]
+    },
+    {
+      "code": "0148J0",
+      "name": "TIGER 코리아휴머노이드로봇산업",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 7490,
+        "high": 7580,
+        "low": 7040,
+        "close": 7130,
+        "volume": 3347182
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2026-01-06",
+        "end": "2026-11-05",
+        "count": 204,
+        "requestedMonths": 12,
+        "shortHistory": false
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:53:00+09:00",
+      "intradayCount": 387,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.youtube.com/watch?v=TdlpU2qIzJM",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=0148J0&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/0148J0?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 7595,
+          "high": 7655,
+          "low": 7100,
+          "close": 7480,
+          "volume": 4048644
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 8460,
+          "high": 8505,
+          "low": 8020,
+          "close": 8185,
+          "volume": 2534659
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 9630,
+          "high": 10000,
+          "low": 9560,
+          "close": 9930,
+          "volume": 3962952
+        }
+      },
+      "returnsPct": {
+        "day": -4.679144385026735,
+        "week": -12.889431887599267,
+        "month": -28.197381671701915
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "revisedHistoricalBars": [],
+      "removedRollingWindowDates": []
+    },
+    {
+      "code": "0177X0",
+      "name": "ACE K휴머노이드로봇산업TOP2+",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 7680,
+        "high": 7740,
+        "low": 7255,
+        "close": 7400,
+        "volume": 138792
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2026-04-07",
+        "end": "2026-11-05",
+        "count": 143,
+        "requestedMonths": 12,
+        "shortHistory": true
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:30:00+09:00",
+      "intradayCount": 290,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.aceetf.co.kr/",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=0177X0&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/0177X0?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 7605,
+          "high": 7680,
+          "low": 7195,
+          "close": 7605,
+          "volume": 174111
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 8410,
+          "high": 8450,
+          "low": 8110,
+          "close": 8240,
+          "volume": 208978
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 9685,
+          "high": 10060,
+          "low": 9675,
+          "close": 10025,
+          "volume": 586692
+        }
+      },
+      "returnsPct": {
+        "day": -2.69559500328731,
+        "week": -10.194174757281548,
+        "month": -26.184538653366584
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "revisedHistoricalBars": [],
+      "removedRollingWindowDates": []
+    },
+    {
+      "code": "305720",
+      "name": "KODEX 2차전지산업",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 13800,
+        "high": 13865,
+        "low": 12990,
+        "close": 13130,
+        "volume": 7655585
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2025-11-04",
+        "end": "2026-11-05",
+        "count": 246,
+        "requestedMonths": 12,
+        "shortHistory": false
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:58:00+09:00",
+      "intradayCount": 390,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.samsungfund.com/etf/product/list.do",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=305720&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/305720?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 13070,
+          "high": 13800,
+          "low": 12270,
+          "close": 13800,
+          "volume": 12924192
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 13960,
+          "high": 14135,
+          "low": 13265,
+          "close": 13430,
+          "volume": 6004162
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 14605,
+          "high": 15115,
+          "low": 14545,
+          "close": 15080,
+          "volume": 5082866
+        }
+      },
+      "returnsPct": {
+        "day": -4.855072463768117,
+        "week": -2.233804914370807,
+        "month": -12.93103448275862
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "revisedHistoricalBars": [
+        {
+          "date": "2026-11-04",
+          "previous": {
+            "date": "2026-11-04",
+            "open": 13070,
+            "high": 13800,
+            "low": 12270,
+            "close": 13800,
+            "volume": 9731992
+          },
+          "current": {
+            "date": "2026-11-04",
+            "open": 13070,
+            "high": 13800,
+            "low": 12270,
+            "close": 13800,
+            "volume": 12924192
+          }
+        }
+      ],
+      "removedRollingWindowDates": [
+        "2025-11-03"
+      ]
+    },
+    {
+      "code": "455860",
+      "name": "SOL 2차전지소부장Fn",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 4130,
+        "high": 4145,
+        "low": 3845,
+        "close": 3910,
+        "volume": 1469579
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2025-11-04",
+        "end": "2026-11-05",
+        "count": 246,
+        "requestedMonths": 12,
+        "shortHistory": false
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:41:00+09:00",
+      "intradayCount": 322,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.soletf.co.kr/en/fund",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=455860&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/455860?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 3845,
+          "high": 4100,
+          "low": 3665,
+          "close": 4095,
+          "volume": 712443
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 4040,
+          "high": 4100,
+          "low": 3855,
+          "close": 3910,
+          "volume": 647602
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 4505,
+          "high": 4675,
+          "low": 4490,
+          "close": 4640,
+          "volume": 647727
+        }
+      },
+      "returnsPct": {
+        "day": -4.517704517704512,
+        "week": 0.0,
+        "month": -15.732758620689658
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "revisedHistoricalBars": [],
+      "removedRollingWindowDates": [
+        "2025-11-03"
+      ]
+    },
+    {
+      "code": "455850",
+      "name": "SOL AI반도체소부장",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 19995,
+        "high": 20035,
+        "low": 17945,
+        "close": 18180,
+        "volume": 3716044
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2025-11-04",
+        "end": "2026-11-05",
+        "count": 246,
+        "requestedMonths": 12,
+        "shortHistory": false
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:58:00+09:00",
+      "intradayCount": 387,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.soletf.co.kr/ko/fund/etf/210980",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=455850&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/455850?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 21010,
+          "high": 21350,
+          "low": 19920,
+          "close": 20900,
+          "volume": 3340617
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 23355,
+          "high": 23570,
+          "low": 22280,
+          "close": 22935,
+          "volume": 3797292
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 31165,
+          "high": 31560,
+          "low": 30060,
+          "close": 30500,
+          "volume": 7242185
+        }
+      },
+      "returnsPct": {
+        "day": -13.014354066985645,
+        "week": -20.73250490516677,
+        "month": -40.393442622950815
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "revisedHistoricalBars": [],
+      "removedRollingWindowDates": [
+        "2025-11-03"
+      ]
+    },
+    {
+      "code": "475300",
+      "name": "SOL 반도체전공정",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 17230,
+        "high": 17400,
+        "low": 15340,
+        "close": 15430,
+        "volume": 1614920
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2025-11-04",
+        "end": "2026-11-05",
+        "count": 246,
+        "requestedMonths": 12,
+        "shortHistory": false
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:58:00+09:00",
+      "intradayCount": 386,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.soletf.co.kr/en/fund",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=475300&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/475300?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 17760,
+          "high": 18020,
+          "low": 17030,
+          "close": 17775,
+          "volume": 1537577
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 19900,
+          "high": 20130,
+          "low": 19050,
+          "close": 19415,
+          "volume": 2182673
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 28145,
+          "high": 28515,
+          "low": 26660,
+          "close": 27080,
+          "volume": 3955385
+        }
+      },
+      "returnsPct": {
+        "day": -13.192686357243321,
+        "week": -20.525366984290493,
+        "month": -43.02067946824224
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "revisedHistoricalBars": [],
+      "removedRollingWindowDates": [
+        "2025-11-03"
+      ]
+    },
+    {
+      "code": "475310",
+      "name": "SOL 반도체후공정",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 21465,
+        "high": 21510,
+        "low": 19045,
+        "close": 19345,
+        "volume": 682409
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2025-11-04",
+        "end": "2026-11-05",
+        "count": 246,
+        "requestedMonths": 12,
+        "shortHistory": false
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:58:00+09:00",
+      "intradayCount": 379,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.soletf.co.kr/en/fund",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=475310&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/475310?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 22860,
+          "high": 23330,
+          "low": 21385,
+          "close": 22395,
+          "volume": 720427
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 26025,
+          "high": 26510,
+          "low": 24940,
+          "close": 25970,
+          "volume": 1294482
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 33215,
+          "high": 33767,
+          "low": 32417,
+          "close": 32750,
+          "volume": 1625676
+        }
+      },
+      "returnsPct": {
+        "day": -13.619111408796602,
+        "week": -25.510204081632647,
+        "month": -40.93129770992366
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "revisedHistoricalBars": [],
+      "removedRollingWindowDates": [
+        "2025-11-03"
+      ]
+    },
+    {
+      "code": "449450",
+      "name": "PLUS K방산",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 35870,
+        "high": 36095,
+        "low": 32770,
+        "close": 33425,
+        "volume": 510199
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2025-11-04",
+        "end": "2026-11-05",
+        "count": 246,
+        "requestedMonths": 12,
+        "shortHistory": false
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:42:00+09:00",
+      "intradayCount": 378,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.plusetf.co.kr/product/detail?n=006192",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=449450&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/449450?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 35375,
+          "high": 37305,
+          "low": 34670,
+          "close": 36155,
+          "volume": 786249
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 36350,
+          "high": 36605,
+          "low": 35150,
+          "close": 35620,
+          "volume": 391024
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 50505,
+          "high": 52310,
+          "low": 50310,
+          "close": 52250,
+          "volume": 371950
+        }
+      },
+      "returnsPct": {
+        "day": -7.550822846079386,
+        "week": -6.162268388545766,
+        "month": -36.028708133971286
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "revisedHistoricalBars": [],
+      "removedRollingWindowDates": [
+        "2025-11-03"
+      ]
+    },
+    {
+      "code": "0247S0",
+      "name": "KIWOOM 글로벌MLCC&AI기판TOP4+",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 6570,
+        "high": 6570,
+        "low": 5705,
+        "close": 5780,
+        "volume": 424555
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2026-10-13",
+        "end": "2026-11-05",
+        "count": 18,
+        "requestedMonths": 12,
+        "shortHistory": true
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:30:00+09:00",
+      "intradayCount": 260,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.kiwoometf.com/service/invest/KO04020102T?kijaGubun=10&kijaNo=695",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=0247S0&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/0247S0?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 7030,
+          "high": 7037,
+          "low": 6335,
+          "close": 6670,
+          "volume": 343084
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 7610,
+          "high": 7790,
+          "low": 7390,
+          "close": 7700,
+          "volume": 348883
+        },
+        "month": null
+      },
+      "returnsPct": {
+        "day": -13.343328335832084,
+        "week": -24.935064935064933,
+        "month": null
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "revisedHistoricalBars": [],
+      "removedRollingWindowDates": []
+    },
+    {
+      "code": "0207G0",
+      "name": "SOL 우주항공밸류체인",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 6000,
+        "high": 6000,
+        "low": 5320,
+        "close": 5400,
+        "volume": 140478
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2026-06-16",
+        "end": "2026-11-05",
+        "count": 97,
+        "requestedMonths": 12,
+        "shortHistory": true
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:52:00+09:00",
+      "intradayCount": 213,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.soletf.co.kr/ko/fund/etf/211116",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=0207G0&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/0207G0?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 6095,
+          "high": 6185,
+          "low": 5700,
+          "close": 6105,
+          "volume": 168669
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 6620,
+          "high": 6820,
+          "low": 6555,
+          "close": 6770,
+          "volume": 405771
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 7680,
+          "high": 8120,
+          "low": 7625,
+          "close": 8120,
+          "volume": 670536
+        }
+      },
+      "returnsPct": {
+        "day": -11.54791154791155,
+        "week": -20.23633677991138,
+        "month": -33.49753694581281
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "revisedHistoricalBars": [],
+      "removedRollingWindowDates": []
+    },
+    {
+      "code": "421320",
+      "name": "PLUS 우주항공",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 21315,
+        "high": 21330,
+        "low": 18950,
+        "close": 19025,
+        "volume": 50603
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2025-11-04",
+        "end": "2026-11-05",
+        "count": 246,
+        "requestedMonths": 12,
+        "shortHistory": false
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:44:00+09:00",
+      "intradayCount": 314,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.plusetf.co.kr/product/detail?n=006344",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=421320&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/421320?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 21655,
+          "high": 22145,
+          "low": 20555,
+          "close": 21610,
+          "volume": 59955
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 22705,
+          "high": 23305,
+          "low": 22300,
+          "close": 23085,
+          "volume": 105374
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 28540,
+          "high": 30300,
+          "low": 28540,
+          "close": 30300,
+          "volume": 126344
+        }
+      },
+      "returnsPct": {
+        "day": -11.962054604349836,
+        "week": -17.587177821095946,
+        "month": -37.211221122112214
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "revisedHistoricalBars": [],
+      "removedRollingWindowDates": [
+        "2025-11-03"
+      ]
+    },
+    {
+      "code": "466920",
+      "name": "SOL 조선TOP3플러스",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 19500,
+        "high": 19805,
+        "low": 18555,
+        "close": 18770,
+        "volume": 1399608
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2025-11-04",
+        "end": "2026-11-05",
+        "count": 246,
+        "requestedMonths": 12,
+        "shortHistory": false
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:58:00+09:00",
+      "intradayCount": 387,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.soletf.co.kr/en/fund",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=466920&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/466920?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 19450,
+          "high": 20255,
+          "low": 18775,
+          "close": 19525,
+          "volume": 1561919
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 19000,
+          "high": 19055,
+          "low": 18205,
+          "close": 18280,
+          "volume": 1754952
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 26090,
+          "high": 26210,
+          "low": 25905,
+          "close": 26135,
+          "volume": 550222
+        }
+      },
+      "returnsPct": {
+        "day": -3.8668373879641504,
+        "week": 2.6805251641137895,
+        "month": -28.180600726994452
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "revisedHistoricalBars": [
+        {
+          "date": "2026-11-04",
+          "previous": {
+            "date": "2026-11-04",
+            "open": 19450,
+            "high": 20255,
+            "low": 18775,
+            "close": 19525,
+            "volume": 1561418
+          },
+          "current": {
+            "date": "2026-11-04",
+            "open": 19450,
+            "high": 20255,
+            "low": 18775,
+            "close": 19525,
+            "volume": 1561919
+          }
+        }
+      ],
+      "removedRollingWindowDates": [
+        "2025-11-03"
+      ]
+    },
+    {
+      "code": "487240",
+      "name": "KODEX AI전력핵심설비",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 24640,
+        "high": 24800,
+        "low": 22405,
+        "close": 22680,
+        "volume": 4471039
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2025-11-04",
+        "end": "2026-11-05",
+        "count": 246,
+        "requestedMonths": 12,
+        "shortHistory": false
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:58:00+09:00",
+      "intradayCount": 390,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.samsungfund.com/etf/product/list.do",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=487240&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/487240?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 25955,
+          "high": 26575,
+          "low": 24255,
+          "close": 25810,
+          "volume": 4624646
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 26770,
+          "high": 26780,
+          "low": 25455,
+          "close": 25850,
+          "volume": 2140397
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 36610,
+          "high": 37120,
+          "low": 36230,
+          "close": 36900,
+          "volume": 2076587
+        }
+      },
+      "returnsPct": {
+        "day": -12.127082526152655,
+        "week": -12.263056092843328,
+        "month": -38.53658536585366
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "revisedHistoricalBars": [],
+      "removedRollingWindowDates": [
+        "2025-11-03"
+      ]
+    },
+    {
+      "code": "0222F0",
+      "name": "마이티 AI데이터센터밸류체인",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 10175,
+        "high": 10175,
+        "low": 9850,
+        "close": 9890,
+        "volume": 100
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2026-08-04",
+        "end": "2026-11-05",
+        "count": 63,
+        "requestedMonths": 12,
+        "shortHistory": true
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:30:00+09:00",
+      "intradayCount": 12,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://db-asset.com/mob/kr/fund/41900",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=0222F0&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/0222F0?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 10450,
+          "high": 10485,
+          "low": 9810,
+          "close": 10485,
+          "volume": 724
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 10850,
+          "high": 10910,
+          "low": 10420,
+          "close": 10715,
+          "volume": 648
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 12965,
+          "high": 13180,
+          "low": 12965,
+          "close": 13180,
+          "volume": 725
+        }
+      },
+      "returnsPct": {
+        "day": -5.674773485932283,
+        "week": -7.699486700886604,
+        "month": -24.962063732928673
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "revisedHistoricalBars": [],
+      "removedRollingWindowDates": []
+    },
+    {
+      "code": "0091P0",
+      "name": "TIGER 코리아원자력",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 11920,
+        "high": 12085,
+        "low": 11230,
+        "close": 11320,
+        "volume": 1448172
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2025-11-04",
+        "end": "2026-11-05",
+        "count": 246,
+        "requestedMonths": 12,
+        "shortHistory": false
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:59:00+09:00",
+      "intradayCount": 378,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.tigeretf.com",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=0091P0&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/0091P0?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 11880,
+          "high": 12185,
+          "low": 11385,
+          "close": 11885,
+          "volume": 1505857
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 13235,
+          "high": 13305,
+          "low": 11865,
+          "close": 12520,
+          "volume": 3608243
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 16955,
+          "high": 17025,
+          "low": 16750,
+          "close": 16840,
+          "volume": 1049009
+        }
+      },
+      "returnsPct": {
+        "day": -4.753891459823311,
+        "week": -9.584664536741217,
+        "month": -32.779097387173394
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "revisedHistoricalBars": [],
+      "removedRollingWindowDates": [
+        "2025-11-03"
+      ]
+    },
+    {
+      "code": "457990",
+      "name": "PLUS 태양광&ESS",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 31845,
+        "high": 31845,
+        "low": 29960,
+        "close": 30435,
+        "volume": 1779903
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2025-11-04",
+        "end": "2026-11-05",
+        "count": 246,
+        "requestedMonths": 12,
+        "shortHistory": false
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:55:00+09:00",
+      "intradayCount": 384,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.plusetf.co.kr/product/detail?n=006279",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=457990&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/457990?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 28975,
+          "high": 31745,
+          "low": 27500,
+          "close": 31660,
+          "volume": 2335103
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 30300,
+          "high": 30530,
+          "low": 28535,
+          "close": 28885,
+          "volume": 491757
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 36500,
+          "high": 38300,
+          "low": 36335,
+          "close": 38140,
+          "volume": 514036
+        }
+      },
+      "returnsPct": {
+        "day": -3.86923562855338,
+        "week": 5.366106975939067,
+        "month": -20.20188778185632
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "revisedHistoricalBars": [],
+      "removedRollingWindowDates": [
+        "2025-11-03"
+      ]
+    },
+    {
+      "code": "0209D0",
+      "name": "KODEX 전고체배터리ESS TOP2플러스",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 8310,
+        "high": 8350,
+        "low": 7645,
+        "close": 7750,
+        "volume": 10134018
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2026-06-23",
+        "end": "2026-11-05",
+        "count": 92,
+        "requestedMonths": 12,
+        "shortHistory": true
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:54:00+09:00",
+      "intradayCount": 384,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.samsungfund.com/etf/product/view.do?id=2ETFV7",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=0209D0&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/0209D0?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 7665,
+          "high": 8330,
+          "low": 7160,
+          "close": 8330,
+          "volume": 10319205
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 8435,
+          "high": 8565,
+          "low": 7960,
+          "close": 8155,
+          "volume": 8379032
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 8320,
+          "high": 8695,
+          "low": 8290,
+          "close": 8665,
+          "volume": 1032694
+        }
+      },
+      "returnsPct": {
+        "day": -6.962785114045622,
+        "week": -4.966278356836296,
+        "month": -10.559723023658396
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "revisedHistoricalBars": [],
+      "removedRollingWindowDates": []
+    },
+    {
+      "code": "364970",
+      "name": "TIGER 바이오TOP10",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 6940,
+        "high": 7130,
+        "low": 6900,
+        "close": 6950,
+        "volume": 1886987
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2025-11-04",
+        "end": "2026-11-05",
+        "count": 246,
+        "requestedMonths": 12,
+        "shortHistory": false
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:59:00+09:00",
+      "intradayCount": 382,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.tigeretf.com",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=364970&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/364970?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 6520,
+          "high": 6670,
+          "low": 6330,
+          "close": 6670,
+          "volume": 1674955
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 6630,
+          "high": 6655,
+          "low": 6465,
+          "close": 6510,
+          "volume": 652912
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 6965,
+          "high": 7000,
+          "low": 6805,
+          "close": 6840,
+          "volume": 590856
+        }
+      },
+      "returnsPct": {
+        "day": 4.197901049475261,
+        "week": 6.7588325652841785,
+        "month": 1.6081871345029253
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "revisedHistoricalBars": [],
+      "removedRollingWindowDates": [
+        "2025-11-03"
+      ]
+    },
+    {
+      "code": "228790",
+      "name": "TIGER 화장품",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 3590,
+        "high": 3705,
+        "low": 3520,
+        "close": 3565,
+        "volume": 4668968
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2025-11-04",
+        "end": "2026-11-05",
+        "count": 246,
+        "requestedMonths": 12,
+        "shortHistory": false
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:58:00+09:00",
+      "intradayCount": 382,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.tigeretf.com",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=228790&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/228790?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 3480,
+          "high": 3480,
+          "low": 3290,
+          "close": 3420,
+          "volume": 3817201
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 3605,
+          "high": 3625,
+          "low": 3477,
+          "close": 3495,
+          "volume": 4175073
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 4205,
+          "high": 4255,
+          "low": 4025,
+          "close": 4075,
+          "volume": 4689230
+        }
+      },
+      "returnsPct": {
+        "day": 4.2397660818713545,
+        "week": 2.002861230329045,
+        "month": -12.51533742331289
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "revisedHistoricalBars": [
+        {
+          "date": "2026-11-04",
+          "previous": {
+            "date": "2026-11-04",
+            "open": 3480,
+            "high": 3480,
+            "low": 3290,
+            "close": 3420,
+            "volume": 3816794
+          },
+          "current": {
+            "date": "2026-11-04",
+            "open": 3480,
+            "high": 3480,
+            "low": 3290,
+            "close": 3420,
+            "volume": 3817201
+          }
+        }
+      ],
+      "removedRollingWindowDates": [
+        "2025-11-03"
+      ]
+    },
+    {
+      "code": "228800",
+      "name": "TIGER 여행레저",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 2560,
+        "high": 2805,
+        "low": 2525,
+        "close": 2550,
+        "volume": 321032
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2025-11-04",
+        "end": "2026-11-05",
+        "count": 246,
+        "requestedMonths": 12,
+        "shortHistory": false
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:30:00+09:00",
+      "intradayCount": 252,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.tigeretf.com",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=228800&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/228800?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 2515,
+          "high": 2550,
+          "low": 2445,
+          "close": 2520,
+          "volume": 72400
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 2470,
+          "high": 2470,
+          "low": 2395,
+          "close": 2410,
+          "volume": 161716
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 2630,
+          "high": 2630,
+          "low": 2580,
+          "close": 2600,
+          "volume": 176555
+        }
+      },
+      "returnsPct": {
+        "day": 1.1904761904761862,
+        "week": 5.809128630705396,
+        "month": -1.9230769230769273
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "revisedHistoricalBars": [],
+      "removedRollingWindowDates": [
+        "2025-11-03"
+      ]
+    },
+    {
+      "code": "228810",
+      "name": "TIGER 미디어컨텐츠",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 2940,
+        "high": 3080,
+        "low": 2940,
+        "close": 3065,
+        "volume": 467214
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2025-11-04",
+        "end": "2026-11-05",
+        "count": 246,
+        "requestedMonths": 12,
+        "shortHistory": false
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:30:00+09:00",
+      "intradayCount": 239,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.tigeretf.com",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=228810&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/228810?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 3005,
+          "high": 3005,
+          "low": 2870,
+          "close": 2910,
+          "volume": 466614
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 3125,
+          "high": 3150,
+          "low": 3005,
+          "close": 3040,
+          "volume": 181306
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 2990,
+          "high": 3015,
+          "low": 2945,
+          "close": 3000,
+          "volume": 398662
+        }
+      },
+      "returnsPct": {
+        "day": 5.32646048109966,
+        "week": 0.8223684210526327,
+        "month": 2.1666666666666723
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "revisedHistoricalBars": [],
+      "removedRollingWindowDates": [
+        "2025-11-03"
+      ]
+    },
+    {
+      "code": "365000",
+      "name": "TIGER 인터넷TOP10",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 3080,
+        "high": 3130,
+        "low": 2995,
+        "close": 3055,
+        "volume": 326896
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2025-11-04",
+        "end": "2026-11-05",
+        "count": 246,
+        "requestedMonths": 12,
+        "shortHistory": false
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:30:00+09:00",
+      "intradayCount": 190,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.tigeretf.com",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=365000&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/365000?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 3000,
+          "high": 3050,
+          "low": 2890,
+          "close": 3050,
+          "volume": 245514
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 3200,
+          "high": 3255,
+          "low": 3135,
+          "close": 3190,
+          "volume": 22798
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 3670,
+          "high": 3780,
+          "low": 3670,
+          "close": 3750,
+          "volume": 79153
+        }
+      },
+      "returnsPct": {
+        "day": 0.16393442622950616,
+        "week": -4.2319749216300995,
+        "month": -18.533333333333335
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "revisedHistoricalBars": [],
+      "removedRollingWindowDates": [
+        "2025-11-03"
+      ]
+    },
+    {
+      "code": "364990",
+      "name": "TIGER 게임TOP10",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 4420,
+        "high": 4635,
+        "low": 4415,
+        "close": 4580,
+        "volume": 165844
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2025-11-04",
+        "end": "2026-11-05",
+        "count": 246,
+        "requestedMonths": 12,
+        "shortHistory": false
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:57:00+09:00",
+      "intradayCount": 286,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.tigeretf.com",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=364990&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/364990?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 4215,
+          "high": 4385,
+          "low": 4215,
+          "close": 4375,
+          "volume": 169348
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 4240,
+          "high": 4255,
+          "low": 4170,
+          "close": 4220,
+          "volume": 31200
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 4570,
+          "high": 4635,
+          "low": 4555,
+          "close": 4635,
+          "volume": 183897
+        }
+      },
+      "returnsPct": {
+        "day": 4.685714285714293,
+        "week": 8.530805687203792,
+        "month": -1.1866235167206085
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "revisedHistoricalBars": [],
+      "removedRollingWindowDates": [
+        "2025-11-03"
+      ]
+    },
+    {
+      "code": "329200",
+      "name": "TIGER 리츠부동산인프라",
+      "latestBar": {
+        "date": "2026-11-05",
+        "open": 3820,
+        "high": 3830,
+        "low": 3750,
+        "close": 3760,
+        "volume": 4387429
+      },
+      "current": true,
+      "allOHLCValid": true,
+      "uniqueSortedDates": true,
+      "dailyCoverage": {
+        "start": "2025-11-04",
+        "end": "2026-11-05",
+        "count": 246,
+        "requestedMonths": 12,
+        "shortHistory": false
+      },
+      "intradayDate": "2026-11-05",
+      "intradayAsOf": "2026-11-05T15:44:00+09:00",
+      "intradayCount": 384,
+      "holdingsAsOf": "2026-11-05",
+      "holdingsObservedAt": "2026-11-05T09:31:31.320373+00:00",
+      "holdingsRefreshStatus": null,
+      "priceBasis": "공급사 제공 일별 가격 계열. 분배금 재투자 총수익률이 아니며 수정주가 처리 방식은 공급사에 따릅니다.",
+      "sourceUrls": [
+        "https://www.tigeretf.com",
+        "https://finance.naver.com/api/sise/etfItemList.nhn",
+        "https://fchart.stock.naver.com/sise.nhn?symbol=329200&timeframe=day&count=400&requestType=0",
+        "https://api.stock.naver.com/chart/domestic/item/329200?periodType=day"
+      ],
+      "targetDates": {
+        "day": "2026-11-04",
+        "week": "2026-10-29",
+        "month": "2026-10-05"
+      },
+      "bases": {
+        "day": {
+          "date": "2026-11-04",
+          "open": 3790,
+          "high": 3810,
+          "low": 3760,
+          "close": 3810,
+          "volume": 5035759
+        },
+        "week": {
+          "date": "2026-10-29",
+          "open": 3965,
+          "high": 3975,
+          "low": 3927,
+          "close": 3940,
+          "volume": 3937548
+        },
+        "month": {
+          "date": "2026-10-02",
+          "open": 4004,
+          "high": 4023,
+          "low": 4004,
+          "close": 4013,
+          "volume": 1954505
+        }
+      },
+      "returnsPct": {
+        "day": -1.3123359580052507,
+        "week": -4.5685279187817285,
+        "month": -6.304510341390479
+      },
+      "sourceSnapshotUpdatedAt": "2026-11-05T09:31:15.306399+00:00",
+      "revisedHistoricalBars": [],
+      "removedRollingWindowDates": [
+        "2025-11-03"
+      ]
+    }
+  ],
+  "validation": {
+    "problems": [],
+    "currentCount": 39,
+    "sourceErrors": [],
+    "sameDayIntradayCount": 39,
+    "missingMonthHistory": [
+      "0247S0"
+    ],
+    "independentNaverCount": 4,
+    "independentYahooCount": 3,
+    "independentMBNCount": 6,
+    "independentMBNRegularCloseCount": 5,
+    "focusedTests": {
+      "python": "20 tests passed: test_korean_etf*.py",
+      "javascript": "test_etf_ui.cjs passed",
+      "snapshotSha256": "8cbd5c779028817fbfbfdf3d6b082b924a1d1520936ddb89bcb8ef3e43180776"
+    }
+  },
+  "methodology": [
+    "기존 17:30 ETF 예약 작업의 검증·게시 스냅샷을 재사용하며 별도 collector를 중복 실행하지 않았습니다.",
+    "39개 실제 마지막 일봉·OHLC·직전/1주/1개월 수익률을 스냅샷 내 전체 일별 계열로 다시 계산했습니다.",
+    "별도 확보 원자료는 NAVER 4개, Yahoo 3개, MBN 6개입니다. MBN 중5개만15:30 정규장 관측이며 보험140700은17:32 관측으로 분리합니다. 전39개 독립 공급사 교차검증 완료를 주장하지 않습니다.",
+    "수익률은 동일 공급사 가격계열이며 과거 분배락 조정과 비조정 체결종가를 혼합하지 않습니다. 1일은 직전 실제 종가, 1주는7일 전, 1개월은 달력상1개월 전까지의 가장 최근 거래일입니다. 신규 상장 전 미확인 기간은 null입니다.",
+    "보유내역 기준일·관측시각과 시세일은 별도이며 실제 원값을 보존합니다."
+  ],
+  "boundaryCrossProviderDifferences": [
+    {
+      "code": "139260",
+      "date": "2026-10-02",
+      "period": "month",
+      "naverClose": 145461,
+      "yahooClose": 145880.0,
+      "yahooAdjustedClose": 145462.21875
+    },
+    {
+      "code": "091180",
+      "date": "2026-10-02",
+      "period": "month",
+      "naverClose": 25489,
+      "yahooClose": 25600.0,
+      "yahooAdjustedClose": 25487.1484375
+    }
+  ]
+}
