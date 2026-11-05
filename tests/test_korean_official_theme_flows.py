@@ -11,6 +11,7 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 from korean_theme_source import build, normalize
+from test_korean_oct22 import assert_period_provenance
 
 class OfficialThemeFlowsTests(unittest.TestCase):
     @classmethod
@@ -62,8 +63,9 @@ class OfficialThemeFlowsTests(unittest.TestCase):
                 expected = sum(self.evidence['verified']['flows'][investor][c]['netBuyKRW'] for c in codes)
                 self.assertEqual(cell['netBuyKRW'], expected)
                 self.assertEqual(row[investor], expected / 1e8)
-        self.assertEqual(themes['aggregate5d']['coverage']['end'], '2026-11-03')
-        self.assertEqual(themes['monthly']['coverage']['end'], '2026-11-03')
+        # Live period amounts may advance with their actual dated sources;
+        # preserving the official daily snapshot must not freeze other windows.
+        assert_period_provenance(self, self.payload)
         self.assertEqual(section['membershipAsOf'], '2026-10-19')
         self.assertEqual(section['marketCapAsOf'], '2026-10-19')
 
@@ -72,7 +74,7 @@ class OfficialThemeFlowsTests(unittest.TestCase):
         for market, code in [('KOSPI', '005930'), ('KOSDAQ', '247540')]:
             for investor in ['FOREIGNER', 'ORGANIZATION']:
                 for period in ['DAY', 'WEEK', 'MONTH']:
-                    responses[f'{market}_{investor}_{period}'] = {'url': 'https://stock.naver.com/api/test', 'data': {'sections': {
+                    responses[f'{market}_{investor}_{period}'] = {'url': 'https://stock.naver.com/api/test?periodType=' + period, 'data': {'sections': {
                         'buyRankList': [{'type': 'ST', 'itemcode': code, 'accTradeAmount': '123', 'bizdateFrom': '20261104', 'bizdateTo': '20261104', 'estimated': False}], 'sellRankList': []}}}
         prior = copy.deepcopy(self.payload['themes'])
         incoming = build(responses=responses)
@@ -80,6 +82,10 @@ class OfficialThemeFlowsTests(unittest.TestCase):
         self.assertEqual(actual['daily']['2026-11-04'], prior['daily']['2026-11-04'])
         self.assertEqual(actual['aggregate5d']['coverage']['end'], '2026-11-04')
         self.assertEqual(actual['aggregate5d']['status'], 'partial')
+        sources = {source['id']: source for source in self.payload['sources']}
+        sources.update({source['id']: source for source in incoming['sources']})
+        refreshed = {**self.payload, 'themes': actual, 'sources': list(sources.values())}
+        assert_period_provenance(self, refreshed)
         self.assertEqual(self.payload['themes'], prior)
 
 if __name__ == '__main__':

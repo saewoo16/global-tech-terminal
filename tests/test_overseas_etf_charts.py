@@ -9,7 +9,64 @@ from unittest.mock import patch
 PATH=pathlib.Path(__file__).resolve().parents[1]/'scripts/update_overseas_etf_charts.py'
 spec=importlib.util.spec_from_file_location('overseas',PATH);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
 
+def assert_intraday_coverage(test, payload):
+    """Independently count real same-session observations, not a fixed snapshot."""
+    coverage=payload['coverage'];target=coverage['targetSession']
+    expected=set(coverage['currentCodes'])|set(coverage['staleCodes'])|set(coverage['missingCodes'])
+    current=set()
+    for fund in payload['funds']:
+        intra=fund['intraday'];points=intra['points']
+        for point in points:
+            stamp=dt.datetime.fromisoformat(point['time'])
+            test.assertIsNotNone(stamp.utcoffset())
+            local=stamp.astimezone(m.NY)
+            test.assertEqual(local.date().isoformat(),intra['date'])
+            test.assertTrue(dt.time(9,30)<=local.time()<dt.time(16))
+            test.assertFalse(isinstance(point['price'],bool))
+            test.assertTrue(math.isfinite(point['price']) and point['price']>0)
+        test.assertEqual([p['time'] for p in points],sorted({p['time'] for p in points}))
+        if fund['daily'][-1]['date']==target and intra['date']==target and len(points)>=2:
+            current.add(fund['code'])
+    test.assertLessEqual(current,expected)
+    test.assertEqual(coverage['intradayCurrentFundCount'],len(current))
+    test.assertEqual(set(coverage['intradayUnverifiedCodes']),expected-current)
+    test.assertEqual(len(coverage['intradayUnverifiedCodes']),len(expected-current))
+
 class OverseasETFTests(unittest.TestCase):
+    def intraday_snapshot(self, current_count=2):
+        # Synthetic structural fixture only, never published market data.
+        funds=[]
+        for index,code in enumerate(['A','B']):
+            day='2026-11-04' if index<current_count else '2026-11-03'
+            funds.append({'code':code,'daily':[{'date':'2026-11-04'}],
+                          'intraday':{'date':day,'points':[{'time':day+'T'+time+'-05:00','price':100}
+                                                         for time in ['09:30:00','15:55:00']]}})
+        return {'funds':funds,'coverage':{'targetSession':'2026-11-04','currentCodes':['A','B'],
+                'staleCodes':[],'missingCodes':[],'intradayCurrentFundCount':current_count,
+                'intradayUnverifiedCodes':['A','B'][current_count:]}}
+
+    def test_new_intraday_coverage_is_accepted_without_redating_old_points(self):
+        for count in (0,1,2):
+            assert_intraday_coverage(self,self.intraday_snapshot(count))
+
+    def test_next_session_with_preserved_prior_intraday_is_accepted(self):
+        payload=self.intraday_snapshot(2)
+        payload['coverage'].update(targetSession='2026-11-05',intradayCurrentFundCount=0,
+                                   intradayUnverifiedCodes=['A','B'])
+        for fund in payload['funds']:fund['daily'].append({'date':'2026-11-05'})
+        assert_intraday_coverage(self,payload)
+
+    def test_fabricated_intraday_count_or_date_is_rejected(self):
+        payload=self.intraday_snapshot(1)
+        payload['coverage']['intradayCurrentFundCount']=2
+        with self.assertRaises(AssertionError):assert_intraday_coverage(self,payload)
+        payload=self.intraday_snapshot(1)
+        payload['coverage']['intradayUnverifiedCodes']=[]
+        with self.assertRaises(AssertionError):assert_intraday_coverage(self,payload)
+        payload=self.intraday_snapshot(1)
+        payload['funds'][1]['intraday']['date']='2026-11-04'
+        with self.assertRaises(AssertionError):assert_intraday_coverage(self,payload)
+
     def test_coverage_exposes_stale_tail_under_fresh_latest(self):
         funds=[{'code':c,'daily':[{'date':d,'close':100}]} for c,d in [('A','2026-10-29'),('B','2026-10-28')]]
         original=json.loads(json.dumps(funds))
@@ -128,6 +185,8 @@ class OverseasETFTests(unittest.TestCase):
 class OverseasETFSnapshotTests(unittest.TestCase):
     def setUp(self):
         self.payload=json.loads((PATH.parents[1]/'data/overseas_etf_charts.json').read_text())
+    def test_persisted_intraday_coverage_matches_actual_observations(self):
+        assert_intraday_coverage(self,self.payload)
     def test_persisted_coverage_matches_actual_tail_dates(self):
         coverage=self.payload.get('coverage')
         if coverage is None:
@@ -140,9 +199,15 @@ class OverseasETFSnapshotTests(unittest.TestCase):
         target=coverage['targetSession']
         self.assertEqual(set(coverage['currentCodes']),{code for code,day in tails.items() if day==target})
         self.assertEqual(set(coverage['staleCodes']),{code for code,day in tails.items() if day!=target})
+        self.assertEqual(coverage['currentFundCount'],len(coverage['currentCodes']))
+        self.assertEqual(coverage['staleFundCount'],len(coverage['staleCodes']))
+        self.assertEqual(coverage['missingFundCount'],len(coverage['missingCodes']))
         for fund in funds:
             self.assertEqual(fund['sessionCoverage']['actualSession'],tails[fund['code']])
             self.assertEqual(fund['sessionCoverage']['targetSession'],target)
+            self.assertEqual(fund['dailyCoverage']['count'],len(fund['daily']))
+            self.assertEqual(fund['dailyCoverage']['start'],fund['daily'][0]['date'])
+            self.assertEqual(fund['dailyCoverage']['end'],fund['daily'][-1]['date'])
 
     def test_all_snapshot_holdings_have_dated_sources_and_descending_weights(self):
         for fund in self.payload['funds']:

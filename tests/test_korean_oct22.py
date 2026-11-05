@@ -39,9 +39,23 @@ def assert_live_session_consistency(test, payload):
     as_of = payload['asOf']
     test.assertEqual(date.fromisoformat(as_of).isoformat(), as_of)
     heatmap = payload['heatmaps']
-    test.assertEqual(heatmap['asOf'], as_of)
-    test.assertLess(heatmap['previousSession'], as_of)
+    # Cash-flow collection does not refresh the independently verified heatmap.
+    # Preserve its real date, rather than blocking new flows or redating prices.
+    heatmap_date = heatmap['asOf']
+    test.assertEqual(date.fromisoformat(heatmap_date).isoformat(), heatmap_date)
+    test.assertLessEqual(heatmap_date, as_of)
+    test.assertEqual(date.fromisoformat(heatmap['previousSession']).isoformat(), heatmap['previousSession'])
+    test.assertLess(heatmap['previousSession'], heatmap_date)
     test.assertTrue(heatmap['regularSessionOnly'])
+    test.assertEqual(heatmap['classification']['priceAsOf'], heatmap_date)
+    for market in ('KOSPI', 'KOSDAQ'):
+        section = heatmap['markets'][market]
+        test.assertEqual(section['asOf'], heatmap_date)
+        test.assertEqual(section['previousSession'], heatmap['previousSession'])
+        test.assertTrue(section['rows'])
+        for row in section['rows']:
+            test.assertEqual(row['asOf'], heatmap_date)
+            test.assertEqual(row['previousSession'], heatmap['previousSession'])
     for name in ('foreignFlows', 'openInterest'):
         item = payload['futures'][name]
         # A provider may publish later than the cash close. Its actual final
@@ -123,7 +137,11 @@ class LiveSessionRollover(unittest.TestCase):
     def fixture(self):
         # Deliberately synthetic structural fixture, not published market data.
         return {'asOf': '2026-10-23',
-                'heatmaps': {'asOf': '2026-10-23', 'previousSession': '2026-10-22', 'regularSessionOnly': True},
+                'heatmaps': {'asOf': '2026-10-23', 'previousSession': '2026-10-22', 'regularSessionOnly': True,
+                            'classification': {'priceAsOf': '2026-10-23'},
+                            'markets': {market: {'asOf': '2026-10-23', 'previousSession': '2026-10-22',
+                                                 'rows': [{'asOf': '2026-10-23', 'previousSession': '2026-10-22'}]}
+                                        for market in ('KOSPI', 'KOSDAQ')}},
                 'futures': {name: {'asOf': '2026-10-23', 'coverage': {'end': '2026-10-23'},
                                    'rows': [{'date': '2026-10-23'}]}
                             for name in ('foreignFlows', 'openInterest')}}
@@ -131,13 +149,31 @@ class LiveSessionRollover(unittest.TestCase):
     def test_next_session_is_accepted(self):
         assert_live_session_consistency(self, self.fixture())
 
-    def test_stale_heatmap_and_nonregular_session_are_rejected(self):
-        for field, value in [('asOf', '2026-10-22'), ('regularSessionOnly', False),
+    def test_new_cash_session_preserves_older_heatmap_date(self):
+        payload = self.fixture()
+        payload['asOf'] = '2026-10-26'
+        before = copy.deepcopy(payload['heatmaps'])
+        assert_live_session_consistency(self, payload)
+        self.assertEqual(payload['heatmaps'], before)
+
+    def test_redated_future_or_nonregular_heatmap_is_rejected(self):
+        for field, value in [('asOf', '2026-10-22'), ('asOf', '2026-10-26'), ('regularSessionOnly', False),
                              ('previousSession', '2026-10-23')]:
             payload = self.fixture()
             payload['heatmaps'][field] = value
             with self.assertRaises(AssertionError):
                 assert_live_session_consistency(self, payload)
+
+    def test_redated_heatmap_rows_or_classification_are_rejected(self):
+        for field in ('asOf', 'previousSession'):
+            payload = self.fixture()
+            payload['heatmaps']['markets']['KOSPI']['rows'][0][field] = '2026-10-21'
+            with self.assertRaises(AssertionError):
+                assert_live_session_consistency(self, payload)
+        payload = self.fixture()
+        payload['heatmaps']['classification']['priceAsOf'] = '2026-10-22'
+        with self.assertRaises(AssertionError):
+            assert_live_session_consistency(self, payload)
 
     def test_futures_redate_without_new_row_is_rejected(self):
         payload = self.fixture()
