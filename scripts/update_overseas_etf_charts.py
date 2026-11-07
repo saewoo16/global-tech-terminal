@@ -4,7 +4,7 @@ Daily bars and returns are price-only (Yahoo split-adjusted close, not adjusted
 close/dividend total return). Only completed regular-session daily bars are used.
 The intraday chart contains actual five-minute regular-session observations.
 """
-import argparse, calendar, concurrent.futures, datetime as dt, json, math, pathlib, time, urllib.parse, urllib.request
+import argparse, calendar, concurrent.futures, copy, datetime as dt, json, math, pathlib, time, urllib.parse, urllib.request
 from zoneinfo import ZoneInfo
 NY = ZoneInfo('America/New_York')
 ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -33,7 +33,7 @@ def fetch_chart(ticker, interval, period):
     raise RuntimeError(str(last))
 
 def number(value, positive=False):
-    return isinstance(value,(int,float)) and math.isfinite(value) and (value>0 if positive else value>=0)
+    return not isinstance(value,bool) and isinstance(value,(int,float)) and math.isfinite(value) and (value>0 if positive else value>=0)
 
 def daily_bars(raw, now):
     quote=raw.get('indicators',{}).get('quote',[{}])[0]
@@ -79,6 +79,195 @@ def retain_verified_missing_bars(bars, raw, previous, now):
         by_date[date]=dict(bar);retained.append(date)
     return sorted(by_date.values(),key=lambda b:b['date']),retained
 
+def preserve_verified_daily_history(bars, raw, previous, ticker, now):
+    """Append to explicitly preserved history without re-adjusting any prices.
+
+    Yahoo may return a mixture of already-adjusted and pre-split candles, even
+    with no split event (ITA on 2026-11-05). The saved source-backed history is
+    authoritative. Overlap is a basis check, NOT permission to replace it. A
+    1% OHLC tolerance permits small provider corrections; those corrections
+    are not adopted. Unexplained changes fail closed via main's stale fallback.
+    """
+    if not previous or not any(k in previous for k in ('dailyHistoryPreservation','corporateActions','dailyHistoryRefresh')):
+        return None
+
+    def fail(reason):
+        raise ValueError('Preserved daily history: '+reason+'; retain prior snapshot pending verification')
+
+    def date_value(value):
+        try:
+            result=dt.date.fromisoformat(value)
+            if result.isoformat()!=value:raise ValueError()
+            return value
+        except (TypeError,ValueError):fail('invalid provenance/session date')
+
+    def source_url(value):
+        if not isinstance(value,str):return False
+        parsed=urllib.parse.urlparse(value)
+        return parsed.scheme=='https' and bool(parsed.netloc)
+
+    def observed_at(value, session):
+        try:
+            stamp=dt.datetime.fromisoformat(value)
+            return (stamp.utcoffset() is not None and stamp<=now
+                    and stamp.astimezone(NY).date().isoformat()>=session)
+        except (TypeError,ValueError):return False
+
+    def positive(value):
+        return not isinstance(value,bool) and number(value,True)
+
+    history=previous.get('dailyHistoryPreservation');old=previous.get('daily')
+    if previous.get('code')!=ticker or previous.get('currency')!='USD':fail('mismatched prior fund identity/currency')
+    if not isinstance(history,dict) or not isinstance(old,list) or len(old)<2:fail('missing history provenance')
+    through=date_value(history.get('through'));dates=[]
+    meta=raw.get('meta',{})
+    if (meta.get('symbol')!=ticker or meta.get('instrumentType')!='ETF' or meta.get('currency')!='USD'
+        or meta.get('exchangeTimezoneName','America/New_York')!='America/New_York'
+        or meta.get('dataGranularity','1d')!='1d'):
+        fail('invalid source instrument/currency/timezone/interval')
+    for bar in old:
+        if not isinstance(bar,dict):fail('invalid preserved candle')
+        date=date_value(bar.get('date'));dates.append(date)
+        if date>now.astimezone(NY).date().isoformat():fail('future preserved candle')
+        if not all(positive(bar.get(k)) for k in ('open','high','low','close')):fail('invalid preserved OHLC')
+        if not bar['low']<=min(bar['open'],bar['close'])<=max(bar['open'],bar['close'])<=bar['high']:fail('invalid preserved OHLC order')
+        if bar.get('volume') is not None and (isinstance(bar['volume'],bool) or not number(bar['volume'])):fail('invalid preserved volume')
+    if dates!=sorted(set(dates)):fail('duplicate or unordered preserved sessions')
+    count=history.get('count');digest=history.get('sha256')
+    if (through not in dates or type(count) is not int or count!=sum(d<=through for d in dates)
+        or not source_url(history.get('sourceUrl')) or not isinstance(digest,str)
+        or len(digest)!=64 or any(c not in '0123456789abcdef' for c in digest)
+        or type(history.get('splitNormalized')) is not bool):fail('inconsistent history provenance')
+    if (previous.get('metadataAsOf')!=dates[-1]
+        or not observed_at(previous.get('metadataRetrievedAt'),dates[-1])
+        or not isinstance(previous.get('dailyAdjustment'),str) or not previous['dailyAdjustment']
+        or not source_url(previous.get('dailySourceUrl'))):fail('invalid prior daily metadata')
+    urls=previous.get('sourceUrls');titles=previous.get('sourceTitles')
+    if (not isinstance(urls,list) or not isinstance(titles,list) or len(urls)!=len(titles)
+        or any(not source_url(u) for u in urls) or any(not isinstance(t,str) or not t for t in titles)):
+        fail('invalid prior source titles/URLs')
+    provenance=previous.get('dailyBarSources');by_source={}
+    if not isinstance(provenance,list):fail('missing individual candle provenance')
+    for source in provenance:
+        if not isinstance(source,dict):fail('malformed individual candle provenance')
+        date=date_value(source.get('date'))
+        if (date not in dates or date in by_source or not source_url(source.get('sourceUrl'))
+            or not observed_at(source.get('observedAt'),date)):fail('mismatched individual candle provenance')
+        by_source[date]=source
+    if any(d not in by_source for d in dates if d>through):fail('missing appended candle provenance')
+
+    actions=previous.get('corporateActions',[])
+    # Additional actions need an explicitly reverified snapshot, not inferred
+    # cumulative adjustment factors or repeated division of the raw response.
+    if not isinstance(actions,list) or len(actions)>1 or bool(actions)!=history['splitNormalized']:
+        fail('unsupported or inconsistent corporate-action provenance')
+    action=actions[0] if actions else None
+    if action is not None:
+        if not isinstance(action,dict):fail('malformed corporate-action provenance')
+        ex_date=date_value(action.get('exDate'));adjusted=date_value(action.get('adjustedThrough'))
+        numerator=action.get('numerator');denominator=action.get('denominator')
+        if not positive(numerator) or not positive(denominator):fail('invalid split ratio')
+        ratio=numerator/denominator
+        if (math.isclose(ratio,1) or not positive(action.get('priceDivisor'))
+            or not positive(action.get('volumeMultiplier'))
+            or not math.isclose(action['priceDivisor'],ratio) or not math.isclose(action['volumeMultiplier'],ratio)
+            or adjusted!=through or not adjusted<ex_date<=dates[-1]
+            or not source_url(action.get('sourceUrl')) or action.get('sourceSnapshotUrl')!=history['sourceUrl']
+            or action.get('sourceSnapshotSha256')!=digest):fail('mismatched corporate-action provenance')
+
+    event_groups=raw.get('events',{})
+    if not isinstance(event_groups,dict):fail('malformed source events')
+    events=event_groups.get('splits',{})
+    if not isinstance(events,dict):fail('malformed source split events')
+    for event in events.values():
+        if not isinstance(event,dict) or not positive(event.get('numerator')) or not positive(event.get('denominator')):
+            fail('malformed source split event')
+        try:
+            if not positive(event.get('date')):raise ValueError()
+            event_date=dt.datetime.fromtimestamp(event['date'],NY).date().isoformat()
+        except (KeyError,TypeError,ValueError,OverflowError,OSError):fail('invalid source split date')
+        event_ratio=event['numerator']/event['denominator']
+        if math.isclose(event_ratio,1):fail('invalid source split ratio')
+        if action and event_date==action['exDate']:
+            if not math.isclose(event_ratio,ratio,rel_tol=1e-7):fail('conflicting source split ratio')
+        elif event_date>through:
+            fail('unsupported further split on '+event_date)
+        # Older events may already be reflected in both histories, e.g. XLE.
+        # All valid overlap still has to pass the OHLC basis test below.
+
+    old_by_date={b['date']:b for b in old};fresh={b['date']:b for b in bars}
+    # daily_bars intentionally skips invalid candles. For protected history,
+    # never silently skip a *new completed* source session and append a later
+    # one instead. An invalid older candle can safely stay as the whole saved
+    # observation, but a new missing candle needs verification, not inference.
+    today=now.astimezone(NY).date().isoformat();source_dates=[]
+    for stamp in raw.get('timestamp',[]):
+        if not positive(stamp):fail('invalid source candle timestamp')
+        date=dt.datetime.fromtimestamp(stamp,NY).date().isoformat()
+        source_dates.append(date)
+        if date<=dates[-1] or date>today:continue
+        if date==today:
+            regular=meta.get('currentTradingPeriod',{}).get('regular',{})
+            start,end=regular.get('start'),regular.get('end')
+            if (not positive(start) or not positive(end) or start>=end
+                or dt.datetime.fromtimestamp(start,NY).date().isoformat()!=date
+                or dt.datetime.fromtimestamp(end,NY).date().isoformat()!=date):
+                fail('invalid new-session regular trading period')
+            if now.timestamp()<end:continue
+        if date not in fresh:fail('invalid or missing new completed candle on '+date)
+    if len(source_dates)!=len(set(source_dates)):fail('duplicate source sessions')
+    overlap=set(old_by_date)&set(fresh)
+    if not overlap:fail('no valid overlapping candles to verify price basis')
+    for date in sorted(overlap):
+        factors=[1.0]
+        if action and date<action['exDate']:factors.append(ratio)
+        if not any(all(math.isclose(fresh[date][k],old_by_date[date][k]*factor,rel_tol=.01,abs_tol=1e-6)
+                       for k in ('open','high','low','close')) for factor in factors):
+            fail('unverified OHLC basis conflict on '+date)
+    # Never insert unexplained older candles, shrink the preserved range, or
+    # invent a missing session. Only actual new completed candles are appended.
+    appended=[b for b in bars if b['date']>dates[-1]]
+    if appended:
+        if dates[-1] not in overlap:fail('latest preserved session absent from valid basis overlap')
+        last=old[-1]
+        for bar in appended:
+            if not all(positive(bar.get(k)) for k in ('open','high','low','close')):fail('invalid new-session OHLC')
+            # A large real move is possible, but an unannounced split cannot be
+            # distinguished safely here. Hold for verification instead of
+            # silently publishing a new basis or estimating an adjustment.
+            if any(not 2/3<=bar[k]/last['close']<=1.5 for k in ('open','high','low','close')):
+                fail('unverified new-session price/basis discontinuity on '+bar['date'])
+            last=bar
+    return copy.deepcopy(old)+copy.deepcopy(appended)
+
+def preserve_daily_metadata(fund, previous, daily_url, now):
+    """Keep original observations/adjustments attached to preserved candles."""
+    old=previous['daily'];appended=[b['date'] for b in fund['daily'] if b['date']>old[-1]['date']]
+    for key in ('corporateActions','dailyHistoryPreservation','dailyBarSources','retainedDailyDates','retainedDailyAdjustment'):
+        if key in previous:fund[key]=copy.deepcopy(previous[key])
+    fund['dailyBarSources'].extend({'date':date,'sourceUrl':daily_url,'observedAt':now.isoformat()} for date in appended)
+    fund['dailyAdjustment']=previous['dailyAdjustment']
+    if not appended:
+        fund['metadataRetrievedAt']=previous['metadataRetrievedAt']
+        fund['dailySourceUrl']=previous['dailySourceUrl']
+        for key in ('refreshStatus','refreshError'):
+            if key in previous:fund[key]=previous[key]
+    # This is a refresh check time, not a new observation time for old data.
+    fund['dailyHistoryRefresh']={'checkedAt':now.isoformat(),'status':'appended' if appended else 'preserved',
+        'preservedThrough':old[-1]['date'],'preservedCount':len(old),'appendedDates':appended,'sourceUrl':daily_url,
+        'note':'기존 검증 일봉·분할 기준·관측 시각을 보존. 겹침 OHLC 기준 확인 후 실제 신규 완료 일봉만 추가하며 가격·거래량을 재조정하지 않습니다.'}
+    sources=list(zip(previous['sourceUrls'],previous['sourceTitles']))
+    for url,title in zip(fund['sourceUrls'],fund['sourceTitles']):
+        if url==daily_url and not appended:continue
+        if url not in [u for u,_ in sources]:sources.append((url,title))
+    history=previous['dailyHistoryPreservation']
+    extra=[(history['sourceUrl'],'보존 일봉 원본 스냅샷 (기존 관측 기준)')]
+    extra.extend((a['sourceUrl'],'검증된 기존 분할 공시') for a in previous.get('corporateActions',[]))
+    extra.extend((s['sourceUrl'],'기존 개별 일봉 관측 원천') for s in previous['dailyBarSources'])
+    for url,title in extra:
+        if url not in [u for u,_ in sources]:sources.append((url,title))
+    fund['sourceUrls']=[u for u,_ in sources];fund['sourceTitles']=[t for _,t in sources]
+
 def period_returns(bars):
     result={'day':None,'week':None,'month':None};anchors={}
     if not bars:return result,anchors
@@ -118,10 +307,16 @@ def ranked_holdings(holdings, source_urls, now):
 
 def build_fund(row, sources, now, previous=None):
     ticker=row['ticker'];raw,daily_url=fetch_chart(ticker,'1d','1y');bars=daily_bars(raw,now)
-    bars,retained_dates=retain_verified_missing_bars(bars,raw,previous,now)
-    if len(bars)<2:raise ValueError('Fewer than two valid completed daily bars')
     meta=raw['meta']
     if meta.get('instrumentType')!='ETF' or meta.get('currency')!='USD':raise ValueError('Unexpected instrument type/currency')
+    if meta.get('symbol',ticker)!=ticker:raise ValueError('Unexpected source fund symbol')
+    preserved=preserve_verified_daily_history(bars,raw,previous,ticker,now)
+    if preserved is not None:
+        if meta.get('symbol')!=ticker:raise ValueError('Preserved daily history: source fund symbol required')
+        bars=preserved;retained_dates=[]
+    else:
+        bars,retained_dates=retain_verified_missing_bars(bars,raw,previous,now)
+    if len(bars)<2:raise ValueError('Fewer than two valid completed daily bars')
     values,anchors=period_returns(bars);points=[];intraday_error=None;intra_url=None
     try:
         intra,intra_url=fetch_chart(ticker,'5m','5d');points=intraday_points(intra,now,bars[-1]['date'])
@@ -151,6 +346,7 @@ def build_fund(row, sources, now, previous=None):
             url=source.get('sourceUrl')
             if url and url not in fund['sourceUrls']:
                 fund['sourceUrls'].append(url);fund['sourceTitles'].append(old_titles.get(url,'기존 검증 전체 일봉 원천'))
+    if preserved is not None:preserve_daily_metadata(fund,previous,daily_url,now)
     old_intra=(previous or {}).get('intraday',{})
     if len(points)<2 and old_intra.get('date')==bars[-1]['date'] and len(old_intra.get('points',[]))>=2:
         fund['intraday']=dict(old_intra,refreshStatus='stale',refreshError=intraday_error or 'No new valid observations; retained prior verified same-session series')
