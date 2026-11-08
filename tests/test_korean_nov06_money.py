@@ -1,4 +1,4 @@
-"""Nov6 public money refresh preserves old official snapshots and truthful coverage."""
+"""Fixed public Nov6 observation, retained after a separate official KRX import."""
 import hashlib,json,pathlib,sys,unittest
 from decimal import Decimal
 ROOT=pathlib.Path(__file__).resolve().parents[1]
@@ -11,6 +11,7 @@ class November6MoneyTests(unittest.TestCase):
   cls.market=json.loads((ROOT/'data/korea-market.json').read_text())
   cls.evidence=json.loads((ROOT/'data/korea-money-evidence-20261106.json').read_text())
   cls.rankEvidence=json.loads((ROOT/'data/korea-rankings-evidence-20261106.json').read_text())
+  cls.publicDaily=json.loads((ROOT/'data/korea-krx-evidence-20261106/previous-public-daily-snapshot.json').read_text())['daily']
   cls.raw={x['file']:x for x in cls.evidence['rawResponses']}
  def test_actual_observation_times_and_source_windows(self):
   self.assertEqual(len(self.raw),12)
@@ -33,7 +34,7 @@ class November6MoneyTests(unittest.TestCase):
     self.assertEqual(actual,want,(family,day))
  def test_rankings_equal_source_top15(self):
   for api,key in [('DAY','2026-11-06'),('WEEK','aggregate5d'),('MONTH','monthly')]:
-   section=self.market['rankings']['daily'][key] if api=='DAY' else self.market['rankings'][key]
+   section=self.publicDaily['rankings'] if api=='DAY' else self.market['rankings'][key]
    for inv,who in [('FOREIGNER','foreign'),('ORGANIZATION','institution')]:
     for market in ('KOSPI','KOSDAQ'):
      raw=self.raw[f'{api}-{market}-{inv}.json']['payload']['sections']['buyRankList']
@@ -45,7 +46,7 @@ class November6MoneyTests(unittest.TestCase):
       self.assertEqual(Decimal(str(row['value']))*100000000,row['valueKRW'])
  def test_theme_amounts_match_source_and_missing_are_null(self):
   for api,key in [('DAY','2026-11-06'),('WEEK','aggregate5d'),('MONTH','monthly')]:
-   section=self.market['themes']['daily'][key] if api=='DAY' else self.market['themes'][key]
+   section=self.publicDaily['themes'] if api=='DAY' else self.market['themes'][key]
    for inv,who in [('FOREIGNER','foreign'),('ORGANIZATION','institution')]:
     source={x['itemcode']:int(x['accTradeAmount']) for market in ('KOSPI','KOSDAQ') for side in ('buyRankList','sellRankList') for x in self.raw[f'{api}-{market}-{inv}.json']['payload']['sections'][side] if x['type']=='ST'}
     for row in section['rows']:
@@ -61,9 +62,9 @@ class November6MoneyTests(unittest.TestCase):
      if missing:self.assertIsNone(c['netBuyKRW']);self.assertIsNone(row[who])
      else:self.assertEqual(c['netBuyKRW'],c['knownSubtotalKRW'])
  def test_partial_counts_not_full_coverage(self):
-  rows=self.market['themes']['daily']['2026-11-06']['rows']
+  rows=self.publicDaily['themes']['rows']
   self.assertEqual(len(rows),13)
-  self.assertEqual(self.market['themes']['daily']['2026-11-06']['status'],'partial')
+  self.assertEqual(self.publicDaily['themes']['status'],'partial')
   for who in ('foreign','institution'):
    self.assertEqual([r['name'] for r in rows if r['coverage'][who]['status']=='complete'],['정유'])
   self.assertEqual(sum(r['memberCount'] for r in rows),1239)

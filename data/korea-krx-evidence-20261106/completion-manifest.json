@@ -1,0 +1,173 @@
+{
+  "asOf": "2026-11-06",
+  "status": "complete",
+  "frozenAt": "2026-11-08T03:36:57.662994+00:00",
+  "sourceScreen": "12009",
+  "sourceForm": "MDCSTAT023_FORM",
+  "sourceMenuId": "MDC0201020302",
+  "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201020302",
+  "actualBrowserUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201020303",
+  "individualRecordCount": 65,
+  "individualObservedAtStart": "2026-11-08T03:26:54.532Z",
+  "individualObservedAtEnd": "2026-11-08T03:36:10.935Z",
+  "files": [
+    {
+      "file": "individual-batch-1.json",
+      "sha256": "0dd5d100344d9639689daf3a5115f86b9f164a4d8c13ac4dc2512b1579048e0e",
+      "count": 3
+    },
+    {
+      "file": "individual-batch-2.json",
+      "sha256": "4bda95fb1f0d406756744c9b8444915fd89c7fea96c89a5754eefb6c02730b75",
+      "count": 10
+    },
+    {
+      "file": "individual-batch-3.json",
+      "sha256": "71c26ae4b3e0a0a67aedc150a882a69d7a128ee41cd636a19bd7de2d885bd562",
+      "count": 10
+    },
+    {
+      "file": "individual-batch-4.json",
+      "sha256": "a3a93fc0425ffae1e3acbe5fe49d74cf5a51f248ae5c97bedb3b1885117a8f1f",
+      "count": 2
+    },
+    {
+      "file": "individual-batch-5.json",
+      "sha256": "ac0ed7a95b02cf51b646e55bcf05e7de9d5ff80d3a4c6fc7b1708e0e5cf23b1f",
+      "count": 6
+    },
+    {
+      "file": "individual-batch-6.json",
+      "sha256": "9c0ce39a2b624afd90609e1c4f457653fedf607639676f0ce21c84edf66a84c4",
+      "count": 8
+    },
+    {
+      "file": "individual-batch-7.json",
+      "sha256": "4c0dc60dc1cb36040d052b289bd8957021156b89c5a2e570432a972234a04956",
+      "count": 8
+    },
+    {
+      "file": "individual-batch-8.json",
+      "sha256": "7e3f607f026c01735fda7ba6e81e1de49da1ba80c69df37357bc3b8fcc01b894",
+      "count": 8
+    },
+    {
+      "file": "individual-batch-9.json",
+      "sha256": "28c139337eba97dea760ea6d3b56da0cd63848031dd252caacc0887ad7227656",
+      "count": 10
+    }
+  ],
+  "coverage": {
+    "foreign": {
+      "expectedUnique": 1065,
+      "coveredUnique": 1065,
+      "bulkCoveredUnique": 1047,
+      "individualCoveredUnique": 18,
+      "individualZeroNetAmounts": 18,
+      "remainingMissing": []
+    },
+    "institution": {
+      "expectedUnique": 1065,
+      "coveredUnique": 1065,
+      "bulkCoveredUnique": 1000,
+      "individualCoveredUnique": 65,
+      "individualZeroNetAmounts": 65,
+      "remainingMissing": []
+    }
+  },
+  "bulkIndividualCrosschecks": 47,
+  "crossSourceDiscrepancies": [],
+  "themes": [
+    {
+      "id": "semiconductors",
+      "name": "반도체",
+      "expectedCount": 208,
+      "foreignNetBuyKRW": -1946212789497,
+      "institutionNetBuyKRW": 763341883699
+    },
+    {
+      "id": "electronics",
+      "name": "전자",
+      "expectedCount": 109,
+      "foreignNetBuyKRW": -49386830082,
+      "institutionNetBuyKRW": -3629724319
+    },
+    {
+      "id": "batteries",
+      "name": "2차전지",
+      "expectedCount": 142,
+      "foreignNetBuyKRW": -71808312962,
+      "institutionNetBuyKRW": -24788887603
+    },
+    {
+      "id": "refining",
+      "name": "정유",
+      "expectedCount": 3,
+      "foreignNetBuyKRW": -9869238450,
+      "institutionNetBuyKRW": 9816103650
+    },
+    {
+      "id": "chemicals",
+      "name": "화학",
+      "expectedCount": 113,
+      "foreignNetBuyKRW": -53474314963,
+      "institutionNetBuyKRW": 27968225280
+    },
+    {
+      "id": "biotech",
+      "name": "바이오",
+      "expectedCount": 246,
+      "foreignNetBuyKRW": -164051852796,
+      "institutionNetBuyKRW": 277633906903
+    },
+    {
+      "id": "finance",
+      "name": "금융",
+      "expectedCount": 43,
+      "foreignNetBuyKRW": -206732337424,
+      "institutionNetBuyKRW": 144703253042
+    },
+    {
+      "id": "entertainment",
+      "name": "엔터",
+      "expectedCount": 30,
+      "foreignNetBuyKRW": -4143086317,
+      "institutionNetBuyKRW": 23023146317
+    },
+    {
+      "id": "space",
+      "name": "우주",
+      "expectedCount": 39,
+      "foreignNetBuyKRW": 27619784235,
+      "institutionNetBuyKRW": 11455793735
+    },
+    {
+      "id": "robotics",
+      "name": "로봇·휴머노이드",
+      "expectedCount": 101,
+      "foreignNetBuyKRW": -145720234657,
+      "institutionNetBuyKRW": 80708103145
+    },
+    {
+      "id": "defense",
+      "name": "방산",
+      "expectedCount": 70,
+      "foreignNetBuyKRW": -6555315447,
+      "institutionNetBuyKRW": 83364013248
+    },
+    {
+      "id": "shipbuilding",
+      "name": "조선",
+      "expectedCount": 43,
+      "foreignNetBuyKRW": 2879865139,
+      "institutionNetBuyKRW": 4746578105
+    },
+    {
+      "id": "cosmetics",
+      "name": "화장품",
+      "expectedCount": 92,
+      "foreignNetBuyKRW": -56276647192,
+      "institutionNetBuyKRW": 72409720798
+    }
+  ]
+}
