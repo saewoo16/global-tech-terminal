@@ -352,6 +352,7 @@ def validate(payload):
             assert len(top.get('rows', [])) == 10 and {x['rank'] for x in top['rows']} == set(range(1, 11))
             assert len({x['ticker'] for x in top['rows']}) == 10
             top_members = {x['ticker'] for x in top['rows']}
+        earnings_keys = set()
         for r in e.get('earnings',{}).get('rows',[]):
             assert r['ticker'] in member_symbols or r['ticker'] in top_members or r['ticker'] == 'SPCX', 'Earnings scope is S&P500 plus verified US top10 plus explicit SPCX only'
             assert r.get('sourceIds') and r.get('releaseDate')
@@ -361,6 +362,12 @@ def validate(payload):
                 assert market_time(r['releaseTiming']['publishedAt']).date().isoformat() == e['date'], 'Announcement timestamp must match entry in America/New_York, not KST or refresh date'
                 if e.get('earnings', {}).get('reportCutoffAt'):
                     assert market_time(r['releaseTiming']['publishedAt']) <= market_time(e['earnings']['reportCutoffAt']), 'Release was not available at the stated report cutoff'
+            # Call supplements belong to the original announcement, not a new card.
+            # Different periods and preliminary/final releases remain distinct.
+            earnings_key = (r['ticker'], r['releaseDate'], r.get('period'),
+                            r.get('releaseType') or 'results')
+            assert earnings_key not in earnings_keys, 'Duplicate earnings announcement: '+str(earnings_key)
+            earnings_keys.add(earnings_key)
             metrics = r.get('metrics', [])
             if r.get('presentationVersion') == 3:
                 assert [m.get('label') for m in metrics] == ['매출', '매출총이익', '매출총이익률', '영업이익', 'EPS'], 'Exactly five requested principal metrics'

@@ -53,6 +53,15 @@ def completed_daily(history, now):
     # KRX regular close is 15:30 KST; before it, today's candle is provisional.
     return [row for row in history if row['date']<local.date().isoformat() or (row['date']==local.date().isoformat() and local.time()>=dt.time(15,30))]
 
+def require_unique_observations(rows, key, label):
+    # Do not pick a winner, sum values, or relabel a repeated source observation.
+    # Fail the fund so main retains its previous validated price snapshot.
+    seen=set()
+    for row in rows:
+        value=row[key]
+        if value in seen:raise ValueError(f'{label}: duplicate source {key} {value}')
+        seen.add(value)
+
 def build_fund(spec,quotes,today):
     code,category,group=spec;q=quotes[code]
     daily_url=f'https://fchart.stock.naver.com/sise.nhn?symbol={code}&timeframe=day&count=400&requestType=0'
@@ -67,12 +76,14 @@ def build_fund(spec,quotes,today):
             try:r={'date':iso(v[0]),**dict(zip(('open','high','low','close','volume'),map(int,v[1:])))}
             except ValueError:continue
             if r['close']>0 and r['open']>0 and r['low']<=min(r['open'],r['close'])<=max(r['open'],r['close'])<=r['high']:history.append(r)
+    require_unique_observations(history,'date',f'{code} daily')
     history.sort(key=lambda r:r['date'])
     raw=json.loads(fetch(intraday_url));points=[]
     for v in raw.get('priceInfos',[]):
         stamp=v.get('localDateTime','');price=v.get('currentPrice')
         if len(stamp)>=12 and price is not None and price>0:
             points.append({'time':f'{iso(stamp)}T{stamp[8:10]}:{stamp[10:12]}:00+09:00','price':price,'cumulativeVolume':v.get('accumulatedTradingVolume')})
+    require_unique_observations(points,'time',f'{code} intraday')
     points.sort(key=lambda r:r['time']);intraday_date=iso(raw.get('tradeBaseAt','')) if raw.get('tradeBaseAt') else (points[-1]['time'][:10] if points else None)
     points=[p for p in points if p['time'][:10]==intraday_date]
     previous_volume=0
