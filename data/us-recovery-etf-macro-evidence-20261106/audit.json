@@ -1,0 +1,847 @@
+{
+  "checkedAt": "2026-11-07T07:48:12.331122+00:00",
+  "targetSession": "2026-11-06",
+  "coverage": {
+    "targetSession": "2026-11-06",
+    "latestAvailable": "2026-11-06",
+    "commonThrough": "2026-11-06",
+    "expectedFundCount": 38,
+    "currentFundCount": 38,
+    "staleFundCount": 0,
+    "missingFundCount": 0,
+    "currentCodes": [
+      "XLC",
+      "XLU",
+      "XLP",
+      "FAN",
+      "IHF",
+      "XLRE",
+      "IHI",
+      "KBE",
+      "KRE",
+      "XLV",
+      "LIT",
+      "ICLN",
+      "XRT",
+      "XLF",
+      "XOP",
+      "XLB",
+      "XLE",
+      "XHB",
+      "IYT",
+      "TAN",
+      "CRAK",
+      "XLY",
+      "IAI",
+      "ITA",
+      "XLI",
+      "XPH",
+      "IGV",
+      "FDN",
+      "XAR",
+      "IBB",
+      "BATT",
+      "CLOU",
+      "XME",
+      "CIBR",
+      "XBI",
+      "XLK",
+      "SMH",
+      "SOXX"
+    ],
+    "staleCodes": [],
+    "missingCodes": [],
+    "actualSessions": {
+      "XLC": "2026-11-06",
+      "XLU": "2026-11-06",
+      "XLP": "2026-11-06",
+      "FAN": "2026-11-06",
+      "IHF": "2026-11-06",
+      "XLRE": "2026-11-06",
+      "IHI": "2026-11-06",
+      "KBE": "2026-11-06",
+      "KRE": "2026-11-06",
+      "XLV": "2026-11-06",
+      "LIT": "2026-11-06",
+      "ICLN": "2026-11-06",
+      "XRT": "2026-11-06",
+      "XLF": "2026-11-06",
+      "XOP": "2026-11-06",
+      "XLB": "2026-11-06",
+      "XLE": "2026-11-06",
+      "XHB": "2026-11-06",
+      "IYT": "2026-11-06",
+      "TAN": "2026-11-06",
+      "CRAK": "2026-11-06",
+      "XLY": "2026-11-06",
+      "IAI": "2026-11-06",
+      "ITA": "2026-11-06",
+      "XLI": "2026-11-06",
+      "XPH": "2026-11-06",
+      "IGV": "2026-11-06",
+      "FDN": "2026-11-06",
+      "XAR": "2026-11-06",
+      "IBB": "2026-11-06",
+      "BATT": "2026-11-06",
+      "CLOU": "2026-11-06",
+      "XME": "2026-11-06",
+      "CIBR": "2026-11-06",
+      "XBI": "2026-11-06",
+      "XLK": "2026-11-06",
+      "SMH": "2026-11-06",
+      "SOXX": "2026-11-06"
+    },
+    "intradayCurrentFundCount": 38,
+    "intradayUnverifiedCodes": [],
+    "status": "complete"
+  },
+  "etfs": [
+    {
+      "code": "XLC",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 78,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "XLU",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 78,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "XLP",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 78,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "FAN",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 33,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "IHF",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 78,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "XLRE",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 78,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "IHI",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 78,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "KBE",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 78,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "KRE",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 78,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "XLV",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 78,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "LIT",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 73,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "ICLN",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 78,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "XRT",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 78,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "XLF",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 78,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "XOP",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 78,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "XLB",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 78,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "XLE",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 78,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "XHB",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 78,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "IYT",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 77,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "TAN",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 78,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "CRAK",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 78,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "XLY",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 78,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "IAI",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 45,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "ITA",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 78,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "XLI",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 78,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "XPH",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 71,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "IGV",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 78,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "FDN",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 78,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "XAR",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 78,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "IBB",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 78,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "BATT",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 18,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "CLOU",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 76,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "XME",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 78,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "CIBR",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 78,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "XBI",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 78,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "XLK",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 78,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "SMH",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 78,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    },
+    {
+      "code": "SOXX",
+      "actualSession": "2026-11-06",
+      "appendedDates": [
+        "2026-11-06"
+      ],
+      "historyPreserved": true,
+      "intradayDate": "2026-11-06",
+      "intradayPoints": 78,
+      "returnAnchors": {
+        "day": "2026-11-05",
+        "week": "2026-10-30",
+        "month": "2026-10-06"
+      },
+      "error": null
+    }
+  ],
+  "macro": [
+    {
+      "id": "UST10Y",
+      "value": 4.859,
+      "asOf": "2026-11-06",
+      "observedAt": "2026-11-06T21:59:59Z",
+      "retainedUnchanged": false,
+      "sourceUrl": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield",
+      "retrievedAt": "2026-11-07T07:47:00Z"
+    },
+    {
+      "id": "WTI_FUTURES",
+      "value": 90.34,
+      "asOf": "2026-11-06",
+      "observedAt": "2026-11-06T21:59:58Z",
+      "retainedUnchanged": false,
+      "sourceUrl": "https://www.investing.com/commodities/crude-oil",
+      "retrievedAt": "2026-11-07T07:47:00Z"
+    },
+    {
+      "id": "BRENT_FUTURES",
+      "value": 97.75,
+      "asOf": "2026-11-06",
+      "observedAt": "2026-11-06T21:58:59Z",
+      "retainedUnchanged": false,
+      "sourceUrl": "https://www.investing.com/commodities/brent-oil",
+      "retrievedAt": "2026-11-07T07:47:00Z"
+    },
+    {
+      "id": "DXY",
+      "value": 102.3,
+      "asOf": "2026-11-06",
+      "observedAt": "2026-11-06T04:58:59Z",
+      "retainedUnchanged": false,
+      "sourceUrl": "https://www.investing.com/indices/usdollar",
+      "retrievedAt": "2026-11-07T07:47:00Z"
+    },
+    {
+      "id": "USDJPY",
+      "value": 158.5,
+      "asOf": "2026-11-06",
+      "observedAt": "2026-11-06T21:58:49Z",
+      "retainedUnchanged": false,
+      "sourceUrl": "https://www.investing.com/currencies/usd-jpy",
+      "retrievedAt": "2026-11-07T07:47:00Z"
+    },
+    {
+      "id": "USDKRW",
+      "value": 1363.93,
+      "asOf": "2026-11-06",
+      "observedAt": "2026-11-06T21:49:52Z",
+      "retainedUnchanged": false,
+      "sourceUrl": "https://www.investing.com/currencies/usd-krw",
+      "retrievedAt": "2026-11-07T07:47:00Z"
+    },
+    {
+      "id": "DGS10",
+      "value": 4.84,
+      "asOf": "2026-11-05",
+      "observedAt": null,
+      "retainedUnchanged": false,
+      "sourceUrl": "https://fred.stlouisfed.org/series/DGS10",
+      "retrievedAt": "2026-11-07T07:47:00Z"
+    },
+    {
+      "id": "HQMCB10YRP",
+      "value": 5.92,
+      "asOf": "2026-10-01",
+      "observedAt": null,
+      "retainedUnchanged": true,
+      "sourceUrl": "https://fred.stlouisfed.org/series/HQMCB10YRP",
+      "retrievedAt": "2026-11-05T21:42:37Z"
+    },
+    {
+      "id": "DCOILWTICO",
+      "value": 99.64,
+      "asOf": "2026-11-03",
+      "observedAt": null,
+      "retainedUnchanged": true,
+      "sourceUrl": "https://fred.stlouisfed.org/series/DCOILWTICO",
+      "retrievedAt": "2026-11-04T21:43:04Z"
+    },
+    {
+      "id": "DCOILBRENTEU",
+      "value": 107.03,
+      "asOf": "2026-11-03",
+      "observedAt": null,
+      "retainedUnchanged": true,
+      "sourceUrl": "https://fred.stlouisfed.org/series/DCOILBRENTEU",
+      "retrievedAt": "2026-11-04T21:43:04Z"
+    },
+    {
+      "id": "M1SL",
+      "value": 20061.2,
+      "asOf": "2026-09-01",
+      "observedAt": null,
+      "retainedUnchanged": true,
+      "sourceUrl": "https://fred.stlouisfed.org/series/M1SL",
+      "retrievedAt": "2026-11-01T07:41:36Z"
+    },
+    {
+      "id": "M2SL",
+      "value": 23413.9,
+      "asOf": "2026-09-01",
+      "observedAt": null,
+      "retainedUnchanged": true,
+      "sourceUrl": "https://fred.stlouisfed.org/series/M2SL",
+      "retrievedAt": "2026-11-01T07:41:36Z"
+    },
+    {
+      "id": "DEXJPUS",
+      "value": 157.47,
+      "asOf": "2026-10-30",
+      "observedAt": null,
+      "retainedUnchanged": true,
+      "sourceUrl": "https://fred.stlouisfed.org/series/DEXJPUS",
+      "retrievedAt": "2026-11-03T21:45:18Z"
+    },
+    {
+      "id": "DEXKOUS",
+      "value": 1333.99,
+      "asOf": "2026-10-30",
+      "observedAt": null,
+      "retainedUnchanged": true,
+      "sourceUrl": "https://fred.stlouisfed.org/series/DEXKOUS",
+      "retrievedAt": "2026-11-03T21:45:18Z"
+    }
+  ],
+  "limitations": [
+    "ETF holdings retain original verified dates; not refreshed.",
+    "CME official widget verified separately in cme-reference-check.json; other external widgets not checked."
+  ],
+  "tests": [
+    "22 ETF Python unit tests pass",
+    "24 macro Python unit tests pass",
+    "ETF UI suite pass",
+    "Macro snapshots UI suite pass",
+    "All preserved daily bars exact equality; new bars equal source OHLCV; returns recomputed; no future or duplicate dates; unchanged macro rows exact equality"
+  ]
+}

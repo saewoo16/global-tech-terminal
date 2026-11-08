@@ -1,0 +1,240 @@
+{
+  "sourceUrl": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool",
+  "method": "Official parent page and its normally loaded QuikStrike embed, visible Current and Aggregated controls; no bypass or authentication.",
+  "widgetStatus": "available",
+  "currentTargetBps": [
+    375,
+    400
+  ],
+  "aggregated": {
+    "observedAt": "2026-11-07T07:50:04.969Z",
+    "providerAsOf": null,
+    "note": "Aggregated has no separate displayed provider timestamp. Observation is recovery-time check, not Nov6 close.",
+    "columnsBps": [
+      [
+        375,
+        400
+      ],
+      [
+        400,
+        425
+      ],
+      [
+        425,
+        450
+      ]
+    ],
+    "meetings": [
+      {
+        "date": "2026-12-09",
+        "probabilities": [
+          23.67,
+          76.33,
+          0
+        ]
+      },
+      {
+        "date": "2027-01-27",
+        "probabilities": [
+          3,
+          97,
+          0
+        ]
+      },
+      {
+        "date": "2027-03-17",
+        "probabilities": [
+          0,
+          64,
+          36
+        ]
+      },
+      {
+        "date": "2027-04-28",
+        "probabilities": [
+          0,
+          49,
+          51
+        ]
+      },
+      {
+        "date": "2027-06-09",
+        "probabilities": [
+          0,
+          23.43,
+          76.57
+        ]
+      },
+      {
+        "date": "2027-07-28",
+        "probabilities": [
+          0,
+          19,
+          81
+        ]
+      },
+      {
+        "date": "2027-09-15",
+        "probabilities": [
+          0,
+          11,
+          89
+        ]
+      },
+      {
+        "date": "2027-10-27",
+        "probabilities": [
+          0,
+          11,
+          89
+        ]
+      },
+      {
+        "date": "2027-12-08",
+        "probabilities": [
+          0,
+          19.09,
+          80.91
+        ]
+      }
+    ]
+  },
+  "conditional": {
+    "comparisonDates": {
+      "day": "2026-11-05",
+      "week": "2026-10-30",
+      "month": "2026-10-07"
+    },
+    "comparisons": [
+      {
+        "meetingDate": "2026-12-09",
+        "observedAt": "2026-11-07T07:49:58.482Z",
+        "providerAsOfLabel": "7 Nov 2026 01:35:05 CT",
+        "providerAsOf": "2026-11-07T07:35:05Z",
+        "columnsBps": [
+          [
+            375,
+            400
+          ],
+          [
+            400,
+            425
+          ],
+          [
+            425,
+            450
+          ]
+        ],
+        "now": [
+          23.7,
+          76.3,
+          0
+        ],
+        "day": [
+          33.1,
+          66.9,
+          0
+        ],
+        "week": [
+          29.3,
+          70.7,
+          0
+        ],
+        "month": [
+          20.4,
+          66.3,
+          13.3
+        ]
+      },
+      {
+        "meetingDate": "2027-06-09",
+        "observedAt": "2026-11-07T07:50:20.712Z",
+        "providerAsOfLabel": "7 Nov 2026 01:35:14 CT",
+        "providerAsOf": "2026-11-07T07:35:14Z",
+        "columnsBps": [
+          [
+            375,
+            400
+          ],
+          [
+            400,
+            425
+          ],
+          [
+            425,
+            450
+          ],
+          [
+            450,
+            475
+          ],
+          [
+            475,
+            500
+          ],
+          [
+            500,
+            525
+          ],
+          [
+            525,
+            550
+          ]
+        ],
+        "now": [
+          7.2,
+          33.7,
+          38.2,
+          17.3,
+          3.4,
+          0.2,
+          0
+        ],
+        "day": [
+          10.7,
+          36.1,
+          35.9,
+          14.6,
+          2.6,
+          0.2,
+          0
+        ],
+        "week": [
+          5.2,
+          24.3,
+          37.6,
+          24.8,
+          7.3,
+          0.8,
+          0
+        ],
+        "month": [
+          1.8,
+          12.1,
+          29.5,
+          33,
+          18.3,
+          4.8,
+          0.5
+        ]
+      }
+    ]
+  },
+  "notes": [
+    "Do not compare Aggregated with Conditional probabilities.",
+    "Source provider time is Saturday Nov7, not US regular close.",
+    "fedwatch.json integrated from these visible observations; original snapshot preserved as fedwatch-before.json."
+  ],
+  "clockVerification": {
+    "clockToolUtc": "2026-11-07T07:51:30Z",
+    "shellDateUtc": "2026-11-07T07:51:33Z",
+    "browserClockConsistent": true,
+    "integratedAt": "2026-11-07T07:52:12.211851+00:00"
+  },
+  "validation": [
+    "4 FedWatch Python tests passed",
+    "Macro snapshots UI suite passed",
+    "All provider timestamps precede actual observations and runtime UTC clock",
+    "Prior full FedWatch snapshot preserved in fedwatch-before.json"
+  ]
+}

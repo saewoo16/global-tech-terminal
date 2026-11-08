@@ -1,0 +1,315 @@
+{
+  "schemaVersion": 1,
+  "source": "CME FedWatch",
+  "sourceUrl": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html",
+  "observedAt": "2026-11-05T21:42:07.523Z",
+  "providerAsOf": "2026-11-05T09:32:06Z",
+  "providerAsOfLabel": "5 11 2026 03:32:06 CT",
+  "providerTimestampScope": "December Current view provider label retained verbatim and converted using America/Chicago standard time (UTC-06:00) on 2026-11-05. June Current has its own provider timestamp on the comparison row. Aggregated has no separate visible timestamp. Provider timestamps precede retrieval and are not the US session close.",
+  "currentTargetBps": [
+    375,
+    400
+  ],
+  "view": "Aggregated",
+  "columnsBps": [
+    [
+      375,
+      400
+    ],
+    [
+      400,
+      425
+    ],
+    [
+      425,
+      450
+    ]
+  ],
+  "meetings": [
+    {
+      "date": "2026-12-09",
+      "probabilities": [
+        31.28,
+        68.72,
+        0.0
+      ]
+    },
+    {
+      "date": "2027-01-27",
+      "probabilities": [
+        17.5,
+        82.5,
+        0.0
+      ]
+    },
+    {
+      "date": "2027-03-17",
+      "probabilities": [
+        0.0,
+        83.43,
+        16.57
+      ]
+    },
+    {
+      "date": "2027-04-28",
+      "probabilities": [
+        0.0,
+        69.5,
+        30.5
+      ]
+    },
+    {
+      "date": "2027-06-09",
+      "probabilities": [
+        0.0,
+        46.82,
+        53.18
+      ]
+    },
+    {
+      "date": "2027-07-28",
+      "probabilities": [
+        0.0,
+        43.5,
+        56.5
+      ]
+    },
+    {
+      "date": "2027-09-15",
+      "probabilities": [
+        0.0,
+        36.5,
+        63.5
+      ]
+    },
+    {
+      "date": "2027-10-27",
+      "probabilities": [
+        0.0,
+        36.5,
+        63.5
+      ]
+    },
+    {
+      "date": "2027-12-08",
+      "probabilities": [
+        0.0,
+        44.59,
+        55.41
+      ]
+    }
+  ],
+  "nextMeetingComparison": {
+    "meetingDate": "2026-12-09",
+    "view": "Current",
+    "precisionDecimalPlaces": 1,
+    "columnsBps": [
+      [
+        375,
+        400
+      ],
+      [
+        400,
+        425
+      ],
+      [
+        425,
+        450
+      ]
+    ],
+    "now": {
+      "date": null,
+      "probabilities": [
+        31.4,
+        68.6,
+        0.0
+      ]
+    },
+    "day": {
+      "date": "2026-11-04",
+      "probabilities": [
+        17.3,
+        82.7,
+        0.0
+      ]
+    },
+    "week": {
+      "date": "2026-10-29",
+      "probabilities": [
+        20.1,
+        79.9,
+        0.0
+      ]
+    },
+    "month": {
+      "date": "2026-10-05",
+      "probabilities": [
+        13.5,
+        68.2,
+        18.3
+      ]
+    },
+    "hikeChangePp": {
+      "day": -14.1,
+      "week": -11.3,
+      "month": -17.9
+    },
+    "notes": "CME Current 표시값과 비교일을 그대로 보존. 인상확률은 현 목표구간보다 높은 모든 구간 합계이며 같은 Current 정밀도로 비교했습니다.",
+    "observedAt": "2026-11-05T21:42:42.112Z",
+    "providerAsOf": "2026-11-05T09:32:06Z",
+    "providerAsOfLabel": "5 11 2026 03:32:06 CT"
+  },
+  "interpretation": [
+    "12월 9일 Aggregated 기준 동결 31.28%, 25bp 인상 68.72%입니다.",
+    "Current 동일 정밀도 기준 현 목표보다 높은 구간 확률은 전일 대비 14.1%p·전주 대비 11.3%p·전월 대비 17.9%p 낮습니다.",
+    "2027년 6월 Aggregated 최빈 목표구간은 4.25~4.50%(53.18%)이며 그 회의 단독 인상 확률이 아닙니다."
+  ],
+  "refresh": {
+    "method": "manual official-browser snapshot",
+    "automatedApiVerified": false,
+    "notes": "Official CME parent page and normally loaded embedded Current/Aggregated views inspected. No authentication, API or access bypass. Actual retrieval time and the older displayed provider timestamp are distinct; this is not a closing or live probability claim."
+  },
+  "methodologyUrl": "https://www.cmegroup.com/articles/2024/the-cme-fedwatch-tool-aggregated-enhancement-explained.html",
+  "conditionalComparisons": {
+    "view": "Current",
+    "methodology": "Conditional cumulative target-rate distribution; not Aggregated",
+    "precisionDecimalPlaces": 1,
+    "sourceUrl": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html",
+    "providerAsOf": "2026-11-05T09:32:06Z",
+    "currentTargetBps": [
+      375,
+      400
+    ],
+    "comparisonDates": {
+      "day": "2026-11-04",
+      "week": "2026-10-29",
+      "month": "2026-10-05"
+    },
+    "observedAt": "2026-11-05T21:43:06.182Z",
+    "comparisons": [
+      {
+        "meetingDate": "2026-12-09",
+        "columnsBps": [
+          [
+            375,
+            400
+          ],
+          [
+            400,
+            425
+          ],
+          [
+            425,
+            450
+          ]
+        ],
+        "now": [
+          31.4,
+          68.6,
+          0.0
+        ],
+        "day": [
+          17.3,
+          82.7,
+          0.0
+        ],
+        "week": [
+          20.1,
+          79.9,
+          0.0
+        ],
+        "month": [
+          13.5,
+          68.2,
+          18.3
+        ],
+        "interpretation": "12월 최빈 구간은 4.00~4.25%(68.6%)입니다. 현 목표보다 높은 구간 합계는 68.6%로 전일 대비 14.1%p·전주 대비 11.3%p·전월 대비 17.9%p 낮습니다.",
+        "rowSumRoundingNote": "CME 소수점 1자리 표시값 그대로이며 합계는 100.0%입니다.",
+        "providerAsOfLabel": "5 11 2026 03:32:06 CT",
+        "providerAsOf": "2026-11-05T09:32:06Z",
+        "observedAt": "2026-11-05T21:42:42.112Z"
+      },
+      {
+        "meetingDate": "2027-06-09",
+        "columnsBps": [
+          [
+            375,
+            400
+          ],
+          [
+            400,
+            425
+          ],
+          [
+            425,
+            450
+          ],
+          [
+            450,
+            475
+          ],
+          [
+            475,
+            500
+          ],
+          [
+            500,
+            525
+          ],
+          [
+            525,
+            550
+          ]
+        ],
+        "now": [
+          11.8,
+          39.4,
+          34.6,
+          12.2,
+          1.9,
+          0.1,
+          0.0
+        ],
+        "day": [
+          2.9,
+          21.2,
+          39.3,
+          27.6,
+          8.2,
+          0.9,
+          0.0
+        ],
+        "week": [
+          2.5,
+          17.2,
+          36.1,
+          30.9,
+          11.7,
+          1.6,
+          0.0
+        ],
+        "month": [
+          0.7,
+          7.1,
+          23.6,
+          34.6,
+          24.7,
+          8.3,
+          1.0
+        ],
+        "interpretation": "2027년 6월 최빈 구간은 4.00~4.25%(39.4%)입니다. 4.75~5.00% 확률은 1.9%로 전일 대비 6.3%p·전주 대비 9.8%p·전월 대비 22.8%p 낮습니다.",
+        "rowSumRoundingNote": "전일 표시값 합계 100.1%는 CME 소수점 1자리 반올림 결과이며 임의 정규화하지 않았습니다. 현재·전주·전월은 100.0%입니다.",
+        "providerAsOfLabel": "5 11 2026 03:31:55 CT",
+        "providerAsOf": "2026-11-05T09:31:55Z",
+        "observedAt": "2026-11-05T21:43:06.182Z"
+      }
+    ],
+    "notes": [
+      "Aggregate 표와 별도 섹션으로 표시. Conditional 역사와 Aggregate 현재를 빼서 변화량 산출 금지.",
+      "모든 수치는 공급자 표시값을 그대로 보존. 소수점 1자리 반올림 때문에 합계가 정확히 100%가 아닐 수 있음.",
+      "현재보다 높은 금리수준의 확률은 그 회의 단독 인상 확률이 아님. 누적 목표구간 확률."
+    ],
+    "providerAsOfLabel": "5 11 2026 03:32:06 CT",
+    "providerTimestampScope": "Top-level provider timestamp refers only to December Current. Each comparison carries its independently displayed timestamp and actual verification time."
+  }
+}

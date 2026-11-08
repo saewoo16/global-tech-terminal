@@ -1,0 +1,1749 @@
+{
+  "TAN": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 44.400001525878906,
+        "adjclose": 44.400001525878906
+      },
+      {
+        "date": "2026-10-30",
+        "close": 40.20000076293945,
+        "adjclose": 40.20000076293945
+      },
+      {
+        "date": "2026-11-05",
+        "close": 44.09000015258789,
+        "adjclose": 44.09000015258789
+      },
+      {
+        "date": "2026-11-06",
+        "close": 45.58000183105469,
+        "adjclose": 45.58000183105469
+      }
+    ],
+    "events": {},
+    "sourceFile": "TAN-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/TAN?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:27.464916+00:00",
+    "rawSha256": "16581c09ca85a13ac56494c084065c7d37bc3b6b2b3edee15bbee6aa99fb365a"
+  },
+  "XME": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 108.23999786376953,
+        "adjclose": 108.23999786376953
+      },
+      {
+        "date": "2026-10-30",
+        "close": 97.81999969482422,
+        "adjclose": 97.81999969482422
+      },
+      {
+        "date": "2026-11-05",
+        "close": 90.41999816894531,
+        "adjclose": 90.41999816894531
+      },
+      {
+        "date": "2026-11-06",
+        "close": 93.44999694824219,
+        "adjclose": 93.44999694824219
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1766413800": {
+          "amount": 0.129,
+          "date": 1766413800
+        },
+        "1774272600": {
+          "amount": 0.063,
+          "date": 1774272600
+        },
+        "1782135000": {
+          "amount": 0.08,
+          "date": 1782135000
+        },
+        "1789997400": {
+          "amount": 0.073,
+          "date": 1789997400
+        }
+      }
+    },
+    "sourceFile": "XME-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XME?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:43.867991+00:00",
+    "rawSha256": "cef03754d1d12729f5e9b987be23721d47173a2be0e8f3ee74927fe24ec87ccf"
+  },
+  "XPH": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 62.90999984741211,
+        "adjclose": 62.90999984741211
+      },
+      {
+        "date": "2026-10-30",
+        "close": 64.80000305175781,
+        "adjclose": 64.80000305175781
+      },
+      {
+        "date": "2026-11-05",
+        "close": 62.650001525878906,
+        "adjclose": 62.650001525878906
+      },
+      {
+        "date": "2026-11-06",
+        "close": 64.75,
+        "adjclose": 64.75
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1766413800": {
+          "amount": 0.113,
+          "date": 1766413800
+        },
+        "1774272600": {
+          "amount": 0.061,
+          "date": 1774272600
+        },
+        "1782135000": {
+          "amount": 0.059,
+          "date": 1782135000
+        },
+        "1789997400": {
+          "amount": 0.042,
+          "date": 1789997400
+        }
+      }
+    },
+    "sourceFile": "XPH-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XPH?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:38.228895+00:00",
+    "rawSha256": "43081956ddb1c322d037d7d9e6486c4ddcd0450a3cd7cf97f16cd8e0660e42cf"
+  },
+  "SMH": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 632.5,
+        "adjclose": 632.5
+      },
+      {
+        "date": "2026-10-30",
+        "close": 522.489990234375,
+        "adjclose": 522.489990234375
+      },
+      {
+        "date": "2026-11-05",
+        "close": 447.7300109863281,
+        "adjclose": 447.7300109863281
+      },
+      {
+        "date": "2026-11-06",
+        "close": 463.9599914550781,
+        "adjclose": 463.9599914550781
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1766413800": {
+          "amount": 1.105,
+          "date": 1766413800
+        }
+      }
+    },
+    "sourceFile": "SMH-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/SMH?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:51.992739+00:00",
+    "rawSha256": "d09421cea19cdc79ba9b771e3ccb9fa994c9e9db7905d8c615ea79bd7a82b184"
+  },
+  "XLV": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 167.08999633789062,
+        "adjclose": 167.08999633789062
+      },
+      {
+        "date": "2026-10-30",
+        "close": 184.8699951171875,
+        "adjclose": 184.8699951171875
+      },
+      {
+        "date": "2026-11-05",
+        "close": 184.91000366210938,
+        "adjclose": 184.91000366210938
+      },
+      {
+        "date": "2026-11-06",
+        "close": 184.8000030517578,
+        "adjclose": 184.8000030517578
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1766413800": {
+          "amount": 0.657,
+          "date": 1766413800
+        },
+        "1774272600": {
+          "amount": 0.595,
+          "date": 1774272600
+        },
+        "1782135000": {
+          "amount": 0.656,
+          "date": 1782135000
+        },
+        "1789997400": {
+          "amount": 0.642,
+          "date": 1789997400
+        }
+      }
+    },
+    "sourceFile": "XLV-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLV?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:16.689137+00:00",
+    "rawSha256": "2fe0637901afd7e52ea6f6cd40a7efa9f246c15a08f46bbbb2bd1e3c93cbb55b"
+  },
+  "XLE": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 63.75,
+        "adjclose": 63.75
+      },
+      {
+        "date": "2026-10-30",
+        "close": 70.0199966430664,
+        "adjclose": 70.0199966430664
+      },
+      {
+        "date": "2026-11-05",
+        "close": 61.630001068115234,
+        "adjclose": 61.630001068115234
+      },
+      {
+        "date": "2026-11-06",
+        "close": 61.619998931884766,
+        "adjclose": 61.619998931884766
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1766413800": {
+          "amount": 0.373,
+          "date": 1766413800
+        },
+        "1774272600": {
+          "amount": 0.385,
+          "date": 1774272600
+        },
+        "1782135000": {
+          "amount": 0.385,
+          "date": 1782135000
+        },
+        "1789997400": {
+          "amount": 0.38,
+          "date": 1789997400
+        }
+      },
+      "splits": {
+        "1764945000": {
+          "date": 1764945000,
+          "numerator": 2.0,
+          "denominator": 1.0,
+          "splitRatio": "2:1"
+        }
+      }
+    },
+    "sourceFile": "XLE-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLE?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:27.492951+00:00",
+    "rawSha256": "f33e2f5955630f3c2032b02b9b4ca06e70ebfed9b427db83581816625a71c57c"
+  },
+  "XLI": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 171.5800018310547,
+        "adjclose": 171.5800018310547
+      },
+      {
+        "date": "2026-10-30",
+        "close": 167.39999389648438,
+        "adjclose": 167.39999389648438
+      },
+      {
+        "date": "2026-11-05",
+        "close": 162.47000122070312,
+        "adjclose": 162.47000122070312
+      },
+      {
+        "date": "2026-11-06",
+        "close": 162.6699981689453,
+        "adjclose": 162.6699981689453
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1766413800": {
+          "amount": 0.532,
+          "date": 1766413800
+        },
+        "1774272600": {
+          "amount": 0.453,
+          "date": 1774272600
+        },
+        "1782135000": {
+          "amount": 0.444,
+          "date": 1782135000
+        },
+        "1789997400": {
+          "amount": 0.455,
+          "date": 1789997400
+        }
+      }
+    },
+    "sourceFile": "XLI-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLI?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:32.964129+00:00",
+    "rawSha256": "b2f84d0485da041198bfcee9050bf87579d5c45c9b7e4935f62cd8c8d020f029"
+  },
+  "XHB": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 97.37000274658203,
+        "adjclose": 97.37000274658203
+      },
+      {
+        "date": "2026-10-30",
+        "close": 100.97000122070312,
+        "adjclose": 100.97000122070312
+      },
+      {
+        "date": "2026-11-05",
+        "close": 103.8499984741211,
+        "adjclose": 103.8499984741211
+      },
+      {
+        "date": "2026-11-06",
+        "close": 102.29000091552734,
+        "adjclose": 102.29000091552734
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1766413800": {
+          "amount": 0.18,
+          "date": 1766413800
+        },
+        "1774272600": {
+          "amount": 0.218,
+          "date": 1774272600
+        },
+        "1774531800": {
+          "amount": 0.076,
+          "date": 1774531800
+        },
+        "1782135000": {
+          "amount": 0.16,
+          "date": 1782135000
+        },
+        "1789997400": {
+          "amount": 0.536,
+          "date": 1789997400
+        }
+      }
+    },
+    "sourceFile": "XHB-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XHB?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:27.482218+00:00",
+    "rawSha256": "010fdf0b099e8ff57619f96276d414743abb0303de2b070bdbffa173ee27a636"
+  },
+  "ICLN": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 17.540000915527344,
+        "adjclose": 17.540000915527344
+      },
+      {
+        "date": "2026-10-30",
+        "close": 15.3100004196167,
+        "adjclose": 15.3100004196167
+      },
+      {
+        "date": "2026-11-05",
+        "close": 16.139999389648438,
+        "adjclose": 16.139999389648438
+      },
+      {
+        "date": "2026-11-06",
+        "close": 16.450000762939453,
+        "adjclose": 16.450000762939453
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1765895400": {
+          "amount": 0.128,
+          "date": 1765895400
+        },
+        "1781530200": {
+          "amount": 0.056,
+          "date": 1781530200
+        }
+      }
+    },
+    "sourceFile": "ICLN-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/ICLN?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:21.947109+00:00",
+    "rawSha256": "52bcb9c1ef3551f6e6e6ded3b7e232477afaab5efaca321ebdf32ec7adeb69d7"
+  },
+  "IHF": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 55.900001525878906,
+        "adjclose": 55.900001525878906
+      },
+      {
+        "date": "2026-10-30",
+        "close": 59.939998626708984,
+        "adjclose": 59.939998626708984
+      },
+      {
+        "date": "2026-11-05",
+        "close": 59.5099983215332,
+        "adjclose": 59.5099983215332
+      },
+      {
+        "date": "2026-11-06",
+        "close": 59.25,
+        "adjclose": 59.25
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1765895400": {
+          "amount": 0.224,
+          "date": 1765895400
+        },
+        "1773754200": {
+          "amount": 0.139,
+          "date": 1773754200
+        },
+        "1781530200": {
+          "amount": 0.049,
+          "date": 1781530200
+        },
+        "1789479000": {
+          "amount": 0.132,
+          "date": 1789479000
+        }
+      }
+    },
+    "sourceFile": "IHF-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IHF?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:08.069714+00:00",
+    "rawSha256": "aa932afce7611e9a0d93cad6b5cab8e41340b583d78347fe4ac8f267c068173c"
+  },
+  "XLP": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 81.80000305175781,
+        "adjclose": 81.80000305175781
+      },
+      {
+        "date": "2026-10-30",
+        "close": 89.41999816894531,
+        "adjclose": 89.41999816894531
+      },
+      {
+        "date": "2026-11-05",
+        "close": 91.25,
+        "adjclose": 91.25
+      },
+      {
+        "date": "2026-11-06",
+        "close": 90.08000183105469,
+        "adjclose": 90.08000183105469
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1766413800": {
+          "amount": 0.627,
+          "date": 1766413800
+        },
+        "1774272600": {
+          "amount": 0.455,
+          "date": 1774272600
+        },
+        "1782135000": {
+          "amount": 0.574,
+          "date": 1782135000
+        },
+        "1789997400": {
+          "amount": 0.541,
+          "date": 1789997400
+        }
+      }
+    },
+    "sourceFile": "XLP-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLP?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:08.136490+00:00",
+    "rawSha256": "e3707a8deb5142c3dcb0c5a215cb0694791b690ec71c1e95f91fdd5c705efdfc"
+  },
+  "XLRE": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 41.099998474121094,
+        "adjclose": 41.099998474121094
+      },
+      {
+        "date": "2026-10-30",
+        "close": 43.16999816894531,
+        "adjclose": 43.16999816894531
+      },
+      {
+        "date": "2026-11-05",
+        "close": 44.29999923706055,
+        "adjclose": 44.29999923706055
+      },
+      {
+        "date": "2026-11-06",
+        "close": 44.0,
+        "adjclose": 44.0
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1766413800": {
+          "amount": 0.436,
+          "date": 1766413800
+        },
+        "1774272600": {
+          "amount": 0.271,
+          "date": 1774272600
+        },
+        "1782135000": {
+          "amount": 0.381,
+          "date": 1782135000
+        },
+        "1789997400": {
+          "amount": 0.355,
+          "date": 1789997400
+        }
+      }
+    },
+    "sourceFile": "XLRE-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLRE?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:16.670353+00:00",
+    "rawSha256": "580553823efbb811ba682cf210edd030a210c12d293e9cb0aeb298556c85642d"
+  },
+  "KBE": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 63.90999984741211,
+        "adjclose": 63.90999984741211
+      },
+      {
+        "date": "2026-10-30",
+        "close": 65.69999694824219,
+        "adjclose": 65.69999694824219
+      },
+      {
+        "date": "2026-11-05",
+        "close": 66.22000122070312,
+        "adjclose": 66.22000122070312
+      },
+      {
+        "date": "2026-11-06",
+        "close": 65.91000366210938,
+        "adjclose": 65.91000366210938
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1766413800": {
+          "amount": 0.409,
+          "date": 1766413800
+        },
+        "1774272600": {
+          "amount": 0.336,
+          "date": 1774272600
+        },
+        "1782135000": {
+          "amount": 0.351,
+          "date": 1782135000
+        },
+        "1789997400": {
+          "amount": 0.375,
+          "date": 1789997400
+        }
+      }
+    },
+    "sourceFile": "KBE-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/KBE?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:16.668919+00:00",
+    "rawSha256": "a007907e5496afee478c731fdb12d23d2d7997f331284813884dedb3802d91a0"
+  },
+  "XLU": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 41.15999984741211,
+        "adjclose": 41.15999984741211
+      },
+      {
+        "date": "2026-10-30",
+        "close": 43.43000030517578,
+        "adjclose": 43.43000030517578
+      },
+      {
+        "date": "2026-11-05",
+        "close": 43.29999923706055,
+        "adjclose": 43.29999923706055
+      },
+      {
+        "date": "2026-11-06",
+        "close": 43.130001068115234,
+        "adjclose": 43.130001068115234
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1766413800": {
+          "amount": 0.317,
+          "date": 1766413800
+        },
+        "1774272600": {
+          "amount": 0.31,
+          "date": 1774272600
+        },
+        "1782135000": {
+          "amount": 0.284,
+          "date": 1782135000
+        },
+        "1789997400": {
+          "amount": 0.3,
+          "date": 1789997400
+        }
+      },
+      "splits": {
+        "1764945000": {
+          "date": 1764945000,
+          "numerator": 2.0,
+          "denominator": 1.0,
+          "splitRatio": "2:1"
+        }
+      }
+    },
+    "sourceFile": "XLU-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLU?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:08.138103+00:00",
+    "rawSha256": "4bc37aab18e7bcb52b5a487638dafec275f769bb65b92a09ed579a7d880b80e9"
+  },
+  "CRAK": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 65.33000183105469,
+        "adjclose": 65.33000183105469
+      },
+      {
+        "date": "2026-10-30",
+        "close": 62.15999984741211,
+        "adjclose": 62.15999984741211
+      },
+      {
+        "date": "2026-11-05",
+        "close": 56.599998474121094,
+        "adjclose": 56.599998474121094
+      },
+      {
+        "date": "2026-11-06",
+        "close": 55.54999923706055,
+        "adjclose": 55.54999923706055
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1766413800": {
+          "amount": 0.756,
+          "date": 1766413800
+        }
+      }
+    },
+    "sourceFile": "CRAK-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/CRAK?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:32.965286+00:00",
+    "rawSha256": "55be70b55cab253c8e05a87e5a270968b46a1d7dda511dd9a77f6e01b7e0e739"
+  },
+  "KRE": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 70.06999969482422,
+        "adjclose": 70.06999969482422
+      },
+      {
+        "date": "2026-10-30",
+        "close": 72.01000213623047,
+        "adjclose": 72.01000213623047
+      },
+      {
+        "date": "2026-11-05",
+        "close": 72.30999755859375,
+        "adjclose": 72.30999755859375
+      },
+      {
+        "date": "2026-11-06",
+        "close": 72.19999694824219,
+        "adjclose": 72.19999694824219
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1766413800": {
+          "amount": 0.418,
+          "date": 1766413800
+        },
+        "1774272600": {
+          "amount": 0.364,
+          "date": 1774272600
+        },
+        "1782135000": {
+          "amount": 0.417,
+          "date": 1782135000
+        },
+        "1789997400": {
+          "amount": 0.412,
+          "date": 1789997400
+        }
+      }
+    },
+    "sourceFile": "KRE-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/KRE?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:16.681035+00:00",
+    "rawSha256": "d9dbbc4c830178c8b1462ca2618e61d6c969c2265b3709ee697f16a12d221222"
+  },
+  "IAI": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 177.7899932861328,
+        "adjclose": 177.7899932861328
+      },
+      {
+        "date": "2026-10-30",
+        "close": 177.5,
+        "adjclose": 177.5
+      },
+      {
+        "date": "2026-11-05",
+        "close": 178.64999389648438,
+        "adjclose": 178.64999389648438
+      },
+      {
+        "date": "2026-11-06",
+        "close": 177.8000030517578,
+        "adjclose": 177.8000030517578
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1765895400": {
+          "amount": 0.446,
+          "date": 1765895400
+        },
+        "1773754200": {
+          "amount": 0.693,
+          "date": 1773754200
+        },
+        "1781530200": {
+          "amount": 0.474,
+          "date": 1781530200
+        },
+        "1789479000": {
+          "amount": 0.514,
+          "date": 1789479000
+        }
+      }
+    },
+    "sourceFile": "IAI-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IAI?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:32.977916+00:00",
+    "rawSha256": "7f1e4dae024e56fb0b25436c66963a15f2432286eba8ed779b5b2a606f955bbf"
+  },
+  "FDN": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 296.79998779296875,
+        "adjclose": 296.79998779296875
+      },
+      {
+        "date": "2026-10-30",
+        "close": 266.2300109863281,
+        "adjclose": 266.2300109863281
+      },
+      {
+        "date": "2026-11-05",
+        "close": 260.3699951171875,
+        "adjclose": 260.3699951171875
+      },
+      {
+        "date": "2026-11-06",
+        "close": 260.5799865722656,
+        "adjclose": 260.5799865722656
+      }
+    ],
+    "events": {},
+    "sourceFile": "FDN-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/FDN?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:38.188781+00:00",
+    "rawSha256": "23dfbb792a8fad114b153f154ff51baaaae50833023b2e7118f85ba69b720ac6"
+  },
+  "SOXX": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 196.48333740234375,
+        "adjclose": 196.48333740234375
+      },
+      {
+        "date": "2026-10-30",
+        "close": 157.1699981689453,
+        "adjclose": 157.1699981689453
+      },
+      {
+        "date": "2026-11-05",
+        "close": 131.89999389648438,
+        "adjclose": 131.89999389648438
+      },
+      {
+        "date": "2026-11-06",
+        "close": 136.52999877929688,
+        "adjclose": 136.52999877929688
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1765895400": {
+          "amount": 0.145333,
+          "date": 1765895400
+        },
+        "1773754200": {
+          "amount": 0.069333,
+          "date": 1773754200
+        },
+        "1781530200": {
+          "amount": 0.094333,
+          "date": 1781530200
+        },
+        "1789479000": {
+          "amount": 0.108333,
+          "date": 1789479000
+        }
+      },
+      "splits": {
+        "1793889000": {
+          "date": 1793889000,
+          "numerator": 3.0,
+          "denominator": 1.0,
+          "splitRatio": "3:1"
+        }
+      }
+    },
+    "sourceFile": "SOXX-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/SOXX?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:52.029104+00:00",
+    "rawSha256": "35c14a4a2941d340a7d0104a6ecf5224a9c03b311dc6c6c200d1a4a598237860"
+  },
+  "CLOU": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 29.059999465942383,
+        "adjclose": 29.059999465942383
+      },
+      {
+        "date": "2026-10-30",
+        "close": 28.020000457763672,
+        "adjclose": 28.020000457763672
+      },
+      {
+        "date": "2026-11-05",
+        "close": 26.149999618530273,
+        "adjclose": 26.149999618530273
+      },
+      {
+        "date": "2026-11-06",
+        "close": 25.850000381469727,
+        "adjclose": 25.850000381469727
+      }
+    ],
+    "events": {},
+    "sourceFile": "CLOU-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/CLOU?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:43.808851+00:00",
+    "rawSha256": "281b7f6e9543130663c67d4e88cf7d8f27cd45f759533392f833cf815d24bc23"
+  },
+  "IGV": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 111.16000366210938,
+        "adjclose": 111.16000366210938
+      },
+      {
+        "date": "2026-10-30",
+        "close": 104.29000091552734,
+        "adjclose": 104.29000091552734
+      },
+      {
+        "date": "2026-11-05",
+        "close": 99.01000213623047,
+        "adjclose": 99.01000213623047
+      },
+      {
+        "date": "2026-11-06",
+        "close": 98.87999725341797,
+        "adjclose": 98.87999725341797
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1781530200": {
+          "amount": 0.017,
+          "date": 1781530200
+        }
+      }
+    },
+    "sourceFile": "IGV-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IGV?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:38.194210+00:00",
+    "rawSha256": "54b8a4634f3fa50942bf87f069d5eb3793e1e640fafa5630d2cd15ae10b37b79"
+  },
+  "BATT": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 14.84000015258789,
+        "adjclose": 14.84000015258789
+      },
+      {
+        "date": "2026-10-30",
+        "close": 12.649999618530273,
+        "adjclose": 12.649999618530273
+      },
+      {
+        "date": "2026-11-05",
+        "close": 12.3100004196167,
+        "adjclose": 12.3100004196167
+      },
+      {
+        "date": "2026-11-06",
+        "close": 12.5,
+        "adjclose": 12.5
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1767105000": {
+          "amount": 0.256,
+          "date": 1767105000
+        }
+      }
+    },
+    "sourceFile": "BATT-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/BATT?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:43.861305+00:00",
+    "rawSha256": "66ef9367db88ab63191785ec3e1e22f0453c73ea6d1c7eec08479867f31b0d2f"
+  },
+  "IYT": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 79.69000244140625,
+        "adjclose": 79.69000244140625
+      },
+      {
+        "date": "2026-10-30",
+        "close": 81.61000061035156,
+        "adjclose": 81.61000061035156
+      },
+      {
+        "date": "2026-11-05",
+        "close": 82.01000213623047,
+        "adjclose": 82.01000213623047
+      },
+      {
+        "date": "2026-11-06",
+        "close": 80.95999908447266,
+        "adjclose": 80.95999908447266
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1765895400": {
+          "amount": 0.149,
+          "date": 1765895400
+        },
+        "1773754200": {
+          "amount": 0.267,
+          "date": 1773754200
+        },
+        "1781530200": {
+          "amount": 0.154,
+          "date": 1781530200
+        },
+        "1789479000": {
+          "amount": 0.186,
+          "date": 1789479000
+        }
+      }
+    },
+    "sourceFile": "IYT-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IYT?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:27.444854+00:00",
+    "rawSha256": "c08023a855572e8976ee50bdfcf5a8b5a58b7165fb485f277247028258cf065d"
+  },
+  "XLB": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 49.72999954223633,
+        "adjclose": 49.72999954223633
+      },
+      {
+        "date": "2026-10-30",
+        "close": 52.7400016784668,
+        "adjclose": 52.7400016784668
+      },
+      {
+        "date": "2026-11-05",
+        "close": 52.33000183105469,
+        "adjclose": 52.33000183105469
+      },
+      {
+        "date": "2026-11-06",
+        "close": 51.95000076293945,
+        "adjclose": 51.95000076293945
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1766413800": {
+          "amount": 0.233,
+          "date": 1766413800
+        },
+        "1774272600": {
+          "amount": 0.208,
+          "date": 1774272600
+        },
+        "1782135000": {
+          "amount": 0.193,
+          "date": 1782135000
+        },
+        "1789997400": {
+          "amount": 0.229,
+          "date": 1789997400
+        }
+      },
+      "splits": {
+        "1764945000": {
+          "date": 1764945000,
+          "numerator": 2.0,
+          "denominator": 1.0,
+          "splitRatio": "2:1"
+        }
+      }
+    },
+    "sourceFile": "XLB-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLB?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:27.481112+00:00",
+    "rawSha256": "e19bd4fb9e6b5240f3a5fa5e3965f58bed06beeee77934850e27fb66589e92b7"
+  },
+  "XAR": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 233.6199951171875,
+        "adjclose": 233.6199951171875
+      },
+      {
+        "date": "2026-10-30",
+        "close": 227.3699951171875,
+        "adjclose": 227.3699951171875
+      },
+      {
+        "date": "2026-11-05",
+        "close": 214.22999572753906,
+        "adjclose": 214.22999572753906
+      },
+      {
+        "date": "2026-11-06",
+        "close": 224.02000427246094,
+        "adjclose": 224.02000427246094
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1766413800": {
+          "amount": 0.116,
+          "date": 1766413800
+        },
+        "1774272600": {
+          "amount": 0.112,
+          "date": 1774272600
+        },
+        "1782135000": {
+          "amount": 0.062,
+          "date": 1782135000
+        },
+        "1789997400": {
+          "amount": 0.129,
+          "date": 1789997400
+        }
+      }
+    },
+    "sourceFile": "XAR-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XAR?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:38.231114+00:00",
+    "rawSha256": "67fdcf5f42b966f57a4cfa08df19a75da91610b27cb3bb9db3651eb8e1a35806"
+  },
+  "FAN": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 22.600000381469727,
+        "adjclose": 22.600000381469727
+      },
+      {
+        "date": "2026-10-30",
+        "close": 21.790000915527344,
+        "adjclose": 21.790000915527344
+      },
+      {
+        "date": "2026-11-05",
+        "close": 22.65999984741211,
+        "adjclose": 22.65999984741211
+      },
+      {
+        "date": "2026-11-06",
+        "close": 22.989999771118164,
+        "adjclose": 22.989999771118164
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1765549800": {
+          "amount": 0.055,
+          "date": 1765549800
+        },
+        "1782394200": {
+          "amount": 0.087,
+          "date": 1782394200
+        },
+        "1790256600": {
+          "amount": 0.066,
+          "date": 1790256600
+        }
+      }
+    },
+    "sourceFile": "FAN-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/FAN?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:08.106760+00:00",
+    "rawSha256": "16f9523848757d3c8ed06dc46cfba829d39f11c1b1481876c447fca015ecc7d8"
+  },
+  "ITA": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 69.41999816894531,
+        "adjclose": 69.41999816894531
+      },
+      {
+        "date": "2026-10-30",
+        "close": 69.913330078125,
+        "adjclose": 69.913330078125
+      },
+      {
+        "date": "2026-11-05",
+        "close": 68.11000061035156,
+        "adjclose": 68.11000061035156
+      },
+      {
+        "date": "2026-11-06",
+        "close": 68.9800033569336,
+        "adjclose": 68.9800033569336
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1773754200": {
+          "amount": 0.050333,
+          "date": 1773754200
+        },
+        "1781530200": {
+          "amount": 0.054667,
+          "date": 1781530200
+        },
+        "1789479000": {
+          "amount": 0.083667,
+          "date": 1789479000
+        }
+      },
+      "splits": {
+        "1793889000": {
+          "date": 1793889000,
+          "numerator": 3.0,
+          "denominator": 1.0,
+          "splitRatio": "3:1"
+        }
+      }
+    },
+    "sourceFile": "ITA-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/ITA?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:32.917698+00:00",
+    "rawSha256": "0dc9f7246909108e7f6a1becda2a492fd6f09d7640d41603d640d043181b7e10"
+  },
+  "XLK": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 202.0,
+        "adjclose": 202.0
+      },
+      {
+        "date": "2026-10-30",
+        "close": 179.50999450683594,
+        "adjclose": 179.50999450683594
+      },
+      {
+        "date": "2026-11-05",
+        "close": 162.3800048828125,
+        "adjclose": 162.3800048828125
+      },
+      {
+        "date": "2026-11-06",
+        "close": 164.74000549316406,
+        "adjclose": 164.74000549316406
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1766413800": {
+          "amount": 0.219,
+          "date": 1766413800
+        },
+        "1774272600": {
+          "amount": 0.168,
+          "date": 1774272600
+        },
+        "1782135000": {
+          "amount": 0.228,
+          "date": 1782135000
+        },
+        "1789997400": {
+          "amount": 0.221,
+          "date": 1789997400
+        }
+      },
+      "splits": {
+        "1764945000": {
+          "date": 1764945000,
+          "numerator": 2.0,
+          "denominator": 1.0,
+          "splitRatio": "2:1"
+        }
+      }
+    },
+    "sourceFile": "XLK-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLK?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:52.034830+00:00",
+    "rawSha256": "5fe3ec58452147ee8786852a8fdd8343b2bf6f64a984e46e5604ff656c480fbd"
+  },
+  "XOP": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 188.4600067138672,
+        "adjclose": 188.4600067138672
+      },
+      {
+        "date": "2026-10-30",
+        "close": 203.75999450683594,
+        "adjclose": 203.75999450683594
+      },
+      {
+        "date": "2026-11-05",
+        "close": 174.10000610351562,
+        "adjclose": 174.10000610351562
+      },
+      {
+        "date": "2026-11-06",
+        "close": 173.77000427246094,
+        "adjclose": 173.77000427246094
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1766413800": {
+          "amount": 0.91,
+          "date": 1766413800
+        },
+        "1774272600": {
+          "amount": 0.709,
+          "date": 1774272600
+        },
+        "1782135000": {
+          "amount": 0.748,
+          "date": 1782135000
+        },
+        "1789997400": {
+          "amount": 0.757,
+          "date": 1789997400
+        }
+      }
+    },
+    "sourceFile": "XOP-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XOP?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:21.957146+00:00",
+    "rawSha256": "c7effc50bd9c53e9f89c656e5e174854ade32834d33e9ef3dde3b709e89c84ed"
+  },
+  "CIBR": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 108.12999725341797,
+        "adjclose": 108.12999725341797
+      },
+      {
+        "date": "2026-10-30",
+        "close": 101.02999877929688,
+        "adjclose": 101.02999877929688
+      },
+      {
+        "date": "2026-11-05",
+        "close": 91.01000213623047,
+        "adjclose": 91.01000213623047
+      },
+      {
+        "date": "2026-11-06",
+        "close": 91.04000091552734,
+        "adjclose": 91.04000091552734
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1765549800": {
+          "amount": 0.208,
+          "date": 1765549800
+        },
+        "1774531800": {
+          "amount": 0.11,
+          "date": 1774531800
+        },
+        "1782394200": {
+          "amount": 0.072,
+          "date": 1782394200
+        },
+        "1790256600": {
+          "amount": 0.003,
+          "date": 1790256600
+        }
+      }
+    },
+    "sourceFile": "CIBR-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/CIBR?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:43.873949+00:00",
+    "rawSha256": "8092a7f9e545ee17ab9162b3c5bb1bde0c08b5c93e0d58060361789e4255e1e1"
+  },
+  "XLY": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 111.72000122070312,
+        "adjclose": 111.72000122070312
+      },
+      {
+        "date": "2026-10-30",
+        "close": 115.37999725341797,
+        "adjclose": 115.37999725341797
+      },
+      {
+        "date": "2026-11-05",
+        "close": 117.63999938964844,
+        "adjclose": 117.63999938964844
+      },
+      {
+        "date": "2026-11-06",
+        "close": 117.58000183105469,
+        "adjclose": 117.58000183105469
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1766413800": {
+          "amount": 0.241,
+          "date": 1766413800
+        },
+        "1774272600": {
+          "amount": 0.216,
+          "date": 1774272600
+        },
+        "1782135000": {
+          "amount": 0.233,
+          "date": 1782135000
+        },
+        "1789997400": {
+          "amount": 0.244,
+          "date": 1789997400
+        }
+      },
+      "splits": {
+        "1764945000": {
+          "date": 1764945000,
+          "numerator": 2.0,
+          "denominator": 1.0,
+          "splitRatio": "2:1"
+        }
+      }
+    },
+    "sourceFile": "XLY-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLY?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:32.961430+00:00",
+    "rawSha256": "98111794e28b003b6035d9e35f4e85bece0de833dabb33bf411917875a4fbfee"
+  },
+  "XLC": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 111.6500015258789,
+        "adjclose": 111.6500015258789
+      },
+      {
+        "date": "2026-10-30",
+        "close": 99.9000015258789,
+        "adjclose": 99.9000015258789
+      },
+      {
+        "date": "2026-11-05",
+        "close": 104.33999633789062,
+        "adjclose": 104.33999633789062
+      },
+      {
+        "date": "2026-11-06",
+        "close": 104.79000091552734,
+        "adjclose": 104.79000091552734
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1766413800": {
+          "amount": 0.376,
+          "date": 1766413800
+        },
+        "1774272600": {
+          "amount": 0.357,
+          "date": 1774272600
+        },
+        "1782135000": {
+          "amount": 0.284,
+          "date": 1782135000
+        },
+        "1789997400": {
+          "amount": 0.364,
+          "date": 1789997400
+        }
+      }
+    },
+    "sourceFile": "XLC-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLC?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:08.105289+00:00",
+    "rawSha256": "3f2127d66f5ac3dac2ed1a436b931b5728c1d4595a283c254006e249f3681d5a"
+  },
+  "IBB": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 203.10000610351562,
+        "adjclose": 203.10000610351562
+      },
+      {
+        "date": "2026-10-30",
+        "close": 217.61000061035156,
+        "adjclose": 217.61000061035156
+      },
+      {
+        "date": "2026-11-05",
+        "close": 209.99000549316406,
+        "adjclose": 209.99000549316406
+      },
+      {
+        "date": "2026-11-06",
+        "close": 213.6300048828125,
+        "adjclose": 213.6300048828125
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1765895400": {
+          "amount": 0.183,
+          "date": 1765895400
+        },
+        "1773754200": {
+          "amount": 0.122,
+          "date": 1773754200
+        },
+        "1781530200": {
+          "amount": 0.024,
+          "date": 1781530200
+        },
+        "1789479000": {
+          "amount": 0.011,
+          "date": 1789479000
+        }
+      }
+    },
+    "sourceFile": "IBB-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IBB?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:38.213472+00:00",
+    "rawSha256": "6cb6f97e204571a9d4398e6293ce084b7f4ddc5d549f4d3c17fdbb3fcd8d16cc"
+  },
+  "IHI": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 50.93000030517578,
+        "adjclose": 50.93000030517578
+      },
+      {
+        "date": "2026-10-30",
+        "close": 54.59000015258789,
+        "adjclose": 54.59000015258789
+      },
+      {
+        "date": "2026-11-05",
+        "close": 59.029998779296875,
+        "adjclose": 59.029998779296875
+      },
+      {
+        "date": "2026-11-06",
+        "close": 57.59000015258789,
+        "adjclose": 57.59000015258789
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1765895400": {
+          "amount": 0.063,
+          "date": 1765895400
+        },
+        "1773754200": {
+          "amount": 0.043,
+          "date": 1773754200
+        },
+        "1781530200": {
+          "amount": 0.075,
+          "date": 1781530200
+        },
+        "1789479000": {
+          "amount": 0.081,
+          "date": 1789479000
+        }
+      }
+    },
+    "sourceFile": "IHI-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IHI?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:16.697198+00:00",
+    "rawSha256": "586c9fe429b3cbed7128e28f7512edbbc0ba61130aa40ece6a40fdddce518f9c"
+  },
+  "XBI": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 150.89999389648438,
+        "adjclose": 150.89999389648438
+      },
+      {
+        "date": "2026-10-30",
+        "close": 155.97999572753906,
+        "adjclose": 155.97999572753906
+      },
+      {
+        "date": "2026-11-05",
+        "close": 148.39999389648438,
+        "adjclose": 148.39999389648438
+      },
+      {
+        "date": "2026-11-06",
+        "close": 152.2100067138672,
+        "adjclose": 152.2100067138672
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1766413800": {
+          "amount": 0.407,
+          "date": 1766413800
+        },
+        "1782135000": {
+          "amount": 0.138,
+          "date": 1782135000
+        }
+      }
+    },
+    "sourceFile": "XBI-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XBI?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:43.824917+00:00",
+    "rawSha256": "8d25866a5d2665c6c8987a5b9b9d87252fe7f9dc8d5b375d742d013a4ce356f2"
+  },
+  "LIT": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 71.06999969482422,
+        "adjclose": 71.06999969482422
+      },
+      {
+        "date": "2026-10-30",
+        "close": 59.810001373291016,
+        "adjclose": 59.810001373291016
+      },
+      {
+        "date": "2026-11-05",
+        "close": 60.18000030517578,
+        "adjclose": 60.18000030517578
+      },
+      {
+        "date": "2026-11-06",
+        "close": 60.90999984741211,
+        "adjclose": 60.90999984741211
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1767105000": {
+          "amount": 0.178,
+          "date": 1767105000
+        },
+        "1782739800": {
+          "amount": 0.325,
+          "date": 1782739800
+        }
+      }
+    },
+    "sourceFile": "LIT-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/LIT?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:21.958328+00:00",
+    "rawSha256": "b6f8cd5534d3f6903a652519824ae3c51c91bdbc772074697a5bc8c906ff8036"
+  },
+  "XRT": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 82.94999694824219,
+        "adjclose": 82.94999694824219
+      },
+      {
+        "date": "2026-10-30",
+        "close": 88.72000122070312,
+        "adjclose": 88.72000122070312
+      },
+      {
+        "date": "2026-11-05",
+        "close": 91.06999969482422,
+        "adjclose": 91.06999969482422
+      },
+      {
+        "date": "2026-11-06",
+        "close": 89.5,
+        "adjclose": 89.5
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1766413800": {
+          "amount": 0.173,
+          "date": 1766413800
+        },
+        "1774272600": {
+          "amount": 0.212,
+          "date": 1774272600
+        },
+        "1782135000": {
+          "amount": 0.186,
+          "date": 1782135000
+        },
+        "1789997400": {
+          "amount": 0.173,
+          "date": 1789997400
+        }
+      }
+    },
+    "sourceFile": "XRT-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XRT?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:21.945830+00:00",
+    "rawSha256": "a0aae76751b611d5a137d65947ce63f2a03bfbe5a4a606cd60a268fcddbe86d5"
+  },
+  "XLF": {
+    "rows": [
+      {
+        "date": "2026-10-06",
+        "close": 54.0099983215332,
+        "adjclose": 54.0099983215332
+      },
+      {
+        "date": "2026-10-30",
+        "close": 56.5099983215332,
+        "adjclose": 56.5099983215332
+      },
+      {
+        "date": "2026-11-05",
+        "close": 57.5,
+        "adjclose": 57.5
+      },
+      {
+        "date": "2026-11-06",
+        "close": 57.15999984741211,
+        "adjclose": 57.15999984741211
+      }
+    ],
+    "events": {
+      "dividends": {
+        "1766413800": {
+          "amount": 0.191,
+          "date": 1766413800
+        },
+        "1774272600": {
+          "amount": 0.251,
+          "date": 1774272600
+        },
+        "1782135000": {
+          "amount": 0.187,
+          "date": 1782135000
+        },
+        "1789997400": {
+          "amount": 0.197,
+          "date": 1789997400
+        }
+      }
+    },
+    "sourceFile": "XLF-1d.json",
+    "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLF?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-07T07:47:21.896898+00:00",
+    "rawSha256": "01ae3bebc3961d89d41d02faabdffbdc31a6d8634b5c2864513940f8d5c19e3b"
+  }
+}

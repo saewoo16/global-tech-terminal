@@ -1,0 +1,784 @@
+{
+  "note": "Raw evidence retained outside publication candidate; hashes identify original capture files.",
+  "files": [
+    {
+      "file": "KRE-5m.json",
+      "bytes": 38353,
+      "sha256": "e41788111831f0c3151e9f45c2d27da2218cd6398432fa8a1802d53de274ae8a",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/KRE?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:19.421214+00:00"
+    },
+    {
+      "file": "collect.py",
+      "bytes": 1722,
+      "sha256": "990eae41bd76abb1c33043d6ff5fa31e004439bb6461e65ae56cd605387fc75e"
+    },
+    {
+      "file": "CRAK-5m.json",
+      "bytes": 38554,
+      "sha256": "81090c7f07597fb1d9d9feede3118b109804dbb26f104a63182ee962041d5bcf",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/CRAK?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:35.545247+00:00"
+    },
+    {
+      "file": "macro-25219ba4e23d8394.json",
+      "bytes": 129,
+      "sha256": "1bd0ee1068b243f69717cf9712af7578cab32d5da19ec0586dd7c4afeacce945",
+      "sourceUrl": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield",
+      "retrievedAt": "2026-11-07T07:47:08.911200+00:00"
+    },
+    {
+      "file": "TAN-1d.json",
+      "bytes": 29800,
+      "sha256": "16581c09ca85a13ac56494c084065c7d37bc3b6b2b3edee15bbee6aa99fb365a",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/TAN?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:27.464916+00:00"
+    },
+    {
+      "file": "overseas-before.json",
+      "bytes": 1724150,
+      "sha256": "88c51f1ba5ecc872b3d46760bf37e82197acb8fb31527ab7f3d95f74e2578da3"
+    },
+    {
+      "file": "XME-1d.json",
+      "bytes": 30975,
+      "sha256": "cef03754d1d12729f5e9b987be23721d47173a2be0e8f3ee74927fe24ec87ccf",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XME?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:43.867991+00:00"
+    },
+    {
+      "file": "XLY-5m.json",
+      "bytes": 39806,
+      "sha256": "eecdd3c718100d94ab655f96223c79b85d18e1aefc09c1b6a40d94f8cf132b2a",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLY?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:35.521422+00:00"
+    },
+    {
+      "file": "macro-b891ffbbaa2be065.txt",
+      "bytes": 1295963,
+      "sha256": "0d93ea2e5c7d444e527fde9e71e0a6a90acd755685881b1f5fc194a53f84ccc5"
+    },
+    {
+      "file": "XPH-1d.json",
+      "bytes": 29912,
+      "sha256": "43081956ddb1c322d037d7d9e6486c4ddcd0450a3cd7cf97f16cd8e0660e42cf",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XPH?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:38.228895+00:00"
+    },
+    {
+      "file": "macro-419582d087d34035.json",
+      "bytes": 158,
+      "sha256": "d8dad162739bce828bdbf733fb22e42ca0c73d69ac432d827db01c4de4c19b35",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXKOUS&cosd=2025-10-03&coed=2026-11-07",
+      "retrievedAt": "2026-11-07T07:47:21.668638+00:00"
+    },
+    {
+      "file": "XLV-5m.json",
+      "bytes": 39564,
+      "sha256": "2f771da5dd1b0693781966ad798e329aea34d64f042ed3cd767af649f390dd5f",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLV?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:19.429187+00:00"
+    },
+    {
+      "file": "SMH-1d.json",
+      "bytes": 29607,
+      "sha256": "d09421cea19cdc79ba9b771e3ccb9fa994c9e9db7905d8c615ea79bd7a82b184",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/SMH?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:51.992739+00:00"
+    },
+    {
+      "file": "XLV-1d.json",
+      "bytes": 31142,
+      "sha256": "2fe0637901afd7e52ea6f6cd40a7efa9f246c15a08f46bbbb2bd1e3c93cbb55b",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLV?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:16.689137+00:00"
+    },
+    {
+      "file": "XLE-1d.json",
+      "bytes": 30782,
+      "sha256": "f33e2f5955630f3c2032b02b9b4ca06e70ebfed9b427db83581816625a71c57c",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLE?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:27.492951+00:00"
+    },
+    {
+      "file": "CLOU-5m.json",
+      "bytes": 37596,
+      "sha256": "6934243e9dd00b055209cba8156bb8f126fbf024b317b931a413b320e24d5c18",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/CLOU?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:46.345088+00:00"
+    },
+    {
+      "file": "macro-72d3b4a65a8e4db3.json",
+      "bytes": 161,
+      "sha256": "468157acd1c33bc76c25a6dc32fbdb509587cce8e94a3a0aa62fe4d79dc5eb5b",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=HQMCB10YRP&cosd=2025-10-03&coed=2026-11-07",
+      "retrievedAt": "2026-11-07T07:47:12.626224+00:00"
+    },
+    {
+      "file": "XAR-5m.json",
+      "bytes": 38759,
+      "sha256": "e759549524660b8c7f1eabfe201dd91d34df7a59aa530816eea7096351baf128",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XAR?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:40.980817+00:00"
+    },
+    {
+      "file": "XLI-1d.json",
+      "bytes": 31175,
+      "sha256": "b2f84d0485da041198bfcee9050bf87579d5c45c9b7e4935f62cd8c8d020f029",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLI?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:32.964129+00:00"
+    },
+    {
+      "file": "macro-05a02d08af6f3b08.json",
+      "bytes": 163,
+      "sha256": "0e4ea5b1b2a60d64b21736394144ccdc372d6f1b4f796e852557e910b5fd9a75",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DCOILBRENTEU&cosd=2025-10-03&coed=2026-11-07",
+      "retrievedAt": "2026-11-07T07:47:17.814581+00:00"
+    },
+    {
+      "file": "XHB-1d.json",
+      "bytes": 31119,
+      "sha256": "010fdf0b099e8ff57619f96276d414743abb0303de2b070bdbffa173ee27a636",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XHB?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:27.482218+00:00"
+    },
+    {
+      "file": "macro-b891ffbbaa2be065.json",
+      "bytes": 112,
+      "sha256": "4906be6a08f2ae9615b53c6d9b8e6f25058da9d067c3cf72e75ac898cdba1f83",
+      "sourceUrl": "https://www.investing.com/currencies/usd-jpy",
+      "retrievedAt": "2026-11-07T07:47:14.839015+00:00"
+    },
+    {
+      "file": "ICLN-1d.json",
+      "bytes": 30876,
+      "sha256": "52bcb9c1ef3551f6e6e6ded3b7e232477afaab5efaca321ebdf32ec7adeb69d7",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/ICLN?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:21.947109+00:00"
+    },
+    {
+      "file": "FAN-5m.json",
+      "bytes": 27995,
+      "sha256": "9720facd49cb6adbcc422f27310fbcfe525316242d0b98ca30aafacb7c9db2bf",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/FAN?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:10.599128+00:00"
+    },
+    {
+      "file": "XLE-5m.json",
+      "bytes": 38845,
+      "sha256": "0729902bda1dcc1d6b9a699f2bf14d44e02211dade75bb94c3688a6793ea6f31",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLE?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:30.109419+00:00"
+    },
+    {
+      "file": "IHF-1d.json",
+      "bytes": 30193,
+      "sha256": "aa932afce7611e9a0d93cad6b5cab8e41340b583d78347fe4ac8f267c068173c",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IHF?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:08.069714+00:00"
+    },
+    {
+      "file": "CIBR-5m.json",
+      "bytes": 37984,
+      "sha256": "aba78f30de20fda5ea5183501c54dc7a85696e7f1f5a4afabf670e9388e5e98d",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/CIBR?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:46.369358+00:00"
+    },
+    {
+      "file": "macro-05a02d08af6f3b08.txt",
+      "bytes": 4897,
+      "sha256": "5fde8372e259a0d05d375b8a6e3300a6c4537fd2aecd5366b99ff9887ff0f0fe"
+    },
+    {
+      "file": "macro-5eb37d4235851619.txt",
+      "bytes": 78506,
+      "sha256": "fc14a316de39d381f5066d703164e4c84c0f1f6a6acecc1dbd0f0669176841c0"
+    },
+    {
+      "file": "TAN-5m.json",
+      "bytes": 38557,
+      "sha256": "88278c850df89b4ac5ecd4e543d7360cdbb7969f6ecb39a126342bd8539ecc37",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/TAN?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:30.089204+00:00"
+    },
+    {
+      "file": "macro-c3fde7688613b81f.json",
+      "bytes": 110,
+      "sha256": "d0b41136e1982f3400984af2a9d31c6f93953984f79094dbf923c340a1986094",
+      "sourceUrl": "https://www.investing.com/indices/usdollar",
+      "retrievedAt": "2026-11-07T07:47:08.847673+00:00"
+    },
+    {
+      "file": "XHB-5m.json",
+      "bytes": 39442,
+      "sha256": "96c21844eb8e3171cbef114e1955c7e62e544605e7d4fd2d831c96f090f269d0",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XHB?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:30.085388+00:00"
+    },
+    {
+      "file": "XLP-1d.json",
+      "bytes": 30387,
+      "sha256": "e3707a8deb5142c3dcb0c5a215cb0694791b690ec71c1e95f91fdd5c705efdfc",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLP?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:08.136490+00:00"
+    },
+    {
+      "file": "etf-tests.log",
+      "bytes": 121,
+      "sha256": "059558524abb5ffd9963c2fd5c2c8f12e04837c55bed583bb14ed9f69b8a23b0"
+    },
+    {
+      "file": "ICLN-5m.json",
+      "bytes": 39732,
+      "sha256": "43bd98e9c8374151513811b186f22e14a615266e7e777d13345cb366aad29003",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/ICLN?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:24.708574+00:00"
+    },
+    {
+      "file": "XLRE-1d.json",
+      "bytes": 30675,
+      "sha256": "580553823efbb811ba682cf210edd030a210c12d293e9cb0aeb298556c85642d",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLRE?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:16.670353+00:00"
+    },
+    {
+      "file": "macro-5957d0b3c45ab1fd.json",
+      "bytes": 115,
+      "sha256": "92a05fffaffed52df67063af7a1b6b9dae7d58a4822efbc3498c7ccbb0149f70",
+      "sourceUrl": "https://www.investing.com/commodities/brent-oil",
+      "retrievedAt": "2026-11-07T07:47:09.039035+00:00"
+    },
+    {
+      "file": "KBE-1d.json",
+      "bytes": 30397,
+      "sha256": "a007907e5496afee478c731fdb12d23d2d7997f331284813884dedb3802d91a0",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/KBE?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:16.668919+00:00"
+    },
+    {
+      "file": "SOXX-5m.json",
+      "bytes": 40025,
+      "sha256": "e5c0180fd7c87e5e2f7acfd139a8c69cb4cf5eb5636b37d53d5ff4eacd5b3885",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/SOXX?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:54.588952+00:00"
+    },
+    {
+      "file": "XLU-1d.json",
+      "bytes": 30967,
+      "sha256": "4bc37aab18e7bcb52b5a487638dafec275f769bb65b92a09ed579a7d880b80e9",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLU?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:08.138103+00:00"
+    },
+    {
+      "file": "CRAK-1d.json",
+      "bytes": 29640,
+      "sha256": "55be70b55cab253c8e05a87e5a270968b46a1d7dda511dd9a77f6e01b7e0e739",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/CRAK?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:32.965286+00:00"
+    },
+    {
+      "file": "SMH-5m.json",
+      "bytes": 38307,
+      "sha256": "a3a6f1f99f2708540a5477db8abd0ada68abb36a18104e0839c3d83337341dd1",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/SMH?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:54.596953+00:00"
+    },
+    {
+      "file": "macro-419582d087d34035.txt",
+      "bytes": 5280,
+      "sha256": "42d8b90514a8be1af23b1a7dd6813702d88c14fcbca66bc111d2b8e69879f981"
+    },
+    {
+      "file": "macro-b0a1839594902734.json",
+      "bytes": 107,
+      "sha256": "6fe576cc52ad5985c8c74335be0e147f2a1207cae3cf1066159f615ae0f3dd0a",
+      "sourceUrl": "https://fred.stlouisfed.org/series/M2SL",
+      "retrievedAt": "2026-11-07T07:47:21.349948+00:00"
+    },
+    {
+      "file": "macro-f64bbede711c9c13.json",
+      "bytes": 158,
+      "sha256": "5223354f334773573cfd4a3bcbbc333a62e5b72075359873fa87193552b422c7",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXJPUS&cosd=2025-10-03&coed=2026-11-07",
+      "retrievedAt": "2026-11-07T07:47:21.627611+00:00"
+    },
+    {
+      "file": "macro-fafd64cb7f5f6d76.txt",
+      "bytes": 250,
+      "sha256": "d6b4cd54b61ac859e7629d3f7b93b02c60aa5f0f3b444c23820cb44ab0c2d210"
+    },
+    {
+      "file": "macro-5eb37d4235851619.json",
+      "bytes": 107,
+      "sha256": "178bc1d61589d726b0a25f0cecf3777c8a745372db62ea24fc0360b6c569e29e",
+      "sourceUrl": "https://fred.stlouisfed.org/series/M1SL",
+      "retrievedAt": "2026-11-07T07:47:21.548653+00:00"
+    },
+    {
+      "file": "collection.log",
+      "bytes": 1507,
+      "sha256": "d81af3b4bc378ba2a5838f1140945a66b950e832b3a34cf5ccf3c8a93d5cef18"
+    },
+    {
+      "file": "KRE-1d.json",
+      "bytes": 30201,
+      "sha256": "d9dbbc4c830178c8b1462ca2618e61d6c969c2265b3709ee697f16a12d221222",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/KRE?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:16.681035+00:00"
+    },
+    {
+      "file": "macro-8e8f2c99dd2399d2.json",
+      "bytes": 112,
+      "sha256": "b018f395f86661a4a421abadfb1dd3993efc96e691f9d3e7b83402c4214c8a73",
+      "sourceUrl": "https://www.investing.com/currencies/usd-krw",
+      "retrievedAt": "2026-11-07T07:47:14.890926+00:00"
+    },
+    {
+      "file": "macro-fafd64cb7f5f6d76.json",
+      "bytes": 155,
+      "sha256": "310c3f847700791eac591cc5b93f6175d9b80da0e7f81b2347e0bff2e4e60f0d",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=M2SL&cosd=2025-10-03&coed=2026-11-07",
+      "retrievedAt": "2026-11-07T07:47:17.940472+00:00"
+    },
+    {
+      "file": "IAI-5m.json",
+      "bytes": 33824,
+      "sha256": "91ca65f67ec456e91d7eef4f6a31f886e46b5d92a3ca735e60a4ac43488f5cd9",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IAI?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:35.568849+00:00"
+    },
+    {
+      "file": "IAI-1d.json",
+      "bytes": 30483,
+      "sha256": "7f1e4dae024e56fb0b25436c66963a15f2432286eba8ed779b5b2a606f955bbf",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IAI?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:32.977916+00:00"
+    },
+    {
+      "file": "macro-5a6017d9f7505432.txt",
+      "bytes": 4823,
+      "sha256": "801e0b8c58917f4d486a4016324d72edc847066db7359cb2fd3c60e326c0785c"
+    },
+    {
+      "file": "audit.py",
+      "bytes": 2800,
+      "sha256": "9b591e7724f716fde11a75d5465ac28835bcb0d07331a914cbdd7b95d6784aeb"
+    },
+    {
+      "file": "XLB-5m.json",
+      "bytes": 38994,
+      "sha256": "5cde1840b005548855ee63ebf90876e88c49a5cec21bc2002ca6853a72a80561",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLB?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:30.112604+00:00"
+    },
+    {
+      "file": "FDN-1d.json",
+      "bytes": 29888,
+      "sha256": "23dfbb792a8fad114b153f154ff51baaaae50833023b2e7118f85ba69b720ac6",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/FDN?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:38.188781+00:00"
+    },
+    {
+      "file": "XLU-5m.json",
+      "bytes": 39177,
+      "sha256": "22817ae2eb2f43d3139aff5090c313769cbfd55204c5d93ddb6fc981cc27440f",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLU?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:10.628937+00:00"
+    },
+    {
+      "file": "macro-aaa90cf59e2c1e02.json",
+      "bytes": 115,
+      "sha256": "9ac13e86f4b9e2607e1001f3abad97e571914a0d05916dd3b771e160415a8b94",
+      "sourceUrl": "https://www.investing.com/commodities/crude-oil",
+      "retrievedAt": "2026-11-07T07:47:08.951401+00:00"
+    },
+    {
+      "file": "SOXX-1d.json",
+      "bytes": 31662,
+      "sha256": "35c14a4a2941d340a7d0104a6ecf5224a9c03b311dc6c6c200d1a4a598237860",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/SOXX?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:52.029104+00:00"
+    },
+    {
+      "file": "IGV-5m.json",
+      "bytes": 39275,
+      "sha256": "3099e3a290119401ba1e4b6ee6910403cde83f2b52f452361843e3eb361fa065",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IGV?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:41.024964+00:00"
+    },
+    {
+      "file": "macro-f64bbede711c9c13.txt",
+      "bytes": 5011,
+      "sha256": "232a9915d9f3600098d2e45cbb8375fedf3595ac676a779d630be0ffe0d53561"
+    },
+    {
+      "file": "XME-5m.json",
+      "bytes": 38218,
+      "sha256": "7d551f43b671855c799a164c29b832448008ac95af0983d79e90e463340f55ac",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XME?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:46.348841+00:00"
+    },
+    {
+      "file": "CLOU-1d.json",
+      "bytes": 30310,
+      "sha256": "281b7f6e9543130663c67d4e88cf7d8f27cd45f759533392f833cf815d24bc23",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/CLOU?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:43.808851+00:00"
+    },
+    {
+      "file": "ITA-5m.json",
+      "bytes": 38251,
+      "sha256": "c8f0afa3a4c51cdb5d500cfa9c7cf2506ff328d23693189bd9c84af853f73d4d",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/ITA?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:35.549045+00:00"
+    },
+    {
+      "file": "IGV-1d.json",
+      "bytes": 30397,
+      "sha256": "54b8a4634f3fa50942bf87f069d5eb3793e1e640fafa5630d2cd15ae10b37b79",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IGV?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:38.194210+00:00"
+    },
+    {
+      "file": "etf-ui-tests.log",
+      "bytes": 485,
+      "sha256": "4c2a7dd13d517716dd29b152ddfb6c7c54c295e67111ecc3a3b34af2069b8aa2"
+    },
+    {
+      "file": "BATT-1d.json",
+      "bytes": 30403,
+      "sha256": "66ef9367db88ab63191785ec3e1e22f0453c73ea6d1c7eec08479867f31b0d2f",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/BATT?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:43.861305+00:00"
+    },
+    {
+      "file": "XPH-5m.json",
+      "bytes": 36106,
+      "sha256": "dfeb8d2102eb8e1a0dd5acaccd44846e2c112139ac38b8f19809a8f23b49b636",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XPH?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:40.965025+00:00"
+    },
+    {
+      "file": "macro-aaa90cf59e2c1e02.txt",
+      "bytes": 1008738,
+      "sha256": "d24688f6b3f7591da05e1d93eafe61880a008662685f7a3b9b39621ca32b35fb"
+    },
+    {
+      "file": "BATT-5m.json",
+      "bytes": 26038,
+      "sha256": "776151f1ce4393953fee0bb012f46f84eb12a3cdea0fade3835bd08e618649c9",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/BATT?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:46.308520+00:00"
+    },
+    {
+      "file": "macro-5a6017d9f7505432.json",
+      "bytes": 161,
+      "sha256": "0bc8bbb19d279326515d24fbe936d93e5a020fc5f1e1fe63d9481e7d42b693c3",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DCOILWTICO&cosd=2025-10-03&coed=2026-11-07",
+      "retrievedAt": "2026-11-07T07:47:17.845016+00:00"
+    },
+    {
+      "file": "macro-1eaa904edd6c0b77.txt",
+      "bytes": 4535,
+      "sha256": "68ca37d0f054053394a6bac7abc3d7305788444aaebf7313b9a645780fed7ba0"
+    },
+    {
+      "file": "macro-before.json",
+      "bytes": 12162,
+      "sha256": "eb4c7415dd919c37d4aa559eb7a0944254b1f4bf3e2e47c296801d8fb4f319db"
+    },
+    {
+      "file": "XOP-5m.json",
+      "bytes": 39363,
+      "sha256": "cb592bc0a50d5ad4735b71f942e72feabd8167636e69b145e61b54dd49818bba",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XOP?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:24.674752+00:00"
+    },
+    {
+      "file": "macro-72d3b4a65a8e4db3.txt",
+      "bytes": 236,
+      "sha256": "174bfdf3cc2938f8e6901299ccc11a392052b8322e40cf20ad73753642471423"
+    },
+    {
+      "file": "XLC-5m.json",
+      "bytes": 39782,
+      "sha256": "9f8e59a1f3d0450e17cebef6284d2dfafa0bc60fe8d4859b5028b540d5b38047",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLC?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:10.599605+00:00"
+    },
+    {
+      "file": "FDN-5m.json",
+      "bytes": 37764,
+      "sha256": "8d867d8af8930fef99b3337ad799aaf3842836dc74b11096d2c49154f67668c8",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/FDN?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:41.008837+00:00"
+    },
+    {
+      "file": "XRT-5m.json",
+      "bytes": 38168,
+      "sha256": "71ecd73152b8dbf54203fb38400fdbe1cbfb0d05e7afd232ffdaa559dc2f273f",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XRT?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:24.668985+00:00"
+    },
+    {
+      "file": "IYT-1d.json",
+      "bytes": 29695,
+      "sha256": "c08023a855572e8976ee50bdfcf5a8b5a58b7165fb485f277247028258cf065d",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IYT?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:27.444854+00:00"
+    },
+    {
+      "file": "IBB-5m.json",
+      "bytes": 39151,
+      "sha256": "a6eca5a4beaa381a3d844ec05421543207c2a42e3a389a2a386ed328026c56f2",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IBB?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:40.972854+00:00"
+    },
+    {
+      "file": "audit.log",
+      "bytes": 14845,
+      "sha256": "6430708e8cf1276cb5ee8449f87425c1611b31d4f9c5f0dc3c53ef010aef0f23"
+    },
+    {
+      "file": "LIT-5m.json",
+      "bytes": 36825,
+      "sha256": "0a897823f713877d279e90d834bdc2b3138de5c52ccd0e9a1af1ebccc04384ad",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/LIT?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:24.704928+00:00"
+    },
+    {
+      "file": "macro-8e8f2c99dd2399d2.txt",
+      "bytes": 1243747,
+      "sha256": "c8927854b8aa8b984070d1d2c2802d8c7c339d9bef88f2d8fd0aaa9fa527a1a1"
+    },
+    {
+      "file": "XLB-1d.json",
+      "bytes": 30853,
+      "sha256": "e19bd4fb9e6b5240f3a5fa5e3965f58bed06beeee77934850e27fb66589e92b7",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLB?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:27.481112+00:00"
+    },
+    {
+      "file": "XAR-1d.json",
+      "bytes": 30049,
+      "sha256": "67fdcf5f42b966f57a4cfa08df19a75da91610b27cb3bb9db3651eb8e1a35806",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XAR?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:38.231114+00:00"
+    },
+    {
+      "file": "FAN-1d.json",
+      "bytes": 30760,
+      "sha256": "16f9523848757d3c8ed06dc46cfba829d39f11c1b1481876c447fca015ecc7d8",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/FAN?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:08.106760+00:00"
+    },
+    {
+      "file": "ITA-1d.json",
+      "bytes": 30204,
+      "sha256": "0dc9f7246909108e7f6a1becda2a492fd6f09d7640d41603d640d043181b7e10",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/ITA?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:32.917698+00:00"
+    },
+    {
+      "file": "IYT-5m.json",
+      "bytes": 37647,
+      "sha256": "b7dc059f6e6711faa5d88f7ba31c4405f00e8b090d9721e1d79ec36310f82d51",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IYT?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:30.111062+00:00"
+    },
+    {
+      "file": "macro-b0a1839594902734.txt",
+      "bytes": 78965,
+      "sha256": "3748ddeeb7d92b27f93c63e546cca183b5a964a47b868b1be4df2f4d11408a6d"
+    },
+    {
+      "file": "macro-tests.log",
+      "bytes": 123,
+      "sha256": "f39e9d08d6b6b5968c0efa114d44dd7e5051e1a351696edf85e9ad6bd4b9c87f"
+    },
+    {
+      "file": "macro-c3fde7688613b81f.txt",
+      "bytes": 1028393,
+      "sha256": "7633a085fe30e48cc8dfe6df9d39984e0e6dc98a383477083031a634faefe2f1"
+    },
+    {
+      "file": "IHF-5m.json",
+      "bytes": 39061,
+      "sha256": "e61afcf079baa29c8dd94053aca338365b2ec2d35144c7816de0b48354c01b3b",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IHF?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:10.601705+00:00"
+    },
+    {
+      "file": "XLF-5m.json",
+      "bytes": 39274,
+      "sha256": "5ecab9d1c10324ee7b0f27246ecab95408a34f89200591c1ee4cc66a473aaae2",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLF?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:24.657698+00:00"
+    },
+    {
+      "file": "macro-25219ba4e23d8394.txt",
+      "bytes": 942101,
+      "sha256": "9b791354f6cf29bababe2113b7cef0cbf53027a88152e81ebb587dbd2badcc11"
+    },
+    {
+      "file": "XLK-1d.json",
+      "bytes": 31264,
+      "sha256": "5fe3ec58452147ee8786852a8fdd8343b2bf6f64a984e46e5604ff656c480fbd",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLK?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:52.034830+00:00"
+    },
+    {
+      "file": "XOP-1d.json",
+      "bytes": 31178,
+      "sha256": "c7effc50bd9c53e9f89c656e5e174854ade32834d33e9ef3dde3b709e89c84ed",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XOP?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:21.957146+00:00"
+    },
+    {
+      "file": "CIBR-1d.json",
+      "bytes": 30112,
+      "sha256": "8092a7f9e545ee17ab9162b3c5bb1bde0c08b5c93e0d58060361789e4255e1e1",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/CIBR?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:43.873949+00:00"
+    },
+    {
+      "file": "macro-5957d0b3c45ab1fd.txt",
+      "bytes": 979263,
+      "sha256": "eaab5eecf9d8f7a0624d31598357cdf0c2deb1230c53eb3978f8f257cd974c24"
+    },
+    {
+      "file": "XLI-5m.json",
+      "bytes": 39838,
+      "sha256": "8dfd82cda3a9d93cbcea80c102a59d0ba51c00415583825de5c98b7fd6f3617c",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLI?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:35.561269+00:00"
+    },
+    {
+      "file": "XLK-5m.json",
+      "bytes": 39523,
+      "sha256": "fef0e0f9b7b4b6321bf0269c0450cb36dc3760c6732bc3a07faf64ab3c02024d",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLK?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:54.573223+00:00"
+    },
+    {
+      "file": "macro-1eaa904edd6c0b77.json",
+      "bytes": 156,
+      "sha256": "a2c57729a790bb1f59e107fdb260ba142ea901f51fc19a0a084284bca3902e2a",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS10&cosd=2025-10-03&coed=2026-11-07",
+      "retrievedAt": "2026-11-07T07:47:12.512237+00:00"
+    },
+    {
+      "file": "macro-ui-tests.log",
+      "bytes": 210,
+      "sha256": "4516b4947fa5f80265b3577781e11980d24b7b5ba3062e0edd21fb759dc008a4"
+    },
+    {
+      "file": "XLY-1d.json",
+      "bytes": 31590,
+      "sha256": "98111794e28b003b6035d9e35f4e85bece0de833dabb33bf411917875a4fbfee",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLY?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:32.961430+00:00"
+    },
+    {
+      "file": "XLC-1d.json",
+      "bytes": 31394,
+      "sha256": "3f2127d66f5ac3dac2ed1a436b931b5728c1d4595a283c254006e249f3681d5a",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLC?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:08.105289+00:00"
+    },
+    {
+      "file": "XLP-5m.json",
+      "bytes": 38428,
+      "sha256": "9ef5a42b500f38788e97cc69027e681659dd0923620886c980da876b9cd14001",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLP?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:10.609134+00:00"
+    },
+    {
+      "file": "KBE-5m.json",
+      "bytes": 37931,
+      "sha256": "030e2205211cc2356d1ea8908936e5baf41ae7e94a29d5c38fc6a2166872db39",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/KBE?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:19.381035+00:00"
+    },
+    {
+      "file": "XLRE-5m.json",
+      "bytes": 39125,
+      "sha256": "9b16741b9765b24ca1e66eb39fc8751379dc7ec1190f2ee85dd4a62416a00f08",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLRE?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:19.444921+00:00"
+    },
+    {
+      "file": "macro-90ddb066ccf8fc84.json",
+      "bytes": 155,
+      "sha256": "50e8b72f277f916beabbcaf1743c5db4681d3d6a9c34168891827d36cb534f8a",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=M1SL&cosd=2025-10-03&coed=2026-11-07",
+      "retrievedAt": "2026-11-07T07:47:17.989062+00:00"
+    },
+    {
+      "file": "IBB-1d.json",
+      "bytes": 30916,
+      "sha256": "6cb6f97e204571a9d4398e6293ce084b7f4ddc5d549f4d3c17fdbb3fcd8d16cc",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IBB?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:38.213472+00:00"
+    },
+    {
+      "file": "IHI-1d.json",
+      "bytes": 30787,
+      "sha256": "586c9fe429b3cbed7128e28f7512edbbc0ba61130aa40ece6a40fdddce518f9c",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IHI?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:16.697198+00:00"
+    },
+    {
+      "file": "XBI-5m.json",
+      "bytes": 39388,
+      "sha256": "56fa3d80873cf758e3d59d805acbcb59b1d7741ca43cce41618f92802f12e271",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XBI?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:46.357077+00:00"
+    },
+    {
+      "file": "XBI-1d.json",
+      "bytes": 30919,
+      "sha256": "8d25866a5d2665c6c8987a5b9b9d87252fe7f9dc8d5b375d742d013a4ce356f2",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XBI?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:43.824917+00:00"
+    },
+    {
+      "file": "LIT-1d.json",
+      "bytes": 29451,
+      "sha256": "b6f8cd5534d3f6903a652519824ae3c51c91bdbc772074697a5bc8c906ff8036",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/LIT?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:21.958328+00:00"
+    },
+    {
+      "file": "macro-90ddb066ccf8fc84.txt",
+      "bytes": 250,
+      "sha256": "22eca7e516c0f55a8fe58ca5e93de9916390ed610ead1edc784f054022c07db1"
+    },
+    {
+      "file": "XRT-1d.json",
+      "bytes": 30119,
+      "sha256": "a0aae76751b611d5a137d65947ce63f2a03bfbe5a4a606cd60a268fcddbe86d5",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XRT?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:21.945830+00:00"
+    },
+    {
+      "file": "XLF-1d.json",
+      "bytes": 30893,
+      "sha256": "01ae3bebc3961d89d41d02faabdffbdc31a6d8634b5c2864513940f8d5c19e3b",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLF?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:21.896898+00:00"
+    },
+    {
+      "file": "IHI-5m.json",
+      "bytes": 38891,
+      "sha256": "027bcd6a3b0a32dfba3977e3ea2c9830e95c1efb5457f411b8d7b626230d77e0",
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IHI?range=5d&interval=5m&includePrePost=false&events=div%2Csplits",
+      "retrievedAt": "2026-11-07T07:47:19.437016+00:00"
+    },
+    {
+      "file": "cme-browser-views.json",
+      "bytes": 35672,
+      "sha256": "7ca41a91832da6c1f44c9f532a776bbce1f32a6724a9c0cdab6843fd0df6d63c"
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "preparedAt": "2026-11-07T07:53:54.669612+00:00",
+  "baseCommit": "327de5de0ccb3dd96997aa476dc967666b299b99",
+  "preparationOnly": true,
+  "reportCutoffAt": "2026-11-07T07:00:00+09:00",
+  "confirmedTickers": [
+    "BEN",
+    "CHTR",
+    "HUM",
+    "MRNA",
+    "PPL",
+    "VST"
+  ],
+  "scope": "six official S&P500 reporters, not full universe audit",
+  "exclusions": [
+    {
+      "ticker": "ECHO",
+      "reason": "SEC Q3 report already filed November3, not November6",
+      "url": "https://www.sec.gov/Archives/edgar/data/1415404/000110465926121675/sats-20260930x10q.htm"
+    },
+    {
+      "ticker": "BRK.B",
+      "reason": "November7 expected release; no verified November6 release"
+    },
+    {
+      "ticker": "SPCX",
+      "reason": "No new November6 release verified; prior October20 release not replicated"
+    }
+  ],
+  "limitations": [
+    "Top10 November6 ranking not independently verified; November5 historical verified snapshot retained unchanged except explanatory note.",
+    "VST current diluted EPS unverified; consensus sources mixed basic/diluted and adjusted bases so not compared.",
+    "MRNA EPS estimate basis not fully established, so comparison null despite widely reported -1.10 estimate.",
+    "CHTR pro forma vs actual scope prevents naive consensus revenue and EPS comparison.",
+    "PPL and VST 2025Q4 direct quarter rows not fully verified; null preserved.",
+    "Actual call start/end timestamps not measured; scheduled times distinct.",
+    "All call summaries added as supplement at actual recovery check; PPL transcript publication 18:58ET after cutoff.",
+    "No verified cutoff-time after-hours ticks.",
+    "Public transcript can contain transcription errors, official release takes precedence."
+  ],
+  "files": [
+    {
+      "filename": "BEN-facts.json",
+      "sha256": "1dd49e7e114b0ab135123530cc35d23a4bd53e6165256253f035ed446b62e671",
+      "bytes": 4377457
+    },
+    {
+      "filename": "BEN-release.html",
+      "sha256": "b4b5039b44b4a3ae6667069a9983a3f68270601feeb0c77c396809fcc4b34e87",
+      "bytes": 675494
+    },
+    {
+      "filename": "BEN-release.txt",
+      "sha256": "abafd08a3bdd3d55265c1310f3d0f6fd991795ed87952e8dc5f456fbb546403b",
+      "bytes": 31635
+    },
+    {
+      "filename": "CHTR-facts.json",
+      "sha256": "d1f58b3bb3351166a6c1876517d75cdf7e89f9b8a028d482ab628280883e5a36",
+      "bytes": 3254058
+    },
+    {
+      "filename": "CHTR-q4.txt",
+      "sha256": "b0ee84896d2604bb3fc4fb6c89a1051a41e43a50b5f73d344032f2d604f258c6",
+      "bytes": 1756078
+    },
+    {
+      "filename": "CHTR-release.html",
+      "sha256": "a5fab7e2c26f31a42da6ae9df284f463fb7c61236633f4577536c6c75647483f",
+      "bytes": 888301
+    },
+    {
+      "filename": "CHTR-release.txt",
+      "sha256": "31cb033e3aa8857872b8d226fa1e0e52c591e40928e9dc89006545f3826efbb7",
+      "bytes": 64180
+    },
+    {
+      "filename": "HUM-facts.json",
+      "sha256": "dbcb26838f1989b01eb88689b3a05b886d700bb8cf8ab0c70cd060228699b0e9",
+      "bytes": 4478015
+    },
+    {
+      "filename": "HUM-q4.txt",
+      "sha256": "8c2dd3aec97dca49a791b9c11d461fcbeb9185bc2916a43fc2f8643112c48725",
+      "bytes": 63049
+    },
+    {
+      "filename": "HUM-release.html",
+      "sha256": "6863f2db7200901d6b194fdcec6bba88a2b65dac28236f33db981f18b61b08b3",
+      "bytes": 900313
+    },
+    {
+      "filename": "HUM-release.txt",
+      "sha256": "e680acd2d219b875a21723969f393a5afe285265ed1fea4b81094af9a5760288",
+      "bytes": 63467
+    },
+    {
+      "filename": "MRNA-facts.json",
+      "sha256": "bd7e019c7861dc6435c40fd42f45394902666dbc1532f2d71437bbc6620d4888",
+      "bytes": 1922442
+    },
+    {
+      "filename": "MRNA-q4.txt",
+      "sha256": "2ebcfc2c44c701ae935ec3c4deeaba855ff75fb2d8fd8efe1ba9d934086aff3c",
+      "bytes": 19969
+    },
+    {
+      "filename": "MRNA-release.html",
+      "sha256": "40c0797841a0d03de3898c9363f913d589f5f258be91fb0fdd84a57bd2ec6661",
+      "bytes": 170468
+    },
+    {
+      "filename": "MRNA-release.txt",
+      "sha256": "488bc70ab94c327e5b61cd6e004e8390a707a036be660479bac4a3a100efe86a",
+      "bytes": 19485
+    },
+    {
+      "filename": "PPL-facts.json",
+      "sha256": "39e8ec896ba6f9d6ffae55e9c8d4449a5cd7bd7d5471cca5f57d78dc362c3dd5",
+      "bytes": 4983953
+    },
+    {
+      "filename": "PPL-q2.txt",
+      "sha256": "4dd446db74a9e911e00f155f042edba74e5f682e24ca30756fd5e98146f799fb",
+      "bytes": 403723
+    },
+    {
+      "filename": "PPL-release.html",
+      "sha256": "9e94765769915368f7b5b053cab5bfe9893fe767c2ca03c526009c6f26bff653",
+      "bytes": 577825
+    },
+    {
+      "filename": "PPL-release.txt",
+      "sha256": "d5386df0caff45ee301e29f90f98c676e5a2f0d0499a120c6f8f2512dc69abf4",
+      "bytes": 41926
+    },
+    {
+      "filename": "VST-facts.json",
+      "sha256": "c0484a20916438410181975f561d3f9307116cdf096c4c6abd386cdd7228e1e1",
+      "bytes": 2587779
+    },
+    {
+      "filename": "VST-q4.txt",
+      "sha256": "2d84a736a24064931c59b6776d3e16fe1dd2b92720724931b1d718ac631ec3c3",
+      "bytes": 36482
+    },
+    {
+      "filename": "VST-release.html",
+      "sha256": "e0a0db0a2d3a23a304343c68a06f2ed5a320d86e669561b08c515bd2745c2137",
+      "bytes": 658067
+    },
+    {
+      "filename": "VST-release.txt",
+      "sha256": "170788d29fa9d0a36e2e885b8f58a8d8e16cffb25b081a5cb9cb693e096d20ca",
+      "bytes": 32752
+    },
+    {
+      "filename": "calls1.json",
+      "sha256": "2fd8f42fd2f1771dbcb561eb657c69ae434491894632339bdcb239291f7324a1",
+      "bytes": 34974
+    },
+    {
+      "filename": "calls2.json",
+      "sha256": "fa42c0371ee1548973429697e9c1395c6d7fd55eeb11017508a8f26e15b89cf9",
+      "bytes": 26831
+    },
+    {
+      "filename": "calls_full1.json",
+      "sha256": "fb8a6ae65d03da7c2da248dc06f1a2e6c4035402aeed93e222e62916fe1d6e46",
+      "bytes": 30341
+    },
+    {
+      "filename": "calls_full2.json",
+      "sha256": "c06bd906446df60da098d5d5fd3e8202b3b7cb8f8a3cd369c596ed0105a7b5d8",
+      "bytes": 40621
+    },
+    {
+      "filename": "calls_full3.json",
+      "sha256": "766346c4739ee24203585d30ea0c70a26bb8283f5d218337411a7d3673ee8bcb",
+      "bytes": 38816
+    },
+    {
+      "filename": "consensus1.json",
+      "sha256": "ff8c768db098cc3e320633c6a2b86ac9f460f8a17fd312360858336028e87e3b",
+      "bytes": 33770
+    },
+    {
+      "filename": "earnings.json",
+      "sha256": "819a45f7182ca0760c9b71ab793f78db8f134bea34f2ec8d4f556c56ec64ca8e",
+      "bytes": 90405
+    },
+    {
+      "filename": "history1.json",
+      "sha256": "49544e997a8611546652550ba18672d0c26a1ae18a5c9f5e6677a933b292b2a5",
+      "bytes": 13209
+    },
+    {
+      "filename": "history2.json",
+      "sha256": "84f6619db54e7ab364cdcaf018ce5d082ed54b3c4aea0f27929cf0fb97ec1701",
+      "bytes": 12342
+    },
+    {
+      "filename": "official1.json",
+      "sha256": "7bc501eeb1c80cac7100acd8af13f32ad96401d0fc3c4559857281391d997aa2",
+      "bytes": 18725
+    },
+    {
+      "filename": "official2.json",
+      "sha256": "deea3b2918ba52880db7d37112fbb392c8a72d1ec458441640e0ebbc51fbac79",
+      "bytes": 28791
+    },
+    {
+      "filename": "official3.json",
+      "sha256": "f310e96d3d17a8e3bca1bbaa00e93457a9eb22f19eed89e69b61c17d1daaf88d",
+      "bytes": 29594
+    },
+    {
+      "filename": "official4.json",
+      "sha256": "52804fb45f63fd6d93b592e9887fd7e04def1b0a1ebf7afd5166cf8f0b3d3a21",
+      "bytes": 33014
+    },
+    {
+      "filename": "official5.json",
+      "sha256": "9d0bcad5c3a391bf265f77c8368f8e4578a42e5d6ed4688b76fca2920d7cdc72",
+      "bytes": 29724
+    },
+    {
+      "filename": "release-urls.json",
+      "sha256": "29b174764a7f92f8e0b1e6f055dcc4a6948f0be3e2b4202b675719c935602e6e",
+      "bytes": 757
+    },
+    {
+      "filename": "search3.json",
+      "sha256": "d40b46724d198830ee674ead69efaf90a9a23242b5de75fd221fdecd9df8eef8",
+      "bytes": 30101
+    },
+    {
+      "filename": "sources.json",
+      "sha256": "d488bb2681b19f7a4d9225fcb1c25197548341741a2ee35f403990af22a57cb8",
+      "bytes": 9669
+    }
+  ],
+  "candidateTransforms": [
+    "Same-basis QoQ fields calculated with scripts/earnings_comparisons.normalize_metric; negative/zero bases use explicit turnaround wording.",
+    "displayCallHighlights contains verified call arrays rather than a truthy flag so all six summaries render.",
+    "callSupplement displayTime is actual checkedAt converted to Asia/Seoul; no release date or price observation rewritten."
+  ]
+}
