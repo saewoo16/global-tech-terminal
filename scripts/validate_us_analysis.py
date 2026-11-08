@@ -7,7 +7,10 @@ from urllib.parse import urlparse
 ROOT = Path(__file__).resolve().parents[1]
 
 
-ET = __import__('zoneinfo').ZoneInfo('America/New_York')
+try:
+    from us_exchange_calendar import ET, us_session_close, previous_us_session
+except ModuleNotFoundError:  # Import-by-path callers run from the repository root.
+    from scripts.us_exchange_calendar import ET, us_session_close, previous_us_session
 
 
 def finite_number(value):
@@ -19,6 +22,44 @@ def market_time(value):
     parsed = dt.datetime.fromisoformat(value.replace('Z', '+00:00'))
     assert parsed.tzinfo is not None, 'Market timestamps must include an offset'
     return parsed.astimezone(ET)
+
+
+def validate_session_timestamps(entry, now=None):
+    """Check stated session claims; do not retroactively certify a legacy entry."""
+    verification = entry.get('sessionVerification')
+    if verification is None and entry['date'] == '2026-10-16':
+        # The original archival entry predates this metadata contract.
+        return
+    assert isinstance(verification, dict), 'Session verification required'
+    date = dt.date.fromisoformat(entry['date'])
+    expected_close = us_session_close(date)
+    assert verification.get('exchangeDate') == entry['date'], 'Session exchangeDate mismatch'
+    assert verification.get('previousSession') == previous_us_session(date).isoformat(), 'Incorrect previous trading session'
+    opened = market_time(verification.get('openedAt'))
+    closed = market_time(verification.get('closedAt'))
+    assert opened == dt.datetime.combine(date, dt.time(9, 30), ET), 'Incorrect regular-session open'
+    assert closed == expected_close, 'Incorrect official regular-session close'
+    now = market_time(now) if isinstance(now, str) else (now or dt.datetime.now(dt.timezone.utc))
+    assert closed <= now, 'A future session is not completed'
+    retrieved = market_time(verification.get('retrievedAt'))
+    assert closed <= retrieved <= now, 'Session retrieval must follow close and not be in the future'
+    if entry.get('collectedAt') is not None:
+        collected = market_time(entry['collectedAt'])
+        assert closed <= collected <= now, 'Entry collection must follow close and not be in the future'
+    assert verification.get('sourceIds'), 'Session verification needs calendar sources'
+    sources = {source['id']: source for source in entry.get('sources', [])}
+    official_calendars = {
+        'https://www.nyse.com/trade/hours-calendars',
+        'https://www.nyse.com/markets/hours-calendars',
+        'https://www.nasdaq.com/market-activity/stock-market-holiday-schedule',
+        'https://www.nasdaqtrader.com/trader.aspx?id=calendar',
+        'https://nasdaqtrader.com/trader.aspx?id=calendar',
+    }
+    assert any(sources.get(sid, {}).get('url', '').rstrip('/').lower() in official_calendars
+               for sid in verification['sourceIds']), 'Session requires an official exchange calendar source'
+    for field in ('observedAt',):
+        if verification.get(field) is not None:
+            assert closed <= market_time(verification[field]) <= now, 'Session observation must follow close and not be in the future'
 
 
 def validate_fx(rows):
@@ -185,15 +226,15 @@ def validate_earnings_prices(row):
         assert dt.date.fromisoformat(regular['previousDate']) < release_date
         close_time = market_time(regular['closedAt'])
         assert close_time.date() == release_date
-        assert dt.time(9,30) < close_time.time() <= dt.time(16), 'Use actual exchange close, including half days'
+        assert close_time == us_session_close(release_date), 'Use actual exchange close, including half days'
         assert all(finite_number(regular[k]) for k in ('close','previousClose','changePct'))
         assert regular['close'] > 0 and regular['previousClose'] > 0
         expected = (regular['close'] / regular['previousClose'] - 1) * 100
         assert math.isclose(regular['changePct'], expected, abs_tol=0.005), 'Regular return is relative to previous close'
     if published and session == 'after_close':
-        assert published.time() >= (close_time.time() if close_time else dt.time(16))
+        assert published >= (close_time or us_session_close(release_date))
     if published and session == 'during_session':
-        assert dt.time(9,30) <= published.time() <= (close_time.time() if close_time else dt.time(16))
+        assert dt.time(9,30) <= published.time() <= (close_time or us_session_close(release_date)).time()
     after = reaction.get('afterHours') or {}
     assert after.get('status') in ('verified', 'unverified', 'not_applicable')
     if after['status'] == 'verified':
@@ -250,6 +291,7 @@ def validate(payload):
         assert e['date'] not in dates, 'Duplicate daily entry'
         dates.add(e['date'])
         assert e.get('sessionStatus') == 'closed'
+        validate_session_timestamps(e)
         assert e.get('universe') == 'S&P 500'
         assert len(e.get('indices', [])) == 4
         ids = {s['id'] for s in e['sources']}

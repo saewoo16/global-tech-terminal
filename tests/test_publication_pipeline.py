@@ -14,7 +14,7 @@ class PublicationPipelineTests(unittest.TestCase):
         command = 'run: bash scripts/validate_publication.sh'
         self.assertEqual(workflow.count(command), 2)
         before, after = [m for m in range(len(workflow)) if workflow.startswith(command, m)]
-        for updater in ('update_data.py', 'update_korean_market.py',
+        for updater in ('update_data.py',
                         'patch_japan_financials.py', 'patch_regional_earnings.py',
                         'apply_financial_backfills.py', 'audit_coverage.py'):
             self.assertLess(before, workflow.index(updater))

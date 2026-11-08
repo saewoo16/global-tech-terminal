@@ -263,11 +263,22 @@ class SplitPreservationTests(unittest.TestCase):
                 fixture=self.fixture();self.append_session(fixture)
                 fixture['dailyResponse']['meta']['currentTradingPeriod']['regular']=regular
                 self.assert_rejected(fixture,'invalid new-session regular trading period')
-        # Synthetic early-close case: source session hours, not a fixed 16:00,
-        # determine completion. No real early close is asserted for this date.
-        fixture=self.fixture();new=self.append_session(fixture)
+        # A provider's premature 13:00 close on a normal 16:00 session must
+        # fail both direct daily filtering and the protected append path.
+        fixture=self.fixture();self.append_session(fixture)
         fixture['dailyResponse']['meta']['currentTradingPeriod']['regular']['end']=stamp('2026-11-06','13:00:00')
-        self.assertEqual(self.build(fixture,dt.datetime.fromisoformat('2026-11-06T19:00:00+00:00'))['daily'][-1],new)
+        now=dt.datetime.fromisoformat('2026-11-06T19:00:00+00:00')
+        self.assertNotIn('2026-11-06',[b['date'] for b in m.daily_bars(fixture['dailyResponse'],now)])
+        before=copy.deepcopy(fixture['previous'])
+        with self.assertRaisesRegex(ValueError,'invalid new-session regular trading period'):
+            self.build(fixture,now)
+        self.assertEqual(fixture['previous'],before)
+        # A real calendar early close, using synthetic prices only.
+        fixture=self.fixture();new=self.append_session(fixture,date='2026-11-27')
+        fixture['dailyResponse']['meta']['currentTradingPeriod']['regular']['end']=stamp('2026-11-27','13:00:00')
+        self.assertEqual(self.build(fixture,dt.datetime.fromisoformat('2026-11-27T19:00:00+00:00'))['daily'][-1],new)
+        before_close=self.build(fixture,dt.datetime.fromisoformat('2026-11-27T17:59:00+00:00'))
+        self.assertEqual(before_close['daily'],fixture['previous']['daily'])
 
     def test_source_timezone_interval_and_duplicate_sessions_fail_closed(self):
         for key,value in (('exchangeTimezoneName','Asia/Seoul'),('dataGranularity','5m')):

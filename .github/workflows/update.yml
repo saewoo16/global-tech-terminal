@@ -1,5 +1,5 @@
 
-name: Update market data
+name: Update company data
 
 on:
   workflow_dispatch:
@@ -42,17 +42,6 @@ jobs:
           FETCH_FINANCIALS: ${{ github.event_name == 'workflow_dispatch' && '1' || '0' }}
         run: python scripts/update_data.py
 
-      - name: Update Korean market series and preserve valid snapshots
-        env:
-          OFFICIAL_KR_LIQUIDITY: '1'
-        run: python scripts/update_korean_market.py
-
-      - name: Refresh overseas sector and theme ETF charts
-        run: python scripts/update_overseas_etf_charts.py
-
-      - name: Refresh source-dated macro quote snapshots
-        run: python scripts/update_macro_quotes.py
-
       - name: Backfill Japanese financials
         run: python scripts/patch_japan_financials.py
 
@@ -65,6 +54,11 @@ jobs:
       - name: Audit every company and reject coverage regressions
         run: python scripts/audit_coverage.py --baseline /tmp/market-baseline.json
 
+      # Other market panels have their own existing collectors. Keep this
+      # scheduled/manual company fallback, but reject cross-tab writes.
+      - name: Reject changes outside company data
+        run: python scripts/check_publication_scope.py --scope company --base HEAD
+
       # Validate the actual refreshed candidate, not only the checkout baseline.
       # Any failure stops the job before git add, commit, or push.
       - name: Validate refreshed publication candidate
@@ -74,7 +68,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/
+          python scripts/check_publication_scope.py --scope company --base HEAD
+          git add data/market.json data/coverage.json data/coverage.csv data/regional_earnings_coverage.csv
           if ! git diff --cached --quiet; then
             git commit -m "Update market data"
             bash scripts/publish_collected_data.sh

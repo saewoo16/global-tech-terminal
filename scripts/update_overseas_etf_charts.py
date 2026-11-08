@@ -4,10 +4,12 @@ Daily bars and returns are price-only (Yahoo split-adjusted close, not adjusted
 close/dividend total return). Only completed regular-session daily bars are used.
 The intraday chart contains actual five-minute regular-session observations.
 """
-import argparse, calendar, concurrent.futures, copy, datetime as dt, json, math, pathlib, time, urllib.parse, urllib.request
+import argparse, calendar, concurrent.futures, copy, datetime as dt, json, math, pathlib, sys, time, urllib.parse, urllib.request
 from zoneinfo import ZoneInfo
 NY = ZoneInfo('America/New_York')
 ROOT = pathlib.Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(ROOT/'scripts'))
+from us_exchange_calendar import latest_completed_session, us_session_close
 THEMES={'LIT','BATT','ICLN','TAN','FAN','FDN','CIBR','CLOU'}
 
 def issuer_name(name):
@@ -41,10 +43,10 @@ def daily_bars(raw, now):
     for i,stamp in enumerate(raw.get('timestamp',[])):
         local=dt.datetime.fromtimestamp(stamp,NY)
         # Don't publish a still-open US trading session as a completed daily bar.
-        # Yahoo's currentTradingPeriod is authoritative for the latest session,
-        # including exchange early closes; older sessions necessarily completed.
-        regular=raw.get('meta',{}).get('currentTradingPeriod',{}).get('regular',{})
-        regular_end=regular.get('end')
+        # Require agreement between dated provider bounds and the reviewed
+        # exchange schedule; a premature provider close is not completion.
+        bounds=regular_session_periods(raw).get(local.date().isoformat())
+        regular_end=bounds[1] if bounds else None
         if local.date()==now.astimezone(NY).date():
             if regular_end is None or now.timestamp()<regular_end: continue
         if local.date()>now.astimezone(NY).date(): continue
@@ -64,7 +66,8 @@ def retain_verified_missing_bars(bars, raw, previous, now):
     if not previous or not raw.get('timestamp'):return bars,[]
     dates=[dt.datetime.fromtimestamp(stamp,NY).date().isoformat() for stamp in raw['timestamp']]
     first,last=min(dates),max(dates);by_date={b['date']:b for b in bars};retained=[]
-    local=now.astimezone(NY);end=raw.get('meta',{}).get('currentTradingPeriod',{}).get('regular',{}).get('end')
+    local=now.astimezone(NY);bounds=regular_session_periods(raw).get(local.date().isoformat())
+    end=bounds[1] if bounds else None
     for bar in previous.get('daily',[]):
         date=bar.get('date','')
         if date in by_date or not first<=date<=last or date>local.date().isoformat():continue
@@ -211,7 +214,8 @@ def preserve_verified_daily_history(bars, raw, previous, ticker, now):
             start,end=regular.get('start'),regular.get('end')
             if (not positive(start) or not positive(end) or start>=end
                 or dt.datetime.fromtimestamp(start,NY).date().isoformat()!=date
-                or dt.datetime.fromtimestamp(end,NY).date().isoformat()!=date):
+                or dt.datetime.fromtimestamp(end,NY).date().isoformat()!=date
+                or date not in regular_session_periods(raw)):
                 fail('invalid new-session regular trading period')
             if now.timestamp()<end:continue
         if date not in fresh:fail('invalid or missing new completed candle on '+date)
@@ -279,11 +283,60 @@ def period_returns(bars):
         if base and number(base['close'],True):result[period]=(end['close']/base['close']-1)*100;anchors[period]=base['date']
     return result,anchors
 
+def regular_session_periods(raw):
+    """Read dated regular-session bounds, never substitute normal close hours.
+
+    Yahoo currentTradingPeriod describes only one session. tradingPeriods may
+    supply historical sessions when returned with an intraday response. Missing
+    or conflicting bounds are deliberately unusable, including on early closes.
+    """
+    meta=raw.get('meta',{});candidates=[]
+    current=meta.get('currentTradingPeriod',{}).get('regular')
+    if current is not None:candidates.append(current)
+    periods=meta.get('tradingPeriods',[])
+    if isinstance(periods,dict):periods=periods.get('regular',[])
+    def collect(value):
+        if isinstance(value,list):
+            for child in value:collect(child)
+        elif isinstance(value,dict):candidates.append(value)
+    collect(periods)
+    result={};conflicts=set()
+    for period in candidates:
+        if not isinstance(period,dict):continue
+        start,end=period.get('start'),period.get('end')
+        if not number(start,True) or not number(end,True) or start>=end:continue
+        try:
+            first,last=dt.datetime.fromtimestamp(start,NY),dt.datetime.fromtimestamp(end,NY)
+        except (ValueError,OverflowError,OSError):continue
+        if first.date()!=last.date():continue
+        date=first.date().isoformat();bounds=(start,end)
+        try:
+            if end!=us_session_close(first.date()).timestamp() or first.time()!=dt.time(9,30):
+                conflicts.add(date);continue
+        except AssertionError:
+            conflicts.add(date);continue
+        if date in result and result[date]!=bounds:conflicts.add(date)
+        result[date]=bounds
+    return {date:bounds for date,bounds in result.items() if date not in conflicts}
+
+def session_observation(raw, now, source_url):
+    # Only a just-observed, already-closed session on the observation's local
+    # date proves the latest completed session without a full exchange calendar.
+    # A Friday period observed on Sunday does NOT prove no intervening session.
+    today=now.astimezone(NY).date().isoformat()
+    bounds=regular_session_periods(raw).get(today)
+    return {'observedAt':now.isoformat(),'sourceUrl':source_url,
+            'completedSession':today if bounds and bounds[1]<=now.timestamp() else None,
+            'regularStart':bounds[0] if bounds else None,'regularEnd':bounds[1] if bounds else None,
+            'status':'verified' if bounds and bounds[1]<=now.timestamp() else 'unverified'}
+
 def intraday_points(raw, now, latest_daily):
     quote=raw.get('indicators',{}).get('quote',[{}])[0];points=[]
+    bounds=regular_session_periods(raw).get(latest_daily)
+    if bounds is None:return points
     for i,stamp in enumerate(raw.get('timestamp',[])):
         local=dt.datetime.fromtimestamp(stamp,NY)
-        if stamp>now.timestamp() or local.date().isoformat()!=latest_daily or not dt.time(9,30)<=local.time()<dt.time(16,0):continue
+        if stamp>now.timestamp() or local.date().isoformat()!=latest_daily or not bounds[0]<=stamp<bounds[1]:continue
         price=quote.get('close',[])[i] if i<len(quote.get('close',[])) else None
         volume=quote.get('volume',[])[i] if i<len(quote.get('volume',[])) else None
         if number(price,True): points.append({'time':local.isoformat(),'price':price,'volume':volume if number(volume) else None})
@@ -327,6 +380,7 @@ def build_fund(row, sources, now, previous=None):
       'metadataAsOf':bars[-1]['date'],'metadataRetrievedAt':now.isoformat(),'aumUSD':None,'marketCapUSD':None,'volume':bars[-1].get('volume'),'quotePrice':bars[-1]['close'],'quoteChangePct':values['day'],
       'listedAt':dt.datetime.fromtimestamp(meta['firstTradeDate'],NY).date().isoformat() if meta.get('firstTradeDate') else None,
       'sourceUrls':[daily_url]+([intra_url] if intra_url else [])+hold_sources,'sourceTitles':['Yahoo Finance 실제 일별 OHLCV']+(['Yahoo Finance 실제 정규장 5분 OHLCV'] if intra_url else [])+['운용사 검증 보유내역 (표시된 기존 기준일)']*len(hold_sources),
+      'sessionObservation':session_observation(raw,now,daily_url),
       'daily':bars,'dailySourceUrl':daily_url,'dailyAdjustment':'Yahoo Finance split-adjusted OHLC close. 분배금 재투자·배당 조정종가 총수익률이 아닌 가격 수익률입니다.',
       'returns':values,'returnAnchors':anchors,'returnsMethodology':'1일: 직전 거래일 종가, 1주일: 달력 7일 전 해당일 또는 그 이전 가장 가까운 거래일 종가, 1달: 달력 한 달 전 해당일 또는 그 이전 가장 가까운 거래일 종가. 일봉과 같은 close 기준 가격 수익률.',
       'dailyCoverage':{'start':bars[0]['date'],'end':bars[-1]['date'],'count':len(bars),'requestedMonths':12,'shortHistory':len(bars)<200},
@@ -355,12 +409,11 @@ def build_fund(row, sources, now, previous=None):
     return fund
 
 def apply_session_coverage(funds, expected_codes, analysis_date, now):
-    """Expose actual per-fund tails; a newest header never means all funds current.
+    """Keep available-tail coverage separate from independently observed freshness.
 
-    An analysis date is only a target once it is in the past in New York, or
-    today's normal regular close has passed. This conservative gate does not
-    infer early-close/holiday calendars from a wall-clock date. Source-verified
-    completed daily bars remain independent evidence of the available session.
+    Neither analysis dates nor matching ETF tails establish today's latest
+    completed session. Without dated source bounds (or a verified exchange
+    calendar), preserve charts and expose unverified freshness, not complete.
     """
     local=now.astimezone(NY)
     eligible_analysis=None
@@ -372,7 +425,24 @@ def apply_session_coverage(funds, expected_codes, analysis_date, now):
         pass
     tails={f['code']:f['daily'][-1]['date'] for f in funds if f.get('daily')}
     dates=list(tails.values())
-    target=max(dates+([eligible_analysis] if eligible_analysis else []),default=None)
+    verified_sessions=[]
+    for fund in funds:
+        observation=fund.get('sessionObservation',{})
+        bounds=regular_session_periods({'meta':{'currentTradingPeriod':{'regular':{
+            'start':observation.get('regularStart'),'end':observation.get('regularEnd')}}}})
+        today=local.date().isoformat()
+        if (observation.get('observedAt')==now.isoformat()
+            and observation.get('status')=='verified'
+            and observation.get('completedSession')==today and today in bounds
+            and bounds[today][1]<=now.timestamp()):verified_sessions.append(today)
+    try:
+        latest_completed=latest_completed_session(now).isoformat()
+        freshness_basis='reviewed-official-exchange-calendar-2026'
+    except AssertionError:
+        latest_completed=None
+        freshness_basis='unavailable'
+    if latest_completed:verified_sessions.append(latest_completed)
+    target=max(dates+([eligible_analysis] if eligible_analysis else [])+verified_sessions,default=None)
     expected=list(dict.fromkeys(expected_codes))
     stale=[];missing=[];current=[];intraday_current=[]
     by_code={f['code']:f for f in funds}
@@ -394,13 +464,18 @@ def apply_session_coverage(funds, expected_codes, analysis_date, now):
             and all(p.get('time','')[:10]==target for p in points)):
             intraday_current.append(code)
     common=min(dates) if dates and not missing else None
-    return {'targetSession':target,'latestAvailable':max(dates) if dates else None,
+    return {'targetSession':target,'latestCompletedSession':latest_completed,
+            'freshnessStatus':'verified' if latest_completed and target==latest_completed else 'unverified',
+            'freshnessCheckedAt':now.isoformat(),'freshnessBasis':freshness_basis,
+            'freshnessSourceUrls':['https://www.nyse.com/trade/hours-calendars','https://www.nasdaq.com/market-activity/stock-market-holiday-schedule'] if latest_completed else [],
+            'freshnessNote':'최신 완료 세션은 현재 관측시각과 검토된 2026 공식 거래소 일정으로 독립 확인합니다. 지원 연도 밖은 추정하지 않습니다.',
+            'latestAvailable':max(dates) if dates else None,
             'commonThrough':common,'expectedFundCount':len(expected),'currentFundCount':len(current),
             'staleFundCount':len(stale),'missingFundCount':len(missing),
             'currentCodes':current,'staleCodes':stale,'missingCodes':missing,
             'actualSessions':tails,'intradayCurrentFundCount':len(intraday_current),
             'intradayUnverifiedCodes':[code for code in expected if code not in intraday_current],
-            'status':'complete' if len(current)==len(expected) and not missing else 'partial'}
+            'status':('complete' if latest_completed==target else 'unverified') if current and len(current)==len(expected) and not missing else 'partial'}
 
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--output',default=str(ROOT/'data/overseas_etf_charts.json'));parser.add_argument('--analysis',default=str(ROOT/'data/us_analysis.json'));args=parser.parse_args()

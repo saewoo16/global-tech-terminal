@@ -108,7 +108,7 @@ class OverseasETFTests(unittest.TestCase):
 
     def test_previous_whole_verified_bar_survives_malformed_yahoo(self):
         stamps=[int(dt.datetime.fromisoformat(t).timestamp()) for t in ['2026-10-28T09:30:00-04:00','2026-10-29T09:30:00-04:00']]
-        raw={'timestamp':stamps,'meta':{'instrumentType':'ETF','currency':'USD','currentTradingPeriod':{'regular':{'end':int(dt.datetime.fromisoformat('2026-10-29T16:00:00-04:00').timestamp())}}},'indicators':{'quote':[{'open':[100,90],'high':[102,110],'low':[99,95],'close':[101,105],'volume':[1,999]}]}}
+        raw={'timestamp':stamps,'meta':{'instrumentType':'ETF','currency':'USD','currentTradingPeriod':{'regular':{'start':stamps[-1],'end':int(dt.datetime.fromisoformat('2026-10-29T16:00:00-04:00').timestamp())}}},'indicators':{'quote':[{'open':[100,90],'high':[102,110],'low':[99,95],'close':[101,105],'volume':[1,999]}]}}
         whole={'date':'2026-10-29','open':100,'high':107,'low':98,'close':105,'volume':123}
         source={'date':'2026-10-29','sourceUrl':'https://scanner.tradingview.com/america/scan','observedAt':'2026-10-29T23:00:00+00:00'}
         old={'daily':[{'date':'2026-10-28','open':100,'high':102,'low':99,'close':101,'volume':1},whole], 'dailyBarSources':[source], 'dailyAdjustment':'Verified complete TradingView bar', 'sourceUrls':[source['sourceUrl']], 'sourceTitles':['TradingView whole candle']}
@@ -174,11 +174,12 @@ class OverseasETFTests(unittest.TestCase):
     def test_intraday_filters_extended_hours_and_other_dates(self):
         times=['2026-10-23T09:25:00-04:00','2026-10-23T09:30:00-04:00','2026-10-23T15:55:00-04:00','2026-10-23T16:00:00-04:00','2026-10-22T12:00:00-04:00']
         raw={'timestamp':[int(dt.datetime.fromisoformat(t).timestamp()) for t in times],'indicators':{'quote':[{'close':[100]*5,'volume':[20]*5}]}}
+        raw['meta']={'currentTradingPeriod':{'regular':{'start':raw['timestamp'][1],'end':raw['timestamp'][3]}}}
         points=m.intraday_points(raw,dt.datetime(2026,10,25,tzinfo=dt.timezone.utc),'2026-10-23')
         self.assertEqual(len(points),2);self.assertIn('09:30',points[0]['time']);self.assertEqual(points[0]['volume'],20)
     def test_daily_rejects_invalid_and_unfinished_bars(self):
         stamps=[int(dt.datetime.fromisoformat(t).timestamp()) for t in ['2026-10-22T09:30:00-04:00','2026-10-23T09:30:00-04:00']]
-        raw={'timestamp':stamps,'meta':{'currentTradingPeriod':{'regular':{'end':int(dt.datetime.fromisoformat('2026-10-23T16:00:00-04:00').timestamp())}}},'indicators':{'quote':[{'open':[100,101],'high':[102,103],'low':[99,100],'close':[101,102],'volume':[1,2]}]}}
+        raw={'timestamp':stamps,'meta':{'currentTradingPeriod':{'regular':{'start':stamps[-1],'end':int(dt.datetime.fromisoformat('2026-10-23T16:00:00-04:00').timestamp())}}},'indicators':{'quote':[{'open':[100,101],'high':[102,103],'low':[99,100],'close':[101,102],'volume':[1,2]}]}}
         before=dt.datetime.fromisoformat('2026-10-23T12:00:00-04:00');after=dt.datetime.fromisoformat('2026-10-23T16:01:00-04:00')
         self.assertEqual(len(m.daily_bars(raw,before)),1);self.assertEqual(len(m.daily_bars(raw,after)),2)
         raw['indicators']['quote'][0]['close'][0]=float('nan');self.assertEqual(len(m.daily_bars(raw,before)),0)

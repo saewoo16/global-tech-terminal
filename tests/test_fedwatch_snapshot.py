@@ -41,9 +41,10 @@ class FedWatchSnapshotTests(unittest.TestCase):
                 self.assertEqual(len(m[key]),len(m['columnsBps']))
                 self.assertLess(abs(sum(m[key])-100),.21)
                 self.assertTrue(all(0<=p<=100 for p in m[key]))
-    def test_macro_collector_wired_without_fake_fedwatch_refresh(self):
+    def test_macro_collector_kept_out_of_company_workflow(self):
         s=(ROOT/'.github/workflows/update.yml').read_text()
-        self.assertIn('python scripts/update_macro_quotes.py',s)
+        self.assertNotIn('python scripts/update_macro_quotes.py',s)
+        self.assertTrue((ROOT/'scripts/update_macro_quotes.py').is_file())
         self.assertNotIn('update_fedwatch.py',s)
 
 if __name__=='__main__':unittest.main()

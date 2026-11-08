@@ -39,10 +39,11 @@ class USAnalysisTests(unittest.TestCase):
 
 
  def test_new_daily_entries_preserve_historical_fixture(self):
-  later=copy.deepcopy(self.historical)
-  date=max(dt.date.fromisoformat(e['date']) for e in self.data['entries'])+dt.timedelta(days=1)
-  while date.weekday()>=5:date+=dt.timedelta(days=1)
-  later['date']=date.isoformat();later['earnings']['rows']=[];self.data['entries'].insert(0,later)
+  # Add a verified completed entry to the legacy archive, not an invented
+  # future weekday copied from an entry without session evidence.
+  later=copy.deepcopy(max(self.data['entries'],key=lambda e:e['date']))
+  self.data['entries']=[copy.deepcopy(self.historical)]
+  self.data['entries'].insert(0,later)
   self.assertEqual(mod.validate(self.data),len(self.data['entries']))
   self.assertEqual(next(e for e in self.data['entries'] if e['date']=='2026-10-16'),self.historical)
 
@@ -142,7 +143,15 @@ class EarningsSessionTests(unittest.TestCase):
    obj[key]=old
  def test_release_close_boundary_and_half_day_supported(self):
   self.row['releaseTiming']['publishedAt']='2026-10-16T16:00:00-04:00';mod.validate_earnings_prices(self.row)
-  self.row['priceReaction']['regular']['closedAt']='2026-10-16T13:00:00-04:00';self.row['releaseTiming']['publishedAt']='2026-10-16T13:05:00-04:00';mod.validate_earnings_prices(self.row)
+  # October 16 was not a half day: an invented 13:00 close must fail.
+  self.row['priceReaction']['regular']['closedAt']='2026-10-16T13:00:00-04:00';self.row['releaseTiming']['publishedAt']='2026-10-16T13:05:00-04:00'
+  with self.assertRaises(AssertionError):mod.validate_earnings_prices(self.row)
+  # Use the official day-after-Thanksgiving early close, in EST.
+  self.row['releaseDate']='2026-11-27'
+  self.row['releaseTiming']['publishedAt']='2026-11-27T13:05:00-05:00'
+  self.row['priceReaction']['regular'].update(date='2026-11-27',previousDate='2026-11-25',closedAt='2026-11-27T13:00:00-05:00')
+  self.row['priceReaction']['afterHours']['observedAt']='2026-11-27T14:10:00-05:00'
+  mod.validate_earnings_prices(self.row)
  def test_utc_date_mapped_to_et_and_winter_offset(self):
   self.row['releaseTiming']['publishedAt']='2026-10-16T20:05:00Z';self.row['priceReaction']['afterHours']['observedAt']='2026-10-16T23:59:00Z';mod.validate_earnings_prices(self.row)
   self.row['releaseDate']='2026-12-16';self.row['releaseTiming']['publishedAt']='2026-12-16T21:05:00Z';self.row['priceReaction']['regular'].update(date='2026-12-16',previousDate='2026-12-15',closedAt='2026-12-16T16:00:00-05:00');self.row['priceReaction']['afterHours']['observedAt']='2026-12-17T00:30:00Z';mod.validate_earnings_prices(self.row)
