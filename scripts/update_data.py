@@ -61,11 +61,7 @@ def chart_fallback(ticker):
         if values is None:
             # Do not silently substitute unadjusted prices for adjusted returns.
             return [], {}
-        zone=ZoneInfo(result['meta']['exchangeTimezoneName'])
-        points=[[dt.datetime.fromtimestamp(stamp,zone).date().isoformat(),round(value,5)]
-                for stamp,value in zip(result['timestamp'],values)
-                if fnum(value) is not None]
-        return clean_prices(points),result['meta']
+        return completed_daily_points(result), result['meta']
     except Exception as exc:
         print('CHART_FALLBACK_ERROR',ticker,str(exc)[:100],flush=True)
         return [],{}
@@ -112,17 +108,12 @@ def latest_completed_daily(ticker):
 
 
 def fetch_prices(obj):
-    prices = []
-    try:
-        h=obj.history(period='5y',interval='1d',auto_adjust=True,raise_errors=False,timeout=20)
-        if h is not None and not h.empty:
-            prices = clean_prices([[str(i.date()),round(float(row['Close']),5)] for i,row in h.iterrows() if fnum(row.get('Close')) is not None])
-    except Exception:pass
-    if not prices:
-        prices = chart_fallback(obj.ticker)[0]
-    # Repair the range-specific final-bar omission without discarding history.
+    # Every collection path uses source session-end timestamps. Never merge
+    # unfiltered history with a separately gated latest bar.
+    prices, _ = chart_fallback(obj.ticker)
     latest = latest_completed_daily(obj.ticker)
     return clean_prices(prices + latest)
+
 
 def first_available(frame,candidates):
     for item in candidates:
@@ -159,9 +150,7 @@ def fetch_info(obj):
 def main():
     unique={r['symbol']:r for r in rows}
     now=dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds')
-    # Slow-changing financial data: once every Monday or manually. Daily close and cap: daily.
-    weekly=os.environ.get('FETCH_FINANCIALS','0')=='1' or dt.datetime.now(dt.timezone.utc).weekday()==0
-    if os.environ.get('PRICE_ONLY')=='1':weekly=False
+    # Daily completed-session prices and cap observations; official filings use separate verified backfills.
     keys=list(unique)
     selected=set(filter(None,os.environ.get('SYMBOLS','').split(',')))
     if selected:keys=[key for key in keys if key in selected]
@@ -213,22 +202,9 @@ def main():
                     replace_market_cap(current, cap, ticker, now)
             current['priceCurrency']=info.get('currency') or current.get('priceCurrency') or ''
             current['reportingCurrency']=info.get('financialCurrency') or current.get('reportingCurrency') or info.get('currency') or ''
-            # First run (or missing quarters): attempt regardless of weekday.
-            # Existing populated financials refresh weekly to limit Yahoo requests.
-            incomplete=len(current.get('quarters',[]))<4 or any(q.get('revenue') is None or q.get('operatingIncome') is None for q in current.get('quarters',[]))
-            if os.environ.get('PRICE_ONLY')!='1' and (weekly or incomplete):
-                q=fetch_quarters(t)
-                if q:
-                    for quarter in q:
-                        quarter.update(source='Yahoo Finance',sourceType='financial_aggregator',sourceUrl='https://finance.yahoo.com/quote/'+ticker+'/financials/',reportedCurrency=current['reportingCurrency'])
-                    merged=merge_quarters(current.get('quarters',[]),q)
-                    if merged!=current.get('quarters',[]):
-                        current['quarters']=merged
-                        current['financialUpdated']=now
-                    current['finSource']='Public filings / Yahoo Finance (see each quarter)'
-                    current['financialCheckedAt']=now
-                else:
-                    print('NO FINANCIAL DATA',symbol,ticker,flush=True)
+            # Publication requires verified official filings. Aggregator quarterly
+            # statements are research candidates, never an automatic replacement
+            # for issuer fiscal dates, accounting scope, or verification dates.
             stocks[symbol]=annotate(symbol,current)
             print(f'{i}/{len(keys)} {symbol} -> {ticker}: {len(p)} prices, {len(current.get("quarters",[]))} quarters',flush=True)
         except Exception as e:print('ERROR',symbol,str(e)[:100],flush=True)
