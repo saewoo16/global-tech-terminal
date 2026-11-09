@@ -497,7 +497,7 @@ class ArchivedFlowPreservationTests(unittest.TestCase):
     def test_main_preserved_only_rows_are_not_reported_as_newly_refreshed(self):
         payload = copy.deepcopy(self.published)
         for market in update.FLOW_MARKETS:
-            payload['flows']['markets'][market]['rows'] = [copy.deepcopy(payload['flows']['markets'][market]['rows'][-1])]
+            payload['flows']['markets'][market]['rows'] = [copy.deepcopy(next(row for row in payload['flows']['markets'][market]['rows'] if row['date'] == '2026-11-06'))]
             payload['flows']['markets'][market]['coverage'].update(start='2026-11-06', end='2026-11-06', count=1)
         archive = copy.deepcopy(self.archive)
         archive['entries'] = [entry for entry in archive['entries'] if entry['market'] == 'KR' and entry['date'] == '2026-11-06']

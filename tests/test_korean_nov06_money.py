@@ -89,6 +89,9 @@ class November6MoneyTests(unittest.TestCase):
      self.assertTrue(all(a<0 for a in amounts));self.assertEqual(amounts,sorted(amounts))
  def test_membership_and_price_dates_remain_explicit(self):
   self.assertEqual(self.market['themes']['membershipAsOf'],'2026-10-19')
-  self.assertIn('11/6 완료 종가',self.market['indexMovers']['note'])
+  asof=self.market['indexMovers']['asOf']
+  month,day=map(int,asof.split('-')[1:])
+  self.assertIn(f'{month}/{day} 완료 종가',self.market['indexMovers']['note'])
+  self.assertIn('2026-11-06',self.market['indexMovers']['daily'])
 
 if __name__=='__main__':unittest.main()

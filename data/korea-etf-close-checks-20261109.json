@@ -1,0 +1,736 @@
+[
+  {
+    "code": "091160",
+    "dailyClose": 86980,
+    "quotePrice": 86980,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 86980.0,
+        "cumulativeVolume": 1841463,
+        "volume": 4525
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:59:00+09:00",
+      "price": 86980.0,
+      "cumulativeVolume": 1842059,
+      "volume": 1
+    }
+  },
+  {
+    "code": "139260",
+    "dailyClose": 92845,
+    "quotePrice": 92845,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 92845.0,
+        "cumulativeVolume": 512953,
+        "volume": 807
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:42:00+09:00",
+      "price": 92845.0,
+      "cumulativeVolume": 512958,
+      "volume": 5
+    }
+  },
+  {
+    "code": "091180",
+    "dailyClose": 21440,
+    "quotePrice": 21440,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 21440.0,
+        "cumulativeVolume": 101813,
+        "volume": 2492
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:48:00+09:00",
+      "price": 21440.0,
+      "cumulativeVolume": 101823,
+      "volume": 1
+    }
+  },
+  {
+    "code": "091170",
+    "dailyClose": 14120,
+    "quotePrice": 14120,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 14120.0,
+        "cumulativeVolume": 371930,
+        "volume": 44
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:44:00+09:00",
+      "price": 14120.0,
+      "cumulativeVolume": 372208,
+      "volume": 26
+    }
+  },
+  {
+    "code": "102970",
+    "dailyClose": 12870,
+    "quotePrice": 12870,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 12870.0,
+        "cumulativeVolume": 668934,
+        "volume": 1586
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:55:00+09:00",
+      "price": 12870.0,
+      "cumulativeVolume": 668940,
+      "volume": 5
+    }
+  },
+  {
+    "code": "140700",
+    "dailyClose": 18150,
+    "quotePrice": 18150,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 18150.0,
+        "cumulativeVolume": 49310,
+        "volume": 5
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:30:00+09:00",
+      "price": 18150.0,
+      "cumulativeVolume": 49310,
+      "volume": 5
+    }
+  },
+  {
+    "code": "117700",
+    "dailyClose": 5470,
+    "quotePrice": 5470,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 5470.0,
+        "cumulativeVolume": 1606881,
+        "volume": 2307
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:55:00+09:00",
+      "price": 5470.0,
+      "cumulativeVolume": 1606973,
+      "volume": 50
+    }
+  },
+  {
+    "code": "117680",
+    "dailyClose": 9725,
+    "quotePrice": 9725,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 9725.0,
+        "cumulativeVolume": 14903,
+        "volume": 2
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:30:00+09:00",
+      "price": 9725.0,
+      "cumulativeVolume": 14903,
+      "volume": 2
+    }
+  },
+  {
+    "code": "117460",
+    "dailyClose": 10460,
+    "quotePrice": 10460,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 10460.0,
+        "cumulativeVolume": 35362,
+        "volume": 16
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:30:00+09:00",
+      "price": 10460.0,
+      "cumulativeVolume": 35362,
+      "volume": 16
+    }
+  },
+  {
+    "code": "102960",
+    "dailyClose": 8405,
+    "quotePrice": 8405,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 8405.0,
+        "cumulativeVolume": 6664,
+        "volume": 198
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:30:00+09:00",
+      "price": 8405.0,
+      "cumulativeVolume": 6664,
+      "volume": 198
+    }
+  },
+  {
+    "code": "140710",
+    "dailyClose": 6315,
+    "quotePrice": 6315,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 6315.0,
+        "cumulativeVolume": 23750,
+        "volume": 2
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:30:00+09:00",
+      "price": 6315.0,
+      "cumulativeVolume": 23750,
+      "volume": 2
+    }
+  },
+  {
+    "code": "143860",
+    "dailyClose": 32800,
+    "quotePrice": 32800,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 32800.0,
+        "cumulativeVolume": 19137,
+        "volume": 5
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:30:00+09:00",
+      "price": 32800.0,
+      "cumulativeVolume": 19137,
+      "volume": 5
+    }
+  },
+  {
+    "code": "266410",
+    "dailyClose": 8610,
+    "quotePrice": 8610,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 8610.0,
+        "cumulativeVolume": 14131,
+        "volume": 1003
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:30:00+09:00",
+      "price": 8610.0,
+      "cumulativeVolume": 14131,
+      "volume": 1003
+    }
+  },
+  {
+    "code": "266390",
+    "dailyClose": 14205,
+    "quotePrice": 14205,
+    "regularCloseObservation": [],
+    "lastObservation": {
+      "time": "2026-11-09T15:17:00+09:00",
+      "price": 14205.0,
+      "cumulativeVolume": 24421,
+      "volume": 166
+    }
+  },
+  {
+    "code": "157490",
+    "dailyClose": 7700,
+    "quotePrice": 7700,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 7700.0,
+        "cumulativeVolume": 72239,
+        "volume": 174
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:30:00+09:00",
+      "price": 7700.0,
+      "cumulativeVolume": 72239,
+      "volume": 174
+    }
+  },
+  {
+    "code": "0148J0",
+    "dailyClose": 6715,
+    "quotePrice": 6715,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 6715.0,
+        "cumulativeVolume": 3189555,
+        "volume": 15929
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:58:00+09:00",
+      "price": 6715.0,
+      "cumulativeVolume": 3190479,
+      "volume": 450
+    }
+  },
+  {
+    "code": "0177X0",
+    "dailyClose": 6865,
+    "quotePrice": 6865,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 6865.0,
+        "cumulativeVolume": 147251,
+        "volume": 1565
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:30:00+09:00",
+      "price": 6865.0,
+      "cumulativeVolume": 147251,
+      "volume": 1565
+    }
+  },
+  {
+    "code": "305720",
+    "dailyClose": 11715,
+    "quotePrice": 11715,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 11715.0,
+        "cumulativeVolume": 8280499,
+        "volume": 22407
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:58:00+09:00",
+      "price": 11715.0,
+      "cumulativeVolume": 8289202,
+      "volume": 50
+    }
+  },
+  {
+    "code": "455860",
+    "dailyClose": 3490,
+    "quotePrice": 3490,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 3490.0,
+        "cumulativeVolume": 451789,
+        "volume": 2106
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:40:00+09:00",
+      "price": 3490.0,
+      "cumulativeVolume": 451790,
+      "volume": 1
+    }
+  },
+  {
+    "code": "455850",
+    "dailyClose": 16845,
+    "quotePrice": 16845,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 16845.0,
+        "cumulativeVolume": 3387387,
+        "volume": 12001
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:56:00+09:00",
+      "price": 16845.0,
+      "cumulativeVolume": 3387419,
+      "volume": 1
+    }
+  },
+  {
+    "code": "475300",
+    "dailyClose": 14395,
+    "quotePrice": 14395,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 14395.0,
+        "cumulativeVolume": 2222656,
+        "volume": 1788
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:55:00+09:00",
+      "price": 14395.0,
+      "cumulativeVolume": 2222661,
+      "volume": 1
+    }
+  },
+  {
+    "code": "475310",
+    "dailyClose": 18060,
+    "quotePrice": 18060,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 18060.0,
+        "cumulativeVolume": 574322,
+        "volume": 963
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:49:00+09:00",
+      "price": 18060.0,
+      "cumulativeVolume": 574352,
+      "volume": 30
+    }
+  },
+  {
+    "code": "449450",
+    "dailyClose": 30580,
+    "quotePrice": 30580,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 30580.0,
+        "cumulativeVolume": 579702,
+        "volume": 1180
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:43:00+09:00",
+      "price": 30580.0,
+      "cumulativeVolume": 579785,
+      "volume": 23
+    }
+  },
+  {
+    "code": "0247S0",
+    "dailyClose": 5375,
+    "quotePrice": 5375,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 5375.0,
+        "cumulativeVolume": 378574,
+        "volume": 105
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:30:00+09:00",
+      "price": 5375.0,
+      "cumulativeVolume": 378574,
+      "volume": 105
+    }
+  },
+  {
+    "code": "0207G0",
+    "dailyClose": 5110,
+    "quotePrice": 5110,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 5110.0,
+        "cumulativeVolume": 401170,
+        "volume": 3
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:30:00+09:00",
+      "price": 5110.0,
+      "cumulativeVolume": 401170,
+      "volume": 3
+    }
+  },
+  {
+    "code": "421320",
+    "dailyClose": 18265,
+    "quotePrice": 18265,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 18265.0,
+        "cumulativeVolume": 81013,
+        "volume": 305
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:56:00+09:00",
+      "price": 18265.0,
+      "cumulativeVolume": 81014,
+      "volume": 1
+    }
+  },
+  {
+    "code": "466920",
+    "dailyClose": 17340,
+    "quotePrice": 17340,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 17340.0,
+        "cumulativeVolume": 1056301,
+        "volume": 4414
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:46:00+09:00",
+      "price": 17340.0,
+      "cumulativeVolume": 1056508,
+      "volume": 21
+    }
+  },
+  {
+    "code": "487240",
+    "dailyClose": 20050,
+    "quotePrice": 20050,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 20050.0,
+        "cumulativeVolume": 6843796,
+        "volume": 9328
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:59:00+09:00",
+      "price": 20050.0,
+      "cumulativeVolume": 6844733,
+      "volume": 110
+    }
+  },
+  {
+    "code": "0222F0",
+    "dailyClose": 9015,
+    "quotePrice": 9015,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 9015.0,
+        "cumulativeVolume": 1035,
+        "volume": 20
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:30:00+09:00",
+      "price": 9015.0,
+      "cumulativeVolume": 1035,
+      "volume": 20
+    }
+  },
+  {
+    "code": "0091P0",
+    "dailyClose": 10390,
+    "quotePrice": 10390,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 10390.0,
+        "cumulativeVolume": 1880803,
+        "volume": 2961
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:51:00+09:00",
+      "price": 10390.0,
+      "cumulativeVolume": 1880830,
+      "volume": 22
+    }
+  },
+  {
+    "code": "457990",
+    "dailyClose": 27140,
+    "quotePrice": 27140,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 27140.0,
+        "cumulativeVolume": 955402,
+        "volume": 1593
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:55:00+09:00",
+      "price": 27140.0,
+      "cumulativeVolume": 955466,
+      "volume": 1
+    }
+  },
+  {
+    "code": "0209D0",
+    "dailyClose": 6710,
+    "quotePrice": 6710,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 6710.0,
+        "cumulativeVolume": 4721640,
+        "volume": 8536
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:57:00+09:00",
+      "price": 6710.0,
+      "cumulativeVolume": 4722122,
+      "volume": 5
+    }
+  },
+  {
+    "code": "364970",
+    "dailyClose": 6565,
+    "quotePrice": 6565,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 6565.0,
+        "cumulativeVolume": 1022525,
+        "volume": 10102
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:44:00+09:00",
+      "price": 6565.0,
+      "cumulativeVolume": 1022582,
+      "volume": 56
+    }
+  },
+  {
+    "code": "228790",
+    "dailyClose": 3325,
+    "quotePrice": 3325,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 3325.0,
+        "cumulativeVolume": 2070464,
+        "volume": 14963
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:55:00+09:00",
+      "price": 3325.0,
+      "cumulativeVolume": 2070669,
+      "volume": 9
+    }
+  },
+  {
+    "code": "228800",
+    "dailyClose": 2470,
+    "quotePrice": 2470,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 2470.0,
+        "cumulativeVolume": 102153,
+        "volume": 10
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:40:00+09:00",
+      "price": 2470.0,
+      "cumulativeVolume": 102325,
+      "volume": 172
+    }
+  },
+  {
+    "code": "228810",
+    "dailyClose": 3005,
+    "quotePrice": 3005,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 3005.0,
+        "cumulativeVolume": 268324,
+        "volume": 184
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:30:00+09:00",
+      "price": 3005.0,
+      "cumulativeVolume": 268324,
+      "volume": 184
+    }
+  },
+  {
+    "code": "365000",
+    "dailyClose": 3055,
+    "quotePrice": 3055,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 3055.0,
+        "cumulativeVolume": 155101,
+        "volume": 50
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:30:00+09:00",
+      "price": 3055.0,
+      "cumulativeVolume": 155101,
+      "volume": 50
+    }
+  },
+  {
+    "code": "364990",
+    "dailyClose": 4505,
+    "quotePrice": 4505,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 4505.0,
+        "cumulativeVolume": 51624,
+        "volume": 7
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:59:00+09:00",
+      "price": 4505.0,
+      "cumulativeVolume": 51625,
+      "volume": 1
+    }
+  },
+  {
+    "code": "329200",
+    "dailyClose": 3650,
+    "quotePrice": 3650,
+    "regularCloseObservation": [
+      {
+        "time": "2026-11-09T15:30:00+09:00",
+        "price": 3650.0,
+        "cumulativeVolume": 3657964,
+        "volume": 104832
+      }
+    ],
+    "lastObservation": {
+      "time": "2026-11-09T15:53:00+09:00",
+      "price": 3650.0,
+      "cumulativeVolume": 3660100,
+      "volume": 3
+    }
+  }
+]

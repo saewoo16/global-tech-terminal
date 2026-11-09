@@ -1,0 +1,481 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-09",
+  "session": {
+    "url": "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp",
+    "observedAt": "2026-11-09T08:43:40.343530+00:00",
+    "holidays": [
+      "2026-01-01",
+      "2026-02-16",
+      "2026-02-17",
+      "2026-02-18",
+      "2026-03-02",
+      "2026-05-01",
+      "2026-05-05",
+      "2026-05-25",
+      "2026-06-03",
+      "2026-07-17",
+      "2026-08-17",
+      "2026-09-24",
+      "2026-09-25",
+      "2026-10-05",
+      "2026-10-09",
+      "2026-12-25",
+      "2026-12-31"
+    ],
+    "isHoliday": false,
+    "date": "2026-11-09",
+    "isCompletedRegularSession": true,
+    "regularClose": "2026-11-09T15:30:00+09:00",
+    "actualCompletedFlowDates": {
+      "KOSPI": "2026-11-09",
+      "KOSDAQ": "2026-11-09"
+    }
+  },
+  "sources": [
+    {
+      "id": "nov09-flow-KOSPI",
+      "url": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=KOSPI&bizdate=20261109&startIdx=0&pageSize=30",
+      "observedAt": "2026-11-09T08:43:08.441028+00:00",
+      "status": 200,
+      "rawFile": "data/korea-source-evidence-20261109/flow-KOSPI.json",
+      "storedFileSha256": "78e5f7c85c6e1814cda0eb70438f913dc6e643e75bd2f86273219dca4b59b164",
+      "transportSha256": "09ee107cb64cee4aa68d40c761d03bf5ae08144a8a1339a1b0bfcfb83d11f409",
+      "storageNote": "Parsed response plus transport URL, observedAt and raw transport hash. Stored wrapper bytes have separate storedFileSha256."
+    },
+    {
+      "id": "nov09-flow-KOSDAQ",
+      "url": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=KOSDAQ&bizdate=20261109&startIdx=0&pageSize=30",
+      "observedAt": "2026-11-09T08:43:07.673378+00:00",
+      "status": 200,
+      "rawFile": "data/korea-source-evidence-20261109/flow-KOSDAQ.json",
+      "storedFileSha256": "8b30991a89b2920fbba49bcb55125d020edbb30dc008e8b3b950c290d4f00b04",
+      "transportSha256": "2350cdc705a72ed3d8c5037cee9808d6fb247395803e76c262384405c02b6d76",
+      "storageNote": "Parsed response plus transport URL, observedAt and raw transport hash. Stored wrapper bytes have separate storedFileSha256."
+    },
+    {
+      "id": "nov09-flow-FUT",
+      "url": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=FUT&bizdate=20261109&startIdx=0&pageSize=30",
+      "observedAt": "2026-11-09T08:43:07.774370+00:00",
+      "status": 200,
+      "rawFile": "data/korea-source-evidence-20261109/flow-FUT.json",
+      "storedFileSha256": "7c184428fff8330d920429d259e9296dbe5c8c924dfb965ae4efb11513e3069a",
+      "transportSha256": "92ede2423d03e3647866b7fdc14a8799a25c679b981e408921092154b8d18400",
+      "storageNote": "Parsed response plus transport URL, observedAt and raw transport hash. Stored wrapper bytes have separate storedFileSha256."
+    },
+    {
+      "id": "nov09-index-KOSPI",
+      "url": "https://m.stock.naver.com/api/index/KOSPI/basic",
+      "observedAt": "2026-11-09T08:43:07.799142+00:00",
+      "status": 200,
+      "rawFile": "data/korea-source-evidence-20261109/index-KOSPI.json",
+      "storedFileSha256": "3e33f60f8ffcd4f4abd09372ed7f53bbabcfe4fda835f82eabd008e710c2e1a8",
+      "transportSha256": "53e06cd1488fb926279b7989cd3f92df991174bef47549fa732c2822442fc62b",
+      "storageNote": "Parsed response plus transport URL, observedAt and raw transport hash. Stored wrapper bytes have separate storedFileSha256."
+    },
+    {
+      "id": "nov09-DAY-KOSPI-FOREIGNER",
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=FOREIGNER&tradeType=KRX&marketType=KOSPI&startIdx=0&pageSize=100&periodType=DAY",
+      "observedAt": "2026-11-09T08:43:11.568768+00:00",
+      "status": 200,
+      "rawFile": "data/korea-source-evidence-20261109/DAY-KOSPI-FOREIGNER.json",
+      "storedFileSha256": "2df781a06ef6a2a939c11b2bd3dccc1db6b5cd6f57d98c20cfa30e4422c1d16a",
+      "transportSha256": "79e84832267244978eb2b02e7dc88499b8c378a1222fe4e68617bf5768230ada",
+      "storageNote": "Parsed response plus transport URL, observedAt and raw transport hash. Stored wrapper bytes have separate storedFileSha256."
+    },
+    {
+      "id": "nov09-WEEK-KOSPI-FOREIGNER",
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=FOREIGNER&tradeType=KRX&marketType=KOSPI&startIdx=0&pageSize=100&periodType=WEEK",
+      "observedAt": "2026-11-09T08:43:11.698229+00:00",
+      "status": 200,
+      "rawFile": "data/korea-source-evidence-20261109/WEEK-KOSPI-FOREIGNER.json",
+      "storedFileSha256": "614d1b072b094b719486ad0db910e175ecddfdd92a8f0ae2f345f7782978ec1a",
+      "transportSha256": "fad342d79b9fe04be06a955a9e8b4f7025a7bb337645eb71cfb3ab255925f907",
+      "storageNote": "Parsed response plus transport URL, observedAt and raw transport hash. Stored wrapper bytes have separate storedFileSha256."
+    },
+    {
+      "id": "nov09-MONTH-KOSPI-FOREIGNER",
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=FOREIGNER&tradeType=KRX&marketType=KOSPI&startIdx=0&pageSize=100&periodType=MONTH",
+      "observedAt": "2026-11-09T08:43:11.490495+00:00",
+      "status": 200,
+      "rawFile": "data/korea-source-evidence-20261109/MONTH-KOSPI-FOREIGNER.json",
+      "storedFileSha256": "db309aa9770892fb04c81be758d9db1fd6814f5cca692af5ac44ddb48e493b5b",
+      "transportSha256": "7e6d0e73c40db9be762f68687499a737e0704a009b0608af13a1c1eaed785a2a",
+      "storageNote": "Parsed response plus transport URL, observedAt and raw transport hash. Stored wrapper bytes have separate storedFileSha256."
+    },
+    {
+      "id": "nov09-DAY-KOSPI-ORGANIZATION",
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=ORGANIZATION&tradeType=KRX&marketType=KOSPI&startIdx=0&pageSize=100&periodType=DAY",
+      "observedAt": "2026-11-09T08:43:11.651942+00:00",
+      "status": 200,
+      "rawFile": "data/korea-source-evidence-20261109/DAY-KOSPI-ORGANIZATION.json",
+      "storedFileSha256": "fef651fc530d3c905da9baf2f5eb2d0beb8689b566bf2425b07f6fe401cb6ae3",
+      "transportSha256": "dcf59017c8b03a40d96e96abe1981b0a515d261a91a8bbc65e04e41a48e82542",
+      "storageNote": "Parsed response plus transport URL, observedAt and raw transport hash. Stored wrapper bytes have separate storedFileSha256."
+    },
+    {
+      "id": "nov09-WEEK-KOSPI-ORGANIZATION",
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=ORGANIZATION&tradeType=KRX&marketType=KOSPI&startIdx=0&pageSize=100&periodType=WEEK",
+      "observedAt": "2026-11-09T08:43:15.499659+00:00",
+      "status": 200,
+      "rawFile": "data/korea-source-evidence-20261109/WEEK-KOSPI-ORGANIZATION.json",
+      "storedFileSha256": "c6dddfd49fa1b417d48b45215b9df82c4f5e28cfeaeab7b2a3c5403406f58a5a",
+      "transportSha256": "2ed4da4ce805cbfb15e80bbff058fe0fe974109b080c5ac198faf2acf0849813",
+      "storageNote": "Parsed response plus transport URL, observedAt and raw transport hash. Stored wrapper bytes have separate storedFileSha256."
+    },
+    {
+      "id": "nov09-MONTH-KOSPI-ORGANIZATION",
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=ORGANIZATION&tradeType=KRX&marketType=KOSPI&startIdx=0&pageSize=100&periodType=MONTH",
+      "observedAt": "2026-11-09T08:43:15.513638+00:00",
+      "status": 200,
+      "rawFile": "data/korea-source-evidence-20261109/MONTH-KOSPI-ORGANIZATION.json",
+      "storedFileSha256": "dfc9a21ca42d679355cb7c7cc0299e05bfcb1d2e56fe16730fa60d0015223c83",
+      "transportSha256": "44c42881e6aad24ca21d73793fea95a1284dd94a92c656dc50bf9a5821db8bbd",
+      "storageNote": "Parsed response plus transport URL, observedAt and raw transport hash. Stored wrapper bytes have separate storedFileSha256."
+    },
+    {
+      "id": "nov09-index-KOSDAQ",
+      "url": "https://m.stock.naver.com/api/index/KOSDAQ/basic",
+      "observedAt": "2026-11-09T08:43:17.075954+00:00",
+      "status": 200,
+      "rawFile": "data/korea-source-evidence-20261109/index-KOSDAQ.json",
+      "storedFileSha256": "274f934343f457ac2d6316a4e316a18dece125daaf59db9a6130e343eec41246",
+      "transportSha256": "a219178f7e6b321f2810c318e05a0bc90001c88fd21c8e5b57d25a471d70e14d",
+      "storageNote": "Parsed response plus transport URL, observedAt and raw transport hash. Stored wrapper bytes have separate storedFileSha256."
+    },
+    {
+      "id": "nov09-DAY-KOSDAQ-FOREIGNER",
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=FOREIGNER&tradeType=KRX&marketType=KOSDAQ&startIdx=0&pageSize=100&periodType=DAY",
+      "observedAt": "2026-11-09T08:43:15.540896+00:00",
+      "status": 200,
+      "rawFile": "data/korea-source-evidence-20261109/DAY-KOSDAQ-FOREIGNER.json",
+      "storedFileSha256": "5ffa999d6a18dbd40b6e56102049a52f5e47613e6722889f96bccffc7efdda7c",
+      "transportSha256": "44b7d8d35a1362100996496e4448dcec3b0db9eb3b93e6606e800012f7fdab05",
+      "storageNote": "Parsed response plus transport URL, observedAt and raw transport hash. Stored wrapper bytes have separate storedFileSha256."
+    },
+    {
+      "id": "nov09-WEEK-KOSDAQ-FOREIGNER",
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=FOREIGNER&tradeType=KRX&marketType=KOSDAQ&startIdx=0&pageSize=100&periodType=WEEK",
+      "observedAt": "2026-11-09T08:43:25.059782+00:00",
+      "status": 200,
+      "rawFile": "data/korea-source-evidence-20261109/WEEK-KOSDAQ-FOREIGNER.json",
+      "storedFileSha256": "758de8c69bcb5dea2ae910b6ee6e1ca7124c609bad7430fbfdbba285f8b42dc2",
+      "transportSha256": "77c9e423db3089dfaa0b362e8121ab928157ca11baf9274d105f47f01025d051",
+      "storageNote": "Parsed response plus transport URL, observedAt and raw transport hash. Stored wrapper bytes have separate storedFileSha256."
+    },
+    {
+      "id": "nov09-MONTH-KOSDAQ-FOREIGNER",
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=FOREIGNER&tradeType=KRX&marketType=KOSDAQ&startIdx=0&pageSize=100&periodType=MONTH",
+      "observedAt": "2026-11-09T08:43:24.916884+00:00",
+      "status": 200,
+      "rawFile": "data/korea-source-evidence-20261109/MONTH-KOSDAQ-FOREIGNER.json",
+      "storedFileSha256": "04066d1ab3e13a0412ed85bf2e80711fd3a2016e90efecd582676fba639b3cd3",
+      "transportSha256": "774ddc40d2450dc6d1267b1ef859f070a34e48454873cd2a81f93671dd9cfd48",
+      "storageNote": "Parsed response plus transport URL, observedAt and raw transport hash. Stored wrapper bytes have separate storedFileSha256."
+    },
+    {
+      "id": "nov09-DAY-KOSDAQ-ORGANIZATION",
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=ORGANIZATION&tradeType=KRX&marketType=KOSDAQ&startIdx=0&pageSize=100&periodType=DAY",
+      "observedAt": "2026-11-09T08:43:25.000375+00:00",
+      "status": 200,
+      "rawFile": "data/korea-source-evidence-20261109/DAY-KOSDAQ-ORGANIZATION.json",
+      "storedFileSha256": "679ef1d834763e2fd0e5bd8a2168cda20ef668a5a62dd235b3f21f8c64b0e644",
+      "transportSha256": "944185efd52afd31aac0be963c4c06d5934544c157cd4ce7dd34f84acea38dce",
+      "storageNote": "Parsed response plus transport URL, observedAt and raw transport hash. Stored wrapper bytes have separate storedFileSha256."
+    },
+    {
+      "id": "nov09-WEEK-KOSDAQ-ORGANIZATION",
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=ORGANIZATION&tradeType=KRX&marketType=KOSDAQ&startIdx=0&pageSize=100&periodType=WEEK",
+      "observedAt": "2026-11-09T08:43:25.056264+00:00",
+      "status": 200,
+      "rawFile": "data/korea-source-evidence-20261109/WEEK-KOSDAQ-ORGANIZATION.json",
+      "storedFileSha256": "2eb2d265615c71cf3d50a86f06060bb392f0cc4bbe74ee25cc400ca123844bc2",
+      "transportSha256": "b49cdca76264f32c07c586b2848add47809467f4e80e26a8b025114c8f5d365e",
+      "storageNote": "Parsed response plus transport URL, observedAt and raw transport hash. Stored wrapper bytes have separate storedFileSha256."
+    },
+    {
+      "id": "nov09-MONTH-KOSDAQ-ORGANIZATION",
+      "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=ORGANIZATION&tradeType=KRX&marketType=KOSDAQ&startIdx=0&pageSize=100&periodType=MONTH",
+      "observedAt": "2026-11-09T08:43:28.505948+00:00",
+      "status": 200,
+      "rawFile": "data/korea-source-evidence-20261109/MONTH-KOSDAQ-ORGANIZATION.json",
+      "storedFileSha256": "196d74cc465365b4773e67a019ea6e09d24982362951eb4dc94de4f8dfd11eae",
+      "transportSha256": "2b2bdab3374d8fa5caf491cd1de11b1d59425f7a216e576d1ebc9b3566b10635",
+      "storageNote": "Parsed response plus transport URL, observedAt and raw transport hash. Stored wrapper bytes have separate storedFileSha256."
+    },
+    {
+      "id": "nov09-exchange-status",
+      "url": "https://stock.naver.com/api/stockSecurity/exchanges/market-status?exchanges=KRX",
+      "observedAt": "2026-11-09T08:43:28.401816+00:00",
+      "status": 200,
+      "rawFile": "data/korea-source-evidence-20261109/exchange-status.json",
+      "storedFileSha256": "d1678c2ee61ea8ae137a155913081d1254349d24c41045e085bb491bdc51fece",
+      "transportSha256": "71cb9cf38f5add651733941231d979f2bb8688653afdeeccac5e774b85fd48a7",
+      "storageNote": "Parsed response plus transport URL, observedAt and raw transport hash. Stored wrapper bytes have separate storedFileSha256."
+    }
+  ],
+  "indices": [
+    {
+      "name": "KOSPI",
+      "close": 5018.85,
+      "change": -40.84,
+      "changePct": -0.81,
+      "marketStatus": "CLOSE",
+      "localTradedAt": "2026-11-09T16:15:00+09:00",
+      "sourceIds": [
+        "nov09-index-KOSPI"
+      ]
+    },
+    {
+      "name": "KOSDAQ",
+      "close": 638.97,
+      "change": -5.3,
+      "changePct": -0.82,
+      "marketStatus": "CLOSE",
+      "localTradedAt": "2026-11-09T16:15:00+09:00",
+      "sourceIds": [
+        "nov09-index-KOSDAQ"
+      ]
+    }
+  ],
+  "flows": {
+    "KOSPI": {
+      "unit": "억원",
+      "rows": [
+        {
+          "date": "2026-11-09",
+          "foreign": -6262.15,
+          "individual": -5332.41,
+          "institution": 6996.09,
+          "otherForeign": -6.02,
+          "otherCorporation": 4604.5,
+          "source": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=KOSPI&bizdate=20261109&startIdx=0&pageSize=30",
+          "retrievedAt": "2026-11-09T08:43:08.441028+00:00"
+        }
+      ],
+      "note": "17:43 KST NAVER KRX query observation after regular close; after-hours session ongoing, not immutable final regular-only flow."
+    },
+    "KOSDAQ": {
+      "unit": "억원",
+      "rows": [
+        {
+          "date": "2026-11-09",
+          "foreign": -633.66,
+          "individual": -499.12,
+          "institution": 1050.36,
+          "otherForeign": 12.97,
+          "otherCorporation": 69.43,
+          "source": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=KOSDAQ&bizdate=20261109&startIdx=0&pageSize=30",
+          "retrievedAt": "2026-11-09T08:43:07.673378+00:00"
+        }
+      ],
+      "note": "17:43 KST NAVER KRX query observation after regular close; after-hours session ongoing, not immutable final regular-only flow."
+    }
+  },
+  "futures": {
+    "foreignFlows": {
+      "unit": "contracts",
+      "rows": [
+        {
+          "date": "2026-11-09",
+          "foreign": 4190,
+          "buy": 149322,
+          "sell": 145132,
+          "sourceId": "naver-futures-investor-daily"
+        }
+      ],
+      "source": "nov09-flow-FUT",
+      "note": "Provider FUT market scope; no claim about mini, individual maturities or night-session coverage."
+    },
+    "openInterest": {
+      "rows": [
+        {
+          "date": "2026-11-09",
+          "openInterest": 163220,
+          "contractCode": "KR4A016C0004",
+          "sourceId": "daum-kospi200-dec2026-open-interest"
+        }
+      ],
+      "contract": "F 202612",
+      "sources": [
+        {
+          "url": "https://finance.daum.net/api/futures/masters",
+          "observedAt": "2026-11-09T08:44:34.081148+00:00"
+        },
+        {
+          "url": "https://finance.daum.net/api/future/KR4A016C0004/days?page=1&perPage=60",
+          "observedAt": "2026-11-09T08:44:38.203382+00:00"
+        }
+      ]
+    }
+  },
+  "rankingCoverage": {
+    "DAY-KOSPI-FOREIGNER": {
+      "windows": [
+        [
+          "20261109",
+          "20261109"
+        ]
+      ],
+      "rows": 200,
+      "estimatedRows": 200,
+      "zeroAmountRows": 200,
+      "action": "preserve_prior_actual_amount_snapshot"
+    },
+    "WEEK-KOSPI-FOREIGNER": {
+      "windows": [
+        [
+          "20261102",
+          "20261106"
+        ]
+      ],
+      "rows": 200,
+      "estimatedRows": 0,
+      "zeroAmountRows": 0,
+      "action": "preserve_prior_actual_amount_snapshot"
+    },
+    "MONTH-KOSPI-FOREIGNER": {
+      "windows": [
+        [
+          "20261012",
+          "20261106"
+        ]
+      ],
+      "rows": 200,
+      "estimatedRows": 0,
+      "zeroAmountRows": 0,
+      "action": "preserve_prior_actual_amount_snapshot"
+    },
+    "DAY-KOSPI-ORGANIZATION": {
+      "windows": [
+        [
+          "20261106",
+          "20261106"
+        ]
+      ],
+      "rows": 200,
+      "estimatedRows": 0,
+      "zeroAmountRows": 0,
+      "action": "preserve_prior_actual_amount_snapshot"
+    },
+    "WEEK-KOSPI-ORGANIZATION": {
+      "windows": [
+        [
+          "20261102",
+          "20261106"
+        ]
+      ],
+      "rows": 200,
+      "estimatedRows": 0,
+      "zeroAmountRows": 0,
+      "action": "preserve_prior_actual_amount_snapshot"
+    },
+    "MONTH-KOSPI-ORGANIZATION": {
+      "windows": [
+        [
+          "20261012",
+          "20261106"
+        ]
+      ],
+      "rows": 200,
+      "estimatedRows": 0,
+      "zeroAmountRows": 0,
+      "action": "preserve_prior_actual_amount_snapshot"
+    },
+    "DAY-KOSDAQ-FOREIGNER": {
+      "windows": [
+        [
+          "20261109",
+          "20261109"
+        ]
+      ],
+      "rows": 200,
+      "estimatedRows": 200,
+      "zeroAmountRows": 200,
+      "action": "preserve_prior_actual_amount_snapshot"
+    },
+    "WEEK-KOSDAQ-FOREIGNER": {
+      "windows": [
+        [
+          "20261102",
+          "20261106"
+        ]
+      ],
+      "rows": 200,
+      "estimatedRows": 0,
+      "zeroAmountRows": 0,
+      "action": "preserve_prior_actual_amount_snapshot"
+    },
+    "MONTH-KOSDAQ-FOREIGNER": {
+      "windows": [
+        [
+          "20261012",
+          "20261106"
+        ]
+      ],
+      "rows": 199,
+      "estimatedRows": 0,
+      "zeroAmountRows": 0,
+      "action": "preserve_prior_actual_amount_snapshot"
+    },
+    "DAY-KOSDAQ-ORGANIZATION": {
+      "windows": [
+        [
+          "20261106",
+          "20261106"
+        ]
+      ],
+      "rows": 200,
+      "estimatedRows": 0,
+      "zeroAmountRows": 0,
+      "action": "preserve_prior_actual_amount_snapshot"
+    },
+    "WEEK-KOSDAQ-ORGANIZATION": {
+      "windows": [
+        [
+          "20261102",
+          "20261106"
+        ]
+      ],
+      "rows": 200,
+      "estimatedRows": 0,
+      "zeroAmountRows": 0,
+      "action": "preserve_prior_actual_amount_snapshot"
+    },
+    "MONTH-KOSDAQ-ORGANIZATION": {
+      "windows": [
+        [
+          "20261012",
+          "20261106"
+        ]
+      ],
+      "rows": 199,
+      "estimatedRows": 0,
+      "zeroAmountRows": 0,
+      "action": "preserve_prior_actual_amount_snapshot"
+    }
+  },
+  "limitations": [
+    "Market flow snapshot can change while KRX after-hours continues; not final settled regular-only totals.",
+    "Nov9 DAY stock rankings are estimated share rankings, not verified amount rankings. Zero amounts rejected.",
+    "WEEK/MONTH amount windows end Nov6. Do not redate.",
+    "Initial unauthenticated check did not obtain official all-market amounts; authenticated 18:59 KST follow-up is recorded separately in officialThemeFollowup.",
+    "ETF/KOFIA and integrated KRX+NXT turnover untouched."
+  ],
+  "themeCandidateStatus": {
+    "status": "rejected",
+    "reason": "Estimated share ranking has no verified net-buy amount; retain prior theme snapshot",
+    "action": "preserve prior official complete snapshot and period actual dates"
+  },
+  "officialThemeFollowup": {
+    "asOf": "2026-11-09",
+    "sourceManifest": "data/korea-krx-evidence-20261109/source-manifest.json",
+    "status": "partial",
+    "foreignCompleteThemes": 9,
+    "institutionCompleteThemes": 1,
+    "expectedThemes": 13,
+    "observedAtStart": "2026-11-09T18:59:01+09:00",
+    "observedAtEnd": "2026-11-09T18:59:33+09:00",
+    "note": "11/9 KRX 12010 공식 원 단위 실제 관측입니다. 18:59 KST 관측이며 시간외 포함 최종 제공 예정(20시) 전으로 최종 확정치가 아닙니다. 외국인은 기타외국인 제외, 기관합계 사용, NXT 미포함. CSV 누락 금액은 null이며 부분합은 전체 합계나 테마 순위가 아닙니다. 구성·시총 기준은 기존 10/19를 유지합니다."
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "asOf": "2026-11-09",
+  "classificationAsOf": "2026-10-17",
+  "classificationRetrievedAt": "2026-10-17T16:32:07.179246+00:00",
+  "sourceFile": "data/korea-heatmap-industries.json",
+  "sourceSha256": "be079a3b8b745fe52680ea30aaac42c0dadca8637ecafd969e119ae17190fd02",
+  "method": "Exact byCode join from unchanged verified historical snapshot; no reclassification or new observation claim",
+  "changedRows": [
+    {
+      "code": "002240",
+      "market": "KOSPI",
+      "before": {
+        "id": "unclassified",
+        "name": "미분류"
+      },
+      "after": {
+        "id": "naver:upjong:304",
+        "name": "철강",
+        "sourceId": "kr-heatmap-naver-industries"
+      }
+    },
+    {
+      "code": "004840",
+      "market": "KOSPI",
+      "before": {
+        "id": "unclassified",
+        "name": "미분류"
+      },
+      "after": {
+        "id": "naver:upjong:272",
+        "name": "화학",
+        "sourceId": "kr-heatmap-naver-industries"
+      }
+    },
+    {
+      "code": "005870",
+      "market": "KOSPI",
+      "before": {
+        "id": "unclassified",
+        "name": "미분류"
+      },
+      "after": {
+        "id": "naver:upjong:284",
+        "name": "우주항공과국방",
+        "sourceId": "kr-heatmap-naver-industries"
+      }
+    },
+    {
+      "code": "033250",
+      "market": "KOSPI",
+      "before": {
+        "id": "unclassified",
+        "name": "미분류"
+      },
+      "after": {
+        "id": "naver:upjong:270",
+        "name": "자동차부품",
+        "sourceId": "kr-heatmap-naver-industries"
+      }
+    },
+    {
+      "code": "458650",
+      "market": "KOSDAQ",
+      "before": {
+        "id": "unclassified",
+        "name": "미분류"
+      },
+      "after": {
+        "id": "naver:upjong:283",
+        "name": "전기제품",
+        "sourceId": "kr-heatmap-naver-industries"
+      }
+    },
+    {
+      "code": "357230",
+      "market": "KOSDAQ",
+      "before": {
+        "id": "unclassified",
+        "name": "미분류"
+      },
+      "after": {
+        "id": "naver:upjong:316",
+        "name": "건강관리업체및서비스",
+        "sourceId": "kr-heatmap-naver-industries"
+      }
+    },
+    {
+      "code": "299660",
+      "market": "KOSDAQ",
+      "before": {
+        "id": "unclassified",
+        "name": "미분류"
+      },
+      "after": {
+        "id": "naver:upjong:286",
+        "name": "생물공학",
+        "sourceId": "kr-heatmap-naver-industries"
+      }
+    },
+    {
+      "code": "122310",
+      "market": "KOSDAQ",
+      "before": {
+        "id": "unclassified",
+        "name": "미분류"
+      },
+      "after": {
+        "id": "naver:upjong:281",
+        "name": "건강관리장비와용품",
+        "sourceId": "kr-heatmap-naver-industries"
+      }
+    },
+    {
+      "code": "318000",
+      "market": "KOSDAQ",
+      "before": {
+        "id": "unclassified",
+        "name": "미분류"
+      },
+      "after": {
+        "id": "naver:upjong:272",
+        "name": "화학",
+        "sourceId": "kr-heatmap-naver-industries"
+      }
+    },
+    {
+      "code": "474660",
+      "market": "KOSDAQ",
+      "before": {
+        "id": "unclassified",
+        "name": "미분류"
+      },
+      "after": {
+        "id": "naver:upjong:277",
+        "name": "창업투자",
+        "sourceId": "kr-heatmap-naver-industries"
+      }
+    }
+  ],
+  "coverage": {
+    "total": 2479,
+    "classified": 2383,
+    "unclassified": 96,
+    "industryCount": 78,
+    "byMarket": {
+      "KOSPI": {
+        "total": 769,
+        "classified": 748,
+        "unclassified": 21,
+        "industryCount": 72
+      },
+      "KOSDAQ": {
+        "total": 1710,
+        "classified": 1635,
+        "unclassified": 75,
+        "industryCount": 68
+      }
+    }
+  },
+  "preserved": "All price/capitalization/volume/count/order fields and non-classification panels unchanged"
+}
