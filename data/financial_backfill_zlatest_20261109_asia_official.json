@@ -1,0 +1,140 @@
+{
+  "asOf": "2026-11-09",
+  "observedAt": "2026-11-09T09:13:26.191311+00:00",
+  "unit": "million reportingCurrency",
+  "companies": {
+    "TSE:5801": {
+      "reportingCurrency": "JPY",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 372470,
+          "operatingIncome": 32161,
+          "reportedCurrency": "JPY",
+          "unit": "millions of reporting currency",
+          "sourceUrl": "https://www.furukawaelectric.com/en/ir/library/finalreport/pdf/2027/20261109.pdf",
+          "sourceType": "filing",
+          "source": "Official issuer consolidated financial results",
+          "publishedAt": "2026-11-09",
+          "verifiedAt": "2026-11-09",
+          "observedAt": "2026-11-09T09:08:48.480813+00:00",
+          "basis": "Japanese GAAP consolidated; standalone quarter derived from official H1 less official Q1",
+          "sourceSha256": "199f0bb87b14289b20ac56b635eeaf4445beb63499e8c85824c93466ea405194",
+          "reviewStatus": "Issuer says no CPA/audit-firm review of attached quarterly statements",
+          "sourcePrecision": "Source values rounded down to whole million JPY; difference retains reported million precision only",
+          "calculation": {
+            "method": "H1 minus Q1, same consolidated Japanese GAAP basis",
+            "revenue": "737691 - 365221 = 372470 million JPY",
+            "operatingIncome": "57618 - 25457 = 32161 million JPY",
+            "sixMonthsSource": "https://www.furukawaelectric.com/en/ir/library/finalreport/pdf/2027/20261109.pdf",
+            "firstQuarterSource": "https://www.furukawaelectric.com/en/ir/library/finalreport/pdf/2027/20260806.pdf",
+            "firstQuarterSha256": "165674e2a1fc1969fdfa2c698ad860d6305a7a3ead712745674eac6ba0a41714",
+            "basisCheck": "Both reports have no accounting policy changes or restatements; both include DIARECS newly consolidated in Q1. Prior-year business-combination adjustment and share-split EPS do not affect these current-year revenue/operating-profit inputs."
+          }
+        }
+      ],
+      "financialNote": "공식 연결 반기 누계에서 동일 일본회계기준의 공식 1분기를 차감한 7~9월 단독분기입니다. 원자료의 백만 JPY 정밀도를 유지하며 기존 비교분기의 수치·출처·확인일은 보존합니다."
+    },
+    "TSE:4901": {
+      "reportingCurrency": "JPY",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 885021,
+          "operatingIncome": 89984,
+          "reportedCurrency": "JPY",
+          "unit": "millions of reporting currency",
+          "sourceUrl": "https://data.swcms.net/file/ir-fujifilm/dam/jcr:738742b7-00ce-4425-8034-1f50e7b3da83/140120261104564498.pdf",
+          "sourceType": "filing",
+          "source": "Official issuer consolidated financial results",
+          "publishedAt": "2026-11-09",
+          "verifiedAt": "2026-11-09",
+          "observedAt": "2026-11-09T09:09:03.460996+00:00",
+          "basis": "US GAAP consolidated; direct standalone three months ended September 30, 2026",
+          "sourceSha256": "f9a915148a5e9d3420ab06790a4d46f36e8f5b783270a88c649a02b8726bbc1c",
+          "sourcePage": 13,
+          "sourcePrintedPage": 11,
+          "reviewStatus": "Issuer says this financial results report is not reviewed",
+          "sourcePrecision": "Published whole million JPY, rounded to nearest million; no extra precision inferred",
+          "calculation": {
+            "method": "Direct 2026 three-month column in Consolidated Statements of Income, printed page 11 / PDF page 13; not the six-month totals",
+            "crossCheck": "1711514 - 826493 = 885021 revenue; 141168 - 51184 = 89984 operating income",
+            "firstQuarterSource": "https://data.swcms.net/file/ir-fujifilm/dam/jcr:c0923555-7ece-46f0-9e2a-4bba8929dbe0/140120260804509126.pdf",
+            "firstQuarterSha256": "4d1e96a495bec9cffd5c5c8baf196d2eff7ce608f80dce9b2ced6c927b4d78de"
+          }
+        }
+      ],
+      "financialNote": "공식 미국회계기준(US GAAP) 연결 손익계산서의 7~9월 단독분기 열입니다. 반기 누계와 구분하며 기존 비교분기 수치·출처·확인일은 보존합니다."
+    },
+    "TSE:6525": {
+      "reportingCurrency": "JPY",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 88629,
+          "operatingIncome": 20888,
+          "reportedCurrency": "JPY",
+          "unit": "millions of reporting currency",
+          "sourceUrl": "https://ssl4.eir-parts.net/doc/6525/tdnet/2907748/00.pdf",
+          "sourceType": "filing",
+          "source": "Official issuer earnings presentation, slide 36",
+          "publishedAt": "2026-11-09",
+          "verifiedAt": "2026-11-09",
+          "observedAt": "2026-11-09T09:11:11.666Z",
+          "basis": "IFRS consolidated; directly disclosed standalone second quarter, not adjusted operating profit",
+          "sourcePage": 36,
+          "sourceTextSha256": "727047887a965c3180db9d139eebde3dea8bda1315d9c8baff9c78f149a4a456",
+          "sourceEvidenceFormat": "Official PDF text extraction plus visually inspected PDF screenshot; original PDF byte download returned HTTP 503",
+          "sourcePrecision": "Slide 36 explicitly reports JPY millions; use 20888 IFRS operating profit, not 22467 adjusted operating profit",
+          "calculation": {
+            "method": "Direct FY27/3 2Q column, slide 36 (JPYM); 1Q and 1H columns separately labeled",
+            "crossCheck": "164043 - 75414 = 88629 revenue; 36814 - 15926 = 20888 IFRS operating profit; all inputs directly disclosed on same slide"
+          },
+          "reviewStatus": "Accompanying financial results say semi-annual reports are exempt from CPA/audit-firm review"
+        }
+      ],
+      "financialNote": "공식 결산발표자료 36쪽의 7~9월 단독분기 백만 JPY 수치입니다. IFRS 영업이익이며 별도의 조정 영업이익과 구분합니다. 기존 비교분기 수치·출처·확인일은 보존합니다."
+    },
+    "KRX:000150": {
+      "reportingCurrency": "KRW",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 5426900,
+          "operatingIncome": 459400,
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "sourceUrl": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261109000403",
+          "sourceType": "filing",
+          "source": "KIND official consolidated preliminary earnings filing",
+          "publishedAt": "2026-11-09T15:35:00+09:00",
+          "verifiedAt": "2026-11-09",
+          "observedAt": "2026-11-09T08:48:26.184078+00:00",
+          "basis": "K-IFRS consolidated; direct standalone preliminary July–September results",
+          "sourceSha256": "66555cafab13a5f94892456664c972d3cfb4fd155a51893d0af7a734b586aed7",
+          "documentUrl": "https://kind.krx.co.kr/external/2026/11/09/000403/20261027000125/99626.htm",
+          "publicationPrecision": "minute",
+          "releaseType": "preliminary",
+          "provisional": true,
+          "reviewStatus": "External audit not completed; preliminary figures may change",
+          "sourcePrecision": "Official unit KRW 100 million (억원), converted exactly to million KRW by multiplying by 100; no further precision inferred",
+          "calculation": {
+            "method": "Direct 당해실적 2026년 3분기 consolidated column, not 누계실적 and not separate-company figures",
+            "revenue": "54269 × 100 = 5426900 million KRW",
+            "operatingIncome": "4594 × 100 = 459400 million KRW"
+          }
+        }
+      ],
+      "financialNote": "KIND 공식 K-IFRS 연결 잠정실적의 7~9월 단독분기입니다. 원 공시 단위 억원을 백만원으로 환산했으며 외부감사 전 잠정치로 변경될 수 있습니다. 별도 실적·누계와 구분하며 기존 비교분기는 보존합니다."
+    }
+  },
+  "scopeNote": "Four selectively verified new standalone quarters, not an exhaustive Asian filings audit. New Japanese issuer source retrievals occurred after 18:00 KST; no assertion that those sources were available before that cutoff. Doosan reuses the previously collected official source observed at 2026-11-09T08:48:26.184078+00:00 (17:48 KST), preserving its actual observation time. Sony prior 403 was not retried. Phison issuer meeting-page original read returned 403 and further source fetching was stopped; no Phison row inserted. Kokusai official text and page-36 screenshot verified, but local PDF downloads returned HTTP 503, not an access denial."
+}
