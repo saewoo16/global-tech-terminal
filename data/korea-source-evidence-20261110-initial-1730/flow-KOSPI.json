@@ -1,0 +1,3095 @@
+{
+  "url": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=KOSPI&bizdate=20261110&startIdx=0&pageSize=30",
+  "observedAt": "2026-11-10T08:30:19.758334+00:00",
+  "status": 200,
+  "sha256": "91ce578b43500ed3fece85c67b81ee4e03ab85ebd1be8c45e10650d14abf8c08",
+  "data": {
+    "content": [
+      {
+        "bizdate": "20261110",
+        "time": "",
+        "netAmounts": [
+          {
+            "investorGubun": "9001",
+            "diffValue": "-5610000000",
+            "sellQuant": "537137",
+            "sellPrice": "16580000000",
+            "buyQuant": "435342",
+            "buyPrice": "10970000000"
+          },
+          {
+            "investorGubun": "9000",
+            "diffValue": "424404000000",
+            "sellQuant": "73675068",
+            "sellPrice": "6377433000000",
+            "buyQuant": "84118707",
+            "buyPrice": "6801837000000"
+          },
+          {
+            "investorGubun": "8000",
+            "diffValue": "-1384465000000",
+            "sellQuant": "133134606",
+            "sellPrice": "5361215000000",
+            "buyQuant": "115792504",
+            "buyPrice": "3976750000000"
+          },
+          {
+            "investorGubun": "7100",
+            "diffValue": "487635000000",
+            "sellQuant": "2423423",
+            "sellPrice": "119071000000",
+            "buyQuant": "4140935",
+            "buyPrice": "606706000000"
+          },
+          {
+            "investorGubun": "7000",
+            "diffValue": "0",
+            "sellQuant": "0",
+            "sellPrice": "0",
+            "buyQuant": "0",
+            "buyPrice": "0"
+          },
+          {
+            "investorGubun": "6000",
+            "diffValue": "-110113000000",
+            "sellQuant": "18640697",
+            "sellPrice": "2987117000000",
+            "buyQuant": "18432224",
+            "buyPrice": "2877004000000"
+          },
+          {
+            "investorGubun": "5000",
+            "diffValue": "8564000000",
+            "sellQuant": "115096",
+            "sellPrice": "13442000000",
+            "buyQuant": "204054",
+            "buyPrice": "22006000000"
+          },
+          {
+            "investorGubun": "4000",
+            "diffValue": "3126000000",
+            "sellQuant": "47164",
+            "sellPrice": "4162000000",
+            "buyQuant": "204485",
+            "buyPrice": "7288000000"
+          },
+          {
+            "investorGubun": "3100",
+            "diffValue": "117049000000",
+            "sellQuant": "2423836",
+            "sellPrice": "172275000000",
+            "buyQuant": "3386216",
+            "buyPrice": "289324000000"
+          },
+          {
+            "investorGubun": "3000",
+            "diffValue": "328463000000",
+            "sellQuant": "4253360",
+            "sellPrice": "305754000000",
+            "buyQuant": "5202116",
+            "buyPrice": "634217000000"
+          },
+          {
+            "investorGubun": "2000",
+            "diffValue": "43268000000",
+            "sellQuant": "827480",
+            "sellPrice": "69338000000",
+            "buyQuant": "1221337",
+            "buyPrice": "112606000000"
+          },
+          {
+            "investorGubun": "1000",
+            "diffValue": "87679000000",
+            "sellQuant": "9491717",
+            "sellPrice": "984002000000",
+            "buyQuant": "12431664",
+            "buyPrice": "1071681000000"
+          }
+        ]
+      },
+      {
+        "bizdate": "20261109",
+        "time": "",
+        "netAmounts": [
+          {
+            "investorGubun": "9001",
+            "diffValue": "-1227000000",
+            "sellQuant": "493462",
+            "sellPrice": "16150000000",
+            "buyQuant": "502391",
+            "buyPrice": "14923000000"
+          },
+          {
+            "investorGubun": "9000",
+            "diffValue": "-524324000000",
+            "sellQuant": "89601211",
+            "sellPrice": "7194128000000",
+            "buyQuant": "83532791",
+            "buyPrice": "6669804000000"
+          },
+          {
+            "investorGubun": "8000",
+            "diffValue": "-688639000000",
+            "sellQuant": "120005679",
+            "sellPrice": "5632831000000",
+            "buyQuant": "113344134",
+            "buyPrice": "4944192000000"
+          },
+          {
+            "investorGubun": "7100",
+            "diffValue": "460677000000",
+            "sellQuant": "1923528",
+            "sellPrice": "126264000000",
+            "buyQuant": "4072342",
+            "buyPrice": "586941000000"
+          },
+          {
+            "investorGubun": "7000",
+            "diffValue": "0",
+            "sellQuant": "0",
+            "sellPrice": "0",
+            "buyQuant": "0",
+            "buyPrice": "0"
+          },
+          {
+            "investorGubun": "6000",
+            "diffValue": "-152296000000",
+            "sellQuant": "19160911",
+            "sellPrice": "3764850000000",
+            "buyQuant": "19401698",
+            "buyPrice": "3612554000000"
+          },
+          {
+            "investorGubun": "5000",
+            "diffValue": "-35796000000",
+            "sellQuant": "234139",
+            "sellPrice": "49068000000",
+            "buyQuant": "195915",
+            "buyPrice": "13272000000"
+          },
+          {
+            "investorGubun": "4000",
+            "diffValue": "-4023000000",
+            "sellQuant": "214458",
+            "sellPrice": "10707000000",
+            "buyQuant": "276769",
+            "buyPrice": "6684000000"
+          },
+          {
+            "investorGubun": "3100",
+            "diffValue": "-236711000000",
+            "sellQuant": "4017996",
+            "sellPrice": "427657000000",
+            "buyQuant": "2967609",
+            "buyPrice": "190946000000"
+          },
+          {
+            "investorGubun": "3000",
+            "diffValue": "-3455000000",
+            "sellQuant": "3306211",
+            "sellPrice": "409360000000",
+            "buyQuant": "4345849",
+            "buyPrice": "405905000000"
+          },
+          {
+            "investorGubun": "2000",
+            "diffValue": "40211000000",
+            "sellQuant": "595369",
+            "sellPrice": "55611000000",
+            "buyQuant": "966410",
+            "buyPrice": "95822000000"
+          },
+          {
+            "investorGubun": "1000",
+            "diffValue": "1145583000000",
+            "sellQuant": "8248340",
+            "sellPrice": "737640000000",
+            "buyQuant": "18195396",
+            "buyPrice": "1883223000000"
+          }
+        ]
+      },
+      {
+        "bizdate": "20261106",
+        "time": "",
+        "netAmounts": [
+          {
+            "investorGubun": "9001",
+            "diffValue": "546000000",
+            "sellQuant": "610424",
+            "sellPrice": "24537000000",
+            "buyQuant": "523112",
+            "buyPrice": "25083000000"
+          },
+          {
+            "investorGubun": "9000",
+            "diffValue": "-2689708000000",
+            "sellQuant": "118467810",
+            "sellPrice": "12782483000000",
+            "buyQuant": "107582896",
+            "buyPrice": "10092775000000"
+          },
+          {
+            "investorGubun": "8000",
+            "diffValue": "520716000000",
+            "sellQuant": "150008738",
+            "sellPrice": "7740259000000",
+            "buyQuant": "145002808",
+            "buyPrice": "8260975000000"
+          },
+          {
+            "investorGubun": "7100",
+            "diffValue": "459275000000",
+            "sellQuant": "2378227",
+            "sellPrice": "161385000000",
+            "buyQuant": "5755476",
+            "buyPrice": "620660000000"
+          },
+          {
+            "investorGubun": "7000",
+            "diffValue": "0",
+            "sellQuant": "0",
+            "sellPrice": "0",
+            "buyQuant": "0",
+            "buyPrice": "0"
+          },
+          {
+            "investorGubun": "6000",
+            "diffValue": "287382000000",
+            "sellQuant": "26922151",
+            "sellPrice": "5056715000000",
+            "buyQuant": "27763796",
+            "buyPrice": "5344097000000"
+          },
+          {
+            "investorGubun": "5000",
+            "diffValue": "10750000000",
+            "sellQuant": "164993",
+            "sellPrice": "18854000000",
+            "buyQuant": "322645",
+            "buyPrice": "29604000000"
+          },
+          {
+            "investorGubun": "4000",
+            "diffValue": "-3483000000",
+            "sellQuant": "59862",
+            "sellPrice": "11767000000",
+            "buyQuant": "291846",
+            "buyPrice": "8284000000"
+          },
+          {
+            "investorGubun": "3100",
+            "diffValue": "-84852000000",
+            "sellQuant": "6083421",
+            "sellPrice": "792128000000",
+            "buyQuant": "5507842",
+            "buyPrice": "707276000000"
+          },
+          {
+            "investorGubun": "3000",
+            "diffValue": "-188577000000",
+            "sellQuant": "6066469",
+            "sellPrice": "901882000000",
+            "buyQuant": "7019287",
+            "buyPrice": "713305000000"
+          },
+          {
+            "investorGubun": "2000",
+            "diffValue": "63083000000",
+            "sellQuant": "1049512",
+            "sellPrice": "109592000000",
+            "buyQuant": "1883273",
+            "buyPrice": "172675000000"
+          },
+          {
+            "investorGubun": "1000",
+            "diffValue": "1624870000000",
+            "sellQuant": "9963151",
+            "sellPrice": "1103246000000",
+            "buyQuant": "20121777",
+            "buyPrice": "2728116000000"
+          }
+        ]
+      },
+      {
+        "bizdate": "20261105",
+        "time": "",
+        "netAmounts": [
+          {
+            "investorGubun": "9001",
+            "diffValue": "29867000000",
+            "sellQuant": "503328",
+            "sellPrice": "20460000000",
+            "buyQuant": "444356",
+            "buyPrice": "50327000000"
+          },
+          {
+            "investorGubun": "9000",
+            "diffValue": "-3403170000000",
+            "sellQuant": "94662874",
+            "sellPrice": "9997724000000",
+            "buyQuant": "82697439",
+            "buyPrice": "6594554000000"
+          },
+          {
+            "investorGubun": "8000",
+            "diffValue": "2208700000000",
+            "sellQuant": "125941360",
+            "sellPrice": "6165527000000",
+            "buyQuant": "127274704",
+            "buyPrice": "8374227000000"
+          },
+          {
+            "investorGubun": "7100",
+            "diffValue": "282720000000",
+            "sellQuant": "2846057",
+            "sellPrice": "262447000000",
+            "buyQuant": "3428688",
+            "buyPrice": "545167000000"
+          },
+          {
+            "investorGubun": "7000",
+            "diffValue": "0",
+            "sellQuant": "0",
+            "sellPrice": "0",
+            "buyQuant": "0",
+            "buyPrice": "0"
+          },
+          {
+            "investorGubun": "6000",
+            "diffValue": "160168000000",
+            "sellQuant": "21465007",
+            "sellPrice": "4158360000000",
+            "buyQuant": "23442991",
+            "buyPrice": "4318528000000"
+          },
+          {
+            "investorGubun": "5000",
+            "diffValue": "2008000000",
+            "sellQuant": "192739",
+            "sellPrice": "19982000000",
+            "buyQuant": "220261",
+            "buyPrice": "21990000000"
+          },
+          {
+            "investorGubun": "4000",
+            "diffValue": "7660000000",
+            "sellQuant": "43146",
+            "sellPrice": "7788000000",
+            "buyQuant": "342044",
+            "buyPrice": "15448000000"
+          },
+          {
+            "investorGubun": "3100",
+            "diffValue": "-154455000000",
+            "sellQuant": "4474900",
+            "sellPrice": "552420000000",
+            "buyQuant": "4389636",
+            "buyPrice": "397965000000"
+          },
+          {
+            "investorGubun": "3000",
+            "diffValue": "-307837000000",
+            "sellQuant": "6401919",
+            "sellPrice": "1035043000000",
+            "buyQuant": "7133848",
+            "buyPrice": "727206000000"
+          },
+          {
+            "investorGubun": "2000",
+            "diffValue": "30014000000",
+            "sellQuant": "788732",
+            "sellPrice": "103393000000",
+            "buyQuant": "1136158",
+            "buyPrice": "133407000000"
+          },
+          {
+            "investorGubun": "1000",
+            "diffValue": "1144327000000",
+            "sellQuant": "11257853",
+            "sellPrice": "1122367000000",
+            "buyQuant": "18067790",
+            "buyPrice": "2266694000000"
+          }
+        ]
+      },
+      {
+        "bizdate": "20261104",
+        "time": "",
+        "netAmounts": [
+          {
+            "investorGubun": "9001",
+            "diffValue": "-6085000000",
+            "sellQuant": "589398",
+            "sellPrice": "32036000000",
+            "buyQuant": "460752",
+            "buyPrice": "25951000000"
+          },
+          {
+            "investorGubun": "9000",
+            "diffValue": "-2446742000000",
+            "sellQuant": "93636708",
+            "sellPrice": "9490991000000",
+            "buyQuant": "90443081",
+            "buyPrice": "7044249000000"
+          },
+          {
+            "investorGubun": "8000",
+            "diffValue": "962929000000",
+            "sellQuant": "137374290",
+            "sellPrice": "7279173000000",
+            "buyQuant": "130905285",
+            "buyPrice": "8242102000000"
+          },
+          {
+            "investorGubun": "7100",
+            "diffValue": "356544000000",
+            "sellQuant": "2047438",
+            "sellPrice": "164727000000",
+            "buyQuant": "3462726",
+            "buyPrice": "521271000000"
+          },
+          {
+            "investorGubun": "7000",
+            "diffValue": "0",
+            "sellQuant": "0",
+            "sellPrice": "0",
+            "buyQuant": "0",
+            "buyPrice": "0"
+          },
+          {
+            "investorGubun": "6000",
+            "diffValue": "73950000000",
+            "sellQuant": "21671848",
+            "sellPrice": "4646860000000",
+            "buyQuant": "22538907",
+            "buyPrice": "4720810000000"
+          },
+          {
+            "investorGubun": "5000",
+            "diffValue": "15538000000",
+            "sellQuant": "54547",
+            "sellPrice": "7046000000",
+            "buyQuant": "305682",
+            "buyPrice": "22584000000"
+          },
+          {
+            "investorGubun": "4000",
+            "diffValue": "4355000000",
+            "sellQuant": "78305",
+            "sellPrice": "3464000000",
+            "buyQuant": "280056",
+            "buyPrice": "7819000000"
+          },
+          {
+            "investorGubun": "3100",
+            "diffValue": "146956000000",
+            "sellQuant": "2925311",
+            "sellPrice": "285046000000",
+            "buyQuant": "4146803",
+            "buyPrice": "432002000000"
+          },
+          {
+            "investorGubun": "3000",
+            "diffValue": "140105000000",
+            "sellQuant": "3160452",
+            "sellPrice": "424924000000",
+            "buyQuant": "4889917",
+            "buyPrice": "565029000000"
+          },
+          {
+            "investorGubun": "2000",
+            "diffValue": "59707000000",
+            "sellQuant": "893197",
+            "sellPrice": "82527000000",
+            "buyQuant": "1462507",
+            "buyPrice": "142234000000"
+          },
+          {
+            "investorGubun": "1000",
+            "diffValue": "692741000000",
+            "sellQuant": "13712259",
+            "sellPrice": "1324894000000",
+            "buyQuant": "17248037",
+            "buyPrice": "2017635000000"
+          }
+        ]
+      },
+      {
+        "bizdate": "20261103",
+        "time": "",
+        "netAmounts": [
+          {
+            "investorGubun": "9001",
+            "diffValue": "14408000000",
+            "sellQuant": "443155",
+            "sellPrice": "12260000000",
+            "buyQuant": "514574",
+            "buyPrice": "26668000000"
+          },
+          {
+            "investorGubun": "9000",
+            "diffValue": "-1522982000000",
+            "sellQuant": "78927767",
+            "sellPrice": "6843798000000",
+            "buyQuant": "67489668",
+            "buyPrice": "5320816000000"
+          },
+          {
+            "investorGubun": "8000",
+            "diffValue": "1638798000000",
+            "sellQuant": "88346060",
+            "sellPrice": "3092801000000",
+            "buyQuant": "99450189",
+            "buyPrice": "4731599000000"
+          },
+          {
+            "investorGubun": "7100",
+            "diffValue": "363859000000",
+            "sellQuant": "1480584",
+            "sellPrice": "104082000000",
+            "buyQuant": "2614043",
+            "buyPrice": "467941000000"
+          },
+          {
+            "investorGubun": "7000",
+            "diffValue": "0",
+            "sellQuant": "0",
+            "sellPrice": "0",
+            "buyQuant": "0",
+            "buyPrice": "0"
+          },
+          {
+            "investorGubun": "6000",
+            "diffValue": "113814000000",
+            "sellQuant": "14368848",
+            "sellPrice": "2410260000000",
+            "buyQuant": "14466611",
+            "buyPrice": "2524074000000"
+          },
+          {
+            "investorGubun": "5000",
+            "diffValue": "6205000000",
+            "sellQuant": "60436",
+            "sellPrice": "5106000000",
+            "buyQuant": "167038",
+            "buyPrice": "11311000000"
+          },
+          {
+            "investorGubun": "4000",
+            "diffValue": "-7719000000",
+            "sellQuant": "56792",
+            "sellPrice": "12203000000",
+            "buyQuant": "267851",
+            "buyPrice": "4484000000"
+          },
+          {
+            "investorGubun": "3100",
+            "diffValue": "-142316000000",
+            "sellQuant": "3913168",
+            "sellPrice": "357802000000",
+            "buyQuant": "3428171",
+            "buyPrice": "215486000000"
+          },
+          {
+            "investorGubun": "3000",
+            "diffValue": "-154886000000",
+            "sellQuant": "4962310",
+            "sellPrice": "593723000000",
+            "buyQuant": "3736629",
+            "buyPrice": "438837000000"
+          },
+          {
+            "investorGubun": "2000",
+            "diffValue": "18768000000",
+            "sellQuant": "418434",
+            "sellPrice": "47749000000",
+            "buyQuant": "710495",
+            "buyPrice": "66517000000"
+          },
+          {
+            "investorGubun": "1000",
+            "diffValue": "-327949000000",
+            "sellQuant": "9914039",
+            "sellPrice": "1141302000000",
+            "buyQuant": "10046324",
+            "buyPrice": "813353000000"
+          }
+        ]
+      },
+      {
+        "bizdate": "20261102",
+        "time": "",
+        "netAmounts": [
+          {
+            "investorGubun": "9001",
+            "diffValue": "-5368000000",
+            "sellQuant": "511024",
+            "sellPrice": "20486000000",
+            "buyQuant": "392412",
+            "buyPrice": "15118000000"
+          },
+          {
+            "investorGubun": "9000",
+            "diffValue": "-379111000000",
+            "sellQuant": "65208878",
+            "sellPrice": "5924977000000",
+            "buyQuant": "71315183",
+            "buyPrice": "5545866000000"
+          },
+          {
+            "investorGubun": "8000",
+            "diffValue": "-1330256000000",
+            "sellQuant": "99673797",
+            "sellPrice": "5151770000000",
+            "buyQuant": "80665993",
+            "buyPrice": "3821514000000"
+          },
+          {
+            "investorGubun": "7100",
+            "diffValue": "489006000000",
+            "sellQuant": "1505144",
+            "sellPrice": "120796000000",
+            "buyQuant": "3649469",
+            "buyPrice": "609802000000"
+          },
+          {
+            "investorGubun": "7000",
+            "diffValue": "0",
+            "sellQuant": "0",
+            "sellPrice": "0",
+            "buyQuant": "0",
+            "buyPrice": "0"
+          },
+          {
+            "investorGubun": "6000",
+            "diffValue": "169908000000",
+            "sellQuant": "14450005",
+            "sellPrice": "2954744000000",
+            "buyQuant": "15926809",
+            "buyPrice": "3124652000000"
+          },
+          {
+            "investorGubun": "5000",
+            "diffValue": "20244000000",
+            "sellQuant": "105233",
+            "sellPrice": "3914000000",
+            "buyQuant": "230981",
+            "buyPrice": "24158000000"
+          },
+          {
+            "investorGubun": "4000",
+            "diffValue": "3857000000",
+            "sellQuant": "19018",
+            "sellPrice": "2412000000",
+            "buyQuant": "271779",
+            "buyPrice": "6269000000"
+          },
+          {
+            "investorGubun": "3100",
+            "diffValue": "165970000000",
+            "sellQuant": "2617955",
+            "sellPrice": "204533000000",
+            "buyQuant": "4462737",
+            "buyPrice": "370503000000"
+          },
+          {
+            "investorGubun": "3000",
+            "diffValue": "264399000000",
+            "sellQuant": "2981021",
+            "sellPrice": "238374000000",
+            "buyQuant": "4150353",
+            "buyPrice": "502773000000"
+          },
+          {
+            "investorGubun": "2000",
+            "diffValue": "30943000000",
+            "sellQuant": "377998",
+            "sellPrice": "64985000000",
+            "buyQuant": "871802",
+            "buyPrice": "95928000000"
+          },
+          {
+            "investorGubun": "1000",
+            "diffValue": "570411000000",
+            "sellQuant": "8173640",
+            "sellPrice": "738691000000",
+            "buyQuant": "13686195",
+            "buyPrice": "1309102000000"
+          }
+        ]
+      },
+      {
+        "bizdate": "20261030",
+        "time": "",
+        "netAmounts": [
+          {
+            "investorGubun": "9001",
+            "diffValue": "903000000",
+            "sellQuant": "430000",
+            "sellPrice": "20874000000",
+            "buyQuant": "429032",
+            "buyPrice": "21777000000"
+          },
+          {
+            "investorGubun": "9000",
+            "diffValue": "-1615756000000",
+            "sellQuant": "88814795",
+            "sellPrice": "8683682000000",
+            "buyQuant": "81384985",
+            "buyPrice": "7067926000000"
+          },
+          {
+            "investorGubun": "8000",
+            "diffValue": "602786000000",
+            "sellQuant": "104319179",
+            "sellPrice": "5189783000000",
+            "buyQuant": "101243638",
+            "buyPrice": "5792569000000"
+          },
+          {
+            "investorGubun": "7100",
+            "diffValue": "258092000000",
+            "sellQuant": "1754440",
+            "sellPrice": "262552000000",
+            "buyQuant": "4432147",
+            "buyPrice": "520644000000"
+          },
+          {
+            "investorGubun": "7000",
+            "diffValue": "0",
+            "sellQuant": "0",
+            "sellPrice": "0",
+            "buyQuant": "0",
+            "buyPrice": "0"
+          },
+          {
+            "investorGubun": "6000",
+            "diffValue": "892934000000",
+            "sellQuant": "15517641",
+            "sellPrice": "3494868000000",
+            "buyQuant": "19894304",
+            "buyPrice": "4387802000000"
+          },
+          {
+            "investorGubun": "5000",
+            "diffValue": "11890000000",
+            "sellQuant": "82651",
+            "sellPrice": "6182000000",
+            "buyQuant": "205679",
+            "buyPrice": "18072000000"
+          },
+          {
+            "investorGubun": "4000",
+            "diffValue": "-3310000000",
+            "sellQuant": "67516",
+            "sellPrice": "5380000000",
+            "buyQuant": "11553",
+            "buyPrice": "2070000000"
+          },
+          {
+            "investorGubun": "3100",
+            "diffValue": "-264275000000",
+            "sellQuant": "3292938",
+            "sellPrice": "527622000000",
+            "buyQuant": "2236304",
+            "buyPrice": "263347000000"
+          },
+          {
+            "investorGubun": "3000",
+            "diffValue": "-243854000000",
+            "sellQuant": "4859145",
+            "sellPrice": "659520000000",
+            "buyQuant": "3355362",
+            "buyPrice": "415666000000"
+          },
+          {
+            "investorGubun": "2000",
+            "diffValue": "12498000000",
+            "sellQuant": "666564",
+            "sellPrice": "78098000000",
+            "buyQuant": "689550",
+            "buyPrice": "90596000000"
+          },
+          {
+            "investorGubun": "1000",
+            "diffValue": "348093000000",
+            "sellQuant": "7491434",
+            "sellPrice": "1052012000000",
+            "buyQuant": "13413749",
+            "buyPrice": "1400105000000"
+          }
+        ]
+      },
+      {
+        "bizdate": "20261029",
+        "time": "",
+        "netAmounts": [
+          {
+            "investorGubun": "9001",
+            "diffValue": "6036000000",
+            "sellQuant": "577314",
+            "sellPrice": "30976000000",
+            "buyQuant": "693163",
+            "buyPrice": "37012000000"
+          },
+          {
+            "investorGubun": "9000",
+            "diffValue": "116044000000",
+            "sellQuant": "102361426",
+            "sellPrice": "8765550000000",
+            "buyQuant": "100361774",
+            "buyPrice": "8881594000000"
+          },
+          {
+            "investorGubun": "8000",
+            "diffValue": "-42893000000",
+            "sellQuant": "139913565",
+            "sellPrice": "8730740000000",
+            "buyQuant": "148116861",
+            "buyPrice": "8687847000000"
+          },
+          {
+            "investorGubun": "7100",
+            "diffValue": "334033000000",
+            "sellQuant": "2618205",
+            "sellPrice": "259216000000",
+            "buyQuant": "4020449",
+            "buyPrice": "593249000000"
+          },
+          {
+            "investorGubun": "7000",
+            "diffValue": "0",
+            "sellQuant": "0",
+            "sellPrice": "0",
+            "buyQuant": "0",
+            "buyPrice": "0"
+          },
+          {
+            "investorGubun": "6000",
+            "diffValue": "-128061000000",
+            "sellQuant": "22905640",
+            "sellPrice": "4634157000000",
+            "buyQuant": "18191467",
+            "buyPrice": "4506096000000"
+          },
+          {
+            "investorGubun": "5000",
+            "diffValue": "15736000000",
+            "sellQuant": "48963",
+            "sellPrice": "6311000000",
+            "buyQuant": "207761",
+            "buyPrice": "22047000000"
+          },
+          {
+            "investorGubun": "4000",
+            "diffValue": "-3042000000",
+            "sellQuant": "46441",
+            "sellPrice": "6253000000",
+            "buyQuant": "18650",
+            "buyPrice": "3211000000"
+          },
+          {
+            "investorGubun": "3100",
+            "diffValue": "81242000000",
+            "sellQuant": "4606816",
+            "sellPrice": "580498000000",
+            "buyQuant": "3881037",
+            "buyPrice": "661740000000"
+          },
+          {
+            "investorGubun": "3000",
+            "diffValue": "-144215000000",
+            "sellQuant": "6927207",
+            "sellPrice": "801077000000",
+            "buyQuant": "3613191",
+            "buyPrice": "656862000000"
+          },
+          {
+            "investorGubun": "2000",
+            "diffValue": "11352000000",
+            "sellQuant": "1360522",
+            "sellPrice": "121014000000",
+            "buyQuant": "926175",
+            "buyPrice": "132366000000"
+          },
+          {
+            "investorGubun": "1000",
+            "diffValue": "-246233000000",
+            "sellQuant": "12709530",
+            "sellPrice": "1753607000000",
+            "buyQuant": "14045101",
+            "buyPrice": "1507374000000"
+          }
+        ]
+      },
+      {
+        "bizdate": "20261028",
+        "time": "",
+        "netAmounts": [
+          {
+            "investorGubun": "9001",
+            "diffValue": "-8992000000",
+            "sellQuant": "425212",
+            "sellPrice": "27654000000",
+            "buyQuant": "459078",
+            "buyPrice": "18662000000"
+          },
+          {
+            "investorGubun": "9000",
+            "diffValue": "776646000000",
+            "sellQuant": "76618162",
+            "sellPrice": "7216069000000",
+            "buyQuant": "80647080",
+            "buyPrice": "7992715000000"
+          },
+          {
+            "investorGubun": "8000",
+            "diffValue": "-1703732000000",
+            "sellQuant": "117124452",
+            "sellPrice": "7363318000000",
+            "buyQuant": "115366671",
+            "buyPrice": "5659586000000"
+          },
+          {
+            "investorGubun": "7100",
+            "diffValue": "22986000000",
+            "sellQuant": "1786914",
+            "sellPrice": "157742000000",
+            "buyQuant": "3216760",
+            "buyPrice": "180728000000"
+          },
+          {
+            "investorGubun": "7000",
+            "diffValue": "0",
+            "sellQuant": "0",
+            "sellPrice": "0",
+            "buyQuant": "0",
+            "buyPrice": "0"
+          },
+          {
+            "investorGubun": "6000",
+            "diffValue": "81053000000",
+            "sellQuant": "20129099",
+            "sellPrice": "3665004000000",
+            "buyQuant": "13091010",
+            "buyPrice": "3746057000000"
+          },
+          {
+            "investorGubun": "5000",
+            "diffValue": "-5641000000",
+            "sellQuant": "95250",
+            "sellPrice": "19520000000",
+            "buyQuant": "191366",
+            "buyPrice": "13879000000"
+          },
+          {
+            "investorGubun": "4000",
+            "diffValue": "4245000000",
+            "sellQuant": "65521",
+            "sellPrice": "11890000000",
+            "buyQuant": "46324",
+            "buyPrice": "16135000000"
+          },
+          {
+            "investorGubun": "3100",
+            "diffValue": "-43079000000",
+            "sellQuant": "3016375",
+            "sellPrice": "391492000000",
+            "buyQuant": "2370986",
+            "buyPrice": "348413000000"
+          },
+          {
+            "investorGubun": "3000",
+            "diffValue": "191647000000",
+            "sellQuant": "4758269",
+            "sellPrice": "572369000000",
+            "buyQuant": "3572981",
+            "buyPrice": "764016000000"
+          },
+          {
+            "investorGubun": "2000",
+            "diffValue": "20779000000",
+            "sellQuant": "1085125",
+            "sellPrice": "101413000000",
+            "buyQuant": "926959",
+            "buyPrice": "122192000000"
+          },
+          {
+            "investorGubun": "1000",
+            "diffValue": "664086000000",
+            "sellQuant": "10499905",
+            "sellPrice": "1233590000000",
+            "buyQuant": "15715069",
+            "buyPrice": "1897676000000"
+          }
+        ]
+      },
+      {
+        "bizdate": "20261027",
+        "time": "",
+        "netAmounts": [
+          {
+            "investorGubun": "9001",
+            "diffValue": "1313000000",
+            "sellQuant": "324616",
+            "sellPrice": "15159000000",
+            "buyQuant": "299200",
+            "buyPrice": "16472000000"
+          },
+          {
+            "investorGubun": "9000",
+            "diffValue": "581327000000",
+            "sellQuant": "75030442",
+            "sellPrice": "6595105000000",
+            "buyQuant": "84216614",
+            "buyPrice": "7176432000000"
+          },
+          {
+            "investorGubun": "8000",
+            "diffValue": "-940656000000",
+            "sellQuant": "86770021",
+            "sellPrice": "4738314000000",
+            "buyQuant": "77566578",
+            "buyPrice": "3797658000000"
+          },
+          {
+            "investorGubun": "7100",
+            "diffValue": "75665000000",
+            "sellQuant": "1150447",
+            "sellPrice": "92521000000",
+            "buyQuant": "2756796",
+            "buyPrice": "168186000000"
+          },
+          {
+            "investorGubun": "7000",
+            "diffValue": "0",
+            "sellQuant": "0",
+            "sellPrice": "0",
+            "buyQuant": "0",
+            "buyPrice": "0"
+          },
+          {
+            "investorGubun": "6000",
+            "diffValue": "-126523000000",
+            "sellQuant": "13542874",
+            "sellPrice": "3004897000000",
+            "buyQuant": "11397063",
+            "buyPrice": "2878374000000"
+          },
+          {
+            "investorGubun": "5000",
+            "diffValue": "4406000000",
+            "sellQuant": "96724",
+            "sellPrice": "4592000000",
+            "buyQuant": "439546",
+            "buyPrice": "8998000000"
+          },
+          {
+            "investorGubun": "4000",
+            "diffValue": "-3019000000",
+            "sellQuant": "61827",
+            "sellPrice": "6427000000",
+            "buyQuant": "12980",
+            "buyPrice": "3408000000"
+          },
+          {
+            "investorGubun": "3100",
+            "diffValue": "71411000000",
+            "sellQuant": "2808724",
+            "sellPrice": "205723000000",
+            "buyQuant": "2455421",
+            "buyPrice": "277134000000"
+          },
+          {
+            "investorGubun": "3000",
+            "diffValue": "180371000000",
+            "sellQuant": "3310908",
+            "sellPrice": "263409000000",
+            "buyQuant": "2236614",
+            "buyPrice": "443780000000"
+          },
+          {
+            "investorGubun": "2000",
+            "diffValue": "-4204000000",
+            "sellQuant": "885254",
+            "sellPrice": "70603000000",
+            "buyQuant": "568017",
+            "buyPrice": "66399000000"
+          },
+          {
+            "investorGubun": "1000",
+            "diffValue": "159909000000",
+            "sellQuant": "8668243",
+            "sellPrice": "983065000000",
+            "buyQuant": "10701251",
+            "buyPrice": "1142974000000"
+          }
+        ]
+      },
+      {
+        "bizdate": "20261026",
+        "time": "",
+        "netAmounts": [
+          {
+            "investorGubun": "9001",
+            "diffValue": "1842000000",
+            "sellQuant": "647201",
+            "sellPrice": "8115000000",
+            "buyQuant": "567459",
+            "buyPrice": "9957000000"
+          },
+          {
+            "investorGubun": "9000",
+            "diffValue": "-684496000000",
+            "sellQuant": "69722842",
+            "sellPrice": "5101966000000",
+            "buyQuant": "64418614",
+            "buyPrice": "4417470000000"
+          },
+          {
+            "investorGubun": "8000",
+            "diffValue": "33128000000",
+            "sellQuant": "99605233",
+            "sellPrice": "3251624000000",
+            "buyQuant": "101742004",
+            "buyPrice": "3284752000000"
+          },
+          {
+            "investorGubun": "7100",
+            "diffValue": "36411000000",
+            "sellQuant": "1334851",
+            "sellPrice": "58196000000",
+            "buyQuant": "2746804",
+            "buyPrice": "94607000000"
+          },
+          {
+            "investorGubun": "7000",
+            "diffValue": "0",
+            "sellQuant": "0",
+            "sellPrice": "0",
+            "buyQuant": "0",
+            "buyPrice": "0"
+          },
+          {
+            "investorGubun": "6000",
+            "diffValue": "40349000000",
+            "sellQuant": "14960830",
+            "sellPrice": "2882807000000",
+            "buyQuant": "14524678",
+            "buyPrice": "2923156000000"
+          },
+          {
+            "investorGubun": "5000",
+            "diffValue": "4965000000",
+            "sellQuant": "69494",
+            "sellPrice": "6404000000",
+            "buyQuant": "145546",
+            "buyPrice": "11369000000"
+          },
+          {
+            "investorGubun": "4000",
+            "diffValue": "-2652000000",
+            "sellQuant": "161927",
+            "sellPrice": "5014000000",
+            "buyQuant": "10094",
+            "buyPrice": "2362000000"
+          },
+          {
+            "investorGubun": "3100",
+            "diffValue": "17483000000",
+            "sellQuant": "2770692",
+            "sellPrice": "216760000000",
+            "buyQuant": "2214519",
+            "buyPrice": "234243000000"
+          },
+          {
+            "investorGubun": "3000",
+            "diffValue": "-127485000000",
+            "sellQuant": "4030955",
+            "sellPrice": "379280000000",
+            "buyQuant": "1936633",
+            "buyPrice": "251795000000"
+          },
+          {
+            "investorGubun": "2000",
+            "diffValue": "3716000000",
+            "sellQuant": "612863",
+            "sellPrice": "67011000000",
+            "buyQuant": "561094",
+            "buyPrice": "70727000000"
+          },
+          {
+            "investorGubun": "1000",
+            "diffValue": "676739000000",
+            "sellQuant": "7288633",
+            "sellPrice": "560467000000",
+            "buyQuant": "12338076",
+            "buyPrice": "1237206000000"
+          }
+        ]
+      },
+      {
+        "bizdate": "20261023",
+        "time": "",
+        "netAmounts": [
+          {
+            "investorGubun": "9001",
+            "diffValue": "-479000000",
+            "sellQuant": "478331",
+            "sellPrice": "12865000000",
+            "buyQuant": "443513",
+            "buyPrice": "12386000000"
+          },
+          {
+            "investorGubun": "9000",
+            "diffValue": "-980663000000",
+            "sellQuant": "80640659",
+            "sellPrice": "6983628000000",
+            "buyQuant": "76474532",
+            "buyPrice": "6002965000000"
+          },
+          {
+            "investorGubun": "8000",
+            "diffValue": "42213000000",
+            "sellQuant": "131916563",
+            "sellPrice": "4765048000000",
+            "buyQuant": "131145204",
+            "buyPrice": "4807261000000"
+          },
+          {
+            "investorGubun": "7100",
+            "diffValue": "70768000000",
+            "sellQuant": "1496546",
+            "sellPrice": "136857000000",
+            "buyQuant": "2763495",
+            "buyPrice": "207625000000"
+          },
+          {
+            "investorGubun": "7000",
+            "diffValue": "0",
+            "sellQuant": "0",
+            "sellPrice": "0",
+            "buyQuant": "0",
+            "buyPrice": "0"
+          },
+          {
+            "investorGubun": "6000",
+            "diffValue": "52896000000",
+            "sellQuant": "17373476",
+            "sellPrice": "3538085000000",
+            "buyQuant": "16551857",
+            "buyPrice": "3590981000000"
+          },
+          {
+            "investorGubun": "5000",
+            "diffValue": "6836000000",
+            "sellQuant": "35242",
+            "sellPrice": "3451000000",
+            "buyQuant": "304101",
+            "buyPrice": "10287000000"
+          },
+          {
+            "investorGubun": "4000",
+            "diffValue": "-521000000",
+            "sellQuant": "65902",
+            "sellPrice": "4201000000",
+            "buyQuant": "8714",
+            "buyPrice": "3680000000"
+          },
+          {
+            "investorGubun": "3100",
+            "diffValue": "-1146000000",
+            "sellQuant": "3384294",
+            "sellPrice": "327704000000",
+            "buyQuant": "3138316",
+            "buyPrice": "326558000000"
+          },
+          {
+            "investorGubun": "3000",
+            "diffValue": "172183000000",
+            "sellQuant": "3446775",
+            "sellPrice": "350574000000",
+            "buyQuant": "3393826",
+            "buyPrice": "522757000000"
+          },
+          {
+            "investorGubun": "2000",
+            "diffValue": "83038000000",
+            "sellQuant": "702862",
+            "sellPrice": "66723000000",
+            "buyQuant": "1109518",
+            "buyPrice": "149761000000"
+          },
+          {
+            "investorGubun": "1000",
+            "diffValue": "554878000000",
+            "sellQuant": "9267435",
+            "sellPrice": "834982000000",
+            "buyQuant": "13475009",
+            "buyPrice": "1389860000000"
+          }
+        ]
+      },
+      {
+        "bizdate": "20261022",
+        "time": "",
+        "netAmounts": [
+          {
+            "investorGubun": "9001",
+            "diffValue": "1858000000",
+            "sellQuant": "491323",
+            "sellPrice": "13421000000",
+            "buyQuant": "497884",
+            "buyPrice": "15279000000"
+          },
+          {
+            "investorGubun": "9000",
+            "diffValue": "48603000000",
+            "sellQuant": "65541926",
+            "sellPrice": "5113640000000",
+            "buyQuant": "67056482",
+            "buyPrice": "5162243000000"
+          },
+          {
+            "investorGubun": "8000",
+            "diffValue": "366650000000",
+            "sellQuant": "117714910",
+            "sellPrice": "4583883000000",
+            "buyQuant": "113602694",
+            "buyPrice": "4950533000000"
+          },
+          {
+            "investorGubun": "7100",
+            "diffValue": "42780000000",
+            "sellQuant": "2278019",
+            "sellPrice": "82165000000",
+            "buyQuant": "2306581",
+            "buyPrice": "124945000000"
+          },
+          {
+            "investorGubun": "7000",
+            "diffValue": "0",
+            "sellQuant": "0",
+            "sellPrice": "0",
+            "buyQuant": "0",
+            "buyPrice": "0"
+          },
+          {
+            "investorGubun": "6000",
+            "diffValue": "131309000000",
+            "sellQuant": "12684990",
+            "sellPrice": "2699073000000",
+            "buyQuant": "14886586",
+            "buyPrice": "2830382000000"
+          },
+          {
+            "investorGubun": "5000",
+            "diffValue": "-4561000000",
+            "sellQuant": "140325",
+            "sellPrice": "9048000000",
+            "buyQuant": "60612",
+            "buyPrice": "4487000000"
+          },
+          {
+            "investorGubun": "4000",
+            "diffValue": "-1902000000",
+            "sellQuant": "35933",
+            "sellPrice": "6037000000",
+            "buyQuant": "9533",
+            "buyPrice": "4135000000"
+          },
+          {
+            "investorGubun": "3100",
+            "diffValue": "-44693000000",
+            "sellQuant": "3216138",
+            "sellPrice": "282382000000",
+            "buyQuant": "3877203",
+            "buyPrice": "237689000000"
+          },
+          {
+            "investorGubun": "3000",
+            "diffValue": "-246058000000",
+            "sellQuant": "4418692",
+            "sellPrice": "540202000000",
+            "buyQuant": "3034211",
+            "buyPrice": "294144000000"
+          },
+          {
+            "investorGubun": "2000",
+            "diffValue": "73918000000",
+            "sellQuant": "542745",
+            "sellPrice": "45698000000",
+            "buyQuant": "837340",
+            "buyPrice": "119616000000"
+          },
+          {
+            "investorGubun": "1000",
+            "diffValue": "-367905000000",
+            "sellQuant": "8282704",
+            "sellPrice": "998532000000",
+            "buyQuant": "9178579",
+            "buyPrice": "630627000000"
+          }
+        ]
+      },
+      {
+        "bizdate": "20261021",
+        "time": "",
+        "netAmounts": [
+          {
+            "investorGubun": "9001",
+            "diffValue": "-2885000000",
+            "sellQuant": "588787",
+            "sellPrice": "15264000000",
+            "buyQuant": "557086",
+            "buyPrice": "12379000000"
+          },
+          {
+            "investorGubun": "9000",
+            "diffValue": "649059000000",
+            "sellQuant": "70755132",
+            "sellPrice": "6735612000000",
+            "buyQuant": "68652726",
+            "buyPrice": "7384671000000"
+          },
+          {
+            "investorGubun": "8000",
+            "diffValue": "-1115863000000",
+            "sellQuant": "117738712",
+            "sellPrice": "5597576000000",
+            "buyQuant": "119782509",
+            "buyPrice": "4481713000000"
+          },
+          {
+            "investorGubun": "7100",
+            "diffValue": "547773000000",
+            "sellQuant": "2125631",
+            "sellPrice": "119665000000",
+            "buyQuant": "2670290",
+            "buyPrice": "667438000000"
+          },
+          {
+            "investorGubun": "7000",
+            "diffValue": "0",
+            "sellQuant": "0",
+            "sellPrice": "0",
+            "buyQuant": "0",
+            "buyPrice": "0"
+          },
+          {
+            "investorGubun": "6000",
+            "diffValue": "-85049000000",
+            "sellQuant": "16405793",
+            "sellPrice": "3377595000000",
+            "buyQuant": "15190990",
+            "buyPrice": "3292546000000"
+          },
+          {
+            "investorGubun": "5000",
+            "diffValue": "-144000000",
+            "sellQuant": "44157",
+            "sellPrice": "6137000000",
+            "buyQuant": "100832",
+            "buyPrice": "5993000000"
+          },
+          {
+            "investorGubun": "4000",
+            "diffValue": "-4320000000",
+            "sellQuant": "95777",
+            "sellPrice": "13912000000",
+            "buyQuant": "37839",
+            "buyPrice": "9592000000"
+          },
+          {
+            "investorGubun": "3100",
+            "diffValue": "223320000000",
+            "sellQuant": "2207335",
+            "sellPrice": "157674000000",
+            "buyQuant": "3264180",
+            "buyPrice": "380994000000"
+          },
+          {
+            "investorGubun": "3000",
+            "diffValue": "268426000000",
+            "sellQuant": "2512610",
+            "sellPrice": "320170000000",
+            "buyQuant": "3804077",
+            "buyPrice": "588596000000"
+          },
+          {
+            "investorGubun": "2000",
+            "diffValue": "65041000000",
+            "sellQuant": "730710",
+            "sellPrice": "63871000000",
+            "buyQuant": "1206961",
+            "buyPrice": "128912000000"
+          },
+          {
+            "investorGubun": "1000",
+            "diffValue": "-545357000000",
+            "sellQuant": "10638374",
+            "sellPrice": "1287188000000",
+            "buyQuant": "8575528",
+            "buyPrice": "741831000000"
+          }
+        ]
+      },
+      {
+        "bizdate": "20261020",
+        "time": "",
+        "netAmounts": [
+          {
+            "investorGubun": "9001",
+            "diffValue": "3516000000",
+            "sellQuant": "783880",
+            "sellPrice": "14529000000",
+            "buyQuant": "730500",
+            "buyPrice": "18045000000"
+          },
+          {
+            "investorGubun": "9000",
+            "diffValue": "-491945000000",
+            "sellQuant": "86847864",
+            "sellPrice": "6424856000000",
+            "buyQuant": "75296943",
+            "buyPrice": "5932911000000"
+          },
+          {
+            "investorGubun": "8000",
+            "diffValue": "847539000000",
+            "sellQuant": "146071022",
+            "sellPrice": "4537129000000",
+            "buyQuant": "160235099",
+            "buyPrice": "5384668000000"
+          },
+          {
+            "investorGubun": "7100",
+            "diffValue": "631028000000",
+            "sellQuant": "2069356",
+            "sellPrice": "91955000000",
+            "buyQuant": "3182537",
+            "buyPrice": "722983000000"
+          },
+          {
+            "investorGubun": "7000",
+            "diffValue": "0",
+            "sellQuant": "0",
+            "sellPrice": "0",
+            "buyQuant": "0",
+            "buyPrice": "0"
+          },
+          {
+            "investorGubun": "6000",
+            "diffValue": "-55269000000",
+            "sellQuant": "14792153",
+            "sellPrice": "3149765000000",
+            "buyQuant": "14953792",
+            "buyPrice": "3094496000000"
+          },
+          {
+            "investorGubun": "5000",
+            "diffValue": "-3763000000",
+            "sellQuant": "52072",
+            "sellPrice": "8392000000",
+            "buyQuant": "71471",
+            "buyPrice": "4629000000"
+          },
+          {
+            "investorGubun": "4000",
+            "diffValue": "-6314000000",
+            "sellQuant": "37951",
+            "sellPrice": "7959000000",
+            "buyQuant": "7228",
+            "buyPrice": "1645000000"
+          },
+          {
+            "investorGubun": "3100",
+            "diffValue": "-458143000000",
+            "sellQuant": "5427509",
+            "sellPrice": "704267000000",
+            "buyQuant": "2732184",
+            "buyPrice": "246124000000"
+          },
+          {
+            "investorGubun": "3000",
+            "diffValue": "-250998000000",
+            "sellQuant": "3998217",
+            "sellPrice": "604911000000",
+            "buyQuant": "2976335",
+            "buyPrice": "353913000000"
+          },
+          {
+            "investorGubun": "2000",
+            "diffValue": "59324000000",
+            "sellQuant": "701141",
+            "sellPrice": "63077000000",
+            "buyQuant": "1088830",
+            "buyPrice": "122401000000"
+          },
+          {
+            "investorGubun": "1000",
+            "diffValue": "-274975000000",
+            "sellQuant": "10891831",
+            "sellPrice": "1161826000000",
+            "buyQuant": "10398077",
+            "buyPrice": "886851000000"
+          }
+        ]
+      },
+      {
+        "bizdate": "20261019",
+        "time": "",
+        "netAmounts": [
+          {
+            "investorGubun": "9001",
+            "diffValue": "-1453000000",
+            "sellQuant": "838734",
+            "sellPrice": "19038000000",
+            "buyQuant": "778546",
+            "buyPrice": "17585000000"
+          },
+          {
+            "investorGubun": "9000",
+            "diffValue": "96185000000",
+            "sellQuant": "75826345",
+            "sellPrice": "6522538000000",
+            "buyQuant": "78223235",
+            "buyPrice": "6618723000000"
+          },
+          {
+            "investorGubun": "8000",
+            "diffValue": "-1176690000000",
+            "sellQuant": "157181640",
+            "sellPrice": "6130582000000",
+            "buyQuant": "146009777",
+            "buyPrice": "4953892000000"
+          },
+          {
+            "investorGubun": "7100",
+            "diffValue": "551792000000",
+            "sellQuant": "2286747",
+            "sellPrice": "202931000000",
+            "buyQuant": "3043865",
+            "buyPrice": "754723000000"
+          },
+          {
+            "investorGubun": "7000",
+            "diffValue": "0",
+            "sellQuant": "0",
+            "sellPrice": "0",
+            "buyQuant": "0",
+            "buyPrice": "0"
+          },
+          {
+            "investorGubun": "6000",
+            "diffValue": "215130000000",
+            "sellQuant": "15164598",
+            "sellPrice": "3457542000000",
+            "buyQuant": "18491668",
+            "buyPrice": "3672672000000"
+          },
+          {
+            "investorGubun": "5000",
+            "diffValue": "1032000000",
+            "sellQuant": "55213",
+            "sellPrice": "10171000000",
+            "buyQuant": "137289",
+            "buyPrice": "11203000000"
+          },
+          {
+            "investorGubun": "4000",
+            "diffValue": "1389000000",
+            "sellQuant": "6917",
+            "sellPrice": "555000000",
+            "buyQuant": "11338",
+            "buyPrice": "1944000000"
+          },
+          {
+            "investorGubun": "3100",
+            "diffValue": "-4264000000",
+            "sellQuant": "2274920",
+            "sellPrice": "316737000000",
+            "buyQuant": "2941184",
+            "buyPrice": "312473000000"
+          },
+          {
+            "investorGubun": "3000",
+            "diffValue": "169306000000",
+            "sellQuant": "2881092",
+            "sellPrice": "390102000000",
+            "buyQuant": "3780020",
+            "buyPrice": "559408000000"
+          },
+          {
+            "investorGubun": "2000",
+            "diffValue": "57260000000",
+            "sellQuant": "627613",
+            "sellPrice": "64556000000",
+            "buyQuant": "930842",
+            "buyPrice": "121816000000"
+          },
+          {
+            "investorGubun": "1000",
+            "diffValue": "90313000000",
+            "sellQuant": "9727342",
+            "sellPrice": "1205033000000",
+            "buyQuant": "12523397",
+            "buyPrice": "1295346000000"
+          }
+        ]
+      },
+      {
+        "bizdate": "20261016",
+        "time": "",
+        "netAmounts": [
+          {
+            "investorGubun": "9001",
+            "diffValue": "-933000000",
+            "sellQuant": "839720",
+            "sellPrice": "19723000000",
+            "buyQuant": "752214",
+            "buyPrice": "18790000000"
+          },
+          {
+            "investorGubun": "9000",
+            "diffValue": "364653000000",
+            "sellQuant": "86638176",
+            "sellPrice": "8182614000000",
+            "buyQuant": "103423838",
+            "buyPrice": "8547267000000"
+          },
+          {
+            "investorGubun": "8000",
+            "diffValue": "-512593000000",
+            "sellQuant": "167327072",
+            "sellPrice": "6095514000000",
+            "buyQuant": "151547942",
+            "buyPrice": "5582921000000"
+          },
+          {
+            "investorGubun": "7100",
+            "diffValue": "830413000000",
+            "sellQuant": "1546022",
+            "sellPrice": "91288000000",
+            "buyQuant": "4154882",
+            "buyPrice": "921701000000"
+          },
+          {
+            "investorGubun": "7000",
+            "diffValue": "0",
+            "sellQuant": "0",
+            "sellPrice": "0",
+            "buyQuant": "0",
+            "buyPrice": "0"
+          },
+          {
+            "investorGubun": "6000",
+            "diffValue": "-167656000000",
+            "sellQuant": "16783808",
+            "sellPrice": "3360833000000",
+            "buyQuant": "15654800",
+            "buyPrice": "3193177000000"
+          },
+          {
+            "investorGubun": "5000",
+            "diffValue": "6273000000",
+            "sellQuant": "93387",
+            "sellPrice": "7886000000",
+            "buyQuant": "134218",
+            "buyPrice": "14159000000"
+          },
+          {
+            "investorGubun": "4000",
+            "diffValue": "8158000000",
+            "sellQuant": "18014",
+            "sellPrice": "1005000000",
+            "buyQuant": "39998",
+            "buyPrice": "9163000000"
+          },
+          {
+            "investorGubun": "3100",
+            "diffValue": "183668000000",
+            "sellQuant": "2258453",
+            "sellPrice": "218280000000",
+            "buyQuant": "3354964",
+            "buyPrice": "401948000000"
+          },
+          {
+            "investorGubun": "3000",
+            "diffValue": "188616000000",
+            "sellQuant": "5478353",
+            "sellPrice": "534064000000",
+            "buyQuant": "5275970",
+            "buyPrice": "722680000000"
+          },
+          {
+            "investorGubun": "2000",
+            "diffValue": "55454000000",
+            "sellQuant": "1005800",
+            "sellPrice": "75156000000",
+            "buyQuant": "1045183",
+            "buyPrice": "130610000000"
+          },
+          {
+            "investorGubun": "1000",
+            "diffValue": "-956050000000",
+            "sellQuant": "15164165",
+            "sellPrice": "1989016000000",
+            "buyQuant": "11768961",
+            "buyPrice": "1032966000000"
+          }
+        ]
+      },
+      {
+        "bizdate": "20261015",
+        "time": "",
+        "netAmounts": [
+          {
+            "investorGubun": "9001",
+            "diffValue": "9521000000",
+            "sellQuant": "993231",
+            "sellPrice": "23911000000",
+            "buyQuant": "1012399",
+            "buyPrice": "33432000000"
+          },
+          {
+            "investorGubun": "9000",
+            "diffValue": "-3773255000000",
+            "sellQuant": "127181620",
+            "sellPrice": "13470225000000",
+            "buyQuant": "114254058",
+            "buyPrice": "9696970000000"
+          },
+          {
+            "investorGubun": "8000",
+            "diffValue": "1396732000000",
+            "sellQuant": "213086556",
+            "sellPrice": "7593487000000",
+            "buyQuant": "200008208",
+            "buyPrice": "8990219000000"
+          },
+          {
+            "investorGubun": "7100",
+            "diffValue": "649439000000",
+            "sellQuant": "2537973",
+            "sellPrice": "165942000000",
+            "buyQuant": "6294809",
+            "buyPrice": "815381000000"
+          },
+          {
+            "investorGubun": "7000",
+            "diffValue": "0",
+            "sellQuant": "0",
+            "sellPrice": "0",
+            "buyQuant": "0",
+            "buyPrice": "0"
+          },
+          {
+            "investorGubun": "6000",
+            "diffValue": "34974000000",
+            "sellQuant": "20163145",
+            "sellPrice": "4285643000000",
+            "buyQuant": "26175637",
+            "buyPrice": "4320617000000"
+          },
+          {
+            "investorGubun": "5000",
+            "diffValue": "-5802000000",
+            "sellQuant": "112812",
+            "sellPrice": "26697000000",
+            "buyQuant": "235151",
+            "buyPrice": "20895000000"
+          },
+          {
+            "investorGubun": "4000",
+            "diffValue": "-14588000000",
+            "sellQuant": "60139",
+            "sellPrice": "20978000000",
+            "buyQuant": "24274",
+            "buyPrice": "6390000000"
+          },
+          {
+            "investorGubun": "3100",
+            "diffValue": "-300540000000",
+            "sellQuant": "5098714",
+            "sellPrice": "760305000000",
+            "buyQuant": "5206403",
+            "buyPrice": "459765000000"
+          },
+          {
+            "investorGubun": "3000",
+            "diffValue": "-225424000000",
+            "sellQuant": "4962833",
+            "sellPrice": "815158000000",
+            "buyQuant": "4376602",
+            "buyPrice": "589734000000"
+          },
+          {
+            "investorGubun": "2000",
+            "diffValue": "103808000000",
+            "sellQuant": "763614",
+            "sellPrice": "71836000000",
+            "buyQuant": "1372020",
+            "buyPrice": "175644000000"
+          },
+          {
+            "investorGubun": "1000",
+            "diffValue": "2125133000000",
+            "sellQuant": "8759348",
+            "sellPrice": "1054836000000",
+            "buyQuant": "24760424",
+            "buyPrice": "3179969000000"
+          }
+        ]
+      },
+      {
+        "bizdate": "20261014",
+        "time": "",
+        "netAmounts": [
+          {
+            "investorGubun": "9001",
+            "diffValue": "2467000000",
+            "sellQuant": "1147426",
+            "sellPrice": "16500000000",
+            "buyQuant": "962850",
+            "buyPrice": "18967000000"
+          },
+          {
+            "investorGubun": "9000",
+            "diffValue": "-1163889000000",
+            "sellQuant": "106515112",
+            "sellPrice": "9138335000000",
+            "buyQuant": "102394824",
+            "buyPrice": "7974446000000"
+          },
+          {
+            "investorGubun": "8000",
+            "diffValue": "-320292000000",
+            "sellQuant": "222278164",
+            "sellPrice": "5808870000000",
+            "buyQuant": "211329649",
+            "buyPrice": "5488578000000"
+          },
+          {
+            "investorGubun": "7100",
+            "diffValue": "694155000000",
+            "sellQuant": "1818972",
+            "sellPrice": "113475000000",
+            "buyQuant": "3641760",
+            "buyPrice": "807630000000"
+          },
+          {
+            "investorGubun": "7000",
+            "diffValue": "0",
+            "sellQuant": "0",
+            "sellPrice": "0",
+            "buyQuant": "0",
+            "buyPrice": "0"
+          },
+          {
+            "investorGubun": "6000",
+            "diffValue": "15181000000",
+            "sellQuant": "17188498",
+            "sellPrice": "3555848000000",
+            "buyQuant": "20371231",
+            "buyPrice": "3571029000000"
+          },
+          {
+            "investorGubun": "5000",
+            "diffValue": "17643000000",
+            "sellQuant": "14605",
+            "sellPrice": "3632000000",
+            "buyQuant": "251048",
+            "buyPrice": "21275000000"
+          },
+          {
+            "investorGubun": "4000",
+            "diffValue": "3775000000",
+            "sellQuant": "22162",
+            "sellPrice": "3328000000",
+            "buyQuant": "11114",
+            "buyPrice": "7103000000"
+          },
+          {
+            "investorGubun": "3100",
+            "diffValue": "107509000000",
+            "sellQuant": "1940733",
+            "sellPrice": "229318000000",
+            "buyQuant": "5750360",
+            "buyPrice": "336827000000"
+          },
+          {
+            "investorGubun": "3000",
+            "diffValue": "34727000000",
+            "sellQuant": "3721548",
+            "sellPrice": "514469000000",
+            "buyQuant": "5318410",
+            "buyPrice": "549196000000"
+          },
+          {
+            "investorGubun": "2000",
+            "diffValue": "109337000000",
+            "sellQuant": "910671",
+            "sellPrice": "77530000000",
+            "buyQuant": "1717066",
+            "buyPrice": "186867000000"
+          },
+          {
+            "investorGubun": "1000",
+            "diffValue": "499388000000",
+            "sellQuant": "11289676",
+            "sellPrice": "1065739000000",
+            "buyQuant": "15099255",
+            "buyPrice": "1565127000000"
+          }
+        ]
+      },
+      {
+        "bizdate": "20261013",
+        "time": "",
+        "netAmounts": [
+          {
+            "investorGubun": "9001",
+            "diffValue": "14422000000",
+            "sellQuant": "1354375",
+            "sellPrice": "26731000000",
+            "buyQuant": "1419350",
+            "buyPrice": "41153000000"
+          },
+          {
+            "investorGubun": "9000",
+            "diffValue": "-4593337000000",
+            "sellQuant": "119008072",
+            "sellPrice": "12368695000000",
+            "buyQuant": "114560022",
+            "buyPrice": "7775358000000"
+          },
+          {
+            "investorGubun": "8000",
+            "diffValue": "2316934000000",
+            "sellQuant": "255659379",
+            "sellPrice": "7856652000000",
+            "buyQuant": "242877036",
+            "buyPrice": "10173586000000"
+          },
+          {
+            "investorGubun": "7100",
+            "diffValue": "593468000000",
+            "sellQuant": "3255831",
+            "sellPrice": "286994000000",
+            "buyQuant": "3999529",
+            "buyPrice": "880462000000"
+          },
+          {
+            "investorGubun": "7000",
+            "diffValue": "0",
+            "sellQuant": "0",
+            "sellPrice": "0",
+            "buyQuant": "0",
+            "buyPrice": "0"
+          },
+          {
+            "investorGubun": "6000",
+            "diffValue": "51415000000",
+            "sellQuant": "19809800",
+            "sellPrice": "4691131000000",
+            "buyQuant": "24268791",
+            "buyPrice": "4742546000000"
+          },
+          {
+            "investorGubun": "5000",
+            "diffValue": "21746000000",
+            "sellQuant": "163652",
+            "sellPrice": "9458000000",
+            "buyQuant": "340613",
+            "buyPrice": "31204000000"
+          },
+          {
+            "investorGubun": "4000",
+            "diffValue": "-19254000000",
+            "sellQuant": "83786",
+            "sellPrice": "22965000000",
+            "buyQuant": "16727",
+            "buyPrice": "3711000000"
+          },
+          {
+            "investorGubun": "3100",
+            "diffValue": "-6766000000",
+            "sellQuant": "4556968",
+            "sellPrice": "591445000000",
+            "buyQuant": "5037765",
+            "buyPrice": "584679000000"
+          },
+          {
+            "investorGubun": "3000",
+            "diffValue": "-410905000000",
+            "sellQuant": "5502022",
+            "sellPrice": "1028898000000",
+            "buyQuant": "4604262",
+            "buyPrice": "617993000000"
+          },
+          {
+            "investorGubun": "2000",
+            "diffValue": "96195000000",
+            "sellQuant": "910943",
+            "sellPrice": "105446000000",
+            "buyQuant": "1466638",
+            "buyPrice": "201641000000"
+          },
+          {
+            "investorGubun": "1000",
+            "diffValue": "1936080000000",
+            "sellQuant": "10289289",
+            "sellPrice": "933608000000",
+            "buyQuant": "22003384",
+            "buyPrice": "2869688000000"
+          }
+        ]
+      },
+      {
+        "bizdate": "20261012",
+        "time": "",
+        "netAmounts": [
+          {
+            "investorGubun": "9001",
+            "diffValue": "7177000000",
+            "sellQuant": "676925",
+            "sellPrice": "22013000000",
+            "buyQuant": "845594",
+            "buyPrice": "29190000000"
+          },
+          {
+            "investorGubun": "9000",
+            "diffValue": "-2017443000000",
+            "sellQuant": "97799452",
+            "sellPrice": "9116532000000",
+            "buyQuant": "91095826",
+            "buyPrice": "7099089000000"
+          },
+          {
+            "investorGubun": "8000",
+            "diffValue": "1485744000000",
+            "sellQuant": "198661622",
+            "sellPrice": "6156343000000",
+            "buyQuant": "195265079",
+            "buyPrice": "7642087000000"
+          },
+          {
+            "investorGubun": "7100",
+            "diffValue": "659033000000",
+            "sellQuant": "2191234",
+            "sellPrice": "147881000000",
+            "buyQuant": "3594018",
+            "buyPrice": "806914000000"
+          },
+          {
+            "investorGubun": "7000",
+            "diffValue": "0",
+            "sellQuant": "0",
+            "sellPrice": "0",
+            "buyQuant": "0",
+            "buyPrice": "0"
+          },
+          {
+            "investorGubun": "6000",
+            "diffValue": "145054000000",
+            "sellQuant": "15277954",
+            "sellPrice": "3608691000000",
+            "buyQuant": "21193747",
+            "buyPrice": "3753745000000"
+          },
+          {
+            "investorGubun": "5000",
+            "diffValue": "11451000000",
+            "sellQuant": "36100",
+            "sellPrice": "8012000000",
+            "buyQuant": "248165",
+            "buyPrice": "19463000000"
+          },
+          {
+            "investorGubun": "4000",
+            "diffValue": "4733000000",
+            "sellQuant": "24404",
+            "sellPrice": "5570000000",
+            "buyQuant": "9154",
+            "buyPrice": "10303000000"
+          },
+          {
+            "investorGubun": "3100",
+            "diffValue": "-507581000000",
+            "sellQuant": "4903014",
+            "sellPrice": "770571000000",
+            "buyQuant": "2743422",
+            "buyPrice": "262990000000"
+          },
+          {
+            "investorGubun": "3000",
+            "diffValue": "-332940000000",
+            "sellQuant": "7313831",
+            "sellPrice": "1155322000000",
+            "buyQuant": "4892046",
+            "buyPrice": "822382000000"
+          },
+          {
+            "investorGubun": "2000",
+            "diffValue": "133059000000",
+            "sellQuant": "645662",
+            "sellPrice": "77090000000",
+            "buyQuant": "1669376",
+            "buyPrice": "210149000000"
+          },
+          {
+            "investorGubun": "1000",
+            "diffValue": "411715000000",
+            "sellQuant": "10437265",
+            "sellPrice": "1124272000000",
+            "buyQuant": "16411036",
+            "buyPrice": "1535987000000"
+          }
+        ]
+      },
+      {
+        "bizdate": "20261008",
+        "time": "",
+        "netAmounts": [
+          {
+            "investorGubun": "9001",
+            "diffValue": "4390000000",
+            "sellQuant": "973479",
+            "sellPrice": "20648000000",
+            "buyQuant": "1547372",
+            "buyPrice": "25038000000"
+          },
+          {
+            "investorGubun": "9000",
+            "diffValue": "-2074746000000",
+            "sellQuant": "84459499",
+            "sellPrice": "9882215000000",
+            "buyQuant": "75293680",
+            "buyPrice": "7807469000000"
+          },
+          {
+            "investorGubun": "8000",
+            "diffValue": "2997217000000",
+            "sellQuant": "164026070",
+            "sellPrice": "4901019000000",
+            "buyQuant": "176898427",
+            "buyPrice": "7898236000000"
+          },
+          {
+            "investorGubun": "7100",
+            "diffValue": "752064000000",
+            "sellQuant": "1517920",
+            "sellPrice": "101325000000",
+            "buyQuant": "2663644",
+            "buyPrice": "853389000000"
+          },
+          {
+            "investorGubun": "7000",
+            "diffValue": "0",
+            "sellQuant": "0",
+            "sellPrice": "0",
+            "buyQuant": "0",
+            "buyPrice": "0"
+          },
+          {
+            "investorGubun": "6000",
+            "diffValue": "-31596000000",
+            "sellQuant": "16674539",
+            "sellPrice": "3826643000000",
+            "buyQuant": "17910127",
+            "buyPrice": "3795047000000"
+          },
+          {
+            "investorGubun": "5000",
+            "diffValue": "13363000000",
+            "sellQuant": "92651",
+            "sellPrice": "5711000000",
+            "buyQuant": "279294",
+            "buyPrice": "19074000000"
+          },
+          {
+            "investorGubun": "4000",
+            "diffValue": "-1620000000",
+            "sellQuant": "35338",
+            "sellPrice": "4878000000",
+            "buyQuant": "15134",
+            "buyPrice": "3258000000"
+          },
+          {
+            "investorGubun": "3100",
+            "diffValue": "19392000000",
+            "sellQuant": "3072061",
+            "sellPrice": "414954000000",
+            "buyQuant": "3755481",
+            "buyPrice": "434346000000"
+          },
+          {
+            "investorGubun": "3000",
+            "diffValue": "405166000000",
+            "sellQuant": "4960958",
+            "sellPrice": "687511000000",
+            "buyQuant": "4540395",
+            "buyPrice": "1092677000000"
+          },
+          {
+            "investorGubun": "2000",
+            "diffValue": "10909000000",
+            "sellQuant": "669708",
+            "sellPrice": "77484000000",
+            "buyQuant": "554007",
+            "buyPrice": "88393000000"
+          },
+          {
+            "investorGubun": "1000",
+            "diffValue": "-2094539000000",
+            "sellQuant": "24427292",
+            "sellPrice": "4028403000000",
+            "buyQuant": "17451954",
+            "buyPrice": "1933864000000"
+          }
+        ]
+      },
+      {
+        "bizdate": "20261007",
+        "time": "",
+        "netAmounts": [
+          {
+            "investorGubun": "9001",
+            "diffValue": "12685000000",
+            "sellQuant": "887027",
+            "sellPrice": "16690000000",
+            "buyQuant": "747741",
+            "buyPrice": "29375000000"
+          },
+          {
+            "investorGubun": "9000",
+            "diffValue": "-2631449000000",
+            "sellQuant": "77994876",
+            "sellPrice": "8712503000000",
+            "buyQuant": "68657709",
+            "buyPrice": "6081054000000"
+          },
+          {
+            "investorGubun": "8000",
+            "diffValue": "2618343000000",
+            "sellQuant": "155672387",
+            "sellPrice": "5265494000000",
+            "buyQuant": "166315497",
+            "buyPrice": "7883837000000"
+          },
+          {
+            "investorGubun": "7100",
+            "diffValue": "710502000000",
+            "sellQuant": "2203563",
+            "sellPrice": "121294000000",
+            "buyQuant": "3216603",
+            "buyPrice": "831796000000"
+          },
+          {
+            "investorGubun": "7000",
+            "diffValue": "0",
+            "sellQuant": "0",
+            "sellPrice": "0",
+            "buyQuant": "0",
+            "buyPrice": "0"
+          },
+          {
+            "investorGubun": "6000",
+            "diffValue": "-279626000000",
+            "sellQuant": "15315172",
+            "sellPrice": "3618263000000",
+            "buyQuant": "14778758",
+            "buyPrice": "3338637000000"
+          },
+          {
+            "investorGubun": "5000",
+            "diffValue": "8334000000",
+            "sellQuant": "166700",
+            "sellPrice": "10751000000",
+            "buyQuant": "210630",
+            "buyPrice": "19085000000"
+          },
+          {
+            "investorGubun": "4000",
+            "diffValue": "-562000000",
+            "sellQuant": "22424",
+            "sellPrice": "3320000000",
+            "buyQuant": "5713",
+            "buyPrice": "2758000000"
+          },
+          {
+            "investorGubun": "3100",
+            "diffValue": "-42682000000",
+            "sellQuant": "2768982",
+            "sellPrice": "406430000000",
+            "buyQuant": "2460269",
+            "buyPrice": "363748000000"
+          },
+          {
+            "investorGubun": "3000",
+            "diffValue": "-15472000000",
+            "sellQuant": "3185622",
+            "sellPrice": "512202000000",
+            "buyQuant": "2645995",
+            "buyPrice": "496730000000"
+          },
+          {
+            "investorGubun": "2000",
+            "diffValue": "-59936000000",
+            "sellQuant": "1041962",
+            "sellPrice": "180245000000",
+            "buyQuant": "683645",
+            "buyPrice": "120309000000"
+          },
+          {
+            "investorGubun": "1000",
+            "diffValue": "-320137000000",
+            "sellQuant": "10269450",
+            "sellPrice": "1601929000000",
+            "buyQuant": "9805605",
+            "buyPrice": "1281792000000"
+          }
+        ]
+      },
+      {
+        "bizdate": "20261006",
+        "time": "",
+        "netAmounts": [
+          {
+            "investorGubun": "9001",
+            "diffValue": "-1031000000",
+            "sellQuant": "713051",
+            "sellPrice": "24648000000",
+            "buyQuant": "918158",
+            "buyPrice": "23617000000"
+          },
+          {
+            "investorGubun": "9000",
+            "diffValue": "-1756484000000",
+            "sellQuant": "81326343",
+            "sellPrice": "8286447000000",
+            "buyQuant": "71999830",
+            "buyPrice": "6529963000000"
+          },
+          {
+            "investorGubun": "8000",
+            "diffValue": "744058000000",
+            "sellQuant": "156831198",
+            "sellPrice": "6025868000000",
+            "buyQuant": "161399223",
+            "buyPrice": "6769926000000"
+          },
+          {
+            "investorGubun": "7100",
+            "diffValue": "1017314000000",
+            "sellQuant": "1748322",
+            "sellPrice": "139414000000",
+            "buyQuant": "3921051",
+            "buyPrice": "1156728000000"
+          },
+          {
+            "investorGubun": "7000",
+            "diffValue": "0",
+            "sellQuant": "0",
+            "sellPrice": "0",
+            "buyQuant": "0",
+            "buyPrice": "0"
+          },
+          {
+            "investorGubun": "6000",
+            "diffValue": "-61451000000",
+            "sellQuant": "12705919",
+            "sellPrice": "3083571000000",
+            "buyQuant": "13765149",
+            "buyPrice": "3022120000000"
+          },
+          {
+            "investorGubun": "5000",
+            "diffValue": "12845000000",
+            "sellQuant": "92000",
+            "sellPrice": "3314000000",
+            "buyQuant": "180307",
+            "buyPrice": "16159000000"
+          },
+          {
+            "investorGubun": "4000",
+            "diffValue": "-143000000",
+            "sellQuant": "34968",
+            "sellPrice": "3480000000",
+            "buyQuant": "7137",
+            "buyPrice": "3337000000"
+          },
+          {
+            "investorGubun": "3100",
+            "diffValue": "-64942000000",
+            "sellQuant": "3011450",
+            "sellPrice": "291119000000",
+            "buyQuant": "2356428",
+            "buyPrice": "226177000000"
+          },
+          {
+            "investorGubun": "3000",
+            "diffValue": "-54215000000",
+            "sellQuant": "3326315",
+            "sellPrice": "471065000000",
+            "buyQuant": "2817581",
+            "buyPrice": "416850000000"
+          },
+          {
+            "investorGubun": "2000",
+            "diffValue": "5255000000",
+            "sellQuant": "586675",
+            "sellPrice": "62008000000",
+            "buyQuant": "524265",
+            "buyPrice": "67263000000"
+          },
+          {
+            "investorGubun": "1000",
+            "diffValue": "158794000000",
+            "sellQuant": "8352313",
+            "sellPrice": "1319921000000",
+            "buyQuant": "10839425",
+            "buyPrice": "1478715000000"
+          }
+        ]
+      },
+      {
+        "bizdate": "20261002",
+        "time": "",
+        "netAmounts": [
+          {
+            "investorGubun": "9001",
+            "diffValue": "-6897000000",
+            "sellQuant": "654002",
+            "sellPrice": "22071000000",
+            "buyQuant": "649662",
+            "buyPrice": "15174000000"
+          },
+          {
+            "investorGubun": "9000",
+            "diffValue": "-101118000000",
+            "sellQuant": "61972304",
+            "sellPrice": "5362013000000",
+            "buyQuant": "63843843",
+            "buyPrice": "5260895000000"
+          },
+          {
+            "investorGubun": "8000",
+            "diffValue": "-1789715000000",
+            "sellQuant": "151100647",
+            "sellPrice": "6045092000000",
+            "buyQuant": "137813651",
+            "buyPrice": "4255377000000"
+          },
+          {
+            "investorGubun": "7100",
+            "diffValue": "1482208000000",
+            "sellQuant": "1370241",
+            "sellPrice": "93536000000",
+            "buyQuant": "4919034",
+            "buyPrice": "1575744000000"
+          },
+          {
+            "investorGubun": "7000",
+            "diffValue": "0",
+            "sellQuant": "0",
+            "sellPrice": "0",
+            "buyQuant": "0",
+            "buyPrice": "0"
+          },
+          {
+            "investorGubun": "6000",
+            "diffValue": "57181000000",
+            "sellQuant": "11371507",
+            "sellPrice": "2643479000000",
+            "buyQuant": "13898864",
+            "buyPrice": "2700660000000"
+          },
+          {
+            "investorGubun": "5000",
+            "diffValue": "15618000000",
+            "sellQuant": "45830",
+            "sellPrice": "1841000000",
+            "buyQuant": "215804",
+            "buyPrice": "17459000000"
+          },
+          {
+            "investorGubun": "4000",
+            "diffValue": "1197000000",
+            "sellQuant": "13375",
+            "sellPrice": "1316000000",
+            "buyQuant": "7740",
+            "buyPrice": "2513000000"
+          },
+          {
+            "investorGubun": "3100",
+            "diffValue": "-52101000000",
+            "sellQuant": "2783165",
+            "sellPrice": "263380000000",
+            "buyQuant": "2299149",
+            "buyPrice": "211279000000"
+          },
+          {
+            "investorGubun": "3000",
+            "diffValue": "-45911000000",
+            "sellQuant": "2778271",
+            "sellPrice": "443071000000",
+            "buyQuant": "3855556",
+            "buyPrice": "397160000000"
+          },
+          {
+            "investorGubun": "2000",
+            "diffValue": "-5795000000",
+            "sellQuant": "650710",
+            "sellPrice": "69503000000",
+            "buyQuant": "825526",
+            "buyPrice": "63708000000"
+          },
+          {
+            "investorGubun": "1000",
+            "diffValue": "445333000000",
+            "sellQuant": "5710472",
+            "sellPrice": "887671000000",
+            "buyQuant": "10121695",
+            "buyPrice": "1333004000000"
+          }
+        ]
+      },
+      {
+        "bizdate": "20261001",
+        "time": "",
+        "netAmounts": [
+          {
+            "investorGubun": "9001",
+            "diffValue": "-4887000000",
+            "sellQuant": "671219",
+            "sellPrice": "26035000000",
+            "buyQuant": "727422",
+            "buyPrice": "21148000000"
+          },
+          {
+            "investorGubun": "9000",
+            "diffValue": "-550942000000",
+            "sellQuant": "78074702",
+            "sellPrice": "5515738000000",
+            "buyQuant": "71451386",
+            "buyPrice": "4964796000000"
+          },
+          {
+            "investorGubun": "8000",
+            "diffValue": "-1410245000000",
+            "sellQuant": "162655348",
+            "sellPrice": "6714027000000",
+            "buyQuant": "161783720",
+            "buyPrice": "5303782000000"
+          },
+          {
+            "investorGubun": "7100",
+            "diffValue": "1642154000000",
+            "sellQuant": "1557783",
+            "sellPrice": "114625000000",
+            "buyQuant": "5173746",
+            "buyPrice": "1756779000000"
+          },
+          {
+            "investorGubun": "7000",
+            "diffValue": "0",
+            "sellQuant": "0",
+            "sellPrice": "0",
+            "buyQuant": "0",
+            "buyPrice": "0"
+          },
+          {
+            "investorGubun": "6000",
+            "diffValue": "23336000000",
+            "sellQuant": "12405098",
+            "sellPrice": "3089711000000",
+            "buyQuant": "14213660",
+            "buyPrice": "3113047000000"
+          },
+          {
+            "investorGubun": "5000",
+            "diffValue": "16970000000",
+            "sellQuant": "23234",
+            "sellPrice": "2115000000",
+            "buyQuant": "204213",
+            "buyPrice": "19085000000"
+          },
+          {
+            "investorGubun": "4000",
+            "diffValue": "1646000000",
+            "sellQuant": "20415",
+            "sellPrice": "2019000000",
+            "buyQuant": "14641",
+            "buyPrice": "3665000000"
+          },
+          {
+            "investorGubun": "3100",
+            "diffValue": "146674000000",
+            "sellQuant": "2632816",
+            "sellPrice": "244762000000",
+            "buyQuant": "2868490",
+            "buyPrice": "391436000000"
+          },
+          {
+            "investorGubun": "3000",
+            "diffValue": "-5785000000",
+            "sellQuant": "3519572",
+            "sellPrice": "498897000000",
+            "buyQuant": "3727563",
+            "buyPrice": "493112000000"
+          },
+          {
+            "investorGubun": "2000",
+            "diffValue": "37994000000",
+            "sellQuant": "694117",
+            "sellPrice": "85707000000",
+            "buyQuant": "868329",
+            "buyPrice": "123701000000"
+          },
+          {
+            "investorGubun": "1000",
+            "diffValue": "103086000000",
+            "sellQuant": "9370178",
+            "sellPrice": "1140607000000",
+            "buyQuant": "10591312",
+            "buyPrice": "1243693000000"
+          }
+        ]
+      },
+      {
+        "bizdate": "20260930",
+        "time": "",
+        "netAmounts": [
+          {
+            "investorGubun": "9001",
+            "diffValue": "4656000000",
+            "sellQuant": "532099",
+            "sellPrice": "13459000000",
+            "buyQuant": "554367",
+            "buyPrice": "18115000000"
+          },
+          {
+            "investorGubun": "9000",
+            "diffValue": "-2069212000000",
+            "sellQuant": "88143191",
+            "sellPrice": "9129763000000",
+            "buyQuant": "77484447",
+            "buyPrice": "7060551000000"
+          },
+          {
+            "investorGubun": "8000",
+            "diffValue": "1210896000000",
+            "sellQuant": "161674326",
+            "sellPrice": "4405624000000",
+            "buyQuant": "168199474",
+            "buyPrice": "5616520000000"
+          },
+          {
+            "investorGubun": "7100",
+            "diffValue": "1652911000000",
+            "sellQuant": "1143526",
+            "sellPrice": "82858000000",
+            "buyQuant": "5398644",
+            "buyPrice": "1735769000000"
+          },
+          {
+            "investorGubun": "7000",
+            "diffValue": "0",
+            "sellQuant": "0",
+            "sellPrice": "0",
+            "buyQuant": "0",
+            "buyPrice": "0"
+          },
+          {
+            "investorGubun": "6000",
+            "diffValue": "-18321000000",
+            "sellQuant": "13479599",
+            "sellPrice": "3357711000000",
+            "buyQuant": "13606045",
+            "buyPrice": "3339390000000"
+          },
+          {
+            "investorGubun": "5000",
+            "diffValue": "14387000000",
+            "sellQuant": "17266",
+            "sellPrice": "2740000000",
+            "buyQuant": "195925",
+            "buyPrice": "17127000000"
+          },
+          {
+            "investorGubun": "4000",
+            "diffValue": "300000000",
+            "sellQuant": "6499",
+            "sellPrice": "2550000000",
+            "buyQuant": "10402",
+            "buyPrice": "2850000000"
+          },
+          {
+            "investorGubun": "3100",
+            "diffValue": "-127879000000",
+            "sellQuant": "2894789",
+            "sellPrice": "358667000000",
+            "buyQuant": "3428420",
+            "buyPrice": "230788000000"
+          },
+          {
+            "investorGubun": "3000",
+            "diffValue": "141372000000",
+            "sellQuant": "2228548",
+            "sellPrice": "246498000000",
+            "buyQuant": "3690263",
+            "buyPrice": "387870000000"
+          },
+          {
+            "investorGubun": "2000",
+            "diffValue": "1648000000",
+            "sellQuant": "703923",
+            "sellPrice": "52350000000",
+            "buyQuant": "653828",
+            "buyPrice": "53998000000"
+          },
+          {
+            "investorGubun": "1000",
+            "diffValue": "-810758000000",
+            "sellQuant": "11910441",
+            "sellPrice": "1787514000000",
+            "buyQuant": "9512392",
+            "buyPrice": "976756000000"
+          }
+        ]
+      },
+      {
+        "bizdate": "20260929",
+        "time": "",
+        "netAmounts": [
+          {
+            "investorGubun": "9001",
+            "diffValue": "660000000",
+            "sellQuant": "381447",
+            "sellPrice": "16873000000",
+            "buyQuant": "429716",
+            "buyPrice": "17533000000"
+          },
+          {
+            "investorGubun": "9000",
+            "diffValue": "-2992858000000",
+            "sellQuant": "77027233",
+            "sellPrice": "8749219000000",
+            "buyQuant": "50999994",
+            "buyPrice": "5756361000000"
+          },
+          {
+            "investorGubun": "8000",
+            "diffValue": "1244665000000",
+            "sellQuant": "112790414",
+            "sellPrice": "4826017000000",
+            "buyQuant": "135828348",
+            "buyPrice": "6070682000000"
+          },
+          {
+            "investorGubun": "7100",
+            "diffValue": "1643390000000",
+            "sellQuant": "1395608",
+            "sellPrice": "78373000000",
+            "buyQuant": "4780486",
+            "buyPrice": "1721763000000"
+          },
+          {
+            "investorGubun": "7000",
+            "diffValue": "0",
+            "sellQuant": "0",
+            "sellPrice": "0",
+            "buyQuant": "0",
+            "buyPrice": "0"
+          },
+          {
+            "investorGubun": "6000",
+            "diffValue": "-35787000000",
+            "sellQuant": "12680329",
+            "sellPrice": "3091657000000",
+            "buyQuant": "12579136",
+            "buyPrice": "3055870000000"
+          },
+          {
+            "investorGubun": "5000",
+            "diffValue": "15947000000",
+            "sellQuant": "14178",
+            "sellPrice": "1224000000",
+            "buyQuant": "196469",
+            "buyPrice": "17171000000"
+          },
+          {
+            "investorGubun": "4000",
+            "diffValue": "-2418000000",
+            "sellQuant": "7817",
+            "sellPrice": "4474000000",
+            "buyQuant": "11172",
+            "buyPrice": "2056000000"
+          },
+          {
+            "investorGubun": "3100",
+            "diffValue": "-11356000000",
+            "sellQuant": "3263953",
+            "sellPrice": "335212000000",
+            "buyQuant": "2021600",
+            "buyPrice": "323856000000"
+          },
+          {
+            "investorGubun": "3000",
+            "diffValue": "135201000000",
+            "sellQuant": "3628303",
+            "sellPrice": "462360000000",
+            "buyQuant": "4184690",
+            "buyPrice": "597561000000"
+          },
+          {
+            "investorGubun": "2000",
+            "diffValue": "-15305000000",
+            "sellQuant": "549188",
+            "sellPrice": "53627000000",
+            "buyQuant": "459210",
+            "buyPrice": "38322000000"
+          },
+          {
+            "investorGubun": "1000",
+            "diffValue": "17863000000",
+            "sellQuant": "9044557",
+            "sellPrice": "1163001000000",
+            "buyQuant": "9292206",
+            "buyPrice": "1180864000000"
+          }
+        ]
+      },
+      {
+        "bizdate": "20260928",
+        "time": "",
+        "netAmounts": [
+          {
+            "investorGubun": "9001",
+            "diffValue": "14842000000",
+            "sellQuant": "453525",
+            "sellPrice": "18942000000",
+            "buyQuant": "556193",
+            "buyPrice": "33784000000"
+          },
+          {
+            "investorGubun": "9000",
+            "diffValue": "-3283042000000",
+            "sellQuant": "70115127",
+            "sellPrice": "10358063000000",
+            "buyQuant": "79766771",
+            "buyPrice": "7075021000000"
+          },
+          {
+            "investorGubun": "8000",
+            "diffValue": "2646668000000",
+            "sellQuant": "127191831",
+            "sellPrice": "6206631000000",
+            "buyQuant": "113886495",
+            "buyPrice": "8853299000000"
+          },
+          {
+            "investorGubun": "7100",
+            "diffValue": "1638414000000",
+            "sellQuant": "1801744",
+            "sellPrice": "145997000000",
+            "buyQuant": "5455703",
+            "buyPrice": "1784411000000"
+          },
+          {
+            "investorGubun": "7000",
+            "diffValue": "0",
+            "sellQuant": "0",
+            "sellPrice": "0",
+            "buyQuant": "0",
+            "buyPrice": "0"
+          },
+          {
+            "investorGubun": "6000",
+            "diffValue": "-182060000000",
+            "sellQuant": "11608102",
+            "sellPrice": "3092347000000",
+            "buyQuant": "11701159",
+            "buyPrice": "2910287000000"
+          },
+          {
+            "investorGubun": "5000",
+            "diffValue": "14867000000",
+            "sellQuant": "17844",
+            "sellPrice": "1767000000",
+            "buyQuant": "179303",
+            "buyPrice": "16634000000"
+          },
+          {
+            "investorGubun": "4000",
+            "diffValue": "-2300000000",
+            "sellQuant": "24955",
+            "sellPrice": "4141000000",
+            "buyQuant": "19787",
+            "buyPrice": "1841000000"
+          },
+          {
+            "investorGubun": "3100",
+            "diffValue": "-175852000000",
+            "sellQuant": "3036631",
+            "sellPrice": "449367000000",
+            "buyQuant": "2143513",
+            "buyPrice": "273515000000"
+          },
+          {
+            "investorGubun": "3000",
+            "diffValue": "-500013000000",
+            "sellQuant": "4037179",
+            "sellPrice": "770052000000",
+            "buyQuant": "2209910",
+            "buyPrice": "270039000000"
+          },
+          {
+            "investorGubun": "2000",
+            "diffValue": "-31202000000",
+            "sellQuant": "745793",
+            "sellPrice": "78204000000",
+            "buyQuant": "488718",
+            "buyPrice": "47002000000"
+          },
+          {
+            "investorGubun": "1000",
+            "diffValue": "-140323000000",
+            "sellQuant": "9887483",
+            "sellPrice": "1652131000000",
+            "buyQuant": "12512662",
+            "buyPrice": "1511808000000"
+          }
+        ]
+      }
+    ],
+    "pageable": {
+      "sort": {
+        "empty": true,
+        "unsorted": true,
+        "sorted": false
+      },
+      "offset": "0",
+      "pageNumber": "0",
+      "pageSize": "30",
+      "paged": true,
+      "unpaged": false
+    },
+    "last": false,
+    "totalPages": "180",
+    "totalElements": "5391",
+    "size": "30",
+    "number": "0",
+    "sort": {
+      "empty": true,
+      "unsorted": true,
+      "sorted": false
+    },
+    "first": true,
+    "numberOfElements": "30",
+    "empty": false
+  }
+}

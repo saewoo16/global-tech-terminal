@@ -1,0 +1,46 @@
+{
+  "url": "https://finance.daum.net/api/futures/masters",
+  "observedAt": "2026-11-10T08:31:43.681810+00:00",
+  "data": {
+    "code": 200,
+    "message": "OK",
+    "data": [
+      {
+        "symbolCode": "KR4A016C0004",
+        "name": "F 202612",
+        "basePrice": 775.85,
+        "baseDate": "2026-11-10",
+        "upperLimit": 837.9,
+        "lowerLimit": 713.8,
+        "prevClosingPrice": 775.85
+      },
+      {
+        "symbolCode": "KR4A01730006",
+        "name": "F 202703",
+        "basePrice": 767.7,
+        "baseDate": "2026-11-10",
+        "upperLimit": 0.0,
+        "lowerLimit": 0.0,
+        "prevClosingPrice": 767.7
+      },
+      {
+        "symbolCode": "KR4A01760003",
+        "name": "F 202706",
+        "basePrice": 782.45,
+        "baseDate": "2026-11-10",
+        "upperLimit": 845.0,
+        "lowerLimit": 719.9,
+        "prevClosingPrice": 0.0
+      },
+      {
+        "symbolCode": "KR4A01790000",
+        "name": "F 202709",
+        "basePrice": 787.65,
+        "baseDate": "2026-11-10",
+        "upperLimit": 850.65,
+        "lowerLimit": 724.65,
+        "prevClosingPrice": 0.0
+      }
+    ]
+  }
+}

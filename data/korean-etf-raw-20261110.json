@@ -1,0 +1,557 @@
+{
+  "sources": [
+    {
+      "url": "https://finance.naver.com/api/sise/etfItemList.nhn",
+      "observedAt": "2026-11-10T08:40:24.312265+00:00",
+      "sha256": "3002b23d255adcd97e907a168faaf26327ea6ac13e011ed511f7074520219413",
+      "bytes": 264445,
+      "file": "data/korean-etf-source-20261110/000.json"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=091160&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:40:28.281136+00:00",
+      "sha256": "78dc93008cb547e34e56b277225f7b3c3bbd1fe17522612545f70d684b6115eb",
+      "bytes": 26715,
+      "file": "data/korean-etf-source-20261110/001.xml"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=091170&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:40:28.385679+00:00",
+      "sha256": "da22cafcd221fadd337275651e898b5f35cef4c9879b69262f9c2ec2f74b9872",
+      "bytes": 25754,
+      "file": "data/korean-etf-source-20261110/002.xml"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=091180&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:40:28.427294+00:00",
+      "sha256": "529071859d6340b5e3a523038b1600b81aaba197a7960eaf99077c87e9c22a9b",
+      "bytes": 25912,
+      "file": "data/korean-etf-source-20261110/003.xml"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=102970&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:40:28.437396+00:00",
+      "sha256": "9ab3990624a66efcc1c21e5a49fecb44968d9c2ba9fcd71b682386116bacfeab",
+      "bytes": 25902,
+      "file": "data/korean-etf-source-20261110/004.xml"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=139260&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:40:28.441077+00:00",
+      "sha256": "1e807ec9ccdb8cd24c718d06ce70d5312ef12416caf6db11607308bb36390102",
+      "bytes": 26299,
+      "file": "data/korean-etf-source-20261110/005.xml"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/139260?periodType=day",
+      "observedAt": "2026-11-10T08:40:32.360079+00:00",
+      "sha256": "04bffd12f5c8ce41b6986af7341ef6d0fbcb768c150b0265decff4b8fca9f453",
+      "bytes": 91369,
+      "file": "data/korean-etf-source-20261110/006.json"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/091160?periodType=day",
+      "observedAt": "2026-11-10T08:40:32.375101+00:00",
+      "sha256": "f1c80178940cdc06fe99c6e1ed7198d6a3d87d2706301d35ff9649f70b5749a2",
+      "bytes": 93031,
+      "file": "data/korean-etf-source-20261110/007.json"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/091180?periodType=day",
+      "observedAt": "2026-11-10T08:40:32.476589+00:00",
+      "sha256": "1e6373ba7efbe1654d713d210a681476d4ea4c34e0e38b7fd9910a4fc2f24a0c",
+      "bytes": 73559,
+      "file": "data/korean-etf-source-20261110/008.json"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/091170?periodType=day",
+      "observedAt": "2026-11-10T08:40:32.551652+00:00",
+      "sha256": "239ad81a5ac9faca992ace1e37e5e7d83bfb170de26b4e869d13e28296e7081c",
+      "bytes": 78780,
+      "file": "data/korean-etf-source-20261110/009.json"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/102970?periodType=day",
+      "observedAt": "2026-11-10T08:40:32.580137+00:00",
+      "sha256": "d186370c65b7e3d72c5a0cdd36c0af999029026aa1e21b535172571b2c6822c3",
+      "bytes": 88835,
+      "file": "data/korean-etf-source-20261110/010.json"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=117460&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:40:34.926169+00:00",
+      "sha256": "f50c7a5e9a0eb4cfdd0148b7dba7e41d1aa7f875bc6ee5d262dfcc65f37f9cf1",
+      "bytes": 25321,
+      "file": "data/korean-etf-source-20261110/011.xml"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=117680&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:40:34.932864+00:00",
+      "sha256": "02c4ac99794730adc2afc89a6511ad071692f3214f18140411e42366e4149965",
+      "bytes": 25304,
+      "file": "data/korean-etf-source-20261110/012.xml"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=140700&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:40:35.093077+00:00",
+      "sha256": "59885e3ccb0fb65d8fe140784791ea0507a704d6f24a6551f4a3530f683c88df",
+      "bytes": 25410,
+      "file": "data/korean-etf-source-20261110/013.xml"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=117700&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:40:35.129081+00:00",
+      "sha256": "282d0fc7b89e69ec57e303c121338c008da5ee9152bebeb1edc1dd77e474b48d",
+      "bytes": 24405,
+      "file": "data/korean-etf-source-20261110/014.xml"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=102960&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:40:35.165106+00:00",
+      "sha256": "aef600da6f6de59796186f6fdbac0eabace9ef921d46d4fe891ef955ff4ed6ea",
+      "bytes": 25105,
+      "file": "data/korean-etf-source-20261110/015.xml"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/102960?periodType=day",
+      "observedAt": "2026-11-10T08:40:38.117627+00:00",
+      "sha256": "04a7f59aabb9b5cd8ab8c20afbcaa362521a4312ca161ab4fff4c0a4c7ce453c",
+      "bytes": 24659,
+      "file": "data/korean-etf-source-20261110/016.json"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/117460?periodType=day",
+      "observedAt": "2026-11-10T08:40:38.121066+00:00",
+      "sha256": "542653556d7673c7c636efdc878d818009db963f6cd46aa7fde1a0a5be59a559",
+      "bytes": 44347,
+      "file": "data/korean-etf-source-20261110/017.json"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/117680?periodType=day",
+      "observedAt": "2026-11-10T08:40:38.133392+00:00",
+      "sha256": "df4d75850f293cdff2fc87d84c54c9f7c1931efdf63a2afc23a43488ec3e3613",
+      "bytes": 40235,
+      "file": "data/korean-etf-source-20261110/018.json"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/140700?periodType=day",
+      "observedAt": "2026-11-10T08:40:38.157098+00:00",
+      "sha256": "ff26a1fba1e578adf6f41d980efdffa6655287ef684b7d197026bd67969e1f4f",
+      "bytes": 50229,
+      "file": "data/korean-etf-source-20261110/019.json"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/117700?periodType=day",
+      "observedAt": "2026-11-10T08:40:38.176923+00:00",
+      "sha256": "64b4af78ab29696d00c44481c1deffe549e0601794781fba062e107669450f17",
+      "bytes": 86771,
+      "file": "data/korean-etf-source-20261110/020.json"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=266410&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:40:42.259270+00:00",
+      "sha256": "e808bcfbd461996bd340cc678bd1fc2b068533fa2199a12b1c1f4e845aa3aefc",
+      "bytes": 23869,
+      "file": "data/korean-etf-source-20261110/021.xml"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=140710&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:40:42.264197+00:00",
+      "sha256": "b284d3b77d88b61af66b5a3e75641c69fca3dc008472cafa53ca8142067e7bc1",
+      "bytes": 23894,
+      "file": "data/korean-etf-source-20261110/022.xml"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=266390&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:40:42.272911+00:00",
+      "sha256": "40e73358e29b6729c337277a7606e18fd2db465482c22a481af9c3d79bd730e8",
+      "bytes": 24438,
+      "file": "data/korean-etf-source-20261110/023.xml"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=143860&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:40:42.281126+00:00",
+      "sha256": "d0fd8c29380e1beba03dfe8ee48a04ca56e83d9ad7cbe166ac4e8d460f872d99",
+      "bytes": 25566,
+      "file": "data/korean-etf-source-20261110/024.xml"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=157490&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:40:42.284989+00:00",
+      "sha256": "83646633ca68ee9c2b48879da18c8548dd176e519146abc4cda7705f252609e8",
+      "bytes": 24376,
+      "file": "data/korean-etf-source-20261110/025.xml"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/266410?periodType=day",
+      "observedAt": "2026-11-10T08:40:45.880484+00:00",
+      "sha256": "2359041ee249da197ceb25b6ea479ea1676fdb9bde3abb6d9a2299747e4be273",
+      "bytes": 29679,
+      "file": "data/korean-etf-source-20261110/026.json"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/266390?periodType=day",
+      "observedAt": "2026-11-10T08:40:45.901494+00:00",
+      "sha256": "1225567592da5785c26722e0b1cb909eca73edebabafc30885799c48d1c6895e",
+      "bytes": 33331,
+      "file": "data/korean-etf-source-20261110/027.json"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/157490?periodType=day",
+      "observedAt": "2026-11-10T08:40:45.921480+00:00",
+      "sha256": "cd6da705e16c6b615fb4f3defe4e1da4f52c0546a3fa31221f898f067862996d",
+      "bytes": 51012,
+      "file": "data/korean-etf-source-20261110/028.json"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/143860?periodType=day",
+      "observedAt": "2026-11-10T08:40:45.946197+00:00",
+      "sha256": "bbd1d75319f6aaaf5ffd97afb3c682b9712fe0fb40806bae26b7090ed05ec32d",
+      "bytes": 52470,
+      "file": "data/korean-etf-source-20261110/029.json"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/140710?periodType=day",
+      "observedAt": "2026-11-10T08:40:46.049772+00:00",
+      "sha256": "c255aad870a2c7b10f65c93b2fe4139f4db613f8e4f60abf72ad27757819c9e5",
+      "bytes": 48727,
+      "file": "data/korean-etf-source-20261110/030.json"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=455860&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:40:49.097406+00:00",
+      "sha256": "66b9da1ee3e87c4d79418692816c6ad1632bb302691a7d984f94a6cba776bdec",
+      "bytes": 24316,
+      "file": "data/korean-etf-source-20261110/031.xml"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=455850&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:40:49.141298+00:00",
+      "sha256": "39eaa2ec36cc4666aba151393e8ebea87d3c8917929bde04501713aab8f9b63f",
+      "bytes": 26020,
+      "file": "data/korean-etf-source-20261110/032.xml"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=0148J0&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:40:49.265473+00:00",
+      "sha256": "36d77554eace51efc1181bf437940332e3077b096683ae766d9f1a7a300947c8",
+      "bytes": 13356,
+      "file": "data/korean-etf-source-20261110/033.xml"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=305720&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:40:49.277156+00:00",
+      "sha256": "c568584c0b0b898b823b19d264239d680560ff91fc0029f3435badcd3fc1fa42",
+      "bytes": 26188,
+      "file": "data/korean-etf-source-20261110/034.xml"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=0177X0&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:40:49.313022+00:00",
+      "sha256": "fc24154423e37e0d4d9c55c48cf4f3b937c95c571b8af79db1081626521c31e8",
+      "bytes": 9289,
+      "file": "data/korean-etf-source-20261110/035.xml"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/455860?periodType=day",
+      "observedAt": "2026-11-10T08:40:51.865153+00:00",
+      "sha256": "a91ced3ff704d540f21a35c3fd0124b7755a989adcdefc6732c4910bb794519d",
+      "bytes": 61797,
+      "file": "data/korean-etf-source-20261110/036.json"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/305720?periodType=day",
+      "observedAt": "2026-11-10T08:40:51.983344+00:00",
+      "sha256": "26005d0c879dc38089aa992acb9aec788830eb744bf6d96e13c86aca52faf553",
+      "bytes": 93216,
+      "file": "data/korean-etf-source-20261110/037.json"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/0148J0?periodType=day",
+      "observedAt": "2026-11-10T08:40:51.985160+00:00",
+      "sha256": "6e66926e9a42de984c864b0a8dae93e82fb6fed77f3ea1db49c68b5410496644",
+      "bytes": 90432,
+      "file": "data/korean-etf-source-20261110/038.json"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/0177X0?periodType=day",
+      "observedAt": "2026-11-10T08:40:52.057172+00:00",
+      "sha256": "b9ed106fa1cf408a5e5de6674d40b110d74255742541c29471681b3d076a356a",
+      "bytes": 64937,
+      "file": "data/korean-etf-source-20261110/039.json"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/455850?periodType=day",
+      "observedAt": "2026-11-10T08:40:52.089460+00:00",
+      "sha256": "191c9d4d796cc8a162908e65d8efe56c12b72843f94cb31bf55cef9a99632ed5",
+      "bytes": 93200,
+      "file": "data/korean-etf-source-20261110/040.json"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=0247S0&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:40:55.112758+00:00",
+      "sha256": "7392621ef2b84cd2933d3d8b531665d783ca1ae6a83bb6eb9f5ec07fe55ace8e",
+      "bytes": 1489,
+      "file": "data/korean-etf-source-20261110/041.xml"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=475310&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:40:55.116723+00:00",
+      "sha256": "466d819d6d457ef9e3845eef73df26f5fda4d6940bfbeb277b2cff298f826082",
+      "bytes": 25543,
+      "file": "data/korean-etf-source-20261110/042.xml"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=475300&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:40:55.165621+00:00",
+      "sha256": "2ae5acfbe5e51e44395821959110f8ae189189a3b627ca74219bbf5a5a43d5a4",
+      "bytes": 25339,
+      "file": "data/korean-etf-source-20261110/043.xml"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=449450&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:40:55.200378+00:00",
+      "sha256": "c5ea36591d92f66fb94f83b7f2d03e4fae8e48a8284131b3963bbac82fdc7eea",
+      "bytes": 26017,
+      "file": "data/korean-etf-source-20261110/044.xml"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=0207G0&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:40:55.238531+00:00",
+      "sha256": "ee58051357100f2bb96196f1a3e8934a53f9d53105af1d784e95623079529042",
+      "bytes": 6223,
+      "file": "data/korean-etf-source-20261110/045.xml"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/475300?periodType=day",
+      "observedAt": "2026-11-10T08:40:58.036980+00:00",
+      "sha256": "1113b77c2f1c8b883e6c12dc3d515e40b14a94657328d5b6db40a959b8844bde",
+      "bytes": 92179,
+      "file": "data/korean-etf-source-20261110/046.json"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/475310?periodType=day",
+      "observedAt": "2026-11-10T08:40:58.126733+00:00",
+      "sha256": "a7919d3a5ea4e0b00e9dab03952d48f8705e2fa88e586a72ae643e9e824b474a",
+      "bytes": 89440,
+      "file": "data/korean-etf-source-20261110/047.json"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/0247S0?periodType=day",
+      "observedAt": "2026-11-10T08:40:58.196635+00:00",
+      "sha256": "52ec01fed4bb75d13981ab61de20388d7661fdffbf181a12cc259587cd9126f8",
+      "bytes": 39388,
+      "file": "data/korean-etf-source-20261110/048.json"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/0207G0?periodType=day",
+      "observedAt": "2026-11-10T08:40:58.239140+00:00",
+      "sha256": "adf9ed81b44dd6a5dcfefd9d913d76b02e9de88935d46fbda8cad82e7d32f894",
+      "bytes": 35711,
+      "file": "data/korean-etf-source-20261110/049.json"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/449450?periodType=day",
+      "observedAt": "2026-11-10T08:40:58.246812+00:00",
+      "sha256": "99728dbf066609b0f10acbb0a3742c476b04be96f68ac61f03b9acaca4cf0136",
+      "bytes": 89892,
+      "file": "data/korean-etf-source-20261110/050.json"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=0222F0&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:41:00.920003+00:00",
+      "sha256": "bb21fa74886238f5637942229ab9b583a4fd8ccf9c1714dac0045dc5e6b46035",
+      "bytes": 4305,
+      "file": "data/korean-etf-source-20261110/051.xml"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=0091P0&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:41:00.925266+00:00",
+      "sha256": "fa515a5379939e7d6b8886142be44accbaeea68a6f2d607ec51b7dc58c5d05e1",
+      "bytes": 19498,
+      "file": "data/korean-etf-source-20261110/052.xml"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=421320&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:41:01.093626+00:00",
+      "sha256": "a702ebc5cc26cd4c17ef3ba317e3e53a9da44f6384dbeb128636b004f7bf6edb",
+      "bytes": 25594,
+      "file": "data/korean-etf-source-20261110/053.xml"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=466920&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:41:01.109221+00:00",
+      "sha256": "57f5911fbdcd80522c461e248ed4ff77bca79eba713e5310b04e6a6d5526685b",
+      "bytes": 26186,
+      "file": "data/korean-etf-source-20261110/054.xml"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=487240&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:41:01.134749+00:00",
+      "sha256": "57b1d29663fb293ec03510e58391349ed13e0599d79d6ba60c31bc13bfd2aa8c",
+      "bytes": 26103,
+      "file": "data/korean-etf-source-20261110/055.xml"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/487240?periodType=day",
+      "observedAt": "2026-11-10T08:41:05.041243+00:00",
+      "sha256": "f2eb50847156f8cc8ba95615477c6cbd2636cd32ac52c00c7c0504e68f1226af",
+      "bytes": 93208,
+      "file": "data/korean-etf-source-20261110/056.json"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/0222F0?periodType=day",
+      "observedAt": "2026-11-10T08:41:05.069125+00:00",
+      "sha256": "185d43e77f5d8e7d7446b7758f98fe6b439090fdfbb0254cb8d6e3b73aa4c0fa",
+      "bytes": 10451,
+      "file": "data/korean-etf-source-20261110/057.json"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/421320?periodType=day",
+      "observedAt": "2026-11-10T08:41:05.069418+00:00",
+      "sha256": "1266f3b847c9eb44504c85579ec8b3d6b108ad4a7b53d6d8bef4e2c02162ff09",
+      "bytes": 63648,
+      "file": "data/korean-etf-source-20261110/058.json"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/466920?periodType=day",
+      "observedAt": "2026-11-10T08:41:05.232940+00:00",
+      "sha256": "d5c369d0577bf6f4a1472addecf0580bc9d69c5a06e7c543622679f71e19883c",
+      "bytes": 91608,
+      "file": "data/korean-etf-source-20261110/059.json"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/0091P0?periodType=day",
+      "observedAt": "2026-11-10T08:41:05.260877+00:00",
+      "sha256": "fd2a2d090d237aad651bd8e20d367916b6e3573481d56f2f12dbde9378d6f4ab",
+      "bytes": 89648,
+      "file": "data/korean-etf-source-20261110/060.json"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=0209D0&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:41:26.996457+00:00",
+      "sha256": "0ca31102e607116c74823af5be04d538ec1dc9074c9a0b91f49025c723cda6cd",
+      "bytes": 5989,
+      "file": "data/korean-etf-source-20261110/061.xml"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=364970&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:41:27.041159+00:00",
+      "sha256": "30728484afc5fe47f1b6c0c2854da3fc390b7d2606a054280e86c87d613fe205",
+      "bytes": 24480,
+      "file": "data/korean-etf-source-20261110/062.xml"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=457990&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:41:27.044851+00:00",
+      "sha256": "a59b5d04aa096896b9239f2c7c75fdbf6efadfdf666670f70bd6696ef0335d24",
+      "bytes": 25593,
+      "file": "data/korean-etf-source-20261110/063.xml"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=228800&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:41:27.052951+00:00",
+      "sha256": "7507ccbef8db46095157d6e6ebbead4d2f960fc4e0e26117f0530bbcdfe2cad1",
+      "bytes": 24215,
+      "file": "data/korean-etf-source-20261110/064.xml"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=228790&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:41:27.086941+00:00",
+      "sha256": "e887d963f180202f65c5464e8ebfb2d51f1b09920c5a6e6d7ff79345f2bce4ca",
+      "bytes": 24642,
+      "file": "data/korean-etf-source-20261110/065.xml"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/228800?periodType=day",
+      "observedAt": "2026-11-10T08:41:30.370336+00:00",
+      "sha256": "3fd74af9d5f5d4a4067970433d1c9274f1634002879002ae12ca36e6c2202895",
+      "bytes": 50035,
+      "file": "data/korean-etf-source-20261110/066.json"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/457990?periodType=day",
+      "observedAt": "2026-11-10T08:41:30.436922+00:00",
+      "sha256": "2d1d0b151078a58c063769d2fcb2de2c58e598ee152a693973624efd10dbc675",
+      "bytes": 90346,
+      "file": "data/korean-etf-source-20261110/067.json"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/0209D0?periodType=day",
+      "observedAt": "2026-11-10T08:41:30.493162+00:00",
+      "sha256": "244746bed044fe11216acf51609ac984d466f41653c92e59d62fa7c4ebb56731",
+      "bytes": 89427,
+      "file": "data/korean-etf-source-20261110/068.json"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/364970?periodType=day",
+      "observedAt": "2026-11-10T08:41:30.584905+00:00",
+      "sha256": "f09b349149fb4dfec57ec29d87f7bf6fe72930820cc21f0d9216c55adc646361",
+      "bytes": 87108,
+      "file": "data/korean-etf-source-20261110/069.json"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/228790?periodType=day",
+      "observedAt": "2026-11-10T08:41:30.625072+00:00",
+      "sha256": "6e3ed44803e46fca1fe159bb9393b2d84e2804eb5bcb82844b3ead050f2c558b",
+      "bytes": 85974,
+      "file": "data/korean-etf-source-20261110/070.json"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=228810&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:41:32.933211+00:00",
+      "sha256": "968a82142b2d8efd55984a3379f3dbcd320db8dcb3afde93df7fddc61b30732f",
+      "bytes": 24236,
+      "file": "data/korean-etf-source-20261110/071.xml"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=364990&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:41:32.981065+00:00",
+      "sha256": "68fff1f97a0f763f1b3a33fff88530c1dfd1c729b5e279347723dce11a511175",
+      "bytes": 24125,
+      "file": "data/korean-etf-source-20261110/072.xml"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=329200&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:41:32.984975+00:00",
+      "sha256": "df1f7e8cbaea9c14526feb817ea18ea5bd4c14c1df17bcad76be4da5ec553045",
+      "bytes": 24613,
+      "file": "data/korean-etf-source-20261110/073.xml"
+    },
+    {
+      "url": "https://fchart.stock.naver.com/sise.nhn?symbol=365000&timeframe=day&count=400&requestType=0",
+      "observedAt": "2026-11-10T08:41:33.101181+00:00",
+      "sha256": "fb9954ea70705859223fcdae020ad5be0cdaf6ee32cabc297c53fe074327b637",
+      "bytes": 24268,
+      "file": "data/korean-etf-source-20261110/074.xml"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/364990?periodType=day",
+      "observedAt": "2026-11-10T08:41:35.641097+00:00",
+      "sha256": "82ab5d98912e2d994dd546d08defa848b78c51716b663538953e96fbfea2b75c",
+      "bytes": 28251,
+      "file": "data/korean-etf-source-20261110/075.json"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/228810?periodType=day",
+      "observedAt": "2026-11-10T08:41:35.682584+00:00",
+      "sha256": "653ef2a44b335c5c4035ba9faca5a75d50839a9a3c8f20d836e45de4411e5f26",
+      "bytes": 63490,
+      "file": "data/korean-etf-source-20261110/076.json"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/365000?periodType=day",
+      "observedAt": "2026-11-10T08:41:35.829361+00:00",
+      "sha256": "7afb3e9f2e910a6c0085ad5a3505ccdd3f4e36df94986bdc517de9e5c39ad0c9",
+      "bytes": 33956,
+      "file": "data/korean-etf-source-20261110/077.json"
+    },
+    {
+      "url": "https://api.stock.naver.com/chart/domestic/item/329200?periodType=day",
+      "observedAt": "2026-11-10T08:41:35.913164+00:00",
+      "sha256": "60f882ea425f3a8344b0c1ccdb29b63a391a911d62dc85a148d05188385edaa5",
+      "bytes": 89859,
+      "file": "data/korean-etf-source-20261110/078.json"
+    }
+  ]
+}

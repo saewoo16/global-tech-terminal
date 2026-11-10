@@ -1,0 +1,1734 @@
+{
+  "auditedAt": "2026-11-10T08:42:07.258861+00:00",
+  "asOf": "2026-11-10",
+  "updatedAt": "2026-11-10T08:40:18.719685+00:00",
+  "fundCount": 39,
+  "dailyDateCounts": {
+    "2026-11-10": 39
+  },
+  "intradayDateCounts": {
+    "2026-11-10": 39
+  },
+  "holdingsDateCounts": {
+    "2026-11-10": 39
+  },
+  "errors": [],
+  "problems": [
+    {
+      "code": "091160",
+      "historicalRevisions": [
+        {
+          "date": "2026-11-09",
+          "old": {
+            "date": "2026-11-09",
+            "open": 84495,
+            "high": 90480,
+            "low": 84265,
+            "close": 86980,
+            "volume": 1842059
+          },
+          "new": {
+            "date": "2026-11-09",
+            "open": 84495,
+            "high": 90480,
+            "low": 84265,
+            "close": 86980,
+            "volume": 2030059
+          }
+        }
+      ]
+    },
+    {
+      "code": "139260",
+      "historicalRevisions": [
+        {
+          "date": "2026-11-09",
+          "old": {
+            "date": "2026-11-09",
+            "open": 92325,
+            "high": 96685,
+            "low": 92060,
+            "close": 92845,
+            "volume": 512958
+          },
+          "new": {
+            "date": "2026-11-09",
+            "open": 92325,
+            "high": 96685,
+            "low": 92060,
+            "close": 92845,
+            "volume": 587379
+          }
+        }
+      ]
+    },
+    {
+      "code": "091180",
+      "historicalRevisions": [
+        {
+          "date": "2026-11-09",
+          "old": {
+            "date": "2026-11-09",
+            "open": 21915,
+            "high": 22180,
+            "low": 21440,
+            "close": 21440,
+            "volume": 101823
+          },
+          "new": {
+            "date": "2026-11-09",
+            "open": 21915,
+            "high": 22180,
+            "low": 21440,
+            "close": 21440,
+            "volume": 101903
+          }
+        }
+      ]
+    },
+    {
+      "code": "117700",
+      "historicalRevisions": [
+        {
+          "date": "2026-11-09",
+          "old": {
+            "date": "2026-11-09",
+            "open": 5545,
+            "high": 5690,
+            "low": 5390,
+            "close": 5470,
+            "volume": 1606973
+          },
+          "new": {
+            "date": "2026-11-09",
+            "open": 5545,
+            "high": 5690,
+            "low": 5390,
+            "close": 5470,
+            "volume": 1606974
+          }
+        }
+      ]
+    },
+    {
+      "code": "143860",
+      "historicalRevisions": [
+        {
+          "date": "2026-11-09",
+          "old": {
+            "date": "2026-11-09",
+            "open": 33150,
+            "high": 33740,
+            "low": 32650,
+            "close": 32800,
+            "volume": 19137
+          },
+          "new": {
+            "date": "2026-11-09",
+            "open": 33150,
+            "high": 33740,
+            "low": 32650,
+            "close": 32800,
+            "volume": 19516
+          }
+        }
+      ]
+    },
+    {
+      "code": "305720",
+      "historicalRevisions": [
+        {
+          "date": "2026-11-09",
+          "old": {
+            "date": "2026-11-09",
+            "open": 12150,
+            "high": 12385,
+            "low": 11695,
+            "close": 11715,
+            "volume": 8289202
+          },
+          "new": {
+            "date": "2026-11-09",
+            "open": 12150,
+            "high": 12385,
+            "low": 11695,
+            "close": 11715,
+            "volume": 9653225
+          }
+        }
+      ]
+    },
+    {
+      "code": "466920",
+      "historicalRevisions": [
+        {
+          "date": "2026-11-09",
+          "old": {
+            "date": "2026-11-09",
+            "open": 17775,
+            "high": 18045,
+            "low": 17300,
+            "close": 17340,
+            "volume": 1056508
+          },
+          "new": {
+            "date": "2026-11-09",
+            "open": 17775,
+            "high": 18045,
+            "low": 17300,
+            "close": 17340,
+            "volume": 1057721
+          }
+        }
+      ]
+    },
+    {
+      "code": "228790",
+      "historicalRevisions": [
+        {
+          "date": "2026-11-09",
+          "old": {
+            "date": "2026-11-09",
+            "open": 3420,
+            "high": 3445,
+            "low": 3280,
+            "close": 3325,
+            "volume": 2070669
+          },
+          "new": {
+            "date": "2026-11-09",
+            "open": 3420,
+            "high": 3445,
+            "low": 3280,
+            "close": 3325,
+            "volume": 2070727
+          }
+        }
+      ]
+    }
+  ],
+  "funds": [
+    {
+      "code": "091160",
+      "name": "KODEX 반도체",
+      "close": {
+        "date": "2026-11-10",
+        "open": 93290,
+        "high": 94000,
+        "low": 90610,
+        "close": 92580,
+        "volume": 1610344
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 102900,
+          "returnPct": -10.029154518950435
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 146190,
+          "returnPct": -36.671454955879334
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 86980,
+          "returnPct": 6.438261669349266
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:57:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 389,
+      "metadataRetrievedAt": "2026-11-10T08:40:32.377179+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 1
+    },
+    {
+      "code": "139260",
+      "name": "TIGER 200 IT",
+      "close": {
+        "date": "2026-11-10",
+        "open": 98355,
+        "high": 99940,
+        "low": 96470,
+        "close": 98195,
+        "volume": 333911
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 110815,
+          "returnPct": -11.388349952623745
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 138716,
+          "returnPct": -29.211482453357938
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 92845,
+          "returnPct": 5.762291992029733
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:47:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 381,
+      "metadataRetrievedAt": "2026-11-10T08:40:32.363693+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 1
+    },
+    {
+      "code": "091180",
+      "name": "KODEX 자동차",
+      "close": {
+        "date": "2026-11-10",
+        "open": 22290,
+        "high": 22600,
+        "low": 21960,
+        "close": 22195,
+        "volume": 99539
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 22110,
+          "returnPct": 0.3844414292175413
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 24748,
+          "returnPct": -10.315985130111526
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 21440,
+          "returnPct": 3.5214552238805874
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:46:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 302,
+      "metadataRetrievedAt": "2026-11-10T08:40:32.477862+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 1
+    },
+    {
+      "code": "091170",
+      "name": "KODEX 은행",
+      "close": {
+        "date": "2026-11-10",
+        "open": 14445,
+        "high": 14620,
+        "low": 14200,
+        "close": 14210,
+        "volume": 177829
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 13925,
+          "returnPct": 2.046678635547572
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 15245,
+          "returnPct": -6.7891111839947555
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 14120,
+          "returnPct": 0.6373937677053743
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:41:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 328,
+      "metadataRetrievedAt": "2026-11-10T08:40:32.553822+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 0
+    },
+    {
+      "code": "102970",
+      "name": "KODEX 증권",
+      "close": {
+        "date": "2026-11-10",
+        "open": 13360,
+        "high": 13570,
+        "low": 13120,
+        "close": 13275,
+        "volume": 372470
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 14575,
+          "returnPct": -8.919382504288166
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 16665,
+          "returnPct": -20.342034203420344
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 12870,
+          "returnPct": 3.1468531468531458
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:45:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 373,
+      "metadataRetrievedAt": "2026-11-10T08:40:32.582059+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 0
+    },
+    {
+      "code": "140700",
+      "name": "KODEX 보험",
+      "close": {
+        "date": "2026-11-10",
+        "open": 18480,
+        "high": 18505,
+        "low": 17935,
+        "close": 18175,
+        "volume": 21377
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 18980,
+          "returnPct": -4.241306638566911
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 19955,
+          "returnPct": -8.920070157855175
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 18150,
+          "returnPct": 0.13774104683195176
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:30:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 178,
+      "metadataRetrievedAt": "2026-11-10T08:40:38.158151+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 0
+    },
+    {
+      "code": "117700",
+      "name": "KODEX 건설",
+      "close": {
+        "date": "2026-11-10",
+        "open": 5670,
+        "high": 5905,
+        "low": 5630,
+        "close": 5905,
+        "volume": 1980195
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 5830,
+          "returnPct": 1.2864493996569415
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 6415,
+          "returnPct": -7.950116913484018
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 5470,
+          "returnPct": 7.952468007312619
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:49:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 368,
+      "metadataRetrievedAt": "2026-11-10T08:40:38.178681+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 1
+    },
+    {
+      "code": "117680",
+      "name": "KODEX 철강",
+      "close": {
+        "date": "2026-11-10",
+        "open": 9925,
+        "high": 10115,
+        "low": 9925,
+        "close": 10030,
+        "volume": 10507
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 10240,
+          "returnPct": -2.05078125
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 11887,
+          "returnPct": -15.622108185412632
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 9725,
+          "returnPct": 3.1362467866324018
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:30:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 173,
+      "metadataRetrievedAt": "2026-11-10T08:40:38.134228+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 0
+    },
+    {
+      "code": "117460",
+      "name": "KODEX 에너지화학",
+      "close": {
+        "date": "2026-11-10",
+        "open": 10700,
+        "high": 10965,
+        "low": 10615,
+        "close": 10895,
+        "volume": 17058
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 11305,
+          "returnPct": -3.6267138434321056
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 14682,
+          "returnPct": -25.79348862552786
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 10460,
+          "returnPct": 4.158699808795419
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:51:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 180,
+      "metadataRetrievedAt": "2026-11-10T08:40:38.122794+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 0
+    },
+    {
+      "code": "102960",
+      "name": "KODEX 기계장비",
+      "close": {
+        "date": "2026-11-10",
+        "open": 8780,
+        "high": 9135,
+        "low": 8780,
+        "close": 9120,
+        "volume": 23056
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 9715,
+          "returnPct": -6.124549665465773
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 12789,
+          "returnPct": -28.68871686605676
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 8405,
+          "returnPct": 8.506841165972645
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:30:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 89,
+      "metadataRetrievedAt": "2026-11-10T08:40:38.120530+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 0
+    },
+    {
+      "code": "140710",
+      "name": "KODEX 운송",
+      "close": {
+        "date": "2026-11-10",
+        "open": 6510,
+        "high": 6645,
+        "low": 6480,
+        "close": 6645,
+        "volume": 35219
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 6620,
+          "returnPct": 0.3776435045317328
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 6580,
+          "returnPct": 0.9878419452887588
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 6315,
+          "returnPct": 5.2256532066508266
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:30:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 191,
+      "metadataRetrievedAt": "2026-11-10T08:40:46.051230+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 0
+    },
+    {
+      "code": "143860",
+      "name": "TIGER 헬스케어",
+      "close": {
+        "date": "2026-11-10",
+        "open": 33335,
+        "high": 33730,
+        "low": 32810,
+        "close": 32965,
+        "volume": 9701
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 32830,
+          "returnPct": 0.4112092598233419
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 34435,
+          "returnPct": -4.268912443734574
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 32800,
+          "returnPct": 0.5030487804878137
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:30:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 215,
+      "metadataRetrievedAt": "2026-11-10T08:40:45.947203+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 1
+    },
+    {
+      "code": "266410",
+      "name": "KODEX 필수소비재",
+      "close": {
+        "date": "2026-11-10",
+        "open": 8695,
+        "high": 8700,
+        "low": 8450,
+        "close": 8565,
+        "volume": 6898
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 8850,
+          "returnPct": -3.220338983050852
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 9437,
+          "returnPct": -9.240224647663453
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 8610,
+          "returnPct": -0.5226480836236891
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:30:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 123,
+      "metadataRetrievedAt": "2026-11-10T08:40:45.885144+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 0
+    },
+    {
+      "code": "266390",
+      "name": "KODEX 경기소비재",
+      "close": {
+        "date": "2026-11-10",
+        "open": 14665,
+        "high": 15085,
+        "low": 14555,
+        "close": 14970,
+        "volume": 45921
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 14170,
+          "returnPct": 5.6457304163726185
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 14377,
+          "returnPct": 4.124643527856997
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 14205,
+          "returnPct": 5.385427666314668
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:30:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 144,
+      "metadataRetrievedAt": "2026-11-10T08:40:45.902531+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 0
+    },
+    {
+      "code": "157490",
+      "name": "TIGER 소프트웨어",
+      "close": {
+        "date": "2026-11-10",
+        "open": 7800,
+        "high": 8040,
+        "low": 7800,
+        "close": 7865,
+        "volume": 83719
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 7095,
+          "returnPct": 10.852713178294572
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 7500,
+          "returnPct": 4.866666666666664
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 7700,
+          "returnPct": 2.1428571428571352
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:30:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 216,
+      "metadataRetrievedAt": "2026-11-10T08:40:45.922749+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 0
+    },
+    {
+      "code": "0148J0",
+      "name": "TIGER 코리아휴머노이드로봇산업",
+      "close": {
+        "date": "2026-11-10",
+        "open": 7040,
+        "high": 7170,
+        "low": 6865,
+        "close": 7065,
+        "volume": 2574194
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 7415,
+          "returnPct": -4.720161834120029
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 9650,
+          "returnPct": -26.787564766839377
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 6715,
+          "returnPct": 5.212211466865235
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:53:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 387,
+      "metadataRetrievedAt": "2026-11-10T08:40:52.007982+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 0
+    },
+    {
+      "code": "0177X0",
+      "name": "ACE K휴머노이드로봇산업TOP2+",
+      "close": {
+        "date": "2026-11-10",
+        "open": 7110,
+        "high": 7280,
+        "low": 6980,
+        "close": 7185,
+        "volume": 142004
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 7465,
+          "returnPct": -3.7508372404554624
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 9485,
+          "returnPct": -24.2488139167106
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 6865,
+          "returnPct": 4.661325564457397
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:30:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 264,
+      "metadataRetrievedAt": "2026-11-10T08:40:52.059455+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 0
+    },
+    {
+      "code": "305720",
+      "name": "KODEX 2차전지산업",
+      "close": {
+        "date": "2026-11-10",
+        "open": 12075,
+        "high": 12610,
+        "low": 12065,
+        "close": 12465,
+        "volume": 5083909
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 12800,
+          "returnPct": -2.6171874999999956
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 15905,
+          "returnPct": -21.62841873624647
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 11715,
+          "returnPct": 6.402048655569792
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:59:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 389,
+      "metadataRetrievedAt": "2026-11-10T08:40:51.998514+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 1
+    },
+    {
+      "code": "455860",
+      "name": "SOL 2차전지소부장Fn",
+      "close": {
+        "date": "2026-11-10",
+        "open": 3565,
+        "high": 3780,
+        "low": 3565,
+        "close": 3775,
+        "volume": 324741
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 3805,
+          "returnPct": -0.7884362680683266
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 4855,
+          "returnPct": -22.245108135942328
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 3490,
+          "returnPct": 8.166189111747846
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:40:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 251,
+      "metadataRetrievedAt": "2026-11-10T08:40:51.866886+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 0
+    },
+    {
+      "code": "455850",
+      "name": "SOL AI반도체소부장",
+      "close": {
+        "date": "2026-11-10",
+        "open": 18205,
+        "high": 18375,
+        "low": 17605,
+        "close": 18095,
+        "volume": 3900592
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 20080,
+          "returnPct": -9.885458167330674
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 31200,
+          "returnPct": -42.003205128205124
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 16845,
+          "returnPct": 7.42059958444643
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:59:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 389,
+      "metadataRetrievedAt": "2026-11-10T08:40:52.092730+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 0
+    },
+    {
+      "code": "475300",
+      "name": "SOL 반도체전공정",
+      "close": {
+        "date": "2026-11-10",
+        "open": 15495,
+        "high": 15515,
+        "low": 14825,
+        "close": 15170,
+        "volume": 1236175
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 17120,
+          "returnPct": -11.390186915887845
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 27290,
+          "returnPct": -44.411872480762185
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 14395,
+          "returnPct": 5.383813824244532
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:55:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 384,
+      "metadataRetrievedAt": "2026-11-10T08:40:58.040219+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 0
+    },
+    {
+      "code": "475310",
+      "name": "SOL 반도체후공정",
+      "close": {
+        "date": "2026-11-10",
+        "open": 19325,
+        "high": 19695,
+        "low": 18965,
+        "close": 19500,
+        "volume": 586651
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 21990,
+          "returnPct": -11.323328785811738
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 33625,
+          "returnPct": -42.00743494423792
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 18060,
+          "returnPct": 7.973421926910307
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:40:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 368,
+      "metadataRetrievedAt": "2026-11-10T08:40:58.193436+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 0
+    },
+    {
+      "code": "449450",
+      "name": "PLUS K방산",
+      "close": {
+        "date": "2026-11-10",
+        "open": 31325,
+        "high": 32545,
+        "low": 31325,
+        "close": 32255,
+        "volume": 419407
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 35410,
+          "returnPct": -8.909912454109003
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 45975,
+          "returnPct": -29.842305600870034
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 30580,
+          "returnPct": 5.477436232831923
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:40:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 373,
+      "metadataRetrievedAt": "2026-11-10T08:40:58.250769+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 0
+    },
+    {
+      "code": "0247S0",
+      "name": "KIWOOM 글로벌MLCC&AI기판TOP4+",
+      "close": {
+        "date": "2026-11-10",
+        "open": 5730,
+        "high": 5825,
+        "low": 5545,
+        "close": 5690,
+        "volume": 369215
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 6850,
+          "returnPct": -16.93430656934306
+        },
+        "month": null,
+        "day": {
+          "date": "2026-11-09",
+          "close": 5375,
+          "returnPct": 5.860465116279068
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:55:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 158,
+      "metadataRetrievedAt": "2026-11-10T08:40:58.200289+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 0
+    },
+    {
+      "code": "0207G0",
+      "name": "SOL 우주항공밸류체인",
+      "close": {
+        "date": "2026-11-10",
+        "open": 5320,
+        "high": 5595,
+        "low": 5320,
+        "close": 5565,
+        "volume": 144571
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 5950,
+          "returnPct": -6.470588235294117
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 7960,
+          "returnPct": -30.087939698492463
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 5110,
+          "returnPct": 8.904109589041088
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:30:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 133,
+      "metadataRetrievedAt": "2026-11-10T08:40:58.243537+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 0
+    },
+    {
+      "code": "421320",
+      "name": "PLUS 우주항공",
+      "close": {
+        "date": "2026-11-10",
+        "open": 18930,
+        "high": 19890,
+        "low": 18930,
+        "close": 19750,
+        "volume": 68694
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 21315,
+          "returnPct": -7.342247243725075
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 27590,
+          "returnPct": -28.41609278724175
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 18265,
+          "returnPct": 8.130303859841238
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:30:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 258,
+      "metadataRetrievedAt": "2026-11-10T08:41:05.070613+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 0
+    },
+    {
+      "code": "466920",
+      "name": "SOL 조선TOP3플러스",
+      "close": {
+        "date": "2026-11-10",
+        "open": 17760,
+        "high": 18400,
+        "low": 17495,
+        "close": 18305,
+        "volume": 1025567
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 19655,
+          "returnPct": -6.868481302467567
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 24000,
+          "returnPct": -23.729166666666668
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 17340,
+          "returnPct": 5.56516724336793
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:50:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 384,
+      "metadataRetrievedAt": "2026-11-10T08:41:05.234735+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 1
+    },
+    {
+      "code": "487240",
+      "name": "KODEX AI전력핵심설비",
+      "close": {
+        "date": "2026-11-10",
+        "open": 21305,
+        "high": 22460,
+        "low": 21305,
+        "close": 22025,
+        "volume": 4233549
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 25075,
+          "returnPct": -12.163509471585243
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 34025,
+          "returnPct": -35.26818515797208
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 20050,
+          "returnPct": 9.850374064837908
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:55:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 389,
+      "metadataRetrievedAt": "2026-11-10T08:41:05.043105+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 0
+    },
+    {
+      "code": "0222F0",
+      "name": "마이티 AI데이터센터밸류체인",
+      "close": {
+        "date": "2026-11-10",
+        "open": 9350,
+        "high": 9610,
+        "low": 9350,
+        "close": 9525,
+        "volume": 1013
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 10150,
+          "returnPct": -6.157635467980294
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 12775,
+          "returnPct": -25.440313111545986
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 9015,
+          "returnPct": 5.657237936772042
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:30:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 31,
+      "metadataRetrievedAt": "2026-11-10T08:41:05.069339+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 0
+    },
+    {
+      "code": "0091P0",
+      "name": "TIGER 코리아원자력",
+      "close": {
+        "date": "2026-11-10",
+        "open": 10755,
+        "high": 11285,
+        "low": 10755,
+        "close": 11260,
+        "volume": 1258615
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 11725,
+          "returnPct": -3.965884861407254
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 15805,
+          "returnPct": -28.756722556153115
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 10390,
+          "returnPct": 8.373435996150146
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:58:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 369,
+      "metadataRetrievedAt": "2026-11-10T08:41:05.262025+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 0
+    },
+    {
+      "code": "457990",
+      "name": "PLUS 태양광&ESS",
+      "close": {
+        "date": "2026-11-10",
+        "open": 27555,
+        "high": 28550,
+        "low": 27295,
+        "close": 28520,
+        "volume": 682149
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 28390,
+          "returnPct": 0.45790771398379615
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 38990,
+          "returnPct": -26.853039240830977
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 27140,
+          "returnPct": 5.084745762711873
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:57:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 374,
+      "metadataRetrievedAt": "2026-11-10T08:41:30.438605+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 0
+    },
+    {
+      "code": "0209D0",
+      "name": "KODEX 전고체배터리ESS TOP2플러스",
+      "close": {
+        "date": "2026-11-10",
+        "open": 6970,
+        "high": 7300,
+        "low": 6970,
+        "close": 7255,
+        "volume": 4955586
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 7505,
+          "returnPct": -3.3311125916056006
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 9325,
+          "returnPct": -22.198391420911523
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 6710,
+          "returnPct": 8.122205663189263
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:40:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 380,
+      "metadataRetrievedAt": "2026-11-10T08:41:30.494685+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 0
+    },
+    {
+      "code": "364970",
+      "name": "TIGER 바이오TOP10",
+      "close": {
+        "date": "2026-11-10",
+        "open": 6630,
+        "high": 6700,
+        "low": 6495,
+        "close": 6515,
+        "volume": 982683
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 6580,
+          "returnPct": -0.9878419452887588
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 6580,
+          "returnPct": -0.9878419452887588
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 6565,
+          "returnPct": -0.7616146230007614
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:59:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 378,
+      "metadataRetrievedAt": "2026-11-10T08:41:30.586368+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 0
+    },
+    {
+      "code": "228790",
+      "name": "TIGER 화장품",
+      "close": {
+        "date": "2026-11-10",
+        "open": 3395,
+        "high": 3465,
+        "low": 3345,
+        "close": 3410,
+        "volume": 2359882
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 3500,
+          "returnPct": -2.571428571428569
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 4160,
+          "returnPct": -18.028846153846157
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 3325,
+          "returnPct": 2.556390977443601
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:59:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 363,
+      "metadataRetrievedAt": "2026-11-10T08:41:30.627318+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 1
+    },
+    {
+      "code": "228800",
+      "name": "TIGER 여행레저",
+      "close": {
+        "date": "2026-11-10",
+        "open": 2530,
+        "high": 2605,
+        "low": 2510,
+        "close": 2580,
+        "volume": 127461
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 2515,
+          "returnPct": 2.5844930417495027
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 2600,
+          "returnPct": -0.7692307692307665
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 2470,
+          "returnPct": 4.453441295546567
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:59:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 214,
+      "metadataRetrievedAt": "2026-11-10T08:41:30.375013+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 0
+    },
+    {
+      "code": "228810",
+      "name": "TIGER 미디어컨텐츠",
+      "close": {
+        "date": "2026-11-10",
+        "open": 3045,
+        "high": 3045,
+        "low": 2925,
+        "close": 2950,
+        "volume": 397184
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 3005,
+          "returnPct": -1.830282861896837
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 3125,
+          "returnPct": -5.600000000000005
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 3005,
+          "returnPct": -1.830282861896837
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:42:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 289,
+      "metadataRetrievedAt": "2026-11-10T08:41:35.683758+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 0
+    },
+    {
+      "code": "365000",
+      "name": "TIGER 인터넷TOP10",
+      "close": {
+        "date": "2026-11-10",
+        "open": 3140,
+        "high": 3230,
+        "low": 3110,
+        "close": 3165,
+        "volume": 250672
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 2975,
+          "returnPct": 6.386554621848739
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 3645,
+          "returnPct": -13.168724279835386
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 3055,
+          "returnPct": 3.6006546644844484
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:30:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 131,
+      "metadataRetrievedAt": "2026-11-10T08:41:35.830412+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 0
+    },
+    {
+      "code": "364990",
+      "name": "TIGER 게임TOP10",
+      "close": {
+        "date": "2026-11-10",
+        "open": 4590,
+        "high": 4700,
+        "low": 4590,
+        "close": 4615,
+        "volume": 108806
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 4170,
+          "returnPct": 10.67146282973621
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 4410,
+          "returnPct": 4.6485260770975145
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 4505,
+          "returnPct": 2.441731409544956
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:30:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 119,
+      "metadataRetrievedAt": "2026-11-10T08:41:35.642420+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 0
+    },
+    {
+      "code": "329200",
+      "name": "TIGER 리츠부동산인프라",
+      "close": {
+        "date": "2026-11-10",
+        "open": 3675,
+        "high": 3690,
+        "low": 3630,
+        "close": 3650,
+        "volume": 3446532
+      },
+      "bases": {
+        "week": {
+          "date": "2026-11-03",
+          "close": 3775,
+          "returnPct": -3.31125827814569
+        },
+        "month": {
+          "date": "2026-10-08",
+          "close": 4003,
+          "returnPct": -8.818386210342243
+        },
+        "day": {
+          "date": "2026-11-09",
+          "close": 3650,
+          "returnPct": 0.0
+        }
+      },
+      "intradayDate": "2026-11-10",
+      "intradayAsOf": "2026-11-10T15:53:00+09:00",
+      "marketStatus": "CLOSE",
+      "points": 383,
+      "metadataRetrievedAt": "2026-11-10T08:41:35.914888+00:00",
+      "holdingsAsOf": "2026-11-10",
+      "holdingsObservedAt": "2026-11-10T08:41:35.918532+00:00",
+      "holdingsRefreshStatus": null,
+      "historyDroppedOutsideWindow": [],
+      "historicalRevisionCount": 0
+    }
+  ],
+  "sourceRawFile": "data/korean-etf-raw-20261110.json",
+  "sourceSnapshotSha256": "e6c26fb897531372806f226f37b31978a2cd90e9ddc2d294b2d970084e10a25d",
+  "scope": "Existing39funds; completed regular-session daily OHLC; intraday separately timed. Provider historical volume revisions retained with original/new values, no OHLC revisions.",
+  "dailyLastCloseMatchesIntradayFinalPriceCount": 39,
+  "sourceCount": 79
+}

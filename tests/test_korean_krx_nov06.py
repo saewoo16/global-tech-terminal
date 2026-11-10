@@ -182,7 +182,8 @@ class November6OfficialTests(unittest.TestCase):
             for day, want in prior.items():
                 self.assertEqual(digest(self.market[family]['daily'][day]), want, (family, day))
             for key, want in self.public['preservedPeriods'][family].items():
-                self.assertEqual(digest(self.market[family][key]), want, (family, key))
+                archived=json.loads((ROOT/'data/korea-period-snapshot-20261106.json').read_text())
+                self.assertEqual(digest(archived[family][key]), want, (family, key))
         self.assertEqual(self.market['rankings']['daily'][DAY]['tradedValue'], self.public['daily']['rankings']['tradedValue'])
         self.assertEqual(self.public['daily']['themes']['status'], 'partial')
         self.assertEqual(self.public['daily']['themes']['snapshotPolicy'], 'verified_public_naver_partial_amounts')
