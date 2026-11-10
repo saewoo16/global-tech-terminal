@@ -16,6 +16,12 @@ class NovemberTenReleaseTests(unittest.TestCase):
   for r in self.e['earnings']['rows']:
    self.assertEqual(r['releaseDate'],self.e['date'])
    self.assertEqual(r.get('presentationVersion'),3)
+ def test_comparable_consensus_surprises(self):
+  r=self.e['earnings']['rows'][0]
+  for m in r['metrics']:
+   raw=m['raw']
+   if raw.get('consensusComparable') and raw.get('consensusValue',0)>0:
+    self.assertAlmostEqual(raw['surprisePct'],(raw['value']/raw['consensusValue']-1)*100)
  def test_sector_anchors(self):
   self.assertEqual(len(self.e['sectors']['rows']),40)
   for r in self.e['sectors']['rows']:
