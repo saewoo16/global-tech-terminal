@@ -1,0 +1,18 @@
+{
+  "observedAt": "2026-11-10T21:42:57.157300+00:00",
+  "collector": "scripts/update_macro_quotes.py",
+  "verified": 14,
+  "unchangedRowsWithPreservedMetadata": [
+    "DCOILWTICO",
+    "DCOILBRENTEU",
+    "M1SL",
+    "M2SL",
+    "DEXJPUS",
+    "DEXKOUS"
+  ],
+  "fedwatch": {
+    "status": "verified official browser Current and Aggregated",
+    "providerAsOf": "2026-11-10T09:25:44Z",
+    "note": "Pre-CPI source timestamp; not close probabilities. Previous snapshot Nov7 replaced by observed Nov10 source, not date relabel."
+  }
+}

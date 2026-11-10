@@ -1,0 +1,46 @@
+{
+  "session": "2026-11-10",
+  "retrievedAt": "2026-11-10T21:40:16.873682+00:00",
+  "sources": [
+    {
+      "id": "nov10_ap_close",
+      "url": "https://apnews.com/article/a97eb31c415811065561f2c2ac552cd7",
+      "retrievedAt": "2026-11-10T21:38:19.641965+00:00",
+      "sha256": "2a2c873529303e639e8b2c2a2b16d7925944f9012550ae262d607f8c1183e7f9"
+    },
+    {
+      "id": "nov10_ap_market",
+      "url": "https://ca.finance.yahoo.com/news/asian-stocks-rise-technology-shares-072214355.html",
+      "retrievedAt": "2026-11-10T21:38:24.290496+00:00",
+      "sha256": "ba5dea3b68b598826922b5cfc39cb19105c8794536874f0085c6ae1e408b2cd7"
+    },
+    {
+      "id": "nov10_reuters",
+      "url": "https://ca.investing.com/news/stock-market-news/sp-500-dow-futures-climb-as-oil-slide-lifts-sentiment-4945722",
+      "retrievedAt": "2026-11-10T21:38:30.154113+00:00",
+      "sha256": "e191bde1c143587e8945e478974caa6aaf87505d3b343cf59f3e655f7fe6a935"
+    },
+    {
+      "id": "nov10_cpi",
+      "url": "https://www.bls.gov/news.release/cpi.nr0.htm",
+      "publishedAt": "2026-11-10T08:30:00-05:00",
+      "retrievedAt": "2026-11-10T21:40:16.873674+00:00",
+      "facts": {
+        "headlineMoM": 0.4,
+        "coreMoM": 0.3,
+        "octoberYoY": "unavailable due to missing October 2025 survey"
+      }
+    }
+  ],
+  "crosscheck": {
+    "sourceId": "nov10_ap_close",
+    "closes": {
+      "^DJI": 52231.89,
+      "^GSPC": 7520.93,
+      "^IXIC": 25065.87,
+      "^RUT": 2821.38
+    },
+    "rawSha256": "2a2c873529303e639e8b2c2a2b16d7925944f9012550ae262d607f8c1183e7f9",
+    "note": "AP two-decimal reported close vs preserved Yahoo full-precision raw. Nasdaq Yahoo 25065.875 versus AP 25065.87 difference 0.005. Published index uses AP close."
+  }
+}

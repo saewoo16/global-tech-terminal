@@ -1,0 +1,473 @@
+Browser tab: 1, Title: "FedWatch - CME Group", URL: "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool".
+0 AXWebArea FedWatch - CME Group, URL: cmegroup.com/markets/interest-rates/cme…
+	1 container
+		2 container
+			3 link Description: CME Group Logo, Value: cmegroup.com/
+			4 content list
+				5 button (collapsed) MARKETS, Secondary Actions: Expand
+				6 button (collapsed) DATA, Secondary Actions: Expand
+				7 button (collapsed) SOLUTIONS, Secondary Actions: Expand
+				8 container
+					272 text |
+					10 button (collapsed) INSIGHTS, Secondary Actions: Expand
+				11 button (collapsed) EDUCATION, Secondary Actions: Expand
+		12 button Open search
+			273 text 
+		14 button (collapsed) Description: User account menu, Secondary Actions: Expand
+			274 text 
+		16 button LOG IN
+	17 container
+		18 link Description: Visit ArrowLeftBold, Value: cmegroup.com/markets/interest-rates
+		19 heading FedWatch, Value: 1, ID: fedwatch
+			20 text FedWatch
+		21 text Stay up-to-date with the latest probabilities of FOMC rate moves.
+		22 pop up button (collapsed) Select your language, Secondary Actions: Expand
+			23 text Select your language
+		24 text The next FOMC meeting is in:
+		25 container
+			826 text 28
+			827 text DAYS
+			828 text 21
+			829 text HRS
+			830 text 19
+			31 text MIN
+			831 text 59
+			33 text SEC
+		34 text What is the likelihood that the Fed will change the Federal target rate at upcoming FOMC meetings, according to interest rate traders? Use FedWatch to track the probabilities of changes to the Fed rate, as implied by 30-Day Fed Funds futures prices. MEDIA: Please attribute rate probabilities used in your reporting to “CME FedWatch.”
+		35 heading QUICK LINKS, Value: 6
+			36 text QUICK LINKS
+		37 content list
+			38 link Description: Methodology, Value: cmegroup.com/articles/2023/understandin…
+			39 link Description: User Guide, Value: cmegroup.com/tools-information/quikstri…
+			40 link Description: FedWatch API, Value: cmegroup.com/market-data/market-data-ap…
+			41 link Description: Follow @Interest_Rates on 𝕏, Value: x.com/Interest_Rates
+		281 container CME FedWatch Tool
+			292 AXWebArea QuikStrike, URL: cmegroup-tools.quikstrike.net/User/Quik…
+				293 container body
+					294 container Form1
+						295 button buttonDefaultSubmit
+						296 container container
+							642 container MainContent_pnlContainer
+								643 container
+									644 heading FedWatch Tool, Value: 3
+										645 text FedWatch Tool
+									646 link Description: Tweet this view, Value: cmegroup-tools.quikstrike.net/UserContr…, ID: ctl00_MainContent_ucViewControl_IntegratedFedWatchTool_ucTweet_hlTweet
+									647 heading 3
+								648 container
+									649 content list ctl00_MainContent_ucViewControl_IntegratedFedWatchTool_ulTabs
+										650 text Target Rate
+										651 link Description: Current, Value: javascript:__doPostBack('ctl00$MainCont…, ID: ctl00_MainContent_ucViewControl_IntegratedFedWatchTool_lbCurrent
+										652 link Description: Compare, Value: javascript:__doPostBack('ctl00$MainCont…, ID: ctl00_MainContent_ucViewControl_IntegratedFedWatchTool_lbCompare
+										653 link Description: Probabilities, Value: javascript:__doPostBack('ctl00$MainCont…, ID: ctl00_MainContent_ucViewControl_IntegratedFedWatchTool_lbPTree
+										654 link Description: Aggregated, Value: javascript:__doPostBack('ctl00$MainCont…, ID: ctl00_MainContent_ucViewControl_IntegratedFedWatchTool_lbAggregated
+										655 text Historical
+										656 link Description: Historical, Value: javascript:__doPostBack('ctl00$MainCont…, ID: ctl00_MainContent_ucViewControl_IntegratedFedWatchTool_lbHistorical
+										657 link Description: Downloads, Value: javascript:__doPostBack('ctl00$MainCont…, ID: ctl00_MainContent_ucViewControl_IntegratedFedWatchTool_lbDownloads
+										658 link Description: Prior Hikes, Value: javascript:__doPostBack('ctl00$MainCont…, ID: ctl00_MainContent_ucViewControl_IntegratedFedWatchTool_lbMH
+										659 text Dot Plot
+										660 link Description: Chart, Value: javascript:__doPostBack('ctl00$MainCont…, ID: ctl00_MainContent_ucViewControl_IntegratedFedWatchTool_lbDotPlotChart2
+										661 link Description: Table, Value: javascript:__doPostBack('ctl00$MainCont…, ID: ctl00_MainContent_ucViewControl_IntegratedFedWatchTool_lbDotPlotTable
+										662 text Tools
+										663 link Description: CVOL, Value: javascript:__doPostBack('ctl00$MainCont…, ID: ctl00_MainContent_ucViewControl_IntegratedFedWatchTool_lbCVOLDashboard
+										664 link Description: SOFR Watch, Value: javascript:__doPostBack('ctl00$MainCont…, ID: ctl00_MainContent_ucViewControl_IntegratedFedWatchTool_lbSOFRTool
+										665 link Description: ESTR Watch, Value: javascript:__doPostBack('ctl00$MainCont…, ID: ctl00_MainContent_ucViewControl_IntegratedFedWatchTool_lbESTRWatch
+									666 content list
+										667 link Description: 9 Dec26, Value: javascript:__doPostBack('ctl00$MainCont…, ID: ctl00_MainContent_ucViewControl_IntegratedFedWatchTool_uccv_lvMeetings_ctrl0_lbMeeting
+										668 link Description: 27 Jan27, Value: javascript:__doPostBack('ctl00$MainCont…, ID: ctl00_MainContent_ucViewControl_IntegratedFedWatchTool_uccv_lvMeetings_ctrl1_lbMeeting
+										669 link Description: 17 Mar27, Value: javascript:__doPostBack('ctl00$MainCont…, ID: ctl00_MainContent_ucViewControl_IntegratedFedWatchTool_uccv_lvMeetings_ctrl2_lbMeeting
+										670 link Description: 28 Apr27, Value: javascript:__doPostBack('ctl00$MainCont…, ID: ctl00_MainContent_ucViewControl_IntegratedFedWatchTool_uccv_lvMeetings_ctrl3_lbMeeting
+										671 link Description: 9 Jun27, Value: javascript:__doPostBack('ctl00$MainCont…, ID: ctl00_MainContent_ucViewControl_IntegratedFedWatchTool_uccv_lvMeetings_ctrl4_lbMeeting
+										672 link Description: 28 Jul27, Value: javascript:__doPostBack('ctl00$MainCont…, ID: ctl00_MainContent_ucViewControl_IntegratedFedWatchTool_uccv_lvMeetings_ctrl5_lbMeeting
+										673 link Description: 15 Sep27, Value: javascript:__doPostBack('ctl00$MainCont…, ID: ctl00_MainContent_ucViewControl_IntegratedFedWatchTool_uccv_lvMeetings_ctrl6_lbMeeting
+										674 link Description: 27 Oct27, Value: javascript:__doPostBack('ctl00$MainCont…, ID: ctl00_MainContent_ucViewControl_IntegratedFedWatchTool_uccv_lvMeetings_ctrl7_lbMeeting
+										675 link Description: 8 Dec27, Value: javascript:__doPostBack('ctl00$MainCont…, ID: ctl00_MainContent_ucViewControl_IntegratedFedWatchTool_uccv_lvMeetings_ctrl8_lbMeeting
+									676 container
+										677 table
+											678 row
+												679 cell
+													680 text MEETING INFORMATION
+											681 row
+												682 cell
+													683 text MEETING DATE
+												684 cell
+													685 text CONTRACT
+												686 cell
+													687 text EXPIRES
+												688 cell
+													689 text MID PRICE
+												690 cell
+													691 text PRIOR VOLUME
+												692 cell
+													693 text PRIOR OI
+											694 row
+												695 cell
+													696 text 9 Jun 2027
+												697 cell
+													698 text ZQM7
+												699 cell
+													700 text 30 Jun 2027
+												701 cell
+													702 text 95.4125
+												703 cell
+													704 text 5,675
+												705 cell
+													706 text 34,229
+										707 table
+											708 row
+												709 cell
+													710 text PROBABILITIES
+											711 row
+												712 cell
+													713 text EASE
+												714 cell
+													715 text NO CHANGE
+												716 cell
+													717 text HIKE
+											718 row
+												719 cell
+													720 text 0.0 %
+												721 cell
+													722 text 0.0 %
+												723 cell
+													724 text 100.0 %
+									725 container Description: Target Rate Probabilities for 9 Jun 2027 Fed Meeting, Help: Created with Highcharts 12.4.0
+									726 table
+										727 row
+											728 cell
+												729 text TARGET RATE (BPS)
+											730 cell
+												731 text PROBABILITY(%)
+										732 row
+											733 cell
+												734 text NOW 
+												735 text *
+											736 cell
+												737 text 1 DAY
+												738 text 9 NOV 2026
+											739 cell
+												740 text 1 WEEK
+												741 text 3 NOV 2026
+											742 cell
+												743 text 1 MONTH
+												744 text 9 OCT 2026
+										745 row
+											746 cell
+												747 text 375-400 (Current)
+											748 cell
+												749 text 0.0%
+											750 cell
+												751 text 4.2%
+											752 cell
+												753 text 3.3%
+											754 cell
+												755 text 1.0%
+										756 row
+											757 cell
+												758 text 400-425
+											759 cell
+												760 text 6.5%
+											761 cell
+												762 text 29.0%
+											763 cell
+												764 text 20.1%
+											765 cell
+												766 text 8.8%
+										767 row
+											768 cell
+												769 text 425-450
+											770 cell
+												771 text 27.7%
+											772 cell
+												773 text 40.5%
+											774 cell
+												775 text 37.3%
+											776 cell
+												777 text 26.3%
+										778 row
+											779 cell
+												780 text 450-475
+											781 cell
+												782 text 39.2%
+											783 cell
+												784 text 21.3%
+											785 cell
+												786 text 28.5%
+											787 cell
+												788 text 34.6%
+										789 row
+											790 cell
+												791 text 475-500
+											792 cell
+												793 text 21.5%
+											794 cell
+												795 text 4.8%
+											796 cell
+												797 text 9.6%
+											798 cell
+												799 text 22.1%
+										800 row
+											801 cell
+												802 text 500-525
+											803 cell
+												804 text 4.7%
+											805 cell
+												806 text 0.4%
+											807 cell
+												808 text 1.2%
+											809 cell
+												810 text 6.5%
+										811 row
+											812 cell
+												813 text 525-550
+											814 cell
+												815 text 0.3%
+											816 cell
+												817 text 0.0%
+											818 cell
+												819 text 0.0%
+											820 cell
+												821 text 0.7%
+										822 row
+											823 cell
+												824 text * Data as of 10 Nov 2026 03:25:44 CT
+									825 text 1/1/2028 and forward are projected meeting dates
+							437 container Footer1_pnlIntegrated
+								438 container
+									439 text Powered by 
+									440 link Description: QuikStrike, Value: bantix.com/
+									441 text ®
+								442 container
+									443 link Description: Follow QuikStrike on Twitter, Value: twitter.com/, ID: Footer1_hlTwitter2
+									444 link Description: Watch QuikStrike videos on YouTube, Value: youtube.com/user/QuikStrike1, ID: Footer1_hlYouTube2
+									445 link Description: QuikStrike is Linked In, Value: linkedin.com/company/quikstrike, ID: Footer1_hlLinkedIn2
+		283 text *Disclaimer: The data and output from this tool does not constitute investment advice and is not a personal recommendation from CME Group. Nothing contained herein constitutes the solicitation of the purchase or sale of any futures or options. Any investment activities undertaken using this tool will be at the sole risk of the relevant investor. CME Group expressly disclaims all liability for the use or interpretation (whether by visitor or by others) of information contained herein. Decisions based on this information are the sole responsibility of the relevant investor. Any visitor to this page agrees to hold the CME Group and its affiliates and licensors harmless against any claims for damages arising from any decisions that the visitor makes based on such information.
+		45 heading Follow related Interest Rate markets, Value: 2, ID: follow-related-interest-rate-markets
+			46 text Follow related Interest Rate markets
+		47 text See how changing FOMC expectations are impacting U.S. Treasury yields and key short-term interest rates. (1-4 of 7)
+		48 container
+			49 content list
+				50 container
+					51 link Description: 10YX6 10-Year Yield Futures LAST PRICE 4.979 CHANGE +0.115 % CHANGE +2.36% VOLUME 862, Value: cmegroup.com/markets/interest-rates/us-…
+					832 button 
+				53 container
+					54 link Description: ZQJ7 30 Day Federal Funds Futures LAST PRICE 95.525 CHANGE -0.215 % CHANGE -0.22% VOLUME 123,578 OPT, Value: cmegroup.com/markets/interest-rates/sti…
+					833 button 
+				56 container
+					57 link Description: SR3H7 Three-Month SOFR Futures LAST PRICE 95.46 CHANGE -0.225 % CHANGE -0.24% VOLUME 1,109,760 OPT, Value: cmegroup.com/markets/interest-rates/sti…
+					834 button 
+				59 container
+					60 link Description: SR1J7 One-Month SOFR Futures LAST PRICE 95.515 CHANGE -0.215 % CHANGE -0.22% VOLUME 34,978 OPT, Value: cmegroup.com/markets/interest-rates/sti…
+					835 button 
+				62 container
+					63 link Description: ZTZ6 2-Year T-Note Futures LAST PRICE 102'000 CHANGE -0'111 % CHANGE -0.34% VOLUME 1,892,792 OPT, Value: cmegroup.com/markets/interest-rates/us-…
+					836 button 
+				65 container
+					66 link Description: ZFZ6 5-Year T-Note Futures LAST PRICE 104'160 CHANGE -0'210 % CHANGE -0.62% VOLUME 2,183,640 OPT, Value: cmegroup.com/markets/interest-rates/us-…
+					837 button 
+				68 container
+					69 link Description: ZNZ6 10-Year T-Note Futures LAST PRICE 106'060 CHANGE -0'280 % CHANGE -0.82% VOLUME 2,871,089 OPT, Value: cmegroup.com/markets/interest-rates/us-…
+					838 button 
+			71 button Next
+				72 image
+		73 heading More in Interest Rates, Value: 2, ID: more-in-interest-rates
+			74 text More in Interest Rates
+		75 content list
+			76 link Description: U.S Treasuries Access the most liquid markets for trading U.S. Treasury Notes and Bonds. , Value: cmegroup.com/markets/interest-rates/us-…
+			77 link Value: cmegroup.com/markets/interest-rates/mor…, Description: 30-Year UMBS TBA futures Gain exposure to the TBA market with the efficiency and safety of a standardized futures contract. 
+		78 heading Stay in the know, Value: 3, ID: form-title
+			79 text Stay in the know
+		80 text Subscribe to receive Interest Rate updates.
+		81 link Description: CREATE AN ACCOUNT, Value: cmegroup.com/markets/interest-rates/cme…
+		82 container form-login
+			83 text Already have an account? 
+			84 link Description: Log in, Value: cmegroup.com/markets/interest-rates/cme…
+		85 text By clicking above, you are subscribing and agreeing to receive the specified content. I understand that I can unsubscribe at any time.
+		86 text This site is protected by reCAPTCHA and the Google 
+		87 link Description: Privacy Policy, Value: policies.google.com/privacy
+		88 text  and 
+		89 link Description: Terms of Service, Value: policies.google.com/terms
+		90 text  apply.
+		91 heading Related Research and Analysis, Value: 2, ID: related-research-and-analysis
+			92 text Related Research and Analysis
+		93 text Get our experts' perspectives on current trends.
+		94 link Description: View all, Value: cmegroup.com/education/browse-all
+		95 content list
+			96 link Value: cmegroup.com/articles/2023/benchmark-re…, Description: Read Time 1 Min Read Benchmark reform and risk-free rate transitions for CME Group cleared swaps Access resources and important information for benchmark reform and risk-free rate transitions for cleared swaps at CME Group. 03 NOV 2026 By CME Group
+			97 link Value: cmegroup.com/articles/2025/the-credit-f…, Description: Read Time 1 Min Read The Credit Futures Roll Explained Understand the mechanics and liquidity of the Credit futures roll. 29 OCT 2026 By Brendan Wilson
+			98 link Value: cmegroup.com/solutions/risk-management/…, Description: Read Time 3 Min Read CME Clearing's Financial Safeguards Risk management and financial surveillance are principal functions of CME Clearing's financial safeguards system. Learn more. 26 OCT 2026 By CME Group
+			99 link Value: cmegroup.com/insights/economic-research…, Description: Read Time 2 Min Watch Could Fed Pause in October Ahead of Midterm Elections? Here's a historical look at Fed moves before midterm elections. 13 OCT 2026 By Mark Shore
+			100 link Value: cmegroup.com/articles/2026/bloomberg-co…, Description: Read Time 1 Min Read Bloomberg codes for Interest Rate products Access a comprehensive listing of Bloomberg codes for Interest Rate futures and options. 08 OCT 2026 By CME Group
+			101 link Value: cmegroup.com/articles/faqs/faq-treasury…, Description: Read Time 5 Min Read FAQ: Treasury Link Find answers to frequently asked questions for Treasury Link from CME Group. 29 SEP 2026 By CME Group
+			102 link Value: cmegroup.com/articles/2026/beyond-the-b…, Description: Read Time 3 Min Read Beyond the Basis Trade: Spreading Cash and Futures Using Treasury Link Discover how Treasury Link helps market participants trade the spread between Treasury futures and cash Treasuries using a single, electronic transaction. 24 SEP 2026 By Brendan Wilson
+			103 link Value: cmegroup.com/articles/2023/us-treasury-…, Description: Read Time 4 Min Read U.S. Treasury Futures Exchange for Physical (EFP) Transactions Read about EFPs and how they allow a trader to easily transfer their exposure between Treasury futures and cash Treasuries without leg risk. 24 AUG 2026 By Brendan Wilson
+			104 link Value: cmegroup.com/articles/2024/bloomberg-co…, Description: Read Time 1 Min Read Bloomberg codes for Interest Rate products Access a comprehensive listing of Bloomberg codes for Interest Rate futures and options. 10 JUL 2026 By CME Group
+			105 link Value: cmegroup.com/articles/2026/introduction…, Description: Read Time 11 Min Read Introduction to Interest Rate Products CME Group is home to one of the deepest centralized pools of liquidity for the interest rate markets, covering a wide range of underlying risk components across various key maturities 08 JUN 2026 By CME Group
+		106 button Next
+			107 image
+		108 heading Yield Insights from a market expert, Value: 2, ID: yield-insights-from-a-market-expert
+			109 text Yield Insights from a market expert
+		110 text Get pro perspectives from Jim Iuorio, Managing Director, TJM Institutional Services, on trading current market events with 
+		111 link Description: Micro Treasury Yield futures, Value: cmegroup.com/trading/interest-rates/yie…
+		112 text .
+		113 heading Courses, Value: 2, ID: courses
+			114 text Courses
+		115 container
+			116 image
+			839 text 
+		118 text Take self-guided courses on Agricultural futures and options
+		119 text If you're new to futures, the courses below can help you quickly understand the Agricultural market and start trading.
+		120 content list
+			121 container
+				122 text 1 module
+				123 heading Introduction to Fed Fund Futures, Value: 3, ID: introduction-to-fed-fund-futures
+					124 text Introduction to Fed Fund Futures
+				125 link Description: Launch course, Value: cmegroup.com/education/courses/understa…
+			126 container
+				127 text 1 module
+				128 heading Understanding the FOMC Report, Value: 3, ID: understanding-the-fomc-report
+					129 text Understanding the FOMC Report
+				130 link Description: Launch course, Value: cmegroup.com/education/courses/understa…
+			131 container
+				132 text 11 modules
+				133 heading Introduction to SOFR, Value: 3, ID: introduction-to-sofr
+					134 text Introduction to SOFR
+				135 link Description: Launch course, Value: cmegroup.com/education/courses/introduc…
+		136 button Next
+			137 image
+		138 link Description: Visit ArrowRightBold, Value: cmegroup.com/education/courses
+		139 container contact
+			140 heading Subscribe to FOMC related updates, Value: 2, ID: subscribe-to-fomc-related-updates
+				141 text Subscribe to FOMC related updates
+			142 text Sign up to receive updates on FedWatch and related interest rate products.
+			143 container
+				144 text FIRST NAME
+				145 text field (settable) FIRST NAME, ID: form-first-name-c
+				146 text LAST NAME
+				147 text field (settable) LAST NAME, ID: form-last-name-c
+				148 text BUSINESS EMAIL
+				149 text field (settable) BUSINESS EMAIL
+				150 text LOCATION
+				151 combo box (collapsed) Value: UNITED STATES OF AMERICA, Secondary Actions: Expand
+					152 list
+						153 (selected) UNITED STATES OF AMERICA
+				154 text JOB ROLE
+				155 combo box (collapsed) Value: Please Select..., Secondary Actions: Expand
+					156 list
+						157 (selected) Please Select...
+				158 text COMPANY TYPE
+				159 combo box (collapsed) Value: Please Select..., Secondary Actions: Expand
+					160 list
+						161 (selected) Please Select...
+				162 text COMPANY NAME
+				163 text field (settable) COMPANY NAME, ID: form-company-name-c
+				164 container form-message-c-label
+					165 text MESSAGE  (OPTIONAL)
+				166 text entry area (settable) MESSAGE (OPTIONAL), ID: form-message-c
+				167 checkbox (settable, integer) Description: I have read and understand the Privacy Policy., Value: 0, ID: form-privacy-policy-c
+				168 container form-privacy-policy-c-label
+					169 text I have read and understand the 
+					170 link Description: Privacy Policy, Value: cmegroup.com/privacy-policy.html
+					171 text .
+				172 checkbox (settable, integer) Description: I have read and agree the Terms of Service and Cookie Policy., Value: 0, ID: form-terms-of-service-c
+				173 container form-terms-of-service-c-label
+					174 text I have read and agree the 
+					175 link Description: Terms of Service, Value: cmegroup.com/files/terms-of-use.pdf
+					176 text  and 
+					177 link Description: Cookie Policy, Value: cmegroup.com/cookie-policy.html
+					178 text .
+				179 checkbox (settable, integer) Value: 0, ID: form-receive-communications-c, Description: Yes. I would like to receive communications regarding CME Group products, services, & events. I understand that I can unsubscribe at any time. By registering, I agree to the processing of my personal data in accordance with the CME Group Privacy Policy. (Optional)
+				180 container form-receive-communications-c-label
+					181 text Yes. I would like to receive communications regarding CME Group products, services, & events. I understand that I can unsubscribe at any time. By registering, I agree to the processing of my personal data in accordance with the CME Group Privacy Policy.  (Optional)
+				182 button SUBMIT
+			183 container
+				184 text This site is protected by reCAPTCHA and the Google 
+				185 link Description: Privacy Policy, Value: policies.google.com/privacy
+				186 text  and 
+				187 link Description: Terms of Service, Value: policies.google.com/terms
+				188 text  apply.
+	189 container
+		190 container
+			285 text  New essential reading for STIR desks Pricing & Hedging IRS with SOFR futures
+			192 link Description: FIND OUT MORE, Value: cmegroup.com/articles/2025/price-and-he…
+		193 text COMPANY
+		194 content list
+			195 link Description: About Us, Value: cmegroup.com/company/about-us.html
+			196 link Description: Corporate Citizenship, Value: cmegroup.com/company/corporate-citizens…
+			197 link Description: Media Room, Value: cmegroup.com/media-room.html
+			198 link Description: Careers, Value: cmegroup.com/careers.html
+			199 link Description: Investor Relations, Value: investor.cmegroup.com/
+			200 link Description: Subscription Center, Value: cmegroup.com/subscription-center.html
+			201 link Description: Contact Us, Value: cmegroup.com/tools-information/contacts…
+		202 text INTERNATIONAL
+		203 content list
+			204 link Description: Global Offices, Value: cmegroup.com/company/history/global-off…
+			205 link Description: Partner Exchanges, Value: cmegroup.com/international
+			206 link Description: Latin America, Value: cmegroup.com/international/latin-americ…
+			207 link Description: Europe, Middle East & Africa, Value: cmegroup.com/international/emea.html
+			208 link Description: Asia-Pacific, Value: cmegroup.com/international/asia-pacific…
+		209 text MARKET REGULATION
+		210 content list
+			211 link Description: Overview, Value: cmegroup.com/market-regulation.html
+			212 link Description: Rulebooks, Value: cmegroup.com/market-regulation/rulebook…
+			213 link Description: Regulatory Guidance, Value: cmegroup.com/rulebook/rulebook-harmoniz…
+			214 link Description: Rule Filings, Value: cmegroup.com/market-regulation/rule-fil…
+			215 link Description: Regulatory Outreach, Value: cmegroup.com/market-regulation/outreach…
+		216 text OUR EXCHANGES
+		217 content list
+			218 link Description: CME, Value: cmegroup.com/company/cme.html
+			219 link Description: CBOT, Value: cmegroup.com/company/cbot.html
+			220 link Description: NYMEX, Value: cmegroup.com/company/nymex.html
+			221 link Description: COMEX, Value: cmegroup.com/company/comex.html
+		222 content list
+			223 link Description: Visit Youtube, Value: youtube.com/user/cmegroup
+			224 link Description: Visit Twitter, Value: twitter.com/CMEGroup
+			225 link Description: Visit Facebook, Value: facebook.com/CMEGroup
+			226 link Description: Visit Linkedin, Value: linkedin.com/company/cme-group
+			227 link Description: Visit Instagram, Value: instagram.com/cmegroup
+			228 link Description: Visit Rss, Value: cmegroup.com/rss/
+		229 pop up button (collapsed) English, ID: language-selector-button, Secondary Actions: Expand
+			230 text English
+		231 link Description: Visit Chat, Value: cmegroup.com/modals/feedback
+		232 text CME Group is the world’s leading derivatives marketplace. The company is comprised of four Designated Contract Markets (DCMs). Further information on each exchange's rules and product listings can be found by clicking on the links to 
+		233 link Description: CME, Value: cmegroup.com/company/cme.html
+		234 text , 
+		235 link Description: CBOT, Value: cmegroup.com/company/cbot.html
+		236 text , 
+		237 link Description: NYMEX, Value: cmegroup.com/company/nymex.html
+		238 text  and 
+		239 link Description: COMEX, Value: cmegroup.com/company/comex.html
+		240 text . © 2026 CME Group Inc. All rights reserved.
+		241 link Description: Disclaimer, Value: cmegroup.com/disclaimer.html
+		242 text  | 
+		243 link Description: Privacy Notice, Value: cmegroup.com/privacy-policy.html
+		244 text  | 
+		245 link Description: Cookie Notice, Value: cmegroup.com/cookie-policy.html
+		246 text  | 
+		247 link Description: Do Not Sell or Share My Personal Information, Value: cmegroup.com/privacy-policy.html
+		248 text  | 
+		249 link Description: Terms of Use, Value: cmegroup.com/files/terms-of-use.pdf
+		250 text  | 
+		251 link Description: Data Terms of Use, Value: cmegroup.com/trading/market-data-explan…
+		252 text  | 
+		253 link Description: Modern Slavery Act Transparency Statement, Value: cmegroup.com/investor-relations/files/s…
+		254 text  | 
+		255 link Description: Report a Security Concern, Value: cmegroup.com/report-a-security-concern.…
+	256 container st-2
+		257 container
+			258 image pinterest sharing button
+			259 text Pin
+		260 container
+			261 image facebook sharing button
+			262 text Share
+		263 container
+			264 image twitter sharing button
+			265 text Post
+		266 container
+			267 image whatsapp sharing button
+			268 text Share
+		269 image arrow_right sharing button
+	270 container ot-sdk-btn-floating
+		271 pop up button 쿠키 설정
+		840 text 쿠키 설정
+
+The focused UI element is 292 AXWebArea QuikStrike, URL: cmegroup-tools.quikstrike.net/User/Quik…

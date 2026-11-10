@@ -1,0 +1,995 @@
+{
+  "observedAt": "2026-11-10T21:43:13.241784+00:00",
+  "funds": [
+    {
+      "ticker": "XAR",
+      "actualLastDate": "2026-11-10",
+      "close": 236.6199951171875,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 236.39999389648438,
+          "returnPct": 0.09306312452759258
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 234.07000732421875,
+          "returnPct": 1.0894124463527222
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 228.36000061035156,
+          "returnPct": 3.6170933984756237
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "SMH",
+      "actualLastDate": "2026-11-10",
+      "close": 483.6300048828125,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 487.4100036621094,
+          "returnPct": -0.7755275334720646
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 518.52001953125,
+          "returnPct": -6.728769060831752
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 603.3300170898438,
+          "returnPct": -19.839890079463153
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "SOXX",
+      "actualLastDate": "2026-11-10",
+      "close": 146.58999633789062,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 146.75999450683594,
+          "returnPct": -0.11583413417025623
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 155.0,
+          "returnPct": -5.42580881426411
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 186.4666748046875,
+          "returnPct": -21.385418337386707
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "TAN",
+      "actualLastDate": "2026-11-10",
+      "close": 43.5099983215332,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 45.18000030517578,
+          "returnPct": -3.6963301734446063
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 43.34000015258789,
+          "returnPct": 0.3922431203202459
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 43.75,
+          "returnPct": -0.548575265066964
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "XPH",
+      "actualLastDate": "2026-11-10",
+      "close": 67.93000030517578,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 67.37000274658203,
+          "returnPct": 0.8312268602692852
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 64.30000305175781,
+          "returnPct": 5.645407591187879
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 64.6500015258789,
+          "returnPct": 5.073470536553537
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "XME",
+      "actualLastDate": "2026-11-10",
+      "close": 96.5999984741211,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 98.58000183105469,
+          "returnPct": -2.0085243661558283
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 96.76000213623047,
+          "returnPct": -0.1653613668632481
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 106.3499984741211,
+          "returnPct": -9.167842162567153
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "XBI",
+      "actualLastDate": "2026-11-10",
+      "close": 155.05999755859375,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 156.89999389648438,
+          "returnPct": -1.1727191902279999
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 154.97000122070312,
+          "returnPct": 0.05807339303200987
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 153.77000427246094,
+          "returnPct": 0.8389108735713524
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "ICLN",
+      "actualLastDate": "2026-11-10",
+      "close": 16.139999389648438,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 16.610000610351562,
+          "returnPct": -2.8296279556438653
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 16.110000610351562,
+          "returnPct": 0.18621215493683785
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 17.280000686645508,
+          "returnPct": -6.597229465841958
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "IBB",
+      "actualLastDate": "2026-11-10",
+      "close": 217.17999267578125,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 219.57000732421875,
+          "returnPct": -1.088497776888253
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 215.47000122070312,
+          "returnPct": 0.7936099899710003
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 206.49000549316406,
+          "returnPct": 5.176999805431781
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "BATT",
+      "actualLastDate": "2026-11-10",
+      "close": 12.649999618530273,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 12.819999694824219,
+          "returnPct": -1.3260536688045277
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 12.739999771118164,
+          "returnPct": -0.7064376311208598
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 14.680000305175781,
+          "returnPct": -13.828342264610061
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-04",
+      "count": 257
+    },
+    {
+      "ticker": "FAN",
+      "actualLastDate": "2026-11-10",
+      "close": 22.86,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 23.403799057006836,
+          "returnPct": -2.3235503589919437
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 22.34000015258789,
+          "returnPct": 2.3276626851404636
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 22.229999542236328,
+          "returnPct": 2.834010214740168
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "XLK",
+      "actualLastDate": "2026-11-10",
+      "close": 168.91000366210938,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 170.8800048828125,
+          "returnPct": -1.1528564866639224
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 176.50999450683594,
+          "returnPct": -4.30570000637116
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 198.77999877929688,
+          "returnPct": -15.026660278005032
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "ITA",
+      "actualLastDate": "2026-11-10",
+      "close": 72.3499984741211,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 71.66999816894531,
+          "returnPct": 0.9487935294386851
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 72.05666605631511,
+          "returnPct": 0.40708574773185013
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 68.88333129882812,
+          "returnPct": 5.032664811540477
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "LIT",
+      "actualLastDate": "2026-11-10",
+      "close": 59.97999954223633,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 61.349998474121094,
+          "returnPct": -2.233087149077373
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 60.099998474121094,
+          "returnPct": -0.1996654491371319
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 69.7300033569336,
+          "returnPct": -13.98250874130752
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "XLC",
+      "actualLastDate": "2026-11-10",
+      "close": 107.76000213623047,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 107.36000061035156,
+          "returnPct": 0.3725796605857479
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 101.44000244140625,
+          "returnPct": 6.230283460880992
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 110.37999725341797,
+          "returnPct": -2.3736140445558607
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "XLI",
+      "actualLastDate": "2026-11-10",
+      "close": 168.72999572753906,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 168.88999938964844,
+          "returnPct": -0.0947383875230079
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 171.32000732421875,
+          "returnPct": -1.5117975052254984
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 169.25,
+          "returnPct": -0.30724033823393837
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "FDN",
+      "actualLastDate": "2026-11-10",
+      "close": 267.8500061035156,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 268.58,
+          "returnPct": -0.2717975636623571
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 266.3800048828125,
+          "returnPct": 0.5518436796146942
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 301.32000732421875,
+          "returnPct": -11.107792515313985
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "CIBR",
+      "actualLastDate": "2026-11-10",
+      "close": 94.62999725341797,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 94.68000030517578,
+          "returnPct": -0.05281268651947668
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 97.22000122070312,
+          "returnPct": -2.6640649400995975
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 110.0,
+          "returnPct": -13.97272976962003
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "XLE",
+      "actualLastDate": "2026-11-10",
+      "close": 62.209999084472656,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 61.939998626708984,
+          "returnPct": 0.43590646391657994
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 66.68000030517578,
+          "returnPct": -6.7036610681541315
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 65.08000183105469,
+          "returnPct": -4.4099610722698745
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "XLY",
+      "actualLastDate": "2026-11-10",
+      "close": 121.05000305175781,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 121.01,
+          "returnPct": 0.033057641317091324
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 117.33000183105469,
+          "returnPct": 3.170545608666764
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 112.8499984741211,
+          "returnPct": 7.266286830758939
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "XLV",
+      "actualLastDate": "2026-11-10",
+      "close": 188.8800048828125,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 188.3300018310547,
+          "returnPct": 0.29204218468132925
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 184.02000427246094,
+          "returnPct": 2.6410175510896305
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 170.80999755859375,
+          "returnPct": 10.579010352142948
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "IGV",
+      "actualLastDate": "2026-11-10",
+      "close": 100.33000183105469,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 101.45999908447266,
+          "returnPct": -1.1137367076823668
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 102.66000366210938,
+          "returnPct": -2.269629600563383
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 112.66999816894531,
+          "returnPct": -10.952335615899422
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "KRE",
+      "actualLastDate": "2026-11-10",
+      "close": 73.08999633789062,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 73.44999694824219,
+          "returnPct": -0.4901301910267497
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 72.87999725341797,
+          "returnPct": 0.28814365036602396
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 69.01000213623047,
+          "returnPct": 5.912178054430384
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "XOP",
+      "actualLastDate": "2026-11-10",
+      "close": 175.52000427246094,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 174.14999389648438,
+          "returnPct": 0.7866841366591659
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 191.52000427246094,
+          "returnPct": -8.354218694167326
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 191.52000427246094,
+          "returnPct": -8.354218694167326
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "XLU",
+      "actualLastDate": "2026-11-10",
+      "close": 43.72999954223633,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 43.790000915527344,
+          "returnPct": -0.13702071714216668
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 43.41999816894531,
+          "returnPct": 0.7139598948963988
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 41.40999984741211,
+          "returnPct": 5.602510754341883
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "IHF",
+      "actualLastDate": "2026-11-10",
+      "close": 60.560001373291016,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 59.720001220703125,
+          "returnPct": 1.4065641919255079
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 59.40999984741211,
+          "returnPct": 1.9357036337865008
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 56.7599983215332,
+          "returnPct": 6.694861106639949
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "KBE",
+      "actualLastDate": "2026-11-10",
+      "close": 66.79000091552734,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 67.12999725341797,
+          "returnPct": -0.5064745297204909
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 66.58999633789062,
+          "returnPct": 0.30035228808522607
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 63.130001068115234,
+          "returnPct": 5.797560249465361
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "IAI",
+      "actualLastDate": "2026-11-10",
+      "close": 182.61000061035156,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 181.83,
+          "returnPct": 0.42897245248394444
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 179.66000366210938,
+          "returnPct": 1.6419886942617978
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 178.49000549316406,
+          "returnPct": 2.3082497565082294
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "XLF",
+      "actualLastDate": "2026-11-10",
+      "close": 58.290000915527344,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 57.9900016784668,
+          "returnPct": 0.5173292436236432
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 57.189998626708984,
+          "returnPct": 1.9234172324400722
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 54.72999954223633,
+          "returnPct": 6.504661799866618
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "XLRE",
+      "actualLastDate": "2026-11-10",
+      "close": 44.58000183105469,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 44.63999938964844,
+          "returnPct": -0.13440313488817246
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 43.66999816894531,
+          "returnPct": 2.0838188693960147
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 41.61000061035156,
+          "returnPct": 7.137710110882001
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "XLB",
+      "actualLastDate": "2026-11-10",
+      "close": 52.849998474121094,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 52.939998626708984,
+          "returnPct": -0.17000407049969635
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 52.59000015258789,
+          "returnPct": 0.4943873755064221
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 49.43000030517578,
+          "returnPct": 6.91887142996277
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "CLOU",
+      "actualLastDate": "2026-11-10",
+      "close": 25.899999618530273,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 26.149999618530273,
+          "returnPct": -0.9560229584968938
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 27.43000030517578,
+          "returnPct": -5.577836928994895
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 30.110000610351562,
+          "returnPct": -13.982068769450395
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "XLP",
+      "actualLastDate": "2026-11-10",
+      "close": 91.02999877929688,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 90.88999938964844,
+          "returnPct": 0.1540316762994598
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 88.94999694824219,
+          "returnPct": 2.3383944940043033
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 83.43000030517578,
+          "returnPct": 9.109431195398908
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "IYT",
+      "actualLastDate": "2026-11-10",
+      "close": 83.81999969482422,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 83.70999908447266,
+          "returnPct": 0.1314067752414605
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 82.68000030517578,
+          "returnPct": 1.3788091260772184
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 80.1500015258789,
+          "returnPct": 4.578912163539184
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "XHB",
+      "actualLastDate": "2026-11-10",
+      "close": 103.16999816894531,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 105.96,
+          "returnPct": -2.6330708107348832
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 101.9800033569336,
+          "returnPct": 1.1668903440282152
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 94.7699966430664,
+          "returnPct": 8.863566343170781
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "XRT",
+      "actualLastDate": "2026-11-10",
+      "close": 92.44000244140625,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 92.77999877929688,
+          "returnPct": -0.3664543461564418
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 88.80000305175781,
+          "returnPct": 4.099098270894008
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 84.08999633789062,
+          "returnPct": 9.92984477007659
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "CRAK",
+      "actualLastDate": "2026-11-10",
+      "close": 56.20000076293945,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 56.540000915527344,
+          "returnPct": -0.6013444412494073
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 60.599998474121094,
+          "returnPct": -7.260722478500781
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 66.29000091552734,
+          "returnPct": -15.220998662295193
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    },
+    {
+      "ticker": "IHI",
+      "actualLastDate": "2026-11-10",
+      "close": 58.06999969482422,
+      "anchors": {
+        "day": {
+          "date": "2026-11-09",
+          "close": 58.56999969482422,
+          "returnPct": -0.8536793624811745
+        },
+        "week": {
+          "date": "2026-11-03",
+          "close": 56.43000030517578,
+          "returnPct": 2.9062544405090485
+        },
+        "month": {
+          "date": "2026-10-09",
+          "close": 51.7400016784668,
+          "returnPct": 12.234243933145915
+        }
+      },
+      "intradaySession": "2026-11-10",
+      "intradayObservedThrough": "2026-11-10T15:55:00-05:00",
+      "holdingsAsOf": "2026-11-03",
+      "count": 257
+    }
+  ],
+  "currentCount": 38,
+  "note": "Every actual last daily bar, anchor close, price-return calculation and OHLC validated. FAN complete current candle from TradingView, original Yahoo invalid candle preserved in raw evidence."
+}

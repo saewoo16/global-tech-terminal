@@ -1,0 +1,692 @@
+{
+  "targetDate": "2026-11-10",
+  "checkedAt": "2026-11-10T21:43:12.814611+00:00",
+  "scopeChecks": {
+    "checkedAt": "2026-11-10T21:43:02.531701+00:00",
+    "calendarSourceId": "earnings_TDG_20261110_calendar",
+    "calendarMatchedSP500": [
+      "TDG",
+      "GILD"
+    ],
+    "included": [
+      "TDG"
+    ],
+    "excluded": [
+      {
+        "ticker": "GILD",
+        "reason": "Official earnings announcement dated 2026-10-29; calendar incorrectly lists November 10",
+        "sourceIds": [
+          "earnings_TDG_20261110_gild"
+        ]
+      },
+      {
+        "ticker": "TSM",
+        "reason": "November 10 monthly October revenue report, not new quarterly earnings; 3Q originally announced October 15. Board approval is not a new release.",
+        "sourceIds": [
+          "earnings_TDG_20261110_tsm",
+          "earnings_TDG_20261110_tsm_calendar"
+        ]
+      },
+      {
+        "ticker": "SPCX",
+        "reason": "Official IR latest quarterly results October 20; no new November 10 earnings found",
+        "sourceIds": [
+          "earnings_TDG_20261110_spcx"
+        ]
+      }
+    ],
+    "scopeLimitation": "Public calendar plus official checks; no claim of exhaustive unscheduled-filing coverage."
+  },
+  "sources": [
+    {
+      "id": "earnings_TDG_20261110_release",
+      "url": "https://transdigmgroupinc.gcs-web.com/news-releases/news-release-details/transdigm-group-reports-fiscal-2026-fourth-quarter-and-year-end",
+      "title": "TransDigm release",
+      "retrievedAt": "2026-11-10T21:37:25.550132+00:00",
+      "sha256": "a703812c0fc3f16e3788272d7ba257408cd9d70018fe0b7ea51ac0995245693b"
+    },
+    {
+      "id": "earnings_TDG_20261110_q1",
+      "url": "https://transdigmgroupinc.gcs-web.com/news-releases/news-release-details/transdigm-group-reports-fiscal-2026-first-quarter-results",
+      "title": "TransDigm q1",
+      "retrievedAt": "2026-11-10T21:38:02.389787+00:00",
+      "sha256": "48346fbea1f3a15711e2dbb60a1c00820fd675b40bd2fb983fce2fcc4b1a854b"
+    },
+    {
+      "id": "earnings_TDG_20261110_q2",
+      "url": "https://transdigmgroupinc.gcs-web.com/news-releases/news-release-details/transdigm-group-reports-fiscal-2026-second-quarter-results",
+      "title": "TransDigm q2",
+      "retrievedAt": "2026-11-10T21:38:02.289269+00:00",
+      "sha256": "6af44ac3ba33fad9f4fc9ab31a650a25eab957302e0fd802215c7b1086057d9c"
+    },
+    {
+      "id": "earnings_TDG_20261110_q3",
+      "url": "https://transdigmgroupinc.gcs-web.com/news-releases/news-release-details/transdigm-group-reports-fiscal-2026-third-quarter-results",
+      "title": "TransDigm q3",
+      "retrievedAt": "2026-11-10T21:38:02.265283+00:00",
+      "sha256": "c13ec02b82fd786d0ab2e85fa04d7af79453f1b5f6b0f7c6cda87360c3752554"
+    },
+    {
+      "id": "earnings_TDG_20261110_call",
+      "url": "https://stockanalysis.com/stocks/tdg/transcripts/706999-q4-2026/",
+      "title": "TransDigm call",
+      "retrievedAt": "2026-11-10T21:38:03.641316+00:00",
+      "sha256": "b8c48f5bfa1e62c7a8b31c41407710990d069b14254566a82e5094b39822dbbf"
+    },
+    {
+      "id": "earnings_TDG_20261110_consensus",
+      "url": "https://finviz.com/news/420228/transdigm-shares-fall-4-as-fy2027-earnings-outlook-misses-estimates-despite-q4-revenue-growth",
+      "title": "TransDigm consensus",
+      "retrievedAt": "2026-11-10T21:39:18.848995+00:00",
+      "sha256": "6494f8fbd86533e0c3a2a28c14485e89944792df0e6006fc03ce25103c7a4b02"
+    },
+    {
+      "id": "earnings_TDG_20261110_price",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/TDG?range=5d&interval=1d&includePrePost=true",
+      "title": "TransDigm price",
+      "retrievedAt": "2026-11-10T21:39:00.905599+00:00",
+      "sha256": "380ea55184ee45af572c3525ece2afce2773c1601cdb91292f4c6f10943dc36d"
+    },
+    {
+      "id": "earnings_TDG_20261110_afterhours",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/TDG?range=1d&interval=1m&includePrePost=true",
+      "title": "TransDigm afterhours",
+      "retrievedAt": "2026-11-10T21:39:23.417358+00:00",
+      "sha256": "9fa99fa55a271b6fb1a73b07f40beb47e8407a7c834691ab2441e570329990c6"
+    },
+    {
+      "id": "earnings_TDG_20261110_tsm",
+      "url": "https://pr.tsmc.com/english/news/3349",
+      "title": "tsm earnings scope check",
+      "retrievedAt": "2026-11-10T21:39:51.205409+00:00",
+      "sha256": "0f949edfdc18000ff1da58ea785c96c66720223327145d2ff3b889d069c9e675"
+    },
+    {
+      "id": "earnings_TDG_20261110_tsm_calendar",
+      "url": "https://investor.tsmc.com/english/financial-calendar",
+      "title": "tsm_calendar earnings scope check",
+      "retrievedAt": "2026-11-10T21:39:54.765696+00:00",
+      "sha256": "7cd725ddc04914863761093216ef2d777abffa9a8d6b3ad9d92bcd2eeb470c29"
+    },
+    {
+      "id": "earnings_TDG_20261110_spcx",
+      "url": "https://ir.spacex.com/investors/default.aspx",
+      "title": "spcx earnings scope check",
+      "retrievedAt": "2026-11-10T21:39:59.069019+00:00",
+      "sha256": "762bfd13d1ae9959729f120014770d6223bff43e69d633e168426012a1c3c692"
+    },
+    {
+      "id": "earnings_TDG_20261110_gild",
+      "url": "https://investors.gilead.com/news/news-details/2026/Gilead-Sciences-Announces-Third-Quarter-2026-Financial-Results/default.aspx",
+      "title": "gild earnings scope check",
+      "retrievedAt": "2026-11-10T21:40:03.406124+00:00",
+      "sha256": "ce4aab78be33ca130d078f61235f6835a707deb2a0a0528231616959a6700ff3"
+    },
+    {
+      "id": "earnings_TDG_20261110_calendar",
+      "url": "https://howmanytradingdays.com/earnings/today",
+      "title": "calendar earnings scope check",
+      "retrievedAt": "2026-11-10T21:39:15.449936+00:00",
+      "sha256": "f8d2a4f04c0d20e8c4092a504962ed3d47847db3eb6636f41bf0bb51b26c3963"
+    }
+  ],
+  "financialInputs": {
+    "TDG": {
+      "metrics": [
+        {
+          "label": "매출",
+          "basis": "US GAAP",
+          "value": "2,988.00 USD million",
+          "yoy": "+22.61%",
+          "qoq": "+9.01%",
+          "consensus": "2,950.00 USD million",
+          "raw": {
+            "value": 2988,
+            "previousQuarter": 2741,
+            "yearAgoQuarter": 2437,
+            "unit": "USD million",
+            "status": "verified",
+            "yoyPct": 22.60976610586787,
+            "qoqPct": 9.011309740970441,
+            "consensusValue": 2950,
+            "consensusComparable": true,
+            "consensusBasis": "US GAAP",
+            "consensusObservedAt": "2026-11-10T21:39:18.848995+00:00"
+          },
+          "sourceIds": [
+            "earnings_TDG_20261110_release",
+            "earnings_TDG_20261110_q3",
+            "earnings_TDG_20261110_consensus"
+          ]
+        },
+        {
+          "label": "매출총이익",
+          "basis": "US GAAP",
+          "value": "1,763.00 USD million",
+          "yoy": "+19.93%",
+          "qoq": "+8.29%",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": 1763,
+            "previousQuarter": 1628,
+            "yearAgoQuarter": 1470,
+            "unit": "USD million",
+            "status": "verified",
+            "yoyPct": 19.931972789115648,
+            "qoqPct": 8.292383292383288,
+            "consensusValue": null,
+            "consensusComparable": false,
+            "consensusBasis": null,
+            "consensusObservedAt": null
+          },
+          "sourceIds": [
+            "earnings_TDG_20261110_release",
+            "earnings_TDG_20261110_q3"
+          ]
+        },
+        {
+          "label": "매출총이익률",
+          "basis": "US GAAP",
+          "value": "59.00 %",
+          "yoy": "-1.32pp",
+          "qoq": "-0.39pp",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": 59.002677376171356,
+            "previousQuarter": 59.39438161255016,
+            "yearAgoQuarter": 60.32006565449323,
+            "unit": "%",
+            "status": "verified",
+            "yoyPct": null,
+            "qoqPct": null,
+            "consensusValue": null,
+            "consensusComparable": false,
+            "consensusBasis": null,
+            "consensusObservedAt": null
+          },
+          "sourceIds": [
+            "earnings_TDG_20261110_release",
+            "earnings_TDG_20261110_q3"
+          ]
+        },
+        {
+          "label": "영업이익",
+          "basis": "US GAAP",
+          "value": "1,364.00 USD million",
+          "yoy": "+17.48%",
+          "qoq": "+11.17%",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": 1364,
+            "previousQuarter": 1227,
+            "yearAgoQuarter": 1161,
+            "unit": "USD million",
+            "status": "verified",
+            "yoyPct": 17.484926787252377,
+            "qoqPct": 11.165444172779138,
+            "consensusValue": null,
+            "consensusComparable": false,
+            "consensusBasis": null,
+            "consensusObservedAt": null
+          },
+          "sourceIds": [
+            "earnings_TDG_20261110_release",
+            "earnings_TDG_20261110_q3"
+          ]
+        },
+        {
+          "label": "EPS",
+          "basis": "조정 · diluted · two-class method",
+          "value": "12.44 USD/share",
+          "yoy": "+14.97%",
+          "qoq": "+14.44%",
+          "consensus": "12.22 USD/share",
+          "raw": {
+            "value": 12.44,
+            "previousQuarter": 10.87,
+            "yearAgoQuarter": 10.82,
+            "unit": "USD/share",
+            "status": "verified",
+            "yoyPct": 14.972273567467642,
+            "qoqPct": 14.443422263109484,
+            "consensusValue": 12.22,
+            "consensusComparable": true,
+            "consensusBasis": "조정 · diluted · two-class method",
+            "consensusObservedAt": "2026-11-10T21:39:18.848995+00:00"
+          },
+          "sourceIds": [
+            "earnings_TDG_20261110_release",
+            "earnings_TDG_20261110_q3",
+            "earnings_TDG_20261110_consensus"
+          ]
+        }
+      ],
+      "quarterlyHistory": {
+        "unit": "USD million",
+        "currency": "USD",
+        "basis": "US GAAP · 연결 · EPS만 조정 희석(two-class method)",
+        "epsUnit": "USD/share",
+        "epsBasis": "조정 · diluted · two-class method",
+        "rows": [
+          {
+            "period": "FY2026 Q1",
+            "periodEnd": "2025-12-27",
+            "revenue": 2285,
+            "grossProfit": 1352,
+            "grossMargin": 59.16849015317287,
+            "operatingIncome": 1042,
+            "operatingMargin": 45.60175054704595,
+            "eps": 8.23,
+            "epsBasis": "조정 · diluted · two-class method",
+            "sourceIds": [
+              "earnings_TDG_20261110_q1"
+            ],
+            "rawEvidence": {
+              "values": {
+                "Rev": 2285,
+                "GP": 1352,
+                "OP": 1042,
+                "EPS": 8.23,
+                "gaapBasicAndDilutedEPS": 6.62
+              },
+              "observedAt": "2026-11-10T21:43:02.531701+00:00",
+              "calculation": "GP, Rev, OP and adjusted diluted EPS directly reported for the standalone quarter; GPM=GP/Rev*100; OPM=OP/Rev*100. No cumulative EPS subtraction. Reporting precision retained."
+            },
+            "status": "verified"
+          },
+          {
+            "period": "FY2026 Q2",
+            "periodEnd": "2026-03-28",
+            "revenue": 2544,
+            "grossProfit": 1511,
+            "grossMargin": 59.394654088050316,
+            "operatingIncome": 1178,
+            "operatingMargin": 46.30503144654088,
+            "eps": 9.85,
+            "epsBasis": "조정 · diluted · two-class method",
+            "sourceIds": [
+              "earnings_TDG_20261110_q2"
+            ],
+            "rawEvidence": {
+              "values": {
+                "Rev": 2544,
+                "GP": 1511,
+                "OP": 1178,
+                "EPS": 9.85,
+                "gaapBasicAndDilutedEPS": 9.2
+              },
+              "observedAt": "2026-11-10T21:43:02.531701+00:00",
+              "calculation": "GP, Rev, OP and adjusted diluted EPS directly reported for the standalone quarter; GPM=GP/Rev*100; OPM=OP/Rev*100. No cumulative EPS subtraction. Reporting precision retained."
+            },
+            "status": "verified"
+          },
+          {
+            "period": "FY2026 Q3",
+            "periodEnd": "2026-06-27",
+            "revenue": 2741,
+            "grossProfit": 1628,
+            "grossMargin": 59.39438161255016,
+            "operatingIncome": 1227,
+            "operatingMargin": 44.76468442174389,
+            "eps": 10.87,
+            "epsBasis": "조정 · diluted · two-class method",
+            "sourceIds": [
+              "earnings_TDG_20261110_q3"
+            ],
+            "rawEvidence": {
+              "values": {
+                "Rev": 2741,
+                "GP": 1628,
+                "OP": 1227,
+                "EPS": 10.87,
+                "gaapBasicAndDilutedEPS": 9.39
+              },
+              "observedAt": "2026-11-10T21:43:02.531701+00:00",
+              "calculation": "GP, Rev, OP and adjusted diluted EPS directly reported for the standalone quarter; GPM=GP/Rev*100; OPM=OP/Rev*100. No cumulative EPS subtraction. Reporting precision retained."
+            },
+            "status": "verified"
+          },
+          {
+            "period": "FY2026 Q4",
+            "periodEnd": "2026-09-30",
+            "revenue": 2988,
+            "grossProfit": 1763,
+            "grossMargin": 59.002677376171356,
+            "operatingIncome": 1364,
+            "operatingMargin": 45.64926372155288,
+            "eps": 12.44,
+            "epsBasis": "조정 · diluted · two-class method",
+            "sourceIds": [
+              "earnings_TDG_20261110_release"
+            ],
+            "rawEvidence": {
+              "values": {
+                "Rev": 2988,
+                "GP": 1763,
+                "OP": 1364,
+                "EPS": 12.44,
+                "gaapBasicAndDilutedEPS": 10.33
+              },
+              "observedAt": "2026-11-10T21:43:02.531701+00:00",
+              "calculation": "GP, Rev, OP and adjusted diluted EPS directly reported for the standalone quarter; GPM=GP/Rev*100; OPM=OP/Rev*100. No cumulative EPS subtraction. Reporting precision retained."
+            },
+            "status": "verified"
+          }
+        ]
+      },
+      "guidanceMetrics": [
+        {
+          "label": "Rev",
+          "period": "FY2027 · 2027-09-30 종료",
+          "basis": "US GAAP · 연결",
+          "unit": "USD million",
+          "low": 11950,
+          "high": 12150,
+          "consensusValue": 11750,
+          "consensusComparable": true,
+          "sourceIds": [
+            "earnings_TDG_20261110_release",
+            "earnings_TDG_20261110_consensus"
+          ]
+        },
+        {
+          "label": "EPS",
+          "period": "FY2027 · 2027-09-30 종료",
+          "basis": "조정 · diluted · two-class method",
+          "unit": "USD/share",
+          "low": 47.09,
+          "high": 47.94,
+          "consensusValue": 48.66,
+          "consensusComparable": true,
+          "sourceIds": [
+            "earnings_TDG_20261110_release",
+            "earnings_TDG_20261110_consensus"
+          ]
+        },
+        {
+          "label": "EPS",
+          "period": "FY2027 · 2027-09-30 종료",
+          "basis": "US GAAP · basic and diluted · two-class method",
+          "unit": "USD/share",
+          "low": 42.06,
+          "high": 42.91,
+          "consensusComparable": false,
+          "sourceIds": [
+            "earnings_TDG_20261110_release"
+          ]
+        }
+      ],
+      "releaseTiming": {
+        "session": "before_open",
+        "publishedAt": "2026-11-10T06:30:39-05:00",
+        "sourceIds": [
+          "earnings_TDG_20261110_release"
+        ],
+        "note": "공식 IR 페이지 배포시각. 콜 시작시각과 구분."
+      },
+      "priceReaction": {
+        "currency": "USD",
+        "regular": {
+          "date": "2026-11-10",
+          "previousDate": "2026-11-09",
+          "closedAt": "2026-11-10T16:00:00-05:00",
+          "close": 1225.5400390625,
+          "previousClose": 1218.8499755859375,
+          "changePct": 0.5488832596765247,
+          "sourceIds": [
+            "earnings_TDG_20261110_price"
+          ]
+        },
+        "afterHours": {
+          "basis": "same_session_regular_close",
+          "status": "verified",
+          "price": 1233.0,
+          "changePct": 0.6087080552020563,
+          "observedAt": "2026-11-10T16:11:29-05:00",
+          "collectedAt": "2026-11-10T21:39:23.417358+00:00",
+          "sourceIds": [
+            "earnings_TDG_20261110_afterhours"
+          ],
+          "note": "Yahoo Finance 공개 정규장 이후 분봉의 실제 마지막 관측. 당시 수집 기준으로 이후 거래를 대표하지 않으며 전일 종가 대비 수익률과 구분."
+        }
+      }
+    }
+  },
+  "note": "Factual numeric inputs, source URLs, original retrieval timestamps and source hashes. No full copyrighted transcript or release reproduced.",
+  "cutoffRecheck": {
+    "checkStartedAt": "2026-11-10T22:00:00.007452+00:00",
+    "checks": [
+      {
+        "key": "tsm_calendar",
+        "url": "https://investor.tsmc.com/english/financial-calendar",
+        "retrievedAt": "2026-11-10T22:00:06.193381+00:00",
+        "sha256": "4fe1479befeb215d07ad7a61f3e35d3098d1d4aa6da32052a2989faae1f24347",
+        "bytes": 302790,
+        "sameHash": false,
+        "calendarTickers": []
+      },
+      {
+        "key": "release",
+        "url": "https://transdigmgroupinc.gcs-web.com/news-releases/news-release-details/transdigm-group-reports-fiscal-2026-fourth-quarter-and-year-end",
+        "retrievedAt": "2026-11-10T22:00:09.746940+00:00",
+        "sha256": "a703812c0fc3f16e3788272d7ba257408cd9d70018fe0b7ea51ac0995245693b",
+        "bytes": 454035,
+        "sameHash": true
+      },
+      {
+        "key": "spcx",
+        "url": "https://ir.spacex.com/investors/default.aspx",
+        "retrievedAt": "2026-11-10T22:00:13.016907+00:00",
+        "sha256": "762bfd13d1ae9959729f120014770d6223bff43e69d633e168426012a1c3c692",
+        "bytes": 123912,
+        "sameHash": true
+      },
+      {
+        "key": "tsm",
+        "url": "https://pr.tsmc.com/english/news/3349",
+        "retrievedAt": "2026-11-10T22:00:17.005299+00:00",
+        "sha256": "0f949edfdc18000ff1da58ea785c96c66720223327145d2ff3b889d069c9e675",
+        "bytes": 177689,
+        "sameHash": true
+      },
+      {
+        "key": "gild",
+        "url": "https://investors.gilead.com/news/news-details/2026/Gilead-Sciences-Announces-Third-Quarter-2026-Financial-Results/default.aspx",
+        "retrievedAt": "2026-11-10T22:00:21.008430+00:00",
+        "sha256": "e762b8d6c9904cfc078d3070c23435ad0abff87d086013322c854830d30a51df",
+        "bytes": 755678,
+        "sameHash": false
+      },
+      {
+        "key": "calendar",
+        "url": "https://howmanytradingdays.com/earnings/today",
+        "retrievedAt": "2026-11-10T22:00:34.563855+00:00",
+        "sha256": "f8d2a4f04c0d20e8c4092a504962ed3d47847db3eb6636f41bf0bb51b26c3963",
+        "calendarTickers": [
+          "aame",
+          "abus",
+          "accs",
+          "achv",
+          "aifc",
+          "aiff",
+          "aii",
+          "airg",
+          "airt",
+          "altg",
+          "alxo",
+          "ambq",
+          "amix",
+          "angx",
+          "anro",
+          "ap",
+          "apt",
+          "artl",
+          "atos",
+          "atra",
+          "atro",
+          "avnw",
+          "avr",
+          "azta",
+          "aztr",
+          "bbot",
+          "bdtx",
+          "beep",
+          "bgs",
+          "bhm",
+          "bngo",
+          "bodi",
+          "bold",
+          "bsin",
+          "bv",
+          "calc",
+          "capr",
+          "carl",
+          "cenn",
+          "cgem",
+          "cldi",
+          "clfd",
+          "clrb",
+          "cnm",
+          "cntx",
+          "codx",
+          "coya",
+          "cpix",
+          "crbp",
+          "crwv",
+          "cwco",
+          "dc",
+          "dlpn",
+          "domh",
+          "doug",
+          "drma",
+          "efoi",
+          "elmd",
+          "evlv",
+          "fac",
+          "fcel",
+          "fcuv",
+          "fiee",
+          "fld",
+          "fly",
+          "fosl",
+          "frnm",
+          "fthm",
+          "ganx",
+          "genk",
+          "gevo",
+          "ghi",
+          "gild",
+          "go",
+          "gpro",
+          "grov",
+          "grwg",
+          "gyro",
+          "hbio",
+          "howl",
+          "huma",
+          "ibio",
+          "imsr",
+          "inbs",
+          "ino",
+          "inr",
+          "ipm",
+          "ird",
+          "jbi",
+          "jrsh",
+          "jrvr",
+          "klrs",
+          "kmpr",
+          "kopn",
+          "krmd",
+          "kulr",
+          "kura",
+          "kust",
+          "land",
+          "lfwd",
+          "lgvn",
+          "lnsr",
+          "lpth",
+          "lqda",
+          "mass",
+          "mcft",
+          "mchx",
+          "mgx",
+          "mrcy",
+          "mrdn",
+          "mtex",
+          "mux",
+          "ncmi",
+          "ngs",
+          "nn",
+          "novt",
+          "nrgv",
+          "nspr",
+          "nxgl",
+          "nxtc",
+          "obio",
+          "olma",
+          "opi",
+          "ovid",
+          "pali",
+          "pasg",
+          "pcyo",
+          "pdyn",
+          "pepg",
+          "pets",
+          "plx",
+          "pmvp",
+          "prme",
+          "prpo",
+          "qbts",
+          "qti",
+          "quik",
+          "rdnw",
+          "reed",
+          "refi",
+          "rezi",
+          "rgti",
+          "rum",
+          "sbh",
+          "seer",
+          "sion",
+          "skyh",
+          "slab",
+          "snd",
+          "snes",
+          "snoa",
+          "sono",
+          "spir",
+          "spwr",
+          "sqft",
+          "srg",
+          "srrk",
+          "ssii",
+          "ssti",
+          "stxs",
+          "surg",
+          "tcbs",
+          "tdg",
+          "tela",
+          "this-week",
+          "tlf",
+          "tlsi",
+          "today",
+          "tonx",
+          "tyra",
+          "upb",
+          "usio",
+          "velo",
+          "vg",
+          "vrm",
+          "wvvi",
+          "wyfi",
+          "xgn",
+          "xlo"
+        ],
+        "addedCalendarTickers": [],
+        "removedCalendarTickers": []
+      }
+    ],
+    "result": "No newly eligible November 10 ET quarterly release found. TDG release and SPCX/TSM source bodies unchanged. GILD remains October 29."
+  }
+}
