@@ -1,0 +1,179 @@
+{
+  "asOf": "2026-11-10",
+  "observedAt": "2026-11-10T09:03:55.263404+00:00",
+  "unit": "million reportingCurrency",
+  "companies": {
+    "TSE:6758": {
+      "reportingCurrency": "JPY",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 3429446,
+          "operatingIncome": 622329,
+          "reportedCurrency": "JPY",
+          "unit": "millions of reporting currency",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/313838/000110465926122935/tm2628525d4_6k.htm",
+          "sourceType": "filing",
+          "source": "Official issuer consolidated financial results filed on SEC Form 6-K",
+          "publishedAt": "2026-11-05",
+          "verifiedAt": "2026-11-10",
+          "observedAt": "2026-11-10T09:01:12.758812+00:00",
+          "sourceSha256": "1c054ffc13dcfef4fdfad77354dddefe5edee77f096f4480b78aac22912777b5",
+          "basis": "IFRS consolidated continuing operations; directly reported standalone July–September quarter",
+          "sourcePrecision": "Whole million JPY, rounded to nearest million",
+          "reviewStatus": "Condensed quarterly statements marked unaudited",
+          "sourceLocation": "Condensed Quarterly Consolidated Statements of Income, three months ended September 30, 2026, printed page 7",
+          "calculation": {
+            "method": "Directly reported standalone quarter; no cumulative subtraction",
+            "consistencyCheck": "Six-month revenue 6267217 less preserved Q1 2837771 equals 3429446; operating income 1098828 less 476499 equals 622329."
+          }
+        }
+      ],
+      "financialNote": "공식 SEC 제출 IFRS 연결 계속사업 7~9월 단독분기입니다. 발표일은 11월 5일이며 이번 확인일과 구분합니다. 기존 비교분기는 그대로 보존합니다."
+    },
+    "TSE:4186": {
+      "reportingCurrency": "JPY",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 77856,
+          "operatingIncome": 17192,
+          "reportedCurrency": "JPY",
+          "unit": "millions of reporting currency",
+          "sourceUrl": "https://www.tok.co.jp/application/files/5317/9428/3438/q3_2612.pdf",
+          "sourceType": "filing",
+          "source": "Official issuer consolidated financial results",
+          "publishedAt": "2026-11-10",
+          "verifiedAt": "2026-11-10",
+          "observedAt": "2026-11-10T09:00:19.201188+00:00",
+          "sourceSha256": "3d6a4d56c228c4e6825d409f2d238b2ec0a3c40542276be26f70022fd5f5f028",
+          "basis": "Japanese GAAP consolidated; nine-month cumulative less first-half cumulative",
+          "sourcePrecision": "Whole million JPY, amounts below one million truncated; subtraction preserves only reported million precision",
+          "calculation": {
+            "method": "Japanese GAAP consolidated; nine-month cumulative less first-half cumulative",
+            "revenue": "217524 - 139668 = 77856 million JPY",
+            "operatingIncome": "46046 - 28854 = 17192 million JPY",
+            "cumulativeSource": "https://www.tok.co.jp/application/files/5317/9428/3438/q3_2612.pdf",
+            "subtractedSource": "https://www.tok.co.jp/application/files/1517/8598/0032/q2_2612.pdf",
+            "subtractedSourceSha256": "c452221e1dab79562201c1744882f2f5fd3efdcfc51879bfa8eba70216ad9931",
+            "subtractedSourceObservedAt": "2026-11-10T09:02:02.809888+00:00",
+            "basisCheck": "Both reports include the same newly consolidated micro resist technology GmbH. Both declare no accounting policy/estimate changes or restatements."
+          }
+        }
+      ],
+      "financialNote": "공식 연결 누계에서 동일 일본회계기준의 이전 누계를 차감한 7~9월 단독분기입니다. 반기 수치를 균등 분할하지 않았으며 원문 백만 JPY 정밀도와 기존 비교분기를 보존합니다."
+    },
+    "TSE:6855": {
+      "reportingCurrency": "JPY",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 10853,
+          "operatingIncome": 3008,
+          "reportedCurrency": "JPY",
+          "unit": "millions of reporting currency",
+          "sourceUrl": "https://www.jem-net.co.jp/images/top/pdf/2026/261110_262qtanshin.pdf",
+          "sourceType": "filing",
+          "source": "Official issuer consolidated financial results",
+          "publishedAt": "2026-11-10",
+          "verifiedAt": "2026-11-10",
+          "observedAt": "2026-11-10T09:01:05.119782+00:00",
+          "sourceSha256": "e642c1d374a37d805a4b64e8f31eba6737a58b24725d325474502b3bd502b3f3",
+          "basis": "Japanese GAAP consolidated; first-half cumulative less first-quarter cumulative",
+          "sourcePrecision": "Whole million JPY, amounts below one million truncated; subtraction preserves only reported million precision",
+          "calculation": {
+            "method": "Japanese GAAP consolidated; first-half cumulative less first-quarter cumulative",
+            "revenue": "20494 - 9641 = 10853 million JPY",
+            "operatingIncome": "6102 - 3094 = 3008 million JPY",
+            "cumulativeSource": "https://www.jem-net.co.jp/images/top/pdf/2026/261110_262qtanshin.pdf",
+            "subtractedSource": "https://www.jem-net.co.jp/images/top/pdf/2026/260807_261qtanshin.pdf",
+            "subtractedSourceSha256": "c60a8a6d871bbc93feb8a428a62803cf019e1cb565389e01c41999dfb3f657cc",
+            "subtractedSourceObservedAt": "2026-11-10T09:01:09.595576+00:00",
+            "basisCheck": "Both reports declare no significant consolidation-scope change, accounting-policy/estimate change or restatement. Same consolidated fiscal year and currency."
+          }
+        }
+      ],
+      "financialNote": "공식 연결 누계에서 동일 일본회계기준의 이전 누계를 차감한 7~9월 단독분기입니다. 반기 수치를 균등 분할하지 않았으며 원문 백만 JPY 정밀도와 기존 비교분기를 보존합니다."
+    },
+    "TSE:285A": {
+      "reportingCurrency": "JPY",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "reportedCurrency": "JPY",
+          "unit": "millions of reporting currency",
+          "sourceType": "filing",
+          "verifiedAt": "2026-11-10",
+          "observedAt": "2026-11-10T09:03:55.263404+00:00",
+          "revenue": 2480035,
+          "operatingIncome": 1994710,
+          "sourceUrl": "https://ssl4.eir-parts.net/doc/285A/tdnet/2902678/00.pdf",
+          "source": "Kioxia official consolidated IFRS financial results linked from issuer IR",
+          "publishedAt": "2026-10-30",
+          "basis": "IFRS consolidated; directly reported standalone quarter; not non-GAAP",
+          "sourcePrecision": "Whole million JPY rounded to nearest million",
+          "sourceLocation": "PDF page15 (printed12), three months ended September30 2026 profit/loss statement",
+          "verificationMethod": "Official linked PDF text and rendered page visually verified. Direct download returned503; no raw-PDF hash claimed.",
+          "calculation": {
+            "method": "Direct standalone quarter; no subtraction",
+            "operatingMarginFormula": "operatingIncome/revenue*100"
+          }
+        }
+      ],
+      "financialNote": "10월30일 공식 IFRS 7~9월 단독분기입니다. 비GAAP 영업이익으로 대체하지 않았으며 원래 발표일과 실제 확인일을 구분합니다. 이전 비교분기는 보존합니다."
+    },
+    "TSE:6965": {
+      "reportingCurrency": "JPY",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "reportedCurrency": "JPY",
+          "unit": "millions of reporting currency",
+          "sourceType": "filing",
+          "verifiedAt": "2026-11-10",
+          "observedAt": "2026-11-10T09:03:55.263404+00:00",
+          "revenue": 70313,
+          "operatingIncome": 10827,
+          "sourceUrl": "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/01_HQ/ir/financial-information/quarterly-financial-reports/h_ir_79ren_t.pdf",
+          "sourceUrls": [
+            "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/01_HQ/ir/financial-information/quarterly-financial-reports/h_ir_79ren_t.pdf",
+            "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/01_HQ/ir/financial-information/quarterly-financial-reports/h_ir_fr2026-third.pdf"
+          ],
+          "source": "Hamamatsu official consolidated Japanese GAAP results",
+          "publishedAt": "2026-11-10",
+          "basis": "Japanese GAAP consolidated fiscal year less first nine months; actual July-September quarter",
+          "sourcePrecision": "Original cumulative figures truncate below million JPY; derived quarter retains that precision limitation",
+          "calculation": {
+            "method": "Full fiscal year minus nine-month cumulative, same accounting basis and issuer consolidation",
+            "revenue": {
+              "fullYear": 243360,
+              "nineMonths": 173047,
+              "result": 70313
+            },
+            "operatingIncome": {
+              "fullYear": 27181,
+              "nineMonths": 16354,
+              "result": 10827
+            },
+            "scopeNote": "Issuer year-to-date consolidation includes newly established subsidiaries as reported; no allocation or synthetic half-year split. No reported income-statement accounting-policy change."
+          },
+          "sourceHashes": {
+            "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/01_HQ/ir/financial-information/quarterly-financial-reports/h_ir_79ren_t.pdf": "bfc62d446561beb8e1b626d60a8a0b154b91c4eefd3b8374e53e792f193e6b08",
+            "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/01_HQ/ir/financial-information/quarterly-financial-reports/h_ir_fr2026-third.pdf": "7167b47f8e6360f25f6fe344b96508cedc4dff4c97688b64c46e34c8f459debf"
+          }
+        }
+      ],
+      "financialNote": "11월10일 공식 연결 연간 실적에서 같은 기준 9개월 누계를 차감한 7~9월 실적입니다. 원문 백만엔 미만 절사에 따른 계산 정밀도 한계를 유지합니다. 이전 비교분기는 보존합니다."
+    }
+  }
+}
