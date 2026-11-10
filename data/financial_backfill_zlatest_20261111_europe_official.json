@@ -1,0 +1,35 @@
+{
+  "asOf": "2026-11-10",
+  "observedAt": "2026-11-10T22:01:27.397753+00:00",
+  "unit": "million reportingCurrency",
+  "companies": {
+    "XETR:IFX": {
+      "reportingCurrency": "EUR",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 4706,
+          "operatingIncome": 775,
+          "reportedCurrency": "EUR",
+          "unit": "millions of reporting currency",
+          "sourceUrl": "https://www.infineon.com/assets/row/public/documents/corporate/press/2026/infpr202611-025e.pdf",
+          "sourceType": "filing",
+          "source": "Official issuer Q4 FY2026 results",
+          "publishedAt": "2026-11-10",
+          "verifiedAt": "2026-11-10",
+          "observedAt": "2026-11-10T22:01:27.397753+00:00",
+          "sourceSha256": "c1060221fd67f6d1d2645da8ded0d7b5c8e67b84dca896c01a34ac8a13dd2359",
+          "basis": "IFRS consolidated reported operating profit; not adjusted Segment Result",
+          "sourcePrecision": "Whole million EUR",
+          "sourceLocation": "Group performance in fourth quarter: revenue 4706, operating profit 775",
+          "calculation": {
+            "method": "Direct reported standalone quarter, no cumulative subtraction"
+          }
+        }
+      ],
+      "financialNote": "공식 2026 회계연도 4분기 연결 매출과 영업이익입니다. 조정 Segment Result 1,119백만 유로를 영업이익으로 대체하지 않습니다."
+    }
+  }
+}
