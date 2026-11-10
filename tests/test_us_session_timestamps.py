@@ -19,7 +19,8 @@ class SessionTimestampTests(unittest.TestCase):
         cls.payload = json.loads((ROOT / 'data/us_analysis.json').read_text())
 
     def setUp(self):
-        self.entry = copy.deepcopy(max(self.payload['entries'], key=lambda e: e['date']))
+        # These fixtures below intentionally exercise the Nov 6 EST session.
+        self.entry = copy.deepcopy(next(e for e in self.payload['entries'] if e['date'] == '2026-11-06'))
 
     def check(self, entry=None, now='2026-12-31T23:00:00Z'):
         validate_session_timestamps(entry or self.entry, now=now)

@@ -1,0 +1,3098 @@
+{
+  "rows": [
+    {
+      "ticker": "KKR",
+      "name": "KKR",
+      "period": "2026년 3분기 · 9/30 종료",
+      "releaseDate": "2026-11-09",
+      "releaseType": "results",
+      "presentationVersion": 3,
+      "summary": "GAAP 희석 EPS는 1.19달러입니다. 자산관리와 보험이 함께 포함된 연결 매출이며 일반 제조업식 매출총이익과 구분합니다.",
+      "presentationSummary": "GAAP 희석 EPS는 1.19달러입니다. 자산관리와 보험이 함께 포함된 연결 매출이며 일반 제조업식 매출총이익과 구분합니다.",
+      "metrics": [
+        {
+          "label": "매출",
+          "basis": "US GAAP",
+          "value": "4,563.68 USD million",
+          "yoy": "-17.41%",
+          "qoq": "-20.30%",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": 4563.679,
+            "previousQuarter": 5725.891,
+            "yearAgoQuarter": 5525.975,
+            "unit": "USD million",
+            "status": "verified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_KKR_20261109"
+          ]
+        },
+        {
+          "label": "매출총이익",
+          "basis": "US GAAP",
+          "value": "해당 없음",
+          "yoy": "미확인",
+          "qoq": "미확인",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": null,
+            "previousQuarter": null,
+            "yearAgoQuarter": null,
+            "unit": "USD million",
+            "status": "unverified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_KKR_20261109"
+          ]
+        },
+        {
+          "label": "매출총이익률",
+          "basis": "US GAAP",
+          "value": "해당 없음",
+          "yoy": "미확인",
+          "qoq": "미확인",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": null,
+            "previousQuarter": null,
+            "yearAgoQuarter": null,
+            "unit": "%",
+            "status": "unverified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_KKR_20261109"
+          ]
+        },
+        {
+          "label": "영업이익",
+          "basis": "US GAAP",
+          "value": "해당 없음",
+          "yoy": "미확인",
+          "qoq": "미확인",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": null,
+            "previousQuarter": null,
+            "yearAgoQuarter": null,
+            "unit": "USD million",
+            "status": "unverified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_KKR_20261109"
+          ]
+        },
+        {
+          "label": "EPS",
+          "basis": "US GAAP · diluted",
+          "value": "1.19 USD/share",
+          "yoy": "+32.22%",
+          "qoq": "+70.00%",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": 1.19,
+            "previousQuarter": 0.7,
+            "yearAgoQuarter": 0.9,
+            "unit": "USD/share",
+            "status": "verified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_KKR_20261109"
+          ]
+        }
+      ],
+      "quarterlyHistory": {
+        "unit": "USD million",
+        "currency": "USD",
+        "basis": "US GAAP · 연결",
+        "epsUnit": "USD/share",
+        "epsBasis": "US GAAP · diluted",
+        "rows": [
+          {
+            "period": "2025 Q4",
+            "periodEnd": "2025-12-31",
+            "revenue": 5739.306,
+            "grossProfit": null,
+            "grossMargin": null,
+            "operatingIncome": null,
+            "operatingMargin": null,
+            "eps": 1.16,
+            "epsBasis": "US GAAP · diluted",
+            "sourceIds": [
+              "earnings_KKR_20261109_q4"
+            ],
+            "rawEvidence": {
+              "values": {
+                "Rev": 5739.306,
+                "EPS": 1.16
+              },
+              "observedAt": "2026-11-09T21:50:12.036456+00:00"
+            },
+            "status": "verified"
+          },
+          {
+            "period": "2026 Q1",
+            "periodEnd": "2026-03-31",
+            "revenue": 4317.983,
+            "grossProfit": null,
+            "grossMargin": null,
+            "operatingIncome": null,
+            "operatingMargin": null,
+            "eps": 0.38,
+            "epsBasis": "US GAAP · diluted",
+            "sourceIds": [
+              "earnings_KKR_20261109_facts",
+              "earnings_KKR_20261109_q1"
+            ],
+            "rawEvidence": {
+              "values": {
+                "Rev": 4317.983,
+                "EPS": 0.38
+              },
+              "observedAt": "2026-11-09T22:08:54.386434+00:00"
+            },
+            "status": "verified"
+          },
+          {
+            "period": "2026 Q2",
+            "periodEnd": "2026-06-30",
+            "revenue": 5725.891,
+            "grossProfit": null,
+            "grossMargin": null,
+            "operatingIncome": null,
+            "operatingMargin": null,
+            "eps": 0.7,
+            "epsBasis": "US GAAP · diluted",
+            "sourceIds": [
+              "earnings_KKR_20261109_facts",
+              "earnings_KKR_20261109_q2"
+            ],
+            "rawEvidence": {
+              "values": {
+                "Rev": 5725.891
+              },
+              "observedAt": "2026-11-09T21:48:16.618022+00:00"
+            },
+            "status": "verified"
+          },
+          {
+            "period": "2026 Q3",
+            "periodEnd": "2026-09-30",
+            "revenue": 4563.679,
+            "grossProfit": null,
+            "grossMargin": null,
+            "operatingIncome": null,
+            "operatingMargin": null,
+            "eps": 1.19,
+            "epsBasis": "US GAAP · diluted",
+            "sourceIds": [
+              "earnings_KKR_20261109"
+            ],
+            "rawEvidence": {
+              "values": {
+                "Rev": 4563.679,
+                "GP": null,
+                "OP": null,
+                "EPS": 1.19
+              },
+              "observedAt": "2026-11-09T21:48:16.618022+00:00"
+            },
+            "status": "verified"
+          }
+        ]
+      },
+      "sourceIds": [
+        "earnings_KKR_20261109",
+        "earnings_KKR_20261109_facts"
+      ],
+      "callHighlights": [],
+      "callStatus": "공개 콜 원문 미확인",
+      "statusLabel": "공식 실적 발표",
+      "releaseTiming": {
+        "session": "before_open",
+        "publishedAt": null,
+        "sourceIds": [
+          "earnings_KKR_20261109"
+        ]
+      },
+      "note": "동일 기준 컨센서스는 미확인입니다. 매출총이익은 전체 매출원가가 검증되지 않으면 일부 비용만 빼서 계산하지 않았습니다. "
+    },
+    {
+      "ticker": "CEG",
+      "name": "Constellation Energy",
+      "period": "2026년 3분기 · 9/30 종료",
+      "releaseDate": "2026-11-09",
+      "releaseType": "results",
+      "presentationVersion": 3,
+      "summary": "원자력 가동률은 97.2%였습니다. Calpine 통합과 전력시장 여건이 실적에 영향을 주었으며 연간 조정 EPS 전망은 12.50~12.80달러입니다.",
+      "presentationSummary": "원자력 가동률은 97.2%였습니다. Calpine 통합과 전력시장 여건이 실적에 영향을 주었으며 연간 조정 EPS 전망은 12.50~12.80달러입니다.",
+      "metrics": [
+        {
+          "label": "매출",
+          "basis": "US GAAP",
+          "value": "9,550.00 USD million",
+          "yoy": "+45.36%",
+          "qoq": "+27.27%",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": 9550,
+            "previousQuarter": 7504.0,
+            "yearAgoQuarter": 6570.0,
+            "unit": "USD million",
+            "status": "verified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_CEG_20261109"
+          ]
+        },
+        {
+          "label": "매출총이익",
+          "basis": "US GAAP",
+          "value": "미확인",
+          "yoy": "미확인",
+          "qoq": "미확인",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": null,
+            "previousQuarter": null,
+            "yearAgoQuarter": null,
+            "unit": "USD million",
+            "status": "unverified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_CEG_20261109"
+          ]
+        },
+        {
+          "label": "매출총이익률",
+          "basis": "US GAAP",
+          "value": "미확인",
+          "yoy": "미확인",
+          "qoq": "미확인",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": null,
+            "previousQuarter": null,
+            "yearAgoQuarter": null,
+            "unit": "%",
+            "status": "unverified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_CEG_20261109"
+          ]
+        },
+        {
+          "label": "영업이익",
+          "basis": "US GAAP",
+          "value": "2,492.00 USD million",
+          "yoy": "+129.47%",
+          "qoq": "+329.66%",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": 2492,
+            "previousQuarter": 580.0,
+            "yearAgoQuarter": 1086.0,
+            "unit": "USD million",
+            "status": "verified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_CEG_20261109"
+          ]
+        },
+        {
+          "label": "EPS",
+          "basis": "US GAAP · diluted",
+          "value": "5.19 USD/share",
+          "yoy": "+74.75%",
+          "qoq": "+265.49%",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": 5.19,
+            "previousQuarter": 1.42,
+            "yearAgoQuarter": 2.97,
+            "unit": "USD/share",
+            "status": "verified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_CEG_20261109"
+          ]
+        }
+      ],
+      "quarterlyHistory": {
+        "unit": "USD million",
+        "currency": "USD",
+        "basis": "US GAAP · 연결",
+        "epsUnit": "USD/share",
+        "epsBasis": "US GAAP · diluted",
+        "rows": [
+          {
+            "period": "2025 Q4",
+            "periodEnd": "2025-12-31",
+            "revenue": 6074,
+            "grossProfit": null,
+            "grossMargin": null,
+            "operatingIncome": 598,
+            "operatingMargin": 9.845242015146525,
+            "eps": 1.38,
+            "epsBasis": "US GAAP · diluted",
+            "sourceIds": [
+              "earnings_CEG_20261109_prior"
+            ],
+            "rawEvidence": {
+              "values": {
+                "Rev": 6074,
+                "GP": null,
+                "OP": 598,
+                "EPS": 1.38
+              },
+              "observedAt": "2026-11-09T21:48:16.618022+00:00"
+            },
+            "status": "verified"
+          },
+          {
+            "period": "2026 Q1",
+            "periodEnd": "2026-03-31",
+            "revenue": 11122.0,
+            "grossProfit": null,
+            "grossMargin": null,
+            "operatingIncome": 2332.0,
+            "operatingMargin": 20.9674518971408,
+            "eps": 4.49,
+            "epsBasis": "US GAAP · diluted",
+            "sourceIds": [
+              "earnings_CEG_20261109_facts"
+            ],
+            "rawEvidence": {
+              "values": {
+                "Rev": 11122.0,
+                "OP": 2332.0,
+                "EPS": 4.49
+              },
+              "observedAt": "2026-11-09T21:48:16.618022+00:00"
+            },
+            "status": "verified"
+          },
+          {
+            "period": "2026 Q2",
+            "periodEnd": "2026-06-30",
+            "revenue": 7504.0,
+            "grossProfit": null,
+            "grossMargin": null,
+            "operatingIncome": 580.0,
+            "operatingMargin": 7.729211087420043,
+            "eps": 1.42,
+            "epsBasis": "US GAAP · diluted",
+            "sourceIds": [
+              "earnings_CEG_20261109_facts"
+            ],
+            "rawEvidence": {
+              "values": {
+                "Rev": 7504.0,
+                "OP": 580.0,
+                "EPS": 1.42
+              },
+              "observedAt": "2026-11-09T21:48:16.618022+00:00"
+            },
+            "status": "verified"
+          },
+          {
+            "period": "2026 Q3",
+            "periodEnd": "2026-09-30",
+            "revenue": 9550,
+            "grossProfit": null,
+            "grossMargin": null,
+            "operatingIncome": 2492,
+            "operatingMargin": 26.094240837696336,
+            "eps": 5.19,
+            "epsBasis": "US GAAP · diluted",
+            "sourceIds": [
+              "earnings_CEG_20261109"
+            ],
+            "rawEvidence": {
+              "values": {
+                "Rev": 9550,
+                "GP": null,
+                "OP": 2492,
+                "EPS": 5.19
+              },
+              "observedAt": "2026-11-09T21:48:16.618022+00:00"
+            },
+            "status": "verified"
+          }
+        ]
+      },
+      "sourceIds": [
+        "earnings_CEG_20261109",
+        "earnings_CEG_20261109_facts"
+      ],
+      "callHighlights": [],
+      "callStatus": "공개 콜 원문 미확인",
+      "statusLabel": "공식 실적 발표",
+      "releaseTiming": {
+        "session": "before_open",
+        "publishedAt": "2026-11-09T06:49:00-05:00",
+        "sourceIds": [
+          "earnings_CEG_20261109"
+        ]
+      },
+      "note": "동일 기준 컨센서스는 미확인입니다. 매출총이익은 전체 매출원가가 검증되지 않으면 일부 비용만 빼서 계산하지 않았습니다. ",
+      "guidanceMetrics": [
+        {
+          "label": "EPS",
+          "period": "FY2026",
+          "basis": "조정 operating EPS",
+          "unit": "USD/share",
+          "sourceIds": [
+            "earnings_CEG_20261109"
+          ],
+          "consensusComparable": false,
+          "low": 12.5,
+          "high": 12.8
+        }
+      ]
+    },
+    {
+      "ticker": "NRG",
+      "name": "NRG Energy",
+      "period": "2026년 3분기 · 9/30 종료",
+      "releaseDate": "2026-11-09",
+      "releaseType": "results",
+      "presentationVersion": 3,
+      "summary": "LS Power 자산 편입과 용량가격·텍사스 마진이 실적을 뒷받침했습니다. 4.9GW 자산 매각 계획은 향후 실적 범위에 영향을 줍니다.",
+      "presentationSummary": "LS Power 자산 편입과 용량가격·텍사스 마진이 실적을 뒷받침했습니다. 4.9GW 자산 매각 계획은 향후 실적 범위에 영향을 줍니다.",
+      "metrics": [
+        {
+          "label": "매출",
+          "basis": "US GAAP",
+          "value": "9,466.00 USD million",
+          "yoy": "+23.98%",
+          "qoq": "+26.53%",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": 9466,
+            "previousQuarter": 7481.0,
+            "yearAgoQuarter": 7635.0,
+            "unit": "USD million",
+            "status": "verified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_NRG_20261109"
+          ]
+        },
+        {
+          "label": "매출총이익",
+          "basis": "US GAAP",
+          "value": "미확인",
+          "yoy": "미확인",
+          "qoq": "미확인",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": null,
+            "previousQuarter": null,
+            "yearAgoQuarter": null,
+            "unit": "USD million",
+            "status": "unverified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_NRG_20261109"
+          ]
+        },
+        {
+          "label": "매출총이익률",
+          "basis": "US GAAP",
+          "value": "미확인",
+          "yoy": "미확인",
+          "qoq": "미확인",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": null,
+            "previousQuarter": null,
+            "yearAgoQuarter": null,
+            "unit": "%",
+            "status": "unverified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_NRG_20261109"
+          ]
+        },
+        {
+          "label": "영업이익",
+          "basis": "US GAAP",
+          "value": "1,084.00 USD million",
+          "yoy": "+161.84%",
+          "qoq": "+11.07%",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": 1084,
+            "previousQuarter": 976.0,
+            "yearAgoQuarter": 414.0,
+            "unit": "USD million",
+            "status": "verified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_NRG_20261109"
+          ]
+        },
+        {
+          "label": "EPS",
+          "basis": "US GAAP · diluted",
+          "value": "2.59 USD/share",
+          "yoy": "+275.36%",
+          "qoq": "+12.12%",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": 2.59,
+            "previousQuarter": 2.31,
+            "yearAgoQuarter": 0.69,
+            "unit": "USD/share",
+            "status": "verified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_NRG_20261109"
+          ]
+        }
+      ],
+      "quarterlyHistory": {
+        "unit": "USD million",
+        "currency": "USD",
+        "basis": "US GAAP · 연결",
+        "epsUnit": "USD/share",
+        "epsBasis": "US GAAP · diluted",
+        "rows": [
+          {
+            "period": "2025 Q4",
+            "periodEnd": "2025-12-31",
+            "revenue": 7753,
+            "grossProfit": null,
+            "grossMargin": null,
+            "operatingIncome": 297,
+            "operatingMargin": 3.8307751837998194,
+            "eps": null,
+            "epsBasis": "US GAAP · diluted",
+            "sourceIds": [
+              "earnings_NRG_20261109_q4",
+              "earnings_NRG_20261109_facts"
+            ],
+            "rawEvidence": {
+              "values": {
+                "Rev": 7753,
+                "OP": 297
+              },
+              "observedAt": "2026-11-09T21:50:12.036456+00:00",
+              "calculation": "Same-basis FY2025 minus reported first nine months: revenue 30713-22960; operating income 1845-1548. EPS not subtracted due weighted-share denominator."
+            },
+            "status": "partial"
+          },
+          {
+            "period": "2026 Q1",
+            "periodEnd": "2026-03-31",
+            "revenue": 10256.0,
+            "grossProfit": null,
+            "grossMargin": null,
+            "operatingIncome": 328.0,
+            "operatingMargin": 3.1981279251170043,
+            "eps": 0.52,
+            "epsBasis": "US GAAP · diluted",
+            "sourceIds": [
+              "earnings_NRG_20261109_facts"
+            ],
+            "rawEvidence": {
+              "values": {
+                "Rev": 10256.0,
+                "OP": 328.0,
+                "EPS": 0.52
+              },
+              "observedAt": "2026-11-09T21:48:16.618022+00:00"
+            },
+            "status": "verified"
+          },
+          {
+            "period": "2026 Q2",
+            "periodEnd": "2026-06-30",
+            "revenue": 7481.0,
+            "grossProfit": null,
+            "grossMargin": null,
+            "operatingIncome": 976.0,
+            "operatingMargin": 13.046384173238874,
+            "eps": 2.31,
+            "epsBasis": "US GAAP · diluted",
+            "sourceIds": [
+              "earnings_NRG_20261109_facts"
+            ],
+            "rawEvidence": {
+              "values": {
+                "Rev": 7481.0,
+                "OP": 976.0,
+                "EPS": 2.31
+              },
+              "observedAt": "2026-11-09T21:48:16.618022+00:00"
+            },
+            "status": "verified"
+          },
+          {
+            "period": "2026 Q3",
+            "periodEnd": "2026-09-30",
+            "revenue": 9466,
+            "grossProfit": null,
+            "grossMargin": null,
+            "operatingIncome": 1084,
+            "operatingMargin": 11.451510669765476,
+            "eps": 2.59,
+            "epsBasis": "US GAAP · diluted",
+            "sourceIds": [
+              "earnings_NRG_20261109"
+            ],
+            "rawEvidence": {
+              "values": {
+                "Rev": 9466,
+                "GP": null,
+                "OP": 1084,
+                "EPS": 2.59
+              },
+              "observedAt": "2026-11-09T21:48:16.618022+00:00"
+            },
+            "status": "verified"
+          }
+        ]
+      },
+      "sourceIds": [
+        "earnings_NRG_20261109",
+        "earnings_NRG_20261109_facts"
+      ],
+      "callHighlights": [],
+      "callStatus": "공개 콜 원문 미확인",
+      "statusLabel": "공식 실적 발표",
+      "releaseTiming": {
+        "session": "before_open",
+        "publishedAt": null,
+        "sourceIds": [
+          "earnings_NRG_20261109"
+        ]
+      },
+      "note": "동일 기준 컨센서스는 미확인입니다. 매출총이익은 전체 매출원가가 검증되지 않으면 일부 비용만 빼서 계산하지 않았습니다.  Q4 매출·OP는 같은 기준 연간에서 공시 9개월 누계를 차감했습니다. EPS는 가중주식수 차이 때문에 누계 차감하지 않았습니다.",
+      "guidanceMetrics": [
+        {
+          "label": "EPS",
+          "period": "FY2026",
+          "basis": "조정 EPS · basic",
+          "unit": "USD/share",
+          "sourceIds": [
+            "earnings_NRG_20261109"
+          ],
+          "consensusComparable": false,
+          "low": 7.9,
+          "high": 9.9
+        },
+        {
+          "label": "EPS",
+          "period": "FY2027",
+          "basis": "조정 EPS · basic · 예정 매각 제외",
+          "unit": "USD/share",
+          "sourceIds": [
+            "earnings_NRG_20261109"
+          ],
+          "consensusComparable": false,
+          "low": 8.05,
+          "high": 10.05
+        }
+      ]
+    },
+    {
+      "ticker": "FERG",
+      "name": "Ferguson",
+      "period": "2026년 3분기 · 9/30 종료",
+      "releaseDate": "2026-11-09",
+      "releaseType": "results",
+      "presentationVersion": 3,
+      "summary": "비주거용 매출은 15%, 주거용 매출은 6% 증가했습니다. 유기적 성장률은 7%였으나 매출총이익률은 전년보다 40bp 낮아졌습니다.",
+      "presentationSummary": "비주거용 매출은 15%, 주거용 매출은 6% 증가했습니다. 유기적 성장률은 7%였으나 매출총이익률은 전년보다 40bp 낮아졌습니다.",
+      "metrics": [
+        {
+          "label": "매출",
+          "basis": "US GAAP",
+          "value": "9,026.00 USD million",
+          "yoy": "+9.47%",
+          "qoq": "+3.14%",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": 9026,
+            "previousQuarter": 8751.0,
+            "yearAgoQuarter": 8245.0,
+            "unit": "USD million",
+            "status": "verified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_FERG_20261109"
+          ]
+        },
+        {
+          "label": "매출총이익",
+          "basis": "US GAAP",
+          "value": "2,786.00 USD million",
+          "yoy": "+7.86%",
+          "qoq": "+2.73%",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": 2786,
+            "previousQuarter": 2712.0,
+            "yearAgoQuarter": 2583.0,
+            "unit": "USD million",
+            "status": "verified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_FERG_20261109"
+          ]
+        },
+        {
+          "label": "매출총이익률",
+          "basis": "US GAAP",
+          "value": "30.87 %",
+          "yoy": "-0.46pp",
+          "qoq": "-0.12pp",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": 30.866385996011523,
+            "previousQuarter": 30.990743914981145,
+            "yearAgoQuarter": 31.328077622801697,
+            "unit": "%",
+            "status": "verified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_FERG_20261109"
+          ]
+        },
+        {
+          "label": "영업이익",
+          "basis": "US GAAP",
+          "value": "885.00 USD million",
+          "yoy": "+4.86%",
+          "qoq": "-0.90%",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": 885,
+            "previousQuarter": 893.0,
+            "yearAgoQuarter": 844.0,
+            "unit": "USD million",
+            "status": "verified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_FERG_20261109"
+          ]
+        },
+        {
+          "label": "EPS",
+          "basis": "US GAAP · diluted",
+          "value": "3.08 USD/share",
+          "yoy": "-4.94%",
+          "qoq": "-10.20%",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": 3.08,
+            "previousQuarter": 3.43,
+            "yearAgoQuarter": 3.24,
+            "unit": "USD/share",
+            "status": "verified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_FERG_20261109"
+          ]
+        }
+      ],
+      "quarterlyHistory": {
+        "unit": "USD million",
+        "currency": "USD",
+        "basis": "US GAAP · 연결",
+        "epsUnit": "USD/share",
+        "epsBasis": "US GAAP · diluted",
+        "rows": [
+          {
+            "period": "2025 Q4",
+            "periodEnd": "2025-12-31",
+            "revenue": 7495,
+            "grossProfit": 2296,
+            "grossMargin": 30.633755837224818,
+            "operatingIncome": 596,
+            "operatingMargin": 7.951967978652435,
+            "eps": 1.99,
+            "epsBasis": "US GAAP · diluted",
+            "sourceIds": [
+              "earnings_FERG_20261109_prior"
+            ],
+            "rawEvidence": {
+              "values": {
+                "Rev": 7495,
+                "GP": 2296,
+                "OP": 596,
+                "EPS": 1.99
+              },
+              "observedAt": "2026-11-09T21:48:16.618022+00:00"
+            },
+            "status": "verified"
+          },
+          {
+            "period": "2026 Q1",
+            "periodEnd": "2026-03-31",
+            "revenue": 7472.0,
+            "grossProfit": 2318.0,
+            "grossMargin": 31.02248394004283,
+            "operatingIncome": 612.0,
+            "operatingMargin": 8.190578158458244,
+            "eps": 2.13,
+            "epsBasis": "US GAAP · diluted",
+            "sourceIds": [
+              "earnings_FERG_20261109_facts"
+            ],
+            "rawEvidence": {
+              "values": {
+                "Rev": 7472.0,
+                "OP": 612.0,
+                "GP": 2318.0,
+                "EPS": 2.13
+              },
+              "observedAt": "2026-11-09T21:48:16.618022+00:00"
+            },
+            "status": "verified"
+          },
+          {
+            "period": "2026 Q2",
+            "periodEnd": "2026-06-30",
+            "revenue": 8751.0,
+            "grossProfit": 2712.0,
+            "grossMargin": 30.990743914981145,
+            "operatingIncome": 893.0,
+            "operatingMargin": 10.204548051651239,
+            "eps": 3.43,
+            "epsBasis": "US GAAP · diluted",
+            "sourceIds": [
+              "earnings_FERG_20261109_facts"
+            ],
+            "rawEvidence": {
+              "values": {
+                "Rev": 8751.0,
+                "OP": 893.0,
+                "GP": 2712.0,
+                "EPS": 3.43
+              },
+              "observedAt": "2026-11-09T21:48:16.618022+00:00"
+            },
+            "status": "verified"
+          },
+          {
+            "period": "2026 Q3",
+            "periodEnd": "2026-09-30",
+            "revenue": 9026,
+            "grossProfit": 2786,
+            "grossMargin": 30.866385996011523,
+            "operatingIncome": 885,
+            "operatingMargin": 9.805007755373365,
+            "eps": 3.08,
+            "epsBasis": "US GAAP · diluted",
+            "sourceIds": [
+              "earnings_FERG_20261109"
+            ],
+            "rawEvidence": {
+              "values": {
+                "Rev": 9026,
+                "GP": 2786,
+                "OP": 885,
+                "EPS": 3.08
+              },
+              "observedAt": "2026-11-09T21:48:16.618022+00:00"
+            },
+            "status": "verified"
+          }
+        ]
+      },
+      "sourceIds": [
+        "earnings_FERG_20261109",
+        "earnings_FERG_20261109_facts"
+      ],
+      "callHighlights": [],
+      "callStatus": "공개 콜 원문 미확인",
+      "statusLabel": "공식 실적 발표",
+      "releaseTiming": {
+        "session": "before_open",
+        "publishedAt": "2026-11-09T06:45:00-05:00",
+        "sourceIds": [
+          "earnings_FERG_20261109"
+        ]
+      },
+      "note": "동일 기준 컨센서스는 미확인입니다. 매출총이익은 전체 매출원가가 검증되지 않으면 일부 비용만 빼서 계산하지 않았습니다. ",
+      "guidanceMetrics": [
+        {
+          "label": "매출 성장률",
+          "period": "CY2026",
+          "basis": "회사 매출 전망",
+          "unit": "%",
+          "sourceIds": [
+            "earnings_FERG_20261109"
+          ],
+          "consensusComparable": false,
+          "value": 7
+        },
+        {
+          "label": "OPM",
+          "period": "CY2026",
+          "basis": "조정 영업이익률",
+          "unit": "%",
+          "sourceIds": [
+            "earnings_FERG_20261109"
+          ],
+          "consensusComparable": false,
+          "low": 9.6,
+          "high": 9.8
+        }
+      ]
+    },
+    {
+      "ticker": "TTWO",
+      "name": "Take-Two Interactive",
+      "period": "FY2027 2분기 · 2026/9/30 종료",
+      "releaseDate": "2026-11-09",
+      "releaseType": "results",
+      "presentationVersion": 3,
+      "summary": "분기 순예약액은 16억달러였으며 반복 소비 지출은 매출의 81%였습니다. GTA VI 출시 예정일은 11월 19일입니다. 순예약액은 GAAP 매출과 다릅니다.",
+      "presentationSummary": "분기 순예약액은 16억달러였으며 반복 소비 지출은 매출의 81%였습니다. GTA VI 출시 예정일은 11월 19일입니다. 순예약액은 GAAP 매출과 다릅니다.",
+      "metrics": [
+        {
+          "label": "매출",
+          "basis": "US GAAP",
+          "value": "1,497.00 USD million",
+          "yoy": "-15.60%",
+          "qoq": "-2.41%",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": 1497.0,
+            "previousQuarter": 1533.9,
+            "yearAgoQuarter": 1773.8,
+            "unit": "USD million",
+            "status": "verified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_TTWO_20261109"
+          ]
+        },
+        {
+          "label": "매출총이익",
+          "basis": "US GAAP",
+          "value": "860.40 USD million",
+          "yoy": "-12.25%",
+          "qoq": "-2.50%",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": 860.4,
+            "previousQuarter": 882.5,
+            "yearAgoQuarter": 980.5,
+            "unit": "USD million",
+            "status": "verified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_TTWO_20261109"
+          ]
+        },
+        {
+          "label": "매출총이익률",
+          "basis": "US GAAP",
+          "value": "57.47 %",
+          "yoy": "+2.20pp",
+          "qoq": "-0.06pp",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": 57.4749498997996,
+            "previousQuarter": 57.53308559880044,
+            "yearAgoQuarter": 55.27680685533882,
+            "unit": "%",
+            "status": "verified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_TTWO_20261109"
+          ]
+        },
+        {
+          "label": "영업이익",
+          "basis": "US GAAP",
+          "value": "-117.50 USD million",
+          "yoy": "적자폭 확대 19.90%",
+          "qoq": "적자폭 확대 230.99%",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": -117.5,
+            "previousQuarter": -35.5,
+            "yearAgoQuarter": -98.0,
+            "unit": "USD million",
+            "status": "verified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_TTWO_20261109"
+          ]
+        },
+        {
+          "label": "EPS",
+          "basis": "US GAAP · diluted",
+          "value": "-0.29 USD/share",
+          "yoy": "적자폭 축소 60.27%",
+          "qoq": "적자폭 확대 61.11%",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": -0.29,
+            "previousQuarter": -0.18,
+            "yearAgoQuarter": -0.73,
+            "unit": "USD/share",
+            "status": "verified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_TTWO_20261109"
+          ]
+        }
+      ],
+      "quarterlyHistory": {
+        "unit": "USD million",
+        "currency": "USD",
+        "basis": "US GAAP · 연결",
+        "epsUnit": "USD/share",
+        "epsBasis": "US GAAP · diluted",
+        "rows": [
+          {
+            "period": "2025 Q4",
+            "periodEnd": "2025-12-31",
+            "revenue": 1699.0,
+            "grossProfit": 945.5,
+            "grossMargin": 55.65038257798706,
+            "operatingIncome": -38.7,
+            "operatingMargin": -2.2778104767510303,
+            "eps": -0.5,
+            "epsBasis": "US GAAP · diluted",
+            "sourceIds": [
+              "earnings_TTWO_20261109_facts"
+            ],
+            "rawEvidence": {
+              "values": {
+                "Rev": 1699.0,
+                "OP": -38.7,
+                "GP": 945.5,
+                "EPS": -0.5
+              },
+              "observedAt": "2026-11-09T21:48:16.618022+00:00"
+            },
+            "status": "verified"
+          },
+          {
+            "period": "2026 Q1",
+            "periodEnd": "2026-03-31",
+            "revenue": 1679.8,
+            "grossProfit": 938.7,
+            "grossMargin": 55.881652577687824,
+            "operatingIncome": 10.9,
+            "operatingMargin": 0.64888677223479,
+            "eps": -0.32,
+            "epsBasis": "US GAAP · diluted",
+            "sourceIds": [
+              "earnings_TTWO_20261109_prior"
+            ],
+            "rawEvidence": {
+              "values": {
+                "Rev": 1679.8,
+                "GP": 938.7,
+                "OP": 10.9,
+                "EPS": -0.32
+              },
+              "observedAt": "2026-11-09T21:48:16.618022+00:00"
+            },
+            "status": "verified"
+          },
+          {
+            "period": "2026 Q2",
+            "periodEnd": "2026-06-30",
+            "revenue": 1533.9,
+            "grossProfit": 882.5,
+            "grossMargin": 57.53308559880044,
+            "operatingIncome": -35.5,
+            "operatingMargin": -2.3143620835778083,
+            "eps": -0.18,
+            "epsBasis": "US GAAP · diluted",
+            "sourceIds": [
+              "earnings_TTWO_20261109_facts"
+            ],
+            "rawEvidence": {
+              "values": {
+                "Rev": 1533.9,
+                "OP": -35.5,
+                "GP": 882.5,
+                "EPS": -0.18
+              },
+              "observedAt": "2026-11-09T21:48:16.618022+00:00"
+            },
+            "status": "verified"
+          },
+          {
+            "period": "2026 Q3",
+            "periodEnd": "2026-09-30",
+            "revenue": 1497.0,
+            "grossProfit": 860.4,
+            "grossMargin": 57.4749498997996,
+            "operatingIncome": -117.5,
+            "operatingMargin": -7.849031396125585,
+            "eps": -0.29,
+            "epsBasis": "US GAAP · diluted",
+            "sourceIds": [
+              "earnings_TTWO_20261109"
+            ],
+            "rawEvidence": {
+              "values": {
+                "Rev": 1497.0,
+                "OP": -117.5,
+                "GP": 860.4,
+                "EPS": -0.29
+              },
+              "observedAt": "2026-11-09T21:48:16.618022+00:00"
+            },
+            "status": "verified"
+          }
+        ]
+      },
+      "sourceIds": [
+        "earnings_TTWO_20261109",
+        "earnings_TTWO_20261109_facts"
+      ],
+      "callHighlights": [],
+      "callStatus": "공개 콜 원문 미확인",
+      "statusLabel": "공식 실적 발표",
+      "releaseTiming": {
+        "session": "after_close",
+        "publishedAt": null,
+        "sourceIds": [
+          "earnings_TTWO_20261109"
+        ]
+      },
+      "note": "동일 기준 컨센서스는 미확인입니다. 매출총이익은 전체 매출원가가 검증되지 않으면 일부 비용만 빼서 계산하지 않았습니다. ",
+      "guidanceMetrics": [
+        {
+          "label": "Rev",
+          "period": "FY2027",
+          "basis": "US GAAP",
+          "unit": "USD million",
+          "sourceIds": [
+            "earnings_TTWO_20261109"
+          ],
+          "consensusComparable": false,
+          "low": 7980,
+          "high": 8180
+        },
+        {
+          "label": "EPS",
+          "period": "FY2027",
+          "basis": "US GAAP · diluted",
+          "unit": "USD/share",
+          "sourceIds": [
+            "earnings_TTWO_20261109"
+          ],
+          "consensusComparable": false,
+          "low": 0.57,
+          "high": 0.75
+        }
+      ]
+    },
+    {
+      "ticker": "SKYD",
+      "name": "Paramount Skydance",
+      "period": "2026년 3분기 · 9/30 종료",
+      "releaseDate": "2026-11-09",
+      "releaseType": "results",
+      "presentationVersion": 3,
+      "summary": "Paramount+ 매출은 전년 대비 21% 증가했습니다. 이번 분기는 10월 6일 완료된 WBD 인수 이전 Paramount 범위이며 합병 후 연결 분기로 해석하면 안 됩니다.",
+      "presentationSummary": "Paramount+ 매출은 전년 대비 21% 증가했습니다. 이번 분기는 10월 6일 완료된 WBD 인수 이전 Paramount 범위이며 합병 후 연결 분기로 해석하면 안 됩니다.",
+      "metrics": [
+        {
+          "label": "매출",
+          "basis": "US GAAP",
+          "value": "7,025.00 USD million",
+          "yoy": "미확인",
+          "qoq": "+1.62%",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": 7025,
+            "previousQuarter": 6913,
+            "yearAgoQuarter": null,
+            "unit": "USD million",
+            "status": "verified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_SKYD_20261109"
+          ]
+        },
+        {
+          "label": "매출총이익",
+          "basis": "US GAAP",
+          "value": "미확인",
+          "yoy": "미확인",
+          "qoq": "미확인",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": null,
+            "previousQuarter": null,
+            "yearAgoQuarter": null,
+            "unit": "USD million",
+            "status": "unverified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_SKYD_20261109"
+          ]
+        },
+        {
+          "label": "매출총이익률",
+          "basis": "US GAAP",
+          "value": "미확인",
+          "yoy": "미확인",
+          "qoq": "미확인",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": null,
+            "previousQuarter": null,
+            "yearAgoQuarter": null,
+            "unit": "%",
+            "status": "unverified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_SKYD_20261109"
+          ]
+        },
+        {
+          "label": "영업이익",
+          "basis": "US GAAP",
+          "value": "368.00 USD million",
+          "yoy": "미확인",
+          "qoq": "-22.53%",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": 368,
+            "previousQuarter": 475,
+            "yearAgoQuarter": null,
+            "unit": "USD million",
+            "status": "verified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_SKYD_20261109"
+          ]
+        },
+        {
+          "label": "EPS",
+          "basis": "US GAAP · diluted",
+          "value": "0.06 USD/share",
+          "yoy": "미확인",
+          "qoq": "+50.00%",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": 0.06,
+            "previousQuarter": 0.04,
+            "yearAgoQuarter": null,
+            "unit": "USD/share",
+            "status": "verified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_SKYD_20261109"
+          ]
+        }
+      ],
+      "quarterlyHistory": {
+        "unit": "USD million",
+        "currency": "USD",
+        "basis": "US GAAP · 연결",
+        "epsUnit": "USD/share",
+        "epsBasis": "US GAAP · diluted",
+        "rows": [
+          {
+            "period": "2025 Q4",
+            "periodEnd": "2025-12-31",
+            "revenue": 8148,
+            "grossProfit": null,
+            "grossMargin": null,
+            "operatingIncome": -339,
+            "operatingMargin": -4.160530191458026,
+            "eps": -0.52,
+            "epsBasis": "US GAAP · diluted",
+            "sourceIds": [
+              "earnings_SKYD_20261109"
+            ],
+            "rawEvidence": {
+              "values": {
+                "Rev": 8148,
+                "GP": null,
+                "OP": -339,
+                "EPS": -0.52
+              },
+              "observedAt": "2026-11-09T21:48:16.618022+00:00"
+            },
+            "status": "verified"
+          },
+          {
+            "period": "2026 Q1",
+            "periodEnd": "2026-03-31",
+            "revenue": 7347,
+            "grossProfit": null,
+            "grossMargin": null,
+            "operatingIncome": 616,
+            "operatingMargin": 8.384374574656322,
+            "eps": 0.15,
+            "epsBasis": "US GAAP · diluted",
+            "sourceIds": [
+              "earnings_SKYD_20261109"
+            ],
+            "rawEvidence": {
+              "values": {
+                "Rev": 7347,
+                "GP": null,
+                "OP": 616,
+                "EPS": 0.15
+              },
+              "observedAt": "2026-11-09T21:48:16.618022+00:00"
+            },
+            "status": "verified"
+          },
+          {
+            "period": "2026 Q2",
+            "periodEnd": "2026-06-30",
+            "revenue": 6913,
+            "grossProfit": null,
+            "grossMargin": null,
+            "operatingIncome": 475,
+            "operatingMargin": 6.871112396933314,
+            "eps": 0.04,
+            "epsBasis": "US GAAP · diluted",
+            "sourceIds": [
+              "earnings_SKYD_20261109"
+            ],
+            "rawEvidence": {
+              "values": {
+                "Rev": 6913,
+                "GP": null,
+                "OP": 475,
+                "EPS": 0.04
+              },
+              "observedAt": "2026-11-09T21:48:16.618022+00:00"
+            },
+            "status": "verified"
+          },
+          {
+            "period": "2026 Q3",
+            "periodEnd": "2026-09-30",
+            "revenue": 7025,
+            "grossProfit": null,
+            "grossMargin": null,
+            "operatingIncome": 368,
+            "operatingMargin": 5.238434163701068,
+            "eps": 0.06,
+            "epsBasis": "US GAAP · diluted",
+            "sourceIds": [
+              "earnings_SKYD_20261109"
+            ],
+            "rawEvidence": {
+              "values": {
+                "Rev": 7025,
+                "GP": null,
+                "OP": 368,
+                "EPS": 0.06
+              },
+              "observedAt": "2026-11-09T21:48:16.618022+00:00"
+            },
+            "status": "verified"
+          }
+        ]
+      },
+      "sourceIds": [
+        "earnings_SKYD_20261109",
+        "earnings_SKYD_20261109_facts"
+      ],
+      "callHighlights": [],
+      "callStatus": "공개 콜 원문 미확인",
+      "statusLabel": "공식 실적 발표",
+      "releaseTiming": {
+        "session": "after_close",
+        "publishedAt": null,
+        "sourceIds": [
+          "earnings_SKYD_20261109"
+        ]
+      },
+      "note": "동일 기준 컨센서스는 미확인입니다. 매출총이익은 전체 매출원가가 검증되지 않으면 일부 비용만 빼서 계산하지 않았습니다. 2025년 비교분기의 predecessor/successor 분할 때문에 GAAP 전년 비교를 임의 합산하지 않았습니다.",
+      "guidanceMetrics": [
+        {
+          "label": "조정 EBITDA",
+          "period": "FY2026",
+          "basis": "Paramount 단독 · 비GAAP",
+          "unit": "USD million",
+          "sourceIds": [
+            "earnings_SKYD_20261109"
+          ],
+          "consensusComparable": false,
+          "value": 3900
+        }
+      ]
+    },
+    {
+      "ticker": "OXY",
+      "name": "Occidental Petroleum",
+      "period": "2026년 3분기 · 9/30 종료",
+      "releaseDate": "2026-11-09",
+      "releaseType": "results",
+      "presentationVersion": 3,
+      "summary": "생산량은 하루 142.7만 석유환산배럴로 회사 전망 중간값을 웃돌았습니다. 분기 중 원금부채를 18억달러 줄여 100억달러에 도달했습니다.",
+      "presentationSummary": "생산량은 하루 142.7만 석유환산배럴로 회사 전망 중간값을 웃돌았습니다. 분기 중 원금부채를 18억달러 줄여 100억달러에 도달했습니다.",
+      "metrics": [
+        {
+          "label": "매출",
+          "basis": "US GAAP",
+          "value": "6,567.00 USD million",
+          "yoy": "+18.99%",
+          "qoq": "-18.57%",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": 6567.0,
+            "previousQuarter": 8065.0,
+            "yearAgoQuarter": 5519.0,
+            "unit": "USD million",
+            "status": "verified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_OXY_20261109"
+          ]
+        },
+        {
+          "label": "매출총이익",
+          "basis": "US GAAP",
+          "value": "미확인",
+          "yoy": "미확인",
+          "qoq": "미확인",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": null,
+            "previousQuarter": null,
+            "yearAgoQuarter": null,
+            "unit": "USD million",
+            "status": "unverified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_OXY_20261109"
+          ]
+        },
+        {
+          "label": "매출총이익률",
+          "basis": "US GAAP",
+          "value": "미확인",
+          "yoy": "미확인",
+          "qoq": "미확인",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": null,
+            "previousQuarter": null,
+            "yearAgoQuarter": null,
+            "unit": "%",
+            "status": "unverified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_OXY_20261109"
+          ]
+        },
+        {
+          "label": "영업이익",
+          "basis": "US GAAP",
+          "value": "미확인",
+          "yoy": "미확인",
+          "qoq": "미확인",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": null,
+            "previousQuarter": null,
+            "yearAgoQuarter": null,
+            "unit": "USD million",
+            "status": "unverified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_OXY_20261109"
+          ]
+        },
+        {
+          "label": "EPS",
+          "basis": "US GAAP · diluted",
+          "value": "1.61 USD/share",
+          "yoy": "+147.69%",
+          "qoq": "-41.45%",
+          "consensus": "동일 기준 미확인",
+          "raw": {
+            "value": 1.61,
+            "previousQuarter": 2.75,
+            "yearAgoQuarter": 0.65,
+            "unit": "USD/share",
+            "status": "verified",
+            "consensusValue": null,
+            "consensusComparable": false
+          },
+          "sourceIds": [
+            "earnings_OXY_20261109"
+          ]
+        }
+      ],
+      "quarterlyHistory": {
+        "unit": "USD million",
+        "currency": "USD",
+        "basis": "US GAAP · 연결",
+        "epsUnit": "USD/share",
+        "epsBasis": "US GAAP · diluted",
+        "rows": [
+          {
+            "period": "2025 Q4",
+            "periodEnd": "2025-12-31",
+            "revenue": 5112,
+            "grossProfit": null,
+            "grossMargin": null,
+            "operatingIncome": null,
+            "operatingMargin": null,
+            "eps": -0.07,
+            "epsBasis": "US GAAP · diluted",
+            "sourceIds": [
+              "earnings_OXY_20261109"
+            ],
+            "rawEvidence": {
+              "values": {
+                "Rev": 5112,
+                "EPS": -0.07
+              },
+              "observedAt": "2026-11-09T21:50:12.036456+00:00"
+            },
+            "status": "verified"
+          },
+          {
+            "period": "2026 Q1",
+            "periodEnd": "2026-03-31",
+            "revenue": 5230.0,
+            "grossProfit": null,
+            "grossMargin": null,
+            "operatingIncome": null,
+            "operatingMargin": null,
+            "eps": 3.13,
+            "epsBasis": "US GAAP · diluted",
+            "sourceIds": [
+              "earnings_OXY_20261109_facts"
+            ],
+            "rawEvidence": {
+              "values": {
+                "Rev": 5230.0,
+                "EPS": 3.13
+              },
+              "observedAt": "2026-11-09T21:48:16.618022+00:00"
+            },
+            "status": "verified"
+          },
+          {
+            "period": "2026 Q2",
+            "periodEnd": "2026-06-30",
+            "revenue": 8065.0,
+            "grossProfit": null,
+            "grossMargin": null,
+            "operatingIncome": null,
+            "operatingMargin": null,
+            "eps": 2.75,
+            "epsBasis": "US GAAP · diluted",
+            "sourceIds": [
+              "earnings_OXY_20261109_facts"
+            ],
+            "rawEvidence": {
+              "values": {
+                "Rev": 8065.0,
+                "EPS": 2.75
+              },
+              "observedAt": "2026-11-09T21:48:16.618022+00:00"
+            },
+            "status": "verified"
+          },
+          {
+            "period": "2026 Q3",
+            "periodEnd": "2026-09-30",
+            "revenue": 6567.0,
+            "grossProfit": null,
+            "grossMargin": null,
+            "operatingIncome": null,
+            "operatingMargin": null,
+            "eps": 1.61,
+            "epsBasis": "US GAAP · diluted",
+            "sourceIds": [
+              "earnings_OXY_20261109"
+            ],
+            "rawEvidence": {
+              "values": {
+                "Rev": 6567.0,
+                "EPS": 1.61
+              },
+              "observedAt": "2026-11-09T21:48:16.618022+00:00"
+            },
+            "status": "verified"
+          }
+        ]
+      },
+      "sourceIds": [
+        "earnings_OXY_20261109",
+        "earnings_OXY_20261109_facts"
+      ],
+      "callHighlights": [],
+      "callStatus": "공개 콜 원문 미확인",
+      "statusLabel": "공식 실적 발표",
+      "releaseTiming": {
+        "session": "after_close",
+        "publishedAt": null,
+        "sourceIds": [
+          "earnings_OXY_20261109"
+        ]
+      },
+      "note": "동일 기준 컨센서스는 미확인입니다. 매출총이익은 전체 매출원가가 검증되지 않으면 일부 비용만 빼서 계산하지 않았습니다.  OXY Rev는 계속사업 순매출, EPS는 중단사업을 포함한 GAAP 전체 희석 EPS이며 Q1 매각이익 영향에 유의합니다. 공시에서 일반 영업이익 소계가 분리되지 않고 기타 영업·비영업 비용이 합쳐져 OP/OPM을 임의 계산하지 않았습니다."
+    }
+  ],
+  "sources": [
+    {
+      "id": "earnings_KKR_20261109",
+      "url": "https://www.sec.gov/Archives/edgar/data/1404912/000140491226000030/q326earningsrelease_vf.htm",
+      "title": "KKR official November 9 earnings release",
+      "retrievedAt": "2026-11-09T21:48:16.618022+00:00"
+    },
+    {
+      "id": "earnings_KKR_20261109_facts",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001404912.json",
+      "title": "KKR SEC direct quarterly reported facts",
+      "retrievedAt": "2026-11-09T21:43:46.977222+00:00"
+    },
+    {
+      "id": "earnings_CEG_20261109",
+      "url": "https://investors.constellationenergy.com/news-releases/news-release-details/constellation-reports-third-quarter-2026-results",
+      "title": "CEG official November 9 earnings release",
+      "retrievedAt": "2026-11-09T21:48:16.618022+00:00"
+    },
+    {
+      "id": "earnings_CEG_20261109_facts",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001868275.json",
+      "title": "CEG SEC direct quarterly reported facts",
+      "retrievedAt": "2026-11-09T21:43:46.798035+00:00"
+    },
+    {
+      "id": "earnings_CEG_20261109_prior",
+      "url": "https://investors.constellationenergy.com/news-releases/news-release-details/adding-and-replacing-constellation-reports-fourth-quarter-and",
+      "title": "CEG prior standalone quarter official release",
+      "retrievedAt": "2026-11-09T21:48:16.618022+00:00"
+    },
+    {
+      "id": "earnings_NRG_20261109",
+      "url": "https://www.nrg.com/en/about/newsroom/2026/46136",
+      "title": "NRG official November 9 earnings release",
+      "retrievedAt": "2026-11-09T21:48:16.618022+00:00"
+    },
+    {
+      "id": "earnings_NRG_20261109_facts",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001013871.json",
+      "title": "NRG SEC direct quarterly reported facts",
+      "retrievedAt": "2026-11-09T21:43:46.998654+00:00"
+    },
+    {
+      "id": "earnings_FERG_20261109",
+      "url": "https://www.corporate.ferguson.com/pressroom/news-releases/news-release-details/2026/Ferguson-Reports-Third-Quarter-Ended-September-30-2026/",
+      "title": "FERG official November 9 earnings release",
+      "retrievedAt": "2026-11-09T21:48:16.618022+00:00"
+    },
+    {
+      "id": "earnings_FERG_20261109_facts",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0002011641.json",
+      "title": "FERG SEC direct quarterly reported facts",
+      "retrievedAt": "2026-11-09T21:43:46.786351+00:00"
+    },
+    {
+      "id": "earnings_FERG_20261109_prior",
+      "url": "https://www.sec.gov/Archives/edgar/data/2011641/000201164126000002/exhibit991pressreleasetran.htm",
+      "title": "FERG prior standalone quarter official release",
+      "retrievedAt": "2026-11-09T21:48:16.618022+00:00"
+    },
+    {
+      "id": "earnings_TTWO_20261109",
+      "url": "https://www.take2games.com/ir/news/take-two-interactive-software-inc-reports-results-fiscal-4",
+      "title": "TTWO official November 9 earnings release",
+      "retrievedAt": "2026-11-09T21:48:16.618022+00:00"
+    },
+    {
+      "id": "earnings_TTWO_20261109_facts",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000946581.json",
+      "title": "TTWO SEC direct quarterly reported facts",
+      "retrievedAt": "2026-11-09T21:43:46.984953+00:00"
+    },
+    {
+      "id": "earnings_TTWO_20261109_prior",
+      "url": "https://www.take2games.com/ir/news/take-two-interactive-software-inc-reports-results-fourth-2",
+      "title": "TTWO prior standalone quarter official release",
+      "retrievedAt": "2026-11-09T21:48:16.618022+00:00"
+    },
+    {
+      "id": "earnings_SKYD_20261109",
+      "url": "https://ir.skydance.com/static-files/af510edc-00d2-44ca-8e8c-b73466e99694",
+      "title": "SKYD official November 9 earnings release",
+      "retrievedAt": "2026-11-09T21:48:16.618022+00:00"
+    },
+    {
+      "id": "earnings_SKYD_20261109_facts",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0002041610.json",
+      "title": "SKYD SEC direct quarterly reported facts",
+      "retrievedAt": "2026-11-09T21:43:46.882531+00:00"
+    },
+    {
+      "id": "earnings_OXY_20261109",
+      "url": "https://www.sec.gov/Archives/edgar/data/797468/000162828026072193/oxyex9919-30x26earningsrel.htm",
+      "title": "OXY official November 9 earnings release",
+      "retrievedAt": "2026-11-09T21:48:16.618022+00:00"
+    },
+    {
+      "id": "earnings_OXY_20261109_facts",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000797468.json",
+      "title": "OXY SEC direct quarterly reported facts",
+      "retrievedAt": "2026-11-09T21:43:47.048080+00:00"
+    },
+    {
+      "id": "earnings_KKR_20261109_q4",
+      "url": "https://www.sec.gov/Archives/edgar/data/1404912/000140491226000002/q425earningsrelease_vf.htm",
+      "title": "KKR standalone 2025Q4 official results",
+      "retrievedAt": "2026-11-09T21:50:12.036456+00:00"
+    },
+    {
+      "id": "earnings_NRG_20261109_q4",
+      "url": "https://www.sec.gov/Archives/edgar/data/1013871/000101387126000002/ex991-q42025.htm",
+      "title": "NRG full-year2025 official release; Q4 additive income line derivation",
+      "retrievedAt": "2026-11-09T21:50:12.036456+00:00"
+    },
+    {
+      "id": "earnings_KKR_20261109_q2",
+      "url": "https://www.sec.gov/Archives/edgar/data/1404912/000140491226000022/q226earningsrelease_vf.htm",
+      "title": "KKR 2Q26 official quarterly results",
+      "retrievedAt": "2026-11-09T22:08:21.001814+00:00"
+    },
+    {
+      "id": "earnings_KKR_20261109_q1",
+      "url": "https://www.sec.gov/Archives/edgar/data/1404912/000140491226000017/kkr-20260331.htm",
+      "title": "KKR 1Q26 SEC10Q standalone diluted EPS",
+      "retrievedAt": "2026-11-09T22:08:54.386434+00:00"
+    }
+  ],
+  "preparedAt": "2026-11-09T21:48:16.618022+00:00",
+  "targetReleaseDate": "2026-11-09",
+  "limitations": [
+    "Price reactions must be filled by parent with validated Nov9 regular and same-date after-hours quotes.",
+    "No claim all-universe earnings completeness.",
+    "No call transcript summary invented.",
+    "NRG Q4 diluted EPS remains unverified; no annual-minus-nine-month EPS calculation."
+  ],
+  "rawDocumentManifest": [
+    {
+      "file": "OXY.html",
+      "sha256": "79ad600043e118d5916ddf6bf8c4b65d3eeb06d93b326228fd5aea4a5a24a35b",
+      "observedAt": "2026-11-09T21:45:11.714014+00:00"
+    },
+    {
+      "file": "CEG-facts.json",
+      "sha256": "a8687375ee9f368b8d024f1541f8aafbb4f082c1f0b27dfea8abf79fa7e16a08",
+      "observedAt": "2026-11-09T21:43:46.798035+00:00"
+    },
+    {
+      "file": "TTWO-facts.json",
+      "sha256": "cd0eb49c1e2ec26a189ea7d7b14fd93d1480548f2600ab2084b2afda47419409",
+      "observedAt": "2026-11-09T21:43:46.984953+00:00"
+    },
+    {
+      "file": "NRG.txt",
+      "sha256": "4402450a1bf193bea21290ab9e9f0a6c37ea40043a20756ab3bc067a37a470ab",
+      "observedAt": "2026-11-09T21:43:53.447498+00:00"
+    },
+    {
+      "file": "OXY-release.html",
+      "sha256": "78270f0a630c94a7c2a498aedb6e4f698c68ea0624d68de2a6400954e7f3af75",
+      "observedAt": "2026-11-09T21:47:11.854924+00:00"
+    },
+    {
+      "file": "SKYD-facts.json",
+      "sha256": "e922375a616b1df99624e5aa01e3143587f2ba5772debd8db8961231445bee12",
+      "observedAt": "2026-11-09T21:43:46.882531+00:00"
+    },
+    {
+      "file": "OXY-facts.json",
+      "sha256": "e619e346707090702d29bef82bec25e59a97905bdd05fa29d0381cf01471e32d",
+      "observedAt": "2026-11-09T21:43:47.048080+00:00"
+    },
+    {
+      "file": "facts-selected.json",
+      "sha256": "4b2afcd41be5a99a48ce7ae7e16a4d249c70e7fd27f85482a277733051abc909",
+      "observedAt": "2026-11-09T21:44:49.804165+00:00"
+    },
+    {
+      "file": "NRG-facts.json",
+      "sha256": "e6c3a79986c8c58b21fb882ccc6dc669c11d5b82bb173df1283da9bf54b57c68",
+      "observedAt": "2026-11-09T21:43:46.998654+00:00"
+    },
+    {
+      "file": "OXY-release.txt",
+      "sha256": "70dbc701ec020535dde2dc98bb7e445f1ea85ce5e3899e3bc52cceb3d3678cd1",
+      "observedAt": "2026-11-09T21:47:11.866302+00:00"
+    },
+    {
+      "file": "TTWO.html",
+      "sha256": "67cdef970454ffc5481eb4a59aae6398a52b70f068129b3e9df7c32e5282aa7f",
+      "observedAt": "2026-11-09T21:45:10.925674+00:00"
+    },
+    {
+      "file": "FERG-facts.json",
+      "sha256": "23a916b9ccce628a847dfb9f2664a2a3b76087fbd916d02206609c4e032e13b3",
+      "observedAt": "2026-11-09T21:43:46.786351+00:00"
+    },
+    {
+      "file": "797468-submissions.json",
+      "sha256": "9ad7fc6276fe43413707b1e4e9893f965f07f035ab0ed5ed23102cfe9adf66a2",
+      "observedAt": "2026-11-09T21:44:39.543425+00:00"
+    },
+    {
+      "file": "KKR.txt",
+      "sha256": "898ea97d2f144854239812060551c21d0107ccf7cf319a84a73c7e5ce17c9842",
+      "observedAt": "2026-11-09T21:43:53.334070+00:00"
+    },
+    {
+      "file": "KKR.html",
+      "sha256": "ee7978a06abfc8bddc0acc2ab2e41684822080127d1c5832fe2aecf237d960f7",
+      "observedAt": "2026-11-09T21:43:25.717475+00:00"
+    },
+    {
+      "file": "NRG.html",
+      "sha256": "c179e5bde0940e548cbc22484c006cbb124d40b371b5606d0ab61695983de243",
+      "observedAt": "2026-11-09T21:43:26.766659+00:00"
+    },
+    {
+      "file": "2041610-submissions.json",
+      "sha256": "582f7af3dbc7a6de96c93df6003227009a0ed99fee8c96ab1afd2cd9533b91b6",
+      "observedAt": "2026-11-09T21:44:39.521441+00:00"
+    },
+    {
+      "file": "KKR-facts.json",
+      "sha256": "c6bd3dd63e650e74207841ab0c9a9f6f2c780e69c943cc5dbb5300e708885a6e",
+      "observedAt": "2026-11-09T21:43:46.977222+00:00"
+    }
+  ],
+  "selectedNumericProvenance": {
+    "CEG": {
+      "2025-09-30": {
+        "Rev": {
+          "value": 6570.0,
+          "tag": "Revenues",
+          "raw": {
+            "start": "2025-07-01",
+            "end": "2025-09-30",
+            "val": 6570000000,
+            "accn": "0001868275-25-000092",
+            "fy": 2025,
+            "fp": "Q3",
+            "form": "10-Q",
+            "filed": "2025-11-07",
+            "frame": "CY2025Q3"
+          }
+        },
+        "OP": {
+          "value": 1086.0,
+          "tag": "OperatingIncomeLoss",
+          "raw": {
+            "start": "2025-07-01",
+            "end": "2025-09-30",
+            "val": 1086000000,
+            "accn": "0001868275-25-000092",
+            "fy": 2025,
+            "fp": "Q3",
+            "form": "10-Q",
+            "filed": "2025-11-07",
+            "frame": "CY2025Q3"
+          }
+        },
+        "EPS": {
+          "value": 2.97,
+          "tag": "EarningsPerShareDiluted",
+          "raw": {
+            "start": "2025-07-01",
+            "end": "2025-09-30",
+            "val": 2.97,
+            "accn": "0001868275-25-000092",
+            "fy": 2025,
+            "fp": "Q3",
+            "form": "10-Q",
+            "filed": "2025-11-07",
+            "frame": "CY2025Q3"
+          }
+        }
+      },
+      "2025-12-31": {},
+      "2026-03-31": {
+        "Rev": {
+          "value": 11122.0,
+          "tag": "Revenues",
+          "raw": {
+            "start": "2026-01-01",
+            "end": "2026-03-31",
+            "val": 11122000000,
+            "accn": "0001868275-26-000067",
+            "fy": 2026,
+            "fp": "Q1",
+            "form": "10-Q",
+            "filed": "2026-05-11",
+            "frame": "CY2026Q1"
+          }
+        },
+        "OP": {
+          "value": 2332.0,
+          "tag": "OperatingIncomeLoss",
+          "raw": {
+            "start": "2026-01-01",
+            "end": "2026-03-31",
+            "val": 2332000000,
+            "accn": "0001868275-26-000067",
+            "fy": 2026,
+            "fp": "Q1",
+            "form": "10-Q",
+            "filed": "2026-05-11",
+            "frame": "CY2026Q1"
+          }
+        },
+        "EPS": {
+          "value": 4.49,
+          "tag": "EarningsPerShareDiluted",
+          "raw": {
+            "start": "2026-01-01",
+            "end": "2026-03-31",
+            "val": 4.49,
+            "accn": "0001868275-26-000067",
+            "fy": 2026,
+            "fp": "Q1",
+            "form": "10-Q",
+            "filed": "2026-05-11",
+            "frame": "CY2026Q1"
+          }
+        }
+      },
+      "2026-06-30": {
+        "Rev": {
+          "value": 7504.0,
+          "tag": "Revenues",
+          "raw": {
+            "start": "2026-04-01",
+            "end": "2026-06-30",
+            "val": 7504000000,
+            "accn": "0001868275-26-000104",
+            "fy": 2026,
+            "fp": "Q2",
+            "form": "10-Q",
+            "filed": "2026-08-06",
+            "frame": "CY2026Q2"
+          }
+        },
+        "OP": {
+          "value": 580.0,
+          "tag": "OperatingIncomeLoss",
+          "raw": {
+            "start": "2026-04-01",
+            "end": "2026-06-30",
+            "val": 580000000,
+            "accn": "0001868275-26-000104",
+            "fy": 2026,
+            "fp": "Q2",
+            "form": "10-Q",
+            "filed": "2026-08-06",
+            "frame": "CY2026Q2"
+          }
+        },
+        "EPS": {
+          "value": 1.42,
+          "tag": "EarningsPerShareDiluted",
+          "raw": {
+            "start": "2026-04-01",
+            "end": "2026-06-30",
+            "val": 1.42,
+            "accn": "0001868275-26-000104",
+            "fy": 2026,
+            "fp": "Q2",
+            "form": "10-Q",
+            "filed": "2026-08-06",
+            "frame": "CY2026Q2"
+          }
+        }
+      },
+      "2026-09-30": {}
+    },
+    "TTWO": {
+      "2025-09-30": {
+        "Rev": {
+          "value": 1773.8,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "raw": {
+            "start": "2025-07-01",
+            "end": "2025-09-30",
+            "val": 1773800000,
+            "accn": "0001628280-26-072254",
+            "fy": 2027,
+            "fp": "Q2",
+            "form": "10-Q",
+            "filed": "2026-11-09",
+            "frame": "CY2025Q3"
+          }
+        },
+        "OP": {
+          "value": -98.0,
+          "tag": "OperatingIncomeLoss",
+          "raw": {
+            "start": "2025-07-01",
+            "end": "2025-09-30",
+            "val": -98000000,
+            "accn": "0001628280-26-072254",
+            "fy": 2027,
+            "fp": "Q2",
+            "form": "10-Q",
+            "filed": "2026-11-09",
+            "frame": "CY2025Q3"
+          }
+        },
+        "GP": {
+          "value": 980.5,
+          "tag": "GrossProfit",
+          "raw": {
+            "start": "2025-07-01",
+            "end": "2025-09-30",
+            "val": 980500000,
+            "accn": "0001628280-26-072254",
+            "fy": 2027,
+            "fp": "Q2",
+            "form": "10-Q",
+            "filed": "2026-11-09",
+            "frame": "CY2025Q3"
+          }
+        },
+        "EPS": {
+          "value": -0.73,
+          "tag": "EarningsPerShareDiluted",
+          "raw": {
+            "start": "2025-07-01",
+            "end": "2025-09-30",
+            "val": -0.73,
+            "accn": "0001628280-26-072254",
+            "fy": 2027,
+            "fp": "Q2",
+            "form": "10-Q",
+            "filed": "2026-11-09",
+            "frame": "CY2025Q3"
+          }
+        }
+      },
+      "2025-12-31": {
+        "Rev": {
+          "value": 1699.0,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "raw": {
+            "start": "2025-10-01",
+            "end": "2025-12-31",
+            "val": 1699000000,
+            "accn": "0001628280-26-005119",
+            "fy": 2026,
+            "fp": "Q3",
+            "form": "10-Q",
+            "filed": "2026-02-04",
+            "frame": "CY2025Q4"
+          }
+        },
+        "OP": {
+          "value": -38.7,
+          "tag": "OperatingIncomeLoss",
+          "raw": {
+            "start": "2025-10-01",
+            "end": "2025-12-31",
+            "val": -38700000,
+            "accn": "0001628280-26-005119",
+            "fy": 2026,
+            "fp": "Q3",
+            "form": "10-Q",
+            "filed": "2026-02-04",
+            "frame": "CY2025Q4"
+          }
+        },
+        "GP": {
+          "value": 945.5,
+          "tag": "GrossProfit",
+          "raw": {
+            "start": "2025-10-01",
+            "end": "2025-12-31",
+            "val": 945500000,
+            "accn": "0001628280-26-005119",
+            "fy": 2026,
+            "fp": "Q3",
+            "form": "10-Q",
+            "filed": "2026-02-04",
+            "frame": "CY2025Q4"
+          }
+        },
+        "EPS": {
+          "value": -0.5,
+          "tag": "EarningsPerShareDiluted",
+          "raw": {
+            "start": "2025-10-01",
+            "end": "2025-12-31",
+            "val": -0.5,
+            "accn": "0001628280-26-005119",
+            "fy": 2026,
+            "fp": "Q3",
+            "form": "10-Q",
+            "filed": "2026-02-04",
+            "frame": "CY2025Q4"
+          }
+        }
+      },
+      "2026-03-31": {},
+      "2026-06-30": {
+        "Rev": {
+          "value": 1533.9,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "raw": {
+            "start": "2026-04-01",
+            "end": "2026-06-30",
+            "val": 1533900000,
+            "accn": "0001628280-26-054870",
+            "fy": 2027,
+            "fp": "Q1",
+            "form": "10-Q",
+            "filed": "2026-08-07",
+            "frame": "CY2026Q2"
+          }
+        },
+        "OP": {
+          "value": -35.5,
+          "tag": "OperatingIncomeLoss",
+          "raw": {
+            "start": "2026-04-01",
+            "end": "2026-06-30",
+            "val": -35500000,
+            "accn": "0001628280-26-054870",
+            "fy": 2027,
+            "fp": "Q1",
+            "form": "10-Q",
+            "filed": "2026-08-07",
+            "frame": "CY2026Q2"
+          }
+        },
+        "GP": {
+          "value": 882.5,
+          "tag": "GrossProfit",
+          "raw": {
+            "start": "2026-04-01",
+            "end": "2026-06-30",
+            "val": 882500000,
+            "accn": "0001628280-26-054870",
+            "fy": 2027,
+            "fp": "Q1",
+            "form": "10-Q",
+            "filed": "2026-08-07",
+            "frame": "CY2026Q2"
+          }
+        },
+        "EPS": {
+          "value": -0.18,
+          "tag": "EarningsPerShareDiluted",
+          "raw": {
+            "start": "2026-04-01",
+            "end": "2026-06-30",
+            "val": -0.18,
+            "accn": "0001628280-26-054870",
+            "fy": 2027,
+            "fp": "Q1",
+            "form": "10-Q",
+            "filed": "2026-08-07",
+            "frame": "CY2026Q2"
+          }
+        }
+      },
+      "2026-09-30": {
+        "Rev": {
+          "value": 1497.0,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "raw": {
+            "start": "2026-07-01",
+            "end": "2026-09-30",
+            "val": 1497000000,
+            "accn": "0001628280-26-072254",
+            "fy": 2027,
+            "fp": "Q2",
+            "form": "10-Q",
+            "filed": "2026-11-09",
+            "frame": "CY2026Q3"
+          }
+        },
+        "OP": {
+          "value": -117.5,
+          "tag": "OperatingIncomeLoss",
+          "raw": {
+            "start": "2026-07-01",
+            "end": "2026-09-30",
+            "val": -117500000,
+            "accn": "0001628280-26-072254",
+            "fy": 2027,
+            "fp": "Q2",
+            "form": "10-Q",
+            "filed": "2026-11-09",
+            "frame": "CY2026Q3"
+          }
+        },
+        "GP": {
+          "value": 860.4,
+          "tag": "GrossProfit",
+          "raw": {
+            "start": "2026-07-01",
+            "end": "2026-09-30",
+            "val": 860400000,
+            "accn": "0001628280-26-072254",
+            "fy": 2027,
+            "fp": "Q2",
+            "form": "10-Q",
+            "filed": "2026-11-09",
+            "frame": "CY2026Q3"
+          }
+        },
+        "EPS": {
+          "value": -0.29,
+          "tag": "EarningsPerShareDiluted",
+          "raw": {
+            "start": "2026-07-01",
+            "end": "2026-09-30",
+            "val": -0.29,
+            "accn": "0001628280-26-072254",
+            "fy": 2027,
+            "fp": "Q2",
+            "form": "10-Q",
+            "filed": "2026-11-09",
+            "frame": "CY2026Q3"
+          }
+        }
+      }
+    },
+    "SKYD": {
+      "2025-09-30": {},
+      "2025-12-31": {},
+      "2026-03-31": {
+        "Rev": {
+          "value": 7347.0,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "raw": {
+            "start": "2026-01-01",
+            "end": "2026-03-31",
+            "val": 7347000000,
+            "accn": "0002041610-26-000026",
+            "fy": 2026,
+            "fp": "Q1",
+            "form": "10-Q",
+            "filed": "2026-05-04",
+            "frame": "CY2026Q1"
+          }
+        },
+        "OP": {
+          "value": 616.0,
+          "tag": "OperatingIncomeLoss",
+          "raw": {
+            "start": "2026-01-01",
+            "end": "2026-03-31",
+            "val": 616000000,
+            "accn": "0002041610-26-000026",
+            "fy": 2026,
+            "fp": "Q1",
+            "form": "10-Q",
+            "filed": "2026-05-04",
+            "frame": "CY2026Q1"
+          }
+        },
+        "EPS": {
+          "value": 0.15,
+          "tag": "EarningsPerShareDiluted",
+          "raw": {
+            "start": "2026-01-01",
+            "end": "2026-03-31",
+            "val": 0.15,
+            "accn": "0002041610-26-000026",
+            "fy": 2026,
+            "fp": "Q1",
+            "form": "10-Q",
+            "filed": "2026-05-04",
+            "frame": "CY2026Q1"
+          }
+        }
+      },
+      "2026-06-30": {
+        "Rev": {
+          "value": 6913.0,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "raw": {
+            "start": "2026-04-01",
+            "end": "2026-06-30",
+            "val": 6913000000,
+            "accn": "0002041610-26-000054",
+            "fy": 2026,
+            "fp": "Q2",
+            "form": "10-Q",
+            "filed": "2026-08-04",
+            "frame": "CY2026Q2"
+          }
+        },
+        "OP": {
+          "value": 475.0,
+          "tag": "OperatingIncomeLoss",
+          "raw": {
+            "start": "2026-04-01",
+            "end": "2026-06-30",
+            "val": 475000000,
+            "accn": "0002041610-26-000054",
+            "fy": 2026,
+            "fp": "Q2",
+            "form": "10-Q",
+            "filed": "2026-08-04",
+            "frame": "CY2026Q2"
+          }
+        },
+        "EPS": {
+          "value": 0.04,
+          "tag": "EarningsPerShareDiluted",
+          "raw": {
+            "start": "2026-04-01",
+            "end": "2026-06-30",
+            "val": 0.04,
+            "accn": "0002041610-26-000054",
+            "fy": 2026,
+            "fp": "Q2",
+            "form": "10-Q",
+            "filed": "2026-08-04",
+            "frame": "CY2026Q2"
+          }
+        }
+      },
+      "2026-09-30": {}
+    },
+    "OXY": {
+      "2025-09-30": {
+        "Rev": {
+          "value": 5519.0,
+          "tag": "Revenues",
+          "raw": {
+            "start": "2025-07-01",
+            "end": "2025-09-30",
+            "val": 5519000000,
+            "accn": "0001628280-26-072198",
+            "fy": 2026,
+            "fp": "Q3",
+            "form": "10-Q",
+            "filed": "2026-11-09",
+            "frame": "CY2025Q3"
+          }
+        },
+        "EPS": {
+          "value": 0.65,
+          "tag": "EarningsPerShareDiluted",
+          "raw": {
+            "start": "2025-07-01",
+            "end": "2025-09-30",
+            "val": 0.65,
+            "accn": "0001628280-26-072198",
+            "fy": 2026,
+            "fp": "Q3",
+            "form": "10-Q",
+            "filed": "2026-11-09",
+            "frame": "CY2025Q3"
+          }
+        }
+      },
+      "2025-12-31": {},
+      "2026-03-31": {
+        "Rev": {
+          "value": 5230.0,
+          "tag": "Revenues",
+          "raw": {
+            "start": "2026-01-01",
+            "end": "2026-03-31",
+            "val": 5230000000,
+            "accn": "0001628280-26-030584",
+            "fy": 2026,
+            "fp": "Q1",
+            "form": "10-Q",
+            "filed": "2026-05-05",
+            "frame": "CY2026Q1"
+          }
+        },
+        "EPS": {
+          "value": 3.13,
+          "tag": "EarningsPerShareDiluted",
+          "raw": {
+            "start": "2026-01-01",
+            "end": "2026-03-31",
+            "val": 3.13,
+            "accn": "0001628280-26-030584",
+            "fy": 2026,
+            "fp": "Q1",
+            "form": "10-Q",
+            "filed": "2026-05-05",
+            "frame": "CY2026Q1"
+          }
+        }
+      },
+      "2026-06-30": {
+        "Rev": {
+          "value": 8065.0,
+          "tag": "Revenues",
+          "raw": {
+            "start": "2026-04-01",
+            "end": "2026-06-30",
+            "val": 8065000000,
+            "accn": "0001628280-26-053388",
+            "fy": 2026,
+            "fp": "Q2",
+            "form": "10-Q",
+            "filed": "2026-08-05",
+            "frame": "CY2026Q2"
+          }
+        },
+        "EPS": {
+          "value": 2.75,
+          "tag": "EarningsPerShareDiluted",
+          "raw": {
+            "start": "2026-04-01",
+            "end": "2026-06-30",
+            "val": 2.75,
+            "accn": "0001628280-26-053388",
+            "fy": 2026,
+            "fp": "Q2",
+            "form": "10-Q",
+            "filed": "2026-08-05",
+            "frame": "CY2026Q2"
+          }
+        }
+      },
+      "2026-09-30": {
+        "Rev": {
+          "value": 6567.0,
+          "tag": "Revenues",
+          "raw": {
+            "start": "2026-07-01",
+            "end": "2026-09-30",
+            "val": 6567000000,
+            "accn": "0001628280-26-072198",
+            "fy": 2026,
+            "fp": "Q3",
+            "form": "10-Q",
+            "filed": "2026-11-09",
+            "frame": "CY2026Q3"
+          }
+        },
+        "EPS": {
+          "value": 1.61,
+          "tag": "EarningsPerShareDiluted",
+          "raw": {
+            "start": "2026-07-01",
+            "end": "2026-09-30",
+            "val": 1.61,
+            "accn": "0001628280-26-072198",
+            "fy": 2026,
+            "fp": "Q3",
+            "form": "10-Q",
+            "filed": "2026-11-09",
+            "frame": "CY2026Q3"
+          }
+        }
+      }
+    },
+    "NRG": {
+      "2025-09-30": {
+        "Rev": {
+          "value": 7635.0,
+          "tag": "Revenues",
+          "raw": {
+            "start": "2025-07-01",
+            "end": "2025-09-30",
+            "val": 7635000000,
+            "accn": "0001013871-26-000025",
+            "fy": 2026,
+            "fp": "Q3",
+            "form": "10-Q",
+            "filed": "2026-11-09",
+            "frame": "CY2025Q3"
+          }
+        },
+        "OP": {
+          "value": 414.0,
+          "tag": "OperatingIncomeLoss",
+          "raw": {
+            "start": "2025-07-01",
+            "end": "2025-09-30",
+            "val": 414000000,
+            "accn": "0001013871-26-000025",
+            "fy": 2026,
+            "fp": "Q3",
+            "form": "10-Q",
+            "filed": "2026-11-09",
+            "frame": "CY2025Q3"
+          }
+        },
+        "EPS": {
+          "value": 0.69,
+          "tag": "EarningsPerShareDiluted",
+          "raw": {
+            "start": "2025-07-01",
+            "end": "2025-09-30",
+            "val": 0.69,
+            "accn": "0001013871-26-000025",
+            "fy": 2026,
+            "fp": "Q3",
+            "form": "10-Q",
+            "filed": "2026-11-09",
+            "frame": "CY2025Q3"
+          }
+        }
+      },
+      "2025-12-31": {},
+      "2026-03-31": {
+        "Rev": {
+          "value": 10256.0,
+          "tag": "Revenues",
+          "raw": {
+            "start": "2026-01-01",
+            "end": "2026-03-31",
+            "val": 10256000000,
+            "accn": "0001013871-26-000012",
+            "fy": 2026,
+            "fp": "Q1",
+            "form": "10-Q",
+            "filed": "2026-05-06",
+            "frame": "CY2026Q1"
+          }
+        },
+        "OP": {
+          "value": 328.0,
+          "tag": "OperatingIncomeLoss",
+          "raw": {
+            "start": "2026-01-01",
+            "end": "2026-03-31",
+            "val": 328000000,
+            "accn": "0001013871-26-000012",
+            "fy": 2026,
+            "fp": "Q1",
+            "form": "10-Q",
+            "filed": "2026-05-06",
+            "frame": "CY2026Q1"
+          }
+        },
+        "EPS": {
+          "value": 0.52,
+          "tag": "EarningsPerShareDiluted",
+          "raw": {
+            "start": "2026-01-01",
+            "end": "2026-03-31",
+            "val": 0.52,
+            "accn": "0001013871-26-000012",
+            "fy": 2026,
+            "fp": "Q1",
+            "form": "10-Q",
+            "filed": "2026-05-06",
+            "frame": "CY2026Q1"
+          }
+        }
+      },
+      "2026-06-30": {
+        "Rev": {
+          "value": 7481.0,
+          "tag": "Revenues",
+          "raw": {
+            "start": "2026-04-01",
+            "end": "2026-06-30",
+            "val": 7481000000,
+            "accn": "0001013871-26-000020",
+            "fy": 2026,
+            "fp": "Q2",
+            "form": "10-Q",
+            "filed": "2026-08-04",
+            "frame": "CY2026Q2"
+          }
+        },
+        "OP": {
+          "value": 976.0,
+          "tag": "OperatingIncomeLoss",
+          "raw": {
+            "start": "2026-04-01",
+            "end": "2026-06-30",
+            "val": 976000000,
+            "accn": "0001013871-26-000020",
+            "fy": 2026,
+            "fp": "Q2",
+            "form": "10-Q",
+            "filed": "2026-08-04",
+            "frame": "CY2026Q2"
+          }
+        },
+        "EPS": {
+          "value": 2.31,
+          "tag": "EarningsPerShareDiluted",
+          "raw": {
+            "start": "2026-04-01",
+            "end": "2026-06-30",
+            "val": 2.31,
+            "accn": "0001013871-26-000020",
+            "fy": 2026,
+            "fp": "Q2",
+            "form": "10-Q",
+            "filed": "2026-08-04",
+            "frame": "CY2026Q2"
+          }
+        }
+      },
+      "2026-09-30": {
+        "Rev": {
+          "value": 9466.0,
+          "tag": "Revenues",
+          "raw": {
+            "start": "2026-07-01",
+            "end": "2026-09-30",
+            "val": 9466000000,
+            "accn": "0001013871-26-000025",
+            "fy": 2026,
+            "fp": "Q3",
+            "form": "10-Q",
+            "filed": "2026-11-09",
+            "frame": "CY2026Q3"
+          }
+        },
+        "OP": {
+          "value": 1084.0,
+          "tag": "OperatingIncomeLoss",
+          "raw": {
+            "start": "2026-07-01",
+            "end": "2026-09-30",
+            "val": 1084000000,
+            "accn": "0001013871-26-000025",
+            "fy": 2026,
+            "fp": "Q3",
+            "form": "10-Q",
+            "filed": "2026-11-09",
+            "frame": "CY2026Q3"
+          }
+        },
+        "EPS": {
+          "value": 2.59,
+          "tag": "EarningsPerShareDiluted",
+          "raw": {
+            "start": "2026-07-01",
+            "end": "2026-09-30",
+            "val": 2.59,
+            "accn": "0001013871-26-000025",
+            "fy": 2026,
+            "fp": "Q3",
+            "form": "10-Q",
+            "filed": "2026-11-09",
+            "frame": "CY2026Q3"
+          }
+        }
+      }
+    },
+    "FERG": {
+      "2025-09-30": {
+        "Rev": {
+          "value": 8245.0,
+          "tag": "Revenues",
+          "raw": {
+            "start": "2025-07-01",
+            "end": "2025-09-30",
+            "val": 8245000000,
+            "accn": "0002011641-26-000044",
+            "fy": 2026,
+            "fp": "Q3",
+            "form": "10-Q",
+            "filed": "2026-11-09",
+            "frame": "CY2025Q3"
+          }
+        },
+        "OP": {
+          "value": 844.0,
+          "tag": "OperatingIncomeLoss",
+          "raw": {
+            "start": "2025-07-01",
+            "end": "2025-09-30",
+            "val": 844000000,
+            "accn": "0002011641-26-000044",
+            "fy": 2026,
+            "fp": "Q3",
+            "form": "10-Q",
+            "filed": "2026-11-09",
+            "frame": "CY2025Q3"
+          }
+        },
+        "GP": {
+          "value": 2583.0,
+          "tag": "GrossProfit",
+          "raw": {
+            "start": "2025-07-01",
+            "end": "2025-09-30",
+            "val": 2583000000,
+            "accn": "0002011641-26-000044",
+            "fy": 2026,
+            "fp": "Q3",
+            "form": "10-Q",
+            "filed": "2026-11-09",
+            "frame": "CY2025Q3"
+          }
+        },
+        "EPS": {
+          "value": 3.24,
+          "tag": "EarningsPerShareDiluted",
+          "raw": {
+            "start": "2025-07-01",
+            "end": "2025-09-30",
+            "val": 3.24,
+            "accn": "0002011641-26-000044",
+            "fy": 2026,
+            "fp": "Q3",
+            "form": "10-Q",
+            "filed": "2026-11-09",
+            "frame": "CY2025Q3"
+          }
+        }
+      },
+      "2025-12-31": {},
+      "2026-03-31": {
+        "Rev": {
+          "value": 7472.0,
+          "tag": "Revenues",
+          "raw": {
+            "start": "2026-01-01",
+            "end": "2026-03-31",
+            "val": 7472000000,
+            "accn": "0002011641-26-000030",
+            "fy": 2026,
+            "fp": "Q1",
+            "form": "10-Q",
+            "filed": "2026-05-05",
+            "frame": "CY2026Q1"
+          }
+        },
+        "OP": {
+          "value": 612.0,
+          "tag": "OperatingIncomeLoss",
+          "raw": {
+            "start": "2026-01-01",
+            "end": "2026-03-31",
+            "val": 612000000,
+            "accn": "0002011641-26-000030",
+            "fy": 2026,
+            "fp": "Q1",
+            "form": "10-Q",
+            "filed": "2026-05-05",
+            "frame": "CY2026Q1"
+          }
+        },
+        "GP": {
+          "value": 2318.0,
+          "tag": "GrossProfit",
+          "raw": {
+            "start": "2026-01-01",
+            "end": "2026-03-31",
+            "val": 2318000000,
+            "accn": "0002011641-26-000030",
+            "fy": 2026,
+            "fp": "Q1",
+            "form": "10-Q",
+            "filed": "2026-05-05",
+            "frame": "CY2026Q1"
+          }
+        },
+        "EPS": {
+          "value": 2.13,
+          "tag": "EarningsPerShareDiluted",
+          "raw": {
+            "start": "2026-01-01",
+            "end": "2026-03-31",
+            "val": 2.13,
+            "accn": "0002011641-26-000030",
+            "fy": 2026,
+            "fp": "Q1",
+            "form": "10-Q",
+            "filed": "2026-05-05",
+            "frame": "CY2026Q1"
+          }
+        }
+      },
+      "2026-06-30": {
+        "Rev": {
+          "value": 8751.0,
+          "tag": "Revenues",
+          "raw": {
+            "start": "2026-04-01",
+            "end": "2026-06-30",
+            "val": 8751000000,
+            "accn": "0002011641-26-000040",
+            "fy": 2026,
+            "fp": "Q2",
+            "form": "10-Q",
+            "filed": "2026-08-10",
+            "frame": "CY2026Q2"
+          }
+        },
+        "OP": {
+          "value": 893.0,
+          "tag": "OperatingIncomeLoss",
+          "raw": {
+            "start": "2026-04-01",
+            "end": "2026-06-30",
+            "val": 893000000,
+            "accn": "0002011641-26-000040",
+            "fy": 2026,
+            "fp": "Q2",
+            "form": "10-Q",
+            "filed": "2026-08-10",
+            "frame": "CY2026Q2"
+          }
+        },
+        "GP": {
+          "value": 2712.0,
+          "tag": "GrossProfit",
+          "raw": {
+            "start": "2026-04-01",
+            "end": "2026-06-30",
+            "val": 2712000000,
+            "accn": "0002011641-26-000040",
+            "fy": 2026,
+            "fp": "Q2",
+            "form": "10-Q",
+            "filed": "2026-08-10",
+            "frame": "CY2026Q2"
+          }
+        },
+        "EPS": {
+          "value": 3.43,
+          "tag": "EarningsPerShareDiluted",
+          "raw": {
+            "start": "2026-04-01",
+            "end": "2026-06-30",
+            "val": 3.43,
+            "accn": "0002011641-26-000040",
+            "fy": 2026,
+            "fp": "Q2",
+            "form": "10-Q",
+            "filed": "2026-08-10",
+            "frame": "CY2026Q2"
+          }
+        }
+      },
+      "2026-09-30": {
+        "Rev": {
+          "value": 9026.0,
+          "tag": "Revenues",
+          "raw": {
+            "start": "2026-07-01",
+            "end": "2026-09-30",
+            "val": 9026000000,
+            "accn": "0002011641-26-000044",
+            "fy": 2026,
+            "fp": "Q3",
+            "form": "10-Q",
+            "filed": "2026-11-09",
+            "frame": "CY2026Q3"
+          }
+        },
+        "OP": {
+          "value": 885.0,
+          "tag": "OperatingIncomeLoss",
+          "raw": {
+            "start": "2026-07-01",
+            "end": "2026-09-30",
+            "val": 885000000,
+            "accn": "0002011641-26-000044",
+            "fy": 2026,
+            "fp": "Q3",
+            "form": "10-Q",
+            "filed": "2026-11-09",
+            "frame": "CY2026Q3"
+          }
+        },
+        "GP": {
+          "value": 2786.0,
+          "tag": "GrossProfit",
+          "raw": {
+            "start": "2026-07-01",
+            "end": "2026-09-30",
+            "val": 2786000000,
+            "accn": "0002011641-26-000044",
+            "fy": 2026,
+            "fp": "Q3",
+            "form": "10-Q",
+            "filed": "2026-11-09",
+            "frame": "CY2026Q3"
+          }
+        },
+        "EPS": {
+          "value": 3.08,
+          "tag": "EarningsPerShareDiluted",
+          "raw": {
+            "start": "2026-07-01",
+            "end": "2026-09-30",
+            "val": 3.08,
+            "accn": "0002011641-26-000044",
+            "fy": 2026,
+            "fp": "Q3",
+            "form": "10-Q",
+            "filed": "2026-11-09",
+            "frame": "CY2026Q3"
+          }
+        }
+      }
+    },
+    "KKR": {
+      "2025-09-30": {
+        "Rev": {
+          "value": 5525.975,
+          "tag": "Revenues",
+          "raw": {
+            "start": "2025-07-01",
+            "end": "2025-09-30",
+            "val": 5525975000,
+            "accn": "0001404912-26-000034",
+            "fy": 2026,
+            "fp": "Q3",
+            "form": "10-Q",
+            "filed": "2026-11-09",
+            "frame": "CY2025Q3"
+          }
+        }
+      },
+      "2025-12-31": {},
+      "2026-03-31": {
+        "Rev": {
+          "value": 4317.983,
+          "tag": "Revenues",
+          "raw": {
+            "start": "2026-01-01",
+            "end": "2026-03-31",
+            "val": 4317983000,
+            "accn": "0001404912-26-000017",
+            "fy": 2026,
+            "fp": "Q1",
+            "form": "10-Q",
+            "filed": "2026-05-08",
+            "frame": "CY2026Q1"
+          }
+        }
+      },
+      "2026-06-30": {
+        "Rev": {
+          "value": 5725.891,
+          "tag": "Revenues",
+          "raw": {
+            "start": "2026-04-01",
+            "end": "2026-06-30",
+            "val": 5725891000,
+            "accn": "0001404912-26-000027",
+            "fy": 2026,
+            "fp": "Q2",
+            "form": "10-Q",
+            "filed": "2026-08-06",
+            "frame": "CY2026Q2"
+          }
+        }
+      },
+      "2026-09-30": {
+        "Rev": {
+          "value": 4563.679,
+          "tag": "Revenues",
+          "raw": {
+            "start": "2026-07-01",
+            "end": "2026-09-30",
+            "val": 4563679000,
+            "accn": "0001404912-26-000034",
+            "fy": 2026,
+            "fp": "Q3",
+            "form": "10-Q",
+            "filed": "2026-11-09",
+            "frame": "CY2026Q3"
+          }
+        }
+      }
+    }
+  },
+  "coverageRecheck": {
+    "observedAt": "2026-11-09T22:08:54.386434+00:00",
+    "source": "https://investing20.com/most-anticipated-weekly-earnings-calendar/",
+    "calendarNov9": [
+      "KKR",
+      "CEG",
+      "OXY",
+      "FERG",
+      "SKYD",
+      "TTWO",
+      "NRG"
+    ],
+    "note": "Calendar corroborates seven official Nov9 releases. Not independent proof of exhaustive unexpected announcements. No post07:00 KST release added. SpaceX IR latest earnings remains Oct20; not duplicated."
+  }
+}

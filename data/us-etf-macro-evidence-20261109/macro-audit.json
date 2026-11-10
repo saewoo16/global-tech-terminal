@@ -1,0 +1,17 @@
+{
+  "observedAt": "2026-11-09T21:45:15.190778+00:00",
+  "collector": "scripts/update_macro_quotes.py",
+  "verified": 14,
+  "unchangedRowsWithPreservedMetadata": [
+    "HQMCB10YRP",
+    "DCOILWTICO",
+    "DCOILBRENTEU",
+    "M1SL",
+    "M2SL"
+  ],
+  "fedwatch": {
+    "status": "latest snapshot not reverified",
+    "officialPage": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool",
+    "note": "Official page accessible; embedded probabilities unavailable through web tool. Prior values and actual dates preserved."
+  }
+}

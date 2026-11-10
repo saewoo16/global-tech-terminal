@@ -1,0 +1,1462 @@
+{
+  "checkedAt": "2026-11-09T21:48:01.378340+00:00",
+  "targetSession": "2026-11-09",
+  "fundCount": 38,
+  "funds": [
+    {
+      "ticker": "XAR",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "date": "2026-11-09",
+        "open": 228.4499969482422,
+        "high": 237.69000244140625,
+        "low": 227.67999267578125,
+        "close": 236.39999389648438,
+        "volume": 395427
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 5.526287558215759,
+        "week": 2.297805029530431,
+        "month": 3.5207537505008935
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 77,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XAR?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "observedAt": "2026-11-09T21:42:42.876702+00:00"
+        }
+      ]
+    },
+    {
+      "ticker": "SMH",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "date": "2026-11-09",
+        "open": 464.9649963378906,
+        "high": 490.4700012207031,
+        "low": 462.8800048828125,
+        "close": 487.4100036621094,
+        "volume": 14535273
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 5.054317751297255,
+        "week": -4.111662960962159,
+        "month": -19.213367501069044
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 78,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/SMH?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "observedAt": "2026-11-09T21:42:42.876702+00:00"
+        }
+      ]
+    },
+    {
+      "ticker": "SOXX",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "date": "2026-11-09",
+        "open": 138.5800018310547,
+        "high": 148.0050048828125,
+        "low": 137.97000122070312,
+        "close": 146.75999450683594,
+        "volume": 36827413
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 7.4928556500436505,
+        "week": -2.947208322684869,
+        "month": -21.294250213579392
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 78,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/SOXX?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "observedAt": "2026-11-09T21:42:42.876702+00:00"
+        }
+      ]
+    },
+    {
+      "ticker": "TAN",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "date": "2026-11-09",
+        "open": 45.81999969482422,
+        "high": 45.849998474121094,
+        "low": 44.560001373291016,
+        "close": 45.18000030517578,
+        "volume": 2338252
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": -0.8775811974767733,
+        "week": 7.39244267390422,
+        "month": 3.268572126116065
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 78,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/TAN?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "observedAt": "2026-11-09T21:42:42.876702+00:00"
+        }
+      ]
+    },
+    {
+      "ticker": "XPH",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "date": "2026-11-09",
+        "open": 65.7300033569336,
+        "high": 67.44999694824219,
+        "low": 65.05000305175781,
+        "close": 67.37000274658203,
+        "volume": 639493
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 4.0463362881575815,
+        "week": 5.91102358143758,
+        "month": 4.207271703797755
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 76,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XPH?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "observedAt": "2026-11-09T21:42:42.876702+00:00"
+        }
+      ]
+    },
+    {
+      "ticker": "XME",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "date": "2026-11-09",
+        "open": 95.91000366210938,
+        "high": 99.1449966430664,
+        "low": 95.87000274658203,
+        "close": 98.58000183105469,
+        "volume": 2024580
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 5.489572017486299,
+        "week": 0.9420419152638804,
+        "month": -7.306061828442001
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 78,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XME?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "observedAt": "2026-11-09T21:42:42.876702+00:00"
+        }
+      ]
+    },
+    {
+      "ticker": "XBI",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "date": "2026-11-09",
+        "open": 153.2100067138672,
+        "high": 157.9199981689453,
+        "low": 151.0,
+        "close": 156.89999389648438,
+        "volume": 8814928
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 3.08126074222812,
+        "week": 3.189734131787958,
+        "month": 2.0355007719694784
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 78,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XBI?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "observedAt": "2026-11-09T21:42:42.876702+00:00"
+        }
+      ]
+    },
+    {
+      "ticker": "ICLN",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "date": "2026-11-09",
+        "open": 16.579999923706055,
+        "high": 16.710100173950195,
+        "low": 16.440000534057617,
+        "close": 16.610000610351562,
+        "volume": 7555604
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 0.9726434042032217,
+        "week": 5.59441254751698,
+        "month": -3.877315102260037
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 78,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/ICLN?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "observedAt": "2026-11-09T21:42:42.876702+00:00"
+        }
+      ]
+    },
+    {
+      "ticker": "IBB",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "date": "2026-11-09",
+        "open": 216.61000061035156,
+        "high": 220.66000366210938,
+        "low": 213.15020751953125,
+        "close": 219.57000732421875,
+        "volume": 1608530
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 2.780509434835543,
+        "week": 2.70359428392426,
+        "month": 6.334447906965512
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 78,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IBB?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "observedAt": "2026-11-09T21:42:42.876702+00:00"
+        }
+      ]
+    },
+    {
+      "ticker": "BATT",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "date": "2026-11-09",
+        "open": 12.5600004196167,
+        "high": 12.900099754333496,
+        "low": 12.520000457763672,
+        "close": 12.819999694824219,
+        "volume": 167011
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 2.5599975585937518,
+        "week": 0.7069925830655688,
+        "month": -12.670303621831502
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 47,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/BATT?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "observedAt": "2026-11-09T21:42:42.876702+00:00"
+        }
+      ]
+    },
+    {
+      "ticker": "FAN",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "date": "2026-11-09",
+        "open": 23.290000915527344,
+        "high": 23.459999084472656,
+        "low": 23.27440071105957,
+        "close": 23.403799057006836,
+        "volume": 12853
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 1.799909917391651,
+        "week": 6.187831600853921,
+        "month": 5.280249837793849
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 18,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:50:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/FAN?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "observedAt": "2026-11-09T21:42:42.876702+00:00"
+        }
+      ]
+    },
+    {
+      "ticker": "XLK",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "date": "2026-11-09",
+        "open": 165.5800018310547,
+        "high": 171.6300048828125,
+        "low": 165.30999755859375,
+        "close": 170.8800048828125,
+        "volume": 15124124
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 3.727084609028508,
+        "week": -1.9171141743131392,
+        "month": -14.035614281023022
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 78,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLK?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "observedAt": "2026-11-09T21:42:42.876702+00:00"
+        }
+      ]
+    },
+    {
+      "ticker": "ITA",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "date": "2026-11-09",
+        "open": 70.3499984741211,
+        "high": 72.05000305175781,
+        "low": 69.94000244140625,
+        "close": 71.66999816894531,
+        "volume": 2041037
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 3.8996733561935004,
+        "week": 0.1537180185920084,
+        "month": 4.045487954158511
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 78,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/ITA?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "observedAt": "2026-11-09T21:42:42.876702+00:00"
+        }
+      ]
+    },
+    {
+      "ticker": "LIT",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "date": "2026-11-09",
+        "open": 60.31999969482422,
+        "high": 61.51599884033203,
+        "low": 60.29999923706055,
+        "close": 61.349998474121094,
+        "volume": 167394
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 0.7223750251374783,
+        "week": 2.164861371485638,
+        "month": -12.017789300707438
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 73,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/LIT?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "observedAt": "2026-11-09T21:42:42.876702+00:00"
+        }
+      ]
+    },
+    {
+      "ticker": "XLC",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "date": "2026-11-09",
+        "open": 106.25499725341797,
+        "high": 107.7300033569336,
+        "low": 106.2300033569336,
+        "close": 107.36000061035156,
+        "volume": 7832365
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 2.4525237831574564,
+        "week": 7.081586198725409,
+        "month": -2.7359999259040535
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 78,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLC?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "observedAt": "2026-11-09T21:42:42.876702+00:00"
+        }
+      ]
+    },
+    {
+      "ticker": "XLI",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "date": "2026-11-09",
+        "open": 165.75,
+        "high": 169.69000244140625,
+        "low": 165.0500030517578,
+        "close": 168.88999938964844,
+        "volume": 9090055
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 3.823692930913536,
+        "week": -0.4831814812200741,
+        "month": -0.21270346254154138
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 78,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLI?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "observedAt": "2026-11-09T21:42:42.876702+00:00"
+        }
+      ]
+    },
+    {
+      "ticker": "FDN",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "open": 265.27,
+        "high": 270.02,
+        "low": 265.14,
+        "close": 268.58,
+        "volume": 128170,
+        "date": "2026-11-09"
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 3.0700797605251795,
+        "week": 2.0712176551718864,
+        "month": -10.865527189832669
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 78,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://scanner.tradingview.com/america/scan",
+          "observedAt": "2026-11-09T21:44:57.034812+00:00",
+          "note": "TradingView complete same-session OHLCV; Yahoo close cross-check. No field-wise inferred repair."
+        }
+      ]
+    },
+    {
+      "ticker": "CIBR",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "date": "2026-11-09",
+        "open": 92.27999877929688,
+        "high": 95.31999969482422,
+        "low": 91.66999816894531,
+        "close": 94.68000030517578,
+        "volume": 1806241
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 3.998241820126802,
+        "week": -2.139534568293766,
+        "month": -13.9272724498402
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 78,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/CIBR?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "observedAt": "2026-11-09T21:42:42.876702+00:00"
+        }
+      ]
+    },
+    {
+      "ticker": "XLE",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "date": "2026-11-09",
+        "open": 61.25,
+        "high": 62.279998779296875,
+        "low": 60.849998474121094,
+        "close": 61.939998626708984,
+        "volume": 40084034
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 0.5193114254642417,
+        "week": -7.8959128227375714,
+        "month": -4.824835765212542
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 78,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLE?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "observedAt": "2026-11-09T21:42:42.876702+00:00"
+        }
+      ]
+    },
+    {
+      "ticker": "XLY",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "open": 119.69,
+        "high": 121.81,
+        "low": 119.69,
+        "close": 121.01,
+        "volume": 8421720,
+        "date": "2026-11-09"
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 2.9171611800735686,
+        "week": 2.4119805768121783,
+        "month": 7.230838844672349
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 78,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://scanner.tradingview.com/america/scan",
+          "observedAt": "2026-11-09T21:44:57.034812+00:00",
+          "note": "TradingView complete same-session OHLCV; Yahoo close cross-check. No field-wise inferred repair."
+        }
+      ]
+    },
+    {
+      "ticker": "XLV",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "date": "2026-11-09",
+        "open": 186.4199981689453,
+        "high": 188.92999267578125,
+        "low": 185.36000061035156,
+        "close": 188.3300018310547,
+        "volume": 10025364
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 1.910172468075233,
+        "week": 2.020582667504045,
+        "month": 10.257013361557465
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 78,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLV?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "observedAt": "2026-11-09T21:42:42.876702+00:00"
+        }
+      ]
+    },
+    {
+      "ticker": "IGV",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "date": "2026-11-09",
+        "open": 99.43000030517578,
+        "high": 101.95999908447266,
+        "low": 99.19999694824219,
+        "close": 101.45999908447266,
+        "volume": 8160566
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 2.609225225241918,
+        "week": -0.4317982677306542,
+        "month": -9.949409129894182
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 78,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IGV?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "observedAt": "2026-11-09T21:42:42.876702+00:00"
+        }
+      ]
+    },
+    {
+      "ticker": "KRE",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "date": "2026-11-09",
+        "open": 73.25,
+        "high": 74.06999969482422,
+        "low": 72.98500061035156,
+        "close": 73.44999694824219,
+        "volume": 13162006
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 1.7313020122370348,
+        "week": -0.37977267861479813,
+        "month": 6.43384244974643
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 78,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/KRE?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "observedAt": "2026-11-09T21:42:42.876702+00:00"
+        }
+      ]
+    },
+    {
+      "ticker": "XOP",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "date": "2026-11-09",
+        "open": 172.1999969482422,
+        "high": 175.6300048828125,
+        "low": 171.2050018310547,
+        "close": 174.14999389648438,
+        "volume": 3495568
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 0.21867388771403817,
+        "week": -10.027900344560425,
+        "month": -9.069554087553989
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 78,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XOP?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "observedAt": "2026-11-09T21:42:42.876702+00:00"
+        }
+      ]
+    },
+    {
+      "ticker": "XLU",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "date": "2026-11-09",
+        "open": 43.650001525878906,
+        "high": 44.0099983215332,
+        "low": 43.14500045776367,
+        "close": 43.790000915527344,
+        "volume": 28287329
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 1.5302569697825286,
+        "week": 0.27479448503244797,
+        "month": 5.7474066092370935
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 78,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLU?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "observedAt": "2026-11-09T21:42:42.876702+00:00"
+        }
+      ]
+    },
+    {
+      "ticker": "IHF",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "date": "2026-11-09",
+        "open": 59.65999984741211,
+        "high": 60.060001373291016,
+        "low": 59.41999816894531,
+        "close": 59.720001220703125,
+        "volume": 1314108
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 0.7932510054061259,
+        "week": 1.2203410520391866,
+        "month": 5.214945360643153
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 78,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IHF?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "observedAt": "2026-11-09T21:42:42.876702+00:00"
+        }
+      ]
+    },
+    {
+      "ticker": "KBE",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "date": "2026-11-09",
+        "open": 66.87999725341797,
+        "high": 67.66000366210938,
+        "low": 66.5199966430664,
+        "close": 67.12999725341797,
+        "volume": 2228571
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 1.8509991253572666,
+        "week": -0.14875219176276877,
+        "month": 6.336125641732315
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 78,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/KBE?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "observedAt": "2026-11-09T21:42:42.876702+00:00"
+        }
+      ]
+    },
+    {
+      "ticker": "IAI",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "open": 180.06,
+        "high": 182.87,
+        "low": 179.42,
+        "close": 181.83,
+        "volume": 119421,
+        "date": "2026-11-09"
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 2.2665899207375606,
+        "week": 1.1627876059653541,
+        "month": 1.871250156336557
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 58,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://scanner.tradingview.com/america/scan",
+          "observedAt": "2026-11-09T21:44:57.034812+00:00",
+          "note": "TradingView complete same-session OHLCV; Yahoo close cross-check. No field-wise inferred repair."
+        }
+      ]
+    },
+    {
+      "ticker": "XLF",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "date": "2026-11-09",
+        "open": 57.72999954223633,
+        "high": 58.2599983215332,
+        "low": 57.255001068115234,
+        "close": 57.9900016784668,
+        "volume": 36175353
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 1.4520675879467593,
+        "week": 0.7470470724750822,
+        "month": 5.956517748030765
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 78,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLF?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "observedAt": "2026-11-09T21:42:42.876702+00:00"
+        }
+      ]
+    },
+    {
+      "ticker": "XLRE",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "date": "2026-11-09",
+        "open": 44.43000030517578,
+        "high": 44.9275016784668,
+        "low": 44.2599983215332,
+        "close": 44.63999938964844,
+        "volume": 10218377
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 1.4545440673828125,
+        "week": 2.2914757424061794,
+        "month": 7.281900348117487
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 78,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLRE?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "observedAt": "2026-11-09T21:42:42.876702+00:00"
+        }
+      ]
+    },
+    {
+      "ticker": "XLB",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "date": "2026-11-09",
+        "open": 52.75,
+        "high": 53.3849983215332,
+        "low": 52.48500061035156,
+        "close": 52.939998626708984,
+        "volume": 11882491
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 1.9056743969786183,
+        "week": -1.3601631584528762,
+        "month": 7.1009474000866435
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 78,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLB?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "observedAt": "2026-11-09T21:42:42.876702+00:00"
+        }
+      ]
+    },
+    {
+      "ticker": "CLOU",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "date": "2026-11-09",
+        "open": 25.940000534057617,
+        "high": 26.399999618530273,
+        "low": 25.940000534057617,
+        "close": 26.149999618530273,
+        "volume": 131326
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 1.1605386175374877,
+        "week": -4.387571284103098,
+        "month": -13.151779845729639
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 62,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/CLOU?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "observedAt": "2026-11-09T21:42:42.876702+00:00"
+        }
+      ]
+    },
+    {
+      "ticker": "XLP",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "date": "2026-11-09",
+        "open": 90.20999908447266,
+        "high": 91.05999755859375,
+        "low": 89.80000305175781,
+        "close": 90.88999938964844,
+        "volume": 17928256
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 0.8991979819370943,
+        "week": 0.06605478078196558,
+        "month": 8.941626581787098
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 78,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XLP?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "observedAt": "2026-11-09T21:42:42.876702+00:00"
+        }
+      ]
+    },
+    {
+      "ticker": "IYT",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "date": "2026-11-09",
+        "open": 82.13999938964844,
+        "high": 84.0199966430664,
+        "low": 81.97000122070312,
+        "close": 83.70999908447266,
+        "volume": 687687
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 3.396739168846441,
+        "week": 0.7583019252925371,
+        "month": 4.44166873464662
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 78,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IYT?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "observedAt": "2026-11-09T21:42:42.876702+00:00"
+        }
+      ]
+    },
+    {
+      "ticker": "XHB",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "open": 104.05,
+        "high": 107.03,
+        "low": 103.82,
+        "close": 105.96,
+        "volume": 2200988,
+        "date": "2026-11-09"
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 3.587837571243546,
+        "week": 1.3195621961975545,
+        "month": 11.807537990191829
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 78,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://scanner.tradingview.com/america/scan",
+          "observedAt": "2026-11-09T21:44:57.034812+00:00",
+          "note": "TradingView complete same-session OHLCV; Yahoo close cross-check. No field-wise inferred repair."
+        }
+      ]
+    },
+    {
+      "ticker": "XRT",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "date": "2026-11-09",
+        "open": 90.55999755859375,
+        "high": 93.08999633789062,
+        "low": 90.43000030517578,
+        "close": 92.77999877929688,
+        "volume": 4603393
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 3.6648031053596375,
+        "week": 2.4740422367119486,
+        "month": 10.334169128142268
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 78,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XRT?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "observedAt": "2026-11-09T21:42:42.876702+00:00"
+        }
+      ]
+    },
+    {
+      "ticker": "CRAK",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "date": "2026-11-09",
+        "open": 55.5,
+        "high": 56.75,
+        "low": 55.40999984741211,
+        "close": 56.540000915527344,
+        "volume": 849058
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 1.7821812638411538,
+        "week": -7.265868814959974,
+        "month": -14.708100566214089
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 77,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/CRAK?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "observedAt": "2026-11-09T21:42:42.876702+00:00"
+        }
+      ]
+    },
+    {
+      "ticker": "IHI",
+      "latestDailyDate": "2026-11-09",
+      "latestOHLCV": {
+        "date": "2026-11-09",
+        "open": 58.189998626708984,
+        "high": 58.80500030517578,
+        "low": 57.720001220703125,
+        "close": 58.56999969482422,
+        "volume": 2608397
+      },
+      "anchors": {
+        "day": "2026-11-06",
+        "week": "2026-11-02",
+        "month": "2026-10-09"
+      },
+      "returns": {
+        "day": 1.701683520819186,
+        "week": 3.6453750388912187,
+        "month": 13.200614214900463
+      },
+      "priorHistoryUnchanged": true,
+      "priorBarCount": 255,
+      "ohlcConsistent": true,
+      "intraday": {
+        "count": 78,
+        "first": "2026-11-09T09:30:00-05:00",
+        "last": "2026-11-09T15:55:00-05:00",
+        "withinRegularSession": true
+      },
+      "alternateCandleProvenance": [
+        {
+          "date": "2026-11-09",
+          "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/IHI?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+          "observedAt": "2026-11-09T21:42:42.876702+00:00"
+        }
+      ]
+    }
+  ],
+  "sectorAnchorOHLC": {
+    "consistent": true,
+    "componentAnchorObservations": 176,
+    "scope": "40 sector rows, 44 component tickers, four session anchors each"
+  },
+  "alternateCompleteCandlesEvidence": "tradingview-complete-candles.json",
+  "note": "OHLC replacements are whole independently observed same-session candles, not inferred repairs. Historical dates/values and holdings dates preserved."
+}
