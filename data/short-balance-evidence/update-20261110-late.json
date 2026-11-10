@@ -1,0 +1,22 @@
+{
+  "actualCollectedAt": "2026-11-10T13:22:01.129178+00:00",
+  "completedKRXSession": "2026-11-10",
+  "latestAvailable": "2026-11-06",
+  "newExports": 2,
+  "reusedExports": 54,
+  "followingSessionChecks": [
+    {
+      "date": "2026-11-09",
+      "market": "KOSDAQ",
+      "sourceDisplayTime": "2026.11.10 PM 10:21:11",
+      "result": "데이터가 없습니다."
+    },
+    {
+      "date": "2026-11-09",
+      "market": "KOSPI",
+      "sourceDisplayTime": "2026.11.10 PM 10:21:19",
+      "result": "데이터가 없습니다."
+    }
+  ],
+  "note": "User restored authenticated session; official Nov6 snapshot newly available versus19:47 no data. Actual22:20–22:21 downloads, no backdating."
+}
