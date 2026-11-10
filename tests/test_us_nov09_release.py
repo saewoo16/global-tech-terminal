@@ -1,7 +1,11 @@
 import json, unittest, math
+from datetime import datetime
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 class NovemberNineReleaseTests(unittest.TestCase):
+ def test_header_update_not_older_than_latest_collection(self):
+  p=json.loads((ROOT/'data/us_analysis.json').read_text()); e=max(p['entries'],key=lambda x:x['date'])
+  self.assertGreaterEqual(datetime.fromisoformat(p['updatedAt']),datetime.fromisoformat(e['collectedAt']))
  def test_session_and_no_earnings_date_relabel(self):
   p=json.loads((ROOT/'data/us_analysis.json').read_text());e=next(x for x in p['entries'] if x['date']=='2026-11-09')
   self.assertEqual(e['sessionVerification']['closedAt'],'2026-11-09T16:00:00-05:00')
