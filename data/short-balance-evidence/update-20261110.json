@@ -1,0 +1,41 @@
+{
+  "scheduledAt": "2026-11-10T09:00:00Z",
+  "checkedAt": "2026-11-10T10:48:56.501050+00:00",
+  "completedKRXSession": "2026-11-10",
+  "sessionEvidence": "data/korea-session-evidence-20261110.json",
+  "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203",
+  "screen": "33001 개별종목 공매도 순보유잔고",
+  "latestAvailable": "2026-11-05",
+  "completionTimingNote": "Existing authenticated session restored after original publication window. Actual CSV downloads 19:46–19:48 KST; no claim of 18–19 completion.",
+  "followingSessionChecks": [
+    {
+      "market": "KOSPI",
+      "date": "2026-11-06",
+      "sourceDisplayTime": "2026.11.10 PM 07:46:49",
+      "visibleResult": "데이터가 없습니다."
+    },
+    {
+      "market": "KOSDAQ",
+      "date": "2026-11-06",
+      "sourceDisplayTime": "2026.11.10 PM 07:47:00",
+      "visibleResult": "데이터가 없습니다."
+    }
+  ],
+  "coverage": {
+    "KOSPI": 938,
+    "KOSDAQ": 1831
+  },
+  "newExports": 4,
+  "reusedExports": 50,
+  "sourceUnits": {
+    "quantity": "shares",
+    "amount": "KRW",
+    "ratio": "percent"
+  },
+  "historyPolicy": "Actual daily original exports preserved including November4; no interpolated or fabricated history. Investor split unavailable; reported balances only.",
+  "laterFollowUp": {
+    "attemptedAt": "2026-11-10T11:17:55Z",
+    "result": "세션 만료로 자동 로그아웃 되었습니다. 서비스 이용을 위해 재로그인 해주세요.",
+    "status": "authentication-expired; newer publication not verified; retained earlier successfully downloaded source snapshots"
+  }
+}
