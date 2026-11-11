@@ -1,0 +1,14 @@
+{
+  "sourceId": "kr-mover-cosmax-20261111",
+  "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4444224",
+  "title": "코스맥스 3분기 사상 최대 매출",
+  "publicationDate": "2026-11-11",
+  "publicationTimeKST": "15:35",
+  "observedAt": "2026-11-11T13:54:33.629531+00:00",
+  "facts": [
+    "3분기 매출8758억원·영업이익833억원과 한국 법인 성장세가 보도됐다. 장후 기사로 주가 원인은 확정하지 않았다."
+  ],
+  "evidenceType": "retrieved-page-fact-summary",
+  "retrievalStatus": "received",
+  "retrievedBodySha256": "d89c6676d0d875abb89bc519fc1233d8832a5349cd9066da03f7f8aa779f82f3"
+}

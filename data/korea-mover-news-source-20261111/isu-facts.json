@@ -1,0 +1,14 @@
+{
+  "sourceId": "kr-mover-isu-20261111",
+  "url": "https://stock.mk.co.kr/news/view/1195872",
+  "title": "이수페타시스 반도체 기판 테마 동반 상승",
+  "publicationDate": "2026-11-11",
+  "publicationTimeKST": "09:41",
+  "observedAt": "2026-11-11T13:54:32.078448+00:00",
+  "facts": [
+    "반도체 기판 테마 동반 강세 속 상승 종목으로 보도됐다. 개별 신규 수주나 인과관계는 확인하지 않았다."
+  ],
+  "evidenceType": "search-index-fact-summary",
+  "retrievalStatus": "failed",
+  "directRetrievalError": "HTTP Error 307: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nTemporary Redirect"
+}

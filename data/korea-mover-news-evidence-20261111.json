@@ -1,0 +1,210 @@
+{
+  "asOf": "2026-11-11",
+  "records": [
+    {
+      "sourceId": "kr-mover-korea-20261111",
+      "url": "https://www.widedaily.com/news/articleView.html?idxno=303411",
+      "title": "코리아써키트 CXL·PCB 동반 강세 보도",
+      "publicationDate": "2026-11-11",
+      "publicationTimeKST": "13:56",
+      "observedAt": "2026-11-11T13:54:29.039955+00:00",
+      "facts": [
+        "CXL·PCB 테마 강세와 AI 서버용 고집적 기판 수요 기대가 배경으로 보도됐다."
+      ],
+      "evidenceType": "retrieved-page-fact-summary",
+      "retrievalStatus": "received",
+      "retrievedBodySha256": "f3e9d0c5cf8a1fd793f17e67966ca2d9f1b7a5068c2310603808571b9889f785"
+    },
+    {
+      "sourceId": "kr-mover-techwing-20261111",
+      "url": "https://www.widedaily.com/news/articleView.html?idxno=303412",
+      "title": "테크윙 HBM·검사장비 수요 기대 보도",
+      "publicationDate": "2026-11-11",
+      "publicationTimeKST": "13:59",
+      "observedAt": "2026-11-11T13:54:29.322883+00:00",
+      "facts": [
+        "HBM·반도체 장비주 동반 강세와 AI 인프라 검사장비 수요 기대가 보도됐다."
+      ],
+      "evidenceType": "retrieved-page-fact-summary",
+      "retrievalStatus": "received",
+      "retrievedBodySha256": "aa5c58f1786fc07acfddd60e232be6533f90cb00dcfe518adb15274914220ed3"
+    },
+    {
+      "sourceId": "kr-mover-samhyun-20261111",
+      "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1731263",
+      "title": "삼현 휴머노이드 관절 액추에이터 국책과제 선정",
+      "publicationDate": "2026-11-11",
+      "publicationTimeKST": "14:53",
+      "observedAt": "2026-11-11T13:54:31.971865+00:00",
+      "facts": [
+        "휴머노이드 관절 액추에이터 국책과제 주관기관 선정 소식이 당일 보도됐다. 주가 인과관계는 미확인이다."
+      ],
+      "evidenceType": "retrieved-page-fact-summary",
+      "retrievalStatus": "received",
+      "retrievedBodySha256": "865df49e19509618d03d1e702b78575145ba862bee137d8f220c85ca82f15092"
+    },
+    {
+      "sourceId": "kr-mover-isu-20261111",
+      "url": "https://stock.mk.co.kr/news/view/1195872",
+      "title": "이수페타시스 반도체 기판 테마 동반 상승",
+      "publicationDate": "2026-11-11",
+      "publicationTimeKST": "09:41",
+      "observedAt": "2026-11-11T13:54:32.078448+00:00",
+      "facts": [
+        "반도체 기판 테마 동반 강세 속 상승 종목으로 보도됐다. 개별 신규 수주나 인과관계는 확인하지 않았다."
+      ],
+      "evidenceType": "search-index-fact-summary",
+      "retrievalStatus": "failed",
+      "directRetrievalError": "HTTP Error 307: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nTemporary Redirect"
+    },
+    {
+      "sourceId": "kr-mover-shiftup-20261111",
+      "url": "https://stock.mk.co.kr/news/view/1196202",
+      "title": "시프트업 전일 3분기 실적 부진 후 하락",
+      "publicationDate": "2026-11-11",
+      "publicationTimeKST": null,
+      "observedAt": "2026-11-11T13:54:23.488651+00:00",
+      "facts": [
+        "전일 발표한 3분기 영업이익 감소와 순손실 전환이 하락 배경으로 보도됐다."
+      ],
+      "evidenceType": "search-index-fact-summary",
+      "retrievalStatus": "failed",
+      "directRetrievalError": "HTTP Error 307: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nTemporary Redirect"
+    },
+    {
+      "sourceId": "kr-mover-iljin-20261111",
+      "url": "https://www.hankyung.com/article/202611110559i",
+      "title": "일진전기 실적·전력기기 성장 기대 보도",
+      "publicationDate": "2026-11-11",
+      "publicationTimeKST": "16:34",
+      "observedAt": "2026-11-11T13:54:23.487800+00:00",
+      "facts": [
+        "3분기 호실적과 전력기기 성장·저평가 기대가 반등 배경으로 보도됐다. 장후 기사이며 인과관계 확정은 아니다."
+      ],
+      "evidenceType": "retrieved-page-fact-summary",
+      "retrievalStatus": "received",
+      "retrievedBodySha256": "17b449baf142bacf4a17c91fd02e0f4265106dba9f0fb8c70c5daca1fd4fcc93"
+    },
+    {
+      "sourceId": "kr-mover-foosung-20261111",
+      "url": "https://www.newstnt.com/news/articleView.html?idxno=727984",
+      "title": "후성 화학제품 공급계약 장후 보도",
+      "publicationDate": "2026-11-11",
+      "publicationTimeKST": "18:03",
+      "observedAt": "2026-11-11T13:54:32.405423+00:00",
+      "facts": [
+        "약712억원 화학제품 공급계약이 장후 보도됐다. 정규장 상승 원인으로 확인한 내용은 아니다."
+      ],
+      "evidenceType": "retrieved-page-fact-summary",
+      "retrievalStatus": "received",
+      "retrievedBodySha256": "eca0200b6c27389ba82f24dfaab5ec19dc51c9186ffe3569b635140e5a438476"
+    },
+    {
+      "sourceId": "kr-mover-cosmax-20261111",
+      "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4444224",
+      "title": "코스맥스 3분기 사상 최대 매출",
+      "publicationDate": "2026-11-11",
+      "publicationTimeKST": "15:35",
+      "observedAt": "2026-11-11T13:54:33.629531+00:00",
+      "facts": [
+        "3분기 매출8758억원·영업이익833억원과 한국 법인 성장세가 보도됐다. 장후 기사로 주가 원인은 확정하지 않았다."
+      ],
+      "evidenceType": "retrieved-page-fact-summary",
+      "retrievalStatus": "received",
+      "retrievedBodySha256": "d89c6676d0d875abb89bc519fc1233d8832a5349cd9066da03f7f8aa779f82f3"
+    },
+    {
+      "sourceId": "kr-mover-krafton-20261111",
+      "url": "https://www.hankyung.com/article/2026111192856",
+      "title": "크래프톤 전일 실적 컨센서스 하회 후 약세",
+      "publicationDate": "2026-11-11",
+      "publicationTimeKST": "09:33",
+      "observedAt": "2026-11-11T13:54:33.638508+00:00",
+      "facts": [
+        "전일 발표한 3분기 실적의 시장 예상 하회와 영업이익 감소가 약세 배경으로 보도됐다."
+      ],
+      "evidenceType": "retrieved-page-fact-summary",
+      "retrievalStatus": "received",
+      "retrievedBodySha256": "388c58ec423f09876ec1d32d05b651831b4b638e11883e3db75474aacd7e998e"
+    },
+    {
+      "sourceId": "kr-mover-robotis-20261111",
+      "url": "https://www.mk.co.kr/news/stock/12205164",
+      "title": "로보티즈 NH투자증권 보고서 관련 강세",
+      "publicationDate": "2026-11-11",
+      "publicationTimeKST": "11:12",
+      "observedAt": "2026-11-11T13:54:23.486796+00:00",
+      "facts": [
+        "NH투자증권의 긍정적 분석 보고서 발표와 함께 강세가 보도됐다. 전망은 증권사 평가다."
+      ],
+      "evidenceType": "search-index-fact-summary",
+      "retrievalStatus": "failed",
+      "directRetrievalError": "HTTP Error 403: Forbidden"
+    },
+    {
+      "sourceId": "kr-mover-emart-20261111",
+      "url": "https://www.mt.co.kr/stock/2026/11/11/2026111114171065107",
+      "title": "이마트 장중 실적 발표 후 하락",
+      "publicationDate": "2026-11-11",
+      "publicationTimeKST": "14:19",
+      "observedAt": "2026-11-11T13:54:23.486270+00:00",
+      "facts": [
+        "장중 실적 공시 뒤 하락 전환했으며 스타벅스 실적 부진이 배경으로 보도됐다."
+      ],
+      "evidenceType": "retrieved-page-fact-summary",
+      "retrievalStatus": "received",
+      "retrievedBodySha256": "a2729fe1c27f669b5e4838c316cc0b8cef3da3209a5528084aa2c175e578db94"
+    },
+    {
+      "sourceId": "kr-mover-paradise-20261111",
+      "url": "https://newsway.co.kr/news/view?ud=2026111109333344537",
+      "title": "파라다이스 전일 3분기 호실적 후 강세",
+      "publicationDate": "2026-11-11",
+      "publicationTimeKST": "09:47",
+      "observedAt": "2026-11-11T13:54:36.375515+00:00",
+      "facts": [
+        "전일 발표한 3분기 영업이익의 시장 예상 상회와 카지노·호텔 호조가 강세 배경으로 보도됐다."
+      ],
+      "evidenceType": "retrieved-page-fact-summary",
+      "retrievalStatus": "received",
+      "retrievedBodySha256": "d3a1c81923dd1c3ee5688827b2064ddc2334d946b1123205ed51e2d15f29ead9"
+    }
+  ],
+  "unverified": [
+    {
+      "code": "085620",
+      "name": "미래에셋생명",
+      "reason": "신뢰할 수 있는 당일 개별 재료를 확인하지 못함. 가격 나열 기사만으로 원인을 만들지 않음."
+    },
+    {
+      "code": "141080",
+      "name": "리가켐바이오",
+      "reason": "신뢰할 수 있는 당일 개별 재료를 확인하지 못함. 가격 나열 기사만으로 원인을 만들지 않음."
+    },
+    {
+      "code": "298380",
+      "name": "에이비엘바이오",
+      "reason": "신뢰할 수 있는 당일 개별 재료를 확인하지 못함. 가격 나열 기사만으로 원인을 만들지 않음."
+    },
+    {
+      "code": "131290",
+      "name": "티에스이",
+      "reason": "신뢰할 수 있는 당일 개별 재료를 확인하지 못함. 가격 나열 기사만으로 원인을 만들지 않음."
+    },
+    {
+      "code": "084370",
+      "name": "유진테크",
+      "reason": "신뢰할 수 있는 당일 개별 재료를 확인하지 못함. 가격 나열 기사만으로 원인을 만들지 않음."
+    },
+    {
+      "code": "006040",
+      "name": "동원산업",
+      "reason": "신뢰할 수 있는 당일 개별 재료를 확인하지 못함. 가격 나열 기사만으로 원인을 만들지 않음."
+    },
+    {
+      "code": "214370",
+      "name": "케어젠",
+      "reason": "신뢰할 수 있는 당일 개별 재료를 확인하지 못함. 가격 나열 기사만으로 원인을 만들지 않음."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "sourceId": "kr-mover-emart-20261111",
+  "url": "https://www.mt.co.kr/stock/2026/11/11/2026111114171065107",
+  "title": "이마트 장중 실적 발표 후 하락",
+  "publicationDate": "2026-11-11",
+  "publicationTimeKST": "14:19",
+  "observedAt": "2026-11-11T13:54:23.486270+00:00",
+  "facts": [
+    "장중 실적 공시 뒤 하락 전환했으며 스타벅스 실적 부진이 배경으로 보도됐다."
+  ],
+  "evidenceType": "retrieved-page-fact-summary",
+  "retrievalStatus": "received",
+  "retrievedBodySha256": "a2729fe1c27f669b5e4838c316cc0b8cef3da3209a5528084aa2c175e578db94"
+}

@@ -1,0 +1,14 @@
+{
+  "sourceId": "kr-mover-robotis-20261111",
+  "url": "https://www.mk.co.kr/news/stock/12205164",
+  "title": "로보티즈 NH투자증권 보고서 관련 강세",
+  "publicationDate": "2026-11-11",
+  "publicationTimeKST": "11:12",
+  "observedAt": "2026-11-11T13:54:23.486796+00:00",
+  "facts": [
+    "NH투자증권의 긍정적 분석 보고서 발표와 함께 강세가 보도됐다. 전망은 증권사 평가다."
+  ],
+  "evidenceType": "search-index-fact-summary",
+  "retrievalStatus": "failed",
+  "directRetrievalError": "HTTP Error 403: Forbidden"
+}

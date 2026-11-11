@@ -1,0 +1,14 @@
+{
+  "sourceId": "kr-mover-shiftup-20261111",
+  "url": "https://stock.mk.co.kr/news/view/1196202",
+  "title": "시프트업 전일 3분기 실적 부진 후 하락",
+  "publicationDate": "2026-11-11",
+  "publicationTimeKST": null,
+  "observedAt": "2026-11-11T13:54:23.488651+00:00",
+  "facts": [
+    "전일 발표한 3분기 영업이익 감소와 순손실 전환이 하락 배경으로 보도됐다."
+  ],
+  "evidenceType": "search-index-fact-summary",
+  "retrievalStatus": "failed",
+  "directRetrievalError": "HTTP Error 307: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nTemporary Redirect"
+}
