@@ -1,0 +1,74 @@
+{
+  "asOf": "2026-11-11",
+  "observedAt": "2026-11-11T22:03:41Z",
+  "unit": "million reportingCurrency",
+  "companies": {
+    "TSE:3436": {
+      "reportingCurrency": "JPY",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "reportedCurrency": "JPY",
+          "unit": "millions of reporting currency",
+          "sourceType": "filing",
+          "publishedAt": "2026-11-11",
+          "verifiedAt": "2026-11-11",
+          "revenue": 117508,
+          "operatingIncome": 1966,
+          "sourceUrl": "https://ssl4.eir-parts.net/doc/3436/ir_material_for_fiscal_ym21/217870/00.pdf",
+          "source": "SUMCO official issuer consolidated financial results linked by issuer IR feed",
+          "observedAt": "2026-11-11T22:03:41Z",
+          "sourceSha256": "01cfeb820af30735954cd729bfbc66d345f4a4c61ce6eb47b0bffce14fe069b8",
+          "basis": "Japanese GAAP consolidated; nine-month cumulative less first-half cumulative; FST included in both income statements",
+          "sourcePrecision": "Whole million JPY, rounded down by issuer; subtraction retains reported million precision",
+          "sourceLocation": "Q3 PDF page 1 and Q2 PDF page 1, consolidated operating results",
+          "calculation": {
+            "method": "Comparable nine-month cumulative minus first-half cumulative",
+            "revenue": "332524 - 215016 = 117508 million JPY",
+            "operatingIncome": "-4397 - (-6363) = 1966 million JPY",
+            "cumulativeSource": "https://ssl4.eir-parts.net/doc/3436/ir_material_for_fiscal_ym21/217870/00.pdf",
+            "subtractedSource": "https://ssl4.eir-parts.net/doc/3436/ir_material_for_fiscal_ym21/209848/00.pdf",
+            "subtractedSourceSha256": "26ad4eddf7388878d34f3dd6aaf02c608aa217c845e6c2faa636be86b57988ff",
+            "subtractedSourceObservedAt": "2026-11-11T22:03:41Z",
+            "basisCheck": "Q3 page 1 expressly states FST remains included in the nine-month income statement despite equity-method reclassification in the September 30 balance sheet. Thus cumulative subtraction remains comparable. Both Q2 and Q3 report no policy/estimate changes or restatement. FST sales and operating income are excluded only from Q4 onward."
+          }
+        }
+      ],
+      "financialNote": "공식 일본회계기준 연결 누계(9개월−6개월)로 산출한 7~9월 단독분기입니다. FST는 9월 말 재무상태표에서 연결 제외됐지만 1~9월 손익에는 포함되어 차감 기준이 같습니다. FST 매출·영업이익의 연결 제외는 4분기부터 적용됩니다."
+    },
+    "TSE:4004": {
+      "reportingCurrency": "JPY",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "reportedCurrency": "JPY",
+          "unit": "millions of reporting currency",
+          "sourceType": "filing",
+          "publishedAt": "2026-11-11",
+          "verifiedAt": "2026-11-11",
+          "revenue": 325100,
+          "operatingIncome": 78000,
+          "sourceUrl": "https://www.resonac.com/sites/default/files/2026-11/e_shiryo2026q3.pdf",
+          "source": "Resonac official issuer financial results presentation; statutory IFRS operating profit, not core operating profit",
+          "observedAt": "2026-11-11T22:02:43Z",
+          "sourceSha256": "34d78065afae2b41cf94b7dedfb02164bba355f2e3520bea3d0b70b34de9d071",
+          "basis": "IFRS consolidated continuing operations excluding Crasus Chemical; directly reported standalone Q3; scope differs from preserved previous observations",
+          "sourcePrecision": "0.1 billion JPY as reported; multiplied by 1000 to million JPY, no extra precision claimed",
+          "sourceLocation": "PDF page 23, Summary (2026 2Q vs. 2026 3Q)",
+          "calculation": {
+            "method": "Directly reported standalone quarter, unit conversion only; no subtraction of incompatible cumulative values",
+            "revenue": "325.1 billion JPY * 1000 = 325100 million JPY",
+            "operatingIncome": "78.0 billion JPY * 1000 = 78000 million JPY",
+            "basisCheck": "Crasus Chemical classified as discontinued operation retrospectively from start of fiscal year. Old H1 676852/73310 million includes that business and must not be subtracted from new nine-month 871853/148350 million."
+          },
+          "comparabilityNote": "2026 Q3 excludes Crasus Chemical. Preserved Q2, Q1 and 2025 Q4 are historical as-reported observations including that business and are not directly comparable; do not compute quarter-on-quarter or year-on-year growth across this scope break."
+        }
+      ],
+      "financialNote": "공식 설명자료의 IFRS 계속사업 7~9월 단독분기이며 코어 영업이익이 아닙니다. 원문 0.1십억 JPY 정밀도를 백만 JPY로 환산했습니다. Crasus Chemical 중단사업을 제외한 수치로, 기존에 보존된 이전 분기(해당 사업 포함)와 연결 범위가 달라 직접 전분기·전년 비교하면 안 됩니다."
+    }
+  }
+}

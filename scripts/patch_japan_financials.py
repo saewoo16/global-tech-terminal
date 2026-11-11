@@ -69,7 +69,7 @@ def derive_q4(quarters, annual):
         quarters[fy]={'date':fy,'revenue':r,'operatingIncome':op}
     return quarters
 
-def main():
+def collect_research_candidates():
     companies=json.loads(COMPANIES.read_text(encoding='utf-8'))
     market=json.loads(MARKET.read_text(encoding='utf-8'))
     stocks=market.setdefault('stocks',{})
@@ -106,5 +106,14 @@ def main():
     write_json(MARKET,market)
     print(f'JAPAN_DONE total={len(japan)} full_4q_with_operating_income={full} improved_count={improved}',flush=True)
     print('NOTE: If Yahoo has no quarterly statements, this script cannot reconstruct them from official IR. No fabricated values.',flush=True)
+
+def main():
+    """Never publish aggregator-only financial quarters from an unattended run.
+
+    Official, independently verified snapshots are applied by the following
+    apply_financial_backfills.py step. Parsing helpers remain available for
+    research, but raw Yahoo statements do not authorize a new filing date.
+    """
+    print('JAPAN_FINANCIALS: retained verified quarters; official snapshots applied separately', flush=True)
 
 if __name__=='__main__':main()

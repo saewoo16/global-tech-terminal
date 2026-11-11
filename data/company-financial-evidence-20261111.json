@@ -1,0 +1,47 @@
+{
+  "observedAt": "2026-11-11T22:03:41Z",
+  "status": "verified",
+  "verification": "Official PDFs downloaded; values extracted and relevant table pages rendered and visually verified. No market.json change or publishing performed.",
+  "sources": [
+    {
+      "url": "https://ssl4.eir-parts.net/doc/3436/ir_material_for_fiscal_ym21/217870/00.pdf",
+      "sha256": "01cfeb820af30735954cd729bfbc66d345f4a4c61ce6eb47b0bffce14fe069b8",
+      "observedAt": "2026-11-11T22:03:41Z"
+    },
+    {
+      "url": "https://ssl4.eir-parts.net/doc/3436/ir_material_for_fiscal_ym21/209848/00.pdf",
+      "sha256": "26ad4eddf7388878d34f3dd6aaf02c608aa217c845e6c2faa636be86b57988ff",
+      "observedAt": "2026-11-11T22:03:41Z"
+    },
+    {
+      "url": "https://www.resonac.com/sites/default/files/2026-11/e_shiryo2026q3.pdf",
+      "sha256": "34d78065afae2b41cf94b7dedfb02164bba355f2e3520bea3d0b70b34de9d071",
+      "observedAt": "2026-11-11T22:02:43Z"
+    },
+    {
+      "url": "https://www.resonac.com/sites/default/files/2026-11/e_tanshin2026q3_1.pdf",
+      "sha256": "1304e9e3441a78673ccb4fb90fe1294e98a4dcf9d3fc8a6f0cc260199c8bd5d6",
+      "observedAt": "2026-11-11T22:02:43Z"
+    }
+  ],
+  "sourceDiscovery": [
+    "https://www.sumcosi.com/english/ir/library/presentations.html",
+    "https://ssl4.eir-parts.net/V4Public/eir/3436/en/announcement/announcement_38.js",
+    "https://www.resonac.com/ir/library/results.html"
+  ],
+  "resonacCumulativeStatement": {
+    "revenue": 871853,
+    "operatingIncome": 148350,
+    "periodStart": "2026-01-01",
+    "periodEnd": "2026-09-30",
+    "note": "Cumulative only; must not use as standalone quarter. More precise standalone IFRS operating profit not presented in this statement."
+  },
+  "preservation": {
+    "existingQuarters": "Unchanged; Q3-only additions proposed",
+    "resonacScopeBreak": "Prior observations include discontinued Crasus Chemical; no direct growth comparison. Q2 comparable presentation values 290600 revenue / 47500 IFRS OI are available but intentionally not replacing historical observations."
+  },
+  "calculations": {
+    "SUMCO": "revenue 332524 - 215016 = 117508; OI -4397 - (-6363) = 1966",
+    "Resonac": "direct Q3 presentation 325.1 / 78.0 billion JPY converted to 325100 / 78000 million JPY"
+  }
+}

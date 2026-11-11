@@ -115,6 +115,25 @@ def fetch_prices(obj):
     return clean_prices(prices + latest)
 
 
+def completed_fx_observation(now=None):
+    """Reference USD/KRW uses a completed source session, never today's live FX bar."""
+    now = now or dt.datetime.now(dt.timezone.utc)
+    url = 'https://query2.finance.yahoo.com/v8/finance/chart/KRW=X?range=5d&interval=1d&includePrePost=false'
+    try:
+        with urlopen(Request(url, headers={'User-Agent': 'Mozilla/5.0'}), timeout=20) as response:
+            result = json.load(response)['chart']['result'][0]
+        points = completed_daily_points(result, now)
+        if points:
+            day, value = points[-1]
+            return round(value, 2), {'asOf': day, 'observedAt': now.isoformat(), 'sourceUrl': url,
+                                    'basis': 'Completed provider FX daily session; not an equity closing-time spot rate',
+                                    'timezone': result['meta']['exchangeTimezoneName'],
+                                    'sourceCurrentRegularEnd': result['meta']['currentTradingPeriod']['regular']['end']}
+    except Exception as exc:
+        print('COMPLETED_FX_UNAVAILABLE', str(exc)[:100], flush=True)
+    return None, None
+
+
 def first_available(frame,candidates):
     for item in candidates:
         if item in frame.index:return frame.loc[item]
@@ -157,10 +176,10 @@ def main():
     limit=int(os.getenv('LIMIT','0'))
     if limit:keys=keys[:limit]
     fx=old.get('fx',1341)
-    try:
-        pair=yf.Ticker('KRW=X').history(period='5d')
-        if not pair.empty:fx=round(float(pair['Close'].iloc[-1]),2)
-    except Exception:pass
+    fx_metadata = old.get('fxMetadata')
+    completed_fx, metadata = completed_fx_observation()
+    if completed_fx is not None:
+        fx, fx_metadata = completed_fx, metadata
     ok=0
     fx_cache={'USD':1.0}
     for i,symbol in enumerate(keys,1):
@@ -211,7 +230,9 @@ def main():
         time.sleep(.15)
     if not ok and keys:
         raise RuntimeError('No price requests succeeded; retained existing market.json instead of publishing a false refresh')
-    write_json(ROOT/'data/market.json',{'updated':now,'fx':fx,'stocks':stocks})
+    payload = {'updated':now,'fx':fx,'stocks':stocks}
+    if fx_metadata is not None:payload['fxMetadata'] = fx_metadata
+    write_json(ROOT/'data/market.json',payload)
     with_quarters=sum(bool(stocks.get(k,{}).get('quarters')) for k in keys)
     no_quarters=[f'{unique[k]["name"]} ({lookup(unique[k])})' for k in keys if not stocks.get(k,{}).get('quarters')]
     print('DONE',ok,'/',len(keys),'quotes fetched;',with_quarters,'/',len(keys),'with financials',flush=True)

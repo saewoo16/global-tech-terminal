@@ -1,0 +1,41 @@
+{
+  "asOf": "2026-11-11",
+  "observedAt": "2026-11-11T22:02:19.939346+00:00",
+  "companies": {
+    "NASDAQ:HIMX": {
+      "reportingCurrency": "USD",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "revenue": 246.752,
+          "operatingIncome": 22.737,
+          "sourceUrl": "https://www.globenewswire.com/news-release/2026/11/05/3396193/0/en/himax-technologies-inc-reports-third-quarter-2026-financial-results-provides-fourth-quarter-2026-guidance.html",
+          "source": "Official Himax earnings release distributed by GlobeNewswire",
+          "sourceType": "filing",
+          "verifiedAt": "2026-11-11",
+          "observedAt": "2026-11-11T22:02:19.939346+00:00",
+          "publishedAt": "2026-11-05T06:35:00-05:00",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "basis": "Unaudited condensed consolidated profit or loss; issuer states interim disclosures do not fully comply with IFRS; actual standalone quarter",
+          "sourceSha256": "f0231aa05d4775d73b32568cf899096be8d88c49c599c67ce3fa09608acf11b1",
+          "sourcePrecision": "Published thousand USD values divided by 1000",
+          "sourceFacts": {
+            "revenue": {
+              "rawValue": 246752,
+              "rawUnit": "thousand USD",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30"
+            },
+            "operatingIncome": {
+              "rawValue": 22737,
+              "rawUnit": "thousand USD",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
