@@ -6,7 +6,7 @@ class October30WesternCompanyCloses(unittest.TestCase):
   self.assertEqual(len(ev['records']),134);self.assertEqual(len({r['symbol']for r in ev['records']}),134)
   self.assertEqual(sum('reusedSource'in r for r in ev['records']),66)
   for r in ev['records']:
-   self.assertEqual(r['status'],'verified',r['symbol']);self.assertEqual(r['sourceSessionDate'],'2026-10-30');self.assertEqual(r['point'][0],'2026-10-30');self.assertGreaterEqual(m[r['symbol']]['lastPriceDate'],'2026-10-30');self.assertEqual(r['point'][1],round(r['rawTarget']['adjustedClose'],5))
+   self.assertEqual(r['status'],'verified',r['symbol']);self.assertEqual(r['sourceSessionDate'],'2026-10-30');self.assertEqual(r['point'][0],'2026-10-30');self.assertGreaterEqual(m[{'NYSE:SHOP':'NASDAQ:SHOP'}.get(r['symbol'],r['symbol'])]['lastPriceDate'],'2026-10-30');self.assertEqual(r['point'][1],round(r['rawTarget']['adjustedClose'],5))
    obs=dt.datetime.fromisoformat(r['observedAt']);self.assertGreaterEqual(obs,dt.datetime.fromisoformat(r['exchangeCloseCutoff']));self.assertGreaterEqual(obs.timestamp(),r['sourceRegularPeriod']['end']);self.assertEqual(len(r['rawSha256']),64)
    q=r.get('replacementCompleteCandle',r['rawTarget']);self.assertGreater(q['low'],0);self.assertLessEqual(q['low'],min(q['open'],q['close']));self.assertGreaterEqual(q['high'],max(q['open'],q['close']))
  def test_dlr_complete_independent_candle(self):

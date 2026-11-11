@@ -1,0 +1,5515 @@
+{
+  "targetSession": "2026-11-11",
+  "verifiedAt": "2026-11-11T22:48:57.139013+00:00",
+  "updatedCount": 247,
+  "retained": [],
+  "limitation": "Market-cap, shares, FX and financial observation dates remain unchanged. Six malformed Yahoo OHLC bars independently verified using complete valid TradingView bars; originals retained.",
+  "observations": [
+    {
+      "symbol": "KRX:005930",
+      "adjustedClose": [
+        "2026-11-11",
+        206000.0
+      ],
+      "receipt": {
+        "reuseSource": "data/korea-completion-raw-20261111.tar.gz:data/korea-highs-raw-20261111/005930.KS.json",
+        "rawSha256": "694e01747beb0b804c458ce2d56121a1921ac1296c8412dd0a86964180fc668a",
+        "sourceObservationTimeStatus": "Original collector evidence preserved in Korean archive; no invented retrieval timestamp",
+        "reusedAt": "2026-11-11T22:38:59.718141+00:00",
+        "ticker": "005930.KS"
+      },
+      "regularSession": {
+        "timezone": "KST",
+        "start": 1794355200,
+        "end": 1794376800,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Seoul"
+    },
+    {
+      "symbol": "KRX:000660",
+      "adjustedClose": [
+        "2026-11-11",
+        1277000.0
+      ],
+      "receipt": {
+        "reuseSource": "data/korea-completion-raw-20261111.tar.gz:data/korea-highs-raw-20261111/000660.KS.json",
+        "rawSha256": "a68f8e8b9d5fd9c411c2eee05a75c2d48ab70334c22a011a85707741d2dd9b0f",
+        "sourceObservationTimeStatus": "Original collector evidence preserved in Korean archive; no invented retrieval timestamp",
+        "reusedAt": "2026-11-11T22:38:59.718613+00:00",
+        "ticker": "000660.KS"
+      },
+      "regularSession": {
+        "timezone": "KST",
+        "end": 1794376800,
+        "start": 1794355200,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Seoul"
+    },
+    {
+      "symbol": "NASDAQ:MU",
+      "adjustedClose": [
+        "2026-11-11",
+        811.29999
+      ],
+      "receipt": {
+        "ticker": "MU",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/MU?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:29.614413+00:00",
+        "sha256": "ee634b4f7fb7ec5f2e459de60276421f0bef79c96a81c9c72f83ce3daa253ce1",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:38:59.718624+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "TSE:285A",
+      "adjustedClose": [
+        "2026-11-11",
+        9571.0
+      ],
+      "receipt": {
+        "ticker": "285A.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/285A.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:03.523040+00:00",
+        "rawSha256": "dd836164892eed578ed86059012b2fa8dd994eb07b2eeb720c0d0545c7882840"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "end": 1794465000,
+        "start": 1794441600,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "TWSE:2408",
+      "adjustedClose": [
+        "2026-11-11",
+        394.0
+      ],
+      "receipt": {
+        "ticker": "2408.TW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/2408.TW?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:03.528607+00:00",
+        "rawSha256": "7847abc17a27c6a2ced3f11cfa4645eec9fb4d112903bf5ef2691d2c33acc606"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "start": 1794445200,
+        "end": 1794461400,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Taipei"
+    },
+    {
+      "symbol": "TWSE:2344",
+      "adjustedClose": [
+        "2026-11-11",
+        136.5
+      ],
+      "receipt": {
+        "ticker": "2344.TW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/2344.TW?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:03.536034+00:00",
+        "rawSha256": "89abaece93c5e44ab117fd231108049aef863f3d0897f2a642f61af3d22082f7"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "start": 1794445200,
+        "end": 1794461400,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Taipei"
+    },
+    {
+      "symbol": "TWSE:2337",
+      "adjustedClose": [
+        "2026-11-11",
+        82.7
+      ],
+      "receipt": {
+        "ticker": "2337.TW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/2337.TW?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:03.531229+00:00",
+        "rawSha256": "868f9552aaf471f989f1eee0a7a34510080bc636f202c6fcc584255b904f7226"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "start": 1794445200,
+        "end": 1794461400,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Taipei"
+    },
+    {
+      "symbol": "NASDAQ:INTC",
+      "adjustedClose": [
+        "2026-11-11",
+        62.5
+      ],
+      "receipt": {
+        "ticker": "INTC",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/INTC?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:20.110444+00:00",
+        "sha256": "c2bbb0b6bb3e2193a1be3795fc5218c2f1a42037bf7dd0ef97fa628d6b9c099a",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:38:59.720810+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:TXN",
+      "adjustedClose": [
+        "2026-11-11",
+        309.81
+      ],
+      "receipt": {
+        "ticker": "TXN",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TXN?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:53.719923+00:00",
+        "sha256": "eb78a146d0a9f1ad2f23824d45c2579d527102ae297b14a3ea9875939fc894fb",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:38:59.721406+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:ADI",
+      "adjustedClose": [
+        "2026-11-11",
+        409.07999
+      ],
+      "receipt": {
+        "ticker": "ADI",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/ADI?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:42:32.906200+00:00",
+        "sha256": "39a858b2fafc51bdbcb9a4c2a1e9728782989e6a425320e1cc57cf274f86aaca",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:38:59.721422+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:NXPI",
+      "adjustedClose": [
+        "2026-11-11",
+        269.51001
+      ],
+      "receipt": {
+        "ticker": "NXPI",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/NXPI?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:34.274645+00:00",
+        "sha256": "c32cd92a8f5264bb7aeabffe69387cf4a1d5c7a115a8bbbc034e93354b4b2fdf",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:38:59.722842+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:MCHP",
+      "adjustedClose": [
+        "2026-11-11",
+        62.13
+      ],
+      "receipt": {
+        "ticker": "MCHP",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/MCHP?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:29.630048+00:00",
+        "sha256": "653a0526252862db51e85bd670cb7bab05aa81c2d69e1d4582a94f85ae3bdf18",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:38:59.722856+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "TSE:6723",
+      "adjustedClose": [
+        "2026-11-11",
+        2922.0
+      ],
+      "receipt": {
+        "ticker": "6723.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/6723.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:03.537523+00:00",
+        "rawSha256": "385fe387db65c580e53b087a4c6659f3cf023431ad8d143e4776b237519ada1a"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "start": 1794441600,
+        "end": 1794465000,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "XETR:IFX",
+      "adjustedClose": [
+        "2026-11-11",
+        52.12
+      ],
+      "receipt": {
+        "ticker": "IFX.DE",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/IFX.DE?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:03.543552+00:00",
+        "rawSha256": "b0fff427905cd88538b052622602863200b3e2e1af6aaaf97de98fc0f6850cc2"
+      },
+      "regularSession": {
+        "timezone": "CET",
+        "start": 1794384000,
+        "end": 1794414600,
+        "gmtoffset": 3600
+      },
+      "timezone": "Europe/Berlin"
+    },
+    {
+      "symbol": "NYSE:STM",
+      "adjustedClose": [
+        "2026-11-11",
+        46.26
+      ],
+      "receipt": {
+        "ticker": "STM",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/STM?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:03.536560+00:00",
+        "rawSha256": "434536d8e31f83b4914d81ecb8fcb5aa03f53005aaf2356244608b89b4488114"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:ON",
+      "adjustedClose": [
+        "2026-11-11",
+        73.62
+      ],
+      "receipt": {
+        "ticker": "ON",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/ON?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:34.328492+00:00",
+        "sha256": "325a9e4cd118ca74b9f36b4cf4a752d14f520ff9212028441497ce932a0b164f",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:38:59.726944+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "TSE:6963",
+      "adjustedClose": [
+        "2026-11-11",
+        3170.0
+      ],
+      "receipt": {
+        "ticker": "6963.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/6963.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:03.531791+00:00",
+        "rawSha256": "ea09ee6d1e20a0b3063d03d736b8131526ad67725e080fb69dcbbbfedf5061c9"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "start": 1794441600,
+        "end": 1794465000,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "TSE:6758",
+      "adjustedClose": [
+        "2026-11-11",
+        4200.0
+      ],
+      "receipt": {
+        "ticker": "6758.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/6758.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:03.564846+00:00",
+        "rawSha256": "4cac7118605fca58151ece617f127412cc7d1cb6f03e23159584cae03507f56a"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "end": 1794465000,
+        "start": 1794441600,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "NYSE:TSM",
+      "adjustedClose": [
+        "2026-11-11",
+        413.35001
+      ],
+      "receipt": {
+        "ticker": "TSM",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TSM?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:03.551922+00:00",
+        "rawSha256": "5adea029908ebb7bed5d0990b9e011d725be77351ac4d0b07b34fbd2afaba907"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "HKEX:981",
+      "adjustedClose": [
+        "2026-11-11",
+        49.0
+      ],
+      "receipt": {
+        "ticker": "0981.HK",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/0981.HK?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:03.514770+00:00",
+        "rawSha256": "d9892b16a34c9ef36ba8c6834c7eeeb198bac0f58c2eec1f8152d3e46fd8bf3a"
+      },
+      "regularSession": {
+        "timezone": "HKT",
+        "end": 1794471000,
+        "start": 1794447000,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Hong_Kong"
+    },
+    {
+      "symbol": "NASDAQ:NVDA",
+      "adjustedClose": [
+        "2026-11-11",
+        173.73
+      ],
+      "receipt": {
+        "ticker": "NVDA",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:34.317487+00:00",
+        "sha256": "f2b951422ff0b0a7cb7c10267af47844f27660e24b507f1cfa2b2d1b8322cbee",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:38:59.785677+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:AMD",
+      "adjustedClose": [
+        "2026-11-11",
+        552.90002
+      ],
+      "receipt": {
+        "ticker": "AMD",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMD?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:42:26.974074+00:00",
+        "sha256": "82be7a0fa0411da1f9fc73b2a4acfc7a8804a1337717b3dced86b38725bbdcd5",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:38:59.785713+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "SSE:688256",
+      "adjustedClose": [
+        "2026-11-11",
+        900.0
+      ],
+      "receipt": {
+        "ticker": "688256.SS",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/688256.SS?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:03.520407+00:00",
+        "rawSha256": "eaca297b8fe96d2a838437d8e8cb0c6f334cdf55105073dba974c9866c131b9a"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "end": 1794466800,
+        "start": 1794447000,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Shanghai"
+    },
+    {
+      "symbol": "NASDAQ:AVGO",
+      "adjustedClose": [
+        "2026-11-11",
+        345.22
+      ],
+      "receipt": {
+        "ticker": "AVGO",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/AVGO?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:42:39.474003+00:00",
+        "sha256": "5a03422d26a73eea5a6f0020cb9ddaae8269853362d1167c253dfa48839d42c4",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:39:03.514829+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:MRVL",
+      "adjustedClose": [
+        "2026-11-11",
+        168.8
+      ],
+      "receipt": {
+        "ticker": "MRVL",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/MRVL?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:27.333977+00:00",
+        "sha256": "e293adb5f0420e0ddf04d96bd9d94c7d34238d52489ef19e54dc5b9d5feabec6",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:39:03.514840+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:ALAB",
+      "adjustedClose": [
+        "2026-11-11",
+        230.91
+      ],
+      "receipt": {
+        "ticker": "ALAB",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/ALAB?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:06.904056+00:00",
+        "rawSha256": "682fabd5930941f241883c42be07431ae3692ce52d1b34504ad178670db5e0b8"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:CRDO",
+      "adjustedClose": [
+        "2026-11-11",
+        141.41
+      ],
+      "receipt": {
+        "ticker": "CRDO",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/CRDO?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:06.912498+00:00",
+        "rawSha256": "b40dc92bc20b46b403bc16a3a69371357641ac32185afde34486fdb7acb3a089"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:QCOM",
+      "adjustedClose": [
+        "2026-11-11",
+        176.57001
+      ],
+      "receipt": {
+        "ticker": "QCOM",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/QCOM?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:44.166462+00:00",
+        "sha256": "3fb4f753c67724b4dcab29f14e4d6e04d0c4bb86e45fa07590d7e8e030e54a0c",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:39:03.523082+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "TWSE:2454",
+      "adjustedClose": [
+        "2026-11-11",
+        3990.0
+      ],
+      "receipt": {
+        "ticker": "2454.TW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/2454.TW?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:06.913492+00:00",
+        "rawSha256": "afd7661c0b613f31b90d932bb814f7da72a6f1c9e5bab88a62f645c526b29b29"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "start": 1794445200,
+        "end": 1794461400,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Taipei"
+    },
+    {
+      "symbol": "SSE:603893",
+      "adjustedClose": [
+        "2026-11-11",
+        235.00999
+      ],
+      "receipt": {
+        "ticker": "603893.SS",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/603893.SS?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:06.909453+00:00",
+        "rawSha256": "cd7632d5e7752b4402d13b9432e135cd5de910283f579558c9affd3da2effea0"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "start": 1794447000,
+        "end": 1794466800,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Shanghai"
+    },
+    {
+      "symbol": "NASDAQ:MPWR",
+      "adjustedClose": [
+        "2026-11-11",
+        1478.68994
+      ],
+      "receipt": {
+        "ticker": "MPWR",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/MPWR?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:29.627532+00:00",
+        "sha256": "bb9a6f8605d62276f3996d34eb8aae7e54c1dd80b78277cec4144304494a69b1",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:39:03.531257+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:SIMO",
+      "adjustedClose": [
+        "2026-11-11",
+        183.64999
+      ],
+      "receipt": {
+        "ticker": "SIMO",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/SIMO?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:06.953209+00:00",
+        "rawSha256": "edeb5b700b79f91486cc5f1cf124b2cf17f2436c2a0a2d78c43cf0f7eabd7009"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "TPEX:8299",
+      "adjustedClose": [
+        "2026-11-11",
+        1730.0
+      ],
+      "receipt": {
+        "ticker": "8299.TWO",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/8299.TWO?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:06.985669+00:00",
+        "rawSha256": "27ffc31fa529ea773ee023777f6fb434f862c1f9afe44dd4dcebf1ef88841794"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "start": 1794445200,
+        "end": 1794461400,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Taipei"
+    },
+    {
+      "symbol": "TWSE:3034",
+      "adjustedClose": [
+        "2026-11-11",
+        481.0
+      ],
+      "receipt": {
+        "ticker": "3034.TW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/3034.TW?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:06.981692+00:00",
+        "rawSha256": "acd743c493d9cb8f784d3a365a74604b3e66f785f293982c0743256e801187f7"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "end": 1794461400,
+        "start": 1794445200,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Taipei"
+    },
+    {
+      "symbol": "NASDAQ:HIMX",
+      "adjustedClose": [
+        "2026-11-11",
+        9.09
+      ],
+      "receipt": {
+        "ticker": "HIMX",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/HIMX?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:06.966061+00:00",
+        "rawSha256": "794ae192b538e6f0c1822818bb352c55b6ec2ebdd0929158dc7cbd4c47a9cae3"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "KRX:108320",
+      "adjustedClose": [
+        "2026-11-11",
+        24200.0
+      ],
+      "receipt": {
+        "ticker": "108320.KS",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/108320.KS?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:06.945192+00:00",
+        "rawSha256": "2df5f2cdca8d7ee9d23aa6198ff5d4f7a2201bdd13dac4da1a80b3830bdca153"
+      },
+      "regularSession": {
+        "timezone": "KST",
+        "start": 1794441600,
+        "end": 1794463200,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Seoul"
+    },
+    {
+      "symbol": "NASDAQ:SNPS",
+      "adjustedClose": [
+        "2026-11-11",
+        462.12
+      ],
+      "receipt": {
+        "ticker": "SNPS",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/SNPS?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:51.529228+00:00",
+        "sha256": "a76992fada802f47124616c49625720d88b7e279b551511c47987ae250ca2cb4",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:39:03.543607+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:CDNS",
+      "adjustedClose": [
+        "2026-11-11",
+        329.26001
+      ],
+      "receipt": {
+        "ticker": "CDNS",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/CDNS?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:42:42.578526+00:00",
+        "sha256": "beecaa6a194ddcd341dbda7f7a165db96acf30cda9ceac9dca0fb4c0fc39c571",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:39:03.543619+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "XETR:SIE",
+      "adjustedClose": [
+        "2026-11-11",
+        277.0
+      ],
+      "receipt": {
+        "ticker": "SIE.DE",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/SIE.DE?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:06.965227+00:00",
+        "rawSha256": "263d59749058ab07fae920bc69009532d340a2c1e611994ab336fd4ba81937ad"
+      },
+      "regularSession": {
+        "timezone": "CET",
+        "start": 1794384000,
+        "end": 1794414600,
+        "gmtoffset": 3600
+      },
+      "timezone": "Europe/Berlin"
+    },
+    {
+      "symbol": "NASDAQ:ARM",
+      "adjustedClose": [
+        "2026-11-11",
+        203.36
+      ],
+      "receipt": {
+        "ticker": "ARM",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/ARM?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:06.925452+00:00",
+        "rawSha256": "c64bbead3f5c9a53d4d32d07bb72e39f482a3077b8acbe7c8823691f81fc582d"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:RMBS",
+      "adjustedClose": [
+        "2026-11-11",
+        85.36
+      ],
+      "receipt": {
+        "ticker": "RMBS",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/RMBS?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:06.955531+00:00",
+        "rawSha256": "9b3240fac9e5f23cea8b928daa21335ae52f4b623e53bdf38c3a560a3461c639"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:CEVA",
+      "adjustedClose": [
+        "2026-11-11",
+        26.94
+      ],
+      "receipt": {
+        "ticker": "CEVA",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/CEVA?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:18.109397+00:00",
+        "rawSha256": "27008279ed6a584ff3be701755e029dfa09783b6ca6d77f24885d1e762104407"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "TWSE:3443",
+      "adjustedClose": [
+        "2026-11-11",
+        7885.0
+      ],
+      "receipt": {
+        "ticker": "3443.TW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/3443.TW?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:18.082184+00:00",
+        "rawSha256": "db7a3abdcfa2b853980220003183d8610308e17f42146d69ca1b33b183527807"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "start": 1794445200,
+        "end": 1794461400,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Taipei"
+    },
+    {
+      "symbol": "TWSE:3661",
+      "adjustedClose": [
+        "2026-11-11",
+        3650.0
+      ],
+      "receipt": {
+        "ticker": "3661.TW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/3661.TW?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:18.009923+00:00",
+        "rawSha256": "05c20b1e072fa250ddd1835d8290ac19a401eb7793595d1975874a2eeffb05dd"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "start": 1794445200,
+        "end": 1794461400,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Taipei"
+    },
+    {
+      "symbol": "TWSE:3035",
+      "adjustedClose": [
+        "2026-11-11",
+        184.0
+      ],
+      "receipt": {
+        "ticker": "3035.TW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/3035.TW?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:18.063195+00:00",
+        "rawSha256": "e0f36ef4f3361f495ab5ba63d144e8c2815b1d0f49c2d4f35de8a7e102bc5033"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "start": 1794445200,
+        "end": 1794461400,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Taipei"
+    },
+    {
+      "symbol": "TSE:6526",
+      "adjustedClose": [
+        "2026-11-11",
+        1785.5
+      ],
+      "receipt": {
+        "ticker": "6526.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/6526.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:18.006621+00:00",
+        "rawSha256": "ac22885118e27213d0efcba2bdff897eaa276c80fcfc1547bc25e7bd9e685800"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "start": 1794441600,
+        "end": 1794465000,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "NASDAQ:ASML",
+      "adjustedClose": [
+        "2026-11-11",
+        1534.42004
+      ],
+      "receipt": {
+        "ticker": "ASML",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/ASML?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:18.060528+00:00",
+        "rawSha256": "eca870aad5116e64d845b76f11a8945f4a0833a6ea695236a6d18ebd409d1f17"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "TSE:7731",
+      "adjustedClose": [
+        "2026-11-11",
+        1648.0
+      ],
+      "receipt": {
+        "ticker": "7731.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/7731.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:18.110093+00:00",
+        "rawSha256": "5dbac87a35332d6351084744ec15d1c8e2828ba9e5f957db225713ac4ed82dfa"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "start": 1794441600,
+        "end": 1794465000,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "TSE:7751",
+      "adjustedClose": [
+        "2026-11-11",
+        4690.0
+      ],
+      "receipt": {
+        "ticker": "7751.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/7751.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:18.070068+00:00",
+        "rawSha256": "2238333bd6dc09b0fff23cd1f2b9d509334364dc079d5366016335fcd8e28fa2"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "start": 1794441600,
+        "end": 1794465000,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "NASDAQ:AMAT",
+      "adjustedClose": [
+        "2026-11-11",
+        395.07999
+      ],
+      "receipt": {
+        "ticker": "AMAT",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMAT?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:42:32.891216+00:00",
+        "sha256": "99829d9cd1b2d405fddf5f5464e3bc209efbe75734eff0cd46191861ef742168",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:39:06.965277+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "EURONEXT:ASM",
+      "adjustedClose": [
+        "2026-11-11",
+        727.59998
+      ],
+      "receipt": {
+        "ticker": "ASM.AS",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/ASM.AS?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:18.061419+00:00",
+        "rawSha256": "e49b528a65688db1c2a49c698b6fce5b5b9958687f832a4621afa36b2d24b1e4"
+      },
+      "regularSession": {
+        "timezone": "CET",
+        "end": 1794414600,
+        "start": 1794384000,
+        "gmtoffset": 3600
+      },
+      "timezone": "Europe/Amsterdam"
+    },
+    {
+      "symbol": "TSE:8035",
+      "adjustedClose": [
+        "2026-11-11",
+        9272.0
+      ],
+      "receipt": {
+        "ticker": "8035.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/8035.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:18.125162+00:00",
+        "rawSha256": "46ac18ba4c12dce37ce79be1e942fb23082d24f7c59db30d68650e375dbee67e"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "start": 1794441600,
+        "end": 1794465000,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "KRX:036930",
+      "adjustedClose": [
+        "2026-11-11",
+        178400.0
+      ],
+      "receipt": {
+        "reuseSource": "data/korea-completion-raw-20261111.tar.gz:data/korea-highs-raw-20261111/036930.KQ.json",
+        "rawSha256": "d1843154c79c5cfe3db95a667f085f3e07bc54e30bd9af29056e1afcec5e141f",
+        "sourceObservationTimeStatus": "Original collector evidence preserved in Korean archive; no invented retrieval timestamp",
+        "reusedAt": "2026-11-11T22:39:06.981743+00:00",
+        "ticker": "036930.KQ"
+      },
+      "regularSession": {
+        "timezone": "KST",
+        "end": 1794376800,
+        "start": 1794355200,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Seoul"
+    },
+    {
+      "symbol": "TSE:6525",
+      "adjustedClose": [
+        "2026-11-11",
+        6143.0
+      ],
+      "receipt": {
+        "ticker": "6525.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/6525.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:18.094995+00:00",
+        "rawSha256": "51e9dc5f2f084d64863835f7e5c3a1610b7b719badfa57c5636d36d9f9388e73"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "end": 1794465000,
+        "start": 1794441600,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "NASDAQ:LRCX",
+      "adjustedClose": [
+        "2026-11-11",
+        235.88
+      ],
+      "receipt": {
+        "ticker": "LRCX",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/LRCX?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:25.070948+00:00",
+        "sha256": "13f1f0351b4f983d5958d453eb81da3eb139d06a7a304382e6f009729220c53c",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:39:06.985726+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "SSE:688012",
+      "adjustedClose": [
+        "2026-11-11",
+        250.0
+      ],
+      "receipt": {
+        "ticker": "688012.SS",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/688012.SS?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:18.064848+00:00",
+        "rawSha256": "5c7c95ee6b1848274a90d63749fbe205c8e57a4b00bd700f0d63358ee3e4ed56"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "start": 1794447000,
+        "end": 1794466800,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Shanghai"
+    },
+    {
+      "symbol": "SZSE:002371",
+      "adjustedClose": [
+        "2026-11-11",
+        547.90997
+      ],
+      "receipt": {
+        "ticker": "002371.SZ",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/002371.SZ?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:21.628628+00:00",
+        "rawSha256": "959b10e053430c320625a9f4684dd17989cf6f31c916793ba9111e3594282156"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "start": 1794447000,
+        "end": 1794466800,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Shanghai"
+    },
+    {
+      "symbol": "TSE:7735",
+      "adjustedClose": [
+        "2026-11-11",
+        8777.0
+      ],
+      "receipt": {
+        "ticker": "7735.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/7735.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:21.655031+00:00",
+        "rawSha256": "649f9748a59688d72682ee4070e697330fa3bcad4a1198c9c2538385fddc1a46"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "start": 1794441600,
+        "end": 1794465000,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "NASDAQ:ACMR",
+      "adjustedClose": [
+        "2026-11-11",
+        52.43
+      ],
+      "receipt": {
+        "ticker": "ACMR",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/ACMR?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:21.600098+00:00",
+        "rawSha256": "f2a5661c6f6d6c9ef0bf6a2efce94455890084a8a64f945329110ab0db0e8993"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:KLAC",
+      "adjustedClose": [
+        "2026-11-11",
+        161.00999
+      ],
+      "receipt": {
+        "ticker": "KLAC",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/KLAC?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:25.095943+00:00",
+        "sha256": "28fa5a3b142eca65e5ba206e526d9e4fcfd5df7a78ede191d07e435022496f79",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:39:18.061508+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "TSE:6920",
+      "adjustedClose": [
+        "2026-11-11",
+        37200.0
+      ],
+      "receipt": {
+        "ticker": "6920.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/6920.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:21.661374+00:00",
+        "rawSha256": "1a3f3b28b3c35b95c595e8a676456dec40fa134e2baed0c00d52a65d02326d84"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "end": 1794465000,
+        "start": 1794441600,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "NYSE:ONTO",
+      "adjustedClose": [
+        "2026-11-11",
+        215.06
+      ],
+      "receipt": {
+        "ticker": "ONTO",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/ONTO?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:21.607892+00:00",
+        "rawSha256": "3716a2dc124d3ecfca5d2fdfc04596c2df56a169f6508a905a87c2c6a2b82e0e"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:NVMI",
+      "adjustedClose": [
+        "2026-11-11",
+        340.62
+      ],
+      "receipt": {
+        "ticker": "NVMI",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/NVMI?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:21.557345+00:00",
+        "rawSha256": "1e21c057b365b95c27030d38046a64538dba826ecb56a023dbc895212fbb224a"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:ACLS",
+      "adjustedClose": [
+        "2026-11-11",
+        111.17
+      ],
+      "receipt": {
+        "ticker": "ACLS",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/ACLS?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:21.601147+00:00",
+        "rawSha256": "818f0163797016bdef27323d96ab077e25ea9267988aebec904615308798d043"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "KRX:042700",
+      "adjustedClose": [
+        "2026-11-11",
+        184000.0
+      ],
+      "receipt": {
+        "reuseSource": "data/korea-completion-raw-20261111.tar.gz:data/korea-highs-raw-20261111/042700.KS.json",
+        "rawSha256": "5a4e4465c9bfd2ba4b3913a7a97df5ee25e1e2374909810800e0c4f64fd08891",
+        "sourceObservationTimeStatus": "Original collector evidence preserved in Korean archive; no invented retrieval timestamp",
+        "reusedAt": "2026-11-11T22:39:18.082215+00:00",
+        "ticker": "042700.KS"
+      },
+      "regularSession": {
+        "timezone": "KST",
+        "start": 1794355200,
+        "end": 1794376800,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Seoul"
+    },
+    {
+      "symbol": "EURONEXT:BESI",
+      "adjustedClose": [
+        "2026-11-11",
+        159.75
+      ],
+      "receipt": {
+        "ticker": "BESI.AS",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/BESI.AS?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:21.674088+00:00",
+        "rawSha256": "5eb5e2e0d1e088a258fb2930d97ba5cc67973db5ff41aa50de5cd1d80fd2deb4"
+      },
+      "regularSession": {
+        "timezone": "CET",
+        "start": 1794384000,
+        "end": 1794414600,
+        "gmtoffset": 3600
+      },
+      "timezone": "Europe/Amsterdam"
+    },
+    {
+      "symbol": "HKEX:522",
+      "adjustedClose": [
+        "2026-11-11",
+        101.9
+      ],
+      "receipt": {
+        "ticker": "0522.HK",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/0522.HK?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:21.629236+00:00",
+        "rawSha256": "5f6e0ce7d05e3aa243ddc4e60cfd86a74846bac9a29d66e511a97039efc31f7c"
+      },
+      "regularSession": {
+        "timezone": "HKT",
+        "end": 1794471000,
+        "start": 1794447000,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Hong_Kong"
+    },
+    {
+      "symbol": "TSE:6146",
+      "adjustedClose": [
+        "2026-11-11",
+        47580.0
+      ],
+      "receipt": {
+        "ticker": "6146.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/6146.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:21.671644+00:00",
+        "rawSha256": "9f54b1cb1b17c4ce5462e06a73b55cc9e12b089d331afc92db52f90ba31e2eeb"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "end": 1794465000,
+        "start": 1794441600,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "TSE:7729",
+      "adjustedClose": [
+        "2026-11-11",
+        13495.0
+      ],
+      "receipt": {
+        "ticker": "7729.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/7729.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:21.619752+00:00",
+        "rawSha256": "d0d1782a2ed4069894f10d27dc142100390a37ccc3c259bcf12e89364ca6e371"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "end": 1794465000,
+        "start": 1794441600,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "TSE:6857",
+      "adjustedClose": [
+        "2026-11-11",
+        31440.0
+      ],
+      "receipt": {
+        "ticker": "6857.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/6857.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:21.654438+00:00",
+        "rawSha256": "bdc75e1cf87e02c7a2826c7f5a2e74b7e4adced334137c716cfcfc6a7ddaa2e7"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "end": 1794465000,
+        "start": 1794441600,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "NASDAQ:TER",
+      "adjustedClose": [
+        "2026-11-11",
+        265.78
+      ],
+      "receipt": {
+        "ticker": "TER",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TER?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:53.673261+00:00",
+        "sha256": "12619384f210124ed0351bb5ad6ffc0bc843b56c9ac7d5298ed0ba76eef7541d",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:39:21.557652+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:COHU",
+      "adjustedClose": [
+        "2026-11-11",
+        45.975
+      ],
+      "receipt": {
+        "ticker": "COHU",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/COHU?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:42.966159+00:00",
+        "rawSha256": "f5b23d08bc84ab4f238afbc7b4c993f919059a229a43128e54de2850b195b3bd"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "TWSE:2360",
+      "adjustedClose": [
+        "2026-11-11",
+        1370.0
+      ],
+      "receipt": {
+        "ticker": "2360.TW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/2360.TW?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:43.013471+00:00",
+        "rawSha256": "c6f4deff97745fb5aa6d3271d5a768d6886d34d928f866b9a51051a6ba36fdb5"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "start": 1794445200,
+        "end": 1794461400,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Taipei"
+    },
+    {
+      "symbol": "KRX:089030",
+      "adjustedClose": [
+        "2026-11-11",
+        38800.0
+      ],
+      "receipt": {
+        "reuseSource": "data/korea-completion-raw-20261111.tar.gz:data/korea-highs-raw-20261111/089030.KQ.json",
+        "rawSha256": "ec354bf71362f6d6d3cb018cc92a6f3d9a4ce0b56b554ec116a3699c26f1f292",
+        "sourceObservationTimeStatus": "Original collector evidence preserved in Korean archive; no invented retrieval timestamp",
+        "reusedAt": "2026-11-11T22:39:21.601177+00:00",
+        "ticker": "089030.KQ"
+      },
+      "regularSession": {
+        "timezone": "KST",
+        "end": 1794376800,
+        "start": 1794355200,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Seoul"
+    },
+    {
+      "symbol": "NASDAQ:AEHR",
+      "adjustedClose": [
+        "2026-11-11",
+        65.78
+      ],
+      "receipt": {
+        "ticker": "AEHR",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/AEHR?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:42.937050+00:00",
+        "rawSha256": "0238cde6ff555d337785578501e0cc7012aa7722f4c3af2006dde80c983bdf3a"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:MKSI",
+      "adjustedClose": [
+        "2026-11-11",
+        226.0
+      ],
+      "receipt": {
+        "ticker": "MKSI",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/MKSI?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:43.021370+00:00",
+        "rawSha256": "aacca352fc277502990fa5b07159fc272e19a5c596e9a360d39afd527a1386e0"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "SZSE:301200",
+      "adjustedClose": [
+        "2026-11-11",
+        150.0
+      ],
+      "receipt": {
+        "ticker": "301200.SZ",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/301200.SZ?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:42.924407+00:00",
+        "rawSha256": "94f29f95aafc28d2a9f73402ef1284602974f993aec22cd6bc35e60555860cc9"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "start": 1794447000,
+        "end": 1794466800,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Shanghai"
+    },
+    {
+      "symbol": "TWSE:3037",
+      "adjustedClose": [
+        "2026-11-11",
+        864.0
+      ],
+      "receipt": {
+        "ticker": "3037.TW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/3037.TW?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:43.013748+00:00",
+        "rawSha256": "49e00ffd3507fd44dce77755a70a9ff6c8764ddbd9d69c71f5c59414dbafb41a"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "start": 1794445200,
+        "end": 1794461400,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Taipei"
+    },
+    {
+      "symbol": "TSE:4062",
+      "adjustedClose": [
+        "2026-11-11",
+        6920.0
+      ],
+      "receipt": {
+        "ticker": "4062.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/4062.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:42.928013+00:00",
+        "rawSha256": "4461d9ff123dc2f8e5285753f896f6f37c0bb7e9e51b56e0877e0ac4886c9ce2"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "end": 1794465000,
+        "start": 1794441600,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "KRX:009150",
+      "adjustedClose": [
+        "2026-11-11",
+        923000.0
+      ],
+      "receipt": {
+        "reuseSource": "data/korea-completion-raw-20261111.tar.gz:data/korea-sector-source-20261111/009150.KS.json",
+        "rawSha256": "b994028ab7a0af046d491a602a5502926234b76d84d4b91dac742f65b43dfcd5",
+        "sourceObservationTimeStatus": "Original collector evidence preserved in Korean archive; no invented retrieval timestamp",
+        "reusedAt": "2026-11-11T22:39:21.654510+00:00",
+        "ticker": "009150.KS"
+      },
+      "regularSession": {
+        "timezone": "KST",
+        "start": 1794355200,
+        "end": 1794376800,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Seoul"
+    },
+    {
+      "symbol": "TWSE:8046",
+      "adjustedClose": [
+        "2026-11-11",
+        1080.0
+      ],
+      "receipt": {
+        "ticker": "8046.TW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/8046.TW?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:42.965344+00:00",
+        "rawSha256": "e618c3c417b209f8b2cca8fa25e1030a873ce2f049b63778441cce77beb68f23"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "start": 1794445200,
+        "end": 1794461400,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Taipei"
+    },
+    {
+      "symbol": "TWSE:3189",
+      "adjustedClose": [
+        "2026-11-11",
+        741.0
+      ],
+      "receipt": {
+        "ticker": "3189.TW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/3189.TW?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:42.927633+00:00",
+        "rawSha256": "9935676c0a08fe78e7e23a815a384794af48f91c093d7af459f9ee046454046d"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "start": 1794445200,
+        "end": 1794461400,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Taipei"
+    },
+    {
+      "symbol": "VIE:ATS",
+      "adjustedClose": [
+        "2026-11-11",
+        126.2
+      ],
+      "receipt": {
+        "ticker": "ATS.VI",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/ATS.VI?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:43.009303+00:00",
+        "rawSha256": "8f5f3a956956924e5025a5801b4c4a18dd909d096f155cbc4e49155117e5f439"
+      },
+      "regularSession": {
+        "timezone": "CET",
+        "start": 1794383700,
+        "end": 1794414900,
+        "gmtoffset": 3600
+      },
+      "timezone": "Europe/Amsterdam"
+    },
+    {
+      "symbol": "KRX:353200",
+      "adjustedClose": [
+        "2026-11-11",
+        91100.0
+      ],
+      "receipt": {
+        "reuseSource": "data/korea-completion-raw-20261111.tar.gz:data/korea-sector-source-20261111/353200.KS.json",
+        "rawSha256": "b2bb2a0b96938b0b8c52dda729c9d37595ad03839860de84bd79665a0c417f1b",
+        "sourceObservationTimeStatus": "Original collector evidence preserved in Korean archive; no invented retrieval timestamp",
+        "reusedAt": "2026-11-11T22:39:21.671671+00:00",
+        "ticker": "353200.KS"
+      },
+      "regularSession": {
+        "timezone": "KST",
+        "start": 1794355200,
+        "end": 1794376800,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Seoul"
+    },
+    {
+      "symbol": "KRX:222800",
+      "adjustedClose": [
+        "2026-11-11",
+        121600.0
+      ],
+      "receipt": {
+        "reuseSource": "data/korea-completion-raw-20261111.tar.gz:data/korea-highs-raw-20261111/222800.KQ.json",
+        "rawSha256": "b4894175218c51bd38e93603190e25b48ff5f2cb27cfa3edf26c1f49acb6acbb",
+        "sourceObservationTimeStatus": "Original collector evidence preserved in Korean archive; no invented retrieval timestamp",
+        "reusedAt": "2026-11-11T22:39:21.671682+00:00",
+        "ticker": "222800.KQ"
+      },
+      "regularSession": {
+        "timezone": "KST",
+        "end": 1794376800,
+        "start": 1794355200,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Seoul"
+    },
+    {
+      "symbol": "KRX:007810",
+      "adjustedClose": [
+        "2026-11-11",
+        86400.0
+      ],
+      "receipt": {
+        "reuseSource": "data/korea-completion-raw-20261111.tar.gz:data/korea-highs-raw-20261111/007810.KS.json",
+        "rawSha256": "a76fadce1f4fa7ef02bbc57185afaecebc2f4da7ff265301d04732333180a2cb",
+        "sourceObservationTimeStatus": "Original collector evidence preserved in Korean archive; no invented retrieval timestamp",
+        "reusedAt": "2026-11-11T22:39:21.671688+00:00",
+        "ticker": "007810.KS"
+      },
+      "regularSession": {
+        "timezone": "KST",
+        "start": 1794355200,
+        "end": 1794376800,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Seoul"
+    },
+    {
+      "symbol": "KRX:356860",
+      "adjustedClose": [
+        "2026-11-11",
+        38250.0
+      ],
+      "receipt": {
+        "ticker": "356860.KQ",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/356860.KQ?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:42.926020+00:00",
+        "rawSha256": "cebb6b6730571201e5f67b16aba24748b3f77133f6d18b13ad532bb4c73bc240"
+      },
+      "regularSession": {
+        "timezone": "KST",
+        "start": 1794441600,
+        "end": 1794463200,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Seoul"
+    },
+    {
+      "symbol": "SZSE:002463",
+      "adjustedClose": [
+        "2026-11-11",
+        89.43
+      ],
+      "receipt": {
+        "ticker": "002463.SZ",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/002463.SZ?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:42.961533+00:00",
+        "rawSha256": "8f79ba2059f7674e777f1ad306095b33b9c14642859fa88aa4d6601d5b44dc25"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "end": 1794466800,
+        "start": 1794447000,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Shanghai"
+    },
+    {
+      "symbol": "TWSE:2368",
+      "adjustedClose": [
+        "2026-11-11",
+        1050.0
+      ],
+      "receipt": {
+        "ticker": "2368.TW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/2368.TW?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:46.893830+00:00",
+        "rawSha256": "d410b950575f5e13812a6f19d9c3f8f15ba2be9466b02db97861fba18d56dba0"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "start": 1794445200,
+        "end": 1794461400,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Taipei"
+    },
+    {
+      "symbol": "TWSE:3044",
+      "adjustedClose": [
+        "2026-11-11",
+        520.0
+      ],
+      "receipt": {
+        "ticker": "3044.TW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/3044.TW?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:46.945751+00:00",
+        "rawSha256": "fbb6d0d817fc4274d8b351b89be59921c3769b3e6825f346e971feafb1e48010"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "start": 1794445200,
+        "end": 1794461400,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Taipei"
+    },
+    {
+      "symbol": "KRX:007660",
+      "adjustedClose": [
+        "2026-11-11",
+        82000.0
+      ],
+      "receipt": {
+        "reuseSource": "data/korea-completion-raw-20261111.tar.gz:data/korea-highs-raw-20261111/007660.KS.json",
+        "rawSha256": "99dad0aec831c2cecdf3ee07d469f94fd045a2de42cfb494ec471ece16390e7c",
+        "sourceObservationTimeStatus": "Original collector evidence preserved in Korean archive; no invented retrieval timestamp",
+        "reusedAt": "2026-11-11T22:39:42.927665+00:00",
+        "ticker": "007660.KS"
+      },
+      "regularSession": {
+        "timezone": "KST",
+        "end": 1794376800,
+        "start": 1794355200,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Seoul"
+    },
+    {
+      "symbol": "NASDAQ:TTMI",
+      "adjustedClose": [
+        "2026-11-11",
+        78.7
+      ],
+      "receipt": {
+        "ticker": "TTMI",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TTMI?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:46.882597+00:00",
+        "rawSha256": "d51302747cc266d04d0f3a31cd03252ebed118caf98e322d30e70102e8f1500c"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "SZSE:002916",
+      "adjustedClose": [
+        "2026-11-11",
+        229.02
+      ],
+      "receipt": {
+        "ticker": "002916.SZ",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/002916.SZ?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:46.933069+00:00",
+        "rawSha256": "e98fc47d790a3fbea0dd4168482074a3990dc3de3caed2e37e7f2095a4884611"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "end": 1794466800,
+        "start": 1794447000,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Shanghai"
+    },
+    {
+      "symbol": "TWSE:2313",
+      "adjustedClose": [
+        "2026-11-11",
+        192.5
+      ],
+      "receipt": {
+        "ticker": "2313.TW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/2313.TW?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:46.855003+00:00",
+        "rawSha256": "e66256d063ba1dcfb64b479acd8cd88443306960875f5782dc288770b99bf326"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "end": 1794461400,
+        "start": 1794445200,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Taipei"
+    },
+    {
+      "symbol": "TWSE:4958",
+      "adjustedClose": [
+        "2026-11-11",
+        461.0
+      ],
+      "receipt": {
+        "ticker": "4958.TW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/4958.TW?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:46.901558+00:00",
+        "rawSha256": "2635eba943966de1ad5280de51dbf031f9ceb132def80097092ada50b6571810"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "end": 1794461400,
+        "start": 1794445200,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Taipei"
+    },
+    {
+      "symbol": "TWSE:6269",
+      "adjustedClose": [
+        "2026-11-11",
+        79.5
+      ],
+      "receipt": {
+        "ticker": "6269.TW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/6269.TW?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:46.905420+00:00",
+        "rawSha256": "a97990d341b58cacec84928f402c0ee5df2f9499c1bde623ecbf7e1f67895351"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "start": 1794445200,
+        "end": 1794461400,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Taipei"
+    },
+    {
+      "symbol": "KRX:090460",
+      "adjustedClose": [
+        "2026-11-11",
+        16720.0
+      ],
+      "receipt": {
+        "ticker": "090460.KS",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/090460.KS?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:46.902463+00:00",
+        "rawSha256": "dda9c4cc1df529f66fe9a7f030a59d9652dc5a1023e7602a535d78be8c2c3756"
+      },
+      "regularSession": {
+        "timezone": "KST",
+        "start": 1794441600,
+        "end": 1794463200,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Seoul"
+    },
+    {
+      "symbol": "TWSE:2383",
+      "adjustedClose": [
+        "2026-11-11",
+        4500.0
+      ],
+      "receipt": {
+        "ticker": "2383.TW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/2383.TW?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:46.891974+00:00",
+        "rawSha256": "2b320f8372038693807e0f650d0727643b73bff73fdc124013fc2cd65020cd3a"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "end": 1794461400,
+        "start": 1794445200,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Taipei"
+    },
+    {
+      "symbol": "SSE:600183",
+      "adjustedClose": [
+        "2026-11-11",
+        76.88
+      ],
+      "receipt": {
+        "ticker": "600183.SS",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/600183.SS?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:46.926581+00:00",
+        "rawSha256": "a59e327ac5fe36052c6cbff5d6929e7f0d4d6183d731bcc227462c2bcc084e9f"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "start": 1794447000,
+        "end": 1794466800,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Shanghai"
+    },
+    {
+      "symbol": "HKEX:1888",
+      "adjustedClose": [
+        "2026-11-11",
+        30.56
+      ],
+      "receipt": {
+        "ticker": "1888.HK",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/1888.HK?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:46.925685+00:00",
+        "rawSha256": "61788aef4528d1563361d30f211dbbb28f53d68171f78f79365a499f4328c477"
+      },
+      "regularSession": {
+        "timezone": "HKT",
+        "start": 1794447000,
+        "end": 1794471000,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Hong_Kong"
+    },
+    {
+      "symbol": "TWSE:6213",
+      "adjustedClose": [
+        "2026-11-11",
+        580.0
+      ],
+      "receipt": {
+        "ticker": "6213.TW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/6213.TW?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:46.926274+00:00",
+        "rawSha256": "2815c164227e73b788ccd06105ae4ed6308e247f2799cb98c3b41af7c5a77c8f"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "start": 1794445200,
+        "end": 1794461400,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Taipei"
+    },
+    {
+      "symbol": "KRX:000150",
+      "adjustedClose": [
+        "2026-11-11",
+        688000.0
+      ],
+      "receipt": {
+        "reuseSource": "data/korea-completion-raw-20261111.tar.gz:data/korea-highs-raw-20261111/000150.KS.json",
+        "rawSha256": "435a01e0713e45d139abbe37366ec2f4b6cebe5b2edd1faa3c68f17263194692",
+        "sourceObservationTimeStatus": "Original collector evidence preserved in Korean archive; no invented retrieval timestamp",
+        "reusedAt": "2026-11-11T22:39:46.855513+00:00",
+        "ticker": "000150.KS"
+      },
+      "regularSession": {
+        "timezone": "KST",
+        "start": 1794355200,
+        "end": 1794376800,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Seoul"
+    },
+    {
+      "symbol": "TWSE:8039",
+      "adjustedClose": [
+        "2026-11-11",
+        227.0
+      ],
+      "receipt": {
+        "ticker": "8039.TW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/8039.TW?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:49.762223+00:00",
+        "rawSha256": "9f80828fce41cf0503ae71ea3f2ee2d6f0c91453a551c60c8307e47f5581bba4"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "end": 1794461400,
+        "start": 1794445200,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Taipei"
+    },
+    {
+      "symbol": "NYSE:DD",
+      "adjustedClose": [
+        "2026-11-11",
+        155.61
+      ],
+      "receipt": {
+        "ticker": "DD",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/DD?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:42:56.202121+00:00",
+        "sha256": "5fbd9ab635500ef4fa3d5339159c796548bcc4f87f6b5c8256226fd9d67c90b0",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:39:46.882667+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "TSE:4063",
+      "adjustedClose": [
+        "2026-11-11",
+        5709.0
+      ],
+      "receipt": {
+        "ticker": "4063.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/4063.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:49.809117+00:00",
+        "rawSha256": "fe1871c239e7dbe05f564741dabcac228d7cdcb217dbd72ca782f67e75db9e18"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "end": 1794465000,
+        "start": 1794441600,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "TSE:3436",
+      "adjustedClose": [
+        "2026-11-11",
+        2089.0
+      ],
+      "receipt": {
+        "ticker": "3436.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/3436.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:49.793881+00:00",
+        "rawSha256": "cb1a664b7e511754d9f76ec06b4ebe42dab6e8b07e3866b70842249ae388a043"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "start": 1794441600,
+        "end": 1794465000,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "TPEX:6488",
+      "adjustedClose": [
+        "2026-11-11",
+        635.0
+      ],
+      "receipt": {
+        "ticker": "6488.TWO",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/6488.TWO?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:49.747493+00:00",
+        "rawSha256": "46620fdb52c7ed3dbe68d37ea0b55a58bdab326aa44607a7265e2d1451494d85"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "start": 1794445200,
+        "end": 1794461400,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Taipei"
+    },
+    {
+      "symbol": "XETR:WAF",
+      "adjustedClose": [
+        "2026-11-11",
+        57.65
+      ],
+      "receipt": {
+        "ticker": "WAF.DE",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/WAF.DE?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:49.793487+00:00",
+        "rawSha256": "ffeb952e0656867070e52e85a52096945e6b16ba8838fd2028d32e7c55521e46"
+      },
+      "regularSession": {
+        "timezone": "CET",
+        "start": 1794384000,
+        "end": 1794414600,
+        "gmtoffset": 3600
+      },
+      "timezone": "Europe/Berlin"
+    },
+    {
+      "symbol": "TSE:4186",
+      "adjustedClose": [
+        "2026-11-11",
+        7869.0
+      ],
+      "receipt": {
+        "ticker": "4186.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/4186.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:49.704826+00:00",
+        "rawSha256": "94463c3b6b057fa75d8de456beca4057a6a8e9438f4eb85ff7b785627a2e75b3"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "start": 1794441600,
+        "end": 1794465000,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "TSE:4901",
+      "adjustedClose": [
+        "2026-11-11",
+        3524.0
+      ],
+      "receipt": {
+        "ticker": "4901.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/4901.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:49.757491+00:00",
+        "rawSha256": "d74697050b1d8091e239501922275f1d1e8031325f23da76e6a9948f57d6ae76"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "start": 1794441600,
+        "end": 1794465000,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "KRX:005290",
+      "adjustedClose": [
+        "2026-11-11",
+        37100.0
+      ],
+      "receipt": {
+        "reuseSource": "data/korea-completion-raw-20261111.tar.gz:data/korea-highs-raw-20261111/005290.KQ.json",
+        "rawSha256": "de5cbfe0c37a316fa7ae0cf4fefdd30aeb4c2a4b4db5e801a15196d11e72ce83",
+        "sourceObservationTimeStatus": "Original collector evidence preserved in Korean archive; no invented retrieval timestamp",
+        "reusedAt": "2026-11-11T22:39:46.925718+00:00",
+        "ticker": "005290.KQ"
+      },
+      "regularSession": {
+        "timezone": "KST",
+        "end": 1794376800,
+        "start": 1794355200,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Seoul"
+    },
+    {
+      "symbol": "XETR:MRK",
+      "adjustedClose": [
+        "2026-11-11",
+        151.60001
+      ],
+      "receipt": {
+        "ticker": "MRK.DE",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/MRK.DE?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:49.767400+00:00",
+        "rawSha256": "d41748484b57bba2a40d962fb99e93e41d5a75cc2f7112569087c62c1924d086"
+      },
+      "regularSession": {
+        "timezone": "CET",
+        "end": 1794414600,
+        "start": 1794384000,
+        "gmtoffset": 3600
+      },
+      "timezone": "Europe/Berlin"
+    },
+    {
+      "symbol": "NASDAQ:ENTG",
+      "adjustedClose": [
+        "2026-11-11",
+        154.22
+      ],
+      "receipt": {
+        "ticker": "ENTG",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/ENTG?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:49.741331+00:00",
+        "rawSha256": "a54477829e04e5efc49976793a57f1d586ca675cba051f9c3dc4455bff2db976"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "KRX:357780",
+      "adjustedClose": [
+        "2026-11-11",
+        287000.0
+      ],
+      "receipt": {
+        "reuseSource": "data/korea-completion-raw-20261111.tar.gz:data/korea-highs-raw-20261111/357780.KQ.json",
+        "rawSha256": "78d08f783503147d9ce37eca9bad37aa2c5f970542e8b66c9381da69a839ca8a",
+        "sourceObservationTimeStatus": "Original collector evidence preserved in Korean archive; no invented retrieval timestamp",
+        "reusedAt": "2026-11-11T22:39:46.926636+00:00",
+        "ticker": "357780.KQ"
+      },
+      "regularSession": {
+        "timezone": "KST",
+        "start": 1794355200,
+        "end": 1794376800,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Seoul"
+    },
+    {
+      "symbol": "KRX:092070",
+      "adjustedClose": [
+        "2026-11-11",
+        11490.0
+      ],
+      "receipt": {
+        "ticker": "092070.KQ",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/092070.KQ?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:49.817183+00:00",
+        "rawSha256": "1898a3d03510743586a704bf1f29010e793452cb93d2d444d0074db37ead411a"
+      },
+      "regularSession": {
+        "timezone": "KST",
+        "start": 1794441600,
+        "end": 1794463200,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Seoul"
+    },
+    {
+      "symbol": "NASDAQ:LIN",
+      "adjustedClose": [
+        "2026-11-11",
+        526.54999
+      ],
+      "receipt": {
+        "ticker": "LIN",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/LIN?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:25.162026+00:00",
+        "sha256": "49db0fa11ff433fbb31bcbc54d90f0f2202b7f314b772f16fb942ec84f274069",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:39:46.933095+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "EURONEXT:AI",
+      "adjustedClose": [
+        "2026-11-11",
+        192.16
+      ],
+      "receipt": {
+        "ticker": "AI.PA",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/AI.PA?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:49.777587+00:00",
+        "rawSha256": "6f609ccb16dd16f722c01260fdfcc670dbef50f949175412720dab2875542d08"
+      },
+      "regularSession": {
+        "timezone": "CET",
+        "end": 1794414600,
+        "start": 1794384000,
+        "gmtoffset": 3600
+      },
+      "timezone": "Europe/Paris"
+    },
+    {
+      "symbol": "NYSE:APD",
+      "adjustedClose": [
+        "2026-11-11",
+        315.17999
+      ],
+      "receipt": {
+        "ticker": "APD",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/APD?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:42:26.934983+00:00",
+        "sha256": "ee980d158f58652469d05149d54b8aaa76dd57fe1c7d2b1b2dc3d1aa93ceb34e",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:39:46.945791+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "KRX:104830",
+      "adjustedClose": [
+        "2026-11-11",
+        34550.0
+      ],
+      "receipt": {
+        "ticker": "104830.KQ",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/104830.KQ?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:49.703366+00:00",
+        "rawSha256": "bb5b2e90cb4f592a167b7ea0b655870de2391ac8402520457849c217adc6245b"
+      },
+      "regularSession": {
+        "timezone": "KST",
+        "end": 1794463200,
+        "start": 1794441600,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Seoul"
+    },
+    {
+      "symbol": "KRX:102710",
+      "adjustedClose": [
+        "2026-11-11",
+        42100.0
+      ],
+      "receipt": {
+        "ticker": "102710.KQ",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/102710.KQ?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:52.694102+00:00",
+        "rawSha256": "d96eb97c0d5dd6003301b121ebe9fd996547e2183d5c768f6feefa7a9ab5b0e5"
+      },
+      "regularSession": {
+        "timezone": "KST",
+        "end": 1794463200,
+        "start": 1794441600,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Seoul"
+    },
+    {
+      "symbol": "TSE:5384",
+      "adjustedClose": [
+        "2026-11-11",
+        3010.0
+      ],
+      "receipt": {
+        "ticker": "5384.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/5384.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:52.694435+00:00",
+        "rawSha256": "51c717386441bdd77f94528961ef8860d980bc13fa629f69f95ac5dada347cfe"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "start": 1794441600,
+        "end": 1794465000,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "KRX:077360",
+      "adjustedClose": [
+        "2026-11-11",
+        7910.0
+      ],
+      "receipt": {
+        "ticker": "077360.KQ",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/077360.KQ?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:52.684561+00:00",
+        "rawSha256": "a5233e8f7626913e32fe833b8eb0c1134cb620b050cba63d0fd98af11932eae0"
+      },
+      "regularSession": {
+        "timezone": "KST",
+        "start": 1794441600,
+        "end": 1794463200,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Seoul"
+    },
+    {
+      "symbol": "KRX:033160",
+      "adjustedClose": [
+        "2026-11-11",
+        11960.0
+      ],
+      "receipt": {
+        "ticker": "033160.KQ",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/033160.KQ?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:52.737977+00:00",
+        "rawSha256": "229f03bf9b11a53911a275c5dc360d373fb9a3d872b3b7a927d019ff27494551"
+      },
+      "regularSession": {
+        "timezone": "KST",
+        "start": 1794441600,
+        "end": 1794463200,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Seoul"
+    },
+    {
+      "symbol": "TSE:4203",
+      "adjustedClose": [
+        "2026-11-11",
+        7574.0
+      ],
+      "receipt": {
+        "ticker": "4203.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/4203.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:52.700415+00:00",
+        "rawSha256": "1151ed2230eec660c85e26871db5dbac2509db7f76fd4891b62955f15a0b0f3e"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "start": 1794441600,
+        "end": 1794465000,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "TSE:4004",
+      "adjustedClose": [
+        "2026-11-11",
+        12580.0
+      ],
+      "receipt": {
+        "ticker": "4004.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/4004.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:52.591806+00:00",
+        "rawSha256": "1a2016040860b568abba15b24f7e13f6a9ffc211c073f857bf3ff9e31b592891"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "end": 1794465000,
+        "start": 1794441600,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "XETR:HEN3",
+      "adjustedClose": [
+        "2026-11-11",
+        87.6
+      ],
+      "receipt": {
+        "ticker": "HEN3.DE",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/HEN3.DE?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:52.657600+00:00",
+        "rawSha256": "78e4ed1f0d79ca6b4f57a9c6d36792c0d0ef7bada8ab4a6d6bbb29f484bfc988"
+      },
+      "regularSession": {
+        "timezone": "CET",
+        "end": 1794414600,
+        "start": 1794384000,
+        "gmtoffset": 3600
+      },
+      "timezone": "Europe/Berlin"
+    },
+    {
+      "symbol": "TSE:6890",
+      "adjustedClose": [
+        "2026-11-11",
+        7617.0
+      ],
+      "receipt": {
+        "ticker": "6890.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/6890.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:52.605506+00:00",
+        "rawSha256": "629fe16cde30b1bb4e464df3961fd893b8cdc261f33c6f81fd0aad8e63db5335"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "start": 1794441600,
+        "end": 1794465000,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "KRX:074600",
+      "adjustedClose": [
+        "2026-11-11",
+        24850.0
+      ],
+      "receipt": {
+        "ticker": "074600.KQ",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/074600.KQ?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:52.605108+00:00",
+        "rawSha256": "8db782b5d5085637fd33e16810f7cd535c07255969a573da153642ec617f4cf7"
+      },
+      "regularSession": {
+        "timezone": "KST",
+        "start": 1794441600,
+        "end": 1794463200,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Seoul"
+    },
+    {
+      "symbol": "TSE:6971",
+      "adjustedClose": [
+        "2026-11-11",
+        3015.0
+      ],
+      "receipt": {
+        "ticker": "6971.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/6971.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:52.611826+00:00",
+        "rawSha256": "621f99b45137b8318f174c7d6fab9cb85a483ee7a24d61734cd4dc679cf826b4"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "start": 1794441600,
+        "end": 1794465000,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "KRX:166090",
+      "adjustedClose": [
+        "2026-11-11",
+        43750.0
+      ],
+      "receipt": {
+        "ticker": "166090.KQ",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/166090.KQ?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:52.592339+00:00",
+        "rawSha256": "46aa8dd0baf17f043cba3262c728add46a5886596433a5155a55221af96b82d0"
+      },
+      "regularSession": {
+        "timezone": "KST",
+        "start": 1794441600,
+        "end": 1794463200,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Seoul"
+    },
+    {
+      "symbol": "KRX:101160",
+      "adjustedClose": [
+        "2026-11-11",
+        26950.0
+      ],
+      "receipt": {
+        "ticker": "101160.KQ",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/101160.KQ?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:52.687659+00:00",
+        "rawSha256": "03398de38d9d9cdab7f8ae5a6a430fb1909f302581ec90e9e97aec932828036f"
+      },
+      "regularSession": {
+        "timezone": "KST",
+        "end": 1794463200,
+        "start": 1794441600,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Seoul"
+    },
+    {
+      "symbol": "TSE:3433",
+      "adjustedClose": [
+        "2026-11-11",
+        2601.0
+      ],
+      "receipt": {
+        "ticker": "3433.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/3433.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:55.220432+00:00",
+        "rawSha256": "207b20262be517356fa08df6f8629f7afab8f3c1da8065e2577387929a44953c"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "end": 1794465000,
+        "start": 1794441600,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "KRX:183300",
+      "adjustedClose": [
+        "2026-11-11",
+        20800.0
+      ],
+      "receipt": {
+        "ticker": "183300.KQ",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/183300.KQ?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:55.191610+00:00",
+        "rawSha256": "ad3a18738aab963cd1b8392759e47f602bea0cfaa9ce438478a0335784023d8e"
+      },
+      "regularSession": {
+        "timezone": "KST",
+        "end": 1794463200,
+        "start": 1794441600,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Seoul"
+    },
+    {
+      "symbol": "SIX:VACN",
+      "adjustedClose": [
+        "2026-11-11",
+        556.59998
+      ],
+      "receipt": {
+        "ticker": "VACN.SW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/VACN.SW?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:55.207664+00:00",
+        "rawSha256": "98a035be8e4d49defc94629506ef4a4fc5045dd3ea7e91bdcfc970bc0685f6ed"
+      },
+      "regularSession": {
+        "timezone": "CET",
+        "end": 1794414600,
+        "start": 1794384000,
+        "gmtoffset": 3600
+      },
+      "timezone": "Europe/Zurich"
+    },
+    {
+      "symbol": "NASDAQ:AEIS",
+      "adjustedClose": [
+        "2026-11-11",
+        231.60001
+      ],
+      "receipt": {
+        "ticker": "AEIS",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/AEIS?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:55.185033+00:00",
+        "rawSha256": "517b89c113ebe35043ccd3c1c15a45ce6a39ef7786ff7ae87af0b865cc822723"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:ICHR",
+      "adjustedClose": [
+        "2026-11-11",
+        37.45
+      ],
+      "receipt": {
+        "ticker": "ICHR",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/ICHR?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:55.201698+00:00",
+        "rawSha256": "cc4c426083d28bb04694c6b6dc8fa3f0305592501dd2e14e6956d0204db5f82b"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:UCTT",
+      "adjustedClose": [
+        "2026-11-11",
+        49.63
+      ],
+      "receipt": {
+        "ticker": "UCTT",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/UCTT?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:55.225103+00:00",
+        "rawSha256": "1df7be415c0ab3b0e5f9548480a767bf2d3d8119ee06b2c072232e79e373d55f"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NYSE:ASX",
+      "adjustedClose": [
+        "2026-11-11",
+        37.82
+      ],
+      "receipt": {
+        "ticker": "ASX",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/ASX?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:55.189901+00:00",
+        "rawSha256": "e703e42d26425b0188ac23c7d928af471ace4eec6bd0e8e80d58c7706f9baad0"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:AMKR",
+      "adjustedClose": [
+        "2026-11-11",
+        38.1
+      ],
+      "receipt": {
+        "ticker": "AMKR",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMKR?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:55.177266+00:00",
+        "rawSha256": "802a0b06c45d2e61357e12526ad332610a2b1048e46ab374046e75eb846e5d7e"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "SSE:600584",
+      "adjustedClose": [
+        "2026-11-11",
+        54.4
+      ],
+      "receipt": {
+        "ticker": "600584.SS",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/600584.SS?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:55.205071+00:00",
+        "rawSha256": "010cd00301cd24a78c3200e572555915e559394fc65f8d6563f3d41e7a285232"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "start": 1794447000,
+        "end": 1794466800,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Shanghai"
+    },
+    {
+      "symbol": "TWSE:6239",
+      "adjustedClose": [
+        "2026-11-11",
+        242.0
+      ],
+      "receipt": {
+        "ticker": "6239.TW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/6239.TW?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:55.249948+00:00",
+        "rawSha256": "8f303fa7b2e20426d19c4ba8579844d264a3ca892cd820c3a1404e15660b1353"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "start": 1794445200,
+        "end": 1794461400,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Taipei"
+    },
+    {
+      "symbol": "NASDAQ:FORM",
+      "adjustedClose": [
+        "2026-11-11",
+        95.78
+      ],
+      "receipt": {
+        "ticker": "FORM",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/FORM?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:55.180331+00:00",
+        "rawSha256": "4729df464d2d816c778fd65492dc305847d43df7af90e6eab5aa2f1e16558a97"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "MIL:TPRO",
+      "adjustedClose": [
+        "2026-11-11",
+        23.7
+      ],
+      "receipt": {
+        "ticker": "TPRO.MI",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TPRO.MI?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:55.203012+00:00",
+        "rawSha256": "d613c61bdd2adb772d4b754f6da343a8867e45e1e536aa2b08a98dc83eb5d537"
+      },
+      "regularSession": {
+        "timezone": "CET",
+        "end": 1794414600,
+        "start": 1794384000,
+        "gmtoffset": 3600
+      },
+      "timezone": "Europe/Rome"
+    },
+    {
+      "symbol": "TSE:6855",
+      "adjustedClose": [
+        "2026-11-11",
+        6010.0
+      ],
+      "receipt": {
+        "ticker": "6855.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/6855.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:00.089386+00:00",
+        "rawSha256": "130f02e20611bd06e33177c59888238a0ed6de018e88a768080b77d0cdeda68c"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "start": 1794441600,
+        "end": 1794465000,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "TWSE:2449",
+      "adjustedClose": [
+        "2026-11-11",
+        231.0
+      ],
+      "receipt": {
+        "ticker": "2449.TW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/2449.TW?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:00.080481+00:00",
+        "rawSha256": "1525c7c34e1ae2caebfba114ebe277988a4302329f1ce9bffcd1b1d55282a562"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "end": 1794461400,
+        "start": 1794445200,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Taipei"
+    },
+    {
+      "symbol": "NASDAQ:IMOS",
+      "adjustedClose": [
+        "2026-11-11",
+        52.79
+      ],
+      "receipt": {
+        "ticker": "IMOS",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/IMOS?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:00.028267+00:00",
+        "rawSha256": "21a9b8789239c591c598a3cbf910d09532981728eaa2036d93fe07e4350779c4"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "KRX:058470",
+      "adjustedClose": [
+        "2026-11-11",
+        52000.0
+      ],
+      "receipt": {
+        "reuseSource": "data/korea-completion-raw-20261111.tar.gz:data/korea-highs-raw-20261111/058470.KQ.json",
+        "rawSha256": "3d99047b78f9c7a8325f4ae64fd406202b40df252d6b148138babae26832704b",
+        "sourceObservationTimeStatus": "Original collector evidence preserved in Korean archive; no invented retrieval timestamp",
+        "reusedAt": "2026-11-11T22:39:55.189926+00:00",
+        "ticker": "058470.KQ"
+      },
+      "regularSession": {
+        "timezone": "KST",
+        "start": 1794355200,
+        "end": 1794376800,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Seoul"
+    },
+    {
+      "symbol": "KRX:095340",
+      "adjustedClose": [
+        "2026-11-11",
+        145900.0
+      ],
+      "receipt": {
+        "reuseSource": "data/korea-completion-raw-20261111.tar.gz:data/korea-highs-raw-20261111/095340.KQ.json",
+        "rawSha256": "7acede695a91568acd43d3c7fd28796fb1d8f1a273a4e2eba1a80a427bae22e6",
+        "sourceObservationTimeStatus": "Original collector evidence preserved in Korean archive; no invented retrieval timestamp",
+        "reusedAt": "2026-11-11T22:39:55.189935+00:00",
+        "ticker": "095340.KQ"
+      },
+      "regularSession": {
+        "timezone": "KST",
+        "start": 1794355200,
+        "end": 1794376800,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Seoul"
+    },
+    {
+      "symbol": "TSE:6941",
+      "adjustedClose": [
+        "2026-11-11",
+        6960.0
+      ],
+      "receipt": {
+        "ticker": "6941.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/6941.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:39:59.993975+00:00",
+        "rawSha256": "8e247d8b2f6eb08b44e43c22245fdac97f8bfaf5b4fb8dd89ae791d968d7ae77"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "end": 1794465000,
+        "start": 1794441600,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "SZSE:300308",
+      "adjustedClose": [
+        "2026-11-11",
+        542.0
+      ],
+      "receipt": {
+        "ticker": "300308.SZ",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/300308.SZ?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:00.025565+00:00",
+        "rawSha256": "e557379cd8428222971b886c45ace547b30bfd03dc90e14d2e52b7e9d6a0bd2f"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "end": 1794466800,
+        "start": 1794447000,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Shanghai"
+    },
+    {
+      "symbol": "SZSE:300502",
+      "adjustedClose": [
+        "2026-11-11",
+        215.0
+      ],
+      "receipt": {
+        "ticker": "300502.SZ",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/300502.SZ?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:00.022558+00:00",
+        "rawSha256": "1a5b3d2f5626cbfd247e1a82c0c1cbce1874ed8165e6ace75af08825a0578e94"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "start": 1794447000,
+        "end": 1794466800,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Shanghai"
+    },
+    {
+      "symbol": "NYSE:FN",
+      "adjustedClose": [
+        "2026-11-11",
+        369.01001
+      ],
+      "receipt": {
+        "ticker": "FN",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/FN?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:00.012363+00:00",
+        "rawSha256": "45bbb277b36de91051752b8d07d1e3284f7e1273523acadf164c74f847be45b0"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:AAOI",
+      "adjustedClose": [
+        "2026-11-11",
+        55.86
+      ],
+      "receipt": {
+        "ticker": "AAOI",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/AAOI?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:00.049638+00:00",
+        "rawSha256": "bb46d89ce35c372bba3d8066e8c8a6c8dbd9fd9f4811e2b56aa02696916e11a8"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:LITE",
+      "adjustedClose": [
+        "2026-11-11",
+        648.06
+      ],
+      "receipt": {
+        "ticker": "LITE",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/LITE?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:27.285554+00:00",
+        "sha256": "c9117be8356e71d86ca3aca14e21b4c635e144163c095abe62bdd6b2d7a5224e",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:39:55.207687+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NYSE:COHR",
+      "adjustedClose": [
+        "2026-11-11",
+        234.50999
+      ],
+      "receipt": {
+        "ticker": "COHR",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/COHR?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:42:49.734103+00:00",
+        "sha256": "2db50a5d2a0485aa3abd0d92a71ecfd6d3877590a855b63398403a0eeab70200",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:39:55.207697+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "TSE:6965",
+      "adjustedClose": [
+        "2026-11-11",
+        2357.5
+      ],
+      "receipt": {
+        "ticker": "6965.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/6965.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:00.035165+00:00",
+        "rawSha256": "8fe6ec2ff651c4b3159fe2c426d2aebd639f424d7c8fa63866c9b2c9f42db418"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "start": 1794441600,
+        "end": 1794465000,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "NYSE:GLW",
+      "adjustedClose": [
+        "2026-11-11",
+        120.46
+      ],
+      "receipt": {
+        "ticker": "GLW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/GLW?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:42:49.767595+00:00",
+        "sha256": "494f4da00a46a10562e07d45c98e19631f796945e20a8e0e2118ecb03d3117e0",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:39:55.220481+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "TSE:5801",
+      "adjustedClose": [
+        "2026-11-11",
+        2373.0
+      ],
+      "receipt": {
+        "ticker": "5801.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/5801.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:00.094254+00:00",
+        "rawSha256": "452f406a93547eca5df80f4c44bdf0397662cdf9bc30a362bd96bee322dfa00d"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "start": 1794441600,
+        "end": 1794465000,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "TSE:5802",
+      "adjustedClose": [
+        "2026-11-11",
+        1581.5
+      ],
+      "receipt": {
+        "ticker": "5802.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/5802.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:00.099693+00:00",
+        "rawSha256": "28d3e08a2ed6ea3b45339cfa0d0d557964516fd304228313192c6dccc8645093"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "end": 1794465000,
+        "start": 1794441600,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "MIL:PRY",
+      "adjustedClose": [
+        "2026-11-11",
+        111.8
+      ],
+      "receipt": {
+        "ticker": "PRY.MI",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/PRY.MI?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:00.021685+00:00",
+        "rawSha256": "5e032dd883a5520ba9f03735cfd550a7c88cbe9112537ed45d929fbb603a5fd4"
+      },
+      "regularSession": {
+        "timezone": "CET",
+        "start": 1794384000,
+        "end": 1794414600,
+        "gmtoffset": 3600
+      },
+      "timezone": "Europe/Rome"
+    },
+    {
+      "symbol": "NYSE:KEYS",
+      "adjustedClose": [
+        "2026-11-11",
+        305.64001
+      ],
+      "receipt": {
+        "ticker": "KEYS",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/KEYS?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:22.278079+00:00",
+        "sha256": "f0a1a8c6750bb8d2db789d2e18ebf7ea1f560cc8bbd5710d7fa2c6402fc72d0d",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:39:59.994036+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:VIAV",
+      "adjustedClose": [
+        "2026-11-11",
+        33.0
+      ],
+      "receipt": {
+        "ticker": "VIAV",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/VIAV?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:03.437601+00:00",
+        "rawSha256": "04e51000e9da341befd6628fd62d8a7589375f3c20034e7409aaba4b69583ca0"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NYSE:DELL",
+      "adjustedClose": [
+        "2026-11-11",
+        373.67999
+      ],
+      "receipt": {
+        "ticker": "DELL",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/DELL?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:42:53.313903+00:00",
+        "sha256": "2fc6c2fd5295d5e3e9cbcecc41bd5bb5bc8dcc58e4f6c10fc669082a0afd4978",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:00.012563+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NYSE:HPE",
+      "adjustedClose": [
+        "2026-11-11",
+        50.25
+      ],
+      "receipt": {
+        "ticker": "HPE",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/HPE?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:16.304754+00:00",
+        "sha256": "c27faffbbda7fde1761c749d1d234a58deb76e526f208c4e6b6a025e86b95aed",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:00.012589+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "HKEX:992",
+      "adjustedClose": [
+        "2026-11-11",
+        19.57
+      ],
+      "receipt": {
+        "ticker": "0992.HK",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/0992.HK?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:03.422636+00:00",
+        "rawSha256": "55d1266b74eedae5524b0e10162ef9746dffb50424338b25a0a8d9647a1046a6"
+      },
+      "regularSession": {
+        "timezone": "HKT",
+        "end": 1794471000,
+        "start": 1794447000,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Hong_Kong"
+    },
+    {
+      "symbol": "NASDAQ:SMCI",
+      "adjustedClose": [
+        "2026-11-11",
+        30.43
+      ],
+      "receipt": {
+        "ticker": "SMCI",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/SMCI?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:51.697086+00:00",
+        "sha256": "468e8012f3f507fd9275f28bd178b4542c69a51bdccb0b7f1bb8e9554adb973d",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:00.021739+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "TWSE:2317",
+      "adjustedClose": [
+        "2026-11-11",
+        242.0
+      ],
+      "receipt": {
+        "ticker": "2317.TW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/2317.TW?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:03.418181+00:00",
+        "rawSha256": "fb47863f26031cca703d6604761da47cfb76bba6556a847acd7486821d02938a"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "end": 1794461400,
+        "start": 1794445200,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Taipei"
+    },
+    {
+      "symbol": "TWSE:2382",
+      "adjustedClose": [
+        "2026-11-11",
+        298.0
+      ],
+      "receipt": {
+        "ticker": "2382.TW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/2382.TW?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:03.390210+00:00",
+        "rawSha256": "d5da1f7e14d6b31da6e0d31edfc849c655f4bcd04f1a2bd4bbcf4d06b13bba79"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "end": 1794461400,
+        "start": 1794445200,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Taipei"
+    },
+    {
+      "symbol": "TWSE:3231",
+      "adjustedClose": [
+        "2026-11-11",
+        174.5
+      ],
+      "receipt": {
+        "ticker": "3231.TW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/3231.TW?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:03.425512+00:00",
+        "rawSha256": "b7ec3d52c9a80252d25be48107ddc673202d97983b9623209b671fc31d742ec4"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "start": 1794445200,
+        "end": 1794461400,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Taipei"
+    },
+    {
+      "symbol": "TWSE:6669",
+      "adjustedClose": [
+        "2026-11-11",
+        1680.0
+      ],
+      "receipt": {
+        "ticker": "6669.TW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/6669.TW?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:03.437409+00:00",
+        "rawSha256": "184c16cde782d6088ad2948a95abafca6868cd38881aa006565a18be72fc8d60"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "start": 1794445200,
+        "end": 1794461400,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Taipei"
+    },
+    {
+      "symbol": "TWSE:2356",
+      "adjustedClose": [
+        "2026-11-11",
+        51.2
+      ],
+      "receipt": {
+        "ticker": "2356.TW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/2356.TW?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:03.404281+00:00",
+        "rawSha256": "c7ec58d1579f92669ff12a744449f09170a23836cdb432aff9dab09ba9a23874"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "end": 1794461400,
+        "start": 1794445200,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Taipei"
+    },
+    {
+      "symbol": "NYSE:JBL",
+      "adjustedClose": [
+        "2026-11-11",
+        258.89001
+      ],
+      "receipt": {
+        "ticker": "JBL",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/JBL?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:22.194990+00:00",
+        "sha256": "266b832c5ec635961874695f17c03ea426b1467491f8327ba7ece8a0001249c6",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:00.049675+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:FLEX",
+      "adjustedClose": [
+        "2026-11-11",
+        78.97
+      ],
+      "receipt": {
+        "ticker": "FLEX",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/FLEX?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:07.034109+00:00",
+        "sha256": "eee39cfd4c9aaee52d5c81f6504b788964d0a34dc1bab0da0f2e50567cfe3a7d",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:00.049684+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NYSE:CLS",
+      "adjustedClose": [
+        "2026-11-11",
+        242.92
+      ],
+      "receipt": {
+        "ticker": "CLS",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/CLS?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:03.408800+00:00",
+        "rawSha256": "8e0036b7c93a52c97c038b9636b0e7a20b192ab692eb15adfd63eb141986ec5c"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NYSE:ANET",
+      "adjustedClose": [
+        "2026-11-11",
+        196.67999
+      ],
+      "receipt": {
+        "ticker": "ANET",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/ANET?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:42:32.776553+00:00",
+        "sha256": "5d9e37560461cf5bbb3d44ac7387cecf1ae043ee123712856fd71c6b749d8864",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:00.080680+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:CSCO",
+      "adjustedClose": [
+        "2026-11-11",
+        100.76
+      ],
+      "receipt": {
+        "ticker": "CSCO",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/CSCO?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:42:46.098323+00:00",
+        "sha256": "e27b59f85da249478499ddd83ff9e972346119e7a57287d6ed7649c4a184923b",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:00.080694+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NYSE:CIEN",
+      "adjustedClose": [
+        "2026-11-11",
+        296.04001
+      ],
+      "receipt": {
+        "ticker": "CIEN",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/CIEN?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:42:46.077035+00:00",
+        "sha256": "6170e339bc16bf8ecbfaddd62275d41f0c3020ebc5e6768f451693b1e8668d69",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:00.080702+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NYSE:P",
+      "adjustedClose": [
+        "2026-11-11",
+        106.5
+      ],
+      "receipt": {
+        "ticker": "P",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/P?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:04.754061+00:00",
+        "sha256": "b4bb00c92fb11cf83022c60deef6e8cd2571a065e053d0e74519ae020529488a",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:00.080735+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:NTAP",
+      "adjustedClose": [
+        "2026-11-11",
+        183.12
+      ],
+      "receipt": {
+        "ticker": "NTAP",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/NTAP?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:31.705803+00:00",
+        "sha256": "07b4775cc1b682ff5ef83cc1995739d31c31c5f3d47200481f9566fad379e1c4",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:00.080743+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:WDC",
+      "adjustedClose": [
+        "2026-11-11",
+        313.31
+      ],
+      "receipt": {
+        "ticker": "WDC",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/WDC?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:44:01.827757+00:00",
+        "sha256": "cf8ece874071114571d7836cd53311423af26458441c26255251f4733e8854c9",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:00.080763+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:STX",
+      "adjustedClose": [
+        "2026-11-11",
+        551.71997
+      ],
+      "receipt": {
+        "ticker": "STX",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/STX?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:48.942186+00:00",
+        "sha256": "5cd016a577abc4c868116538a7ceee900d649cb8ad75d83137c7b32599648e00",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:00.080770+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NYSE:VRT",
+      "adjustedClose": [
+        "2026-11-11",
+        206.50999
+      ],
+      "receipt": {
+        "ticker": "VRT",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/VRT?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:59.460614+00:00",
+        "sha256": "e22f27229893a6783ba45ac64dd3889370dd2229e75aa9baf0ec0b97419ce3aa",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:00.080778+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NYSE:ETN",
+      "adjustedClose": [
+        "2026-11-11",
+        360.62
+      ],
+      "receipt": {
+        "ticker": "ETN",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/ETN?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:42:56.155758+00:00",
+        "sha256": "0a2846aea61c1758f8c7ac09f03835f61c60fa60a77707c088fbedfba05636cd",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:00.080786+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "EURONEXT:SU",
+      "adjustedClose": [
+        "2026-11-11",
+        242.5
+      ],
+      "receipt": {
+        "ticker": "SU.PA",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/SU.PA?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:03.465266+00:00",
+        "rawSha256": "79a105d5f760c9cec311f6f57f0368af4a534c29974edba8351131e9aab522d2"
+      },
+      "regularSession": {
+        "timezone": "CET",
+        "end": 1794414600,
+        "start": 1794384000,
+        "gmtoffset": 3600
+      },
+      "timezone": "Europe/Paris"
+    },
+    {
+      "symbol": "NYSE:MOD",
+      "adjustedClose": [
+        "2026-11-11",
+        106.67
+      ],
+      "receipt": {
+        "ticker": "MOD",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/MOD?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:03.368589+00:00",
+        "rawSha256": "54239f6d7c29417b254e8120d79f27acd4756b7384fa5a42ee7ff9d6cc56cb3a"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "TWSE:2308",
+      "adjustedClose": [
+        "2026-11-11",
+        1295.0
+      ],
+      "receipt": {
+        "ticker": "2308.TW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/2308.TW?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:03.430985+00:00",
+        "rawSha256": "a7a8b738315255d7a9beea8c8afcbfd81c0ef575429c3f569b3c9067738b70f1"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "start": 1794445200,
+        "end": 1794461400,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Taipei"
+    },
+    {
+      "symbol": "NASDAQ:AMZN",
+      "adjustedClose": [
+        "2026-11-11",
+        266.17001
+      ],
+      "receipt": {
+        "ticker": "AMZN",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:42:30.002064+00:00",
+        "sha256": "28aaa8661d8b69839820c711f656cd5d1a867a0ad5cf38bbd1d0b7d5dd9aee66",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:00.099823+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:MSFT",
+      "adjustedClose": [
+        "2026-11-11",
+        521.125
+      ],
+      "receipt": {
+        "ticker": "MSFT",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/MSFT?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:29.634322+00:00",
+        "sha256": "78a41dae36b9b2389910df8782145f0f1632b29d47355b353aa661e8cee2e575",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:00.099879+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:GOOGL",
+      "adjustedClose": [
+        "2026-11-11",
+        293.45001
+      ],
+      "receipt": {
+        "ticker": "GOOGL",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/GOOGL?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:42:29.946084+00:00",
+        "sha256": "a7ee21286137e938cb13766779aa89a8c15daf01330df637dbd1088409cad75b",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:00.099894+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NYSE:ORCL",
+      "adjustedClose": [
+        "2026-11-11",
+        128.38
+      ],
+      "receipt": {
+        "ticker": "ORCL",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/ORCL?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:34.339715+00:00",
+        "sha256": "bb80e8abe8051e843033bec1083d363ed6b15f7c494aeab24e4bb5faeb2f3920",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:00.099904+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NYSE:BABA",
+      "adjustedClose": [
+        "2026-11-11",
+        101.52
+      ],
+      "receipt": {
+        "ticker": "BABA",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/BABA?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:03.411230+00:00",
+        "rawSha256": "01094cfb096c049ae9f616cf4109206fc86fd8a529b269f3b1f92fb2f7357ef8"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "HKEX:700",
+      "adjustedClose": [
+        "2026-11-11",
+        409.60001
+      ],
+      "receipt": {
+        "ticker": "0700.HK",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/0700.HK?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:06.352956+00:00",
+        "rawSha256": "1bc40fe477b57caa6e5f1ec4d5bf92896032629af3aff9d1bf352001044fc8ab"
+      },
+      "regularSession": {
+        "timezone": "HKT",
+        "start": 1794447000,
+        "end": 1794471000,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Hong_Kong"
+    },
+    {
+      "symbol": "NASDAQ:CRWV",
+      "adjustedClose": [
+        "2026-11-11",
+        60.77
+      ],
+      "receipt": {
+        "ticker": "CRWV",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/CRWV?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:06.333876+00:00",
+        "rawSha256": "056bd46bdd4bde3670d22c92ef8279c55faf218f8cb59c05e105094eae15a43f"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:NBIS",
+      "adjustedClose": [
+        "2026-11-11",
+        154.69
+      ],
+      "receipt": {
+        "ticker": "NBIS",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/NBIS?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:06.381979+00:00",
+        "rawSha256": "a67491fd8108e25d39c1a1c8bc0379d6d839e717624d783183e776f23e2387cf"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:IREN",
+      "adjustedClose": [
+        "2026-11-11",
+        20.84
+      ],
+      "receipt": {
+        "ticker": "IREN",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/IREN?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:06.307551+00:00",
+        "rawSha256": "110bb1db254655bb957c7a85a94c719544b2a0317617c3b4862aee5dedd9ff5c"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:EQIX",
+      "adjustedClose": [
+        "2026-11-11",
+        1068.06006
+      ],
+      "receipt": {
+        "ticker": "EQIX",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/EQIX?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:42:58.631759+00:00",
+        "sha256": "aa4dadb97518cef8a30fd12aa882ef33e2754c20dd7bba64d1f59162b20168a6",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:03.411618+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NYSE:DLR",
+      "adjustedClose": [
+        "2026-11-11",
+        181.13
+      ],
+      "receipt": {
+        "ticker": "DLR",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/DLR?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:42:56.158114+00:00",
+        "sha256": "f479d9fafe86019731c10f77f51b4a3838a16c07796f606dfa3c5fa4a36473d4",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:03.411695+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:GDS",
+      "adjustedClose": [
+        "2026-11-11",
+        22.62
+      ],
+      "receipt": {
+        "ticker": "GDS",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/GDS?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:06.377320+00:00",
+        "rawSha256": "b86e8a34f22cbdc35041292cf51cd49cac76da0112f000bcfeccd23a0b991013"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:VNET",
+      "adjustedClose": [
+        "2026-11-11",
+        3.49
+      ],
+      "receipt": {
+        "ticker": "VNET",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/VNET?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:06.301882+00:00",
+        "rawSha256": "7ceb67c4af4fad031ba92a04c7ce142498cb9e5d1bf26560b4e8a6bdc807c0da"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "TSE:6981",
+      "adjustedClose": [
+        "2026-11-11",
+        5457.0
+      ],
+      "receipt": {
+        "ticker": "6981.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/6981.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:06.305221+00:00",
+        "rawSha256": "4794e985be77a095c1763bd26b08b32027009220b308e83e806a60b48c5b9ec4"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "end": 1794465000,
+        "start": 1794441600,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "TSE:6762",
+      "adjustedClose": [
+        "2026-11-11",
+        2365.5
+      ],
+      "receipt": {
+        "ticker": "6762.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/6762.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:06.366450+00:00",
+        "rawSha256": "5497195dd4af0c77082a547368d7622c598a7f22b791b249dad497bb2c6ffe79"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "start": 1794441600,
+        "end": 1794465000,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "TSE:6976",
+      "adjustedClose": [
+        "2026-11-11",
+        7476.0
+      ],
+      "receipt": {
+        "ticker": "6976.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/6976.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:06.413437+00:00",
+        "rawSha256": "e994ed038575e08fa762cc5533ad183bd3482b73cb7bf8bf43ae2374cc632a55"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "end": 1794465000,
+        "start": 1794441600,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "TWSE:2327",
+      "adjustedClose": [
+        "2026-11-11",
+        424.5
+      ],
+      "receipt": {
+        "ticker": "2327.TW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/2327.TW?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:06.382387+00:00",
+        "rawSha256": "6833d14b0ca3a1f78f7606cb8037b4659661250216daca2c3aedb661372376b2"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "end": 1794461400,
+        "start": 1794445200,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Taipei"
+    },
+    {
+      "symbol": "NYSE:APH",
+      "adjustedClose": [
+        "2026-11-11",
+        79.31
+      ],
+      "receipt": {
+        "ticker": "APH",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/APH?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:42:32.872953+00:00",
+        "sha256": "dc1e7b2440582fdf9d4bb2a2fcf79624b66342b76d0fcf86a8823af2a0446d69",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:03.437642+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NYSE:TEL",
+      "adjustedClose": [
+        "2026-11-11",
+        219.41
+      ],
+      "receipt": {
+        "ticker": "TEL",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TEL?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:53.646917+00:00",
+        "sha256": "0151ce7aeaebb1a43886379492763e54ae1073677239cead4f149a88d6abedc0",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:03.437652+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "SZSE:002475",
+      "adjustedClose": [
+        "2026-11-11",
+        51.67
+      ],
+      "receipt": {
+        "ticker": "002475.SZ",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/002475.SZ?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:06.335816+00:00",
+        "rawSha256": "4abc15e979460f1847e999c2f668b6ba8e3c0408e49643586d91916526090f09"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "end": 1794466800,
+        "start": 1794447000,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Shanghai"
+    },
+    {
+      "symbol": "TSE:6954",
+      "adjustedClose": [
+        "2026-11-11",
+        5670.0
+      ],
+      "receipt": {
+        "ticker": "6954.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/6954.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:06.357085+00:00",
+        "rawSha256": "44499c1a9fbc8a039ff8ce36efd29ab08b26561fed579afa75584e6e0641b521"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "start": 1794441600,
+        "end": 1794465000,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "TSE:6506",
+      "adjustedClose": [
+        "2026-11-11",
+        3885.0
+      ],
+      "receipt": {
+        "ticker": "6506.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/6506.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:09.014164+00:00",
+        "rawSha256": "d714eb522dd96c6a3285c3d0547f837b7da874ea3d77e06da6c5efed31c1f48e"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "end": 1794465000,
+        "start": 1794441600,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "SIX:ABBN",
+      "adjustedClose": [
+        "2026-11-11",
+        70.7
+      ],
+      "receipt": {
+        "ticker": "ABBN.SW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/ABBN.SW?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:09.053033+00:00",
+        "rawSha256": "73f38889ec29860845eac14cd51bc90528ba64aac2af0f251bcf45f3c034192b"
+      },
+      "regularSession": {
+        "timezone": "CET",
+        "start": 1794384000,
+        "end": 1794414600,
+        "gmtoffset": 3600
+      },
+      "timezone": "Europe/Zurich"
+    },
+    {
+      "symbol": "TSE:6861",
+      "adjustedClose": [
+        "2026-11-11",
+        75720.0
+      ],
+      "receipt": {
+        "ticker": "6861.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/6861.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:09.018444+00:00",
+        "rawSha256": "ea1590ada5fc0ca3d971cf2f2d3914818f10b08998a526e3fe715ad45a206dcf"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "end": 1794465000,
+        "start": 1794441600,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "NASDAQ:CGNX",
+      "adjustedClose": [
+        "2026-11-11",
+        51.72
+      ],
+      "receipt": {
+        "ticker": "CGNX",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/CGNX?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:09.011911+00:00",
+        "rawSha256": "7c52aa45c8fd43748a4a209aca9bb9105c44875f64cd65759845afd166727201"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NYSE:ROK",
+      "adjustedClose": [
+        "2026-11-11",
+        406.19
+      ],
+      "receipt": {
+        "ticker": "ROK",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/ROK?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:46.392044+00:00",
+        "sha256": "7c6d2bf18f9854eff401fba6fa69953970cb51ce33c2f4949c75224127987849",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:06.335921+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "TSE:6383",
+      "adjustedClose": [
+        "2026-11-11",
+        5061.0
+      ],
+      "receipt": {
+        "ticker": "6383.T",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/6383.T?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:09.024647+00:00",
+        "rawSha256": "e6392a74b23d8204ea9c8c2cc443f88828ee190f0e362646d1f77671cb7d536e"
+      },
+      "regularSession": {
+        "timezone": "JST",
+        "end": 1794465000,
+        "start": 1794441600,
+        "gmtoffset": 32400
+      },
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "symbol": "NYSE:ARW",
+      "adjustedClose": [
+        "2026-11-11",
+        198.03
+      ],
+      "receipt": {
+        "ticker": "ARW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/ARW?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:09.049216+00:00",
+        "rawSha256": "23af546ff7ca3da2cc9b3506ece0d0c521bd226c26e8f74fb562e826061d5084"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:AVT",
+      "adjustedClose": [
+        "2026-11-11",
+        86.82
+      ],
+      "receipt": {
+        "ticker": "AVT",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/AVT?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:09.031286+00:00",
+        "rawSha256": "598fc7036776f5581937ea6be7fbf76a4bb3d8e97e2ac6e75b46bd37be03b24d"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "TWSE:3702",
+      "adjustedClose": [
+        "2026-11-11",
+        91.7
+      ],
+      "receipt": {
+        "ticker": "3702.TW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/3702.TW?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:09.023859+00:00",
+        "rawSha256": "841acfb8f6ba108daa90e0aa01356b3bc778120e68fe5456264f4b9c3c850283"
+      },
+      "regularSession": {
+        "timezone": "CST",
+        "start": 1794445200,
+        "end": 1794461400,
+        "gmtoffset": 28800
+      },
+      "timezone": "Asia/Taipei"
+    },
+    {
+      "symbol": "NASDAQ:PANW",
+      "adjustedClose": [
+        "2026-11-11",
+        334.47
+      ],
+      "receipt": {
+        "ticker": "PANW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/PANW?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:40.126000+00:00",
+        "sha256": "0b70b8ff48d179fa4b84180fd5388b316b62bdbe4ceacfd66d0a21bbf13cda76",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:06.377361+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:CRWD",
+      "adjustedClose": [
+        "2026-11-11",
+        229.06
+      ],
+      "receipt": {
+        "ticker": "CRWD",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/CRWD?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:42:53.242943+00:00",
+        "sha256": "64ec44506f947892bd8a4d7b948620d3042e6b19ffd93d40f96e26157586030a",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:06.377409+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:FTNT",
+      "adjustedClose": [
+        "2026-11-11",
+        128.10001
+      ],
+      "receipt": {
+        "ticker": "FTNT",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/FTNT?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:07.060558+00:00",
+        "sha256": "25a91865b701b6376132df0bebc22454485df10fbcb1f0df3945ea32a6bb5813",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:06.377418+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:ZS",
+      "adjustedClose": [
+        "2026-11-11",
+        193.795
+      ],
+      "receipt": {
+        "ticker": "ZS",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/ZS?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:08.981942+00:00",
+        "rawSha256": "f7e9d902a5deafa5de2d27b47266ad1541917a2d018041c1cc6a3edd99e3dcac"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:OKTA",
+      "adjustedClose": [
+        "2026-11-11",
+        182.25
+      ],
+      "receipt": {
+        "ticker": "OKTA",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/OKTA?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:34.383892+00:00",
+        "sha256": "ed682ef1c935e8aca82ccb56fd6a2632ec6419aa63f8828c4ee28e12cdcbdb8e",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:06.382057+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NYSE:SAP",
+      "adjustedClose": [
+        "2026-11-11",
+        234.10001
+      ],
+      "receipt": {
+        "ticker": "SAP",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/SAP?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:09.057106+00:00",
+        "rawSha256": "eb89aa36914784db4388be67923c4585dafc8d1afffcf757badc67e1db32da33"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NYSE:CRM",
+      "adjustedClose": [
+        "2026-11-11",
+        218.00999
+      ],
+      "receipt": {
+        "ticker": "CRM",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/CRM?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:48.954277+00:00",
+        "sha256": "70da979c3f6bafc25ce97067831be6e956142f93370cc56fdf23dd5517e5fbf7",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:06.382473+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NYSE:NOW",
+      "adjustedClose": [
+        "2026-11-11",
+        102.76
+      ],
+      "receipt": {
+        "ticker": "NOW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/NOW?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:48.963211+00:00",
+        "sha256": "83d484094bc0c276fc6484c134234fcfa7e9f4ef3f4305aca2e970fd18f1a681",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:06.382490+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:WDAY",
+      "adjustedClose": [
+        "2026-11-11",
+        191.16
+      ],
+      "receipt": {
+        "ticker": "WDAY",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/WDAY?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:44:01.810869+00:00",
+        "sha256": "e29c234ed632f156f98691bc7f5bf1f541acd928ea2854f065ba3736403a853a",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:06.382530+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:PLTR",
+      "adjustedClose": [
+        "2026-11-11",
+        172.39999
+      ],
+      "receipt": {
+        "ticker": "PLTR",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/PLTR?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:40.108623+00:00",
+        "sha256": "fc7b04a637457ff88b35735a4b92a8bd0e344671fdac13bbf877d0f5e2bf5c62",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:06.382592+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NYSE:SNOW",
+      "adjustedClose": [
+        "2026-11-11",
+        301.22
+      ],
+      "receipt": {
+        "ticker": "SNOW",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/SNOW?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:09.002033+00:00",
+        "rawSha256": "63d07d6b5e5cdf156f371a5c08ee46918f59435aab7fdd6c8b53137b8ee3b29e"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:DDOG",
+      "adjustedClose": [
+        "2026-11-11",
+        184.38
+      ],
+      "receipt": {
+        "ticker": "DDOG",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/DDOG?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:42:53.290039+00:00",
+        "sha256": "c9e2a2d2f4d621f6bb31626120bcfef06d86b5dd92c4ce53aa4ee4f404583d59",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:06.413571+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NYSE:NET",
+      "adjustedClose": [
+        "2026-11-11",
+        315.0
+      ],
+      "receipt": {
+        "ticker": "NET",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/NET?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:09.002449+00:00",
+        "rawSha256": "3866eb6a5f8696558435a7f3f4e720008f464feddf78c9719672a84b0019651e"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:TEAM",
+      "adjustedClose": [
+        "2026-11-11",
+        152.44
+      ],
+      "receipt": {
+        "ticker": "TEAM",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TEAM?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:12.675512+00:00",
+        "rawSha256": "77cd8cad77384e32f2ad5db6299239d93aa37bdb6270068bf380e854cd97f71f"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:GTLB",
+      "adjustedClose": [
+        "2026-11-11",
+        47.32
+      ],
+      "receipt": {
+        "ticker": "GTLB",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/GTLB?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:12.685058+00:00",
+        "rawSha256": "53829fb0a66d279651290e185f520994f677b73a043b7a659c066dfe5112f0a5"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:APP",
+      "adjustedClose": [
+        "2026-11-11",
+        404.76999
+      ],
+      "receipt": {
+        "ticker": "APP",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/APP?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:42:32.898122+00:00",
+        "sha256": "96371ce2d4a06754474d1abbf1f9bc79205e4eb73c02e138bb4ef879dc5679d9",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:09.011940+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:TTD",
+      "adjustedClose": [
+        "2026-11-11",
+        15.98
+      ],
+      "receipt": {
+        "ticker": "TTD",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TTD?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:12.632655+00:00",
+        "rawSha256": "9f06751236f1d1eb42b4d60ba8ff620fb263bf520cb5cab605e4abd806a55b01"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:ADBE",
+      "adjustedClose": [
+        "2026-11-11",
+        237.60001
+      ],
+      "receipt": {
+        "ticker": "ADBE",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/ADBE?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:42:26.918234+00:00",
+        "sha256": "0f7eafddc5d4536608be7496889e6c7104847dbd0005e63bf5d671f99a958360",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:09.014264+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:ADSK",
+      "adjustedClose": [
+        "2026-11-11",
+        260.01001
+      ],
+      "receipt": {
+        "ticker": "ADSK",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/ADSK?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:42:36.101599+00:00",
+        "sha256": "b92374a242ad40b6c71226ec3e7ef4232555beef49d941d0fa142584f4750ac5",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:09.014275+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "EURONEXT:DSY",
+      "adjustedClose": [
+        "2026-11-11",
+        25.34
+      ],
+      "receipt": {
+        "ticker": "DSY.PA",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/DSY.PA?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:12.681487+00:00",
+        "rawSha256": "eb795478c5ad5be86b02e9978735956c1a5e4dbbe97c9743818fadd8f273111d"
+      },
+      "regularSession": {
+        "timezone": "CET",
+        "start": 1794384000,
+        "end": 1794414600,
+        "gmtoffset": 3600
+      },
+      "timezone": "Europe/Paris"
+    },
+    {
+      "symbol": "NASDAQ:BKNG",
+      "adjustedClose": [
+        "2026-11-11",
+        160.21001
+      ],
+      "receipt": {
+        "ticker": "BKNG",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/BKNG?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:42:39.478018+00:00",
+        "sha256": "d0649cb04902ad8f50e094df200937f40d013e8ff106b66a2ca288c72ab2400e",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:09.018467+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:EXPE",
+      "adjustedClose": [
+        "2026-11-11",
+        259.79001
+      ],
+      "receipt": {
+        "ticker": "EXPE",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/EXPE?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:04.776162+00:00",
+        "sha256": "d95a58717e7d4d11637e0818a1a67f3f62beeb36d85d599cd430aa63e1a22231",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:09.018476+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:TCOM",
+      "adjustedClose": [
+        "2026-11-11",
+        43.61
+      ],
+      "receipt": {
+        "ticker": "TCOM",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TCOM?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:12.619199+00:00",
+        "rawSha256": "c2baba1fa8a959a2126607687c3f0278c9b9d8b18cdd18d4da693899e0b5108b"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:INTU",
+      "adjustedClose": [
+        "2026-11-11",
+        342.64001
+      ],
+      "receipt": {
+        "ticker": "INTU",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/INTU?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:22.265415+00:00",
+        "sha256": "bf092589578e7affde77be6572740bcd0c44a6adf030bba970c2fc527c155064",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:09.023885+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:ADP",
+      "adjustedClose": [
+        "2026-11-11",
+        306.35999
+      ],
+      "receipt": {
+        "ticker": "ADP",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/ADP?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:42:36.134035+00:00",
+        "sha256": "a6db5aa76dae138bef788cd953ef8c0d5ced9db526c7026736cd6c56c7065c80",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:09.023896+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:FISV",
+      "adjustedClose": [
+        "2026-11-11",
+        63.9
+      ],
+      "receipt": {
+        "ticker": "FISV",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/FISV?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:07.030151+00:00",
+        "sha256": "9b1637de8e65c7afc192716a426d35f12bc7a071aeedc480391436c3e2609546",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:09.023966+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NYSE:VEEV",
+      "adjustedClose": [
+        "2026-11-11",
+        304.76999
+      ],
+      "receipt": {
+        "ticker": "VEEV",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/VEEV?range=2y&interval=1d&events=div%2Csplits&includePrePost=false",
+        "retrievedAt": "2026-11-11T21:43:59.450719+00:00",
+        "sha256": "3b29b2cbb5bbab1c573650c128758f1dc15e674135c75ad5d152da5acbb4b290",
+        "reuseSource": "US same-session collection",
+        "reusedAt": "2026-11-11T22:40:09.023974+00:00"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NYSE:RBLX",
+      "adjustedClose": [
+        "2026-11-11",
+        52.61
+      ],
+      "receipt": {
+        "ticker": "RBLX",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/RBLX?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:12.662926+00:00",
+        "rawSha256": "91d7a2643163ae6640952657b797057dc65e2d1dba6dc777af2d865675aa3cc8"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NYSE:U",
+      "adjustedClose": [
+        "2026-11-11",
+        49.65
+      ],
+      "receipt": {
+        "ticker": "U",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/U?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:12.657688+00:00",
+        "rawSha256": "44a79bd4714e3cb729c7db07679fe5cb78769dc9ba6840abf13e4c2fe4ff27a0"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:MDB",
+      "adjustedClose": [
+        "2026-11-11",
+        338.12
+      ],
+      "receipt": {
+        "ticker": "MDB",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/MDB?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:12.636770+00:00",
+        "rawSha256": "605686ff80eb8f6e701a36d843e072742471e9b054d642d52bb7d7f503ad2dd1"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "start": 1794407400,
+        "end": 1794430800,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "symbol": "NASDAQ:SHOP",
+      "adjustedClose": [
+        "2026-11-11",
+        149.25999
+      ],
+      "receipt": {
+        "ticker": "SHOP",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/SHOP?range=1mo&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-11T22:40:12.662790+00:00",
+        "rawSha256": "ba2a11bd07b44792b112707252e3f464e8f4ff6b477c1d783bf943f8ae357952"
+      },
+      "regularSession": {
+        "timezone": "EST",
+        "end": 1794430800,
+        "start": 1794407400,
+        "gmtoffset": -18000
+      },
+      "timezone": "America/New_York"
+    }
+  ],
+  "inspection": {
+    "ready": [
+      "KRX:005930",
+      "KRX:000660",
+      "NASDAQ:MU",
+      "TSE:285A",
+      "TWSE:2408",
+      "TWSE:2344",
+      "TWSE:2337",
+      "NASDAQ:INTC",
+      "NASDAQ:TXN",
+      "NASDAQ:ADI",
+      "NASDAQ:NXPI",
+      "NASDAQ:MCHP",
+      "TSE:6723",
+      "XETR:IFX",
+      "NYSE:STM",
+      "NASDAQ:ON",
+      "TSE:6963",
+      "TSE:6758",
+      "NYSE:TSM",
+      "HKEX:981",
+      "NASDAQ:NVDA",
+      "NASDAQ:AMD",
+      "SSE:688256",
+      "NASDAQ:AVGO",
+      "NASDAQ:MRVL",
+      "NASDAQ:ALAB",
+      "NASDAQ:CRDO",
+      "NASDAQ:QCOM",
+      "TWSE:2454",
+      "SSE:603893",
+      "NASDAQ:MPWR",
+      "NASDAQ:SIMO",
+      "TPEX:8299",
+      "TWSE:3034",
+      "NASDAQ:HIMX",
+      "KRX:108320",
+      "NASDAQ:SNPS",
+      "NASDAQ:CDNS",
+      "XETR:SIE",
+      "NASDAQ:ARM",
+      "NASDAQ:RMBS",
+      "NASDAQ:CEVA",
+      "TWSE:3443",
+      "TWSE:3661",
+      "TWSE:3035",
+      "TSE:6526",
+      "NASDAQ:ASML",
+      "TSE:7731",
+      "TSE:7751",
+      "NASDAQ:AMAT",
+      "EURONEXT:ASM",
+      "TSE:8035",
+      "KRX:036930",
+      "TSE:6525",
+      "NASDAQ:LRCX",
+      "SSE:688012",
+      "SZSE:002371",
+      "TSE:7735",
+      "NASDAQ:ACMR",
+      "NASDAQ:KLAC",
+      "TSE:6920",
+      "NYSE:ONTO",
+      "NASDAQ:NVMI",
+      "NASDAQ:ACLS",
+      "KRX:042700",
+      "EURONEXT:BESI",
+      "HKEX:522",
+      "TSE:6146",
+      "TSE:7729",
+      "TSE:6857",
+      "NASDAQ:TER",
+      "NASDAQ:COHU",
+      "TWSE:2360",
+      "KRX:089030",
+      "NASDAQ:AEHR",
+      "NASDAQ:MKSI",
+      "SZSE:301200",
+      "TWSE:3037",
+      "TSE:4062",
+      "KRX:009150",
+      "TWSE:8046",
+      "TWSE:3189",
+      "VIE:ATS",
+      "KRX:353200",
+      "KRX:222800",
+      "KRX:007810",
+      "KRX:356860",
+      "SZSE:002463",
+      "TWSE:2368",
+      "TWSE:3044",
+      "KRX:007660",
+      "NASDAQ:TTMI",
+      "SZSE:002916",
+      "TWSE:2313",
+      "TWSE:4958",
+      "TWSE:6269",
+      "KRX:090460",
+      "TWSE:2383",
+      "SSE:600183",
+      "HKEX:1888",
+      "TWSE:6213",
+      "KRX:000150",
+      "TWSE:8039",
+      "NYSE:DD",
+      "TSE:4063",
+      "TSE:3436",
+      "TPEX:6488",
+      "XETR:WAF",
+      "TSE:4186",
+      "TSE:4901",
+      "KRX:005290",
+      "XETR:MRK",
+      "NASDAQ:ENTG",
+      "KRX:357780",
+      "KRX:092070",
+      "NASDAQ:LIN",
+      "EURONEXT:AI",
+      "NYSE:APD",
+      "KRX:104830",
+      "KRX:102710",
+      "TSE:5384",
+      "KRX:077360",
+      "KRX:033160",
+      "TSE:4203",
+      "TSE:4004",
+      "XETR:HEN3",
+      "TSE:6890",
+      "KRX:074600",
+      "TSE:6971",
+      "KRX:166090",
+      "KRX:101160",
+      "TSE:3433",
+      "KRX:183300",
+      "SIX:VACN",
+      "NASDAQ:AEIS",
+      "NASDAQ:ICHR",
+      "NASDAQ:UCTT",
+      "NYSE:ASX",
+      "NASDAQ:AMKR",
+      "SSE:600584",
+      "TWSE:6239",
+      "NASDAQ:FORM",
+      "MIL:TPRO",
+      "TSE:6855",
+      "TWSE:2449",
+      "NASDAQ:IMOS",
+      "KRX:058470",
+      "KRX:095340",
+      "TSE:6941",
+      "SZSE:300308",
+      "SZSE:300502",
+      "NYSE:FN",
+      "NASDAQ:AAOI",
+      "NASDAQ:LITE",
+      "NYSE:COHR",
+      "TSE:6965",
+      "NYSE:GLW",
+      "TSE:5801",
+      "TSE:5802",
+      "MIL:PRY",
+      "NYSE:KEYS",
+      "NASDAQ:VIAV",
+      "NYSE:DELL",
+      "NYSE:HPE",
+      "HKEX:992",
+      "NASDAQ:SMCI",
+      "TWSE:2317",
+      "TWSE:2382",
+      "TWSE:3231",
+      "TWSE:6669",
+      "TWSE:2356",
+      "NYSE:JBL",
+      "NASDAQ:FLEX",
+      "NYSE:CLS",
+      "NYSE:ANET",
+      "NASDAQ:CSCO",
+      "NYSE:CIEN",
+      "NYSE:P",
+      "NASDAQ:NTAP",
+      "NASDAQ:WDC",
+      "NASDAQ:STX",
+      "NYSE:VRT",
+      "NYSE:ETN",
+      "EURONEXT:SU",
+      "NYSE:MOD",
+      "TWSE:2308",
+      "NASDAQ:AMZN",
+      "NASDAQ:MSFT",
+      "NASDAQ:GOOGL",
+      "NYSE:ORCL",
+      "NYSE:BABA",
+      "HKEX:700",
+      "NASDAQ:CRWV",
+      "NASDAQ:NBIS",
+      "NASDAQ:IREN",
+      "NASDAQ:EQIX",
+      "NYSE:DLR",
+      "NASDAQ:GDS",
+      "NASDAQ:VNET",
+      "TSE:6981",
+      "TSE:6762",
+      "TSE:6976",
+      "TWSE:2327",
+      "NYSE:APH",
+      "NYSE:TEL",
+      "SZSE:002475",
+      "TSE:6954",
+      "TSE:6506",
+      "SIX:ABBN",
+      "TSE:6861",
+      "NASDAQ:CGNX",
+      "NYSE:ROK",
+      "TSE:6383",
+      "NYSE:ARW",
+      "NASDAQ:AVT",
+      "TWSE:3702",
+      "NASDAQ:PANW",
+      "NASDAQ:CRWD",
+      "NASDAQ:FTNT",
+      "NASDAQ:ZS",
+      "NASDAQ:OKTA",
+      "NYSE:SAP",
+      "NYSE:CRM",
+      "NYSE:NOW",
+      "NASDAQ:WDAY",
+      "NASDAQ:PLTR",
+      "NYSE:SNOW",
+      "NASDAQ:DDOG",
+      "NYSE:NET",
+      "NASDAQ:TEAM",
+      "NASDAQ:GTLB",
+      "NASDAQ:APP",
+      "NASDAQ:TTD",
+      "NASDAQ:ADBE",
+      "NASDAQ:ADSK",
+      "EURONEXT:DSY",
+      "NASDAQ:BKNG",
+      "NASDAQ:EXPE",
+      "NASDAQ:TCOM",
+      "NASDAQ:INTU",
+      "NASDAQ:ADP",
+      "NASDAQ:FISV",
+      "NYSE:VEEV",
+      "NYSE:RBLX",
+      "NYSE:U",
+      "NASDAQ:MDB"
+    ],
+    "adjustedMismatch": [],
+    "issues": [
+      [
+        "NYSE:SHOP",
+        "independent",
+        {
+          "open": 149.11500549316406,
+          "high": 150.11000061035156,
+          "low": 147.11500549316406,
+          "close": 149.25999450683594,
+          "volume": 4838529
+        },
+        null
+      ]
+    ],
+    "ohlc": [
+      [
+        "NYSE:APD",
+        {
+          "open": 311.489990234375,
+          "high": 315.2799987792969,
+          "low": 311.6000061035156,
+          "close": 315.17999267578125,
+          "volume": 595816
+        },
+        [
+          "APD",
+          311.49,
+          315.28,
+          311.49,
+          315.18,
+          608779,
+          2.930000000000007,
+          "USD",
+          1794407400
+        ],
+        true,
+        true
+      ],
+      [
+        "NASDAQ:CSCO",
+        {
+          "open": 99.7699966430664,
+          "high": 102.30000305175781,
+          "low": 99.90010070800781,
+          "close": 100.76000213623047,
+          "volume": 18807114
+        },
+        [
+          "CSCO",
+          99.77,
+          102.3,
+          99.63,
+          100.76,
+          18989478,
+          2.6099999999999994,
+          "USD",
+          1794407400
+        ],
+        true,
+        true
+      ],
+      [
+        "NYSE:APH",
+        {
+          "open": 83.98999786376953,
+          "high": 83.81999969482422,
+          "low": 79.20999908447266,
+          "close": 79.30999755859375,
+          "volume": 15732074
+        },
+        [
+          "APH",
+          83.99,
+          83.99,
+          79.19,
+          79.31,
+          15778300,
+          -0.6400000000000006,
+          "USD",
+          1794407400
+        ],
+        true,
+        true
+      ],
+      [
+        "NYSE:ARW",
+        {
+          "open": 202.0,
+          "high": 201.2899932861328,
+          "low": 197.73500061035156,
+          "close": 198.02999877929688,
+          "volume": 464238
+        },
+        [
+          "ARW",
+          202,
+          202.62,
+          197.735,
+          198.03,
+          464238,
+          3.890000000000015,
+          "USD",
+          1794407400
+        ],
+        true,
+        true
+      ],
+      [
+        "NASDAQ:APP",
+        {
+          "open": 394.4949951171875,
+          "high": 413.6000061035156,
+          "low": 394.6300048828125,
+          "close": 404.7699890136719,
+          "volume": 4635963
+        },
+        [
+          "APP",
+          394.495,
+          413.6,
+          394.495,
+          404.77,
+          4653875,
+          9.259999999999991,
+          "USD",
+          1794407400
+        ],
+        true,
+        true
+      ],
+      [
+        "NASDAQ:ADSK",
+        {
+          "open": 258.2699890136719,
+          "high": 259.989990234375,
+          "low": 254.91000366210938,
+          "close": 260.010009765625,
+          "volume": 1258076
+        },
+        [
+          "ADSK",
+          258.27,
+          260.03,
+          254.91,
+          260.01,
+          1262673,
+          -0.10000000000002274,
+          "USD",
+          1794407400
+        ],
+        true,
+        true
+      ]
+    ]
+  },
+  "listingCorrection": {
+    "old": "NYSE:SHOP",
+    "new": "NASDAQ:SHOP",
+    "effectiveDate": "2025-03-31",
+    "verifiedAt": "2026-11-11T22:48:57.139013+00:00",
+    "historicalDataPreserved": true,
+    "sources": [
+      "https://www.shopify.com/investors/press-releases/shopify-to-transfer-u-s-stock-exchange-listing-to-nasdaq-no-change-to-tsx-listing",
+      "https://www.nasdaqtrader.com/TraderNews.aspx?id=DTN2025-8",
+      "https://www.shopify.com/investors/stock-information"
+    ]
+  }
+}

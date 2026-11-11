@@ -166,6 +166,17 @@ def fetch_info(obj):
     try:return obj.get_info() or {}
     except Exception:return {}
 
+def preserve_verified_price_history(previous, incoming):
+    """Append only a compatible completed series; corporate-action revisions need review."""
+    if not previous:
+        return incoming, None
+    lookup = dict(incoming)
+    for day, value in previous:
+        if day in lookup and abs(lookup[day] - value) > max(0.0001, abs(value) * 1e-6):
+            return previous, 'Adjusted historical values changed; retained verified series pending source review.'
+    last = previous[-1][0]
+    return previous + [point for point in incoming if point[0] > last], None
+
 def main():
     unique={r['symbol']:r for r in rows}
     now=dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds')
@@ -196,6 +207,12 @@ def main():
                 time.sleep(1)
                 p=fetch_prices(t)
             if p:
+                p, review = preserve_verified_price_history(current.get('prices', []), p)
+                if review:
+                    current['priceRevisionStatus'] = review
+                else:
+                    current.pop('priceRevisionStatus', None)
+            if p and not review:
                 current.update({'prices':p,'close':p[-1][1],'updated':now,'sourceTicker':ticker})
                 ok+=1
             # Info endpoint can be rate limited and may be unavailable: leave missing values empty.

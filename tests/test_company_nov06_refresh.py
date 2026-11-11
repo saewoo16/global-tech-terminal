@@ -13,7 +13,7 @@ class CompanyNovember6Refresh(unittest.TestCase):
   for r in records:
    self.assertTrue(r['status'].startswith('verified'));self.assertTrue(r['validation']['identity']);self.assertTrue(r['validation']['sessionCompleted']);self.assertEqual(r['sourceSessionDate'],'2026-11-06')
    self.assertLess(dt.datetime.fromtimestamp(r['sourceRegularPeriod']['end'],dt.timezone.utc),dt.datetime.fromisoformat(r['observedAt']))
-   stock=self.m['stocks'][r['symbol']];self.assertGreaterEqual(stock['prices'][-1][0],'2026-11-06')
+   stock=self.m['stocks'][{'NYSE:SHOP':'NASDAQ:SHOP'}.get(r['symbol'],r['symbol'])];self.assertGreaterEqual(stock['prices'][-1][0],'2026-11-06')
    self.assertAlmostEqual(dict(stock['prices'])['2026-11-06'],r['rawTarget']['adjustedClose'],places=4)
  def test_full_simo_adjustment_and_csco_preservation(self):
   records={r['symbol']:r for r in self.e['records']};s=records['NASDAQ:SIMO'];self.assertEqual(s['status'],'verified_full_adjustment');rec=s['reconciliation'];self.assertEqual(rec['dividendPerADS'],.575);self.assertEqual(len(rec['historyReplacement']),rec['storedDatesVerified']);self.assertGreater(rec['storedDatesVerified'],1200)

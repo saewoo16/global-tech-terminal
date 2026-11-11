@@ -6,7 +6,7 @@ class CompanyNov03(unittest.TestCase):
   self.assertEqual(len(e['records']),134)
   self.assertEqual(len(e['independentCompleteCandleRepairs']),6)
   for r in e['records']:
-   self.assertEqual(r['status'],'verified');self.assertEqual(r['point'][0],'2026-11-02');self.assertGreaterEqual(m[r['symbol']]['prices'][-1][0],'2026-11-02')
+   self.assertEqual(r['status'],'verified');self.assertEqual(r['point'][0],'2026-11-02');self.assertGreaterEqual(m[{'NYSE:SHOP':'NASDAQ:SHOP'}.get(r['symbol'],r['symbol'])]['prices'][-1][0],'2026-11-02')
    if r.get('alternativeCompleteBar'):
     b=r['alternativeCompleteBar'];self.assertLessEqual(b['low'],min(b['open'],b['close']));self.assertGreaterEqual(b['high'],max(b['open'],b['close']))
  def test_on_official_quarters(self):
