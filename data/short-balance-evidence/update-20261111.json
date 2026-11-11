@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-11-11T13:35:08Z",
+  "sourceUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0203",
+  "screen": "33001 개별종목 공매도 순보유잔고",
+  "latestAvailable": "2026-11-09",
+  "coverage": {
+    "KOSPI": 938,
+    "KOSDAQ": 1831
+  },
+  "newExports": 2,
+  "reusedExports": 56,
+  "sourceUnits": {
+    "quantity": "shares",
+    "amount": "KRW",
+    "ratio": "percent"
+  },
+  "followingSessionChecks": [
+    {
+      "market": "KOSDAQ",
+      "date": "2026-11-10",
+      "sourceDisplayTime": "2026.11.11 PM 10:34:46",
+      "visibleResult": "데이터가 없습니다."
+    },
+    {
+      "market": "KOSPI",
+      "date": "2026-11-10",
+      "sourceDisplayTime": "2026.11.11 PM 10:35:08",
+      "visibleResult": "데이터가 없습니다."
+    }
+  ],
+  "historyPolicy": "Existing official CSV observations preserved; no interpolation or investor split inferred."
+}

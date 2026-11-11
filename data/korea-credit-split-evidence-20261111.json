@@ -1,0 +1,122 @@
+{
+  "observedAt": "2026-11-11T13:30:43.336366+00:00",
+  "officialRelease": {
+    "schemaVersion": 1,
+    "date": "2026-11-10",
+    "retrievedAt": "2026-11-11T13:30:43.336366+00:00",
+    "url": "https://freesis.kofia.or.kr/stat/main.do",
+    "acquisition": "Official FreeSIS HTML headline",
+    "unit": "million KRW",
+    "officialInvestorDeposits": 85220853,
+    "officialMarginLoans": 26549363,
+    "publicationTimeRule": "Credit balances next day15:00–18:00; exact deposits release time unverified",
+    "ruleSource": "https://www.kofia.or.kr/voc/m_113/view.do?answer_seq=2298&voc_id=3009",
+    "acquisitionUrl": "https://freesis.kofia.or.kr/stat/main.do",
+    "transport": "https",
+    "sourceSha256": "4a96c9bfed55de23320e6853546b0e28eaac5c8ec536a801ab082e21ea6e2e51"
+  },
+  "splitSource": "https://chunsystem.com/free/chun-index-score",
+  "rawMarketRows": {
+    "kospiList": [
+      {
+        "stdDate": "2026-11-10",
+        "type": null,
+        "endPrice": "5239.13",
+        "per": "8.72",
+        "pbr": "1.30",
+        "sichong": "4293543171",
+        "debt": "0.48",
+        "upCnt": "0",
+        "downCnt": "1",
+        "stdDept": null,
+        "avgPer": "17.67266117969823",
+        "avgPbr": "1.2519753086419747",
+        "maxSichong": "7449592793",
+        "chunScore": "0",
+        "capScore": "54.61",
+        "perScore": "32.09",
+        "pbrScore": "56.97",
+        "debtScore": "94.21",
+        "totalScore": "40.59",
+        "sinyong": "20655024",
+        "years": 0,
+        "months": 0,
+        "days": 0,
+        "row": 0
+      }
+    ],
+    "kosdaqList": [
+      {
+        "stdDate": "2026-11-10",
+        "type": null,
+        "endPrice": "667.61",
+        "per": "32.63",
+        "pbr": "1.47",
+        "sichong": "378644014",
+        "debt": "1.56",
+        "upCnt": "0",
+        "downCnt": "2",
+        "stdDept": null,
+        "avgPer": "95.56185185185193",
+        "avgPbr": "1.9200823045267474",
+        "maxSichong": "679545243",
+        "chunScore": "0",
+        "capScore": "53.15",
+        "perScore": "23.5",
+        "pbrScore": "45.48",
+        "debtScore": "80.73",
+        "totalScore": "26.75",
+        "sinyong": "5894339",
+        "years": 0,
+        "months": 0,
+        "days": 0,
+        "row": 0
+      }
+    ]
+  },
+  "acceptedRows": {
+    "creditKOSPI": [
+      {
+        "date": "2026-11-10",
+        "value": 206550.24,
+        "rawMillionKRW": 20655024,
+        "sourceId": "chun-official-total-20261110",
+        "verificationMethod": "same-day direct official KOFIA total",
+        "officialSourceUrl": "https://freesis.kofia.or.kr/stat/main.do",
+        "officialMarginLoansMillionKRW": 26549363,
+        "splitMinusOfficialMillionKRW": 0,
+        "observedAt": "2026-11-11T13:30:43.336366+00:00"
+      }
+    ],
+    "creditKOSDAQ": [
+      {
+        "date": "2026-11-10",
+        "value": 58943.39,
+        "rawMillionKRW": 5894339,
+        "sourceId": "chun-official-total-20261110",
+        "verificationMethod": "same-day direct official KOFIA total",
+        "officialSourceUrl": "https://freesis.kofia.or.kr/stat/main.do",
+        "officialMarginLoansMillionKRW": 26549363,
+        "splitMinusOfficialMillionKRW": 0,
+        "observedAt": "2026-11-11T13:30:43.336366+00:00"
+      }
+    ]
+  },
+  "previousCoverage": {
+    "creditKOSPI": {
+      "start": "2023-10-31",
+      "end": "2026-11-03",
+      "count": 735,
+      "requestedStart": "2023-10-17",
+      "requestedEnd": "2026-10-21"
+    },
+    "creditKOSDAQ": {
+      "start": "2023-10-31",
+      "end": "2026-11-03",
+      "count": 735,
+      "requestedStart": "2023-10-17",
+      "requestedEnd": "2026-10-21"
+    }
+  },
+  "sumDifferenceMillionKRW": 0
+}
