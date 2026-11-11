@@ -1,0 +1,1373 @@
+{
+  "updated": [
+    {
+      "ticker": "IHF",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "ticker": "UNH",
+          "name": "UNITEDHEALTH GROUP",
+          "weightPct": 21.72,
+          "shortName": "UNITEDHEALTH GROUP"
+        },
+        {
+          "ticker": "CVS",
+          "name": "CVS HEALTH",
+          "weightPct": 11.53,
+          "shortName": "CVS HEALTH"
+        },
+        {
+          "ticker": "ELV",
+          "name": "ELEVANCE HEALTH INC",
+          "weightPct": 9.43,
+          "shortName": "ELEVANCE HEALTH INC"
+        },
+        {
+          "ticker": "HCA",
+          "name": "HCA HEALTHCARE",
+          "weightPct": 5.04,
+          "shortName": "HCA HEALTHCARE"
+        },
+        {
+          "ticker": "VEEV",
+          "name": "VEEVA SYSTEMS CLASS A",
+          "weightPct": 4.94,
+          "shortName": "VEEVA SYSTEMS CLASS A"
+        }
+      ]
+    },
+    {
+      "ticker": "ITA",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "ticker": "GE",
+          "name": "GE AEROSPACE",
+          "weightPct": 21.64,
+          "shortName": "GE AEROSPACE"
+        },
+        {
+          "ticker": "RTX",
+          "name": "RTX",
+          "weightPct": 16.66,
+          "shortName": "RTX"
+        },
+        {
+          "ticker": "BA",
+          "name": "BOEING",
+          "weightPct": 6.66,
+          "shortName": "BOEING"
+        },
+        {
+          "ticker": "LMT",
+          "name": "LOCKHEED MARTIN",
+          "weightPct": 5.2,
+          "shortName": "LOCKHEED MARTIN"
+        },
+        {
+          "ticker": "TDG",
+          "name": "TRANSDIGM GROUP",
+          "weightPct": 4.92,
+          "shortName": "TRANSDIGM GROUP"
+        }
+      ]
+    },
+    {
+      "ticker": "XPH",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "name": "XERIS BIOPHARMA HOLDINGS INC",
+          "shortName": "XERIS BIOPHARMA HOLDINGS INC",
+          "ticker": "XERS",
+          "weightPct": 4.03183
+        },
+        {
+          "name": "VERADERMICS INC",
+          "shortName": "VERADERMICS INC",
+          "ticker": "MANE",
+          "weightPct": 2.924644
+        },
+        {
+          "name": "SEPTERNA INC",
+          "shortName": "SEPTERNA INC",
+          "ticker": "SEPN",
+          "weightPct": 2.531764
+        },
+        {
+          "name": "MAZE THERAPEUTICS INC",
+          "shortName": "MAZE THERAPEUTICS INC",
+          "ticker": "MAZE",
+          "weightPct": 2.519871
+        },
+        {
+          "name": "ELI LILLY + CO",
+          "shortName": "ELI LILLY + CO",
+          "ticker": "LLY",
+          "weightPct": 2.501589
+        }
+      ]
+    },
+    {
+      "ticker": "XOP",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "name": "RANGE RESOURCES CORP",
+          "shortName": "RANGE RESOURCES CORP",
+          "ticker": "RRC",
+          "weightPct": 3.604372
+        },
+        {
+          "name": "EOG RESOURCES INC",
+          "shortName": "EOG RESOURCES INC",
+          "ticker": "EOG",
+          "weightPct": 3.02847
+        },
+        {
+          "name": "APA CORP",
+          "shortName": "APA CORP",
+          "ticker": "APA",
+          "weightPct": 2.956789
+        },
+        {
+          "name": "EXXONMOBIL HOLDINGS CORP",
+          "shortName": "EXXONMOBIL HOLDINGS CORP",
+          "ticker": "XOM",
+          "weightPct": 2.94252
+        },
+        {
+          "name": "CONOCOPHILLIPS",
+          "shortName": "CONOCOPHILLIPS",
+          "ticker": "COP",
+          "weightPct": 2.918277
+        }
+      ]
+    },
+    {
+      "ticker": "XLF",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "name": "BERKSHIRE HATHAWAY INC CL B",
+          "shortName": "BERKSHIRE HATHAWAY INC CL B",
+          "ticker": "BRK.B",
+          "weightPct": 13.23697
+        },
+        {
+          "name": "JPMORGAN CHASE + CO",
+          "shortName": "JPMORGAN CHASE + CO",
+          "ticker": "JPM",
+          "weightPct": 11.078698
+        },
+        {
+          "name": "VISA INC CLASS A SHARES",
+          "shortName": "VISA INC CLASS A SHARES",
+          "ticker": "V",
+          "weightPct": 8.782622
+        },
+        {
+          "name": "MASTERCARD INC   A",
+          "shortName": "MASTERCARD INC   A",
+          "ticker": "MA",
+          "weightPct": 6.491113
+        },
+        {
+          "name": "BANK OF AMERICA CORP",
+          "shortName": "BANK OF AMERICA CORP",
+          "ticker": "BAC",
+          "weightPct": 4.01565
+        }
+      ]
+    },
+    {
+      "ticker": "XLE",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "name": "EXXONMOBIL HOLDINGS CORP",
+          "shortName": "EXXONMOBIL HOLDINGS CORP",
+          "ticker": "XOM",
+          "weightPct": 24.061802
+        },
+        {
+          "name": "CHEVRON CORP",
+          "shortName": "CHEVRON CORP",
+          "ticker": "CVX",
+          "weightPct": 18.500448
+        },
+        {
+          "name": "CONOCOPHILLIPS",
+          "shortName": "CONOCOPHILLIPS",
+          "ticker": "COP",
+          "weightPct": 7.221096
+        },
+        {
+          "name": "MARATHON PETROLEUM CORP",
+          "shortName": "MARATHON PETROLEUM CORP",
+          "ticker": "MPC",
+          "weightPct": 4.584474
+        },
+        {
+          "name": "PHILLIPS 66",
+          "shortName": "PHILLIPS 66",
+          "ticker": "PSX",
+          "weightPct": 4.519151
+        }
+      ]
+    },
+    {
+      "ticker": "IAI",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "ticker": "GS",
+          "name": "GOLDMAN SACHS GROUP",
+          "weightPct": 17.69,
+          "shortName": "GOLDMAN SACHS GROUP"
+        },
+        {
+          "ticker": "MS",
+          "name": "MORGAN STANLEY",
+          "weightPct": 14.94,
+          "shortName": "MORGAN STANLEY"
+        },
+        {
+          "ticker": "SCHW",
+          "name": "CHARLES SCHWAB",
+          "weightPct": 8.7,
+          "shortName": "CHARLES SCHWAB"
+        },
+        {
+          "ticker": "SPGI",
+          "name": "S&P GLOBAL",
+          "weightPct": 5.33,
+          "shortName": "S&P GLOBAL"
+        },
+        {
+          "ticker": "ICE",
+          "name": "INTERCONTINENTAL EXCHANGE INC",
+          "weightPct": 5.31,
+          "shortName": "INTERCONTINENTAL EXCHANGE INC"
+        }
+      ]
+    },
+    {
+      "ticker": "XLC",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "name": "META PLATFORMS INC CLASS A",
+          "shortName": "META PLATFORMS INC CLASS A",
+          "ticker": "META",
+          "weightPct": 21.093128
+        },
+        {
+          "name": "ALPHABET INC CL A",
+          "shortName": "ALPHABET INC CL A",
+          "ticker": "GOOGL",
+          "weightPct": 10.458183
+        },
+        {
+          "name": "ALPHABET INC CL C",
+          "shortName": "ALPHABET INC CL C",
+          "ticker": "GOOG",
+          "weightPct": 8.398871
+        },
+        {
+          "name": "APPLOVIN CORP CLASS A",
+          "shortName": "APPLOVIN CORP CLASS A",
+          "ticker": "APP",
+          "weightPct": 6.214377
+        },
+        {
+          "name": "WALT DISNEY CO/THE",
+          "shortName": "WALT DISNEY CO/THE",
+          "ticker": "DIS",
+          "weightPct": 5.484714
+        }
+      ]
+    },
+    {
+      "ticker": "XLV",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "name": "ELI LILLY + CO",
+          "shortName": "ELI LILLY + CO",
+          "ticker": "LLY",
+          "weightPct": 16.729904
+        },
+        {
+          "name": "JOHNSON + JOHNSON",
+          "shortName": "JOHNSON + JOHNSON",
+          "ticker": "JNJ",
+          "weightPct": 9.877695
+        },
+        {
+          "name": "ABBVIE INC",
+          "shortName": "ABBVIE INC",
+          "ticker": "ABBV",
+          "weightPct": 7.581235
+        },
+        {
+          "name": "MERCK + CO. INC.",
+          "shortName": "MERCK + CO. INC.",
+          "ticker": "MRK",
+          "weightPct": 5.332092
+        },
+        {
+          "name": "UNITEDHEALTH GROUP INC",
+          "shortName": "UNITEDHEALTH GROUP INC",
+          "ticker": "UNH",
+          "weightPct": 5.308306
+        }
+      ]
+    },
+    {
+      "ticker": "XLP",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "name": "WALMART INC",
+          "shortName": "WALMART INC",
+          "ticker": "WMT",
+          "weightPct": 11.179413
+        },
+        {
+          "name": "COSTCO WHOLESALE CORP",
+          "shortName": "COSTCO WHOLESALE CORP",
+          "ticker": "COST",
+          "weightPct": 9.447028
+        },
+        {
+          "name": "PROCTER + GAMBLE CO/THE",
+          "shortName": "PROCTER + GAMBLE CO/THE",
+          "ticker": "PG",
+          "weightPct": 7.833134
+        },
+        {
+          "name": "COCA COLA CO/THE",
+          "shortName": "COCA COLA CO/THE",
+          "ticker": "KO",
+          "weightPct": 7.497946
+        },
+        {
+          "name": "PHILIP MORRIS INTERNATIONAL",
+          "shortName": "PHILIP MORRIS INTERNATIONAL",
+          "ticker": "PM",
+          "weightPct": 6.04932
+        }
+      ]
+    },
+    {
+      "ticker": "IYT",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "ticker": "UNP",
+          "name": "UNION PACIFIC",
+          "weightPct": 18.06,
+          "shortName": "UNION PACIFIC"
+        },
+        {
+          "ticker": "UBER",
+          "name": "UBER TECHNOLOGIES",
+          "weightPct": 14.47,
+          "shortName": "UBER TECHNOLOGIES"
+        },
+        {
+          "ticker": "CSX",
+          "name": "CSX",
+          "weightPct": 9.57,
+          "shortName": "CSX"
+        },
+        {
+          "ticker": "DAL",
+          "name": "DELTA AIR LINES",
+          "weightPct": 5.12,
+          "shortName": "DELTA AIR LINES"
+        },
+        {
+          "ticker": "UAL",
+          "name": "UNITED AIRLINES HOLDINGS",
+          "weightPct": 4.92,
+          "shortName": "UNITED AIRLINES HOLDINGS"
+        }
+      ]
+    },
+    {
+      "ticker": "XAR",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "name": "LOCKHEED MARTIN CORP",
+          "shortName": "LOCKHEED MARTIN CORP",
+          "ticker": "LMT",
+          "weightPct": 3.382164
+        },
+        {
+          "name": "KARMAN HOLDINGS INC",
+          "shortName": "KARMAN HOLDINGS INC",
+          "ticker": "KRMN",
+          "weightPct": 3.316222
+        },
+        {
+          "name": "HUNTINGTON INGALLS INDUSTRIE",
+          "shortName": "HUNTINGTON INGALLS INDUSTRIE",
+          "ticker": "HII",
+          "weightPct": 3.283693
+        },
+        {
+          "name": "STANDARDAERO INC",
+          "shortName": "STANDARDAERO INC",
+          "ticker": "SARO",
+          "weightPct": 3.280355
+        },
+        {
+          "name": "HEICO CORP",
+          "shortName": "HEICO CORP",
+          "ticker": "HEI",
+          "weightPct": 3.249431
+        }
+      ]
+    },
+    {
+      "ticker": "XLY",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "name": "AMAZON.COM INC",
+          "shortName": "AMAZON.COM INC",
+          "ticker": "AMZN",
+          "weightPct": 22.887124
+        },
+        {
+          "name": "TESLA INC",
+          "shortName": "TESLA INC",
+          "ticker": "TSLA",
+          "weightPct": 17.020977
+        },
+        {
+          "name": "HOME DEPOT INC",
+          "shortName": "HOME DEPOT INC",
+          "ticker": "HD",
+          "weightPct": 5.566541
+        },
+        {
+          "name": "MCDONALD S CORP",
+          "shortName": "MCDONALD S CORP",
+          "ticker": "MCD",
+          "weightPct": 4.645724
+        },
+        {
+          "name": "TJX COMPANIES INC",
+          "shortName": "TJX COMPANIES INC",
+          "ticker": "TJX",
+          "weightPct": 3.792298
+        }
+      ]
+    },
+    {
+      "ticker": "CIBR",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "ticker": "CRWD",
+          "name": "CrowdStrike Holdings, Inc. (Class A)",
+          "weightPct": 8.27,
+          "shortName": "CrowdStrike Holdings, Inc. (Class A)"
+        },
+        {
+          "ticker": "AVGO",
+          "name": "Broadcom Inc.",
+          "weightPct": 7.58,
+          "shortName": "Broadcom Inc."
+        },
+        {
+          "ticker": "CSCO",
+          "name": "Cisco Systems, Inc.",
+          "weightPct": 7.52,
+          "shortName": "Cisco Systems, Inc."
+        },
+        {
+          "ticker": "PANW",
+          "name": "Palo Alto Networks, Inc.",
+          "weightPct": 7.23,
+          "shortName": "Palo Alto Networks, Inc."
+        },
+        {
+          "ticker": "FTNT",
+          "name": "Fortinet, Inc.",
+          "weightPct": 6.12,
+          "shortName": "Fortinet, Inc."
+        }
+      ]
+    },
+    {
+      "ticker": "XLI",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "name": "GENERAL ELECTRIC",
+          "shortName": "GENERAL ELECTRIC",
+          "ticker": "GE",
+          "weightPct": 6.538679
+        },
+        {
+          "name": "RTX CORP",
+          "shortName": "RTX CORP",
+          "ticker": "RTX",
+          "weightPct": 5.033978
+        },
+        {
+          "name": "CATERPILLAR INC",
+          "shortName": "CATERPILLAR INC",
+          "ticker": "CAT",
+          "weightPct": 5.01151
+        },
+        {
+          "name": "GE VERNOVA INC",
+          "shortName": "GE VERNOVA INC",
+          "ticker": "GEV",
+          "weightPct": 3.959093
+        },
+        {
+          "name": "UNION PACIFIC CORP",
+          "shortName": "UNION PACIFIC CORP",
+          "ticker": "UNP",
+          "weightPct": 3.330898
+        }
+      ]
+    },
+    {
+      "ticker": "SOXX",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "ticker": "AMD",
+          "name": "ADVANCED MICRO DEVICES",
+          "weightPct": 10.11,
+          "shortName": "ADVANCED MICRO DEVICES"
+        },
+        {
+          "ticker": "AVGO",
+          "name": "BROADCOM INC",
+          "weightPct": 8.3,
+          "shortName": "BROADCOM INC"
+        },
+        {
+          "ticker": "NVDA",
+          "name": "NVIDIA",
+          "weightPct": 7.11,
+          "shortName": "NVIDIA"
+        },
+        {
+          "ticker": "MU",
+          "name": "MICRON TECHNOLOGY",
+          "weightPct": 6.99,
+          "shortName": "MICRON TECHNOLOGY"
+        },
+        {
+          "ticker": "INTC",
+          "name": "INTEL CORPORATION",
+          "weightPct": 6.0,
+          "shortName": "INTEL CORPORATION"
+        }
+      ]
+    },
+    {
+      "ticker": "XLRE",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "name": "WELLTOWER INC",
+          "shortName": "WELLTOWER INC",
+          "ticker": "WELL",
+          "weightPct": 11.585387
+        },
+        {
+          "name": "PROLOGIS INC",
+          "shortName": "PROLOGIS INC",
+          "ticker": "PLD",
+          "weightPct": 8.024889
+        },
+        {
+          "name": "EQUINIX INC",
+          "shortName": "EQUINIX INC",
+          "ticker": "EQIX",
+          "weightPct": 6.724689
+        },
+        {
+          "name": "AMERICAN TOWER CORP",
+          "shortName": "AMERICAN TOWER CORP",
+          "ticker": "AMT",
+          "weightPct": 5.757557
+        },
+        {
+          "name": "SIMON PROPERTY GROUP INC",
+          "shortName": "SIMON PROPERTY GROUP INC",
+          "ticker": "SPG",
+          "weightPct": 5.009049
+        }
+      ]
+    },
+    {
+      "ticker": "XLU",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "name": "NEXTERA ENERGY INC",
+          "shortName": "NEXTERA ENERGY INC",
+          "ticker": "NEE",
+          "weightPct": 13.093418
+        },
+        {
+          "name": "SOUTHERN CO/THE",
+          "shortName": "SOUTHERN CO/THE",
+          "ticker": "SO",
+          "weightPct": 7.838405
+        },
+        {
+          "name": "DUKE ENERGY CORP",
+          "shortName": "DUKE ENERGY CORP",
+          "ticker": "DUK",
+          "weightPct": 7.314814
+        },
+        {
+          "name": "CONSTELLATION ENERGY",
+          "shortName": "CONSTELLATION ENERGY",
+          "ticker": "CEG",
+          "weightPct": 6.419396
+        },
+        {
+          "name": "AMERICAN ELECTRIC POWER",
+          "shortName": "AMERICAN ELECTRIC POWER",
+          "ticker": "AEP",
+          "weightPct": 5.063716
+        }
+      ]
+    },
+    {
+      "ticker": "XLB",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "name": "LINDE PLC",
+          "shortName": "LINDE PLC",
+          "ticker": "LIN",
+          "weightPct": 13.035836
+        },
+        {
+          "name": "NEWMONT CORP",
+          "shortName": "NEWMONT CORP",
+          "ticker": "NEM",
+          "weightPct": 6.850394
+        },
+        {
+          "name": "VULCAN MATERIALS CO",
+          "shortName": "VULCAN MATERIALS CO",
+          "ticker": "VMC",
+          "weightPct": 5.248544
+        },
+        {
+          "name": "ECOLAB INC",
+          "shortName": "ECOLAB INC",
+          "ticker": "ECL",
+          "weightPct": 5.132058
+        },
+        {
+          "name": "SHERWIN WILLIAMS CO/THE",
+          "shortName": "SHERWIN WILLIAMS CO/THE",
+          "ticker": "SHW",
+          "weightPct": 5.058955
+        }
+      ]
+    },
+    {
+      "ticker": "FDN",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "ticker": "AMZN",
+          "name": "Amazon.com, Inc.",
+          "weightPct": 11.48,
+          "shortName": "Amazon.com, Inc."
+        },
+        {
+          "ticker": "META",
+          "name": "Meta Platforms, Inc. (Class A)",
+          "weightPct": 10.5,
+          "shortName": "Meta Platforms, Inc. (Class A)"
+        },
+        {
+          "ticker": "CSCO",
+          "name": "Cisco Systems, Inc.",
+          "weightPct": 8.35,
+          "shortName": "Cisco Systems, Inc."
+        },
+        {
+          "ticker": "NFLX",
+          "name": "Netflix, Inc.",
+          "weightPct": 5.6,
+          "shortName": "Netflix, Inc."
+        },
+        {
+          "ticker": "GOOGL",
+          "name": "Alphabet Inc. (Class A)",
+          "weightPct": 5.15,
+          "shortName": "Alphabet Inc. (Class A)"
+        }
+      ]
+    },
+    {
+      "ticker": "XRT",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "name": "REALREAL INC/THE",
+          "shortName": "REALREAL INC/THE",
+          "ticker": "REAL",
+          "weightPct": 2.011893
+        },
+        {
+          "name": "VICTORIA S SECRET + CO",
+          "shortName": "VICTORIA S SECRET + CO",
+          "ticker": "VSXY",
+          "weightPct": 1.885621
+        },
+        {
+          "name": "KOHLS CORP",
+          "shortName": "KOHLS CORP",
+          "ticker": "KSS",
+          "weightPct": 1.82132
+        },
+        {
+          "name": "ACADEMY SPORTS + OUTDOORS IN",
+          "shortName": "ACADEMY SPORTS + OUTDOORS IN",
+          "ticker": "ASO",
+          "weightPct": 1.77411
+        },
+        {
+          "name": "UPBOUND GROUP INC",
+          "shortName": "UPBOUND GROUP INC",
+          "ticker": "UPBD",
+          "weightPct": 1.755584
+        }
+      ]
+    },
+    {
+      "ticker": "KRE",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "name": "UNITED COMMUNITY BANKS/GA",
+          "shortName": "UNITED COMMUNITY BANKS/GA",
+          "ticker": "UCB",
+          "weightPct": 1.186881
+        },
+        {
+          "name": "GLACIER BANCORP INC",
+          "shortName": "GLACIER BANCORP INC",
+          "ticker": "GBCI",
+          "weightPct": 1.186079
+        },
+        {
+          "name": "EASTERN BANKSHARES INC",
+          "shortName": "EASTERN BANKSHARES INC",
+          "ticker": "EBC",
+          "weightPct": 1.183683
+        },
+        {
+          "name": "BANK OZK",
+          "shortName": "BANK OZK",
+          "ticker": "OZK",
+          "weightPct": 1.159924
+        },
+        {
+          "name": "VALLEY NATIONAL BANCORP",
+          "shortName": "VALLEY NATIONAL BANCORP",
+          "ticker": "VLY",
+          "weightPct": 1.156917
+        }
+      ]
+    },
+    {
+      "ticker": "KBE",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "name": "CENTRAL BANCOMPANY",
+          "shortName": "CENTRAL BANCOMPANY",
+          "ticker": "CBC",
+          "weightPct": 1.135707
+        },
+        {
+          "name": "CUSTOMERS BANCORP INC",
+          "shortName": "CUSTOMERS BANCORP INC",
+          "ticker": "CUBI",
+          "weightPct": 1.029591
+        },
+        {
+          "name": "FIRST CITIZENS BCSHS   CL A",
+          "shortName": "FIRST CITIZENS BCSHS   CL A",
+          "ticker": "FCNCA",
+          "weightPct": 1.024935
+        },
+        {
+          "name": "ROCKET COS INC CLASS A",
+          "shortName": "ROCKET COS INC CLASS A",
+          "ticker": "RKT",
+          "weightPct": 1.015381
+        },
+        {
+          "name": "UNITED COMMUNITY BANKS/GA",
+          "shortName": "UNITED COMMUNITY BANKS/GA",
+          "ticker": "UCB",
+          "weightPct": 1.00779
+        }
+      ]
+    },
+    {
+      "ticker": "CRAK",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "ticker": "MPC",
+          "name": "Marathon Petroleum Corp",
+          "weightPct": 9.18,
+          "shortName": "Marathon Petroleum Corp"
+        },
+        {
+          "ticker": "RIGD LI",
+          "name": "Reliance Industries Ltd",
+          "weightPct": 8.78,
+          "shortName": "Reliance Industries Ltd"
+        },
+        {
+          "ticker": "VLO",
+          "name": "Valero Energy Corp",
+          "weightPct": 8.49,
+          "shortName": "Valero Energy Corp"
+        },
+        {
+          "ticker": "PSX",
+          "name": "Phillips 66",
+          "weightPct": 7.35,
+          "shortName": "Phillips 66"
+        },
+        {
+          "ticker": "5020 JP",
+          "name": "Eneos Holdings Inc",
+          "weightPct": 5.35,
+          "shortName": "Eneos Holdings Inc"
+        }
+      ]
+    },
+    {
+      "ticker": "SMH",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "ticker": "NVDA",
+          "name": "Nvidia Corp",
+          "weightPct": 18.0,
+          "shortName": "Nvidia Corp"
+        },
+        {
+          "ticker": "TSM",
+          "name": "Taiwan Semiconductor Manufacturing Co L",
+          "weightPct": 10.1,
+          "shortName": "Taiwan Semiconductor Manufacturing Co L"
+        },
+        {
+          "ticker": "AVGO",
+          "name": "Broadcom Inc",
+          "weightPct": 6.18,
+          "shortName": "Broadcom Inc"
+        },
+        {
+          "ticker": "TXN",
+          "name": "Texas Instruments Inc",
+          "weightPct": 6.15,
+          "shortName": "Texas Instruments Inc"
+        },
+        {
+          "ticker": "AMD",
+          "name": "Advanced Micro Devices Inc",
+          "weightPct": 5.89,
+          "shortName": "Advanced Micro Devices Inc"
+        }
+      ]
+    },
+    {
+      "ticker": "IHI",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "ticker": "ABT",
+          "name": "ABBOTT LABORATORIES",
+          "weightPct": 17.6,
+          "shortName": "ABBOTT LABORATORIES"
+        },
+        {
+          "ticker": "ISRG",
+          "name": "INTUITIVE SURGICAL",
+          "weightPct": 14.64,
+          "shortName": "INTUITIVE SURGICAL"
+        },
+        {
+          "ticker": "MDT",
+          "name": "MEDTRONIC PLC",
+          "weightPct": 11.45,
+          "shortName": "MEDTRONIC PLC"
+        },
+        {
+          "ticker": "IDXX",
+          "name": "IDEXX LABORATORIES",
+          "weightPct": 5.41,
+          "shortName": "IDEXX LABORATORIES"
+        },
+        {
+          "ticker": "EW",
+          "name": "EDWARDS LIFESCIENCES",
+          "weightPct": 4.83,
+          "shortName": "EDWARDS LIFESCIENCES"
+        }
+      ]
+    },
+    {
+      "ticker": "CLOU",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "ticker": "SNOW",
+          "name": "SNOWFLAKE INC",
+          "weightPct": 6.89,
+          "shortName": "SNOWFLAKE INC"
+        },
+        {
+          "ticker": "PAYC",
+          "name": "PAYCOM SOFTWARE INC",
+          "weightPct": 5.97,
+          "shortName": "PAYCOM SOFTWARE INC"
+        },
+        {
+          "ticker": "WDAY",
+          "name": "WORKDAY INC-CLASS A",
+          "weightPct": 4.91,
+          "shortName": "WORKDAY INC-CLASS A"
+        },
+        {
+          "ticker": "ZS",
+          "name": "ZSCALER INC",
+          "weightPct": 4.74,
+          "shortName": "ZSCALER INC"
+        },
+        {
+          "ticker": "NET",
+          "name": "CLOUDFLARE INC - CLASS A",
+          "weightPct": 4.74,
+          "shortName": "CLOUDFLARE INC - CLASS A"
+        }
+      ]
+    },
+    {
+      "ticker": "IBB",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "ticker": "GILD",
+          "name": "GILEAD SCIENCES",
+          "weightPct": 8.97,
+          "shortName": "GILEAD SCIENCES"
+        },
+        {
+          "ticker": "AMGN",
+          "name": "AMGEN INC",
+          "weightPct": 8.31,
+          "shortName": "AMGEN INC"
+        },
+        {
+          "ticker": "VRTX",
+          "name": "VERTEX PHARMACEUTICALS",
+          "weightPct": 7.73,
+          "shortName": "VERTEX PHARMACEUTICALS"
+        },
+        {
+          "ticker": "MRNA",
+          "name": "MODERNA",
+          "weightPct": 6.23,
+          "shortName": "MODERNA"
+        },
+        {
+          "ticker": "REGN",
+          "name": "REGENERON PHARMACEUTICALS",
+          "weightPct": 6.17,
+          "shortName": "REGENERON PHARMACEUTICALS"
+        }
+      ]
+    },
+    {
+      "ticker": "IGV",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "ticker": "MSFT",
+          "name": "MICROSOFT",
+          "weightPct": 9.29,
+          "shortName": "MICROSOFT"
+        },
+        {
+          "ticker": "PLTR",
+          "name": "PALANTIR TECHNOLOGIES CLASS A",
+          "weightPct": 8.54,
+          "shortName": "PALANTIR TECHNOLOGIES CLASS A"
+        },
+        {
+          "ticker": "PANW",
+          "name": "PALO ALTO NETWORKS",
+          "weightPct": 8.35,
+          "shortName": "PALO ALTO NETWORKS"
+        },
+        {
+          "ticker": "CRWD",
+          "name": "CROWDSTRIKE HOLDINGS CLASS A",
+          "weightPct": 7.95,
+          "shortName": "CROWDSTRIKE HOLDINGS CLASS A"
+        },
+        {
+          "ticker": "ORCL",
+          "name": "ORACLE",
+          "weightPct": 7.11,
+          "shortName": "ORACLE"
+        }
+      ]
+    },
+    {
+      "ticker": "XLK",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "name": "APPLE INC",
+          "shortName": "APPLE INC",
+          "ticker": "AAPL",
+          "weightPct": 16.411032
+        },
+        {
+          "name": "NVIDIA CORP",
+          "shortName": "NVIDIA CORP",
+          "ticker": "NVDA",
+          "weightPct": 13.187428
+        },
+        {
+          "name": "MICROSOFT CORP",
+          "shortName": "MICROSOFT CORP",
+          "ticker": "MSFT",
+          "weightPct": 12.773992
+        },
+        {
+          "name": "BROADCOM INC",
+          "shortName": "BROADCOM INC",
+          "ticker": "AVGO",
+          "weightPct": 5.096102
+        },
+        {
+          "name": "ADVANCED MICRO DEVICES",
+          "shortName": "ADVANCED MICRO DEVICES",
+          "ticker": "AMD",
+          "weightPct": 4.912578
+        }
+      ]
+    },
+    {
+      "ticker": "XBI",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "name": "MODERNA INC",
+          "shortName": "MODERNA INC",
+          "ticker": "MRNA",
+          "weightPct": 2.702869
+        },
+        {
+          "name": "EXELIXIS INC",
+          "shortName": "EXELIXIS INC",
+          "ticker": "EXEL",
+          "weightPct": 1.768128
+        },
+        {
+          "name": "SPYRE THERAPEUTICS INC",
+          "shortName": "SPYRE THERAPEUTICS INC",
+          "ticker": "SYRE",
+          "weightPct": 1.756197
+        },
+        {
+          "name": "BIOGEN INC",
+          "shortName": "BIOGEN INC",
+          "ticker": "BIIB",
+          "weightPct": 1.756113
+        },
+        {
+          "name": "ORUKA THERAPEUTICS INC",
+          "shortName": "ORUKA THERAPEUTICS INC",
+          "ticker": "ORKA",
+          "weightPct": 1.748715
+        }
+      ]
+    },
+    {
+      "ticker": "BATT",
+      "asOf": "2026-11-09",
+      "top5": [
+        {
+          "ticker": "TSLA",
+          "name": "Tesla, Inc.",
+          "weightPct": 9.34,
+          "shortName": "Tesla, Inc."
+        },
+        {
+          "ticker": "ASX:BHP",
+          "name": "BHP Group Limited",
+          "weightPct": 7.58,
+          "shortName": "BHP Group Limited"
+        },
+        {
+          "ticker": "FCX",
+          "name": "Freeport-McMoRan Inc.",
+          "weightPct": 6.15,
+          "shortName": "Freeport-McMoRan Inc."
+        },
+        {
+          "ticker": "SHE:300750",
+          "name": "Contemporary Amperex Technology Co., Limited",
+          "weightPct": 5.24,
+          "shortName": "Contemporary Amperex Technology Co., Limited"
+        },
+        {
+          "ticker": "BYDDF",
+          "name": "BYD Company Limited",
+          "weightPct": 4.87,
+          "shortName": "BYD Company Limited"
+        }
+      ]
+    },
+    {
+      "ticker": "XME",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "name": "RELIANCE INC",
+          "shortName": "RELIANCE INC",
+          "ticker": "RS",
+          "weightPct": 6.320662
+        },
+        {
+          "name": "CLEVELAND CLIFFS INC",
+          "shortName": "CLEVELAND CLIFFS INC",
+          "ticker": "CLF",
+          "weightPct": 6.217008
+        },
+        {
+          "name": "ROYAL GOLD INC",
+          "shortName": "ROYAL GOLD INC",
+          "ticker": "RGLD",
+          "weightPct": 6.112576
+        },
+        {
+          "name": "NUCOR CORP",
+          "shortName": "NUCOR CORP",
+          "ticker": "NUE",
+          "weightPct": 5.812156
+        },
+        {
+          "name": "STEEL DYNAMICS INC",
+          "shortName": "STEEL DYNAMICS INC",
+          "ticker": "STLD",
+          "weightPct": 5.733761
+        }
+      ]
+    },
+    {
+      "ticker": "LIT",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "ticker": "RIO",
+          "name": "RIO TINTO PLC-SPON ADR",
+          "weightPct": 19.97,
+          "shortName": "RIO TINTO PLC-SPON ADR"
+        },
+        {
+          "ticker": "ALB",
+          "name": "ALBEMARLE CORP",
+          "weightPct": 5.5,
+          "shortName": "ALBEMARLE CORP"
+        },
+        {
+          "ticker": "TSLA",
+          "name": "TESLA INC",
+          "weightPct": 4.57,
+          "shortName": "TESLA INC"
+        },
+        {
+          "ticker": "300014 C2",
+          "name": "EVE ENERGY CO LTD-A",
+          "weightPct": 4.41,
+          "shortName": "EVE ENERGY CO LTD-A"
+        },
+        {
+          "ticker": "1211 HK",
+          "name": "BYD CO LTD-H",
+          "weightPct": 4.17,
+          "shortName": "BYD CO LTD-H"
+        }
+      ]
+    },
+    {
+      "ticker": "FAN",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "ticker": "NDX1.GY",
+          "name": "Nordex SE",
+          "weightPct": 8.9,
+          "shortName": "Nordex SE"
+        },
+        {
+          "ticker": "ORSTED.DC",
+          "name": "Orsted A/S",
+          "weightPct": 8.61,
+          "shortName": "Orsted A/S"
+        },
+        {
+          "ticker": "EDPR.PL",
+          "name": "EDP Renewables SA",
+          "weightPct": 8.18,
+          "shortName": "EDP Renewables SA"
+        },
+        {
+          "ticker": "VWS.DC",
+          "name": "Vestas Wind Systems A/S",
+          "weightPct": 7.52,
+          "shortName": "Vestas Wind Systems A/S"
+        },
+        {
+          "ticker": "916.HK",
+          "name": "China Longyuan Power Group Corporation Limited (Class H)",
+          "weightPct": 6.07,
+          "shortName": "China Longyuan Power Group Corporation Limited (Class H)"
+        }
+      ]
+    },
+    {
+      "ticker": "XHB",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "name": "SHARKNINJA INC",
+          "shortName": "SHARKNINJA INC",
+          "ticker": "SN",
+          "weightPct": 4.138484
+        },
+        {
+          "name": "ALLEGION PLC",
+          "shortName": "ALLEGION PLC",
+          "ticker": "ALLE",
+          "weightPct": 3.863131
+        },
+        {
+          "name": "MASCO CORP",
+          "shortName": "MASCO CORP",
+          "ticker": "MAS",
+          "weightPct": 3.780872
+        },
+        {
+          "name": "CAVCO INDUSTRIES INC",
+          "shortName": "CAVCO INDUSTRIES INC",
+          "ticker": "CVCO",
+          "weightPct": 3.766182
+        },
+        {
+          "name": "CARLISLE COS INC",
+          "shortName": "CARLISLE COS INC",
+          "ticker": "CSL",
+          "weightPct": 3.622177
+        }
+      ]
+    },
+    {
+      "ticker": "ICLN",
+      "asOf": "2026-11-10",
+      "top5": [
+        {
+          "ticker": "NXT",
+          "name": "NEXTPOWER INC",
+          "weightPct": 9.61,
+          "shortName": "NEXTPOWER INC"
+        },
+        {
+          "ticker": "FSLR",
+          "name": "FIRST SOLAR",
+          "weightPct": 8.48,
+          "shortName": "FIRST SOLAR"
+        },
+        {
+          "ticker": "IBE",
+          "name": "IBERDROLA",
+          "weightPct": 6.93,
+          "shortName": "IBERDROLA"
+        },
+        {
+          "ticker": "600900",
+          "name": "CHINA YANGTZE POWER LTD A",
+          "weightPct": 5.51,
+          "shortName": "CHINA YANGTZE POWER LTD A"
+        },
+        {
+          "ticker": "BE",
+          "name": "BLOOM ENERGY CLASS A",
+          "weightPct": 5.37,
+          "shortName": "BLOOM ENERGY CLASS A"
+        }
+      ]
+    },
+    {
+      "ticker": "TAN",
+      "asOf": "2026-11-09",
+      "top5": [
+        {
+          "ticker": "NXT",
+          "name": "Nextpower Inc.",
+          "weightPct": 12.9,
+          "shortName": "Nextpower Inc."
+        },
+        {
+          "ticker": "FSLR",
+          "name": "First Solar, Inc.",
+          "weightPct": 9.27,
+          "shortName": "First Solar, Inc."
+        },
+        {
+          "ticker": "TLV:ENLT",
+          "name": "Enlight Renewable Energy Ltd",
+          "weightPct": 8.2,
+          "shortName": "Enlight Renewable Energy Ltd"
+        },
+        {
+          "ticker": "ENPH",
+          "name": "Enphase Energy, Inc.",
+          "weightPct": 6.0,
+          "shortName": "Enphase Energy, Inc."
+        },
+        {
+          "ticker": "HASI",
+          "name": "HA Sustainable Infrastructure Capital, Inc.",
+          "weightPct": 5.21,
+          "shortName": "HA Sustainable Infrastructure Capital, Inc."
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

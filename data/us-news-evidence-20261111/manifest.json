@@ -1,0 +1,49 @@
+{
+  "files": [
+    {
+      "path": "ap-close.html",
+      "sha256": "7625ba34a00ed5ef608f7d8f9c424b67502c6474ab1d317f039124bf0dcfe414",
+      "bytes": 752429
+    },
+    {
+      "path": "ap_market.html",
+      "sha256": "880e21f109565b7ee166c3a9ae40eba6664ab6f321f67b1aeb90c844e5285188",
+      "bytes": 517281
+    },
+    {
+      "path": "nov11_ai_movers.html",
+      "sha256": "71e349a12cf38f16aaeda0c6ac5a452e1514f78093b137547e829e98afeddb07",
+      "bytes": 547122
+    },
+    {
+      "path": "nov11_be_movers.html",
+      "sha256": "35c41ab3a7eaf84aa632abccad5a156369ed32e74a96fb8b51cc937c276d791e",
+      "bytes": 880932
+    },
+    {
+      "path": "nov11_meta_news.html",
+      "sha256": "f57de31107c719e60dd89fc1b40b6e939b406cb07b679af4d98206971d3a367f",
+      "bytes": 524080
+    },
+    {
+      "path": "nov11_sandisk_lumentum.html",
+      "sha256": "ea27cf33baca573a66059c87fdc0097bc56562a88667dea9cb47438c05c74492",
+      "bytes": 848457
+    },
+    {
+      "path": "reuters.html",
+      "sha256": "39a5435cc6a001cebb9540892ca7f68276681634b561d296fc91e56e23e2d33b",
+      "bytes": 954460
+    },
+    {
+      "path": "ap_market.txt",
+      "sha256": "29ac3890b5b4a7b278445fed883b6513a937208476265a51b28485c3ee18a135",
+      "bytes": 6918
+    },
+    {
+      "path": "reuters.txt",
+      "sha256": "3aa751a7386f996bf170164a9b6a415d727f6a05233a9192417b64afb01d1e42",
+      "bytes": 15473
+    }
+  ]
+}

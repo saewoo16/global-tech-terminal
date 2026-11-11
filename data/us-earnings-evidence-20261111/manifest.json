@@ -1,0 +1,27 @@
+[
+  {
+    "file": "vylor-release.json",
+    "sha256": "6b53c60fa514ed802ef537247bc46d3dd950e307639b687bd3fab9aefa2ca9e0",
+    "bytes": 98032
+  },
+  {
+    "file": "vylor-list.json",
+    "sha256": "58c444ec497cdd5eb816e78d5a87e521391189b26edf45d1742c55f3f5c36a0c",
+    "bytes": 4093
+  },
+  {
+    "file": "info.txt",
+    "sha256": "cdd6c99d69b51a2d1e6b81786bb6f577603e5c70f5cf166b94c97a6507dd5261",
+    "bytes": 1750824
+  },
+  {
+    "file": "cap.txt",
+    "sha256": "060ab892acb9f6b82ec31dc0cd0fa85a9999d16403901b0ddee15b3b6bbd76f2",
+    "bytes": 940147
+  },
+  {
+    "file": "sec-checks.json",
+    "sha256": "cedaaf4fbde942644e392b7b10e6599a7be490c81aed0bbdf0d41507a225423c",
+    "bytes": 10467
+  }
+]

@@ -1,0 +1,541 @@
+{
+  "collectedAt": "2026-11-11T21:49:14.944092+00:00",
+  "archive": "raw-evidence.tar.gz",
+  "entries": [
+    {
+      "path": "CLOU.json",
+      "sha256": "dfff86fff4cd213dbebdc176f265f709816dc565433c3ee561a13f3f48516217",
+      "bytes": 8905
+    },
+    {
+      "path": "IAI.json",
+      "sha256": "0e760c9841409ceeb1b88d16d30e30e912989d4520f8697591c3c9ddb71f0138",
+      "bytes": 9029
+    },
+    {
+      "path": "KRE.json",
+      "sha256": "e085e3896d2d9c7b2f6654177ed2fc3d270ce5e0fecaae350c23868c16129aab",
+      "bytes": 8877
+    },
+    {
+      "path": "XAR.json",
+      "sha256": "b703e958042fa6856a070d7bf32b8c84ed43446b2def81a7169d6d39b4cce5a4",
+      "bytes": 9028
+    },
+    {
+      "path": "ICLN.json",
+      "sha256": "e3510a35d7aaab1180d15087e4bfa8447ab13e4d5c7f616014731b64afeef4ef",
+      "bytes": 9057
+    },
+    {
+      "path": "XLU.json",
+      "sha256": "67c0a604d93eeec77163b86980fad5b6c0d0e96e85844f11507a4697e6322c76",
+      "bytes": 9058
+    },
+    {
+      "path": "XLB.json",
+      "sha256": "781f69a68eca3a7aa3ae98d69195c2e04b9f53a25d96e12ed6b8468c7306830b",
+      "bytes": 9153
+    },
+    {
+      "path": "COTY.json",
+      "sha256": "9c93d1999ea52b4d45303a8468ffbe6d7d1833d520816480a2d578eef08371d5",
+      "bytes": 8999
+    },
+    {
+      "path": "DOW.json",
+      "sha256": "c4a6d14a01d18987d6e4238250c811762c1e05ae4c1b54d2b24a99dc3715f140",
+      "bytes": 9136
+    },
+    {
+      "path": "ITA.json",
+      "sha256": "1ac7dfcc5f052a9bed258ab15033428b14125767813f739a86058d177e07cb0a",
+      "bytes": 9053
+    },
+    {
+      "path": "XPH.json",
+      "sha256": "b31338ff36cf862fbb03dfee2d396bfa14ac0cf05f557d1a44adda5e1451792f",
+      "bytes": 8761
+    },
+    {
+      "path": "IGV.json",
+      "sha256": "73150aa765e22308359e9f222b25daefc472203419b6ffd3b856ae7495d3a6a2",
+      "bytes": 9003
+    },
+    {
+      "path": "XLF.json",
+      "sha256": "8aee148afdec30c08e47ebccc77c35d2d73cc4d1de92fcf9258216839ecfb15a",
+      "bytes": 9047
+    },
+    {
+      "path": "XLRE.json",
+      "sha256": "3060a3e301fb230b336cbf646d667b1b03b259a414d018c62656c7b091e42a6a",
+      "bytes": 9067
+    },
+    {
+      "path": "XHB.json",
+      "sha256": "9a12f01fd8ff35afed7567afb6aad010db8b384fb24e01d85fcd878555649823",
+      "bytes": 9021
+    },
+    {
+      "path": "DD.json",
+      "sha256": "0a76c7572eebf04f0f08a420a6e080c015aa265b9a0d57258a80d4de772f79ff",
+      "bytes": 8932
+    },
+    {
+      "path": "XLK.json",
+      "sha256": "220637c90401a4f669da68025dee8c99dfe574eb76dec070d1dbe3886b6ee528",
+      "bytes": 9117
+    },
+    {
+      "path": "XRT.json",
+      "sha256": "7b9b2eccbcbde523889369c29118238a4cdb982cc737999e8df6a9e450e66450",
+      "bytes": 8944
+    },
+    {
+      "path": "BATT.json",
+      "sha256": "7e95ae02fe945bc2c7b64e21cfeb31b8f62bec74ab0aa3c9e112578613acfa2e",
+      "bytes": 9002
+    },
+    {
+      "path": "IHF.json",
+      "sha256": "e4e24c8bb77ba0bd4464a9c6b72ac69d938c72b7c123dd0ba834c6db3e56f022",
+      "bytes": 8949
+    },
+    {
+      "path": "FDN.json",
+      "sha256": "17113af178e30542a8e5072d5505e3d360d4d4b2a8960eed5e4b6646a46d03d8",
+      "bytes": 8691
+    },
+    {
+      "path": "fedwatch-aggregated.txt",
+      "sha256": "8e6447035960f005bd7bce8bdc8d5fabc8a5f4f2769422a3e9034b4fe02d5e7b",
+      "bytes": 4218
+    },
+    {
+      "path": "IBB.json",
+      "sha256": "31ad19d57bcfdceaefe1fed78b8be6f45b8e5d07fbb4c672a4f7d53cb09c73b6",
+      "bytes": 9114
+    },
+    {
+      "path": "ELF.json",
+      "sha256": "175252e2c7f6f8ccebbd2b483d80be82ca2793af9a7082970290898e28f6d0fd",
+      "bytes": 8796
+    },
+    {
+      "path": "KBE.json",
+      "sha256": "f14962e93dbe4ab92f49041d73d7e047086a0566e34956eabc2381cc0d4d70b3",
+      "bytes": 8892
+    },
+    {
+      "path": "LIT.json",
+      "sha256": "a81618145895b64bf8d65e6d74d23a37a1b9587dd8e9aae412325363426b81a5",
+      "bytes": 8767
+    },
+    {
+      "path": "XLY.json",
+      "sha256": "188bcdf516a92fd21a4b34cb1a77a60de7116f8d6f06370f5e48ae9960caeb04",
+      "bytes": 9254
+    },
+    {
+      "path": "EL.json",
+      "sha256": "546daf7d9e94f87afb207286b347cda01230664d2f5fd18e1cd66d548a498962",
+      "bytes": 8866
+    },
+    {
+      "path": "CRAK.json",
+      "sha256": "64d7e683705ad633615b3cb7d1df91836924461260d1b640fe8c54e1f30af54b",
+      "bytes": 8696
+    },
+    {
+      "path": "TAN.json",
+      "sha256": "d2ef27ae8155b4760c12bdc2cabc43504495af0c7b8dd44f1efae681735c00e0",
+      "bytes": 8704
+    },
+    {
+      "path": "fedwatch-current.txt",
+      "sha256": "60c22a5ae4bc535d6fb435457f0c62985986e444b98cf65fdc7a2ea968d6c12b",
+      "bytes": 38963
+    },
+    {
+      "path": "LYB.json",
+      "sha256": "23911d25ad33bf4f0efa1f171f2988e493bfb5a2087db89f6cd5a375bc4d41e1",
+      "bytes": 8858
+    },
+    {
+      "path": "XLI.json",
+      "sha256": "a11dbd3fe6a5b118a34d3bed2730f17b08830b58e876dd5bedb95bd65faf7748",
+      "bytes": 9159
+    },
+    {
+      "path": "XLP.json",
+      "sha256": "87efad4d6b3b439eae26d9e88952191beed3d64cdb176d044a3748fac5e5e2be",
+      "bytes": 8878
+    },
+    {
+      "path": "XLC.json",
+      "sha256": "be5dd29c1e4424406cb331059237cbb02c89903b7bb5010856020189310610d3",
+      "bytes": 9242
+    },
+    {
+      "path": "XLV.json",
+      "sha256": "ccad15fe735eb2727cfd991c01dc7702e6e270fd965e9e1e7b86ccd0ed9aa044",
+      "bytes": 9219
+    },
+    {
+      "path": "IHI.json",
+      "sha256": "6454cbfdfec1503eeb951d3c5e820fe3f62442ea427c9f1770311da19bd26353",
+      "bytes": 9082
+    },
+    {
+      "path": "XOP.json",
+      "sha256": "8daebe7f84fd5254ea7494d07a3f5172a7b8e4056271b1134568baa12c45531d",
+      "bytes": 9249
+    },
+    {
+      "path": "fedwatch-june.txt",
+      "sha256": "b11dc86aa0d9c313e63d8c174b7f6d4feffaafb8ac389a907b588b0331cba343",
+      "bytes": 8708
+    },
+    {
+      "path": "SOXX.json",
+      "sha256": "f40fb05298b5629c23147f6574a79f41214233b0c5b7fb5f6886395a814e482c",
+      "bytes": 9424
+    },
+    {
+      "path": "SMH.json",
+      "sha256": "b53b1892b3de7d73ce518847030e9eb62ee0ee59b14ce307564085ead70dd4fb",
+      "bytes": 8636
+    },
+    {
+      "path": "FAN.json",
+      "sha256": "60b3e79436ac16d22f43cf7ec875963f1c69b2588c0a52ea7226394c6db5794e",
+      "bytes": 9080
+    },
+    {
+      "path": "IYT.json",
+      "sha256": "2634fc3bc7a8b5529f63e3dfa28d721785a1b3172f119a016df9e0a013be568d",
+      "bytes": 8788
+    },
+    {
+      "path": "CIBR.json",
+      "sha256": "1285d1f24bb2885caca49584b94867159434e331cbd208a7a4346126be2f33c2",
+      "bytes": 8942
+    },
+    {
+      "path": "XME.json",
+      "sha256": "57ebfe5e56c272af9013b388babf1b78544b35b7bf5da222dbe90b6c84afccc0",
+      "bytes": 9093
+    },
+    {
+      "path": "XBI.json",
+      "sha256": "d6adaea211cd0f6b432cebfe4d8b36e9a7de8000a10f4bc9cd98310e4597d11b",
+      "bytes": 9059
+    },
+    {
+      "path": "XLE.json",
+      "sha256": "5a3b9791513cccad4c178c8ccd148c2520bd7a61744df883d11278c539253a9e",
+      "bytes": 8981
+    },
+    {
+      "path": "holdings/XLP.xlsx",
+      "sha256": "0a184e143d8f346588dc6df4d2a754a6f4c6cd47d6465fce58fd53d7f735dc4c",
+      "bytes": 19978
+    },
+    {
+      "path": "holdings/XLV.xlsx",
+      "sha256": "8bb3ec13fa58127d8a2e203b59659ed981502d62a13ae23ebad82ead95178e2d",
+      "bytes": 22059
+    },
+    {
+      "path": "holdings/XLK.txt",
+      "sha256": "7d6c5d808be61d8be112b74275a14e7f1a012b6e34eb249e22761c151257198f",
+      "bytes": 240703
+    },
+    {
+      "path": "holdings/XLE.txt",
+      "sha256": "f62378bb75fe94f682337c16702bafacf92c67f934e207a18b67d44bd591a2bc",
+      "bytes": 236400
+    },
+    {
+      "path": "holdings/KBE.txt",
+      "sha256": "5b2d5415f8142702b7a56eddb12158c5e2e4adf1134ea20b5b464ad30b413355",
+      "bytes": 234670
+    },
+    {
+      "path": "holdings/XAR.xlsx",
+      "sha256": "35a155eb83b524685fa228fe0afe8fc65bcf6c195781d7d49040793860a91135",
+      "bytes": 21099
+    },
+    {
+      "path": "holdings/XLRE.txt",
+      "sha256": "67aea9cfcad284c55e32a5d2c98edcc4c8c3be2782a38e58de9c01dc9ab0a6e6",
+      "bytes": 241713
+    },
+    {
+      "path": "holdings/LIT.txt",
+      "sha256": "ec65fe8662d195a115e146d0f1417bacbf4e116cd21ed1873b6f279c096e729f",
+      "bytes": 613587
+    },
+    {
+      "path": "holdings/XLY.txt",
+      "sha256": "96cb6602a9e17e010d6e85fa939d1a6dbe0bf92d3ccdec841ea5446fa79abd70",
+      "bytes": 243454
+    },
+    {
+      "path": "holdings/XME.txt",
+      "sha256": "8e8217883a91b333e365df9a5232a5f8351a0e773411ba297de9262107b28d2b",
+      "bytes": 239283
+    },
+    {
+      "path": "holdings/XLC.txt",
+      "sha256": "485281a723e1b27d12a15691607b309f5b709c7f6673ef8364bb4bde1b500ba0",
+      "bytes": 239630
+    },
+    {
+      "path": "holdings/IAI.txt",
+      "sha256": "3f05c8bdce0a61659f51b896c25e0152dff4437cf7f945d5d94c536319ec15d5",
+      "bytes": 7583
+    },
+    {
+      "path": "holdings/SMH.txt",
+      "sha256": "280338ecfddb0521b14b7c455d946550ef70f002c786bf796c515c06f2b9c12b",
+      "bytes": 335783
+    },
+    {
+      "path": "holdings/XOP.xlsx",
+      "sha256": "14dae7b858611ad76e452c8795e2c0430ed8e6c7d62557856460eabee47d7cef",
+      "bytes": 21260
+    },
+    {
+      "path": "holdings/XHB.txt",
+      "sha256": "9a377ff7836b4954253f73e3e1f76cfcd026ad531042aae4db453eb6769340bc",
+      "bytes": 238385
+    },
+    {
+      "path": "holdings/XBI.xlsx",
+      "sha256": "d0eabd454063157d3637391160dd87c199cb8bfe09bdcef205083e160e5c7ce6",
+      "bytes": 29730
+    },
+    {
+      "path": "holdings/XLU.txt",
+      "sha256": "3e78e3b185d87e18e50d797aa83d2923f61c43f656bb98fec7c31f96b16bbeac",
+      "bytes": 239194
+    },
+    {
+      "path": "holdings/IGV.txt",
+      "sha256": "2d3ca5bcd032957353e5652ff6c3c9a83d19f75458102540aab34055cd75e753",
+      "bytes": 18878
+    },
+    {
+      "path": "holdings/verified-holdings.json",
+      "sha256": "5cd38e6167bbc2e78ab989ada66da21cd24ddeba8858ebc4307765d2659932e0",
+      "bytes": 34289
+    },
+    {
+      "path": "holdings/XLY.xlsx",
+      "sha256": "311a88ac7a02836dbf664e0a1f8366550dd57a020b785d205a03a40568124544",
+      "bytes": 20985
+    },
+    {
+      "path": "holdings/IBB.txt",
+      "sha256": "5d3901353915f910c8f29f0831d1b39213c45a78a3ecad890e45bd4d7e845b25",
+      "bytes": 39735
+    },
+    {
+      "path": "holdings/XAR.txt",
+      "sha256": "b3a49709f33d2bf48e259c64d153bbc3547c98e81e19de320b024693488f0d15",
+      "bytes": 235126
+    },
+    {
+      "path": "holdings/ITA.txt",
+      "sha256": "0786ff81f09299397c320e1599560bffb9dd18ff5ad1e8ef6016993338d8190e",
+      "bytes": 9094
+    },
+    {
+      "path": "holdings/SOXX.txt",
+      "sha256": "ce52d1d38168abc8f0b0ac9fc03ba8f75c4bc9c2cea7a45ecb5c96643b692cb1",
+      "bytes": 6393
+    },
+    {
+      "path": "holdings/KRE.txt",
+      "sha256": "006359bdb20b9710a8355369644a692b4edafbd114da1aa979106331e17e6d5b",
+      "bytes": 232837
+    },
+    {
+      "path": "holdings/CRAK.txt",
+      "sha256": "ae8e14c7bedd35766685ac5c8d13cda2886b7131e72866ed6128db7864dc9b03",
+      "bytes": 329234
+    },
+    {
+      "path": "holdings/XLB.txt",
+      "sha256": "df8134907fff5d0fd8af778fb44847568ce07dfa1651d377a49657be0647f2ac",
+      "bytes": 238284
+    },
+    {
+      "path": "holdings/XLI.txt",
+      "sha256": "a275920c883d872fbb020df9cb75d40b18148b6d696177650e8e32a8761b3f52",
+      "bytes": 245682
+    },
+    {
+      "path": "holdings/FAN.txt",
+      "sha256": "e5381c083ff33528c9be34521de977650824bd61c40080f9690b1d9cafbcdd9f",
+      "bytes": 419183
+    },
+    {
+      "path": "holdings/KBE.xlsx",
+      "sha256": "132d0755db7ed7fe513a0e888bc51840fc00059575f193e048e16bdef399b50a",
+      "bytes": 25416
+    },
+    {
+      "path": "holdings/XLB.xlsx",
+      "sha256": "3f05f94e43f231d296f198f2526773bf811e0fa7e737d089a1d8e05ae82f6522",
+      "bytes": 19127
+    },
+    {
+      "path": "holdings/XME.xlsx",
+      "sha256": "3d73ac0315fcdb81f1ba30bc874d81cd2592cd785ef23de2d21061503298f471",
+      "bytes": 20246
+    },
+    {
+      "path": "holdings/XRT.xlsx",
+      "sha256": "1e638a7c510fb79690bf633ef54f39b3a453cd9dd8c824875981271170e10ca3",
+      "bytes": 22883
+    },
+    {
+      "path": "holdings/CLOU.txt",
+      "sha256": "90e3b43688a193c24cac1b0cdeb4e1d4e6b38919e674190edb89e71582ba93b2",
+      "bytes": 581122
+    },
+    {
+      "path": "holdings/IHI.txt",
+      "sha256": "d3d7fa3e78ce14973d708e17849ffe70b418283b8084c9f9dad38a67e31efac9",
+      "bytes": 9000
+    },
+    {
+      "path": "holdings/XPH.xlsx",
+      "sha256": "c6984c2e2307ffdfc89a95a4527e34c12227448d984ab7a4f0d1078f676aed8a",
+      "bytes": 21832
+    },
+    {
+      "path": "holdings/KRE.xlsx",
+      "sha256": "dbf8446dcdc04ced6342273f7f24f1004d3acde8f351b5a1285675e56a44dabf",
+      "bytes": 29896
+    },
+    {
+      "path": "holdings/IHF.txt",
+      "sha256": "96837b1af2112eb7a34ccd665457a5420785f74f7b59fc0bdbb12551eefb4049",
+      "bytes": 10693
+    },
+    {
+      "path": "holdings/XBI.txt",
+      "sha256": "ebe5b51e950324616fcb9c75d499512f4ea3710f51476c7b2d0464e4526523d8",
+      "bytes": 228552
+    },
+    {
+      "path": "holdings/XLF.xlsx",
+      "sha256": "c98450afbfcfa368d5347d08a283f2af41c14febfd2bb13e2ceb54bc722c0bdb",
+      "bytes": 23337
+    },
+    {
+      "path": "holdings/ICLN.txt",
+      "sha256": "4ad0ec0ce8d7745db90e0ccca941fb0270cb50541b0870cd5b31839ae5868cf0",
+      "bytes": 23839
+    },
+    {
+      "path": "holdings/XLF.txt",
+      "sha256": "6e36b4e7722cc9c9fec495efa8f522e820f29c404e92b5a3786a174a086fd81e",
+      "bytes": 239356
+    },
+    {
+      "path": "holdings/XLE.xlsx",
+      "sha256": "dd3391d66fd442bc1b61629c7d440d062b856b9b9af2626a850d47129dd0765f",
+      "bytes": 18843
+    },
+    {
+      "path": "holdings/IYT.txt",
+      "sha256": "f29e2144bbc7958ad74db73e65201eafa64e8fa2830b79d59cf7c1731015a2f5",
+      "bytes": 8314
+    },
+    {
+      "path": "holdings/XRT.txt",
+      "sha256": "0b063acd4855be707046a9e92a8f1a676908aee3ac87c79a61b0c2e59b3cf20b",
+      "bytes": 233952
+    },
+    {
+      "path": "holdings/XPH.txt",
+      "sha256": "4506f80a7df495e79d4f6c34f77e38c5463e9e14f6547e01e30580b92be990be",
+      "bytes": 228791
+    },
+    {
+      "path": "holdings/FDN.txt",
+      "sha256": "fab43136bb406e900411db6fd1c0650fd4e2e61099b04732f7f09163b31f61a8",
+      "bytes": 342512
+    },
+    {
+      "path": "holdings/BATT.txt",
+      "sha256": "2c362551649a43fbdff0ea9df3159af7308cb555d9541e04ecd9db3dbb8240ea",
+      "bytes": 99519
+    },
+    {
+      "path": "holdings/XLRE.xlsx",
+      "sha256": "4056ad3bd7900ead0799f12de85c891f298c898c7f0ee3d44f2809c16e5e64a4",
+      "bytes": 19610
+    },
+    {
+      "path": "holdings/XOP.txt",
+      "sha256": "51af39e7e8ea65c0eba93000cdfa76e213b46ce5ef38c79517a2ac34de5c6736",
+      "bytes": 231923
+    },
+    {
+      "path": "holdings/XLI.xlsx",
+      "sha256": "6a2d507f442538da427410f10ae58546fed578b9d2585968a9443ff9b66d0d8d",
+      "bytes": 23733
+    },
+    {
+      "path": "holdings/XLP.txt",
+      "sha256": "b289196b6cc30284ea0e3691f91c72462498c42815f7e8c20380d8403f3d7c4b",
+      "bytes": 239779
+    },
+    {
+      "path": "holdings/XLV.txt",
+      "sha256": "2b94102f46c46a00d861fcdc61352a1243f06eea33c03cfcd8ce5eec3834c4b1",
+      "bytes": 239848
+    },
+    {
+      "path": "holdings/XLU.xlsx",
+      "sha256": "e9a33e4bc3e7e61a5ad6251832757da3bab8bbed77ddf420d7b5084e6806304e",
+      "bytes": 19637
+    },
+    {
+      "path": "holdings/CIBR.txt",
+      "sha256": "114cb0b1bc4937f6018d8d779eeacce4ac79c2db8951f4e3fc3bba7e8349d8dd",
+      "bytes": 335187
+    },
+    {
+      "path": "holdings/XHB.xlsx",
+      "sha256": "9f7ac4115454159517c4869a1703b65944c323351fdc7dda5062104bf76d8e89",
+      "bytes": 19838
+    },
+    {
+      "path": "holdings/XLK.xlsx",
+      "sha256": "7d08aea506d8d1c67d22317e4fc11b81eda5b2c8f3fb53b83285e049c40b0ea3",
+      "bytes": 23200
+    },
+    {
+      "path": "holdings/TAN.txt",
+      "sha256": "c2f93d435c64d02bc42224330e892ef7ab51ddb80896385568ea384aa5ba94ab",
+      "bytes": 100318
+    },
+    {
+      "path": "holdings/manifest.json",
+      "sha256": "4c9fff79f3b2785a549f14348d1f76196faa863d984c557b133901b5365d98ad",
+      "bytes": 11810
+    },
+    {
+      "path": "holdings/XLC.xlsx",
+      "sha256": "df0a82eede87b2855c299ed2d381b19f46a8823be0518bae69b7bad78dd210a2",
+      "bytes": 18945
+    }
+  ]
+}

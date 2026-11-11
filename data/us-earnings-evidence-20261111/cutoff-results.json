@@ -1,0 +1,46 @@
+{
+  "vylor_release": {
+    "url": "https://vylor.mediaroom.com/api/newsfeed_releases/get.php?format=json&id=122501",
+    "rawSha256": "6b53c60fa514ed802ef537247bc46d3dd950e307639b687bd3fab9aefa2ca9e0",
+    "released": "Wed, 11 Nov 2026 16:30:00 -0500",
+    "modified": "Wed, 11 Nov 2026 16:30:09 -0500",
+    "bodyUnchanged": true,
+    "requestedAt": "2026-11-11T22:00:00.001111+00:00",
+    "observedAt": "2026-11-11T22:00:05.125587+00:00",
+    "retrievedAt": "2026-11-11T22:00:05.125587+00:00"
+  },
+  "vylor_list": {
+    "url": "https://vylor.mediaroom.com/api/newsfeed_releases/list.php?format=json&limit=20&offset=0&fields=released,headline,subheadline",
+    "rawSha256": "58c444ec497cdd5eb816e78d5a87e521391189b26edf45d1742c55f3f5c36a0c",
+    "requestedAt": "2026-11-11T22:00:05.126825+00:00",
+    "observedAt": "2026-11-11T22:00:08.576520+00:00",
+    "retrievedAt": "2026-11-11T22:00:08.576520+00:00"
+  },
+  "vylor_sec": {
+    "url": "https://data.sec.gov/submissions/CIK0002128626.json",
+    "rawSha256": "95677eed4f1d6c8fdc8283a234c4272b84d297e8edc03bec0da8118aca9bf1fd",
+    "latest": [
+      {
+        "form": "NT 10-Q",
+        "filingDate": "2026-11-10",
+        "accessionNumber": "0001193125-26-455591",
+        "primaryDocument": "d107437dnt10q.htm"
+      },
+      {
+        "form": "3",
+        "filingDate": "2026-11-05",
+        "accessionNumber": "0001225208-26-008734",
+        "primaryDocument": "xslF345X06/doc3.xml"
+      },
+      {
+        "form": "4",
+        "filingDate": "2026-10-26",
+        "accessionNumber": "0001225208-26-008498",
+        "primaryDocument": "xslF345X06/doc4.xml"
+      }
+    ],
+    "requestedAt": "2026-11-11T22:00:08.576842+00:00",
+    "observedAt": "2026-11-11T22:00:13.450187+00:00",
+    "retrievedAt": "2026-11-11T22:00:13.450187+00:00"
+  }
+}
