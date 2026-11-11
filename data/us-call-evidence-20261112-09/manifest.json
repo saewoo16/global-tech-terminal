@@ -1,0 +1,20 @@
+{
+  "sources": [
+    {
+      "id": "call_followup_OXY_20261112_0900",
+      "url": "https://stockanalysis.com/stocks/oxy/transcripts/726585-q3-2026/",
+      "title": "OXY Q3 2026 공개 콜 녹취록",
+      "retrievedAt": "2026-11-11T23:52:06.089761+00:00",
+      "rawSha256": "9d54cd4c386be90762d96a16ffb075085d8de98947bc3b13ad6017ffedf28bec",
+      "note": "공개 제3자 녹취록. 원래 ET 2026-11-09 발표 보존 항목의 후속 보완이며 당일 신규 실적이나 07시 당시 정보가 아님. 원문 확인은 웹 읽기 도구를 사용했으며 해시는 해당 도구 반환 근거 JSON의 SHA256이다."
+    },
+    {
+      "id": "call_followup_SKYD_20261112_0900",
+      "url": "https://stockanalysis.com/stocks/skyd/transcripts/724036-q3-2026/",
+      "title": "SKYD Q3 2026 공개 콜 녹취록",
+      "retrievedAt": "2026-11-11T23:52:06.090037+00:00",
+      "rawSha256": "9d54cd4c386be90762d96a16ffb075085d8de98947bc3b13ad6017ffedf28bec",
+      "note": "공개 제3자 녹취록. 원래 ET 2026-11-09 발표 보존 항목의 후속 보완이며 당일 신규 실적이나 07시 당시 정보가 아님. 원문 확인은 웹 읽기 도구를 사용했으며 해시는 해당 도구 반환 근거 JSON의 SHA256이다."
+    }
+  ]
+}
