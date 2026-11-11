@@ -1,0 +1,22 @@
+{
+  "sources": [
+    {
+      "id": "call_followup_KKR_20261112_0800",
+      "url": "https://stockanalysis.com/stocks/kkr/transcripts/719969-q3-2026/",
+      "title": "KKR 2026-11-09 earnings call public transcript",
+      "retrievedAt": "2026-11-11T22:57:58.018838+00:00",
+      "note": "Stock Analysis 제3자 전사. 음성 직접 청취 및 회사 공식 전사와 다르며, 선택적 요약입니다. 원래 ET 발표일 자료에만 보완합니다.",
+      "rawSha256": "0d294679bbf737a40479519b1d796c86108e56968fe06b2f67419e723e8c0bc3",
+      "rawEvidenceObservedAt": "2026-11-11T22:59:10.647060+00:00"
+    },
+    {
+      "id": "call_followup_FERG_20261112_0800",
+      "url": "https://stockanalysis.com/stocks/ferg/transcripts/730628-q3-2026/",
+      "title": "FERG 2026-11-09 earnings call public transcript",
+      "retrievedAt": "2026-11-11T22:57:58.018838+00:00",
+      "note": "Stock Analysis 제3자 전사. 음성 직접 청취 및 회사 공식 전사와 다르며, 선택적 요약입니다. 원래 ET 발표일 자료에만 보완합니다.",
+      "rawSha256": "46c6befd9653db2da6dbe32fb3fb31f1f71d450d541405d15ea625701efb42a2",
+      "rawEvidenceObservedAt": "2026-11-11T22:59:12.679851+00:00"
+    }
+  ]
+}
