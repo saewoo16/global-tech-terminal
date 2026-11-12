@@ -1,0 +1,12 @@
+{
+  "sources": [
+    {
+      "id": "call_followup_AMD_20261112_1100",
+      "url": "https://stockanalysis.com/stocks/amd/transcripts/724028-q3-2026/",
+      "title": "AMD Q3 2026 공개 콜 녹취록",
+      "retrievedAt": "2026-11-12T01:37:00.561981+00:00",
+      "rawSha256": "75b7b27de6b032dd38b2e85d8f78bdc7a0686ab80cc331919ce5d03c272b1ac3",
+      "note": "공개 제3자 녹취록 후속 확인. ET 2026-11-03 원래 발표 보존 항목에만 보완. 해시는 웹 읽기 도구 반환 근거 JSON이며 공식 녹음 검증을 뜻하지 않는다."
+    }
+  ]
+}
