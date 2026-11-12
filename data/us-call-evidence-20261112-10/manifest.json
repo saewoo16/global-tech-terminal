@@ -1,0 +1,28 @@
+{
+  "sources": [
+    {
+      "id": "call_followup_CEG_20261112_1000",
+      "url": "https://stockanalysis.com/stocks/ceg/transcripts/726431-q3-2026/",
+      "title": "CEG 공개 콜 Q&A",
+      "retrievedAt": "2026-11-12T00:54:25.623411+00:00",
+      "rawSha256": "e03af4cf54a80fcb42da0923c36a89b964b531be48872ce25da4b0829b1ec9b4",
+      "note": "공개 제3자 녹취록 Q&A 후속 확인. 원래 ET 2026-11-09 항목에만 보완. 해시는 웹 읽기 도구 반환 근거 JSON이며 공식 녹취 또는 녹음 검증을 뜻하지 않는다."
+    },
+    {
+      "id": "call_followup_NRG_20261112_1000",
+      "url": "https://stockanalysis.com/stocks/nrg/transcripts/723787-q3-2026/",
+      "title": "NRG 공개 콜 Q&A",
+      "retrievedAt": "2026-11-12T00:54:25.623411+00:00",
+      "rawSha256": "e03af4cf54a80fcb42da0923c36a89b964b531be48872ce25da4b0829b1ec9b4",
+      "note": "공개 제3자 녹취록 Q&A 후속 확인. 원래 ET 2026-11-09 항목에만 보완. 해시는 웹 읽기 도구 반환 근거 JSON이며 공식 녹취 또는 녹음 검증을 뜻하지 않는다."
+    },
+    {
+      "id": "call_followup_TTWO_20261112_1000",
+      "url": "https://stockanalysis.com/stocks/ttwo/transcripts/727689-q2-2027/",
+      "title": "TTWO 공개 콜 Q&A",
+      "retrievedAt": "2026-11-12T00:54:25.623411+00:00",
+      "rawSha256": "e03af4cf54a80fcb42da0923c36a89b964b531be48872ce25da4b0829b1ec9b4",
+      "note": "공개 제3자 녹취록 Q&A 후속 확인. 원래 ET 2026-11-09 항목에만 보완. 해시는 웹 읽기 도구 반환 근거 JSON이며 공식 녹취 또는 녹음 검증을 뜻하지 않는다."
+    }
+  ]
+}
