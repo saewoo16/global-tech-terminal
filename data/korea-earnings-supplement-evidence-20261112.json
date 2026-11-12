@@ -1,0 +1,191 @@
+{
+  "sessionDate": "2026-11-12",
+  "createdAt": "2026-11-12T09:31:56.535326+00:00",
+  "scope": "Four existing-card source supplements only: three verified published third-party call transcripts and one official presentation. No new first-release company cards.",
+  "filingCoverage": {
+    "sourceUrl": "https://kind.krx.co.kr/disclosure/todaydisclosure.do",
+    "sessionDate": "2026-11-12",
+    "observedAt": "2026-11-12T09:29:00.125384+00:00",
+    "reportedTotal": 710,
+    "retrievedDistinctFilings": 710,
+    "baselineDistinctFilings": 669,
+    "baselineNote": "Initial raw list pages 1–7 each report total669; requested page8 repeats page7. Earlier narrative668 differs from saved raw snapshot. Deduplicated acptno comparison uses actual669.",
+    "newFilings": 41,
+    "newPreliminaryEarnings": 0,
+    "newEligibleFirstReleaseCards": 0,
+    "sha256": "0da70a1c9af5863f224ce75abc457c9195160baf60e08a408efbd4b86d4c6091",
+    "newIndexMemberRows": [
+      {
+        "acptno": "20261112001136",
+        "name": "두산밥캣",
+        "scope": "KOSPI200",
+        "listingText": "17:32 두산밥캣 분기보고서(일반법인)(2026.09) 두산밥캣 공시차트 주가차트"
+      },
+      {
+        "acptno": "20261112001161",
+        "name": "나노신소재",
+        "scope": "KOSDAQ150",
+        "listingText": "17:51 나노신소재 분기보고서(일반법인)(2026.09) 나노신소재 공시차트 주가차트"
+      },
+      {
+        "acptno": "20261112001176",
+        "name": "동화기업",
+        "scope": "KOSDAQ150",
+        "listingText": "18:20 동화기업 중대재해 관련 형사처벌 사실확인 동화기업 공시차트 주가차트"
+      }
+    ],
+    "excludedPriorReleaseReports": [
+      {
+        "name": "두산밥캣",
+        "firstReleaseDate": "2026-10-29",
+        "officialSourceUrl": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261029000568",
+        "officialDocumentUrl": "https://kind.krx.co.kr/external/2026/10/29/000568/20261029001161/99626.htm",
+        "sourceSha256": "0a925d12fee1bd919105de69a85600b79789bff0da57bccbdc739644dff1ac02",
+        "period": "2026-07-01 through 2026-09-30"
+      },
+      {
+        "name": "나노신소재",
+        "firstReleaseDate": "2026-11-03",
+        "officialSourceUrl": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261103000287",
+        "officialDocumentUrl": "https://kind.krx.co.kr/external/2026/11/03/000287/20261027000193/70956.htm",
+        "sourceSha256": "cab9253b0d05a351df866d43d826571b5dfed1c56bbdff845b6bde0264b31067",
+        "period": "2026-07-01 through 2026-09-30"
+      }
+    ],
+    "limitations": [
+      "KIND complete daily disclosure list checked at actual observation time, not a guarantee through19:30.",
+      "No new preliminary earnings among newly listed index members. General quarterly reports are excluded from newfirst-release cards when earlier preliminary release is verified.",
+      "Conference-call research is focused and not a complete audit of all issuer sites. Other unverified call summaries remain absent."
+    ]
+  },
+  "officialPresentationReceipt": {
+    "url": "https://www.navercorp.com/api/article/download/5424bdee-8b0f-4f03-b38f-a308a9381eb9",
+    "officialLandingUrl": "https://www.navercorp.com/investment/earnings",
+    "sourceDate": "2026-11-12",
+    "publicationTimePrecision": "date",
+    "observedAt": "2026-11-12T09:27:17.399521+00:00",
+    "sha256": "96a5ffc7e301d3bc5b0dd5b44156f4d1c735c94bdc86680e74c7b466ad19ac9d",
+    "pageReferences": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "callTranscriptVerified": false,
+    "webcastAccess": "Email verification gate observed; no registration or email transmission attempted.",
+    "verifiedQuarterHistoryUnchanged": true
+  },
+  "financialHistoryChanged": false,
+  "quarterObservationsPreserved": 63,
+  "companyCardsPreserved": 16,
+  "callReceipts": [
+    {
+      "ticker": "192080",
+      "sourceUrl": "https://uk.investing.com/news/stock-market-news/earnings-call-transcript-doubleugames-q3-2026-profit-rises-as-stock-falls-37-93CH-4976157",
+      "sourceId": "kr-call-192080-20261112-investing",
+      "sourceType": "third_party_published_full_transcript",
+      "publisher": "Investing.com",
+      "officialCompanySource": false,
+      "sourceReleaseDate": "2026-11-12",
+      "publicationTimestamp": "2026-11-12T15:04:10+09:00",
+      "publicationTimestampEvidence": "NewsArticle JSON-LD datePublished and dateModified",
+      "observedAt": "2026-11-12T18:27:39+09:00",
+      "sha256": "fd280d086434ee8a20c26734f2a898adde2ea830f416b68eb58f2784b1bcc3e3",
+      "retrievalStatus": 200,
+      "verification": [
+        "Full transcript body for DoubleU Games Co Ltd (192080), Q3 2026 was directly retrieved.",
+        "Korean and English management presentation followed by analyst Q&A and closing remarks.",
+        "Speaker-labelled statements support DTC, casual-game profitability and capital-allocation summaries.",
+        "CEO job title and possible transcription/translation errors not independently confirmed; unsupported titles and ambiguous figures excluded."
+      ],
+      "summary": [
+        "DTC 결제 비중이 소셜카지노 매출의 53.6%로 확대돼 플랫폼 수수료 부담을 낮췄다. 경영진은 연말 성수기 이벤트 강화로 4분기 매출·이익 회복을 기대했다.",
+        "질의응답에서 캐주얼 게임은 성과가 확인된 신작에 투자를 집중하고 90~100일 내 투자비 회수를 지향한다고 설명했다. 9월 이후 영업이익률 15~20%와 향후 10% 이상 유지 방침을 언급했다.",
+        "DDI 완전자회사화 이후 더 큰 규모의 인수를 검토할 계획이며, 주주환원 방안은 공개매수 진행과 재무 여건을 고려해 이사회 논의 후 알리겠다고 밝혔다. 확정된 추가 환원책은 제시하지 않았다."
+      ],
+      "fullTranscriptReproduced": false
+    },
+    {
+      "ticker": "032830",
+      "sourceUrl": "https://uk.investing.com/news/stock-market-news/earnings-call-transcript-samsung-life-posts-strong-q3-2026-profit-growth-93CH-4976162",
+      "sourceId": "kr-call-032830-20261112-investing",
+      "sourceType": "third_party_published_full_transcript",
+      "publisher": "Investing.com",
+      "officialCompanySource": false,
+      "sourceReleaseDate": "2026-11-12",
+      "publicationTimestamp": "2026-11-12T15:14:10+09:00",
+      "publicationTimestampEvidence": "NewsArticle JSON-LD datePublished and dateModified",
+      "observedAt": "2026-11-12T18:28:58+09:00",
+      "sha256": "ffa791dc16b52704fdbfb957986f53e020b787db8235306d0a8494094a7a4910",
+      "retrievalStatus": 200,
+      "verification": [
+        "Full Q3 2026 transcript body directly retrieved.",
+        "Korean and English management presentation followed by analyst Q&A and closing remarks.",
+        "Speaker-labelled statements support the included summaries.",
+        "Company official script unavailable for independent transcription accuracy audit; translation inconsistencies and market reaction claims excluded."
+      ],
+      "summary": [
+        "4분기 계리 가정과 경험 통계 반영에 따른 CSM 조정 가능성을 설명했다. 양질의 신계약 확보와 기존 계약의 손해율·유지율 관리에 집중할 방침이다.",
+        "주주환원율 50%의 중기 목표를 구체화한 기업가치 제고 계획을 2027년 초 공개할 예정이라고 밝혔다. 삼성전자 배당·지분 처분이익을 고려한 환원 규모와 방식, 배당 기준일 변경은 검토 중이며 확정하지 않았다.",
+        "해외 운용사·보험사 인수를 검토하되 특정 투자 대상은 결정되지 않았다고 설명했다. 자본 건전성과 수익성 기준을 유지하면서 해외 이익 비중을 높일 계획이다."
+      ],
+      "fullTranscriptReproduced": false
+    },
+    {
+      "ticker": "000810",
+      "sourceUrl": "https://uk.investing.com/news/stock-market-news/earnings-call-transcript-samsung-fire--marine-posts-solid-q3-2026-profit-shares-fall-93CH-4975957",
+      "sourceId": "kr-call-000810-20261112-investing",
+      "sourceType": "third_party_published_full_transcript",
+      "publisher": "Investing.com",
+      "officialCompanySource": false,
+      "sourceReleaseDate": "2026-11-12",
+      "publicationTimestamp": "2026-11-12T11:30:10+09:00",
+      "publicationTimestampEvidence": "NewsArticle JSON-LD datePublished and dateModified",
+      "observedAt": "2026-11-12T18:28:58+09:00",
+      "sha256": "6895536d8ec01fa53178cafa2f990fe514f053bc2eb95b14f9e49ee631e3beae",
+      "retrievalStatus": 200,
+      "verification": [
+        "Full Q3 2026 transcript body directly retrieved.",
+        "Korean and English management presentation followed by analyst Q&A and closing remarks.",
+        "Speaker-labelled statements support the included summaries.",
+        "Company official script unavailable for independent transcription accuracy audit; translation inconsistencies and market reaction claims excluded."
+      ],
+      "summary": [
+        "캐노피우스 지분 확대는 해외 사업 강화 계획의 실행이며 기존 주주환원·자본정책의 기본 방향은 유지한다고 설명했다. 추가 기업가치 제고 방안은 검토 중이나 확정 일정은 제시하지 않았다.",
+        "인수 재원은 외부 차입보다 보유 현금과 자산 포트폴리오 조정을 통한 내부 유동성 활용을 우선 검토한다고 밝혔다. 당분간 인수 후 통합과 해외 거점 간 시너지에 집중할 방침이다.",
+        "판매 수수료 제도 개편으로 단기 신계약·채널 영업의 변동 가능성을 인정했다. 중장기적으로 상품 경쟁력·인수 심사·계약 유지 역량의 중요성이 높아질 것으로 내다봤다."
+      ],
+      "fullTranscriptReproduced": false
+    }
+  ],
+  "callCoverageLimitations": {
+    "verifiedThirdPartyCalls": [
+      "192080",
+      "032830",
+      "000810"
+    ],
+    "officialPresentationOnly": [
+      "035420"
+    ],
+    "notVerified": [
+      {
+        "ticker": "263750",
+        "name": "펄어비스",
+        "reason": "Official Nov12 Q3 Earnings Letter listing seen; not a verified call transcript."
+      },
+      {
+        "ticker": "078340",
+        "name": "컴투스",
+        "reason": "Official IR page inspected; materials API server error. Call not verified."
+      },
+      {
+        "ticker": "005830",
+        "name": "DB손해보험",
+        "reason": "Official IR reads returned503/timeouts. Call not verified."
+      }
+    ],
+    "exhaustiveIssuerAudit": false,
+    "publicationNote": "All three transcript articles were published before17:30 KST and were newly verified during this follow-up. They must not be described as newly published after17:30."
+  }
+}

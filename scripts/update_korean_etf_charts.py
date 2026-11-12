@@ -4,6 +4,7 @@ Public read-only endpoints; Python standard library only. AUM deliberately null:
 NAVER marketSum is market capitalization, not net assets. Quote turnover amonut is
 not exposed until unit is independently verified. Short histories remain short.
 """
+import copy
 import argparse, concurrent.futures, datetime as dt, json, pathlib, time, urllib.request, xml.etree.ElementTree as ET
 CATALOGUE='https://finance.naver.com/api/sise/etfItemList.nhn'
 # Selection favors established KODEX/TIGER sector funds, adds SOL for specific supply chains.
@@ -120,6 +121,46 @@ def build_fund(spec,quotes,today):
     print(code,q['itemname'],len(history),len(points),intraday_date,flush=True)
     return result
 
+def preserve_daily_history(fund, previous):
+    """Append only completed new dates; historical corrections need separate review.
+
+    Price-basis conflicts fail the fund closed rather than splice a newly adjusted
+    series onto preserved prices. Volume-only revisions are recorded, not applied.
+    Missing old bars in the provider's rolling window never delete our archive.
+    """
+    if not previous or not previous.get('daily'):
+        return fund
+    if previous.get('code') != fund.get('code'):
+        raise ValueError('Daily history identity mismatch; retain previous fund')
+    old=previous['daily']; fresh=fund['daily']
+    for label, rows in [('preserved',old),('new',fresh)]:
+        require_unique_observations(rows,'date',label+' daily')
+        dates=[row['date'] for row in rows]
+        if not dates or dates != sorted(dates):
+            raise ValueError(label+' daily history is empty or unsorted')
+        for row in rows:
+            dt.date.fromisoformat(row['date'])
+            if not (0 < row['low'] <= min(row['open'],row['close']) <= max(row['open'],row['close']) <= row['high']):
+                raise ValueError(label+' daily history has invalid OHLC')
+    old_by_date={row['date']:row for row in old}
+    overlap=[row for row in fresh if row['date'] in old_by_date]
+    additions=[row for row in fresh if row['date'] > old[-1]['date']]
+    if additions and not any(row['date']==old[-1]['date'] for row in overlap):
+        raise ValueError('No latest preserved daily boundary overlap; separate review required')
+    conflicts=[row['date'] for row in overlap if any(row[key] != old_by_date[row['date']][key] for key in ('open','high','low','close'))]
+    if conflicts:
+        raise ValueError('Historical daily OHLC revision requires separate review: '+','.join(conflicts))
+    revisions=[row['date'] for row in overlap if row != old_by_date[row['date']]]
+    fund['daily']=copy.deepcopy(old+additions)
+    coverage=fund['dailyCoverage']
+    coverage.update(start=fund['daily'][0]['date'],end=fund['daily'][-1]['date'],count=len(fund['daily']),shortHistory=len(fund['daily'])<200)
+    coverage['historicalPreservation']='All previously published daily bars retained exactly; append only new observed sessions.'
+    prior_reviews=previous.get('historyPreservation',{}).get('pendingRevisionDates',[])
+    fund['historyPreservation']={'method':'append_only_preserve_complete_daily_bars',
+        'pendingRevisionDates':sorted(set(prior_reviews+revisions)),
+        'note':'Historical provider revisions are not applied automatically. Price changes block appending; non-price changes await separate verified review.'}
+    return fund
+
 def refresh_representatives(funds, previous):
     try:
         from korean_etf_representatives import collect_weight_representatives
@@ -154,6 +195,7 @@ def main():
         for job in concurrent.futures.as_completed(jobs):
             try:
                 fund=job.result()
+                fund=preserve_daily_history(fund,previous.get(fund['code']))
                 old_evidence=previous.get(fund['code'],{}).get('selectionEvidence')
                 if old_evidence and not fund.get('selectionEvidence'):fund['selectionEvidence']=old_evidence
                 funds.append(fund)
