@@ -1,0 +1,206 @@
+{
+  "asOf": "2026-11-12T22:06:36.112389+00:00",
+  "companies": {
+    "NASDAQ:CSCO": {
+      "reportingCurrency": "USD",
+      "finSource": "Official issuer filings (per-quarter sources)",
+      "financialVerifiedAt": "2026-11-12",
+      "financialNote": "공식 단독분기 GAAP 연결 매출·영업이익으로 최근4개 분기 전체를 대조했습니다. 공급사 월말 날짜를 실제 결산일로 교정하며 조정영업이익·EPS를 혼합하지 않습니다.",
+      "quarters": [
+        {
+          "date": "2026-10-24",
+          "period": "FY2027 Q1",
+          "periodType": "quarter",
+          "revenue": 18517,
+          "operatingIncome": 5598,
+          "source": "Cisco Systems official quarterly earnings release",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.prnewswire.com/news-releases/cisco-reports-first-quarter-earnings-302938394.html",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-12",
+          "observedAt": "2026-11-12T22:06:36.112389+00:00",
+          "sourceObservedAt": "2026-11-12T21:49:58.073176+00:00",
+          "publishedAt": "2026-11-12T16:05:00-05:00",
+          "basis": "US GAAP consolidated, unaudited, directly reported standalone three-month quarter",
+          "sourcePrecision": "Whole million USD as reported",
+          "sourceLocation": "Consolidated statements of operations; three-month column, not non-GAAP reconciliation",
+          "calculation": {
+            "method": "Direct standalone quarter"
+          }
+        },
+        {
+          "date": "2026-07-25",
+          "period": "FY2026 Q4",
+          "periodType": "quarter",
+          "revenue": 17252,
+          "operatingIncome": 4264,
+          "source": "Cisco Systems official quarterly earnings release",
+          "sourceType": "filing",
+          "sourceUrl": "https://investor.cisco.com/news/news-details/2026/CISCO-REPORTS-FOURTH-QUARTER-AND-FISCAL-YEAR-2026-EARNINGS/default.aspx",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-12",
+          "observedAt": "2026-11-12T22:06:36.112389+00:00",
+          "sourceObservedAt": "2026-11-12T21:52:00.966518+00:00",
+          "basis": "US GAAP consolidated, unaudited, directly reported standalone three-month quarter",
+          "sourcePrecision": "Whole million USD as reported",
+          "sourceLocation": "Consolidated statements of operations; three-month column, not non-GAAP reconciliation",
+          "calculation": {
+            "method": "Direct standalone quarter"
+          },
+          "publishedAt": "2026-08-12",
+          "rawEvidence": "ciscoRevenueTables-web.json",
+          "rawSha256": "06980bf35b0d33bed73833ec7b8bf464d07c236cc949157eefe1b37c70bf2629"
+        },
+        {
+          "date": "2026-04-25",
+          "period": "FY2026 Q3",
+          "periodType": "quarter",
+          "revenue": 15841,
+          "operatingIncome": 3960,
+          "source": "Cisco Systems official quarterly earnings release",
+          "sourceType": "filing",
+          "sourceUrl": "https://investor.cisco.com/news/news-details/2026/CISCO-REPORTS-THIRD-QUARTER-EARNINGS/default.aspx",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-12",
+          "observedAt": "2026-11-12T22:06:36.112389+00:00",
+          "sourceObservedAt": "2026-11-12T21:52:00.966518+00:00",
+          "basis": "US GAAP consolidated, unaudited, directly reported standalone three-month quarter",
+          "sourcePrecision": "Whole million USD as reported",
+          "sourceLocation": "Consolidated statements of operations; three-month column, not non-GAAP reconciliation",
+          "calculation": {
+            "method": "Direct standalone quarter"
+          },
+          "publishedAt": "2026-05-13",
+          "rawEvidence": "ciscoRevenueTables-web.json",
+          "rawSha256": "06980bf35b0d33bed73833ec7b8bf464d07c236cc949157eefe1b37c70bf2629"
+        },
+        {
+          "date": "2026-01-24",
+          "period": "FY2026 Q2",
+          "periodType": "quarter",
+          "revenue": 15349,
+          "operatingIncome": 3781,
+          "source": "Cisco Systems official quarterly earnings release",
+          "sourceType": "filing",
+          "sourceUrl": "https://investor.cisco.com/news/news-details/2026/CISCO-REPORTS-SECOND-QUARTER-EARNINGS/default.aspx",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-12",
+          "observedAt": "2026-11-12T22:06:36.112389+00:00",
+          "sourceObservedAt": "2026-11-12T21:52:00.966518+00:00",
+          "basis": "US GAAP consolidated, unaudited, directly reported standalone three-month quarter",
+          "sourcePrecision": "Whole million USD as reported",
+          "sourceLocation": "Consolidated statements of operations; three-month column, not non-GAAP reconciliation",
+          "calculation": {
+            "method": "Direct standalone quarter"
+          },
+          "publishedAt": "2026-02-11",
+          "rawEvidence": "ciscoRevenueTables-web.json",
+          "rawSha256": "06980bf35b0d33bed73833ec7b8bf464d07c236cc949157eefe1b37c70bf2629"
+        }
+      ],
+      "replaceQuarters": true
+    },
+    "NASDAQ:AMAT": {
+      "reportingCurrency": "USD",
+      "finSource": "Official issuer filings (per-quarter sources)",
+      "financialVerifiedAt": "2026-11-12",
+      "financialNote": "공식 단독분기 GAAP 연결 매출·영업이익으로 최근4개 분기 전체를 대조했습니다. 공급사 월말 날짜를 실제 결산일로 교정하며 조정영업이익·EPS를 혼합하지 않습니다.",
+      "quarters": [
+        {
+          "date": "2026-10-25",
+          "period": "FY2026 Q4",
+          "periodType": "quarter",
+          "revenue": 10409,
+          "operatingIncome": 3658,
+          "source": "Applied Materials official quarterly earnings release",
+          "sourceType": "filing",
+          "sourceUrl": "https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-fourth-quarter-and-fiscal-year-2026",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-12",
+          "observedAt": "2026-11-12T22:06:36.112389+00:00",
+          "sourceObservedAt": "2026-11-12T21:48:38.720807+00:00",
+          "publishedAt": "2026-11-12T16:01:00-05:00",
+          "basis": "US GAAP consolidated, unaudited, directly reported standalone three-month quarter",
+          "sourcePrecision": "Whole million USD as reported",
+          "sourceLocation": "Consolidated statements of operations; three-month column, not non-GAAP reconciliation",
+          "calculation": {
+            "method": "Direct standalone quarter"
+          }
+        },
+        {
+          "date": "2026-07-26",
+          "period": "FY2026 Q3",
+          "periodType": "quarter",
+          "revenue": 9115,
+          "operatingIncome": 3075,
+          "source": "Applied Materials official quarterly earnings release",
+          "sourceType": "filing",
+          "sourceUrl": "https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-third-quarter-2026-results",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-12",
+          "observedAt": "2026-11-12T22:06:36.112389+00:00",
+          "sourceObservedAt": "2026-11-12T21:48:38.720807+00:00",
+          "publishedAt": "2026-08-13T16:01:00-04:00",
+          "basis": "US GAAP consolidated, unaudited, directly reported standalone three-month quarter",
+          "sourcePrecision": "Whole million USD as reported",
+          "sourceLocation": "Consolidated statements of operations; three-month column, not non-GAAP reconciliation",
+          "calculation": {
+            "method": "Direct standalone quarter"
+          }
+        },
+        {
+          "date": "2026-04-26",
+          "period": "FY2026 Q2",
+          "periodType": "quarter",
+          "revenue": 7910,
+          "operatingIncome": 2523,
+          "source": "Applied Materials official quarterly earnings release",
+          "sourceType": "filing",
+          "sourceUrl": "https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-second-quarter-2026-results",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-12",
+          "observedAt": "2026-11-12T22:06:36.112389+00:00",
+          "sourceObservedAt": "2026-11-12T21:48:38.720807+00:00",
+          "publishedAt": "2026-05-14T16:01:00-04:00",
+          "basis": "US GAAP consolidated, unaudited, directly reported standalone three-month quarter",
+          "sourcePrecision": "Whole million USD as reported",
+          "sourceLocation": "Consolidated statements of operations; three-month column, not non-GAAP reconciliation",
+          "calculation": {
+            "method": "Direct standalone quarter"
+          }
+        },
+        {
+          "date": "2026-01-25",
+          "period": "FY2026 Q1",
+          "periodType": "quarter",
+          "revenue": 7012,
+          "operatingIncome": 1831,
+          "source": "Applied Materials official quarterly earnings release",
+          "sourceType": "filing",
+          "sourceUrl": "https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-first-quarter-2026-results",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-12",
+          "observedAt": "2026-11-12T22:06:36.112389+00:00",
+          "sourceObservedAt": "2026-11-12T21:48:38.720807+00:00",
+          "publishedAt": "2026-02-12T16:01:00-05:00",
+          "basis": "US GAAP consolidated, unaudited, directly reported standalone three-month quarter",
+          "sourcePrecision": "Whole million USD as reported",
+          "sourceLocation": "Consolidated statements of operations; three-month column, not non-GAAP reconciliation",
+          "calculation": {
+            "method": "Direct standalone quarter"
+          }
+        }
+      ],
+      "replaceQuarters": true
+    }
+  },
+  "evidenceSource": "Reused verified November12 US earnings primary-source research; raw evidence copied into raw/"
+}

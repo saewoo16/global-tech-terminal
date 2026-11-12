@@ -1,0 +1,201 @@
+{
+  "asOf": "2026-11-12T22:11:58.937076+00:00",
+  "companies": {
+    "HKEX:981": {
+      "reportingCurrency": "USD",
+      "finSource": "Official issuer filings (per-quarter sources)",
+      "financialVerifiedAt": "2026-11-12",
+      "financialNote": "공식 원문의 2026년7~9월 단독분기 매출·영업이익을 확인했습니다. 보고통화와 원자료 정밀도를 보존하며 누계 또는 비GAAP 수치를 혼합하지 않습니다. 이전 분기는 별도 원자료를 유지합니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 3190.038,
+          "operatingIncome": 710.063,
+          "source": "SMIC official quarterly release/presentation",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/1112/2026111200683_c.pdf",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-12",
+          "observedAt": "2026-11-12T22:07:34.514580+00:00",
+          "publishedAt": "2026-11-12",
+          "basis": "IFRS consolidated, unaudited; direct standalone quarter; not China Accounting Standards RMB filing",
+          "sourcePrecision": "USD thousands divided by1000, retains3 decimals",
+          "sourceLocation": "Page4, third-quarter operating results summary; USD thousands",
+          "rawEvidence": "smic-q3.pdf",
+          "rawSha256": "75f82bed624f8d0bca25b924664ad28c4522ac5b4b62866a91abd7d18f7d5900",
+          "calculation": {
+            "method": "Direct standalone quarter; no cumulative division"
+          }
+        }
+      ]
+    },
+    "TPEX:8299": {
+      "reportingCurrency": "TWD",
+      "finSource": "Official issuer filings (per-quarter sources)",
+      "financialVerifiedAt": "2026-11-12",
+      "financialNote": "공식 연결 재무제표의7~9월 단독분기를 천TWD에서 백만TWD로 환산했습니다. 일부 지분법 피투자회사의 미검토 재무제표 사용 관련 한정 검토결론이 있으며 감사의견으로 표시하지 않습니다. 공식 실적발표의 반올림 수치와 일치합니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 86076.332,
+          "operatingIncome": 32898.209,
+          "source": "Phison official Q3 consolidated financial report and independent review",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.phison.com/wp-content/uploads/2026/06/2026_Nine-Month_CN.pdf",
+          "reportedCurrency": "TWD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-12",
+          "observedAt": "2026-11-12T22:09:55.482079+00:00",
+          "publishedAt": "2026-11-06",
+          "basis": "Taiwan IFRS consolidated interim financial statements; accountant reviewed with qualified conclusion about certain equity-accounted associates using unreviewed investee statements",
+          "sourcePrecision": "TWD thousands divided by1000; preserves3 decimals",
+          "sourceLocation": "PDF page6 (printed5), standalone115/7/1–9/30 column of consolidated income statement; review opinion PDF pages3–4",
+          "rawEvidence": "phison-q3-full.pdf",
+          "rawSha256": "492028dff9af5eb3330f554de88c93ba17b8fbca476e6f0d048a03dd0e902370",
+          "calculation": {
+            "method": "Direct standalone quarter; TWD thousands to millions",
+            "revenue": "86076332 / 1000 = 86076.332",
+            "operatingIncome": "32898209 / 1000 = 32898.209"
+          },
+          "sourceUrls": [
+            "https://www.phison.com/wp-content/uploads/2026/06/2026_Nine-Month_CN.pdf",
+            "https://www.phison.com/wp-content/uploads/2026/11/20261106_PHISON-8299_3Q26-Consolidated-Financial-Report-Announcement_Eng_Official.pdf"
+          ],
+          "reviewStatus": "Qualified review, not audit"
+        }
+      ]
+    },
+    "TWSE:2317": {
+      "reportingCurrency": "TWD",
+      "finSource": "Official issuer filings (per-quarter sources)",
+      "financialVerifiedAt": "2026-11-12",
+      "financialNote": "공식 원문의 2026년7~9월 단독분기 매출·영업이익을 확인했습니다. 보고통화와 원자료 정밀도를 보존하며 누계 또는 비GAAP 수치를 혼합하지 않습니다. 이전 분기는 별도 원자료를 유지합니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 3015634,
+          "operatingIncome": 115350,
+          "source": "Hon Hai official quarterly release/presentation",
+          "sourceType": "filing",
+          "sourceUrl": "https://image.honhai.com/upload/202611/law_talk/Hon%20Hai%203Q26%20Results_English_20261112_1926.pdf",
+          "reportedCurrency": "TWD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-12",
+          "observedAt": "2026-11-12T22:07:36.100223+00:00",
+          "publishedAt": "2026-11-12",
+          "basis": "Taiwan IFRS consolidated; direct standalone quarter; presentation contains unaudited/unreviewed information",
+          "sourcePrecision": "Issuer whole million TWD precision",
+          "sourceLocation": "Page6 of42, 2026 Q3 consolidated statements of income; not page7 cumulative table",
+          "rawEvidence": "honhai-q3.pdf",
+          "rawSha256": "51f8bb9866d80fb89672096b96bb241efddd6c99cc746d7cb615f0c9e58a3093",
+          "calculation": {
+            "method": "Direct standalone quarter; no cumulative division"
+          }
+        }
+      ]
+    },
+    "TWSE:3231": {
+      "reportingCurrency": "TWD",
+      "finSource": "Official issuer filings (per-quarter sources)",
+      "financialVerifiedAt": "2026-11-12",
+      "financialNote": "공식 원문의 2026년7~9월 단독분기 매출·영업이익을 확인했습니다. 보고통화와 원자료 정밀도를 보존하며 누계 또는 비GAAP 수치를 혼합하지 않습니다. 이전 분기는 별도 원자료를 유지합니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 1149090,
+          "operatingIncome": 48672,
+          "source": "Wistron official quarterly release/presentation",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.wistron.com/file/1c0b651b-58c3-4aa2-ac09-f6a00163ac71/Wistron%20Presentation_Roadshow2026Q3%20Ch_Web.pdf.pdf",
+          "reportedCurrency": "TWD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-12",
+          "observedAt": "2026-11-12T22:07:34.070796+00:00",
+          "publishedAt": "2026-11-11",
+          "basis": "Taiwan IFRS consolidated; direct standalone quarter; includes consolidated subsidiaries and noncontrolling interests",
+          "sourcePrecision": "Issuer whole million TWD precision",
+          "sourceLocation": "Page15, 3Q2026 vs2Q2026 and3Q2025 income statement",
+          "rawEvidence": "wistron-q3.pdf",
+          "rawSha256": "e5b57e6cdfd1d48a7a833005572844b8708180df29e94bb1fa883b6426c1f51d",
+          "calculation": {
+            "method": "Direct standalone quarter; no cumulative division"
+          }
+        }
+      ]
+    },
+    "TWSE:2382": {
+      "reportingCurrency": "TWD",
+      "finSource": "Official issuer filings (per-quarter sources)",
+      "financialVerifiedAt": "2026-11-12",
+      "financialNote": "공식3Q26 투자자 발표의 단독분기 매출·영업이익을 백만TWD 원정밀도로 확인했습니다. 9개월 누계와 혼합하지 않습니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 1115545,
+          "operatingIncome": 32204,
+          "source": "Quanta Computer official Q3 FY2026 results presentation",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.quantatw.com/Quanta/english/investment/financials_icp.aspx",
+          "reportedCurrency": "TWD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-12",
+          "observedAt": "2026-11-12T22:09:57.854868+00:00",
+          "publishedAt": "2026-11-11",
+          "basis": "Taiwan IFRS consolidated; direct standalone quarter",
+          "sourcePrecision": "Whole million TWD as presented",
+          "sourceLocation": "Page3, 3Q26 Income Statement; downloadable first row from official presentation index",
+          "rawEvidence": "quanta-q3.pdf",
+          "rawSha256": "bf6818c47f8e79f8ca9f04132b0f1c59647412a17e5425d699d8c2ada39d00fa",
+          "calculation": {
+            "method": "Direct standalone quarter"
+          }
+        }
+      ]
+    },
+    "TWSE:3702": {
+      "reportingCurrency": "TWD",
+      "finSource": "Official issuer filings (per-quarter sources)",
+      "financialVerifiedAt": "2026-11-12",
+      "financialNote": "11월10일 공식 공고의3분기 단독 매출·영업이익을 원단위에서 백만TWD로 환산했습니다. 같은 공고의4분기 전망·9개월 누계는 혼합하지 않았습니다. 원문 텍스트를 보존하며 상세 재무제표는 미확보입니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 509996,
+          "operatingIncome": 14496,
+          "source": "WPG Holdings official Q3 result announcement",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.wpgholdings.com/investors_msg/detail/zhtw/other/3123",
+          "reportedCurrency": "TWD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-12",
+          "observedAt": "2026-11-12T22:11:58.937076+00:00",
+          "publishedAt": "2026-11-10",
+          "basis": "Issuer reported consolidated third-quarter operating results; direct standalone quarter, not Q4 forecast",
+          "sourcePrecision": "Whole million TWD after exact unit conversion from issuer Chinese amount units",
+          "sourceLocation": "Official announcement paragraphs7: Q3 revenue5099億9600萬元 and operating profit144億9600萬元",
+          "rawEvidence": "wpgResearch-web.json",
+          "rawSha256": "e067b7d0f7f2a8ca46b463217e5f663c29457a40bf3dba65ce57a59a2d351d9a",
+          "rawRetrievalNote": "Official announcement text read through web tool; direct PDF/HTML byte download returned HTTP403, not retried",
+          "calculation": {
+            "method": "Direct quarter amounts, unit conversion only",
+            "revenue": "5099*100 + 9600/100 = 509996 million TWD",
+            "operatingIncome": "144*100 + 9600/100 = 14496 million TWD"
+          }
+        }
+      ]
+    }
+  }
+}
