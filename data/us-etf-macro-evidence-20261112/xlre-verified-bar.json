@@ -1,0 +1,13 @@
+{
+  "bar": {
+    "date": "2026-11-12",
+    "close": 44.36,
+    "open": 44.74,
+    "high": 44.74,
+    "low": 44.305,
+    "volume": 5419113
+  },
+  "sourceUrl": "https://scanner.tradingview.com/america/scan",
+  "observedAt": "2026-11-12T21:47:25.313766+00:00",
+  "note": "Full candle replacement, not inferred OHLC repair. Quote update mode delayed_streaming_900; observed after 16:00 EST and 15-minute delay."
+}

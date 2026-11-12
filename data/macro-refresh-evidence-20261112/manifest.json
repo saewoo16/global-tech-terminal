@@ -1,0 +1,98 @@
+[
+  {
+    "url": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield",
+    "sha256": "9a89e7d3f23187f77d4d90f93971e75d3a61ab8d38e1bd4dd80c0978833ab487",
+    "file": "9a89e7d3f23187f77d4d90f93971e75d3a61ab8d38e1bd4dd80c0978833ab487.txt",
+    "retrievedAt": "2026-11-12T21:45:52.638228+00:00"
+  },
+  {
+    "url": "https://www.investing.com/indices/usdollar",
+    "sha256": "932e266cb17f4fe09cdd784037d9188df90cbf8bb634a5a4474963e978f93710",
+    "file": "932e266cb17f4fe09cdd784037d9188df90cbf8bb634a5a4474963e978f93710.txt",
+    "retrievedAt": "2026-11-12T21:45:52.753311+00:00"
+  },
+  {
+    "url": "https://www.investing.com/commodities/crude-oil",
+    "sha256": "280468b603f2f9ac905500956a309dc3c71e251db930d159c1d95dfe58000db0",
+    "file": "280468b603f2f9ac905500956a309dc3c71e251db930d159c1d95dfe58000db0.txt",
+    "retrievedAt": "2026-11-12T21:45:52.763967+00:00"
+  },
+  {
+    "url": "https://www.investing.com/commodities/brent-oil",
+    "sha256": "f8f27295ca74c40b8e234af8f1c2414a5722c84d7468643efdd8430ec9f1250d",
+    "file": "f8f27295ca74c40b8e234af8f1c2414a5722c84d7468643efdd8430ec9f1250d.txt",
+    "retrievedAt": "2026-11-12T21:45:52.866258+00:00"
+  },
+  {
+    "url": "https://www.investing.com/currencies/usd-jpy",
+    "sha256": "da1f5757c530b8420ff1851dc0b07f67b29d3b853c56d6d342a89a98b94991d8",
+    "file": "da1f5757c530b8420ff1851dc0b07f67b29d3b853c56d6d342a89a98b94991d8.txt",
+    "retrievedAt": "2026-11-12T21:45:55.256325+00:00"
+  },
+  {
+    "url": "https://www.investing.com/currencies/usd-krw",
+    "sha256": "c3b1aabb41f33814a8611853a4ed86e3388215f82b39bcdd3b8268fcf0aad52c",
+    "file": "c3b1aabb41f33814a8611853a4ed86e3388215f82b39bcdd3b8268fcf0aad52c.txt",
+    "retrievedAt": "2026-11-12T21:45:55.423218+00:00"
+  },
+  {
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DCOILWTICO&cosd=2025-10-08&coed=2026-11-12",
+    "sha256": "df35b08cba8c0bb8c50e6af37f2fc068ce6388606d6211e5302459951849150b",
+    "file": "df35b08cba8c0bb8c50e6af37f2fc068ce6388606d6211e5302459951849150b.txt",
+    "retrievedAt": "2026-11-12T21:45:56.849575+00:00"
+  },
+  {
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DCOILBRENTEU&cosd=2025-10-08&coed=2026-11-12",
+    "sha256": "c6f2f1d4807e3f3ead42ada98ae0f5d6d000b776bb09d1f359a8ae721a829f83",
+    "file": "c6f2f1d4807e3f3ead42ada98ae0f5d6d000b776bb09d1f359a8ae721a829f83.txt",
+    "retrievedAt": "2026-11-12T21:45:56.962674+00:00"
+  },
+  {
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS10&cosd=2025-10-08&coed=2026-11-12",
+    "sha256": "429f243b8cbe50e4513c0662b70f8575abdf6d6c0595cadc3e4d6900360c4424",
+    "file": "429f243b8cbe50e4513c0662b70f8575abdf6d6c0595cadc3e4d6900360c4424.txt",
+    "retrievedAt": "2026-11-12T21:45:56.975077+00:00"
+  },
+  {
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=HQMCB10YRP&cosd=2025-10-08&coed=2026-11-12",
+    "sha256": "174bfdf3cc2938f8e6901299ccc11a392052b8322e40cf20ad73753642471423",
+    "file": "174bfdf3cc2938f8e6901299ccc11a392052b8322e40cf20ad73753642471423.txt",
+    "retrievedAt": "2026-11-12T21:45:57.050796+00:00"
+  },
+  {
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXJPUS&cosd=2025-10-08&coed=2026-11-12",
+    "sha256": "1e7fe0e3c42025fe6d9afb321efb6716938faebde8b24f194b04676a58a8fca8",
+    "file": "1e7fe0e3c42025fe6d9afb321efb6716938faebde8b24f194b04676a58a8fca8.txt",
+    "retrievedAt": "2026-11-12T21:45:59.657703+00:00"
+  },
+  {
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXKOUS&cosd=2025-10-08&coed=2026-11-12",
+    "sha256": "02501d6f72e01a8b309fb8e7d86266c71e7d0276f81ec562b31c9f29cd0a4c9c",
+    "file": "02501d6f72e01a8b309fb8e7d86266c71e7d0276f81ec562b31c9f29cd0a4c9c.txt",
+    "retrievedAt": "2026-11-12T21:45:59.659100+00:00"
+  },
+  {
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=M2SL&cosd=2025-10-08&coed=2026-11-12",
+    "sha256": "d6b4cd54b61ac859e7629d3f7b93b02c60aa5f0f3b444c23820cb44ab0c2d210",
+    "file": "d6b4cd54b61ac859e7629d3f7b93b02c60aa5f0f3b444c23820cb44ab0c2d210.txt",
+    "retrievedAt": "2026-11-12T21:45:59.685992+00:00"
+  },
+  {
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=M1SL&cosd=2025-10-08&coed=2026-11-12",
+    "sha256": "22eca7e516c0f55a8fe58ca5e93de9916390ed610ead1edc784f054022c07db1",
+    "file": "22eca7e516c0f55a8fe58ca5e93de9916390ed610ead1edc784f054022c07db1.txt",
+    "retrievedAt": "2026-11-12T21:45:59.697590+00:00"
+  },
+  {
+    "url": "https://fred.stlouisfed.org/series/M2SL",
+    "sha256": "e64cefaf64f5aeaa643578c2a75ca324286142c3b3ac7df15cd632db358f0d5a",
+    "file": "e64cefaf64f5aeaa643578c2a75ca324286142c3b3ac7df15cd632db358f0d5a.txt",
+    "retrievedAt": "2026-11-12T21:46:02.503650+00:00"
+  },
+  {
+    "url": "https://fred.stlouisfed.org/series/M1SL",
+    "sha256": "85571a96d10cb409fd77c1d511a360efe148542fa144f9468849fe98e597c88f",
+    "file": "85571a96d10cb409fd77c1d511a360efe148542fa144f9468849fe98e597c88f.txt",
+    "retrievedAt": "2026-11-12T21:46:02.537860+00:00"
+  }
+]

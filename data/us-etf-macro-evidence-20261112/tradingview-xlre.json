@@ -1,0 +1,44 @@
+{
+  "url": "https://scanner.tradingview.com/america/scan",
+  "request": {
+    "symbols": {
+      "tickers": [
+        "AMEX:XLRE"
+      ],
+      "query": {
+        "types": []
+      }
+    },
+    "columns": [
+      "name",
+      "close",
+      "open",
+      "high",
+      "low",
+      "volume",
+      "change",
+      "update_mode",
+      "time"
+    ]
+  },
+  "observedAt": "2026-11-12T21:47:25.313766+00:00",
+  "response": {
+    "totalCount": 1,
+    "data": [
+      {
+        "s": "AMEX:XLRE",
+        "d": [
+          "XLRE",
+          44.36,
+          44.74,
+          44.74,
+          44.305,
+          5419113,
+          -0.5158107198923614,
+          "delayed_streaming_900",
+          1794493800
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "observedAt": "2026-11-12T21:45:49.148840+00:00",
+  "changed": [
+    "UST10Y",
+    "WTI_FUTURES",
+    "BRENT_FUTURES",
+    "DXY",
+    "USDJPY",
+    "USDKRW",
+    "DGS10"
+  ],
+  "unchanged": [
+    "HQMCB10YRP",
+    "DCOILWTICO",
+    "DCOILBRENTEU",
+    "M1SL",
+    "M2SL",
+    "DEXJPUS",
+    "DEXKOUS"
+  ],
+  "rows": [
+    {
+      "id": "UST10Y",
+      "value": 5.139,
+      "asOf": "2026-11-12",
+      "observedAt": "2026-11-12T21:43:52Z",
+      "status": "verified"
+    },
+    {
+      "id": "WTI_FUTURES",
+      "value": 88.72,
+      "asOf": "2026-11-12",
+      "observedAt": "2026-11-12T21:45:51Z",
+      "status": "verified"
+    },
+    {
+      "id": "BRENT_FUTURES",
+      "value": 95.8,
+      "asOf": "2026-11-12",
+      "observedAt": "2026-11-12T21:45:48Z",
+      "status": "verified"
+    },
+    {
+      "id": "DXY",
+      "value": 103.18,
+      "asOf": "2026-11-12",
+      "observedAt": "2026-11-12T21:45:01Z",
+      "status": "verified"
+    },
+    {
+      "id": "USDJPY",
+      "value": 159.87,
+      "asOf": "2026-11-12",
+      "observedAt": "2026-11-12T21:16:51Z",
+      "status": "verified"
+    },
+    {
+      "id": "USDKRW",
+      "value": 1335.36,
+      "asOf": "2026-11-12",
+      "observedAt": "2026-11-12T21:39:56Z",
+      "status": "verified"
+    },
+    {
+      "id": "DGS10",
+      "value": 4.98,
+      "asOf": "2026-11-10",
+      "observedAt": null,
+      "status": "verified"
+    },
+    {
+      "id": "HQMCB10YRP",
+      "value": 5.92,
+      "asOf": "2026-10-01",
+      "observedAt": null,
+      "status": "verified"
+    },
+    {
+      "id": "DCOILWTICO",
+      "value": 99.64,
+      "asOf": "2026-11-03",
+      "observedAt": null,
+      "status": "verified"
+    },
+    {
+      "id": "DCOILBRENTEU",
+      "value": 107.03,
+      "asOf": "2026-11-03",
+      "observedAt": null,
+      "status": "verified"
+    },
+    {
+      "id": "M1SL",
+      "value": 20061.2,
+      "asOf": "2026-09-01",
+      "observedAt": null,
+      "status": "verified"
+    },
+    {
+      "id": "M2SL",
+      "value": 23413.9,
+      "asOf": "2026-09-01",
+      "observedAt": null,
+      "status": "verified"
+    },
+    {
+      "id": "DEXJPUS",
+      "value": 158.23,
+      "asOf": "2026-11-06",
+      "observedAt": null,
+      "status": "verified"
+    },
+    {
+      "id": "DEXKOUS",
+      "value": 1361.89,
+      "asOf": "2026-11-06",
+      "observedAt": null,
+      "status": "verified"
+    }
+  ],
+  "fedwatch": {
+    "status": "retained_previous",
+    "checkedAt": "2026-11-12T21:46:27.869396+00:00",
+    "previousProviderAsOf": "2026-11-11T09:31:51Z",
+    "note": "CME official landing page accessible; embedded QuikStrike source returned an access error. No fresh probabilities verified. Existing values and source timestamps preserved."
+  }
+}

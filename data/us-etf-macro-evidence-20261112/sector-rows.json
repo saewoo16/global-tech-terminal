@@ -1,0 +1,4974 @@
+[
+  {
+    "name": "석유가스탐사생산",
+    "ticker": "XOP",
+    "day": 1.65,
+    "week": 5.18,
+    "month": -5.75,
+    "sourceIds": [
+      "price_XOP"
+    ],
+    "benchmark": "State Street SPDR S&P Oil & Gas Exploration & Production ETF",
+    "group": "세부업종 ETF",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-XOP"
+      ],
+      "top5": [
+        {
+          "name": "RANGE RESOURCES CORP",
+          "shortName": "RANGE RESOURCES CORP",
+          "ticker": "RRC",
+          "weightPct": 3.604372
+        },
+        {
+          "name": "EOG RESOURCES INC",
+          "shortName": "EOG RESOURCES INC",
+          "ticker": "EOG",
+          "weightPct": 3.02847
+        },
+        {
+          "name": "APA CORP",
+          "shortName": "APA CORP",
+          "ticker": "APA",
+          "weightPct": 2.956789
+        },
+        {
+          "name": "EXXONMOBIL HOLDINGS CORP",
+          "shortName": "EXXONMOBIL HOLDINGS CORP",
+          "ticker": "XOM",
+          "weightPct": 2.94252
+        },
+        {
+          "name": "CONOCOPHILLIPS",
+          "shortName": "CONOCOPHILLIPS",
+          "ticker": "COP",
+          "weightPct": 2.918277
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:48:44.909237+00:00",
+      "recheckedAt": "2026-11-11T21:48:44.909237+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "XOP",
+          "sourceId": "price_XOP",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 178.27999877929688,
+              "high": 180.25,
+              "low": 176.5399932861328,
+              "close": 180.13999938964844,
+              "volume": 2707500,
+              "adjustedClose": 180.13999938964844,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 181.3000030517578,
+              "high": 183.1699981689453,
+              "low": 174.02000427246094,
+              "close": 174.10000610351562,
+              "volume": 4160800,
+              "adjustedClose": 174.10000610351562,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 194.10000610351562,
+              "high": 195.7899932861328,
+              "low": 193.10000610351562,
+              "close": 194.2899932861328,
+              "volume": 1822700,
+              "adjustedClose": 194.2899932861328,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 181.14999389648438,
+              "high": 185.0399932861328,
+              "low": 179.52000427246094,
+              "close": 183.11000061035156,
+              "volume": 2978012,
+              "adjustedClose": 183.11000061035156,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": 1.6487183472666311,
+            "week": 5.1751833377184475,
+            "month": -5.7542812610613225
+          },
+          "observedAt": "2026-11-12T21:45:48.589034+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "에너지",
+    "ticker": "XLE",
+    "day": 1.51,
+    "week": 4.38,
+    "month": -2.55,
+    "sourceIds": [
+      "price_XLE"
+    ],
+    "benchmark": "State Street Energy Select Sector SPDR ETF",
+    "group": "대분류",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-XLE"
+      ],
+      "top5": [
+        {
+          "name": "EXXONMOBIL HOLDINGS CORP",
+          "shortName": "EXXONMOBIL HOLDINGS CORP",
+          "ticker": "XOM",
+          "weightPct": 24.061802
+        },
+        {
+          "name": "CHEVRON CORP",
+          "shortName": "CHEVRON CORP",
+          "ticker": "CVX",
+          "weightPct": 18.500448
+        },
+        {
+          "name": "CONOCOPHILLIPS",
+          "shortName": "CONOCOPHILLIPS",
+          "ticker": "COP",
+          "weightPct": 7.221096
+        },
+        {
+          "name": "MARATHON PETROLEUM CORP",
+          "shortName": "MARATHON PETROLEUM CORP",
+          "ticker": "MPC",
+          "weightPct": 4.584474
+        },
+        {
+          "name": "PHILLIPS 66",
+          "shortName": "PHILLIPS 66",
+          "ticker": "PSX",
+          "weightPct": 4.519151
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:48:44.497064+00:00",
+      "recheckedAt": "2026-11-11T21:48:44.497064+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "XLE",
+          "sourceId": "price_XLE",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 62.880001068115234,
+              "high": 63.400001525878906,
+              "low": 62.349998474121094,
+              "close": 63.369998931884766,
+              "volume": 24759500,
+              "adjustedClose": 63.369998931884766,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 64.12999725341797,
+              "high": 64.54000091552734,
+              "low": 61.630001068115234,
+              "close": 61.630001068115234,
+              "volume": 68380300,
+              "adjustedClose": 61.630001068115234,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 65.8499984741211,
+              "high": 66.41999816894531,
+              "low": 65.66999816894531,
+              "close": 66.01000213623047,
+              "volume": 19885200,
+              "adjustedClose": 66.01000213623047,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 63.880001068115234,
+              "high": 64.80999755859375,
+              "low": 63.41999816894531,
+              "close": 64.33000183105469,
+              "volume": 25876024,
+              "adjustedClose": 64.33000183105469,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": 1.5149170196480766,
+            "week": 4.380984449367986,
+            "month": -2.545069308903558
+          },
+          "observedAt": "2026-11-12T21:45:53.664489+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "화학 대표 3사",
+    "ticker": "DOW,LYB,DD",
+    "benchmark": "기간 시작 동일가중 바스켓: 다우케미칼, 라이온델바젤, 듀폰",
+    "group": "대표 종목 바스켓(업종지수 아님)",
+    "day": 1.12,
+    "week": 4.68,
+    "month": 15.0,
+    "sourceIds": [
+      "price_DOW",
+      "price_LYB",
+      "price_DD"
+    ],
+    "instrumentType": "basket",
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "DOW",
+          "sourceId": "price_DOW",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 31.489999771118164,
+              "high": 32.79999923706055,
+              "low": 31.479999542236328,
+              "close": 32.540000915527344,
+              "volume": 7912400,
+              "adjustedClose": 32.540000915527344,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 33.08000183105469,
+              "high": 33.44499969482422,
+              "low": 31.8700008392334,
+              "close": 31.979999542236328,
+              "volume": 9946300,
+              "adjustedClose": 31.979999542236328,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 28.43000030517578,
+              "high": 28.469999313354492,
+              "low": 27.93000030517578,
+              "close": 28.1200008392334,
+              "volume": 6748600,
+              "adjustedClose": 28.1200008392334,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 32.84000015258789,
+              "high": 33.439998626708984,
+              "low": 32.4900016784668,
+              "close": 33.150001525878906,
+              "volume": 5836192,
+              "adjustedClose": 33.150001525878906,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": 1.874617680359325,
+            "week": 3.65854284049425,
+            "month": 17.887626374561073
+          },
+          "observedAt": "2026-11-12T21:46:47.730879+00:00"
+        },
+        {
+          "ticker": "LYB",
+          "sourceId": "price_LYB",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 61.130001068115234,
+              "high": 63.560001373291016,
+              "low": 61.060001373291016,
+              "close": 62.58000183105469,
+              "volume": 2962900,
+              "adjustedClose": 62.58000183105469,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 63.810001373291016,
+              "high": 64.52999877929688,
+              "low": 61.31999969482422,
+              "close": 61.630001068115234,
+              "volume": 5433300,
+              "adjustedClose": 61.630001068115234,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 60.029998779296875,
+              "high": 60.25,
+              "low": 59.16999816894531,
+              "close": 59.40999984741211,
+              "volume": 2938300,
+              "adjustedClose": 59.40999984741211,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 63.2400016784668,
+              "high": 64.56500244140625,
+              "low": 62.599998474121094,
+              "close": 63.880001068115234,
+              "volume": 3256137,
+              "adjustedClose": 63.880001068115234,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": 2.0773397235911206,
+            "week": 3.6508193428606894,
+            "month": 7.523987935000531
+          },
+          "observedAt": "2026-11-12T21:46:47.734968+00:00"
+        },
+        {
+          "ticker": "DD",
+          "sourceId": "price_DD",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 157.9600067138672,
+              "high": 159.47999572753906,
+              "low": 155.4600067138672,
+              "close": 155.61000061035156,
+              "volume": 1113500,
+              "adjustedClose": 155.61000061035156,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 150.27000427246094,
+              "high": 152.7899932861328,
+              "low": 144.0399932861328,
+              "close": 144.92999267578125,
+              "volume": 1872300,
+              "adjustedClose": 144.92999267578125,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 129.58999633789062,
+              "high": 131.2100067138672,
+              "low": 129.16000366210938,
+              "close": 129.3699951171875,
+              "volume": 604900,
+              "adjustedClose": 129.3699951171875,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 155.07000732421875,
+              "high": 156.14500427246094,
+              "low": 153.52999877929688,
+              "close": 154.6999969482422,
+              "volume": 951222,
+              "adjustedClose": 154.6999969482422,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -0.5847976727331505,
+            "week": 6.741188688470534,
+            "month": 19.579502811382167
+          },
+          "observedAt": "2026-11-12T21:46:47.755258+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "정유(글로벌)",
+    "ticker": "CRAK",
+    "day": 0.73,
+    "week": 2.23,
+    "month": -12.08,
+    "sourceIds": [
+      "price_CRAK"
+    ],
+    "benchmark": "VanEck Oil Refiners ETF",
+    "group": "세부업종 ETF",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-CRAK"
+      ],
+      "top5": [
+        {
+          "ticker": "MPC",
+          "name": "Marathon Petroleum Corp",
+          "weightPct": 9.18,
+          "shortName": "Marathon Petroleum Corp"
+        },
+        {
+          "ticker": "RIGD LI",
+          "name": "Reliance Industries Ltd",
+          "weightPct": 8.78,
+          "shortName": "Reliance Industries Ltd"
+        },
+        {
+          "ticker": "VLO",
+          "name": "Valero Energy Corp",
+          "weightPct": 8.49,
+          "shortName": "Valero Energy Corp"
+        },
+        {
+          "ticker": "PSX",
+          "name": "Phillips 66",
+          "weightPct": 7.35,
+          "shortName": "Phillips 66"
+        },
+        {
+          "ticker": "5020 JP",
+          "name": "Eneos Holdings Inc",
+          "weightPct": 5.35,
+          "shortName": "Eneos Holdings Inc"
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:45:28.394463+00:00",
+      "recheckedAt": "2026-11-11T21:45:28.394463+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "CRAK",
+          "sourceId": "price_CRAK",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 56.81999969482422,
+              "high": 57.439998626708984,
+              "low": 56.59000015258789,
+              "close": 57.439998626708984,
+              "volume": 212300,
+              "adjustedClose": 57.439998626708984,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 58.39500045776367,
+              "high": 58.39500045776367,
+              "low": 56.53499984741211,
+              "close": 56.599998474121094,
+              "volume": 1146200,
+              "adjustedClose": 56.599998474121094,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 66.16999816894531,
+              "high": 66.4000015258789,
+              "low": 65.51000213623047,
+              "close": 65.80999755859375,
+              "volume": 377400,
+              "adjustedClose": 65.80999755859375,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 57.45000076293945,
+              "high": 58.189998626708984,
+              "low": 57.19499969482422,
+              "close": 57.86000061035156,
+              "volume": 208231,
+              "adjustedClose": 57.86000061035156,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": 0.7312012424862457,
+            "week": 2.2261522441676007,
+            "month": -12.08022677886279
+          },
+          "observedAt": "2026-11-12T21:46:10.719420+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "사이버보안",
+    "ticker": "CIBR",
+    "day": 0.22,
+    "week": 5.99,
+    "month": -10.52,
+    "sourceIds": [
+      "price_CIBR"
+    ],
+    "benchmark": "First Trust NASDAQ Cybersecurity ETF",
+    "group": "세부업종 ETF",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-CIBR"
+      ],
+      "top5": [
+        {
+          "ticker": "CRWD",
+          "name": "CrowdStrike Holdings, Inc. (Class A)",
+          "weightPct": 8.27,
+          "shortName": "CrowdStrike Holdings, Inc. (Class A)"
+        },
+        {
+          "ticker": "AVGO",
+          "name": "Broadcom Inc.",
+          "weightPct": 7.58,
+          "shortName": "Broadcom Inc."
+        },
+        {
+          "ticker": "CSCO",
+          "name": "Cisco Systems, Inc.",
+          "weightPct": 7.52,
+          "shortName": "Cisco Systems, Inc."
+        },
+        {
+          "ticker": "PANW",
+          "name": "Palo Alto Networks, Inc.",
+          "weightPct": 7.23,
+          "shortName": "Palo Alto Networks, Inc."
+        },
+        {
+          "ticker": "FTNT",
+          "name": "Fortinet, Inc.",
+          "weightPct": 6.12,
+          "shortName": "Fortinet, Inc."
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:45:31.426888+00:00",
+      "recheckedAt": "2026-11-11T21:45:31.426888+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "CIBR",
+          "sourceId": "price_CIBR",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 97.18000030517578,
+              "high": 97.8499984741211,
+              "low": 96.13999938964844,
+              "close": 96.25,
+              "volume": 1560100,
+              "adjustedClose": 96.25,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 95.19999694824219,
+              "high": 95.31999969482422,
+              "low": 90.6449966430664,
+              "close": 91.01000213623047,
+              "volume": 4413700,
+              "adjustedClose": 91.01000213623047,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 110.51000213623047,
+              "high": 110.68000030517578,
+              "low": 107.54000091552734,
+              "close": 107.80000305175781,
+              "volume": 1683700,
+              "adjustedClose": 107.80000305175781,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 95.2300033569336,
+              "high": 97.0989990234375,
+              "low": 94.2699966430664,
+              "close": 96.45999908447266,
+              "volume": 1105856,
+              "adjustedClose": 96.45999908447266,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": 0.21818086698457417,
+            "week": 5.988349434476703,
+            "month": -10.519483901907222
+          },
+          "observedAt": "2026-11-12T21:45:59.803480+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "유틸리티·방어주",
+    "ticker": "XLU",
+    "day": -0.02,
+    "week": 1.18,
+    "month": 5.24,
+    "sourceIds": [
+      "price_XLU"
+    ],
+    "benchmark": "State Street Utilities Select Sector SPDR ETF",
+    "group": "대분류",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-XLU"
+      ],
+      "top5": [
+        {
+          "name": "NEXTERA ENERGY INC",
+          "shortName": "NEXTERA ENERGY INC",
+          "ticker": "NEE",
+          "weightPct": 13.093418
+        },
+        {
+          "name": "SOUTHERN CO/THE",
+          "shortName": "SOUTHERN CO/THE",
+          "ticker": "SO",
+          "weightPct": 7.838405
+        },
+        {
+          "name": "DUKE ENERGY CORP",
+          "shortName": "DUKE ENERGY CORP",
+          "ticker": "DUK",
+          "weightPct": 7.314814
+        },
+        {
+          "name": "CONSTELLATION ENERGY",
+          "shortName": "CONSTELLATION ENERGY",
+          "ticker": "CEG",
+          "weightPct": 6.419396
+        },
+        {
+          "name": "AMERICAN ELECTRIC POWER",
+          "shortName": "AMERICAN ELECTRIC POWER",
+          "ticker": "AEP",
+          "weightPct": 5.063716
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:48:47.737730+00:00",
+      "recheckedAt": "2026-11-11T21:48:47.737730+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "XLU",
+          "sourceId": "price_XLU",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 43.68000030517578,
+              "high": 43.88999938964844,
+              "low": 43.56999969482422,
+              "close": 43.81999969482422,
+              "volume": 16031100,
+              "adjustedClose": 43.81999969482422,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 44.0099983215332,
+              "high": 44.09000015258789,
+              "low": 43.040000915527344,
+              "close": 43.29999923706055,
+              "volume": 47696600,
+              "adjustedClose": 43.29999923706055,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 41.459999084472656,
+              "high": 41.63999938964844,
+              "low": 41.20000076293945,
+              "close": 41.630001068115234,
+              "volume": 16550400,
+              "adjustedClose": 41.630001068115234,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 43.93000030517578,
+              "high": 44.13999938964844,
+              "low": 43.77000045776367,
+              "close": 43.810001373291016,
+              "volume": 16923079,
+              "adjustedClose": 43.810001373291016,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -0.022816799641334207,
+            "week": 1.1778340536180876,
+            "month": 5.236608813938903
+          },
+          "observedAt": "2026-11-12T21:46:05.050502+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "인터넷",
+    "ticker": "FDN",
+    "day": -0.1,
+    "week": 4.5,
+    "month": -8.95,
+    "sourceIds": [
+      "price_FDN"
+    ],
+    "benchmark": "First Trust Dow Jones Internet Index Fund",
+    "group": "세부업종 ETF",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-FDN"
+      ],
+      "top5": [
+        {
+          "ticker": "AMZN",
+          "name": "Amazon.com, Inc.",
+          "weightPct": 11.48,
+          "shortName": "Amazon.com, Inc."
+        },
+        {
+          "ticker": "META",
+          "name": "Meta Platforms, Inc. (Class A)",
+          "weightPct": 10.5,
+          "shortName": "Meta Platforms, Inc. (Class A)"
+        },
+        {
+          "ticker": "CSCO",
+          "name": "Cisco Systems, Inc.",
+          "weightPct": 8.35,
+          "shortName": "Cisco Systems, Inc."
+        },
+        {
+          "ticker": "NFLX",
+          "name": "Netflix, Inc.",
+          "weightPct": 5.6,
+          "shortName": "Netflix, Inc."
+        },
+        {
+          "ticker": "GOOGL",
+          "name": "Alphabet Inc. (Class A)",
+          "weightPct": 5.15,
+          "shortName": "Alphabet Inc. (Class A)"
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:45:22.081362+00:00",
+      "recheckedAt": "2026-11-11T21:45:22.081362+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "FDN",
+          "sourceId": "price_FDN",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 271.739990234375,
+              "high": 274.5,
+              "low": 271.07000732421875,
+              "close": 272.3399963378906,
+              "volume": 85000,
+              "adjustedClose": 272.3399963378906,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 271.6700134277344,
+              "high": 271.6700134277344,
+              "low": 256.6400146484375,
+              "close": 260.3699951171875,
+              "volume": 282600,
+              "adjustedClose": 260.3699951171875,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 302.42999267578125,
+              "high": 302.7900085449219,
+              "low": 298.6000061035156,
+              "close": 298.82000732421875,
+              "volume": 145300,
+              "adjustedClose": 298.82000732421875,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 269.8900146484375,
+              "high": 274.17999267578125,
+              "low": 269.04998779296875,
+              "close": 272.0799865722656,
+              "volume": 74971,
+              "adjustedClose": 272.0799865722656,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -0.0954724862749945,
+            "week": 4.497442744816915,
+            "month": -8.948537613460495
+          },
+          "observedAt": "2026-11-12T21:46:04.981627+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "클라우드",
+    "ticker": "CLOU",
+    "day": -0.11,
+    "week": 1.22,
+    "month": -11.06,
+    "sourceIds": [
+      "price_CLOU"
+    ],
+    "benchmark": "Global X Cloud Computing ETF",
+    "group": "세부업종 ETF",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-CLOU"
+      ],
+      "top5": [
+        {
+          "ticker": "SNOW",
+          "name": "SNOWFLAKE INC",
+          "weightPct": 6.89,
+          "shortName": "SNOWFLAKE INC"
+        },
+        {
+          "ticker": "PAYC",
+          "name": "PAYCOM SOFTWARE INC",
+          "weightPct": 5.97,
+          "shortName": "PAYCOM SOFTWARE INC"
+        },
+        {
+          "ticker": "WDAY",
+          "name": "WORKDAY INC-CLASS A",
+          "weightPct": 4.91,
+          "shortName": "WORKDAY INC-CLASS A"
+        },
+        {
+          "ticker": "ZS",
+          "name": "ZSCALER INC",
+          "weightPct": 4.74,
+          "shortName": "ZSCALER INC"
+        },
+        {
+          "ticker": "NET",
+          "name": "CLOUDFLARE INC - CLASS A",
+          "weightPct": 4.74,
+          "shortName": "CLOUDFLARE INC - CLASS A"
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:45:17.129986+00:00",
+      "recheckedAt": "2026-11-11T21:45:17.129986+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "CLOU",
+          "sourceId": "price_CLOU",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 26.31999969482422,
+              "high": 26.690000534057617,
+              "low": 26.28499984741211,
+              "close": 26.5,
+              "volume": 214100,
+              "adjustedClose": 26.5,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 27.280000686645508,
+              "high": 27.280000686645508,
+              "low": 26.079999923706055,
+              "close": 26.149999618530273,
+              "volume": 339300,
+              "adjustedClose": 26.149999618530273,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 30.399999618530273,
+              "high": 30.489999771118164,
+              "low": 29.65999984741211,
+              "close": 29.760000228881836,
+              "volume": 253700,
+              "adjustedClose": 29.760000228881836,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 26.190000534057617,
+              "high": 26.670000076293945,
+              "low": 26.020000457763672,
+              "close": 26.469999313354492,
+              "volume": 586227,
+              "adjustedClose": 26.469999313354492,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -0.11321013828493598,
+            "week": 1.2237082198558236,
+            "month": -11.055110518226495
+          },
+          "observedAt": "2026-11-12T21:46:16.934691+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "반도체",
+    "ticker": "SOXX",
+    "day": -0.26,
+    "week": 17.51,
+    "month": -14.66,
+    "sourceIds": [
+      "price_SOXX"
+    ],
+    "benchmark": "iShares Semiconductor ETF",
+    "group": "세부업종 ETF",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-SOXX"
+      ],
+      "top5": [
+        {
+          "ticker": "AMD",
+          "name": "ADVANCED MICRO DEVICES",
+          "weightPct": 10.11,
+          "shortName": "ADVANCED MICRO DEVICES"
+        },
+        {
+          "ticker": "AVGO",
+          "name": "BROADCOM INC",
+          "weightPct": 8.3,
+          "shortName": "BROADCOM INC"
+        },
+        {
+          "ticker": "NVDA",
+          "name": "NVIDIA",
+          "weightPct": 7.11,
+          "shortName": "NVIDIA"
+        },
+        {
+          "ticker": "MU",
+          "name": "MICRON TECHNOLOGY",
+          "weightPct": 6.99,
+          "shortName": "MICRON TECHNOLOGY"
+        },
+        {
+          "ticker": "INTC",
+          "name": "INTEL CORPORATION",
+          "weightPct": 6.0,
+          "shortName": "INTEL CORPORATION"
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:45:17.168154+00:00",
+      "recheckedAt": "2026-11-11T21:45:17.168154+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "SOXX",
+          "sourceId": "price_SOXX",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 153.52000427246094,
+              "high": 158.5800018310547,
+              "low": 150.8800048828125,
+              "close": 155.39999389648438,
+              "volume": 51433500,
+              "adjustedClose": 155.39999389648438,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 143.0800018310547,
+              "high": 143.72999572753906,
+              "low": 130.75,
+              "close": 131.89999389648438,
+              "volume": 67658500,
+              "adjustedClose": 131.89999389648438,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 184.2133331298828,
+              "high": 184.2899932861328,
+              "low": 181.1133270263672,
+              "close": 181.61666870117188,
+              "volume": 21585900,
+              "adjustedClose": 181.61666870117188,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 150.25999450683594,
+              "high": 157.6300048828125,
+              "low": 150.03500366210938,
+              "close": 154.99000549316406,
+              "volume": 51042265,
+              "adjustedClose": 154.99000549316406,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -0.2638278117265691,
+            "week": 17.505695727932192,
+            "month": -14.660913779791185
+          },
+          "observedAt": "2026-11-12T21:46:05.042968+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "기술",
+    "ticker": "XLK",
+    "day": -0.34,
+    "week": 7.01,
+    "month": -11.5,
+    "sourceIds": [
+      "price_XLK"
+    ],
+    "benchmark": "State Street Technology Select Sector SPDR ETF",
+    "group": "대분류",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-XLK"
+      ],
+      "top5": [
+        {
+          "name": "APPLE INC",
+          "shortName": "APPLE INC",
+          "ticker": "AAPL",
+          "weightPct": 16.411032
+        },
+        {
+          "name": "NVIDIA CORP",
+          "shortName": "NVIDIA CORP",
+          "ticker": "NVDA",
+          "weightPct": 13.187428
+        },
+        {
+          "name": "MICROSOFT CORP",
+          "shortName": "MICROSOFT CORP",
+          "ticker": "MSFT",
+          "weightPct": 12.773992
+        },
+        {
+          "name": "BROADCOM INC",
+          "shortName": "BROADCOM INC",
+          "ticker": "AVGO",
+          "weightPct": 5.096102
+        },
+        {
+          "name": "ADVANCED MICRO DEVICES",
+          "shortName": "ADVANCED MICRO DEVICES",
+          "ticker": "AMD",
+          "weightPct": 4.912578
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:48:50.013852+00:00",
+      "recheckedAt": "2026-11-11T21:48:50.013852+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "XLK",
+          "sourceId": "price_XLK",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 173.77999877929688,
+              "high": 176.49000549316406,
+              "low": 172.5,
+              "close": 174.36000061035156,
+              "volume": 15099400,
+              "adjustedClose": 174.36000061035156,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 172.3300018310547,
+              "high": 172.72000122070312,
+              "low": 162.13999938964844,
+              "close": 162.3800048828125,
+              "volume": 33508200,
+              "adjustedClose": 162.3800048828125,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 198.07000732421875,
+              "high": 198.17999267578125,
+              "low": 195.82000732421875,
+              "close": 196.36000061035156,
+              "volume": 5200700,
+              "adjustedClose": 196.36000061035156,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 169.85000610351562,
+              "high": 175.44000244140625,
+              "low": 169.35000610351562,
+              "close": 173.77000427246094,
+              "volume": 9682486,
+              "adjustedClose": 173.77000427246094,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -0.3383782609688746,
+            "week": 7.0144100549008215,
+            "month": -11.504377809978338
+          },
+          "observedAt": "2026-11-12T21:46:16.971317+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "헬스케어서비스",
+    "ticker": "IHF",
+    "day": -0.4,
+    "week": 1.5,
+    "month": 5.65,
+    "sourceIds": [
+      "price_IHF"
+    ],
+    "benchmark": "iShares U.S. Healthcare Providers ETF",
+    "group": "세부업종 ETF",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-IHF"
+      ],
+      "top5": [
+        {
+          "ticker": "UNH",
+          "name": "UNITEDHEALTH GROUP",
+          "weightPct": 21.72,
+          "shortName": "UNITEDHEALTH GROUP"
+        },
+        {
+          "ticker": "CVS",
+          "name": "CVS HEALTH",
+          "weightPct": 11.53,
+          "shortName": "CVS HEALTH"
+        },
+        {
+          "ticker": "ELV",
+          "name": "ELEVANCE HEALTH INC",
+          "weightPct": 9.43,
+          "shortName": "ELEVANCE HEALTH INC"
+        },
+        {
+          "ticker": "HCA",
+          "name": "HCA HEALTHCARE",
+          "weightPct": 5.04,
+          "shortName": "HCA HEALTHCARE"
+        },
+        {
+          "ticker": "VEEV",
+          "name": "VEEVA SYSTEMS CLASS A",
+          "weightPct": 4.94,
+          "shortName": "VEEVA SYSTEMS CLASS A"
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:45:22.253602+00:00",
+      "recheckedAt": "2026-11-11T21:45:22.253602+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "IHF",
+          "sourceId": "price_IHF",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 60.4900016784668,
+              "high": 60.65999984741211,
+              "low": 59.880001068115234,
+              "close": 60.63999938964844,
+              "volume": 961000,
+              "adjustedClose": 60.63999938964844,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 61.2599983215332,
+              "high": 61.56999969482422,
+              "low": 59.119998931884766,
+              "close": 59.5099983215332,
+              "volume": 3952700,
+              "adjustedClose": 59.5099983215332,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 56.93000030517578,
+              "high": 57.290000915527344,
+              "low": 56.72999954223633,
+              "close": 57.16999816894531,
+              "volume": 526200,
+              "adjustedClose": 57.16999816894531,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 60.90999984741211,
+              "high": 60.91999816894531,
+              "low": 60.025001525878906,
+              "close": 60.400001525878906,
+              "volume": 606877,
+              "adjustedClose": 60.400001525878906,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -0.3957748452921295,
+            "week": 1.4955523936280413,
+            "month": 5.649822390038373
+          },
+          "observedAt": "2026-11-12T21:45:48.590429+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "필수소비재·방어주",
+    "ticker": "XLP",
+    "day": -0.43,
+    "week": -0.21,
+    "month": 7.88,
+    "sourceIds": [
+      "price_XLP"
+    ],
+    "benchmark": "State Street Consumer Staples Select Sector SPDR ETF",
+    "group": "대분류",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-XLP"
+      ],
+      "top5": [
+        {
+          "name": "WALMART INC",
+          "shortName": "WALMART INC",
+          "ticker": "WMT",
+          "weightPct": 11.179413
+        },
+        {
+          "name": "COSTCO WHOLESALE CORP",
+          "shortName": "COSTCO WHOLESALE CORP",
+          "ticker": "COST",
+          "weightPct": 9.447028
+        },
+        {
+          "name": "PROCTER + GAMBLE CO/THE",
+          "shortName": "PROCTER + GAMBLE CO/THE",
+          "ticker": "PG",
+          "weightPct": 7.833134
+        },
+        {
+          "name": "COCA COLA CO/THE",
+          "shortName": "COCA COLA CO/THE",
+          "ticker": "KO",
+          "weightPct": 7.497946
+        },
+        {
+          "name": "PHILIP MORRIS INTERNATIONAL",
+          "shortName": "PHILIP MORRIS INTERNATIONAL",
+          "ticker": "PM",
+          "weightPct": 6.04932
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:48:47.650864+00:00",
+      "recheckedAt": "2026-11-11T21:48:47.650864+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "XLP",
+          "sourceId": "price_XLP",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 90.54000091552734,
+              "high": 91.45999908447266,
+              "low": 90.25,
+              "close": 91.44999694824219,
+              "volume": 16246100,
+              "adjustedClose": 91.44999694824219,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 92.94000244140625,
+              "high": 93.4000015258789,
+              "low": 91.22000122070312,
+              "close": 91.25,
+              "volume": 37114500,
+              "adjustedClose": 91.25,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 83.58000183105469,
+              "high": 84.41000366210938,
+              "low": 83.38999938964844,
+              "close": 84.41000366210938,
+              "volume": 7324100,
+              "adjustedClose": 84.41000366210938,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 92.04000091552734,
+              "high": 92.1449966430664,
+              "low": 91.05999755859375,
+              "close": 91.05999755859375,
+              "volume": 13866381,
+              "adjustedClose": 91.05999755859375,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -0.42646189465611606,
+            "week": -0.2082218535958913,
+            "month": 7.8782059092238566
+          },
+          "observedAt": "2026-11-12T21:45:53.676554+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "경기소비재",
+    "ticker": "XLY",
+    "day": -0.44,
+    "week": 2.4,
+    "month": 7.29,
+    "sourceIds": [
+      "price_XLY"
+    ],
+    "benchmark": "State Street Consumer Discretionary Select Sector SPDR ETF",
+    "group": "대분류",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-XLY"
+      ],
+      "top5": [
+        {
+          "name": "AMAZON.COM INC",
+          "shortName": "AMAZON.COM INC",
+          "ticker": "AMZN",
+          "weightPct": 22.887124
+        },
+        {
+          "name": "TESLA INC",
+          "shortName": "TESLA INC",
+          "ticker": "TSLA",
+          "weightPct": 17.020977
+        },
+        {
+          "name": "HOME DEPOT INC",
+          "shortName": "HOME DEPOT INC",
+          "ticker": "HD",
+          "weightPct": 5.566541
+        },
+        {
+          "name": "MCDONALD S CORP",
+          "shortName": "MCDONALD S CORP",
+          "ticker": "MCD",
+          "weightPct": 4.645724
+        },
+        {
+          "name": "TJX COMPANIES INC",
+          "shortName": "TJX COMPANIES INC",
+          "ticker": "TJX",
+          "weightPct": 3.792298
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:48:47.746838+00:00",
+      "recheckedAt": "2026-11-11T21:48:47.746838+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "XLY",
+          "sourceId": "price_XLY",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 121.13999938964844,
+              "high": 121.47000122070312,
+              "low": 120.38999938964844,
+              "close": 120.98999786376953,
+              "volume": 6570700,
+              "adjustedClose": 120.98999786376953,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 122.6500015258789,
+              "high": 122.91000366210938,
+              "low": 116.62999725341797,
+              "close": 117.63999938964844,
+              "volume": 20764300,
+              "adjustedClose": 117.63999938964844,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 112.70999908447266,
+              "high": 112.86000061035156,
+              "low": 112.0999984741211,
+              "close": 112.2699966430664,
+              "volume": 3936600,
+              "adjustedClose": 112.2699966430664,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 121.0,
+              "high": 122.22000122070312,
+              "low": 120.03500366210938,
+              "close": 120.45999908447266,
+              "volume": 8601214,
+              "adjustedClose": 120.45999908447266,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -0.43805173043612866,
+            "week": 2.3971435816518394,
+            "month": 7.294916439201704
+          },
+          "observedAt": "2026-11-12T21:45:59.899263+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "부동산",
+    "ticker": "XLRE",
+    "day": -0.52,
+    "week": 0.14,
+    "month": 5.82,
+    "sourceIds": [
+      "price_XLRE",
+      "price_XLRE_tv"
+    ],
+    "benchmark": "State Street Real Estate Select Sector SPDR ETF",
+    "group": "대분류",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-XLRE"
+      ],
+      "top5": [
+        {
+          "name": "WELLTOWER INC",
+          "shortName": "WELLTOWER INC",
+          "ticker": "WELL",
+          "weightPct": 11.585387
+        },
+        {
+          "name": "PROLOGIS INC",
+          "shortName": "PROLOGIS INC",
+          "ticker": "PLD",
+          "weightPct": 8.024889
+        },
+        {
+          "name": "EQUINIX INC",
+          "shortName": "EQUINIX INC",
+          "ticker": "EQIX",
+          "weightPct": 6.724689
+        },
+        {
+          "name": "AMERICAN TOWER CORP",
+          "shortName": "AMERICAN TOWER CORP",
+          "ticker": "AMT",
+          "weightPct": 5.757557
+        },
+        {
+          "name": "SIMON PROPERTY GROUP INC",
+          "shortName": "SIMON PROPERTY GROUP INC",
+          "ticker": "SPG",
+          "weightPct": 5.009049
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:48:47.738062+00:00",
+      "recheckedAt": "2026-11-11T21:48:47.738062+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "XLRE",
+          "sourceId": "price_XLRE",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 44.41999816894531,
+              "high": 44.630001068115234,
+              "low": 44.349998474121094,
+              "close": 44.59000015258789,
+              "volume": 4343800,
+              "adjustedClose": 44.59000015258789,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 45.220001220703125,
+              "high": 45.34199905395508,
+              "low": 44.09000015258789,
+              "close": 44.29999923706055,
+              "volume": 11989700,
+              "adjustedClose": 44.29999923706055,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 41.61000061035156,
+              "high": 41.93000030517578,
+              "low": 41.46500015258789,
+              "close": 41.91999816894531,
+              "volume": 8421800,
+              "adjustedClose": 41.91999816894531,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 44.74,
+              "high": 44.74,
+              "low": 44.305,
+              "close": 44.36,
+              "volume": 5419113,
+              "adjustedClose": 44.36,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -0.5158110603292854,
+            "week": 0.13544190513046228,
+            "month": 5.820615309239829
+          },
+          "observedAt": "2026-11-12T21:46:04.957229+00:00",
+          "verificationSourceId": "price_XLRE_tv",
+          "note": "2026-11-12 malformed Yahoo OHLC rejected; complete TradingView candle used. Close agrees within USD 0.000001; no dividend adjustment at latest endpoint."
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "헬스케어",
+    "ticker": "XLV",
+    "day": -0.59,
+    "week": 1.58,
+    "month": 9.21,
+    "sourceIds": [
+      "price_XLV"
+    ],
+    "benchmark": "State Street Health Care Select Sector SPDR ETF",
+    "group": "대분류",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-XLV"
+      ],
+      "top5": [
+        {
+          "name": "ELI LILLY + CO",
+          "shortName": "ELI LILLY + CO",
+          "ticker": "LLY",
+          "weightPct": 16.729904
+        },
+        {
+          "name": "JOHNSON + JOHNSON",
+          "shortName": "JOHNSON + JOHNSON",
+          "ticker": "JNJ",
+          "weightPct": 9.877695
+        },
+        {
+          "name": "ABBVIE INC",
+          "shortName": "ABBVIE INC",
+          "ticker": "ABBV",
+          "weightPct": 7.581235
+        },
+        {
+          "name": "MERCK + CO. INC.",
+          "shortName": "MERCK + CO. INC.",
+          "ticker": "MRK",
+          "weightPct": 5.332092
+        },
+        {
+          "name": "UNITEDHEALTH GROUP INC",
+          "shortName": "UNITEDHEALTH GROUP INC",
+          "ticker": "UNH",
+          "weightPct": 5.308306
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:48:44.529773+00:00",
+      "recheckedAt": "2026-11-11T21:48:44.529773+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "XLV",
+          "sourceId": "price_XLV",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 187.38999938964844,
+              "high": 189.27999877929688,
+              "low": 186.85000610351562,
+              "close": 188.9499969482422,
+              "volume": 8262100,
+              "adjustedClose": 188.9499969482422,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 191.4600067138672,
+              "high": 192.32000732421875,
+              "low": 184.82000732421875,
+              "close": 184.91000366210938,
+              "volume": 24521200,
+              "adjustedClose": 184.91000366210938,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 171.49000549316406,
+              "high": 172.02999877929688,
+              "low": 170.85000610351562,
+              "close": 171.99000549316406,
+              "volume": 5826800,
+              "adjustedClose": 171.99000549316406,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 190.1699981689453,
+              "high": 190.66000366210938,
+              "low": 187.7550048828125,
+              "close": 187.8300018310547,
+              "volume": 7720752,
+              "adjustedClose": 187.8300018310547,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -0.5927468299956051,
+            "week": 1.5791455903495066,
+            "month": 9.209835357857576
+          },
+          "observedAt": "2026-11-12T21:45:53.707101+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "지역은행",
+    "ticker": "KRE",
+    "day": -0.59,
+    "week": 0.29,
+    "month": 4.26,
+    "sourceIds": [
+      "price_KRE"
+    ],
+    "benchmark": "State Street SPDR S&P Regional Banking ETF",
+    "group": "세부업종 ETF",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-KRE"
+      ],
+      "top5": [
+        {
+          "name": "UNITED COMMUNITY BANKS/GA",
+          "shortName": "UNITED COMMUNITY BANKS/GA",
+          "ticker": "UCB",
+          "weightPct": 1.186881
+        },
+        {
+          "name": "GLACIER BANCORP INC",
+          "shortName": "GLACIER BANCORP INC",
+          "ticker": "GBCI",
+          "weightPct": 1.186079
+        },
+        {
+          "name": "EASTERN BANKSHARES INC",
+          "shortName": "EASTERN BANKSHARES INC",
+          "ticker": "EBC",
+          "weightPct": 1.183683
+        },
+        {
+          "name": "BANK OZK",
+          "shortName": "BANK OZK",
+          "ticker": "OZK",
+          "weightPct": 1.159924
+        },
+        {
+          "name": "VALLEY NATIONAL BANCORP",
+          "shortName": "VALLEY NATIONAL BANCORP",
+          "ticker": "VLY",
+          "weightPct": 1.156917
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:48:50.082813+00:00",
+      "recheckedAt": "2026-11-11T21:48:50.082813+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "KRE",
+          "sourceId": "price_KRE",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 73.0199966430664,
+              "high": 73.0999984741211,
+              "low": 72.4800033569336,
+              "close": 72.94999694824219,
+              "volume": 10508700,
+              "adjustedClose": 72.94999694824219,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 74.97000122070312,
+              "high": 75.80000305175781,
+              "low": 72.0199966430664,
+              "close": 72.30999755859375,
+              "volume": 23869600,
+              "adjustedClose": 72.30999755859375,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 69.0199966430664,
+              "high": 69.91000366210938,
+              "low": 69.0199966430664,
+              "close": 69.55999755859375,
+              "volume": 7091200,
+              "adjustedClose": 69.55999755859375,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 72.9000015258789,
+              "high": 73.1050033569336,
+              "low": 72.2300033569336,
+              "close": 72.5199966430664,
+              "volume": 9938097,
+              "adjustedClose": 72.5199966430664,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -0.5894452682168927,
+            "week": 0.29041500700162093,
+            "month": 4.2553179821194
+          },
+          "observedAt": "2026-11-12T21:46:10.803202+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "은행",
+    "ticker": "KBE",
+    "day": -0.67,
+    "week": 0.0,
+    "month": 4.46,
+    "sourceIds": [
+      "price_KBE"
+    ],
+    "benchmark": "State Street SPDR S&P Bank ETF",
+    "group": "세부업종 ETF",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-KBE"
+      ],
+      "top5": [
+        {
+          "name": "CENTRAL BANCOMPANY",
+          "shortName": "CENTRAL BANCOMPANY",
+          "ticker": "CBC",
+          "weightPct": 1.135707
+        },
+        {
+          "name": "CUSTOMERS BANCORP INC",
+          "shortName": "CUSTOMERS BANCORP INC",
+          "ticker": "CUBI",
+          "weightPct": 1.029591
+        },
+        {
+          "name": "FIRST CITIZENS BCSHS   CL A",
+          "shortName": "FIRST CITIZENS BCSHS   CL A",
+          "ticker": "FCNCA",
+          "weightPct": 1.024935
+        },
+        {
+          "name": "ROCKET COS INC CLASS A",
+          "shortName": "ROCKET COS INC CLASS A",
+          "ticker": "RKT",
+          "weightPct": 1.015381
+        },
+        {
+          "name": "UNITED COMMUNITY BANKS/GA",
+          "shortName": "UNITED COMMUNITY BANKS/GA",
+          "ticker": "UCB",
+          "weightPct": 1.00779
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:48:50.013589+00:00",
+      "recheckedAt": "2026-11-11T21:48:50.013589+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "KBE",
+          "sourceId": "price_KBE",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 66.72000122070312,
+              "high": 66.83999633789062,
+              "low": 66.25,
+              "close": 66.66999816894531,
+              "volume": 1802700,
+              "adjustedClose": 66.66999816894531,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 68.62000274658203,
+              "high": 69.33000183105469,
+              "low": 65.95999908447266,
+              "close": 66.22000122070312,
+              "volume": 3614900,
+              "adjustedClose": 66.22000122070312,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 63.13999938964844,
+              "high": 63.75,
+              "low": 63.06999969482422,
+              "close": 63.38999938964844,
+              "volume": 1269100,
+              "adjustedClose": 63.38999938964844,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 66.68000030517578,
+              "high": 66.91999816894531,
+              "low": 66.08999633789062,
+              "close": 66.22000122070312,
+              "volume": 1003409,
+              "adjustedClose": 66.22000122070312,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -0.6749616928170221,
+            "week": 0.0,
+            "month": 4.464429497244682
+          },
+          "observedAt": "2026-11-12T21:46:10.745453+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "금융",
+    "ticker": "XLF",
+    "day": -0.72,
+    "week": 1.23,
+    "month": 5.74,
+    "sourceIds": [
+      "price_XLF"
+    ],
+    "benchmark": "State Street Financial Select Sector SPDR ETF",
+    "group": "대분류",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-XLF"
+      ],
+      "top5": [
+        {
+          "name": "BERKSHIRE HATHAWAY INC CL B",
+          "shortName": "BERKSHIRE HATHAWAY INC CL B",
+          "ticker": "BRK.B",
+          "weightPct": 13.23697
+        },
+        {
+          "name": "JPMORGAN CHASE + CO",
+          "shortName": "JPMORGAN CHASE + CO",
+          "ticker": "JPM",
+          "weightPct": 11.078698
+        },
+        {
+          "name": "VISA INC CLASS A SHARES",
+          "shortName": "VISA INC CLASS A SHARES",
+          "ticker": "V",
+          "weightPct": 8.782622
+        },
+        {
+          "name": "MASTERCARD INC   A",
+          "shortName": "MASTERCARD INC   A",
+          "ticker": "MA",
+          "weightPct": 6.491113
+        },
+        {
+          "name": "BANK OF AMERICA CORP",
+          "shortName": "BANK OF AMERICA CORP",
+          "ticker": "BAC",
+          "weightPct": 4.01565
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:48:44.529698+00:00",
+      "recheckedAt": "2026-11-11T21:48:44.529698+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "XLF",
+          "sourceId": "price_XLF",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 58.09000015258789,
+              "high": 58.630001068115234,
+              "low": 58.02000045776367,
+              "close": 58.630001068115234,
+              "volume": 25399500,
+              "adjustedClose": 58.630001068115234,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 59.939998626708984,
+              "high": 60.040000915527344,
+              "low": 57.41999816894531,
+              "close": 57.5,
+              "volume": 71479600,
+              "adjustedClose": 57.5,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 54.86000061035156,
+              "high": 55.16999816894531,
+              "low": 54.83000183105469,
+              "close": 55.04999923706055,
+              "volume": 19685600,
+              "adjustedClose": 55.04999923706055,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 58.880001068115234,
+              "high": 59.08000183105469,
+              "low": 58.150001525878906,
+              "close": 58.209999084472656,
+              "volume": 21860591,
+              "adjustedClose": 58.209999084472656,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -0.7163601841907341,
+            "week": 1.2347810164741846,
+            "month": 5.740235951329042
+          },
+          "observedAt": "2026-11-12T21:45:48.631007+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "소프트웨어",
+    "ticker": "IGV",
+    "day": -0.76,
+    "week": 2.46,
+    "month": -8.83,
+    "sourceIds": [
+      "price_IGV"
+    ],
+    "benchmark": "iShares Expanded Tech-Software Sector ETF",
+    "group": "세부업종 ETF",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-IGV"
+      ],
+      "top5": [
+        {
+          "ticker": "MSFT",
+          "name": "MICROSOFT",
+          "weightPct": 9.29,
+          "shortName": "MICROSOFT"
+        },
+        {
+          "ticker": "PLTR",
+          "name": "PALANTIR TECHNOLOGIES CLASS A",
+          "weightPct": 8.54,
+          "shortName": "PALANTIR TECHNOLOGIES CLASS A"
+        },
+        {
+          "ticker": "PANW",
+          "name": "PALO ALTO NETWORKS",
+          "weightPct": 8.35,
+          "shortName": "PALO ALTO NETWORKS"
+        },
+        {
+          "ticker": "CRWD",
+          "name": "CROWDSTRIKE HOLDINGS CLASS A",
+          "weightPct": 7.95,
+          "shortName": "CROWDSTRIKE HOLDINGS CLASS A"
+        },
+        {
+          "ticker": "ORCL",
+          "name": "ORACLE",
+          "weightPct": 7.11,
+          "shortName": "ORACLE"
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:45:28.429631+00:00",
+      "recheckedAt": "2026-11-11T21:45:28.429631+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "IGV",
+          "sourceId": "price_IGV",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 102.19000244140625,
+              "high": 103.05000305175781,
+              "low": 101.48999786376953,
+              "close": 102.2300033569336,
+              "volume": 4764000,
+              "adjustedClose": 102.2300033569336,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 103.11000061035156,
+              "high": 103.3499984741211,
+              "low": 98.5,
+              "close": 99.01000213623047,
+              "volume": 15527500,
+              "adjustedClose": 99.01000213623047,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 113.0,
+              "high": 113.69999694824219,
+              "low": 110.91999816894531,
+              "close": 111.27999877929688,
+              "volume": 4865400,
+              "adjustedClose": 111.27999877929688,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 100.81999969482422,
+              "high": 102.30500030517578,
+              "low": 99.87999725341797,
+              "close": 101.44999694824219,
+              "volume": 4867797,
+              "adjustedClose": 101.44999694824219,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -0.7629916688626448,
+            "week": 2.4643922425680476,
+            "month": -8.833574711436388
+          },
+          "observedAt": "2026-11-12T21:46:16.937305+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "산업재",
+    "ticker": "XLI",
+    "day": -0.89,
+    "week": 4.29,
+    "month": 0.17,
+    "sourceIds": [
+      "price_XLI"
+    ],
+    "benchmark": "State Street Industrial Select Sector SPDR ETF",
+    "group": "대분류",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-XLI"
+      ],
+      "top5": [
+        {
+          "name": "GENERAL ELECTRIC",
+          "shortName": "GENERAL ELECTRIC",
+          "ticker": "GE",
+          "weightPct": 6.538679
+        },
+        {
+          "name": "RTX CORP",
+          "shortName": "RTX CORP",
+          "ticker": "RTX",
+          "weightPct": 5.033978
+        },
+        {
+          "name": "CATERPILLAR INC",
+          "shortName": "CATERPILLAR INC",
+          "ticker": "CAT",
+          "weightPct": 5.01151
+        },
+        {
+          "name": "GE VERNOVA INC",
+          "shortName": "GE VERNOVA INC",
+          "ticker": "GEV",
+          "weightPct": 3.959093
+        },
+        {
+          "name": "UNION PACIFIC CORP",
+          "shortName": "UNION PACIFIC CORP",
+          "ticker": "UNP",
+          "weightPct": 3.330898
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:48:47.759662+00:00",
+      "recheckedAt": "2026-11-11T21:48:47.759662+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "XLI",
+          "sourceId": "price_XLI",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 170.1300048828125,
+              "high": 171.41000366210938,
+              "low": 169.1699981689453,
+              "close": 170.97000122070312,
+              "volume": 6780000,
+              "adjustedClose": 170.97000122070312,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 167.99000549316406,
+              "high": 168.83999633789062,
+              "low": 162.0399932861328,
+              "close": 162.47000122070312,
+              "volume": 19334600,
+              "adjustedClose": 162.47000122070312,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 169.02000427246094,
+              "high": 170.05999755859375,
+              "low": 168.8300018310547,
+              "close": 169.14999389648438,
+              "volume": 3802400,
+              "adjustedClose": 169.14999389648438,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 170.4600067138672,
+              "high": 171.60000610351562,
+              "low": 169.25,
+              "close": 169.44000244140625,
+              "volume": 6401798,
+              "adjustedClose": 169.44000244140625,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -0.8948931206485877,
+            "week": 4.290023492543038,
+            "month": 0.1714505204767347
+          },
+          "observedAt": "2026-11-12T21:45:59.811456+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "통신서비스",
+    "ticker": "XLC",
+    "day": -0.96,
+    "week": 3.09,
+    "month": -3.49,
+    "sourceIds": [
+      "price_XLC"
+    ],
+    "benchmark": "State Street Communication Services Select Sector SPDR ETF",
+    "group": "대분류",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-XLC"
+      ],
+      "top5": [
+        {
+          "name": "META PLATFORMS INC CLASS A",
+          "shortName": "META PLATFORMS INC CLASS A",
+          "ticker": "META",
+          "weightPct": 21.093128
+        },
+        {
+          "name": "ALPHABET INC CL A",
+          "shortName": "ALPHABET INC CL A",
+          "ticker": "GOOGL",
+          "weightPct": 10.458183
+        },
+        {
+          "name": "ALPHABET INC CL C",
+          "shortName": "ALPHABET INC CL C",
+          "ticker": "GOOG",
+          "weightPct": 8.398871
+        },
+        {
+          "name": "APPLOVIN CORP CLASS A",
+          "shortName": "APPLOVIN CORP CLASS A",
+          "ticker": "APP",
+          "weightPct": 6.214377
+        },
+        {
+          "name": "WALT DISNEY CO/THE",
+          "shortName": "WALT DISNEY CO/THE",
+          "ticker": "DIS",
+          "weightPct": 5.484714
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:48:44.537990+00:00",
+      "recheckedAt": "2026-11-11T21:48:44.537990+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "XLC",
+          "sourceId": "price_XLC",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 108.02999877929688,
+              "high": 108.97000122070312,
+              "low": 107.9000015258789,
+              "close": 108.5999984741211,
+              "volume": 5558000,
+              "adjustedClose": 108.5999984741211,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 107.13999938964844,
+              "high": 107.59500122070312,
+              "low": 103.19999694824219,
+              "close": 104.33999633789062,
+              "volume": 13793700,
+              "adjustedClose": 104.33999633789062,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 110.94999694824219,
+              "high": 111.87999725341797,
+              "low": 110.94999694824219,
+              "close": 111.44999694824219,
+              "volume": 7171200,
+              "adjustedClose": 111.44999694824219,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 108.58000183105469,
+              "high": 108.86499786376953,
+              "low": 107.41100311279297,
+              "close": 107.55999755859375,
+              "volume": 4301667,
+              "adjustedClose": 107.55999755859375,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -0.9576435820808693,
+            "week": 3.086066066434956,
+            "month": -3.490353966949833
+          },
+          "observedAt": "2026-11-12T21:45:53.767828+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "풍력(글로벌)",
+    "ticker": "FAN",
+    "day": -1.0,
+    "week": 0.13,
+    "month": 2.07,
+    "sourceIds": [
+      "price_FAN",
+      "price_FAN_complete_ohlc"
+    ],
+    "benchmark": "First Trust Global Wind Energy ETF",
+    "group": "세부업종 ETF",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-FAN"
+      ],
+      "top5": [
+        {
+          "ticker": "NDX1.GY",
+          "name": "Nordex SE",
+          "weightPct": 8.9,
+          "shortName": "Nordex SE"
+        },
+        {
+          "ticker": "ORSTED.DC",
+          "name": "Orsted A/S",
+          "weightPct": 8.61,
+          "shortName": "Orsted A/S"
+        },
+        {
+          "ticker": "EDPR.PL",
+          "name": "EDP Renewables SA",
+          "weightPct": 8.18,
+          "shortName": "EDP Renewables SA"
+        },
+        {
+          "ticker": "VWS.DC",
+          "name": "Vestas Wind Systems A/S",
+          "weightPct": 7.52,
+          "shortName": "Vestas Wind Systems A/S"
+        },
+        {
+          "ticker": "916.HK",
+          "name": "China Longyuan Power Group Corporation Limited (Class H)",
+          "weightPct": 6.07,
+          "shortName": "China Longyuan Power Group Corporation Limited (Class H)"
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:45:28.394164+00:00",
+      "recheckedAt": "2026-11-11T21:45:28.394164+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "FAN",
+          "sourceId": "price_FAN",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 22.81999969482422,
+              "high": 22.940000534057617,
+              "low": 22.709999084472656,
+              "close": 22.920000076293945,
+              "volume": 70500,
+              "adjustedClose": 22.920000076293945,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 23.040000915527344,
+              "high": 23.049999237060547,
+              "low": 22.65999984741211,
+              "close": 22.65999984741211,
+              "volume": 20000,
+              "adjustedClose": 22.65999984741211,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 22.290000915527344,
+              "high": 22.299999237060547,
+              "low": 22.229999542236328,
+              "close": 22.229999542236328,
+              "volume": 17800,
+              "adjustedClose": 22.229999542236328,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 22.75,
+              "high": 22.879899978637695,
+              "low": 22.690000534057617,
+              "close": 22.690000534057617,
+              "volume": 12943,
+              "adjustedClose": 22.690000534057617,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -1.003488400832142,
+            "week": 0.13239491106586954,
+            "month": 2.069280257731454
+          },
+          "observedAt": "2026-11-12T21:46:22.271648+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "반도체대형",
+    "ticker": "SMH",
+    "day": -1.03,
+    "week": 12.06,
+    "month": -15.1,
+    "sourceIds": [
+      "price_SMH"
+    ],
+    "benchmark": "VanEck Semiconductor ETF",
+    "group": "세부업종 ETF",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-SMH"
+      ],
+      "top5": [
+        {
+          "ticker": "NVDA",
+          "name": "Nvidia Corp",
+          "weightPct": 18.0,
+          "shortName": "Nvidia Corp"
+        },
+        {
+          "ticker": "TSM",
+          "name": "Taiwan Semiconductor Manufacturing Co L",
+          "weightPct": 10.1,
+          "shortName": "Taiwan Semiconductor Manufacturing Co L"
+        },
+        {
+          "ticker": "AVGO",
+          "name": "Broadcom Inc",
+          "weightPct": 6.18,
+          "shortName": "Broadcom Inc"
+        },
+        {
+          "ticker": "TXN",
+          "name": "Texas Instruments Inc",
+          "weightPct": 6.15,
+          "shortName": "Texas Instruments Inc"
+        },
+        {
+          "ticker": "AMD",
+          "name": "Advanced Micro Devices Inc",
+          "weightPct": 5.89,
+          "shortName": "Advanced Micro Devices Inc"
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:45:31.718114+00:00",
+      "recheckedAt": "2026-11-11T21:45:31.718114+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "SMH",
+          "sourceId": "price_SMH",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 504.989990234375,
+              "high": 516.6500244140625,
+              "low": 496.010009765625,
+              "close": 506.9599914550781,
+              "volume": 15384100,
+              "adjustedClose": 506.9599914550781,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 482.1400146484375,
+              "high": 483.92999267578125,
+              "low": 445.5899963378906,
+              "close": 447.7300109863281,
+              "volume": 28960600,
+              "adjustedClose": 447.7300109863281,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 598.4500122070312,
+              "high": 598.4500122070312,
+              "low": 589.219970703125,
+              "close": 590.989990234375,
+              "volume": 6260200,
+              "adjustedClose": 590.989990234375,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 485.010009765625,
+              "high": 509.7900085449219,
+              "low": 484.5000915527344,
+              "close": 501.7300109863281,
+              "volume": 10040512,
+              "adjustedClose": 501.7300109863281,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -1.0316357418538868,
+            "week": 12.060839942589642,
+            "month": -15.103467186076724
+          },
+          "observedAt": "2026-11-12T21:46:10.734998+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "운송",
+    "ticker": "IYT",
+    "day": -1.15,
+    "week": 1.84,
+    "month": 4.4,
+    "sourceIds": [
+      "price_IYT"
+    ],
+    "benchmark": "iShares Transportation Average ETF",
+    "group": "세부업종 ETF",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-IYT"
+      ],
+      "top5": [
+        {
+          "ticker": "UNP",
+          "name": "UNION PACIFIC",
+          "weightPct": 18.06,
+          "shortName": "UNION PACIFIC"
+        },
+        {
+          "ticker": "UBER",
+          "name": "UBER TECHNOLOGIES",
+          "weightPct": 14.47,
+          "shortName": "UBER TECHNOLOGIES"
+        },
+        {
+          "ticker": "CSX",
+          "name": "CSX",
+          "weightPct": 9.57,
+          "shortName": "CSX"
+        },
+        {
+          "ticker": "DAL",
+          "name": "DELTA AIR LINES",
+          "weightPct": 5.12,
+          "shortName": "DELTA AIR LINES"
+        },
+        {
+          "ticker": "UAL",
+          "name": "UNITED AIRLINES HOLDINGS",
+          "weightPct": 4.92,
+          "shortName": "UNITED AIRLINES HOLDINGS"
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:45:11.424028+00:00",
+      "recheckedAt": "2026-11-11T21:45:11.424028+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "IYT",
+          "sourceId": "price_IYT",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 83.81999969482422,
+              "high": 84.58000183105469,
+              "low": 83.58999633789062,
+              "close": 84.48999786376953,
+              "volume": 378400,
+              "adjustedClose": 84.48999786376953,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 85.19000244140625,
+              "high": 85.19000244140625,
+              "low": 81.5,
+              "close": 82.01000213623047,
+              "volume": 1354200,
+              "adjustedClose": 82.01000213623047,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 79.93000030517578,
+              "high": 80.16000366210938,
+              "low": 79.69999694824219,
+              "close": 80.0,
+              "volume": 781000,
+              "adjustedClose": 80.0,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 84.41999816894531,
+              "high": 84.79000091552734,
+              "low": 83.5,
+              "close": 83.5199966430664,
+              "volume": 445729,
+              "adjustedClose": 83.5199966430664,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -1.1480663335642904,
+            "week": 1.8412321271832344,
+            "month": 4.399995803833012
+          },
+          "observedAt": "2026-11-12T21:45:59.813154+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "의료기기",
+    "ticker": "IHI",
+    "day": -1.22,
+    "week": -2.66,
+    "month": 8.85,
+    "sourceIds": [
+      "price_IHI"
+    ],
+    "benchmark": "iShares U.S. Medical Devices ETF",
+    "group": "세부업종 ETF",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-IHI"
+      ],
+      "top5": [
+        {
+          "ticker": "ABT",
+          "name": "ABBOTT LABORATORIES",
+          "weightPct": 17.6,
+          "shortName": "ABBOTT LABORATORIES"
+        },
+        {
+          "ticker": "ISRG",
+          "name": "INTUITIVE SURGICAL",
+          "weightPct": 14.64,
+          "shortName": "INTUITIVE SURGICAL"
+        },
+        {
+          "ticker": "MDT",
+          "name": "MEDTRONIC PLC",
+          "weightPct": 11.45,
+          "shortName": "MEDTRONIC PLC"
+        },
+        {
+          "ticker": "IDXX",
+          "name": "IDEXX LABORATORIES",
+          "weightPct": 5.41,
+          "shortName": "IDEXX LABORATORIES"
+        },
+        {
+          "ticker": "EW",
+          "name": "EDWARDS LIFESCIENCES",
+          "weightPct": 4.83,
+          "shortName": "EDWARDS LIFESCIENCES"
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:45:11.426793+00:00",
+      "recheckedAt": "2026-11-11T21:45:11.426793+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "IHI",
+          "sourceId": "price_IHI",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 57.689998626708984,
+              "high": 58.279998779296875,
+              "low": 57.529998779296875,
+              "close": 58.16999816894531,
+              "volume": 1917600,
+              "adjustedClose": 58.16999816894531,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 60.63999938964844,
+              "high": 61.0,
+              "low": 58.33000183105469,
+              "close": 59.029998779296875,
+              "volume": 5767900,
+              "adjustedClose": 59.029998779296875,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 52.0,
+              "high": 52.81999969482422,
+              "low": 51.900001525878906,
+              "close": 52.790000915527344,
+              "volume": 1443900,
+              "adjustedClose": 52.790000915527344,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 58.41999816894531,
+              "high": 58.66999816894531,
+              "low": 57.39350128173828,
+              "close": 57.459999084472656,
+              "volume": 1954675,
+              "adjustedClose": 57.459999084472656,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -1.2205588908746012,
+            "week": -2.659664115349525,
+            "month": 8.846368797034266
+          },
+          "observedAt": "2026-11-12T21:46:13.103300+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "소재",
+    "ticker": "XLB",
+    "day": -1.28,
+    "week": 0.02,
+    "month": 5.87,
+    "sourceIds": [
+      "price_XLB"
+    ],
+    "benchmark": "State Street Materials Select Sector SPDR ETF",
+    "group": "대분류",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-XLB"
+      ],
+      "top5": [
+        {
+          "name": "LINDE PLC",
+          "shortName": "LINDE PLC",
+          "ticker": "LIN",
+          "weightPct": 13.035836
+        },
+        {
+          "name": "NEWMONT CORP",
+          "shortName": "NEWMONT CORP",
+          "ticker": "NEM",
+          "weightPct": 6.850394
+        },
+        {
+          "name": "VULCAN MATERIALS CO",
+          "shortName": "VULCAN MATERIALS CO",
+          "ticker": "VMC",
+          "weightPct": 5.248544
+        },
+        {
+          "name": "ECOLAB INC",
+          "shortName": "ECOLAB INC",
+          "ticker": "ECL",
+          "weightPct": 5.132058
+        },
+        {
+          "name": "SHERWIN WILLIAMS CO/THE",
+          "shortName": "SHERWIN WILLIAMS CO/THE",
+          "ticker": "SHW",
+          "weightPct": 5.058955
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:48:50.046858+00:00",
+      "recheckedAt": "2026-11-11T21:48:50.046858+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "XLB",
+          "sourceId": "price_XLB",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 52.869998931884766,
+              "high": 53.099998474121094,
+              "low": 52.61000061035156,
+              "close": 53.02000045776367,
+              "volume": 6145600,
+              "adjustedClose": 53.02000045776367,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 54.31999969482422,
+              "high": 54.630001068115234,
+              "low": 51.88999938964844,
+              "close": 52.33000183105469,
+              "volume": 23352400,
+              "adjustedClose": 52.33000183105469,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 49.2400016784668,
+              "high": 49.7599983215332,
+              "low": 49.15999984741211,
+              "close": 49.439998626708984,
+              "volume": 5798000,
+              "adjustedClose": 49.439998626708984,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 53.09000015258789,
+              "high": 53.20000076293945,
+              "low": 52.280399322509766,
+              "close": 52.34000015258789,
+              "volume": 9542577,
+              "adjustedClose": 52.34000015258789,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -1.2825354570064174,
+            "week": 0.019106289285986122,
+            "month": 5.865699042135963
+          },
+          "observedAt": "2026-11-12T21:46:04.954330+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "증권·브로커",
+    "ticker": "IAI",
+    "day": -1.29,
+    "week": 2.21,
+    "month": 2.11,
+    "sourceIds": [
+      "price_IAI"
+    ],
+    "benchmark": "iShares U.S. Broker-Dealers & Securities Exchanges ETF",
+    "group": "세부업종 ETF",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-IAI"
+      ],
+      "top5": [
+        {
+          "ticker": "GS",
+          "name": "GOLDMAN SACHS GROUP",
+          "weightPct": 17.69,
+          "shortName": "GOLDMAN SACHS GROUP"
+        },
+        {
+          "ticker": "MS",
+          "name": "MORGAN STANLEY",
+          "weightPct": 14.94,
+          "shortName": "MORGAN STANLEY"
+        },
+        {
+          "ticker": "SCHW",
+          "name": "CHARLES SCHWAB",
+          "weightPct": 8.7,
+          "shortName": "CHARLES SCHWAB"
+        },
+        {
+          "ticker": "SPGI",
+          "name": "S&P GLOBAL",
+          "weightPct": 5.33,
+          "shortName": "S&P GLOBAL"
+        },
+        {
+          "ticker": "ICE",
+          "name": "INTERCONTINENTAL EXCHANGE INC",
+          "weightPct": 5.31,
+          "shortName": "INTERCONTINENTAL EXCHANGE INC"
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:45:36.501651+00:00",
+      "recheckedAt": "2026-11-11T21:45:36.501651+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "IAI",
+          "sourceId": "price_IAI",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 183.49000549316406,
+              "high": 185.3300018310547,
+              "low": 183.25999450683594,
+              "close": 184.97999572753906,
+              "volume": 69400,
+              "adjustedClose": 184.97999572753906,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 187.75,
+              "high": 188.02999877929688,
+              "low": 177.27000427246094,
+              "close": 178.64999389648438,
+              "volume": 147500,
+              "adjustedClose": 178.64999389648438,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 179.0800018310547,
+              "high": 179.8800048828125,
+              "low": 178.3699951171875,
+              "close": 178.8300018310547,
+              "volume": 238600,
+              "adjustedClose": 178.8300018310547,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 184.5,
+              "high": 185.0800018310547,
+              "low": 182.5399932861328,
+              "close": 182.60000610351562,
+              "volume": 68097,
+              "adjustedClose": 182.60000610351562,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -1.2866200016184326,
+            "week": 2.211034056525074,
+            "month": 2.1081497700942586
+          },
+          "observedAt": "2026-11-12T21:45:53.780043+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "주택건설",
+    "ticker": "XHB",
+    "day": -1.73,
+    "week": -2.44,
+    "month": 7.73,
+    "sourceIds": [
+      "price_XHB"
+    ],
+    "benchmark": "State Street SPDR S&P Homebuilders ETF",
+    "group": "세부업종 ETF",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-XHB"
+      ],
+      "top5": [
+        {
+          "name": "SHARKNINJA INC",
+          "shortName": "SHARKNINJA INC",
+          "ticker": "SN",
+          "weightPct": 4.138484
+        },
+        {
+          "name": "ALLEGION PLC",
+          "shortName": "ALLEGION PLC",
+          "ticker": "ALLE",
+          "weightPct": 3.863131
+        },
+        {
+          "name": "MASCO CORP",
+          "shortName": "MASCO CORP",
+          "ticker": "MAS",
+          "weightPct": 3.780872
+        },
+        {
+          "name": "CAVCO INDUSTRIES INC",
+          "shortName": "CAVCO INDUSTRIES INC",
+          "ticker": "CVCO",
+          "weightPct": 3.766182
+        },
+        {
+          "name": "CARLISLE COS INC",
+          "shortName": "CARLISLE COS INC",
+          "ticker": "CSL",
+          "weightPct": 3.622177
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:48:52.537237+00:00",
+      "recheckedAt": "2026-11-11T21:48:52.537237+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "XHB",
+          "sourceId": "price_XHB",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 103.19000244140625,
+              "high": 103.2300033569336,
+              "low": 101.80000305175781,
+              "close": 103.0999984741211,
+              "volume": 2347000,
+              "adjustedClose": 103.0999984741211,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 107.44000244140625,
+              "high": 108.77999877929688,
+              "low": 103.36000061035156,
+              "close": 103.8499984741211,
+              "volume": 2774500,
+              "adjustedClose": 103.8499984741211,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 94.44000244140625,
+              "high": 95.2300033569336,
+              "low": 93.94000244140625,
+              "close": 94.05000305175781,
+              "volume": 1357700,
+              "adjustedClose": 94.05000305175781,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 103.16999816894531,
+              "high": 104.00749969482422,
+              "low": 101.16999816894531,
+              "close": 101.31999969482422,
+              "volume": 2097286,
+              "adjustedClose": 101.31999969482422,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -1.7264779880124537,
+            "week": -2.4362049267890318,
+            "month": 7.729927067695641
+          },
+          "observedAt": "2026-11-12T21:46:25.118917+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "소매",
+    "ticker": "XRT",
+    "day": -1.84,
+    "week": -0.44,
+    "month": 7.75,
+    "sourceIds": [
+      "price_XRT"
+    ],
+    "benchmark": "State Street SPDR S&P Retail ETF",
+    "group": "세부업종 ETF",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-XRT"
+      ],
+      "top5": [
+        {
+          "name": "REALREAL INC/THE",
+          "shortName": "REALREAL INC/THE",
+          "ticker": "REAL",
+          "weightPct": 2.011893
+        },
+        {
+          "name": "VICTORIA S SECRET + CO",
+          "shortName": "VICTORIA S SECRET + CO",
+          "ticker": "VSXY",
+          "weightPct": 1.885621
+        },
+        {
+          "name": "KOHLS CORP",
+          "shortName": "KOHLS CORP",
+          "ticker": "KSS",
+          "weightPct": 1.82132
+        },
+        {
+          "name": "ACADEMY SPORTS + OUTDOORS IN",
+          "shortName": "ACADEMY SPORTS + OUTDOORS IN",
+          "ticker": "ASO",
+          "weightPct": 1.77411
+        },
+        {
+          "name": "UPBOUND GROUP INC",
+          "shortName": "UPBOUND GROUP INC",
+          "ticker": "UPBD",
+          "weightPct": 1.755584
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:48:50.046045+00:00",
+      "recheckedAt": "2026-11-11T21:48:50.046045+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "XRT",
+          "sourceId": "price_XRT",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 91.88999938964844,
+              "high": 92.48999786376953,
+              "low": 91.23999786376953,
+              "close": 92.37000274658203,
+              "volume": 4221300,
+              "adjustedClose": 92.37000274658203,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 94.4800033569336,
+              "high": 94.93000030517578,
+              "low": 90.47000122070312,
+              "close": 91.06999969482422,
+              "volume": 7327400,
+              "adjustedClose": 91.06999969482422,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 83.9800033569336,
+              "high": 84.29000091552734,
+              "low": 83.38999938964844,
+              "close": 84.1500015258789,
+              "volume": 2424700,
+              "adjustedClose": 84.1500015258789,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 92.2300033569336,
+              "high": 92.83499908447266,
+              "low": 90.51499938964844,
+              "close": 90.66999816894531,
+              "volume": 5081876,
+              "adjustedClose": 90.66999816894531,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -1.840429281246958,
+            "week": -0.43922425301341494,
+            "month": 7.748064794819154
+          },
+          "observedAt": "2026-11-12T21:46:07.635830+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "금속광업",
+    "ticker": "XME",
+    "day": -2.04,
+    "week": 5.34,
+    "month": -9.16,
+    "sourceIds": [
+      "price_XME"
+    ],
+    "benchmark": "State Street SPDR S&P Metals & Mining ETF",
+    "group": "세부업종 ETF",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-XME"
+      ],
+      "top5": [
+        {
+          "name": "RELIANCE INC",
+          "shortName": "RELIANCE INC",
+          "ticker": "RS",
+          "weightPct": 6.320662
+        },
+        {
+          "name": "CLEVELAND CLIFFS INC",
+          "shortName": "CLEVELAND CLIFFS INC",
+          "ticker": "CLF",
+          "weightPct": 6.217008
+        },
+        {
+          "name": "ROYAL GOLD INC",
+          "shortName": "ROYAL GOLD INC",
+          "ticker": "RGLD",
+          "weightPct": 6.112576
+        },
+        {
+          "name": "NUCOR CORP",
+          "shortName": "NUCOR CORP",
+          "ticker": "NUE",
+          "weightPct": 5.812156
+        },
+        {
+          "name": "STEEL DYNAMICS INC",
+          "shortName": "STEEL DYNAMICS INC",
+          "ticker": "STLD",
+          "weightPct": 5.733761
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:48:52.561275+00:00",
+      "recheckedAt": "2026-11-11T21:48:52.561275+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "XME",
+          "sourceId": "price_XME",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 97.77999877929688,
+              "high": 98.33999633789062,
+              "low": 96.55000305175781,
+              "close": 97.2300033569336,
+              "volume": 1288700,
+              "adjustedClose": 97.2300033569336,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 96.44999694824219,
+              "high": 97.18000030517578,
+              "low": 89.58000183105469,
+              "close": 90.41999816894531,
+              "volume": 2353600,
+              "adjustedClose": 90.41999816894531,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 105.63999938964844,
+              "high": 105.73999786376953,
+              "low": 104.79000091552734,
+              "close": 104.8499984741211,
+              "volume": 763200,
+              "adjustedClose": 104.8499984741211,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 95.8499984741211,
+              "high": 97.69000244140625,
+              "low": 95.1500015258789,
+              "close": 95.25,
+              "volume": 1261219,
+              "adjustedClose": 95.25,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -2.0364118981513912,
+            "week": 5.341740686645524,
+            "month": -9.155935730881815
+          },
+          "observedAt": "2026-11-12T21:46:22.340028+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "항공우주방산",
+    "ticker": "ITA",
+    "day": -2.06,
+    "week": 5.31,
+    "month": 4.45,
+    "sourceIds": [
+      "price_ITA"
+    ],
+    "benchmark": "iShares U.S. Aerospace & Defense ETF",
+    "group": "세부업종 ETF",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-ITA"
+      ],
+      "top5": [
+        {
+          "ticker": "GE",
+          "name": "GE AEROSPACE",
+          "weightPct": 21.64,
+          "shortName": "GE AEROSPACE"
+        },
+        {
+          "ticker": "RTX",
+          "name": "RTX",
+          "weightPct": 16.66,
+          "shortName": "RTX"
+        },
+        {
+          "ticker": "BA",
+          "name": "BOEING",
+          "weightPct": 6.66,
+          "shortName": "BOEING"
+        },
+        {
+          "ticker": "LMT",
+          "name": "LOCKHEED MARTIN",
+          "weightPct": 5.2,
+          "shortName": "LOCKHEED MARTIN"
+        },
+        {
+          "ticker": "TDG",
+          "name": "TRANSDIGM GROUP",
+          "weightPct": 4.92,
+          "shortName": "TRANSDIGM GROUP"
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:45:22.141597+00:00",
+      "recheckedAt": "2026-11-11T21:45:22.141597+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "ITA",
+          "sourceId": "price_ITA",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 72.38999938964844,
+              "high": 73.36000061035156,
+              "low": 72.12000274658203,
+              "close": 73.23999786376953,
+              "volume": 1338200,
+              "adjustedClose": 73.23999786376953,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 70.43000030517578,
+              "high": 71.30000305175781,
+              "low": 67.55999755859375,
+              "close": 68.11000061035156,
+              "volume": 3048300,
+              "adjustedClose": 68.11000061035156,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 68.93333435058594,
+              "high": 69.1933364868164,
+              "low": 68.6066665649414,
+              "close": 68.67666625976562,
+              "volume": 1506300,
+              "adjustedClose": 68.67666625976562,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 73.12999725341797,
+              "high": 73.58000183105469,
+              "low": 71.58000183105469,
+              "close": 71.7300033569336,
+              "volume": 4273333,
+              "adjustedClose": 71.7300033569336,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -2.0617074697962368,
+            "week": 5.3149357130263475,
+            "month": 4.445959979505831
+          },
+          "observedAt": "2026-11-12T21:45:48.556580+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "바이오 대형",
+    "ticker": "IBB",
+    "day": -2.16,
+    "week": 1.64,
+    "month": 4.49,
+    "sourceIds": [
+      "price_IBB"
+    ],
+    "benchmark": "iShares Biotechnology ETF",
+    "group": "세부업종 ETF",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-IBB"
+      ],
+      "top5": [
+        {
+          "ticker": "GILD",
+          "name": "GILEAD SCIENCES",
+          "weightPct": 8.97,
+          "shortName": "GILEAD SCIENCES"
+        },
+        {
+          "ticker": "AMGN",
+          "name": "AMGEN INC",
+          "weightPct": 8.31,
+          "shortName": "AMGEN INC"
+        },
+        {
+          "ticker": "VRTX",
+          "name": "VERTEX PHARMACEUTICALS",
+          "weightPct": 7.73,
+          "shortName": "VERTEX PHARMACEUTICALS"
+        },
+        {
+          "ticker": "MRNA",
+          "name": "MODERNA",
+          "weightPct": 6.23,
+          "shortName": "MODERNA"
+        },
+        {
+          "ticker": "REGN",
+          "name": "REGENERON PHARMACEUTICALS",
+          "weightPct": 6.17,
+          "shortName": "REGENERON PHARMACEUTICALS"
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:45:25.957386+00:00",
+      "recheckedAt": "2026-11-11T21:45:25.957386+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "IBB",
+          "sourceId": "price_IBB",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 216.83999633789062,
+              "high": 218.77000427246094,
+              "low": 215.8699951171875,
+              "close": 218.13999938964844,
+              "volume": 1723900,
+              "adjustedClose": 218.13999938964844,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 220.3000030517578,
+              "high": 220.88999938964844,
+              "low": 209.99000549316406,
+              "close": 209.99000549316406,
+              "volume": 3684500,
+              "adjustedClose": 209.99000549316406,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 206.85000610351562,
+              "high": 206.92999267578125,
+              "low": 203.9199981689453,
+              "close": 204.25999450683594,
+              "volume": 1157200,
+              "adjustedClose": 204.25999450683594,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 217.30999755859375,
+              "high": 217.30999755859375,
+              "low": 213.36000061035156,
+              "close": 213.42999267578125,
+              "volume": 2562476,
+              "adjustedClose": 213.42999267578125,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -2.1591669235562883,
+            "week": 1.6381670996856945,
+            "month": 4.489375509426252
+          },
+          "observedAt": "2026-11-12T21:46:16.951601+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "화장품 대표 3사",
+    "ticker": "EL,ELF,COTY",
+    "benchmark": "기간 시작 동일가중 바스켓: 에스티로더, 엘프뷰티, 코티",
+    "group": "대표 종목 바스켓(업종지수 아님)",
+    "day": -2.17,
+    "week": 3.03,
+    "month": 17.41,
+    "sourceIds": [
+      "price_EL",
+      "price_ELF",
+      "price_COTY"
+    ],
+    "instrumentType": "basket",
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "EL",
+          "sourceId": "price_EL",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 113.9000015258789,
+              "high": 115.19999694824219,
+              "low": 112.01000213623047,
+              "close": 112.33000183105469,
+              "volume": 2041600,
+              "adjustedClose": 112.33000183105469,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 113.31999969482422,
+              "high": 115.26000213623047,
+              "low": 107.48999786376953,
+              "close": 107.6500015258789,
+              "volume": 4576200,
+              "adjustedClose": 107.6500015258789,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 97.45999908447266,
+              "high": 100.52999877929688,
+              "low": 96.25,
+              "close": 100.04000091552734,
+              "volume": 3364500,
+              "adjustedClose": 100.04000091552734,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 111.75,
+              "high": 112.36750030517578,
+              "low": 109.63999938964844,
+              "close": 110.51000213623047,
+              "volume": 2211927,
+              "adjustedClose": 110.51000213623047,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -1.6202258213807497,
+            "week": 2.656758541395865,
+            "month": 10.465814798966132
+          },
+          "observedAt": "2026-11-12T21:46:47.751352+00:00"
+        },
+        {
+          "ticker": "ELF",
+          "sourceId": "price_ELF",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 118.05000305175781,
+              "high": 119.73999786376953,
+              "low": 115.30000305175781,
+              "close": 118.45999908447266,
+              "volume": 1306700,
+              "adjustedClose": 118.45999908447266,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 114.0,
+              "high": 123.12999725341797,
+              "low": 108.4800033569336,
+              "close": 109.8499984741211,
+              "volume": 3166900,
+              "adjustedClose": 109.8499984741211,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 108.94000244140625,
+              "high": 110.20999908447266,
+              "low": 105.82499694824219,
+              "close": 109.94000244140625,
+              "volume": 1049800,
+              "adjustedClose": 109.94000244140625,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 116.95999908447266,
+              "high": 117.26000213623047,
+              "low": 112.70999908447266,
+              "close": 113.52999877929688,
+              "volume": 1671751,
+              "adjustedClose": 113.52999877929688,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -4.161742650074007,
+            "week": 3.350023082651865,
+            "month": 3.2654140969334167
+          },
+          "observedAt": "2026-11-12T21:46:47.674921+00:00"
+        },
+        {
+          "ticker": "COTY",
+          "sourceId": "price_COTY",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 4.28000020980835,
+              "high": 4.329999923706055,
+              "low": 4.039999961853027,
+              "close": 4.059999942779541,
+              "volume": 4992400,
+              "adjustedClose": 4.059999942779541,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 3.799999952316284,
+              "high": 4.090000152587891,
+              "low": 3.799999952316284,
+              "close": 3.9100000858306885,
+              "volume": 14927000,
+              "adjustedClose": 3.9100000858306885,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 2.8399999141693115,
+              "high": 2.9600000381469727,
+              "low": 2.799999952316284,
+              "close": 2.9100000858306885,
+              "volume": 3156200,
+              "adjustedClose": 2.9100000858306885,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 4.090000152587891,
+              "high": 4.090000152587891,
+              "low": 3.880000114440918,
+              "close": 4.03000020980835,
+              "volume": 8455330,
+              "adjustedClose": 4.03000020980835,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -0.738909689507361,
+            "week": 3.06905681185341,
+            "month": 38.48797563378579
+          },
+          "observedAt": "2026-11-12T21:46:52.495511+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "배터리(글로벌)",
+    "ticker": "BATT",
+    "day": -2.18,
+    "week": 2.11,
+    "month": -13.01,
+    "sourceIds": [
+      "price_BATT"
+    ],
+    "benchmark": "Amplify Lithium & Battery Technology ETF",
+    "group": "세부업종 ETF",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-09",
+      "sourceIds": [
+        "holdings-BATT"
+      ],
+      "top5": [
+        {
+          "ticker": "TSLA",
+          "name": "Tesla, Inc.",
+          "weightPct": 9.34,
+          "shortName": "Tesla, Inc."
+        },
+        {
+          "ticker": "ASX:BHP",
+          "name": "BHP Group Limited",
+          "weightPct": 7.58,
+          "shortName": "BHP Group Limited"
+        },
+        {
+          "ticker": "FCX",
+          "name": "Freeport-McMoRan Inc.",
+          "weightPct": 6.15,
+          "shortName": "Freeport-McMoRan Inc."
+        },
+        {
+          "ticker": "SHE:300750",
+          "name": "Contemporary Amperex Technology Co., Limited",
+          "weightPct": 5.24,
+          "shortName": "Contemporary Amperex Technology Co., Limited"
+        },
+        {
+          "ticker": "BYDDF",
+          "name": "BYD Company Limited",
+          "weightPct": 4.87,
+          "shortName": "BYD Company Limited"
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Finnhub redistribution via StockAnalysis, not direct issuer verification.",
+      "retrievedAt": "2026-11-11T21:45:17.105946+00:00",
+      "recheckedAt": "2026-11-11T21:45:17.105946+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "BATT",
+          "sourceId": "price_BATT",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 12.789999961853027,
+              "high": 12.989999771118164,
+              "low": 12.770000457763672,
+              "close": 12.850000381469727,
+              "volume": 58300,
+              "adjustedClose": 12.850000381469727,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 12.989999771118164,
+              "high": 13.0,
+              "low": 12.309000015258789,
+              "close": 12.3100004196167,
+              "volume": 32600,
+              "adjustedClose": 12.3100004196167,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 14.569999694824219,
+              "high": 14.569999694824219,
+              "low": 14.390000343322754,
+              "close": 14.449999809265137,
+              "volume": 28100,
+              "adjustedClose": 14.449999809265137,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 12.600000381469727,
+              "high": 12.670000076293945,
+              "low": 12.449999809265137,
+              "close": 12.569999694824219,
+              "volume": 22380,
+              "adjustedClose": 12.569999694824219,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -2.1789936057066694,
+            "week": 2.112098020672648,
+            "month": -13.010381586548458
+          },
+          "observedAt": "2026-11-12T21:46:22.273024+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "신재생에너지(글로벌)",
+    "ticker": "ICLN",
+    "day": -2.33,
+    "week": -1.49,
+    "month": -7.13,
+    "sourceIds": [
+      "price_ICLN"
+    ],
+    "benchmark": "iShares Global Clean Energy ETF",
+    "group": "세부업종 ETF",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-ICLN"
+      ],
+      "top5": [
+        {
+          "ticker": "NXT",
+          "name": "NEXTPOWER INC",
+          "weightPct": 9.61,
+          "shortName": "NEXTPOWER INC"
+        },
+        {
+          "ticker": "FSLR",
+          "name": "FIRST SOLAR",
+          "weightPct": 8.48,
+          "shortName": "FIRST SOLAR"
+        },
+        {
+          "ticker": "IBE",
+          "name": "IBERDROLA",
+          "weightPct": 6.93,
+          "shortName": "IBERDROLA"
+        },
+        {
+          "ticker": "600900",
+          "name": "CHINA YANGTZE POWER LTD A",
+          "weightPct": 5.51,
+          "shortName": "CHINA YANGTZE POWER LTD A"
+        },
+        {
+          "ticker": "BE",
+          "name": "BLOOM ENERGY CLASS A",
+          "weightPct": 5.37,
+          "shortName": "BLOOM ENERGY CLASS A"
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:45:17.053877+00:00",
+      "recheckedAt": "2026-11-11T21:45:17.053877+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "ICLN",
+          "sourceId": "price_ICLN",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 16.280000686645508,
+              "high": 16.3799991607666,
+              "low": 16.139999389648438,
+              "close": 16.280000686645508,
+              "volume": 4769000,
+              "adjustedClose": 16.280000686645508,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 16.729999542236328,
+              "high": 16.81999969482422,
+              "low": 15.890000343322754,
+              "close": 16.139999389648438,
+              "volume": 12273600,
+              "adjustedClose": 16.139999389648438,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 17.290000915527344,
+              "high": 17.34000015258789,
+              "low": 17.100000381469727,
+              "close": 17.1200008392334,
+              "volume": 3581000,
+              "adjustedClose": 17.1200008392334,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 16.059999465942383,
+              "high": 16.16010093688965,
+              "low": 15.885000228881836,
+              "close": 15.899999618530273,
+              "volume": 6550039,
+              "adjustedClose": 15.899999618530273,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -2.3341587966083432,
+            "week": -1.4869874857126097,
+            "month": -7.126175005244651
+          },
+          "observedAt": "2026-11-12T21:46:41.083524+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "제약",
+    "ticker": "XPH",
+    "day": -2.62,
+    "week": 6.98,
+    "month": 4.7,
+    "sourceIds": [
+      "price_XPH"
+    ],
+    "benchmark": "State Street SPDR S&P Pharmaceuticals ETF",
+    "group": "세부업종 ETF",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-XPH"
+      ],
+      "top5": [
+        {
+          "name": "XERIS BIOPHARMA HOLDINGS INC",
+          "shortName": "XERIS BIOPHARMA HOLDINGS INC",
+          "ticker": "XERS",
+          "weightPct": 4.03183
+        },
+        {
+          "name": "VERADERMICS INC",
+          "shortName": "VERADERMICS INC",
+          "ticker": "MANE",
+          "weightPct": 2.924644
+        },
+        {
+          "name": "SEPTERNA INC",
+          "shortName": "SEPTERNA INC",
+          "ticker": "SEPN",
+          "weightPct": 2.531764
+        },
+        {
+          "name": "MAZE THERAPEUTICS INC",
+          "shortName": "MAZE THERAPEUTICS INC",
+          "ticker": "MAZE",
+          "weightPct": 2.519871
+        },
+        {
+          "name": "ELI LILLY + CO",
+          "shortName": "ELI LILLY + CO",
+          "ticker": "LLY",
+          "weightPct": 2.501589
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:48:44.529576+00:00",
+      "recheckedAt": "2026-11-11T21:48:44.529576+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "XPH",
+          "sourceId": "price_XPH",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 68.0,
+              "high": 68.87999725341797,
+              "low": 67.83000183105469,
+              "close": 68.81999969482422,
+              "volume": 72200,
+              "adjustedClose": 68.81999969482422,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 65.8499984741211,
+              "high": 66.2300033569336,
+              "low": 62.599998474121094,
+              "close": 62.650001525878906,
+              "volume": 254400,
+              "adjustedClose": 62.650001525878906,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 64.61000061035156,
+              "high": 64.61000061035156,
+              "low": 63.970001220703125,
+              "close": 64.01000213623047,
+              "volume": 234600,
+              "adjustedClose": 64.01000213623047,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 68.66999816894531,
+              "high": 68.66999816894531,
+              "low": 66.96499633789062,
+              "close": 67.0199966430664,
+              "volume": 70657,
+              "adjustedClose": 67.0199966430664,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -2.615523190554714,
+            "week": 6.975251413812633,
+            "month": 4.702381512860843
+          },
+          "observedAt": "2026-11-12T21:45:48.553601+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "리튬·배터리(글로벌)",
+    "ticker": "LIT",
+    "day": -2.69,
+    "week": -1.25,
+    "month": -13.08,
+    "sourceIds": [
+      "price_LIT"
+    ],
+    "benchmark": "Global X Lithium & Battery Tech ETF",
+    "group": "세부업종 ETF",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-LIT"
+      ],
+      "top5": [
+        {
+          "ticker": "RIO",
+          "name": "RIO TINTO PLC-SPON ADR",
+          "weightPct": 19.97,
+          "shortName": "RIO TINTO PLC-SPON ADR"
+        },
+        {
+          "ticker": "ALB",
+          "name": "ALBEMARLE CORP",
+          "weightPct": 5.5,
+          "shortName": "ALBEMARLE CORP"
+        },
+        {
+          "ticker": "TSLA",
+          "name": "TESLA INC",
+          "weightPct": 4.57,
+          "shortName": "TESLA INC"
+        },
+        {
+          "ticker": "300014 C2",
+          "name": "EVE ENERGY CO LTD-A",
+          "weightPct": 4.41,
+          "shortName": "EVE ENERGY CO LTD-A"
+        },
+        {
+          "ticker": "1211 HK",
+          "name": "BYD CO LTD-H",
+          "weightPct": 4.17,
+          "shortName": "BYD CO LTD-H"
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:45:35.825808+00:00",
+      "recheckedAt": "2026-11-11T21:45:35.825808+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "LIT",
+          "sourceId": "price_LIT",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 61.04999923706055,
+              "high": 61.41999816894531,
+              "low": 60.720001220703125,
+              "close": 61.06999969482422,
+              "volume": 140000,
+              "adjustedClose": 61.06999969482422,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 62.630001068115234,
+              "high": 62.7400016784668,
+              "low": 60.130001068115234,
+              "close": 60.18000030517578,
+              "volume": 155700,
+              "adjustedClose": 60.18000030517578,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 68.7300033569336,
+              "high": 69.05999755859375,
+              "low": 68.33000183105469,
+              "close": 68.37000274658203,
+              "volume": 209600,
+              "adjustedClose": 68.37000274658203,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 59.630001068115234,
+              "high": 60.04999923706055,
+              "low": 59.334999084472656,
+              "close": 59.43000030517578,
+              "volume": 169846,
+              "adjustedClose": 59.43000030517578,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -2.685441948327749,
+            "week": -1.2462612100310966,
+            "month": -13.075913532639404
+          },
+          "observedAt": "2026-11-12T21:46:22.251813+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "방산동일가중",
+    "ticker": "XAR",
+    "day": -2.76,
+    "week": 8.97,
+    "month": 3.48,
+    "sourceIds": [
+      "price_XAR"
+    ],
+    "benchmark": "State Street SPDR S&P Aerospace & Defense ETF",
+    "group": "세부업종 ETF",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-XAR"
+      ],
+      "top5": [
+        {
+          "name": "LOCKHEED MARTIN CORP",
+          "shortName": "LOCKHEED MARTIN CORP",
+          "ticker": "LMT",
+          "weightPct": 3.382164
+        },
+        {
+          "name": "KARMAN HOLDINGS INC",
+          "shortName": "KARMAN HOLDINGS INC",
+          "ticker": "KRMN",
+          "weightPct": 3.316222
+        },
+        {
+          "name": "HUNTINGTON INGALLS INDUSTRIE",
+          "shortName": "HUNTINGTON INGALLS INDUSTRIE",
+          "ticker": "HII",
+          "weightPct": 3.283693
+        },
+        {
+          "name": "STANDARDAERO INC",
+          "shortName": "STANDARDAERO INC",
+          "ticker": "SARO",
+          "weightPct": 3.280355
+        },
+        {
+          "name": "HEICO CORP",
+          "shortName": "HEICO CORP",
+          "ticker": "HEI",
+          "weightPct": 3.249431
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:48:47.721325+00:00",
+      "recheckedAt": "2026-11-11T21:48:47.721325+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "XAR",
+          "sourceId": "price_XAR",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 238.30999755859375,
+              "high": 240.5399932861328,
+              "low": 236.10000610351562,
+              "close": 240.07000732421875,
+              "volume": 183700,
+              "adjustedClose": 240.07000732421875,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 223.77999877929688,
+              "high": 226.38999938964844,
+              "low": 212.39999389648438,
+              "close": 214.22999572753906,
+              "volume": 580900,
+              "adjustedClose": 214.22999572753906,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 228.24000549316406,
+              "high": 228.88999938964844,
+              "low": 225.4600067138672,
+              "close": 225.58999633789062,
+              "volume": 227700,
+              "adjustedClose": 225.58999633789062,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 237.69000244140625,
+              "high": 240.7100067138672,
+              "low": 233.3699951171875,
+              "close": 233.44000244140625,
+              "volume": 152225,
+              "adjustedClose": 233.44000244140625,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -2.761696455425422,
+            "week": 8.967001398953833,
+            "month": 3.4797669360115746
+          },
+          "observedAt": "2026-11-12T21:45:59.863668+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "바이오",
+    "ticker": "XBI",
+    "day": -3.27,
+    "week": 1.89,
+    "month": -0.13,
+    "sourceIds": [
+      "price_XBI"
+    ],
+    "benchmark": "State Street SPDR S&P Biotech ETF",
+    "group": "세부업종 ETF",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "holdings-XBI"
+      ],
+      "top5": [
+        {
+          "name": "MODERNA INC",
+          "shortName": "MODERNA INC",
+          "ticker": "MRNA",
+          "weightPct": 2.702869
+        },
+        {
+          "name": "EXELIXIS INC",
+          "shortName": "EXELIXIS INC",
+          "ticker": "EXEL",
+          "weightPct": 1.768128
+        },
+        {
+          "name": "SPYRE THERAPEUTICS INC",
+          "shortName": "SPYRE THERAPEUTICS INC",
+          "ticker": "SYRE",
+          "weightPct": 1.756197
+        },
+        {
+          "name": "BIOGEN INC",
+          "shortName": "BIOGEN INC",
+          "ticker": "BIIB",
+          "weightPct": 1.756113
+        },
+        {
+          "name": "ORUKA THERAPEUTICS INC",
+          "shortName": "ORUKA THERAPEUTICS INC",
+          "ticker": "ORKA",
+          "weightPct": 1.748715
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Official issuer portfolio table, not index weights.",
+      "retrievedAt": "2026-11-11T21:48:50.048362+00:00",
+      "recheckedAt": "2026-11-11T21:48:50.048362+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "XBI",
+          "sourceId": "price_XBI",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 155.85000610351562,
+              "high": 156.88999938964844,
+              "low": 154.72999572753906,
+              "close": 156.30999755859375,
+              "volume": 5722400,
+              "adjustedClose": 156.30999755859375,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 157.4499969482422,
+              "high": 157.61000061035156,
+              "low": 148.25,
+              "close": 148.39999389648438,
+              "volume": 13758600,
+              "adjustedClose": 148.39999389648438,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 153.42999267578125,
+              "high": 154.1199951171875,
+              "low": 151.10000610351562,
+              "close": 151.39999389648438,
+              "volume": 6044900,
+              "adjustedClose": 151.39999389648438,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 154.35000610351562,
+              "high": 154.4199981689453,
+              "low": 150.5800018310547,
+              "close": 151.1999969482422,
+              "volume": 8482971,
+              "adjustedClose": 151.1999969482422,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -3.2691450899908325,
+            "week": 1.8867945868723757,
+            "month": -0.13209838593449819
+          },
+          "observedAt": "2026-11-12T21:46:19.416339+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  },
+  {
+    "name": "태양광(글로벌)",
+    "ticker": "TAN",
+    "day": -3.69,
+    "week": -3.99,
+    "month": -2.64,
+    "sourceIds": [
+      "price_TAN"
+    ],
+    "benchmark": "Invesco Solar ETF",
+    "group": "세부업종 ETF",
+    "instrumentType": "etf",
+    "holdings": {
+      "status": "verified",
+      "asOf": "2026-11-09",
+      "sourceIds": [
+        "holdings-TAN"
+      ],
+      "top5": [
+        {
+          "ticker": "NXT",
+          "name": "Nextpower Inc.",
+          "weightPct": 12.9,
+          "shortName": "Nextpower Inc."
+        },
+        {
+          "ticker": "FSLR",
+          "name": "First Solar, Inc.",
+          "weightPct": 9.27,
+          "shortName": "First Solar, Inc."
+        },
+        {
+          "ticker": "TLV:ENLT",
+          "name": "Enlight Renewable Energy Ltd",
+          "weightPct": 8.2,
+          "shortName": "Enlight Renewable Energy Ltd"
+        },
+        {
+          "ticker": "ENPH",
+          "name": "Enphase Energy, Inc.",
+          "weightPct": 6.0,
+          "shortName": "Enphase Energy, Inc."
+        },
+        {
+          "ticker": "HASI",
+          "name": "HA Sustainable Infrastructure Capital, Inc.",
+          "weightPct": 5.21,
+          "shortName": "HA Sustainable Infrastructure Capital, Inc."
+        }
+      ],
+      "basis": "Published portfolio security weights, equity positions only; individual share classes retained; stable descending weight, without normalization. Finnhub redistribution via StockAnalysis, not direct issuer verification.",
+      "retrievedAt": "2026-11-11T21:45:17.010268+00:00",
+      "recheckedAt": "2026-11-11T21:45:17.010268+00:00"
+    },
+    "calculation": {
+      "asOf": "2026-11-12",
+      "currency": "USD",
+      "priceBasis": "Yahoo Finance adjusted close",
+      "formula": "(end adjusted close / start adjusted close - 1) * 100; baskets arithmetic mean of unrounded same-period component returns",
+      "anchors": {
+        "day": "2026-11-11",
+        "week": "2026-11-05",
+        "month": "2026-10-12"
+      },
+      "components": [
+        {
+          "ticker": "TAN",
+          "sourceId": "price_TAN",
+          "bars": {
+            "2026-11-11": {
+              "date": "2026-11-11",
+              "open": 43.88999938964844,
+              "high": 44.22999954223633,
+              "low": 43.2400016784668,
+              "close": 43.95000076293945,
+              "volume": 1210300,
+              "adjustedClose": 43.95000076293945,
+              "timestamp": 1794407400
+            },
+            "2026-11-05": {
+              "date": "2026-11-05",
+              "open": 46.41999816894531,
+              "high": 46.810001373291016,
+              "low": 42.83000183105469,
+              "close": 44.09000015258789,
+              "volume": 4874100,
+              "adjustedClose": 44.09000015258789,
+              "timestamp": 1793889000
+            },
+            "2026-10-12": {
+              "date": "2026-10-12",
+              "open": 43.83000183105469,
+              "high": 44.06999969482422,
+              "low": 43.43000030517578,
+              "close": 43.47999954223633,
+              "volume": 431200,
+              "adjustedClose": 43.47999954223633,
+              "timestamp": 1791811800
+            },
+            "2026-11-12": {
+              "date": "2026-11-12",
+              "open": 43.209999084472656,
+              "high": 43.5,
+              "low": 42.230098724365234,
+              "close": 42.33000183105469,
+              "volume": 1367995,
+              "adjustedClose": 42.33000183105469,
+              "timestamp": 1794493800
+            }
+          },
+          "returnsUnrounded": {
+            "day": -3.6860043316559343,
+            "week": -3.991831062468021,
+            "month": -2.6448889680059318
+          },
+          "observedAt": "2026-11-12T21:46:41.094563+00:00"
+        }
+      ]
+    },
+    "asOf": "2026-11-12"
+  }
+]

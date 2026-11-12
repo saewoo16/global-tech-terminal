@@ -1,0 +1,317 @@
+[
+  {
+    "id": "price_DOW",
+    "title": "DOW completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/DOW?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:46:47.730879+00:00",
+    "rawSha256": "cf24b13ba94ac7a44b7398b71c2f3869289aa914ec120a62dbd34aa1d990c7bd"
+  },
+  {
+    "id": "price_LYB",
+    "title": "LYB completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/LYB?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:46:47.734968+00:00",
+    "rawSha256": "531d648f85db73ebbea16e928d5ee079d675dbeee6e3adf25941fc647ba77251"
+  },
+  {
+    "id": "price_DD",
+    "title": "DD completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/DD?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:46:47.755258+00:00",
+    "rawSha256": "0bd982fe8cef210f8d4c879cd0db15ed6d95e99848580b652b077dde7c9ec030"
+  },
+  {
+    "id": "price_IHF",
+    "title": "IHF completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/IHF?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:45:48.590429+00:00",
+    "rawSha256": "07a2fd58b98ac21fc1135c24e4c48fc4021fdf7379423ee7983354c0755ae65f"
+  },
+  {
+    "id": "price_ITA",
+    "title": "ITA completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/ITA?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:45:48.556580+00:00",
+    "rawSha256": "f5f895ea241255d1f402c51367ac8d23523b0a5257db9c275ed2f551795c7b73"
+  },
+  {
+    "id": "price_XPH",
+    "title": "XPH completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/XPH?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:45:48.553601+00:00",
+    "rawSha256": "571eba82f81d2504927ccd5daaf520b46e0b2cf1263541457b82b1c37f95c965"
+  },
+  {
+    "id": "price_XOP",
+    "title": "XOP completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/XOP?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:45:48.589034+00:00",
+    "rawSha256": "fbc96cb60bd5f731e879e9d2afa261ba34376063cb9e6bda1f5570c75c14bd7b"
+  },
+  {
+    "id": "price_EL",
+    "title": "EL completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/EL?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:46:47.751352+00:00",
+    "rawSha256": "49a0670ec8a8c7a08f2c69a5ab5e82dedf91914d5f756f76070e6bfd73de9ffc"
+  },
+  {
+    "id": "price_ELF",
+    "title": "ELF completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/ELF?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:46:47.674921+00:00",
+    "rawSha256": "a85ae3b966eb7d0592e88d7d809633da4690f642e6f8db11b744b0b2418bbcea"
+  },
+  {
+    "id": "price_COTY",
+    "title": "COTY completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/COTY?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:46:52.495511+00:00",
+    "rawSha256": "34dc04277855a4a5da5d4d16a0cc4b5ef97f1ac1a9248c97677faf11ed7dc7e6"
+  },
+  {
+    "id": "price_XLF",
+    "title": "XLF completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLF?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:45:48.631007+00:00",
+    "rawSha256": "047056aa75c58ecb559b6a20ec93c7c60f89974e92de33999d0139b4b1fa4012"
+  },
+  {
+    "id": "price_XLE",
+    "title": "XLE completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLE?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:45:53.664489+00:00",
+    "rawSha256": "81bf63ea9aaed65ed8d1601af73c6f1ca982f9fa719757bc93c0dd8dc446de34"
+  },
+  {
+    "id": "price_IAI",
+    "title": "IAI completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/IAI?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:45:53.780043+00:00",
+    "rawSha256": "083e1862b202c0c3c890ee10b2be1525892f972086b945ed562bda149f856453"
+  },
+  {
+    "id": "price_XLC",
+    "title": "XLC completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLC?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:45:53.767828+00:00",
+    "rawSha256": "e8929c08b7f4033080beb6de2b2df052966b04bab1e03be194bdba05eb169c79"
+  },
+  {
+    "id": "price_XLV",
+    "title": "XLV completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLV?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:45:53.707101+00:00",
+    "rawSha256": "14e4f57af80deda8edf0448352cdeed6c71b70f518d1e70aad5394f5db889d9b"
+  },
+  {
+    "id": "price_XLP",
+    "title": "XLP completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLP?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:45:53.676554+00:00",
+    "rawSha256": "218b8d4dfc9fa06715e717309da9c6365adb9c0aad510d3bc7e1a9eb81b134e5"
+  },
+  {
+    "id": "price_IYT",
+    "title": "IYT completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/IYT?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:45:59.813154+00:00",
+    "rawSha256": "e683c88cc368000dd50747d7f0be93d61718cbac08b508c441e05264157665e1"
+  },
+  {
+    "id": "price_XAR",
+    "title": "XAR completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/XAR?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:45:59.863668+00:00",
+    "rawSha256": "ea7b6ff254f1661fd906cd2d585b9fe9ce0da8d4b677559396815a0f08130f8a"
+  },
+  {
+    "id": "price_XLY",
+    "title": "XLY completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLY?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:45:59.899263+00:00",
+    "rawSha256": "6442dfbe2f302ecbe283917d570e56b5ba2e97988f16ec3f964df94c231e0dea"
+  },
+  {
+    "id": "price_CIBR",
+    "title": "CIBR completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/CIBR?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:45:59.803480+00:00",
+    "rawSha256": "83654dee41ea5cbeabff0fc171b14a658ba425b94bf9c90c2079fc6c23b898af"
+  },
+  {
+    "id": "price_XLI",
+    "title": "XLI completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLI?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:45:59.811456+00:00",
+    "rawSha256": "6c5464b6a028720547074db19345527eeab782b302fbec46d92d5051c5fe19b1"
+  },
+  {
+    "id": "price_SOXX",
+    "title": "SOXX completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/SOXX?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:46:05.042968+00:00",
+    "rawSha256": "35c8efa0e410288e7f6fffbd16a9a4bc4843615da045cb2d18a923a26824310c"
+  },
+  {
+    "id": "price_XLRE",
+    "title": "XLRE completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLRE?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:46:04.957229+00:00",
+    "rawSha256": "df129cf5dc7c54e6f0572db6b6252fd5fac2a9e1949bc12e89c46ed804b8d5d6"
+  },
+  {
+    "id": "price_XLU",
+    "title": "XLU completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLU?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:46:05.050502+00:00",
+    "rawSha256": "c0dbfaf3b5fdfab67dce16026eeb69509af470c4df7016db6f6b4fb6b5ef5089"
+  },
+  {
+    "id": "price_XLB",
+    "title": "XLB completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLB?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:46:04.954330+00:00",
+    "rawSha256": "bbef839b9e47c72313d85179a7bbe31ce2a49a355e9033fb45801bd5dd65d334"
+  },
+  {
+    "id": "price_FDN",
+    "title": "FDN completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/FDN?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:46:04.981627+00:00",
+    "rawSha256": "3c5f9f99de32318bb9a08b4bd24ee02c4c90df3dbb5fb9c87ad448e4921e91bf"
+  },
+  {
+    "id": "price_XRT",
+    "title": "XRT completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/XRT?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:46:07.635830+00:00",
+    "rawSha256": "04301c5257cf53594b7f1f5daca0b1fdb9e02e1144fbaf88631ed64d2262b5bc"
+  },
+  {
+    "id": "price_KRE",
+    "title": "KRE completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/KRE?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:46:10.803202+00:00",
+    "rawSha256": "a7326e4c0ac614695e8d7c286a5dfb2979735976db74a7ce4b55c938b218fefc"
+  },
+  {
+    "id": "price_KBE",
+    "title": "KBE completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/KBE?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:46:10.745453+00:00",
+    "rawSha256": "734566367ee93701fee3a900b795e09d25497b380b042dfb54e42b687cafd319"
+  },
+  {
+    "id": "price_CRAK",
+    "title": "CRAK completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/CRAK?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:46:10.719420+00:00",
+    "rawSha256": "7d5069c92243dd437960d75717b92f6699badb910d5e88e87104db5e412dbde3"
+  },
+  {
+    "id": "price_SMH",
+    "title": "SMH completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/SMH?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:46:10.734998+00:00",
+    "rawSha256": "9c769b85a8c34118e9ab91d9a551e3efd664f533c8eae32c6367c91551c2f09e"
+  },
+  {
+    "id": "price_IHI",
+    "title": "IHI completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/IHI?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:46:13.103300+00:00",
+    "rawSha256": "7260e893d1718c3da16b681eb4f6d498e550d809e430e4c34253470111c78f7d"
+  },
+  {
+    "id": "price_CLOU",
+    "title": "CLOU completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/CLOU?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:46:16.934691+00:00",
+    "rawSha256": "6e4bb2031b8ad975bbb05d539ff04785f4ec6ef47df78bf861e52fbbf7608a58"
+  },
+  {
+    "id": "price_IBB",
+    "title": "IBB completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/IBB?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:46:16.951601+00:00",
+    "rawSha256": "0a4bb18372405576925a661c9a3188fcef5669875bbc027a421fcd78bc86f225"
+  },
+  {
+    "id": "price_IGV",
+    "title": "IGV completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/IGV?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:46:16.937305+00:00",
+    "rawSha256": "50ddb90c012c0d6a691c8282ac56a15f0746837b061205093842326458323493"
+  },
+  {
+    "id": "price_XLK",
+    "title": "XLK completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLK?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:46:16.971317+00:00",
+    "rawSha256": "8833dfc65e87f6d5105acd8ff24801196d43c7c31ad443d9e401f48bae033ce0"
+  },
+  {
+    "id": "price_XBI",
+    "title": "XBI completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/XBI?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:46:19.416339+00:00",
+    "rawSha256": "d7f27f63755c20ff140920bcb4418cc7c163cc073090d622536ab25e25e3e539"
+  },
+  {
+    "id": "price_BATT",
+    "title": "BATT completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/BATT?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:46:22.273024+00:00",
+    "rawSha256": "35b228c8fc7af0b43b691c5e26a132e47d0c96f4c327bc2f8aad560ef34ad359"
+  },
+  {
+    "id": "price_XME",
+    "title": "XME completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/XME?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:46:22.340028+00:00",
+    "rawSha256": "4468565b290916e9e0734ac573b365db929638779dbc4f1f87044c1cc22630c9"
+  },
+  {
+    "id": "price_LIT",
+    "title": "LIT completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/LIT?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:46:22.251813+00:00",
+    "rawSha256": "26763ee3d940990cf60548c54f0d88852cc3a96d57b1e2a17b5f26c5a85aaa4c"
+  },
+  {
+    "id": "price_FAN",
+    "title": "FAN completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/FAN?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:46:22.271648+00:00",
+    "rawSha256": "0fec51329d6ca5c7298e2d34b27c8808f1e7df083c6c3469e03f821f6bfbb10e"
+  },
+  {
+    "id": "price_XHB",
+    "title": "XHB completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/XHB?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:46:25.118917+00:00",
+    "rawSha256": "bf624b4dfe38c0f093c7d61750945bac39669bb84662c2b3deeaaf7246453ba6"
+  },
+  {
+    "id": "price_ICLN",
+    "title": "ICLN completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/ICLN?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:46:41.083524+00:00",
+    "rawSha256": "10316ed8e8ba2a27c0720e4a23c4cb4d105b52d09f87496557d8350b91ce7f89"
+  },
+  {
+    "id": "price_TAN",
+    "title": "TAN completed regular-session daily prices",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/TAN?range=1y&interval=1d&includePrePost=false&events=div%2Csplits",
+    "retrievedAt": "2026-11-12T21:46:41.094563+00:00",
+    "rawSha256": "5d40a647ebca08d97142aaf50d50628b8686aeae41d38caa00615fcb15fc716d"
+  },
+  {
+    "id": "price_XLRE_tv",
+    "url": "https://scanner.tradingview.com/america/scan",
+    "title": "TradingView XLRE complete regular-session candle replacing inconsistent Yahoo OHLC",
+    "retrievedAt": "2026-11-12T21:47:25.313766+00:00",
+    "note": "Full candle replacement, not inferred OHLC repair. Quote update mode delayed_streaming_900; observed after 16:00 EST and 15-minute delay."
+  }
+]
