@@ -1,0 +1,424 @@
+{
+  "observedAt": "2026-11-12T09:07:19.752928+00:00",
+  "checkedCompanies": 27,
+  "listingPeriod": [
+    "2026-10-01",
+    "2026-11-12"
+  ],
+  "officialPreliminaryDocuments": 18,
+  "newQuarters": 12,
+  "precisionRefinements": 3,
+  "unchangedExistingQuarters": 2,
+  "snapshotCompanyCount": 15,
+  "remainingGaps": [
+    {
+      "symbol": "KRX:007810",
+      "name": "코리아써키트",
+      "status": "no_current_quarter_filing_found_in_bounded_KIND_listing",
+      "listingRows": 4
+    },
+    {
+      "symbol": "KRX:007660",
+      "name": "이수페타시스",
+      "status": "no_current_quarter_filing_found_in_bounded_KIND_listing",
+      "listingRows": 20
+    },
+    {
+      "symbol": "KRX:357780",
+      "name": "솔브레인",
+      "status": "no_current_quarter_filing_found_in_bounded_KIND_listing",
+      "listingRows": 11
+    },
+    {
+      "symbol": "KRX:092070",
+      "name": "디엔에프",
+      "status": "no_current_quarter_filing_found_in_bounded_KIND_listing",
+      "listingRows": 0
+    },
+    {
+      "symbol": "KRX:102710",
+      "name": "이엔에프테크놀로지",
+      "status": "no_current_quarter_filing_found_in_bounded_KIND_listing",
+      "listingRows": 1
+    },
+    {
+      "symbol": "KRX:033160",
+      "name": "엠케이전자",
+      "status": "no_current_quarter_filing_found_in_bounded_KIND_listing",
+      "listingRows": 5
+    },
+    {
+      "symbol": "KRX:074600",
+      "name": "원익QnC",
+      "status": "no_current_quarter_filing_found_in_bounded_KIND_listing",
+      "listingRows": 6
+    },
+    {
+      "symbol": "KRX:101160",
+      "name": "월덱스",
+      "status": "no_current_quarter_filing_found_in_bounded_KIND_listing",
+      "listingRows": 1
+    },
+    {
+      "symbol": "KRX:183300",
+      "name": "코미코",
+      "status": "no_current_quarter_filing_found_in_bounded_KIND_listing",
+      "listingRows": 13
+    },
+    {
+      "symbol": "KRX:058470",
+      "name": "리노공업",
+      "status": "no_current_quarter_filing_found_in_bounded_KIND_listing",
+      "listingRows": 8
+    }
+  ],
+  "limitations": [
+    "Bounded KIND company-disclosure check, not a claim that no official report exists elsewhere.",
+    "No fabricated numbers; remaining 10 September-quarter gaps remain unfilled.",
+    "New preliminary earnings retain preliminary status.",
+    "Q2 comparison values were not substituted into existing history. ISC and Duk San Hi Metal official Q2 comparison values differ from aggregators, so broader historical restatement requires separate review.",
+    "Samsung October29 10:00 correction revises October8 guidance, not the more precise October29 09:50 earnings disclosure. Snapshot uses the detailed 억원 filing, verified compatible with corrected 조원 rounding."
+  ],
+  "files": [
+    {
+      "file": "raw/000150-list.html",
+      "sha256": "5ac10bd0296dd00c3f6a86ee560553cec398253ef9a8e555d3e3a28ad8186fda"
+    },
+    {
+      "file": "raw/000660-list.html",
+      "sha256": "9213cb1a03cf7b45738c0384fbd9fcbe21405a8236cc8f6d622eacf23bd3c15f"
+    },
+    {
+      "file": "raw/005290-list.html",
+      "sha256": "e5e442ee3a8670671e78a0d36912c5cf3d7cd141169ccd9b7253dbeee594ba42"
+    },
+    {
+      "file": "raw/005930-list.html",
+      "sha256": "483042b0e6172d7e96039106447818c6ba1f9e08a4579fd7cc1781589048dc6b"
+    },
+    {
+      "file": "raw/007660-list.html",
+      "sha256": "a664ded6adc1aec5a4f36bd2de1f31e19bb437bc96b61af1ffad35946e1e222f"
+    },
+    {
+      "file": "raw/007810-list.html",
+      "sha256": "9dcef4a3babc2170696ded96c3dbe235f64757f0b01a16124ba282f48e48fd11"
+    },
+    {
+      "file": "raw/009150-list.html",
+      "sha256": "ee86277e497b171d9bb0f80d1be235897d44c3c71c45571dcc439e19482fe3f2"
+    },
+    {
+      "file": "raw/033160-list.html",
+      "sha256": "86ffffa955c73abe64ddcb30c712028d895893177a62e9fab6d6d30ca1ac4913"
+    },
+    {
+      "file": "raw/036930-list.html",
+      "sha256": "20202bf5ce1b6477e50d4ea41ab0202b283006508302eafd4ca201390d3d6816"
+    },
+    {
+      "file": "raw/042700-list.html",
+      "sha256": "fe05b9f404b1e1067e007a2950477dcf792fdf687b7bf7231360571f20b7b242"
+    },
+    {
+      "file": "raw/058470-list.html",
+      "sha256": "885b2ae2ef7ece162a5d5690d2b695e3f5b174155486f8708f870b4265745800"
+    },
+    {
+      "file": "raw/074600-list.html",
+      "sha256": "84a82a4c4e2da1a1ea6181b805f19beb8ae697329b6d4dd571dabdd84f593ec9"
+    },
+    {
+      "file": "raw/077360-list.html",
+      "sha256": "53de4af272de312f857d88ab3d7e44bc772d194c6a0506dcbb856967c4c7c60c"
+    },
+    {
+      "file": "raw/089030-list.html",
+      "sha256": "b226784621c41ca0840de1a12ab6fceb645459a1c02f98c40eba4181c301b9de"
+    },
+    {
+      "file": "raw/090460-list.html",
+      "sha256": "3f8b7419b18a25c48e54bc1f2e3a69c8976599044a1cd74e8b379c3f03042c70"
+    },
+    {
+      "file": "raw/092070-list.html",
+      "sha256": "69644a0315a50e513393fcd08fac0a88917e6d3be585eb2382286fd1d881c128"
+    },
+    {
+      "file": "raw/095340-list.html",
+      "sha256": "929c1f2f8c31b3e8c37ebb6257aa7324c15a0979964a987a7915df9fc22b0aa6"
+    },
+    {
+      "file": "raw/101160-list.html",
+      "sha256": "218a2bc79eec5934799865e6e6e605f4c9f037b781b892ac20c07f364d7aee19"
+    },
+    {
+      "file": "raw/102710-list.html",
+      "sha256": "33689ce37f3ae5dbe4417f3dc1ed3c59e1617c9054b95647e6c03563773ebcf4"
+    },
+    {
+      "file": "raw/104830-list.html",
+      "sha256": "3ac868e48acfb3083ed8a1d524be4135375593d48d9f66f62648fcf2ede838f5"
+    },
+    {
+      "file": "raw/108320-list.html",
+      "sha256": "b78c4e1db270761e3533252fcf22c1e5276fa561d3caf39199a5d1837d44f03f"
+    },
+    {
+      "file": "raw/166090-list.html",
+      "sha256": "8c729c1deaad9fab7692bbea7a850bb242b52e424886e61a6dd03bfa1cc8fc4c"
+    },
+    {
+      "file": "raw/183300-list.html",
+      "sha256": "edec4f0a21c9d2fda0c344584e461ab38750a3cfaafd629355686baba8643264"
+    },
+    {
+      "file": "raw/20261008000004-path.html",
+      "sha256": "2b352e0a223d4d5bbbdf67aba6f63ab468a58b42c5c600e59db821a85adad61f"
+    },
+    {
+      "file": "raw/20261008000004-viewer.html",
+      "sha256": "25c7e13b0590c7008da192509d8183669ef82063c4fe105cda1a1fd93bc19fe0"
+    },
+    {
+      "file": "raw/20261008000004.html",
+      "sha256": "2a523ecd45a698f01f24cb2fb7f27afd164bccca4630eb71d2db4df3cbc19573"
+    },
+    {
+      "file": "raw/20261014000085-path.html",
+      "sha256": "3ee697d4af939997a16edd847ad9bee13ccd3251679a0ca79b3ad0144ff0334d"
+    },
+    {
+      "file": "raw/20261014000085-viewer.html",
+      "sha256": "39291484c16fdef82c70bae9255aaa5ba02fbe3f78ce6b3d5ea90a5085bd917d"
+    },
+    {
+      "file": "raw/20261014000085.html",
+      "sha256": "cac56d1d94e4e541e487a14efe8009ecb2091ecbd28f6bf765e07c1c040bf8ce"
+    },
+    {
+      "file": "raw/20261027000052-path.html",
+      "sha256": "c2c8bddd992200262df40e32c7414c062f0fc8f1e5b4ac473482aff5a3b364d4"
+    },
+    {
+      "file": "raw/20261027000052-viewer.html",
+      "sha256": "b3cf92afe53e6255e91ab4cd662a84a5d871e24b0f165cbaed2219144803329f"
+    },
+    {
+      "file": "raw/20261027000052.html",
+      "sha256": "251ec14740ce263f6bbb804f026fd7e77fe5f538760fe066e020914c3c948c2a"
+    },
+    {
+      "file": "raw/20261028000036-path.html",
+      "sha256": "38538bdd57440378ad1d8cfdc6018b690b682610575b3d96838be9475ab9c7b0"
+    },
+    {
+      "file": "raw/20261028000036-viewer.html",
+      "sha256": "bb8182181ba4468635949c6832ab0473df8ae42a3fb90b35c313af6750377eac"
+    },
+    {
+      "file": "raw/20261028000036.html",
+      "sha256": "1a4a57bec4d15cf78ca9c5fd39fd30c1dedacc9322af9c899aadac8a30a99368"
+    },
+    {
+      "file": "raw/20261028000169-path.html",
+      "sha256": "a0a1d494010405f52f3b52b38a073455b6191622b470e9cbc1e76be6374ff605"
+    },
+    {
+      "file": "raw/20261028000169-viewer.html",
+      "sha256": "06683f16b48bd4ecba95ce6e02f250a05a668de168d76628eafa2e0bc97a830e"
+    },
+    {
+      "file": "raw/20261028000169.html",
+      "sha256": "bbaec57e227148e1efa0d38d64b10b09700f0f723464ab6eb9f40ff24f2252d8"
+    },
+    {
+      "file": "raw/20261029000087-path.html",
+      "sha256": "e5fd4e91bd466f38e92d22791ae9e4506a6b5ca63b5d238098d743115097923c"
+    },
+    {
+      "file": "raw/20261029000087-viewer.html",
+      "sha256": "ad8544bdff6bdfd3f0e552eef529d9367d7a2d10c328625e1e4496e2500139ea"
+    },
+    {
+      "file": "raw/20261029000087.html",
+      "sha256": "ae65ac4e12fd40dc695ca07b65cd76860e388cf61513e78248f903fe77354926"
+    },
+    {
+      "file": "raw/20261029000099-path.html",
+      "sha256": "4658fed20daddca5dae7e631c0301613ff915125bd00b39abaac9e68cc1dae8c"
+    },
+    {
+      "file": "raw/20261029000099-viewer.html",
+      "sha256": "26d92e0bb755f02d56c1caba171333c18b3755470e4cc503a57eb962be61f874"
+    },
+    {
+      "file": "raw/20261029000099.html",
+      "sha256": "d8507e4971674ccb7f5d91ba10b8ccba7984442a7c25370d7ae4a58d6d8c7fba"
+    },
+    {
+      "file": "raw/20261030000184-path.html",
+      "sha256": "48f6003454aa4840426c25a432c28457902c3ce810301b77749f357ac50403f7"
+    },
+    {
+      "file": "raw/20261030000184-viewer.html",
+      "sha256": "4e0e2833965bf8c1a2bc6c75c272b806450af6d4bfb2665fca882de7ea507f5c"
+    },
+    {
+      "file": "raw/20261030000184.html",
+      "sha256": "a7f9e9cd493764ca8010714992bca1c7588f59bb5daf16d4f6e3637b4094a9db"
+    },
+    {
+      "file": "raw/20261030000778-path.html",
+      "sha256": "c2447602cef12d80038de24f6c29e7fa1a6c629b5547e43106c9a3e52c7ec074"
+    },
+    {
+      "file": "raw/20261030000778-viewer.html",
+      "sha256": "ddb71818804cf62aea2325f25b2d5e638423e6af37e34bf57d73b2ec01525c27"
+    },
+    {
+      "file": "raw/20261030000778.html",
+      "sha256": "f834450f576011ca14f77bf90a07351b1a283fb391499edae342faf96f261e14"
+    },
+    {
+      "file": "raw/20261103000120-path.html",
+      "sha256": "35197bba2ee4bc5aa6f89c7679d95937c8e97e97503c08d611164b89ec085a08"
+    },
+    {
+      "file": "raw/20261103000120-viewer.html",
+      "sha256": "9e55b6c2022e6e90dd49bca2bef48556fd1049fb1ddbe2a9169ea19a97ffe316"
+    },
+    {
+      "file": "raw/20261103000120.html",
+      "sha256": "8b68256c9648f613bbdb30112bcabe751694513ee6f16e543deb4652c43dedec"
+    },
+    {
+      "file": "raw/20261103000296-path.html",
+      "sha256": "b1fd6ed154dea279840a51c58522ae6a6fdd3aff1f0428694c1ef35a2807e016"
+    },
+    {
+      "file": "raw/20261103000296-viewer.html",
+      "sha256": "e1d95e3c1cfa481c48f0cf99c4f1dd7034c0069b3762b1f94407e7b6388cd91e"
+    },
+    {
+      "file": "raw/20261103000296.html",
+      "sha256": "b882373ab4c44eb6ca53c1c849997a6fb74c6f911a508e86f46279e565cfe4a0"
+    },
+    {
+      "file": "raw/20261103000419-path.html",
+      "sha256": "c1b84e468ab665ff8e0c645c58cf3de4253b23cf90b80948c8fb6fdd7847c62d"
+    },
+    {
+      "file": "raw/20261103000419-viewer.html",
+      "sha256": "8658d0c2e259eb5268f58fcc6299555de24d3f016392db504b1dda437eeba7a2"
+    },
+    {
+      "file": "raw/20261103000419.html",
+      "sha256": "30538323e2529ce3dc99ec24e06a7c5bbd4f62a119e4031e5ebfbd5f255e9173"
+    },
+    {
+      "file": "raw/20261103000445-path.html",
+      "sha256": "9954922fee4a837b3eab5bd09b37ab82be1a96aa32529e101c4d365c895f7f3f"
+    },
+    {
+      "file": "raw/20261103000445-viewer.html",
+      "sha256": "b9327ced2e9a614639998acab9c4fff5d319d951a74140c9d82434dc3924f848"
+    },
+    {
+      "file": "raw/20261103000445.html",
+      "sha256": "c8b7682af91a300d8d3d4ac7b4e678f6b92c66b4baa13aaff1eeb5e1fae44398"
+    },
+    {
+      "file": "raw/20261104000314-path.html",
+      "sha256": "42ace3499ad48aab3455c481f377dabc43f89eb42315b36cde462c7f6f5532c1"
+    },
+    {
+      "file": "raw/20261104000314-viewer.html",
+      "sha256": "15344a0378e4a10ddf6cd4f0e3d83037585f6531fc402209f95295409363819c"
+    },
+    {
+      "file": "raw/20261104000314.html",
+      "sha256": "fbd2aacb796a5a4bc39c0ac74b0adfaf2b84772dca669b13f342822f8b5db6ef"
+    },
+    {
+      "file": "raw/20261105000184-path.html",
+      "sha256": "c3c07122e913bde759a44c17faffbf56e8a803b411c799cbe5276202d3907d45"
+    },
+    {
+      "file": "raw/20261105000184-viewer.html",
+      "sha256": "138fcecca1e3c43832994ecd945c0f0649bcf731737983092f07de9f572ec9d4"
+    },
+    {
+      "file": "raw/20261105000184.html",
+      "sha256": "12f029ec79563966bddb1b83c56368eb11dc7c52b06cd166dac4799f01b73a60"
+    },
+    {
+      "file": "raw/20261105000643-path.html",
+      "sha256": "be8a964c191c8a7dd779f236890076872e8cc33aad4f36deafb2492089a44861"
+    },
+    {
+      "file": "raw/20261105000643-viewer.html",
+      "sha256": "1595b325c8d8395ffd2a7fd21856f855103647e33b26546658a5762752109e88"
+    },
+    {
+      "file": "raw/20261105000643.html",
+      "sha256": "6cc26fd5b694c4a84510017e67c116d6d7ea89bd03f2668cb8b7fe82475d0796"
+    },
+    {
+      "file": "raw/20261109000376-path.html",
+      "sha256": "818289f8f8e6e4a739dbdfff0b7fa876a958d4ec41ae4d73428cc1bcba7459ba"
+    },
+    {
+      "file": "raw/20261109000376-viewer.html",
+      "sha256": "7a7b4c3cb8611c358f7ad214fd4adb44b4b0232abbfee1964ddd45dc7a98df3e"
+    },
+    {
+      "file": "raw/20261109000376.html",
+      "sha256": "23baed45ac97dce63524321a85707a13ddde92f2173a53fed37ee0c17599b22e"
+    },
+    {
+      "file": "raw/20261109000403-path.html",
+      "sha256": "3be6e3988270e83f0f768a562eb6a7cf56f181ed7e5318aa3d25c388772cb69b"
+    },
+    {
+      "file": "raw/20261109000403-viewer.html",
+      "sha256": "8fb88d7b8ba4e813c4513aa9c5fe466b4377f5a94539565444a0459f0723a577"
+    },
+    {
+      "file": "raw/20261109000403.html",
+      "sha256": "66555cafab13a5f94892456664c972d3cfb4fd155a51893d0af7a734b586aed7"
+    },
+    {
+      "file": "raw/20261112000867-path.html",
+      "sha256": "4b32d6dc14c763b184c7b095c847c1ef95ae3ebdf11eaeccab95050a1214286d"
+    },
+    {
+      "file": "raw/20261112000867-viewer.html",
+      "sha256": "0d2c4de40b0a7ab06e45c4bf559c13ee990e807543e6ddb5090afa19a76072ad"
+    },
+    {
+      "file": "raw/20261112000867.html",
+      "sha256": "5e3f0874bb412189bc95e67ff9b38ad34dd5f00376f062816f10e67521f69f3d"
+    },
+    {
+      "file": "raw/20261112000867.txt",
+      "sha256": "21a5a1258d60910018aed9d2a490598bd49b7bd73ab6a135adc1b6c4caf2917d"
+    },
+    {
+      "file": "raw/222800-list.html",
+      "sha256": "9dc14e11cb07ec6c2ee9147109d6e83313121a2e03d77b82cbeb2d4945734220"
+    },
+    {
+      "file": "raw/353200-list.html",
+      "sha256": "68ad793e5be4e756934cccad635d7078bda7c180a9ef1a6745e9bcdf6ce032b5"
+    },
+    {
+      "file": "raw/356860-list.html",
+      "sha256": "5c261de6de336c6ea63ef6925c07e1bb9007157dd110cf7b51daee3910471153"
+    },
+    {
+      "file": "raw/357780-list.html",
+      "sha256": "63692c4e2a7993b885319ffc6417bdd3707f1d400b2673813d8631720014b8a1"
+    }
+  ]
+}

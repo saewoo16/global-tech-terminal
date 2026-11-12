@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "observedAt": "2026-11-12T09:02:47.237536+00:00",
+  "baseCommit": "db527ee11d8ebb15b8d081c0c455973371b92f19",
+  "officialRelease": {
+    "schemaVersion": 1,
+    "date": "2026-11-11",
+    "retrievedAt": "2026-11-12T07:57:12.738746+00:00",
+    "url": "https://freesis.kofia.or.kr/stat/main.do",
+    "acquisition": "Official FreeSIS HTML headline",
+    "unit": "million KRW",
+    "officialInvestorDeposits": 85484282,
+    "officialMarginLoans": 25928478,
+    "publicationTimeRule": "Credit balances next day15:00–18:00; exact deposits release time unverified",
+    "ruleSource": "https://www.kofia.or.kr/voc/m_113/view.do?answer_seq=2298&voc_id=3009",
+    "acquisitionUrl": "https://freesis.kofia.or.kr/stat/main.do",
+    "transport": "https",
+    "sourceSha256": "9f3f9340a1403310851bcaed6116b6ab8a4f73a156dbab5ec585491d74c7e440"
+  },
+  "officialSnapshotReused": true,
+  "officialCollectorRerun": false,
+  "splitSource": "https://chunsystem.com/free/chun-index-score",
+  "rawResponse": {
+    "path": "data/korea-credit-split-raw-20261112.json.gz",
+    "sha256": "177e54c9bf31d54e044ecf0811595d5da7e6f0ac3140730cdfc1fe7b6b99a704",
+    "bytes": 2053438,
+    "gzipSha256": "091d1c16bfcb0995846b0c7468ad868ab1fd7bfc9255e0820e8634c77c85b437",
+    "gzipBytes": 276146,
+    "httpStatus": 200,
+    "responseDate": "Thu, 12 Nov 2026 09:02:46 GMT",
+    "contentType": "application/json;charset=utf-8",
+    "retrievedAt": "2026-11-12T09:02:47.237536+00:00"
+  },
+  "rawMarketRows": {
+    "kospiList": [
+      {
+        "stdDate": "2026-11-11",
+        "type": null,
+        "endPrice": "5375.36",
+        "per": "8.95",
+        "pbr": "1.34",
+        "sichong": "4472650478",
+        "debt": "0.45",
+        "upCnt": "0",
+        "downCnt": "2",
+        "stdDept": null,
+        "avgPer": "17.660096021947886",
+        "avgPbr": "1.2526063100137168",
+        "maxSichong": "7449592793",
+        "chunScore": "0",
+        "capScore": "56.43",
+        "perScore": "32.8",
+        "pbrScore": "58.19",
+        "debtScore": "89.86",
+        "totalScore": "32.34",
+        "sinyong": "20174331",
+        "years": 0,
+        "months": 0,
+        "days": 0,
+        "row": 0
+      }
+    ],
+    "kosdaqList": [
+      {
+        "stdDate": "2026-11-11",
+        "type": null,
+        "endPrice": "705.1",
+        "per": "34.52",
+        "pbr": "1.56",
+        "sichong": "405228777",
+        "debt": "1.42",
+        "upCnt": "0",
+        "downCnt": "2",
+        "stdDept": null,
+        "avgPer": "95.5237722908094",
+        "avgPbr": "1.9196982167352519",
+        "maxSichong": "679545243",
+        "chunScore": "0",
+        "capScore": "56.12",
+        "perScore": "24.68",
+        "pbrScore": "47.58",
+        "debtScore": "75.11",
+        "totalScore": "25.98",
+        "sinyong": "5754147",
+        "years": 0,
+        "months": 0,
+        "days": 0,
+        "row": 0
+      }
+    ]
+  },
+  "acceptedRows": {
+    "creditKOSPI": [
+      {
+        "date": "2026-11-11",
+        "value": 201743.31,
+        "rawMillionKRW": 20174331,
+        "sourceId": "chun-official-total-20261111",
+        "verificationMethod": "same-day direct official KOFIA total",
+        "officialSourceUrl": "https://freesis.kofia.or.kr/stat/main.do",
+        "officialMarginLoansMillionKRW": 25928478,
+        "splitMinusOfficialMillionKRW": 0,
+        "observedAt": "2026-11-12T09:02:47.237536+00:00"
+      }
+    ],
+    "creditKOSDAQ": [
+      {
+        "date": "2026-11-11",
+        "value": 57541.47,
+        "rawMillionKRW": 5754147,
+        "sourceId": "chun-official-total-20261111",
+        "verificationMethod": "same-day direct official KOFIA total",
+        "officialSourceUrl": "https://freesis.kofia.or.kr/stat/main.do",
+        "officialMarginLoansMillionKRW": 25928478,
+        "splitMinusOfficialMillionKRW": 0,
+        "observedAt": "2026-11-12T09:02:47.237536+00:00"
+      }
+    ]
+  },
+  "source": {
+    "id": "chun-official-total-20261111",
+    "title": "천시스템 시장별 신용융자 · 동일일 금융투자협회 공식 총액 대조",
+    "url": "https://chunsystem.com/free/chun-index-score",
+    "retrievedAt": "2026-11-12T09:02:47.237536+00:00",
+    "note": "2026-11-11 KOSPI 20,174,331백만원 + KOSDAQ 5,754,147백만원 = 공식 총액 25,928,478백만원. 차이 0백만원. 공식 총액은 기존 수집 결과(2026-11-12T07:57:12.738746+00:00)를 재사용했으며 분할 수집시각과 구분합니다. 임의 배분 없이 제3자 실제 시장별 잔고만 반영합니다."
+  },
+  "previousCoverage": {
+    "creditKOSPI": {
+      "start": "2023-10-31",
+      "end": "2026-11-10",
+      "count": 736,
+      "requestedStart": "2023-10-17",
+      "requestedEnd": "2026-10-21"
+    },
+    "creditKOSDAQ": {
+      "start": "2023-10-31",
+      "end": "2026-11-10",
+      "count": 736,
+      "requestedStart": "2023-10-17",
+      "requestedEnd": "2026-10-21"
+    }
+  },
+  "previousLatestCheck": {
+    "date": "2026-11-03",
+    "observedAt": "2026-11-04T10:25:48.730913+00:00",
+    "officialTotalMillionKRW": 28950185,
+    "splitSumMillionKRW": 28950185,
+    "differenceMillionKRW": 0,
+    "sourceUrl": "https://chunsystem.com/free/chun-index-score"
+  },
+  "sumDifferenceMillionKRW": 0,
+  "originalToleranceMillionKRW": 1,
+  "preservation": {
+    "previousCreditRowsUnchanged": {
+      "creditKOSPI": 736,
+      "creditKOSDAQ": 736
+    },
+    "depositsUnchanged": true,
+    "officialReleaseUnchanged": true,
+    "previousSourcesUnchanged": true,
+    "otherTopLevelFieldsUnchanged": true
+  },
+  "note": "Only actual 2026-11-11 split observations accepted. Earlier missing dates were not estimated or backfilled. Prior observations and the original official collection timestamp remain unchanged."
+}

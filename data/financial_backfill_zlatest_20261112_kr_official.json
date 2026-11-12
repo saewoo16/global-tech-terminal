@@ -1,0 +1,683 @@
+{
+  "asOf": "2026-11-12",
+  "scope": "Verified September 2026 quarters from official KIND filings; no aggregator or inferred numbers",
+  "companies": {
+    "KRX:000660": {
+      "reportingCurrency": "KRW",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "sourceType": "filing",
+          "source": "KRX KIND official preliminary consolidated earnings disclosure",
+          "sourceUrl": "https://kind.krx.co.kr/external/2026/10/28/000036/20261013001237/99626.htm",
+          "filingUrl": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261028000036",
+          "publishedAt": "2026-10-28T08:27:00+09:00",
+          "verifiedAt": "2026-11-12",
+          "observedAt": "2026-11-12T09:04:59.005153+00:00",
+          "basis": "K-IFRS consolidated; preliminary standalone three-month results",
+          "releaseType": "preliminary",
+          "preliminary": true,
+          "sourceSha256": "1a4a57bec4d15cf78ca9c5fd39fd30c1dedacc9322af9c899aadac8a30a99368",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "매출액",
+              "rawValue": 104615483.0,
+              "rawUnit": "백만원",
+              "conversion": "multiply by 1 to million KRW",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://kind.krx.co.kr/external/2026/10/28/000036/20261013001237/99626.htm"
+            },
+            "operatingIncome": {
+              "lineItem": "영업이익",
+              "rawValue": 83333818.0,
+              "rawUnit": "백만원",
+              "conversion": "multiply by 1 to million KRW",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://kind.krx.co.kr/external/2026/10/28/000036/20261013001237/99626.htm"
+            }
+          },
+          "revenue": 104615483.0,
+          "operatingIncome": 83333818.0
+        }
+      ]
+    },
+    "KRX:108320": {
+      "reportingCurrency": "KRW",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "sourceType": "filing",
+          "source": "KRX KIND official preliminary consolidated earnings disclosure",
+          "sourceUrl": "https://kind.krx.co.kr/external/2026/11/03/000419/20261021001537/99626.htm",
+          "filingUrl": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261103000419",
+          "publishedAt": "2026-11-03T15:48:00+09:00",
+          "verifiedAt": "2026-11-12",
+          "observedAt": "2026-11-12T09:04:59.035633+00:00",
+          "basis": "K-IFRS consolidated; preliminary standalone three-month results",
+          "releaseType": "preliminary",
+          "preliminary": true,
+          "sourceSha256": "30538323e2529ce3dc99ec24e06a7c5bbd4f62a119e4031e5ebfbd5f255e9173",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "매출액",
+              "rawValue": 336020.0,
+              "rawUnit": "백만원",
+              "conversion": "multiply by 1 to million KRW",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://kind.krx.co.kr/external/2026/11/03/000419/20261021001537/99626.htm"
+            },
+            "operatingIncome": {
+              "lineItem": "영업이익",
+              "rawValue": -15564.0,
+              "rawUnit": "백만원",
+              "conversion": "multiply by 1 to million KRW",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://kind.krx.co.kr/external/2026/11/03/000419/20261021001537/99626.htm"
+            }
+          },
+          "revenue": 336020.0,
+          "operatingIncome": -15564.0
+        }
+      ]
+    },
+    "KRX:042700": {
+      "reportingCurrency": "KRW",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "sourceType": "filing",
+          "source": "KRX KIND official preliminary consolidated earnings disclosure",
+          "sourceUrl": "https://kind.krx.co.kr/external/2026/10/30/000184/20261026000923/99626.htm",
+          "filingUrl": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261030000184",
+          "publishedAt": "2026-10-30T09:24:00+09:00",
+          "verifiedAt": "2026-11-12",
+          "observedAt": "2026-11-12T09:05:10.586698+00:00",
+          "basis": "K-IFRS consolidated; preliminary standalone three-month results",
+          "releaseType": "preliminary",
+          "preliminary": true,
+          "sourceSha256": "a7f9e9cd493764ca8010714992bca1c7588f59bb5daf16d4f6e3637b4094a9db",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "매출액",
+              "rawValue": 181014.0,
+              "rawUnit": "백만원",
+              "conversion": "multiply by 1 to million KRW",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://kind.krx.co.kr/external/2026/10/30/000184/20261026000923/99626.htm"
+            },
+            "operatingIncome": {
+              "lineItem": "영업이익",
+              "rawValue": 90803.0,
+              "rawUnit": "백만원",
+              "conversion": "multiply by 1 to million KRW",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://kind.krx.co.kr/external/2026/10/30/000184/20261026000923/99626.htm"
+            }
+          },
+          "revenue": 181014.0,
+          "operatingIncome": 90803.0
+        }
+      ]
+    },
+    "KRX:089030": {
+      "reportingCurrency": "KRW",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "sourceType": "filing",
+          "source": "KRX KIND official preliminary consolidated earnings disclosure",
+          "sourceUrl": "https://kind.krx.co.kr/external/2026/10/14/000085/20261012001647/70956.htm",
+          "filingUrl": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261014000085",
+          "publishedAt": "2026-10-14T10:34:00+09:00",
+          "verifiedAt": "2026-11-12",
+          "observedAt": "2026-11-12T09:05:10.660509+00:00",
+          "basis": "K-IFRS consolidated; preliminary standalone three-month results",
+          "releaseType": "preliminary",
+          "preliminary": true,
+          "sourceSha256": "cac56d1d94e4e541e487a14efe8009ecb2091ecbd28f6bf765e07c1c040bf8ce",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "매출액",
+              "rawValue": 87784.0,
+              "rawUnit": "백만원",
+              "conversion": "multiply by 1 to million KRW",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://kind.krx.co.kr/external/2026/10/14/000085/20261012001647/70956.htm"
+            },
+            "operatingIncome": {
+              "lineItem": "영업이익",
+              "rawValue": 17994.0,
+              "rawUnit": "백만원",
+              "conversion": "multiply by 1 to million KRW",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://kind.krx.co.kr/external/2026/10/14/000085/20261012001647/70956.htm"
+            }
+          },
+          "revenue": 87784.0,
+          "operatingIncome": 17994.0
+        }
+      ]
+    },
+    "KRX:009150": {
+      "reportingCurrency": "KRW",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "sourceType": "filing",
+          "source": "KRX KIND official preliminary consolidated earnings disclosure",
+          "sourceUrl": "https://kind.krx.co.kr/external/2026/10/28/000169/20261027000084/99626.htm",
+          "filingUrl": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261028000169",
+          "publishedAt": "2026-10-28T11:58:00+09:00",
+          "verifiedAt": "2026-11-12",
+          "observedAt": "2026-11-12T09:05:10.634920+00:00",
+          "basis": "K-IFRS consolidated; preliminary standalone three-month results",
+          "releaseType": "preliminary",
+          "preliminary": true,
+          "sourceSha256": "bbaec57e227148e1efa0d38d64b10b09700f0f723464ab6eb9f40ff24f2252d8",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "매출액",
+              "rawValue": 3763278.0,
+              "rawUnit": "백만원",
+              "conversion": "multiply by 1 to million KRW",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://kind.krx.co.kr/external/2026/10/28/000169/20261027000084/99626.htm"
+            },
+            "operatingIncome": {
+              "lineItem": "영업이익",
+              "rawValue": 690957.0,
+              "rawUnit": "백만원",
+              "conversion": "multiply by 1 to million KRW",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://kind.krx.co.kr/external/2026/10/28/000169/20261027000084/99626.htm"
+            }
+          },
+          "revenue": 3763278.0,
+          "operatingIncome": 690957.0
+        }
+      ]
+    },
+    "KRX:353200": {
+      "reportingCurrency": "KRW",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "sourceType": "filing",
+          "source": "KRX KIND official preliminary consolidated earnings disclosure",
+          "sourceUrl": "https://kind.krx.co.kr/external/2026/10/30/000778/20261027001260/99626.htm",
+          "filingUrl": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261030000778",
+          "publishedAt": "2026-10-30T15:31:00+09:00",
+          "verifiedAt": "2026-11-12",
+          "observedAt": "2026-11-12T09:05:10.584155+00:00",
+          "basis": "K-IFRS consolidated; preliminary standalone three-month results",
+          "releaseType": "preliminary",
+          "preliminary": true,
+          "sourceSha256": "f834450f576011ca14f77bf90a07351b1a283fb391499edae342faf96f261e14",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "매출액",
+              "rawValue": 418115.0,
+              "rawUnit": "백만원",
+              "conversion": "multiply by 1 to million KRW",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://kind.krx.co.kr/external/2026/10/30/000778/20261027001260/99626.htm"
+            },
+            "operatingIncome": {
+              "lineItem": "영업이익",
+              "rawValue": 87871.0,
+              "rawUnit": "백만원",
+              "conversion": "multiply by 1 to million KRW",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://kind.krx.co.kr/external/2026/10/30/000778/20261027001260/99626.htm"
+            }
+          },
+          "revenue": 418115.0,
+          "operatingIncome": 87871.0
+        }
+      ]
+    },
+    "KRX:222800": {
+      "reportingCurrency": "KRW",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "sourceType": "filing",
+          "source": "KRX KIND official preliminary consolidated earnings disclosure",
+          "sourceUrl": "https://kind.krx.co.kr/external/2026/11/03/000445/20261102000953/70956.htm",
+          "filingUrl": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261103000445",
+          "publishedAt": "2026-11-03T16:00:00+09:00",
+          "verifiedAt": "2026-11-12",
+          "observedAt": "2026-11-12T09:05:10.631632+00:00",
+          "basis": "K-IFRS consolidated; preliminary standalone three-month results",
+          "releaseType": "preliminary",
+          "preliminary": true,
+          "sourceSha256": "c8b7682af91a300d8d3d4ac7b4e678f6b92c66b4baa13aaff1eeb5e1fae44398",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "매출액",
+              "rawValue": 535934.0,
+              "rawUnit": "백만원",
+              "conversion": "multiply by 1 to million KRW",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://kind.krx.co.kr/external/2026/11/03/000445/20261102000953/70956.htm"
+            },
+            "operatingIncome": {
+              "lineItem": "영업이익",
+              "rawValue": 101787.0,
+              "rawUnit": "백만원",
+              "conversion": "multiply by 1 to million KRW",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://kind.krx.co.kr/external/2026/11/03/000445/20261102000953/70956.htm"
+            }
+          },
+          "revenue": 535934.0,
+          "operatingIncome": 101787.0
+        }
+      ]
+    },
+    "KRX:356860": {
+      "reportingCurrency": "KRW",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "sourceType": "filing",
+          "source": "KRX KIND official preliminary consolidated earnings disclosure",
+          "sourceUrl": "https://kind.krx.co.kr/external/2026/11/05/000643/20261029000068/70956.htm",
+          "filingUrl": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261105000643",
+          "publishedAt": "2026-11-05T16:10:00+09:00",
+          "verifiedAt": "2026-11-12",
+          "observedAt": "2026-11-12T09:05:10.620143+00:00",
+          "basis": "K-IFRS consolidated; preliminary standalone three-month results",
+          "releaseType": "preliminary",
+          "preliminary": true,
+          "sourceSha256": "6cc26fd5b694c4a84510017e67c116d6d7ea89bd03f2668cb8b7fe82475d0796",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "매출액",
+              "rawValue": 93965.0,
+              "rawUnit": "백만원",
+              "conversion": "multiply by 1 to million KRW",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://kind.krx.co.kr/external/2026/11/05/000643/20261029000068/70956.htm"
+            },
+            "operatingIncome": {
+              "lineItem": "영업이익",
+              "rawValue": 16595.0,
+              "rawUnit": "백만원",
+              "conversion": "multiply by 1 to million KRW",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://kind.krx.co.kr/external/2026/11/05/000643/20261029000068/70956.htm"
+            }
+          },
+          "revenue": 93965.0,
+          "operatingIncome": 16595.0
+        }
+      ]
+    },
+    "KRX:090460": {
+      "reportingCurrency": "KRW",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "sourceType": "filing",
+          "source": "KRX KIND official preliminary consolidated earnings disclosure",
+          "sourceUrl": "https://kind.krx.co.kr/external/2026/11/03/000120/20261028001673/99626.htm",
+          "filingUrl": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261103000120",
+          "publishedAt": "2026-11-03T09:56:00+09:00",
+          "verifiedAt": "2026-11-12",
+          "observedAt": "2026-11-12T09:05:21.821380+00:00",
+          "basis": "K-IFRS consolidated; preliminary standalone three-month results",
+          "releaseType": "preliminary",
+          "preliminary": true,
+          "sourceSha256": "8b68256c9648f613bbdb30112bcabe751694513ee6f16e543deb4652c43dedec",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "매출액",
+              "rawValue": 432041.0,
+              "rawUnit": "백만원",
+              "conversion": "multiply by 1 to million KRW",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://kind.krx.co.kr/external/2026/11/03/000120/20261028001673/99626.htm"
+            },
+            "operatingIncome": {
+              "lineItem": "영업이익",
+              "rawValue": 30509.0,
+              "rawUnit": "백만원",
+              "conversion": "multiply by 1 to million KRW",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://kind.krx.co.kr/external/2026/11/03/000120/20261028001673/99626.htm"
+            }
+          },
+          "revenue": 432041.0,
+          "operatingIncome": 30509.0
+        }
+      ]
+    },
+    "KRX:005290": {
+      "reportingCurrency": "KRW",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "sourceType": "filing",
+          "source": "KRX KIND official preliminary consolidated earnings disclosure",
+          "sourceUrl": "https://kind.krx.co.kr/external/2026/11/03/000296/20261029000417/70956.htm",
+          "filingUrl": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261103000296",
+          "publishedAt": "2026-11-03T14:18:00+09:00",
+          "verifiedAt": "2026-11-12",
+          "observedAt": "2026-11-12T09:05:21.848571+00:00",
+          "basis": "K-IFRS consolidated; preliminary standalone three-month results",
+          "releaseType": "preliminary",
+          "preliminary": true,
+          "sourceSha256": "b882373ab4c44eb6ca53c1c849997a6fb74c6f911a508e86f46279e565cfe4a0",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "매출액",
+              "rawValue": 370826.0,
+              "rawUnit": "백만원",
+              "conversion": "multiply by 1 to million KRW",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://kind.krx.co.kr/external/2026/11/03/000296/20261029000417/70956.htm"
+            },
+            "operatingIncome": {
+              "lineItem": "영업이익",
+              "rawValue": 61050.0,
+              "rawUnit": "백만원",
+              "conversion": "multiply by 1 to million KRW",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://kind.krx.co.kr/external/2026/11/03/000296/20261029000417/70956.htm"
+            }
+          },
+          "revenue": 370826.0,
+          "operatingIncome": 61050.0
+        }
+      ]
+    },
+    "KRX:104830": {
+      "reportingCurrency": "KRW",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "sourceType": "filing",
+          "source": "KRX KIND official preliminary consolidated earnings disclosure",
+          "sourceUrl": "https://kind.krx.co.kr/external/2026/11/09/000376/20261103000719/70956.htm",
+          "filingUrl": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261109000376",
+          "publishedAt": "2026-11-09T15:19:00+09:00",
+          "verifiedAt": "2026-11-12",
+          "observedAt": "2026-11-12T09:05:21.817852+00:00",
+          "basis": "K-IFRS consolidated; preliminary standalone three-month results",
+          "releaseType": "preliminary",
+          "preliminary": true,
+          "sourceSha256": "23baed45ac97dce63524321a85707a13ddde92f2173a53fed37ee0c17599b22e",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "매출액",
+              "rawValue": 102907.0,
+              "rawUnit": "백만원",
+              "conversion": "multiply by 1 to million KRW",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://kind.krx.co.kr/external/2026/11/09/000376/20261103000719/70956.htm"
+            },
+            "operatingIncome": {
+              "lineItem": "영업이익",
+              "rawValue": 20338.0,
+              "rawUnit": "백만원",
+              "conversion": "multiply by 1 to million KRW",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://kind.krx.co.kr/external/2026/11/09/000376/20261103000719/70956.htm"
+            }
+          },
+          "revenue": 102907.0,
+          "operatingIncome": 20338.0
+        }
+      ]
+    },
+    "KRX:077360": {
+      "reportingCurrency": "KRW",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "sourceType": "filing",
+          "source": "KRX KIND official preliminary consolidated earnings disclosure",
+          "sourceUrl": "https://kind.krx.co.kr/external/2026/11/05/000184/20261104000490/70956.htm",
+          "filingUrl": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261105000184",
+          "publishedAt": "2026-11-05T10:33:00+09:00",
+          "verifiedAt": "2026-11-12",
+          "observedAt": "2026-11-12T09:05:21.777412+00:00",
+          "basis": "K-IFRS consolidated; preliminary standalone three-month results",
+          "releaseType": "preliminary",
+          "preliminary": true,
+          "sourceSha256": "12f029ec79563966bddb1b83c56368eb11dc7c52b06cd166dac4799f01b73a60",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "매출액",
+              "rawValue": 99545.0,
+              "rawUnit": "백만원",
+              "conversion": "multiply by 1 to million KRW",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://kind.krx.co.kr/external/2026/11/05/000184/20261104000490/70956.htm"
+            },
+            "operatingIncome": {
+              "lineItem": "영업이익",
+              "rawValue": 10234.0,
+              "rawUnit": "백만원",
+              "conversion": "multiply by 1 to million KRW",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://kind.krx.co.kr/external/2026/11/05/000184/20261104000490/70956.htm"
+            }
+          },
+          "revenue": 99545.0,
+          "operatingIncome": 10234.0
+        }
+      ]
+    },
+    "KRX:095340": {
+      "reportingCurrency": "KRW",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "sourceType": "filing",
+          "source": "KRX KIND official preliminary consolidated earnings disclosure",
+          "sourceUrl": "https://kind.krx.co.kr/external/2026/10/27/000052/20261022001140/70956.htm",
+          "filingUrl": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261027000052",
+          "publishedAt": "2026-10-27T09:09:00+09:00",
+          "verifiedAt": "2026-11-12",
+          "observedAt": "2026-11-12T09:05:21.822660+00:00",
+          "basis": "K-IFRS consolidated; preliminary standalone three-month results",
+          "releaseType": "preliminary",
+          "preliminary": true,
+          "sourceSha256": "251ec14740ce263f6bbb804f026fd7e77fe5f538760fe066e020914c3c948c2a",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "매출액",
+              "rawValue": 71775.0,
+              "rawUnit": "백만원",
+              "conversion": "multiply by 1 to million KRW",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://kind.krx.co.kr/external/2026/10/27/000052/20261022001140/70956.htm"
+            },
+            "operatingIncome": {
+              "lineItem": "영업이익",
+              "rawValue": 21842.0,
+              "rawUnit": "백만원",
+              "conversion": "multiply by 1 to million KRW",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://kind.krx.co.kr/external/2026/10/27/000052/20261022001140/70956.htm"
+            }
+          },
+          "revenue": 71775.0,
+          "operatingIncome": 21842.0
+        }
+      ]
+    },
+    "KRX:005930": {
+      "reportingCurrency": "KRW",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "sourceType": "filing",
+          "source": "KRX KIND official preliminary consolidated earnings disclosure",
+          "sourceUrl": "https://kind.krx.co.kr/external/2026/10/29/000087/20261027000218/99626.htm",
+          "filingUrl": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261029000087",
+          "publishedAt": "2026-10-29T09:50:00+09:00",
+          "verifiedAt": "2026-11-12",
+          "observedAt": "2026-11-12T09:04:59.015324+00:00",
+          "basis": "K-IFRS consolidated; preliminary standalone three-month results",
+          "releaseType": "preliminary",
+          "preliminary": true,
+          "sourceSha256": "ae65ac4e12fd40dc695ca07b65cd76860e388cf61513e78248f903fe77354926",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "매출액",
+              "rawValue": 1952532.0,
+              "rawUnit": "억원",
+              "conversion": "multiply by 100 to million KRW",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://kind.krx.co.kr/external/2026/10/29/000087/20261027000218/99626.htm"
+            },
+            "operatingIncome": {
+              "lineItem": "영업이익",
+              "rawValue": 1074405.0,
+              "rawUnit": "억원",
+              "conversion": "multiply by 100 to million KRW",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://kind.krx.co.kr/external/2026/10/29/000087/20261027000218/99626.htm"
+            }
+          },
+          "revenue": 195253200.0,
+          "operatingIncome": 107440500.0,
+          "note": "10월29일 상세 공시의 억원 단위 수치. 같은 날 10:00 정정은 10월8일 조원 단위 가이던스 공시를 정정하며 상세 수치와 반올림 범위에서 일치함."
+        }
+      ]
+    },
+    "KRX:166090": {
+      "reportingCurrency": "KRW",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "sourceType": "filing",
+          "source": "KRX KIND official Q3 consolidated quarterly report, section 2-2 consolidated income statement, current three-month column",
+          "sourceUrl": "https://kind.krx.co.kr/external/2026/11/12/000867/20261112001685/11013.htm",
+          "filingUrl": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261112000867",
+          "publishedAt": "2026-11-12T16:18:00+09:00",
+          "verifiedAt": "2026-11-12",
+          "observedAt": "2026-11-12T09:07:19.752928+00:00",
+          "basis": "K-IFRS consolidated; three-month column in official quarterly report",
+          "releaseType": "quarterly_report",
+          "sourceSha256": "5e3f0874bb412189bc95e67ff9b38ad34dd5f00376f062816f10e67521f69f3d",
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "수익",
+              "rawValue": 94859437263,
+              "rawUnit": "KRW",
+              "conversion": "divide by 1000000 to million KRW",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "column": "제20기 3분기, 3개월",
+              "sourceUrl": "https://kind.krx.co.kr/external/2026/11/12/000867/20261112001685/11013.htm"
+            },
+            "operatingIncome": {
+              "lineItem": "영업이익(손실)",
+              "rawValue": 27102382761,
+              "rawUnit": "KRW",
+              "conversion": "divide by 1000000 to million KRW",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "column": "제20기 3분기, 3개월",
+              "sourceUrl": "https://kind.krx.co.kr/external/2026/11/12/000867/20261112001685/11013.htm"
+            }
+          },
+          "revenue": 94859.437263,
+          "operatingIncome": 27102.382761
+        }
+      ]
+    }
+  }
+}
