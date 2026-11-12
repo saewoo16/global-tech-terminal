@@ -95,7 +95,12 @@ class PartialIndexPrices(unittest.TestCase):
     records=e['priceSeries'][index];values=[];missing=set()
     for r in records:
      a=r['closes'].get(start);b=r['closes'].get(end)
-     if (r['code'],start) in conflicts or not a or not b or not a.get('close') or not b.get('close'):
+     def valid_bar(bar):
+      if not bar: return False
+      prices=[bar.get(k) for k in ('open','high','low','close')]
+      if not all(isinstance(v,(int,float)) and v>0 for v in prices): return False
+      return bar['low']<=min(bar['open'],bar['close'])<=max(bar['open'],bar['close'])<=bar['high'] and (bar.get('volume') or 0)>0
+     if (r['code'],start) in conflicts or (r['code'],end) in conflicts or not valid_bar(a) or not valid_bar(b):
       missing.add(r['code']);continue
      values.append({'code':r['code'],'changePct':(b['close']/a['close']-1)*100})
     declared=e.get('missingConstituents',{}).get(index,[])

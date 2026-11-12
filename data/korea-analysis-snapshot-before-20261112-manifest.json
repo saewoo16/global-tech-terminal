@@ -1,0 +1,16 @@
+{
+  "sourceCommit": "5ee100cdacf0dab100ed33cfa249e7ad3f1a0839",
+  "asOf": "2026-11-11",
+  "file": "data/korea-analysis-snapshot-before-20261112.json.gz",
+  "compression": "gzip",
+  "sha256": "b7fdc8109036bf8d5f149d719516a66a02ffc658aef33cdd7b99e345afb502ca",
+  "sections": [
+    "rankings",
+    "themes",
+    "sectorReturns",
+    "heatmaps",
+    "indexMovers",
+    "highsScreen"
+  ],
+  "note": "Previous published current-panel snapshot retained before the Nov12 refresh; original dated evidence files and briefing archives unchanged."
+}

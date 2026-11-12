@@ -1,0 +1,248 @@
+{
+  "asOf": "2026-11-12",
+  "retrievedAt": "2026-11-12T08:34:15.852712+00:00",
+  "indices": {
+    "KOSPI": {
+      "stockEndType": "index",
+      "itemCode": "KOSPI",
+      "reutersCode": "KOSPI",
+      "symbolCode": "KOSPI",
+      "stockName": "코스피",
+      "itemLogoUrl": "https://ssl.pstatic.net/imgstock/fn/real/logo/index/IndexKOSPI.svg",
+      "itemLogoPngUrl": "https://ssl.pstatic.net/imgstock/fn/real/logo/png/index/IndexKOSPI.png",
+      "closePrice": "5,342.73",
+      "compareToPreviousClosePrice": "-32.63",
+      "compareToPreviousPrice": {
+        "code": "5",
+        "text": "하락",
+        "name": "FALLING"
+      },
+      "fluctuationsRatio": "-0.61",
+      "marketStatus": "CLOSE",
+      "localTradedAt": "2026-11-12T16:15:00+09:00",
+      "stockExchangeType": {
+        "code": "KS",
+        "zoneId": "Asia/Seoul",
+        "nationType": "KOR",
+        "delayTime": 0,
+        "startTime": "0900",
+        "endTime": "1530",
+        "closePriceSendTime": "1630",
+        "nameKor": "코스피",
+        "nameEng": "KOSPI",
+        "stockType": "domestic",
+        "nationCode": "KOR",
+        "nationName": "대한민국",
+        "name": "KOSPI"
+      },
+      "imageCharts": {
+        "candleMonth": "https://financial-vn.pstatic.net/chart/mobile/candle/month/KOSPI_end.png",
+        "areaYear": "https://financial-vn.pstatic.net/chart/mobile/area/year/KOSPI_end.png",
+        "areaYearTen": "https://financial-vn.pstatic.net/chart/mobile/area/year10/KOSPI_end.png",
+        "areaMonthThree": "https://financial-vn.pstatic.net/chart/mobile/area/month3/KOSPI_end.png",
+        "candleWeek": "https://financial-vn.pstatic.net/chart/mobile/candle/week/KOSPI_end.png",
+        "candleDay": "https://financial-vn.pstatic.net/chart/mobile/candle/day/KOSPI_end.png",
+        "areaYearThree": "https://financial-vn.pstatic.net/chart/mobile/area/year3/KOSPI_end.png",
+        "day": "https://financial-vn.pstatic.net/chart/mobile/day/KOSPI_end.png",
+        "day_up_tablet": "https://financial-vn.pstatic.net/chart/mobile/mini/KOSPI_end_up_tablet.png",
+        "transparent": "https://financial-vn.pstatic.net/chart/mobile/mini/KOSPI_transparent.png",
+        "day_up": "https://financial-vn.pstatic.net/chart/mobile/mini/KOSPI_end_up.png"
+      },
+      "scriptChartTypes": [
+        "candleMinuteFive",
+        "candleDay",
+        "candleWeek",
+        "candleMonth",
+        "day",
+        "areaMonthThree",
+        "areaYear",
+        "areaYearThree",
+        "areaYearTen"
+      ],
+      "delayTime": 0,
+      "delayTimeName": "실시간",
+      "endUrl": "https://m.stock.naver.com/domestic/index/KOSPI",
+      "newPcUrl": "https://stock.naver.com/domestic/index/KOSPI",
+      "chartIqEndUrl": "https://m.stock.naver.com/fchart/domestic/index/KOSPI",
+      "nationType": "KOR",
+      "nationName": "대한민국",
+      "imageChartUrlInfo": {
+        "line": {
+          "day": "https://financial-vn.pstatic.net/chart/mobile/day/KOSPI_end.png",
+          "month3": "https://financial-vn.pstatic.net/chart/mobile/area/month3/KOSPI_end.png",
+          "year": "https://financial-vn.pstatic.net/chart/mobile/area/year/KOSPI_end.png",
+          "year3": "https://financial-vn.pstatic.net/chart/mobile/area/year3/KOSPI_end.png",
+          "year5": "https://financial-vn.pstatic.net/chart/mobile/area/year5/KOSPI_end.png",
+          "year10": "https://financial-vn.pstatic.net/chart/mobile/area/year10/KOSPI_end.png"
+        },
+        "candle": {
+          "day": "https://financial-vn.pstatic.net/chart/mobile/candle/day/KOSPI_end.png",
+          "week": "https://financial-vn.pstatic.net/chart/mobile/candle/week/KOSPI_end.png",
+          "month": "https://financial-vn.pstatic.net/chart/mobile/candle/month/KOSPI_end.png"
+        },
+        "mini": {
+          "transparent": "https://financial-vn.pstatic.net/chart/mobile/mini/KOSPI_transparent.png",
+          "dayUp": "https://financial-vn.pstatic.net/chart/mobile/mini/KOSPI_end_up.png",
+          "dayUpTablet": "https://financial-vn.pstatic.net/chart/mobile/mini/KOSPI_end_up_tablet.png"
+        }
+      }
+    },
+    "KOSDAQ": {
+      "stockEndType": "index",
+      "itemCode": "KOSDAQ",
+      "reutersCode": "KOSDAQ",
+      "symbolCode": "KOSDAQ",
+      "stockName": "코스닥",
+      "itemLogoUrl": "https://ssl.pstatic.net/imgstock/fn/real/logo/index/IndexKOSDAQ.svg",
+      "itemLogoPngUrl": "https://ssl.pstatic.net/imgstock/fn/real/logo/png/index/IndexKOSDAQ.png",
+      "closePrice": "696.53",
+      "compareToPreviousClosePrice": "-8.57",
+      "compareToPreviousPrice": {
+        "code": "5",
+        "text": "하락",
+        "name": "FALLING"
+      },
+      "fluctuationsRatio": "-1.22",
+      "marketStatus": "CLOSE",
+      "localTradedAt": "2026-11-12T16:15:00+09:00",
+      "stockExchangeType": {
+        "code": "KQ",
+        "zoneId": "Asia/Seoul",
+        "nationType": "KOR",
+        "delayTime": 0,
+        "startTime": "0900",
+        "endTime": "1530",
+        "closePriceSendTime": "1630",
+        "nameKor": "코스닥",
+        "nameEng": "KOSDAQ",
+        "stockType": "domestic",
+        "nationCode": "KOR",
+        "nationName": "대한민국",
+        "name": "KOSDAQ"
+      },
+      "imageCharts": {
+        "transparent": "https://financial-vn.pstatic.net/chart/mobile/mini/KOSDAQ_transparent.png",
+        "areaYear": "https://financial-vn.pstatic.net/chart/mobile/area/year/KOSDAQ_end.png",
+        "day_up": "https://financial-vn.pstatic.net/chart/mobile/mini/KOSDAQ_end_up.png",
+        "candleWeek": "https://financial-vn.pstatic.net/chart/mobile/candle/week/KOSDAQ_end.png",
+        "candleDay": "https://financial-vn.pstatic.net/chart/mobile/candle/day/KOSDAQ_end.png",
+        "areaMonthThree": "https://financial-vn.pstatic.net/chart/mobile/area/month3/KOSDAQ_end.png",
+        "day": "https://financial-vn.pstatic.net/chart/mobile/day/KOSDAQ_end.png",
+        "areaYearTen": "https://financial-vn.pstatic.net/chart/mobile/area/year10/KOSDAQ_end.png",
+        "day_up_tablet": "https://financial-vn.pstatic.net/chart/mobile/mini/KOSDAQ_end_up_tablet.png",
+        "candleMonth": "https://financial-vn.pstatic.net/chart/mobile/candle/month/KOSDAQ_end.png",
+        "areaYearThree": "https://financial-vn.pstatic.net/chart/mobile/area/year3/KOSDAQ_end.png"
+      },
+      "scriptChartTypes": [
+        "candleMinuteFive",
+        "candleDay",
+        "candleWeek",
+        "candleMonth",
+        "day",
+        "areaMonthThree",
+        "areaYear",
+        "areaYearThree",
+        "areaYearTen"
+      ],
+      "delayTime": 0,
+      "delayTimeName": "실시간",
+      "endUrl": "https://m.stock.naver.com/domestic/index/KOSDAQ",
+      "newPcUrl": "https://stock.naver.com/domestic/index/KOSDAQ",
+      "chartIqEndUrl": "https://m.stock.naver.com/fchart/domestic/index/KOSDAQ",
+      "nationType": "KOR",
+      "nationName": "대한민국",
+      "imageChartUrlInfo": {
+        "line": {
+          "day": "https://financial-vn.pstatic.net/chart/mobile/day/KOSDAQ_end.png",
+          "month3": "https://financial-vn.pstatic.net/chart/mobile/area/month3/KOSDAQ_end.png",
+          "year": "https://financial-vn.pstatic.net/chart/mobile/area/year/KOSDAQ_end.png",
+          "year3": "https://financial-vn.pstatic.net/chart/mobile/area/year3/KOSDAQ_end.png",
+          "year5": "https://financial-vn.pstatic.net/chart/mobile/area/year5/KOSDAQ_end.png",
+          "year10": "https://financial-vn.pstatic.net/chart/mobile/area/year10/KOSDAQ_end.png"
+        },
+        "candle": {
+          "day": "https://financial-vn.pstatic.net/chart/mobile/candle/day/KOSDAQ_end.png",
+          "week": "https://financial-vn.pstatic.net/chart/mobile/candle/week/KOSDAQ_end.png",
+          "month": "https://financial-vn.pstatic.net/chart/mobile/candle/month/KOSDAQ_end.png"
+        },
+        "mini": {
+          "transparent": "https://financial-vn.pstatic.net/chart/mobile/mini/KOSDAQ_transparent.png",
+          "dayUp": "https://financial-vn.pstatic.net/chart/mobile/mini/KOSDAQ_end_up.png",
+          "dayUpTablet": "https://financial-vn.pstatic.net/chart/mobile/mini/KOSDAQ_end_up_tablet.png"
+        }
+      }
+    }
+  },
+  "sourceChecks": [
+    {
+      "id": "kr-close-yonhap-20261112",
+      "title": "11월12일 국내증시 마감 yonhap",
+      "url": "https://www.yna.co.kr/amp/view/AKR20261112138000008",
+      "retrievedAt": "2026-11-12T08:33:42.254209+00:00",
+      "rawSha256": "2d79acb7834bce20520d186b65ecd3736a0aa8c6c3219a508fa33bbcfa91a81a"
+    },
+    {
+      "id": "kr-close-fn-20261112",
+      "title": "11월12일 국내증시 마감 fn",
+      "url": "https://www.fnnews.com/news/202611121539360346",
+      "retrievedAt": "2026-11-12T08:33:47.087383+00:00",
+      "rawSha256": "ba440e0404629139a49db6f965097b56d97fcdc51bfb98af8c5ba2514e992d66"
+    },
+    {
+      "id": "nov12-index-KOSPI",
+      "title": "KOSPI 정규장 완료 지수",
+      "url": "https://m.stock.naver.com/api/index/KOSPI/basic",
+      "retrievedAt": "2026-11-12T08:34:15.852712+00:00",
+      "rawSha256": "e293efb1df1b5c6f8ae527a006fe1c79178fa81cc799dcd42148511868e95474"
+    },
+    {
+      "id": "nov12-index-KOSDAQ",
+      "title": "KOSDAQ 정규장 완료 지수",
+      "url": "https://m.stock.naver.com/api/index/KOSDAQ/basic",
+      "retrievedAt": "2026-11-12T08:34:15.852712+00:00",
+      "rawSha256": "6d9b1bfc20c47e1687c292660249ae4bc110c46044c1b08e04e852906f2a0bd6"
+    },
+    {
+      "id": "nov12-flow-KOSPI",
+      "title": "KOSPI NAVER KRX 파라미터 수급",
+      "url": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=KOSPI&bizdate=20261112&startIdx=0&pageSize=30",
+      "retrievedAt": "2026-11-12T08:29:45.522468+00:00"
+    },
+    {
+      "id": "nov12-flow-KOSDAQ",
+      "title": "KOSDAQ NAVER KRX 파라미터 수급",
+      "url": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=KOSDAQ&bizdate=20261112&startIdx=0&pageSize=30",
+      "retrievedAt": "2026-11-12T08:29:53.618697+00:00"
+    }
+  ],
+  "sessionGate": {
+    "checkedAt": "2026-11-12T08:39:15.827373+00:00",
+    "officialCalendarUrl": "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp",
+    "year": 2026,
+    "holidays": [
+      "2026-01-01",
+      "2026-02-16",
+      "2026-02-17",
+      "2026-02-18",
+      "2026-03-02",
+      "2026-05-01",
+      "2026-05-05",
+      "2026-05-25",
+      "2026-06-03",
+      "2026-07-17",
+      "2026-08-17",
+      "2026-09-24",
+      "2026-09-25",
+      "2026-10-05",
+      "2026-10-09",
+      "2026-12-25",
+      "2026-12-31"
+    ],
+    "marketDates": {
+      "KOSPI": "2026-11-12",
+      "KOSDAQ": "2026-11-12"
+    },
+    "completed": true,
+    "note": "공식 휴장일 목록에 없는 평일이며 두 시장의 당일 완료 지수와17:30 이후 확인을 충족. 수능 특별시간은11월19일로 오늘에 적용하지 않음."
+  }
+}
