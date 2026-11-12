@@ -1,0 +1,82 @@
+name: Deploy static site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  # GITHUB_TOKEN collector pushes do not emit a new push workflow event.
+  workflow_run:
+    workflows: [Update company data, Korean close ETF and official liquidity]
+    types: [completed]
+    branches: [main]
+
+permissions:
+  contents: read
+
+# Finish the current production deployment; coalesce pending updates.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      # Keep artifact, OIDC deployment identity and run SHA on one exact commit.
+      # The next step skips stale queued runs instead of rolling production back.
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - name: Skip an already published unchanged snapshot
+        id: snapshot
+        run: |
+          python - <<'PYCODE'
+          import json, os, subprocess
+          from urllib.request import urlopen
+          sha = subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip()
+          latest = subprocess.check_output(['git', 'ls-remote', 'origin', 'refs/heads/main'], text=True).split()[0]
+          needed = sha == latest
+          try:
+              with urlopen('https://saewoo16.github.io/global-tech-terminal/deployment-version.json?sha=' + sha, timeout=10) as response:
+                  needed = needed and json.load(response).get('commit') != sha
+          except Exception:
+              pass
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+              output.write('needed=' + str(needed).lower() + '\n')
+          PYCODE
+      - uses: actions/setup-python@v5
+        if: steps.snapshot.outputs.needed == 'true'
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: pip install -r requirements.txt
+        if: steps.snapshot.outputs.needed == 'true'
+      - name: Validate exact publication snapshot
+        if: steps.snapshot.outputs.needed == 'true'
+        run: bash scripts/validate_publication.sh
+      - name: Stage unchanged public files
+        if: steps.snapshot.outputs.needed == 'true'
+        run: python scripts/build_pages_artifact.py --output _site
+      - uses: actions/configure-pages@v5
+        if: steps.snapshot.outputs.needed == 'true'
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.snapshot.outputs.needed == 'true'
+        with:
+          path: _site
+      - name: Deploy validated snapshot
+        if: steps.snapshot.outputs.needed == 'true'
+        id: deployment
+        uses: actions/deploy-pages@v5
+      - name: Verify live deployment identity and entry page
+        if: steps.snapshot.outputs.needed == 'true'
+        run: python scripts/verify_pages_publication.py --site https://saewoo16.github.io/global-tech-terminal/ --manifest _site/deployment-version.json

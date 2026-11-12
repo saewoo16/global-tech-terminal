@@ -5,9 +5,9 @@
 ## 1. 설치·배포
 1. GitHub에서 새 **Public** repository를 `global-tech-terminal` 이름으로 생성합니다.
 2. 이 ZIP 파일의 **내부 파일/폴더**(`index.html`, `data/`, `scripts/`, `.github/`, `requirements.txt`)을 저장소 **루트**에 업로드합니다. 숨김 폴더 `.github`가 빠지면 자동 갱신이 되지 않습니다. 파일 수가 많거나 숨김 폴더 업로드가 어려우면 GitHub Desktop으로 업로드합니다.
-3. 저장소의 `Settings → Pages → Build and deployment`에서 `Deploy from a branch`, `main`, `/(root)`를 선택하고 저장합니다.
+3. 저장소의 `Settings → Pages → Build and deployment`에서 `GitHub Actions`를 선택합니다. `.github/workflows/pages.yml`의 정적 배포 작업을 사용합니다.
 4. 배포 URL은 `https://GITHUB_USERNAME.github.io/global-tech-terminal/` 형태입니다. (실제 이름으로 바꿔야 합니다.)
-5. `Settings → Actions → General → Workflow permissions`에서 `Read and write permissions`를 허용합니다. 조직/계정 정책상 막혀 있으면 관리자 설정이 필요합니다.
+5. 저장소 전체 기본 권한을 넓히지 않습니다. 기존 수집기는 `contents: write`, Pages 배포 job만 `contents: read`, `pages: write`, `id-token: write`를 사용합니다. 조직 정책이 차단하면 권한을 우회하지 않습니다.
 6. `Actions → Update company data → Run workflow`를 눌러 **기업 자료 첫 수집**을 진행합니다. `data/market.json`에 갱신된 데이터를 커밋하면 대시보드에 표시됩니다.
 7. 이후 평일 하루 1회 자동 실행되도록 되어 있습니다. GitHub Actions 스케줄 실행은 지연되거나 정책상 비활성화될 수 있습니다.
 
@@ -1002,3 +1002,11 @@ KOSPI/KOSDAQ별 외국인·기관 순매수금액 상위15는 전체 CSV를 당�
 - 11월 11일 완료 정규장 시세 247개를 기존 수집 자료 재사용 및 독립 종가 대조 후 반영합니다. Shopify 공식 발표와 Nasdaq 공지의 2025-03-31 이전 효력일을 확인하여 현재 매핑을 NASDAQ:SHOP으로 교정하고 기존 시세·재무 이력을 유지합니다. 기존 재무·시가총액·주식수 관측시각은 변경하지 않습니다. 6개 Yahoo 일봉의 OHLC 모순은 정상 TradingView 동일 세션 봉으로 검증하며 원자료를 보존합니다. 실제 검증시각과 범위는 `price-refresh-evidence-20261111.json`, 원문은 `company-price-raw-20261111.tar.gz`에 있습니다.
 
 - 예정 수집 작업은 과거 조정종가를 재작성하여 기존 검증과 충돌하면서 게시 전 중단되었습니다. 자동 수집은 기존 이력과 겹치는 조정종가가 일치할 때만 새 날짜를 추가하며, 불일치하면 기존 시계열을 유지하고 검토 대기 상태를 남깁니다. 배당·분할 보정 변경을 검증 없이 과거 자료에 덮어쓰지 않습니다.
+
+## 정적 Pages 배포 (2026-11-12)
+
+- `Deploy static site`는 main push, 수동 실행, 기존 두 수집 workflow의 성공 종료에 연결됩니다. GITHUB_TOKEN 수집 커밋의 push 이벤트 누락에 의존하지 않습니다. 수집 일정과 기존 검증은 유지합니다.
+- 실행 이벤트의 정확한 커밋을 checkout하고 main보다 오래된 대기 실행은 건너뜁니다. 해당 불변 스냅샷 전체 검증 후 `index.html`, `assets/`, `data/`의 추적 파일을 바이트 그대로 배포합니다. 데이터·차트·날짜·출처를 재작성하지 않으며 Jekyll을 실행하지 않습니다. 새 미추적 파일이나 심볼릭 링크는 포함하지 않습니다.
+- `deployment-version.json`은 실제 배포 커밋과 전체 공개 파일 해시를 기록합니다. 공개 manifest와 index 해시를 확인해야 성공입니다. 저장소의 원자료/스크립트/테스트는 삭제하지 않습니다.
+- Pages concurrency는 실행 중 배포를 취소하지 않고 대기 중 최신 실행을 유지합니다. 예약/러너 큐 지연 자체의 보장은 없으며 timeout은 러너 대기시간을 제한하지 않습니다. 3~5분 이상 러너 미배정은 별도 지연으로 확인하고, 후속 성공 배포가 없고 실패/취소가 확정된 경우에만 기존 승인 범위에서 한 번 복구합니다. 대기 중 실행을 무작정 취소하거나 빈 커밋을 만들지 않습니다.
+- 최초 Source 전환 시 기존 공개 사이트를 유지한 채 이 workflow의 성공 및 실제 화면을 확인합니다. 새 인증키·유료 서비스·새 수집 일정은 필요하지 않습니다.
