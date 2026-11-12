@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-11-12T11:04:44.725169+00:00",
+  "latestAvailable": "2026-11-10",
+  "coverage": {
+    "KOSPI": 936,
+    "KOSDAQ": 1832
+  },
+  "newExports": 2,
+  "reusedExports": 58,
+  "followingSessionChecks": [
+    {
+      "market": "KOSDAQ",
+      "date": "2026-11-11",
+      "sourceDisplayTime": "2026.11.12 PM 08:03:50",
+      "visibleResult": "데이터가 없습니다."
+    },
+    {
+      "market": "KOSPI",
+      "date": "2026-11-11",
+      "sourceDisplayTime": "2026.11.12 PM 08:04:01",
+      "visibleResult": "데이터가 없습니다."
+    }
+  ],
+  "earlierCheck": "18:08 KST Nov10 had no data in both markets; this later observation is separate."
+}
