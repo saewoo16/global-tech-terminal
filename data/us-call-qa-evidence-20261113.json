@@ -1,0 +1,15 @@
+{
+  "originalReleaseDate": "2026-11-12",
+  "ticker": "AMAT",
+  "checkedAt": "2026-11-13T01:22:01.998144+00:00",
+  "source": {
+    "id": "call_qa_AMAT_20261113",
+    "url": "https://stockanalysis.com/stocks/amat/transcripts/673413-q4-2026/",
+    "title": "Applied Materials Q4 2026 공개 전체 콜·Q&A (Stock Analysis/Quartr)",
+    "retrievedAt": "2026-11-13T01:22:01.998144+00:00",
+    "evidenceSha256": "ef212829d7b6c31d48c57586a57e833df9d1ccb8e26a2c7cbf8c6930e121ba48",
+    "note": "공개 제3자 콜 전사문을 실제 확인. 공식 녹음 대조 또는 원문 최초 공개 시각 확인을 뜻하지 않음. 원래 07시 cutoff 이후 보완. 해시는 웹 읽기 도구 응답 JSON."
+  },
+  "verifiedScope": "Third-party full transcript Q&A; official audio and original publication timestamp not independently verified. Full copyrighted transcript not redistributed.",
+  "rawEvidenceSha256": "ef212829d7b6c31d48c57586a57e833df9d1ccb8e26a2c7cbf8c6930e121ba48"
+}
