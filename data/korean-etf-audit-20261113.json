@@ -1,0 +1,3792 @@
+{
+  "auditedAt": "2026-11-13T08:45:10.623917+00:00",
+  "asOf": "2026-11-13",
+  "sourceObservedRange": [
+    "2026-11-13T08:41:03.697074+00:00",
+    "2026-11-13T08:42:12.405195+00:00"
+  ],
+  "candidateSha256": "f135749e82d82a51d46894f58b09f80da71f5f7acb54ff961ea6e65904a34031",
+  "previousSha256": "3e4c76ebc9da7dc743173071118cbdb92e2894b2fc817939c46ad207239b354f",
+  "fundCount": 39,
+  "sourceCount": 79,
+  "previousDailyBarsPreserved": 8798,
+  "freshDailyCounts": {
+    "2026-11-13": 39
+  },
+  "holdingsDateCounts": {
+    "2026-11-13": 39
+  },
+  "independentMbnFinalOhlcMatches": 37,
+  "independentMbnPriorCloseMatches": 37,
+  "independentCombinedFinalOhlcMatches": 39,
+  "independentCombinedPriorCloseMatches": 39,
+  "providerRegularCloseMatches": 39,
+  "providerExactRegularClosePointCount": 39,
+  "overlappingVolumeRevisionsNotAppliedCount": 17,
+  "periodBases": {
+    "day": {
+      "2026-11-12": 39
+    },
+    "week": {
+      "2026-11-06": 39
+    },
+    "month": {
+      "2026-10-13": 39
+    }
+  },
+  "funds": [
+    {
+      "code": "091160",
+      "name": "KODEX 반도체",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 101500,
+        "high": 103300,
+        "low": 98085,
+        "close": 98520,
+        "volume": 1760657
+      },
+      "historyUnchanged": true,
+      "preservedBars": 247,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 99355,
+          "pct": -0.8404207136027408
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 85400,
+          "pct": 15.362997658079625
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 133350,
+          "pct": -26.119235095613046
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2025-11-13",
+          "end": "2026-11-13",
+          "count": 245
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:10.252285+00:00",
+        "asOf": "2026-11-13T15:57:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 387,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 98520.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 98520.0,
+          "openPrice": 98520.0,
+          "highPrice": 98520.0,
+          "lowPrice": 98520.0,
+          "accumulatedTradingVolume": 1760198
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/009.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=091160",
+        "retrievedAt": "2026-11-13T08:41:48.268547+00:00",
+        "sha256": "4a2168f105a470420bddded160a9068673564f796d9e411ddedfa0f049f66832",
+        "file": "mbn/091160.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 101500,
+          "high": 103300,
+          "low": 98085,
+          "close": 98520,
+          "volume": 1760198,
+          "previousClose": 99355
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": false
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/003.xml",
+      "overlappingVolumeRevisionsNotApplied": [
+        "2026-11-12"
+      ]
+    },
+    {
+      "code": "139260",
+      "name": "TIGER 200 IT",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 103665,
+        "high": 105015,
+        "low": 98055,
+        "close": 99500,
+        "volume": 173382
+      },
+      "historyUnchanged": true,
+      "preservedBars": 247,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 101290,
+          "pct": -1.76720308026459
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 94220,
+          "pct": 5.603905752494165
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 121230,
+          "pct": -17.924606120597208
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2025-11-13",
+          "end": "2026-11-13",
+          "count": 245
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:09.549773+00:00",
+        "asOf": "2026-11-13T15:57:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 384,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 99500.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 99500.0,
+          "openPrice": 99500.0,
+          "highPrice": 99500.0,
+          "lowPrice": 99500.0,
+          "accumulatedTradingVolume": 173378
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/006.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=139260",
+        "retrievedAt": "2026-11-13T08:43:54.132806+00:00",
+        "sha256": "c3444ddbb43d1b349610a27dd7c4a96c42dec73a26ab13b9d5e09f28348deec3",
+        "file": "mbn/139260.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 103665,
+          "high": 105015,
+          "low": 98055,
+          "close": 99500,
+          "volume": 173378,
+          "previousClose": 101290
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": false
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/002.xml",
+      "overlappingVolumeRevisionsNotApplied": [
+        "2026-11-11",
+        "2026-11-12"
+      ]
+    },
+    {
+      "code": "091180",
+      "name": "KODEX 자동차",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 21965,
+        "high": 22700,
+        "low": 21965,
+        "close": 22240,
+        "volume": 154951
+      },
+      "historyUnchanged": true,
+      "preservedBars": 247,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 21965,
+          "pct": 1.2519918051445478
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 22365,
+          "pct": -0.5589090096132399
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 23922,
+          "pct": -7.031184683554892
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2025-11-13",
+          "end": "2026-11-13",
+          "count": 245
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:09.721093+00:00",
+        "asOf": "2026-11-13T15:47:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 307,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 22240.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 22240.0,
+          "openPrice": 22240.0,
+          "highPrice": 22240.0,
+          "lowPrice": 22240.0,
+          "accumulatedTradingVolume": 154950
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/008.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=091180",
+        "retrievedAt": "2026-11-13T08:43:54.869287+00:00",
+        "sha256": "3e40a50d57008fabf4068d22bcf2d51fc0cf04bab8a5024bf7440a09f8dd9ee8",
+        "file": "mbn/091180.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 21965,
+          "high": 22700,
+          "low": 21965,
+          "close": 22240,
+          "volume": 154950,
+          "previousClose": 21965
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": false
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/004.xml",
+      "overlappingVolumeRevisionsNotApplied": [
+        "2026-11-11",
+        "2026-11-12"
+      ]
+    },
+    {
+      "code": "091170",
+      "name": "KODEX 은행",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 14280,
+        "high": 14945,
+        "low": 14280,
+        "close": 14850,
+        "volume": 390612
+      },
+      "historyUnchanged": true,
+      "preservedBars": 247,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 14390,
+          "pct": 3.196664350243217
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 14310,
+          "pct": 3.7735849056603765
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 15145,
+          "pct": -1.9478375701551642
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2025-11-13",
+          "end": "2026-11-13",
+          "count": 245
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:10.330702+00:00",
+        "asOf": "2026-11-13T15:49:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 344,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 14850.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 14850.0,
+          "openPrice": 14850.0,
+          "highPrice": 14850.0,
+          "lowPrice": 14850.0,
+          "accumulatedTradingVolume": 390446
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/010.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=091170",
+        "retrievedAt": "2026-11-13T08:42:16.190695+00:00",
+        "sha256": "c6842b348b6ce4a70a39cae78a8e8736d3589ffeea3b1dcb2df044926f1544e8",
+        "file": "mbn/091170.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 14280,
+          "high": 14945,
+          "low": 14280,
+          "close": 14850,
+          "volume": 390446,
+          "previousClose": 14390
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": false
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/001.xml",
+      "overlappingVolumeRevisionsNotApplied": [
+        "2026-11-12"
+      ]
+    },
+    {
+      "code": "102970",
+      "name": "KODEX 증권",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 13675,
+        "high": 14050,
+        "low": 13495,
+        "close": 13585,
+        "volume": 908315
+      },
+      "historyUnchanged": true,
+      "preservedBars": 247,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 13235,
+          "pct": 2.6445032111824807
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 13405,
+          "pct": 1.342782543826937
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 15730,
+          "pct": -13.636363636363635
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2025-11-13",
+          "end": "2026-11-13",
+          "count": 245
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:09.663553+00:00",
+        "asOf": "2026-11-13T15:48:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 368,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 13585.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 13585.0,
+          "openPrice": 13585.0,
+          "highPrice": 13585.0,
+          "lowPrice": 13585.0,
+          "accumulatedTradingVolume": 908305
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/007.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=102970",
+        "retrievedAt": "2026-11-13T08:42:15.774854+00:00",
+        "sha256": "6f83ebaea5d0e8ca3ad0946aafbacfc1a4f1e7583387f16862b45f539ef016c8",
+        "file": "mbn/102970.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 13675,
+          "high": 14050,
+          "low": 13495,
+          "close": 13585,
+          "volume": 908305,
+          "previousClose": 13235
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": false
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/005.xml",
+      "overlappingVolumeRevisionsNotApplied": []
+    },
+    {
+      "code": "140700",
+      "name": "KODEX 보험",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 17405,
+        "high": 17595,
+        "low": 17095,
+        "close": 17155,
+        "volume": 46114
+      },
+      "historyUnchanged": true,
+      "preservedBars": 247,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 17205,
+          "pct": -0.29061319383899553
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 18150,
+          "pct": -5.482093663911847
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 19995,
+          "pct": -14.203550887721928
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2025-11-13",
+          "end": "2026-11-13",
+          "count": 245
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:14.496508+00:00",
+        "asOf": "2026-11-13T15:30:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 249,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 17155.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 17155.0,
+          "openPrice": 17155.0,
+          "highPrice": 17155.0,
+          "lowPrice": 17155.0,
+          "accumulatedTradingVolume": 46114
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/016.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=140700",
+        "retrievedAt": "2026-11-13T08:43:57.722773+00:00",
+        "sha256": "800319c7d452c6892002988a501f65936139ff1965fcdba69f7a6020da72522a",
+        "file": "mbn/140700.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 17405,
+          "high": 17595,
+          "low": 17095,
+          "close": 17155,
+          "volume": 46114,
+          "previousClose": 17205
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": true
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/012.xml",
+      "overlappingVolumeRevisionsNotApplied": []
+    },
+    {
+      "code": "117700",
+      "name": "KODEX 건설",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 5880,
+        "high": 6115,
+        "low": 5880,
+        "close": 5955,
+        "volume": 1804361
+      },
+      "historyUnchanged": true,
+      "preservedBars": 247,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 5845,
+          "pct": 1.8819503849443864
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 5545,
+          "pct": 7.394048692515787
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 6030,
+          "pct": -1.243781094527363
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2025-11-13",
+          "end": "2026-11-13",
+          "count": 245
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:14.652107+00:00",
+        "asOf": "2026-11-13T15:49:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 376,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 5955.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 5955.0,
+          "openPrice": 5955.0,
+          "highPrice": 5955.0,
+          "lowPrice": 5955.0,
+          "accumulatedTradingVolume": 1803263
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/019.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=117700",
+        "retrievedAt": "2026-11-13T08:43:57.573056+00:00",
+        "sha256": "a45cdd3b88c7218fb7e54a0cf840f8ea3ef2dce0bc08409832b09a27e42dd7fd",
+        "file": "mbn/117700.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 5880,
+          "high": 6115,
+          "low": 5880,
+          "close": 5955,
+          "volume": 1803263,
+          "previousClose": 5845
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": false
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/011.xml",
+      "overlappingVolumeRevisionsNotApplied": [
+        "2026-11-11"
+      ]
+    },
+    {
+      "code": "117680",
+      "name": "KODEX 철강",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 10185,
+        "high": 10345,
+        "low": 9945,
+        "close": 9965,
+        "volume": 20871
+      },
+      "historyUnchanged": true,
+      "preservedBars": 247,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 10075,
+          "pct": -1.0918114143920632
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 9920,
+          "pct": 0.4536290322580738
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 11432,
+          "pct": -12.832400279916023
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2025-11-13",
+          "end": "2026-11-13",
+          "count": 245
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:14.532141+00:00",
+        "asOf": "2026-11-13T15:30:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 150,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 9965.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 9965.0,
+          "openPrice": 9965.0,
+          "highPrice": 9965.0,
+          "lowPrice": 9965.0,
+          "accumulatedTradingVolume": 20871
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/018.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=117680",
+        "retrievedAt": "2026-11-13T08:42:19.823059+00:00",
+        "sha256": "3ae23b5c74de00361f7057de01281a1993b95f78fcf6e3a924dabd7ce1cea63d",
+        "file": "mbn/117680.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 10185,
+          "high": 10345,
+          "low": 9945,
+          "close": 9965,
+          "volume": 20871,
+          "previousClose": 10075
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": true
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/015.xml",
+      "overlappingVolumeRevisionsNotApplied": []
+    },
+    {
+      "code": "117460",
+      "name": "KODEX 에너지화학",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 11100,
+        "high": 11155,
+        "low": 10860,
+        "close": 10945,
+        "volume": 20795
+      },
+      "historyUnchanged": true,
+      "preservedBars": 247,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 11000,
+          "pct": -0.5000000000000004
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 10730,
+          "pct": 2.003727865796834
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 13887,
+          "pct": -21.185281198242954
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2025-11-13",
+          "end": "2026-11-13",
+          "count": 245
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:14.524228+00:00",
+        "asOf": "2026-11-13T15:30:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 128,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 10945.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 10945.0,
+          "openPrice": 10945.0,
+          "highPrice": 10945.0,
+          "lowPrice": 10945.0,
+          "accumulatedTradingVolume": 20795
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/017.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=117460",
+        "retrievedAt": "2026-11-13T08:42:20.668261+00:00",
+        "sha256": "6737a88b64bbe26dc103e21baf7caf927c1e7dd05502098c6a5c5450e558bd91",
+        "file": "mbn/117460.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 11100,
+          "high": 11155,
+          "low": 10860,
+          "close": 10945,
+          "volume": 20795,
+          "previousClose": 11000
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": true
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/013.xml",
+      "overlappingVolumeRevisionsNotApplied": []
+    },
+    {
+      "code": "102960",
+      "name": "KODEX 기계장비",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 9320,
+        "high": 9550,
+        "low": 9180,
+        "close": 9280,
+        "volume": 6005
+      },
+      "historyUnchanged": true,
+      "preservedBars": 247,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 9165,
+          "pct": 1.2547735951991212
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 8735,
+          "pct": 6.239267315397834
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 11781,
+          "pct": -21.22909769968594
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2025-11-13",
+          "end": "2026-11-13",
+          "count": 245
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:14.676345+00:00",
+        "asOf": "2026-11-13T15:30:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 109,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 9280.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 9280.0,
+          "openPrice": 9280.0,
+          "highPrice": 9280.0,
+          "lowPrice": 9280.0,
+          "accumulatedTradingVolume": 6005
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/020.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=102960",
+        "retrievedAt": "2026-11-13T08:42:20.301422+00:00",
+        "sha256": "b729b10500c4632ebb5b5433eaa43915adb9cb1f030de3364108b730d1f946d2",
+        "file": "mbn/102960.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 9320,
+          "high": 9550,
+          "low": 9180,
+          "close": 9280,
+          "volume": 6005,
+          "previousClose": 9165
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": true
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/014.xml",
+      "overlappingVolumeRevisionsNotApplied": []
+    },
+    {
+      "code": "140710",
+      "name": "KODEX 운송",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 6600,
+        "high": 6725,
+        "low": 6590,
+        "close": 6655,
+        "volume": 23309
+      },
+      "historyUnchanged": true,
+      "preservedBars": 247,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 6600,
+          "pct": 0.8333333333333304
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 6440,
+          "pct": 3.3385093167701774
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 6655,
+          "pct": 0.0
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2025-11-13",
+          "end": "2026-11-13",
+          "count": 245
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:22.184241+00:00",
+        "asOf": "2026-11-13T15:30:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 109,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 6655.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 6655.0,
+          "openPrice": 6655.0,
+          "highPrice": 6655.0,
+          "lowPrice": 6655.0,
+          "accumulatedTradingVolume": 23309
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/026.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=140710",
+        "retrievedAt": "2026-11-13T08:44:00.555121+00:00",
+        "sha256": "5519e052a166d9dfb11a5fefffad91dda882dce19760aaffbbd4f4a07beb7a17",
+        "file": "mbn/140710.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 6600,
+          "high": 6725,
+          "low": 6590,
+          "close": 6655,
+          "volume": 23309,
+          "previousClose": 6600
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": true
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/024.xml",
+      "overlappingVolumeRevisionsNotApplied": []
+    },
+    {
+      "code": "143860",
+      "name": "TIGER 헬스케어",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 33285,
+        "high": 34240,
+        "low": 32985,
+        "close": 33100,
+        "volume": 9974
+      },
+      "historyUnchanged": true,
+      "preservedBars": 247,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 33365,
+          "pct": -0.7942454668065313
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 33655,
+          "pct": -1.64908631704056
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 32705,
+          "pct": 1.2077663965754493
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2025-11-13",
+          "end": "2026-11-13",
+          "count": 245
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:22.220113+00:00",
+        "asOf": "2026-11-13T15:30:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 196,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 33100.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 33100.0,
+          "openPrice": 33100.0,
+          "highPrice": 33100.0,
+          "lowPrice": 33100.0,
+          "accumulatedTradingVolume": 9974
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/030.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=143860",
+        "retrievedAt": "2026-11-13T08:44:00.564817+00:00",
+        "sha256": "5940fbbf6fe595ffc55f125005f9f73f0ce305b22881e6e1e60b0672d4ce774e",
+        "file": "mbn/143860.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 33285,
+          "high": 34240,
+          "low": 32985,
+          "close": 33100,
+          "volume": 9974,
+          "previousClose": 33365
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": true
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/023.xml",
+      "overlappingVolumeRevisionsNotApplied": [
+        "2026-11-11",
+        "2026-11-12"
+      ]
+    },
+    {
+      "code": "266410",
+      "name": "KODEX 필수소비재",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 8400,
+        "high": 8510,
+        "low": 8355,
+        "close": 8385,
+        "volume": 13189
+      },
+      "historyUnchanged": true,
+      "preservedBars": 247,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 8400,
+          "pct": -0.17857142857142794
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 8895,
+          "pct": -5.733558178752107
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 8908,
+          "pct": -5.87112707678491
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2025-11-13",
+          "end": "2026-11-13",
+          "count": 245
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:22.200561+00:00",
+        "asOf": "2026-11-13T15:30:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 254,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 8385.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 8385.0,
+          "openPrice": 8385.0,
+          "highPrice": 8385.0,
+          "lowPrice": 8385.0,
+          "accumulatedTradingVolume": 13189
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/028.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=266410",
+        "retrievedAt": "2026-11-13T08:42:23.370660+00:00",
+        "sha256": "6a9242fa693b994f73a7ade00383b88a99109cdb97d64938554475933b255574",
+        "file": "mbn/266410.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 8400,
+          "high": 8510,
+          "low": 8355,
+          "close": 8385,
+          "volume": 13189,
+          "previousClose": 8400
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": true
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/025.xml",
+      "overlappingVolumeRevisionsNotApplied": []
+    },
+    {
+      "code": "266390",
+      "name": "KODEX 경기소비재",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 14015,
+        "high": 14595,
+        "low": 14015,
+        "close": 14090,
+        "volume": 22035
+      },
+      "historyUnchanged": true,
+      "preservedBars": 247,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 14005,
+          "pct": 0.6069260978222024
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 14430,
+          "pct": -2.3562023562023526
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 13823,
+          "pct": 1.9315633364682006
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2025-11-13",
+          "end": "2026-11-13",
+          "count": 245
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:22.188658+00:00",
+        "asOf": "2026-11-13T15:30:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 147,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 14090.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 14090.0,
+          "openPrice": 14090.0,
+          "highPrice": 14090.0,
+          "lowPrice": 14090.0,
+          "accumulatedTradingVolume": 22035
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/027.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=266390",
+        "retrievedAt": "2026-11-13T08:44:03.988209+00:00",
+        "sha256": "7ac3d604e4a1adb26dd0eb03129e79f72228550d0774693a43be36a69fc776d4",
+        "file": "mbn/266390.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 14015,
+          "high": 14595,
+          "low": 14015,
+          "close": 14090,
+          "volume": 22035,
+          "previousClose": 14005
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": true
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/021.xml",
+      "overlappingVolumeRevisionsNotApplied": []
+    },
+    {
+      "code": "157490",
+      "name": "TIGER 소프트웨어",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 7550,
+        "high": 7715,
+        "low": 7430,
+        "close": 7465,
+        "volume": 245641
+      },
+      "historyUnchanged": true,
+      "preservedBars": 247,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 7550,
+          "pct": -1.1258278145695355
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 7750,
+          "pct": -3.677419354838707
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 7320,
+          "pct": 1.9808743169398957
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2025-11-13",
+          "end": "2026-11-13",
+          "count": 245
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:22.200670+00:00",
+        "asOf": "2026-11-13T15:30:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 209,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 7465.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 7465.0,
+          "openPrice": 7465.0,
+          "highPrice": 7465.0,
+          "lowPrice": 7465.0,
+          "accumulatedTradingVolume": 245641
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/029.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=157490",
+        "retrievedAt": "2026-11-13T08:42:23.244129+00:00",
+        "sha256": "2047f7468d281567dce30f5aa4d65fa67367cfab0127ac21858923d3353f3d8d",
+        "file": "mbn/157490.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 7550,
+          "high": 7715,
+          "low": 7430,
+          "close": 7465,
+          "volume": 245641,
+          "previousClose": 7550
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": true
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/022.xml",
+      "overlappingVolumeRevisionsNotApplied": []
+    },
+    {
+      "code": "0148J0",
+      "name": "TIGER 코리아휴머노이드로봇산업",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 7375,
+        "high": 7910,
+        "low": 7355,
+        "close": 7450,
+        "volume": 6910800
+      },
+      "historyUnchanged": true,
+      "preservedBars": 209,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 7250,
+          "pct": 2.758620689655178
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 7015,
+          "pct": 6.200997861724877
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 8420,
+          "pct": -11.520190023752974
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2026-01-06",
+          "end": "2026-11-13",
+          "count": 210
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:27.468104+00:00",
+        "asOf": "2026-11-13T15:50:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 386,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 7450.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 7450.0,
+          "openPrice": 7450.0,
+          "highPrice": 7450.0,
+          "lowPrice": 7450.0,
+          "accumulatedTradingVolume": 6908862
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/039.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=0148J0",
+        "retrievedAt": "2026-11-13T08:42:23.237017+00:00",
+        "sha256": "4613bf31b84784a98ed825fbb58b0cdaf8718d5206e315b1b1c51892bf57d43c",
+        "file": "mbn/0148J0.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 7375,
+          "high": 7910,
+          "low": 7355,
+          "close": 7450,
+          "volume": 6908862,
+          "previousClose": 7250
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": false
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/033.xml",
+      "overlappingVolumeRevisionsNotApplied": []
+    },
+    {
+      "code": "0177X0",
+      "name": "ACE K휴머노이드로봇산업TOP2+",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 7460,
+        "high": 7975,
+        "low": 7460,
+        "close": 7580,
+        "volume": 249992
+      },
+      "historyUnchanged": true,
+      "preservedBars": 148,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 7280,
+          "pct": 4.120879120879128
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 7200,
+          "pct": 5.277777777777781
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 8500,
+          "pct": -10.82352941176471
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2026-04-07",
+          "end": "2026-11-13",
+          "count": 149
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:27.491985+00:00",
+        "asOf": "2026-11-13T15:30:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 311,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 7580.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 7580.0,
+          "openPrice": 7580.0,
+          "highPrice": 7580.0,
+          "lowPrice": 7580.0,
+          "accumulatedTradingVolume": 249992
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/040.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=0177X0",
+        "retrievedAt": "2026-11-13T08:42:27.090987+00:00",
+        "sha256": "6b0d087e41fe18dbed2be855146ff42a7321ac58033f911ded51536bff41954d",
+        "file": "mbn/0177X0.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 7460,
+          "high": 7975,
+          "low": 7460,
+          "close": 7580,
+          "volume": 249992,
+          "previousClose": 7280
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": true
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/031.xml",
+      "overlappingVolumeRevisionsNotApplied": []
+    },
+    {
+      "code": "305720",
+      "name": "KODEX 2차전지산업",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 13000,
+        "high": 13290,
+        "low": 12715,
+        "close": 12780,
+        "volume": 2822027
+      },
+      "historyUnchanged": true,
+      "preservedBars": 247,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 12860,
+          "pct": -0.6220839813374845
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 12375,
+          "pct": 3.2727272727272716
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 15375,
+          "pct": -16.87804878048781
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2025-11-13",
+          "end": "2026-11-13",
+          "count": 245
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:27.320165+00:00",
+        "asOf": "2026-11-13T15:59:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 388,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 12780.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 12780.0,
+          "openPrice": 12780.0,
+          "highPrice": 12780.0,
+          "lowPrice": 12780.0,
+          "accumulatedTradingVolume": 2821648
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/036.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=305720",
+        "retrievedAt": "2026-11-13T08:42:26.678004+00:00",
+        "sha256": "44713e2d9b7cbb26c146af0fe9e21533424ac3ecf0a18f815a96e7d6c520cf43",
+        "file": "mbn/305720.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 13000,
+          "high": 13290,
+          "low": 12715,
+          "close": 12780,
+          "volume": 2821648,
+          "previousClose": 12860
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": false
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/035.xml",
+      "overlappingVolumeRevisionsNotApplied": [
+        "2026-11-11",
+        "2026-11-12"
+      ]
+    },
+    {
+      "code": "455860",
+      "name": "SOL 2차전지소부장Fn",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 3925,
+        "high": 4060,
+        "low": 3865,
+        "close": 3875,
+        "volume": 254588
+      },
+      "historyUnchanged": true,
+      "preservedBars": 247,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 3925,
+          "pct": -1.273885350318471
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 3630,
+          "pct": 6.749311294765836
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 4520,
+          "pct": -14.269911504424782
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2025-11-13",
+          "end": "2026-11-13",
+          "count": 245
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:27.364123+00:00",
+        "asOf": "2026-11-13T15:40:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 266,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 3875.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 3875.0,
+          "openPrice": 3875.0,
+          "highPrice": 3875.0,
+          "lowPrice": 3875.0,
+          "accumulatedTradingVolume": 254587
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/038.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=455860",
+        "retrievedAt": "2026-11-13T08:42:26.660123+00:00",
+        "sha256": "fa8824230e490d778f549d5498d4f66550738c198852a6f56537fa4735d8eb52",
+        "file": "mbn/455860.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 3925,
+          "high": 4060,
+          "low": 3865,
+          "close": 3875,
+          "volume": 254587,
+          "previousClose": 3925
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": false
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/032.xml",
+      "overlappingVolumeRevisionsNotApplied": []
+    },
+    {
+      "code": "455850",
+      "name": "SOL AI반도체소부장",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 20670,
+        "high": 21165,
+        "low": 20175,
+        "close": 20250,
+        "volume": 6822288
+      },
+      "historyUnchanged": true,
+      "preservedBars": 247,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 20065,
+          "pct": 0.9220034886618489
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 16555,
+          "pct": 22.319540924192083
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 29155,
+          "pct": -30.54364602984051
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2025-11-13",
+          "end": "2026-11-13",
+          "count": 245
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:27.328079+00:00",
+        "asOf": "2026-11-13T15:59:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 390,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 20250.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 20250.0,
+          "openPrice": 20250.0,
+          "highPrice": 20250.0,
+          "lowPrice": 20250.0,
+          "accumulatedTradingVolume": 6820328
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/037.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=455850",
+        "retrievedAt": "2026-11-13T08:42:27.478964+00:00",
+        "sha256": "a2f121cc86b16ff67600ba0bccb2b9fd72eef03ab630b6774ecb66563cb08e73",
+        "file": "mbn/455850.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 20670,
+          "high": 21165,
+          "low": 20175,
+          "close": 20250,
+          "volume": 6820328,
+          "previousClose": 20065
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": false
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/034.xml",
+      "overlappingVolumeRevisionsNotApplied": []
+    },
+    {
+      "code": "475300",
+      "name": "SOL 반도체전공정",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 17265,
+        "high": 17640,
+        "low": 16795,
+        "close": 16910,
+        "volume": 1962893
+      },
+      "historyUnchanged": true,
+      "preservedBars": 247,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 16750,
+          "pct": 0.9552238805970115
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 13915,
+          "pct": 21.52353575278476
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 26500,
+          "pct": -36.18867924528302
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2025-11-13",
+          "end": "2026-11-13",
+          "count": 245
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:34.272036+00:00",
+        "asOf": "2026-11-13T15:59:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 382,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 16910.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 16910.0,
+          "openPrice": 16910.0,
+          "highPrice": 16910.0,
+          "lowPrice": 16910.0,
+          "accumulatedTradingVolume": 1962882
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/046.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=475300",
+        "retrievedAt": "2026-11-13T08:42:26.658241+00:00",
+        "sha256": "56b8cf7abd33c6f46c7092e27077bf09ee43af7698b16958f0e5fc2748572cd6",
+        "file": "mbn/475300.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 17265,
+          "high": 17640,
+          "low": 16795,
+          "close": 16910,
+          "volume": 1962882,
+          "previousClose": 16750
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": false
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/044.xml",
+      "overlappingVolumeRevisionsNotApplied": []
+    },
+    {
+      "code": "475310",
+      "name": "SOL 반도체후공정",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 22855,
+        "high": 23265,
+        "low": 21960,
+        "close": 22100,
+        "volume": 1096911
+      },
+      "historyUnchanged": true,
+      "preservedBars": 247,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 22020,
+          "pct": 0.36330608537693543
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 17640,
+          "pct": 25.283446712018144
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 31340,
+          "pct": -29.483088704530946
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2025-11-13",
+          "end": "2026-11-13",
+          "count": 245
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:34.339957+00:00",
+        "asOf": "2026-11-13T15:58:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 381,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 22100.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 22100.0,
+          "openPrice": 22100.0,
+          "highPrice": 22100.0,
+          "lowPrice": 22100.0,
+          "accumulatedTradingVolume": 1096910
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/049.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=475310",
+        "retrievedAt": "2026-11-13T08:44:04.292927+00:00",
+        "sha256": "80ebef01fe090aff628153a2b1ee7a7355b20a5f9c0a030a09bb2bf163888dd2",
+        "file": "mbn/475310.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 22855,
+          "high": 23265,
+          "low": 21960,
+          "close": 22100,
+          "volume": 1096910,
+          "previousClose": 22020
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": false
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/042.xml",
+      "overlappingVolumeRevisionsNotApplied": []
+    },
+    {
+      "code": "449450",
+      "name": "PLUS K방산",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 32915,
+        "high": 33710,
+        "low": 32095,
+        "close": 32185,
+        "volume": 429318
+      },
+      "historyUnchanged": true,
+      "preservedBars": 247,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 32890,
+          "pct": -2.1435086652477953
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 31710,
+          "pct": 1.4979501734468714
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 43140,
+          "pct": -25.394065832174316
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2025-11-13",
+          "end": "2026-11-13",
+          "count": 245
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:34.323925+00:00",
+        "asOf": "2026-11-13T15:51:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 382,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 32185.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 32185.0,
+          "openPrice": 32185.0,
+          "highPrice": 32185.0,
+          "lowPrice": 32185.0,
+          "accumulatedTradingVolume": 429301
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/048.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=449450",
+        "retrievedAt": "2026-11-13T08:44:07.211808+00:00",
+        "sha256": "d695371a8dce6392ab76948f76d7df67a12c1bab57f00e01192beb8fe6371f22",
+        "file": "mbn/449450.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 32915,
+          "high": 33710,
+          "low": 32095,
+          "close": 32185,
+          "volume": 429301,
+          "previousClose": 32890
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": false
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/045.xml",
+      "overlappingVolumeRevisionsNotApplied": []
+    },
+    {
+      "code": "0247S0",
+      "name": "KIWOOM 글로벌MLCC&AI기판TOP4+",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 5945,
+        "high": 6300,
+        "low": 5620,
+        "close": 5680,
+        "volume": 336840
+      },
+      "historyUnchanged": true,
+      "preservedBars": 23,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 5785,
+          "pct": -1.8150388936905792
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 5430,
+          "pct": 4.604051565377532
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 8755,
+          "pct": -35.122786978869215
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-10-13",
+          "end": "2026-11-13",
+          "count": 24
+        },
+        "6": {
+          "start": "2026-10-13",
+          "end": "2026-11-13",
+          "count": 24
+        },
+        "12": {
+          "start": "2026-10-13",
+          "end": "2026-11-13",
+          "count": 24
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:34.400149+00:00",
+        "asOf": "2026-11-13T15:30:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 206,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 5680.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 5680.0,
+          "openPrice": 5680.0,
+          "highPrice": 5680.0,
+          "lowPrice": 5680.0,
+          "accumulatedTradingVolume": 336840
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/050.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=0247S0",
+        "retrievedAt": "2026-11-13T08:44:07.216690+00:00",
+        "sha256": "56ecd7327e496b595839c7ae1669dd144082e28ec2080a15f7a305c52c90568a",
+        "file": "mbn/0247S0.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 5945,
+          "high": 6300,
+          "low": 5620,
+          "close": 5680,
+          "volume": 336840,
+          "previousClose": 5785
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": true
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/041.xml",
+      "overlappingVolumeRevisionsNotApplied": []
+    },
+    {
+      "code": "0207G0",
+      "name": "SOL 우주항공밸류체인",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 6080,
+        "high": 6175,
+        "low": 5900,
+        "close": 5920,
+        "volume": 63310
+      },
+      "historyUnchanged": true,
+      "preservedBars": 102,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 5925,
+          "pct": -0.08438818565400519
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 4955,
+          "pct": 19.475277497477308
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 7470,
+          "pct": -20.749665327978583
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-06-16",
+          "end": "2026-11-13",
+          "count": 103
+        },
+        "12": {
+          "start": "2026-06-16",
+          "end": "2026-11-13",
+          "count": 103
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:34.291983+00:00",
+        "asOf": "2026-11-13T15:30:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 168,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 5920.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 5920.0,
+          "openPrice": 5920.0,
+          "highPrice": 5920.0,
+          "lowPrice": 5920.0,
+          "accumulatedTradingVolume": 63310
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/047.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=0207G0",
+        "retrievedAt": "2026-11-13T08:42:32.315969+00:00",
+        "sha256": "b11bda21dd2fc091951592dbf018b8c7827d5c110f08fe2c75a0db01b9b92350",
+        "file": "mbn/0207G0.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 6080,
+          "high": 6175,
+          "low": 5900,
+          "close": 5920,
+          "volume": 63310,
+          "previousClose": 5925
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": true
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/043.xml",
+      "overlappingVolumeRevisionsNotApplied": []
+    },
+    {
+      "code": "421320",
+      "name": "PLUS 우주항공",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 21545,
+        "high": 21960,
+        "low": 21055,
+        "close": 21130,
+        "volume": 17136
+      },
+      "historyUnchanged": true,
+      "preservedBars": 247,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 21295,
+          "pct": -0.7748297722470099
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 17925,
+          "pct": 17.880055788005578
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 25205,
+          "pct": -16.16742709779806
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2025-11-13",
+          "end": "2026-11-13",
+          "count": 245
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:40.268859+00:00",
+        "asOf": "2026-11-13T15:30:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 223,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 21130.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 21130.0,
+          "openPrice": 21130.0,
+          "highPrice": 21130.0,
+          "lowPrice": 21130.0,
+          "accumulatedTradingVolume": 17136
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/060.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=421320",
+        "retrievedAt": "2026-11-13T08:44:10.185516+00:00",
+        "sha256": "0ea22b1475f4dbb738d3a5afa612d293d9b3a88cf9bf817ba0e52419d17f5afd",
+        "file": "mbn/421320.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 21545,
+          "high": 21960,
+          "low": 21055,
+          "close": 21130,
+          "volume": 17136,
+          "previousClose": 21295
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": true
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/054.xml",
+      "overlappingVolumeRevisionsNotApplied": []
+    },
+    {
+      "code": "466920",
+      "name": "SOL 조선TOP3플러스",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 18545,
+        "high": 19015,
+        "low": 18320,
+        "close": 18390,
+        "volume": 1541404
+      },
+      "historyUnchanged": true,
+      "preservedBars": 247,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 18355,
+          "pct": 0.19068373740125377
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 17960,
+          "pct": 2.394209354120269
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 23035,
+          "pct": -20.16496635554591
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2025-11-13",
+          "end": "2026-11-13",
+          "count": 245
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:40.168656+00:00",
+        "asOf": "2026-11-13T15:40:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 378,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 18390.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 18390.0,
+          "openPrice": 18390.0,
+          "highPrice": 18390.0,
+          "lowPrice": 18390.0,
+          "accumulatedTradingVolume": 1541303
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/059.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=466920",
+        "retrievedAt": "2026-11-13T08:44:10.580788+00:00",
+        "sha256": "f25f726aa47c390891a84fd4c2ed344223edc87ec356f086936f9ff54f7572da",
+        "file": "mbn/466920.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 18545,
+          "high": 19015,
+          "low": 18320,
+          "close": 18390,
+          "volume": 1541303,
+          "previousClose": 18355
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": false
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/053.xml",
+      "overlappingVolumeRevisionsNotApplied": [
+        "2026-11-11",
+        "2026-11-12"
+      ]
+    },
+    {
+      "code": "487240",
+      "name": "KODEX AI전력핵심설비",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 23405,
+        "high": 24115,
+        "low": 22880,
+        "close": 23110,
+        "volume": 3427800
+      },
+      "historyUnchanged": true,
+      "preservedBars": 247,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 23050,
+          "pct": 0.2603036876355658
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 20490,
+          "pct": 12.786725231820405
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 30905,
+          "pct": -25.222455913282637
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2025-11-13",
+          "end": "2026-11-13",
+          "count": 245
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:40.168000+00:00",
+        "asOf": "2026-11-13T15:59:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 389,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 23110.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 23110.0,
+          "openPrice": 23110.0,
+          "highPrice": 23110.0,
+          "lowPrice": 23110.0,
+          "accumulatedTradingVolume": 3427627
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/058.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=487240",
+        "error": "<urlopen error timed out>"
+      },
+      "independentYahoo": {
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/487240.KS?period1=1794409200&period2=1794582000&interval=1d",
+        "observedAt": "2026-11-13T08:44:53.660635+00:00",
+        "sha256": "5dbc6f0b42fc1698e4280b3805ef4d97638ac5b6270b5c1dbb768faab51cb0b7",
+        "file": "yahoo-487240.json",
+        "meta": {
+          "currency": "KRW",
+          "symbol": "487240.KS",
+          "exchangeName": "KSC",
+          "fullExchangeName": "KSE",
+          "instrumentType": "ETF",
+          "firstTradeDate": 1720483200,
+          "regularMarketTime": 1794551424,
+          "hasPrePostMarketData": false,
+          "gmtoffset": 32400,
+          "timezone": "KST",
+          "exchangeTimezoneName": "Asia/Seoul",
+          "regularMarketPrice": 23110.0,
+          "regularMarketChangePercent": 0.26,
+          "fulldayPrice": 23110.0,
+          "fulldayChange": 60.0,
+          "fulldayChangePercent": 0.26,
+          "fiftyTwoWeekHigh": 64630.0,
+          "fiftyTwoWeekLow": 19195.0,
+          "regularMarketDayHigh": 24115.0,
+          "regularMarketDayLow": 22880.0,
+          "regularMarketVolume": 3427800,
+          "longName": "Samsung Kodex Ai Electric Power Core Facilities Etf",
+          "shortName": "KODEX AI Electric Power Core Fa",
+          "chartPreviousClose": 22765.0,
+          "priceHint": 2,
+          "currentTradingPeriod": {
+            "pre": {
+              "timezone": "KST",
+              "end": 1794528000,
+              "start": 1794522600,
+              "gmtoffset": 32400
+            },
+            "regular": {
+              "timezone": "KST",
+              "end": 1794549600,
+              "start": 1794528000,
+              "gmtoffset": 32400
+            },
+            "post": {
+              "timezone": "KST",
+              "end": 1794560400,
+              "start": 1794549600,
+              "gmtoffset": 32400
+            }
+          },
+          "dataGranularity": "1d",
+          "range": "",
+          "validRanges": [
+            "1d",
+            "5d",
+            "1mo",
+            "3mo",
+            "6mo",
+            "1y",
+            "2y",
+            "5y",
+            "ytd",
+            "max"
+          ]
+        },
+        "observations": {
+          "2026-11-12": {
+            "close": 23050.0,
+            "high": 23755.0,
+            "open": 22665.0,
+            "volume": 4032830,
+            "low": 22260.0
+          },
+          "2026-11-13": {
+            "close": 23110.0,
+            "high": 24115.0,
+            "open": 23405.0,
+            "volume": 3427800,
+            "low": 22880.0
+          }
+        },
+        "matchesNov13OHLC": true,
+        "matchesNov12Close": true
+      },
+      "rawDailySource": "sources/055.xml",
+      "overlappingVolumeRevisionsNotApplied": []
+    },
+    {
+      "code": "0222F0",
+      "name": "마이티 AI데이터센터밸류체인",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 9955,
+        "high": 10025,
+        "low": 9595,
+        "close": 9595,
+        "volume": 1381
+      },
+      "historyUnchanged": true,
+      "preservedBars": 68,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 9865,
+          "pct": -2.7369488089204252
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 9310,
+          "pct": 3.0612244897959107
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 11650,
+          "pct": -17.639484978540775
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-08-04",
+          "end": "2026-11-13",
+          "count": 69
+        },
+        "12": {
+          "start": "2026-08-04",
+          "end": "2026-11-13",
+          "count": 69
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:40.120316+00:00",
+        "asOf": "2026-11-13T15:30:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 39,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 9595.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 9595.0,
+          "openPrice": 9595.0,
+          "highPrice": 9595.0,
+          "lowPrice": 9595.0,
+          "accumulatedTradingVolume": 1381
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/056.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=0222F0",
+        "error": "<urlopen error timed out>"
+      },
+      "independentYahoo": {
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/0222F0.KS?period1=1794409200&period2=1794582000&interval=1d",
+        "observedAt": "2026-11-13T08:44:53.658404+00:00",
+        "sha256": "4a577ba679d019cef8482dbfa793b1feded0813b7fd5a6498d1d3dcf70427ffa",
+        "file": "yahoo-0222F0.json",
+        "meta": {
+          "currency": "KRW",
+          "symbol": "0222F0.KS",
+          "exchangeName": "KSC",
+          "fullExchangeName": "KSE",
+          "instrumentType": "ETF",
+          "firstTradeDate": 1785801600,
+          "regularMarketTime": 1794551427,
+          "hasPrePostMarketData": false,
+          "gmtoffset": 32400,
+          "timezone": "KST",
+          "exchangeTimezoneName": "Asia/Seoul",
+          "regularMarketPrice": 9595.0,
+          "regularMarketChangePercent": -2.737,
+          "fulldayPrice": 9595.0,
+          "fulldayChange": -270.0,
+          "fulldayChangePercent": -2.737,
+          "fiftyTwoWeekHigh": 13470.0,
+          "fiftyTwoWeekLow": 8920.0,
+          "regularMarketDayHigh": 10025.0,
+          "regularMarketDayLow": 9595.0,
+          "regularMarketVolume": 1506,
+          "longName": "DB Mighty AI Data Center Value Chain ETF",
+          "shortName": "Mighty AIDC Value Chain",
+          "chartPreviousClose": 9815.0,
+          "priceHint": 2,
+          "currentTradingPeriod": {
+            "pre": {
+              "timezone": "KST",
+              "end": 1794528000,
+              "start": 1794522600,
+              "gmtoffset": 32400
+            },
+            "regular": {
+              "timezone": "KST",
+              "end": 1794549600,
+              "start": 1794528000,
+              "gmtoffset": 32400
+            },
+            "post": {
+              "timezone": "KST",
+              "end": 1794560400,
+              "start": 1794549600,
+              "gmtoffset": 32400
+            }
+          },
+          "dataGranularity": "1d",
+          "range": "",
+          "validRanges": [
+            "1d",
+            "5d",
+            "1mo",
+            "3mo",
+            "6mo",
+            "ytd",
+            "max"
+          ]
+        },
+        "observations": {
+          "2026-11-12": {
+            "low": 9670.0,
+            "volume": 813,
+            "high": 9950.0,
+            "close": 9865.0,
+            "open": 9860.0
+          },
+          "2026-11-13": {
+            "low": 9595.0,
+            "volume": 1506,
+            "high": 10025.0,
+            "close": 9595.0,
+            "open": 9955.0
+          }
+        },
+        "matchesNov13OHLC": true,
+        "matchesNov12Close": true
+      },
+      "rawDailySource": "sources/051.xml",
+      "overlappingVolumeRevisionsNotApplied": []
+    },
+    {
+      "code": "0091P0",
+      "name": "TIGER 코리아원자력",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 11210,
+        "high": 11680,
+        "low": 11165,
+        "close": 11250,
+        "volume": 896495
+      },
+      "historyUnchanged": true,
+      "preservedBars": 247,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 11185,
+          "pct": 0.5811354492624154
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 10640,
+          "pct": 5.733082706766912
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 14620,
+          "pct": -23.050615595075243
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2025-11-13",
+          "end": "2026-11-13",
+          "count": 245
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:40.144354+00:00",
+        "asOf": "2026-11-13T15:53:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 373,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 11250.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 11250.0,
+          "openPrice": 11250.0,
+          "highPrice": 11250.0,
+          "lowPrice": 11250.0,
+          "accumulatedTradingVolume": 896494
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/057.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=0091P0",
+        "retrievedAt": "2026-11-13T08:42:36.043989+00:00",
+        "sha256": "98bb412a935711291b898f9850034cbd0c129c1611c9b78166b5e66bce64b437",
+        "file": "mbn/0091P0.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 11210,
+          "high": 11680,
+          "low": 11165,
+          "close": 11250,
+          "volume": 896494,
+          "previousClose": 11185
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": false
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/052.xml",
+      "overlappingVolumeRevisionsNotApplied": []
+    },
+    {
+      "code": "457990",
+      "name": "PLUS 태양광&ESS",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 28715,
+        "high": 29450,
+        "low": 28135,
+        "close": 28140,
+        "volume": 333143
+      },
+      "historyUnchanged": true,
+      "preservedBars": 247,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 28420,
+          "pct": -0.9852216748768461
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 29010,
+          "pct": -2.998965873836612
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 36890,
+          "pct": -23.719165085388994
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2025-11-13",
+          "end": "2026-11-13",
+          "count": 245
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:47.159948+00:00",
+        "asOf": "2026-11-13T15:59:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 375,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 28140.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 28140.0,
+          "openPrice": 28140.0,
+          "highPrice": 28140.0,
+          "lowPrice": 28140.0,
+          "accumulatedTradingVolume": 333109
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/069.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=457990",
+        "retrievedAt": "2026-11-13T08:44:30.618614+00:00",
+        "sha256": "9f9d0b5e106f2561584bcc53fe8d4a1aa98713bfef297fbc31737471caba38d8",
+        "file": "mbn/457990.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 28715,
+          "high": 29450,
+          "low": 28135,
+          "close": 28140,
+          "volume": 333109,
+          "previousClose": 28420
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": false
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/064.xml",
+      "overlappingVolumeRevisionsNotApplied": []
+    },
+    {
+      "code": "0209D0",
+      "name": "KODEX 전고체배터리ESS TOP2플러스",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 7670,
+        "high": 7950,
+        "low": 7555,
+        "close": 7590,
+        "volume": 5167422
+      },
+      "historyUnchanged": true,
+      "preservedBars": 97,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 7655,
+          "pct": -0.8491182233834049
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 7160,
+          "pct": 6.00558659217878
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 9135,
+          "pct": -16.91297208538588
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-06-23",
+          "end": "2026-11-13",
+          "count": 98
+        },
+        "12": {
+          "start": "2026-06-23",
+          "end": "2026-11-13",
+          "count": 98
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:47.144120+00:00",
+        "asOf": "2026-11-13T15:50:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 387,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 7590.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 7590.0,
+          "openPrice": 7590.0,
+          "highPrice": 7590.0,
+          "lowPrice": 7590.0,
+          "accumulatedTradingVolume": 5166630
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/068.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=0209D0",
+        "retrievedAt": "2026-11-13T08:42:38.896574+00:00",
+        "sha256": "321c20df403808348e72cb070cf33941089daf954b50addae8a3eb3e97388c4f",
+        "file": "mbn/0209D0.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 7670,
+          "high": 7950,
+          "low": 7555,
+          "close": 7590,
+          "volume": 5166630,
+          "previousClose": 7655
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": false
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/063.xml",
+      "overlappingVolumeRevisionsNotApplied": []
+    },
+    {
+      "code": "364970",
+      "name": "TIGER 바이오TOP10",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 6520,
+        "high": 6730,
+        "low": 6500,
+        "close": 6545,
+        "volume": 614264
+      },
+      "historyUnchanged": true,
+      "preservedBars": 247,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 6545,
+          "pct": 0.0
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 6775,
+          "pct": -3.394833948339482
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 6355,
+          "pct": 2.9897718332021928
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2025-11-13",
+          "end": "2026-11-13",
+          "count": 245
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:47.163911+00:00",
+        "asOf": "2026-11-13T15:59:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 340,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 6545.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 6545.0,
+          "openPrice": 6545.0,
+          "highPrice": 6545.0,
+          "lowPrice": 6545.0,
+          "accumulatedTradingVolume": 614192
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/070.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=364970",
+        "retrievedAt": "2026-11-13T08:44:31.220158+00:00",
+        "sha256": "51d94824ac872b413cabdffd18456af5dd592bf8e87857f614c0db8d41a99020",
+        "file": "mbn/364970.html",
+        "displayedAt": "2026.11.13 17:44",
+        "values": {
+          "open": 6520,
+          "high": 6730,
+          "low": 6500,
+          "close": 6545,
+          "volume": 614192,
+          "previousClose": 6545
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": false
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/061.xml",
+      "overlappingVolumeRevisionsNotApplied": []
+    },
+    {
+      "code": "228790",
+      "name": "TIGER 화장품",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 3370,
+        "high": 3425,
+        "low": 3320,
+        "close": 3325,
+        "volume": 2436155
+      },
+      "historyUnchanged": true,
+      "preservedBars": 247,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 3370,
+          "pct": -1.3353115727002929
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 3460,
+          "pct": -3.9017341040462394
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 3800,
+          "pct": -12.5
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2025-11-13",
+          "end": "2026-11-13",
+          "count": 245
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:47.008142+00:00",
+        "asOf": "2026-11-13T15:52:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 376,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 3325.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 3325.0,
+          "openPrice": 3325.0,
+          "highPrice": 3325.0,
+          "lowPrice": 3325.0,
+          "accumulatedTradingVolume": 2436084
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/067.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=228790",
+        "retrievedAt": "2026-11-13T08:44:33.581603+00:00",
+        "sha256": "9c81c2e825343c5eef173ad1de7288e51fc54d0a6b8890cd4a420942c242017f",
+        "file": "mbn/228790.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 3370,
+          "high": 3425,
+          "low": 3320,
+          "close": 3325,
+          "volume": 2436084,
+          "previousClose": 3370
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": false
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/065.xml",
+      "overlappingVolumeRevisionsNotApplied": [
+        "2026-11-11",
+        "2026-11-12"
+      ]
+    },
+    {
+      "code": "228800",
+      "name": "TIGER 여행레저",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 2570,
+        "high": 2585,
+        "low": 2530,
+        "close": 2540,
+        "volume": 118074
+      },
+      "historyUnchanged": true,
+      "preservedBars": 247,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 2570,
+          "pct": -1.1673151750972721
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 2470,
+          "pct": 2.8340080971659853
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 2545,
+          "pct": -0.19646365422396617
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2025-11-13",
+          "end": "2026-11-13",
+          "count": 245
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:41:46.945954+00:00",
+        "asOf": "2026-11-13T15:45:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 251,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 2540.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 2540.0,
+          "openPrice": 2540.0,
+          "highPrice": 2540.0,
+          "lowPrice": 2540.0,
+          "accumulatedTradingVolume": 118072
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/066.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=228800",
+        "retrievedAt": "2026-11-13T08:42:38.311933+00:00",
+        "sha256": "40a1eec4596e64779ef981710ee5671a06d66bffc5cd2f56a16f4dfe138e121b",
+        "file": "mbn/228800.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 2570,
+          "high": 2585,
+          "low": 2530,
+          "close": 2540,
+          "volume": 118072,
+          "previousClose": 2570
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": false
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/062.xml",
+      "overlappingVolumeRevisionsNotApplied": []
+    },
+    {
+      "code": "228810",
+      "name": "TIGER 미디어컨텐츠",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 3060,
+        "high": 3195,
+        "low": 3060,
+        "close": 3065,
+        "volume": 190610
+      },
+      "historyUnchanged": true,
+      "preservedBars": 247,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 3065,
+          "pct": 0.0
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 3030,
+          "pct": 1.1551155115511635
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 3040,
+          "pct": 0.8223684210526327
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2025-11-13",
+          "end": "2026-11-13",
+          "count": 245
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:42:12.228272+00:00",
+        "asOf": "2026-11-13T15:51:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 196,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 3065.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 3065.0,
+          "openPrice": 3065.0,
+          "highPrice": 3065.0,
+          "lowPrice": 3065.0,
+          "accumulatedTradingVolume": 188944
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/076.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=228810",
+        "retrievedAt": "2026-11-13T08:42:39.298164+00:00",
+        "sha256": "25d06b0853aef0a435bf62977460b477492b65426ffdec674a903b34beea5c6b",
+        "file": "mbn/228810.html",
+        "displayedAt": "2026.11.13 17:42",
+        "values": {
+          "open": 3060,
+          "high": 3195,
+          "low": 3060,
+          "close": 3065,
+          "volume": 188944,
+          "previousClose": 3065
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": false
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/072.xml",
+      "overlappingVolumeRevisionsNotApplied": [
+        "2026-11-12"
+      ]
+    },
+    {
+      "code": "365000",
+      "name": "TIGER 인터넷TOP10",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 3235,
+        "high": 3315,
+        "low": 3165,
+        "close": 3195,
+        "volume": 138035
+      },
+      "historyUnchanged": true,
+      "preservedBars": 247,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 3230,
+          "pct": -1.0835913312693513
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 3050,
+          "pct": 4.754098360655745
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 3485,
+          "pct": -8.321377331420376
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2025-11-13",
+          "end": "2026-11-13",
+          "count": 245
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:42:12.228422+00:00",
+        "asOf": "2026-11-13T15:30:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 157,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 3195.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 3195.0,
+          "openPrice": 3195.0,
+          "highPrice": 3195.0,
+          "lowPrice": 3195.0,
+          "accumulatedTradingVolume": 138035
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/077.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=365000",
+        "retrievedAt": "2026-11-13T08:42:40.902128+00:00",
+        "sha256": "4b7d1fc65f211c68fded703507ba096d1f0831a14bb3ecfee269ecd1d4f9f7ba",
+        "file": "mbn/365000.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 3235,
+          "high": 3315,
+          "low": 3165,
+          "close": 3195,
+          "volume": 138035,
+          "previousClose": 3230
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": true
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/074.xml",
+      "overlappingVolumeRevisionsNotApplied": []
+    },
+    {
+      "code": "364990",
+      "name": "TIGER 게임TOP10",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 4275,
+        "high": 4275,
+        "low": 4135,
+        "close": 4150,
+        "volume": 150830
+      },
+      "historyUnchanged": true,
+      "preservedBars": 247,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 4285,
+          "pct": -3.1505250875145885
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 4535,
+          "pct": -8.489525909592066
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 4305,
+          "pct": -3.600464576074336
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2025-11-13",
+          "end": "2026-11-13",
+          "count": 245
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:42:12.224433+00:00",
+        "asOf": "2026-11-13T15:30:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 206,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 4150.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 4150.0,
+          "openPrice": 4150.0,
+          "highPrice": 4150.0,
+          "lowPrice": 4150.0,
+          "accumulatedTradingVolume": 150830
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/075.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=364990",
+        "retrievedAt": "2026-11-13T08:42:40.895840+00:00",
+        "sha256": "2a6099d40c91c4fc372eb0c16ac03c0dbb20d49b49b9146530031481e8c2e290",
+        "file": "mbn/364990.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 4275,
+          "high": 4275,
+          "low": 4135,
+          "close": 4150,
+          "volume": 150830,
+          "previousClose": 4285
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": true
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/073.xml",
+      "overlappingVolumeRevisionsNotApplied": []
+    },
+    {
+      "code": "329200",
+      "name": "TIGER 리츠부동산인프라",
+      "dailyLast": {
+        "date": "2026-11-13",
+        "open": 3625,
+        "high": 3702,
+        "low": 3625,
+        "close": 3690,
+        "volume": 1691860
+      },
+      "historyUnchanged": true,
+      "preservedBars": 247,
+      "periodReturns": {
+        "day": {
+          "baseDate": "2026-11-12",
+          "baseClose": 3630,
+          "pct": 1.6528925619834656
+        },
+        "week": {
+          "baseDate": "2026-11-06",
+          "baseClose": 3705,
+          "pct": -0.4048582995951455
+        },
+        "month": {
+          "baseDate": "2026-10-13",
+          "baseClose": 3979,
+          "pct": -7.263131440060322
+        }
+      },
+      "chartCoverage": {
+        "3": {
+          "start": "2026-08-13",
+          "end": "2026-11-13",
+          "count": 62
+        },
+        "6": {
+          "start": "2026-05-13",
+          "end": "2026-11-13",
+          "count": 125
+        },
+        "12": {
+          "start": "2025-11-13",
+          "end": "2026-11-13",
+          "count": 245
+        }
+      },
+      "intraday": {
+        "observedAt": "2026-11-13T08:42:12.405195+00:00",
+        "asOf": "2026-11-13T15:43:00+09:00",
+        "marketStatus": "CLOSE",
+        "pointCount": 382,
+        "regularClose": "20261113153000",
+        "regularClosePrice": 3690.0,
+        "lastRegularTrade": {
+          "localDateTime": "20261113153000",
+          "currentPrice": 3690.0,
+          "openPrice": 3690.0,
+          "highPrice": 3690.0,
+          "lowPrice": 3690.0,
+          "accumulatedTradingVolume": 1691857
+        },
+        "matchesRegularClose": true,
+        "rawPriceSource": "sources/078.json"
+      },
+      "holdings": {
+        "actualDate": "2026-11-13",
+        "observedAt": "2026-11-13T08:42:12.413347+00:00",
+        "refreshStatus": null
+      },
+      "independentMbn": {
+        "url": "https://mbnmoney.mbn.co.kr/stock/item?code=329200",
+        "retrievedAt": "2026-11-13T08:42:41.284031+00:00",
+        "sha256": "2705196cc8d0adf0c6b240b224ec247c08b4da26c8a850823993253a80b476d4",
+        "file": "mbn/329200.html",
+        "displayedAt": "2026.11.13 15:30",
+        "values": {
+          "open": 3625,
+          "high": 3702,
+          "low": 3625,
+          "close": 3690,
+          "volume": 1691826,
+          "previousClose": 3630
+        },
+        "matchesFinalOHLC": true,
+        "matchesPriorClose": true,
+        "volumeMatches": false
+      },
+      "independentYahoo": null,
+      "rawDailySource": "sources/071.xml",
+      "overlappingVolumeRevisionsNotApplied": [
+        "2026-11-12"
+      ]
+    }
+  ]
+}

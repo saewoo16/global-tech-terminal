@@ -1,4 +1,5 @@
 import copy,json,pathlib,sys,tempfile,unittest
+from datetime import date, timedelta
 from unittest.mock import patch
 ROOT=pathlib.Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
 import update_korean_etf_charts as collector
@@ -39,10 +40,15 @@ class HistoricalDailyPreservation(unittest.TestCase):
   new=fund([bar('2026-11-11')]);self.assertIs(collector.preserve_daily_history(new,None),new)
  def test_real_all_39_funds_keep_entire_prefix_and_append_synthetic_session(self):
   snapshot=json.loads((ROOT/'data/korean_etf_charts.json').read_text())
+  self.assertEqual(len(snapshot['funds']),39)
   for old in snapshot['funds']:
-   new=copy.deepcopy(old);new['daily']=new['daily'][1:]+[dict(new['daily'][-1],date='2026-11-13')]
+   last=old['daily'][-1]
+   synthetic_date=(date.fromisoformat(last['date'])+timedelta(days=1)).isoformat()
+   synthetic_bar=dict(last,date=synthetic_date)
+   new=copy.deepcopy(old);new['daily']=new['daily'][1:]+[synthetic_bar]
    result=collector.preserve_daily_history(new,old)
    self.assertEqual(result['daily'][:-1],old['daily'])
+   self.assertEqual(result['daily'][-1],synthetic_bar)
  def test_main_applies_preservation_and_keeps_old_fund_on_price_conflict(self):
   for conflict in (False,True):
    with self.subTest(conflict=conflict),tempfile.TemporaryDirectory() as folder:
