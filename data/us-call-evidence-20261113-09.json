@@ -1,0 +1,24 @@
+{
+  "originalReleaseDate": "2026-11-12",
+  "checkedAt": "2026-11-12T23:51:34.755070+00:00",
+  "sources": [
+    {
+      "id": "call_followup_AMAT_20261113_0900",
+      "url": "https://ir.appliedmaterials.com/static-files/14fd85ae-ff29-4756-879c-c899da301ae6",
+      "title": "AMAT Nov12 실적 콜 공식 준비발언",
+      "retrievedAt": "2026-11-12T23:51:34.755070+00:00",
+      "rawSha256": "f51c88b5792a50e4f9a8039fec1cc7896f97ecfbfc7c66263260a7f929ab82b4",
+      "note": "07시 정보 기준 이후 실제 확인한 콜 후속 보완. 해시는 웹 읽기 도구 반환 근거 JSON. 공식 준비발언만 확인했으며 Q&A 녹음 확인을 뜻하지 않음. 원문 공개 시각은 미확인."
+    },
+    {
+      "id": "call_followup_CSCO_20261113_0900",
+      "url": "https://stockanalysis.com/stocks/csco/transcripts/731525-q1-2027/",
+      "title": "CSCO Nov12 실적 콜 공개 제3자 녹취록",
+      "retrievedAt": "2026-11-12T23:51:34.755070+00:00",
+      "rawSha256": "f51c88b5792a50e4f9a8039fec1cc7896f97ecfbfc7c66263260a7f929ab82b4",
+      "note": "07시 정보 기준 이후 실제 확인한 콜 후속 보완. 해시는 웹 읽기 도구 반환 근거 JSON. 제3자 녹취록이며 공식 녹음 검증을 뜻하지 않음. 원문 공개 시각은 미확인."
+    }
+  ],
+  "rawVerificationBundleSha256": "f51c88b5792a50e4f9a8039fec1cc7896f97ecfbfc7c66263260a7f929ab82b4",
+  "scope": "AMAT official prepared remarks only; CSCO third-party prepared remarks and QA transcript; full source text not redistributed."
+}
