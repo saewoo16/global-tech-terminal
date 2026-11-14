@@ -1,0 +1,570 @@
+{
+  "asOf": "2026-11-14",
+  "baselineCommit": "7b7dfe91884b8270dba223a33262473d601b0ca3",
+  "scope": "Four previously unfilled single-quarter releases and a same-period precision upgrade from the reviewed TSMC Form 6-K; correct the retained ONTO/APD comparative quarters to the official GAAP period and amounts. Previously issued filings, not weekend earnings announcements. Prices, market caps and all unrelated companies remain unchanged.",
+  "companies": {
+    "NASDAQ:CEVA": {
+      "reportingCurrency": "USD",
+      "financialNote": "9월 말 분기는 SEC 10-Q의 3개월 연결 GAAP 실적입니다. 이전 비교 분기와 출처는 그대로입니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "fiscalPeriod": "2026 Q3",
+          "revenue": 29.063,
+          "operatingIncome": -3.516,
+          "sourceType": "filing",
+          "source": "SEC Form 10-Q",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1173489/000143774926035891/ceva20260930_10q.htm",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T22:05:31+00:00",
+          "publishedAt": "2026-11-09",
+          "releaseType": "10-Q",
+          "rawSha256": "ef408fa2e7815977d059c565be411c796f20b61a2f6de4412ff53da8bc589997",
+          "preliminary": false,
+          "basis": "U.S. GAAP consolidated; unaudited; direct stand-alone three-month period",
+          "sourceLocation": "Part I Item 1, Interim Condensed Consolidated Statements of Loss, three months ended September 30, 2026",
+          "calculation": {
+            "method": "Direct reported three-month column",
+            "sourceUnit": "thousands USD",
+            "rawRevenue": 29063,
+            "rawOperatingIncome": -3516
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Total revenues",
+              "rawValue": 29063,
+              "rawUnit": "thousands USD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1173489/000143774926035891/ceva20260930_10q.htm"
+            },
+            "operatingIncome": {
+              "lineItem": "Operating loss",
+              "rawValue": -3516,
+              "rawUnit": "thousands USD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1173489/000143774926035891/ceva20260930_10q.htm"
+            }
+          },
+          "releaseUrl": "https://www.ceva-ip.com/press/ceva-inc-announces-third-quarter-2026-financial-results/"
+        }
+      ]
+    },
+    "NYSE:APD": {
+      "reportingCurrency": "USD",
+      "financialNote": "최근 네 분기에 연결 GAAP만 사용했습니다. 6월 말 영업손실에는 사업 철수 비용이 포함되며, 사업부 합산·조정 영업이익과 구분합니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "fiscalPeriod": "FY2026 Q4",
+          "revenue": 3555.6,
+          "operatingIncome": 633.2,
+          "sourceType": "filing",
+          "source": "Official issuer earnings release",
+          "sourceUrl": "https://investors.airproducts.com/static-files/03493d32-7258-4cdf-81d7-71b0267d851e",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T22:05:31+00:00",
+          "publishedAt": "2026-11-05",
+          "releaseType": "issuer_earnings_release",
+          "rawSha256": "bdf8f2c996582b99bfe6d3744110a9dae2ab9a66c27c28dc076fe58f5fba0572",
+          "preliminary": false,
+          "basis": "U.S. GAAP consolidated; unaudited; direct stand-alone three-month period",
+          "sourceLocation": "Consolidated Income Statements, three months ended 30 September 2026",
+          "calculation": {
+            "method": "Direct reported three-month column",
+            "sourceUnit": "millions USD",
+            "rawRevenue": 3555.6,
+            "rawOperatingIncome": 633.2
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Sales",
+              "rawValue": 3555.6,
+              "rawUnit": "millions USD",
+              "conversion": "none",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://investors.airproducts.com/static-files/03493d32-7258-4cdf-81d7-71b0267d851e"
+            },
+            "operatingIncome": {
+              "lineItem": "Operating Income (Loss)",
+              "rawValue": 633.2,
+              "rawUnit": "millions USD",
+              "conversion": "none",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://investors.airproducts.com/static-files/03493d32-7258-4cdf-81d7-71b0267d851e"
+            }
+          },
+          "sourceNote": "USD millions as printed; includes GAAP business and asset action charges."
+        },
+        {
+          "date": "2026-06-30",
+          "periodStart": "2026-04-01",
+          "periodType": "quarter",
+          "fiscalPeriod": "FY2026 Q3",
+          "revenue": 3161.0,
+          "operatingIncome": -2097.1,
+          "sourceType": "filing",
+          "source": "SEC Form 8-K earnings exhibit",
+          "sourceUrl": "https://investors.airproducts.com/static-files/7f8dfb20-2917-458a-b49e-a2be409cfdf7",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T22:05:31+00:00",
+          "publishedAt": "2026-07-30",
+          "releaseType": "8-K",
+          "rawSha256": "08f1b19098a7044643719c2ef404697527761b6e0d35daf92a5a74378e21a8f7",
+          "preliminary": false,
+          "basis": "U.S. GAAP consolidated; unaudited; direct stand-alone three-month period",
+          "sourceLocation": "Exhibit 99.1, Consolidated Income Statements, three months ended 30 June 2026",
+          "calculation": {
+            "method": "Direct reported three-month column",
+            "sourceUnit": "millions USD",
+            "rawRevenue": 3161.0,
+            "rawOperatingIncome": -2097.1
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Sales",
+              "rawValue": 3161.0,
+              "rawUnit": "millions USD",
+              "conversion": "none",
+              "periodStart": "2026-04-01",
+              "periodEnd": "2026-06-30",
+              "sourceUrl": "https://investors.airproducts.com/static-files/7f8dfb20-2917-458a-b49e-a2be409cfdf7"
+            },
+            "operatingIncome": {
+              "lineItem": "Operating Income (Loss)",
+              "rawValue": -2097.1,
+              "rawUnit": "millions USD",
+              "conversion": "none",
+              "periodStart": "2026-04-01",
+              "periodEnd": "2026-06-30",
+              "sourceUrl": "https://investors.airproducts.com/static-files/7f8dfb20-2917-458a-b49e-a2be409cfdf7"
+            }
+          },
+          "sourceNote": "USD millions as printed. The old +810.3 was segment operating income; GAAP includes the project-exit charges."
+        },
+        {
+          "date": "2026-03-31",
+          "periodStart": "2026-01-01",
+          "periodType": "quarter",
+          "fiscalPeriod": "FY2026 Q2",
+          "revenue": 3171.8,
+          "operatingIncome": 752.7,
+          "sourceType": "filing",
+          "source": "Official issuer earnings release",
+          "sourceUrl": "https://investors.airproducts.com/static-files/b0578bc4-c21c-4c9a-a5e5-cbaa5127d3ad",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T22:05:31+00:00",
+          "publishedAt": "2026-04-30",
+          "releaseType": "issuer_earnings_release",
+          "rawSha256": "a48d449ac0e49b8a4f506c3cb4b03511c10c064c772c2a44a39d16c6477d696c",
+          "preliminary": false,
+          "basis": "U.S. GAAP consolidated; unaudited; direct stand-alone three-month period",
+          "sourceLocation": "Consolidated Income Statements, three months ended 31 March 2026",
+          "calculation": {
+            "method": "Direct reported three-month column",
+            "sourceUnit": "millions USD",
+            "rawRevenue": 3171.8,
+            "rawOperatingIncome": 752.7
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Sales",
+              "rawValue": 3171.8,
+              "rawUnit": "millions USD",
+              "conversion": "none",
+              "periodStart": "2026-01-01",
+              "periodEnd": "2026-03-31",
+              "sourceUrl": "https://investors.airproducts.com/static-files/b0578bc4-c21c-4c9a-a5e5-cbaa5127d3ad"
+            },
+            "operatingIncome": {
+              "lineItem": "Operating Income (Loss)",
+              "rawValue": 752.7,
+              "rawUnit": "millions USD",
+              "conversion": "none",
+              "periodStart": "2026-01-01",
+              "periodEnd": "2026-03-31",
+              "sourceUrl": "https://investors.airproducts.com/static-files/b0578bc4-c21c-4c9a-a5e5-cbaa5127d3ad"
+            }
+          }
+        },
+        {
+          "date": "2025-12-31",
+          "periodStart": "2025-10-01",
+          "periodType": "quarter",
+          "fiscalPeriod": "FY2026 Q1",
+          "revenue": 3102.5,
+          "operatingIncome": 734.5,
+          "sourceType": "filing",
+          "source": "SEC Form 8-K earnings exhibit",
+          "sourceUrl": "https://investors.airproducts.com/static-files/8be42438-e0e9-47ca-879f-85af13755076",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T22:05:31+00:00",
+          "publishedAt": "2026-01-30",
+          "releaseType": "8-K",
+          "rawSha256": "510467b5826a09d9ec588a6ba36daf9bdd1122265f2d235c1e533335da42c951",
+          "preliminary": false,
+          "basis": "U.S. GAAP consolidated; unaudited; direct stand-alone three-month period",
+          "sourceLocation": "Exhibit 99.1, Consolidated Income Statements, three months ended 31 December 2025",
+          "calculation": {
+            "method": "Direct reported three-month column",
+            "sourceUnit": "millions USD",
+            "rawRevenue": 3102.5,
+            "rawOperatingIncome": 734.5
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Sales",
+              "rawValue": 3102.5,
+              "rawUnit": "millions USD",
+              "conversion": "none",
+              "periodStart": "2025-10-01",
+              "periodEnd": "2025-12-31",
+              "sourceUrl": "https://investors.airproducts.com/static-files/8be42438-e0e9-47ca-879f-85af13755076"
+            },
+            "operatingIncome": {
+              "lineItem": "Operating Income",
+              "rawValue": 734.5,
+              "rawUnit": "millions USD",
+              "conversion": "none",
+              "periodStart": "2025-10-01",
+              "periodEnd": "2025-12-31",
+              "sourceUrl": "https://investors.airproducts.com/static-files/8be42438-e0e9-47ca-879f-85af13755076"
+            }
+          },
+          "sourceNote": "USD millions as printed. The old +756.5 was segment operating income."
+        }
+      ]
+    },
+    "NYSE:ONTO": {
+      "reportingCurrency": "USD",
+      "financialNote": "최근 네 분기는 연결 GAAP입니다. 2025년 4분기의 실제 종료일은 2026년 1월 3일입니다. 이전 집계사의 영업이익 및 결산일을 공식 자료로 바로잡았습니다.",
+      "replaceQuarters": true,
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "fiscalPeriod": "2026 Q3",
+          "revenue": 409.748,
+          "operatingIncome": 95.449,
+          "sourceType": "filing",
+          "source": "SEC Form 10-Q",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/704532/000119312526453859/onto-20260930.htm",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T22:05:31+00:00",
+          "publishedAt": "2026-11-09",
+          "releaseType": "10-Q",
+          "rawSha256": "505eab95b1d9efe0cdb146326bffe77d017467bf63043dc5f9bac149bd7543a8",
+          "preliminary": false,
+          "basis": "U.S. GAAP consolidated; unaudited; direct stand-alone three-month period",
+          "sourceLocation": "Part I Item 1, Condensed Consolidated Statements of Operations, three months ended September 30, 2026",
+          "calculation": {
+            "method": "Direct reported three-month column",
+            "sourceUnit": "thousands USD",
+            "rawRevenue": 409748,
+            "rawOperatingIncome": 95449
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Revenue",
+              "rawValue": 409748,
+              "rawUnit": "thousands USD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/704532/000119312526453859/onto-20260930.htm"
+            },
+            "operatingIncome": {
+              "lineItem": "Operating income",
+              "rawValue": 95449,
+              "rawUnit": "thousands USD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/704532/000119312526453859/onto-20260930.htm"
+            }
+          }
+        },
+        {
+          "date": "2026-06-30",
+          "periodStart": "2026-04-01",
+          "periodType": "quarter",
+          "fiscalPeriod": "2026 Q2",
+          "revenue": 343.129,
+          "operatingIncome": 63.55,
+          "sourceType": "filing",
+          "source": "Official issuer earnings release",
+          "sourceUrl": "https://investors.ontoinnovation.com/news/news-details/2026/Onto-Innovation-Reports-2026-Second-Quarter-Results/default.aspx",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T22:05:31+00:00",
+          "publishedAt": "2026-08-06",
+          "releaseType": "issuer_earnings_release",
+          "rawSha256": "168dcdb13bcfb3096f89f9e779bb7b24bb7616092a0df3ef5c4fd108f30f775f",
+          "preliminary": false,
+          "basis": "U.S. GAAP consolidated; unaudited; direct stand-alone three-month period",
+          "sourceLocation": "Condensed Consolidated Statements of Operations, three months ended June 30, 2026",
+          "calculation": {
+            "method": "Direct reported three-month column",
+            "sourceUnit": "thousands USD",
+            "rawRevenue": 343129,
+            "rawOperatingIncome": 63550
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Revenue",
+              "rawValue": 343129,
+              "rawUnit": "thousands USD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-04-01",
+              "periodEnd": "2026-06-30",
+              "sourceUrl": "https://investors.ontoinnovation.com/news/news-details/2026/Onto-Innovation-Reports-2026-Second-Quarter-Results/default.aspx"
+            },
+            "operatingIncome": {
+              "lineItem": "Operating income",
+              "rawValue": 63550,
+              "rawUnit": "thousands USD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-04-01",
+              "periodEnd": "2026-06-30",
+              "sourceUrl": "https://investors.ontoinnovation.com/news/news-details/2026/Onto-Innovation-Reports-2026-Second-Quarter-Results/default.aspx"
+            }
+          }
+        },
+        {
+          "date": "2026-03-31",
+          "periodStart": "2026-01-04",
+          "periodType": "quarter",
+          "fiscalPeriod": "2026 Q1",
+          "revenue": 291.949,
+          "operatingIncome": 33.514,
+          "sourceType": "filing",
+          "source": "Official issuer earnings release",
+          "sourceUrl": "https://investors.ontoinnovation.com/news/news-details/2026/Onto-Innovation-Reports-2026-First-Quarter-Results/default.aspx",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T22:05:31+00:00",
+          "publishedAt": "2026-05-05",
+          "releaseType": "issuer_earnings_release",
+          "rawSha256": "58e3cbecec83a71a3cd18578cec80597b1500b36f8822b5bbde9bb43ab156592",
+          "preliminary": false,
+          "basis": "U.S. GAAP consolidated; unaudited; direct stand-alone three-month period",
+          "sourceLocation": "Condensed Consolidated Statements of Operations, three months ended March 31, 2026",
+          "calculation": {
+            "method": "Direct reported three-month column",
+            "sourceUnit": "thousands USD",
+            "rawRevenue": 291949,
+            "rawOperatingIncome": 33514
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Revenue",
+              "rawValue": 291949,
+              "rawUnit": "thousands USD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-01-04",
+              "periodEnd": "2026-03-31",
+              "sourceUrl": "https://investors.ontoinnovation.com/news/news-details/2026/Onto-Innovation-Reports-2026-First-Quarter-Results/default.aspx"
+            },
+            "operatingIncome": {
+              "lineItem": "Operating income",
+              "rawValue": 33514,
+              "rawUnit": "thousands USD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-01-04",
+              "periodEnd": "2026-03-31",
+              "sourceUrl": "https://investors.ontoinnovation.com/news/news-details/2026/Onto-Innovation-Reports-2026-First-Quarter-Results/default.aspx"
+            }
+          },
+          "sourceNote": "The fiscal year began January 4, as documented in the September 2026 10-Q."
+        },
+        {
+          "date": "2026-01-03",
+          "periodStart": "2025-09-28",
+          "periodType": "quarter",
+          "fiscalPeriod": "2025 Q4",
+          "revenue": 266.866,
+          "operatingIncome": 13.858,
+          "sourceType": "filing",
+          "source": "Official issuer earnings release",
+          "sourceUrl": "https://investors.ontoinnovation.com/news/news-details/2026/Onto-Innovation-Reports-2025-Fourth-Quarter-and-Full-Year-Results/default.aspx",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T22:05:31+00:00",
+          "publishedAt": "2026-02-19",
+          "releaseType": "issuer_earnings_release",
+          "rawSha256": "5eb7b16861de7672a116a314d87a0981438d1a564b598e702ed57b1605df949a",
+          "preliminary": false,
+          "basis": "U.S. GAAP consolidated; unaudited; direct stand-alone fiscal quarter (14 weeks)",
+          "sourceLocation": "Condensed Consolidated Statements of Operations, quarter ended January 3, 2026",
+          "calculation": {
+            "method": "Direct reported three-month column",
+            "sourceUnit": "thousands USD",
+            "rawRevenue": 266866,
+            "rawOperatingIncome": 13858
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Revenue",
+              "rawValue": 266866,
+              "rawUnit": "thousands USD",
+              "conversion": "divide by 1000",
+              "periodStart": "2025-09-28",
+              "periodEnd": "2026-01-03",
+              "sourceUrl": "https://investors.ontoinnovation.com/news/news-details/2026/Onto-Innovation-Reports-2025-Fourth-Quarter-and-Full-Year-Results/default.aspx"
+            },
+            "operatingIncome": {
+              "lineItem": "Operating income",
+              "rawValue": 13858,
+              "rawUnit": "thousands USD",
+              "conversion": "divide by 1000",
+              "periodStart": "2025-09-28",
+              "periodEnd": "2026-01-03",
+              "sourceUrl": "https://investors.ontoinnovation.com/news/news-details/2026/Onto-Innovation-Reports-2025-Fourth-Quarter-and-Full-Year-Results/default.aspx"
+            }
+          },
+          "sourceNote": "The previous quarter ended September 27, per the September 2026 10-Q; fiscal year 2025 had 53 weeks. Do not shift to December 31."
+        }
+      ]
+    },
+    "NYSE:ROK": {
+      "reportingCurrency": "USD",
+      "financialNote": "9월 말 매출은 공식 공시 수치입니다. 영업이익은 연결 손익계산서의 매출총이익에서 판관비와 엔지니어링·개발비를 차감한 계산값입니다. 회사가 공개한 비GAAP 지표와 구분합니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "fiscalPeriod": "FY2026 Q4",
+          "revenue": 2332.0,
+          "operatingIncome": 455.0,
+          "sourceType": "filing",
+          "source": "SEC Form 8-K earnings exhibit",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1024478/000102447826000045/fy2026ex99.htm",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T22:05:31+00:00",
+          "publishedAt": "2026-11-05",
+          "releaseType": "8-K",
+          "rawSha256": "d92bf66e2a11cb28737263232f1fa834738037ffc575f80ac48b31e9ad04edd2",
+          "preliminary": false,
+          "basis": "U.S. GAAP consolidated source line items; operating income subtotal calculated; not issuer-reported or adjusted",
+          "sourceLocation": "Exhibit 99, Condensed Statement of Operations Information, three months ended September 30, 2026",
+          "calculation": {
+            "method": "Gross profit minus SG&A minus engineering and development; exclude separately listed other income and interest; no separately reported goodwill/intangible impairment in this quarter.",
+            "sourceUnit": "millions USD",
+            "rawRevenue": 2332,
+            "grossProfit": 1210,
+            "sellingGeneralAndAdministrative": 566,
+            "engineeringAndDevelopment": 189,
+            "goodwillAndIntangibleImpairment": 0
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Sales (a)",
+              "rawValue": 2332,
+              "rawUnit": "millions USD",
+              "conversion": "none",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1024478/000102447826000045/fy2026ex99.htm"
+            },
+            "operatingIncome": {
+              "lineItem": "Derived from gross profit, SG&A and engineering and development",
+              "rawUnit": "millions USD",
+              "conversion": "none",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1024478/000102447826000045/fy2026ex99.htm",
+              "derivation": "1210 - 566 - 189",
+              "value": 455,
+              "reportedDirectly": false
+            }
+          },
+          "sourceNote": "The issuer does not report a GAAP operating-income subtotal. This calculation matches the series convention: its previous-quarter 1,144 − 490 − 173 = 481 USD million. The Q4 company-reported Enterprise operating profit (572) is non-GAAP and is not used.",
+          "comparisonSourceUrl": "https://www.rockwellautomation.com/en-se/company/news/press-releases/Rockwell-Automation-Reports-Third-Quarter-2026-Results.html"
+        }
+      ]
+    },
+    "NYSE:TSM": {
+      "reportingCurrency": "TWD",
+      "financialNote": "9월 말 분기는 11월 13일 제출한 검토 완료 연결 재무제표를 적용해 기존 공시의 수치 정밀도만 높였습니다. 이전 분기와 출처는 유지했습니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "fiscalPeriod": "2026 Q3",
+          "revenue": 1494243.284,
+          "operatingIncome": 876445.164,
+          "sourceType": "filing",
+          "source": "SEC Form 6-K",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000801/a2026q3consolidatedreport-.htm",
+          "reportedCurrency": "TWD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T22:05:31+00:00",
+          "publishedAt": "2026-11-13T06:02:30-05:00",
+          "releaseType": "6-K",
+          "rawSha256": "53e12f127712d07904f20140854f9065e6f7d265d737cb972d8b9010d187ae2d",
+          "preliminary": false,
+          "basis": "IFRS consolidated; reviewed, unaudited; direct stand-alone three-month period; includes other operating income/expenses",
+          "sourceLocation": "Exhibit 99.1, Consolidated Statements of Comprehensive Income, three months ended September 30, 2026",
+          "calculation": {
+            "method": "Direct reported three-month column",
+            "sourceUnit": "thousands TWD",
+            "rawRevenue": 1494243284,
+            "rawOperatingIncome": 876445164
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Net Revenue",
+              "rawValue": 1494243284,
+              "rawUnit": "thousands TWD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000801/a2026q3consolidatedreport-.htm"
+            },
+            "operatingIncome": {
+              "lineItem": "Income From Operations",
+              "rawValue": 876445164,
+              "rawUnit": "thousands TWD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000801/a2026q3consolidatedreport-.htm"
+            }
+          },
+          "sourceNote": "Same quarter as the October release, with the reviewed statement’s higher source precision; CPA review and board approval dated November 10. Older quarters were retained.",
+          "filingUrl": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000801/0001046179-26-000801-index.html"
+        }
+      ]
+    }
+  }
+}

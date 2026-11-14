@@ -59,7 +59,7 @@ NASDAQ:AVGO,Broadcom,미국,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,
 NASDAQ:AVT,Avnet,미국,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4,complete,2026-10-03,"SEC EDGAR 연결 US GAAP 실제 회계분기 매출·영업손익을 사용했습니다. 4분기는 원문이 단독 수치를 제공하지 않을 경우 동일 회계연도 연간에서 9개월 누계를 차감했고, 조정영업이익은 섞지 않았습니다."
 NASDAQ:BKNG,Booking Holdings,미국,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4,complete,2026-09-30,
 NASDAQ:CDNS,Cadence Design Systems,미국,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4,complete,2026-09-30,공식 연결 GAAP 분기 손익계산서의 매출·영업이익. 재구조화 비용/환입 포함 공시 영업이익이며 조정 영업이익과 구분.
-NASDAQ:CEVA,CEVA,미국,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4,complete,2026-06-30,
+NASDAQ:CEVA,CEVA,미국,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4,complete,2026-09-30,9월 말 분기는 SEC 10-Q의 3개월 연결 GAAP 실적입니다. 이전 비교 분기와 출처는 그대로입니다.
 NASDAQ:CGNX,Cognex,미국,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4,complete,2026-10-04,"SEC EDGAR 연결 US GAAP 실제 회계분기 매출·영업손익을 사용했습니다. 4분기는 원문이 단독 수치를 제공하지 않을 경우 동일 회계연도 연간에서 9개월 누계를 차감했고, 조정영업이익은 섞지 않았습니다."
 NASDAQ:COHU,Cohu,미국,1256,2026-11-12,False,2,2026-11-12,False,True,4,4,4,4,complete,2026-09-26,"공식 연결 US GAAP 실제 13주 분기, 백만 USD. 실제 회계 종료일로 수정하고 영업이익에는 구조조정 비용을 포함합니다. 기존 공급사 영업이익이 제외했던 비용을 공식 발표 기준으로 정정했습니다."
 NASDAQ:CRDO,Credo Technology,케이맨,1205,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4,complete,2026-07-31,
@@ -123,7 +123,7 @@ NASDAQ:WDAY,Workday,미국,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4
 NASDAQ:WDC,Western Digital,미국,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4,complete,2026-10-02,"공식 분기 발표의 매출·영업이익, 단위 백만 USD. 실제 회계분기 종료일을 사용하며 조정 영업이익과 혼합하지 않습니다."
 NASDAQ:ZS,Zscaler,미국,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4,complete,2026-07-31,
 NYSE:ANET,Arista Networks,미국,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4,complete,2026-09-30,
-NYSE:APD,Air Products,미국,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4,complete,2026-06-30,
+NYSE:APD,Air Products,미국,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4,complete,2026-09-30,"최근 네 분기에 연결 GAAP만 사용했습니다. 6월 말 영업손실에는 사업 철수 비용이 포함되며, 사업부 합산·조정 영업이익과 구분합니다."
 NYSE:APH,Amphenol,미국,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4,complete,2026-09-30,"연결 US GAAP 실제 단일 분기 매출·영업이익, 백만 USD. 출처와 실제 확인시각은 분기별 보존합니다."
 NYSE:ARW,Arrow Electronics,미국,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4,complete,2026-10-03,"SEC EDGAR 연결 US GAAP 실제 회계분기 매출·영업손익을 사용했습니다. 4분기는 원문이 단독 수치를 제공하지 않을 경우 동일 회계연도 연간에서 9개월 누계를 차감했고, 조정영업이익은 섞지 않았습니다."
 NYSE:ASX,ASE Technology,대만,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4,complete,2026-09-30,
@@ -144,16 +144,16 @@ NYSE:KEYS,Keysight Technologies,미국,1257,2026-11-13,False,1,2026-11-12,False,
 NYSE:MOD,Modine,미국,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4,complete,2026-09-30,"SEC EDGAR 연결 US GAAP 실제 회계분기 매출·영업손익을 사용했습니다. 4분기는 원문이 단독 수치를 제공하지 않을 경우 동일 회계연도 연간에서 9개월 누계를 차감했고, 조정영업이익은 섞지 않았습니다."
 NYSE:NET,Cloudflare,미국,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4,complete,2026-09-30,"SEC EDGAR 연결 US GAAP 실제 회계분기 매출·영업손익을 사용했습니다. 4분기는 원문이 단독 수치를 제공하지 않을 경우 동일 회계연도 연간에서 9개월 누계를 차감했고, 조정영업이익은 섞지 않았습니다."
 NYSE:NOW,ServiceNow,미국,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4,complete,2026-09-30,"연결 US GAAP 단일 분기 매출·영업이익, 백만 USD. 기존 과거 분기의 원자료·확인일은 보존합니다."
-NYSE:ONTO,Onto Innovation,미국,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4,complete,2026-06-30,
+NYSE:ONTO,Onto Innovation,미국,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4,complete,2026-09-30,최근 네 분기는 연결 GAAP입니다. 2025년 4분기의 실제 종료일은 2026년 1월 3일입니다. 이전 집계사의 영업이익 및 결산일을 공식 자료로 바로잡았습니다.
 NYSE:ORCL,Oracle,미국,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4,complete,2026-08-31,
 NYSE:P,Everpure (Pure Storage),미국,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4,complete,2026-08-02,Consolidated US GAAP revenue and operating income in millions of USD. Actual fiscal period ends; fiscal Q4 is derived from the annual result less standalone Q1–Q3.
 NYSE:RBLX,Roblox,미국,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4,complete,2026-09-30,"공식 연결 US GAAP 단독 분기, 백만 USD. 실제 회계기간 종료일과 원자료 정밀도 보존. 4분기는 같은 회계연도 연간 공시에서 9개월 누계를 차감했으며 임의 분할하지 않았습니다."
-NYSE:ROK,Rockwell Automation,미국,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4,complete,2026-06-30,
+NYSE:ROK,Rockwell Automation,미국,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4,complete,2026-09-30,9월 말 매출은 공식 공시 수치입니다. 영업이익은 연결 손익계산서의 매출총이익에서 판관비와 엔지니어링·개발비를 차감한 계산값입니다. 회사가 공개한 비GAAP 지표와 구분합니다.
 NYSE:SAP,SAP,독일,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4,complete,2026-09-30,Latest quarter independently checked against issuer statement. Existing earlier quarters retain their original sources and have not been independently reverified in this audit.
 NYSE:SNOW,Snowflake,미국,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4,complete,2026-07-31,
 NYSE:STM,STMicroelectronics,스위스,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4,complete,2026-09-26,"공식 연결 US GAAP 단일 분기 순매출·영업이익, 백만 USD. 실제 회계 종료일을 사용하고 손상·구조조정 비용을 제외하지 않습니다. 이전 공급사 수치를 공식 발표 값으로 정정했습니다."
 NYSE:TEL,TE Connectivity,아일랜드,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4,complete,2026-09-25,"연결 US GAAP 실제 단일 분기 매출·영업이익, 백만 USD. 출처와 실제 확인시각은 분기별 보존합니다."
-NYSE:TSM,Taiwan Semiconductor Manufacturing,대만,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4,complete,2026-09-30,"최근 2개 분기만 발행사 2026년 3분기 연결 재무제표로 확인했습니다. 단위는 백만 TWD(NTD), 공시 정수 단위이며 기타영업손익을 포함합니다. 미감사 수치입니다. 유지된 이전 분기는 이번에 독립적으로 재검증하지 않았으므로 분기별 출처·확인일을 참조하세요."
+NYSE:TSM,Taiwan Semiconductor Manufacturing,대만,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4,complete,2026-09-30,9월 말 분기는 11월 13일 제출한 검토 완료 연결 재무제표를 적용해 기존 공시의 수치 정밀도만 높였습니다. 이전 분기와 출처는 유지했습니다.
 NYSE:U,Unity Software,미국,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4,complete,2026-09-30,"SEC EDGAR 연결 US GAAP 실제 회계분기 매출·영업손익을 사용했습니다. 4분기는 원문이 단독 수치를 제공하지 않을 경우 동일 회계연도 연간에서 9개월 누계를 차감했고, 조정영업이익은 섞지 않았습니다."
 NYSE:VEEV,Veeva Systems,미국,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4,complete,2026-07-31,
 NYSE:VRT,Vertiv,미국,1257,2026-11-13,False,1,2026-11-12,False,True,4,4,4,4,complete,2026-09-30,"연결 US GAAP 실제 단일 분기 매출·영업이익, 백만 USD. 출처와 실제 확인시각은 분기별 보존합니다."
