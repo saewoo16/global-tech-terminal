@@ -1,0 +1,2988 @@
+{
+  "asOf": "2026-11-14T09:10:06+00:00",
+  "scope": "Company Explorer official quarterly filings only; no price, valuation, FX, or market analysis edits. Targeted missing-period review, not a 247-issuer census. Prior official period evidence retained where applicable. SEC filing dates identify documents and do not claim an earlier release time.",
+  "baselineCommit": "64e4303e21e29b14b041240b2134d085da85ebdb",
+  "companies": {
+    "KRX:007810": {
+      "reportingCurrency": "KRW",
+      "financialNote": "신규 3분기만 공식 공시의 실제 3개월 수치로 보완했고 이전 분기 및 기존 출처는 유지했습니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 456063.215059,
+          "operatingIncome": 14887.036442,
+          "sourceType": "filing",
+          "source": "KRX KIND official quarterly report",
+          "sourceUrl": "https://kind.krx.co.kr/external/2026/11/13/001142/20261113002425/11013.htm",
+          "filingUrl": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261113001142",
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:02:22.309580+00:00",
+          "publishedAt": "2026-11-13T15:40:00+09:00",
+          "rawSha256": "e3f8b4b3d6811bb21eac7d129c6afa51433c3168ea53989a65c6b4f32242cfa6",
+          "basis": "K-IFRS consolidated; standalone three-month income statement",
+          "sourceLocation": "연결 포괄손익계산서, 2026년 3분기 3개월",
+          "releaseType": "quarterly_report",
+          "preliminary": false,
+          "calculation": {
+            "method": "Direct standalone quarter; source unit converted to millions if needed",
+            "sourceUnit": "원",
+            "rawRevenue": 456063215059,
+            "rawOperatingIncome": 14887036442
+          }
+        }
+      ]
+    },
+    "KRX:033160": {
+      "reportingCurrency": "KRW",
+      "financialNote": "2026년 3분기는 공식 연결 분기보고서의 3개월 실적입니다. 직전 분기 수치는 공식 반기보고서와 일치합니다. 일부 이전 분기는 최근 공시의 비교 수치와 차이가 있어 기존 출처를 유지했습니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 433665.452442,
+          "operatingIncome": 12077.221378,
+          "sourceType": "filing",
+          "source": "KRX KIND official quarterly report",
+          "sourceUrl": "https://kind.krx.co.kr/external/2026/11/13/001716/20261113003670/11013.htm",
+          "filingUrl": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261113001716",
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:02:22.275110+00:00",
+          "publishedAt": "2026-11-13T16:38:00+09:00",
+          "rawSha256": "1f4555af6067b6a6dba6a618cdd077542134b68abb8402966b0fa4e9be8b5220",
+          "basis": "K-IFRS consolidated; standalone three-month income statement",
+          "sourceLocation": "연결 포괄손익계산서, 2026년 3분기 3개월",
+          "releaseType": "quarterly_report",
+          "preliminary": false,
+          "calculation": {
+            "method": "Direct standalone quarter; source unit converted to millions if needed",
+            "sourceUnit": "원",
+            "rawRevenue": 433665452442,
+            "rawOperatingIncome": 12077221378
+          }
+        }
+      ]
+    },
+    "KRX:058470": {
+      "reportingCurrency": "KRW",
+      "financialNote": "신규 3분기만 공식 공시의 실제 3개월 수치로 보완했고 이전 분기 및 기존 출처는 유지했습니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 82694.703692,
+          "operatingIncome": 39419.878727,
+          "sourceType": "filing",
+          "source": "KRX KIND official quarterly report",
+          "sourceUrl": "https://kind.krx.co.kr/external/2026/11/13/000615/20261113001236/11013.htm",
+          "filingUrl": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261113000615",
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:02:21.730123+00:00",
+          "publishedAt": "2026-11-13T13:10:00+09:00",
+          "rawSha256": "b5ffce94496c22dfb5bee0dc84c69acbfad37c3bea9f1e5e7cf49ed11ccd922e",
+          "basis": "K-IFRS entity-only; no consolidated reporting requirement; standalone three-month income statement",
+          "sourceLocation": "4-2. 포괄손익계산서, 2026년 3분기 3개월",
+          "releaseType": "quarterly_report",
+          "preliminary": false,
+          "calculation": {
+            "method": "Direct standalone quarter; source unit converted to millions if needed",
+            "sourceUnit": "원",
+            "rawRevenue": 82694703692,
+            "rawOperatingIncome": 39419878727
+          }
+        }
+      ]
+    },
+    "KRX:074600": {
+      "reportingCurrency": "KRW",
+      "financialNote": "신규 연결 3분기는 KRX KIND 잠정실적 공시 기준이며 정식 분기보고서 확정치와 다를 수 있습니다. 기존 비교 분기 및 출처는 유지했습니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 283688,
+          "operatingIncome": 44426,
+          "sourceType": "filing",
+          "source": "KRX KIND official preliminary consolidated earnings disclosure",
+          "sourceUrl": "https://kind.krx.co.kr/external/2026/11/13/000562/20261113000230/70956.htm",
+          "filingUrl": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261113000562",
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:02:21.379417+00:00",
+          "publishedAt": "2026-11-13T12:41:00+09:00",
+          "rawSha256": "bad2a3f58c79edbd46b714b33936e75ec37419a4bae17992d6aa70595755347c",
+          "basis": "K-IFRS consolidated; preliminary standalone three-month results",
+          "sourceLocation": "연결실적내용, 당기실적 '26.3Q",
+          "releaseType": "preliminary",
+          "preliminary": true,
+          "calculation": {
+            "method": "Direct standalone quarter; source unit converted to millions if needed",
+            "sourceUnit": "백만원",
+            "rawRevenue": 283688,
+            "rawOperatingIncome": 44426
+          }
+        }
+      ]
+    },
+    "NASDAQ:AAOI": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": true,
+      "financialNote": "SEC EDGAR 연결 US GAAP 실제 회계분기 매출·영업손익을 사용했습니다. 4분기는 원문이 단독 수치를 제공하지 않을 경우 동일 회계연도 연간에서 9개월 누계를 차감했고, 조정영업이익은 섞지 않았습니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "start": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 269.875,
+          "operatingIncome": -1.442,
+          "source": "SEC EDGAR 10-Q, 0001437749-26-035282",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1158114/000143774926035282/0001437749-26-035282-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001158114.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-11-05",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-07-01 to 2026-09-30; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 269875000,
+            "rawOperatingIncome": -1442000
+          },
+          "rawSha256": "bd19eac2b3ee27467bff9a6aa165a63c92c3a9c7918f6796a1e61f05da699b85"
+        },
+        {
+          "date": "2026-06-30",
+          "start": "2026-04-01",
+          "periodType": "quarter",
+          "revenue": 191.922,
+          "operatingIncome": -24.727,
+          "source": "SEC EDGAR 10-Q, 0001437749-26-026278",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1158114/000143774926026278/0001437749-26-026278-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001158114.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-08-06",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-04-01 to 2026-06-30; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 191922000,
+            "rawOperatingIncome": -24727000
+          },
+          "rawSha256": "bd19eac2b3ee27467bff9a6aa165a63c92c3a9c7918f6796a1e61f05da699b85"
+        },
+        {
+          "date": "2026-03-31",
+          "start": "2026-01-01",
+          "periodType": "quarter",
+          "revenue": 151.144,
+          "operatingIncome": -12.991,
+          "source": "SEC EDGAR 10-Q, 0001437749-26-015620",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1158114/000143774926015620/0001437749-26-015620-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001158114.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-05-07",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-01-01 to 2026-03-31; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 151144000,
+            "rawOperatingIncome": -12991000
+          },
+          "rawSha256": "bd19eac2b3ee27467bff9a6aa165a63c92c3a9c7918f6796a1e61f05da699b85"
+        },
+        {
+          "date": "2025-12-31",
+          "start": "2025-10-01",
+          "periodType": "quarter",
+          "revenue": 134.274,
+          "operatingIncome": -11.501,
+          "source": "SEC EDGAR 10-K, 0001437749-26-005875",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1158114/000143774926005875/0001437749-26-005875-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001158114.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-02-26",
+          "basis": "Consolidated US GAAP, actual standalone fiscal Q4 derived from matching full year less same fiscal nine months; not adjusted operating income.",
+          "sourceLocation": "Consolidated income statements, us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss; matching fiscal start 2025-01-01",
+          "calculation": {
+            "method": "Matching FY less 9M from SEC XBRL (raw USD divided by 1,000,000)",
+            "annual": {
+              "period": [
+                "2025-01-01",
+                "2025-12-31"
+              ],
+              "revenueUSD": 455715000,
+              "operatingIncomeUSD": -54602000,
+              "filedAt": "2026-02-26",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1158114/000143774926005875/0001437749-26-005875-index.htm"
+            },
+            "nineMonths": {
+              "period": [
+                "2025-01-01",
+                "2025-09-30"
+              ],
+              "revenueUSD": 321441000,
+              "operatingIncomeUSD": -43101000,
+              "filedAt": "2025-11-06",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1158114/000143774925033627/0001437749-25-033627-index.htm"
+            },
+            "rawRevenue": 134274000,
+            "rawOperatingIncome": -11501000
+          },
+          "rawSha256": "bd19eac2b3ee27467bff9a6aa165a63c92c3a9c7918f6796a1e61f05da699b85"
+        }
+      ],
+      "previousValues": [
+        {
+          "date": "2026-06-30",
+          "revenue": 191.922,
+          "operatingIncome": -23.847,
+          "sourceUrl": "https://finance.yahoo.com/quote/AAOI/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2026-03-31",
+          "revenue": 151.144,
+          "operatingIncome": -12.877,
+          "sourceUrl": "https://finance.yahoo.com/quote/AAOI/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2025-12-31",
+          "revenue": 134.274,
+          "operatingIncome": -11.352,
+          "sourceUrl": "https://finance.yahoo.com/quote/AAOI/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2025-09-30",
+          "revenue": 118.63,
+          "operatingIncome": -14.968,
+          "sourceUrl": "https://finance.yahoo.com/quote/AAOI/financials/",
+          "sourceType": "financial_aggregator"
+        }
+      ]
+    },
+    "NASDAQ:ALAB": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": true,
+      "financialNote": "SEC EDGAR 연결 US GAAP 실제 회계분기 매출·영업손익을 사용했습니다. 4분기는 원문이 단독 수치를 제공하지 않을 경우 동일 회계연도 연간에서 9개월 누계를 차감했고, 조정영업이익은 섞지 않았습니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "start": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 584.899,
+          "operatingIncome": 179.056,
+          "source": "SEC EDGAR 10-Q, 0001736297-26-000045",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1736297/000173629726000045/0001736297-26-000045-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001736297.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-11-04",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-07-01 to 2026-09-30; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 584899000,
+            "rawOperatingIncome": 179056000
+          },
+          "rawSha256": "27da7d93e8aa340559d9a5908ccad4741d297e5c6123bea14f4ce809f92be18c"
+        },
+        {
+          "date": "2026-06-30",
+          "start": "2026-04-01",
+          "periodType": "quarter",
+          "revenue": 392.4,
+          "operatingIncome": 89.248,
+          "source": "SEC EDGAR 10-Q, 0001736297-26-000035",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1736297/000173629726000035/0001736297-26-000035-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001736297.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-08-05",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-04-01 to 2026-06-30; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 392400000,
+            "rawOperatingIncome": 89248000
+          },
+          "rawSha256": "27da7d93e8aa340559d9a5908ccad4741d297e5c6123bea14f4ce809f92be18c"
+        },
+        {
+          "date": "2026-03-31",
+          "start": "2026-01-01",
+          "periodType": "quarter",
+          "revenue": 308.361,
+          "operatingIncome": 61.833,
+          "source": "SEC EDGAR 10-Q, 0001736297-26-000020",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1736297/000173629726000020/0001736297-26-000020-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001736297.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-05-06",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-01-01 to 2026-03-31; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 308361000,
+            "rawOperatingIncome": 61833000
+          },
+          "rawSha256": "27da7d93e8aa340559d9a5908ccad4741d297e5c6123bea14f4ce809f92be18c"
+        },
+        {
+          "date": "2025-12-31",
+          "start": "2025-10-01",
+          "periodType": "quarter",
+          "revenue": 270.583,
+          "operatingIncome": 66.958,
+          "source": "SEC EDGAR 10-K, 0001736297-26-000010",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1736297/000173629726000010/0001736297-26-000010-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001736297.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-02-20",
+          "basis": "Consolidated US GAAP, actual standalone fiscal Q4 derived from matching full year less same fiscal nine months; not adjusted operating income.",
+          "sourceLocation": "Consolidated income statements, us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss; matching fiscal start 2025-01-01",
+          "calculation": {
+            "method": "Matching FY less 9M from SEC XBRL (raw USD divided by 1,000,000)",
+            "annual": {
+              "period": [
+                "2025-01-01",
+                "2025-12-31"
+              ],
+              "revenueUSD": 852525000,
+              "operatingIncomeUSD": 173423000,
+              "filedAt": "2026-02-20",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1736297/000173629726000010/0001736297-26-000010-index.htm"
+            },
+            "nineMonths": {
+              "period": [
+                "2025-01-01",
+                "2025-09-30"
+              ],
+              "revenueUSD": 581942000,
+              "operatingIncomeUSD": 106465000,
+              "filedAt": "2025-11-05",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1736297/000173629725000147/0001736297-25-000147-index.htm"
+            },
+            "rawRevenue": 270583000,
+            "rawOperatingIncome": 66958000
+          },
+          "rawSha256": "27da7d93e8aa340559d9a5908ccad4741d297e5c6123bea14f4ce809f92be18c"
+        }
+      ],
+      "previousValues": [
+        {
+          "date": "2026-06-30",
+          "revenue": 392.4,
+          "operatingIncome": 89.248,
+          "sourceUrl": "https://finance.yahoo.com/quote/ALAB/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2026-03-31",
+          "revenue": 308.361,
+          "operatingIncome": 61.833,
+          "sourceUrl": "https://finance.yahoo.com/quote/ALAB/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2025-12-31",
+          "revenue": 270.583,
+          "operatingIncome": 66.958,
+          "sourceUrl": "https://finance.yahoo.com/quote/ALAB/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2025-09-30",
+          "revenue": 230.575,
+          "operatingIncome": 55.406,
+          "sourceUrl": "https://finance.yahoo.com/quote/ALAB/financials/",
+          "sourceType": "financial_aggregator"
+        }
+      ]
+    },
+    "NASDAQ:ARM": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": true,
+      "financialNote": "SEC EDGAR 연결 US GAAP 실제 회계분기 매출·영업손익을 사용했습니다. 4분기는 원문이 단독 수치를 제공하지 않을 경우 동일 회계연도 연간에서 9개월 누계를 차감했고, 조정영업이익은 섞지 않았습니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "start": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 1443.0,
+          "operatingIncome": 201.0,
+          "source": "SEC EDGAR 6-K, 0001973239-26-000142",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000142/0001973239-26-000142-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001973239.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-11-04",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-07-01 to 2026-09-30; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 1443000000,
+            "rawOperatingIncome": 201000000
+          },
+          "rawSha256": "651fdfaf59d4812668f2a390a44d3a9fb6387f308a4d0aad0436d239455b0935"
+        },
+        {
+          "date": "2026-06-30",
+          "start": "2026-04-01",
+          "periodType": "quarter",
+          "revenue": 1289.0,
+          "operatingIncome": 91.0,
+          "source": "SEC EDGAR 6-K, 0001973239-26-000114",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000114/0001973239-26-000114-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001973239.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-07-29",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-04-01 to 2026-06-30; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 1289000000,
+            "rawOperatingIncome": 91000000
+          },
+          "rawSha256": "651fdfaf59d4812668f2a390a44d3a9fb6387f308a4d0aad0436d239455b0935"
+        },
+        {
+          "date": "2026-03-31",
+          "start": "2026-01-01",
+          "periodType": "quarter",
+          "revenue": 1490.0,
+          "operatingIncome": 438.0,
+          "source": "SEC EDGAR 20-F, 0001973239-26-000097",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000097/0001973239-26-000097-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001973239.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-05-26",
+          "basis": "Consolidated US GAAP, actual standalone fiscal Q4 derived from matching full year less same fiscal nine months; not adjusted operating income.",
+          "sourceLocation": "Consolidated income statements, us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss; matching fiscal start 2025-04-01",
+          "calculation": {
+            "method": "Matching FY less 9M from SEC XBRL (raw USD divided by 1,000,000)",
+            "annual": {
+              "period": [
+                "2025-04-01",
+                "2026-03-31"
+              ],
+              "revenueUSD": 4920000000,
+              "operatingIncomeUSD": 900000000,
+              "filedAt": "2026-05-26",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000097/0001973239-26-000097-index.htm"
+            },
+            "nineMonths": {
+              "period": [
+                "2025-04-01",
+                "2025-12-31"
+              ],
+              "revenueUSD": 3430000000,
+              "operatingIncomeUSD": 462000000,
+              "filedAt": "2026-02-04",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000006/0001973239-26-000006-index.htm"
+            },
+            "rawRevenue": 1490000000,
+            "rawOperatingIncome": 438000000
+          },
+          "rawSha256": "651fdfaf59d4812668f2a390a44d3a9fb6387f308a4d0aad0436d239455b0935"
+        },
+        {
+          "date": "2025-12-31",
+          "start": "2025-10-01",
+          "periodType": "quarter",
+          "revenue": 1242.0,
+          "operatingIncome": 185.0,
+          "source": "SEC EDGAR 6-K, 0001973239-26-000006",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000006/0001973239-26-000006-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001973239.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-02-04",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2025-10-01 to 2025-12-31; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 1242000000,
+            "rawOperatingIncome": 185000000
+          },
+          "rawSha256": "651fdfaf59d4812668f2a390a44d3a9fb6387f308a4d0aad0436d239455b0935"
+        }
+      ],
+      "previousValues": [
+        {
+          "date": "2026-06-30",
+          "revenue": 1289.0,
+          "operatingIncome": 98.0,
+          "sourceUrl": "https://finance.yahoo.com/quote/ARM/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2026-03-31",
+          "revenue": 1490.0,
+          "operatingIncome": 440.0,
+          "sourceUrl": "https://finance.yahoo.com/quote/ARM/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2025-12-31",
+          "revenue": 1242.0,
+          "operatingIncome": 191.0,
+          "sourceUrl": "https://finance.yahoo.com/quote/ARM/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2025-09-30",
+          "revenue": 1135.0,
+          "operatingIncome": 163.0,
+          "sourceUrl": "https://finance.yahoo.com/quote/ARM/financials/",
+          "sourceType": "financial_aggregator"
+        }
+      ]
+    },
+    "NASDAQ:AVT": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": true,
+      "financialNote": "SEC EDGAR 연결 US GAAP 실제 회계분기 매출·영업손익을 사용했습니다. 4분기는 원문이 단독 수치를 제공하지 않을 경우 동일 회계연도 연간에서 9개월 누계를 차감했고, 조정영업이익은 섞지 않았습니다.",
+      "quarters": [
+        {
+          "date": "2026-10-03",
+          "start": "2026-06-28",
+          "periodType": "quarter",
+          "revenue": 10717.98,
+          "operatingIncome": 474.736,
+          "source": "SEC EDGAR 10-Q, 0000008858-26-000123",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/8858/000000885826000123/0000008858-26-000123-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000008858.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-11-06",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-06-28 to 2026-10-03; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 10717980000,
+            "rawOperatingIncome": 474736000
+          },
+          "rawSha256": "636791ea4a09a65fa5eecec3ac90cea9f5c32e9373094f91ffa7e547abe802b1"
+        },
+        {
+          "date": "2026-06-27",
+          "start": "2026-03-29",
+          "periodType": "quarter",
+          "revenue": 8295.377,
+          "operatingIncome": 231.019,
+          "source": "SEC EDGAR 10-K, 0001104659-26-096346",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/8858/000110465926096346/0001104659-26-096346-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000008858.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-08-14",
+          "basis": "Consolidated US GAAP, actual standalone fiscal Q4 derived from matching full year less same fiscal nine months; not adjusted operating income.",
+          "sourceLocation": "Consolidated income statements, us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss; matching fiscal start 2025-06-29",
+          "calculation": {
+            "method": "Matching FY less 9M from SEC XBRL (raw USD divided by 1,000,000)",
+            "annual": {
+              "period": [
+                "2025-06-29",
+                "2026-06-27"
+              ],
+              "revenueUSD": 27632683000,
+              "operatingIncomeUSD": 724782000,
+              "filedAt": "2026-08-14",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/8858/000110465926096346/0001104659-26-096346-index.htm"
+            },
+            "nineMonths": {
+              "period": [
+                "2025-06-29",
+                "2026-03-28"
+              ],
+              "revenueUSD": 19337306000,
+              "operatingIncomeUSD": 493763000,
+              "filedAt": "2026-05-01",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/8858/000000885826000042/0000008858-26-000042-index.htm"
+            },
+            "rawRevenue": 8295377000,
+            "rawOperatingIncome": 231019000
+          },
+          "rawSha256": "636791ea4a09a65fa5eecec3ac90cea9f5c32e9373094f91ffa7e547abe802b1"
+        },
+        {
+          "date": "2026-03-28",
+          "start": "2025-12-28",
+          "periodType": "quarter",
+          "revenue": 7119.779,
+          "operatingIncome": 205.535,
+          "source": "SEC EDGAR 10-Q, 0000008858-26-000042",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/8858/000000885826000042/0000008858-26-000042-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000008858.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-05-01",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2025-12-28 to 2026-03-28; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 7119779000,
+            "rawOperatingIncome": 205535000
+          },
+          "rawSha256": "636791ea4a09a65fa5eecec3ac90cea9f5c32e9373094f91ffa7e547abe802b1"
+        },
+        {
+          "date": "2025-12-27",
+          "start": "2025-09-28",
+          "periodType": "quarter",
+          "revenue": 6318.955,
+          "operatingIncome": 146.196,
+          "source": "SEC EDGAR 10-Q, 0000008858-26-000025",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/8858/000000885826000025/0000008858-26-000025-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000008858.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-01-30",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2025-09-28 to 2025-12-27; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 6318955000,
+            "rawOperatingIncome": 146196000
+          },
+          "rawSha256": "636791ea4a09a65fa5eecec3ac90cea9f5c32e9373094f91ffa7e547abe802b1"
+        }
+      ],
+      "previousValues": [
+        {
+          "date": "2026-06-30",
+          "revenue": 8295.377,
+          "operatingIncome": 317.526,
+          "sourceUrl": "https://finance.yahoo.com/quote/AVT/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2026-03-31",
+          "revenue": 7119.779,
+          "operatingIncome": 220.272,
+          "sourceUrl": "https://finance.yahoo.com/quote/AVT/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2025-12-31",
+          "revenue": 6318.955,
+          "operatingIncome": 171.367,
+          "sourceUrl": "https://finance.yahoo.com/quote/AVT/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2025-09-30",
+          "revenue": 5898.572,
+          "operatingIncome": 150.323,
+          "sourceUrl": "https://finance.yahoo.com/quote/AVT/financials/",
+          "sourceType": "financial_aggregator"
+        }
+      ]
+    },
+    "NASDAQ:CGNX": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": true,
+      "financialNote": "SEC EDGAR 연결 US GAAP 실제 회계분기 매출·영업손익을 사용했습니다. 4분기는 원문이 단독 수치를 제공하지 않을 경우 동일 회계연도 연간에서 9개월 누계를 차감했고, 조정영업이익은 섞지 않았습니다.",
+      "quarters": [
+        {
+          "date": "2026-10-04",
+          "start": "2026-07-06",
+          "periodType": "quarter",
+          "revenue": 313.387,
+          "operatingIncome": 100.822,
+          "source": "SEC EDGAR 10-Q, 0000851205-26-000082",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/851205/000085120526000082/0000851205-26-000082-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000851205.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-11-05",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-07-06 to 2026-10-04; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 313387000,
+            "rawOperatingIncome": 100822000
+          },
+          "rawSha256": "0393a46fd7bb3458a1c5bd119d5893c0a423fed1ca766ede7b64d26974da44ee"
+        },
+        {
+          "date": "2026-07-05",
+          "start": "2026-04-06",
+          "periodType": "quarter",
+          "revenue": 291.263,
+          "operatingIncome": 85.517,
+          "source": "SEC EDGAR 10-Q, 0000851205-26-000065",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/851205/000085120526000065/0000851205-26-000065-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000851205.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-08-06",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-04-06 to 2026-07-05; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 291263000,
+            "rawOperatingIncome": 85517000
+          },
+          "rawSha256": "0393a46fd7bb3458a1c5bd119d5893c0a423fed1ca766ede7b64d26974da44ee"
+        },
+        {
+          "date": "2026-04-05",
+          "start": "2026-01-01",
+          "periodType": "quarter",
+          "revenue": 268.437,
+          "operatingIncome": 59.873,
+          "source": "SEC EDGAR 10-Q, 0000851205-26-000040",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/851205/000085120526000040/0000851205-26-000040-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000851205.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-05-07",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-01-01 to 2026-04-05; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 268437000,
+            "rawOperatingIncome": 59873000
+          },
+          "rawSha256": "0393a46fd7bb3458a1c5bd119d5893c0a423fed1ca766ede7b64d26974da44ee"
+        },
+        {
+          "date": "2025-12-31",
+          "start": "2025-09-29",
+          "periodType": "quarter",
+          "revenue": 252.338,
+          "operatingIncome": 35.276,
+          "source": "SEC EDGAR 10-K, 0000851205-26-000012",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/851205/000085120526000012/0000851205-26-000012-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000851205.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-02-12",
+          "basis": "Consolidated US GAAP, actual standalone fiscal Q4 derived from matching full year less same fiscal nine months; not adjusted operating income.",
+          "sourceLocation": "Consolidated income statements, us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss; matching fiscal start 2025-01-01",
+          "calculation": {
+            "method": "Matching FY less 9M from SEC XBRL (raw USD divided by 1,000,000)",
+            "annual": {
+              "period": [
+                "2025-01-01",
+                "2025-12-31"
+              ],
+              "revenueUSD": 994359000,
+              "operatingIncomeUSD": 162566000,
+              "filedAt": "2026-02-12",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/851205/000085120526000012/0000851205-26-000012-index.htm"
+            },
+            "nineMonths": {
+              "period": [
+                "2025-01-01",
+                "2025-09-28"
+              ],
+              "revenueUSD": 742021000,
+              "operatingIncomeUSD": 127290000,
+              "filedAt": "2025-10-30",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/851205/000085120525000064/0000851205-25-000064-index.htm"
+            },
+            "rawRevenue": 252338000,
+            "rawOperatingIncome": 35276000
+          },
+          "rawSha256": "0393a46fd7bb3458a1c5bd119d5893c0a423fed1ca766ede7b64d26974da44ee"
+        }
+      ],
+      "previousValues": [
+        {
+          "date": "2026-06-30",
+          "revenue": 291.263,
+          "operatingIncome": 85.517,
+          "sourceUrl": "https://finance.yahoo.com/quote/CGNX/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2026-03-31",
+          "revenue": 268.437,
+          "operatingIncome": 59.873,
+          "sourceUrl": "https://finance.yahoo.com/quote/CGNX/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2025-12-31",
+          "revenue": 252.338,
+          "operatingIncome": 35.276,
+          "sourceUrl": "https://finance.yahoo.com/quote/CGNX/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2025-09-30",
+          "revenue": 276.892,
+          "operatingIncome": 57.765,
+          "sourceUrl": "https://finance.yahoo.com/quote/CGNX/financials/",
+          "sourceType": "financial_aggregator"
+        }
+      ]
+    },
+    "NASDAQ:CRWV": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": true,
+      "financialNote": "SEC EDGAR 연결 US GAAP 실제 회계분기 매출·영업손익을 사용했습니다. 4분기는 원문이 단독 수치를 제공하지 않을 경우 동일 회계연도 연간에서 9개월 누계를 차감했고, 조정영업이익은 섞지 않았습니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "start": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 3661.0,
+          "operatingIncome": 207.0,
+          "source": "SEC EDGAR 10-Q, 0001769628-26-000465",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/0001769628-26-000465-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001769628.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-11-12",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-07-01 to 2026-09-30; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 3661000000,
+            "rawOperatingIncome": 207000000
+          },
+          "rawSha256": "db107413ed110bc97796948be9bc14f8ac78ba9601e2c628feef97850e05380f"
+        },
+        {
+          "date": "2026-06-30",
+          "start": "2026-04-01",
+          "periodType": "quarter",
+          "revenue": 2575.0,
+          "operatingIncome": -49.0,
+          "source": "SEC EDGAR 10-Q, 0001769628-26-000366",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/0001769628-26-000366-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001769628.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-08-12",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-04-01 to 2026-06-30; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 2575000000,
+            "rawOperatingIncome": -49000000
+          },
+          "rawSha256": "db107413ed110bc97796948be9bc14f8ac78ba9601e2c628feef97850e05380f"
+        },
+        {
+          "date": "2026-03-31",
+          "start": "2026-01-01",
+          "periodType": "quarter",
+          "revenue": 2078.0,
+          "operatingIncome": -144.0,
+          "source": "SEC EDGAR 10-Q, 0001769628-26-000222",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000222/0001769628-26-000222-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001769628.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-05-08",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-01-01 to 2026-03-31; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 2078000000,
+            "rawOperatingIncome": -144000000
+          },
+          "rawSha256": "db107413ed110bc97796948be9bc14f8ac78ba9601e2c628feef97850e05380f"
+        },
+        {
+          "date": "2025-12-31",
+          "start": "2025-10-01",
+          "periodType": "quarter",
+          "revenue": 1571.904,
+          "operatingIncome": -89.589,
+          "source": "SEC EDGAR 10-K, 0001769628-26-000104",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000104/0001769628-26-000104-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001769628.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-03-02",
+          "basis": "Consolidated US GAAP, actual standalone fiscal Q4 derived from matching full year less same fiscal nine months; not adjusted operating income.",
+          "sourceLocation": "Consolidated income statements, us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss; matching fiscal start 2025-01-01",
+          "calculation": {
+            "method": "Matching FY less 9M from SEC XBRL (raw USD divided by 1,000,000)",
+            "annual": {
+              "period": [
+                "2025-01-01",
+                "2025-12-31"
+              ],
+              "revenueUSD": 5131000000,
+              "operatingIncomeUSD": -46000000,
+              "filedAt": "2026-03-02",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000104/0001769628-26-000104-index.htm"
+            },
+            "nineMonths": {
+              "period": [
+                "2025-01-01",
+                "2025-09-30"
+              ],
+              "revenueUSD": 3559096000,
+              "operatingIncomeUSD": 43589000,
+              "filedAt": "2025-11-13",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000062/0001769628-25-000062-index.htm"
+            },
+            "rawRevenue": 1571904000,
+            "rawOperatingIncome": -89589000
+          },
+          "rawSha256": "db107413ed110bc97796948be9bc14f8ac78ba9601e2c628feef97850e05380f"
+        }
+      ],
+      "previousValues": [
+        {
+          "date": "2026-06-30",
+          "revenue": 2575.0,
+          "operatingIncome": -49.0,
+          "sourceUrl": "https://finance.yahoo.com/quote/CRWV/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2026-03-31",
+          "revenue": 2078.0,
+          "operatingIncome": -144.0,
+          "sourceUrl": "https://finance.yahoo.com/quote/CRWV/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2025-12-31",
+          "revenue": 1571.904,
+          "operatingIncome": -89.589,
+          "sourceUrl": "https://finance.yahoo.com/quote/CRWV/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2025-09-30",
+          "revenue": 1364.676,
+          "operatingIncome": 51.85,
+          "sourceUrl": "https://finance.yahoo.com/quote/CRWV/financials/",
+          "sourceType": "financial_aggregator"
+        }
+      ]
+    },
+    "NASDAQ:EXPE": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": true,
+      "financialNote": "SEC EDGAR 연결 US GAAP 실제 회계분기 매출·영업손익을 사용했습니다. 4분기는 원문이 단독 수치를 제공하지 않을 경우 동일 회계연도 연간에서 9개월 누계를 차감했고, 조정영업이익은 섞지 않았습니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "start": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 4938.0,
+          "operatingIncome": 1326.0,
+          "source": "SEC EDGAR 10-Q, 0001324424-26-000062",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1324424/000132442426000062/0001324424-26-000062-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001324424.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-11-05",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-07-01 to 2026-09-30; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 4938000000,
+            "rawOperatingIncome": 1326000000
+          },
+          "rawSha256": "9750f86952d20e12f9c8a4d0516c37d4be37a5737e783897d61504b612fc3afe"
+        },
+        {
+          "date": "2026-06-30",
+          "start": "2026-04-01",
+          "periodType": "quarter",
+          "revenue": 4315.0,
+          "operatingIncome": 800.0,
+          "source": "SEC EDGAR 10-Q, 0001324424-26-000053",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1324424/000132442426000053/0001324424-26-000053-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001324424.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-08-06",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-04-01 to 2026-06-30; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 4315000000,
+            "rawOperatingIncome": 800000000
+          },
+          "rawSha256": "9750f86952d20e12f9c8a4d0516c37d4be37a5737e783897d61504b612fc3afe"
+        },
+        {
+          "date": "2026-03-31",
+          "start": "2026-01-01",
+          "periodType": "quarter",
+          "revenue": 3426.0,
+          "operatingIncome": 251.0,
+          "source": "SEC EDGAR 10-Q, 0001324424-26-000035",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1324424/000132442426000035/0001324424-26-000035-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001324424.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-05-08",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-01-01 to 2026-03-31; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 3426000000,
+            "rawOperatingIncome": 251000000
+          },
+          "rawSha256": "9750f86952d20e12f9c8a4d0516c37d4be37a5737e783897d61504b612fc3afe"
+        },
+        {
+          "date": "2025-12-31",
+          "start": "2025-10-01",
+          "periodType": "quarter",
+          "revenue": 3547.0,
+          "operatingIncome": 420.0,
+          "source": "SEC EDGAR 10-K, 0001324424-26-000008",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1324424/000132442426000008/0001324424-26-000008-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001324424.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-02-13",
+          "basis": "Consolidated US GAAP, actual standalone fiscal Q4 derived from matching full year less same fiscal nine months; not adjusted operating income.",
+          "sourceLocation": "Consolidated income statements, us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss; matching fiscal start 2025-01-01",
+          "calculation": {
+            "method": "Matching FY less 9M from SEC XBRL (raw USD divided by 1,000,000)",
+            "annual": {
+              "period": [
+                "2025-01-01",
+                "2025-12-31"
+              ],
+              "revenueUSD": 14733000000,
+              "operatingIncomeUSD": 1871000000,
+              "filedAt": "2026-02-13",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1324424/000132442426000008/0001324424-26-000008-index.htm"
+            },
+            "nineMonths": {
+              "period": [
+                "2025-01-01",
+                "2025-09-30"
+              ],
+              "revenueUSD": 11186000000,
+              "operatingIncomeUSD": 1451000000,
+              "filedAt": "2025-11-07",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1324424/000132442425000051/0001324424-25-000051-index.htm"
+            },
+            "rawRevenue": 3547000000,
+            "rawOperatingIncome": 420000000
+          },
+          "rawSha256": "9750f86952d20e12f9c8a4d0516c37d4be37a5737e783897d61504b612fc3afe"
+        }
+      ],
+      "previousValues": [
+        {
+          "date": "2026-06-30",
+          "revenue": 4315.0,
+          "operatingIncome": 819.0,
+          "sourceUrl": "https://finance.yahoo.com/quote/EXPE/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2026-03-31",
+          "revenue": 3426.0,
+          "operatingIncome": 243.0,
+          "sourceUrl": "https://finance.yahoo.com/quote/EXPE/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2025-12-31",
+          "revenue": 3547.0,
+          "operatingIncome": 548.0,
+          "sourceUrl": "https://finance.yahoo.com/quote/EXPE/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2025-09-30",
+          "revenue": 4412.0,
+          "operatingIncome": 1128.0,
+          "sourceUrl": "https://finance.yahoo.com/quote/EXPE/financials/",
+          "sourceType": "financial_aggregator"
+        }
+      ]
+    },
+    "NASDAQ:ICHR": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": true,
+      "financialNote": "SEC EDGAR 연결 US GAAP 실제 회계분기 매출·영업손익을 사용했습니다. 4분기는 원문이 단독 수치를 제공하지 않을 경우 동일 회계연도 연간에서 9개월 누계를 차감했고, 조정영업이익은 섞지 않았습니다.",
+      "quarters": [
+        {
+          "date": "2026-09-25",
+          "start": "2026-06-27",
+          "periodType": "quarter",
+          "revenue": 328.699,
+          "operatingIncome": 22.81,
+          "source": "SEC EDGAR 10-Q, 0001652535-26-000078",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1652535/000165253526000078/0001652535-26-000078-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001652535.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-11-03",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-06-27 to 2026-09-25; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 328699000,
+            "rawOperatingIncome": 22810000
+          },
+          "rawSha256": "1e4c303cb29ab3a5c2070dbc00fad3b367f280af065460e1db092a30ffcb2a6e"
+        },
+        {
+          "date": "2026-06-26",
+          "start": "2026-03-28",
+          "periodType": "quarter",
+          "revenue": 294.784,
+          "operatingIncome": 7.195,
+          "source": "SEC EDGAR 10-Q, 0001652535-26-000069",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1652535/000165253526000069/0001652535-26-000069-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001652535.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-08-04",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-03-28 to 2026-06-26; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 294784000,
+            "rawOperatingIncome": 7195000
+          },
+          "rawSha256": "1e4c303cb29ab3a5c2070dbc00fad3b367f280af065460e1db092a30ffcb2a6e"
+        },
+        {
+          "date": "2026-03-27",
+          "start": "2025-12-27",
+          "periodType": "quarter",
+          "revenue": 256.068,
+          "operatingIncome": 2.085,
+          "source": "SEC EDGAR 10-Q, 0001652535-26-000031",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1652535/000165253526000031/0001652535-26-000031-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001652535.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-05-05",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2025-12-27 to 2026-03-27; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 256068000,
+            "rawOperatingIncome": 2085000
+          },
+          "rawSha256": "1e4c303cb29ab3a5c2070dbc00fad3b367f280af065460e1db092a30ffcb2a6e"
+        },
+        {
+          "date": "2025-12-26",
+          "start": "2025-09-27",
+          "periodType": "quarter",
+          "revenue": 223.606,
+          "operatingIncome": -13.835,
+          "source": "SEC EDGAR 10-K, 0001652535-26-000012",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1652535/000165253526000012/0001652535-26-000012-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001652535.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-02-20",
+          "basis": "Consolidated US GAAP, actual standalone fiscal Q4 derived from matching full year less same fiscal nine months; not adjusted operating income.",
+          "sourceLocation": "Consolidated income statements, us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss; matching fiscal start 2024-12-28",
+          "calculation": {
+            "method": "Matching FY less 9M from SEC XBRL (raw USD divided by 1,000,000)",
+            "annual": {
+              "period": [
+                "2024-12-28",
+                "2025-12-26"
+              ],
+              "revenueUSD": 947652000,
+              "operatingIncomeUSD": -39272000,
+              "filedAt": "2026-02-20",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1652535/000165253526000012/0001652535-26-000012-index.htm"
+            },
+            "nineMonths": {
+              "period": [
+                "2024-12-28",
+                "2025-09-26"
+              ],
+              "revenueUSD": 724046000,
+              "operatingIncomeUSD": -25437000,
+              "filedAt": "2025-11-03",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1652535/000165253525000078/0001652535-25-000078-index.htm"
+            },
+            "rawRevenue": 223606000,
+            "rawOperatingIncome": -13835000
+          },
+          "rawSha256": "1e4c303cb29ab3a5c2070dbc00fad3b367f280af065460e1db092a30ffcb2a6e"
+        }
+      ],
+      "previousValues": [
+        {
+          "date": "2026-06-30",
+          "revenue": 294.784,
+          "operatingIncome": 7.195,
+          "sourceUrl": "https://finance.yahoo.com/quote/ICHR/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2026-03-31",
+          "revenue": 256.068,
+          "operatingIncome": 2.085,
+          "sourceUrl": "https://finance.yahoo.com/quote/ICHR/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2025-12-31",
+          "revenue": 223.606,
+          "operatingIncome": -13.835,
+          "sourceUrl": "https://finance.yahoo.com/quote/ICHR/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2025-09-30",
+          "revenue": 239.296,
+          "operatingIncome": -19.425,
+          "sourceUrl": "https://finance.yahoo.com/quote/ICHR/financials/",
+          "sourceType": "financial_aggregator"
+        }
+      ]
+    },
+    "NASDAQ:SHOP": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": true,
+      "financialNote": "SEC EDGAR 연결 US GAAP 실제 회계분기 매출·영업손익을 사용했습니다. 4분기는 원문이 단독 수치를 제공하지 않을 경우 동일 회계연도 연간에서 9개월 누계를 차감했고, 조정영업이익은 섞지 않았습니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "start": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 3742.0,
+          "operatingIncome": 568.0,
+          "source": "SEC EDGAR 10-Q, 0001594805-26-000068",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1594805/000159480526000068/0001594805-26-000068-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001594805.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-11-03",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-07-01 to 2026-09-30; us-gaap:Revenues and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 3742000000,
+            "rawOperatingIncome": 568000000
+          },
+          "rawSha256": "1202314de96b87f617c7ea86379c9def933e4753dcd174c3248dfd5cee0b966d"
+        },
+        {
+          "date": "2026-06-30",
+          "start": "2026-04-01",
+          "periodType": "quarter",
+          "revenue": 3583.0,
+          "operatingIncome": 488.0,
+          "source": "SEC EDGAR 10-Q, 0001594805-26-000047",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1594805/000159480526000047/0001594805-26-000047-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001594805.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-08-05",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-04-01 to 2026-06-30; us-gaap:Revenues and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 3583000000,
+            "rawOperatingIncome": 488000000
+          },
+          "rawSha256": "1202314de96b87f617c7ea86379c9def933e4753dcd174c3248dfd5cee0b966d"
+        },
+        {
+          "date": "2026-03-31",
+          "start": "2026-01-01",
+          "periodType": "quarter",
+          "revenue": 3170.0,
+          "operatingIncome": 382.0,
+          "source": "SEC EDGAR 10-Q, 0001594805-26-000019",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1594805/000159480526000019/0001594805-26-000019-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001594805.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-05-05",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-01-01 to 2026-03-31; us-gaap:Revenues and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 3170000000,
+            "rawOperatingIncome": 382000000
+          },
+          "rawSha256": "1202314de96b87f617c7ea86379c9def933e4753dcd174c3248dfd5cee0b966d"
+        },
+        {
+          "date": "2025-12-31",
+          "start": "2025-10-01",
+          "periodType": "quarter",
+          "revenue": 3672.0,
+          "operatingIncome": 631.0,
+          "source": "SEC EDGAR 10-K, 0001594805-26-000007",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1594805/000159480526000007/0001594805-26-000007-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001594805.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-02-11",
+          "basis": "Consolidated US GAAP, actual standalone fiscal Q4 derived from matching full year less same fiscal nine months; not adjusted operating income.",
+          "sourceLocation": "Consolidated income statements, us-gaap:Revenues and us-gaap:OperatingIncomeLoss; matching fiscal start 2025-01-01",
+          "calculation": {
+            "method": "Matching FY less 9M from SEC XBRL (raw USD divided by 1,000,000)",
+            "annual": {
+              "period": [
+                "2025-01-01",
+                "2025-12-31"
+              ],
+              "revenueUSD": 11556000000,
+              "operatingIncomeUSD": 1468000000,
+              "filedAt": "2026-02-11",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1594805/000159480526000007/0001594805-26-000007-index.htm"
+            },
+            "nineMonths": {
+              "period": [
+                "2025-01-01",
+                "2025-09-30"
+              ],
+              "revenueUSD": 7884000000,
+              "operatingIncomeUSD": 837000000,
+              "filedAt": "2025-11-04",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1594805/000159480525000089/0001594805-25-000089-index.htm"
+            },
+            "rawRevenue": 3672000000,
+            "rawOperatingIncome": 631000000
+          },
+          "rawSha256": "1202314de96b87f617c7ea86379c9def933e4753dcd174c3248dfd5cee0b966d"
+        }
+      ],
+      "previousValues": [
+        {
+          "date": "2026-06-30",
+          "revenue": 3583.0,
+          "operatingIncome": 629.0,
+          "sourceUrl": "https://finance.yahoo.com/quote/SHOP/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2026-03-31",
+          "revenue": 3170.0,
+          "operatingIncome": 498.0,
+          "sourceUrl": "https://finance.yahoo.com/quote/SHOP/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2025-12-31",
+          "revenue": 3672.0,
+          "operatingIncome": 745.0,
+          "sourceUrl": "https://finance.yahoo.com/quote/SHOP/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2025-09-30",
+          "revenue": 2844.0,
+          "operatingIncome": 491.0,
+          "sourceUrl": "https://finance.yahoo.com/quote/SHOP/financials/",
+          "sourceType": "financial_aggregator"
+        }
+      ]
+    },
+    "NASDAQ:TEAM": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": true,
+      "financialNote": "SEC EDGAR 연결 US GAAP 실제 회계분기 매출·영업손익을 사용했습니다. 4분기는 원문이 단독 수치를 제공하지 않을 경우 동일 회계연도 연간에서 9개월 누계를 차감했고, 조정영업이익은 섞지 않았습니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "start": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 1772.15,
+          "operatingIncome": 188.793,
+          "source": "SEC EDGAR 10-Q, 0001650372-26-000054",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1650372/000165037226000054/0001650372-26-000054-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001650372.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-11-06",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-07-01 to 2026-09-30; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 1772150000,
+            "rawOperatingIncome": 188793000
+          },
+          "rawSha256": "99a2fa0466d8d58943d9b5617fbf3b47ebcb502a279bcfd423052d31c9e2e518"
+        },
+        {
+          "date": "2026-06-30",
+          "start": "2026-04-01",
+          "periodType": "quarter",
+          "revenue": 1766.469,
+          "operatingIncome": 210.723,
+          "source": "SEC EDGAR 10-K, 0001650372-26-000036",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1650372/000165037226000036/0001650372-26-000036-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001650372.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-08-14",
+          "basis": "Consolidated US GAAP, actual standalone fiscal Q4 derived from matching full year less same fiscal nine months; not adjusted operating income.",
+          "sourceLocation": "Consolidated income statements, us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss; matching fiscal start 2025-07-01",
+          "calculation": {
+            "method": "Matching FY less 9M from SEC XBRL (raw USD divided by 1,000,000)",
+            "annual": {
+              "period": [
+                "2025-07-01",
+                "2026-06-30"
+              ],
+              "revenueUSD": 6572308000,
+              "operatingIncomeUSD": 10355000,
+              "filedAt": "2026-08-14",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1650372/000165037226000036/0001650372-26-000036-index.htm"
+            },
+            "nineMonths": {
+              "period": [
+                "2025-07-01",
+                "2026-03-31"
+              ],
+              "revenueUSD": 4805839000,
+              "operatingIncomeUSD": -200368000,
+              "filedAt": "2026-05-01",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1650372/000165037226000027/0001650372-26-000027-index.htm"
+            },
+            "rawRevenue": 1766469000,
+            "rawOperatingIncome": 210723000
+          },
+          "rawSha256": "99a2fa0466d8d58943d9b5617fbf3b47ebcb502a279bcfd423052d31c9e2e518"
+        },
+        {
+          "date": "2026-03-31",
+          "start": "2026-01-01",
+          "periodType": "quarter",
+          "revenue": 1786.971,
+          "operatingIncome": -56.284,
+          "source": "SEC EDGAR 10-Q, 0001650372-26-000027",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1650372/000165037226000027/0001650372-26-000027-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001650372.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-05-01",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-01-01 to 2026-03-31; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 1786971000,
+            "rawOperatingIncome": -56284000
+          },
+          "rawSha256": "99a2fa0466d8d58943d9b5617fbf3b47ebcb502a279bcfd423052d31c9e2e518"
+        },
+        {
+          "date": "2025-12-31",
+          "start": "2025-10-01",
+          "periodType": "quarter",
+          "revenue": 1586.315,
+          "operatingIncome": -47.747,
+          "source": "SEC EDGAR 10-Q, 0001650372-26-000011",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1650372/000165037226000011/0001650372-26-000011-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001650372.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-02-06",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2025-10-01 to 2025-12-31; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 1586315000,
+            "rawOperatingIncome": -47747000
+          },
+          "rawSha256": "99a2fa0466d8d58943d9b5617fbf3b47ebcb502a279bcfd423052d31c9e2e518"
+        }
+      ],
+      "previousValues": [
+        {
+          "date": "2026-06-30",
+          "revenue": 1766.469,
+          "operatingIncome": 210.723,
+          "sourceUrl": "https://finance.yahoo.com/quote/TEAM/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2026-03-31",
+          "revenue": 1786.971,
+          "operatingIncome": -56.284,
+          "sourceUrl": "https://finance.yahoo.com/quote/TEAM/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2025-12-31",
+          "revenue": 1586.315,
+          "operatingIncome": -47.747,
+          "sourceUrl": "https://finance.yahoo.com/quote/TEAM/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2025-09-30",
+          "revenue": 1432.553,
+          "operatingIncome": -96.337,
+          "sourceUrl": "https://finance.yahoo.com/quote/TEAM/financials/",
+          "sourceType": "financial_aggregator"
+        }
+      ]
+    },
+    "NASDAQ:TTD": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": true,
+      "financialNote": "SEC EDGAR 연결 US GAAP 실제 회계분기 매출·영업손익을 사용했습니다. 4분기는 원문이 단독 수치를 제공하지 않을 경우 동일 회계연도 연간에서 9개월 누계를 차감했고, 조정영업이익은 섞지 않았습니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "start": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 735.965,
+          "operatingIncome": 92.606,
+          "source": "SEC EDGAR 10-Q, 0001671933-26-000116",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1671933/000167193326000116/0001671933-26-000116-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001671933.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-11-09",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-07-01 to 2026-09-30; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 735965000,
+            "rawOperatingIncome": 92606000
+          },
+          "rawSha256": "ee2f5f2cafd128a92cdfbd9e401222d90066947e2605f5f04941ad6ced6b0b40"
+        },
+        {
+          "date": "2026-06-30",
+          "start": "2026-04-01",
+          "periodType": "quarter",
+          "revenue": 715.057,
+          "operatingIncome": 101.577,
+          "source": "SEC EDGAR 10-Q, 0001671933-26-000086",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1671933/000167193326000086/0001671933-26-000086-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001671933.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-08-06",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-04-01 to 2026-06-30; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 715057000,
+            "rawOperatingIncome": 101577000
+          },
+          "rawSha256": "ee2f5f2cafd128a92cdfbd9e401222d90066947e2605f5f04941ad6ced6b0b40"
+        },
+        {
+          "date": "2026-03-31",
+          "start": "2026-01-01",
+          "periodType": "quarter",
+          "revenue": 688.857,
+          "operatingIncome": 66.647,
+          "source": "SEC EDGAR 10-Q, 0001671933-26-000054",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1671933/000167193326000054/0001671933-26-000054-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001671933.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-05-07",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-01-01 to 2026-03-31; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 688857000,
+            "rawOperatingIncome": 66647000
+          },
+          "rawSha256": "ee2f5f2cafd128a92cdfbd9e401222d90066947e2605f5f04941ad6ced6b0b40"
+        },
+        {
+          "date": "2025-12-31",
+          "start": "2025-10-01",
+          "periodType": "quarter",
+          "revenue": 846.791,
+          "operatingIncome": 256.873,
+          "source": "SEC EDGAR 10-K, 0001671933-26-000014",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1671933/000167193326000014/0001671933-26-000014-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001671933.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-02-27",
+          "basis": "Consolidated US GAAP, actual standalone fiscal Q4 derived from matching full year less same fiscal nine months; not adjusted operating income.",
+          "sourceLocation": "Consolidated income statements, us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss; matching fiscal start 2025-01-01",
+          "calculation": {
+            "method": "Matching FY less 9M from SEC XBRL (raw USD divided by 1,000,000)",
+            "annual": {
+              "period": [
+                "2025-01-01",
+                "2025-12-31"
+              ],
+              "revenueUSD": 2896284000,
+              "operatingIncomeUSD": 589321000,
+              "filedAt": "2026-02-27",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1671933/000167193326000014/0001671933-26-000014-index.htm"
+            },
+            "nineMonths": {
+              "period": [
+                "2025-01-01",
+                "2025-09-30"
+              ],
+              "revenueUSD": 2049493000,
+              "operatingIncomeUSD": 332448000,
+              "filedAt": "2025-11-06",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1671933/000167193325000144/0001671933-25-000144-index.htm"
+            },
+            "rawRevenue": 846791000,
+            "rawOperatingIncome": 256873000
+          },
+          "rawSha256": "ee2f5f2cafd128a92cdfbd9e401222d90066947e2605f5f04941ad6ced6b0b40"
+        }
+      ],
+      "previousValues": [
+        {
+          "date": "2026-06-30",
+          "revenue": 715.057,
+          "operatingIncome": 101.577,
+          "sourceUrl": "https://finance.yahoo.com/quote/TTD/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2026-03-31",
+          "revenue": 688.857,
+          "operatingIncome": 66.647,
+          "sourceUrl": "https://finance.yahoo.com/quote/TTD/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2025-12-31",
+          "revenue": 846.791,
+          "operatingIncome": 256.873,
+          "sourceUrl": "https://finance.yahoo.com/quote/TTD/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2025-09-30",
+          "revenue": 739.433,
+          "operatingIncome": 161.219,
+          "sourceUrl": "https://finance.yahoo.com/quote/TTD/financials/",
+          "sourceType": "financial_aggregator"
+        }
+      ]
+    },
+    "NASDAQ:VIAV": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": true,
+      "financialNote": "SEC EDGAR 연결 US GAAP 실제 회계분기 매출·영업손익을 사용했습니다. 4분기는 원문이 단독 수치를 제공하지 않을 경우 동일 회계연도 연간에서 9개월 누계를 차감했고, 조정영업이익은 섞지 않았습니다.",
+      "quarters": [
+        {
+          "date": "2026-10-03",
+          "start": "2026-06-28",
+          "periodType": "quarter",
+          "revenue": 469.3,
+          "operatingIncome": 81.7,
+          "source": "SEC EDGAR 10-Q, 0001628280-26-071076",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/912093/000162828026071076/0001628280-26-071076-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000912093.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-11-05",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-06-28 to 2026-10-03; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 469300000,
+            "rawOperatingIncome": 81700000
+          },
+          "rawSha256": "3e464f986dbe93d6aa77c2d085717ce6cd178c45aa583d1e2b68e6615a47be2b"
+        },
+        {
+          "date": "2026-06-27",
+          "start": "2026-03-29",
+          "periodType": "quarter",
+          "revenue": 443.1,
+          "operatingIncome": 61.3,
+          "source": "SEC EDGAR 10-K, 0001628280-26-056765",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/912093/000162828026056765/0001628280-26-056765-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000912093.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-08-13",
+          "basis": "Consolidated US GAAP, actual standalone fiscal Q4 derived from matching full year less same fiscal nine months; not adjusted operating income.",
+          "sourceLocation": "Consolidated income statements, us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss; matching fiscal start 2025-06-29",
+          "calculation": {
+            "method": "Matching FY less 9M from SEC XBRL (raw USD divided by 1,000,000)",
+            "annual": {
+              "period": [
+                "2025-06-29",
+                "2026-06-27"
+              ],
+              "revenueUSD": 1518300000,
+              "operatingIncomeUSD": 105100000,
+              "filedAt": "2026-08-13",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/912093/000162828026056765/0001628280-26-056765-index.htm"
+            },
+            "nineMonths": {
+              "period": [
+                "2025-06-29",
+                "2026-03-28"
+              ],
+              "revenueUSD": 1075200000,
+              "operatingIncomeUSD": 43800000,
+              "filedAt": "2026-04-30",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/912093/000162828026028926/0001628280-26-028926-index.htm"
+            },
+            "rawRevenue": 443100000,
+            "rawOperatingIncome": 61300000
+          },
+          "rawSha256": "3e464f986dbe93d6aa77c2d085717ce6cd178c45aa583d1e2b68e6615a47be2b"
+        },
+        {
+          "date": "2026-03-28",
+          "periodStart": "2025-12-28",
+          "revenue": 406.8,
+          "operatingIncome": 24.8,
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "basis": "US GAAP; consolidated; actual standalone fiscal quarter",
+          "source": "SEC EDGAR issuer financial statement",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/912093/000162828026028926/viav-20260328.htm",
+          "verifiedAt": "2026-10-30",
+          "observedAt": "2026-10-30T22:02:41.226891+00:00",
+          "publishedAt": "2026-04-30",
+          "sourceFacts": {
+            "revenue": {
+              "start": "2025-12-28",
+              "end": "2026-03-28",
+              "val": 406800000,
+              "accn": "0001628280-26-028926",
+              "fy": 2026,
+              "fp": "Q3",
+              "form": "10-Q",
+              "filed": "2026-04-30",
+              "frame": "CY2026Q1",
+              "xbrlTag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/912093/000162828026028926/viav-20260328.htm",
+              "rawUnit": "USD"
+            },
+            "operatingIncome": {
+              "start": "2025-12-28",
+              "end": "2026-03-28",
+              "val": 24800000,
+              "accn": "0001628280-26-028926",
+              "fy": 2026,
+              "fp": "Q3",
+              "form": "10-Q",
+              "filed": "2026-04-30",
+              "frame": "CY2026Q1",
+              "xbrlTag": "OperatingIncomeLoss",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/912093/000162828026028926/viav-20260328.htm",
+              "rawUnit": "USD"
+            }
+          },
+          "supportingSources": [
+            {
+              "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000912093.json",
+              "retrievedAt": "2026-10-30T22:02:41.226891+00:00",
+              "sha256": "c79b878e50418c02bb1419e7ae25699eb448a5229b9f5ab65976d601afebca71"
+            }
+          ],
+          "reviewedAt": "2026-10-30T22:04:44.687671+00:00"
+        },
+        {
+          "date": "2025-12-27",
+          "periodStart": "2025-09-28",
+          "revenue": 369.3,
+          "operatingIncome": 11.4,
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "basis": "US GAAP; consolidated; actual standalone fiscal quarter",
+          "source": "SEC EDGAR issuer financial statement",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/912093/000162828026004138/viav-20251227.htm",
+          "verifiedAt": "2026-10-30",
+          "observedAt": "2026-10-30T22:02:41.226891+00:00",
+          "publishedAt": "2026-01-29",
+          "sourceFacts": {
+            "revenue": {
+              "start": "2025-09-28",
+              "end": "2025-12-27",
+              "val": 369300000,
+              "accn": "0001628280-26-004138",
+              "fy": 2026,
+              "fp": "Q2",
+              "form": "10-Q",
+              "filed": "2026-01-29",
+              "frame": "CY2025Q4",
+              "xbrlTag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/912093/000162828026004138/viav-20251227.htm",
+              "rawUnit": "USD"
+            },
+            "operatingIncome": {
+              "start": "2025-09-28",
+              "end": "2025-12-27",
+              "val": 11400000,
+              "accn": "0001628280-26-004138",
+              "fy": 2026,
+              "fp": "Q2",
+              "form": "10-Q",
+              "filed": "2026-01-29",
+              "frame": "CY2025Q4",
+              "xbrlTag": "OperatingIncomeLoss",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/912093/000162828026004138/viav-20251227.htm",
+              "rawUnit": "USD"
+            }
+          },
+          "supportingSources": [
+            {
+              "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000912093.json",
+              "retrievedAt": "2026-10-30T22:02:41.226891+00:00",
+              "sha256": "c79b878e50418c02bb1419e7ae25699eb448a5229b9f5ab65976d601afebca71"
+            }
+          ],
+          "reviewedAt": "2026-10-30T22:04:44.687671+00:00"
+        }
+      ],
+      "previousValues": [
+        {
+          "date": "2026-06-27",
+          "revenue": 443.1,
+          "operatingIncome": 61.3,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/912093/000162828026056765/viav-20260627.htm",
+          "sourceType": "filing-derived"
+        },
+        {
+          "date": "2026-03-28",
+          "revenue": 406.8,
+          "operatingIncome": 24.8,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/912093/000162828026028926/viav-20260328.htm",
+          "sourceType": "filing"
+        },
+        {
+          "date": "2025-12-27",
+          "revenue": 369.3,
+          "operatingIncome": 11.4,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/912093/000162828026004138/viav-20251227.htm",
+          "sourceType": "filing"
+        },
+        {
+          "date": "2025-09-27",
+          "revenue": 299.1,
+          "operatingIncome": 7.6,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/912093/000091209325000153/viav-20250927.htm",
+          "sourceType": "filing"
+        }
+      ]
+    },
+    "NYSE:ARW": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": true,
+      "financialNote": "SEC EDGAR 연결 US GAAP 실제 회계분기 매출·영업손익을 사용했습니다. 4분기는 원문이 단독 수치를 제공하지 않을 경우 동일 회계연도 연간에서 9개월 누계를 차감했고, 조정영업이익은 섞지 않았습니다.",
+      "quarters": [
+        {
+          "date": "2026-10-03",
+          "start": "2026-07-05",
+          "periodType": "quarter",
+          "revenue": 10717.739,
+          "operatingIncome": 430.257,
+          "source": "SEC EDGAR 10-Q, 0001104659-26-123063",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/7536/000110465926123063/0001104659-26-123063-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000007536.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-11-05",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-07-05 to 2026-10-03; us-gaap:Revenues and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 10717739000,
+            "rawOperatingIncome": 430257000
+          },
+          "rawSha256": "7335e5f6f2f03c3123781e5e27220a75b7a94e716e613eddfff9600813a4c3c7"
+        },
+        {
+          "date": "2026-07-04",
+          "start": "2026-04-05",
+          "periodType": "quarter",
+          "revenue": 9992.237,
+          "operatingIncome": 377.333,
+          "source": "SEC EDGAR 10-Q, 0001104659-26-091983",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/7536/000110465926091983/0001104659-26-091983-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000007536.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-08-06",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-04-05 to 2026-07-04; us-gaap:Revenues and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 9992237000,
+            "rawOperatingIncome": 377333000
+          },
+          "rawSha256": "7335e5f6f2f03c3123781e5e27220a75b7a94e716e613eddfff9600813a4c3c7"
+        },
+        {
+          "date": "2026-04-04",
+          "start": "2026-01-01",
+          "periodType": "quarter",
+          "revenue": 9473.548,
+          "operatingIncome": 361.602,
+          "source": "SEC EDGAR 10-Q, 0001104659-26-056650",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/7536/000110465926056650/0001104659-26-056650-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000007536.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-05-07",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-01-01 to 2026-04-04; us-gaap:Revenues and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 9473548000,
+            "rawOperatingIncome": 361602000
+          },
+          "rawSha256": "7335e5f6f2f03c3123781e5e27220a75b7a94e716e613eddfff9600813a4c3c7"
+        },
+        {
+          "date": "2025-12-31",
+          "start": "2025-09-28",
+          "periodType": "quarter",
+          "revenue": 8746.43,
+          "operatingIncome": 294.077,
+          "source": "SEC EDGAR 10-K, 0001104659-26-012765",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/7536/000110465926012765/0001104659-26-012765-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000007536.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-02-11",
+          "basis": "Consolidated US GAAP, actual standalone fiscal Q4 derived from matching full year less same fiscal nine months; not adjusted operating income.",
+          "sourceLocation": "Consolidated income statements, us-gaap:Revenues and us-gaap:OperatingIncomeLoss; matching fiscal start 2025-01-01",
+          "calculation": {
+            "method": "Matching FY less 9M from SEC XBRL (raw USD divided by 1,000,000)",
+            "annual": {
+              "period": [
+                "2025-01-01",
+                "2025-12-31"
+              ],
+              "revenueUSD": 30852935000,
+              "operatingIncomeUSD": 822223000,
+              "filedAt": "2026-02-11",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/7536/000110465926012765/0001104659-26-012765-index.htm"
+            },
+            "nineMonths": {
+              "period": [
+                "2025-01-01",
+                "2025-09-27"
+              ],
+              "revenueUSD": 22106505000,
+              "operatingIncomeUSD": 528146000,
+              "filedAt": "2025-10-30",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/7536/000110465925104364/0001104659-25-104364-index.htm"
+            },
+            "rawRevenue": 8746430000,
+            "rawOperatingIncome": 294077000
+          },
+          "rawSha256": "7335e5f6f2f03c3123781e5e27220a75b7a94e716e613eddfff9600813a4c3c7"
+        }
+      ],
+      "previousValues": [
+        {
+          "date": "2026-06-30",
+          "revenue": 9992.237,
+          "operatingIncome": 401.472,
+          "sourceUrl": "https://finance.yahoo.com/quote/ARW/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2026-03-31",
+          "revenue": 9473.548,
+          "operatingIncome": 398.266,
+          "sourceUrl": "https://finance.yahoo.com/quote/ARW/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2025-12-31",
+          "revenue": 8746.43,
+          "operatingIncome": 335.316,
+          "sourceUrl": "https://finance.yahoo.com/quote/ARW/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2025-09-30",
+          "revenue": 7712.541,
+          "operatingIncome": 214.655,
+          "sourceUrl": "https://finance.yahoo.com/quote/ARW/financials/",
+          "sourceType": "financial_aggregator"
+        }
+      ]
+    },
+    "NYSE:FN": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": true,
+      "financialNote": "SEC EDGAR 연결 US GAAP 실제 회계분기 매출·영업손익을 사용했습니다. 4분기는 원문이 단독 수치를 제공하지 않을 경우 동일 회계연도 연간에서 9개월 누계를 차감했고, 조정영업이익은 섞지 않았습니다.",
+      "quarters": [
+        {
+          "date": "2026-09-25",
+          "start": "2026-06-27",
+          "periodType": "quarter",
+          "revenue": 1474.459,
+          "operatingIncome": 146.005,
+          "source": "SEC EDGAR 10-Q, 0001408710-26-000041",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1408710/000140871026000041/0001408710-26-000041-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001408710.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-11-03",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-06-27 to 2026-09-25; us-gaap:Revenues and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 1474459000,
+            "rawOperatingIncome": 146005000
+          },
+          "rawSha256": "a46dca5c04b422f9f0eff123f02b436a797762bce742182a77aaac4670c5f360"
+        },
+        {
+          "date": "2026-06-26",
+          "start": "2026-03-28",
+          "periodType": "quarter",
+          "revenue": 1315.788,
+          "operatingIncome": 134.249,
+          "source": "SEC EDGAR 10-K, 0001408710-26-000028",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1408710/000140871026000028/0001408710-26-000028-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001408710.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-08-18",
+          "basis": "Consolidated US GAAP, actual standalone fiscal Q4 derived from matching full year less same fiscal nine months; not adjusted operating income.",
+          "sourceLocation": "Consolidated income statements, us-gaap:Revenues and us-gaap:OperatingIncomeLoss; matching fiscal start 2025-06-28",
+          "calculation": {
+            "method": "Matching FY less 9M from SEC XBRL (raw USD divided by 1,000,000)",
+            "annual": {
+              "period": [
+                "2025-06-28",
+                "2026-06-26"
+              ],
+              "revenueUSD": 4641097000,
+              "operatingIncomeUSD": 462887000,
+              "filedAt": "2026-08-18",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1408710/000140871026000028/0001408710-26-000028-index.htm"
+            },
+            "nineMonths": {
+              "period": [
+                "2025-06-28",
+                "2026-03-27"
+              ],
+              "revenueUSD": 3325309000,
+              "operatingIncomeUSD": 328638000,
+              "filedAt": "2026-05-05",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1408710/000140871026000016/0001408710-26-000016-index.htm"
+            },
+            "rawRevenue": 1315788000,
+            "rawOperatingIncome": 134249000
+          },
+          "rawSha256": "a46dca5c04b422f9f0eff123f02b436a797762bce742182a77aaac4670c5f360"
+        },
+        {
+          "date": "2026-03-27",
+          "start": "2025-12-27",
+          "periodType": "quarter",
+          "revenue": 1214.293,
+          "operatingIncome": 120.044,
+          "source": "SEC EDGAR 10-Q, 0001408710-26-000016",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1408710/000140871026000016/0001408710-26-000016-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001408710.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-05-05",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2025-12-27 to 2026-03-27; us-gaap:Revenues and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 1214293000,
+            "rawOperatingIncome": 120044000
+          },
+          "rawSha256": "a46dca5c04b422f9f0eff123f02b436a797762bce742182a77aaac4670c5f360"
+        },
+        {
+          "date": "2025-12-26",
+          "start": "2025-09-27",
+          "periodType": "quarter",
+          "revenue": 1132.888,
+          "operatingIncome": 114.401,
+          "source": "SEC EDGAR 10-Q, 0001408710-26-000008",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1408710/000140871026000008/0001408710-26-000008-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001408710.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-02-03",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2025-09-27 to 2025-12-26; us-gaap:Revenues and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 1132888000,
+            "rawOperatingIncome": 114401000
+          },
+          "rawSha256": "a46dca5c04b422f9f0eff123f02b436a797762bce742182a77aaac4670c5f360"
+        }
+      ],
+      "previousValues": [
+        {
+          "date": "2026-06-30",
+          "revenue": 1315.788,
+          "operatingIncome": 134.366,
+          "sourceUrl": "https://finance.yahoo.com/quote/FN/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2026-03-31",
+          "revenue": 1214.293,
+          "operatingIncome": 120.044,
+          "sourceUrl": "https://finance.yahoo.com/quote/FN/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2025-12-31",
+          "revenue": 1132.888,
+          "operatingIncome": 114.401,
+          "sourceUrl": "https://finance.yahoo.com/quote/FN/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2025-09-30",
+          "revenue": 978.128,
+          "operatingIncome": 94.193,
+          "sourceUrl": "https://finance.yahoo.com/quote/FN/financials/",
+          "sourceType": "financial_aggregator"
+        }
+      ]
+    },
+    "NYSE:MOD": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": true,
+      "financialNote": "SEC EDGAR 연결 US GAAP 실제 회계분기 매출·영업손익을 사용했습니다. 4분기는 원문이 단독 수치를 제공하지 않을 경우 동일 회계연도 연간에서 9개월 누계를 차감했고, 조정영업이익은 섞지 않았습니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "start": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 994.4,
+          "operatingIncome": 97.8,
+          "source": "SEC EDGAR 10-Q, 0001104659-26-122523",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/67347/000110465926122523/0001104659-26-122523-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000067347.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-11-04",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-07-01 to 2026-09-30; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 994400000,
+            "rawOperatingIncome": 97800000
+          },
+          "rawSha256": "f636dbe8166f5916a983e903683f090f0279e270ae45574c11f8da592021d85f"
+        },
+        {
+          "date": "2026-06-30",
+          "start": "2026-04-01",
+          "periodType": "quarter",
+          "revenue": 874.1,
+          "operatingIncome": 74.8,
+          "source": "SEC EDGAR 10-Q, 0001104659-26-088569",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/67347/000110465926088569/0001104659-26-088569-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000067347.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-07-30",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-04-01 to 2026-06-30; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 874100000,
+            "rawOperatingIncome": 74800000
+          },
+          "rawSha256": "f636dbe8166f5916a983e903683f090f0279e270ae45574c11f8da592021d85f"
+        },
+        {
+          "date": "2026-03-31",
+          "start": "2026-01-01",
+          "periodType": "quarter",
+          "revenue": 954.4,
+          "operatingIncome": 103.9,
+          "source": "SEC EDGAR 10-K, 0001104659-26-066795",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/67347/000110465926066795/0001104659-26-066795-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000067347.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-05-27",
+          "basis": "Consolidated US GAAP, actual standalone fiscal Q4 derived from matching full year less same fiscal nine months; not adjusted operating income.",
+          "sourceLocation": "Consolidated income statements, us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss; matching fiscal start 2025-04-01",
+          "calculation": {
+            "method": "Matching FY less 9M from SEC XBRL (raw USD divided by 1,000,000)",
+            "annual": {
+              "period": [
+                "2025-04-01",
+                "2026-03-31"
+              ],
+              "revenueUSD": 3181100000,
+              "operatingIncomeUSD": 342400000,
+              "filedAt": "2026-05-27",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/67347/000110465926066795/0001104659-26-066795-index.htm"
+            },
+            "nineMonths": {
+              "period": [
+                "2025-04-01",
+                "2025-12-31"
+              ],
+              "revenueUSD": 2226700000,
+              "operatingIncomeUSD": 238500000,
+              "filedAt": "2026-02-05",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/67347/000110465926010790/0001104659-26-010790-index.htm"
+            },
+            "rawRevenue": 954400000,
+            "rawOperatingIncome": 103900000
+          },
+          "rawSha256": "f636dbe8166f5916a983e903683f090f0279e270ae45574c11f8da592021d85f"
+        },
+        {
+          "date": "2025-12-31",
+          "start": "2025-10-01",
+          "periodType": "quarter",
+          "revenue": 805.0,
+          "operatingIncome": 89.3,
+          "source": "SEC EDGAR 10-Q, 0001104659-26-010790",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/67347/000110465926010790/0001104659-26-010790-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000067347.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-02-05",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2025-10-01 to 2025-12-31; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 805000000,
+            "rawOperatingIncome": 89300000
+          },
+          "rawSha256": "f636dbe8166f5916a983e903683f090f0279e270ae45574c11f8da592021d85f"
+        }
+      ],
+      "previousValues": [
+        {
+          "date": "2026-06-30",
+          "revenue": 874.1,
+          "operatingIncome": 78.7,
+          "sourceUrl": "https://finance.yahoo.com/quote/MOD/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2026-03-31",
+          "revenue": 954.4,
+          "operatingIncome": 113.0,
+          "sourceUrl": "https://finance.yahoo.com/quote/MOD/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2025-12-31",
+          "revenue": 805.0,
+          "operatingIncome": 96.8,
+          "sourceUrl": "https://finance.yahoo.com/quote/MOD/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2025-09-30",
+          "revenue": 738.9,
+          "operatingIncome": 80.7,
+          "sourceUrl": "https://finance.yahoo.com/quote/MOD/financials/",
+          "sourceType": "financial_aggregator"
+        }
+      ]
+    },
+    "NYSE:NET": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": true,
+      "financialNote": "SEC EDGAR 연결 US GAAP 실제 회계분기 매출·영업손익을 사용했습니다. 4분기는 원문이 단독 수치를 제공하지 않을 경우 동일 회계연도 연간에서 9개월 누계를 차감했고, 조정영업이익은 섞지 않았습니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "start": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 782.513,
+          "operatingIncome": -67.926,
+          "source": "SEC EDGAR 10-Q, 0001477333-26-000061",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1477333/000147733326000061/0001477333-26-000061-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001477333.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-11-05",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-07-01 to 2026-09-30; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 782513000,
+            "rawOperatingIncome": -67926000
+          },
+          "rawSha256": "133dc2f16d0c041aed84439f6f5569235b26a75006c02a74aa8cd2d891994fc0"
+        },
+        {
+          "date": "2026-06-30",
+          "start": "2026-04-01",
+          "periodType": "quarter",
+          "revenue": 696.061,
+          "operatingIncome": -205.696,
+          "source": "SEC EDGAR 10-Q, 0001477333-26-000054",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1477333/000147733326000054/0001477333-26-000054-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001477333.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-08-06",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-04-01 to 2026-06-30; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 696061000,
+            "rawOperatingIncome": -205696000
+          },
+          "rawSha256": "133dc2f16d0c041aed84439f6f5569235b26a75006c02a74aa8cd2d891994fc0"
+        },
+        {
+          "date": "2026-03-31",
+          "start": "2026-01-01",
+          "periodType": "quarter",
+          "revenue": 639.755,
+          "operatingIncome": -61.994,
+          "source": "SEC EDGAR 10-Q, 0001477333-26-000038",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1477333/000147733326000038/0001477333-26-000038-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001477333.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-05-08",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-01-01 to 2026-03-31; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 639755000,
+            "rawOperatingIncome": -61994000
+          },
+          "rawSha256": "133dc2f16d0c041aed84439f6f5569235b26a75006c02a74aa8cd2d891994fc0"
+        },
+        {
+          "date": "2025-12-31",
+          "start": "2025-10-01",
+          "periodType": "quarter",
+          "revenue": 614.507,
+          "operatingIncome": -49.234,
+          "source": "SEC EDGAR 10-K, 0001477333-26-000016",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1477333/000147733326000016/0001477333-26-000016-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001477333.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-02-26",
+          "basis": "Consolidated US GAAP, actual standalone fiscal Q4 derived from matching full year less same fiscal nine months; not adjusted operating income.",
+          "sourceLocation": "Consolidated income statements, us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss; matching fiscal start 2025-01-01",
+          "calculation": {
+            "method": "Matching FY less 9M from SEC XBRL (raw USD divided by 1,000,000)",
+            "annual": {
+              "period": [
+                "2025-01-01",
+                "2025-12-31"
+              ],
+              "revenueUSD": 2167937000,
+              "operatingIncomeUSD": -207205000,
+              "filedAt": "2026-02-26",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1477333/000147733326000016/0001477333-26-000016-index.htm"
+            },
+            "nineMonths": {
+              "period": [
+                "2025-01-01",
+                "2025-09-30"
+              ],
+              "revenueUSD": 1553430000,
+              "operatingIncomeUSD": -157971000,
+              "filedAt": "2025-10-30",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1477333/000147733325000141/0001477333-25-000141-index.htm"
+            },
+            "rawRevenue": 614507000,
+            "rawOperatingIncome": -49234000
+          },
+          "rawSha256": "133dc2f16d0c041aed84439f6f5569235b26a75006c02a74aa8cd2d891994fc0"
+        }
+      ],
+      "previousValues": [
+        {
+          "date": "2026-06-30",
+          "revenue": 696.061,
+          "operatingIncome": -55.003,
+          "sourceUrl": "https://finance.yahoo.com/quote/NET/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2026-03-31",
+          "revenue": 639.755,
+          "operatingIncome": -61.994,
+          "sourceUrl": "https://finance.yahoo.com/quote/NET/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2025-12-31",
+          "revenue": 614.507,
+          "operatingIncome": -49.234,
+          "sourceUrl": "https://finance.yahoo.com/quote/NET/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2025-09-30",
+          "revenue": 562.027,
+          "operatingIncome": -37.46,
+          "sourceUrl": "https://finance.yahoo.com/quote/NET/financials/",
+          "sourceType": "financial_aggregator"
+        }
+      ]
+    },
+    "NYSE:U": {
+      "reportingCurrency": "USD",
+      "replaceQuarters": true,
+      "financialNote": "SEC EDGAR 연결 US GAAP 실제 회계분기 매출·영업손익을 사용했습니다. 4분기는 원문이 단독 수치를 제공하지 않을 경우 동일 회계연도 연간에서 9개월 누계를 차감했고, 조정영업이익은 섞지 않았습니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "start": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 622.092,
+          "operatingIncome": 100.647,
+          "source": "SEC EDGAR 10-Q, 0001810806-26-000055",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1810806/000181080626000055/0001810806-26-000055-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001810806.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-11-05",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-07-01 to 2026-09-30; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 622092000,
+            "rawOperatingIncome": 100647000
+          },
+          "rawSha256": "6932f66a924adaf8bf47fbbcb7b0636315c9c46470d602576cad12311b69409a"
+        },
+        {
+          "date": "2026-06-30",
+          "start": "2026-04-01",
+          "periodType": "quarter",
+          "revenue": 546.468,
+          "operatingIncome": -32.219,
+          "source": "SEC EDGAR 10-Q, 0001810806-26-000043",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1810806/000181080626000043/0001810806-26-000043-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001810806.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-08-06",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-04-01 to 2026-06-30; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 546468000,
+            "rawOperatingIncome": -32219000
+          },
+          "rawSha256": "6932f66a924adaf8bf47fbbcb7b0636315c9c46470d602576cad12311b69409a"
+        },
+        {
+          "date": "2026-03-31",
+          "start": "2026-01-01",
+          "periodType": "quarter",
+          "revenue": 508.238,
+          "operatingIncome": -351.413,
+          "source": "SEC EDGAR 10-Q, 0001810806-26-000032",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1810806/000181080626000032/0001810806-26-000032-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001810806.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-05-07",
+          "basis": "Consolidated US GAAP, as filed, actual standalone fiscal quarter; operating income/loss, not adjusted operating income.",
+          "sourceLocation": "Consolidated income statement XBRL period 2026-01-01 to 2026-03-31; us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss",
+          "calculation": {
+            "method": "Direct standalone quarter; SEC XBRL USD divided by 1,000,000",
+            "rawRevenue": 508238000,
+            "rawOperatingIncome": -351413000
+          },
+          "rawSha256": "6932f66a924adaf8bf47fbbcb7b0636315c9c46470d602576cad12311b69409a"
+        },
+        {
+          "date": "2025-12-31",
+          "start": "2025-10-01",
+          "periodType": "quarter",
+          "revenue": 503.089,
+          "operatingIncome": -106.51,
+          "source": "SEC EDGAR 10-K, 0001810806-26-000011",
+          "sourceType": "filing",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1810806/000181080626000011/0001810806-26-000011-index.htm",
+          "sourceDataUrl": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001810806.json",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:03:01+00:00",
+          "filedAt": "2026-02-11",
+          "basis": "Consolidated US GAAP, actual standalone fiscal Q4 derived from matching full year less same fiscal nine months; not adjusted operating income.",
+          "sourceLocation": "Consolidated income statements, us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and us-gaap:OperatingIncomeLoss; matching fiscal start 2025-01-01",
+          "calculation": {
+            "method": "Matching FY less 9M from SEC XBRL (raw USD divided by 1,000,000)",
+            "annual": {
+              "period": [
+                "2025-01-01",
+                "2025-12-31"
+              ],
+              "revenueUSD": 1849648000,
+              "operatingIncomeUSD": -479053000,
+              "filedAt": "2026-02-11",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1810806/000181080626000011/0001810806-26-000011-index.htm"
+            },
+            "nineMonths": {
+              "period": [
+                "2025-01-01",
+                "2025-09-30"
+              ],
+              "revenueUSD": 1346559000,
+              "operatingIncomeUSD": -372543000,
+              "filedAt": "2025-11-05",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1810806/000181080625000169/0001810806-25-000169-index.htm"
+            },
+            "rawRevenue": 503089000,
+            "rawOperatingIncome": -106510000
+          },
+          "rawSha256": "6932f66a924adaf8bf47fbbcb7b0636315c9c46470d602576cad12311b69409a"
+        }
+      ],
+      "previousValues": [
+        {
+          "date": "2026-06-30",
+          "revenue": 546.468,
+          "operatingIncome": -32.219,
+          "sourceUrl": "https://finance.yahoo.com/quote/U/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2026-03-31",
+          "revenue": 508.238,
+          "operatingIncome": -351.413,
+          "sourceUrl": "https://finance.yahoo.com/quote/U/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2025-12-31",
+          "revenue": 503.089,
+          "operatingIncome": -106.51,
+          "sourceUrl": "https://finance.yahoo.com/quote/U/financials/",
+          "sourceType": "financial_aggregator"
+        },
+        {
+          "date": "2025-09-30",
+          "revenue": 470.615,
+          "operatingIncome": -125.856,
+          "sourceUrl": "https://finance.yahoo.com/quote/U/financials/",
+          "sourceType": "financial_aggregator"
+        }
+      ]
+    },
+    "TPEX:6488": {
+      "reportingCurrency": "TWD",
+      "financialNote": "2026년 3분기는 거래소 원본 재무제표의 연결 실제 3개월 수치입니다. 기존 비교 분기의 출처와 값을 유지했습니다. 직전 상반기 영업손익은 공식 자료와 100만TWD 이하 차이가 있어 기존 공급사 값을 새로 인증하지 않습니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 14870.753,
+          "operatingIncome": 1453.575,
+          "source": "TPEX disclosure document portal: original issuer interim filing",
+          "sourceType": "filing",
+          "sourceUrl": "https://doc.twse.com.tw/server-java/t57sb01?step=9&kind=A&co_id=6488&filename=202603_6488_AI1.pdf",
+          "filingUrl": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6488&year=115&mtype=A&seamon=3",
+          "reportedCurrency": "TWD",
+          "basis": "Taiwan IFRS/IAS 34 consolidated; original standalone July–September column, not nine-month YTD or adjusted earnings.",
+          "sourceLocation": "Consolidated statements of comprehensive income (合併綜合損益表), first current three-month column; total revenue and operating profit/loss.",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:05:35+00:00",
+          "filedAt": "2026-11-06T16:17:41+08:00",
+          "calculation": {
+            "method": "Direct original quarter; raw thousands TWD divided by 1,000",
+            "rawRevenueTWDThousands": 14870753,
+            "rawOperatingIncomeTWDThousands": 1453575,
+            "contextCheck": {
+              "nineMonthRevenueTWDThousands": 44069861,
+              "nineMonthOperatingIncomeTWDThousands": 4351759,
+              "previousH1ProviderRevenueTWDmillions": 29199.108,
+              "previousH1ProviderOperatingIncomeTWDmillions": 2897.695,
+              "differenceBetweenOfficialAndStoredH1RevenueTWDmillions": 0.0,
+              "differenceBetweenOfficialAndStoredH1OperatingIncomeTWDmillions": 0.489
+            }
+          },
+          "rawSha256": "abe8aa34ea65d7e2aa4ebc79e3d5d0f8c56ff55261ec212bd5160148b960acca"
+        }
+      ]
+    },
+    "TWSE:2368": {
+      "reportingCurrency": "TWD",
+      "financialNote": "2026년 3분기는 거래소 원본 재무제표의 연결 실제 3개월 수치입니다. 기존 비교 분기의 출처와 값을 유지했습니다. 직전 상반기 영업손익은 공식 자료와 100만TWD 이하 차이가 있어 기존 공급사 값을 새로 인증하지 않습니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 29567.267,
+          "operatingIncome": 8753.05,
+          "source": "TWSE disclosure document portal: original issuer interim filing",
+          "sourceType": "filing",
+          "sourceUrl": "https://doc.twse.com.tw/server-java/t57sb01?step=9&kind=A&co_id=2368&filename=202603_2368_AI1.pdf",
+          "filingUrl": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2368&year=115&mtype=A&seamon=3",
+          "reportedCurrency": "TWD",
+          "basis": "Taiwan IFRS/IAS 34 consolidated; original standalone July–September column, not nine-month YTD or adjusted earnings.",
+          "sourceLocation": "Consolidated statements of comprehensive income (合併綜合損益表), first current three-month column; total revenue and operating profit/loss.",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:05:45+00:00",
+          "filedAt": "2026-11-11T15:16:51+08:00",
+          "calculation": {
+            "method": "Direct original quarter; raw thousands TWD divided by 1,000",
+            "rawRevenueTWDThousands": 29567267,
+            "rawOperatingIncomeTWDThousands": 8753050,
+            "contextCheck": {
+              "nineMonthRevenueTWDThousands": 73159351,
+              "nineMonthOperatingIncomeTWDThousands": 20355271,
+              "previousH1ProviderRevenueTWDmillions": 43592.084,
+              "previousH1ProviderOperatingIncomeTWDmillions": 11602.979,
+              "differenceBetweenOfficialAndStoredH1RevenueTWDmillions": 0.0,
+              "differenceBetweenOfficialAndStoredH1OperatingIncomeTWDmillions": -0.758
+            }
+          },
+          "rawSha256": "1a47f38b737941830ead497faae5727b50bf4c8880c7c4a322e55dc1bf36ef8c"
+        }
+      ]
+    },
+    "TWSE:3037": {
+      "reportingCurrency": "TWD",
+      "financialNote": "2026년 3분기는 거래소 원본 재무제표의 연결 실제 3개월 수치입니다. 기존 비교 분기의 출처와 값을 유지했습니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 52649.835,
+          "operatingIncome": 10527.733,
+          "source": "TWSE disclosure document portal: original issuer interim filing",
+          "sourceType": "filing",
+          "sourceUrl": "https://doc.twse.com.tw/server-java/t57sb01?step=9&kind=A&co_id=3037&filename=202603_3037_AI1.pdf",
+          "filingUrl": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3037&year=115&mtype=A&seamon=3",
+          "reportedCurrency": "TWD",
+          "basis": "Taiwan IFRS/IAS 34 consolidated; original standalone July–September column, not nine-month YTD or adjusted earnings.",
+          "sourceLocation": "Consolidated statements of comprehensive income (合併綜合損益表), first current three-month column; total revenue and operating profit/loss.",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:05:45+00:00",
+          "filedAt": "2026-10-29T14:13:06+08:00",
+          "calculation": {
+            "method": "Direct original quarter; raw thousands TWD divided by 1,000",
+            "rawRevenueTWDThousands": 52649835,
+            "rawOperatingIncomeTWDThousands": 10527733,
+            "contextCheck": {
+              "nineMonthRevenueTWDThousands": 132986108,
+              "nineMonthOperatingIncomeTWDThousands": 19935519,
+              "previousH1ProviderRevenueTWDmillions": 80336.273,
+              "previousH1ProviderOperatingIncomeTWDmillions": 9407.786,
+              "differenceBetweenOfficialAndStoredH1RevenueTWDmillions": 0.0,
+              "differenceBetweenOfficialAndStoredH1OperatingIncomeTWDmillions": 0.0
+            }
+          },
+          "rawSha256": "829dbb20eed62d2770b0d716939a080b69801701473cff040db803a6d9800452"
+        }
+      ]
+    },
+    "TWSE:6239": {
+      "reportingCurrency": "TWD",
+      "financialNote": "2026년 3분기는 거래소 원본 재무제표의 연결 실제 3개월 수치입니다. 기존 비교 분기의 출처와 값을 유지했습니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 25334.229,
+          "operatingIncome": 4472.009,
+          "source": "TWSE disclosure document portal: original issuer interim filing",
+          "sourceType": "filing",
+          "sourceUrl": "https://doc.twse.com.tw/server-java/t57sb01?step=9&kind=A&co_id=6239&filename=202603_6239_AI1.pdf",
+          "filingUrl": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6239&year=115&mtype=A&seamon=3",
+          "reportedCurrency": "TWD",
+          "basis": "Taiwan IFRS/IAS 34 consolidated; original standalone July–September column, not nine-month YTD or adjusted earnings.",
+          "sourceLocation": "Consolidated statements of comprehensive income (合併綜合損益表), first current three-month column; total revenue and operating profit/loss.",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:06:32+00:00",
+          "filedAt": "2026-11-06T15:59:21+08:00",
+          "calculation": {
+            "method": "Direct original quarter; raw thousands TWD divided by 1,000",
+            "rawRevenueTWDThousands": 25334229,
+            "rawOperatingIncomeTWDThousands": 4472009,
+            "contextCheck": {
+              "nineMonthRevenueTWDThousands": 69764228,
+              "nineMonthOperatingIncomeTWDThousands": 10763300,
+              "previousH1ProviderRevenueTWDmillions": 44429.999,
+              "previousH1ProviderOperatingIncomeTWDmillions": 6291.291,
+              "differenceBetweenOfficialAndStoredH1RevenueTWDmillions": 0.0,
+              "differenceBetweenOfficialAndStoredH1OperatingIncomeTWDmillions": 0.0
+            }
+          },
+          "rawSha256": "7debfe7e19a6236d81214f51d58544b12685e38fdb8a87bae43ebeb777a6e24c"
+        }
+      ]
+    },
+    "TWSE:6269": {
+      "reportingCurrency": "TWD",
+      "financialNote": "2026년 3분기는 거래소 원본 재무제표의 연결 실제 3개월 수치입니다. 기존 비교 분기의 출처와 값을 유지했습니다. 직전 상반기 영업손익은 공식 자료와 100만TWD 이하 차이가 있어 기존 공급사 값을 새로 인증하지 않습니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 6141.469,
+          "operatingIncome": -262.817,
+          "source": "TWSE disclosure document portal: original issuer interim filing",
+          "sourceType": "filing",
+          "sourceUrl": "https://doc.twse.com.tw/server-java/t57sb01?step=9&kind=A&co_id=6269&filename=202603_6269_AI1.pdf",
+          "filingUrl": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6269&year=115&mtype=A&seamon=3",
+          "reportedCurrency": "TWD",
+          "basis": "Taiwan IFRS/IAS 34 consolidated; original standalone July–September column, not nine-month YTD or adjusted earnings.",
+          "sourceLocation": "Consolidated statements of comprehensive income (合併綜合損益表), first current three-month column; total revenue and operating profit/loss.",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-14",
+          "observedAt": "2026-11-14T09:06:21+00:00",
+          "filedAt": "2026-11-11T15:08:28+08:00",
+          "calculation": {
+            "method": "Direct original quarter; raw thousands TWD divided by 1,000",
+            "rawRevenueTWDThousands": 6141469,
+            "rawOperatingIncomeTWDThousands": -262817,
+            "contextCheck": {
+              "nineMonthRevenueTWDThousands": 16988535,
+              "nineMonthOperatingIncomeTWDThousands": -1963175,
+              "previousH1ProviderRevenueTWDmillions": 10847.066,
+              "previousH1ProviderOperatingIncomeTWDmillions": -1700.974,
+              "differenceBetweenOfficialAndStoredH1RevenueTWDmillions": 0.0,
+              "differenceBetweenOfficialAndStoredH1OperatingIncomeTWDmillions": 0.616
+            }
+          },
+          "rawSha256": "4367413fda82b6e433d3374a582d667424547ebf03fcf2972b420c1a943bcc4d"
+        }
+      ]
+    }
+  }
+}
