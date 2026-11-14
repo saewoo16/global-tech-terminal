@@ -18,7 +18,8 @@ class EarningsDuplicatesTests(unittest.TestCase):
 
     def setUp(self):
         self.data = copy.deepcopy(self.archive)
-        self.entry = self.data['entries'][0]
+        # The newest completed session can legitimately contain no confirmed releases.
+        self.entry = next(e for e in self.data['entries'] if e['date'] == '2026-11-12')
         self.row = self.entry['earnings']['rows'][0]
 
     def add_copy(self, **changes):
@@ -32,6 +33,14 @@ class EarningsDuplicatesTests(unittest.TestCase):
         for _ in range(2):
             self.assertEqual(mod.validate(self.data), len(self.data['entries']))
         self.assertEqual(self.data, before)
+
+    def test_nov13_unverified_releases_do_not_inherit_nov12(self):
+        next_session = next((e for e in self.data['entries'] if e['date'] == '2026-11-13'), None)
+        if next_session is None:
+            self.skipTest('November 13 close is not in this snapshot')
+        self.assertEqual(next_session['earnings']['status'], 'no_verified_releases')
+        self.assertEqual(next_session['earnings']['rows'], [])
+        self.assertTrue(self.entry['earnings']['rows'])
 
     def test_identical_and_conflicting_announcements_rejected(self):
         self.add_copy()
@@ -54,7 +63,7 @@ class EarningsDuplicatesTests(unittest.TestCase):
         mod.validate(self.data)
 
     def test_different_announcement_dates_and_companies_are_preserved(self):
-        earlier = self.data['entries'][1]
+        earlier = next(e for e in self.data['entries'] if e['date'] == '2026-11-11')
         # Use an existing valid historical announcement fixture, changing only
         # the company to another verified member shared by both sessions.
         prior = copy.deepcopy(earlier['earnings']['rows'][0])
