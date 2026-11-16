@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "kind": "kr-close-only-overlay",
+  "entry": {
+    "market": "KR",
+    "date": "2026-11-16",
+    "title": "11월 16일 국내 마감 분석",
+    "status": "partial",
+    "reportCutoffAt": "2026-11-16T09:26:09.450226+00:00",
+    "sources": [
+      {
+        "id": "nov16-yonhap-close",
+        "title": "연합뉴스: 11월 16일 코스피·코스닥 마감",
+        "url": "https://www.yna.co.kr/view/AKR20261116134900008",
+        "note": "11월 16일 16:10 KST 송고. 지수 및 주요 종목 종가 사실 확인."
+      },
+      {
+        "id": "nov16-ytn-close",
+        "title": "YTN: 11월 16일 국내 증시 정규장 마감",
+        "url": "https://www.ytn.co.kr/_ln/0102_202611161540369903",
+        "note": "11월 16일 15:40 KST 보도. 마감 지수와 대형 반도체주 교차확인."
+      },
+      {
+        "id": "nov16-mtn-close",
+        "title": "MTN: 11월 16일 장 마감 해설",
+        "url": "https://news.mtn.co.kr/article/2026111616042473944",
+        "note": "11월 16일 16:04 KST 보도. 증권사 설명을 인용하므로 시장원인의 단정이 아님."
+      },
+      {
+        "id": "nov16-krx-market",
+        "title": "KRX 공식 시장 통계 조회",
+        "url": "https://data.krx.co.kr/",
+        "note": "공식 시장·종목·투자자별 통계는 원문에서 별도 조회."
+      },
+      {
+        "id": "nov16-npay-etf-link",
+        "title": "Npay 증권 ETF 원문 조회",
+        "url": "https://finance.naver.com/sise/etf.naver",
+        "note": "ETF 원문 조회 링크. 이 시황에서 해당 공급사 데이터를 재게시하지 않음."
+      }
+    ],
+    "indices": [
+      {
+        "name": "KOSPI",
+        "close": 5100.5,
+        "change": -190.03,
+        "changePct": -3.59,
+        "previousClose": 5290.53,
+        "marketStatus": "CLOSE",
+        "sessionDate": "2026-11-16",
+        "comparisonDate": "2026-11-13",
+        "sourceIds": [
+          "nov16-yonhap-close",
+          "nov16-ytn-close"
+        ]
+      },
+      {
+        "name": "KOSDAQ",
+        "close": 665.65,
+        "change": -34.01,
+        "changePct": -4.86,
+        "previousClose": 699.66,
+        "marketStatus": "CLOSE",
+        "sessionDate": "2026-11-16",
+        "comparisonDate": "2026-11-13",
+        "sourceIds": [
+          "nov16-yonhap-close",
+          "nov16-ytn-close"
+        ]
+      }
+    ],
+    "summary": [
+      {
+        "title": "두 시장 모두 하락 마감",
+        "text": "코스피는 5,100.50으로 3.59%, 코스닥은 665.65로 4.86% 하락했습니다.",
+        "sourceIds": [
+          "nov16-yonhap-close",
+          "nov16-ytn-close"
+        ]
+      },
+      {
+        "title": "반도체 대형주의 낙폭이 컸습니다",
+        "text": "삼성전자와 SK하이닉스는 각각 4.47%, 7.89% 내렸습니다. 보도에 인용된 증권사 분석에서는 미국 D램 집단소송 관련 불확실성이 투자심리에 부담을 준 요인으로 꼽혔습니다.",
+        "sourceIds": [
+          "nov16-ytn-close",
+          "nov16-yonhap-close",
+          "nov16-mtn-close"
+        ]
+      },
+      {
+        "title": "상세 데이터는 원문에서 확인",
+        "text": "오늘은 양 시장 종가와 마감 해설만 반영했습니다. 수급과 ETF 시세는 원문에서 조회할 수 있으며, 아래 별도 자료에는 기존 기준일을 표시합니다.",
+        "sourceIds": [
+          "nov16-krx-market",
+          "nov16-npay-etf-link"
+        ]
+      }
+    ],
+    "limitations": [
+      "공개 재사용 조건이 확인된 당일 상세 자료를 확보하지 못해 수급·ETF·히트맵·종목 순위 등 별도 패널의 기준일과 값은 유지했습니다.",
+      "실적·기업설명회는 이 마감 요약 범위에 포함하지 않습니다."
+    ],
+    "scope": "close-only",
+    "flows": {
+      "unit": "억원",
+      "rows": [],
+      "status": "unavailable",
+      "note": "별도 시장 수급 표에 기존 관측일을 유지합니다."
+    },
+    "sectors": {
+      "rows": [],
+      "status": "unavailable",
+      "note": "별도 ETF·업종 수익률 표에 기존 관측일을 유지합니다."
+    },
+    "earnings": {
+      "rows": [],
+      "status": "unavailable",
+      "note": "실적 및 콜은 이 마감 요약 범위에 포함하지 않습니다."
+    }
+  }
+}

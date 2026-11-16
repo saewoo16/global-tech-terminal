@@ -48,3 +48,41 @@ run("chosen={symbol:'TEST',ticker:'TEST',name:'Test',sector:'Tech',category:'Tes
 test('cap observation never becomes certified latest-session cap or FX',()=>{assert.match(element('capinfo').innerHTML,/공급자 관측 2026-11-02/);assert.match(element('capinfo').innerHTML,/종가 기준 미확인/);assert.match(element('capinfo').innerHTML,/환율 기준일 미확인/);assert.doesNotMatch(element('capinfo').innerHTML,/2026-11-04/)});
 run("MARKET.stocks.TEST.marketCapAsOf='2026-11-03';MARKET.fxAsOf='2026-11-02';render()");
 test('certified cap and FX dates remain independently displayed',()=>{assert.match(element('capinfo').innerHTML,/시가총액 기준 2026-11-03/);assert.match(element('capinfo').innerHTML,/환율 기준 2026-11-02/);assert.doesNotMatch(element('capinfo').innerHTML,/종가 기준 미확인|환율 기준일 미확인/)});
+
+const legalFilingOverlay=JSON.parse(fs.readFileSync(root+'/data/financial_backfill_zlatest_20261116_kr_official.json'));
+context.legalFilingOverlay=legalFilingOverlay;
+test('verified 14-issuer DART overlay updates only quarters, without transmitting new market blob',()=>{
+  const seededStocks={...market.stocks};
+  for(const [symbol,record] of Object.entries(legalFilingOverlay.companies)){
+    const existing=market.stocks[symbol];
+    const q=record.quarters[0];
+    // Pin an older financial baseline even after future issuers publish newer quarters.
+    seededStocks[symbol]={...existing,reportingCurrency:'KRW',quarters:[
+      {...q,observedAt:'2026-11-01T00:00:00Z',revenue:1,operatingIncome:0},
+      ...['2026-06-30','2026-03-31','2025-12-31'].map(date=>({date,revenue:1,operatingIncome:0}))
+    ]};
+  }
+  context.seededMarket={...market,stocks:seededStocks};
+  const overlay=run('mergeOfficialFilingOverlay(seededMarket,legalFilingOverlay)');
+  assert.equal(Object.keys(legalFilingOverlay.companies).length,14);
+  for(const [symbol,record] of Object.entries(legalFilingOverlay.companies)){
+    const before=seededStocks[symbol],after=overlay.stocks[symbol],q=record.quarters[0];
+    assert.deepEqual(after.quarters[0],q);
+    assert.equal(after.quarters.length,4);
+    for(const key of Object.keys(before).filter(k=>k!=='quarters'&&!k.startsWith('fin')))assert.strictEqual(after[key],before[key],symbol+' '+key);
+    for(const prior of before.quarters.filter(x=>x.date!==q.date))if(after.quarters.some(x=>x.date===prior.date))assert.equal(after.quarters.find(x=>x.date===prior.date),prior);
+  }
+  for(const [symbol,base] of Object.entries(market.stocks))if(!legalFilingOverlay.companies[symbol])assert.equal(overlay.stocks[symbol],base);
+  for(const key of Object.keys(market).filter(k=>k!=='stocks'))assert.equal(overlay[key],market[key]);
+  assert.equal(run('mergeOfficialFilingOverlay(realMarket,null)'),market);
+});
+test('optional filing overlay ignores malformed or untrusted data and never replaces newer filings',()=>{
+  const key='KRX:005930',r=legalFilingOverlay.companies[key],q=r.quarters[0];
+  const bad={...r,quarters:[{...q,revenue:null},{...q,sourceUrl:'https://dart.fss.or.kr.bad.example/report'},{...q,preliminary:true}]};
+  context.badOverlay={companies:{[key]:bad}};
+  assert.equal(run('mergeOfficialFilingOverlay(realMarket,badOverlay)'),market);
+  const futureRevision={...q,observedAt:'2026-11-17T10:00:00Z',revenue:q.revenue+1};
+  const seeded=context.seededMarket;
+  context.revisedMarket={...seeded,stocks:{...seeded.stocks,[key]:{...seeded.stocks[key],quarters:[futureRevision,...seeded.stocks[key].quarters.slice(1)]}}};
+  assert.equal(run('mergeOfficialFilingOverlay(revisedMarket,legalFilingOverlay)').stocks[key].quarters[0],futureRevision);
+});

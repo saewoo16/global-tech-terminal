@@ -1,0 +1,870 @@
+{
+  "asOf": "2026-11-16T09:25:39+00:00",
+  "baselineCommit": "ea3b4fd5155b9e0001c65e2b1def8624b8745de9",
+  "scope": "Fourteen Korea-listed Explorer issuers, each 2026 Q3 as reported in official DART issuer periodic filing; 13 consolidated and DNF standalone (issuer has no consolidation targets). This targeted intake is not a full market census. No market price, capitalization or FX observations were revised. Public filing links and essential line-item facts; source payloads are not redistributed.",
+  "companies": {
+    "KRX:101160": {
+      "reportingCurrency": "KRW",
+      "financialNote": "2026년 3분기 정기보고서의 연결 XBRL 7~9월 단독 분기값입니다. 9개월 누계와 구분하고, 원 단위 원정밀도를 유지합니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "fiscalPeriod": "2026 Q3",
+          "periodType": "quarter",
+          "revenue": 76469.542945,
+          "operatingIncome": 14441.524885,
+          "sourceType": "filing",
+          "source": "FSS Open DART issuer quarterly report (consolidated XBRL)",
+          "sourceUrl": "https://opendart.fss.or.kr/xbrl/viewer/view.do?xbrlExtSeq=20261116000083&roleId=dart_2026-01-31_role-D431410&lang=ko",
+          "filingUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116000128",
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-16",
+          "observedAt": "2026-11-16T09:23:32+00:00",
+          "publishedAt": "2026-11-16T10:13:00+09:00",
+          "publicationTimePrecision": "minute",
+          "releaseType": "quarterly_report",
+          "preliminary": false,
+          "rawSha256": "2bafd0195cc08a7f8ec7b0864572c4b0aa42d37ff1b9886f2f9077f82515d43b",
+          "basis": "K-IFRS consolidated; XBRL direct single-quarter column; issuer regular quarterly report",
+          "sourceLocation": "D431410 consolidated comprehensive income statement, 2026-07-01 ~ 2026-09-30, first numeric column",
+          "calculation": {
+            "method": "Direct reported three-month column, convert won to millions",
+            "sourceUnit": "KRW",
+            "rawRevenue": 76469542945,
+            "rawOperatingIncome": 14441524885
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "매출액",
+              "rawValue": 76469542945,
+              "rawUnit": "KRW",
+              "conversion": "divide by 1000000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://opendart.fss.or.kr/xbrl/viewer/view.do?xbrlExtSeq=20261116000083&roleId=dart_2026-01-31_role-D431410&lang=ko"
+            },
+            "operatingIncome": {
+              "lineItem": "영업이익",
+              "rawValue": 14441524885,
+              "rawUnit": "KRW",
+              "conversion": "divide by 1000000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://opendart.fss.or.kr/xbrl/viewer/view.do?xbrlExtSeq=20261116000083&roleId=dart_2026-01-31_role-D431410&lang=ko"
+            }
+          },
+          "filingStatusEvidence": {
+            "status": "Original official report matched on same-date official docket and issuer XBRL cover",
+            "docketUrl": "https://dart.fss.or.kr/dsac001/search.ax?selectDate=2026.11.16&currentPage=22&maxResults=100&mdayCnt=0",
+            "docketSHA256": "4031284a12120658cf5ccfb055c192bbd8a3ece8cb13806a2acbd570efc53cac",
+            "xbrlCoverUrl": "https://opendart.fss.or.kr/xbrl/viewer/main.do?rcpNo=20261116000128",
+            "xbrlCoverSHA256": "0a495d427242425f8c6bfd477a9015d9e33f35ee615e65b56b2b336dfa93aa3e"
+          }
+        }
+      ]
+    },
+    "KRX:089030": {
+      "reportingCurrency": "KRW",
+      "financialNote": "2026년 3분기 정기보고서의 연결 XBRL 7~9월 단독 분기값입니다. 9개월 누계와 구분하고, 원 단위 원정밀도를 유지합니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "fiscalPeriod": "2026 Q3",
+          "periodType": "quarter",
+          "revenue": 87783.766445,
+          "operatingIncome": 18144.137212,
+          "sourceType": "filing",
+          "source": "FSS Open DART issuer quarterly report (consolidated XBRL)",
+          "sourceUrl": "https://opendart.fss.or.kr/xbrl/viewer/view.do?xbrlExtSeq=20261116000169&roleId=dart_2026-01-31_role-D431410&lang=ko",
+          "filingUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116000236",
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-16",
+          "observedAt": "2026-11-16T09:23:32+00:00",
+          "publishedAt": "2026-11-16T11:31:00+09:00",
+          "publicationTimePrecision": "minute",
+          "releaseType": "quarterly_report",
+          "preliminary": false,
+          "rawSha256": "2b189cf695c9fa5f7ddea29e5b476fd8cd75b36d93c495b0364ce6dbaca39bb3",
+          "basis": "K-IFRS consolidated; XBRL direct single-quarter column; issuer regular quarterly report",
+          "sourceLocation": "D431410 consolidated comprehensive income statement, 2026-07-01 ~ 2026-09-30, first numeric column",
+          "calculation": {
+            "method": "Direct reported three-month column, convert won to millions",
+            "sourceUnit": "KRW",
+            "rawRevenue": 87783766445,
+            "rawOperatingIncome": 18144137212
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "매출액",
+              "rawValue": 87783766445,
+              "rawUnit": "KRW",
+              "conversion": "divide by 1000000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://opendart.fss.or.kr/xbrl/viewer/view.do?xbrlExtSeq=20261116000169&roleId=dart_2026-01-31_role-D431410&lang=ko"
+            },
+            "operatingIncome": {
+              "lineItem": "영업이익(손실)",
+              "rawValue": 18144137212,
+              "rawUnit": "KRW",
+              "conversion": "divide by 1000000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://opendart.fss.or.kr/xbrl/viewer/view.do?xbrlExtSeq=20261116000169&roleId=dart_2026-01-31_role-D431410&lang=ko"
+            }
+          },
+          "filingStatusEvidence": {
+            "status": "Original official report matched on same-date official docket and issuer XBRL cover",
+            "docketUrl": "https://dart.fss.or.kr/dsac001/search.ax?selectDate=2026.11.16&currentPage=21&maxResults=100&mdayCnt=0",
+            "docketSHA256": "1ba75e6434469b575cca1c34eed22d93815b657e82b3545d125a7b91a2448a86",
+            "xbrlCoverUrl": "https://opendart.fss.or.kr/xbrl/viewer/main.do?rcpNo=20261116000236",
+            "xbrlCoverSHA256": "ab8bb4a2aace250539a8214b5e6868d638664676593f1167a7aa1ce919db7459"
+          }
+        }
+      ]
+    },
+    "KRX:104830": {
+      "reportingCurrency": "KRW",
+      "financialNote": "2026년 3분기 정기보고서의 연결 XBRL 7~9월 단독 분기값입니다. 9개월 누계와 구분하고, 원 단위 원정밀도를 유지합니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "fiscalPeriod": "2026 Q3",
+          "periodType": "quarter",
+          "revenue": 102907.16881,
+          "operatingIncome": 20337.618213,
+          "sourceType": "filing",
+          "source": "FSS Open DART issuer quarterly report (consolidated XBRL)",
+          "sourceUrl": "https://opendart.fss.or.kr/xbrl/viewer/view.do?xbrlExtSeq=20261116000359&roleId=dart_2026-01-31_role-D431410&lang=ko",
+          "filingUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116000514",
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-16",
+          "observedAt": "2026-11-16T09:23:32+00:00",
+          "publishedAt": "2026-11-16T14:11:00+09:00",
+          "publicationTimePrecision": "minute",
+          "releaseType": "quarterly_report",
+          "preliminary": false,
+          "rawSha256": "22cd5547383402afcc76b22a44a9ec899a48bec72d2a631a3e5d10d01882763a",
+          "basis": "K-IFRS consolidated; XBRL direct single-quarter column; issuer regular quarterly report",
+          "sourceLocation": "D431410 consolidated comprehensive income statement, 2026-07-01 ~ 2026-09-30, first numeric column",
+          "calculation": {
+            "method": "Direct reported three-month column, convert won to millions",
+            "sourceUnit": "KRW",
+            "rawRevenue": 102907168810,
+            "rawOperatingIncome": 20337618213
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "매출액",
+              "rawValue": 102907168810,
+              "rawUnit": "KRW",
+              "conversion": "divide by 1000000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://opendart.fss.or.kr/xbrl/viewer/view.do?xbrlExtSeq=20261116000359&roleId=dart_2026-01-31_role-D431410&lang=ko"
+            },
+            "operatingIncome": {
+              "lineItem": "영업이익",
+              "rawValue": 20337618213,
+              "rawUnit": "KRW",
+              "conversion": "divide by 1000000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://opendart.fss.or.kr/xbrl/viewer/view.do?xbrlExtSeq=20261116000359&roleId=dart_2026-01-31_role-D431410&lang=ko"
+            }
+          },
+          "filingStatusEvidence": {
+            "status": "Original official report matched on same-date official docket and issuer XBRL cover",
+            "docketUrl": "https://dart.fss.or.kr/dsac001/search.ax?selectDate=2026.11.16&currentPage=18&maxResults=100&mdayCnt=0",
+            "docketSHA256": "40e7fc673fbbf19b5b6ab73a62b606afc3273d3dc97a8dba147dd4bc54f3e420",
+            "xbrlCoverUrl": "https://opendart.fss.or.kr/xbrl/viewer/main.do?rcpNo=20261116000514",
+            "xbrlCoverSHA256": "0aee8bb0f5e40209651aafa9a26b1ed163286581de7a74ae64b0120198b129f0"
+          }
+        }
+      ]
+    },
+    "KRX:095340": {
+      "reportingCurrency": "KRW",
+      "financialNote": "2026년 3분기 정기보고서의 연결 XBRL 7~9월 단독 분기값입니다. 9개월 누계와 구분하고, 원 단위 원정밀도를 유지합니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "fiscalPeriod": "2026 Q3",
+          "periodType": "quarter",
+          "revenue": 71774.503502,
+          "operatingIncome": 21842.926341,
+          "sourceType": "filing",
+          "source": "FSS Open DART issuer quarterly report (consolidated XBRL)",
+          "sourceUrl": "https://opendart.fss.or.kr/xbrl/viewer/view.do?xbrlExtSeq=20261116000011&roleId=dart_2026-01-31_role-D431410&lang=ko",
+          "filingUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116000017",
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-16",
+          "observedAt": "2026-11-16T09:23:32+00:00",
+          "publishedAt": "2026-11-16T08:59:00+09:00",
+          "publicationTimePrecision": "minute",
+          "releaseType": "quarterly_report",
+          "preliminary": false,
+          "rawSha256": "8a6368f8e3a6537356d2fa07c8662517a64d03602a0761fdc16f0f7bf72b075b",
+          "basis": "K-IFRS consolidated; XBRL direct single-quarter column; issuer regular quarterly report",
+          "sourceLocation": "D431410 consolidated comprehensive income statement, 2026-07-01 ~ 2026-09-30, first numeric column",
+          "calculation": {
+            "method": "Direct reported three-month column, convert won to millions",
+            "sourceUnit": "KRW",
+            "rawRevenue": 71774503502,
+            "rawOperatingIncome": 21842926341
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "매출액",
+              "rawValue": 71774503502,
+              "rawUnit": "KRW",
+              "conversion": "divide by 1000000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://opendart.fss.or.kr/xbrl/viewer/view.do?xbrlExtSeq=20261116000011&roleId=dart_2026-01-31_role-D431410&lang=ko"
+            },
+            "operatingIncome": {
+              "lineItem": "영업이익",
+              "rawValue": 21842926341,
+              "rawUnit": "KRW",
+              "conversion": "divide by 1000000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://opendart.fss.or.kr/xbrl/viewer/view.do?xbrlExtSeq=20261116000011&roleId=dart_2026-01-31_role-D431410&lang=ko"
+            }
+          },
+          "filingStatusEvidence": {
+            "status": "Original official report matched on same-date official docket and issuer XBRL cover",
+            "docketUrl": "https://dart.fss.or.kr/dsac001/search.ax?selectDate=2026.11.16&currentPage=23&maxResults=100&mdayCnt=0",
+            "docketSHA256": "7c9f2e012407f3010b4813638e400352abc3ce34527db102b018e5e8e0a37ef5",
+            "xbrlCoverUrl": "https://opendart.fss.or.kr/xbrl/viewer/main.do?rcpNo=20261116000017",
+            "xbrlCoverSHA256": "2b560cb3ba4eb97b39d610f412e74c08bc264ad7d7321a00f881db14e77f75a6"
+          }
+        }
+      ]
+    },
+    "KRX:092070": {
+      "reportingCurrency": "KRW",
+      "financialNote": "2026년 3분기 정기보고서의 개별 XBRL 7~9월 단독 분기값입니다. 이전 공시에서도 연결대상 회사가 없었습니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "fiscalPeriod": "2026 Q3",
+          "periodType": "quarter",
+          "revenue": 22084.358296,
+          "operatingIncome": 1244.242577,
+          "sourceType": "filing",
+          "source": "FSS Open DART issuer quarterly report (standalone XBRL)",
+          "sourceUrl": "https://opendart.fss.or.kr/xbrl/viewer/view.do?xbrlExtSeq=20261116000920&roleId=dart_2026-01-31_role-D431415&lang=ko",
+          "filingUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116001223",
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-16",
+          "observedAt": "2026-11-16T09:23:32+00:00",
+          "publishedAt": "2026-11-16T16:02:00+09:00",
+          "publicationTimePrecision": "minute",
+          "releaseType": "quarterly_report",
+          "preliminary": false,
+          "rawSha256": "d32fe13c1d6ef84eef348f1ca4279d3ae051e658b5d99d5e67d5efe2f0d33b0e",
+          "basis": "K-IFRS standalone; XBRL direct single-quarter column; issuer regular quarterly report",
+          "sourceLocation": "D431415 standalone comprehensive income statement, 2026-07-01 ~ 2026-09-30, first numeric column",
+          "calculation": {
+            "method": "Direct reported three-month column, convert won to millions",
+            "sourceUnit": "KRW",
+            "rawRevenue": 22084358296,
+            "rawOperatingIncome": 1244242577
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "매출액",
+              "rawValue": 22084358296,
+              "rawUnit": "KRW",
+              "conversion": "divide by 1000000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://opendart.fss.or.kr/xbrl/viewer/view.do?xbrlExtSeq=20261116000920&roleId=dart_2026-01-31_role-D431415&lang=ko"
+            },
+            "operatingIncome": {
+              "lineItem": "영업이익(손실)",
+              "rawValue": 1244242577,
+              "rawUnit": "KRW",
+              "conversion": "divide by 1000000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://opendart.fss.or.kr/xbrl/viewer/view.do?xbrlExtSeq=20261116000920&roleId=dart_2026-01-31_role-D431415&lang=ko"
+            }
+          },
+          "filingStatusEvidence": {
+            "status": "Original official report matched on same-date official docket and issuer XBRL cover",
+            "docketUrl": "https://dart.fss.or.kr/dsac001/search.ax?selectDate=2026.11.16&currentPage=11&maxResults=100&mdayCnt=0",
+            "docketSHA256": "c83b3d8d7bb517863c995e86b800411157754426e27a77e293bb0c934f8d9cef",
+            "xbrlCoverUrl": "https://opendart.fss.or.kr/xbrl/viewer/main.do?rcpNo=20261116001223",
+            "xbrlCoverSHA256": "12b6210d689a91e39d5c9d0141d6c493076912decaee4ab9560f5d879b48b963"
+          },
+          "basisContinuityEvidence": {
+            "officialPriorReport": "https://kind.krx.co.kr/external/2026/05/15/001772/20260515003936/11013.htm",
+            "note": "Prior report section III.2 explicitly no consolidation targets; Q3 XBRL cover has separate statement only. Q3 2025 comparative in current official Q3 matches retained Yahoo display precision for same-basis revenue and operating income."
+          }
+        }
+      ]
+    },
+    "KRX:183300": {
+      "reportingCurrency": "KRW",
+      "financialNote": "2026년 3분기 정기보고서의 연결 손익계산서 7~9월 단독 분기 값입니다. 공시 원정밀도를 유지합니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "fiscalPeriod": "2026 Q3",
+          "revenue": 186234.634053,
+          "operatingIncome": 24670.862761,
+          "sourceType": "filing",
+          "source": "Official FSS DART consolidated quarterly report",
+          "sourceUrl": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20261116000758&dcmNo=11658645&eleId=21&offset=354967&length=39531&dtd=dart4.xsd",
+          "filingUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116000758",
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-16",
+          "observedAt": "2026-11-16T09:25:39+00:00",
+          "publishedAt": "2026-11-16T15:11:00+09:00",
+          "publicationTimePrecision": "minute",
+          "releaseType": "quarterly_report",
+          "preliminary": false,
+          "rawSha256": "b2b7b31350d47b28232ce65c4d8d62a0548148beef28dde5057aa1aaa6f28b39",
+          "basis": "K-IFRS consolidated; direct standalone quarter from issuer regular filing",
+          "sourceLocation": "2-2. 연결 포괄손익계산서 2026년 3분기 최초 3개월 금액 열",
+          "calculation": {
+            "method": "Direct first three-month column; source unit conversion",
+            "sourceUnit": "KRW",
+            "rawRevenue": 186234634053,
+            "rawOperatingIncome": 24670862761
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "매출액",
+              "rawValue": 186234634053,
+              "rawUnit": "KRW",
+              "conversion": "divide by 1000000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20261116000758&dcmNo=11658645&eleId=21&offset=354967&length=39531&dtd=dart4.xsd"
+            },
+            "operatingIncome": {
+              "lineItem": "영업이익",
+              "rawValue": 24670862761,
+              "rawUnit": "KRW",
+              "conversion": "divide by 1000000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20261116000758&dcmNo=11658645&eleId=21&offset=354967&length=39531&dtd=dart4.xsd"
+            }
+          },
+          "filingStatusEvidence": {
+            "status": "Original official report matched on same-date official DART docket and filing viewer",
+            "docketUrl": "https://dart.fss.or.kr/dsac001/search.ax?selectDate=2026.11.16&currentPage=16&maxResults=100&mdayCnt=0",
+            "docketSHA256": "44df33377893179c20775ed1e092d944cc421e1c5df60ce5d21629f10273744b",
+            "originalSHA256": "987fd58a285966c55d4246c470afd48a93d6e04fb4736dca5150a80c5d1a8cb8"
+          }
+        }
+      ]
+    },
+    "KRX:007660": {
+      "reportingCurrency": "KRW",
+      "financialNote": "2026년 3분기 정기보고서의 연결 손익계산서 7~9월 단독 분기 값입니다. 공시 원정밀도를 유지합니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "fiscalPeriod": "2026 Q3",
+          "revenue": 389211.776593,
+          "operatingIncome": 94903.161058,
+          "sourceType": "filing",
+          "source": "Official FSS DART consolidated quarterly report",
+          "sourceUrl": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20261116001194&dcmNo=11659819&eleId=21&offset=206754&length=37625&dtd=dart4.xsd",
+          "filingUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116001194",
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-16",
+          "observedAt": "2026-11-16T09:25:39+00:00",
+          "publishedAt": "2026-11-16T16:00:00+09:00",
+          "publicationTimePrecision": "minute",
+          "releaseType": "quarterly_report",
+          "preliminary": false,
+          "rawSha256": "767d3611a8a89fb4f1e9c1c05035d89d9bef4777c394a4a158047f8b535c4d58",
+          "basis": "K-IFRS consolidated; direct standalone quarter from issuer regular filing",
+          "sourceLocation": "2-2. 연결 포괄손익계산서 2026년 3분기 최초 3개월 금액 열",
+          "calculation": {
+            "method": "Direct first three-month column; source unit conversion",
+            "sourceUnit": "KRW",
+            "rawRevenue": 389211776593,
+            "rawOperatingIncome": 94903161058
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "수익",
+              "rawValue": 389211776593,
+              "rawUnit": "KRW",
+              "conversion": "divide by 1000000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20261116001194&dcmNo=11659819&eleId=21&offset=206754&length=37625&dtd=dart4.xsd"
+            },
+            "operatingIncome": {
+              "lineItem": "영업이익(손실)",
+              "rawValue": 94903161058,
+              "rawUnit": "KRW",
+              "conversion": "divide by 1000000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20261116001194&dcmNo=11659819&eleId=21&offset=206754&length=37625&dtd=dart4.xsd"
+            }
+          },
+          "filingStatusEvidence": {
+            "status": "Original official report matched on same-date official DART docket and filing viewer",
+            "docketUrl": "https://dart.fss.or.kr/dsac001/search.ax?selectDate=2026.11.16&currentPage=12&maxResults=100&mdayCnt=0",
+            "docketSHA256": "4064a73a8cee17e6f6029d1f6744dc94d47f3b0a75506c071408b6d099251d48",
+            "originalSHA256": "da1ac795e9dbc3c0565f6af7aa38ce3b55afac06f92b443dba5880375506c792"
+          }
+        }
+      ]
+    },
+    "KRX:102710": {
+      "reportingCurrency": "KRW",
+      "financialNote": "2026년 3분기 정기보고서의 연결 손익계산서 7~9월 단독 분기 값입니다. 공시 원정밀도를 유지합니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "fiscalPeriod": "2026 Q3",
+          "revenue": 193593.618495,
+          "operatingIncome": 25494.110736,
+          "sourceType": "filing",
+          "source": "Official FSS DART consolidated quarterly report",
+          "sourceUrl": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20261116000654&dcmNo=11658378&eleId=21&offset=133557&length=52708&dtd=dart4.xsd",
+          "filingUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116000654",
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-16",
+          "observedAt": "2026-11-16T09:25:39+00:00",
+          "publishedAt": "2026-11-16T14:49:00+09:00",
+          "publicationTimePrecision": "minute",
+          "releaseType": "quarterly_report",
+          "preliminary": false,
+          "rawSha256": "b1b5ecf267b008cf5c369955e445e55747caf80cff81c26c2d5211a54a0f3020",
+          "basis": "K-IFRS consolidated; direct standalone quarter from issuer regular filing",
+          "sourceLocation": "2-2. 연결 포괄손익계산서 2026년 3분기 최초 3개월 금액 열",
+          "calculation": {
+            "method": "Direct first three-month column; source unit conversion",
+            "sourceUnit": "KRW",
+            "rawRevenue": 193593618495,
+            "rawOperatingIncome": 25494110736
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "매출액 (주4,23,30)",
+              "rawValue": 193593618495,
+              "rawUnit": "KRW",
+              "conversion": "divide by 1000000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20261116000654&dcmNo=11658378&eleId=21&offset=133557&length=52708&dtd=dart4.xsd"
+            },
+            "operatingIncome": {
+              "lineItem": "영업이익 (주4)",
+              "rawValue": 25494110736,
+              "rawUnit": "KRW",
+              "conversion": "divide by 1000000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20261116000654&dcmNo=11658378&eleId=21&offset=133557&length=52708&dtd=dart4.xsd"
+            }
+          },
+          "filingStatusEvidence": {
+            "status": "Original official report matched on same-date official DART docket and filing viewer",
+            "docketUrl": "https://dart.fss.or.kr/dsac001/search.ax?selectDate=2026.11.16&currentPage=17&maxResults=100&mdayCnt=0",
+            "docketSHA256": "510725e4f0e58f0ae21b0fb9c4fd11ac01fe3e07cbe30f9f35247649961b68f7",
+            "originalSHA256": "002bf236848b7109ff2ef0863b14b552c3dc2371fdf0a0815241dd871963220a"
+          }
+        }
+      ]
+    },
+    "KRX:357780": {
+      "reportingCurrency": "KRW",
+      "financialNote": "2026년 3분기 정기보고서의 연결 손익계산서 7~9월 단독 분기 값입니다. 공시 원정밀도를 유지합니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "fiscalPeriod": "2026 Q3",
+          "revenue": 344874.333808,
+          "operatingIncome": 50610.295566,
+          "sourceType": "filing",
+          "source": "Official FSS DART consolidated quarterly report",
+          "sourceUrl": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20261116001850&dcmNo=11661677&eleId=21&offset=154641&length=38525&dtd=dart4.xsd",
+          "filingUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116001850",
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-16",
+          "observedAt": "2026-11-16T09:25:39+00:00",
+          "publishedAt": "2026-11-16T16:53:00+09:00",
+          "publicationTimePrecision": "minute",
+          "releaseType": "quarterly_report",
+          "preliminary": false,
+          "rawSha256": "f6f1a5ccdbd87ccad9e783f90aff3bb9099fb6f52815b5d19d8bf5d2506e78be",
+          "basis": "K-IFRS consolidated; direct standalone quarter from issuer regular filing",
+          "sourceLocation": "2-2. 연결 포괄손익계산서 2026년 3분기 최초 3개월 금액 열",
+          "calculation": {
+            "method": "Direct first three-month column; source unit conversion",
+            "sourceUnit": "KRW",
+            "rawRevenue": 344874333808,
+            "rawOperatingIncome": 50610295566
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "매출액 (주4,20)",
+              "rawValue": 344874333808,
+              "rawUnit": "KRW",
+              "conversion": "divide by 1000000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20261116001850&dcmNo=11661677&eleId=21&offset=154641&length=38525&dtd=dart4.xsd"
+            },
+            "operatingIncome": {
+              "lineItem": "영업이익 (주4)",
+              "rawValue": 50610295566,
+              "rawUnit": "KRW",
+              "conversion": "divide by 1000000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20261116001850&dcmNo=11661677&eleId=21&offset=154641&length=38525&dtd=dart4.xsd"
+            }
+          },
+          "filingStatusEvidence": {
+            "status": "Original official report matched on same-date official DART docket and filing viewer",
+            "docketUrl": "https://dart.fss.or.kr/dsac001/search.ax?selectDate=2026.11.16&currentPage=5&maxResults=100&mdayCnt=0",
+            "docketSHA256": "48764252cd3f5afa5e652eeaeda52ded01eef8bc086e99f7b501bc60e01e57a9",
+            "originalSHA256": "fbf97e0815618d0fec6b968dd9b541e15116b0750b177c92371b1069befd7759"
+          }
+        }
+      ]
+    },
+    "KRX:005290": {
+      "reportingCurrency": "KRW",
+      "financialNote": "2026년 3분기 정기보고서의 연결 손익계산서 7~9월 단독 분기 값입니다. 공시 원정밀도를 유지합니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "fiscalPeriod": "2026 Q3",
+          "revenue": 370825.577119,
+          "operatingIncome": 61050.023086,
+          "sourceType": "filing",
+          "source": "Official FSS DART consolidated quarterly report",
+          "sourceUrl": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20261116000630&dcmNo=11658322&eleId=21&offset=289670&length=40146&dtd=dart4.xsd",
+          "filingUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116000630",
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-16",
+          "observedAt": "2026-11-16T09:25:39+00:00",
+          "publishedAt": "2026-11-16T14:42:00+09:00",
+          "publicationTimePrecision": "minute",
+          "releaseType": "quarterly_report",
+          "preliminary": false,
+          "rawSha256": "e6b5ee82bb311e35fc5fabc580416d4c5e17fabadc0eee6aeee65e68f36504af",
+          "basis": "K-IFRS consolidated; direct standalone quarter from issuer regular filing",
+          "sourceLocation": "2-2. 연결 포괄손익계산서 2026년 3분기 최초 3개월 금액 열",
+          "calculation": {
+            "method": "Direct first three-month column; source unit conversion",
+            "sourceUnit": "KRW",
+            "rawRevenue": 370825577119,
+            "rawOperatingIncome": 61050023086
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "수익 (주2,4,31)",
+              "rawValue": 370825577119,
+              "rawUnit": "KRW",
+              "conversion": "divide by 1000000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20261116000630&dcmNo=11658322&eleId=21&offset=289670&length=40146&dtd=dart4.xsd"
+            },
+            "operatingIncome": {
+              "lineItem": "영업이익 (주4)",
+              "rawValue": 61050023086,
+              "rawUnit": "KRW",
+              "conversion": "divide by 1000000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20261116000630&dcmNo=11658322&eleId=21&offset=289670&length=40146&dtd=dart4.xsd"
+            }
+          },
+          "filingStatusEvidence": {
+            "status": "Original official report matched on same-date official DART docket and filing viewer",
+            "docketUrl": "https://dart.fss.or.kr/dsac001/search.ax?selectDate=2026.11.16&currentPage=17&maxResults=100&mdayCnt=0",
+            "docketSHA256": "510725e4f0e58f0ae21b0fb9c4fd11ac01fe3e07cbe30f9f35247649961b68f7",
+            "originalSHA256": "3eea4cf6f43d35ca8a113769ff2718a9ba856b150e92093b774e3c93a7e33ad9"
+          }
+        }
+      ]
+    },
+    "KRX:108320": {
+      "reportingCurrency": "KRW",
+      "financialNote": "2026년 3분기 정기보고서의 연결 손익계산서 7~9월 단독 분기 값입니다. 공시 원정밀도를 유지합니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "fiscalPeriod": "2026 Q3",
+          "revenue": 336019.668944,
+          "operatingIncome": -15563.651275,
+          "sourceType": "filing",
+          "source": "Official FSS DART consolidated quarterly report",
+          "sourceUrl": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20261116001373&dcmNo=11660310&eleId=21&offset=112435&length=25146&dtd=dart4.xsd",
+          "filingUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116001373",
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-16",
+          "observedAt": "2026-11-16T09:25:39+00:00",
+          "publishedAt": "2026-11-16T16:11:00+09:00",
+          "publicationTimePrecision": "minute",
+          "releaseType": "quarterly_report",
+          "preliminary": false,
+          "rawSha256": "b90916009ea14f793c379f48d10e43e6f4f93903af0dcacbaed41821bb1ea11d",
+          "basis": "K-IFRS consolidated; direct standalone quarter from issuer regular filing",
+          "sourceLocation": "2-2. 연결 손익계산서 2026년 3분기 최초 3개월 금액 열",
+          "calculation": {
+            "method": "Direct first three-month column; source unit conversion",
+            "sourceUnit": "KRW",
+            "rawRevenue": 336019668944,
+            "rawOperatingIncome": -15563651275
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "매출액 (주24,29)",
+              "rawValue": 336019668944,
+              "rawUnit": "KRW",
+              "conversion": "divide by 1000000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20261116001373&dcmNo=11660310&eleId=21&offset=112435&length=25146&dtd=dart4.xsd"
+            },
+            "operatingIncome": {
+              "lineItem": "영업이익(손실)",
+              "rawValue": -15563651275,
+              "rawUnit": "KRW",
+              "conversion": "divide by 1000000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20261116001373&dcmNo=11660310&eleId=21&offset=112435&length=25146&dtd=dart4.xsd"
+            }
+          },
+          "filingStatusEvidence": {
+            "status": "Original official report matched on same-date official DART docket and filing viewer",
+            "docketUrl": "https://dart.fss.or.kr/dsac001/search.ax?selectDate=2026.11.16&currentPage=10&maxResults=100&mdayCnt=0",
+            "docketSHA256": "6a7cd6ace22d31c4bca0fb1d39a051574748dfe79d788185ee3fdbbe0576aa90",
+            "originalSHA256": "12886a535d997330bbf42138df5ef6304619025d3da4fd5b42a8d35dfb4ca5f4"
+          }
+        }
+      ]
+    },
+    "KRX:005930": {
+      "reportingCurrency": "KRW",
+      "financialNote": "2026년 3분기 정기보고서의 연결 손익계산서 7~9월 단독 분기 값입니다. 공시 원정밀도를 유지합니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "fiscalPeriod": "2026 Q3",
+          "revenue": 195253209.0,
+          "operatingIncome": 107440482.0,
+          "sourceType": "filing",
+          "source": "Official FSS DART consolidated quarterly report",
+          "sourceUrl": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20261116001482&dcmNo=11660641&eleId=21&offset=212551&length=24769&dtd=dart4.xsd",
+          "filingUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116001482",
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-16",
+          "observedAt": "2026-11-16T09:25:39+00:00",
+          "publishedAt": "2026-11-16T16:20:00+09:00",
+          "publicationTimePrecision": "minute",
+          "releaseType": "quarterly_report",
+          "preliminary": false,
+          "rawSha256": "26f4e383d87cdcd08107c7c2a3fd77bb3a265d97d9b51bdfc0eb13bd04ba07a9",
+          "basis": "K-IFRS consolidated; direct standalone quarter from issuer regular filing",
+          "sourceLocation": "2-2. 연결 손익계산서 2026년 3분기 최초 3개월 금액 열",
+          "calculation": {
+            "method": "Direct first three-month column; source unit conversion",
+            "sourceUnit": "KRW millions",
+            "rawRevenue": 195253209,
+            "rawOperatingIncome": 107440482
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "매출액 (주27)",
+              "rawValue": 195253209,
+              "rawUnit": "KRW millions",
+              "conversion": "none",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20261116001482&dcmNo=11660641&eleId=21&offset=212551&length=24769&dtd=dart4.xsd"
+            },
+            "operatingIncome": {
+              "lineItem": "영업이익 (주27)",
+              "rawValue": 107440482,
+              "rawUnit": "KRW millions",
+              "conversion": "none",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20261116001482&dcmNo=11660641&eleId=21&offset=212551&length=24769&dtd=dart4.xsd"
+            }
+          },
+          "filingStatusEvidence": {
+            "status": "Original official report matched on same-date official DART docket and filing viewer",
+            "docketUrl": "https://dart.fss.or.kr/dsac001/search.ax?selectDate=2026.11.16&currentPage=9&maxResults=100&mdayCnt=0",
+            "docketSHA256": "fb9a7e0a2a5f4941b843d9df8fc756b399560a6ad08830ea3039cd5fb1d3c92a",
+            "originalSHA256": "7199c94b8e1808d0aed4ce0cb58534c4128d940cc2c4613a72d00f7f601d627f"
+          }
+        }
+      ]
+    },
+    "KRX:009150": {
+      "reportingCurrency": "KRW",
+      "financialNote": "2026년 3분기 정기보고서의 연결 손익계산서 7~9월 단독 분기 값입니다. 공시 원정밀도를 유지합니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "fiscalPeriod": "2026 Q3",
+          "revenue": 3763277.979377,
+          "operatingIncome": 690956.897032,
+          "sourceType": "filing",
+          "source": "Official FSS DART consolidated quarterly report",
+          "sourceUrl": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20261116001915&dcmNo=11661861&eleId=21&offset=209597&length=56186&dtd=dart4.xsd",
+          "filingUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116001915",
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-16",
+          "observedAt": "2026-11-16T09:25:39+00:00",
+          "publishedAt": "2026-11-16T17:01:00+09:00",
+          "publicationTimePrecision": "minute",
+          "releaseType": "quarterly_report",
+          "preliminary": false,
+          "rawSha256": "250639eb95c8c760d4ada08869df565605967cd438f68fe5ec118de7752aa2cb",
+          "basis": "K-IFRS consolidated; direct standalone quarter from issuer regular filing",
+          "sourceLocation": "2-2. 연결 포괄손익계산서 2026년 3분기 최초 3개월 금액 열",
+          "calculation": {
+            "method": "Direct first three-month column; source unit conversion",
+            "sourceUnit": "KRW",
+            "rawRevenue": 3763277979377,
+            "rawOperatingIncome": 690956897032
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "매출액 (주3,20,24)",
+              "rawValue": 3763277979377,
+              "rawUnit": "KRW",
+              "conversion": "divide by 1000000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20261116001915&dcmNo=11661861&eleId=21&offset=209597&length=56186&dtd=dart4.xsd"
+            },
+            "operatingIncome": {
+              "lineItem": "영업이익",
+              "rawValue": 690956897032,
+              "rawUnit": "KRW",
+              "conversion": "divide by 1000000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20261116001915&dcmNo=11661861&eleId=21&offset=209597&length=56186&dtd=dart4.xsd"
+            }
+          },
+          "filingStatusEvidence": {
+            "status": "Original official report matched on same-date official DART docket and filing viewer",
+            "docketUrl": "https://dart.fss.or.kr/dsac001/search.ax?selectDate=2026.11.16&currentPage=4&maxResults=100&mdayCnt=0",
+            "docketSHA256": "14a492465f7866bae9c91947fb4af09413020856a851294dfcbe43c4bdfeb27a",
+            "originalSHA256": "7f61920b99b5a2a3eeea085aee7bb5f7c7d438f80bae1aa2558926b2d734ee71"
+          }
+        }
+      ]
+    },
+    "KRX:000660": {
+      "reportingCurrency": "KRW",
+      "financialNote": "2026년 3분기 정기보고서의 연결 손익계산서 7~9월 단독 분기 값입니다. 공시 원정밀도를 유지합니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "fiscalPeriod": "2026 Q3",
+          "revenue": 104615483.0,
+          "operatingIncome": 83333818.0,
+          "sourceType": "filing",
+          "source": "Official FSS DART consolidated quarterly report",
+          "sourceUrl": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20261116001715&dcmNo=11661287&eleId=21&offset=262002&length=39972&dtd=dart4.xsd",
+          "filingUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116001715",
+          "reportedCurrency": "KRW",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-16",
+          "observedAt": "2026-11-16T09:25:39+00:00",
+          "publishedAt": "2026-11-16T16:38:00+09:00",
+          "publicationTimePrecision": "minute",
+          "releaseType": "quarterly_report",
+          "preliminary": false,
+          "rawSha256": "1a35deb0e8bbde755c3af290122c9c41f768f9912ed36dac99be90f0d58ed25c",
+          "basis": "K-IFRS consolidated; direct standalone quarter from issuer regular filing",
+          "sourceLocation": "2-2. 연결 포괄손익계산서 2026년 3분기 최초 3개월 금액 열",
+          "calculation": {
+            "method": "Direct first three-month column; source unit conversion",
+            "sourceUnit": "KRW millions",
+            "rawRevenue": 104615483,
+            "rawOperatingIncome": 83333818
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "매출액 (주4,21,28)",
+              "rawValue": 104615483,
+              "rawUnit": "KRW millions",
+              "conversion": "none",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20261116001715&dcmNo=11661287&eleId=21&offset=262002&length=39972&dtd=dart4.xsd"
+            },
+            "operatingIncome": {
+              "lineItem": "영업이익",
+              "rawValue": 83333818,
+              "rawUnit": "KRW millions",
+              "conversion": "none",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20261116001715&dcmNo=11661287&eleId=21&offset=262002&length=39972&dtd=dart4.xsd"
+            }
+          },
+          "filingStatusEvidence": {
+            "status": "Original official report matched on same-date official DART docket and filing viewer",
+            "docketUrl": "https://dart.fss.or.kr/dsac001/search.ax?selectDate=2026.11.16&currentPage=6&maxResults=100&mdayCnt=0",
+            "docketSHA256": "0aec7dc1f558c78f183e5abd8f65d4fef82c133a2e6e8f850532e89af5fc7d19",
+            "originalSHA256": "7ff00802aaa724fb9bdbc81948e23fe4bb76b3743532c41eca22633a724d28d6"
+          }
+        }
+      ]
+    }
+  }
+}
