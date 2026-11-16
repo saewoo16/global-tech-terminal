@@ -1,0 +1,527 @@
+{
+  "schemaVersion": 1,
+  "scope": "Targeted company explorer review of the five published series that ended before the November 13 completed session. No independent re-certification of the other 242 series, market caps, exchange rates, financials, or other dashboard tabs.",
+  "baseline": {
+    "revision": "f2edaf584fe24561865d0fb2529fde0cc9b385e8",
+    "marketSha256": "be3cd9ee6e9416d3635301859bbb9ac717f8a5d633e9d867688ae9cc498d941a",
+    "publishedQuoteCounts": {
+      "2026-11-13": 242,
+      "2026-11-12": 5
+    }
+  },
+  "latestVerifiedCompletedSession": "2026-11-13",
+  "methodology": "Compare a complete adjusted series covering every existing date to the stored series; verify venue session from the official calendars and Yahoo regular market window; cross-check same-session regular close without treating an unadjusted close as adjusted. No inferred or after-hours prices. Avoid adding historical dates missing from saved data.",
+  "rawArchive": {
+    "filename": "company-price-raw-20261115-targeted.tar.gz",
+    "sha256": "86c2e2fde2bea1950b5015f315cd00bac2616ba4d2856b3dacb985a1814529fe",
+    "members": 5,
+    "storage": "Retained with working evidence; source URLs and per-response hashes are recorded here."
+  },
+  "proposedChartAppendOnly": {
+    "NASDAQ:COHU": [
+      "2026-11-13",
+      43.59
+    ],
+    "NASDAQ:MSFT": [
+      "2026-11-13",
+      523.88
+    ]
+  },
+  "observations": [
+    {
+      "symbol": "NASDAQ:COHU",
+      "sourceTicker": "COHU",
+      "exchange": "NasdaqGS",
+      "currency": "USD",
+      "latestCompletedSession": "2026-11-13",
+      "priorPublishedSession": "2026-11-12",
+      "session": {
+        "timezone": "America/New_York",
+        "regularStart": 1794580200,
+        "regularEnd": 1794603600,
+        "openedAt": "2026-11-13T09:30:00-05:00",
+        "closedAt": "2026-11-13T16:00:00-05:00",
+        "officialCalendarUrl": "https://www.nasdaq.com/market-activity/stock-market-holiday-schedule"
+      },
+      "source": {
+        "provider": "Yahoo Finance chart",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/COHU?period1=1636416000&period2=1794700800&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-15T09:05:14+00:00",
+        "responseDate": "2026-11-15T09:05:13+00:00",
+        "observationTimeBasis": "UTC Date header on the downloader connection receipt; Yahoo response Date is kept separately. The regular close time refers to the November 13 exchange session.",
+        "archiveMember": "yahoo/COHU.exact.chart.json",
+        "rawSha256": "94194b6ce80cdab9ed8c35658ae14856befab31659322304bcb11436e7f91589",
+        "rawBytes": 136085,
+        "priceField": "indicators.adjclose[0].adjclose",
+        "regularCloseField": "indicators.quote[0].close"
+      },
+      "latestSessionRawOHLCV": {
+        "open": 44.689998626708984,
+        "low": 42.16999816894531,
+        "volume": 814600,
+        "high": 45.540000915527344,
+        "close": 43.59000015258789
+      },
+      "latestSessionAdjustedClose": 43.59000015258789,
+      "latestSessionPointAtPublisherPrecision": [
+        "2026-11-13",
+        43.59
+      ],
+      "priorSessionRawClose": 45.0,
+      "priorSessionAdjustedClose": 45.0,
+      "priorPublishedLastTwoPoints": [
+        [
+          "2026-11-11",
+          45.975
+        ],
+        [
+          "2026-11-12",
+          45.0
+        ]
+      ],
+      "retainedOverlapEvidence": {
+        "savedDays": 1256,
+        "coveredSavedDays": 1256,
+        "missingSavedDays": 0,
+        "matchedWithinPublisherToleranceDays": 1255,
+        "changedDays": 1,
+        "oldestChangedDate": "2026-11-11",
+        "latestChangedDate": "2026-11-11",
+        "afterMostRecentSavedDates": [
+          "2026-11-13"
+        ],
+        "unpublishedEarlierProviderDates": [
+          "2021-11-09",
+          "2021-11-10"
+        ],
+        "knownDiscrepancy": {
+          "date": "2026-11-11",
+          "retainedPublishedClose": 45.975,
+          "currentYahooAdjustedClose": 45.97999954223633,
+          "independentTradingViewCloseInRetainedEvidence": 45.975,
+          "priorEvidenceUrl": "https://github.com/saewoo16/global-tech-terminal/blob/f2edaf584fe24561865d0fb2529fde0cc9b385e8/data/company-refresh-evidence-20261113-am.json",
+          "disposition": "Preserve the previously independently verified historical point exactly."
+        }
+      },
+      "independentChecks": [
+        {
+          "purpose": "Issuer stock history",
+          "url": "https://cohu.gcs-web.com/stock-information/historical-price-lookup",
+          "latestSessionClose": 43.59,
+          "priorSessionClose": 45.0
+        }
+      ],
+      "dataDisposition": "append_verified_adjusted_close_preserve_prior_history"
+    },
+    {
+      "symbol": "NASDAQ:MSFT",
+      "sourceTicker": "MSFT",
+      "exchange": "NasdaqGS",
+      "currency": "USD",
+      "latestCompletedSession": "2026-11-13",
+      "priorPublishedSession": "2026-11-12",
+      "session": {
+        "timezone": "America/New_York",
+        "regularStart": 1794580200,
+        "regularEnd": 1794603600,
+        "openedAt": "2026-11-13T09:30:00-05:00",
+        "closedAt": "2026-11-13T16:00:00-05:00",
+        "officialCalendarUrl": "https://www.nasdaq.com/market-activity/stock-market-holiday-schedule"
+      },
+      "source": {
+        "provider": "Yahoo Finance chart",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/MSFT?period1=1636416000&period2=1794700800&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-15T09:05:14+00:00",
+        "responseDate": "2026-11-15T09:05:14+00:00",
+        "observationTimeBasis": "UTC Date header on the downloader connection receipt; Yahoo response Date is kept separately. The regular close time refers to the November 13 exchange session.",
+        "archiveMember": "yahoo/MSFT.exact.chart.json",
+        "rawSha256": "d7487c36f6804fdc9deeb4d237cc0217eab7e93d7679c76775e971a3a90fbb9c",
+        "rawBytes": 137565,
+        "priceField": "indicators.adjclose[0].adjclose",
+        "regularCloseField": "indicators.quote[0].close"
+      },
+      "latestSessionRawOHLCV": {
+        "high": 526.4199829101562,
+        "close": 523.8800048828125,
+        "low": 513.8200073242188,
+        "volume": 26155900,
+        "open": 519.75
+      },
+      "latestSessionAdjustedClose": 523.8800048828125,
+      "latestSessionPointAtPublisherPrecision": [
+        "2026-11-13",
+        523.88
+      ],
+      "priorSessionRawClose": 523.0,
+      "priorSessionAdjustedClose": 523.0,
+      "priorPublishedLastTwoPoints": [
+        [
+          "2026-11-11",
+          521.125
+        ],
+        [
+          "2026-11-12",
+          523.0
+        ]
+      ],
+      "retainedOverlapEvidence": {
+        "savedDays": 1256,
+        "coveredSavedDays": 1256,
+        "missingSavedDays": 0,
+        "matchedWithinPublisherToleranceDays": 1255,
+        "changedDays": 1,
+        "oldestChangedDate": "2026-11-11",
+        "latestChangedDate": "2026-11-11",
+        "afterMostRecentSavedDates": [
+          "2026-11-13"
+        ],
+        "unpublishedEarlierProviderDates": [
+          "2021-11-09",
+          "2021-11-10"
+        ],
+        "knownDiscrepancy": {
+          "date": "2026-11-11",
+          "retainedPublishedClose": 521.125,
+          "currentYahooAdjustedClose": 521.1300048828125,
+          "independentTradingViewCloseInRetainedEvidence": 521.125,
+          "priorEvidenceUrl": "https://github.com/saewoo16/global-tech-terminal/blob/f2edaf584fe24561865d0fb2529fde0cc9b385e8/data/company-refresh-evidence-20261113-am.json",
+          "disposition": "Preserve the previously independently verified historical point exactly."
+        }
+      },
+      "independentChecks": [
+        {
+          "purpose": "Issuer stock history",
+          "url": "https://microsoft.gcs-web.com/historic-stock-lookup",
+          "latestSessionClose": 523.88,
+          "priorSessionClose": 523.0
+        },
+        {
+          "purpose": "Independent historical price table",
+          "url": "https://markets.ft.markitdigital.com/data/equities/tearsheet/historical?s=MSFT%3ANSQ",
+          "latestSessionClose": 523.88,
+          "priorSessionClose": 523.0
+        }
+      ],
+      "reusedUsScreen": {
+        "asOf": "2026-11-13",
+        "previousSession": "2026-11-12",
+        "close": 523.8800048828125,
+        "previousClose": 523.0,
+        "retrievedAt": "2026-11-14T06:38:22.847529+00:00",
+        "sourceUrl": "https://finance.yahoo.com/quote/MSFT/history/",
+        "rawSha256": "dafe0907d7f4cf8d2c2d96b4cd00f4d01c1cd584f674eaad1bb240346801a6e9",
+        "priceBasis": "Yahoo Finance historical completed-session quote.close, regular-session bars; split adjustment per provider, not dividend adjusted"
+      },
+      "dataDisposition": "append_verified_adjusted_close_preserve_prior_history"
+    },
+    {
+      "symbol": "NYSE:ETN",
+      "sourceTicker": "ETN",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "latestCompletedSession": "2026-11-13",
+      "priorPublishedSession": "2026-11-12",
+      "session": {
+        "timezone": "America/New_York",
+        "regularStart": 1794580200,
+        "regularEnd": 1794603600,
+        "openedAt": "2026-11-13T09:30:00-05:00",
+        "closedAt": "2026-11-13T16:00:00-05:00",
+        "officialCalendarUrl": "https://www.nyse.com/trade/hours-calendars"
+      },
+      "source": {
+        "provider": "Yahoo Finance chart",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/ETN?period1=1636416000&period2=1794700800&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-15T09:05:14+00:00",
+        "responseDate": "2026-11-15T09:05:14+00:00",
+        "observationTimeBasis": "UTC Date header on the downloader connection receipt; Yahoo response Date is kept separately. The regular close time refers to the November 13 exchange session.",
+        "archiveMember": "yahoo/ETN.exact.chart.json",
+        "rawSha256": "5fa8260ddb0730f76d8f0766e37dfc594c1084a7b23a8c9ea9f70c4dab8344f5",
+        "rawBytes": 136465,
+        "priceField": "indicators.adjclose[0].adjclose",
+        "regularCloseField": "indicators.quote[0].close"
+      },
+      "latestSessionRawOHLCV": {
+        "close": 352.9700012207031,
+        "volume": 1833000,
+        "open": 361.5,
+        "low": 347.5799865722656,
+        "high": 363.1300048828125
+      },
+      "latestSessionAdjustedClose": 352.9700012207031,
+      "latestSessionPointAtPublisherPrecision": [
+        "2026-11-13",
+        352.97
+      ],
+      "priorSessionRawClose": 359.0400085449219,
+      "priorSessionAdjustedClose": 359.0400085449219,
+      "priorPublishedLastTwoPoints": [
+        [
+          "2026-11-11",
+          360.62
+        ],
+        [
+          "2026-11-12",
+          359.04001
+        ]
+      ],
+      "retainedOverlapEvidence": {
+        "savedDays": 1256,
+        "coveredSavedDays": 1256,
+        "missingSavedDays": 0,
+        "matchedWithinPublisherToleranceDays": 3,
+        "changedDays": 1253,
+        "oldestChangedDate": "2021-11-11",
+        "latestChangedDate": "2026-11-09",
+        "afterMostRecentSavedDates": [
+          "2026-11-13"
+        ],
+        "unpublishedEarlierProviderDates": [
+          "2021-11-09",
+          "2021-11-10"
+        ],
+        "historicalRatioMedian": 0.9969384665017228,
+        "historicalRatioRange": [
+          0.9969379858823777,
+          0.9969389535262204
+        ]
+      },
+      "independentChecks": [
+        {
+          "purpose": "Independent historical price table",
+          "url": "https://markets.ptc.ft.markitdigital.com/data/equities/tearsheet/historical?s=ETN%3ANYQ",
+          "latestSessionClose": 352.97,
+          "priorSessionClose": 359.04
+        }
+      ],
+      "reusedUsScreen": {
+        "asOf": "2026-11-13",
+        "previousSession": "2026-11-12",
+        "close": 352.9700012207031,
+        "previousClose": 359.0400085449219,
+        "retrievedAt": "2026-11-14T06:37:45.550269+00:00",
+        "sourceUrl": "https://finance.yahoo.com/quote/ETN/history/",
+        "rawSha256": "693e708fcb94d7d9a82ae4ea7b0ddf38eacdc67d148f06465357427bc5a37ed8",
+        "priceBasis": "Yahoo Finance historical completed-session quote.close, regular-session bars; split adjustment per provider, not dividend adjusted"
+      },
+      "corporateAction": {
+        "providerAdjustmentDate": "2026-11-10",
+        "issuerRecordDate": "2026-11-10",
+        "cashDividend": 1.1,
+        "currency": "USD",
+        "issuerSourceUrl": "https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-declares-quarterly-dividend-payable-November-26.html",
+        "expectedHistoryRatio": 0.9969384914072588,
+        "note": "Provider shows Nov 9 unadjusted 359.30 and adjusted 358.20; current series uses the earlier adjustment basis through Nov 9."
+      },
+      "dataDisposition": "retain_prior_adjusted_series_pending_corporate_action_reconciliation"
+    },
+    {
+      "symbol": "NYSE:GLW",
+      "sourceTicker": "GLW",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "latestCompletedSession": "2026-11-13",
+      "priorPublishedSession": "2026-11-12",
+      "session": {
+        "timezone": "America/New_York",
+        "regularStart": 1794580200,
+        "regularEnd": 1794603600,
+        "openedAt": "2026-11-13T09:30:00-05:00",
+        "closedAt": "2026-11-13T16:00:00-05:00",
+        "officialCalendarUrl": "https://www.nyse.com/trade/hours-calendars"
+      },
+      "source": {
+        "provider": "Yahoo Finance chart",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/GLW?period1=1636416000&period2=1794700800&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-15T09:05:14+00:00",
+        "responseDate": "2026-11-15T09:05:13+00:00",
+        "observationTimeBasis": "UTC Date header on the downloader connection receipt; Yahoo response Date is kept separately. The regular close time refers to the November 13 exchange session.",
+        "archiveMember": "yahoo/GLW.exact.chart.json",
+        "rawSha256": "d84b12107d1376f30b5ba4b5c6c391249b5f257efd78e98c22ccd0e9c069540f",
+        "rawBytes": 137887,
+        "priceField": "indicators.adjclose[0].adjclose",
+        "regularCloseField": "indicators.quote[0].close"
+      },
+      "latestSessionRawOHLCV": {
+        "close": 114.08000183105469,
+        "volume": 6857200,
+        "high": 119.16999816894531,
+        "low": 110.55999755859375,
+        "open": 118.0
+      },
+      "latestSessionAdjustedClose": 114.08000183105469,
+      "latestSessionPointAtPublisherPrecision": [
+        "2026-11-13",
+        114.08
+      ],
+      "priorSessionRawClose": 119.5,
+      "priorSessionAdjustedClose": 119.2199935913086,
+      "priorPublishedLastTwoPoints": [
+        [
+          "2026-11-11",
+          120.46
+        ],
+        [
+          "2026-11-12",
+          119.5
+        ]
+      ],
+      "retainedOverlapEvidence": {
+        "savedDays": 1256,
+        "coveredSavedDays": 1256,
+        "missingSavedDays": 0,
+        "matchedWithinPublisherToleranceDays": 0,
+        "changedDays": 1256,
+        "oldestChangedDate": "2021-11-11",
+        "latestChangedDate": "2026-11-12",
+        "afterMostRecentSavedDates": [
+          "2026-11-13"
+        ],
+        "unpublishedEarlierProviderDates": [
+          "2021-11-09",
+          "2021-11-10"
+        ],
+        "historicalRatioMedian": 0.9976568821982077,
+        "historicalRatioRange": [
+          0.9976563016891921,
+          0.9976574618547593
+        ]
+      },
+      "independentChecks": [
+        {
+          "purpose": "Issuer stock history",
+          "url": "https://investor.corning.com/stock-info/",
+          "latestSessionClose": 114.08,
+          "priorSessionClose": null
+        },
+        {
+          "purpose": "Independent historical price table",
+          "url": "https://markets.ptc.ft.markitdigital.com/data/equities/tearsheet/historical?s=GLW%3ANYQ",
+          "latestSessionClose": 114.08,
+          "priorSessionClose": 119.5
+        }
+      ],
+      "reusedUsScreen": {
+        "asOf": "2026-11-13",
+        "previousSession": "2026-11-12",
+        "close": 114.08000183105469,
+        "previousClose": 119.5,
+        "retrievedAt": "2026-11-14T06:37:37.044925+00:00",
+        "sourceUrl": "https://finance.yahoo.com/quote/GLW/history/",
+        "rawSha256": "73afa983ad22f206436b71f5993fbaa5f9fc3682f1c8f68c8ddf9ca58598c09a",
+        "priceBasis": "Yahoo Finance historical completed-session quote.close, regular-session bars; split adjustment per provider, not dividend adjusted"
+      },
+      "corporateAction": {
+        "providerAdjustmentDate": "2026-11-13",
+        "issuerRecordDate": "2026-11-13",
+        "issuerDividendHistoryUrl": "https://investor.corning.com/stock-info/dividend-history/default.aspx",
+        "issuerDividendHistoryDisplayedExDate": "2026-11-12",
+        "cashDividend": 0.28,
+        "currency": "USD",
+        "issuerSourceUrl": "https://www.corning.com/worldwide/en/about-us/news-events/news-releases/2026/10/corning-announces-quarterly-dividend.html",
+        "expectedHistoryRatio": 0.9976569037656904,
+        "note": "Nov 12 unadjusted close remains 119.50; the new series adjusts it to 119.2199935913086. The provider event session uses Nov 13, while the issuer dividend-history table displays Nov 12 as ex-date, Nov 13 as record date. This evidence uses the actual provider adjustment boundary and does not resolve that date-label difference. Appending only Nov 13 would mix adjustment bases at the boundary."
+      },
+      "dataDisposition": "retain_prior_adjusted_series_pending_corporate_action_reconciliation"
+    },
+    {
+      "symbol": "TSE:6965",
+      "sourceTicker": "6965.T",
+      "exchange": "Tokyo",
+      "currency": "JPY",
+      "latestCompletedSession": "2026-11-13",
+      "priorPublishedSession": "2026-11-12",
+      "session": {
+        "timezone": "Asia/Tokyo",
+        "regularStart": 1794528000,
+        "regularEnd": 1794551400,
+        "openedAt": "2026-11-13T09:00:00+09:00",
+        "closedAt": "2026-11-13T15:30:00+09:00",
+        "officialCalendarUrl": "https://www.jpx.co.jp/english/equities/trading/domestic/01.html"
+      },
+      "source": {
+        "provider": "Yahoo Finance chart",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/6965.T?period1=1636416000&period2=1794700800&interval=1d&events=div%2Csplits&includePrePost=false",
+        "observedAt": "2026-11-15T09:05:14+00:00",
+        "responseDate": "2026-11-15T09:05:13+00:00",
+        "observationTimeBasis": "UTC Date header on the downloader connection receipt; Yahoo response Date is kept separately. The regular close time refers to the November 13 exchange session.",
+        "archiveMember": "yahoo/6965.T.exact.chart.json",
+        "rawSha256": "cd0ad4fe1b79a7f5a5391ec7e8f2e6d1c968377fd07f81ae4b9d0c31940a3dd1",
+        "rawBytes": 79794,
+        "priceField": "indicators.adjclose[0].adjclose",
+        "regularCloseField": "indicators.quote[0].close"
+      },
+      "latestSessionRawOHLCV": {
+        "low": 2163.5,
+        "open": 2234.5,
+        "close": 2182.0,
+        "high": 2240.0,
+        "volume": 2591400
+      },
+      "latestSessionAdjustedClose": 2182.0,
+      "latestSessionPointAtPublisherPrecision": [
+        "2026-11-13",
+        2182.0
+      ],
+      "priorSessionRawClose": 2205.0,
+      "priorSessionAdjustedClose": 2205.0,
+      "priorPublishedLastTwoPoints": [
+        [
+          "2026-11-11",
+          2357.5
+        ],
+        [
+          "2026-11-12",
+          2205.0
+        ]
+      ],
+      "retainedOverlapEvidence": {
+        "savedDays": 1223,
+        "coveredSavedDays": 1223,
+        "missingSavedDays": 0,
+        "matchedWithinPublisherToleranceDays": 31,
+        "changedDays": 1192,
+        "oldestChangedDate": "2021-11-10",
+        "latestChangedDate": "2026-09-28",
+        "afterMostRecentSavedDates": [
+          "2026-11-13"
+        ],
+        "unpublishedEarlierProviderDates": [
+          "2021-11-09"
+        ],
+        "historicalRatioMedian": 0.9995625902949383,
+        "historicalRatioRange": [
+          0.9995622675844507,
+          0.9995628264631181
+        ]
+      },
+      "independentChecks": [
+        {
+          "purpose": "Independent exchange-session historical price table",
+          "url": "https://markets.ft.markitdigital.com/data/equities/tearsheet/historical?s=6965%3ATYO",
+          "latestSessionClose": 2182,
+          "priorSessionClose": 2205
+        },
+        {
+          "purpose": "Independent Japanese price history",
+          "url": "https://minkabu.jp/stock/6965/daily_bar?page=1&selected_platform=pc",
+          "latestSessionClose": 2182,
+          "priorSessionClose": 2205
+        }
+      ],
+      "corporateAction": {
+        "providerAdjustmentDate": "2026-09-29",
+        "issuerRecordDate": "2026-09-30",
+        "issuerProposalAmount": 20,
+        "priorIssuerForecastAmount": 19,
+        "issuerScheduledShareholderMeeting": "2026-12-18",
+        "cashDividend": 20,
+        "currency": "JPY",
+        "issuerSourceUrl": "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/01_HQ/ir/information/h_ir_info20261110_en.pdf",
+        "expectedHistoryRatio": 0.9995625546806649,
+        "note": "Provider places the dividend at Sep 29; issuer specifies a Sep 30 record date. The ratio matches a revision from the forecast 19 yen to the proposed 20 yen. The issuer notice calls 20 yen a proposal for the December 18 shareholder meeting, not a completed payment; both the previous and current November closes are unaffected."
+      },
+      "dataDisposition": "retain_prior_adjusted_series_pending_corporate_action_reconciliation"
+    }
+  ]
+}

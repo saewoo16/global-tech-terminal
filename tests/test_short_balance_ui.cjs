@@ -1,68 +1,30 @@
-const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
-const published=JSON.parse(fs.readFileSync('data/korean_short_balance.json','utf8'));
-const html=fs.readFileSync('index.html','utf8'),raw=fs.readFileSync('assets/short-balance.js','utf8');
-const listeners={},elements={};const el=id=>elements[id]||(elements[id]={innerHTML:''});
-let response={schemaVersion:1,metric:'net-short-outstanding-balance',unit:'KRW',investorSplit:'unavailable',status:'unavailable',rows:[],sources:[]},requests=0;
-const c={URL,BigInt,Date,Number,Set,console:{error(){}},fetch:async(url,opts)=>{requests++;assert.equal(opts.cache,'no-store');assert.match(url,/ts=/);return {ok:true,json:async()=>response}},document:{readyState:'loading',getElementById:el,addEventListener:(n,f)=>listeners[n]=f},window:{location:{hash:'#short'},addEventListener:(n,f)=>listeners[n]=f}};
-vm.createContext(c);vm.runInContext(raw,c);const a=c.window.TerminalShortBalance;
-assert(html.includes('id="short-tab"'));assert(html.includes('id="short-panel"'));assert.match(html,/short-balance\.js\?v=20261115-short-guide/);
-assert.match(html,/short-balance\.css\?v=20261115-short-guide/);
-const shortPanel=html.match(/<section id="short-panel"[^>]*>([\s\S]*?)<section id="korea-panel"/)[1];
-assert.match(shortPanel,/<section class="short-card short-guide" aria-labelledby="short-guide-title">[\s\S]+<div id="short-content"/);
-for(const rule of [/잔고금액 상위 15개와 시가총액 대비 비중 상위 15개/, /같은 날의 시가총액/, /잔고수량 ÷ 상장주식수 × 100/, /7일·30일/, /종가 변화도 반영/, /확인된 거래일별 순보유잔고/, /추정하거나 0으로 채우지/, /보고한 투자자 전체의 합계/, /두 거래일 뒤\(T\+2\)/, /정정으로 수치가 바뀔 수/, /공매도 거래량·거래대금, 주식 대차잔고/, /screenId=MDCSTAT305/]) assert.match(shortPanel,rule);
-assert.equal(a.money('123456789012345678'),'1,234,567,890.12');assert.equal(a.money(null),'—');
-const r={code:'000001',name:'<unsafe>',market:'KOSPI',balanceKRW:'150000000',marketCapKRW:'1000000000',ratioPct:'15.00',history:[{date:'2026-09-28',balanceKRW:'100000000'},{date:'2026-10-21',balanceKRW:'200000000'},{date:'2026-10-28',balanceKRW:'150000000'}]};
-assert.equal(a.delta(r,7,'2026-10-28').value,-25);assert.equal(a.delta(r,30,'2026-10-28').value,50);assert.equal(a.delta(r,30,'2026-10-28').date,'2026-09-28');assert.equal(a.delta({...r,history:[]},7,'2026-10-28').value,null);assert.equal(a.delta({...r,history:[{date:'2026-10-21',balanceKRW:'0'}]},7,'2026-10-28').value,null);
-assert(a.compare({...r,balanceKRW:'9007199254740993'},{...r,balanceKRW:'9007199254740992'},'amount')<0);assert(a.compare({...r,balanceKRW:'100',marketCapKRW:'101'},{...r,balanceKRW:'100',marketCapKRW:'102'},'ratio')<0);
-assert.match(a.spark(r,'2026-10-28'),/&lt;unsafe&gt;/);assert.match(a.spark(r,'2026-10-28'),/3개 실제 관측/);assert(!a.spark({...r,history:[]},'2026-10-28').includes('<svg'));
-const p={schemaVersion:1,metric:'net-short-outstanding-balance',unit:'KRW',investorSplit:'unavailable',status:'verified',asOf:'2026-10-28',observedAt:'2026-11-01T07:00:00Z',coverage:{complete:true,count:1,markets:['KOSPI','KOSDAQ']},rows:[r],sources:[]};assert(a.valid(p));assert(a.valid({...p,rows:[{...r,code:'0000A1'}]}));assert(!a.valid({...p,coverage:{...p.coverage,complete:false}}));assert(!a.valid({...p,rows:[r,r]}));assert(!a.valid({...p,rows:[{...r,balanceKRW:100}]}));assert(!a.valid({...p,status:'unavailable'}));
-(async()=>{
- listeners.DOMContentLoaded();
- await new Promise(setImmediate);
- assert.match(el('short-content').innerHTML,/아직 확보하지 못했습니다/);
- assert.match(el('short-guide-status').textContent,/검증 기준일을 확인하지 못했습니다/);
- assert.equal(el('short-guide-dates').hidden,true);
- response=p;
- await el('short-refresh').onclick();
- assert.match(el('short-guide-status').textContent,/2026-10-28.*이후 날짜의 수치는 아래 표와 차트에 반영하지 않았습니다/);
- assert.equal(el('short-guide-dates').hidden,false);
- assert.match(el('short-guide-dates').textContent,/1주 전 2026-10-21, 1개월 전 2026-09-28/);
- assert.match(el('short-content').innerHTML,/잔고 금액 TOP 15/);
- assert.match(el('short-content').innerHTML,/시총 대비 잔고 TOP 15/);
- assert.match(el('short-content').innerHTML,/-25.00%/);
- assert.match(el('short-content').innerHTML,/&lt;unsafe&gt;/);
- assert(!el('short-content').innerHTML.includes('<unsafe>'));
- const partialHistory={...r,code:'000002',history:r.history.slice(1)};
- response={...p,coverage:{...p.coverage,count:2},rows:[r,partialHistory]};
- await el('short-refresh').onclick();
- assert.equal(el('short-guide-dates').hidden,true);
- assert.equal(el('short-guide-dates').textContent,'');
- response=published;
- await el('short-refresh').onclick();
- assert.match(el('short-guide-status').textContent,/2026-11-10/);
- assert.match(el('short-guide-dates').textContent,/1주 전 2026-11-03, 1개월 전 2026-10-08/);
- c.document.getElementById=id=>id.startsWith('short-guide-')?null:el(id);
- await el('short-refresh').onclick();
- assert.match(el('short-content').innerHTML,/잔고 금액 TOP 15/);
- assert.doesNotMatch(el('short-content').innerHTML,/게시 자료를 불러오지 못했습니다/);
- c.document.getElementById=el;
- c.fetch=async()=>{throw Error('offline')};
- await el('short-refresh').onclick();
- assert.match(el('short-content').innerHTML,/이전 기준일/);
- assert.match(el('short-content').innerHTML,/잔고 금액 TOP 15/);
- assert.match(el('short-guide-status').textContent,/2026-11-10/);
- const n=requests;
- c.window.location.hash='#rates';
- listeners.hashchange();
- assert.equal(requests,n);
- console.log('PASS short balance guide, precision, actual comparison dates, missing/zero data, escaped sparkline, reload failure preservation and tab isolation');
-})().catch(e=>{console.error(e);process.exitCode=1});
-assert(a.valid(published));assert.equal(published.status,'verified');
-assert.equal(published.coverage.count,2768);assert.equal(published.asOf,'2026-11-10');
-for(const metric of ['amount','ratio']){
- const top=[...published.rows].sort((a1,b1)=>a.compare(a1,b1,metric)).slice(0,15);
- assert.equal(top.length,15);for(const row of top){assert.notEqual(a.delta(row,7,published.asOf).value,null);assert.notEqual(a.delta(row,30,published.asOf).value,null);assert.equal(a.delta(row,7,published.asOf).date,'2026-11-03');assert.equal(a.delta(row,30,published.asOf).date,'2026-10-08');}
- assert.equal(top[0].code,metric==='amount'?'373220':'086520');
- for(const row of top){assert.match(a.spark(row,published.asOf),/22개 실제 관측/);assert.match(a.spark(row,published.asOf),/2026-10-12/);}
-}
-console.log('PASS real official combined universe and all TOP15 exact-date comparison coverage');
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+
+const html = fs.readFileSync('index.html', 'utf8');
+assert.match(html, /id="short-tab"[^>]*data-view="short"[^>]*aria-controls="short-panel"[^>]*>공매도<\/button>/);
+assert.match(html, /short-balance\.css\?v=20261116-krx-links/);
+assert.doesNotMatch(html, /short-balance\.js|korean_short_balance\.json|short-balance-evidence\//);
+
+const panel = html.match(/<section id="short-panel"[^>]*role="tabpanel"[^>]*aria-labelledby="short-tab"[^>]*>([\s\S]*?)<section id="korea-panel"/)[1];
+assert.doesNotMatch(panel, /<(?:script|iframe|table|svg|canvas|button|form|input)\b|\bsrc\s*=|\bfetch\s*\(|short-refresh|short-content/i);
+assert.match(panel, /회사별 조회/);
+assert.match(panel, /공매도가 많은 종목/);
+assert.match(panel, /일부 화면은 KRX 로그인이 필요합니다/);
+
+const links = [...panel.matchAll(/<a href="([^"]+)" target="_blank" rel="noopener noreferrer">([^<]+)<\/a><p>([^<]+)<\/p>/g)];
+assert.equal((panel.match(/<a\b/g) || []).length, links.length);
+assert.deepEqual(links.map(([, href, label, caption]) => {
+  const url = new URL(href);
+  assert.equal(url.origin, 'https://data.krx.co.kr');
+  assert.match(label, /↗$/);
+  return [url.pathname, url.searchParams.get('screenId') || url.searchParams.get('menuId'), caption];
+}), [
+  ['/comm/srt/srtLoader/index.cmd', 'MDCSTAT300', '종목명 또는 종목코드로 검색해 거래량·거래대금과 순보유잔고를 함께 봅니다.'],
+  ['/comm/srt/srtLoader/index.cmd', 'MDCSTAT305', '‘개별추이’에서 종목과 기간을 선택해 잔고 변화를 봅니다.'],
+  ['/contents/MDC/MDI/mdiLoader/index.cmd', 'MDC02030204', '공매도 거래대금이 전체 거래대금에서 차지하는 비중 순입니다. 공매도 거래대금 자체의 순위는 아닙니다.'],
+  ['/contents/MDC/MDI/mdiLoader/index.cmd', 'MDC02030201', '‘전종목’에서 시장과 날짜를 선택해 종목별 공매도 거래대금을 비교합니다.'],
+  ['/contents/MDC/MDI/mdiLoader/index.cmd', 'MDC02030304', '상장주식수 대비 공매도 순보유잔고 수량의 비중 순입니다. 당일 공매도 거래와는 별개입니다.'],
+  ['/contents/MDC/MDI/mdiLoader/index.cmd', 'MDC02030303', '종목을 검색해 공시 기준을 충족한 대량보유자를 확인합니다.'],
+]);
+console.log('PASS link-only short tab, compartmentalized KRX links and lookup criteria, and no short-balance data references');

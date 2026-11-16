@@ -14,14 +14,20 @@ stocks=migrate_symbols(old.get('stocks',{}))
 # For KRX-only source entries, use a maintained KOSDAQ whitelist.
 KOSDAQ_CODES = {'033160', '095340', '183300', '005290', '089030', '101160', '357780', '104830', '356860', '074600', '166090', '036930', '058470', '222800', '102710', '092070', '077360'}
 
-def replace_market_cap(current, cap_usd, ticker, checked_at):
+def replace_market_cap(current, cap_usd, ticker, checked_at, *, currency=None, local=None, fx=None):
     """Replace value and its provenance together; observation time is not a price date."""
-    for key in ('marketCapAsOf', 'marketCapLocal', 'marketCapFX', 'marketCapMethod',
-                'marketCapSource', 'marketCapSourceUrl'):
-        current.pop(key, None)
+    for key in list(current):
+        if key.startswith('marketCap'):
+            current.pop(key)
     current.update(marketCapUSD=round(cap_usd), marketCapUpdated=checked_at,
                    marketCapSource='Yahoo Finance marketCap; provider observation, not a certified closing-date capitalization',
                    marketCapSourceUrl='https://finance.yahoo.com/quote/'+quote(ticker, safe='')+'/')
+    if currency is not None:
+        current['marketCapCurrency'] = currency
+    if fx is not None:
+        rate, metadata = fx
+        current.update(marketCapLocal=local, marketCapFX=rate, marketCapFXMetadata=dict(metadata),
+                       marketCapMethod='provider_market_cap_converted_with_completed_daily_fx')
 
 def lookup(r):
     sym=r['symbol']; t=str(r['ticker']); country=r['country']
@@ -67,7 +73,7 @@ def chart_fallback(ticker):
         return [],{}
 
 
-def completed_daily_points(result, now=None):
+def completed_daily_observations(result, now):
     """Use actual adjusted daily bars only after their source session has ended.
 
     Yahoo sometimes omits the latest daily close in range=5y while range=1d
@@ -75,25 +81,39 @@ def completed_daily_points(result, now=None):
     The provider session timestamps, not a guessed weekday calendar, gate an
     in-progress session. Older dated bars precede its current session.
     """
-    now = now or dt.datetime.now(dt.timezone.utc)
     try:
         meta = result['meta']
         zone = ZoneInfo(meta['exchangeTimezoneName'])
         regular = meta['currentTradingPeriod']['regular']
-        session_day = dt.datetime.fromtimestamp(regular['start'], zone).date()
+        start = dt.datetime.fromtimestamp(regular['start'], zone)
         end = dt.datetime.fromtimestamp(regular['end'], dt.timezone.utc)
+        if end <= start:
+            return []
         adjusted = result['indicators'].get('adjclose', [{}])[0].get('adjclose', [])
-        points = []
+        points = {}
+        today = now.astimezone(zone).date()
         for stamp, value in zip(result.get('timestamp', []), adjusted):
-            day = dt.datetime.fromtimestamp(stamp, zone).date()
-            if day > session_day or (day == session_day and now < end):
+            moment = dt.datetime.fromtimestamp(stamp, zone)
+            day = moment.date()
+            if day > start.date() or (day == start.date() and now < end):
                 continue
-            if day > now.astimezone(zone).date() or fnum(value) is None or value <= 0:
+            # A source pointing at a future session has not confirmed today's close.
+            if day == today and day < start.date():
                 continue
-            points.append([day.isoformat(), round(value, 5)])
-        return clean_prices(points)
-    except (KeyError, TypeError, ValueError, OverflowError):
+            value = number(value)
+            if moment > now or value is None or value <= 0:
+                continue
+            if day not in points or stamp >= points[day][1]:
+                points[day] = (value, stamp)
+        return [(day.isoformat(), *points[day]) for day in sorted(points)]
+    except (IndexError, KeyError, OSError, TypeError, ValueError, OverflowError):
         return []
+
+
+def completed_daily_points(result, now=None):
+    now = now or dt.datetime.now(dt.timezone.utc)
+    return clean_prices([[day, round(value, 5)]
+                         for day, value, _ in completed_daily_observations(result, now)])
 
 
 def latest_completed_daily(ticker):
@@ -132,6 +152,70 @@ def completed_fx_observation(now=None):
     except Exception as exc:
         print('COMPLETED_FX_UNAVAILABLE', str(exc)[:100], flush=True)
     return None, None
+
+
+def completed_market_cap_fx(currency, now=None):
+    """Return USD per unit of listing currency, with the exact source bar and direction."""
+    pairs = ((currency, 'USD', currency+'USD=X'),
+             ('USD', currency, 'USD'+currency+'=X'),
+             ('USD', currency, currency+'=X'))
+    for base, quoted, ticker in pairs:
+        url = ('https://query2.finance.yahoo.com/v8/finance/chart/'+quote(ticker, safe='')
+               +'?range=5d&interval=1d&includePrePost=false')
+        try:
+            with urlopen(Request(url, headers={'User-Agent': 'Mozilla/5.0'}), timeout=20) as response:
+                result = json.load(response)['chart']['result'][0]
+            observed = now or dt.datetime.now(dt.timezone.utc)
+            meta = result['meta']
+            expected_symbols = {base+quoted+'=X'}
+            if base == 'USD':
+                expected_symbols.add(quoted+'=X')
+            if (meta.get('symbol') not in expected_symbols or meta.get('currency') != quoted
+                    or meta.get('instrumentType') != 'CURRENCY' or meta.get('dataGranularity') != '1d'):
+                continue
+            points = completed_daily_observations(result, observed)
+            if not points:
+                continue
+            day, source_rate, stamp = points[-1]
+            rate = source_rate if base == currency else 1 / source_rate
+            if number(rate) is None or rate <= 0:
+                continue
+            regular = meta['currentTradingPeriod']['regular']
+            return rate, {
+                'asOf': day, 'observedAt': observed.isoformat(),
+                'baseCurrency': currency, 'quoteCurrency': 'USD',
+                'sourceBaseCurrency': base, 'sourceQuoteCurrency': quoted, 'sourceRate': source_rate,
+                'source': 'Yahoo Finance chart adjusted daily close', 'sourceTicker': meta['symbol'],
+                'sourceUrl': url, 'timezone': meta['exchangeTimezoneName'], 'sourceBarTimestamp': stamp,
+                'sourceCurrentRegularStart': regular['start'], 'sourceCurrentRegularEnd': regular['end'],
+                'basis': 'Completed provider FX daily session; not an equity closing-time spot rate',
+            }
+        except Exception:
+            # Try the next pair representation, never an ungated history/quote value.
+            continue
+    print('MARKET_CAP_FX_UNAVAILABLE', currency, flush=True)
+    return None
+
+
+def refresh_market_cap(current, info, ticker, checked_at, fx_cache):
+    """Keep all prior cap fields together unless both the new cap and conversion are available."""
+    local = number(info.get('marketCap'))
+    currency = info.get('currency')
+    # Financial reporting currency can differ from the listing currency (e.g. ADRs).
+    if (local is None or local <= 0 or not isinstance(currency, str) or len(currency) != 3
+            or not currency.isascii() or not currency.isalpha() or not currency.isupper()):
+        return
+    if currency == 'USD':
+        replace_market_cap(current, local, ticker, checked_at, currency=currency)
+        return
+    if currency not in fx_cache:
+        fx_cache[currency] = completed_market_cap_fx(currency)
+    fx = fx_cache[currency]
+    if fx is None:
+        return
+    converted = local * fx[0]
+    if number(converted) is not None and round(converted) > 0:
+        replace_market_cap(current, converted, ticker, checked_at, currency=currency, local=local, fx=fx)
 
 
 def first_available(frame,candidates):
@@ -192,13 +276,15 @@ def main():
     if completed_fx is not None:
         fx, fx_metadata = completed_fx, metadata
     ok=0
-    fx_cache={'USD':1.0}
+    fx_cache={}
     for i,symbol in enumerate(keys,1):
         r=unique[symbol];ticker=lookup(r)
         current=dict(stocks.get(symbol,{}))
         # A previous run may contain wrong-exchange chart data: never keep that chart.
         if current.get('sourceTicker') and current['sourceTicker']!=ticker:
-            current.pop('prices',None);current.pop('close',None);current.pop('marketCapUSD',None);current.pop('quarters',None)
+            for key in list(current):
+                if key in ('prices', 'close', 'quarters') or key.startswith('marketCap'):
+                    current.pop(key)
             print('RESET WRONG TICKER:',symbol,current.get('sourceTicker'),'->',ticker,flush=True)
         try:
             t=yf.Ticker(ticker)
@@ -218,24 +304,7 @@ def main():
             # Info endpoint can be rate limited and may be unavailable: leave missing values empty.
             info=fetch_info(t)
             current['priceCheckedAt']=now
-            cap=fnum(info.get('marketCap'))
-            if cap is not None and cap>0:
-                currency=(info.get('currency') or info.get('financialCurrency') or 'USD')
-                # yfinance marketCap is denominated in instrument currency; convert if FX obtainable.
-                try:
-                    if currency!='USD' and currency in fx_cache:
-                        cap=cap*fx_cache[currency]
-                    elif currency!='USD':
-                        original_cap=cap
-                        cross=yf.Ticker(currency+'USD=X').history(period='5d')
-                        if cross is None or cross.empty:
-                            inv=yf.Ticker('USD'+currency+'=X').history(period='5d')
-                            cap=cap/float(inv['Close'].iloc[-1]) if not inv.empty else None
-                        else:cap=cap*float(cross['Close'].iloc[-1])
-                        if cap is not None:fx_cache[currency]=cap/original_cap
-                except Exception:cap=None
-                if cap is not None:
-                    replace_market_cap(current, cap, ticker, now)
+            refresh_market_cap(current, info, ticker, dt.datetime.now(dt.timezone.utc).isoformat(), fx_cache)
             current['priceCurrency']=info.get('currency') or current.get('priceCurrency') or ''
             current['reportingCurrency']=info.get('financialCurrency') or current.get('reportingCurrency') or info.get('currency') or ''
             # Publication requires verified official filings. Aggregator quarterly

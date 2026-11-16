@@ -1,0 +1,1098 @@
+{
+  "asOf": "2026-11-15T09:09:49+00:00",
+  "scope": "Company Explorer verified missing standalone quarters from previously issued official filings and issuer financial statements; no price, valuation, FX, earnings-call, or market analysis edits. Targeted missing-period review, not a 247-issuer census.",
+  "baselineCommit": "f2edaf584fe24561865d0fb2529fde0cc9b385e8",
+  "companies": {
+    "NASDAQ:NBIS": {
+      "reportingCurrency": "USD",
+      "financialNote": "9월 말 단독 분기는 미감사 연결 US GAAP 매출과 영업이익입니다. 조정 EBITDA와 계속영업 순손실은 영업이익으로 사용하지 않습니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 980.8,
+          "operatingIncome": 50.4,
+          "sourceType": "filing",
+          "source": "Official issuer earnings release",
+          "sourceUrl": "https://assets.nebius.com/assets/e2ac679c-fc62-4799-ba0e-6611e59c6863/Nebius-2026-Q3.pdf",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-15",
+          "observedAt": "2026-11-15T09:03:31+00:00",
+          "publishedAt": "2026-11-12",
+          "releaseType": "issuer_earnings_release",
+          "rawSha256": "b046024af42ebc2877fc34c044b938ac2beea256268236670d29726209d4d408",
+          "basis": "U.S. GAAP consolidated; unaudited; direct single-quarter column",
+          "sourceLocation": "PDF page 7, Unaudited Condensed Consolidated Statements of Operations, three months ended September 30, 2026",
+          "calculation": {
+            "method": "Direct reported three-month column",
+            "sourceUnit": "millions USD",
+            "rawRevenue": 980.8,
+            "rawOperatingIncome": 50.4
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Revenues",
+              "rawValue": 980.8,
+              "rawUnit": "millions USD",
+              "conversion": "none",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://assets.nebius.com/assets/e2ac679c-fc62-4799-ba0e-6611e59c6863/Nebius-2026-Q3.pdf"
+            },
+            "operatingIncome": {
+              "lineItem": "Income / (loss) from operations",
+              "rawValue": 50.4,
+              "rawUnit": "millions USD",
+              "conversion": "none",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://assets.nebius.com/assets/e2ac679c-fc62-4799-ba0e-6611e59c6863/Nebius-2026-Q3.pdf"
+            }
+          },
+          "releaseUrl": "https://nebius.com/newsroom/nebius-reports-third-quarter-2026-financial-results",
+          "fiscalPeriod": "2026 Q3",
+          "preliminary": false,
+          "sourcePage": 7
+        }
+      ]
+    },
+    "TWSE:2356": {
+      "reportingCurrency": "TWD",
+      "financialNote": "2026년 3분기 매출과 영업이익은 연결 공시의 7~9월 단독분기 수치입니다. 9개월 누계와 구분하며 TWD 천 단위 원정밀도를 유지합니다. 한정 검토 결론이 첨부되어 있습니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 272093.784,
+          "operatingIncome": 4373.267,
+          "sourceType": "filing",
+          "source": "TWSE MOPS official quarterly filing (iXBRL)",
+          "sourceUrl": "https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2356&SYEAR=2026&SSEASON=3&REPORT_ID=C",
+          "reportedCurrency": "TWD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-15",
+          "observedAt": "2026-11-15T09:03:34+00:00",
+          "publishedAt": "2026-11-10",
+          "releaseType": "quarterly_report",
+          "rawSha256": "aa7868d0c6505e70ddd2063dfbe32b0b5744567267d9bd71a84a56f984cac805",
+          "basis": "Taiwan-endorsed IFRS consolidated; direct independently reviewed single-quarter statement",
+          "sourceLocation": "Consolidated statement of comprehensive income, lines 4000 and 6900, From20260701To20260930",
+          "calculation": {
+            "method": "Direct reported three-month column",
+            "sourceUnit": "thousands TWD",
+            "rawRevenue": 272093784,
+            "rawOperatingIncome": 4373267
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Total operating revenue (4000)",
+              "rawValue": 272093784,
+              "rawUnit": "thousands TWD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2356&SYEAR=2026&SSEASON=3&REPORT_ID=C"
+            },
+            "operatingIncome": {
+              "lineItem": "Net operating income (loss) (6900)",
+              "rawValue": 4373267,
+              "rawUnit": "thousands TWD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2356&SYEAR=2026&SSEASON=3&REPORT_ID=C"
+            }
+          },
+          "releaseUrl": "https://www.inventec.com/en/investor/item/648?year=2026",
+          "fiscalPeriod": "2026 Q3",
+          "preliminary": false,
+          "auditorReviewAt": "2026-11-10",
+          "auditorReviewConclusion": "qualified"
+        }
+      ]
+    },
+    "VIE:ATS": {
+      "reportingCurrency": "EUR",
+      "financialNote": "2026/27 회계연도 2분기만 반영했습니다. 반기 보고서에 별도 공시된 7~9월 연결 매출과 영업손익(EBIT)이며 EBITDA 및 반기 누계와 구분합니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 681.879,
+          "operatingIncome": 153.048,
+          "sourceType": "filing",
+          "source": "Official issuer half-year financial report",
+          "sourceUrl": "https://ats.net/en/download/half-year-financial-report-2026-27/?wpdmdl=67668",
+          "reportedCurrency": "EUR",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-15",
+          "observedAt": "2026-11-15T09:05:28+00:00",
+          "publishedAt": "2026-11-05T06:58:00+01:00",
+          "releaseType": "half_year_report",
+          "rawSha256": "f1932c88d96fd4cca9b6311f3a6c4789330a0651a0210a309dfa9da1704dfcaa",
+          "basis": "IFRS consolidated; unaudited interim statement; direct single-quarter column",
+          "sourceLocation": "PDF page 9, Consolidated Statement of Profit or Loss, Jul 1–Sep 30 2026 column",
+          "calculation": {
+            "method": "Direct reported three-month column",
+            "sourceUnit": "thousands EUR",
+            "rawRevenue": 681879,
+            "rawOperatingIncome": 153048
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Revenue",
+              "rawValue": 681879,
+              "rawUnit": "thousands EUR",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://ats.net/en/download/half-year-financial-report-2026-27/?wpdmdl=67668"
+            },
+            "operatingIncome": {
+              "lineItem": "Operating result (EBIT)",
+              "rawValue": 153048,
+              "rawUnit": "thousands EUR",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://ats.net/en/download/half-year-financial-report-2026-27/?wpdmdl=67668"
+            }
+          },
+          "releaseUrl": "https://ats.net/en/ir-news/ats-reports-record-second-quarter-results-and-fully-confirms-full-year-guidance/",
+          "fiscalPeriod": "FY2026/27 Q2",
+          "preliminary": false,
+          "sourcePage": 9
+        }
+      ]
+    },
+    "NASDAQ:IREN": {
+      "reportingCurrency": "USD",
+      "financialNote": "최근 네 분기는 연결 US GAAP 영업손익입니다. 기존 비교 분기의 영업손실을 공식 10-Q·10-K에서 확인해 손상차손 등을 포함한 GAAP 수치로 정정했습니다. 6월 분기는 연간과 9개월 누계의 차이이며 9월 분기는 원문 백만 USD 정밀도입니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 228.0,
+          "operatingIncome": -186.0,
+          "sourceType": "filing",
+          "source": "SEC Form 10-Q",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000066/iren-20260930.htm",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-15",
+          "observedAt": "2026-11-15T09:05:24+00:00",
+          "publishedAt": "2026-11-05",
+          "releaseType": "10-Q",
+          "rawSha256": "6e2abce37e0f8c016da03c8483858f8fe8846e2f34076adeca4cf9a8b549acf6",
+          "basis": "U.S. GAAP consolidated; unaudited; direct single-quarter column",
+          "sourceLocation": "Part I Item 1, Condensed Consolidated Statements of Operations, three months ended September 30, 2026",
+          "calculation": {
+            "method": "Direct reported three-month column",
+            "sourceUnit": "millions USD",
+            "rawRevenue": 228,
+            "rawOperatingIncome": -186
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Total revenue",
+              "rawValue": 228,
+              "rawUnit": "millions USD",
+              "conversion": "none",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000066/iren-20260930.htm"
+            },
+            "operatingIncome": {
+              "lineItem": "Operating (loss) income",
+              "rawValue": -186,
+              "rawUnit": "millions USD",
+              "conversion": "none",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000066/iren-20260930.htm"
+            }
+          },
+          "releaseUrl": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000065/irenreportsq1-fy27result.htm",
+          "fiscalPeriod": "FY2027 Q1",
+          "filingAcceptedAt": "2026-11-05T21:06:52+00:00",
+          "preliminary": false
+        },
+        {
+          "date": "2026-06-30",
+          "periodStart": "2026-04-01",
+          "periodType": "quarter",
+          "revenue": 137.225,
+          "operatingIncome": -620.383,
+          "sourceType": "filing",
+          "source": "SEC Form 10-K less Form 10-Q",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/iren-20260630.htm",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-15",
+          "observedAt": "2026-11-15T09:07:50+00:00",
+          "publishedAt": "2026-08-27",
+          "releaseType": "annual_less_nine_months",
+          "rawSha256": "d6ecffff698395bfd5dd87f6c17a671fae595658f6f6b317599180b88a47daee",
+          "basis": "Consolidated U.S. GAAP. Derived from full fiscal year less the first nine months as reported; includes impairment and other GAAP operating charges.",
+          "sourceLocation": "Form 10-K annual Consolidated Statements of Operations less Form 10-Q nine-month Condensed Consolidated Statements of Operations",
+          "calculation": {
+            "method": "FY2026 annual less FY2026 first nine months (same consolidated U.S. GAAP if period scope unchanged); later 8-K corroborates rounded Q4 amounts",
+            "sourceUnit": "thousands USD",
+            "rawRevenue": 137225,
+            "rawOperatingIncome": -620383,
+            "annual": {
+              "periodStart": "2025-07-01",
+              "periodEnd": "2026-06-30",
+              "rawRevenue": 707007,
+              "rawOperatingIncome": -1046714,
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/iren-20260630.htm",
+              "rawSha256": "d6ecffff698395bfd5dd87f6c17a671fae595658f6f6b317599180b88a47daee"
+            },
+            "firstNineMonths": {
+              "periodStart": "2025-07-01",
+              "periodEnd": "2026-03-31",
+              "rawRevenue": 569782,
+              "rawOperatingIncome": -426331,
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000026/iren-20260331.htm",
+              "rawSha256": "9433b53b1f627ff73e408cb3fbd822f0db3879cc092f632bfd6847899b3e35d0"
+            }
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Total revenue (derived)",
+              "rawValue": 137225,
+              "rawUnit": "thousands USD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-04-01",
+              "periodEnd": "2026-06-30",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/iren-20260630.htm",
+              "sourceUrls": [
+                "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/iren-20260630.htm",
+                "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000026/iren-20260331.htm"
+              ]
+            },
+            "operatingIncome": {
+              "lineItem": "Operating (loss) income (derived)",
+              "rawValue": -620383,
+              "rawUnit": "thousands USD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-04-01",
+              "periodEnd": "2026-06-30",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/iren-20260630.htm",
+              "sourceUrls": [
+                "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/iren-20260630.htm",
+                "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000026/iren-20260331.htm"
+              ]
+            }
+          },
+          "releaseUrl": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000051/irenreportsfy26results.htm",
+          "fiscalPeriod": "FY2026 Q4",
+          "filingAcceptedAt": "2026-08-27T20:18:57+00:00",
+          "preliminary": false
+        },
+        {
+          "date": "2026-03-31",
+          "periodStart": "2026-01-01",
+          "periodType": "quarter",
+          "revenue": 144.795,
+          "operatingIncome": -233.523,
+          "sourceType": "filing",
+          "source": "SEC Form 10-Q",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000026/iren-20260331.htm",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-15",
+          "observedAt": "2026-11-15T09:07:50+00:00",
+          "publishedAt": "2026-05-08",
+          "releaseType": "10-Q",
+          "rawSha256": "9433b53b1f627ff73e408cb3fbd822f0db3879cc092f632bfd6847899b3e35d0",
+          "basis": "U.S. GAAP consolidated; unaudited; direct single-quarter column",
+          "sourceLocation": "Part I Item 1, Condensed Consolidated Statements of Operations, three months ended March 31, 2026",
+          "calculation": {
+            "method": "Direct reported three-month column",
+            "sourceUnit": "thousands USD",
+            "rawRevenue": 144795,
+            "rawOperatingIncome": -233523
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Total revenue",
+              "rawValue": 144795,
+              "rawUnit": "thousands USD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-01-01",
+              "periodEnd": "2026-03-31",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000026/iren-20260331.htm"
+            },
+            "operatingIncome": {
+              "lineItem": "Operating (loss) income",
+              "rawValue": -233523,
+              "rawUnit": "thousands USD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-01-01",
+              "periodEnd": "2026-03-31",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000026/iren-20260331.htm"
+            }
+          },
+          "fiscalPeriod": "FY2026 Q3",
+          "preliminary": false
+        },
+        {
+          "date": "2025-12-31",
+          "periodStart": "2025-10-01",
+          "periodType": "quarter",
+          "revenue": 184.692,
+          "operatingIncome": -116.403,
+          "sourceType": "filing",
+          "source": "SEC Form 10-Q",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/iren-20251231.htm",
+          "reportedCurrency": "USD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-15",
+          "observedAt": "2026-11-15T09:07:50+00:00",
+          "publishedAt": "2026-02-05",
+          "releaseType": "10-Q",
+          "rawSha256": "3a9c23bb42220f06b9ec8954ceb3349be45778b4199cf2f542a61dc542140f58",
+          "basis": "U.S. GAAP consolidated; unaudited; direct single-quarter column",
+          "sourceLocation": "Part I Item 1, Condensed Consolidated Statements of Operations, three months ended December 31, 2025",
+          "calculation": {
+            "method": "Direct reported three-month column",
+            "sourceUnit": "thousands USD",
+            "rawRevenue": 184692,
+            "rawOperatingIncome": -116403
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Total revenue",
+              "rawValue": 184692,
+              "rawUnit": "thousands USD",
+              "conversion": "divide by 1000",
+              "periodStart": "2025-10-01",
+              "periodEnd": "2025-12-31",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/iren-20251231.htm"
+            },
+            "operatingIncome": {
+              "lineItem": "Operating (loss) income",
+              "rawValue": -116403,
+              "rawUnit": "thousands USD",
+              "conversion": "divide by 1000",
+              "periodStart": "2025-10-01",
+              "periodEnd": "2025-12-31",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/iren-20251231.htm"
+            }
+          },
+          "fiscalPeriod": "FY2026 Q2",
+          "preliminary": false
+        }
+      ]
+    },
+    "TWSE:2313": {
+      "reportingCurrency": "TWD",
+      "financialNote": "공식 연결 공시의 7~9월 단독분기 매출과 영업이익입니다. 9개월 누계와 구분하며 TWD 천 단위 원정밀도를 유지합니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 22584.62,
+          "operatingIncome": 2800.224,
+          "sourceType": "filing",
+          "source": "TWSE MOPS official quarterly filing (iXBRL)",
+          "sourceUrl": "https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2313&SYEAR=2026&SSEASON=3&REPORT_ID=C",
+          "reportedCurrency": "TWD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-15",
+          "observedAt": "2026-11-15T09:05:39+00:00",
+          "releaseType": "quarterly_report",
+          "rawSha256": "d766f8512e9c4c086da463e08dfc07cf5e694499417c3629bc49c179cb434d2d",
+          "basis": "Taiwan-endorsed IFRS consolidated; independently reviewed interim statement; direct single quarter",
+          "sourceLocation": "Consolidated statement of comprehensive income, lines 4000 and 6900, From20260701To20260930",
+          "calculation": {
+            "method": "Direct reported three-month column",
+            "sourceUnit": "thousands TWD",
+            "rawRevenue": 22584620,
+            "rawOperatingIncome": 2800224
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Total operating revenue (4000)",
+              "rawValue": 22584620,
+              "rawUnit": "thousands TWD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2313&SYEAR=2026&SSEASON=3&REPORT_ID=C"
+            },
+            "operatingIncome": {
+              "lineItem": "Net operating income (loss) (6900)",
+              "rawValue": 2800224,
+              "rawUnit": "thousands TWD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2313&SYEAR=2026&SSEASON=3&REPORT_ID=C"
+            }
+          },
+          "fiscalPeriod": "2026 Q3",
+          "preliminary": false,
+          "auditorReviewAt": "2026-11-05",
+          "auditorReviewConclusion": "unqualified",
+          "publicationDateNote": "The review date is not claimed as the posting date; the posting time was not independently verified.",
+          "crossCheck": {
+            "sourceUrl": "https://openapi.twse.com.tw/v1/opendata/t187ap06_L_ci",
+            "rawSha256": "d9310f9953f5ad4a0e8fa39ace13cc217437656734f1f8d98347a5a600c035fa",
+            "periodStart": "2026-01-01",
+            "periodEnd": "2026-09-30",
+            "rawRevenue": 62124650,
+            "rawOperatingIncome": 6689954,
+            "unit": "thousands TWD",
+            "note": "Overlapping nine-month filing facts, not the single-quarter values used in the dataset."
+          }
+        }
+      ]
+    },
+    "TWSE:2383": {
+      "reportingCurrency": "TWD",
+      "financialNote": "공식 연결 공시의 7~9월 단독분기 매출과 영업이익입니다. 9개월 누계와 구분하며 TWD 천 단위 원정밀도를 유지합니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 60884.539,
+          "operatingIncome": 18686.564,
+          "sourceType": "filing",
+          "source": "TWSE MOPS official quarterly filing (iXBRL)",
+          "sourceUrl": "https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2383&SYEAR=2026&SSEASON=3&REPORT_ID=C",
+          "reportedCurrency": "TWD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-15",
+          "observedAt": "2026-11-15T09:05:34+00:00",
+          "releaseType": "quarterly_report",
+          "rawSha256": "0c38d91c24b362663959a69773ec7b0f7f0023ff67f20cfe97a12e400b3635c4",
+          "basis": "Taiwan-endorsed IFRS consolidated; independently reviewed interim statement; direct single quarter",
+          "sourceLocation": "Consolidated statement of comprehensive income, lines 4000 and 6900, From20260701To20260930",
+          "calculation": {
+            "method": "Direct reported three-month column",
+            "sourceUnit": "thousands TWD",
+            "rawRevenue": 60884539,
+            "rawOperatingIncome": 18686564
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Total operating revenue (4000)",
+              "rawValue": 60884539,
+              "rawUnit": "thousands TWD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2383&SYEAR=2026&SSEASON=3&REPORT_ID=C"
+            },
+            "operatingIncome": {
+              "lineItem": "Net operating income (loss) (6900)",
+              "rawValue": 18686564,
+              "rawUnit": "thousands TWD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2383&SYEAR=2026&SSEASON=3&REPORT_ID=C"
+            }
+          },
+          "fiscalPeriod": "2026 Q3",
+          "preliminary": false,
+          "auditorReviewAt": "2026-10-28",
+          "auditorReviewConclusion": "unqualified",
+          "publicationDateNote": "The review date is not claimed as the posting date; the posting time was not independently verified.",
+          "crossCheck": {
+            "sourceUrl": "https://openapi.twse.com.tw/v1/opendata/t187ap06_L_ci",
+            "rawSha256": "d9310f9953f5ad4a0e8fa39ace13cc217437656734f1f8d98347a5a600c035fa",
+            "periodStart": "2026-01-01",
+            "periodEnd": "2026-09-30",
+            "rawRevenue": 141226994,
+            "rawOperatingIncome": 38548717,
+            "unit": "thousands TWD",
+            "note": "Overlapping nine-month filing facts, not the single-quarter values used in the dataset."
+          }
+        }
+      ]
+    },
+    "TWSE:2449": {
+      "reportingCurrency": "TWD",
+      "financialNote": "공식 연결 공시의 7~9월 단독분기 매출과 영업이익입니다. 9개월 누계와 구분하며 TWD 천 단위 원정밀도를 유지합니다. 한정 검토 결론이 첨부되어 있습니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 12142.259,
+          "operatingIncome": 3132.686,
+          "sourceType": "filing",
+          "source": "TWSE MOPS official quarterly filing (iXBRL)",
+          "sourceUrl": "https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2449&SYEAR=2026&SSEASON=3&REPORT_ID=C",
+          "reportedCurrency": "TWD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-15",
+          "observedAt": "2026-11-15T09:05:30+00:00",
+          "releaseType": "quarterly_report",
+          "rawSha256": "49346120c8c04538a370db2440bcbbea9e0ca244615c6a6db18c6a5d77f4eb21",
+          "basis": "Taiwan-endorsed IFRS consolidated; independently reviewed interim statement; direct single quarter",
+          "sourceLocation": "Consolidated statement of comprehensive income, lines 4000 and 6900, From20260701To20260930",
+          "calculation": {
+            "method": "Direct reported three-month column",
+            "sourceUnit": "thousands TWD",
+            "rawRevenue": 12142259,
+            "rawOperatingIncome": 3132686
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Total operating revenue (4000)",
+              "rawValue": 12142259,
+              "rawUnit": "thousands TWD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2449&SYEAR=2026&SSEASON=3&REPORT_ID=C"
+            },
+            "operatingIncome": {
+              "lineItem": "Net operating income (loss) (6900)",
+              "rawValue": 3132686,
+              "rawUnit": "thousands TWD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2449&SYEAR=2026&SSEASON=3&REPORT_ID=C"
+            }
+          },
+          "fiscalPeriod": "2026 Q3",
+          "preliminary": false,
+          "auditorReviewAt": "2026-11-05",
+          "auditorReviewConclusion": "qualified",
+          "publicationDateNote": "The review date is not claimed as the posting date; the posting time was not independently verified.",
+          "crossCheck": {
+            "sourceUrl": "https://openapi.twse.com.tw/v1/opendata/t187ap06_L_ci",
+            "rawSha256": "d9310f9953f5ad4a0e8fa39ace13cc217437656734f1f8d98347a5a600c035fa",
+            "periodStart": "2026-01-01",
+            "periodEnd": "2026-09-30",
+            "rawRevenue": 33475818,
+            "rawOperatingIncome": 8732446,
+            "unit": "thousands TWD",
+            "note": "Overlapping nine-month filing facts, not the single-quarter values used in the dataset."
+          }
+        }
+      ]
+    },
+    "TWSE:3035": {
+      "reportingCurrency": "TWD",
+      "financialNote": "공식 연결 공시의 7~9월 단독분기 매출과 영업이익입니다. 9개월 누계와 구분하며 TWD 천 단위 원정밀도를 유지합니다. 한정 검토 결론이 첨부되어 있습니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 3664.203,
+          "operatingIncome": 214.332,
+          "sourceType": "filing",
+          "source": "TWSE MOPS official quarterly filing (iXBRL)",
+          "sourceUrl": "https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=3035&SYEAR=2026&SSEASON=3&REPORT_ID=C",
+          "reportedCurrency": "TWD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-15",
+          "observedAt": "2026-11-15T09:05:32+00:00",
+          "releaseType": "quarterly_report",
+          "rawSha256": "05b2540542b9a2903d84013ec680d8daa533e4bdd0de7939be182a032f587f08",
+          "basis": "Taiwan-endorsed IFRS consolidated; independently reviewed interim statement; direct single quarter",
+          "sourceLocation": "Consolidated statement of comprehensive income, lines 4000 and 6900, From20260701To20260930",
+          "calculation": {
+            "method": "Direct reported three-month column",
+            "sourceUnit": "thousands TWD",
+            "rawRevenue": 3664203,
+            "rawOperatingIncome": 214332
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Total operating revenue (4000)",
+              "rawValue": 3664203,
+              "rawUnit": "thousands TWD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=3035&SYEAR=2026&SSEASON=3&REPORT_ID=C"
+            },
+            "operatingIncome": {
+              "lineItem": "Net operating income (loss) (6900)",
+              "rawValue": 214332,
+              "rawUnit": "thousands TWD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=3035&SYEAR=2026&SSEASON=3&REPORT_ID=C"
+            }
+          },
+          "fiscalPeriod": "2026 Q3",
+          "preliminary": false,
+          "auditorReviewAt": "2026-10-27",
+          "auditorReviewConclusion": "qualified",
+          "publicationDateNote": "The review date is not claimed as the posting date; the posting time was not independently verified.",
+          "crossCheck": {
+            "sourceUrl": "https://openapi.twse.com.tw/v1/opendata/t187ap06_L_ci",
+            "rawSha256": "d9310f9953f5ad4a0e8fa39ace13cc217437656734f1f8d98347a5a600c035fa",
+            "periodStart": "2026-01-01",
+            "periodEnd": "2026-09-30",
+            "rawRevenue": 9566239,
+            "rawOperatingIncome": 580838,
+            "unit": "thousands TWD",
+            "note": "Overlapping nine-month filing facts, not the single-quarter values used in the dataset."
+          }
+        }
+      ]
+    },
+    "TWSE:3044": {
+      "reportingCurrency": "TWD",
+      "financialNote": "공식 연결 공시의 7~9월 단독분기 매출과 영업이익입니다. 9개월 누계와 구분하며 TWD 천 단위 원정밀도를 유지합니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 30694.218,
+          "operatingIncome": 8474.71,
+          "sourceType": "filing",
+          "source": "TWSE MOPS official quarterly filing (iXBRL)",
+          "sourceUrl": "https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=3044&SYEAR=2026&SSEASON=3&REPORT_ID=C",
+          "reportedCurrency": "TWD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-15",
+          "observedAt": "2026-11-15T09:05:37+00:00",
+          "releaseType": "quarterly_report",
+          "rawSha256": "0322bd5078a9dc20934c4abf2313eaf3f8aa64918ead9f364bc7a43a8fcf3a0d",
+          "basis": "Taiwan-endorsed IFRS consolidated; independently reviewed interim statement; direct single quarter",
+          "sourceLocation": "Consolidated statement of comprehensive income, lines 4000 and 6900, From20260701To20260930",
+          "calculation": {
+            "method": "Direct reported three-month column",
+            "sourceUnit": "thousands TWD",
+            "rawRevenue": 30694218,
+            "rawOperatingIncome": 8474710
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Total operating revenue (4000)",
+              "rawValue": 30694218,
+              "rawUnit": "thousands TWD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=3044&SYEAR=2026&SSEASON=3&REPORT_ID=C"
+            },
+            "operatingIncome": {
+              "lineItem": "Net operating income (loss) (6900)",
+              "rawValue": 8474710,
+              "rawUnit": "thousands TWD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=3044&SYEAR=2026&SSEASON=3&REPORT_ID=C"
+            }
+          },
+          "fiscalPeriod": "2026 Q3",
+          "preliminary": false,
+          "auditorReviewAt": "2026-11-10",
+          "auditorReviewConclusion": "unqualified",
+          "publicationDateNote": "The review date is not claimed as the posting date; the posting time was not independently verified.",
+          "crossCheck": {
+            "sourceUrl": "https://openapi.twse.com.tw/v1/opendata/t187ap06_L_ci",
+            "rawSha256": "d9310f9953f5ad4a0e8fa39ace13cc217437656734f1f8d98347a5a600c035fa",
+            "periodStart": "2026-01-01",
+            "periodEnd": "2026-09-30",
+            "rawRevenue": 76515848,
+            "rawOperatingIncome": 17905160,
+            "unit": "thousands TWD",
+            "note": "Overlapping nine-month filing facts, not the single-quarter values used in the dataset."
+          }
+        }
+      ]
+    },
+    "TWSE:3189": {
+      "reportingCurrency": "TWD",
+      "financialNote": "공식 연결 공시의 7~9월 단독분기 매출과 영업이익입니다. 9개월 누계와 구분하며 TWD 천 단위 원정밀도를 유지합니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 14539.741,
+          "operatingIncome": 3215.939,
+          "sourceType": "filing",
+          "source": "TWSE MOPS official quarterly filing (iXBRL)",
+          "sourceUrl": "https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=3189&SYEAR=2026&SSEASON=3&REPORT_ID=C",
+          "reportedCurrency": "TWD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-15",
+          "observedAt": "2026-11-15T09:05:36+00:00",
+          "releaseType": "quarterly_report",
+          "rawSha256": "118114e5b0bf54e73532ffa1e3b83e11b34d17c19fcebb446656f7bafabb7a8f",
+          "basis": "Taiwan-endorsed IFRS consolidated; independently reviewed interim statement; direct single quarter",
+          "sourceLocation": "Consolidated statement of comprehensive income, lines 4000 and 6900, From20260701To20260930",
+          "calculation": {
+            "method": "Direct reported three-month column",
+            "sourceUnit": "thousands TWD",
+            "rawRevenue": 14539741,
+            "rawOperatingIncome": 3215939
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Total operating revenue (4000)",
+              "rawValue": 14539741,
+              "rawUnit": "thousands TWD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=3189&SYEAR=2026&SSEASON=3&REPORT_ID=C"
+            },
+            "operatingIncome": {
+              "lineItem": "Net operating income (loss) (6900)",
+              "rawValue": 3215939,
+              "rawUnit": "thousands TWD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=3189&SYEAR=2026&SSEASON=3&REPORT_ID=C"
+            }
+          },
+          "fiscalPeriod": "2026 Q3",
+          "preliminary": false,
+          "auditorReviewAt": "2026-10-30",
+          "auditorReviewConclusion": "unqualified",
+          "publicationDateNote": "The review date is not claimed as the posting date; the posting time was not independently verified.",
+          "crossCheck": {
+            "sourceUrl": "https://openapi.twse.com.tw/v1/opendata/t187ap06_L_ci",
+            "rawSha256": "d9310f9953f5ad4a0e8fa39ace13cc217437656734f1f8d98347a5a600c035fa",
+            "periodStart": "2026-01-01",
+            "periodEnd": "2026-09-30",
+            "rawRevenue": 38140960,
+            "rawOperatingIncome": 5785216,
+            "unit": "thousands TWD",
+            "note": "Overlapping nine-month filing facts, not the single-quarter values used in the dataset."
+          }
+        }
+      ]
+    },
+    "TWSE:4958": {
+      "reportingCurrency": "TWD",
+      "financialNote": "공식 연결 공시의 7~9월 단독분기 매출과 영업이익입니다. 9개월 누계와 구분하며 TWD 천 단위 원정밀도를 유지합니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 64624.44,
+          "operatingIncome": 8717.276,
+          "sourceType": "filing",
+          "source": "TWSE MOPS official quarterly filing (iXBRL)",
+          "sourceUrl": "https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=4958&SYEAR=2026&SSEASON=3&REPORT_ID=C",
+          "reportedCurrency": "TWD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-15",
+          "observedAt": "2026-11-15T09:05:31+00:00",
+          "releaseType": "quarterly_report",
+          "rawSha256": "571ee83bed26bfb4b3470dc919e4494f14ea7f05c2765e8e553f35de10810dc6",
+          "basis": "Taiwan-endorsed IFRS consolidated; independently reviewed interim statement; direct single quarter",
+          "sourceLocation": "Consolidated statement of comprehensive income, lines 4000 and 6900, From20260701To20260930",
+          "calculation": {
+            "method": "Direct reported three-month column",
+            "sourceUnit": "thousands TWD",
+            "rawRevenue": 64624440,
+            "rawOperatingIncome": 8717276
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Total operating revenue (4000)",
+              "rawValue": 64624440,
+              "rawUnit": "thousands TWD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=4958&SYEAR=2026&SSEASON=3&REPORT_ID=C"
+            },
+            "operatingIncome": {
+              "lineItem": "Net operating income (loss) (6900)",
+              "rawValue": 8717276,
+              "rawUnit": "thousands TWD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=4958&SYEAR=2026&SSEASON=3&REPORT_ID=C"
+            }
+          },
+          "fiscalPeriod": "2026 Q3",
+          "preliminary": false,
+          "auditorReviewAt": "2026-11-10",
+          "auditorReviewConclusion": "unqualified",
+          "publicationDateNote": "The review date is not claimed as the posting date; the posting time was not independently verified.",
+          "crossCheck": {
+            "sourceUrl": "https://openapi.twse.com.tw/v1/opendata/t187ap06_L_ci",
+            "rawSha256": "d9310f9953f5ad4a0e8fa39ace13cc217437656734f1f8d98347a5a600c035fa",
+            "periodStart": "2026-01-01",
+            "periodEnd": "2026-09-30",
+            "rawRevenue": 153783283,
+            "rawOperatingIncome": 14981811,
+            "unit": "thousands TWD",
+            "note": "Overlapping nine-month filing facts, not the single-quarter values used in the dataset."
+          }
+        }
+      ]
+    },
+    "TWSE:6213": {
+      "reportingCurrency": "TWD",
+      "financialNote": "공식 연결 공시의 7~9월 단독분기 매출과 영업이익입니다. 9개월 누계와 구분하며 TWD 천 단위 원정밀도를 유지합니다. 한정 검토 결론이 첨부되어 있습니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 15617.42,
+          "operatingIncome": 4334.465,
+          "sourceType": "filing",
+          "source": "TWSE MOPS official quarterly filing (iXBRL)",
+          "sourceUrl": "https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=6213&SYEAR=2026&SSEASON=3&REPORT_ID=C",
+          "reportedCurrency": "TWD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-15",
+          "observedAt": "2026-11-15T09:05:36+00:00",
+          "releaseType": "quarterly_report",
+          "rawSha256": "98cc79a1550ca87167aac5db2625a7d0c6d4bb41949c226259aa6509d77d4fa4",
+          "basis": "Taiwan-endorsed IFRS consolidated; independently reviewed interim statement; direct single quarter",
+          "sourceLocation": "Consolidated statement of comprehensive income, lines 4000 and 6900, From20260701To20260930",
+          "calculation": {
+            "method": "Direct reported three-month column",
+            "sourceUnit": "thousands TWD",
+            "rawRevenue": 15617420,
+            "rawOperatingIncome": 4334465
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Total operating revenue (4000)",
+              "rawValue": 15617420,
+              "rawUnit": "thousands TWD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=6213&SYEAR=2026&SSEASON=3&REPORT_ID=C"
+            },
+            "operatingIncome": {
+              "lineItem": "Net operating income (loss) (6900)",
+              "rawValue": 4334465,
+              "rawUnit": "thousands TWD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=6213&SYEAR=2026&SSEASON=3&REPORT_ID=C"
+            }
+          },
+          "fiscalPeriod": "2026 Q3",
+          "preliminary": false,
+          "auditorReviewAt": "2026-11-06",
+          "auditorReviewConclusion": "qualified",
+          "publicationDateNote": "The review date is not claimed as the posting date; the posting time was not independently verified.",
+          "crossCheck": {
+            "sourceUrl": "https://openapi.twse.com.tw/v1/opendata/t187ap06_L_ci",
+            "rawSha256": "d9310f9953f5ad4a0e8fa39ace13cc217437656734f1f8d98347a5a600c035fa",
+            "periodStart": "2026-01-01",
+            "periodEnd": "2026-09-30",
+            "rawRevenue": 36290498,
+            "rawOperatingIncome": 6606757,
+            "unit": "thousands TWD",
+            "note": "Overlapping nine-month filing facts, not the single-quarter values used in the dataset."
+          }
+        }
+      ]
+    },
+    "TWSE:8039": {
+      "reportingCurrency": "TWD",
+      "financialNote": "공식 연결 공시의 7~9월 단독분기 매출과 영업이익입니다. 9개월 누계와 구분하며 TWD 천 단위 원정밀도를 유지합니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 2493.764,
+          "operatingIncome": 159.08,
+          "sourceType": "filing",
+          "source": "TWSE MOPS official quarterly filing (iXBRL)",
+          "sourceUrl": "https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=8039&SYEAR=2026&SSEASON=3&REPORT_ID=C",
+          "reportedCurrency": "TWD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-15",
+          "observedAt": "2026-11-15T09:05:41+00:00",
+          "releaseType": "quarterly_report",
+          "rawSha256": "dcecc2ad73c276445c3cbbd9fd44127a046082cdcb4af2372ef1b755700b70fd",
+          "basis": "Taiwan-endorsed IFRS consolidated; independently reviewed interim statement; direct single quarter",
+          "sourceLocation": "Consolidated statement of comprehensive income, lines 4000 and 6900, From20260701To20260930",
+          "calculation": {
+            "method": "Direct reported three-month column",
+            "sourceUnit": "thousands TWD",
+            "rawRevenue": 2493764,
+            "rawOperatingIncome": 159080
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Total operating revenue (4000)",
+              "rawValue": 2493764,
+              "rawUnit": "thousands TWD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=8039&SYEAR=2026&SSEASON=3&REPORT_ID=C"
+            },
+            "operatingIncome": {
+              "lineItem": "Net operating income (loss) (6900)",
+              "rawValue": 159080,
+              "rawUnit": "thousands TWD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=8039&SYEAR=2026&SSEASON=3&REPORT_ID=C"
+            }
+          },
+          "fiscalPeriod": "2026 Q3",
+          "preliminary": false,
+          "auditorReviewAt": "2026-10-28",
+          "auditorReviewConclusion": "unqualified",
+          "publicationDateNote": "The review date is not claimed as the posting date; the posting time was not independently verified.",
+          "crossCheck": {
+            "sourceUrl": "https://openapi.twse.com.tw/v1/opendata/t187ap06_L_ci",
+            "rawSha256": "d9310f9953f5ad4a0e8fa39ace13cc217437656734f1f8d98347a5a600c035fa",
+            "periodStart": "2026-01-01",
+            "periodEnd": "2026-09-30",
+            "rawRevenue": 7605357,
+            "rawOperatingIncome": 478387,
+            "unit": "thousands TWD",
+            "note": "Overlapping nine-month filing facts, not the single-quarter values used in the dataset."
+          }
+        }
+      ]
+    },
+    "TWSE:8046": {
+      "reportingCurrency": "TWD",
+      "financialNote": "공식 연결 공시의 7~9월 단독분기 매출과 영업이익입니다. 9개월 누계와 구분하며 TWD 천 단위 원정밀도를 유지합니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 16378.267,
+          "operatingIncome": 4322.646,
+          "sourceType": "filing",
+          "source": "TWSE MOPS official quarterly filing (iXBRL)",
+          "sourceUrl": "https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=8046&SYEAR=2026&SSEASON=3&REPORT_ID=C",
+          "reportedCurrency": "TWD",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-15",
+          "observedAt": "2026-11-15T09:05:32+00:00",
+          "releaseType": "quarterly_report",
+          "rawSha256": "7a3faff8a5f2f097c7a203afe5d1f2d40b37d59b9cad86f5f084e0a7eb0611b1",
+          "basis": "Taiwan-endorsed IFRS consolidated; independently reviewed interim statement; direct single quarter",
+          "sourceLocation": "Consolidated statement of comprehensive income, lines 4000 and 6900, From20260701To20260930",
+          "calculation": {
+            "method": "Direct reported three-month column",
+            "sourceUnit": "thousands TWD",
+            "rawRevenue": 16378267,
+            "rawOperatingIncome": 4322646
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Total operating revenue (4000)",
+              "rawValue": 16378267,
+              "rawUnit": "thousands TWD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=8046&SYEAR=2026&SSEASON=3&REPORT_ID=C"
+            },
+            "operatingIncome": {
+              "lineItem": "Net operating income (loss) (6900)",
+              "rawValue": 4322646,
+              "rawUnit": "thousands TWD",
+              "conversion": "divide by 1000",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=8046&SYEAR=2026&SSEASON=3&REPORT_ID=C"
+            }
+          },
+          "fiscalPeriod": "2026 Q3",
+          "preliminary": false,
+          "auditorReviewAt": "2026-11-05",
+          "auditorReviewConclusion": "unqualified",
+          "publicationDateNote": "The review date is not claimed as the posting date; the posting time was not independently verified.",
+          "crossCheck": {
+            "sourceUrl": "https://openapi.twse.com.tw/v1/opendata/t187ap06_L_ci",
+            "rawSha256": "d9310f9953f5ad4a0e8fa39ace13cc217437656734f1f8d98347a5a600c035fa",
+            "periodStart": "2026-01-01",
+            "periodEnd": "2026-09-30",
+            "rawRevenue": 41130983,
+            "rawOperatingIncome": 8574251,
+            "unit": "thousands TWD",
+            "note": "Overlapping nine-month filing facts, not the single-quarter values used in the dataset."
+          }
+        }
+      ]
+    },
+    "XETR:WAF": {
+      "reportingCurrency": "EUR",
+      "financialNote": "2026년 3분기 연결 매출과 영업손익(EBIT)은 회사 공식 발표의 단독 분기 직접 공시값입니다. EBITDA와 9개월 누계는 사용하지 않았습니다.",
+      "quarters": [
+        {
+          "date": "2026-09-30",
+          "periodStart": "2026-07-01",
+          "periodType": "quarter",
+          "revenue": 355.4,
+          "operatingIncome": -42.4,
+          "sourceType": "filing",
+          "source": "Official issuer earnings release",
+          "sourceUrl": "https://www.siltronic.com/en/press/press-releases/siltronic-slightly-raises-sales-guidance-for-2026-higher-demand-drives-volume-development-in-q3-2026.html",
+          "reportedCurrency": "EUR",
+          "unit": "millions of reporting currency",
+          "verifiedAt": "2026-11-15",
+          "observedAt": "2026-11-15T09:06:45+00:00",
+          "publishedAt": "2026-11-04",
+          "releaseType": "issuer_earnings_release",
+          "rawSha256": "9ce2ebd9931bf534b5e917f3d300333a5f536159bd644b0f23caa74fc17a67a2",
+          "basis": "IFRS consolidated; issuer quarterly trading release; direct single-quarter sales and EBIT",
+          "sourceLocation": "Group sales and earnings for Q3 2026; single-quarter sales and EBIT in the issuer press release",
+          "calculation": {
+            "method": "Direct reported three-month column",
+            "sourceUnit": "millions EUR",
+            "rawRevenue": 355.4,
+            "rawOperatingIncome": -42.4
+          },
+          "sourceFacts": {
+            "revenue": {
+              "lineItem": "Q3 sales",
+              "rawValue": 355.4,
+              "rawUnit": "millions EUR",
+              "conversion": "none",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://www.siltronic.com/en/press/press-releases/siltronic-slightly-raises-sales-guidance-for-2026-higher-demand-drives-volume-development-in-q3-2026.html"
+            },
+            "operatingIncome": {
+              "lineItem": "Q3 EBIT",
+              "rawValue": -42.4,
+              "rawUnit": "millions EUR",
+              "conversion": "none",
+              "periodStart": "2026-07-01",
+              "periodEnd": "2026-09-30",
+              "sourceUrl": "https://www.siltronic.com/en/press/press-releases/siltronic-slightly-raises-sales-guidance-for-2026-higher-demand-drives-volume-development-in-q3-2026.html"
+            }
+          },
+          "fiscalPeriod": "2026 Q3",
+          "preliminary": false
+        }
+      ]
+    }
+  }
+}

@@ -8,6 +8,15 @@ import subprocess
 
 ROOT = Path(__file__).resolve().parents[1]
 
+# Retain legacy KRX short-balance sources for repository validation, not for
+# Pages distribution. Keep removed URLs out of the file manifest as well.
+PAGES_EXCLUDED_FILES = frozenset({'assets/short-balance.js', 'data/korean_short_balance.json'})
+PAGES_EXCLUDED_PREFIXES = ('data/short-balance-evidence/',)
+
+
+def is_pages_excluded(name):
+    return name in PAGES_EXCLUDED_FILES or name.startswith(PAGES_EXCLUDED_PREFIXES)
+
 
 def build(output):
     output = Path(output).resolve()
@@ -21,6 +30,8 @@ def build(output):
     output.mkdir(parents=True)
     hashes = {}
     for name in filter(None, files):
+        if is_pages_excluded(name):
+            continue
         source = ROOT / name
         if source.is_symlink() or not source.is_file():
             raise ValueError(f'Only regular tracked public files allowed: {name}')

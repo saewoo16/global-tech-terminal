@@ -17,7 +17,21 @@ class PagesPublicationTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             repo = Path(tmp) / 'repo'
             repo.mkdir()
-            for name, content in [('index.html', b'<html>original</html>'), ('data/example.json', b'{"price": 1.23456789}'), ('assets/app.js', b'// unchanged'), ('scripts/private.py', b'# not public')]:
+            excluded = {
+                'assets/short-balance.js': b'// archived script',
+                'data/korean_short_balance.json': b'{}',
+                'data/short-balance-evidence/original.csv': b'restricted CSV',
+                'data/short-balance-evidence/subdir/extract.json': b'{}',
+            }
+            fixture = {
+                'index.html': b'<html>original</html>',
+                'data/example.json': b'{"price": 1.23456789}',
+                'assets/app.js': b'// unchanged',
+                'assets/short-balance.css': b'.short-links {}',
+                'scripts/private.py': b'# not public',
+                **excluded,
+            }
+            for name, content in fixture.items():
                 path = repo / name
                 path.parent.mkdir(parents=True, exist_ok=True)
                 path.write_bytes(content)
@@ -35,8 +49,12 @@ class PagesPublicationTests(unittest.TestCase):
             self.assertEqual((out / 'data/example.json').read_bytes(), b'{"price": 1.23456789}')
             self.assertFalse((out / 'scripts').exists())
             manifest = json.loads((out / 'deployment-version.json').read_text())
-            self.assertEqual(set(manifest['files']), {'index.html', 'data/example.json', 'assets/app.js'})
+            self.assertEqual(set(manifest['files']), {'index.html', 'data/example.json', 'assets/app.js', 'assets/short-balance.css'})
             self.assertEqual(len(manifest['commit']), 40)
+            for name, content in excluded.items():
+                self.assertEqual((repo / name).read_bytes(), content)
+                self.assertFalse((out / name).exists())
+                self.assertNotIn(name, manifest['files'])
 
     def test_workflow_preserves_collection_and_minimal_permissions(self):
         text = (ROOT / '.github/workflows/pages.yml').read_text()
