@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "sessionDate": "2026-11-16",
+  "sessionTimezone": "Asia/Taipei",
+  "basis": "regular_close_unadjusted",
+  "note": "Current official raw exchange close only. Separate from historical adjusted price series and returns. No past prices, returns, FX or market-cap observations are inferred. Taiwan Open Government Data is reused under the version 1.0 license referenced below.",
+  "sources": {
+    "twse": {
+      "agency": "Securities and Futures Bureau, Financial Supervisory Commission, Taiwan (金融監督管理委員會證券期貨局)",
+      "marketName": "Taiwan Stock Exchange (臺灣證券交易所)",
+      "datasetName": "After-hours information Stock daily transaction information (盤後資訊 > 個股日成交資訊)",
+      "datasetUrl": "https://data.gov.tw/en/datasets/11549",
+      "rawUrl": "https://www.twse.com.tw/exchangeReport/STOCK_DAY_ALL?response=open_data",
+      "licenseName": "Open Government Data License, version 1.0 (Taiwan)",
+      "licenseUrl": "https://data.gov.tw/license",
+      "attributionYear": 2026,
+      "edition": "2026-11-16 dated extract",
+      "observedAt": "2026-11-16T13:42:58Z",
+      "sha256": "568dad96c525b1dae3f72e4fc1f94edc3491c1fee988fc8a97d0fb9e13433000",
+      "matchingListings": 30
+    },
+    "tpex": {
+      "agency": "Securities and Futures Bureau, Financial Supervisory Commission, Taiwan (金融監督管理委員會證券期貨局)",
+      "marketName": "Taipei Exchange (櫃買中心)",
+      "datasetName": "OTC stock closing quotations (上櫃股票收盤行情)",
+      "datasetUrl": "https://data.gov.tw/dataset/11371",
+      "rawUrl": "https://www.tpex.org.tw/web/stock/aftertrading/otc_quotes_no1430/stk_wn1430_result.php?l=zh-tw&o=data&se=EW",
+      "licenseName": "Open Government Data License, version 1.0 (Taiwan)",
+      "licenseUrl": "https://data.gov.tw/license",
+      "attributionYear": 2026,
+      "edition": "2026-11-16 dated extract",
+      "observedAt": "2026-11-16T13:42:58Z",
+      "sha256": "cbdaf6b09fb2094558bc05b0c58ea59764d1abf80bfbe199a573f8ceb05cdbae",
+      "matchingListings": 2
+    }
+  },
+  "quotes": {
+    "TPEX:6488": {
+      "asOf": "2026-11-16",
+      "close": 577.0,
+      "currency": "TWD",
+      "basis": "regular_close_unadjusted",
+      "sourceId": "tpex"
+    },
+    "TPEX:8299": {
+      "asOf": "2026-11-16",
+      "close": 1515.0,
+      "currency": "TWD",
+      "basis": "regular_close_unadjusted",
+      "sourceId": "tpex"
+    },
+    "TWSE:2308": {
+      "asOf": "2026-11-16",
+      "close": 1120.0,
+      "currency": "TWD",
+      "basis": "regular_close_unadjusted",
+      "sourceId": "twse"
+    },
+    "TWSE:2313": {
+      "asOf": "2026-11-16",
+      "close": 193.0,
+      "currency": "TWD",
+      "basis": "regular_close_unadjusted",
+      "sourceId": "twse"
+    },
+    "TWSE:2317": {
+      "asOf": "2026-11-16",
+      "close": 218.5,
+      "currency": "TWD",
+      "basis": "regular_close_unadjusted",
+      "sourceId": "twse"
+    },
+    "TWSE:2327": {
+      "asOf": "2026-11-16",
+      "close": 374.0,
+      "currency": "TWD",
+      "basis": "regular_close_unadjusted",
+      "sourceId": "twse"
+    },
+    "TWSE:2337": {
+      "asOf": "2026-11-16",
+      "close": 72.0,
+      "currency": "TWD",
+      "basis": "regular_close_unadjusted",
+      "sourceId": "twse"
+    },
+    "TWSE:2344": {
+      "asOf": "2026-11-16",
+      "close": 113.0,
+      "currency": "TWD",
+      "basis": "regular_close_unadjusted",
+      "sourceId": "twse"
+    },
+    "TWSE:2356": {
+      "asOf": "2026-11-16",
+      "close": 43.0,
+      "currency": "TWD",
+      "basis": "regular_close_unadjusted",
+      "sourceId": "twse"
+    },
+    "TWSE:2360": {
+      "asOf": "2026-11-16",
+      "close": 1260.0,
+      "currency": "TWD",
+      "basis": "regular_close_unadjusted",
+      "sourceId": "twse"
+    },
+    "TWSE:2368": {
+      "asOf": "2026-11-16",
+      "close": 927.0,
+      "currency": "TWD",
+      "basis": "regular_close_unadjusted",
+      "sourceId": "twse"
+    },
+    "TWSE:2382": {
+      "asOf": "2026-11-16",
+      "close": 264.5,
+      "currency": "TWD",
+      "basis": "regular_close_unadjusted",
+      "sourceId": "twse"
+    },
+    "TWSE:2383": {
+      "asOf": "2026-11-16",
+      "close": 3795.0,
+      "currency": "TWD",
+      "basis": "regular_close_unadjusted",
+      "sourceId": "twse"
+    },
+    "TWSE:2408": {
+      "asOf": "2026-11-16",
+      "close": 340.0,
+      "currency": "TWD",
+      "basis": "regular_close_unadjusted",
+      "sourceId": "twse"
+    },
+    "TWSE:2449": {
+      "asOf": "2026-11-16",
+      "close": 192.5,
+      "currency": "TWD",
+      "basis": "regular_close_unadjusted",
+      "sourceId": "twse"
+    },
+    "TWSE:2454": {
+      "asOf": "2026-11-16",
+      "close": 3795.0,
+      "currency": "TWD",
+      "basis": "regular_close_unadjusted",
+      "sourceId": "twse"
+    },
+    "TWSE:3034": {
+      "asOf": "2026-11-16",
+      "close": 451.0,
+      "currency": "TWD",
+      "basis": "regular_close_unadjusted",
+      "sourceId": "twse"
+    },
+    "TWSE:3035": {
+      "asOf": "2026-11-16",
+      "close": 186.5,
+      "currency": "TWD",
+      "basis": "regular_close_unadjusted",
+      "sourceId": "twse"
+    },
+    "TWSE:3037": {
+      "asOf": "2026-11-16",
+      "close": 707.0,
+      "currency": "TWD",
+      "basis": "regular_close_unadjusted",
+      "sourceId": "twse"
+    },
+    "TWSE:3044": {
+      "asOf": "2026-11-16",
+      "close": 480.0,
+      "currency": "TWD",
+      "basis": "regular_close_unadjusted",
+      "sourceId": "twse"
+    },
+    "TWSE:3189": {
+      "asOf": "2026-11-16",
+      "close": 602.0,
+      "currency": "TWD",
+      "basis": "regular_close_unadjusted",
+      "sourceId": "twse"
+    },
+    "TWSE:3231": {
+      "asOf": "2026-11-16",
+      "close": 159.0,
+      "currency": "TWD",
+      "basis": "regular_close_unadjusted",
+      "sourceId": "twse"
+    },
+    "TWSE:3443": {
+      "asOf": "2026-11-16",
+      "close": 7750.0,
+      "currency": "TWD",
+      "basis": "regular_close_unadjusted",
+      "sourceId": "twse"
+    },
+    "TWSE:3661": {
+      "asOf": "2026-11-16",
+      "close": 3660.0,
+      "currency": "TWD",
+      "basis": "regular_close_unadjusted",
+      "sourceId": "twse"
+    },
+    "TWSE:3702": {
+      "asOf": "2026-11-16",
+      "close": 82.4,
+      "currency": "TWD",
+      "basis": "regular_close_unadjusted",
+      "sourceId": "twse"
+    },
+    "TWSE:4958": {
+      "asOf": "2026-11-16",
+      "close": 396.0,
+      "currency": "TWD",
+      "basis": "regular_close_unadjusted",
+      "sourceId": "twse"
+    },
+    "TWSE:6213": {
+      "asOf": "2026-11-16",
+      "close": 480.0,
+      "currency": "TWD",
+      "basis": "regular_close_unadjusted",
+      "sourceId": "twse"
+    },
+    "TWSE:6239": {
+      "asOf": "2026-11-16",
+      "close": 226.5,
+      "currency": "TWD",
+      "basis": "regular_close_unadjusted",
+      "sourceId": "twse"
+    },
+    "TWSE:6269": {
+      "asOf": "2026-11-16",
+      "close": 73.5,
+      "currency": "TWD",
+      "basis": "regular_close_unadjusted",
+      "sourceId": "twse"
+    },
+    "TWSE:6669": {
+      "asOf": "2026-11-16",
+      "close": 1515.0,
+      "currency": "TWD",
+      "basis": "regular_close_unadjusted",
+      "sourceId": "twse"
+    },
+    "TWSE:8039": {
+      "asOf": "2026-11-16",
+      "close": 192.5,
+      "currency": "TWD",
+      "basis": "regular_close_unadjusted",
+      "sourceId": "twse"
+    },
+    "TWSE:8046": {
+      "asOf": "2026-11-16",
+      "close": 880.0,
+      "currency": "TWD",
+      "basis": "regular_close_unadjusted",
+      "sourceId": "twse"
+    }
+  }
+}

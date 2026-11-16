@@ -1,32 +1,47 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
-const root=path.resolve(__dirname,'..'),raw=fs.readFileSync(root+'/assets/korea.js','utf8');
+const root=path.resolve(__dirname,'..'),read=file=>fs.readFileSync(path.join(root,file),'utf8');
+const raw=read('assets/korea.js');
 const ctx={URL,Date,Number,String,Array,Set,Map,Math,console,window:{addEventListener(){}},document:{readyState:'loading',addEventListener(){}}};vm.createContext(ctx);
-vm.runInContext(raw.replace('  if(document.readyState',`  window.api={marketTurnoverSection,turnoverComparisonRows,rangeRows,chartModel,setData:v=>payload=v,setRange:v=>turnoverRange=v};\n  if(document.readyState`),ctx);const a=ctx.window.api;
+vm.runInContext(raw.replace('  if(document.readyState',`  window.api={marketTurnoverSection,dailyFlowSummary,flowSection,rangeRows,chartModel,setData:v=>payload=v};\n  if(document.readyState`),ctx);
+const api=ctx.window.api;
 const rows=[{date:'2025-10-29',turnover:100},{date:'2026-04-29',turnover:200},{date:'2026-07-29',turnover:300},{date:'2026-09-29',turnover:null},{date:'2026-10-29',turnover:400}];
-assert.equal(a.rangeRows(rows,'1M').length,2);assert.equal(a.rangeRows(rows,'3M').length,3);assert.equal(a.rangeRows(rows,'6M').length,4);assert.equal(a.rangeRows(rows,'1Y').length,5);
-assert.equal(a.rangeRows([{date:'2026-02-28'},{date:'2026-03-31'}],'1M').length,2);
-const model=a.chartModel(rows,['turnover'],'1Y',false);assert.equal((model.paths[0].path.match(/M/g)||[]).length,2);
-a.setData({sources:[],marketTurnover:{markets:{KOSPI:{rows},KOSDAQ:{rows}}}});const h=a.marketTurnoverSection();for(const label of ['1개월','3개월','6개월','12개월','KOSPI','KOSDAQ','400억원','미확인'])assert(h.includes(label),label);assert(h.includes('aria-pressed="true"'));assert(h.includes('kr-chart-table'));assert(!h.includes('NaN'));assert(raw.indexOf('marketTurnoverSection()+dailyFlowSummary()')>=0);console.log('PASS market turnover ranges, calendar clamping, gaps, accessible charts and placement');
-
-const real=JSON.parse(fs.readFileSync(root+'/tests/fixtures/korean_turnover_20261029.json'));a.setData(real);const actual=a.marketTurnoverSection();assert(actual.includes('249,071억원'));assert(actual.includes('58,154억원'));assert(actual.includes('134,205억원'));assert(actual.includes('NXT 별도 집계'));assert(actual.includes('주황점'));assert(actual.includes('r="4"'));assert(!actual.includes('2026-10-29 거래대금은 아직 확인되지'));assert.equal(real.marketTurnover.markets.KOSPI.rows.at(-1).date,'2026-10-28');console.log('PASS Oct29 source-separated KRX markers and separate NXT total');
-
-const latest=JSON.parse(fs.readFileSync(root+'/data/korea-market.json'));a.setData(latest);const latestHtml=a.marketTurnoverSection();for(const market of ['KOSPI','KOSDAQ']){const current=latest.marketTurnover.markets[market].currentObservation;if(current&&!latest.marketTurnover.markets[market].integratedHistory)assert(latestHtml.includes(Math.round(current.turnover).toLocaleString('en-US')+'억원'));}assert(latestHtml.includes(latest.marketTurnover.markets.KOSPI.integratedHistory?'data-turnover-history':latest.marketTurnover.markets.KOSPI.comparisonSeries?'data-turnover-comparison':'주황점'));console.log('PASS latest source-separated current observations render their actual values');
-
-const comparison={regular:{label:'KRX 정규장 <검증>',scopeNote:'09:00–15:30 & 주식',status:'verified',asOf:'2026-10-30',sourceIds:['regular'],rows:[{date:'2026-10-27',turnover:100,observedAt:'2026-10-27T08:00:00Z'},{date:'2026-10-28',turnover:null},{date:'2026-10-29',turnover:0},{date:'2026-10-30',turnover:200}]},integrated:{label:'NXT 포함',scopeNote:'KRX·NXT 전체 세션',status:'provisional',asOf:'2026-10-29',sourceIds:['integrated'],rows:[{date:'2026-10-28',turnover:150},{date:'2026-10-29',turnover:220,observedAt:'2026-10-29T09:00:00Z'}]}};
-const combined=a.turnoverComparisonRows(comparison);
-assert.equal(combined.length,4);assert.equal(combined[0].integratedTurnover,null);assert.equal(combined[1].regularTurnover,null);assert.equal(combined[2].regularTurnover,0);assert.equal(combined[3].integratedTurnover,null);
-const overlay=a.chartModel(combined,['regularTurnover','integratedTurnover'],'1M',false);assert.equal((overlay.paths[0].path.match(/M/g)||[]).length,2);assert.equal((overlay.paths[1].path.match(/M/g)||[]).length,1);assert(overlay.min<0);assert(overlay.max>220);
-a.setData({asOf:'2026-10-30',sources:[{id:'regular',title:'거래소',url:'https://example.com/regular'},{id:'integrated',title:'통합',url:'https://example.com/integrated'}],marketTurnover:{markets:{KOSPI:{comparisonSeries:comparison},KOSDAQ:{comparisonSeries:comparison}},nxtObservation:{date:'2026-10-30',turnover:999}}});
-const dual=a.marketTurnoverSection();for(const label of ['KRX 정규장 &lt;검증&gt;','09:00–15:30 &amp; 주식','NXT 포함','200억원','220억원','잠정','2026-10-30','2026-10-29','서로 합산하지','role="img"','kr-chart-table','href="https://example.com/regular"'])assert(dual.includes(label),label);
-assert(!dual.includes('<검증>'));assert(!dual.includes('NXT 별도 집계'));assert(!dual.includes('999억원'));assert.equal((dual.match(/data-turnover-comparison=/g)||[]).length,2);assert(dual.includes('r="3"'));assert(!dual.includes('NaN'));
-// Empty integrated data cannot inherit legacy ECOS values or masquerade as a zero total.
-a.setData({sources:[],marketTurnover:{markets:{KOSPI:{rows:[{date:'2026-10-30',turnover:999}],comparisonSeries:{regular:comparison.regular,integrated:{status:'unavailable',rows:[]}}},KOSDAQ:{comparisonSeries:{regular:{rows:[]},integrated:{rows:[]}}}}}});
-const absent=a.marketTurnoverSection();assert(absent.includes('자료 미확보'));assert(absent.includes('미확인'));assert(!absent.slice(0,absent.indexOf('kr-turnover-reference')).includes('999억원'));assert(absent.includes('ECOS 기존 장기 추이 · 별도 참고'));assert(absent.includes('ECOS 공표 거래대금'));assert(absent.includes('위 두 선에 이어 붙이지'));assert(!absent.includes('kr-turnover-reference" open'));assert(absent.includes('실제 확보:'));assert(absent.includes('선택한 기간 전체의 이력이 확보된 것은 아닙니다'));assert(absent.includes('원문 정밀도'));assert(!absent.includes('NaN'));
-for(const range of ['1M','3M','6M','1Y']){a.setRange(range);assert(a.marketTurnoverSection().includes('data-range="'+range+'" aria-pressed="true"'));}
-console.log('PASS dual scopes, union dates, null gaps, zero values, separate coverage, escaped labels, singleton points and controls');
-
-a.setData(latest);
-if(latest.marketTurnover.markets.KOSPI.integratedHistory){
- for(const [range,oct30Count] of [['1M',21],['3M',62],['6M',122],['1Y',245]]){const count=a.rangeRows(latest.marketTurnover.markets.KOSPI.integratedHistory.rows,range).length;if(latest.marketTurnover.markets.KOSPI.integratedHistory.asOf==='2026-10-30')assert.equal(count,oct30Count);a.setRange(range);const html=a.marketTurnoverSection();assert.equal((html.match(/data-turnover-history=/g)||[]).length,2);assert.equal((html.match(new RegExp('선택 기간 실제 '+count+'개 거래일','g'))||[]).length,2);assert(!html.includes('data-turnover-comparison'));assert(!html.includes('data-turnover-series'));assert(!html.includes('두 선'));assert(!html.includes('NaN'));for(const market of ['KOSPI','KOSDAQ'])assert.equal(a.chartModel(latest.marketTurnover.markets[market].integratedHistory.rows,['turnover'],range,false).paths.length,1);}
- console.log('PASS actual independent turnover history range counts and one series per market');
+assert.equal(api.rangeRows(rows,'1M').length,2);assert.equal(api.rangeRows(rows,'3M').length,3);assert.equal(api.rangeRows(rows,'6M').length,4);assert.equal(api.rangeRows(rows,'1Y').length,5);
+assert.equal(api.rangeRows([{date:'2026-02-28'},{date:'2026-03-31'}],'1M').length,2);
+assert.equal((api.chartModel(rows,['turnover'],'1Y',false).paths[0].path.match(/M/g)||[]).length,2);
+// The legacy source series is retained as raw data, never used in the regular-close panel.
+const legacy=JSON.parse(read('tests/fixtures/korean_turnover_20261029.json'));
+assert.equal(legacy.marketTurnover.markets.KOSPI.rows.at(-1).date,'2026-10-28');
+assert.equal(legacy.marketTurnover.markets.KOSPI.currentObservation.date,'2026-10-29');
+assert.equal(legacy.marketTurnover.markets.KOSPI.currentObservation.turnover,249071.42);
+assert.equal(legacy.marketTurnover.nxtObservation.turnover,134205);
+const latest=JSON.parse(read('data/korea-market.json'));
+for(const m of ['KOSPI','KOSDAQ']) {
+  const history=latest.marketTurnover.markets[m].integratedHistory;
+  if(history){
+    assert(history.rows.length>0);
+    assert.equal(history.rows.at(-1).date,history.coverage.end);
+    for(const range of ['1M','3M','6M','1Y'])assert.equal(api.chartModel(history.rows,['turnover'],range,false).paths.length,1);
+  }
 }
+const entry={
+  market:'KR',date:'2027-01-04',sources:[{id:'a',title:'첫 출처 <A>',url:'https://example.com/a'},{id:'b',title:'두 번째 출처',url:'https://example.com/b'}],
+  regularClosingTurnover:{date:'2027-01-04',scope:'krx-regular-market-close',observedAt:'2027-01-04T07:00:00Z',status:'reported-approximate',unit:'조원',markets:{KOSPI:16.1,KOSDAQ:5.1},sourceIds:['a','b']},
+  reportedCloseFlow:{date:'2027-01-04',scope:'krx-market-close-reports',observedAt:'2027-01-04T07:00:00Z',status:'reported-provisional',summary:'테스트 문구 <예시>',sourceIds:['a','b']}
+};
+api.setData(latest);
+const set=entries=>{ctx.window.TerminalBriefingData={entries};};
+set([entry]);
+const panel=api.marketTurnoverSection(),flow=api.dailyFlowSummary(),charts=api.flowSection();
+for(const token of ['KRX 정규장','NXT 및 시간외 제외','2027-01-04','약 16.1조원','약 5.1조원','첫 출처 &lt;A&gt;','https://example.com/a'])assert(panel.includes(token),token);
+for(const token of ['data-kr-chart','data-turnover-history','data-turnover-comparison','2026-10-29','NaN'])assert(!panel.includes(token),token);
+assert(flow.includes('2027-01-04'));assert(flow.includes('테스트 문구 &lt;예시&gt;'));assert(flow.includes('잠정'));assert(!charts.includes('2027-01-04'));
+assert(raw.includes('marketTurnoverSection()+dailyFlowSummary()'));
+const missing=()=>{const html=api.marketTurnoverSection();assert(html.includes('최신 KRX 정규장 거래대금은 아직 확인되지'));assert(!html.includes('16.1'));assert(!html.includes('data-kr-chart'));};
+api.setData(legacy);
+for(const extra of [{scope:'krx-nxt'},{date:'2027-01-01'},{markets:{KOSPI:'16.1',KOSDAQ:5.1}},{sourceIds:['a','a']},{sourceIds:['a','unknown']}]){
+  set([{...entry,regularClosingTurnover:{...entry.regularClosingTurnover,...extra}}]);missing();
+}
+set([entry,{market:'KR',date:'2027-01-05'}]);missing();assert(!api.dailyFlowSummary().includes('2027-01-04'));
+set([{...entry,sources:[entry.sources[0],{...entry.sources[1],url:'javascript:alert(1)'}]}]);missing();
+set([]);missing();
+console.log('PASS KRX regular-market close only, source/date/scope validation, provisional flow separate, missing never uses legacy turnover; retained legacy raw data and chart math');

@@ -86,3 +86,45 @@ test('optional filing overlay ignores malformed or untrusted data and never repl
   context.revisedMarket={...seeded,stocks:{...seeded.stocks,[key]:{...seeded.stocks[key],quarters:[futureRevision,...seeded.stocks[key].quarters.slice(1)]}}};
   assert.equal(run('mergeOfficialFilingOverlay(revisedMarket,legalFilingOverlay)').stocks[key].quarters[0],futureRevision);
 });
+
+const taiwanClose=JSON.parse(fs.readFileSync(root+'/data/explorer-taiwan-open-close.json'));
+context.taiwanClose=taiwanClose;
+test('official Taiwan close covers all 32 listed Explorer securities on one dated session',()=>{
+  assert.equal(taiwanClose.sessionDate,'2026-11-16');
+  const symbols=[...new Set(companies.filter(x=>/^(TWSE|TPEX):/.test(x.symbol)).map(x=>x.symbol))].sort();
+  assert.deepEqual(Object.keys(taiwanClose.quotes).sort(),symbols);
+  assert.equal(symbols.filter(x=>x.startsWith('TWSE:')).length,30);
+  assert.equal(symbols.filter(x=>x.startsWith('TPEX:')).length,2);
+  for(const symbol of symbols){
+    const q=taiwanClose.quotes[symbol];
+    assert.ok(q.close>0);
+    assert.equal(q.currency,'TWD');
+    assert.equal(q.asOf,'2026-11-16');
+    assert.equal(q.basis,'regular_close_unadjusted');
+    assert.equal(run('explorerTaiwanClose('+JSON.stringify(symbol)+', "2026-11-13", taiwanClose)').q,q);
+  }
+  assert.equal(taiwanClose.quotes['TWSE:2408'].close,340);
+  assert.equal(taiwanClose.quotes['TPEX:8299'].close,1515);
+});
+test('official Taiwan raw close is shown separately with license attribution and no performance changes',()=>{
+  run("COMPANIES=realCompanies;MARKET=realMarket;chosen=COMPANIES.find(r=>r.symbol==='TWSE:2408');EXPLORER_TAIWAN_CLOSES=null;render()");
+  const oldPerformance=element('performance').innerHTML, oldChart=Chart.latest.options.data.labels.join(',');
+  run('EXPLORER_TAIWAN_CLOSES=taiwanClose;render()');
+  assert.equal(element('latest-close-label').textContent,'거래소 정규장 종가 · 비조정');
+  assert.equal(element('last').textContent,'340 TWD');
+  assert.match(element('priceinfo').textContent,/공표 종가 2026-11-16 \(비조정\) · 차트·수익률:/);
+  assert.match(element('priceinfo').textContent,/Securities and Futures Bureau.*2026.*Stock daily transaction information.*Open Government Data License, version 1\.0/);
+  assert.equal(element('performance').innerHTML,oldPerformance);
+  assert.equal(Chart.latest.options.data.labels.join(','),oldChart);
+  run("chosen=COMPANIES.find(r=>r.symbol==='KRX:005930');render()");
+  assert.equal(element('latest-close-label').textContent,'최근 조정종가');
+  assert.doesNotMatch(element('priceinfo').textContent,/대만 공표 종가/);
+});
+test('invalid, missing or older quote overlay cannot replace the adjusted-close display',()=>{
+  assert.equal(run("explorerTaiwanClose('TWSE:2408','2026-11-17',taiwanClose)"),null);
+  assert.equal(run("explorerTaiwanClose('TWSE:2408','2026-11-13',null)"),null);
+  context.badTaiwan={...taiwanClose,quotes:{'TWSE:2408':{...taiwanClose.quotes['TWSE:2408'],close:'999'}}};
+  assert.equal(run("explorerTaiwanClose('TWSE:2408','2026-11-13',badTaiwan)"),null);
+  context.badTaiwan={...taiwanClose,sources:{twse:{...taiwanClose.sources.twse,datasetUrl:'javascript:alert(1)'}}};
+  assert.equal(run("explorerTaiwanClose('TWSE:2408','2026-11-13',badTaiwan)"),null);
+});
