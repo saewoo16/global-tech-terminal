@@ -9,7 +9,7 @@ import copy
 import json
 from pathlib import Path
 
-from validate_us_analysis import ROOT, finite_number, validate, validate_breadth
+from validate_us_analysis import ROOT, finite_number, read_analysis, validate, validate_breadth
 
 
 def derive_breadth(entry, evidence):
@@ -66,14 +66,24 @@ def main():
     parser.add_argument('--date', help='Explicit report session; default is latest completed entry')
     parser.add_argument('--check', action='store_true', help='Verify derivation without writing')
     args = parser.parse_args()
-    original = json.loads(args.input.read_text())
+    original = read_analysis(args.input)
     candidate = build(original, args.date)
     if args.check:
         if candidate != original:
             raise SystemExit('Breadth is missing or differs from the preserved close evidence.')
         print('Verified latest/selected S&P 500 breadth against preserved close evidence.')
     elif candidate != original:
-        args.input.write_text(json.dumps(candidate, ensure_ascii=False, indent=2) + '\n')
+        archive = json.loads(args.input.read_text())
+        overlay_path = args.input.with_name('us-analysis-latest.json')
+        saved_dates = {entry['date'] for entry in archive['entries']}
+        changed = next(new for new, old in zip(candidate['entries'], original['entries']) if new != old)
+        if changed['date'] in saved_dates:
+            archive['entries'] = [changed if entry['date'] == changed['date'] else entry for entry in archive['entries']]
+            args.input.write_text(json.dumps(archive, ensure_ascii=False, indent=2) + '\n')
+        else:
+            overlay = json.loads(overlay_path.read_text())
+            overlay['entry'] = changed
+            overlay_path.write_text(json.dumps(overlay, ensure_ascii=False, separators=(',', ':')) + '\n')
         print('Updated only the latest/selected entry breadth; all other panels preserved.')
     else:
         print('Breadth already matches preserved close evidence; no files changed.')

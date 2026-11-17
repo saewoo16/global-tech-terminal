@@ -6,7 +6,8 @@ const mapRow=(ticker,changePct=0)=>({ticker,name:'Company '+ticker,sector:ticker
 const fixedMaps={schemaVersion:1,entries:[{date:latest.date,status:'verified',regularSessionOnly:true,previousSession:'2026-10-19',constituentDate:'2026-10-19',observedAt:'2026-10-21T06:00:00+09:00',coverage:{expected:3},weighting:{basis:'equal-security',asOf:null,note:'Fixture equal-security basis'},sources:[{url:'https://example.com/close',title:'Fixture close source'}],rows:[mapRow('A',1),mapRow('B',-2),mapRow('C',0)]}]};
 const elements=new Map(),listeners=new Map();function el(id){if(!elements.has(id))elements.set(id,{id,innerHTML:'',value:''});return elements.get(id)}
 const context={URL,Date,Number,String,Array,Set,Math,console:{error(){}},fetchReport:async()=>({ok:true,json:async()=>data}),fetchMaps:async()=>({ok:true,json:async()=>fixedMaps}),window:{location:{hash:'#us'},addEventListener:(n,f)=>listeners.set(n,f)},document:{readyState:'loading',getElementById:el,querySelectorAll:()=>[],querySelector:()=>null,addEventListener:(n,f)=>listeners.set(n,f)}};
-context.fetch=url=>url.includes('us_heatmaps.json')?context.fetchMaps():context.fetchReport();
+context.fetchOverlay=async()=>({ok:false,status:404});
+context.fetch=url=>url.includes('us_heatmaps.json')?context.fetchMaps():url.includes('us-analysis-latest.json')?context.fetchOverlay():context.fetchReport();
 vm.createContext(context);vm.runInContext(raw.replace("if(document.readyState==='loading')","window.api={load,render,route,heatmap,heatmapRows,heatColor,heatDescription,bindHeatmap,setHeatData:v=>heatPayload=v,setHeatView:(sector,limit)=>{heatSector=sector;heatLimit=limit},esc,safe,pct,highs,movers,earnings,earningsSurprise,earningsMetrics,quarterlyMargin,earningsForSession,sectors,indices,exchangeRates,unusualMovers,qualifiesUnusual,isDate,setData:v=>payload=v,setSort:(v,d)=>{sortKey=v;sortDesc=d}};if(document.readyState==='loading')"),context);const api=context.window.api;let count=0;async function test(n,f){await f();count++;console.log('PASS',n)}
 (async()=>{
 await test('call-only source IDs render as accessible official links',()=>{const entry=data.entries.find(e=>e.date==='2026-11-03'),r=entry.earnings.rows.find(r=>r.ticker==='PFE');assert(r.callSourceIds.length);const h=api.earnings({...entry,earnings:{...entry.earnings,rows:[r]}});for(const id of r.callSourceIds){const source=entry.sources.find(s=>s.id===id);assert(source);assert(h.includes(source.url),'Official call source URL must appear in card sources');}});
@@ -65,5 +66,21 @@ await test('market-basis EPS is visible for every verified latest consensus and 
 await test('unverified or missing market EPS cannot replace GAAP or manufacture consensus',()=>{const base={label:'EPS',value:'1.20 USD/share',basis:'US GAAP · 희석 EPS',raw:{value:1.2}},good={label:'EPS',value:'1.40 USD/share',basis:'Non-GAAP · 조정 희석 EPS',sourceIds:['source'],raw:{value:1.4,consensusValue:1.3,consensusComparable:true,unit:'USD/share'}};for(const bad of [{...good,sourceIds:[]},{...good,basis:''},{...good,raw:{...good.raw,consensusComparable:false}},{...good,raw:{...good.raw,consensusValue:null}},{...good,raw:{...good.raw,value:null}}]){const r={metrics:[base],consensusMetrics:[bad]};assert.equal(api.earningsMetrics(r).find(m=>m.label==='EPS').value,base.value);}const r={metrics:[base],consensusMetrics:[good]};assert.equal(api.earningsMetrics(r).find(m=>m.label==='EPS').raw.value,1.4);});
 await test('verified Boeing OP replaces OPM without confusing calculated margin consensus or source pools',()=>{const e=data.entries.find(e=>e.date==='2026-10-27'),r=e.earnings.rows.find(r=>r.ticker==='BA'),before=JSON.stringify(r),metrics=api.earningsMetrics(r),op=metrics.find(m=>m.label==='영업이익');assert(op);assert(!metrics.some(m=>m.label==='영업이익률'));assert.equal(op.raw.value,354);assert.equal(op.raw.consensusValue,575);const h=api.earnings({...e,earnings:{rows:[r]}}),visible=h.replace(/<details[\s\S]*?<\/details>/g,'');assert(visible.includes('>OP<'));assert(visible.includes('>354</td>'));assert(visible.includes('>575</td>'));assert(visible.includes('>-38.43%</td>'));assert(!visible.includes('2.36%'));assert(Math.abs(r.operatingMargin.consensusCalculation.value-575/24370*100)<1e-12);assert.equal(r.operatingMargin.consensusCalculation.method,'ratio_of_consensus_operating_income_to_consensus_revenue');assert.equal(JSON.stringify(r),before);});
 await test('unproven REIT and tax-benefit EPS estimates stay unpaired in visible cards',()=>{const e=data.entries.find(e=>e.date==='2026-10-27');for(const ticker of ['AMT','OKE','VTR','EXR','ESS','BXP']){const r=e.earnings.rows.find(r=>r.ticker===ticker),eps=api.earningsMetrics(r).find(m=>m.label==='EPS');assert.notEqual(eps.raw.consensusComparable,true,ticker);const h=api.earnings({...e,earnings:{rows:[r]}}),visible=h.replace(/<details[\s\S]*?<\/details>/g,'').split('</table>')[0],row=visible.match(/<tr><td>EPS[\s\S]*?<\/tr>/)[0];assert(row.includes('미확인')||row.includes('—'),ticker);assert(h.includes('비교 보류 EPS'),ticker);}});
+await test('a current close overlay preserves the archive and rejects an older or invalid entry',async()=>{
+  const current=JSON.parse(fs.readFileSync(root+'/data/us-analysis-latest.json','utf8'));
+  const prior=JSON.stringify(data);
+  context.fetchReport=async()=>({ok:true,json:async()=>data});
+  context.fetchOverlay=async()=>({ok:true,json:async()=>current});
+  context.window.location.hash='#us';await api.load();
+  let h=el('us-content').innerHTML;
+  assert(h.includes(current.entry.date));
+  for(const row of (current.entry.earnings?.rows||[]))assert(h.includes(api.esc(row.name)),row.ticker);
+  if(current.entry.breadth?.status==='unavailable')assert(h.includes('검증된 상승·하락 집계 미확보'));
+  for(const bad of [{...current,entry:{...current.entry,date:latest.date}},{...current,entry:{...current.entry,sessionStatus:'open'}}]){
+    context.fetchOverlay=async()=>({ok:true,json:async()=>bad});await api.load();
+    h=el('us-content').innerHTML;assert(h.includes(latest.date));assert(!h.includes(current.entry.date));
+  }
+  assert.equal(JSON.stringify(data),prior);
+});
 console.log(count+' US analysis UI checks passed');
 })();

@@ -397,7 +397,21 @@ def validate(payload):
     return len(entries)
 
 
+
+def read_analysis(path):
+    payload = json.loads(path.read_text())
+    overlay_path = path.with_name('us-analysis-latest.json')
+    if path.name != 'us_analysis.json' or not overlay_path.exists():
+        return payload
+    overlay = json.loads(overlay_path.read_text())
+    assert overlay.get('schemaVersion') == payload.get('schemaVersion') == 1, 'Unsupported daily overlay schema'
+    entry = overlay['entry']
+    assert all(a['date'] < entry['date'] for a in payload['entries']), 'US daily overlay must be newer than the archive'
+    market_time(overlay['updatedAt'])
+    return {**payload, 'updatedAt': overlay['updatedAt'], 'entries': [entry, *payload['entries']]}
+
+
 if __name__ == '__main__':
     import sys
     p=Path(sys.argv[1]) if len(sys.argv)>1 else ROOT/'data/us_analysis.json'
-    print(f'Validated {validate(json.loads(p.read_text()))} completed US daily entries.')
+    print(f'Validated {validate(read_analysis(p))} completed US daily entries.')
