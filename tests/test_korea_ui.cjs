@@ -16,14 +16,16 @@ await test('today-only market cards use exactly the source-dated provisional tri
   const saved=context.window.TerminalBriefingData,current=JSON.parse(fs.readFileSync(root+'/data/korea-close-overlay.json')).entry;
   context.window.TerminalBriefingData={entries:[current,...archive.entries]};api.render();
   const whole=el('kr-content').innerHTML;
-  const h=whole.split('id="kr-daily-flow-title"')[1].split('id="kr-flow-near-close"')[0];
+  const h=whole.split('id="kr-daily-flow-title"')[1].split('id="kr-flows-title"')[0];
   assert.equal((h.match(/class="kr-daily-values"/g)||[]).length,2);
   assert.equal((h.match(/2026-11-18 · 잠정/g)||[]).length,2);
   for(const v of ['-3,300','+5,000','-6,300','-450','+1,800','-1,200'])assert(h.includes('>'+v+'</span>'),v);
   assert(!/2026-11-13|합산 외국인|마감 보도로 확인한 수급|<svg\b/.test(h));
   assert(whole.includes('추이 마지막 관측일: 2026-11-13'));
   assert(whole.includes('당일 잠정 수급 미포함'));
-  const recent=whole.split('id="kr-flow-near-close"')[1].split('id="kr-flows-title"')[0];
+  const summary='<details class="kr-history-disclosure" id="kr-flow-provisional">';
+  assert(whole.indexOf(summary)>whole.indexOf('data-kr-chart="flow-KOSDAQ"'));
+  const recent=whole.split(summary)[1].split('id="kr-futures-title"')[0];
   assert(recent.includes('11/12–11/18 · 매일 15:40 KST KRX 관측 · 잠정'));
   for(const value of ['-33,245','-983','-7,752','+1,674'])assert(recent.includes(value+'<em>억원</em>'),value);
   assert.equal((recent.match(/<details class="kr-chart-table" open>/g)||[]).length,2);
@@ -143,6 +145,9 @@ await test('October-style cap-weighted market maps are visible and newer seven-n
  assert(archived.includes('data-kr-heat-date="'+data.heatmaps.asOf+'"'));
  assert(archived.includes('2026-11-18 시장 전체 히트맵 미확인')&&archived.includes(data.heatmaps.asOf+' 기준 참고용'));
  assert(archived.includes('data-kr-heat-market="KOSPI"')&&archived.includes('data-kr-heat-market="KOSDAQ"')&&!archived.includes('kr-spot-heat-tile'));
+ assert(archived.includes('href="https://etfshopping.com/treemap"')&&archived.includes('href="https://etfshopping.com/treemap/kosdaq-150"'));
+ assert(archived.includes('외부 원본 · 지수 구성종목만')&&archived.includes('외부 페이지의 종가 기준일을 확인하세요.'));
+
  assert(now.includes('2026-11-18 정규장 등락 · 확인된 7종목')&&!now.includes('data-kr-heat-market'));
  assert.equal((now.match(/kr-spot-heat-tile/g)||[]).length,7);assert.equal((now.match(/<th scope="row">/g)||[]).length,7);assert(now.includes('+20.06%')&&now.includes('-14.56%'));
  assert(h.includes('data-kr-official-liquidity="2026-11-17"')&&h.includes('866,228')&&h.includes('263,339'));assert(h.indexOf('data-kr-official-liquidity')<h.indexOf('data-kr-chart="deposits"'));
