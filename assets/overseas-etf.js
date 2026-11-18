@@ -13,7 +13,7 @@ const isoSession=v=>typeof v==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(v)?v:null;
 function sessionOf(report){const e=report?.entry,v=e?.sessionVerification;return e?.sessionStatus==='closed'&&isoSession(e.date)&&v?.exchangeDate===e.date?e.date:null;}
 function freshness(funds,session){const target=isoSession(session),dates=funds.map(f=>isoSession(f.daily?.at(-1)?.date)),known=dates.filter(Boolean).sort(),latest=known.at(-1)||null;return {target,latest,count:funds.length,current:target===null?null:dates.filter(d=>d===target).length};}
 function statusLabel(funds,session){const {target,latest,count,current}=freshness(funds,session),saved=latest?`최신 보관 일봉 ${latest} ET`:'보관 일봉 없음';if(!target)return `최신 완료 미국장과 ETF 대조 미확인 · ${saved}`;if(!count)return `미국장 ${target} ET · 보관 ETF 없음`;if(current===count)return `미국장 ${target} ET · 해당 세션 일봉 ${current}/${count}`;return `미국장 ${target} ET · 해당 세션 일봉 ${current}/${count} · ${saved} · 해당일 ETF 원자료 미반영, 보관 자료는 역사 차트로만 표시합니다.`;}
-async function getVerifiedSession(){try{const r=await fetch('./data/us-analysis-latest.json?ts='+Date.now(),{cache:'no-store'});return r.ok?sessionOf(await r.json()):null;}catch{return null;}}
+async function getVerifiedSession(){try{return sessionOf(await fetchETFData('./data/us-analysis-latest.json',8000));}catch{return null;}}
 function listReturn(f){return sort==='month'?returns(f):sort==='week'?weeklyReturn(f):dailyReturn(f);}
 function filtered(){return(payload?.funds||[]).filter(f=>(group==='all'||f.group===group)&&[f.name,f.code,f.category,f.issuer,...(f.holdings?.top5||[]).map(m=>m.name)].join(' ').toLowerCase().includes(query.toLowerCase())).sort((a,b)=>(listReturn(b)??-Infinity)-(listReturn(a)??-Infinity));}
 function representativeHoldings(f){const h=f.holdings,rows=h?.top5;if(h?.status!=='verified'||!Array.isArray(rows)||rows.length<3||rows.some(m=>!m||typeof m.weightPct!=='number'||!Number.isFinite(m.weightPct)||m.weightPct<=0||m.weightPct>100||!(m.name||m.ticker)))return [];return [...rows].sort((a,b)=>b.weightPct-a.weightPct).slice(0,3);}
@@ -21,7 +21,12 @@ function representatives(f){const rows=representativeHoldings(f);if(!rows.length
 function representativeSources(f){const h=f.holdings;if(!representativeHoldings(f).length)return '<p>구성종목 편입비중 미확인</p>';return `<p>편입비중 상위 3종목 · 실제 구성 기준 ${esc(h.asOf||'미확인')} · 최신 시세 기준일과 별개입니다.</p>`;}
 function selectionSources(f){const e=f.selectionEvidence;if(!e?.disclosure)return '';const links=[[e.officialSourceUrl,'운용사 구성종목 원자료'],[e.officialAum?.sourceUrl,'운용사 순자산 기준일 원자료']];return `<p class="etf-selection-disclosure">${esc(e.disclosure)}</p>${links.filter(([url])=>url).map(([url,title])=>`<div><a href="${esc(safeURL(url))}" target="_blank" rel="noopener noreferrer">${title} ↗</a></div>`).join('')}`;}
 
-function list(){const funds=filtered();$('us-etf-count').textContent=`${funds.length}개 ETF · 목록 수익률은 ${sort==='month'?'최근 1달':sort==='week'?'최근 1주일':'전일 종가 대비 1일 등락'}`;if(!funds.some(f=>f.code===selected))selected=funds[0]?.code||'';$('us-etf-list').innerHTML=funds.map(f=>{const r=listReturn(f);return `<button type="button" class="etf-choice ${f.code===selected?'active':''}" data-etf="${esc(f.code)}" aria-pressed="${f.code===selected}"><span class="etf-return ${r>=0?'up':'down'}">${pct(r)}</span><strong>${esc(f.category)}</strong><small>${esc(f.code)} (${esc(f.name)})</small>${representatives(f)}</button>`}).join('')||'<p class="etf-empty">검색 결과가 없습니다.</p>';$('us-etf-list').querySelectorAll('[data-etf]').forEach(b=>b.onclick=()=>{selected=b.dataset.etf;list();detail();});}
+function countsLabel(){
+ const funds=payload?.funds||[], counts={industry:0,theme:0};
+ for(const f of funds)if(Object.hasOwn(counts,f.group))counts[f.group]++;
+ return '업종 '+counts.industry+'개 · 테마 '+counts.theme+'개';
+}
+function list(){const funds=filtered();$('us-etf-count').textContent=`${funds.length}개 ETF (${countsLabel()}) · 목록 수익률은 ${sort==='month'?'최근 1달':sort==='week'?'최근 1주일':'전일 종가 대비 1일 등락'}`;if(!funds.some(f=>f.code===selected))selected=funds[0]?.code||'';$('us-etf-list').innerHTML=funds.map(f=>{const r=listReturn(f);return `<button type="button" class="etf-choice ${f.code===selected?'active':''}" data-etf="${esc(f.code)}" aria-pressed="${f.code===selected}"><span class="etf-return ${r>=0?'up':'down'}">${pct(r)}</span><strong>${esc(f.category)} <small>${f.group==='industry'?'업종':'테마'}</small></strong><small>${esc(f.code)} (${esc(f.name)})</small>${representatives(f)}</button>`}).join('')||'<p class="etf-empty">검색 결과가 없습니다.</p>';$('us-etf-list').querySelectorAll('[data-etf]').forEach(b=>b.onclick=()=>{selected=b.dataset.etf;list();detail();});}
 // Exchange dates are session-local; UTC arithmetic here is calendar-only.
 const candleNames={daily:'일봉',weekly:'주봉',monthly:'월봉'};
 function dateKey(day){
@@ -101,14 +106,14 @@ function providerPanel(f){
  const symbol=widgetSymbol(f.code),tv=widgetProviderLink(symbol);if(!tv)return '';
  const ql=symbol.startsWith('CBOE:'),provider=ql?'Quotelinks':'TradingView';
  const url=ql?'https://www.quotelinks.com/etfs/'+f.code.toLowerCase()+'.html':tv;
- const timing=ql?'정규장 종가 기반 · 제공사 독립 차트. 아래 일봉·주봉·월봉 선택 결과는 보관 캔들에서 확인하세요.':'Cboe One 지연 시세 · 선택한 일봉·주봉·월봉으로 연결합니다.';
- return '<section class="etf-sources" aria-label="외부 제공사 ETF 캔들"><p><strong>'+provider+' ETF 캔들</strong> <a href="'+url+'" target="_blank" rel="noopener noreferrer">제공사에서 열기 ↗</a></p><p>'+timing+' 최신 표시일은 차트에서 확인하세요. 아래 보관 캔들 및 순위와는 별도입니다.</p><div id="us-etf-widget-view"></div></section>';
+ const timing=ql?'정규장 종가 기반 · 제공사 독립 차트. 위 일봉·주봉·월봉 선택 결과는 보관 캔들에서 확인하세요.':'Cboe One 지연 시세 · 선택한 일봉·주봉·월봉으로 연결합니다.';
+ return '<section class="etf-sources" aria-label="외부 제공사 ETF 캔들"><p><strong>'+provider+' ETF 캔들</strong> <a href="'+url+'" target="_blank" rel="noopener noreferrer">제공사에서 열기 ↗</a></p><p>'+timing+' 최신 표시일은 차트에서 확인하세요. 위 보관 캔들 및 순위와는 별도입니다.</p><div id="us-etf-widget-view"></div></section>';
 }
 function mountProviderPanel(f){
  const target=$('us-etf-widget-view'),symbol=widgetSymbol(f.code);
  if(!target||!widgetProviderLink(symbol)||window.location?.hash.split('/')[0]!=='#overseas-etf')return;
  if(period==='day'){
-   target.textContent='당일 장중 모드에서는 아래 보관 장중 자료만 표시합니다. 일봉·주봉·월봉을 선택하면 제공사 차트가 열립니다.';return;
+   target.textContent='당일 장중 모드에서는 위 보관 장중 자료만 표시합니다. 일봉·주봉·월봉을 선택하면 제공사 차트가 열립니다.';return;
  }
  const interval={daily:'D',weekly:'W',monthly:'M'}[candleKind];
  if(!interval)return;
@@ -141,11 +146,40 @@ function issuerSessionNote(f){
 }
 
 function detail(){const f=payload?.funds.find(f=>f.code===selected);if(!f){$('us-etf-detail').innerHTML='<div class="etf-empty">ETF를 선택해 주세요.</div>';return;}const d=f.daily||[],last=d.at(-1),change=dailyReturn(f);const intra=f.intraday||{},date=period==='day'?intra.date:last?.date;
-$('us-etf-detail').innerHTML=`<div class="etf-chart-panel"><div class="etf-chart-head"><div class="eyebrow">${esc(f.category)} · ${esc(f.issuer)}</div><h3>${esc(f.code)} <span class="etf-fullname">(${esc(f.name)})</span></h3>${representatives(f)}<span class="etf-price">${fmt(last?.close)} USD</span> <span class="${change>=0?'up':'down'}">${pct(change)}</span><div class="etf-note">보관 종가 기준 ${esc(last?.date||'미확인')} · ${esc(f.exchange||'미국 상장')} · USD</div><div class="etf-periods" aria-label="차트 기간">${[['day','당일'],['3','3개월'],['6','6개월'],['12','12개월']].map(([v,t])=>`<button type="button" data-etf-period="${v}" class="${period===v?'active':''}" aria-pressed="${period===v}">${t}</button>`).join('')}</div><div class="etf-periods" role="group" aria-label="캔들 단위">${Object.entries(candleNames).map(([v,t])=>`<button type="button" data-etf-candle="${v}" class="${period!=='day'&&candleKind===v?'active':''}" aria-pressed="${period!=='day'&&candleKind===v}">${t}</button>`).join('')}</div></div><p class="etf-status">${period==='day'?`${esc(date||'기준일 미확인')} 미국 정규장 흐름 (ET) · ${esc(intra.interval||'간격 미확인')} · ${esc(stamp(intra.asOf))}${intra.refreshStatus==='stale'?' · 이전 검증 장중 자료 유지':''}`:esc(candleStatus(series(f),candleKind,'America/New_York'))}</p>${issuerSessionNote(f)}${providerPanel(f)}<div class="etf-note"><strong>보관 ${period==='day'?'장중':candleNames[candleKind]}</strong> · 마지막 실제 관측 ${esc(date||'미확인')} ET · 외부 차트가 표시되지 않아도 아래에서 확인할 수 있습니다.</div><div id="us-etf-plot" class="etf-plot"></div><div id="us-etf-tooltip" class="etf-tooltip" aria-live="off"></div><div class="etf-meta"><div><small>1일 수익률</small><strong class="${change>=0?'up':'down'}">${pct(change)}</strong></div><div><small>1주일 수익률</small><strong class="${weeklyReturn(f)>=0?'up':'down'}">${pct(weeklyReturn(f))}</strong></div><div><small>1달 수익률</small><strong class="${returns(f)>=0?'up':'down'}">${pct(returns(f))}</strong></div></div><p class="etf-status">미국 상장 업종·테마 ETF · 정규장 가격 기준 수익률(USD)이며 분배금 재투자 수익률·원화 환산 수익률과 다를 수 있습니다. ${esc(f.selectionNote||'')}${f.refreshStatus==='stale'?' 최신 조회 실패로 이전 검증 자료를 유지합니다.':''}</p></div><details class="etf-sources"><summary>ETF 정보·시세 출처</summary><p>종목코드 ${esc(f.code)}</p>${representativeSources(f)}${selectionSources(f)}${(f.sourceUrls||[]).map((s,i)=>{const url=typeof s==='string'?s:s.url,title=typeof s==='string'?(f.sourceTitles?.[i]||s):(s.title||s.url);return `<div><a href="${esc(safeURL(url))}" target="_blank" rel="noopener noreferrer">${esc(title)}</a></div>`}).join('')}<p>게시된 시세 스냅샷으로 실시간 호가가 아닙니다. 당일은 수집된 실제 장중 시세만 표시하며 일봉을 분할해 만들지 않습니다.</p></details><div id="us-etf-total-return-month">${totalReturnMonthPanel(f)}</div>`;
+$('us-etf-detail').innerHTML=`<div class="etf-chart-panel"><div class="etf-chart-head"><div class="eyebrow">${esc(f.category)} · ${esc(f.issuer)}</div><h3>${esc(f.code)} <span class="etf-fullname">(${esc(f.name)})</span></h3>${representatives(f)}<span class="etf-price">${fmt(last?.close)} USD</span> <span class="${change>=0?'up':'down'}">${pct(change)}</span><div class="etf-note">보관 종가 기준 ${esc(last?.date||'미확인')} · ${esc(f.exchange||'미국 상장')} · USD</div><div class="etf-periods" aria-label="차트 기간">${[['day','당일'],['3','3개월'],['6','6개월'],['12','12개월']].map(([v,t])=>`<button type="button" data-etf-period="${v}" class="${period===v?'active':''}" aria-pressed="${period===v}">${t}</button>`).join('')}</div><div class="etf-periods" role="group" aria-label="캔들 단위">${Object.entries(candleNames).map(([v,t])=>`<button type="button" data-etf-candle="${v}" class="${period!=='day'&&candleKind===v?'active':''}" aria-pressed="${period!=='day'&&candleKind===v}">${t}</button>`).join('')}</div></div><p class="etf-status">${period==='day'?`${esc(date||'기준일 미확인')} 미국 정규장 흐름 (ET) · ${esc(intra.interval||'간격 미확인')} · ${esc(stamp(intra.asOf))}${intra.refreshStatus==='stale'?' · 이전 검증 장중 자료 유지':''}`:esc(candleStatus(series(f),candleKind,'America/New_York'))}</p>${issuerSessionNote(f)}<div class="etf-note"><strong>보관 ${period==='day'?'장중':candleNames[candleKind]}</strong> · 마지막 실제 관측 ${esc(date||'미확인')} ET · 외부 차트와 별도입니다.</div><div id="us-etf-plot" class="etf-plot"></div><div id="us-etf-tooltip" class="etf-tooltip" aria-live="off"></div>${providerPanel(f)}<div class="etf-meta"><div><small>1일 수익률</small><strong class="${change>=0?'up':'down'}">${pct(change)}</strong></div><div><small>1주일 수익률</small><strong class="${weeklyReturn(f)>=0?'up':'down'}">${pct(weeklyReturn(f))}</strong></div><div><small>1달 수익률</small><strong class="${returns(f)>=0?'up':'down'}">${pct(returns(f))}</strong></div></div><p class="etf-status">미국 상장 업종·테마 ETF · 정규장 가격 기준 수익률(USD)이며 분배금 재투자 수익률·원화 환산 수익률과 다를 수 있습니다. ${esc(f.selectionNote||'')}${f.refreshStatus==='stale'?' 최신 조회 실패로 이전 검증 자료를 유지합니다.':''}</p></div><details class="etf-sources"><summary>ETF 정보·시세 출처</summary><p>종목코드 ${esc(f.code)}</p>${representativeSources(f)}${selectionSources(f)}${(f.sourceUrls||[]).map((s,i)=>{const url=typeof s==='string'?s:s.url,title=typeof s==='string'?(f.sourceTitles?.[i]||s):(s.title||s.url);return `<div><a href="${esc(safeURL(url))}" target="_blank" rel="noopener noreferrer">${esc(title)}</a></div>`}).join('')}<p>게시된 시세 스냅샷으로 실시간 호가가 아닙니다. 당일은 수집된 실제 장중 시세만 표시하며 일봉을 분할해 만들지 않습니다.</p></details><div id="us-etf-total-return-month">${totalReturnMonthPanel(f)}</div>`;
 
 mountProviderPanel(f);
 $('us-etf-detail').querySelectorAll('[data-etf-period]').forEach(b=>b.onclick=()=>{period=b.dataset.etfPeriod;if(period!=='day')lastRange=period;detail();});$('us-etf-detail').querySelectorAll('[data-etf-candle]').forEach(b=>b.onclick=()=>{candleKind=b.dataset.etfCandle;if(period==='day')period=lastRange;detail();$('us-etf-detail').querySelector?.('[data-etf-candle="'+candleKind+'"]')?.focus();});plot(f);}
-async function load(){if(loading)return;loading=true;try{const [response,verifiedSession]=await Promise.all([fetch('./data/overseas_etf_charts.json?ts='+Date.now(),{cache:'no-store'}),getVerifiedSession()]);if(!response.ok)throw Error('HTTP '+response.status);const next=await response.json();if(next.schemaVersion!==1||!Array.isArray(next.funds))throw Error('Invalid ETF schema');payload=next;monthOverlay=null;getLatestTotalReturnMonth(verifiedSession).then(v=>{if(payload===next&&v){monthOverlay=v;const target=$('us-etf-total-return-month'),fund=next.funds.find(f=>f.code===selected);if(target&&fund)target.innerHTML=totalReturnMonthPanel(fund);}});lastLoad=Date.now();$('us-etf-updated').textContent=statusLabel(next.funds,verifiedSession);list();detail();}catch(e){$('us-etf-updated').textContent='ETF 자료를 불러오지 못했습니다. 잠시 후 다시 확인해 주세요.';console.error('ETF data:',e);}finally{loading=false;}}
+async function fetchETFData(url, timeout=15000){
+ const abort=new AbortController(),timer=setTimeout(()=>abort.abort(),timeout);
+ try{const r=await fetch(url,{cache:'no-cache',signal:abort.signal});if(!r.ok)throw Error('HTTP '+r.status);return await r.json();}
+ finally{clearTimeout(timer);}
+}
+async function load(){
+ if(loading)return;loading=true;
+ const label=$('us-etf-updated'); if(!payload)label.textContent='해외 ETF 목록과 차트를 불러오는 중입니다…';
+ try{
+  const next=await fetchETFData('./data/overseas_etf_charts.json');
+  if(next.schemaVersion!==1||!Array.isArray(next.funds)||!next.funds.length)throw Error('Invalid ETF schema');
+  payload=next;monthOverlay=null;lastLoad=Date.now();
+  label.textContent=statusLabel(next.funds,null);list();detail();
+  // The independently fetched US close and returns must not block the ETF list or candle.
+  getVerifiedSession().then(session=>{
+    if(payload!==next)return;
+    label.textContent=statusLabel(next.funds,session);
+    if(!session)return;
+    getLatestTotalReturnMonth(session).then(v=>{
+      if(payload!==next||!v)return;
+      monthOverlay=v;const target=$('us-etf-total-return-month'),fund=next.funds.find(f=>f.code===selected);
+      if(target&&fund)target.innerHTML=totalReturnMonthPanel(fund);
+    });
+  });
+ }catch(e){
+  label.innerHTML=(payload?'새 시세 조회 실패 · 아래에 이전 차트를 유지합니다.':'해외 ETF 자료를 불러오지 못했습니다.')+' <button id="us-etf-retry" class="button" type="button">다시 불러오기</button>';
+  const retry=$('us-etf-retry');if(retry)retry.onclick=load;
+  console.error('ETF data:',e);
+ }finally{loading=false;}
+}
 function boot(){if(!$('overseas-etf-panel'))return;$('us-etf-sort').value=sort;$('us-etf-search').oninput=e=>{query=e.target.value;list();detail();};$('us-etf-group').onchange=e=>{group=e.target.value;list();detail();};$('us-etf-sort').onchange=e=>{sort=['day','week','month'].includes(e.target.value)?e.target.value:'day';list();detail();};const route=()=>{const active=location.hash.split('/')[0]==='#overseas-etf';if(!active){$('us-etf-widget-view')?.replaceChildren();return;}if(Date.now()-lastLoad>60000){load();return;}const f=payload?.funds.find(x=>x.code===selected);if(f&&!$('us-etf-widget-view')?.querySelector('iframe'))mountProviderPanel(f);};window.addEventListener('hashchange',route);route();window.setInterval(()=>{if(document.visibilityState!=='hidden')route();},300000);}
 window.TerminalOverseasETF={returns,series,safeURL,representatives,representativeSources,aggregateCandles,displayCandles,candleLabel,candleStatus};if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});else boot();
 }());

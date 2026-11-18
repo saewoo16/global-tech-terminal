@@ -111,5 +111,5 @@ const count=mounted.length;a.mountProviderPanel({code:'UNKNOWN'});assert.equal(m
 a.setPeriod('day');a.mountProviderPanel({code:'XLK'});assert.equal(mounted.length,count);
 assert.match(widgetTarget.textContent,/보관 장중/);
 assert.match(raw,/마지막 실제 관측/);
-assert.ok(raw.indexOf('providerPanel(f)}<div class="etf-note"')<raw.indexOf('id="us-etf-plot" class="etf-plot"'));
+assert.ok(raw.indexOf('id="us-etf-plot" class="etf-plot"')<raw.indexOf('${providerPanel(f)}'));
 console.log('PASS automatic tab-scoped vendor mounting, D/W/M mapping, isolation, native dated fallback, no automatic intraday vendor.');

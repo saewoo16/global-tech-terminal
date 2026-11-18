@@ -20,5 +20,5 @@ range.onclick();assert.match(html,/data-etf-period="6" class="active"/);candles.
 window.setTestState({funds:[f('0148J0','2026-11-18')]},'0148J0');window.testDetail();
 assert.match(html,/종가 기준 2026-11-18/);assert.equal((html.match(/id="etf-plot"/g)||[]).length,1);
 assert.doesNotMatch(read('index.html'),/data-etf-today=|etf-today-note/);
-assert.match(read('index.html'),/korean-etf\.js\?v=20261118-october-single-chart/);
+assert.match(read('index.html'),/korean-etf\.js\?v=20261119-october-chart/);
 console.log('PASS one selected-fund continuous chart; actual archive dates; range and D/W/M controls; no duplicate day candle or quick picker.');

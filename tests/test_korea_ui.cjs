@@ -134,16 +134,18 @@ await test('all percentage fields preserve existing fractional display',()=>{api
 await test('brief money and index tokens round without rewriting percentages, dates, links or source records',()=>{const input='원/달러 15:30 기준 1,331.40원, 13.20원 하락. US$101.41(+3.51%), US$109.86(+3.72%). 나스닥종합은 26,140.03(-2.1%). 2026-10-17, 10/19, 000660.KS, 7.24%, 0.97, v1.23, https://example.com/US$101.41';const expected='원/달러 15:30 기준 1,331원, 13원 하락. US$101(+3.51%), US$110(+3.72%). 나스닥종합은 26,140(-2.1%). 2026-10-17, 10/19, 000660.KS, 7.24%, 0.97, v1.23, https://example.com/US$101.41';assert.equal(api.briefDisplayText(input),expected);assert.equal(api.briefDisplayText('US$101.41, US$109.86. 1,331.40원으로 마감.'),'US$101, US$110. 1,331원으로 마감.');assert.equal(api.briefDisplayText('KOSPI 2.05% · -0.49원 · +0.49원'), 'KOSPI 2.05% · 0원 · 0원');const before=JSON.stringify({data,archive}),priorBrief=context.window.TerminalBriefingData;context.window.TerminalBriefingData={entries:archive.entries.filter(e=>e.market==='KR'&&e.date==='2026-10-16'),failed:false};const h=api.closeSection();assert(h.includes('1,331원'));assert(h.includes('13원 하락'));assert(h.includes('US$101(+3.51%)'));assert(h.includes('7.24%'));context.window.TerminalBriefingData=priorBrief;api.render();assert.equal(JSON.stringify({data,archive}),before);for(const source of data.sources)if(api.safe(source.url))assert(el('kr-content').innerHTML.includes('href="'+api.esc(source.url)+'"'))});
 await test('period totals render above both unchanged daily line charts',()=>{api.render();const h=el('kr-content').innerHTML;for(const market of ['KOSPI','KOSDAQ']){assert(h.indexOf('data-kr-flow-totals="'+market+'"')<h.indexOf('data-kr-chart="flow-'+market+'"'));assert(h.includes('21/21개 관측 확인'))}});
 await test('treemap rectangle area exactly tracks capitalization',()=>{const rows=[{name:'A',marketCapKRW:70},{name:'B',marketCapKRW:20},{name:'C',marketCapKRW:10}];const cells=api.treemap(rows);assert.equal(cells.length,3);for(const cell of cells){assert(Math.abs(cell.width*cell.height/10000-cell.marketCapKRW/100)<1e-10);assert(cell.width>0&&cell.height>0);assert(cell.x>=0&&cell.y>=0);assert(cell.x+cell.width<100.00001&&cell.y+cell.height<100.00001)}assert.notEqual(api.heatColor(-2),api.heatColor(2))});
-await test('current heatmap is a seven-name equal-area sample with a table and closed historical map',()=>{
+await test('October-style cap-weighted market maps are visible and newer seven-name trades are separately dated',()=>{
  const current=JSON.parse(fs.readFileSync(root+'/data/korea-close-overlay.json')).entry,saved=context.window.TerminalBriefingData;
  context.window.TerminalBriefingData={entries:[current,...archive.entries]};api.render();
  const h=el('kr-content').innerHTML,old=api.heatmapsSection(),part=h.split('id="kr-heatmaps"')[1].split('id="kr-close"')[0];
  assert(h.indexOf('id="kr-heatmaps"')<h.indexOf('id="kr-close"'));
- const [now,archived]=part.split('<details class="kr-history-disclosure" id="kr-heat-archive-disclosure">');
- assert(now.includes('2026-11-18 정규장 종가 · 확인한 7종목만 표시'));assert(!now.includes('data-kr-heat-market')&&!now.includes(data.heatmaps.asOf));
- assert.equal((now.match(/kr-spot-heat-tile/g)||[]).length,7);assert.equal((now.match(/<th scope="row">/g)||[]).length,7);assert(now.includes('−5% 이하')&&now.includes('+20.06%')&&now.includes('-14.56%'));
+ const [archived,now]=part.split('<details class="kr-history-disclosure" id="kr-heat-sample-disclosure">');
+ assert(archived.includes('data-kr-heat-date="'+data.heatmaps.asOf+'"'));
+ assert(archived.includes('2026-11-18 시장 전체 히트맵 미확인')&&archived.includes(data.heatmaps.asOf+' 기준 참고용'));
+ assert(archived.includes('data-kr-heat-market="KOSPI"')&&archived.includes('data-kr-heat-market="KOSDAQ"')&&!archived.includes('kr-spot-heat-tile'));
+ assert(now.includes('2026-11-18 정규장 등락 · 확인된 7종목')&&!now.includes('data-kr-heat-market'));
+ assert.equal((now.match(/kr-spot-heat-tile/g)||[]).length,7);assert.equal((now.match(/<th scope="row">/g)||[]).length,7);assert(now.includes('+20.06%')&&now.includes('-14.56%'));
  assert(h.includes('data-kr-official-liquidity="2026-11-17"')&&h.includes('866,228')&&h.includes('263,339'));assert(h.indexOf('data-kr-official-liquidity')<h.indexOf('data-kr-chart="deposits"'));
- assert(archived.includes(data.heatmaps.asOf)&&archived.includes('data-kr-heat-market="KOSPI"'));
  for(const market of ['KOSPI','KOSDAQ'])for(const row of data.heatmaps.markets[market].rows)assert(old.includes(api.esc(row.name)));
  assert(old.includes('색 = 전 거래일 종가 대비'));
  assert(h.includes('2026-11-18 기준 테마 수급을 확인하지 못했습니다'));assert(!h.includes('class="kr-table kr-theme-table"'));
@@ -153,6 +155,18 @@ await test('current heatmap is a seven-name equal-area sample with a table and c
  for(const no of ['AKR20261118138600008','AKR20261118138700008','AKR20261118138800008','AKR20261118138900008'])assert(h.includes(no));
 
  context.window.TerminalBriefingData=saved;api.render();
+});
+await test('a limited map or future date is never promoted as the market-wide map',()=>{
+ const saved=context.window.TerminalBriefingData, latest=JSON.parse(fs.readFileSync(root+'/data/korea-close-overlay.json')).entry;
+ context.window.TerminalBriefingData={entries:[latest,...archive.entries]};
+ for(const kind of ['limited','future']){
+  const copy=structuredClone(data),map=copy.heatmaps;
+  if(kind==='limited'){map.markets.KOSPI.coverage.isFullUniverseAttempt=false;}
+  else{map.asOf='2026-11-19';for(const market of Object.values(map.markets))market.asOf=map.asOf;}
+  api.setData(copy);api.render();const part=el('kr-content').innerHTML.split('id="kr-heatmaps"')[1].split('id="kr-close"')[0];
+  assert(part.includes('2026-11-18 시장 전체 히트맵 미확인')&&!part.includes('data-kr-heat-market='));
+ }
+ context.window.TerminalBriefingData=saved;api.setData(data);api.render();
 });
 await test('heatmap defaults are explicit top30 with true cap coverage and complete numeric tables',()=>{for(const market of ['KOSPI','KOSDAQ']){const view=api.heatmapView(market);assert.equal(view.rows.length,30);assert.equal(view.all.length,data.heatmaps.markets[market].rows.length);assert.equal(view.label,'시총 상위 30종목');const total=view.all.reduce((s,r)=>s+r.marketCapKRW,0),shown=view.rows.reduce((s,r)=>s+r.marketCapKRW,0);assert(Math.abs(view.coverage-shown/total*100)<1e-10)}const h=api.heatmapsSection();assert.equal((h.match(/data-kr-heat-detail=/g)||[]).length,60);for(const market of ['KOSPI','KOSDAQ'])assert(h.includes('검증 종목 전체 '+data.heatmaps.markets[market].rows.length+'개'));assert(h.includes('거래정지'));assert(h.includes('시세 검증 제외'));assert(h.includes('표시 범위 안에서 비교'))});
 await test('top100, full and 30-stock rank zoom cover every stock without changing values',()=>{for(const market of ['KOSPI','KOSDAQ']){const expected=api.heatmapView(market).all;api.heatState[market].scope='100';assert.equal(api.heatmapView(market).rows.length,100);api.heatState[market].scope='all';assert.equal(api.heatmapView(market).rows.length,expected.length);assert.equal(api.heatmapView(market).coverage,100);const seen=[];for(let start=0;start<expected.length;start+=30){api.heatState[market].scope=start?'range-'+start:'30';seen.push(...api.heatmapView(market).rows)}assert.deepEqual(seen,expected);api.heatState[market].scope='30'}api.heatState.KOSPI.scope='100';assert.equal(api.heatmapView('KOSDAQ').rows.length,30);api.heatState.KOSPI.scope='30'});
