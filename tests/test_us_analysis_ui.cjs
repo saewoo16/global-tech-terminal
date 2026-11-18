@@ -82,5 +82,32 @@ await test('a current close overlay preserves the archive and rejects an older o
   }
   assert.equal(JSON.stringify(data),prior);
 });
+await test('latest overlay renders before a stalled archive and survives its network error',async()=>{
+  const current=JSON.parse(fs.readFileSync(root+'/data/us-analysis-latest.json','utf8'));
+  context.fetchOverlay=async()=>({ok:true,json:async()=>current});
+  let unblock;
+  context.fetchReport=()=>new Promise(resolve=>{unblock=resolve});
+  context.fetchMaps=async()=>{assert.fail('Unused close-map archive must not delay FINVIZ or latest report');};
+  api.setData(null);
+  const pending=api.load();
+  await new Promise(resolve=>setImmediate(resolve));
+  assert.equal(typeof unblock,'function','Archive still loads independently');
+  const html=el('us-content').innerHTML;
+  assert(html.includes('미국 현지 '+current.entry.date+' 완료 거래일'));
+  assert(html.includes('id="us-indices"'));
+  assert(html.includes('id="us-heatmap"'));
+  unblock({ok:false,status:503});
+  await pending;
+  assert.equal(el('us-content').innerHTML,html);
+});
+await test('a genuinely newer archive still wins over an older sidecar',async()=>{
+  const overlay=JSON.parse(fs.readFileSync(root+'/data/us-analysis-latest.json','utf8'));
+  const later=structuredClone(overlay.entry);
+  const d=new Date(later.date+'T12:00:00Z');d.setUTCDate(d.getUTCDate()+1);later.date=d.toISOString().slice(0,10);
+  context.fetchOverlay=async()=>({ok:true,json:async()=>overlay});
+  context.fetchReport=async()=>({ok:true,json:async()=>({...data,entries:[later,...data.entries]})});
+  await api.load();
+  assert(el('us-content').innerHTML.includes('미국 현지 '+later.date+' 완료 거래일'));
+});
 console.log(count+' US analysis UI checks passed');
 })();

@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "session": "2026-11-17",
+  "verifiedAt": "2026-11-18T01:21:07+00:00",
+  "officialPolicy": {
+    "targetBps": [
+      375,
+      400
+    ],
+    "decisionDate": "2026-10-28",
+    "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+    "liveProbabilitiesUrl": "https://www.cmegroup.com/trading/interest-rates/countdown-to-fomc.html"
+  },
+  "rows": [
+    {
+      "id": "UST2Y",
+      "quoteLabel": "미 재무부 2년 국채 파 수익률",
+      "value": 4.8,
+      "unit": "%",
+      "asOf": "2026-11-17",
+      "sourceName": "미 재무부",
+      "sourceUrl": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202611&type=daily_treasury_yield_curve",
+      "note": "공식 일별 고정만기 파 수익률. OTC 차트와 산출 기준이 다릅니다.",
+      "precision": 2,
+      "frequency": "daily",
+      "status": "verified"
+    },
+    {
+      "id": "UST10Y",
+      "quoteLabel": "미 재무부 10년 국채 파 수익률",
+      "value": 5.1,
+      "unit": "%",
+      "asOf": "2026-11-17",
+      "sourceName": "미 재무부",
+      "sourceUrl": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202611&type=daily_treasury_yield_curve",
+      "note": "공식 일별 고정만기 파 수익률. OTC 차트와 산출 기준이 다릅니다.",
+      "precision": 2,
+      "frequency": "daily",
+      "status": "verified"
+    },
+    {
+      "id": "UST30Y",
+      "quoteLabel": "미 재무부 30년 국채 파 수익률",
+      "value": 5.46,
+      "unit": "%",
+      "asOf": "2026-11-17",
+      "sourceName": "미 재무부",
+      "sourceUrl": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202611&type=daily_treasury_yield_curve",
+      "note": "공식 일별 고정만기 파 수익률. OTC 차트와 산출 기준이 다릅니다.",
+      "precision": 2,
+      "frequency": "daily",
+      "status": "verified"
+    },
+    {
+      "id": "USDJPY",
+      "quoteLabel": "달러/엔 · 연준 H.10",
+      "value": 159.93,
+      "unit": "엔/달러",
+      "asOf": "2026-11-13",
+      "sourceName": "연준 H.10",
+      "sourceUrl": "https://www.federalreserve.gov/releases/h10/current/",
+      "note": "뉴욕 정오 매입률. 11월 16일 주간 발표분이며 11월 17일 정규장 종가가 아닙니다.",
+      "precision": 2,
+      "frequency": "daily",
+      "status": "verified"
+    },
+    {
+      "id": "USDKRW",
+      "quoteLabel": "달러/원 · 연준 H.10",
+      "value": 1336.58,
+      "unit": "원/달러",
+      "asOf": "2026-11-13",
+      "sourceName": "연준 H.10",
+      "sourceUrl": "https://www.federalreserve.gov/releases/h10/current/",
+      "note": "뉴욕 정오 매입률. 11월 16일 주간 발표분이며 서울 외환시장 종가와 다릅니다.",
+      "precision": 2,
+      "frequency": "daily",
+      "status": "verified"
+    },
+    {
+      "id": "USD_BROAD",
+      "quoteLabel": "명목 광의 달러지수 · 연준 H.10",
+      "value": 122.6503,
+      "unit": "지수 (2006년 1월=100)",
+      "asOf": "2026-11-13",
+      "sourceName": "연준 H.10 / FRED",
+      "sourceUrl": "https://fred.stlouisfed.org/series/DTWEXBGS",
+      "note": "교역가중 광의 지수이며 ICE DXY와 다른 지표입니다.",
+      "precision": 4,
+      "frequency": "daily",
+      "status": "verified"
+    },
+    {
+      "id": "HQMCB10YRP",
+      "quoteLabel": "10년 우량 회사채 파 수익률",
+      "value": 5.92,
+      "unit": "%",
+      "asOf": "2026-10-01",
+      "sourceName": "미 재무부 / FRED",
+      "sourceUrl": "https://fred.stlouisfed.org/series/HQMCB10YRP",
+      "note": "월간 관측값; 11월 17일 회사채 시장 수익률이 아닙니다.",
+      "precision": 2,
+      "frequency": "monthly",
+      "status": "verified"
+    },
+    {
+      "id": "M1SL",
+      "quoteLabel": "미국 M1 통화량",
+      "value": 20061.2,
+      "unit": "십억 달러",
+      "asOf": "2026-09-01",
+      "sourceName": "연준 H.6",
+      "sourceUrl": "https://www.federalreserve.gov/releases/h6/current/",
+      "note": "월간 계절조정. 10월 27일 발표분이며 11월 17일 관측이 아닙니다.",
+      "precision": 1,
+      "frequency": "monthly",
+      "status": "verified"
+    },
+    {
+      "id": "M2SL",
+      "quoteLabel": "미국 M2 통화량",
+      "value": 23413.9,
+      "unit": "십억 달러",
+      "asOf": "2026-09-01",
+      "sourceName": "연준 H.6",
+      "sourceUrl": "https://www.federalreserve.gov/releases/h6/current/",
+      "note": "월간 계절조정. 10월 27일 발표분이며 11월 17일 관측이 아닙니다.",
+      "precision": 1,
+      "frequency": "monthly",
+      "status": "verified"
+    },
+    {
+      "id": "WTI_FUTURES",
+      "quoteLabel": "WTI 가격 · 원본 링크",
+      "value": null,
+      "unit": null,
+      "asOf": null,
+      "sourceName": "EIA 현물",
+      "sourceUrl": "https://www.eia.gov/dnav/pet/hist/RWTCD.htm",
+      "note": "EIA 현물 시계열은 11월 11일 관측까지 공표(다음 예정 공표 11월 18일). 외부 공급사 수치와 선물·CFD 호가는 이 탭에서 전재하지 않습니다.",
+      "precision": 2,
+      "frequency": "daily",
+      "status": "link_only"
+    },
+    {
+      "id": "BRENT_FUTURES",
+      "quoteLabel": "Brent 가격 · 원본 링크",
+      "value": null,
+      "unit": null,
+      "asOf": null,
+      "sourceName": "EIA 현물",
+      "sourceUrl": "https://www.eia.gov/dnav/pet/hist/RBRTED.htm",
+      "note": "EIA 현물 시계열은 11월 11일 관측까지 공표(다음 예정 공표 11월 18일). 외부 공급사 수치와 선물·CFD 호가는 이 탭에서 전재하지 않습니다.",
+      "precision": 2,
+      "frequency": "daily",
+      "status": "link_only"
+    },
+    {
+      "id": "DXY",
+      "quoteLabel": "ICE 달러지수(DXY) · 원본 링크",
+      "value": null,
+      "unit": null,
+      "asOf": null,
+      "sourceName": "ICE",
+      "sourceUrl": "https://www.ice.com/products/194/US-Dollar-Index-Futures",
+      "note": "ICE DXY 숫자는 전재하지 않습니다. 아래 연준 광의 달러지수는 별도 지표입니다.",
+      "precision": 2,
+      "frequency": "daily",
+      "status": "link_only"
+    }
+  ]
+}

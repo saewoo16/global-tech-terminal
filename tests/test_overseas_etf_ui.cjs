@@ -1,6 +1,6 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
 const root=path.resolve(__dirname,'..'),raw=fs.readFileSync(root+'/assets/overseas-etf.js','utf8'),html=fs.readFileSync(root+'/index.html','utf8');
-const ctx={URL,Date,Number,String,Math,Array,console,document:{readyState:'loading',addEventListener(){}},window:{}};vm.createContext(ctx);vm.runInContext(raw.replace('window.TerminalOverseasETF={returns,series,safeURL,representatives,representativeSources}','window.TerminalOverseasETF={returns,series,safeURL,representatives,representativeSources,selectionSources,detail,setSelected:s=>selected=s,esc,dailyReturn,listReturn,filtered,setData:p=>payload=p,setSort:s=>sort=s,setPeriod:p=>period=p}'),ctx);const a=ctx.window.TerminalOverseasETF;
+const ctx={URL,Date,Number,String,Math,Array,console,document:{readyState:'loading',addEventListener(){}},window:{}};vm.createContext(ctx);vm.runInContext(raw.replace('window.TerminalOverseasETF={returns,series,safeURL,representatives,representativeSources}','window.TerminalOverseasETF={returns,series,safeURL,representatives,representativeSources,selectionSources,detail,setSelected:s=>selected=s,esc,dailyReturn,listReturn,filtered,sessionOf,freshness,statusLabel,widgetSymbol,widgetProviderLink,providerPanel,mountProviderPanel,setData:p=>payload=p,setSort:s=>sort=s,setPeriod:p=>period=p}'),ctx);const a=ctx.window.TerminalOverseasETF;
 assert(html.includes('id="overseas-etf-tab"'));assert(html.includes('해외 업종별/테마별 차트'));assert(html.includes('id="overseas-etf-panel"'));
 assert.equal(a.safeURL('javascript:alert(1)'),'#');assert.equal(a.safeURL('https://example.com/a'),'https://example.com/a');assert.equal(a.esc('<script>'),'&lt;script&gt;');
 const f={daily:[{date:'2026-07-20',open:90,high:110,low:80,close:100},{date:'2026-09-18',close:120},{date:'2026-10-20',close:132}],intraday:{date:'2026-10-20',points:[{time:'09:00',price:130},{time:'09:03',price:132}]}};
@@ -27,3 +27,34 @@ const snapshot=JSON.parse(fs.readFileSync(root+'/data/overseas_etf_charts.json',
 for(const fund of snapshot.funds){const reps=a.representatives(fund);assert(reps.startsWith('<span class="etf-representatives">('));assert.equal(reps.split(' / ').length,3);const sorted=[...fund.holdings.top5].sort((a,b)=>b.weightPct-a.weightPct).slice(0,3);for(const h of sorted)assert(reps.includes(a.esc(h.name||h.ticker)));}
 console.log('PASS all 38 overseas ETFs render exactly three actual-weight-ranked holdings; missing weights never fall back to market cap');
 assert(raw.includes("${esc(f.code)} (${esc(f.name)})"));
+
+const verified={entry:{date:'2026-11-17',sessionStatus:'closed',sessionVerification:{exchangeDate:'2026-11-17'}}};
+assert.equal(a.sessionOf(verified),'2026-11-17');
+assert.equal(a.sessionOf({entry:{...verified.entry,sessionStatus:'open'}}),null);
+assert.equal(a.sessionOf({entry:{...verified.entry,sessionVerification:{exchangeDate:'2026-11-16'}}}),null);
+assert.deepEqual({...a.freshness(snapshot.funds,a.sessionOf(verified))},{target:'2026-11-17',latest:'2026-11-13',count:38,current:0});
+assert(a.statusLabel(snapshot.funds,a.sessionOf(verified)).includes('0/38'));
+assert(a.statusLabel(snapshot.funds,null).includes('대조 미확인'));
+assert(a.statusLabel(snapshot.funds,'2026-11-13').includes('38/38'));
+assert(html.includes('https://www.ssga.com/us/en/institutional/resources/sector-tracker'));
+console.log('PASS closed-session provenance, actual per-fund staleness, historical label and direct issuer link');
+
+const approved=new Set(snapshot.funds.map(f=>a.widgetSymbol(f.code)));
+assert.equal(approved.size,38);
+assert.equal(a.widgetSymbol('XLK'),'AMEX:XLK'); assert.equal(a.widgetSymbol('SMH'),'NASDAQ:SMH'); assert.equal(a.widgetSymbol('IGV'),'CBOE:IGV');
+assert.equal(a.widgetProviderLink(a.widgetSymbol('UNKNOWN')),null);
+for(const f of snapshot.funds){const part=a.providerPanel(f);assert.match(part,/TradingView 차트 열기/);assert.match(part,/지연 시세/);assert.doesNotMatch(part,/<iframe|<script|s3\.tradingview/);}
+assert.equal(a.providerPanel({code:'<script>'}),'');
+const host=fs.readFileSync(root+'/assets/overseas-etf-widget.html','utf8');
+const script=fs.readFileSync(root+'/assets/overseas-etf-widget.js','utf8');
+assert(host.includes('Content-Security-Policy')); assert(!host.includes('allow-same-origin'));
+const mk=()=>({children:[],append(...c){this.children.push(...c);}});
+const elems={tv:mk(),credit:mk(),chart:mk()}, fakeDoc={getElementById:e=>elems[e],createElement:e=>({...mk(),tag:e})};
+vm.runInNewContext(script,{URLSearchParams,location:{search:'?symbol=AMEX%3AXLK'},document:fakeDoc});
+assert.equal(elems.tv.children.length,1);
+assert.equal(elems.tv.children[0].src,'https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js');
+assert.deepEqual(JSON.parse(elems.tv.children[0].textContent).dateRanges,['1d|1','1w|60','1m|1D']);
+assert.equal(elems.credit.children[0].href,'https://www.tradingview.com/symbols/AMEX-XLK/');
+vm.runInNewContext(script,{URLSearchParams,location:{search:'?symbol=AMEX%3AUNKWN'},document:fakeDoc});
+assert.equal(elems.tv.children.length,1);
+console.log('PASS all 38 canonical links, no default third-party mount, isolated and branded widget with fixed 1D/1W/1M ranges');

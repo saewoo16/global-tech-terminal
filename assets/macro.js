@@ -66,16 +66,60 @@ function fedwatchHTML(d){
  conditionalHTML(d)+'<p class="fedwatch-caveat">표는 현재 대비 누적 목표금리 수준의 Aggregated 확률이며 각 회의 한 번의 인상 확률이 아닙니다. 전일·전주·전월 변화는 다음 회의에 한정해 CME Current 비교표의 동일한 한 자리 소수점 수치를 사용합니다. 주말 비교 기준일은 CME 표시 날짜를 그대로 따릅니다.</p>'+
  '<p class="fedwatch-caveat">선물가격에서 계산한 시장 내재 확률이며 연준의 약속·예측이 아닙니다. CME 공개 화면 검증 스냅샷으로 자동 실시간 갱신되지 않습니다. '+(d.providerAsOf?'CME Current 화면 시각 '+stamp(d.providerAsOf)+'; 위 Aggregated 표는 별도 시각이 표시되지 않아 검증 시각을 사용합니다. ':'')+(d.providerAsOfLabel&&!d.providerAsOf?'CME Current 원문 시각 '+esc(d.providerAsOfLabel)+' (CT 일광절약 종료일 중복시각: UTC 오프셋 미확인). ':'')+'<a href="'+esc(safeURL(d.methodologyUrl))+'" target="_blank" rel="noopener noreferrer">CME 산출 방식 ↗</a></p></div>';
 }
+const officialCME='https://www.cmegroup.com/trading/interest-rates/countdown-to-fomc.html';
+const officialHosts={
+ UST2Y:'home.treasury.gov',UST10Y:'home.treasury.gov',UST30Y:'home.treasury.gov',
+ USDJPY:'www.federalreserve.gov',USDKRW:'www.federalreserve.gov',USD_BROAD:'fred.stlouisfed.org',
+ HQMCB10YRP:'fred.stlouisfed.org',M1SL:'www.federalreserve.gov',M2SL:'www.federalreserve.gov',
+ WTI_FUTURES:'www.eia.gov',BRENT_FUTURES:'www.eia.gov',DXY:'www.ice.com'
+};
+const validDay=x=>typeof x==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(x)&&Number.isFinite(Date.parse(x))&&new Date(x).toISOString().slice(0,10)===x;
+const officialHost=(url,host)=>{try{const u=new URL(url);return u.protocol==='https:'&&u.hostname===host&&!u.username&&!u.password&&!u.port;}catch(_){return false;}};
+function validOfficial(d){
+ if(d?.schemaVersion!==1||!validDay(d.session)||!Number.isFinite(Date.parse(d.verifiedAt))||!Array.isArray(d.rows)||d.rows.length!==Object.keys(officialHosts).length)return false;
+ const ids=new Set(d.rows.map(r=>r?.id));if(ids.size!==d.rows.length)return false;
+ if(!d.rows.every(r=>Object.prototype.hasOwnProperty.call(officialHosts,r?.id)&&officialHost(r.sourceUrl,officialHosts[r.id])&&typeof r.quoteLabel==='string'&&typeof r.note==='string'&&typeof r.sourceName==='string'&&
+    (['WTI_FUTURES','BRENT_FUTURES','DXY'].includes(r.id)?r.status==='link_only'&&r.value===null&&r.asOf===null:
+     r.status==='verified'&&finite(r.value)&&r.value>0&&validDay(r.asOf)&&r.asOf<=d.session&&['monthly','daily'].includes(r.frequency)&&Number.isInteger(r.precision)&&r.precision>=0&&r.precision<=4)))return false;
+ const p=d.officialPolicy;
+ return validDay(p?.decisionDate)&&p.decisionDate<=d.session&&p.liveProbabilitiesUrl===officialCME&&officialHost(p.sourceUrl,'www.federalreserve.gov')&&Array.isArray(p.targetBps)&&p.targetBps.length===2&&p.targetBps.every(x=>Number.isInteger(x)&&x>=0&&x<=3000)&&p.targetBps[0]<p.targetBps[1];
+}
+function officialLink(url,label){return '<a href="'+esc(safeURL(url))+'" target="_blank" rel="noopener noreferrer">'+esc(label)+' ↗</a>';}
+function officialRow(r){
+ const value=r.status==='verified'?'<strong>'+num(r.value,r.precision)+'</strong><span class="quote-unit">'+esc(r.unit)+'</span><span class="quote-asof">'+(r.frequency==='monthly'?'관측월 '+esc(r.asOf.slice(0,7)):'관측일 '+esc(r.asOf))+' · '+officialLink(r.sourceUrl,r.sourceName)+'</span>':'<span class="quote-asof">'+officialLink(r.sourceUrl,r.sourceName)+'</span>';
+ return '<span class="quote-label">'+esc(r.quoteLabel)+'</span>'+value+'<span class="quote-note">'+esc(r.note)+'</span>';
+}
+function officialPolicyHTML(d){
+ const link=officialLink(officialCME,'CME FedWatch 최신 원본');
+ if(!validOfficial(d))return '<p class="market-note">공식 수치를 불러오지 못했습니다. '+link+'</p>';
+ const p=d.officialPolicy,m=Object.fromEntries(d.rows.map(r=>[r.id,r]));
+ return '<p class="fedwatch-meta">미국 '+esc(d.session)+' ET 세션 참고 자료 · 확인 '+stamp(d.verifiedAt)+'</p>'+
+  '<p class="fedwatch-meta">연방기금 목표 범위 <strong>'+range(p.targetBps)+'</strong> · '+esc(p.decisionDate)+' 결정 · '+officialLink(p.sourceUrl,'연준 성명')+'</p>'+
+  '<p class="fedwatch-meta">미 재무부 파 수익률 · 2년 '+percent(m.UST2Y.value)+' / 10년 '+percent(m.UST10Y.value)+' / 30년 '+percent(m.UST30Y.value)+' · '+esc(m.UST10Y.asOf)+' 관측 · '+officialLink(m.UST10Y.sourceUrl,'미 재무부')+'</p>'+
+  '<p class="fedwatch-caveat">CME 확률은 이곳에 재게시하지 않습니다. '+link+'</p>';
+}
+function renderOfficial(d){
+ const ok=validOfficial(d);const map=Object.fromEntries(ok?d.rows.map(r=>[r.id,r]):[]);
+ document.querySelectorAll('[data-macro-quote]').forEach(el=>{
+   const id=el.dataset.macroQuote, r=map[id];
+   el.innerHTML=r?officialRow(r)+(id==='DXY'?officialRow(map.USD_BROAD):''):'<span class="quote-label">공식 수치 미확인 · 원본 링크를 이용하세요.</span>';
+ });
+ document.querySelectorAll('.rate-card[data-series]').forEach(card=>{
+   if(!['HQMCB10YRP','M1SL','M2SL'].includes(card.dataset.series))return;
+   let el=card.querySelector('.macro-fred-value');
+   if(!el){el=document.createElement('div');el.className='macro-fred-value rate-source';card.querySelector('.rate-head').after(el);}
+   el.innerHTML=map[card.dataset.series]?officialRow(map[card.dataset.series]):'<span>공식 수치 미확인</span>';
+ });
+ const panel=$('fedwatch-content');if(panel)panel.innerHTML=officialPolicyHTML(d);
+}
 let lastLoad=0;
 async function load(){
  if(window.location.hash.split('/')[0]!=='#rates'||Date.now()-lastLoad<60000)return;
  lastLoad=Date.now();
- const results=await Promise.allSettled(['macro_quotes','fedwatch'].map(n=>fetch('./data/'+n+'.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error(r.status);return r.json();})));
- if(results[0].status==='fulfilled')renderQuotes(results[0].value);
- else document.querySelectorAll('[data-macro-quote]').forEach(el=>el.innerHTML='<span>수치 파일을 불러오지 못했습니다. 원본 링크를 확인해 주세요.</span>');
- if($('fedwatch-content'))$('fedwatch-content').innerHTML=results[1].status==='fulfilled'?fedwatchHTML(results[1].value):'<p class="market-note">자료를 불러오지 못했습니다. CME 원본을 확인해 주세요.</p>';
+ try{const r=await fetch('./data/macro-official-latest.json',{cache:'no-store'});if(!r.ok)throw Error(r.status);renderOfficial(await r.json());}
+ catch(_){lastLoad=0;renderOfficial(null);}
 }
 function boot(){window.addEventListener('hashchange',load);document.addEventListener('visibilitychange',()=>{if(!document.hidden)load();});load();}
-window.TerminalMacro={direction,validFedwatch,quoteHTML,fedwatchHTML,safeURL,range};
+window.TerminalMacro={direction,validFedwatch,quoteHTML,fedwatchHTML,safeURL,range,validOfficial,officialRow,officialPolicyHTML,renderOfficial,load};
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});else boot();
 }());
