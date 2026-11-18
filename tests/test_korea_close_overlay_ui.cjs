@@ -25,8 +25,11 @@ vm.runInContext(read('assets/korea.js').replace('  if(document.readyState', '  w
   assert(close.includes('KOREA MARKET CLOSE · '+entry.date));
   assert(close.includes('오늘은 양 시장 종가와 마감 해설만 반영'));
   assert(fresh.includes('최신 시황 <strong>'+entry.date+'</strong>'));
-  assert(fresh.includes('시장 수급 <strong>'+korea.asOf+'</strong>'));
-  assert(fresh.includes('히트맵 <strong>'+korea.heatmaps.asOf+'</strong>'));
+  assert(fresh.includes('당일 수급 <strong>'+entry.date+' · 잠정</strong>'));
+  assert(fresh.includes('수급 추이 <strong>'+korea.asOf+'</strong>'));
+  assert.notEqual(entry.date,korea.asOf);
+  assert(fresh.includes('히트맵 <strong>미확인</strong>'));
+  assert(!fresh.includes('히트맵 <strong>'+korea.heatmaps.asOf+'</strong>'));
   assert.equal(k.earningsSection(),'');
   assert.deepEqual(entry.indices.map(x=>x.name),['KOSPI','KOSDAQ']);
   assert(etf.funds.every(f=>f.daily.at(-1).date===etf.asOf));
