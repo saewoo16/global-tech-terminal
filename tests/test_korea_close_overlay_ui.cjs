@@ -36,7 +36,7 @@ vm.runInContext(read('assets/korea.js').replace('  if(document.readyState', '  w
   assert.equal(el('kr-asof').innerHTML,head,'a later non-close archive date does not certify a different market close');
   k.setData(korea);
 
-  assert(fresh.includes('히트맵 <strong>'+korea.heatmaps.asOf+' · 이전일 참고</strong>'));
+  assert(fresh.includes('히트맵 <strong>'+entry.date+' · 선별 12종목</strong>'));
   assert(!fresh.includes('히트맵 <strong>'+korea.heatmaps.asOf+'</strong>'));
   assert.equal(k.earningsSection(),'');
   assert.deepEqual(entry.indices.map(x=>x.name),['KOSPI','KOSDAQ']);
