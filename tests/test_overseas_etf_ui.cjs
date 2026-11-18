@@ -1,6 +1,6 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
 const root=path.resolve(__dirname,'..'),raw=fs.readFileSync(root+'/assets/overseas-etf.js','utf8'),html=fs.readFileSync(root+'/index.html','utf8');
-const ctx={URL,Date,Number,String,Math,Array,console,document:{readyState:'loading',addEventListener(){}},window:{}};vm.createContext(ctx);vm.runInContext(raw.replace('window.TerminalOverseasETF={returns,series,safeURL,representatives,representativeSources,aggregateCandles,displayCandles,candleLabel,candleStatus}','window.TerminalOverseasETF={returns,series,safeURL,representatives,representativeSources,selectionSources,detail,setSelected:s=>selected=s,esc,dailyReturn,listReturn,filtered,sessionOf,freshness,statusLabel,widgetSymbol,widgetProviderLink,providerPanel,mountProviderPanel,setData:p=>payload=p,setSort:s=>sort=s,setPeriod:p=>period=p}'),ctx);const a=ctx.window.TerminalOverseasETF;
+const ctx={URL,Date,Number,String,Math,Array,console,document:{readyState:'loading',addEventListener(){}},window:{}};vm.createContext(ctx);vm.runInContext(raw.replace('window.TerminalOverseasETF={returns,series,safeURL,representatives,representativeSources,aggregateCandles,displayCandles,candleLabel,candleStatus}','window.TerminalOverseasETF={returns,series,safeURL,representatives,representativeSources,selectionSources,detail,setSelected:s=>selected=s,esc,dailyReturn,listReturn,filtered,sessionOf,freshness,statusLabel,widgetSymbol,widgetProviderLink,providerPanel,mountProviderPanel,setData:p=>payload=p,setSort:s=>sort=s,setPeriod:p=>period=p,setCandle:x=>candleKind=x}'),ctx);const a=ctx.window.TerminalOverseasETF;
 assert(html.includes('id="overseas-etf-tab"'));assert(html.includes('해외 업종별/테마별 차트'));assert(html.includes('id="overseas-etf-panel"'));
 assert.equal(a.safeURL('javascript:alert(1)'),'#');assert.equal(a.safeURL('https://example.com/a'),'https://example.com/a');assert.equal(a.esc('<script>'),'&lt;script&gt;');
 const f={daily:[{date:'2026-07-20',open:90,high:110,low:80,close:100},{date:'2026-09-18',open:115,high:125,low:114,close:120},{date:'2026-10-20',open:125,high:134,low:124,close:132}],intraday:{date:'2026-10-20',points:[{time:'09:00',price:130},{time:'09:03',price:132}]}};
@@ -47,9 +47,10 @@ assert.equal(a.widgetProviderLink(a.widgetSymbol('UNKNOWN')),null);
 for(const f of snapshot.funds){
  const part=a.providerPanel(f),cboe=a.widgetSymbol(f.code).startsWith('CBOE:');
  assert.match(part,cboe?/Quotelinks ETF 캔들/:/TradingView ETF 캔들/);
- assert.match(part,cboe?/정규장 종가 기준/:/Cboe One 지연 시세/);
+ assert.match(part,cboe?/정규장 종가 기반/:/Cboe One 지연 시세/);
  assert.match(part,/최신 표시일은 차트에서 확인/);
- assert.equal((part.match(/data-us-etf-external-interval=/g)||[]).length,cboe?1:3);
+ assert.match(part,/id="us-etf-widget-view"/);
+ assert.doesNotMatch(part,/data-us-etf-external-interval=|<button/);
  assert.doesNotMatch(part,/<iframe|<script|s3\.tradingview/);
 }
 assert.equal(a.providerPanel({code:'<script>'}),'');
@@ -86,4 +87,29 @@ for(const code of ['IGV','IYT','ITA']){
 }
 const bad=widget('?symbol=AMEX%3AUNKWN');
 assert.equal(bad.tv.children.length+bad.ql.children.length,0);
-console.log('PASS all 38 external symbols, on-demand isolated D/W/M Advanced Chart, Quotelinks end-of-day fallback, and no unknown symbols');
+console.log('PASS all 38 external symbols, tab-isolated D/W/M Advanced Chart, Quotelinks end-of-day fallback, and no unknown symbols');
+
+const mounted=[];
+const widgetTarget={textContent:'',replaceChildren(...nodes){mounted.push(nodes);}};
+ctx.document.getElementById=id=>id==='us-etf-widget-view'?widgetTarget:null;
+ctx.document.createElement=tag=>({tag,style:{},setAttribute(key,val){this[key]=val;}});
+ctx.window.location={hash:'#explorer'};
+a.mountProviderPanel({code:'XLK'});assert.equal(mounted.length,0);
+ctx.window.location.hash='#overseas-etf';
+a.setPeriod('3');
+for(const [kind,v] of [['daily','D'],['weekly','W'],['monthly','M']]){
+ a.setCandle(kind);a.mountProviderPanel({code:'XLK'});
+ const last=mounted.at(-1)[0],url=new URL(last.src,'https://local.test');
+ assert.equal(last.tag,'iframe');assert.equal(url.origin,'https://local.test');
+ assert.equal(url.searchParams.get('symbol'),'AMEX:XLK');
+ assert.equal(url.searchParams.get('interval'),v);
+ assert.equal(last.referrerpolicy,'no-referrer');assert.doesNotMatch(last.sandbox,/allow-same-origin|forms|top-navigation/);
+}
+a.mountProviderPanel({code:'IGV'});
+assert.match(mounted.at(-1)[0].src,/symbol=CBOE%3AIGV/);
+const count=mounted.length;a.mountProviderPanel({code:'UNKNOWN'});assert.equal(mounted.length,count);
+a.setPeriod('day');a.mountProviderPanel({code:'XLK'});assert.equal(mounted.length,count);
+assert.match(widgetTarget.textContent,/보관 장중/);
+assert.match(raw,/마지막 실제 관측/);
+assert.ok(raw.indexOf('providerPanel(f)}<div class="etf-note"')<raw.indexOf('id="us-etf-plot" class="etf-plot"'));
+console.log('PASS automatic tab-scoped vendor mounting, D/W/M mapping, isolation, native dated fallback, no automatic intraday vendor.');
