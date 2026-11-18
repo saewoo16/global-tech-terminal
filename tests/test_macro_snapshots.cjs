@@ -40,7 +40,7 @@ const official=JSON.parse(fs.readFileSync(root+'/data/macro-official-latest.json
 assert(a.validOfficial(official));
 const policy=a.officialPolicyHTML(official);
 assert(policy.includes(official.session));assert(policy.includes('3.75–4.00%'));
-for(const n of ['4.80%','5.10%','5.46%'])assert(policy.includes(n),n);
+for(const n of ['4.80%','5.07%','5.41%'])assert(policy.includes(n),n);
 assert(policy.includes('CME 확률은 이곳에 재게시하지 않습니다'));
 assert(!policy.includes('<table'));
 const mapped=Object.fromEntries(official.rows.map(r=>[r.id,r]));
