@@ -25,8 +25,10 @@ vm.runInContext(read('assets/korean-etf.js').replace('function recentComparison(
 for(const [id,pct,close] of [['091160','+2.46%','89,755'],['0148J0','+9.97%','7,610'],['0177X0','+9.94%','7,795'],['466920','-0.57%','17,395']]){
  const card=common.window.etfNote({code:id,daily:[{date:'2026-11-13'}]});
  assert.ok(card.includes(pct)&&card.includes(close),id);
- assert.ok(card.match(/width="([0-9.]+)" height="16"/)[1]<=190,id+' fits chart scale');
+ assert.match(card,/2026-11-18 정규장 일봉/);
+ const body=card.match(/<rect x="59" y="([0-9.]+)" width="24" height="([0-9.]+)"/);
+ assert.ok(body&&Number(body[1])>=12&&Number(body[1])+Number(body[2])<=104,id+' candle body stays in the dated session range');
  assert.equal(common.window.etfNote({code:id,daily:[{date:'2026-11-18'}]}),'');
 }
 assert.equal(common.window.etfNote({code:'069500'}),'');
-console.log('PASS current report bars: six scoped provisional flows, 32 Taiwan two-observation charts, four dated Korean ETF closes, no stale replacement.');
+console.log('PASS current report bars: six scoped provisional flows, 32 Taiwan two-observation charts, four dated Korean ETF candles, no stale replacement.');
