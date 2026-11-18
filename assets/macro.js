@@ -98,11 +98,26 @@ function officialPolicyHTML(d){
   '<p class="fedwatch-meta">미 재무부 파 수익률 · 2년 '+percent(m.UST2Y.value)+' / 10년 '+percent(m.UST10Y.value)+' / 30년 '+percent(m.UST30Y.value)+' · '+esc(m.UST10Y.asOf)+' 관측 · '+officialLink(m.UST10Y.sourceUrl,'미 재무부')+'</p>'+
   '<p class="fedwatch-caveat">CME 확률은 이곳에 재게시하지 않습니다. '+link+'</p>';
 }
+// One dated local observation for each FX pair; neither replaces the Federal Reserve H.10 series.
+function latestLocalFxHTML(id,h10){
+ const prior=h10?'<details class="rate-source"><summary>연준 H.10 비교 자료 · '+esc(h10.asOf)+' 뉴욕 정오</summary>'+officialRow(h10)+'</details>':'';
+ if(id==='USDKRW'){
+   return '<span class="quote-label">달러/원 · 서울 주간장 마감</span><strong>'+num(1333.0,1)+'</strong><span class="quote-unit">원/달러</span>'+
+   '<span class="quote-asof">2026-11-18 15:30 KST · 전 거래일 주간장 대비 −5.2원 · '+officialLink('https://www.yna.co.kr/view/AKR20261118134300002','연합뉴스 마감 보도')+'</span>'+
+   '<span class="quote-note">서울 현물환 기준가. 뉴욕 정오 환율이나 야간장 종가와 다릅니다.</span>'+prior;
+ }
+ if(id==='USDJPY'){
+   return '<span class="quote-label">달러/엔 · 일본은행 도쿄 현물환</span><strong>'+num(159.34,2)+'–'+num(159.36,2)+'</strong><span class="quote-unit">엔/달러</span>'+
+   '<span class="quote-asof">2026-11-18 17:00 JST · 매수·매도 호가 · '+officialLink('https://www.boj.or.jp/statistics/market/forex/fxdaily/fxlist/fx261118.pdf','일본은행')+'</span>'+
+   '<span class="quote-note">도쿄 관측 시점의 두 호가입니다. 일중 고저 범위나 미국 종가가 아닙니다.</span>'+prior;
+ }
+ return null;
+}
 function renderOfficial(d){
  const ok=validOfficial(d);const map=Object.fromEntries(ok?d.rows.map(r=>[r.id,r]):[]);
  document.querySelectorAll('[data-macro-quote]').forEach(el=>{
    const id=el.dataset.macroQuote, r=map[id];
-   el.innerHTML=r?officialRow(r)+(id==='DXY'?officialRow(map.USD_BROAD):''):'<span class="quote-label">공식 수치 미확인 · 원본 링크를 이용하세요.</span>';
+   el.innerHTML=latestLocalFxHTML(id,r)??(r?officialRow(r)+(id==='DXY'?officialRow(map.USD_BROAD):''):'<span class="quote-label">공식 수치 미확인 · 원본 링크를 이용하세요.</span>');
  });
  document.querySelectorAll('.rate-card[data-series]').forEach(card=>{
    if(!['HQMCB10YRP','M1SL','M2SL'].includes(card.dataset.series))return;

@@ -28,7 +28,7 @@ vm.runInContext(read('assets/korea.js').replace('  if(document.readyState', '  w
   assert(fresh.includes('당일 수급 <strong>'+entry.date+' · 잠정</strong>'));
   assert(fresh.includes('수급 추이 <strong>'+korea.asOf+'</strong>'));
   assert.notEqual(entry.date,korea.asOf);
-  assert(fresh.includes('히트맵 <strong>미확인</strong>'));
+  assert(fresh.includes('히트맵 <strong>'+entry.date+' · 표본 7종목</strong>'));
   assert(!fresh.includes('히트맵 <strong>'+korea.heatmaps.asOf+'</strong>'));
   assert.equal(k.earningsSection(),'');
   assert.deepEqual(entry.indices.map(x=>x.name),['KOSPI','KOSDAQ']);

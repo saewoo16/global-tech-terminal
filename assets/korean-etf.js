@@ -99,6 +99,8 @@ const eodNotes=Object.freeze({
  '0247S0':Object.freeze({o:5330,h:5470,l:5095,c:5385,pct:4.77}),
  '143860':Object.freeze({o:32595,h:32910,l:31830,c:31840,pct:-2.42}),
  '364970':Object.freeze({o:6420,h:6495,l:6285,c:6295,pct:-3.23}),
+ '091180':Object.freeze({o:21705,h:21895,l:21170,c:21750,pct:1.12}),
+ '487240':Object.freeze({o:21750,h:21985,l:20810,c:21460,pct:1.42}),
 });
 function recentComparison(f){
  const code=f?.code, row=typeof code==='string'&&Object.hasOwn(eodNotes,code)?eodNotes[code]:null;
