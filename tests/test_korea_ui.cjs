@@ -150,7 +150,10 @@ await test('Nov 18 sampled cap-weighted maps lead with both markets and keep bro
  assert.equal((now.match(/data-kr-heat-detail=/g)||[]).length,12);
  assert.equal((now.match(/<th scope="row">/g)||[]).length,12);
  for(const pair of [['삼성전자','+2.31%'],['SK하이닉스','+4.19%'],['알테오젠','-1.21%'],['레인보우로보틱스','+20.06%'],['삼천당제약','-14.56%']])assert(now.includes(pair[0])&&now.includes(pair[1]));
- assert(now.includes('11/18 종가 × 11/6 확보 상장주식수')&&now.includes('추정 시총'));
+ assert(now.includes('11/18 종가 × 확인된 상장주식수')&&now.includes('추정 시총'));
+ assert(now.includes('SK하이닉스는 소각 후 공시 수')&&now.includes('d166755d6k.htm'));
+ assert.match(now,/SK하이닉스[^"]+추정 시총 8,085,782억원/);
+ assert.doesNotMatch(now,/SK하이닉스[^"]+추정 시총 8,356,833억원/);
  assert(h.includes('data-kr-official-liquidity="2026-11-17"')&&h.includes('866,228')&&h.includes('263,339'));assert(h.indexOf('data-kr-official-liquidity')<h.indexOf('data-kr-chart="deposits"'));
  for(const market of ['KOSPI','KOSDAQ'])for(const row of data.heatmaps.markets[market].rows)assert(old.includes(api.esc(row.name)));
  assert(old.includes('색 = 전 거래일 종가 대비'));

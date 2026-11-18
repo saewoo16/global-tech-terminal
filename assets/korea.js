@@ -247,7 +247,9 @@
     if(!isDate(payload?.heatmaps?.asOf)||payload.heatmaps.asOf>REPORTED_HEATMAP_DATE)return [];
     const reference=new Map(list(payload?.heatmaps?.markets?.[market]?.rows).map(row=>[row.code,row]));
     return list(REPORTED_HEATMAP[market]).flatMap(([code,close,previousClose])=>{
-      const row=reference.get(code),shares=row?.sharesOutstanding;
+      const row=reference.get(code);
+      // Nov 16 filed 6-K: 23,693,272 treasury shares retired on Nov 5, before this market close.
+      const shares=code==='000660'?706799093:row?.sharesOutstanding;
       if(!row||!Number.isSafeInteger(shares)||shares<=0||!String(row.sharesSnapshotRetrievedAt||'').startsWith('2026-11-06'))return [];
       return [{code,name:row.name,industry:row.industry,close,changePct:(close/previousClose-1)*100,marketCapKRW:close*shares}];
     }).sort((a,b)=>b.marketCapKRW-a.marketCapKRW);
@@ -261,7 +263,7 @@
       const table=rows.map(r=>`<tr><th scope="row">${esc(r.name)}</th><td>${integer(r.close)}</td><td>${pct(r.changePct)}</td><td>${integer(r.marketCapKRW/1e8)}</td></tr>`).join('');
       return `<article class="kr-card kr-heat-card"><div class="kr-card-head"><h4>${market}</h4><span class="kr-badge">${REPORTED_HEATMAP_DATE} · 선별 ${rows.length}종목</span></div><div class="kr-treemap" role="group" aria-label="${market} 선별 종목 시총 히트맵" data-kr-heat-market="${market}" data-kr-heat-layer="sample">${tiles}${groups}</div><div class="kr-heat-detail" aria-live="polite">종목을 누르면 정규장 종가와 등락률이 표시됩니다.</div><details class="kr-metadata"><summary>정규장 종가 · 숫자로 보기</summary><table class="kr-table"><thead><tr><th>종목</th><th>종가(원)</th><th>등락률</th><th>추정 시총(억원)</th></tr></thead><tbody>${table}</tbody></table></details></article>`;
     }).join('');
-    return `<p class="kr-note">선별 종목만 표시합니다. 면적은 11/18 종가 × 11/6 확보 상장주식수로 계산한 추정 시총, 색은 전일 종가 대비 등락률입니다.</p><div class="kr-grid" data-kr-heat-sample="${REPORTED_HEATMAP_DATE}">${cards}</div><details class="kr-history-disclosure"><summary>11/18 정규장 종가 출처</summary><p class="kr-note"><a href="https://www.newspim.com/news/view/20261118001065" target="_blank" rel="noopener noreferrer">뉴스핌 코스피 마감</a> · <a href="https://markets.hankyung.com/indices/kosdaq" target="_blank" rel="noopener noreferrer">한국경제 코스닥 마감</a> · <a href="https://www.papertrailkr.com/ko/posts/2026-11-18-dip-why-samchundang-pharm-fell-14-6-while/" target="_blank" rel="noopener noreferrer">삼천당제약 등락 확인</a> · <a href="https://snowshagal.com/market/2026-11-18/" target="_blank" rel="noopener noreferrer">11/18 코스피 종가 비교</a></p></details>`;
+    return `<p class="kr-note">선별 종목만 표시합니다. 면적은 11/18 종가 × 확인된 상장주식수로 계산한 추정 시총, 색은 전일 종가 대비 등락률입니다. 주식수는 11/6 보관값을 사용하되, SK하이닉스는 소각 후 공시 수를 적용했습니다.</p><div class="kr-grid" data-kr-heat-sample="${REPORTED_HEATMAP_DATE}">${cards}</div><details class="kr-history-disclosure"><summary>11/18 정규장 종가 출처</summary><p class="kr-note"><a href="https://www.newspim.com/news/view/20261118001065" target="_blank" rel="noopener noreferrer">뉴스핌 코스피 마감</a> · <a href="https://markets.hankyung.com/indices/kosdaq" target="_blank" rel="noopener noreferrer">한국경제 코스닥 마감</a> · <a href="https://www.papertrailkr.com/ko/posts/2026-11-18-dip-why-samchundang-pharm-fell-14-6-while/" target="_blank" rel="noopener noreferrer">삼천당제약 등락 확인</a> · <a href="https://snowshagal.com/market/2026-11-18/" target="_blank" rel="noopener noreferrer">11/18 코스피 종가 비교</a> · <a href="https://www.sec.gov/Archives/edgar/data/2120882/000119312526461909/d166755d6k.htm" target="_blank" rel="noopener noreferrer">SK하이닉스 소각 후 주식수(6-K)</a></p></details>`;
   }
   function currentHeatmapsSection() {
     const date=currentDomesticDate(), section=payload?.heatmaps, mapDate=section?.asOf;
