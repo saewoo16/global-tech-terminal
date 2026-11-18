@@ -253,7 +253,20 @@
         "nov18-krx",
         "nov18-yn-markets",
         "nov18-hankyung-flow"
-      ]
+      ],
+      "unit": "억원",
+      "roundedEok": {
+        "KOSPI": {
+          "foreign": -3300,
+          "institution": 5000,
+          "individual": -6300
+        },
+        "KOSDAQ": {
+          "foreign": -450,
+          "institution": 1800,
+          "individual": -1200
+        }
+      }
     }
   }
 }

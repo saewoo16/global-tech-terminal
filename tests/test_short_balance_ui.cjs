@@ -6,8 +6,20 @@ assert.match(html, /id="short-tab"[^>]*data-view="short"[^>]*aria-controls="shor
 assert.match(html, /short-balance\.css\?v=20261116-krx-links/);
 assert.doesNotMatch(html, /short-balance\.js|korean_short_balance\.json|short-balance-evidence\//);
 
-const panel = html.match(/<section id="short-panel"[^>]*role="tabpanel"[^>]*aria-labelledby="short-tab"[^>]*>([\s\S]*?)<section id="korea-panel"/)[1];
-assert.doesNotMatch(panel, /<(?:script|iframe|table|svg|canvas|button|form|input)\b|\bsrc\s*=|\bfetch\s*\(|short-refresh|short-content/i);
+const wholePanel = html.match(/<section id="short-panel"[^>]*role="tabpanel"[^>]*aria-labelledby="short-tab"[^>]*>([\s\S]*?)<section id="korea-panel"/)[1];
+const story = wholePanel.match(/<section class="short-card" id="short-reported-market-20261117"[\s\S]*?<\/section>/)[0];
+assert.match(story,/11월 17일 공매도 거래대금/);
+assert.match(story,/1조 2,151억원/);
+assert.match(story,/82\.62%/);
+assert.match(story,/https:\/\/www\.fnnews\.com\/news\/202611181529418114/);
+assert.match(story,/순보유잔고 비중이나 11월 18일 거래비중 순위가 아닙니다/);
+assert.equal((story.match(/<a\b/g)||[]).length,1);
+assert.doesNotMatch(story,/<script|<input|<iframe|<table/);
+const panel = wholePanel.replace(story,'');
+const iframe = panel.match(/<iframe\b[^>]*><\/iframe>/g);
+assert.equal(iframe.length,1);
+assert.match(iframe[0], /src="\.\/assets\/short-local-viewer\.html" sandbox="allow-scripts" loading="lazy" referrerpolicy="no-referrer"/);
+assert.doesNotMatch(panel.replace(iframe[0],''), /<(?:script|iframe|table|svg|canvas|button|form|input)\b|\bsrc\s*=|\bfetch\s*\(|short-refresh|short-content/i);
 assert.match(panel, /회사별 조회/);
 assert.match(panel, /공매도가 많은 종목/);
 assert.match(panel, /일부 화면은 KRX 로그인이 필요합니다/);
@@ -27,4 +39,5 @@ assert.deepEqual(links.map(([, href, label, caption]) => {
   ['/contents/MDC/MDI/mdiLoader/index.cmd', 'MDC02030304', '상장주식수 대비 공매도 순보유잔고 수량의 비중 순입니다. 당일 공매도 거래와는 별개입니다.'],
   ['/contents/MDC/MDI/mdiLoader/index.cmd', 'MDC02030303', '종목을 검색해 공시 기준을 충족한 대량보유자를 확인합니다.'],
 ]);
-console.log('PASS link-only short tab, compartmentalized KRX links and lookup criteria, and no short-balance data references');
+require('./test_short_local_viewer_vm.cjs');
+require('./test_short_local_csv.cjs');

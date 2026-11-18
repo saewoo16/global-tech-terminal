@@ -135,10 +135,22 @@
     const cards=valid?`<div class="kr-grid">${turnoverMarkets.map(market=>`<article class="kr-card"><div class="kr-card-head"><h4>${market}</h4><span class="kr-badge">${esc(observation.date)} · 마감 보도 기준</span></div><div class="kr-daily-values"><div><small>KRX 정규장</small><strong>약 ${fmt(observation.markets[market],1)}조원</strong></div></div></article>`).join('')}</div><p class="kr-note">출처: ${evidence.citations}</p>`:'<p class="kr-note">최신 KRX 정규장 거래대금은 아직 확인되지 않았습니다.</p>';
     return `<section class="kr-section" id="kr-market-turnover" aria-labelledby="kr-market-turnover-title"><div class="kr-section-head"><div><h3 id="kr-market-turnover-title">시장 거래대금 · KRX 정규장</h3><p>KOSPI · KOSDAQ 시장 전체 · NXT 및 시간외 제외</p></div></div>${cards}<p class="kr-note">같은 기준으로 확인한 과거 자료가 없어 추이 차트는 표시하지 않습니다. 기존 KRX+NXT 합산 자료나 ECOS 공표값과 연결하지 않습니다.</p></section>`;
   }
+  function reportedFlowChart(observation){
+    const data=observation?.roundedEok, markets=['KOSPI','KOSDAQ'], keys=['foreign','institution','individual'];
+    if(observation?.unit!=='억원'||!markets.every(m=>keys.every(k=>Number.isInteger(data?.[m]?.[k])&&Math.abs(data[m][k])<1000000)))return '';
+    const max=Math.max(1,...markets.flatMap(m=>keys.map(k=>Math.abs(data[m][k]))));
+    return '<div class="kr-grid" aria-label="마감 보도 잠정 수급 차트">'+markets.map(m=>{
+      const rows=keys.map((k,i)=>{
+        const v=data[m][k],y=20+23*i,w=88*Math.abs(v)/max,txt=(v>0?'+':'')+integer(v);
+        return `<text x="8" y="${y+4}" fill="currentColor" font-size="12">${NAMES[k]}</text><rect x="${v>=0?151:151-w}" y="${y-6}" width="${w}" height="11" rx="3" fill="${v>=0?'#3bd6aa':'#fd7991'}"/><text x="300" y="${y+4}" text-anchor="end" fill="currentColor" font-size="12">${txt}</text>`;
+      }).join('');
+      return `<figure class="kr-card"><figcaption>${m} · 잠정 · 억원</figcaption><svg viewBox="0 0 310 79" width="100%" role="img" aria-label="${m} ${esc(observation.date)} 잠정 수급. ${keys.map(k=>NAMES[k]+' '+integer(data[m][k])+'억원').join(', ')}"><line x1="151" y1="6" x2="151" y2="73" stroke="currentColor" opacity=".3"/>${rows}</svg></figure>`;
+    }).join('')+'</div>';
+  }
   function reportedMarketFlow() {
     const evidence=closeObservation('reportedCloseFlow','krx-market-close-reports','reported-provisional'), observation=evidence?.observation;
     if(typeof observation?.summary!=='string'||!observation.summary.trim())return '';
-    return `<div class="kr-grid"><article class="kr-card"><div class="kr-card-head"><h4>마감 보도로 확인한 수급</h4><span class="kr-badge">${esc(observation.date)} · 잠정</span></div><p>${esc(observation.summary)}</p><p class="kr-note">보도별 집계 시점이 달라 대략적인 규모만 표시합니다. 아래 기존 수급 차트에는 합치지 않았습니다.</p><p class="kr-note">출처: ${evidence.citations}</p></article></div>`;
+    return `<div class="kr-grid"><article class="kr-card"><div class="kr-card-head"><h4>마감 보도로 확인한 수급</h4><span class="kr-badge">${esc(observation.date)} · 잠정</span></div><p>${esc(observation.summary)}</p>${reportedFlowChart(observation)}<p class="kr-note">보도별 집계 시점이 달라 대략적인 규모만 표시합니다. 아래 기존 수급 차트에는 합치지 않았습니다.</p><p class="kr-note">출처: ${evidence.citations}</p></article></div>`;
   }
   function dailyFlowSummary() {
     const latest=['KOSPI','KOSDAQ'].map(m=>list(payload.flows?.markets?.[m]?.rows).at(-1)),sameDay=latest.every(r=>r&&r.date===latest[0]?.date&&finite(r.foreign)&&finite(r.institution)),combined=sameDay?`<p class="kr-note">${esc(latest[0].date)} 코스피·코스닥 합산 외국인 ${signed(latest.reduce((sum,r)=>sum+r.foreign,0))}억원 · 기관 ${signed(latest.reduce((sum,r)=>sum+r.institution,0))}억원 · 기타외국인 제외</p>`:'';
