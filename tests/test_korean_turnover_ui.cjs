@@ -26,7 +26,7 @@ for(const m of ['KOSPI','KOSDAQ']) {
 const entry={
   market:'KR',date:'2027-01-04',sources:[{id:'a',title:'첫 출처 <A>',url:'https://example.com/a'},{id:'b',title:'두 번째 출처',url:'https://example.com/b'}],
   regularClosingTurnover:{date:'2027-01-04',scope:'krx-regular-market-close',observedAt:'2027-01-04T07:00:00Z',status:'reported-approximate',unit:'조원',markets:{KOSPI:16.1,KOSDAQ:5.1},sourceIds:['a','b']},
-  reportedCloseFlow:{date:'2027-01-04',scope:'krx-market-close-reports',observedAt:'2027-01-04T07:00:00Z',status:'reported-provisional',summary:'테스트 문구 <예시>',sourceIds:['a','b']}
+  reportedCloseFlow:{date:'2027-01-04',scope:'krx-market-close-reports',observedAt:'2027-01-04T07:00:00Z',status:'reported-provisional',unit:'억원',roundedEok:{KOSPI:{foreign:-33,institution:100,individual:-71},KOSDAQ:{foreign:-5,institution:60,individual:-50}},sourceIds:['a','b']}
 };
 api.setData(latest);
 const set=entries=>{ctx.window.TerminalBriefingData={entries};};
@@ -34,7 +34,9 @@ set([entry]);
 const panel=api.marketTurnoverSection(),flow=api.dailyFlowSummary(),charts=api.flowSection();
 for(const token of ['KRX 정규장','NXT 및 시간외 제외','2027-01-04','약 16.1조원','약 5.1조원','첫 출처 &lt;A&gt;','https://example.com/a'])assert(panel.includes(token),token);
 for(const token of ['data-kr-chart','data-turnover-history','data-turnover-comparison','2026-10-29','NaN'])assert(!panel.includes(token),token);
-assert(flow.includes('2027-01-04'));assert(flow.includes('테스트 문구 &lt;예시&gt;'));assert(flow.includes('잠정'));assert(!charts.includes('2027-01-04'));
+for(const token of ['2027-01-04','잠정','-33','+100','-71','-5','+60','-50','첫 출처 &lt;A&gt;'])assert(flow.includes(token),token);
+assert.equal((flow.match(/class="kr-daily-values"/g)||[]).length,2);
+assert(!flow.includes('합산 외국인'));assert(!charts.includes('2027-01-04'));
 assert(raw.includes('marketTurnoverSection()+dailyFlowSummary()'));
 const missing=()=>{const html=api.marketTurnoverSection();assert(html.includes('최신 KRX 정규장 거래대금은 아직 확인되지'));assert(!html.includes('16.1'));assert(!html.includes('data-kr-chart'));};
 api.setData(legacy);
