@@ -90,6 +90,13 @@
   };
   const hasFullHeatmap=(date,section)=>isDate(date)&&section?.asOf===date&&Object.keys(REPORTED_HEATMAP).every(m=>section.markets?.[m]?.asOf===date&&list(section.markets[m].rows).length);
   function currentDomesticDate() {return [latestBrief()?.date,payload?.asOf].filter(isDate).sort().at(-1);}
+  function renderMarketHeader() {
+    const target=el('kr-asof');if(!target)return;
+    // The archive metadata does not establish a new completed market close.
+    const verifiedClose=latestBrief()?.date, activeDate=currentDomesticDate();
+    const closeDate=verifiedClose===activeDate?activeDate:verifiedClose;
+    target.innerHTML=`<span>마감 기준일</span><strong>${esc(closeDate||'미확인')}</strong><span>수급·업종 등은 항목별 실제 관측일로 표시</span>`;
+  }
   function freshnessSection() {
     const latest=list(window.TerminalBriefingData?.entries).filter(e=>e?.market==='KR'&&isDate(e.date)).sort((a,b)=>b.date.localeCompare(a.date))[0];
     const sector=payload?.sectorReturns,sectorRows=list(sector?.rows),sectorCurrent=sectorRows.filter(row=>(row.asOf||sector?.asOf)===sector?.asOf).length,sectorDate=sector?.asOf+(sectorRows.length&&sectorCurrent<sectorRows.length?' · '+sectorCurrent+'/'+sectorRows.length+'개 최신 · '+(sectorRows.length-sectorCurrent)+'개 이전일 유지':'');
@@ -435,11 +442,11 @@
     const target=el('kr-content');if(!target)return;
     const explanationsOpen=!!target.querySelector?.('#kr-explanations')?.open;
     const active=document.activeElement,focusAttribute=['data-kr-range','data-kr-period','data-kr-index','data-kr-movers-period','data-kr-rank-market','data-kr-sector-sort'].find(key=>active?.hasAttribute?.(key)),focusSelector=focusAttribute?'['+focusAttribute+'="'+active.getAttribute(focusAttribute)+'"]'+(active.dataset?.range?'[data-range="'+active.dataset.range+'"]':''):['kr-date','kr-analysis-date'].includes(active?.id)||active?.id?.startsWith('kr-heat-')?'#'+active.id:null;
+    renderMarketHeader();
     if(loading&&!payload){target.innerHTML='<div class="kr-empty kr-loading">국내 시장 데이터를 불러오는 중입니다.</div>';return;}
     if(!payload){target.innerHTML=analysisControls()+closeSection()+unusualMoversSection()+analysisSources()+'<div class="kr-empty" role="alert"><div>국내 수급·자금 데이터 파일을 불러오지 못했습니다. 아래 시황·참고 자료는 각각 표시된 기존 기준일의 자료입니다.<br><button type="button" class="button" id="kr-retry">다시 불러오기</button></div></div>'+sectorReturnsSection()+highsSection()+earningsSection();collectExplanations(target,explanationsOpen);el('kr-retry').onclick=load;bindSectorSorting();bindAnalysisControls();return;}
     charts=new Map();
     const dates=list(payload.rankings?.dates).filter(isDate).slice().sort().reverse();if(!['5d','1m'].includes(selected))selected=dates[0]||'';
-    el('kr-asof').innerHTML=`<span>자료 기준일</span><strong>${esc(payload.asOf||'미확인')}</strong><span>항목별 실제 관측일은 아래 표시</span>`;
     target.innerHTML=(failed?'<div class="kr-warn">새로고침 실패 · 마지막으로 확인한 자료를 표시합니다.</div>':'')+(payload.refresh?.failures?.length?`<div class="kr-warn">일부 데이터 갱신에 실패해 이전 관측값을 보존했습니다. 각 항목의 실제 기준일을 확인하세요.</div>`:'')+analysisControls()+freshnessSection()+currentHeatmapsSection()+closeSection()+marketTurnoverSection()+dailyFlowSummary()+nearCloseFlowSection()+flowSection()+`<p class="kr-statusline">금액·지수·가격은 반올림 표시하며 원자료·계산값의 정밀도는 유지합니다. 일별 자료의 최신 관측일과 공개 시차는 항목별로 다릅니다.${payload.requestedWindow?' 조회 목표: '+esc(payload.requestedWindow.start)+' ~ '+esc(payload.requestedWindow.end)+'.':''}</p>`+futuresSection()+currentSectorReturnsSection()+currentRankingsSection()+currentMoversSection()+currentHighsSection()+unusualMoversSection()+liquiditySection()+earningsSection()+analysisSources()+`<details class="kr-source-list"><summary>전체 출처 · 데이터 제약</summary><ol>${list(payload.sources).map(s=>`<li>${safe(s.url)?`<a href="${esc(safe(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.title||s.id)} ↗</a>`:esc(s.title||s.id)}${s.note?' · '+esc(s.note):''}</li>`).join('')}</ol><ul>${list(payload.limitations).map(note=>`<li>${esc(note)}</li>`).join('')}</ul><p>수집 시각: ${esc(payload.updatedAt||'미확인')}</p></details><p class="kr-page-footer">공개 자료 기반 개인 연구용 대시보드입니다. 실시간 시세나 투자 권유가 아닙니다. 미확인 값은 0이 아니며, 테마는 서로 중복될 수 있어 합산하면 전체시장과 일치하지 않습니다.</p>`;
     collectExplanations(target,explanationsOpen);
     document.querySelectorAll('[data-kr-range]').forEach(button=>button.onclick=()=>{if(button.dataset.krRange==='flow')flowRange=button.dataset.range;else if(button.dataset.krRange==='futures')futuresRange=button.dataset.range;else liquidityRange=button.dataset.range;render();});

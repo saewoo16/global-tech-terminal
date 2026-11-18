@@ -4,12 +4,12 @@ const page=fs.readFileSync(path.join(root,'index.html'),'utf8'),script=page.matc
 const json=f=>JSON.parse(fs.readFileSync(path.join(root,'data',f),'utf8'));
 const current=json('explorer-taiwan-open-close-latest.json'),previous=json('explorer-taiwan-open-close.json');
 const TaiwanListings=[...new Set(json('companies.json').filter(c=>/^(TWSE|TPEX):/.test(c.symbol)).map(c=>c.symbol))].sort();
-const calls=[];
-const context={URL,Date,console,current,previous,document:{readyState:'loading',getElementById:()=>({}),querySelectorAll:()=>[],addEventListener(){}},fetch:url=>{calls.push(url);return context.fetchReply(url);}};
+const calls=[],configs=[];
+const context={URL,Date,console,current,previous,AbortController,setTimeout,clearTimeout,document:{readyState:'loading',getElementById:()=>({}),querySelectorAll:()=>[],addEventListener(){}},fetch:(url,config)=>{calls.push(url);configs.push(config);return context.fetchReply(url);}};
 vm.createContext(context);vm.runInContext(script,context);
 const run=code=>vm.runInContext(code,context),read=()=>run('readExplorerTaiwanCloses()');
 const reply=data=>({ok:true,json:async()=>data});
-function assertLatestPath(){assert.match(calls[0],/\/explorer-taiwan-open-close-latest\.json\?ts=\d+$/);}
+function assertLatestPath(){assert.match(calls[0],/\/explorer-taiwan-open-close-latest\.json$/);assert.equal(configs.at(-calls.length).cache,'no-cache');assert(configs.at(-calls.length).signal);}
 function assertFallbackPath(){assert.match(calls[1],/\/explorer-taiwan-open-close\.json\?v=/);}
 (async()=>{
  assert.ok(current.sessionDate>previous.sessionDate);
@@ -19,7 +19,8 @@ function assertFallbackPath(){assert.match(calls[1],/\/explorer-taiwan-open-clos
   assert.equal(q.asOf,current.sessionDate);
   assert.strictEqual(run('explorerTaiwanClose('+JSON.stringify(symbol)+',"",current)').q,q);
  }
- assert.match(page,/readJson\('\.\/data\/financial_backfill_zlatest_20261116_kr_official\.json[^)]*\)[^\n]+readExplorerTaiwanCloses\(\)/);
+ assert.match(page,/readJson\('\.\/data\/financial_backfill_zlatest_20261116_kr_official\.json[^)]*\)\.then\(/);
+ assert.match(page,/readExplorerTaiwanCloses\(\)\.then\(/);
  context.fetchReply=async()=>reply(current);
  assert.strictEqual(await read(),current);assert.equal(calls.length,1);assertLatestPath();
  console.log('PASS all listed Taiwan securities use independently sourced latest official close; legacy fixture unchanged');

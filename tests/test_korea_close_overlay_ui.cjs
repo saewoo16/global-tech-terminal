@@ -15,7 +15,7 @@ const ctx={URL,console:{error(){}},window:{addEventListener(){}},document:{ready
 }};
 vm.createContext(ctx);
 vm.runInContext(read('assets/briefing.js').replace('  if(document.readyState', '  window.overlayTest={load,closeOverlay};\n  if(document.readyState'),ctx);
-vm.runInContext(read('assets/korea.js').replace('  if(document.readyState', '  window.koreaTest={closeSection,freshnessSection,earningsSection,setData:v=>payload=v};\n  if(document.readyState'),ctx);
+vm.runInContext(read('assets/korea.js').replace('  if(document.readyState', '  window.koreaTest={closeSection,freshnessSection,earningsSection,renderMarketHeader,setData:v=>payload=v};\n  if(document.readyState'),ctx);
 (async()=>{
   const o=ctx.window.overlayTest,k=ctx.window.koreaTest;
   await o.load();k.setData(korea);
@@ -28,6 +28,14 @@ vm.runInContext(read('assets/korea.js').replace('  if(document.readyState', '  w
   assert(fresh.includes('당일 수급 <strong>'+entry.date+' · 잠정</strong>'));
   assert(fresh.includes('수급 추이 <strong>'+korea.asOf+'</strong>'));
   assert.notEqual(entry.date,korea.asOf);
+  k.renderMarketHeader();
+  const head=el('kr-asof').innerHTML;
+  assert.ok(head.includes('마감 기준일</span><strong>'+entry.date+'</strong>'));
+  assert.ok(!head.includes(korea.asOf));
+  k.setData({...korea,asOf:'2026-11-19'});k.renderMarketHeader();
+  assert.equal(el('kr-asof').innerHTML,head,'a later non-close archive date does not certify a different market close');
+  k.setData(korea);
+
   assert(fresh.includes('히트맵 <strong>'+entry.date+' · 표본 7종목</strong>'));
   assert(!fresh.includes('히트맵 <strong>'+korea.heatmaps.asOf+'</strong>'));
   assert.equal(k.earningsSection(),'');
