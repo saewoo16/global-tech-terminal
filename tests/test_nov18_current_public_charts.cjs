@@ -35,5 +35,7 @@ for(const [id,pct,close] of [['091160','+2.46%','89,755'],['0148J0','+9.97%','7,
  assert.equal(common.window.etfNote({code:id,daily:[{date:'2026-11-18'}]}),'');
 }
 assert.equal(common.window.etfNote({code:'069500'}),'');
-assert.equal((html.match(/data-etf-today=/g)||[]).length,8);
-console.log('PASS current report: six scoped provisional flow values in dated cards, 32 Taiwan two-observation charts, eight dated Korean ETF candles, no stale replacement.');
+assert.equal((html.match(/data-etf-today=/g)||[]).length,10);
+assert.match(html,/거래소 일봉 10종/);
+for(const code of ['091180','487240'])assert.ok(html.includes('data-etf-today="'+code+'"'));
+console.log('PASS current report: six scoped provisional flow values in dated cards, 32 Taiwan two-observation charts, ten dated Korean ETF candles, no stale replacement.');

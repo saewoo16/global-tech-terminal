@@ -79,7 +79,7 @@ for(const route of ['#explorer','#heatmap','#rates','#briefing/US/2026-10-16','#
 const untrusted=mockWidget({...widgetDefinitions[0],src:'https://example.com/not-a-provider.js'});
 widgets.push(untrusted);api.load();assert.equal(untrusted.children.length,0);assert.equal(untrusted.dataset.loaded,undefined);
 assert.equal((html.match(/data-fred-series=/g)||[]).length,3,'Corporate and two money supply FRED charts stay intact');
-assert.match(html,/markets\.css\?v=20261025-external2/);assert.match(html,/markets\.js\?v=20261025-money/);
+assert.match(html,/markets\.css\?v=20261025-external2/);assert.match(html,/markets\.js\?v=20261118-metals-bitcoin/);
 assert.match(fs.readFileSync(root+'/assets/markets.css','utf8'),/\.tradingview-chart\{height:440px;width:100%/);
 assert.match(html,/쿠폰 3\.5% · 만기 2035-02-12/);assert.match(html,/회사 전체 금리가 아닙니다/);
 assert(!html.includes('MUN:US023135'));assert(!html.includes('MUN:US02079K'));
@@ -109,7 +109,7 @@ console.log('PASS OAS title, percentage-point/basis-point explanation, distincti
 
 assert(!widgetDefinitions.some(w=>w.id==="DXY"));assert(html.includes("DXY 차트 원본"));
 
-const symbols=['OTCB:US10Y','FX:USOIL','FX:UKOIL','CAPITALCOM:DXY','FX:USDJPY','FX_IDC:USDKRW'];
+const symbols=['OTCB:US10Y','OANDA:XAUUSD','COINBASE:BTCUSD','CAPITALCOM:XCUUSD','FX:USOIL','FX:UKOIL','CAPITALCOM:DXY','FX:USDJPY','FX_IDC:USDKRW'];
 assert.deepEqual([...html.matchAll(/data-macro-chart="([^"]+)"/g)].map(m=>m[1]),symbols);
 const defs=[...html.matchAll(/data-macro-chart="([^"]+)"[^>]*><template>([\s\S]*?)<\/template>/g)].map(([,id,markup])=>{const sc=markup.match(/<script type="([^"]+)" src="([^"]+)" async>([\s\S]*?)<\/script>/);return {id,label:id,markup,type:sc[1],src:sc[2],textContent:sc[3]}});
 const holders=defs.map(mockWidget);holders.forEach(h=>h.dataset={macroChart:h.definition.id});
@@ -121,7 +121,7 @@ const badMacro=mockWidget(defs[0]);badMacro.dataset={macroChart:'TVC:DXY'};holde
 assert.match(html,/달러인덱스 추종 CFD/);assert.match(html,/CAPITALCOM:DXY/);
 assert(!html.includes('symbol="TVC:DXY"'));assert.match(html,/1 USD당 일본 엔/);assert.match(html,/1 USD당 한국 원/);
 assert(fs.readFileSync(root+'/assets/macro.js','utf8').includes('card.dataset.externalMacro||!q')); 
-console.log('PASS six official external components, source/basis labels, lazy one-time widget load, provider allowlist and link fallback');
+console.log('PASS nine official external components, source/basis labels, lazy one-time widget load, provider allowlist and link fallback');
 
 assert(!html.includes('data-series="DTWEXBGS"'));
 for(const id of ["M1SL","M2SL"])assert(html.includes(`data-fred-series="${id}"`));

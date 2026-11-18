@@ -3,7 +3,7 @@
   'use strict';
   const SERIES = new Set(['DGS10','HQMCB10YRP','DCOILWTICO','DCOILBRENTEU','DEXJPUS','DEXKOUS','M1SL','M2SL']);
   const TRADINGVIEW_SCRIPT = 'https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js';
-  const MACRO_SYMBOLS = new Set(['OTCB:US10Y','FX:USOIL','FX:UKOIL','CAPITALCOM:DXY','FX:USDJPY','FX_IDC:USDKRW']);
+  const MACRO_SYMBOLS = new Set(['OTCB:US10Y','FX:USOIL','FX:UKOIL','CAPITALCOM:DXY','FX:USDJPY','FX_IDC:USDKRW','OANDA:XAUUSD','COINBASE:BTCUSD','CAPITALCOM:XCUUSD']);
   function loadMacroComponents() {
     document.querySelectorAll('[data-macro-chart]').forEach(holder => {
       if (holder.dataset.loaded || !MACRO_SYMBOLS.has(holder.dataset.macroChart)) return;
