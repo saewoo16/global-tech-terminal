@@ -15,7 +15,7 @@ const data={
 for(const [code,points] of Object.entries(data)){
  const prior=Object.freeze([{date:'2026-11-13',open:100,high:102,low:99,close:101}]);
  const out=ctx.window.etfSample({code,daily:prior});
- assert.match(out,/2026-11-18 정규장 일봉/);
+ assert.match(out,/2026-11-18 거래소 일봉/);
  assert.match(out,/해당 거래일 한 봉으로, 보관 일봉·주봉·월봉과 전체 수익률 순위에는 합치지 않았습니다/);
  assert.ok(out.includes('https://etfro.com/etf/'+code));
  assert.equal((out.match(/<rect\b/g)||[]).length,1);
@@ -29,5 +29,5 @@ for(const [code,points] of Object.entries(data)){
 }
 for(const code of ['069500','constructor','__proto__','"><script>'])assert.equal(ctx.window.etfSample({code}),'');
 const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
-assert.match(html,/korean-etf\.js\?v=20261118-etfro-four-candles/);
+assert.match(html,/korean-etf\.js\?v=20261118-fresh-vs-archive/);
 console.log('PASS all four exact OHLCs and links/date; candle body color vs. prior close text; only one original SVG; immutable archive, no unsupported symbol or duplicate current data.');

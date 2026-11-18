@@ -116,7 +116,7 @@ test('official Taiwan raw close is shown separately with license attribution and
   assert.match(element('priceinfo').textContent,/Securities and Futures Bureau.*2026.*Stock daily transaction information.*Open Government Data License, version 1\.0/);
   assert.equal(element('performance').innerHTML,oldPerformance);
   assert.equal(Chart.latest.options.data.labels.join(','),oldChart);
-  run("chosen=COMPANIES.find(r=>r.symbol==='KRX:005930');render()");
+  run("chosen=COMPANIES.find(r=>r.symbol==='KRX:009150');render()");
   assert.equal(element('latest-close-label').textContent,'최근 조정종가');
   assert.doesNotMatch(element('priceinfo').textContent,/대만 공표 종가/);
 });
