@@ -11,10 +11,7 @@ on:
         type: choice
         options: [etf, liquidity]
         default: liquidity
-  schedule:
-    - cron: '30 8 * * 1-5' # 17:30 Asia/Seoul
-    - cron: '40 6-8 * * 1-5' # 15:40, 16:40, 17:40 Asia/Seoul; after verified market close
-    - cron: '0 9,10 * * 1-5' # 18:00 and 19:00 Asia/Seoul
+  # The Dot owns the public Korean close schedule. Only manual collection may write.
 permissions:
   contents: write
 concurrency:
@@ -43,7 +40,7 @@ jobs:
           print(json.dumps(release, ensure_ascii=False))
           PYCODE
   refresh:
-    if: github.event_name != 'push'
+    if: github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     timeout-minutes: 40
     steps:
@@ -61,12 +58,9 @@ jobs:
           bash scripts/validate_publication.sh
       - name: Collect only today's verified Korean session
         env:
-          SCHEDULE: ${{ github.event.schedule }}
           REQUEST_KIND: ${{ inputs.kind }}
         run: |
-          kind="${REQUEST_KIND:-liquidity}"
-          if [ "$SCHEDULE" = '30 8 * * 1-5' ]; then kind=etf; fi
-          python scripts/refresh_korean_scheduled.py --kind "$kind"
+          python scripts/refresh_korean_scheduled.py --kind "${REQUEST_KIND:-liquidity}"
       - name: Validate complete candidate
         run: bash scripts/validate_publication.sh
       - name: Commit only changed bounded data at expected head

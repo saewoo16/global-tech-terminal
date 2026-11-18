@@ -93,15 +93,19 @@ class WorkflowSafety(unittest.TestCase):
         for forbidden in ('pages: write','id-token:', 'secrets.', '--force', 'pull --rebase'):
             self.assertNotIn(forbidden,workflow)
         generic=(ROOT/'.github/workflows/update.yml').read_text()
-        self.assertIn("cron: '0 22 * * 1-5'",generic)
+        self.assertIn("if: github.event_name == 'workflow_dispatch'",generic)
+        self.assertNotIn("cron:",generic)
         self.assertNotIn('python scripts/update_korean_etf_charts.py',generic)
         self.assertNotIn('SKIP_KR_LIQUIDITY',generic)
         self.assertNotIn('python scripts/update_korean_market.py',generic)
         self.assertIn('kofia_official.apply(previous,kofia_official.collect(now.isoformat()))', (ROOT/'scripts/refresh_korean_scheduled.py').read_text())
         self.assertIn('contents: read',workflow)
         self.assertIn("if: github.event_name == 'push'",workflow)
-        self.assertIn("cron: '0 9,10",workflow)
-        self.assertIn("cron: '40 6-8 * * 1-5'",workflow)
+        self.assertNotIn("cron:",workflow)
+        self.assertNotIn("github.event.schedule",workflow)
+        self.assertIn("if: github.event_name == 'workflow_dispatch'",workflow)
+        self.assertIn("options: [etf, liquidity]",workflow)
+        self.assertIn('python scripts/refresh_korean_scheduled.py --kind "${REQUEST_KIND:-liquidity}"',workflow)
     def test_timestamp_only_noop(self):
         from refresh_korean_scheduled import substantive
         self.assertEqual(substantive({'updatedAt':'a','funds':[{'metadataRetrievedAt':'a','representatives':{'marketCapObservedAt':'a','value':1}}]}),substantive({'updatedAt':'b','funds':[{'metadataRetrievedAt':'b','representatives':{'marketCapObservedAt':'b','value':1}}]}))

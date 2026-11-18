@@ -3,8 +3,7 @@ name: Update company data
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 22 * * 1-5'
+  # Public Explorer scheduling is owned by the Dot; this is a manual fallback.
 
 permissions:
   contents: write
@@ -15,6 +14,7 @@ concurrency:
 
 jobs:
   update:
+    if: github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
@@ -55,7 +55,7 @@ jobs:
         run: python scripts/audit_coverage.py --baseline /tmp/market-baseline.json
 
       # Other market panels have their own existing collectors. Keep this
-      # scheduled/manual company fallback, but reject cross-tab writes.
+      # manual company fallback, but reject cross-tab writes.
       - name: Reject changes outside company data
         run: python scripts/check_publication_scope.py --scope company --base HEAD
 

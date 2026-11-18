@@ -27,7 +27,7 @@ class CompanyScopeTests(unittest.TestCase):
 
     def test_workflow_preserves_company_fallback_but_not_other_collectors(self):
         workflow = (ROOT/'.github/workflows/update.yml').read_text()
-        for required in ("cron: '0 22 * * 1-5'", 'workflow_dispatch:',
+        for required in ("if: github.event_name == 'workflow_dispatch'", 'workflow_dispatch:',
                          'python scripts/update_data.py', 'python scripts/patch_japan_financials.py',
                          'python scripts/patch_regional_earnings.py', 'python scripts/apply_financial_backfills.py',
                          'python scripts/audit_coverage.py --baseline /tmp/market-baseline.json',
@@ -44,8 +44,9 @@ class CompanyScopeTests(unittest.TestCase):
         for script in ('update_korean_market.py', 'update_overseas_etf_charts.py', 'update_macro_quotes.py'):
             self.assertTrue((ROOT/'scripts'/script).is_file())
         korean = (ROOT/'.github/workflows/korean-close-data.yml').read_text()
-        self.assertIn("cron: '30 8 * * 1-5'", korean)
-        self.assertIn("cron: '0 9,10 * * 1-5'", korean)
+        for collector in (workflow, korean):
+            self.assertNotIn("\n  schedule:", collector)
+            self.assertNotIn("cron:", collector)
 
     def test_tracked_untracked_staged_and_renamed_files_are_checked(self):
         with tempfile.TemporaryDirectory() as folder:
