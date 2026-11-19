@@ -111,7 +111,7 @@ const count=mounted.length;a.mountProviderPanel({code:'UNKNOWN'});assert.equal(m
 a.setPeriod('day');a.mountProviderPanel({code:'XLK'});assert.equal(mounted.length,count);
 assert.match(widgetTarget.textContent,/보관 장중/);
 assert.match(raw,/마지막 실제 관측/);
-assert.ok(raw.indexOf('id="us-etf-plot" class="etf-plot"')<raw.indexOf('${providerPanel(f)}'));
-assert.ok(raw.indexOf('1달 수익률</small>')<raw.indexOf('${providerPanel(f)}'));
+assert.ok(raw.indexOf('providerPanel(f)}<details')<raw.indexOf('id="us-etf-plot" class="etf-plot"'));
+assert.ok(raw.indexOf('providerPanel(f)}<details')<raw.indexOf('1달 수익률</small>'));
 assert.ok(raw.indexOf('ETF 정보·시세 출처</summary>')<raw.indexOf('${issuerSessionNote(f)}'));
 console.log('PASS automatic tab-scoped vendor mounting, D/W/M mapping, isolation, native dated fallback, no automatic intraday vendor.');
