@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "session": "2026-11-18",
-  "verifiedAt": "2026-11-18T21:40:29.944894+00:00",
+  "session": "2026-11-19",
+  "verifiedAt": "2026-11-19T22:05:10.431212+00:00",
   "officialPolicy": {
     "targetBps": [
       375,
@@ -15,9 +15,9 @@
     {
       "id": "UST2Y",
       "quoteLabel": "미 재무부 2년 국채 파 수익률",
-      "value": 4.8,
+      "value": 4.76,
       "unit": "%",
-      "asOf": "2026-11-18",
+      "asOf": "2026-11-19",
       "sourceName": "미 재무부",
       "sourceUrl": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202611&type=daily_treasury_yield_curve",
       "note": "공식 일별 고정만기 파 수익률. OTC 차트와 산출 기준이 다릅니다.",
@@ -28,9 +28,9 @@
     {
       "id": "UST10Y",
       "quoteLabel": "미 재무부 10년 국채 파 수익률",
-      "value": 5.07,
+      "value": 5.04,
       "unit": "%",
-      "asOf": "2026-11-18",
+      "asOf": "2026-11-19",
       "sourceName": "미 재무부",
       "sourceUrl": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202611&type=daily_treasury_yield_curve",
       "note": "공식 일별 고정만기 파 수익률. OTC 차트와 산출 기준이 다릅니다.",
@@ -41,9 +41,9 @@
     {
       "id": "UST30Y",
       "quoteLabel": "미 재무부 30년 국채 파 수익률",
-      "value": 5.41,
+      "value": 5.4,
       "unit": "%",
-      "asOf": "2026-11-18",
+      "asOf": "2026-11-19",
       "sourceName": "미 재무부",
       "sourceUrl": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202611&type=daily_treasury_yield_curve",
       "note": "공식 일별 고정만기 파 수익률. OTC 차트와 산출 기준이 다릅니다.",

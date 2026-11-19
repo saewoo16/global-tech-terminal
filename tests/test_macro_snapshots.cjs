@@ -40,7 +40,16 @@ const official=JSON.parse(fs.readFileSync(root+'/data/macro-official-latest.json
 assert(a.validOfficial(official));
 const policy=a.officialPolicyHTML(official);
 assert(policy.includes(official.session));assert(policy.includes('3.75–4.00%'));
-for(const n of ['4.80%','5.07%','5.41%'])assert(policy.includes(n),n);
+// Keep the rendering contract independent of the calendar in the live snapshot.
+const seededYields={UST2Y:4.8,UST10Y:5.07,UST30Y:5.41};
+const seededPolicy=a.officialPolicyHTML({...official,rows:official.rows.map(r=>Object.hasOwn(seededYields,r.id)?{...r,value:seededYields[r.id]}:r)});
+for(const n of ['4.80%','5.07%','5.41%'])assert(seededPolicy.includes(n),n);
+for(const id of Object.keys(seededYields)){
+ const row=official.rows.find(r=>r.id===id);
+ assert.equal(row.asOf,official.session,id);
+ const n=row.value.toFixed(2)+'%';
+ assert(policy.includes(n),id+' '+n);
+}
 assert(policy.includes('CME 확률은 이곳에 재게시하지 않습니다'));
 assert(!policy.includes('<table'));
 const mapped=Object.fromEntries(official.rows.map(r=>[r.id,r]));
