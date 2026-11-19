@@ -4,7 +4,7 @@ const html=read('index.html'), inline=Array.from(html.matchAll(/<script>([\s\S]*
 const c={console,URL,document:{readyState:'loading',addEventListener(){},getElementById(){return {}},querySelectorAll(){return []}}};
 vm.createContext(c);
 vm.runInContext(inline,c);
-const prior=json('data/explorer-taiwan-open-close.json'),latest=json('data/explorer-taiwan-open-close-latest.json');
+const prior=json('data/explorer-taiwan-open-close.json'),latest=json('tests/fixtures/explorer-taiwan-open-close-20261118.json');
 for(const symbol of Object.keys(latest.quotes)){
  const b=c.explorerOfficialCloseComparison(symbol,prior,latest);
  assert.match(b,/role="img"/);assert.match(b,/2026-11-16/);assert.match(b,/2026-11-18/);

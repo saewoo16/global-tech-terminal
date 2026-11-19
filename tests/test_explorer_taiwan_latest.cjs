@@ -13,6 +13,9 @@ function assertLatestPath(){assert.match(calls[0],/\/explorer-taiwan-open-close-
 function assertFallbackPath(){assert.match(calls[1],/\/explorer-taiwan-open-close\.json\?v=/);}
 (async()=>{
  assert.ok(current.sessionDate>previous.sessionDate);
+ assert.equal(current.sessionDate,'2026-11-19');
+ assert.equal(current.quotes['TWSE:2308'].close,1000);
+ assert.match(run("explorerOfficialCloseComparison('TWSE:2308',previous,current)"),/2026-11-19/);
  assert.deepEqual(Object.keys(current.quotes).sort(),TaiwanListings);
  assert.equal(Object.keys(current.quotes).length,current.sources.twse.matchingListings+current.sources.tpex.matchingListings);
  for(const [symbol,q] of Object.entries(current.quotes)){
