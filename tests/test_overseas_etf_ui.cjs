@@ -4,8 +4,8 @@ const ctx={URL,Date,Number,String,Math,Array,console,document:{readyState:'loadi
 assert(html.includes('id="overseas-etf-tab"'));assert(html.includes('해외 업종별/테마별 차트'));assert(html.includes('id="overseas-etf-panel"'));
 assert.equal(a.safeURL('javascript:alert(1)'),'#');assert.equal(a.safeURL('https://example.com/a'),'https://example.com/a');assert.equal(a.esc('<script>'),'&lt;script&gt;');
 const f={daily:[{date:'2026-07-20',open:90,high:110,low:80,close:100},{date:'2026-09-18',open:115,high:125,low:114,close:120},{date:'2026-10-20',open:125,high:134,low:124,close:132}],intraday:{date:'2026-10-20',points:[{time:'09:00',price:130},{time:'09:03',price:132}]}};
-assert(Math.abs(a.returns(f)-10)<1e-8);assert.equal(a.returns({daily:[]}),null);a.setPeriod('day');assert.equal(a.series(f).length,2);assert.equal(a.series(f)[0].label,'09:00');assert.equal(a.series({daily:f.daily}).length,0,'Never resample daily data to fake intraday');a.setPeriod('3');assert.equal(a.series(f).length,3);
-assert(raw.includes("{cache:'no-store'}"));assert(raw.includes('p.high'));assert(raw.includes('p.low'));assert(raw.includes('onpointermove'));assert(raw.includes('무')||raw.includes('수집된 실제 장중'));
+assert(Math.abs(a.returns(f)-10)<1e-8);assert.equal(a.returns({daily:[]}),null);assert.equal(a.series(f).length,3);assert.equal(a.series(f)[0].date,'2026-07-20');
+assert(raw.includes("{cache:'no-store'}"));assert(raw.includes('p.high'));assert(raw.includes('p.low'));assert(raw.includes('onpointermove'));assert(raw.includes('거래일 종가가 있는 일봉만 표시'));
 console.log('PASS ETF navigation, OHLC/intraday separation, calendar ranges, real price returns, source URL/XSS safety, cache refresh, pointer inspection');
 
 const sample={funds:[{code:'low',category:'Low',daily:[{date:'2026-09-20',close:50},{date:'2026-10-21',close:100},{date:'2026-10-22',close:90}]},{code:'high',category:'High',daily:[{date:'2026-09-20',close:200},{date:'2026-10-21',close:100},{date:'2026-10-22',close:120}]},{code:'missing',category:'Missing',daily:[]}]};
@@ -36,7 +36,7 @@ assert.deepEqual({...a.freshness(snapshot.funds,a.sessionOf(verified))},{target:
 assert(a.statusLabel(snapshot.funds,a.sessionOf(verified)).includes('0/38'));
 assert(a.statusLabel(snapshot.funds,null).includes('대조 미확인'));
 assert(a.statusLabel(snapshot.funds,'2026-11-13').includes('38/38'));
-assert(html.includes('https://www.ssga.com/us/en/institutional/resources/sector-tracker'));
+assert.doesNotMatch(html,/us-etf-close-note-20261117/);
 console.log('PASS closed-session provenance, actual per-fund staleness, historical label and direct issuer link');
 
 const approved=new Set(snapshot.funds.map(f=>a.widgetSymbol(f.code)));
@@ -110,8 +110,8 @@ assert.match(mounted.at(-1)[0].src,/symbol=CBOE%3AIGV/);
 const count=mounted.length;a.mountProviderPanel({code:'UNKNOWN'});assert.equal(mounted.length,count);
 a.setPeriod('day');a.mountProviderPanel({code:'XLK'});assert.equal(mounted.length,count);
 assert.match(widgetTarget.textContent,/보관 장중/);
-assert.match(raw,/마지막 실제 관측/);
-assert.ok(raw.indexOf('providerPanel(f)}<details')<raw.indexOf('id="us-etf-plot" class="etf-plot"'));
-assert.ok(raw.indexOf('providerPanel(f)}<details')<raw.indexOf('1달 수익률</small>'));
+assert.match(raw,/마지막 실제 종가/);
+assert.doesNotMatch(raw,/data-etf-period|data-etf-candle/);
+assert.ok(raw.indexOf('id="us-etf-plot"')<raw.indexOf('1달 수익률</small>'));
 assert.ok(raw.indexOf('ETF 정보·시세 출처</summary>')<raw.indexOf('${issuerSessionNote(f)}'));
 console.log('PASS automatic tab-scoped vendor mounting, D/W/M mapping, isolation, native dated fallback, no automatic intraday vendor.');

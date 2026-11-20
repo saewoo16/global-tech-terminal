@@ -15,7 +15,7 @@ for(const [asset,data,website,count,industry,theme] of [
  const ctx={URL,Date,Number,String,Math,Array,AbortController,setTimeout,clearTimeout,console:{error(){}},window:{location:{hash:'#other'}},document:{readyState:'loading',addEventListener(){},getElementById:el},
   fetch(url,options){fetches.push(url);assert.equal(options.cache,'no-cache');assert(options.signal instanceof AbortSignal);
    if(url.includes(data))return fail?Promise.reject(Error('offline')):Promise.resolve({ok:true,json:async()=>store});
-   assert(url.includes(website?'us-analysis-latest':'korea-close-overlay'));return new Promise(r=>{closeResolve=r;});}};
+   assert(url.includes(website?'us-close-headline':'korea-close-latest'));return new Promise(r=>{closeResolve=r;});}};
  vm.runInNewContext(inject,ctx);
  const api=ctx.window.__test,list=el(website+'etf-list'),detail=el(website+'etf-detail'),status=el(website+'etf-updated');
  await api.load();
@@ -27,9 +27,9 @@ for(const [asset,data,website,count,industry,theme] of [
  for(const [g,n] of [['industry',industry],['theme',theme]]){api.setGroup(g);assert.equal(api.filtered().length,n);assert(api.filtered().every(f=>f.group===g));}
  api.setGroup('all');
  assert(closeResolve);assert(fetches[0].includes(data));
- const market=website?{entry:{date:'2026-11-18',sessionStatus:'closed',sessionVerification:{exchangeDate:'2026-11-18'}}}:JSON.parse(fs.readFileSync(root+'/data/korea-close-overlay.json','utf8'));
+ const market=website?{date:'2026-11-19',sessionStatus:'closed',indices:[{},{},{},{}]}:JSON.parse(fs.readFileSync(root+'/data/korea-close-latest.json','utf8'));
  closeResolve({ok:true,json:async()=>market});await new Promise(r=>setImmediate(r));
- assert(status.textContent.includes('2026-11-18'));assert(status.textContent.includes('0/'+count));
+ assert(status.textContent.includes(website?'2026-11-19':'2026-11-20'));assert(status.textContent.includes('0/'+count));
  assert(status.textContent.includes('2026-11-13'));
  fail=true;const before=detail.innerHTML;await api.load();assert.match(status.innerHTML,/다시 불러오기/);assert.equal(detail.innerHTML,before);assert.equal(typeof el(website+'etf-retry').onclick,'function');
 }

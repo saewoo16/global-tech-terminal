@@ -1,11 +1,11 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
 const root=path.resolve(__dirname,'..'),raw=fs.readFileSync(root+'/assets/korean-etf.js','utf8'),html=fs.readFileSync(root+'/index.html','utf8');
-const ctx={URL,Date,Number,String,Math,Array,console,document:{readyState:'loading',addEventListener(){}},window:{}};vm.createContext(ctx);vm.runInContext(raw.replace('window.TerminalETF={returns,series,safeURL,representatives,representativeSources,aggregateCandles,displayCandles,candleLabel,candleStatus}','window.TerminalETF={returns,series,safeURL,representatives,representativeSources,selectionSources,detail,setSelected:s=>selected=s,esc,dailyReturn,listReturn,filtered,setData:p=>payload=p,setSort:s=>sort=s,setPeriod:p=>period=p}'),ctx);const a=ctx.window.TerminalETF;
+const ctx={URL,Date,Number,String,Math,Array,console,document:{readyState:'loading',addEventListener(){}},window:{}};vm.createContext(ctx);vm.runInContext(raw.replace('window.TerminalETF={returns,series,safeURL,representatives,representativeSources,aggregateCandles,displayCandles,candleLabel,candleStatus}','window.TerminalETF={returns,series,safeURL,representatives,representativeSources,selectionSources,detail,setSelected:s=>selected=s,esc,dailyReturn,listReturn,filtered,setData:p=>payload=p,setSort:s=>sort=s}'),ctx);const a=ctx.window.TerminalETF;
 assert(html.includes('id="etf-tab"'));assert(html.includes('국내 업종별/테마별 차트'));assert(html.includes('id="etf-panel"'));
 assert.equal(a.safeURL('javascript:alert(1)'),'#');assert.equal(a.safeURL('https://example.com/a'),'https://example.com/a');assert.equal(a.esc('<script>'),'&lt;script&gt;');
 const f={daily:[{date:'2026-07-20',open:90,high:110,low:80,close:100},{date:'2026-09-18',open:115,high:125,low:114,close:120},{date:'2026-10-20',open:125,high:134,low:124,close:132}],intraday:{date:'2026-10-20',points:[{time:'09:00',price:130},{time:'09:03',price:132}]}};
-assert(Math.abs(a.returns(f)-10)<1e-8);assert.equal(a.returns({daily:[]}),null);a.setPeriod('day');assert.equal(a.series(f).length,2);assert.equal(a.series(f)[0].label,'09:00');assert.equal(a.series({daily:f.daily}).length,0,'Never resample daily data to fake intraday');a.setPeriod('3');assert.equal(a.series(f).length,3);
-assert(raw.includes("{cache:'no-cache',signal:abort.signal}"));assert(raw.includes('p.high'));assert(raw.includes('p.low'));assert(raw.includes('onpointermove'));assert(raw.includes('무')||raw.includes('수집된 실제 장중'));
+assert(Math.abs(a.returns(f)-10)<1e-8);assert.equal(a.returns({daily:[]}),null);assert.equal(a.series(f).length,3);assert.equal(a.series(f)[0].label,'2026-07-20');assert.deepEqual(JSON.stringify(a.series(f)),JSON.stringify(a.series({daily:f.daily})));
+assert(raw.includes("{cache:'no-cache',signal:abort.signal}"));assert(raw.includes('p.high'));assert(raw.includes('p.low'));assert(raw.includes('onpointermove'));assert(raw.includes('거래일 종가가 있는 일봉만 표시'));
 console.log('PASS ETF navigation, OHLC/intraday separation, calendar ranges, real price returns, source URL/XSS safety, cache refresh, pointer inspection');
 
 assert(!raw.includes("<small>${esc(f.name)} · ${esc(f.code)}</small>"));assert(!raw.includes("<h3>${esc(f.name)} <small"));assert(raw.includes("종목코드 ${esc(f.code)}"));const representative={representatives:{label:"ETF 내 시총 상위",members:[{name:"삼성전기"},{name:"대덕전자"},{name:"<script>"}]}};assert(a.representatives(representative).includes("삼성전기 / 대덕전자 / &lt;script&gt;"));assert(!a.representatives(representative).includes("ETF 내 시총 상위"));assert(a.representatives(representative).includes(">("));assert.equal(a.representatives({}),"");
@@ -19,13 +19,12 @@ const actual=JSON.parse(fs.readFileSync(root+'/data/korean_etf_charts.json','utf
 const dc=actual.funds.find(f=>f.code==='0222F0');assert(dc,'Domestic data-center ETF is present');
 a.setData(actual);a.setSort('day');const ordered=a.filtered();assert.equal(ordered.length,actual.funds.length);assert.equal(ordered.filter(f=>f.code==='0222F0').length,1);
 for(let i=1;i<ordered.length;i++)assert((a.dailyReturn(ordered[i-1])??-Infinity)>=(a.dailyReturn(ordered[i])??-Infinity),'All ETF themes retain global daily-return ordering');
-a.setPeriod('12');assert(a.series(dc).every(p=>p.date>=dc.listedAt),'Never invent prelisting candles');
-a.setPeriod('day');assert.equal(a.series(dc).length,dc.intraday.points.length,'Never fill sparse intraday observations');
+assert(a.series(dc).every(p=>p.date>=dc.listedAt),'Never invent prelisting candles');
 assert.equal(a.selectionSources({}),'');
 const malicious=a.selectionSources({selectionEvidence:{disclosure:'<script>alert(1)</script>',officialSourceUrl:'javascript:alert(1)',officialAum:{sourceUrl:'https://db-asset.com/funds/41900/details'}}});
 assert(malicious.includes('&lt;script&gt;'));assert(!malicious.includes('<script>'));assert(malicious.includes('href="#"'));
 const nodes={};ctx.document.getElementById=id=>nodes[id]||(nodes[id]={innerHTML:'',textContent:'',querySelectorAll:()=>[],querySelector:()=>({})});
-a.setSelected('0222F0');a.setPeriod('3');a.detail();const detail=nodes['etf-detail'].innerHTML;
+a.setSelected('0222F0');a.detail();const detail=nodes['etf-detail'].innerHTML;
 const folded=detail.indexOf('<details class="etf-sources">'),disclosure=detail.indexOf('<p class="etf-selection-disclosure">');
 assert(folded>=0&&disclosure>folded);assert(disclosure<detail.indexOf('</details>'));
 assert(!detail.slice(0,folded).includes('저거래량'));assert(detail.slice(folded).includes('저거래량'));
@@ -37,10 +36,12 @@ assert(html.includes('<option value="week">1주일 수익률순'));assert(!html.
 a.setSort('week');assert.equal(a.filtered().at(-1)?.code===undefined,false);const weekly={funds:[{code:'up',category:'Up',daily:[{date:'2026-10-16',close:100},{date:'2026-10-22',close:200},{date:'2026-10-23',close:150}]},{code:'down',category:'Down',daily:[{date:'2026-10-16',close:200},{date:'2026-10-22',close:100},{date:'2026-10-23',close:120}]},{code:'none',category:'None',daily:[]}]};a.setData(weekly);assert.equal(a.filtered()[0].code,'up');assert.equal(a.filtered().at(-1).code,'none');assert.equal(a.listReturn(weekly.funds[0]),50);a.setSort('day');assert.equal(a.filtered()[0].code,'down');
 console.log('PASS domestic daily/weekly/monthly only and displayed selected-period return');
 
+a.setData({funds:[{code:'old',category:'Old',daily:[{date:'2026-10-21',close:1},{date:'2026-10-22',close:100}]},{code:'fresh',category:'Fresh',daily:[{date:'2026-10-22',close:100},{date:'2026-10-23',close:80}]}]});
+assert.equal(a.filtered()[0].code,'fresh','Older returns cannot outrank a newer snapshot');
 assert.equal(a.returns({daily:[{date:'2026-02-27',close:100},{date:'2026-03-03',close:200},{date:'2026-03-31',close:110}]}).toFixed(2),'10.00');
 
 const adjustedFund={code:'adjusted',name:'Adjusted',category:'Test',issuer:'Test',daily:f.daily,intraday:f.intraday,dailyAdjustment:'과거 분배락 조정가격 <script>',sourceUrls:[]};
-a.setData({funds:[adjustedFund]});a.setSelected('adjusted');a.setPeriod('3');a.detail();const adjustedDetail=nodes['etf-detail'].innerHTML;
+a.setData({funds:[adjustedFund]});a.setSelected('adjusted');a.detail();const adjustedDetail=nodes['etf-detail'].innerHTML;
 assert(adjustedDetail.indexOf('과거 분배락 조정가격 &lt;script&gt;')>=0);
 assert(adjustedDetail.indexOf('과거 분배락 조정가격 &lt;script&gt;')<adjustedDetail.indexOf('<details class="etf-sources">'),'Price basis must be foreground, not hidden source notes');
 assert(raw.includes('공급사 일별 가격계열(과거 분배락 조정 포함)'));

@@ -1,0 +1,1268 @@
+{
+  "schemaVersion": 1,
+  "sessionStatus": "closed",
+  "date": "2026-11-19",
+  "previousSession": "2026-11-18",
+  "title": "11월 19일 미국 마감 시황",
+  "indices": [
+    {
+      "name": "다우",
+      "ticker": "^DJI",
+      "close": 49097.06,
+      "previousClose": 50198.17,
+      "previousDate": "2026-11-18",
+      "changePct": -2.1935261783447513,
+      "closedAt": "2026-11-19T16:00:00-05:00",
+      "sourceIds": [
+        "dji_confirm",
+        "prev_close",
+        "ap19"
+      ]
+    },
+    {
+      "name": "S&P 500",
+      "ticker": "^GSPC",
+      "close": 7175.83,
+      "previousClose": 7323.63,
+      "previousDate": "2026-11-18",
+      "changePct": -2.018124891617956,
+      "closedAt": "2026-11-19T16:00:00-05:00",
+      "sourceIds": [
+        "cboespx",
+        "prev_close",
+        "ap19"
+      ]
+    },
+    {
+      "name": "나스닥 종합",
+      "ticker": "^IXIC",
+      "close": 23879.2,
+      "previousClose": 24429.88,
+      "previousDate": "2026-11-18",
+      "changePct": -2.25412486676152,
+      "closedAt": "2026-11-19T16:00:00-05:00",
+      "sourceIds": [
+        "comp",
+        "prev_close",
+        "ap19"
+      ]
+    },
+    {
+      "name": "러셀 2000",
+      "ticker": "^RUT",
+      "close": 2655.1052,
+      "previousClose": 2714.3101,
+      "previousDate": "2026-11-18",
+      "changePct": -2.181213561412909,
+      "closedAt": "2026-11-19T16:00:00-05:00",
+      "sourceIds": [
+        "cboerut",
+        "prev_close",
+        "ap19"
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "title": "4대 지수 동반 하락",
+      "text": "다우 −2.19%, S&P 500 −2.02%, 나스닥 종합 −2.25%, 러셀 2000 −2.18%.",
+      "sourceIds": [
+        "ap19"
+      ]
+    },
+    {
+      "title": "하락 종목이 시장 전반으로 확산",
+      "text": "S&P 500 구성 증권 503개 중 464개가 하락했고 38개만 상승했다.",
+      "sourceIds": [
+        "dean19",
+        "milton19"
+      ]
+    },
+    {
+      "title": "AI·반도체 약세",
+      "text": "앤트로픽의 상장 첫날에도 기존 AI 관련주 매도세가 이어졌다.",
+      "sourceIds": [
+        "ap19",
+        "milton19"
+      ]
+    },
+    {
+      "title": "S&P 500 연속 하락",
+      "text": "S&P 500은 6거래일 연속 하락했다.",
+      "sourceIds": [
+        "milton19"
+      ]
+    },
+    {
+      "title": "변동성 확대",
+      "text": "VIX는 28.44로 마감했다.",
+      "sourceIds": [
+        "dean19"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "comp",
+      "title": "Nasdaq Composite 지수 화면",
+      "url": "https://www.nasdaq.com/market-activity/index/comp",
+      "retrievedAt": "2026-11-19T21:25:57.761275+00:00"
+    },
+    {
+      "id": "cboespx",
+      "title": "Cboe S&P 500 지수 마감 관측",
+      "url": "https://cdn.cboe.com/api/global/delayed_quotes/quotes/_SPX.json",
+      "retrievedAt": "2026-11-19T21:25:57.761275+00:00"
+    },
+    {
+      "id": "cboerut",
+      "title": "Cboe Russell 2000 지수 마감 관측",
+      "url": "https://cdn.cboe.com/api/global/delayed_quotes/quotes/_RUT.json",
+      "retrievedAt": "2026-11-19T21:25:57.761275+00:00"
+    },
+    {
+      "id": "prev_close",
+      "title": "AP 11/18 지수 종가",
+      "url": "https://apnews.com/article/990749d3d269f7ef05b9f6c089713a58",
+      "retrievedAt": "2026-11-19T21:25:57.761275+00:00"
+    },
+    {
+      "id": "dji_confirm",
+      "title": "다우 정규장 종가",
+      "url": "https://apnews.com/article/206c84045137824feabe052a29ff6140",
+      "retrievedAt": "2026-11-19T21:25:57.761275+00:00"
+    },
+    {
+      "id": "ap19",
+      "title": "AP · 11/19 미국 정규장 지수 마감",
+      "url": "https://apnews.com/article/2f178054aea79d282e5ccf8d62f26a28"
+    },
+    {
+      "id": "dean19",
+      "title": "Dean Financials · 11/19 S&P 500 마감 시장 폭",
+      "url": "https://deanfi.com/insights/marketpulse/2026-11-19/"
+    },
+    {
+      "id": "milton19",
+      "title": "Milton Berg Edge · 11/19 S&P 500 상승·하락·보합",
+      "url": "https://miltonbergedge.com/daily/2026-11-19"
+    },
+    {
+      "id": "screener19",
+      "title": "ScreenerCharts · S&P 500 11/19 집계 교차 확인",
+      "url": "https://screenercharts.com/us/indices/sp-500"
+    },
+    {
+      "id": "wmt_event",
+      "title": "월마트 실적 공개 시각 (07:00 ET)",
+      "url": "https://corporate.walmart.com/news/events/fy2027-q3-earnings-release",
+      "retrievedAt": "2026-11-19T21:25:57.761275+00:00"
+    },
+    {
+      "id": "wmt_consrev",
+      "title": "Visible Alpha 매출 예상치 (11/18)",
+      "url": "https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/11/walmart-earnings-preview-q3-2027",
+      "retrievedAt": "2026-11-19T21:25:57.761275+00:00"
+    },
+    {
+      "id": "wmt_conseps",
+      "title": "AP 인용 FactSet 조정 EPS 예상치",
+      "url": "https://apnews.com/article/d711a4c1662f1bbcca20593122579f4e",
+      "retrievedAt": "2026-11-19T21:25:57.761275+00:00"
+    },
+    {
+      "id": "intu_cons",
+      "title": "Barron’s 인용 FactSet 매출·조정 EPS 예상치",
+      "url": "https://www.barrons.com/articles/intuit-earnings-stock-price-50cb5c01",
+      "retrievedAt": "2026-11-19T21:25:57.761275+00:00"
+    },
+    {
+      "id": "rost_cons",
+      "title": "Investing.com 발표 전 매출 예상치",
+      "url": "https://www.investing.com/news/earnings/ross-stores-earnings-in-focus-can-momentum-sustain-after-q2-beat-93CH-5039346",
+      "retrievedAt": "2026-11-19T21:25:57.761275+00:00"
+    },
+    {
+      "id": "results_WMT",
+      "title": "WMT 실적 원문 · SEC Exhibit 99.1",
+      "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000168/earningsreleasefy27q3.htm",
+      "retrievedAt": "2026-11-19T21:25:57.761275+00:00"
+    },
+    {
+      "id": "quote_WMT",
+      "title": "Nasdaq 정규장·시간외 WMT",
+      "url": "https://www.nasdaq.com/market-activity/stocks/wmt",
+      "retrievedAt": "2026-11-19T21:25:57.761275+00:00"
+    },
+    {
+      "id": "history_WMT_0",
+      "title": "WMT FY26 Q4 재무표",
+      "url": "https://stock.walmart.com/sec-filings/all-sec-filings/content/0000104169-26-000032/earningsreleasefy26q4.htm",
+      "retrievedAt": "2026-11-19T21:25:57.761275+00:00"
+    },
+    {
+      "id": "history_WMT_1",
+      "title": "WMT FY27 Q1 재무표",
+      "url": "https://stock.walmart.com/sec-filings/all-sec-filings/content/0000104169-26-000095/earningsreleasefy27q1.htm",
+      "retrievedAt": "2026-11-19T21:25:57.761275+00:00"
+    },
+    {
+      "id": "history_WMT_2",
+      "title": "WMT FY27 Q2 재무표",
+      "url": "https://stock.walmart.com/sec-filings/all-sec-filings/content/0000104169-26-000145/earningsreleasefy27q2.htm",
+      "retrievedAt": "2026-11-19T21:25:57.761275+00:00"
+    },
+    {
+      "id": "results_INTU",
+      "title": "INTU 실적 원문 · SEC Exhibit 99.1",
+      "url": "https://www.sec.gov/Archives/edgar/data/896878/000089687826000043/fy27q1earningspressrelease.htm",
+      "retrievedAt": "2026-11-19T21:25:57.761275+00:00"
+    },
+    {
+      "id": "time_INTU",
+      "title": "INTU SEC 접수 기록 (공개 확인 시각)",
+      "url": "https://www.sec.gov/Archives/edgar/data/896878/000089687826000043/intu-20261119.htm",
+      "retrievedAt": "2026-11-19T21:25:57.761275+00:00"
+    },
+    {
+      "id": "quote_INTU",
+      "title": "Nasdaq 정규장·시간외 INTU",
+      "url": "https://www.nasdaq.com/market-activity/stocks/intu",
+      "retrievedAt": "2026-11-19T21:25:57.761275+00:00"
+    },
+    {
+      "id": "history_INTU_0",
+      "title": "INTU FY26 Q2 재무표",
+      "url": "https://investors.intuit.com/sec-filings/all-sec-filings/content/0000896878-26-000012/fy26q2earningspressrelease.htm",
+      "retrievedAt": "2026-11-19T21:25:57.761275+00:00"
+    },
+    {
+      "id": "history_INTU_1",
+      "title": "INTU FY26 Q3 재무표",
+      "url": "https://investors.intuit.com/sec-filings/all-sec-filings/content/0000896878-26-000024/fy26q3earningspressrelease.htm",
+      "retrievedAt": "2026-11-19T21:25:57.761275+00:00"
+    },
+    {
+      "id": "history_INTU_2",
+      "title": "INTU FY26 Q4 재무표",
+      "url": "https://investors.intuit.com/sec-filings/all-sec-filings/content/0000896878-26-000029/fy26q4earningspressrelease.htm",
+      "retrievedAt": "2026-11-19T21:25:57.761275+00:00"
+    },
+    {
+      "id": "results_ROST",
+      "title": "ROST 실적 원문 · SEC Exhibit 99.1",
+      "url": "https://www.sec.gov/Archives/edgar/data/745732/000074573226000047/q326exhibit991.htm",
+      "retrievedAt": "2026-11-19T21:25:57.761275+00:00"
+    },
+    {
+      "id": "time_ROST",
+      "title": "ROST SEC 접수 기록 (공개 확인 시각)",
+      "url": "https://www.sec.gov/Archives/edgar/data/745732/000074573226000047/rost-20261119.htm",
+      "retrievedAt": "2026-11-19T21:25:57.761275+00:00"
+    },
+    {
+      "id": "quote_ROST",
+      "title": "Nasdaq 정규장·시간외 ROST",
+      "url": "https://www.nasdaq.com/market-activity/stocks/rost",
+      "retrievedAt": "2026-11-19T21:25:57.761275+00:00"
+    },
+    {
+      "id": "history_ROST_0",
+      "title": "ROST FY25 Q4 재무표",
+      "url": "https://investors.rossstores.com/static-files/ace70e6a-bf5d-4f63-a2fc-c4eb6af72915",
+      "retrievedAt": "2026-11-19T21:25:57.761275+00:00"
+    },
+    {
+      "id": "history_ROST_1",
+      "title": "ROST FY26 Q1 재무표",
+      "url": "https://investors.rossstores.com/news-releases/news-release-details/ross-stores-reports-robust-first-quarter-sales-and-earnings",
+      "retrievedAt": "2026-11-19T21:25:57.761275+00:00"
+    },
+    {
+      "id": "history_ROST_2",
+      "title": "ROST FY26 Q2 재무표",
+      "url": "https://www.sec.gov/Archives/edgar/data/745732/000074573226000041/rost-20260801.htm",
+      "retrievedAt": "2026-11-19T21:25:57.761275+00:00"
+    },
+    {
+      "id": "results_KEYS",
+      "title": "KEYS 실적 원문 · SEC Exhibit 99.1",
+      "url": "https://www.sec.gov/Archives/edgar/data/1601046/000160104626000040/exhibit991-q426pressrelease.htm",
+      "retrievedAt": "2026-11-19T21:25:57.761275+00:00"
+    },
+    {
+      "id": "time_KEYS",
+      "title": "KEYS SEC 접수 기록 (공개 확인 시각)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1601046/000160104626000040/keys-20261119.htm",
+      "retrievedAt": "2026-11-19T21:25:57.761275+00:00"
+    },
+    {
+      "id": "quote_KEYS",
+      "title": "Nasdaq 정규장·시간외 KEYS",
+      "url": "https://www.nasdaq.com/market-activity/stocks/keys",
+      "retrievedAt": "2026-11-19T21:25:57.761275+00:00"
+    },
+    {
+      "id": "history_KEYS_0",
+      "title": "KEYS FY26 Q1 재무표",
+      "url": "https://investor.keysight.com/investor-news-and-events/financial-press-releases/press-release-details/2026/Keysight-Technologies-Reports-First-Quarter-2026-Results/default.aspx",
+      "retrievedAt": "2026-11-19T21:25:57.761275+00:00"
+    },
+    {
+      "id": "history_KEYS_1",
+      "title": "KEYS FY26 Q2 재무표",
+      "url": "https://investor.keysight.com/investor-news-and-events/financial-press-releases/press-release-details/2026/Keysight-Technologies-Reports-Second-Quarter-2026-Results/default.aspx",
+      "retrievedAt": "2026-11-19T21:25:57.761275+00:00"
+    },
+    {
+      "id": "history_KEYS_2",
+      "title": "KEYS FY26 Q3 재무표",
+      "url": "https://investor.keysight.com/investor-news-and-events/financial-press-releases/press-release-details/2026/Keysight-Technologies-Reports-Third-Quarter-2026-Results/default.aspx",
+      "retrievedAt": "2026-11-19T21:25:57.761275+00:00"
+    },
+    {
+      "id": "us19-high-range",
+      "title": "11/19 S&P 500 52주 범위 대조",
+      "url": "https://www.capitalinsightbd.com/ranking-52weeks-high-price-us/"
+    },
+    {
+      "id": "us19-close-tech",
+      "title": "Bio-Techne · 11/19 정규장 종가 대조",
+      "url": "https://stockanalysis.com/stocks/tech/history/"
+    },
+    {
+      "id": "us19-close-ptc",
+      "title": "PTC · 11/19 정규장 종가 대조",
+      "url": "https://stockanalysis.com/stocks/ptc/history/"
+    },
+    {
+      "id": "us19-close-tgt",
+      "title": "Target · 11/19 정규장 종가 대조",
+      "url": "https://stockanalysis.com/stocks/tgt/history/"
+    }
+  ],
+  "reportedBreadth": {
+    "asOf": "2026-11-19",
+    "universe": "S&P 500",
+    "securities": 503,
+    "counts": {
+      "advancing": 38,
+      "declining": 464,
+      "unchanged": 1
+    },
+    "sourceIds": [
+      "dean19",
+      "milton19",
+      "screener19"
+    ]
+  },
+  "earnings": {
+    "asOf": "2026-11-19",
+    "status": "partial",
+    "coverageStatus": "checked_sources_with_gaps",
+    "note": "공식 재무표와 4분기 비교를 확인한 기업을 표시했습니다. 목록이 당일 발표 전수를 뜻하지는 않습니다.",
+    "rows": [
+      {
+        "ticker": "WMT",
+        "name": "월마트",
+        "period": "FY2027 Q3",
+        "releaseDate": "2026-11-19",
+        "releaseType": "results",
+        "presentationVersion": 3,
+        "universeScope": "sp500",
+        "sourceIds": [
+          "results_WMT",
+          "wmt_consrev",
+          "wmt_conseps"
+        ],
+        "metrics": [
+          {
+            "label": "매출",
+            "basis": "US GAAP",
+            "value": "188,835.00 USD million",
+            "raw": {
+              "value": 188835,
+              "yearAgoQuarter": 179496,
+              "previousQuarter": 187937,
+              "unit": "USD million",
+              "status": "verified",
+              "consensusComparable": true,
+              "consensusValue": 187300,
+              "surprisePct": 0.8195408435664797
+            },
+            "sourceIds": [
+              "results_WMT",
+              "wmt_consrev"
+            ],
+            "yoy": "+5.20%",
+            "qoq": "+0.48%",
+            "consensus": "187,300.00 USD million"
+          },
+          {
+            "label": "매출총이익",
+            "basis": "US GAAP",
+            "value": "45,754.00 USD million",
+            "raw": {
+              "value": 45754,
+              "yearAgoQuarter": 43063,
+              "previousQuarter": 47296,
+              "unit": "USD million",
+              "status": "verified",
+              "consensusComparable": false,
+              "consensusValue": null
+            },
+            "sourceIds": [
+              "results_WMT"
+            ],
+            "yoy": "+6.25%",
+            "qoq": "-3.26%"
+          },
+          {
+            "label": "매출총이익률",
+            "basis": "US GAAP",
+            "value": "24.50 %",
+            "raw": {
+              "value": 24.499215558185234,
+              "yearAgoQuarter": 24.224133566594848,
+              "previousQuarter": 25.41429339065019,
+              "unit": "%",
+              "status": "verified",
+              "consensusComparable": false,
+              "consensusValue": null
+            },
+            "sourceIds": [
+              "results_WMT"
+            ],
+            "yoy": "+0.28%p",
+            "qoq": "-0.92%p"
+          },
+          {
+            "label": "영업이익",
+            "basis": "US GAAP",
+            "value": "7,770.00 USD million",
+            "raw": {
+              "value": 7770,
+              "yearAgoQuarter": 6696,
+              "previousQuarter": 9383,
+              "unit": "USD million",
+              "status": "verified",
+              "consensusComparable": false,
+              "consensusValue": null
+            },
+            "sourceIds": [
+              "results_WMT"
+            ],
+            "yoy": "+16.04%",
+            "qoq": "-17.19%"
+          },
+          {
+            "label": "EPS",
+            "basis": "US GAAP",
+            "value": "0.62 USD/share",
+            "raw": {
+              "value": 0.62,
+              "yearAgoQuarter": 0.77,
+              "previousQuarter": 0.8,
+              "unit": "USD/share",
+              "status": "verified",
+              "consensusComparable": false,
+              "consensusValue": null
+            },
+            "sourceIds": [
+              "results_WMT"
+            ],
+            "yoy": "-19.48%",
+            "qoq": "-22.50%"
+          }
+        ],
+        "quarterlyHistory": {
+          "rows": [
+            {
+              "period": "FY2026 Q4",
+              "periodEnd": "2026-01-30",
+              "revenue": 190656,
+              "grossProfit": null,
+              "grossMargin": null,
+              "operatingIncome": 8708,
+              "operatingMargin": 4.567388385364216,
+              "eps": 0.53,
+              "sourceIds": [
+                "history_WMT_0"
+              ],
+              "status": "verified",
+              "epsBasis": "US GAAP diluted USD/share"
+            },
+            {
+              "period": "FY2027 Q1",
+              "periodEnd": "2026-04-30",
+              "revenue": 177751,
+              "grossProfit": null,
+              "grossMargin": null,
+              "operatingIncome": 7493,
+              "operatingMargin": 4.215447451772423,
+              "eps": 0.67,
+              "sourceIds": [
+                "history_WMT_1"
+              ],
+              "status": "verified",
+              "epsBasis": "US GAAP diluted USD/share"
+            },
+            {
+              "period": "FY2027 Q2",
+              "periodEnd": "2026-07-31",
+              "revenue": 187937,
+              "grossProfit": 47296,
+              "grossMargin": 25.41429339065019,
+              "operatingIncome": 9383,
+              "operatingMargin": 4.9926305091599845,
+              "eps": 0.8,
+              "sourceIds": [
+                "history_WMT_2"
+              ],
+              "status": "verified",
+              "epsBasis": "US GAAP diluted USD/share"
+            },
+            {
+              "period": "FY2027 Q3",
+              "periodEnd": "2026-10-30",
+              "revenue": 188835,
+              "grossProfit": 45754,
+              "grossMargin": 24.499215558185234,
+              "operatingIncome": 7770,
+              "operatingMargin": 4.114703312415601,
+              "eps": 0.62,
+              "sourceIds": [
+                "results_WMT"
+              ],
+              "status": "verified",
+              "epsBasis": "US GAAP diluted USD/share"
+            }
+          ],
+          "basis": "US GAAP · USD million",
+          "epsBasis": "희석 USD/share"
+        },
+        "releaseTiming": {
+          "session": "before_open",
+          "publishedAt": "2026-11-19T07:00:00-05:00",
+          "sourceIds": [
+            "wmt_event"
+          ]
+        },
+        "priceReaction": {
+          "currency": "USD",
+          "regular": {
+            "close": 126.04,
+            "previousClose": 127.36,
+            "changePct": -1.0364321608040128,
+            "date": "2026-11-19",
+            "previousDate": "2026-11-18",
+            "closedAt": "2026-11-19T16:00:00-05:00",
+            "sourceIds": [
+              "quote_WMT"
+            ]
+          }
+        },
+        "consensusMetrics": [
+          {
+            "label": "EPS",
+            "basis": "조정 희석 EPS",
+            "value": "0.65 USD/share",
+            "consensus": "0.64 USD/share",
+            "yoy": "+4.84%",
+            "qoq": "-19.75%",
+            "raw": {
+              "value": 0.65,
+              "yearAgoQuarter": 0.62,
+              "previousQuarter": 0.81,
+              "unit": "USD/share",
+              "status": "verified",
+              "consensusComparable": true,
+              "consensusValue": 0.64,
+              "surprisePct": 1.5625
+            },
+            "sourceIds": [
+              "results_WMT",
+              "wmt_conseps",
+              "history_WMT_2"
+            ]
+          }
+        ]
+      },
+      {
+        "ticker": "INTU",
+        "name": "인튜이트",
+        "period": "FY2027 Q1",
+        "releaseDate": "2026-11-19",
+        "releaseType": "results",
+        "presentationVersion": 3,
+        "universeScope": "sp500",
+        "sourceIds": [
+          "results_INTU"
+        ],
+        "metrics": [
+          {
+            "label": "매출",
+            "basis": "US GAAP",
+            "value": "4,354.00 USD million",
+            "raw": {
+              "value": 4354,
+              "yearAgoQuarter": 3885,
+              "previousQuarter": 4354,
+              "unit": "USD million",
+              "status": "verified",
+              "consensusComparable": true,
+              "consensusValue": 4310,
+              "surprisePct": 1.0208816705336465
+            },
+            "sourceIds": [
+              "results_INTU",
+              "intu_cons"
+            ],
+            "yoy": "+12.07%",
+            "qoq": "+0.00%",
+            "consensus": "4,310.00 USD million"
+          },
+          {
+            "label": "매출총이익",
+            "basis": "US GAAP",
+            "value": "3,304.00 USD million",
+            "raw": {
+              "value": 3304,
+              "yearAgoQuarter": 3002,
+              "previousQuarter": 3401,
+              "unit": "USD million",
+              "status": "verified",
+              "consensusComparable": false,
+              "consensusValue": null
+            },
+            "sourceIds": [
+              "results_INTU"
+            ],
+            "yoy": "+10.06%",
+            "qoq": "-2.85%"
+          },
+          {
+            "label": "매출총이익률",
+            "basis": "US GAAP",
+            "value": "75.88 %",
+            "raw": {
+              "value": 75.88424437299035,
+              "yearAgoQuarter": 77.27155727155727,
+              "previousQuarter": 78.11208084519981,
+              "unit": "%",
+              "status": "verified",
+              "consensusComparable": false,
+              "consensusValue": null
+            },
+            "sourceIds": [
+              "results_INTU"
+            ],
+            "yoy": "-1.39%p",
+            "qoq": "-2.23%p"
+          },
+          {
+            "label": "영업이익",
+            "basis": "US GAAP",
+            "value": "868.00 USD million",
+            "raw": {
+              "value": 868,
+              "yearAgoQuarter": 534,
+              "previousQuarter": 475,
+              "unit": "USD million",
+              "status": "verified",
+              "consensusComparable": false,
+              "consensusValue": null
+            },
+            "sourceIds": [
+              "results_INTU"
+            ],
+            "yoy": "+62.55%",
+            "qoq": "+82.74%"
+          },
+          {
+            "label": "EPS",
+            "basis": "US GAAP",
+            "value": "2.59 USD/share",
+            "raw": {
+              "value": 2.59,
+              "yearAgoQuarter": 1.59,
+              "previousQuarter": 1.34,
+              "unit": "USD/share",
+              "status": "verified",
+              "consensusComparable": false,
+              "consensusValue": null
+            },
+            "sourceIds": [
+              "results_INTU"
+            ],
+            "yoy": "+62.89%",
+            "qoq": "+93.28%"
+          }
+        ],
+        "quarterlyHistory": {
+          "rows": [
+            {
+              "period": "FY2026 Q2",
+              "periodEnd": "2026-01-31",
+              "revenue": 4651,
+              "grossProfit": null,
+              "grossMargin": null,
+              "operatingIncome": 855,
+              "operatingMargin": 18.38314341001935,
+              "eps": 2.48,
+              "sourceIds": [
+                "history_INTU_0"
+              ],
+              "status": "verified",
+              "epsBasis": "US GAAP diluted USD/share"
+            },
+            {
+              "period": "FY2026 Q3",
+              "periodEnd": "2026-04-30",
+              "revenue": 8558,
+              "grossProfit": null,
+              "grossMargin": null,
+              "operatingIncome": 4020,
+              "operatingMargin": 46.97359196073849,
+              "eps": 11.09,
+              "sourceIds": [
+                "history_INTU_1"
+              ],
+              "status": "verified",
+              "epsBasis": "US GAAP diluted USD/share"
+            },
+            {
+              "period": "FY2026 Q4",
+              "periodEnd": "2026-07-31",
+              "revenue": 4354,
+              "grossProfit": 3401,
+              "grossMargin": 78.11208084519981,
+              "operatingIncome": 475,
+              "operatingMargin": 10.909508497932935,
+              "eps": 1.34,
+              "sourceIds": [
+                "history_INTU_2"
+              ],
+              "status": "verified",
+              "epsBasis": "US GAAP diluted USD/share"
+            },
+            {
+              "period": "FY2027 Q1",
+              "periodEnd": "2026-10-31",
+              "revenue": 4354,
+              "grossProfit": 3304,
+              "grossMargin": 75.88424437299035,
+              "operatingIncome": 868,
+              "operatingMargin": 19.935691318327976,
+              "eps": 2.59,
+              "sourceIds": [
+                "results_INTU"
+              ],
+              "status": "verified",
+              "epsBasis": "US GAAP diluted USD/share"
+            }
+          ],
+          "basis": "US GAAP · USD million",
+          "epsBasis": "희석 USD/share"
+        },
+        "releaseTiming": {
+          "session": "after_close",
+          "publishedAt": "2026-11-19T16:08:04-05:00",
+          "sourceIds": [
+            "time_INTU"
+          ]
+        },
+        "priceReaction": {
+          "currency": "USD",
+          "regular": {
+            "close": 310.02,
+            "previousClose": 313.24,
+            "changePct": -1.0279657770399742,
+            "date": "2026-11-19",
+            "previousDate": "2026-11-18",
+            "closedAt": "2026-11-19T16:00:00-05:00",
+            "sourceIds": [
+              "quote_INTU"
+            ]
+          }
+        },
+        "consensusMetrics": [
+          {
+            "label": "EPS",
+            "basis": "SBC 포함 조정 희석 EPS",
+            "value": "2.91 USD/share",
+            "consensus": "2.46 USD/share",
+            "yoy": "+55.61%",
+            "qoq": "+11.07%",
+            "raw": {
+              "value": 2.91,
+              "yearAgoQuarter": 1.87,
+              "previousQuarter": 2.62,
+              "unit": "USD/share",
+              "status": "verified",
+              "consensusComparable": true,
+              "consensusValue": 2.46,
+              "surprisePct": 18.292682926829286
+            },
+            "sourceIds": [
+              "results_INTU",
+              "intu_cons",
+              "history_INTU_2"
+            ]
+          }
+        ]
+      },
+      {
+        "ticker": "ROST",
+        "name": "로스 스토어스",
+        "period": "FY2026 Q3",
+        "releaseDate": "2026-11-19",
+        "releaseType": "results",
+        "presentationVersion": 3,
+        "universeScope": "sp500",
+        "sourceIds": [
+          "results_ROST"
+        ],
+        "metrics": [
+          {
+            "label": "매출",
+            "basis": "US GAAP",
+            "value": "6,255.95 USD million",
+            "raw": {
+              "value": 6255.954,
+              "yearAgoQuarter": 5600.946,
+              "previousQuarter": 6264.886,
+              "unit": "USD million",
+              "status": "verified",
+              "consensusComparable": true,
+              "consensusValue": 6230,
+              "surprisePct": 0.4165971107544131
+            },
+            "sourceIds": [
+              "results_ROST",
+              "rost_cons"
+            ],
+            "yoy": "+11.69%",
+            "qoq": "-0.14%",
+            "consensus": "6,230.00 USD million"
+          },
+          {
+            "label": "매출총이익",
+            "basis": "US GAAP",
+            "value": "1,795.48 USD million",
+            "raw": {
+              "value": 1795.485,
+              "yearAgoQuarter": 1568.5,
+              "previousQuarter": 2119.671,
+              "unit": "USD million",
+              "status": "verified",
+              "consensusComparable": false,
+              "consensusValue": null
+            },
+            "sourceIds": [
+              "results_ROST"
+            ],
+            "yoy": "+14.47%",
+            "qoq": "-15.29%"
+          },
+          {
+            "label": "매출총이익률",
+            "basis": "US GAAP",
+            "value": "28.70 %",
+            "raw": {
+              "value": 28.700418833002928,
+              "yearAgoQuarter": 28.004197862289693,
+              "previousQuarter": 33.83415117210433,
+              "unit": "%",
+              "status": "verified",
+              "consensusComparable": false,
+              "consensusValue": null
+            },
+            "sourceIds": [
+              "results_ROST"
+            ],
+            "yoy": "+0.70%p",
+            "qoq": "-5.13%p"
+          },
+          {
+            "label": "영업이익",
+            "basis": "US GAAP",
+            "value": "766.79 USD million",
+            "raw": {
+              "value": 766.787,
+              "yearAgoQuarter": 648.498,
+              "previousQuarter": 1103.618,
+              "unit": "USD million",
+              "status": "verified",
+              "consensusComparable": false,
+              "consensusValue": null
+            },
+            "sourceIds": [
+              "results_ROST"
+            ],
+            "yoy": "+18.24%",
+            "qoq": "-30.52%"
+          },
+          {
+            "label": "EPS",
+            "basis": "US GAAP",
+            "value": "1.91 USD/share",
+            "raw": {
+              "value": 1.91,
+              "yearAgoQuarter": 1.58,
+              "previousQuarter": 2.66,
+              "unit": "USD/share",
+              "status": "verified",
+              "consensusComparable": false,
+              "consensusValue": null
+            },
+            "sourceIds": [
+              "results_ROST"
+            ],
+            "yoy": "+20.89%",
+            "qoq": "-28.20%"
+          }
+        ],
+        "quarterlyHistory": {
+          "rows": [
+            {
+              "period": "FY2025 Q4",
+              "periodEnd": "2026-01-31",
+              "revenue": 6635.49,
+              "grossProfit": 1804.213,
+              "grossMargin": 27.190350674931317,
+              "operatingIncome": 814.115,
+              "operatingMargin": 12.269101452944696,
+              "eps": 2.0,
+              "sourceIds": [
+                "history_ROST_0"
+              ],
+              "status": "verified",
+              "epsBasis": "US GAAP diluted USD/share"
+            },
+            {
+              "period": "FY2026 Q1",
+              "periodEnd": "2026-05-02",
+              "revenue": 6010.476,
+              "grossProfit": 1779.887,
+              "grossMargin": 29.61307889757816,
+              "operatingIncome": 804.026,
+              "operatingMargin": 13.37707695696647,
+              "eps": 2.02,
+              "sourceIds": [
+                "history_ROST_1"
+              ],
+              "status": "verified",
+              "epsBasis": "US GAAP diluted USD/share"
+            },
+            {
+              "period": "FY2026 Q2",
+              "periodEnd": "2026-08-01",
+              "revenue": 6264.886,
+              "grossProfit": 2119.671,
+              "grossMargin": 33.83415117210433,
+              "operatingIncome": 1103.618,
+              "operatingMargin": 17.61593107999092,
+              "eps": 2.66,
+              "sourceIds": [
+                "history_ROST_2"
+              ],
+              "status": "verified",
+              "epsBasis": "US GAAP diluted USD/share"
+            },
+            {
+              "period": "FY2026 Q3",
+              "periodEnd": "2026-10-31",
+              "revenue": 6255.954,
+              "grossProfit": 1795.485,
+              "grossMargin": 28.700418833002928,
+              "operatingIncome": 766.787,
+              "operatingMargin": 12.25691557194954,
+              "eps": 1.91,
+              "sourceIds": [
+                "results_ROST"
+              ],
+              "status": "verified",
+              "epsBasis": "US GAAP diluted USD/share"
+            }
+          ],
+          "basis": "US GAAP · USD million",
+          "epsBasis": "희석 USD/share"
+        },
+        "releaseTiming": {
+          "session": "after_close",
+          "publishedAt": "2026-11-19T16:02:50-05:00",
+          "sourceIds": [
+            "time_ROST"
+          ]
+        },
+        "priceReaction": {
+          "currency": "USD",
+          "regular": {
+            "close": 219.88,
+            "previousClose": 227.64,
+            "changePct": -3.408891231769462,
+            "date": "2026-11-19",
+            "previousDate": "2026-11-18",
+            "closedAt": "2026-11-19T16:00:00-05:00",
+            "sourceIds": [
+              "quote_ROST"
+            ]
+          }
+        }
+      },
+      {
+        "ticker": "KEYS",
+        "name": "키사이트 테크놀로지스",
+        "period": "FY2026 Q4",
+        "releaseDate": "2026-11-19",
+        "releaseType": "results",
+        "presentationVersion": 3,
+        "universeScope": "sp500",
+        "sourceIds": [
+          "results_KEYS"
+        ],
+        "metrics": [
+          {
+            "label": "매출",
+            "basis": "US GAAP",
+            "value": "1,994.00 USD million",
+            "raw": {
+              "value": 1994,
+              "yearAgoQuarter": 1419,
+              "previousQuarter": 1846,
+              "unit": "USD million",
+              "status": "verified",
+              "consensusComparable": false,
+              "consensusValue": null
+            },
+            "sourceIds": [
+              "results_KEYS"
+            ],
+            "yoy": "+40.52%",
+            "qoq": "+8.02%"
+          },
+          {
+            "label": "매출총이익",
+            "basis": "US GAAP",
+            "value": "1,321.00 USD million",
+            "raw": {
+              "value": 1321,
+              "yearAgoQuarter": 869,
+              "previousQuarter": 1216,
+              "unit": "USD million",
+              "status": "verified",
+              "consensusComparable": false,
+              "consensusValue": null
+            },
+            "sourceIds": [
+              "results_KEYS"
+            ],
+            "yoy": "+52.01%",
+            "qoq": "+8.63%"
+          },
+          {
+            "label": "매출총이익률",
+            "basis": "US GAAP",
+            "value": "66.25 %",
+            "raw": {
+              "value": 66.24874623871615,
+              "yearAgoQuarter": 61.240310077519375,
+              "previousQuarter": 65.87215601300109,
+              "unit": "%",
+              "status": "verified",
+              "consensusComparable": false,
+              "consensusValue": null
+            },
+            "sourceIds": [
+              "results_KEYS"
+            ],
+            "yoy": "+5.01%p",
+            "qoq": "+0.38%p"
+          },
+          {
+            "label": "영업이익",
+            "basis": "US GAAP",
+            "value": "586.00 USD million",
+            "raw": {
+              "value": 586,
+              "yearAgoQuarter": 217,
+              "previousQuarter": 461,
+              "unit": "USD million",
+              "status": "verified",
+              "consensusComparable": false,
+              "consensusValue": null
+            },
+            "sourceIds": [
+              "results_KEYS"
+            ],
+            "yoy": "+170.05%",
+            "qoq": "+27.11%"
+          },
+          {
+            "label": "EPS",
+            "basis": "US GAAP",
+            "value": "2.82 USD/share",
+            "raw": {
+              "value": 2.82,
+              "yearAgoQuarter": 1.35,
+              "previousQuarter": 2.3,
+              "unit": "USD/share",
+              "status": "verified",
+              "consensusComparable": false,
+              "consensusValue": null
+            },
+            "sourceIds": [
+              "results_KEYS"
+            ],
+            "yoy": "+108.89%",
+            "qoq": "+22.61%"
+          }
+        ],
+        "quarterlyHistory": {
+          "rows": [
+            {
+              "period": "FY2026 Q1",
+              "periodEnd": "2026-01-31",
+              "revenue": 1600,
+              "grossProfit": 995,
+              "grossMargin": 62.18749999999999,
+              "operatingIncome": 248,
+              "operatingMargin": 15.5,
+              "eps": 1.63,
+              "sourceIds": [
+                "history_KEYS_0"
+              ],
+              "status": "verified",
+              "epsBasis": "US GAAP diluted USD/share"
+            },
+            {
+              "period": "FY2026 Q2",
+              "periodEnd": "2026-04-30",
+              "revenue": 1717,
+              "grossProfit": 1178,
+              "grossMargin": 68.60803727431566,
+              "operatingIncome": 407,
+              "operatingMargin": 23.704135119394294,
+              "eps": 2.02,
+              "sourceIds": [
+                "history_KEYS_1"
+              ],
+              "status": "verified",
+              "epsBasis": "US GAAP diluted USD/share"
+            },
+            {
+              "period": "FY2026 Q3",
+              "periodEnd": "2026-07-31",
+              "revenue": 1846,
+              "grossProfit": 1216,
+              "grossMargin": 65.87215601300109,
+              "operatingIncome": 461,
+              "operatingMargin": 24.972914409534127,
+              "eps": 2.3,
+              "sourceIds": [
+                "history_KEYS_2"
+              ],
+              "status": "verified",
+              "epsBasis": "US GAAP diluted USD/share"
+            },
+            {
+              "period": "FY2026 Q4",
+              "periodEnd": "2026-10-31",
+              "revenue": 1994,
+              "grossProfit": 1321,
+              "grossMargin": 66.24874623871615,
+              "operatingIncome": 586,
+              "operatingMargin": 29.38816449348044,
+              "eps": 2.82,
+              "sourceIds": [
+                "results_KEYS"
+              ],
+              "status": "verified",
+              "epsBasis": "US GAAP diluted USD/share"
+            }
+          ],
+          "basis": "US GAAP · USD million",
+          "epsBasis": "희석 USD/share"
+        },
+        "releaseTiming": {
+          "session": "after_close",
+          "publishedAt": "2026-11-19T16:09:24-05:00",
+          "sourceIds": [
+            "time_KEYS"
+          ]
+        },
+        "priceReaction": {
+          "currency": "USD",
+          "regular": {
+            "close": 281.51,
+            "previousClose": 286.3,
+            "changePct": -1.6730702060775426,
+            "date": "2026-11-19",
+            "previousDate": "2026-11-18",
+            "closedAt": "2026-11-19T16:00:00-05:00",
+            "sourceIds": [
+              "quote_KEYS"
+            ]
+          }
+        }
+      }
+    ],
+    "sourceIds": [
+      "results_WMT",
+      "results_INTU",
+      "results_ROST",
+      "results_KEYS"
+    ]
+  },
+  "closeScreens": {
+    "asOf": "2026-11-19",
+    "universe": "S&P 500",
+    "highsStatus": "partial",
+    "highs": [
+      {
+        "ticker": "TECH",
+        "name": "Bio-Techne",
+        "close": 72.7,
+        "high52": 72.88,
+        "asOf": "2026-11-19",
+        "sourceIds": [
+          "us19-high-range",
+          "us19-close-tech"
+        ]
+      },
+      {
+        "ticker": "PTC",
+        "name": "PTC",
+        "close": 195.63,
+        "high52": 196.79,
+        "asOf": "2026-11-19",
+        "sourceIds": [
+          "us19-high-range",
+          "us19-close-ptc"
+        ]
+      },
+      {
+        "ticker": "TGT",
+        "name": "Target",
+        "close": 167.46,
+        "high52": 170.75,
+        "asOf": "2026-11-19",
+        "sourceIds": [
+          "us19-high-range",
+          "us19-close-tgt"
+        ]
+      }
+    ],
+    "turnoverStatus": "unavailable"
+  },
+  "constituents": [
+    "TECH",
+    "INTU",
+    "KEYS",
+    "PTC",
+    "ROST",
+    "TGT",
+    "WMT"
+  ]
+}

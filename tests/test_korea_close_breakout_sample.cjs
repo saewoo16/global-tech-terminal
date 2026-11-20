@@ -12,7 +12,7 @@ for(const s of ['진양산업 (003780)','8,000원','8,590원','+19.4%','직전 2
 assert.doesNotMatch(b,/<iframe|<script|<table/);
 c.window.TerminalBriefingData={entries:[entry]};
 const combined=c.window.highs();
-assert.match(combined,/2026-11-13 기준 · 기존 선별/);
+assert.match(combined,/2026-11-13 기준 · 이전 거래일 · 기존 선별/);
 assert.equal((combined.match(/진양산업/g)||[]).length,1);
 assert.ok(combined.indexOf('기존 선별')<combined.indexOf('종가 돌파 · 별도 확인 사례'));
 assert.equal(entry.highs.asOf,'2026-11-13');

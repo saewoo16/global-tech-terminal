@@ -57,6 +57,38 @@
         "url": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=KOSDAQ&bizdate=20261120&startIdx=0&pageSize=30",
         "note": "KRX 시장별 거래일 집계. 11/20 당일 잠정치와 11/19까지 과거 일별 관측은 분리.",
         "retrievedAt": "2026-11-20T07:21:23.597943+00:00"
+      },
+      {
+        "id": "nov20-rank-kospi-inst",
+        "title": "NAVER KRX 일별 기관 순매수 · KOSPI",
+        "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=ORGANIZATION&tradeType=KRX&marketType=KOSPI&startIdx=0&pageSize=100&periodType=DAY",
+        "retrievedAt": "2026-11-20T07:28:52.136251+00:00",
+        "note": "KRX 일별 순매수 금액 기준. 실제 공급사 집계일 2026-11-19."
+      },
+      {
+        "id": "nov20-rank-kosdaq-inst",
+        "title": "NAVER KRX 일별 기관 순매수 · KOSDAQ",
+        "url": "https://stock.naver.com/api/domestic/market/trend/trendForeignOrg?investorType=ORGANIZATION&tradeType=KRX&marketType=KOSDAQ&startIdx=0&pageSize=100&periodType=DAY",
+        "retrievedAt": "2026-11-20T07:28:52.270649+00:00",
+        "note": "KRX 일별 순매수 금액 기준. 실제 공급사 집계일 2026-11-19."
+      },
+      {
+        "id": "nov20-kofia-18",
+        "title": "금융투자협회 FreeSIS",
+        "url": "https://freesis.kofia.or.kr/stat/main.do",
+        "note": "증시자금추이 공식 원문."
+      },
+      {
+        "id": "nov20-kofia-18-yn",
+        "title": "금융투자협회 11/18 공표값 · 연합뉴스 확인",
+        "url": "https://www.yna.co.kr/amp/view/AKR20261119128100008",
+        "note": "11/19 보도에 명시한 11/18 기준 전체 시장 공식 잔고. 직접 조회는 현재 실패."
+      },
+      {
+        "id": "nov20-kofia-18-cross",
+        "title": "11/18 증시자금 교차 확인",
+        "url": "https://www.sateconomy.co.kr/news/view/1065595870278096",
+        "note": "11/19 보도, 동일 공표분."
       }
     ],
     "indices": [
@@ -189,6 +221,143 @@
         "nov20-close-hk",
         "nov20-flow-kospi",
         "nov20-flow-kosdaq"
+      ]
+    },
+    "marketScreens": {
+      "netBuys": {
+        "KOSPI": {
+          "institution": {
+            "asOf": "2026-11-19",
+            "unit": "KRW",
+            "sourceIds": [
+              "nov20-rank-kospi-inst"
+            ],
+            "rows": [
+              {
+                "code": "009150",
+                "name": "삼성전기",
+                "value": 109518589000
+              },
+              {
+                "code": "402340",
+                "name": "SK스퀘어",
+                "value": 53964790000
+              },
+              {
+                "code": "352820",
+                "name": "하이브",
+                "value": 24794351000
+              },
+              {
+                "code": "032830",
+                "name": "삼성생명",
+                "value": 19662246000
+              },
+              {
+                "code": "068270",
+                "name": "셀트리온",
+                "value": 15284900000
+              },
+              {
+                "code": "012330",
+                "name": "현대모비스",
+                "value": 13543944000
+              },
+              {
+                "code": "003490",
+                "name": "대한항공",
+                "value": 12738223000
+              },
+              {
+                "code": "034730",
+                "name": "SK",
+                "value": 11602007000
+              },
+              {
+                "code": "298040",
+                "name": "효성중공업",
+                "value": 9239217000
+              },
+              {
+                "code": "007660",
+                "name": "이수페타시스",
+                "value": 9023202000
+              }
+            ]
+          }
+        },
+        "KOSDAQ": {
+          "institution": {
+            "asOf": "2026-11-19",
+            "unit": "KRW",
+            "sourceIds": [
+              "nov20-rank-kosdaq-inst"
+            ],
+            "rows": [
+              {
+                "code": "277810",
+                "name": "레인보우로보틱스",
+                "value": 24850249000
+              },
+              {
+                "code": "403870",
+                "name": "HPSP",
+                "value": 18709569000
+              },
+              {
+                "code": "108490",
+                "name": "로보티즈",
+                "value": 14184975000
+              },
+              {
+                "code": "036930",
+                "name": "주성엔지니어링",
+                "value": 11859269000
+              },
+              {
+                "code": "041510",
+                "name": "에스엠",
+                "value": 10950084000
+              },
+              {
+                "code": "058470",
+                "name": "리노공업",
+                "value": 8728848000
+              },
+              {
+                "code": "145020",
+                "name": "휴젤",
+                "value": 7854191000
+              },
+              {
+                "code": "290550",
+                "name": "디케이티",
+                "value": 7698023000
+              },
+              {
+                "code": "095610",
+                "name": "테스",
+                "value": 7574672000
+              },
+              {
+                "code": "232140",
+                "name": "와이씨",
+                "value": 6658032000
+              }
+            ]
+          }
+        }
+      }
+    },
+    "reportedLiquidity": {
+      "date": "2026-11-18",
+      "unit": "억원",
+      "investorDeposits": 841848,
+      "marginLoans": 262663,
+      "sourceIds": [
+        "nov20-kofia-18",
+        "nov20-kofia-18-yn",
+        "nov20-kofia-18-cross"
       ]
     }
   },

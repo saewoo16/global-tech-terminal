@@ -46,8 +46,6 @@ for(const [name,api,zone,count,legacy] of [
   }
  }
  for(const key of ['daily','weekly','monthly'])assert.match(base,new RegExp(key+":'"));
- assert.match(base,/data-etf-candle/);
- assert.match(base,/if\(period==='day'\)period=lastRange/);
- assert.match(base,/intraday\?p\.label:candleLabel/);
+ assert.doesNotMatch(base,/data-etf-candle|data-etf-period/);assert.match(base,/displayCandles\(f.daily,'daily',12\)/);
  console.log('PASS '+name+' '+count+' stored funds; no last date or close drift; explicit aggregate calendar/volume/range checks and original-time labels.');
 }

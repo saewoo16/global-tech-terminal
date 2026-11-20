@@ -6,10 +6,10 @@ vm.createContext(context);
 vm.runInContext(raw.replace("if(document.readyState==='loading')","window.api={breadth,indices};if(document.readyState==='loading')"),context);
 const {breadth,indices}=context.window.api;
 let count=0;function test(name,fn){fn();count++;console.log('PASS',name)}
-test('breadth follows index cards and precedes FX, with semantic labels and precise scope',()=>{
+test('breadth follows index cards without FX, with semantic labels and precise scope',()=>{
  const h=indices(entry),panel=breadth(entry);
  assert(h.indexOf('id="us-breadth"')>h.indexOf('class="us-indices"'));
- assert(h.indexOf('id="us-breadth"')<h.indexOf('id="us-fx"'));
+ assert(!h.includes('id="us-fx"'));
  for(const text of ['S&P 500 · 상승·하락 종목 비율','336개','66.8%','166개','33.0%','1개','0.2%',
    '확인 503 / 503개 증권 · 미확인 0개','500개 기업','미국 시장 전체 아님','복수 주식종류',
    '2026-10-22 정규장 종가','직전 거래일 2026-10-21 대비','비율 분모는 확인된 503개 증권',

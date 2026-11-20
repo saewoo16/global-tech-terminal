@@ -15,10 +15,10 @@ window.setTestState({funds:[f('091160','2026-11-13'),f('466920','2026-11-13'),f(
 window.testDetail();
 assert.match(html,/보관 종가 2026-11-13/);assert.doesNotMatch(html,/표본 ETF|2026-11-18 거래소 일봉|보관 차트 보기/);
 assert.equal((html.match(/id="etf-plot"/g)||[]).length,1);
-for(const t of ['daily','weekly','monthly'])assert.ok(html.includes('data-etf-candle="'+t+'"'));
-range.onclick();assert.match(html,/data-etf-period="6" class="active"/);candles.onclick();assert.ok(focused);assert.match(html,/data-etf-candle="weekly" class="active"/);
+assert.match(html,/최근 12개월 · 일봉/);
+assert.doesNotMatch(html,/data-etf-period|data-etf-candle/);
 window.setTestState({funds:[f('0148J0','2026-11-18')]},'0148J0');window.testDetail();
 assert.match(html,/보관 종가 2026-11-18/);assert.equal((html.match(/id="etf-plot"/g)||[]).length,1);
 assert.doesNotMatch(read('index.html'),/data-etf-today=|etf-today-note/);
-assert.match(read('index.html'),/korean-etf\.js\?v=20261119-october-etf/);
-console.log('PASS one selected-fund continuous chart; actual archive dates; range and D/W/M controls; no duplicate day candle or quick picker.');
+assert.match(read('index.html'),/korean-etf\.js\?v=20261120-fixed-daily/);
+console.log('PASS one selected-fund continuous chart; actual archive dates; fixed 12-month daily display; no duplicate day candle or quick picker.');
