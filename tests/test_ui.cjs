@@ -125,7 +125,7 @@ test('official Taiwan raw close is shown separately with license attribution and
   run('EXPLORER_TAIWAN_CLOSES=taiwanClose;render()');
   assert.equal(element('latest-close-label').textContent,'거래소 정규장 종가 · 비조정');
   assert.equal(element('last').textContent,'340 TWD');
-  assert.match(element('priceinfo').textContent,/공표 종가 2026-11-16 \(비조정\) · 차트·수익률:/);
+  assert.match(element('priceinfo').textContent,/2026-11-16 대만 거래소 정규장 종가 · 차트·수익률은 조정종가 이력 2026-11-16 기준/);
   assert.match(element('priceinfo').textContent,/Securities and Futures Bureau.*2026.*Stock daily transaction information.*Open Government Data License, version 1\.0/);
   assert.equal(element('performance').innerHTML,oldPerformance);
   assert.equal(Chart.latest.options.data.labels.join(','),oldChart);

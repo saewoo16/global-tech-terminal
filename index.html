@@ -225,11 +225,11 @@
 <div class="metrics"><div class="metric"><small>시가총액 · USD</small><strong id="usd">—</strong></div><div class="metric"><small>시가총액 · KRW</small><strong id="krw">—</strong></div><div class="metric"><small id="latest-close-label">최근 조정종가</small><strong id="last">—</strong></div></div>
 <div id="priceinfo" class="perfnote" aria-live="polite"></div>
 <div class="perfnote" id="capinfo"></div><div class="perfgrid" id="performance" aria-label="기간별 주가 수익률"></div><div class="perfnote">최신 거래일 조정종가 기준 · 1일은 전 거래일 대비, 나머지는 기준일 이전 가장 가까운 거래일 대비 · 배당 및 분할 조정</div>
-<div class="panel"><div class="ptop"><b>실제 주가 차트 · 일봉</b><div class="periods"><button data-range="3M">3개월</button><button data-range="6M">6개월</button><button data-range="1Y" class="active">1년</button><button data-range="3Y">3년</button><button data-range="ALL">전체</button></div></div><div class="pbody"><div id="chartstat" class="chart-stat muted"></div><div class="chartWrap"><canvas id="chart"></canvas><div id="chartempty" class="placeholder" hidden></div></div><small class="muted" id="chartnote">실제 종가를 기반으로 차트를 그립니다. 데이터가 없으면 외부 원본 링크를 이용하세요.</small><div id="tw-close-comparison"></div></div></div>
+<div class="panel"><div class="ptop"><b>실제 주가 차트 · 일봉</b><div class="periods"><button data-range="3M">3개월</button><button data-range="6M">6개월</button><button data-range="1Y" class="active">1년</button><button data-range="3Y">3년</button><button data-range="ALL">전체</button></div></div><div class="pbody"><div id="chartstat" class="chart-stat muted"></div><div class="chartWrap"><canvas id="chart"></canvas><div id="chartempty" class="placeholder" hidden></div></div><small class="muted" id="chartnote">실제 종가를 기반으로 차트를 그립니다. 데이터가 없으면 외부 원본 링크를 이용하세요.</small></div></div>
 <div class="panel"><div class="ptop"><b>최근 4개 분기 · 매출 / 영업이익 / OPM</b><small class="muted" id="currency"></small></div><div class="tablewrap"><table><thead><tr><th>회계분기 종료</th><th>매출</th><th>영업이익</th><th>영업이익률</th><th>분기 출처</th></tr></thead><tbody id="quarters"></tbody></table></div><div class="pbody"><small id="finmsg" class="muted">실제 분기 공시 자료만 표시합니다.</small><div id="reportedperiods" class="banner" hidden></div></div></div>
 <div class="banner" id="banner">이 사이트는 GitHub Actions에서 실제 데이터를 수집해 정적 파일로 공개합니다. 거래소별 데이터 누락·지연이 있을 수 있으며 실적은 해당 기업 공시 통화로 표시합니다. <a href="./data/coverage.csv" download>전체 기업 데이터 점검표 ↗</a></div><p class="foot">개인 연구용 참조 대시보드입니다. 공개 데이터 제공사의 이용약관 및 업데이트 제한에 따라 데이터가 달라질 수 있습니다. 시세는 실시간이 아닐 수 있으며 결산일은 각 회사 기준입니다.</p></main></div>
 <script>
-let COMPANIES=[], MARKET={stocks:{},fx:1341}, sector='전체', chosen=null, chart=null, range='1Y', EXPLORER_TAIWAN_CLOSES=null, EXPLORER_TAIWAN_REFERENCE=null;
+let COMPANIES=[], MARKET={stocks:{},fx:1341}, sector='전체', chosen=null, chart=null, range='1Y', EXPLORER_TAIWAN_CLOSES=null;
 const $=id=>document.getElementById(id);
 const esc=value=>String(value??'').replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const numeric=value=>value!==null&&value!==undefined&&!(typeof value==='string'&&!value.trim())&&(typeof value==='number'||typeof value==='string')&&Number.isFinite(Number(value));
@@ -239,7 +239,7 @@ function dateOnly(value){if(typeof value!=='string'||!/^\d{4}-\d{2}-\d{2}(?:$|T)
 function data(r){return MARKET.stocks?.[r.symbol]||{}}
 function validPrices(d){const rows=Array.isArray(d.prices)?d.prices:[];return [...new Map(rows.filter(row=>Array.isArray(row)&&dateOnly(row[0])&&dateOnly(row[0])===row[0]&&numeric(row[1])&&Number(row[1])>0).map(row=>[row[0],[row[0],Number(row[1])]])).values()].sort((a,b)=>a[0].localeCompare(b[0]))}
 function statusReason(d,kind){const note=d[kind+'Note'];if(typeof note==='string'&&note.trim())return note;const status=d[kind+'Status'];if(kind==='financial'){if(status==='not_disclosed')return '기업이 해당 분기 항목을 별도로 공시하지 않습니다.';if(status==='partial'||Array.isArray(d.quarters)&&d.quarters.length>0)return '일부 분기 또는 재무 항목을 확보하지 못했습니다.';if(status==='missing')return '공급사와 공시 자료에서 표시 가능한 분기 데이터를 확보하지 못했습니다.';return '표시 가능한 분기 데이터를 확보하지 못했습니다. 공시 원문에서 확인해 주세요.'}if(status==='partial')return '일부 시세만 확보했습니다. 최신 거래일과 조회 기간을 확인해 주세요.';if(status==='missing'||status==='not_disclosed')return '공급사에서 유효한 일봉 시세를 확보하지 못했습니다. 외부 원본에서 확인해 주세요.';return '저장된 일봉 시세가 없습니다. 수집 지연 또는 공급사 미제공 여부를 외부 원본에서 확인해 주세요.'}
-function quoteContext(d,p=validPrices(d)){const latest=p.at(-1)?.[0]||dateOnly(d.priceDate)||dateOnly(d.lastPriceDate);if(!latest)return '최종 거래일 미확인';const today=new Date().toISOString().slice(0,10),age=Math.floor((Date.parse(today+'T00:00:00Z')-Date.parse(latest+'T00:00:00Z'))/86400000);const completed=dateOnly(d.latestCompletedSession);return '최종 거래일 '+latest+(completed&&completed>latest?' · 최신 완료 정규장 '+completed+' (차트 미반영)':'')+(age>7?' · '+age+'일 경과, 현재 시세와 다를 수 있습니다.':'')}
+function quoteContext(d,p=validPrices(d)){const latest=p.at(-1)?.[0]||dateOnly(d.priceDate)||dateOnly(d.lastPriceDate);if(!latest)return '최종 거래일 미확인';const today=new Date().toISOString().slice(0,10),age=Math.floor((Date.parse(today+'T00:00:00Z')-Date.parse(latest+'T00:00:00Z'))/86400000);const completed=dateOnly(d.latestCompletedSession);return '조정종가 이력 '+latest+(completed&&completed>latest?' · 최신 완료 정규장 '+completed+' (차트 미반영)':'')+(age>7?' · '+age+'일 경과, 현재 시세와 다를 수 있습니다.':'')}
 // Publish licensed regular-close quotes independently of the historical adjusted series.
 function explorerTaiwanClose(symbol,adjustedDate,snapshot=EXPLORER_TAIWAN_CLOSES){
   if(!/^(TWSE|TPEX):[0-9]{4}$/.test(symbol)||snapshot?.schemaVersion!==1||snapshot.basis!=='regular_close_unadjusted'||snapshot.sessionTimezone!=='Asia/Taipei')return null;
@@ -257,21 +257,14 @@ async function readExplorerTaiwanCloses(){
   }catch(_){/* Fall back to the independently verified prior release. */}
   return readJson('./data/explorer-taiwan-open-close.json?v=20261116-open-taiwan').catch(()=>null);
 }
-function explorerOfficialCloseComparison(symbol,prior=EXPLORER_TAIWAN_REFERENCE,current=EXPLORER_TAIWAN_CLOSES){
-  const first=explorerTaiwanClose(symbol,'',prior), last=explorerTaiwanClose(symbol,'',current);
-  if(!first||!last||first.q.asOf>=last.q.asOf)return '';
-  const rows=[first.q,last.q],lo=Math.min(...rows.map(q=>q.close)),hi=Math.max(...rows.map(q=>q.close)),pad=Math.max((hi-lo)*.4,lo*.006),y=v=>61-41*(v-lo+pad)/(hi-lo+2*pad),ys=rows.map(q=>y(q.close)),xs=[55,225];
-  const marker=rows.map((q,i)=>`<circle cx="${xs[i]}" cy="${ys[i]}" r="4" fill="#a3baff"/><text x="${xs[i]}" y="${ys[i]-8}" text-anchor="middle" fill="currentColor" font-size="12">${esc(fmt(q.close,2))}</text><text x="${xs[i]}" y="88" text-anchor="middle" fill="currentColor" font-size="11">${esc(q.asOf)}</text>`).join('');
-  return `<section aria-label="대만 공식 비조정 종가 비교"><p><b>대만 거래소 공식 종가 비교</b> · TWD, 비조정</p><svg viewBox="0 0 280 95" width="100%" style="max-width:520px" role="img" aria-label="${esc(rows.map(q=>q.asOf+' '+fmt(q.close,2)+' TWD').join(' / '))}"><line x1="${xs[0]}" y1="${ys[0]}" x2="${xs[1]}" y2="${ys[1]}" stroke="#a3baff" stroke-dasharray="4 4"/>${marker}</svg><p class="muted">표시한 관측일 2개만 비교합니다. 중간 일봉과 조정종가 이력·수익률은 별도입니다. <a href="${esc(last.source.datasetUrl)}" target="_blank" rel="noopener noreferrer">거래소 원자료 ↗</a></p></section>`;
-}
 function explorerSourceLink(label,url){
   const a=document.createElement('a');a.textContent=label;a.href=url;a.target='_blank';a.rel='noopener noreferrer';return a;
 }
 // Two dated, independently attributed Korean closing facts. Never insert into adjusted history.
-const EXPLORER_KR_REPORT_DAY='2026-11-18';
+const EXPLORER_KR_REPORT_DAY='2026-11-19';
 const EXPLORER_KR_REPORTED_CLOSE=Object.freeze({
-  'KRX:005930':Object.freeze({close:194700,pct:2.31}),
-  'KRX:000660':Object.freeze({close:1144000,pct:4.19}),
+  'KRX:005930':Object.freeze({close:196900,pct:1.13}),
+  'KRX:000660':Object.freeze({close:1183000,pct:3.41}),
 });
 function explorerKoreaReportedClose(symbol,adjustedDate){
   if(typeof symbol!=='string'||!Object.hasOwn(EXPLORER_KR_REPORTED_CLOSE,symbol))return null;
@@ -285,7 +278,7 @@ function renderExplorerLatestClose(r,d,prices){
     $('last').textContent=fmt(reported.close,0)+'원';
     const stored=quoteContext(d,prices);
     priceInfo.textContent=EXPLORER_KR_REPORT_DAY+' KST 정규장 · 전 거래일 대비 +'+reported.pct.toFixed(2)+'% · 차트·기간 수익률은 별도 보관 조정종가('+stored+') · ';
-    priceInfo.append(explorerSourceLink('뉴스핌 마감 보도 ↗','https://www.newspim.com/news/view/20261118001065'),document.createTextNode(' · '),explorerSourceLink('연합뉴스 교차 확인 ↗','https://www.yna.co.kr/amp/view/AKR20261118045151008'));
+    priceInfo.append(explorerSourceLink('YTN 정규장 마감 보도 ↗','https://www.ytn.co.kr/_ln/0102_202611191636395339'));
     return;
   }
   $('latest-close-label').textContent=official?'거래소 정규장 종가 · 비조정':'최근 조정종가';
@@ -293,7 +286,7 @@ function renderExplorerLatestClose(r,d,prices){
   const chartContext=quoteContext(d,prices)+(!prices.length||d.priceStatus==='partial'||d.priceStatus==='missing'||d.priceNote?' · '+statusReason(d,'price'):'');
   if(!official){priceInfo.textContent=chartContext;return;}
   const {q,source}=official;
-  priceInfo.textContent='대만 공표 종가 '+q.asOf+' (비조정) · 차트·수익률: '+chartContext+' · ';
+  priceInfo.textContent=q.asOf+' 대만 거래소 정규장 종가 · 차트·수익률은 '+chartContext+' 기준 · ';
   priceInfo.append(explorerSourceLink(source.marketName+' 원출처 ↗',source.datasetUrl),document.createTextNode(' · '+source.agency+' · '+source.attributionYear+' · '+source.datasetName+' · '+source.edition+' · '),explorerSourceLink(source.licenseName+' ↗',source.licenseUrl),document.createTextNode('에 따라 공개된 자료이며 재사용에는 해당 조건이 적용됩니다.'));
 }
 function nav(){const sectors=['전체',...new Set(COMPANIES.map(r=>r.sector))];$('nav').innerHTML=sectors.map(s=>`<button class="nav ${s===sector?'active':''}" data-s="${esc(s)}">${esc(s)}<span class="count">${new Set(COMPANIES.filter(r=>s==='전체'||r.sector===s).map(r=>r.symbol)).size}</span></button>`).join('');document.querySelectorAll('[data-s]').forEach(button=>button.onclick=()=>{sector=button.dataset.s;nav();listing()})}
@@ -305,7 +298,7 @@ function operatingUndisclosed(q,d){return q.operatingIncomeNotDisclosed===true||
 function sourceCell(q){const url=safeUrl(q.sourceUrl),verified=dateOnly(q.verifiedAt),label=q.sourceType==='filing'?'공시 원문 ↗':q.sourceType==='financial_aggregator'?'집계 원문 ↗':'출처 ↗';return (url?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer" title="${esc(q.source||'분기 데이터 출처')}">${label}</a>`:'<span class="muted">개별 링크 미확인</span>')+(verified?`<small class="source-date">확인 ${esc(verified)}</small>`:'')}
 function renderFinancials(d){const quarters=(Array.isArray(d.quarters)?d.quarters:[]).filter(q=>q&&typeof q==='object').slice(0,4);$('currency').textContent=d.reportingCurrency?'보고 통화: '+d.reportingCurrency+' · 백만 단위':'보고 통화 미확인';$('quarters').innerHTML=quarters.length?Array.from({length:4},(_,i)=>{const q=quarters[i];if(!q)return '<tr><td class="muted">분기 미확보</td><td class="muted" colspan="4">추가 분기 공시 자료를 확보하지 못했습니다.</td></tr>';const rev=numeric(q.revenue)?Number(q.revenue):null,op=numeric(q.operatingIncome)?Number(q.operatingIncome):null,opm=rev!==null&&rev!==0&&op!==null?op/rev*100:null,undisclosed=op===null&&operatingUndisclosed(q,d),opReason=undisclosed?'분기 영업이익은 별도 공시되지 않습니다. 미공시 항목을 임의로 추정하지 않습니다.':'이 분기의 영업이익 데이터를 확보하지 못했습니다.',opText=op===null?(undisclosed?'미공시':'N/A'):fmt(op,1);return `<tr><td>${esc(q.date||'날짜 미확인')}${q.reportedCurrency&&q.reportedCurrency!==d.reportingCurrency?'<small class="source-date">'+esc(q.reportedCurrency)+'</small>':''}</td><td${rev===null?' title="이 분기의 매출 데이터를 확보하지 못했습니다."':''}>${rev===null?'N/A':fmt(rev,1)}</td><td${op===null?' class="muted" title="'+esc(opReason)+'"':''}>${opText}</td><td class="${opm!==null&&opm<0?'down':opm===null?'muted':''}"${opm===null?' title="매출과 영업이익이 모두 있어야 계산할 수 있습니다."':''}>${opm===null?'N/A':fmt(opm,1)+'%'}</td><td class="source-cell">${sourceCell(q)}</td></tr>`}).join(''):`<tr><td colspan="5" class="financial-empty">${esc(statusReason(d,'financial'))}</td></tr>`;
   const notes=[];if(quarters.length){notes.push('출처: '+(d.finSource||'공개 재무 데이터'));const verified=dateOnly(d.financialVerifiedAt),retrieved=dateOnly(d.financialUpdated);notes.push(verified?'최근 출처 확인 '+verified+' (분기별 확인일 참조)':retrieved?'실적 수집 '+retrieved:'실적 수집일 미확인');notes.push('값은 백만 '+(d.reportingCurrency||'보고 통화'));if(quarters.length<4||d.financialStatus==='partial'||d.financialStatus==='missing'||d.financialNote)notes.push(statusReason(d,'financial'));if(quarters.some(q=>!numeric(q.operatingIncome)&&operatingUndisclosed(q,d)))notes.push('분기 영업이익 미공시: EBITDA·세전이익 등 다른 지표로 대체하지 않습니다.');else if(quarters.some(q=>!numeric(q.operatingIncome)))notes.push('N/A: 해당 분기의 영업이익이 없어 OPM을 계산하지 않았습니다.')}else notes.push(statusReason(d,'financial'));$('finmsg').textContent=notes.join(' · ');const periods=Array.isArray(d.reportedPeriods)?d.reportedPeriods:[];$('reportedperiods').hidden=!periods.length;$('reportedperiods').innerHTML=periods.map(q=>'<b>별도 공시: '+esc(q.periodType==='half_year'?'반기':q.periodType==='annual'?'연간':'공시 기간')+'</b> · '+esc(q.periodStart||'')+' ~ '+esc(q.date||'')+'<br>매출 '+fmt(q.revenue,1)+' 백만 '+esc(d.reportingCurrency||'')+' · 영업이익 '+(numeric(q.operatingIncome)?fmt(q.operatingIncome,1):'미공시')+' · '+sourceCell(q)).join('<br>');const ir=safeUrl(d.irSourceUrl);if(ir){const link=document.createElement('a');link.href=ir;link.target='_blank';link.rel='noopener noreferrer';link.textContent='기업 IR ↗';$('finmsg').append(document.createTextNode(' · '),link)}}
-function render(){const r=chosen,d=data(r),prices=validPrices(d);$('category').textContent=r.sector+' / '+r.category;$('name').textContent=r.name;$('business').textContent=r.business||'';$('business').hidden=!r.business;$('pills').innerHTML=[r.ticker,r.country,r.symbol].map(value=>`<span class="pill">${esc(value)}</span>`).join('');$('tv').href=tvlink(r);$('gf').href=gflink(r);$('usd').textContent=numeric(d.marketCapUSD)?'$'+fmt(d.marketCapUSD/1e9,2)+'B':'—';$('krw').textContent=numeric(d.marketCapUSD)?'₩'+fmt(d.marketCapUSD*(MARKET.fx||1341)/1e12,1)+'조':'—';renderExplorerLatestClose(r,d,prices);const compare=$('tw-close-comparison');if(compare)compare.innerHTML=explorerOfficialCloseComparison(r.symbol);const capUrl=safeUrl(d.marketCapSourceUrl),capDate=d.marketCapAsOf||d.marketCapUpdated; $('capinfo').innerHTML=capDate?(d.marketCapAsOf?'시가총액 기준 ':'시가총액 공급자 관측 ')+esc(capDate)+(!d.marketCapAsOf?' · 종가 기준 미확인':'')+(capUrl?' · <a href="'+esc(capUrl)+'" target="_blank" rel="noopener noreferrer">출처 ↗</a>':'')+(d.marketCapMethod==='closing_price_times_issued_shares'?' · 종가 × 공시 발행주식수로 계산':'')+' · 원화 환산은 참고값'+(MARKET.fxAsOf?' · 환율 기준 '+esc(MARKET.fxAsOf):' · 환율 기준일 미확인'):'';renderFinancials(d);renderPerformance();renderChart()}
+function render(){const r=chosen,d=data(r),prices=validPrices(d);$('category').textContent=r.sector+' / '+r.category;$('name').textContent=r.name;$('business').textContent=r.business||'';$('business').hidden=!r.business;$('pills').innerHTML=[r.ticker,r.country,r.symbol].map(value=>`<span class="pill">${esc(value)}</span>`).join('');$('tv').href=tvlink(r);$('gf').href=gflink(r);$('usd').textContent=numeric(d.marketCapUSD)?'$'+fmt(d.marketCapUSD/1e9,2)+'B':'—';$('krw').textContent=numeric(d.marketCapUSD)?'₩'+fmt(d.marketCapUSD*(MARKET.fx||1341)/1e12,1)+'조':'—';renderExplorerLatestClose(r,d,prices);const capUrl=safeUrl(d.marketCapSourceUrl),capDate=d.marketCapAsOf||d.marketCapUpdated; $('capinfo').innerHTML=capDate?(d.marketCapAsOf?'시가총액 기준 ':'시가총액 공급자 관측 ')+esc(capDate)+(!d.marketCapAsOf?' · 종가 기준 미확인':'')+(capUrl?' · <a href="'+esc(capUrl)+'" target="_blank" rel="noopener noreferrer">출처 ↗</a>':'')+(d.marketCapMethod==='closing_price_times_issued_shares'?' · 종가 × 공시 발행주식수로 계산':'')+' · 원화 환산은 참고값'+(MARKET.fxAsOf?' · 환율 기준 '+esc(MARKET.fxAsOf):' · 환율 기준일 미확인'):'';renderFinancials(d);renderPerformance();renderChart()}
 function renderPerformance(){const prices=validPrices(data(chosen)),last=prices.at(-1),windows=[['1일',0],['1주',7],['1개월',30],['1년',365]];$('performance').innerHTML=windows.map(([label,days])=>{let base=null;if(last&&prices.length>1){if(!days)base=prices[prices.length-2];else{const cutoff=new Date(last[0]+'T00:00:00Z');cutoff.setUTCDate(cutoff.getUTCDate()-days);base=prices.slice(0,-1).filter(row=>row[0]<=cutoff.toISOString().slice(0,10)).at(-1)}}const pct=base?(last[1]/base[1]-1)*100:null,value=pct===null?'—':(pct>0?'+':'')+pct.toFixed(2)+'%',reason=pct===null?(last?'비교 기준 거래일의 시세가 부족합니다.':'유효한 일봉 시세가 없습니다.'):`${base[0]} → ${last[0]}`;return `<div class="perfcard" title="${esc(reason)}"><small>${label}</small><strong class="${pct===null?'':pct>0?'up':pct<0?'down':''}">${value}</strong>${pct===null?'<small class="perfmissing">'+(last?'기준 시세 부족':'시세 미확보')+'</small>':''}</div>`}).join('')}
 function renderNativeExplorerChart(rows,values,change,empty){
  const lo=Math.min(...values),hi=Math.max(...values),pad=Math.max((hi-lo)*.08,hi*.005),span=hi-lo+2*pad;
@@ -368,7 +361,7 @@ async function boot(){
    status.textContent=catalogFailed?'기업 목록을 불러오지 못했습니다.':
      marketFailed?(explorerCatalogReady?'기업 목록 표시 중 · 시세 파일을 불러오지 못했습니다.':'시세 파일을 불러오지 못했습니다.'):
      !explorerCatalogReady?'기업 목록을 불러오는 중':
-     explorerBaseMarket?'기업 탐색 시세 갱신 '+(explorerBaseMarket.updated||'미실행')+' · '+Object.keys(explorerBaseMarket.stocks).length+'개 종목':
+     explorerBaseMarket?'기업 탐색 기본 자료 생성 '+(explorerBaseMarket.updated||'미실행')+' · '+Object.keys(explorerBaseMarket.stocks).length+'개 종목':
      explorerCatalogReady?'기업 목록 표시 중 · 시세 불러오는 중':'데이터 로딩 중';
    retry.hidden=!(catalogFailed||marketFailed);
  };
@@ -391,7 +384,6 @@ async function boot(){
  explorerOverlaysStarted=true;
  readJson('./data/financial_backfill_zlatest_20261116_kr_official.json?v=20261116-verified-filings').then(data=>{explorerFilings=data;renderExplorerMarket()}).catch(()=>{});
  readExplorerTaiwanCloses().then(data=>{EXPLORER_TAIWAN_CLOSES=data;if(chosen)render()}).catch(()=>{});
- readJson('./data/explorer-taiwan-open-close.json?v=20261116-open-taiwan').then(data=>{EXPLORER_TAIWAN_REFERENCE=data;if(chosen)render()}).catch(()=>{});
  }
  await required;
  explorerBusy=false;announce();

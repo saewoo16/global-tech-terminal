@@ -4,14 +4,7 @@ const html=read('index.html'), inline=Array.from(html.matchAll(/<script>([\s\S]*
 const c={console,URL,document:{readyState:'loading',addEventListener(){},getElementById(){return {}},querySelectorAll(){return []}}};
 vm.createContext(c);
 vm.runInContext(inline,c);
-const prior=json('data/explorer-taiwan-open-close.json'),latest=json('tests/fixtures/explorer-taiwan-open-close-20261118.json');
-for(const symbol of Object.keys(latest.quotes)){
- const b=c.explorerOfficialCloseComparison(symbol,prior,latest);
- assert.match(b,/role="img"/);assert.match(b,/2026-11-16/);assert.match(b,/2026-11-18/);
- assert.doesNotMatch(b,/2026-11-17/);assert.equal(c.explorerOfficialCloseComparison(symbol,prior,prior),'');
-}
-assert.equal(c.explorerOfficialCloseComparison('NASDAQ:NVDA',prior,latest),'');
-assert.equal(c.explorerOfficialCloseComparison('TWSE:2408',null,latest),'');
+assert.doesNotMatch(html,/tw-close-comparison|explorerOfficialCloseComparison|대만 거래소 공식 종가 비교/);
 const common={console,URL,window:{},document:{readyState:'loading',addEventListener(){},getElementById(){return {}},querySelectorAll(){return []}}};
 vm.createContext(common);
 vm.runInContext(read('assets/korea.js').replace('  function dailyFlowSummary()', '  window.flowCards=dailyFlowSummary;\n  function dailyFlowSummary()'),common);
@@ -27,4 +20,4 @@ for(const obs of [null,{...kr.reportedCloseFlow,roundedEok:{KOSPI:{foreign:'<scr
 }
 assert.doesNotMatch(html,/data-etf-today=|etf-today-note/);
 assert.doesNotMatch(read('assets/korean-etf.js'),/recentComparison|거래소 일봉 ·/);
-console.log('PASS current report: six scoped provisional flow values, 32 Taiwan point comparisons, and no domestic ETF standalone candles.');
+console.log('PASS current report: six scoped provisional flow values, no disconnected Taiwan point comparison, and no domestic ETF standalone candles.');
