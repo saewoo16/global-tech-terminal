@@ -83,7 +83,7 @@
     if(!entry)return `<section class="kr-section" id="kr-close"><div class="kr-section-head"><h3>국내 시장 마감</h3></div>${empty(window.TerminalBriefingData?.failed?'일일 분석 자료를 불러오지 못했습니다. 아래 수급·자금 자료는 별도로 표시합니다.':'일일 분석을 불러오는 중입니다.')}</section>`;
     const stories=list(entry.summary), follow=stories.filter(story=>/휴장일 후속/.test(story.title||'')), close=stories.filter(story=>!/휴장일 후속/.test(story.title||''));
     const ids=[...stories.flatMap(story=>list(story.sourceIds)),...list(entry.indices).flatMap(row=>list(row.sourceIds)),...list(entry.marketBreadth?.sourceIds)];
-    return `<section class="kr-section kr-close" id="kr-close" aria-labelledby="kr-close-title"><div class="kr-close-top"><div><div class="eyebrow">KOREA MARKET CLOSE · ${entry.date}</div><h3 id="kr-close-title">${esc(entry.title||'국내 시장 마감')}</h3><p>한국 현지 ${entry.date} 마감 기준 · 이후 소식은 별도 표시</p></div><div class="kr-close-indices">${list(entry.indices).map(index=>`<article><small>${esc(index.name)}</small><strong>${integer(index.close)}</strong><div>당일 ${pct(index.changePct)}</div>${closeBreadth(entry,index.name)||'<small>상승·하락 비율 미확인</small>'}</article>`).join('')}</div></div><h4 class="kr-close-digest">마감 시황 · 오늘의 이슈</h4><div class="kr-close-points">${close.slice(0,3).map(story=>`<article><h4>${esc(story.title)}</h4><p>${esc(briefDisplayText(story.text))}</p></article>`).join('')}</div>${close.length>3?`<details class="kr-holiday"><summary>마감 참고 사항</summary>${close.slice(3).map(story=>`<article><h4>${esc(story.title)}</h4><p>${esc(briefDisplayText(story.text))}</p></article>`).join('')}</details>`:''}${follow.length?`<details class="kr-holiday"><summary>휴장일 후속 소식 · ${follow.length}건</summary><p class="kr-note">아래 소식은 ${entry.date} 마감 이후 정보입니다. 새로운 국내 거래일 수치가 아닙니다.</p>${follow.map(story=>`<article><h4>${esc(story.title)}</h4><p>${esc(briefDisplayText(story.text))}</p></article>`).join('')}</details>`:''}${briefSources(entry,ids,'마감 시황은 날짜별로 검증한 분석 자료입니다. 아래 일별 수급은 별도의 NAVER 최신 일별 표이며 마감 기사와 집계시각이 다를 수 있습니다.')}</section>`;
+    return `<section class="kr-section kr-close" id="kr-close" aria-labelledby="kr-close-title"><div class="kr-close-top"><div class="kr-close-indices" aria-label="코스피·코스닥 ${esc(entry.date)} 정규장 마감">${list(entry.indices).map(index=>`<article><small>${esc(index.name)} <time datetime="${esc(entry.date)}">${esc(entry.date)}</time></small><strong>${integer(index.close)}</strong><div>당일 ${pct(index.changePct)}</div>${closeBreadth(entry,index.name)||'<small>상승·하락 비율 미확인</small>'}</article>`).join('')}</div></div><h3 id="kr-close-title" class="kr-close-digest">마감 시황 · 오늘의 이슈</h3><div class="kr-close-points">${close.slice(0,3).map(story=>`<article><h4>${esc(story.title)}</h4><p>${esc(briefDisplayText(story.text))}</p></article>`).join('')}</div>${close.length>3?`<details class="kr-holiday"><summary>마감 참고 사항</summary>${close.slice(3).map(story=>`<article><h4>${esc(story.title)}</h4><p>${esc(briefDisplayText(story.text))}</p></article>`).join('')}</details>`:''}${follow.length?`<details class="kr-holiday"><summary>휴장일 후속 소식 · ${follow.length}건</summary><p class="kr-note">아래 소식은 ${entry.date} 마감 이후 정보입니다. 새로운 국내 거래일 수치가 아닙니다.</p>${follow.map(story=>`<article><h4>${esc(story.title)}</h4><p>${esc(briefDisplayText(story.text))}</p></article>`).join('')}</details>`:''}${briefSources(entry,ids,'당일 주요 뉴스와 장중 흐름의 근거입니다. 지수와 종목 등락 비율의 기준일은 카드에 표시합니다.')}</section>`;
   }
   function analysisControls() {return `<div class="kr-analysis-controls"><button class="button" id="kr-refresh" type="button">최신 게시 자료 확인</button></div>`;}
 
@@ -153,11 +153,31 @@
     const citations=ids.map(id=>{const s=byId.get(id);return `<a href="${esc(safe(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.title)} ↗</a>`;}).join(' · ');
     return {observation,citations};
   }
+  function regularTurnoverChart(market, end, reported) {
+    if(!isDate(end))return '';
+    const startDate=new Date(end+'T00:00:00Z');startDate.setUTCFullYear(startDate.getUTCFullYear()-1);
+    const start=startDate.toISOString().slice(0,10), points=new Map();
+    const prior=payload?.marketTurnover?.markets?.[market]?.comparisonSeries?.regular;
+    if(prior?.scope==='whole-market'&&prior.sessionScope==='regular'&&prior.unit==='억원'&&JSON.stringify(prior.venues)==='["KRX"]'){
+      for(const row of list(prior.rows)) {
+        if(isDate(row.date)&&row.date>=start&&row.date<=end&&row.marketVenue==='KRX'&&row.session==='regular-close'&&row.scopeVerified===true&&row.valueStatus==='final'&&finite(row.turnover)&&row.turnover>0){
+          points.set(row.date,{date:row.date,value:row.turnover/10000,approx:false});
+        }
+      }
+    }
+    if(finite(reported)&&reported>0&&!points.has(end))points.set(end,{date:end,value:reported,approx:true});
+    const rows=[...points.values()].sort((a,b)=>a.date.localeCompare(b.date));
+    if(!rows.length)return '';
+    const W=840,L=60,R=815,B=152,T=20,cap=Math.max(1,Math.ceil(Math.max(...rows.map(r=>r.value))/5)*5);
+    const first=Date.parse(start+'T00:00:00Z'), duration=Math.max(1,Date.parse(end+'T00:00:00Z')-first);
+    const bars=rows.map(r=>{const x=L+(Date.parse(r.date+'T00:00:00Z')-first)/duration*(R-L),h=r.value/cap*(B-T);return `<rect x="${x-1.6}" y="${B-h}" width="3.2" height="${h}" fill="${r.approx?'#e1ae64':'#81aaff'}"><title>${r.date} · ${r.approx?'약 ':''}${fmt(r.value,2)}조원</title></rect>`;}).join('');
+    return `<figure class="kr-turnover-daily"><figcaption><strong>${market} 거래대금 · 12개월 일별</strong><span>${rows.length}거래일 확인 · ${rows[0].date} ~ ${rows.at(-1).date}</span></figcaption><svg viewBox="0 0 ${W} 188" role="img" aria-label="${market} KRX 정규장 거래대금 12개월 일별"><line x1="${L-3}" x2="${R+4}" y1="${B}" y2="${B}" stroke="#586b8b"/><text x="6" y="${T+4}" fill="#aebed8" font-size="13">${cap}조</text><text x="6" y="${B}" fill="#aebed8" font-size="13">0</text>${bars}<text x="${L}" y="178" fill="#aebed8" font-size="13">${start}</text><text x="${R}" y="178" text-anchor="end" fill="#aebed8" font-size="13">${end}</text></svg></figure>`;
+  }
   function marketTurnoverSection() {
     const evidence=closeObservation('regularClosingTurnover','krx-regular-market-close','reported-approximate'), observation=evidence?.observation;
     const valid=observation?.unit==='조원'&&turnoverMarkets.every(market=>finite(observation.markets?.[market])&&observation.markets[market]>0);
-    const cards=valid?`<div class="kr-grid">${turnoverMarkets.map(market=>`<article class="kr-card"><div class="kr-card-head"><h4>${market}</h4><span class="kr-badge">${esc(observation.date)} · 마감 보도 기준</span></div><div class="kr-daily-values"><div><small>KRX 정규장</small><strong>약 ${fmt(observation.markets[market],1)}조원</strong></div></div></article>`).join('')}</div><p class="kr-note">출처: ${evidence.citations}</p>`:'<p class="kr-note">최신 KRX 정규장 거래대금은 아직 확인되지 않았습니다.</p>';
-    return `<section class="kr-section" id="kr-market-turnover" aria-labelledby="kr-market-turnover-title"><div class="kr-section-head"><div><h3 id="kr-market-turnover-title">시장 거래대금 · KRX 정규장</h3><p>KOSPI · KOSDAQ 시장 전체 · NXT 및 시간외 제외</p></div></div>${cards}<p class="kr-note">같은 기준으로 확인한 과거 자료가 없어 추이 차트는 표시하지 않습니다. 기존 KRX+NXT 합산 자료나 ECOS 공표값과 연결하지 않습니다.</p></section>`;
+    const cards=valid?`<div class="kr-grid">${turnoverMarkets.map(market=>`<article class="kr-card"><div class="kr-card-head"><h4>${market}</h4><span class="kr-badge">${esc(observation.date)} · 마감 보도 기준</span></div><div class="kr-daily-values"><div><small>KRX 정규장</small><strong>약 ${fmt(observation.markets[market],1)}조원</strong></div></div></article>`).join('')}</div><details class="kr-metadata"><summary>시장 거래대금 출처</summary>${evidence.citations}</details>`:'<p class="kr-note">최신 KRX 정규장 거래대금은 아직 확인되지 않았습니다.</p>';
+    return `<section class="kr-section" id="kr-market-turnover" aria-labelledby="kr-market-turnover-title"><div class="kr-section-head"><div><h3 id="kr-market-turnover-title">시장 거래대금 · KRX 정규장</h3><p>KOSPI · KOSDAQ 시장 전체 · NXT 및 시간외 제외</p></div></div>${cards}${isDate(currentDomesticDate())?`<div class="kr-grid">${turnoverMarkets.map(market=>regularTurnoverChart(market,currentDomesticDate(),valid&&observation.date===currentDomesticDate()?observation.markets[market]:null)).join('')}</div><details class="kr-metadata"><summary>거래대금 차트 기준</summary><p>같은 범위의 관측일만 표시합니다. 빠진 날은 0이 아닙니다. 주황색은 마감 보도의 근삿값입니다.</p></details>`:empty('거래대금 차트의 기준일을 확인 중입니다.')}</section>`;
   }
   function reportedFlowEvidence() {
     const evidence=closeObservation('reportedCloseFlow','krx-market-close-reports','reported-provisional'), observation=evidence?.observation;
@@ -194,10 +214,12 @@
   }
   function highsSection() {
     const entry=latestBrief(),section=payload?.highsScreen||entry?.highs||{},rows=list(section.rows),coverage=section.coverage||entry?.screeningCoverage||{},asOf=section.asOf||entry?.date;
+    const latestCandidates=entry?.marketScreens?.highCandidates;
+    const currentInfo=isDate(latestCandidates?.asOf)&&latestCandidates.asOf===currentDomesticDate()&&latestCandidates.asOf>asOf&&safe(latestCandidates.sourceUrl)?`<p class="kr-note">${esc(latestCandidates.asOf)} 동일 기준 선별은 미확인 · <a href="${esc(safe(latestCandidates.sourceUrl))}" target="_blank" rel="noopener noreferrer">별도 당일 후보 보기 ↗</a></p>`:'';
     const ids=rows.flatMap(row=>list(row.sourceIds)),newScreen=!!payload?.highsScreen;
     const details=newScreen?meta({...section,status:section.status||'verified',sourceIds:[...new Set([...list(section.sourceIds),...ids])],coverage:{...coverage,start:asOf,end:asOf}},'52주 고가 선별'):briefSources(entry,ids,section.note);
     const table=newScreen?`<div class="kr-table-wrap" tabindex="0" role="region" aria-label="52주 신고가와 근접 종목"><table class="kr-table kr-highs-table"><caption>진짜 신고가와 52주 고가까지 종가 기준 3% 이내인 종목을 구분합니다.</caption><thead><tr><th scope="col">종목</th><th scope="col">구분</th><th scope="col">종가 · 원</th><th scope="col">52주 고가 · 원</th><th scope="col">고가 대비</th><th scope="col">당일</th></tr></thead><tbody>${rows.map(row=>`<tr><th scope="row">${esc(row.name)}<small>${esc(row.code||row.ticker)}</small></th><td><span class="kr-high-label ${row.classification==='new_high'?'new':'near'}">${esc(row.classification==='new_high'?'52주 신고가':row.classification==='near_high'?'52주 고가 근접':row.kind||row.classification)}</span>${row.isNearHigh&&row.classification==='new_high'?'<span class="kr-high-label near">52주 고가 근접</span>':''}</td><td>${integer(row.close)}</td><td>${integer(row.high52)}</td><td>${pct(row.distancePct)}</td><td>${pct(row.changePct)}</td></tr>`).join('')}</tbody></table></div>`:rows.map(row=>`<article class="kr-card"><div class="kr-card-head"><h4>${esc(row.name)} <small class="muted">${esc(row.ticker)}</small></h4>${pct(row.changePct)}</div><div class="kr-card-body"><p class="kr-note">${esc(row.kind)}</p><p>${esc(row.reason)}</p></div></article>`).join('');
-    return `<section class="kr-section" id="kr-highs" aria-labelledby="kr-highs-title"><div class="kr-section-head"><div><h3 id="kr-highs-title">52주 신고가 · 고가 근접 기업</h3><p>${esc(asOf||'미확인')} 기준${asOf&&asOf!==currentDomesticDate()?' · 이전 거래일':''} · ${esc(section.caption||'시가총액 상위 300개 기업 선별')}</p></div></div><p class="kr-note">${esc((section.criteria||'').replace('× 0.97','× 97%'))} 장중 신고가는 종가 신고가·사상 최고가를 뜻하지 않습니다.</p><div class="kr-highs-coverage">${[['선별 기업',coverage.selected],['당일 일봉 확인',coverage.dailyValid],['52주 이력 확인',coverage.full52WeekHistory],['짧은 상장 이력',coverage.shortHistoryCount??(coverage.selected-coverage.dailyValid<coverage.selected-coverage.full52WeekHistory?coverage.dailyValid-coverage.full52WeekHistory:null)],['검증 제외',coverage.missingCount]].map(([label,value])=>`<span>${label} <b>${fmt(value)}</b></span>`).join('')}</div><article class="kr-card">${rows.length?table:empty(coverage.full52WeekHistory>0?'52주 이력이 확인된 '+fmt(coverage.full52WeekHistory)+'개에서 신고가·근접 조건 충족 0개입니다. 미확인 종목은 별도이며 전체 시장에 없다는 뜻은 아닙니다.':'확인된 신고가·근접 목록이 없습니다. 미확인은 해당 사례가 없다는 뜻이 아닙니다.')}${details}</article>${standaloneCloseBreakout(entry)}</section>`;
+    return `<section class="kr-section" id="kr-highs" aria-labelledby="kr-highs-title"><div class="kr-section-head"><div><h3 id="kr-highs-title">52주 신고가 · 고가 근접 기업</h3><p>${esc(asOf||'미확인')} 기준${asOf&&asOf!==currentDomesticDate()?' · 이전 거래일':''} · ${esc(section.caption||'시가총액 상위 300개 기업 선별')}</p></div></div>${currentInfo}<details class="kr-metadata"><summary>선별 기준과 확인 범위</summary><p class="kr-note">${esc((section.criteria||'').replace('× 0.97','× 97%'))} 장중 신고가는 종가 신고가·사상 최고가를 뜻하지 않습니다.</p><div class="kr-highs-coverage">${[['선별 기업',coverage.selected],['당일 일봉 확인',coverage.dailyValid],['52주 이력 확인',coverage.full52WeekHistory],['짧은 상장 이력',coverage.shortHistoryCount??(coverage.selected-coverage.dailyValid<coverage.selected-coverage.full52WeekHistory?coverage.dailyValid-coverage.full52WeekHistory:null)],['검증 제외',coverage.missingCount]].map(([label,value])=>`<span>${label} <b>${fmt(value)}</b></span>`).join('')}</div></details><article class="kr-card">${rows.length?table:empty(coverage.full52WeekHistory>0?'52주 이력이 확인된 '+fmt(coverage.full52WeekHistory)+'개에서 신고가·근접 조건 충족 0개입니다. 미확인 종목은 별도이며 전체 시장에 없다는 뜻은 아닙니다.':'확인된 신고가·근접 목록이 없습니다. 미확인은 해당 사례가 없다는 뜻이 아닙니다.')}${details}</article>${standaloneCloseBreakout(entry)}</section>`;
   }
   // Squarified in the actual display aspect ratio; every area remains cap-proportional.
   function treemap(rows,x=0,y=0,width=100,height=100,aspect=1.42) {
@@ -451,31 +473,44 @@
     return `<section class="kr-section" aria-labelledby="kr-rankings-title"><div class="kr-section-head"><div><h3 id="kr-rankings-title">업종 · 종목 수급</h3><p>${esc(selectionLabel())} · 각 표의 실제 집계일을 확인하세요. 테마 수급·거래대금은 종목 순매수와 기준일이 다를 수 있습니다.</p></div><div class="kr-controls" role="group" aria-label="수급 집계 기간">${[['day','1일'],['5d','주간'],['1m','월간']].map(([key,label])=>`<button type="button" data-kr-period="${key}" aria-pressed="${key==='day'?!['5d','1m'].includes(selected):selected===key}">${label}</button>`).join('')}</div></div>${payload.rankings?.note?`<p class="kr-note">${esc(payload.rankings.note)}</p>`:''}${currentThemesSection()}<div class="kr-section-head" style="margin-top:18px"><span class="kr-note">종목 순위 시장</span><div class="kr-controls" role="group" aria-label="종목 순위 시장">${[['ALL','통합'],['KOSPI','KOSPI'],['KOSDAQ','KOSDAQ']].map(([key,label])=>`<button type="button" data-kr-rank-market="${key}" aria-pressed="${rankMarket===key}">${label}</button>`).join('')}</div></div><div class="kr-grid" style="margin-top:14px">${['foreign','institution'].map(key=>`<article class="kr-card"><div class="kr-card-head"><h4>${NAMES[key]} 순매수 상위 15</h4><span class="kr-badge">${esc(selected==='1m'?'1개월 합계':selected==='5d'?'5일 합계':selected)}</span></div>${rankingTable(data[key],15,'순매수')}${meta(data[key])}</article>`).join('')}</div><article class="kr-card" style="margin-top:14px"><div class="kr-card-head"><h4>거래대금 상위 20</h4><span class="kr-badge">${esc(turnoverSnapshot.date||dates[0]||'미확인')} · ${turnoverSnapshot.date?'최신 확인 자료':'자료 미확보'}</span></div>${delayedSnapshotNote(turnoverSnapshot,dates[0],'거래대금 순위')}${turnoverScope(turnoverSnapshot.section)}${rankingTable(turnover,20,'거래대금')}${meta(turnover)}</article></section>`;
   }
   function stockBuyTop() {
-    const day=currentDomesticDate(),entry=latestBrief(), ranking=payload?.rankings?.daily||{};
-    const sourceDates=Object.keys(ranking).filter(d=>isDate(d)&&d<=day).sort().reverse();
-    const tables=['KOSPI','KOSDAQ'].flatMap(market=>['foreign','institution'].map(kind=>{
-      const direct=entry?.marketScreens?.netBuys?.[market]?.[kind];
-      const parse=(d,part,rows,sourceEntry)=>{
-        if(!isDate(d)||d>day||!['KRW','억원'].includes(part?.unit)||!Array.isArray(rows))return null;
-        const seen=new Set(), data=rows.filter(row=>row&&typeof row.name==='string'&&row.name.trim()&&typeof row.code==='string'&&/^[A-Z0-9]{6}$/.test(row.code)&&!seen.has(row.code)&&finite(row.value)&&row.value>0&&!row.estimated&&seen.add(row.code));
-        if(data.length<10)return null;
-        const citation=sourceEntry?briefSourceLinks(part.sourceIds,sourceEntry):sourceLinks(part.sourceIds);
-        if(!citation)return null;
-        return {date:d,rows:data.slice().sort((a,b)=>b.value-a.value||a.code.localeCompare(b.code)).slice(0,10),unit:part.unit,citation};
+    const day=currentDomesticDate(), entry=latestBrief(), rank=payload?.rankings?.daily||{};
+    const byMarket=['KOSPI','KOSDAQ'], candidates=Object.keys(rank).filter(d=>isDate(d)&&d<=day).sort().reverse();
+    const screens=entry?.marketScreens, links=list(screens?.coverageLinks).filter(l=>safe(l?.url)&&l?.title);
+    const tables=['foreign','institution'].flatMap(kind=>[1,-1].map(sign=>{
+      const choose=(raw,unit)=>{
+        if(!['KRW','억원'].includes(unit))return null;
+        const rows=list(raw).filter(r=>r&&typeof r.code==='string'&&/^[A-Z0-9]{6}$/.test(r.code)&&typeof r.name==='string'&&r.name.trim()&&finite(r.value)&&r.value*sign>0&&!r.estimated);
+        if(rows.length<15||new Set(rows.map(r=>r.code)).size!==rows.length)return null;
+        return rows.map(r=>({...r,value:unit==='KRW'?r.value/1e8:r.value}));
       };
-      const directResult=parse(direct?.asOf,direct,direct?.rows,entry);
-      let result=null;
-      for(const d of sourceDates){
-        const p=ranking[d]?.[kind];
-        if(p?.status!=='verified'||p.coverage?.start!==d||p.coverage?.end!==d)continue;
-        result=parse(d,p,p.byMarket?.[market],null);if(result)break;
+      const combine=(parts,date)=>{
+        if(!isDate(date)||date>day||parts.some(p=>!p?.rows||!p.citation))return null;
+        const all=parts.flatMap((p,i)=>p.rows.map(r=>({...r,market:byMarket[i]})));
+        if(new Set(all.map(r=>r.code)).size!==all.length)return null;
+        return {date,rows:all.sort((a,b)=>(b.value-a.value)*sign||a.code.localeCompare(b.code)).slice(0,15)};
+      };
+      const inputs=byMarket.map(m=>screens?.netBuys?.[m]?.[kind]);
+      let result=inputs[0]?.asOf===inputs[1]?.asOf?combine(inputs.map(p=>({rows:choose(sign===1?p?.rows:p?.sells,p?.unit),citation:briefSourceLinks(p?.sourceIds,entry)})),inputs[0]?.asOf):null;
+      const national=screens?.nationalRanks?.[kind], direct=choose(sign===1?national?.buy:national?.sell,national?.unit);
+      if(national?.scope==='krx-regular-close-both-markets'&&isDate(national.asOf)&&national.asOf<=day&&direct?.length===15
+          &&direct.every(r=>byMarket.includes(r.market))&&list(national.sourceIds).length===2
+          &&national.sourceIds.every(id=>links.some(l=>l.id===id))&&(!result||national.asOf>=result.date)){
+        result={date:national.asOf,rows:direct.sort((a,b)=>(b.value-a.value)*sign||a.code.localeCompare(b.code))};
       }
-      if(directResult&&(!result||directResult.date>=result.date))result=directResult;
-      const name=market+' '+NAMES[kind]+' 순매수 상위 10';
-      const content=result?`<div class="kr-table-wrap" tabindex="0"><table class="kr-table"><thead><tr><th scope="col">순위</th><th scope="col">종목</th><th scope="col">순매수(억원)</th></tr></thead><tbody>${result.rows.map((row,i)=>`<tr><td>${i+1}</td><th scope="row">${esc(row.name)} <small>${esc(row.code)}</small></th><td>${integer(result.unit==='KRW'?row.value/1e8:row.value)}</td></tr>`).join('')}</tbody></table></div><details class="kr-metadata"><summary>집계 출처</summary>${result.citation}</details>`:empty('검증된 순매수 순위를 확보하지 못했습니다.');
+      if(sign===1){
+        for(const d of candidates){
+          if(result&&d<=result.date)break;
+          const p=rank[d]?.[kind];
+          if(p?.status!=='verified'||p.coverage?.start!==d||p.coverage?.end!==d)continue;
+          const found=combine(byMarket.map(m=>({rows:choose(p.byMarket?.[m],p.unit),citation:sourceLinks(p.sourceIds)})),d);
+          if(found){result=found;break;}
+        }
+      }
+      const side=sign===1?'순매수':'순매도',name=NAMES[kind]+' '+side+' 상위 15';
+      const content=result?`<div class="kr-table-wrap" tabindex="0"><table class="kr-table"><thead><tr><th scope="col">순위</th><th scope="col">종목</th><th scope="col">순대금(억원)</th></tr></thead><tbody>${result.rows.map((r,i)=>`<tr><td>${i+1}</td><th scope="row">${esc(r.name)} <small>${esc(r.code)} · ${r.market}</small></th><td>${fmt(r.value,2)}</td></tr>`).join('')}</tbody></table></div>`:empty('같은 거래일의 두 시장 순대금을 확인하지 못했습니다.');
       return `<article class="kr-card"><div class="kr-card-head"><h4>${name}</h4><span class="kr-badge">${result?esc(result.date)+(result.date===day?'':' · 이전 거래일'):'미확인'}</span></div>${content}</article>`;
     })).join('');
-    return `<section class="kr-section" aria-labelledby="kr-rankings-title"><div class="kr-section-head"><div><h3 id="kr-rankings-title">종목 순매수 상위 10</h3><p>시장·투자자별 일간 순매수대금 · KRX 보통주 중심 · 금액 기준</p></div></div><div class="kr-grid">${tables}</div></section>`;
+    return `<section class="kr-section" aria-labelledby="kr-rankings-title"><div class="kr-section-head"><div><h3 id="kr-rankings-title">외국인 · 기관 종목 수급</h3><p>코스피·코스닥 통합 · 순대금 기준</p></div></div><div class="kr-grid">${tables}</div>${links.length?`<details class="kr-metadata"><summary>당일 원자료와 집계 기준</summary><ul>${links.map(l=>`<li><a href="${esc(safe(l.url))}" target="_blank" rel="noopener noreferrer">${esc(l.title)} ↗</a></li>`).join('')}</ul><p>순위 표에는 양 시장이 같은 거래일로 확인된 자료만 사용합니다.</p></details>`:''}</section>`;
   }
   function turnoverMoveScreen() {
     const e=latestBrief(),day=currentDomesticDate(),screen=e?.marketScreens?.turnoverMovers;
@@ -515,22 +550,28 @@
     return `<section class="kr-section" aria-labelledby="kr-movers-title"><div class="kr-section-head"><div><h3 id="kr-movers-title">지수 구성종목 상승률 · 하락률</h3><p>${esc(section.comparisonStart&&section.comparisonEnd?section.comparisonStart+' → '+section.comparisonEnd:day||'기준일 미확인')} · 1일은 확인된 날짜만 연동 · 주간·월간은 지수 분석의 최신 확인일 기준</p></div><div class="kr-controls" role="group" aria-label="등락률 지수 선택">${['KOSPI200','KOSDAQ150'].map(key=>`<button type="button" data-kr-index="${key}" aria-pressed="${selectedIndex===key}">${key==='KOSPI200'?'KOSPI 200':'KOSDAQ 150'}</button>`).join('')}</div><div class="kr-controls" role="group" aria-label="등락률 기간 선택">${[['day','1일'],['week','주간'],['month','월간']].map(([key,label])=>`<button type="button" data-kr-movers-period="${key}" aria-pressed="${moversPeriod===key}">${label}</button>`).join('')}</div></div>${section.coverage?.universeType==='etf-proxy'?'<p class="kr-warn">운용사 추종 ETF의 공개 구성종목 기준입니다. 공식 지수의 과거 시점 구성종목 전수 순위와 다를 수 있습니다.</p>':''}${section.scopeLabel?`<p class="${section.status==='partial'?'kr-warn':'kr-note'}">${esc(section.scopeLabel)}${list(section.missingConstituents).length?' · 미확인: '+list(section.missingConstituents).map(row=>esc(row.name+' ('+row.code+')')).join(', '):''}</p>`:''}${payload.indexMovers?.note?`<p class="kr-note">${esc(payload.indexMovers.note)}</p>`:''}<div class="kr-grid">${table('gainers','상승률')}${table('losers','하락률')}</div>${meta(section,selectedIndex)}</section>`;
   }
   // Official FreeSIS headline values in million KRW; independent of the per-market series.
-  function officialLiquiditySummary() {
+  function latestOfficialLiquidity() {
     const verified={date:'2026-11-17', officialInvestorDeposits:86622814, officialMarginLoans:26333855};
     const sourceRelease=payload?.liquidity?.validationSummary?.latestOfficialRelease,entry=latestBrief(),reported=entry?.reportedLiquidity;
     const direct=isDate(sourceRelease?.date)&&sourceRelease.unit==='million KRW'&&['officialInvestorDeposits','officialMarginLoans'].every(k=>Number.isSafeInteger(sourceRelease[k])&&sourceRelease[k]>0)?sourceRelease:null;
     const report=isDate(reported?.date)&&reported.date<=currentDomesticDate()&&reported.unit==='억원'&&[reported.investorDeposits,reported.marginLoans].every(v=>Number.isSafeInteger(v)&&v>0)&&list(reported.sourceIds).length>=2&&list(reported.sourceIds).every(id=>list(entry.sources).some(src=>src.id===id&&safe(src.url)))?{date:reported.date,officialInvestorDeposits:reported.investorDeposits*100,officialMarginLoans:reported.marginLoans*100,reported:true}:null;
     const latest=[direct,report,verified].filter(r=>r&&r.date<=currentDomesticDate()).sort((a,b)=>b.date.localeCompare(a.date))[0]||verified;
-    if(!isDate(currentDomesticDate())||latest.date>currentDomesticDate())return '';
-    return `<div class="kr-card" data-kr-official-liquidity="${latest.date}"><div class="kr-card-head"><h4>금융투자협회 공식 전체 잔고</h4><span class="kr-badge">${latest.date} 기준</span></div><div class="kr-table-wrap" tabindex="0"><table class="kr-table"><caption>시장 전체 · 억원 · 아래 시장별 시계열과 별도</caption><tbody><tr><th scope="row">투자자예탁금</th><td>${integer(latest.officialInvestorDeposits/100)}</td></tr><tr><th scope="row">신용거래융자</th><td>${integer(latest.officialMarginLoans/100)}</td></tr></tbody></table></div><details class="kr-history-disclosure"><summary>공표 기준과 근거</summary><p class="kr-note">공식 합계는 시장별 잔고에 나눠 넣지 않았습니다. ${latest.reported?'금융투자협회 통계를 인용한 보도로 확인되었습니다. '+briefSourceLinks(reported.sourceIds,entry)+' ':''}<a href="https://freesis.kofia.or.kr/stat/main.do" target="_blank" rel="noopener noreferrer">금융투자협회 FreeSIS</a></p></details></div>`;
+    return isDate(currentDomesticDate())&&latest.date<=currentDomesticDate()?{latest,entry,reported}:null;
+  }
+  function officialLiquiditySummary() {
+    const release=latestOfficialLiquidity();if(!release)return '';
+    const {latest,entry,reported}=release;
+    return `<details class="kr-metadata" data-kr-official-liquidity="${latest.date}"><summary>금융투자협회 전체 잔고 · ${latest.date} 기준</summary><div class="kr-card-head"><h4>금융투자협회 공식 전체 잔고</h4><span class="kr-badge">${latest.date} 기준</span></div><div class="kr-table-wrap" tabindex="0"><table class="kr-table"><caption>시장 전체 · 억원 · 아래 시장별 시계열과 별도</caption><tbody><tr><th scope="row">투자자예탁금</th><td>${integer(latest.officialInvestorDeposits/100)}</td></tr><tr><th scope="row">신용거래융자</th><td>${integer(latest.officialMarginLoans/100)}</td></tr></tbody></table></div><details class="kr-history-disclosure"><summary>공표 기준과 근거</summary><p class="kr-note">공식 합계는 시장별 잔고에 나눠 넣지 않았습니다. ${latest.reported?'금융투자협회 통계를 인용한 보도로 확인되었습니다. '+briefSourceLinks(reported.sourceIds,entry)+' ':''}<a href="https://freesis.kofia.or.kr/stat/main.do" target="_blank" rel="noopener noreferrer">금융투자협회 FreeSIS</a></p></details></details>`;
   }
   function liquiditySection() {
     const series=payload.liquidity?.series||{};
-    return `<section class="kr-section" aria-labelledby="kr-liquidity-title"><div class="kr-section-head"><div><h3 id="kr-liquidity-title">투자자예탁금 · 신용융자 잔고</h3><p>예탁금은 증시 전체 합계 · 신용융자는 KOSPI / KOSDAQ 구분 · 억원</p></div>${ranges('liquidity',liquidityRange)}</div>${officialLiquiditySummary()}<p class="kr-note">이전 검증 시계열 · 아래 각 차트의 기준일 확인</p>${summary()}${payload.liquidity?.note?`<p class="kr-note">${esc(payload.liquidity.note)}</p>`:''}<article class="kr-card"><div class="kr-card-head"><h4>투자자예탁금</h4><span class="kr-badge">시장 전체 · 억원</span></div><div class="kr-card-body">${chart('deposits',list(series.deposits?.rows).map(r=>({date:r.date,deposits:r.value})),['deposits'],liquidityRange,'시장 전체 투자자예탁금',false)}</div>${meta(series.deposits)}</article><div class="kr-grid kr-credit-grid" style="margin-top:14px">${['creditKOSPI','creditKOSDAQ'].map(key=>`<article class="kr-card"><div class="kr-card-head"><h4>${NAMES[key]} 잔고</h4><span class="kr-badge">억원</span></div><div class="kr-card-body">${chart(key,list(series[key]?.rows).map(r=>({date:r.date,[key]:r.value})),[key],liquidityRange,NAMES[key]+' 잔고',false)}</div>${meta(series[key])}</article>`).join('')}</div></section>`;
+    return `<section class="kr-section" aria-labelledby="kr-liquidity-title"><div class="kr-section-head"><div><h3 id="kr-liquidity-title">투자자예탁금 · 신용융자 잔고</h3><p>예탁금은 증시 전체 합계 · 신용융자는 KOSPI / KOSDAQ 구분 · 억원</p></div>${ranges('liquidity',liquidityRange)}</div>${summary()}<article class="kr-card"><div class="kr-card-head"><h4>투자자예탁금</h4><span class="kr-badge">시장 전체 · 억원</span></div><div class="kr-card-body">${chart('deposits',list(series.deposits?.rows).map(r=>({date:r.date,deposits:r.value})),['deposits'],liquidityRange,'시장 전체 투자자예탁금',false)}</div>${meta(series.deposits)}</article><div class="kr-grid kr-credit-grid" style="margin-top:14px">${['creditKOSPI','creditKOSDAQ'].map(key=>`<article class="kr-card"><div class="kr-card-head"><h4>${NAMES[key]} 잔고</h4><span class="kr-badge">억원</span></div><div class="kr-card-body">${chart(key,list(series[key]?.rows).map(r=>({date:r.date,[key]:r.value})),[key],liquidityRange,NAMES[key]+' 잔고',false)}</div>${meta(series[key])}</article>`).join('')}</div>${officialLiquiditySummary()}${payload.liquidity?.note?`<details class="kr-metadata"><summary>예탁금·신용융자 집계 기준</summary><p class="kr-note">${esc(payload.liquidity.note)}</p></details>`:''}</section>`;
   }
   function summary() {
     const series=payload.liquidity?.series||{};
-    const cards=['deposits','creditKOSPI','creditKOSDAQ'].map(key=>{const section=series[key]||{}, latest=list(section.rows).filter(r=>finite(r.value)).at(-1);return `<article class="kr-summary-card"><small>${NAMES[key]}${key==='deposits'?' · 시장 전체':''}</small><strong>${latest?integer(latest.value)+'억원':'미확인'}</strong><p>${latest?latest.date+' 기준':'검증된 관측값 없음'}</p></article>`;});
+    const release=latestOfficialLiquidity()?.latest;
+    const cards=['deposits','creditKOSPI','creditKOSDAQ'].map(key=>{const section=series[key]||{}, stored=list(section.rows).filter(r=>finite(r.value)).at(-1);
+      const latest=key==='deposits'&&release&&(!stored||release.date>stored.date)?{date:release.date,value:release.officialInvestorDeposits/100}:stored;return `<article class="kr-summary-card"><small>${NAMES[key]}${key==='deposits'?' · 시장 전체':''}</small><strong>${latest?integer(latest.value)+'억원':'미확인'}</strong><p>${latest?latest.date+' 기준':'검증된 관측값 없음'}</p></article>`;});
     return `<div class="kr-summary kr-balance-summary">${cards.join('')}</div>`;
   }
   // Move existing nodes, preserving every explanation and source link. Data tables stay beside charts.

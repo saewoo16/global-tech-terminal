@@ -100,7 +100,7 @@ class ETFChartsTest(unittest.TestCase):
   old=self.funds[0];fresh=self.funds[1]
   with tempfile.TemporaryDirectory() as tmp:
    dest=pathlib.Path(tmp)/'snapshot.json';dest.write_text(json.dumps({'funds':[old]}))
-   def build(spec,*args):
+   def build(spec,*args,**kwargs):
     if spec[0]==old['code']:raise ValueError('Simulated provider failure')
     return fresh
    with patch.object(mod,'UNIVERSE',[(old['code'],'x','industry'),(fresh['code'],'y','industry')]),patch.object(mod,'fetch',return_value=b'{"result":{"etfItemList":[]}}'),patch.object(mod,'build_fund',side_effect=build),patch.object(mod,'refresh_representatives'),patch.object(sys,'argv',['collector','--output',str(dest)]):mod.main()

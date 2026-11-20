@@ -40,16 +40,18 @@ def number(value, positive=False):
 def daily_bars(raw, now):
     quote=raw.get('indicators',{}).get('quote',[{}])[0]
     bars=[]
+    bounds_by_date=regular_session_periods(raw)
+    local_today=now.astimezone(NY).date()
     for i,stamp in enumerate(raw.get('timestamp',[])):
         local=dt.datetime.fromtimestamp(stamp,NY)
         # Don't publish a still-open US trading session as a completed daily bar.
         # Require agreement between dated provider bounds and the reviewed
         # exchange schedule; a premature provider close is not completion.
-        bounds=regular_session_periods(raw).get(local.date().isoformat())
+        bounds=bounds_by_date.get(local.date().isoformat())
         regular_end=bounds[1] if bounds else None
-        if local.date()==now.astimezone(NY).date():
+        if local.date()==local_today:
             if regular_end is None or now.timestamp()<regular_end: continue
-        if local.date()>now.astimezone(NY).date(): continue
+        if local.date()>local_today: continue
         values={key:(quote.get(key,[])[i] if i<len(quote.get(key,[])) else None) for key in ('open','high','low','close','volume')}
         if not all(number(values[k],True) for k in ('open','high','low','close')): continue
         if not values['low']<=min(values['open'],values['close'])<=max(values['open'],values['close'])<=values['high']: continue
@@ -358,7 +360,7 @@ def ranked_holdings(holdings, source_urls, now):
         return {'status':'unverified','note':'Dated source and valid portfolio weights required; no market-cap fallback'}
     return dict(holdings,top5=sorted(rows,key=lambda r:r['weightPct'],reverse=True))
 
-def build_fund(row, sources, now, previous=None):
+def build_fund(row, sources, now, previous=None, *, daily_only=False):
     ticker=row['ticker'];raw,daily_url=fetch_chart(ticker,'1d','1y');bars=daily_bars(raw,now)
     meta=raw['meta']
     if meta.get('instrumentType')!='ETF' or meta.get('currency')!='USD':raise ValueError('Unexpected instrument type/currency')
@@ -371,9 +373,10 @@ def build_fund(row, sources, now, previous=None):
         bars,retained_dates=retain_verified_missing_bars(bars,raw,previous,now)
     if len(bars)<2:raise ValueError('Fewer than two valid completed daily bars')
     values,anchors=period_returns(bars);points=[];intraday_error=None;intra_url=None
-    try:
-        intra,intra_url=fetch_chart(ticker,'5m','5d');points=intraday_points(intra,now,bars[-1]['date'])
-    except Exception as exc:intraday_error=str(exc)
+    if not daily_only:
+        try:
+            intra,intra_url=fetch_chart(ticker,'5m','5d');points=intraday_points(intra,now,bars[-1]['date'])
+        except Exception as exc:intraday_error=str(exc)
     holdings=row.get('holdings',{});hold_sources=[sources[sid]['url'] for sid in holdings.get('sourceIds',[]) if sid in sources and sources[sid].get('url')]
     fund={'code':ticker,'name':row.get('benchmark') or meta.get('longName') or ticker,'issuer':issuer_name(row.get('benchmark') or meta.get('longName') or ticker),
       'category':row['name'],'sourceGroup':row.get('group'),'group':'theme' if ticker in THEMES else 'industry','currency':'USD','exchange':meta.get('fullExchangeName') or meta.get('exchangeName'),'timezone':'America/New_York',
@@ -402,7 +405,12 @@ def build_fund(row, sources, now, previous=None):
                 fund['sourceUrls'].append(url);fund['sourceTitles'].append(old_titles.get(url,'기존 검증 전체 일봉 원천'))
     if preserved is not None:preserve_daily_metadata(fund,previous,daily_url,now)
     old_intra=(previous or {}).get('intraday',{})
-    if len(points)<2 and old_intra.get('date')==bars[-1]['date'] and len(old_intra.get('points',[]))>=2:
+    if daily_only and old_intra.get('points'):
+        fund['intraday']=dict(old_intra)
+        if old_intra.get('sourceUrl') and old_intra['sourceUrl'] not in fund['sourceUrls']:
+            fund['sourceUrls'].append(old_intra['sourceUrl'])
+            fund['sourceTitles'].append('보관 정규장 5분 OHLCV · 이전 실제 관측일')
+    elif len(points)<2 and old_intra.get('date')==bars[-1]['date'] and len(old_intra.get('points',[]))>=2:
         fund['intraday']=dict(old_intra,refreshStatus='stale',refreshError=intraday_error or 'No new valid observations; retained prior verified same-session series')
     fund['holdings']=ranked_holdings(holdings,hold_sources,now)
     fund['holdingsSourceUrls']=hold_sources
@@ -478,14 +486,14 @@ def apply_session_coverage(funds, expected_codes, analysis_date, now):
             'status':('complete' if latest_completed==target else 'unverified') if current and len(current)==len(expected) and not missing else 'partial'}
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--output',default=str(ROOT/'data/overseas_etf_charts.json'));parser.add_argument('--analysis',default=str(ROOT/'data/us_analysis.json'));args=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument('--output',default=str(ROOT/'data/overseas_etf_charts.json'));parser.add_argument('--analysis',default=str(ROOT/'data/us_analysis.json'));parser.add_argument('--include-intraday',action='store_true',help='Explicit opt-in to legacy 5-minute collection');args=parser.parse_args()
     analysis=json.loads(pathlib.Path(args.analysis).read_text());entries=sorted(analysis['entries'],key=lambda e:e['date'],reverse=True)
     entry=next(e for e in entries if e.get('sectors',{}).get('rows'));rows=[r for r in entry['sectors']['rows'] if r.get('instrumentType')=='etf']
     if not rows:raise ValueError('No verified ETF universe in existing analysis')
     sources={s['id']:s for s in entry.get('sources',[])};now=dt.datetime.now(dt.timezone.utc);dest=pathlib.Path(args.output)
     previous={f['code']:f for f in json.loads(dest.read_text()).get('funds',[])} if dest.exists() else {};funds=[];errors=[]
     with concurrent.futures.ThreadPoolExecutor(max_workers=5) as pool:
-        jobs={pool.submit(build_fund,row,sources,now,previous.get(row['ticker'])):row for row in rows}
+        jobs={pool.submit(build_fund,row,sources,now,previous.get(row['ticker']),daily_only=not args.include_intraday):row for row in rows}
         for future in concurrent.futures.as_completed(jobs):
             row=jobs[future]
             try:fund=future.result();funds.append(fund);print(fund['code'],len(fund['daily']),len(fund['intraday']['points']),fund['daily'][-1]['date'],flush=True)
@@ -496,7 +504,7 @@ def main():
     # Partial source failure retains valid prior funds, never empties existing charts.
     order={r['ticker']:i for i,r in enumerate(rows)};funds.sort(key=lambda f:order[f['code']])
     coverage=apply_session_coverage(funds,[r['ticker'] for r in rows],entry['date'],now)
-    payload={'schemaVersion':1,'updatedAt':now.isoformat(),'asOf':coverage['commonThrough'],'coverage':coverage,'timezone':'America/New_York','currency':'USD','funds':funds,'errors':errors,'universeSourceDate':entry['date'],'methodology':['미국 상장 실제 ETF만 포함하며 화장품·화학 대표 종목 바스켓은 제외합니다.','가격은 Yahoo Finance 공개 비공식 시세입니다. 확정된 정규장 일봉과 실제 5분 관측만 사용하며 휴장일·상장 전·누락 구간을 합성하지 않습니다.','수익률은 일봉 close 기준 가격 수익률이며 분배금 재투자 총수익률이 아닙니다.','보유종목은 기존 분석의 운용사 검증 스냅샷과 실제 보유내역 기준일을 유지합니다. 가격 갱신이 보유내역 재검증을 의미하지 않습니다.']}
+    payload={'schemaVersion':1,'updatedAt':now.isoformat(),'asOf':coverage['commonThrough'],'coverage':coverage,'timezone':'America/New_York','currency':'USD','funds':funds,'errors':errors,'universeSourceDate':entry['date'],'methodology':['미국 상장 실제 ETF만 포함하며 화장품·화학 대표 종목 바스켓은 제외합니다.','가격은 Yahoo Finance 공개 비공식 시세입니다. 확정된 정규장 일봉을 갱신하며 과거 5분 기록은 별도 보관합니다. 휴장일·상장 전·누락 구간을 합성하지 않습니다.','수익률은 일봉 close 기준 가격 수익률이며 분배금 재투자 총수익률이 아닙니다.','보유종목은 기존 분석의 운용사 검증 스냅샷과 실제 보유내역 기준일을 유지합니다. 가격 갱신이 보유내역 재검증을 의미하지 않습니다.']}
     dest.parent.mkdir(parents=True,exist_ok=True);temp=dest.with_suffix('.tmp');temp.write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':'))+'\n');temp.replace(dest)
     print('Saved',dest,len(funds),'funds',len(errors),'errors')
 if __name__=='__main__':main()

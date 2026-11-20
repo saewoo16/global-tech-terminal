@@ -22,7 +22,7 @@ vm.runInContext(read('assets/korea.js').replace('  if(document.readyState', '  w
   assert.equal(ctx.window.TerminalBriefingData.entries.length,archive.entries.length+1);
   assert.deepEqual(JSON.parse(JSON.stringify(ctx.window.TerminalBriefingData.entries.slice(0,-1))),archive.entries);
   const entry=overlay.entry,close=k.closeSection(),fresh=k.freshnessSection();
-  assert(close.includes('KOREA MARKET CLOSE · '+entry.date));
+  assert(close.includes('코스피·코스닥 '+entry.date));
   assert(close.includes('오늘은 양 시장 종가와 마감 해설만 반영'));
   assert(fresh.includes('최신 시황 <strong>'+entry.date+'</strong>'));
   assert(fresh.includes('당일 수급 <strong>'+entry.date+' · 잠정</strong>'));
@@ -57,7 +57,8 @@ vm.runInContext(read('assets/korea.js').replace('  if(document.readyState', '  w
     base={schemaVersion:1,entries:[{...full,date:day},...archive.entries]};
     await o.load();
     assert.equal(ctx.window.TerminalBriefingData.entries.length,base.entries.length);
-    assert(k.closeSection().includes('Newer full archive'));
+    assert(k.closeSection().includes('코스피·코스닥 '+day));
+    assert(!k.closeSection().includes('Newer full archive'));
   }
   assert.equal(JSON.stringify({archive,korea,etf}),snapshot);
   console.log('PASS current close-only overlay render, archive precedence, stale panel dates, offline fallback and invalid content rejection');

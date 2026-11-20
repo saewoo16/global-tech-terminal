@@ -59,7 +59,7 @@ class DuplicateSourceTests(unittest.TestCase):
                         if url==collector.CATALOGUE:return json.dumps({'result':{'etfItemList':[{'itemcode':'091160','itemname':'KODEX test'}]}}).encode()
                         return xml if 'fchart.stock' in url else intraday
                     # Portfolio refresh is independent of price collection and is not under test.
-                    with patch.object(collector,'UNIVERSE',[('091160','test','industry')]),patch.object(collector,'fetch',side_effect=fetch),patch.object(collector,'refresh_representatives'),patch.object(sys,'argv',['collector','--output',str(dest)]):
+                    with patch.object(collector,'UNIVERSE',[('091160','test','industry')]),patch.object(collector,'fetch',side_effect=fetch),patch.object(collector,'refresh_representatives'),patch.object(sys,'argv',['collector','--output',str(dest),'--include-intraday']):
                         collector.main()
                     result=json.loads(dest.read_text());retained=result['funds'][0]
                     expected=copy.deepcopy(old);expected.update(refreshStatus='stale',refreshError=result['errors'][0]['error'])

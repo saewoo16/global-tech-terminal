@@ -63,7 +63,7 @@ def require_unique_observations(rows, key, label):
         if value in seen:raise ValueError(f'{label}: duplicate source {key} {value}')
         seen.add(value)
 
-def build_fund(spec,quotes,today):
+def build_fund(spec,quotes,today,*,previous=None,daily_only=False):
     code,category,group=spec;q=quotes[code]
     daily_url=f'https://fchart.stock.naver.com/sise.nhn?symbol={code}&timeframe=day&count=400&requestType=0'
     intraday_url=f'https://api.stock.naver.com/chart/domestic/item/{code}?periodType=day'
@@ -79,7 +79,7 @@ def build_fund(spec,quotes,today):
             if r['close']>0 and r['open']>0 and r['low']<=min(r['open'],r['close'])<=max(r['open'],r['close'])<=r['high']:history.append(r)
     require_unique_observations(history,'date',f'{code} daily')
     history.sort(key=lambda r:r['date'])
-    raw=json.loads(fetch(intraday_url));points=[]
+    raw={} if daily_only else json.loads(fetch(intraday_url));points=[]
     for v in raw.get('priceInfos',[]):
         stamp=v.get('localDateTime','');price=v.get('currentPrice')
         if len(stamp)>=12 and price is not None and price>0:
@@ -96,7 +96,7 @@ def build_fund(spec,quotes,today):
     # A current-session daily close is provisional before the regular KRX close.
     # Preserve genuine intraday observations, but never call them a completed close.
     history=completed_daily(history,dt.datetime.now(dt.timezone.utc))
-    if not history or len(points)<2:raise ValueError('Missing valid daily or intraday series; retain previous valid fund')
+    if not history or (not daily_only and len(points)<2):raise ValueError('Missing valid daily or intraday series; retain previous valid fund')
     orig=chart.attrib.get('origintime','') if chart is not None else ''
     result={'code':code,'name':q['itemname'],'issuer':q['itemname'].split()[0],'category':category,'group':group,
       'metadataAsOf':intraday_date,'metadataRetrievedAt':dt.datetime.now(dt.timezone.utc).isoformat(),
@@ -118,6 +118,18 @@ def build_fund(spec,quotes,today):
     if code=='449450':result['selectionNote']='한화에어로스페이스·현대로템·한국항공우주·한화시스템 등을 편입한 국내 방산 ETF. 방산과 우주는 별도로 표시하지만 복수 사업 기업의 편입은 겹칠 수 있습니다.'
     if code=='0207G0':result['selectionNote']='에이치브이엠·스피어·세아베스틸지주·쎄트렉아이·알멕을 편입한 국내 우주 밸류체인 ETF. 한화시스템 등 방산 사업 기업도 포함됩니다. 실제 상장 이후 차트만 표시합니다.'
     if code=='0247S0':result['selectionNote']='삼성전기·대덕전자·심텍·이수페타시스 등을 담는 MLCC·AI기판 테마. 한국·일본 혼합 글로벌 ETF이며 국내 업종 전수지수가 아닙니다. 2026-10-13 상장으로 실제 상장 이후 차트만 제공합니다.'
+    if daily_only:
+        # Archived 1m data and catalogue quote fields retain their original dates.
+        # No live/after-hours prices enter the daily refresh path.
+        old=previous or {}
+        for key in ('metadataAsOf','metadataRetrievedAt','aumKRW','marketCapKRW','volume','turnoverKRW','quotePrice','quoteChangePct','navPerShareKRW'):
+            result[key]=copy.deepcopy(old.get(key))
+        if old.get('intraday',{}).get('points'):
+            result['intraday']=copy.deepcopy(old['intraday'])
+        else:
+            result['sourceUrls'].pop();result['sourceTitles'].pop()
+        if old.get('representatives'):
+            result['representatives']=copy.deepcopy(old['representatives'])
     print(code,q['itemname'],len(history),len(points),intraday_date,flush=True)
     return result
 
@@ -182,7 +194,7 @@ def refresh_representatives(funds, previous):
         list(pool.map(collect,funds))
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--output',default=str(pathlib.Path(__file__).resolve().parents[1]/'data/korean_etf_charts.json'));args=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--output',default=str(pathlib.Path(__file__).resolve().parents[1]/'data/korean_etf_charts.json'));p.add_argument('--include-intraday',action='store_true',help='Explicit opt-in to legacy 1-minute collection');args=p.parse_args()
     now=dt.datetime.now(dt.timezone.utc);today=now.astimezone(dt.timezone(dt.timedelta(hours=9))).date()
     quotes={x['itemcode']:x for x in json.loads(fetch(CATALOGUE).decode('euc-kr'))['result']['etfItemList']}
     dest=pathlib.Path(args.output)
@@ -191,7 +203,7 @@ def main():
         previous={f['code']:f for f in json.loads(dest.read_text()).get('funds',[])}
     funds=[];errors=[]
     with concurrent.futures.ThreadPoolExecutor(max_workers=5) as pool:
-        jobs={pool.submit(build_fund,s,quotes,today):s for s in UNIVERSE}
+        jobs={pool.submit(build_fund,s,quotes,today,**({} if args.include_intraday else {'previous':previous.get(s[0]),'daily_only':True})):s for s in UNIVERSE}
         for job in concurrent.futures.as_completed(jobs):
             try:
                 fund=job.result()
@@ -202,11 +214,11 @@ def main():
             except Exception as e:
                 code=jobs[job][0];errors.append({'code':code,'error':str(e)})
                 old=previous.get(code)
-                if old and old.get('daily') and old.get('intraday',{}).get('points'):
+                if old and old.get('daily'):
                     old['refreshStatus']='stale';old['refreshError']=str(e);funds.append(old)
-    refresh_representatives(funds, previous)
+    if args.include_intraday: refresh_representatives(funds, previous)
     order={s[0]:i for i,s in enumerate(UNIVERSE)};funds.sort(key=lambda f:order[f['code']])
-    payload={'schemaVersion':1,'updatedAt':now.isoformat(),'asOf':max((f['intraday']['date'] or '' for f in funds),default=None),'timezone':'Asia/Seoul','currency':'KRW','funds':funds,'errors':errors,'methodology':['NAVER 공개 KRX 일별 OHLCV와 실제 장중 1분 관측값입니다. 누락값·주말·휴장일·상장 전 기간을 합성하지 않습니다.','장중 volume은 직전 관측 이후 누적 거래량 차이이며 cumulativeVolume은 누적 거래량입니다. 무거래 구간은 생략됩니다. 시가총액은 순자산(AUM)이 아니며 AUM 미확인 값은 null입니다.','12개월 범위 내 거래일만 포함합니다. 최근 상장 ETF는 확보된 실제 이력만 표시합니다.','선정은 KODEX/TIGER 우선 및 세부 공급망 SOL, 방산 PLUS, MLCC·AI기판 KIWOOM 보완 방식입니다. 당일 거래량은 장기 유동성의 보장이 아닙니다.','NAVER 공개 비공식 API는 변경·제한될 수 있으며 거래소 직접 실시간 피드가 아닙니다.']}
+    payload={'schemaVersion':1,'updatedAt':now.isoformat(),'asOf':max((f['daily'][-1]['date'] for f in funds if f.get('daily')),default=None),'timezone':'Asia/Seoul','currency':'KRW','funds':funds,'errors':errors,'methodology':['NAVER 공개 KRX 일별 OHLCV입니다. 장중 1분 기록은 별도 보관 이력입니다. 누락값·주말·휴장일·상장 전 기간을 합성하지 않습니다.','장중 volume은 직전 관측 이후 누적 거래량 차이이며 cumulativeVolume은 누적 거래량입니다. 무거래 구간은 생략됩니다. 시가총액은 순자산(AUM)이 아니며 AUM 미확인 값은 null입니다.','12개월 범위 내 거래일만 포함합니다. 최근 상장 ETF는 확보된 실제 이력만 표시합니다.','선정은 KODEX/TIGER 우선 및 세부 공급망 SOL, 방산 PLUS, MLCC·AI기판 KIWOOM 보완 방식입니다. 당일 거래량은 장기 유동성의 보장이 아닙니다.','NAVER 공개 비공식 API는 변경·제한될 수 있으며 거래소 직접 실시간 피드가 아닙니다.']}
     if not funds:raise RuntimeError('No valid funds; existing output preserved')
     dest.parent.mkdir(parents=True,exist_ok=True)
     temp=dest.with_suffix('.tmp');temp.write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':'))+'\n');temp.replace(dest)
