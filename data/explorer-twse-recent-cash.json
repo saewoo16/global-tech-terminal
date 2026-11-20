@@ -1,0 +1,777 @@
+{
+  "schemaVersion": 1,
+  "basis": "regular_close_unadjusted",
+  "sessionTimezone": "Asia/Taipei",
+  "currency": "TWD",
+  "sourcesByDate": {
+    "2026-11-18": {
+      "agency": "Securities and Futures Bureau, Financial Supervisory Commission, Taiwan (金融監督管理委員會證券期貨局)",
+      "marketName": "Taiwan Stock Exchange (臺灣證券交易所)",
+      "datasetName": "After-hours information Stock daily transaction information (盤後資訊 > 個股日成交資訊)",
+      "datasetUrl": "https://data.gov.tw/en/datasets/11549",
+      "rawUrl": "https://www.twse.com.tw/exchangeReport/STOCK_DAY_ALL?response=open_data",
+      "licenseName": "Open Government Data License, version 1.0 (Taiwan)",
+      "licenseUrl": "https://data.gov.tw/license",
+      "attributionYear": 2026,
+      "edition": "2026-11-18 dated extract",
+      "observedAt": "2026-11-18T08:57:45Z",
+      "sha256": "7808a934a52c75a7aeded7f09b13683810270c19de0fbb5f9ad2d8dabda4cb5e",
+      "matchingListings": 30
+    },
+    "2026-11-19": {
+      "agency": "Securities and Futures Bureau, Financial Supervisory Commission, Taiwan (金融監督管理委員會證券期貨局)",
+      "marketName": "Taiwan Stock Exchange (臺灣證券交易所)",
+      "datasetName": "After-hours information Stock daily transaction information (盤後資訊 > 個股日成交資訊)",
+      "datasetUrl": "https://data.gov.tw/en/datasets/11549",
+      "rawUrl": "https://www.twse.com.tw/exchangeReport/STOCK_DAY_ALL?response=open_data",
+      "licenseName": "Open Government Data License, version 1.0 (Taiwan)",
+      "licenseUrl": "https://data.gov.tw/license",
+      "attributionYear": 2026,
+      "edition": "2026-11-19 dated extract",
+      "observedAt": "2026-11-19T08:57:21.477494+00:00",
+      "sha256": "074fbd67af1b8fd651f6e7f57cd7739d8388ee199001ab16a2459731a1e6816e",
+      "matchingListings": 30
+    },
+    "2026-11-20": {
+      "agency": "Securities and Futures Bureau, Financial Supervisory Commission, Taiwan (金融監督管理委員會證券期貨局)",
+      "marketName": "Taiwan Stock Exchange (臺灣證券交易所)",
+      "datasetName": "After-hours information Stock daily transaction information (盤後資訊 > 個股日成交資訊)",
+      "datasetUrl": "https://data.gov.tw/en/datasets/11549",
+      "rawUrl": "https://www.twse.com.tw/exchangeReport/STOCK_DAY_ALL?response=open_data",
+      "licenseName": "Open Government Data License, version 1.0 (Taiwan)",
+      "licenseUrl": "https://data.gov.tw/license",
+      "attributionYear": 2026,
+      "edition": "2026-11-20 dated extract",
+      "observedAt": "2026-11-20T09:04:28.040880+00:00",
+      "sha256": "0e95abb8c04db96ee3e0fb07129afd6708e6645ff2436737c4ed0a2f5016733b",
+      "matchingListings": 30
+    }
+  },
+  "latestOhlcvEvidence": {
+    "sha256": "7fcd66a5dc44c25db10492b39ebfdbb0915805112ca176a2641a32d145f7d104",
+    "observedAt": "2026-11-20T14:23:00.872880+00:00",
+    "comparedExactOfficialClosingSnapshot": 30
+  },
+  "quotes": {
+    "TWSE:2308": {
+      "closes": [
+        [
+          "2026-11-18",
+          1060.0
+        ],
+        [
+          "2026-11-19",
+          1000.0
+        ],
+        [
+          "2026-11-20",
+          900.0
+        ]
+      ],
+      "latestBar": {
+        "date": "2026-11-20",
+        "open": 932.0,
+        "high": 950.0,
+        "low": 900.0,
+        "close": 900.0,
+        "volume": 20355632
+      }
+    },
+    "TWSE:2313": {
+      "closes": [
+        [
+          "2026-11-18",
+          187.5
+        ],
+        [
+          "2026-11-19",
+          169.0
+        ],
+        [
+          "2026-11-20",
+          152.5
+        ]
+      ],
+      "latestBar": {
+        "date": "2026-11-20",
+        "open": 156.0,
+        "high": 159.0,
+        "low": 152.5,
+        "close": 152.5,
+        "volume": 12524951
+      }
+    },
+    "TWSE:2317": {
+      "closes": [
+        [
+          "2026-11-18",
+          221.0
+        ],
+        [
+          "2026-11-19",
+          220.5
+        ],
+        [
+          "2026-11-20",
+          210.0
+        ]
+      ],
+      "latestBar": {
+        "date": "2026-11-20",
+        "open": 215.0,
+        "high": 217.0,
+        "low": 208.0,
+        "close": 210.0,
+        "volume": 69153442
+      }
+    },
+    "TWSE:2327": {
+      "closes": [
+        [
+          "2026-11-18",
+          352.0
+        ],
+        [
+          "2026-11-19",
+          322.5
+        ],
+        [
+          "2026-11-20",
+          296.0
+        ]
+      ],
+      "latestBar": {
+        "date": "2026-11-20",
+        "open": 305.5,
+        "high": 314.5,
+        "low": 295.0,
+        "close": 296.0,
+        "volume": 69774078
+      }
+    },
+    "TWSE:2337": {
+      "closes": [
+        [
+          "2026-11-18",
+          69.9
+        ],
+        [
+          "2026-11-19",
+          64.6
+        ],
+        [
+          "2026-11-20",
+          58.9
+        ]
+      ],
+      "latestBar": {
+        "date": "2026-11-20",
+        "open": 61.7,
+        "high": 62.5,
+        "low": 58.6,
+        "close": 58.9,
+        "volume": 62569671
+      }
+    },
+    "TWSE:2344": {
+      "closes": [
+        [
+          "2026-11-18",
+          108.0
+        ],
+        [
+          "2026-11-19",
+          98.0
+        ],
+        [
+          "2026-11-20",
+          89.2
+        ]
+      ],
+      "latestBar": {
+        "date": "2026-11-20",
+        "open": 90.3,
+        "high": 93.3,
+        "low": 88.2,
+        "close": 89.2,
+        "volume": 85345017
+      }
+    },
+    "TWSE:2356": {
+      "closes": [
+        [
+          "2026-11-18",
+          42.3
+        ],
+        [
+          "2026-11-19",
+          40.55
+        ],
+        [
+          "2026-11-20",
+          39.25
+        ]
+      ],
+      "latestBar": {
+        "date": "2026-11-20",
+        "open": 39.8,
+        "high": 39.8,
+        "low": 37.7,
+        "close": 39.25,
+        "volume": 30407652
+      }
+    },
+    "TWSE:2360": {
+      "closes": [
+        [
+          "2026-11-18",
+          1140.0
+        ],
+        [
+          "2026-11-19",
+          1030.0
+        ],
+        [
+          "2026-11-20",
+          927.0
+        ]
+      ],
+      "latestBar": {
+        "date": "2026-11-20",
+        "open": 927.0,
+        "high": 927.0,
+        "low": 927.0,
+        "close": 927.0,
+        "volume": 1767998
+      }
+    },
+    "TWSE:2368": {
+      "closes": [
+        [
+          "2026-11-18",
+          877.0
+        ],
+        [
+          "2026-11-19",
+          790.0
+        ],
+        [
+          "2026-11-20",
+          711.0
+        ]
+      ],
+      "latestBar": {
+        "date": "2026-11-20",
+        "open": 711.0,
+        "high": 720.0,
+        "low": 711.0,
+        "close": 711.0,
+        "volume": 3623221
+      }
+    },
+    "TWSE:2382": {
+      "closes": [
+        [
+          "2026-11-18",
+          265.0
+        ],
+        [
+          "2026-11-19",
+          262.5
+        ],
+        [
+          "2026-11-20",
+          252.0
+        ]
+      ],
+      "latestBar": {
+        "date": "2026-11-20",
+        "open": 255.0,
+        "high": 257.0,
+        "low": 247.5,
+        "close": 252.0,
+        "volume": 17472187
+      }
+    },
+    "TWSE:2383": {
+      "closes": [
+        [
+          "2026-11-18",
+          3465.0
+        ],
+        [
+          "2026-11-19",
+          3120.0
+        ],
+        [
+          "2026-11-20",
+          2810.0
+        ]
+      ],
+      "latestBar": {
+        "date": "2026-11-20",
+        "open": 2845.0,
+        "high": 2860.0,
+        "low": 2810.0,
+        "close": 2810.0,
+        "volume": 3327855
+      }
+    },
+    "TWSE:2408": {
+      "closes": [
+        [
+          "2026-11-18",
+          325.0
+        ],
+        [
+          "2026-11-19",
+          293.5
+        ],
+        [
+          "2026-11-20",
+          264.5
+        ]
+      ],
+      "latestBar": {
+        "date": "2026-11-20",
+        "open": 276.5,
+        "high": 279.5,
+        "low": 264.5,
+        "close": 264.5,
+        "volume": 60059145
+      }
+    },
+    "TWSE:2449": {
+      "closes": [
+        [
+          "2026-11-18",
+          194.0
+        ],
+        [
+          "2026-11-19",
+          175.0
+        ],
+        [
+          "2026-11-20",
+          157.5
+        ]
+      ],
+      "latestBar": {
+        "date": "2026-11-20",
+        "open": 160.0,
+        "high": 164.0,
+        "low": 157.5,
+        "close": 157.5,
+        "volume": 15122609
+      }
+    },
+    "TWSE:2454": {
+      "closes": [
+        [
+          "2026-11-18",
+          3940.0
+        ],
+        [
+          "2026-11-19",
+          3720.0
+        ],
+        [
+          "2026-11-20",
+          3350.0
+        ]
+      ],
+      "latestBar": {
+        "date": "2026-11-20",
+        "open": 3480.0,
+        "high": 3655.0,
+        "low": 3350.0,
+        "close": 3350.0,
+        "volume": 19078661
+      }
+    },
+    "TWSE:3034": {
+      "closes": [
+        [
+          "2026-11-18",
+          458.0
+        ],
+        [
+          "2026-11-19",
+          436.5
+        ],
+        [
+          "2026-11-20",
+          416.5
+        ]
+      ],
+      "latestBar": {
+        "date": "2026-11-20",
+        "open": 426.5,
+        "high": 427.5,
+        "low": 410.5,
+        "close": 416.5,
+        "volume": 3713790
+      }
+    },
+    "TWSE:3035": {
+      "closes": [
+        [
+          "2026-11-18",
+          186.0
+        ],
+        [
+          "2026-11-19",
+          173.0
+        ],
+        [
+          "2026-11-20",
+          156.0
+        ]
+      ],
+      "latestBar": {
+        "date": "2026-11-20",
+        "open": 163.0,
+        "high": 166.0,
+        "low": 156.0,
+        "close": 156.0,
+        "volume": 7095613
+      }
+    },
+    "TWSE:3037": {
+      "closes": [
+        [
+          "2026-11-18",
+          662.0
+        ],
+        [
+          "2026-11-19",
+          596.0
+        ],
+        [
+          "2026-11-20",
+          537.0
+        ]
+      ],
+      "latestBar": {
+        "date": "2026-11-20",
+        "open": 537.0,
+        "high": 545.0,
+        "low": 537.0,
+        "close": 537.0,
+        "volume": 9870213
+      }
+    },
+    "TWSE:3044": {
+      "closes": [
+        [
+          "2026-11-18",
+          481.5
+        ],
+        [
+          "2026-11-19",
+          433.5
+        ],
+        [
+          "2026-11-20",
+          402.5
+        ]
+      ],
+      "latestBar": {
+        "date": "2026-11-20",
+        "open": 411.0,
+        "high": 426.0,
+        "low": 398.0,
+        "close": 402.5,
+        "volume": 7265430
+      }
+    },
+    "TWSE:3189": {
+      "closes": [
+        [
+          "2026-11-18",
+          579.0
+        ],
+        [
+          "2026-11-19",
+          522.0
+        ],
+        [
+          "2026-11-20",
+          470.0
+        ]
+      ],
+      "latestBar": {
+        "date": "2026-11-20",
+        "open": 470.0,
+        "high": 470.0,
+        "low": 470.0,
+        "close": 470.0,
+        "volume": 3999952
+      }
+    },
+    "TWSE:3231": {
+      "closes": [
+        [
+          "2026-11-18",
+          162.0
+        ],
+        [
+          "2026-11-19",
+          156.0
+        ],
+        [
+          "2026-11-20",
+          147.0
+        ]
+      ],
+      "latestBar": {
+        "date": "2026-11-20",
+        "open": 152.0,
+        "high": 153.0,
+        "low": 145.0,
+        "close": 147.0,
+        "volume": 36898922
+      }
+    },
+    "TWSE:3443": {
+      "closes": [
+        [
+          "2026-11-18",
+          6665.0
+        ],
+        [
+          "2026-11-19",
+          6000.0
+        ],
+        [
+          "2026-11-20",
+          5400.0
+        ]
+      ],
+      "latestBar": {
+        "date": "2026-11-20",
+        "open": 5400.0,
+        "high": 5400.0,
+        "low": 5400.0,
+        "close": 5400.0,
+        "volume": 502722
+      }
+    },
+    "TWSE:3661": {
+      "closes": [
+        [
+          "2026-11-18",
+          3950.0
+        ],
+        [
+          "2026-11-19",
+          3600.0
+        ],
+        [
+          "2026-11-20",
+          3240.0
+        ]
+      ],
+      "latestBar": {
+        "date": "2026-11-20",
+        "open": 3475.0,
+        "high": 3475.0,
+        "low": 3240.0,
+        "close": 3240.0,
+        "volume": 3142227
+      }
+    },
+    "TWSE:3702": {
+      "closes": [
+        [
+          "2026-11-18",
+          81.5
+        ],
+        [
+          "2026-11-19",
+          80.2
+        ],
+        [
+          "2026-11-20",
+          77.5
+        ]
+      ],
+      "latestBar": {
+        "date": "2026-11-20",
+        "open": 79.9,
+        "high": 80.4,
+        "low": 75.7,
+        "close": 77.5,
+        "volume": 18360086
+      }
+    },
+    "TWSE:4958": {
+      "closes": [
+        [
+          "2026-11-18",
+          382.0
+        ],
+        [
+          "2026-11-19",
+          344.0
+        ],
+        [
+          "2026-11-20",
+          310.0
+        ]
+      ],
+      "latestBar": {
+        "date": "2026-11-20",
+        "open": 313.0,
+        "high": 325.5,
+        "low": 310.0,
+        "close": 310.0,
+        "volume": 17266004
+      }
+    },
+    "TWSE:6213": {
+      "closes": [
+        [
+          "2026-11-18",
+          438.5
+        ],
+        [
+          "2026-11-19",
+          395.0
+        ],
+        [
+          "2026-11-20",
+          355.5
+        ]
+      ],
+      "latestBar": {
+        "date": "2026-11-20",
+        "open": 355.5,
+        "high": 355.5,
+        "low": 355.5,
+        "close": 355.5,
+        "volume": 1515330
+      }
+    },
+    "TWSE:6239": {
+      "closes": [
+        [
+          "2026-11-18",
+          219.0
+        ],
+        [
+          "2026-11-19",
+          201.5
+        ],
+        [
+          "2026-11-20",
+          181.5
+        ]
+      ],
+      "latestBar": {
+        "date": "2026-11-20",
+        "open": 191.5,
+        "high": 192.0,
+        "low": 181.5,
+        "close": 181.5,
+        "volume": 11328970
+      }
+    },
+    "TWSE:6269": {
+      "closes": [
+        [
+          "2026-11-18",
+          68.1
+        ],
+        [
+          "2026-11-19",
+          61.3
+        ],
+        [
+          "2026-11-20",
+          55.4
+        ]
+      ],
+      "latestBar": {
+        "date": "2026-11-20",
+        "open": 58.8,
+        "high": 59.4,
+        "low": 55.2,
+        "close": 55.4,
+        "volume": 12673529
+      }
+    },
+    "TWSE:6669": {
+      "closes": [
+        [
+          "2026-11-18",
+          1475.0
+        ],
+        [
+          "2026-11-19",
+          1410.0
+        ],
+        [
+          "2026-11-20",
+          1325.0
+        ]
+      ],
+      "latestBar": {
+        "date": "2026-11-20",
+        "open": 1345.0,
+        "high": 1360.0,
+        "low": 1290.0,
+        "close": 1325.0,
+        "volume": 5926875
+      }
+    },
+    "TWSE:8039": {
+      "closes": [
+        [
+          "2026-11-18",
+          169.0
+        ],
+        [
+          "2026-11-19",
+          152.5
+        ],
+        [
+          "2026-11-20",
+          137.5
+        ]
+      ],
+      "latestBar": {
+        "date": "2026-11-20",
+        "open": 137.5,
+        "high": 141.0,
+        "low": 137.5,
+        "close": 137.5,
+        "volume": 2305067
+      }
+    },
+    "TWSE:8046": {
+      "closes": [
+        [
+          "2026-11-18",
+          775.0
+        ],
+        [
+          "2026-11-19",
+          698.0
+        ],
+        [
+          "2026-11-20",
+          629.0
+        ]
+      ],
+      "latestBar": {
+        "date": "2026-11-20",
+        "open": 629.0,
+        "high": 637.0,
+        "low": 629.0,
+        "close": 629.0,
+        "volume": 3940511
+      }
+    }
+  }
+}

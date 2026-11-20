@@ -15,13 +15,19 @@ const nodes=new Map(), node=id=>nodes.get(id)||nodes.set(id,{hidden:false,textCo
 const ctx=vm.createContext({market,tail,current,structuredClone,console,URL,Date,window:{},document:{readyState:'loading',getElementById:node,querySelectorAll:()=>[],createElement:()=>({}),createTextNode:x=>x,addEventListener(){}}});
 vm.runInContext(page.match(/<script>\n([\s\S]*?)<\/script>/)[1],ctx);
 const run=code=>vm.runInContext(code,ctx);
-for(const [symbol,expected] of Object.entries({'TPEX:6488':[546,544,490],'TPEX:8299':[1535,1520,1455]})){
+for(const [symbol,expected] of Object.entries({'TPEX:6488':[546,544,490,441.5],'TPEX:8299':[1535,1520,1455,1320]})){
   ctx.sym=symbol;
   const original=JSON.stringify(market.stocks[symbol]);
   const out=run('explorerTpexBridge(sym,market.stocks[sym],undefined,tail)');
-  assert.deepEqual(Array.from(out.prices.slice(-3),p=>p[1]),expected);
-  assert.deepEqual(Array.from(out.prices.slice(-3),p=>p[0]),['2026-11-17','2026-11-18','2026-11-19']);
+  assert.deepEqual(Array.from(out.prices.slice(-4),p=>p[1]),expected);
+  assert.deepEqual(Array.from(out.prices.slice(-4),p=>p[0]),['2026-11-17','2026-11-18','2026-11-19','2026-11-20']);
   assert.equal(JSON.stringify(market.stocks[symbol]),original);
+  const bar=run('explorerTpexBar(sym,explorerTpexBridge(sym,market.stocks[sym],undefined,tail),tail)');
+  assert.equal(bar.close,expected.at(-1));
+  assert.equal(bar.date,'2026-11-20');
+  assert.ok(bar.high>=bar.close&&bar.low<=bar.close&&bar.volume>0);
+  assert.equal(run("{const t=structuredClone(tail);t.latestDailyBars[sym].high=1;explorerTpexBar(sym,explorerTpexBridge(sym,market.stocks[sym],undefined,tail),t)}"),null);
+
   for(const code of [
     "d.prices.at(-1)[1]+=1",
     "d.close+=1",
@@ -44,19 +50,19 @@ for(const [symbol,expected] of Object.entries({'TPEX:6488':[546,544,490],'TPEX:8
 assert.equal(run("explorerTpexBridge('TWSE:2344',market.stocks['TWSE:2344'],undefined,tail)"),null);
 assert.equal(run("explorerTpexBridge('TPEX:9999',market.stocks['TPEX:6488'],undefined,tail)"),null);
 run("MARKET=market;EXPLORER_TPEX_TAIL=tail;const nextScalar=structuredClone(current);nextScalar.sessionDate='2026-11-20';nextScalar.quotes['TPEX:6488'].asOf=nextScalar.sessionDate;nextScalar.quotes['TPEX:6488'].close=450;EXPLORER_TAIWAN_CLOSES=nextScalar;chosen={symbol:'TPEX:6488'};renderChart();renderPerformance();renderExplorerLatestClose(chosen,data(chosen),validPrices(data(chosen)))");
-assert.match(node('chartstat').textContent,/2026-11-19/);
+assert.match(node('chartstat').textContent,/2026-11-20/);
 assert.match(node('chartnote').textContent,/TPEx/);
-assert.match(node('chartempty').innerHTML,/2026-11-19/);
+assert.match(node('chartempty').innerHTML,/2026-11-20/);
 assert.match(node('performance').innerHTML,/2026-11-16/);
-assert.doesNotMatch(node('performance').innerHTML,/2026-11-19/);
+assert.doesNotMatch(node('performance').innerHTML,/2026-11-2[01]|2026-11-19/);
 assert.match(node('last').textContent,/450 TWD/);
-assert.match(node('priceinfo').textContent,/2026-11-20.*차트 2026-11-19.*수익률 .*2026-11-16/);
+assert.match(node('priceinfo').textContent,/2026-11-20.*차트 2026-11-20.*수익률 .*2026-11-16/);
 run("window.Chart=class { constructor(_node,config){this.config=config;} destroy(){} };renderChart()");
-assert.equal(run('chart.config.data.labels.at(-1)'),'2026-11-19');
-assert.equal(run('chart.config.data.datasets[0].data.at(-1)'),490);
+assert.equal(run('chart.config.data.labels.at(-1)'),'2026-11-20');
+assert.equal(run('chart.config.data.datasets[0].data.at(-1)'),441.5);
 run("EXPLORER_TPEX_TAIL=null;renderChart()");
 assert.equal(run('chart.config.data.labels.at(-1)'),'2026-11-16');
 run("EXPLORER_TPEX_TAIL=tail;chosen={symbol:'TWSE:2344'};renderChart();renderPerformance();");
 assert.match(node('chartstat').textContent,/2026-11-16/);
 assert.doesNotMatch(node('chartnote').textContent,/TPEx/);
-console.log('PASS: exact-anchor/source/action/movement/session guards; only two TPEx charts end Nov 19, prior returns and separate latest scalar preserved, fails closed on mismatches.');
+console.log('PASS: exact-anchor/source/action/movement/session guards; only two TPEx charts end Nov 20, prior returns and separate latest scalar preserved, fails closed on mismatches.');
