@@ -1,5 +1,7 @@
 # Close-only domestic index heatmaps
 
+> Historical input contract only. The public domestic close tab now links to the Hankyung whole-market originals, which provide their own 1D/1W/1M controls. Do not collect or publish this retired input for the main view; do not copy or embed Hankyung data or claim the original page is close-only.
+
 The public #korea tab displays separate KOSPI 200 and KOSDAQ 150 treemaps.
 The rendering input is optional `indexHeatmaps` in `data/korea-market.json`;
 the legacy whole-market and sampled maps are separate historical references.
