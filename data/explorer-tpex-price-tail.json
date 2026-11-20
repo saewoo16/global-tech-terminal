@@ -1,0 +1,150 @@
+{
+  "scope": "TPEx Explorer roster (2 symbols); dates 2026-11-16 through 2026-11-19 regular raw closes only, historical prices unchanged",
+  "sessionTimezone": "Asia/Taipei",
+  "currency": "TWD",
+  "basis": "regular_close_unadjusted",
+  "sourcesByDate": {
+    "2026-11-16": {
+      "agency": "Securities and Futures Bureau, Financial Supervisory Commission, Taiwan (金融監督管理委員會證券期貨局)",
+      "marketName": "Taipei Exchange (櫃買中心)",
+      "datasetName": "OTC stock closing quotations (上櫃股票收盤行情)",
+      "datasetUrl": "https://data.gov.tw/dataset/11371",
+      "rawUrl": "https://www.tpex.org.tw/web/stock/aftertrading/otc_quotes_no1430/stk_wn1430_result.php?l=zh-tw&o=data&se=EW",
+      "licenseName": "Open Government Data License, version 1.0 (Taiwan)",
+      "licenseUrl": "https://data.gov.tw/license",
+      "attributionYear": 2026,
+      "edition": "2026-11-16 dated extract",
+      "observedAt": "2026-11-16T13:42:58Z",
+      "sha256": "cbdaf6b09fb2094558bc05b0c58ea59764d1abf80bfbe199a573f8ceb05cdbae",
+      "matchingListings": 2
+    },
+    "2026-11-17": {
+      "date": "2026-11-17",
+      "datasetUrl": "https://data.gov.tw/dataset/11371",
+      "rawUrl": "https://www.tpex.org.tw/web/stock/aftertrading/otc_quotes_no1430/stk_wn1430_result.php?l=zh-tw&o=data&se=EW&d=115%2F11%2F17",
+      "sha256": "a76870c5add6af51ce28f0d4cf3fde04402766439fa71adf7f9b260418416f2b",
+      "observedAt": "2026-11-20T09:22:34.061237+00:00",
+      "sourceId": "tpex",
+      "licenseName": "Open Government Data License, version 1.0 (Taiwan)",
+      "licenseUrl": "https://data.gov.tw/license",
+      "marketName": "Taipei Exchange (櫃買中心)",
+      "agency": "Securities and Futures Bureau, Financial Supervisory Commission, Taiwan (金融監督管理委員會證券期貨局)",
+      "datasetName": "OTC stock closing quotations (上櫃股票收盤行情)",
+      "attributionYear": 2026,
+      "edition": "2026-11-17 dated extract",
+      "matchingListings": 2
+    },
+    "2026-11-18": {
+      "agency": "Securities and Futures Bureau, Financial Supervisory Commission, Taiwan (金融監督管理委員會證券期貨局)",
+      "marketName": "Taipei Exchange (櫃買中心)",
+      "datasetName": "OTC stock closing quotations (上櫃股票收盤行情)",
+      "datasetUrl": "https://data.gov.tw/dataset/11371",
+      "rawUrl": "https://www.tpex.org.tw/web/stock/aftertrading/otc_quotes_no1430/stk_wn1430_result.php?l=zh-tw&o=data&se=EW",
+      "licenseName": "Open Government Data License, version 1.0 (Taiwan)",
+      "licenseUrl": "https://data.gov.tw/license",
+      "attributionYear": 2026,
+      "edition": "2026-11-18 dated extract",
+      "observedAt": "2026-11-18T08:57:45Z",
+      "sha256": "ff3991dad26f86a1ee663a8a14357f0442ccc2647e24352bb63135f13fd6bdac",
+      "matchingListings": 2
+    },
+    "2026-11-19": {
+      "agency": "Securities and Futures Bureau, Financial Supervisory Commission, Taiwan (金融監督管理委員會證券期貨局)",
+      "marketName": "Taipei Exchange (櫃買中心)",
+      "datasetName": "OTC stock closing quotations (上櫃股票收盤行情)",
+      "datasetUrl": "https://data.gov.tw/dataset/11371",
+      "rawUrl": "https://www.tpex.org.tw/web/stock/aftertrading/otc_quotes_no1430/stk_wn1430_result.php?l=zh-tw&o=data&se=EW",
+      "licenseName": "Open Government Data License, version 1.0 (Taiwan)",
+      "licenseUrl": "https://data.gov.tw/license",
+      "attributionYear": 2026,
+      "edition": "2026-11-19 dated extract",
+      "observedAt": "2026-11-19T08:57:21.477494+00:00",
+      "sha256": "984e07499d43c66e8b5db8196dc4c9b5716a6f0e57da9545234584ec218bc0d4",
+      "matchingListings": 2
+    }
+  },
+  "quotes": {
+    "TPEX:8299": [
+      [
+        "2026-11-16",
+        1515.0
+      ],
+      [
+        "2026-11-17",
+        1535.0
+      ],
+      [
+        "2026-11-18",
+        1520.0
+      ],
+      [
+        "2026-11-19",
+        1455.0
+      ]
+    ],
+    "TPEX:6488": [
+      [
+        "2026-11-16",
+        577.0
+      ],
+      [
+        "2026-11-17",
+        546.0
+      ],
+      [
+        "2026-11-18",
+        544.0
+      ],
+      [
+        "2026-11-19",
+        490.0
+      ]
+    ]
+  },
+  "verification": {
+    "corporateActions": {
+      "rawUrl": "https://www.tpex.org.tw/www/zh-tw/bulletin/exDailyQ?startDate=2026%2F11%2F17&endDate=2026%2F11%2F19&response=json",
+      "sha256": "f17a053a0e406763b23cea53e806d02850f3356aff050666a152ba55be1c5d49",
+      "matchedEvents": []
+    },
+    "priceCrosscheck": {
+      "exactClosesAtTPExDailyQuotes": 8,
+      "priorRawCloseToNextRawCloseChangeEqualToOfficialQuoteMove": 6,
+      "datedReportSourceHashes": {
+        "tpex-16": {
+          "sha256": "c0872325e33d042609aa50f3ecbf74bf57b9641e2630d96b3c65643a38f2bdb0",
+          "date": "20261116",
+          "title": "上櫃股票行情"
+        },
+        "tpex-17": {
+          "sha256": "fffb1099ae206294ac1c316cae846da0b3e97ea1f524b2d4f2b41de123afb650",
+          "date": "20261117",
+          "title": "上櫃股票行情"
+        },
+        "tpex-18": {
+          "sha256": "a05772a8a154df8ba5cec9e01b5017632f6638b9d40875bf44cf3aba10e9c3ba",
+          "date": "20261118",
+          "title": "上櫃股票行情"
+        },
+        "tpex-19": {
+          "sha256": "647493569f5ab2bd15242dbb41560c29523714147074a2c409fe49bc20957a16",
+          "date": "20261119",
+          "title": "上櫃股票行情"
+        }
+      },
+      "officialPriceMoves": {
+        "TPEX:8299": [
+          20.0,
+          -15.0,
+          -65.0
+        ],
+        "TPEX:6488": [
+          -31.0,
+          -2.0,
+          -54.0
+        ]
+      }
+    }
+  },
+  "schemaVersion": 1
+}
