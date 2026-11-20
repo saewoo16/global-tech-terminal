@@ -262,7 +262,7 @@ class KoreanMarketTests(unittest.TestCase):
         for view in ['briefing', 'heatmap']:
             self.assertNotIn(f'id="{view}-tab"', html)
             self.assertNotIn(f'id="{view}-panel"', html)
-        self.assertLess(html.index('data-tradingview-widget="BAMLH0A0HYM2EY"'), html.index('data-tradingview-widget="BAMLH0A0HYM2"'))
+        self.assertLess(html.index('data-series="BAMLH0A0HYM2EY"'), html.index('data-series="BAMLH0A0HYM2"'))
 
 
 if __name__ == '__main__':

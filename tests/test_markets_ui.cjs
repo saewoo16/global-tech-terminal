@@ -43,85 +43,16 @@ for(const period of ['w1','w4']) assert(!heatmap.includes(`widgets/map?t=sec&amp
 assert(fs.readFileSync(root+'/assets/korea.js','utf8').includes('id="kr-heatmaps"'));
 console.log('PASS domestic heatmap, free official FINVIZ daily iframe, week/month links, and no standalone map');
 
-const cards=[...html.matchAll(/<article class="rate-card(?: rate-link-card)?" data-series="([^"]+)"/g)].map(m=>m[1]);
-assert.deepEqual(cards,['DGS10','BAMLH0A0HYM2EY','BAMLH0A0HYM2','HQMCB10YRP','US594918BC73','DCOILWTICO','DCOILBRENTEU','DXY','M1SL','M2SL','DEXJPUS','DEXKOUS']);
-assert(html.includes('<h3>하이일드 채권 수익률</h3>'));
-assert.equal(cards.filter(id=>id==='BAMLH0A0HYM2').length,1,'OAS chart must replace the final link-only card without duplication');
-console.log('PASS Treasury → HY yield → HY OAS → high-quality corporate → Microsoft individual bond order and unchanged remaining cards');
-
-assert.deepEqual(widgetDefinitions.map(item=>item.id),['BAMLH0A0HYM2EY','BAMLH0A0HYM2','US594918BC73']);
-for(const [index,widget] of widgets.entries()){
- assert.equal(widget.children.length,1);const fragment=widget.children[0],script=fragment.container.children[0];
- assert(fragment.original.removed,'Inert script is replaced once');
- assert.equal(script.src,'https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js');
- assert.equal(script.type,'text/javascript');assert.equal(script.async,true);
- assert.equal(script.textContent,widget.definition.textContent,'Generated config is copied verbatim');
- const config=JSON.parse(script.textContent);
- assert.equal(config.symbol,['FRED:BAMLH0A0HYM2EY','FRED:BAMLH0A0HYM2','MUN:US594918BC7'][index]);
- assert.equal(config.range,'60M');assert.equal(config.autosize,true);assert.equal(config.theme,'light');
- assert.equal(config.interval,'D');assert.equal(config.timezone,'Etc/UTC');
- assert.match(widget.definition.markup,/tradingview-widget-container__widget/);
- assert.match(widget.definition.markup,/tradingview-widget-copyright/);
- assert.match(widget.definition.markup,/rel="noopener nofollow" target="_blank"/);
- assert.match(widget.definition.markup,/<span class="trademark">&nbsp;by TradingView<\/span>/);
- assert.equal(script.onload,undefined,'Script success must not claim chart data loaded');
- assert.equal(widget.status.textContent.includes('원본 링크'),true);
- widget.frame={attrs:{},getAttribute(key){return this.attrs[key]},setAttribute(key,value){this.attrs[key]=value}};
- if(index===1)widget.frame.attrs.title='Provider supplied title';
- observers[index].callback();assert(observers[index].disconnected);
- assert.equal(widget.frame.attrs.title,index===1?'Provider supplied title':widget.definition.label);
- script.onerror();assert.match(widget.status.textContent,/불러오지 못했습니다/);assert.match(widget.status.textContent,/원본 링크/);
-}
-for(const route of ['#explorer','#heatmap','#rates','#briefing/US/2026-10-16','#rates']){
- context.window.location.hash=route;listeners.get('hashchange')();
- assert(widgets.every(widget=>widget.children.length===1),'Repeat routes must preserve a single widget');
-}
-const untrusted=mockWidget({...widgetDefinitions[0],src:'https://example.com/not-a-provider.js'});
-widgets.push(untrusted);api.load();assert.equal(untrusted.children.length,0);assert.equal(untrusted.dataset.loaded,undefined);
-assert.equal((html.match(/data-fred-series=/g)||[]).length,3,'Corporate and two money supply FRED charts stay intact');
-assert.match(html,/markets\.css\?v=20261025-external2/);assert.match(html,/markets\.js\?v=20261118-metals-bitcoin/);
-assert.match(fs.readFileSync(root+'/assets/markets.css','utf8'),/\.tradingview-chart\{height:440px;width:100%/);
-assert.match(html,/쿠폰 3\.5% · 만기 2035-02-12/);assert.match(html,/회사 전체 금리가 아닙니다/);
-assert(!html.includes('MUN:US023135'));assert(!html.includes('MUN:US02079K'));
-console.log('PASS official TradingView templates, exact settings and attribution, rates-only lazy loading, accessible titles, script-error fallback, repeat navigation, and provider allowlist');
-
-for(const symbol of ['FINRA-AMZN6237343','FINRA-GOOG6065581']){
- assert(html.includes(`href="https://www.tradingview.com/symbols/${symbol}/" target="_blank" rel="noopener noreferrer"`));
- assert(!widgetDefinitions.some(widget=>widget.markup.includes(symbol)));
-}
-assert.match(html,/두 채권은 제공사의 위젯 제한/);
-console.log('PASS Amazon and Alphabet compact original-source links without unsupported embeds');
-
-assert.equal((html.match(/기본 5년 차트는 주별 표본으로 표시될 수 있습니다/g)||[]).length,3);
-assert.equal((html.match(/최신 관측일은 차트\/원본을 확인하세요/g)||[]).length,3);
-console.log('PASS five-year sampling and latest-observation notes on all three TradingView cards');
-
-const spreadCard=html.match(/<article class="rate-card" data-series="BAMLH0A0HYM2">[\s\S]*?<\/article>/)[0];
-assert.match(spreadCard,/<h3>하이일드 스프레드 \(OAS\)<\/h3>/);
-assert.match(spreadCard,/Option-Adjusted Spread · %p · 일별/);
-assert.match(spreadCard,/차트의 % 표시는 %p로 읽습니다/);
-assert.match(spreadCard,/3\.00%p = 300bp/);
-assert.match(spreadCard,/채권의 절대 수익률과 다릅니다/);
-assert.match(spreadCard,/href="https:\/\/www\.tradingview\.com\/symbols\/FRED-BAMLH0A0HYM2\/" rel="noopener nofollow" target="_blank"/);
-assert.match(spreadCard,/href="https:\/\/fred\.stlouisfed\.org\/series\/BAMLH0A0HYM2" target="_blank" rel="noopener noreferrer"/);
-assert(!spreadCard.includes('rate-link-card'));
-console.log('PASS OAS title, percentage-point/basis-point explanation, distinction from yield, official attribution, and original-source fallback');
-
-assert(!widgetDefinitions.some(w=>w.id==="DXY"));assert(html.includes("DXY 차트 원본"));
-
-const symbols=['OTCB:US10Y','OANDA:XAUUSD','COINBASE:BTCUSD','CAPITALCOM:XCUUSD','FX:USOIL','FX:UKOIL','CAPITALCOM:DXY','FX:USDJPY','FX_IDC:USDKRW'];
-assert.deepEqual([...html.matchAll(/data-macro-chart="([^"]+)"/g)].map(m=>m[1]),symbols);
-const defs=[...html.matchAll(/data-macro-chart="([^"]+)"[^>]*><template>([\s\S]*?)<\/template>/g)].map(([,id,markup])=>{const sc=markup.match(/<script type="([^"]+)" src="([^"]+)" async>([\s\S]*?)<\/script>/);return {id,label:id,markup,type:sc[1],src:sc[2],textContent:sc[3]}});
-const holders=defs.map(mockWidget);holders.forEach(h=>h.dataset={macroChart:h.definition.id});
-context.document.querySelectorAll=selector=>selector==='[data-macro-chart]'?holders:[];
-context.window.location.hash='#explorer';api.load();assert(holders.every(h=>h.children.length===0));
-context.window.location.hash='#rates';api.load();api.load();
-for(const h of holders){assert.equal(h.children.length,1);const sc=h.children[0].container.children[0];assert.equal(sc.src,'https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js');assert.equal(JSON.parse(sc.textContent).symbol,h.dataset.macroChart);assert.equal(JSON.parse(sc.textContent).theme,'light');sc.onerror();assert(h.status.textContent.includes('원본 링크'));}
-const badMacro=mockWidget(defs[0]);badMacro.dataset={macroChart:'TVC:DXY'};holders.push(badMacro);api.load();assert.equal(badMacro.children.length,0);
-assert.match(html,/달러인덱스 추종 CFD/);assert.match(html,/CAPITALCOM:DXY/);
-assert(!html.includes('symbol="TVC:DXY"'));assert.match(html,/1 USD당 일본 엔/);assert.match(html,/1 USD당 한국 원/);
-assert(fs.readFileSync(root+'/assets/macro.js','utf8').includes('card.dataset.externalMacro||!q')); 
-console.log('PASS nine official external components, source/basis labels, lazy one-time widget load, provider allowlist and link fallback');
-
-assert(!html.includes('data-series="DTWEXBGS"'));
-for(const id of ["M1SL","M2SL"])assert(html.includes(`data-fred-series="${id}"`));
+const cards=[...html.matchAll(/<article class="rate-card" data-series="([^"]+)"/g)].map(m=>m[1]);
+assert.deepEqual(cards,['DGS10','BAMLH0A0HYM2EY','BAMLH0A0HYM2','HQMCB10YRP','US594918BC73','COMEX_GOLD','CME_CF_BRR','COMEX_COPPER','DCOILWTICO','DCOILBRENTEU','DXY','M1SL','M2SL','DEXJPUS','DEXKOUS']);
+assert.deepEqual([...html.matchAll(/data-fred-series="([^"]+)"/g)].map(m=>m[1]),['DGS10','HQMCB10YRP','DCOILWTICO','DCOILBRENTEU','M1SL','M2SL']);
+assert.match(html,/3\.00%p = 300bp/);
+assert.match(html,/채권의 절대 수익률과 다릅니다/);
+assert.match(html,/쿠폰 3\.5% · 만기 2035-02-12/);
+assert.match(html,/회사 전체 금리가 아닙니다/);
+const rates=html.slice(html.indexOf('id="rates-grid"'),html.indexOf('id="short-panel"'));
+assert.doesNotMatch(rates,/data-macro-chart|data-tradingview-widget|data-external-macro|tradingview\.com|CAPITALCOM|OANDA|FXCM/);
+assert.match(rates,/https:\/\/www\.ice\.com\/products\/194\/US-Dollar-Index-Futures/);
+assert.match(rates,/https:\/\/www\.finra\.org\/finra-data\/fixed-income/);
+assert.match(rates,/1 USD당 일본 엔/);assert.match(rates,/1 USD당 한국 원/);
+console.log('PASS official-only rates layout, six public-domain FRED chart sources, close-basis labels and official-only original links.');

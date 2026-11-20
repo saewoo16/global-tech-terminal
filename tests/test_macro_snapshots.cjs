@@ -14,7 +14,7 @@ assert.equal(a.safeURL('javascript:alert(1)'),'#');
 const q=a.quoteHTML({value:103.44,precision:2,quoteLabel:'<x>',unit:'USD/배럴',sourceUrl:'javascript:x',asOf:'2026-10-23',status:'stale'},'WTI_FUTURES');
 assert(q.includes('103.44'));assert(q.includes('&lt;x&gt;'));assert(q.includes('서로 다른 상품'));assert(q.includes('이전 검증 수치'));assert(!q.includes('javascript:'));
 assert(html.indexOf('id="fedwatch-panel"')<html.indexOf('id="rates-grid"'));
-for(const id of ['UST10Y','WTI_FUTURES','BRENT_FUTURES','DXY','USDJPY','USDKRW'])assert(html.includes('data-macro-quote="'+id+'"'));
+for(const id of ['UST10Y','WTI_FUTURES','BRENT_FUTURES','USDJPY','USDKRW'])assert(html.includes('data-macro-quote="'+id+'"'));
 assert(html.includes('data-series="DXY"'));assert(!html.includes('data-series="DTWEXBGS"'));assert(html.includes('data-series="M1SL"'));assert(html.includes('data-series="M2SL"'));
 assert(!html.includes('quikstrike'));assert(!raw.includes('quikstrike'));
 console.log('PASS macro source safety, instrument distinction, verified CME distribution, correct cut/hold/hike and same-precision historical deltas');
@@ -73,21 +73,18 @@ c.fetch=async url=>{fetches.push(url);return {ok:true,json:async()=>official};};
  await a.load();
  assert.deepEqual(fetches,['./data/macro-official-latest.json']);
  assert(ratePanel.innerHTML.includes('재게시하지 않습니다'));
- assert(targets.USDJPY.innerHTML.includes('159.93'));
- assert.match(targets.USDJPY.innerHTML,/159\.34–159\.36.*2026-11-18 17:00 JST.*f[x]261118\.pdf/);
- assert.match(targets.USDJPY.innerHTML,/<details.*2026-11-13 뉴욕 정오.*159\.93/);
- assert.match(targets.USDKRW.innerHTML,/1,333\.0.*2026-11-18 15:30 KST.*−5\.2원.*AKR20261118134300002/);
- assert.match(targets.USDKRW.innerHTML,/<details.*2026-11-13 뉴욕 정오.*1,336\.58/);
- assert.match(targets.USDJPY.innerHTML,/미국 종가가 아닙니다/);
-
- assert(targets.DXY.innerHTML.includes('122.6503'));
+ assert.match(targets.USDJPY.innerHTML,/공식 종가 미확인/);
+ assert.doesNotMatch(targets.USDJPY.innerHTML,/159\.93|159\.34|뉴욕 정오/);
+ assert.match(targets.USDKRW.innerHTML,/1,330\.0.*2026-11-19 15:30 KST.*english\.mofe\.go\.kr/);
+ assert.doesNotMatch(targets.USDKRW.innerHTML,/1,336\.58|1,333\.0|뉴욕 정오/);
+ assert(!targets.DXY.innerHTML.includes('122.6503'));
  assert(!targets.WTI_FUTURES.innerHTML.includes('<strong>'));
+ for(const change of [{basis:'intraday'}, {asOf:'2026-11-20'}, {sourceUrl:'https://english.mofe.go.kr@evil.example/'}]){
+   a.renderOfficial({...official,officialSeoulClose:{...official.officialSeoulClose,...change}});
+   assert.match(targets.USDKRW.innerHTML,/공식 주간 종가 미확인/);
+ }
  a.renderOfficial(null);
  assert(ratePanel.innerHTML.includes('공식 수치를 불러오지 못했습니다'));
- assert(!targets.USDJPY.innerHTML.includes('159.93'));
- assert(targets.USDJPY.innerHTML.includes('159.34–159.36'));
- assert(targets.USDKRW.innerHTML.includes('1,333.0'));
- assert(!targets.DXY.innerHTML.includes('122.6503'));
-
+ assert.match(targets.USDKRW.innerHTML,/공식 주간 종가 미확인/);
  console.log('PASS official-only macro tab fetch, real observation dates, link-only instruments and no stale fallback');
 })().catch(e=>{console.error(e); process.exitCode=1;});

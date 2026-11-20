@@ -168,5 +168,11 @@
       "frequency": "daily",
       "status": "link_only"
     }
-  ]
+  ],
+  "officialSeoulClose": {
+    "basis": "seoul_regular_close_1530",
+    "value": 1330.0,
+    "asOf": "2026-11-19",
+    "sourceUrl": "https://english.mofe.go.kr/?boardCd=P0004&seq=1725"
+  }
 }
