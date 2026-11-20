@@ -176,15 +176,18 @@ await test('a limited map or future date is never promoted as the market-wide ma
  }
  context.window.TerminalBriefingData=saved;api.setData(data);api.render();
 });
-await test('Hankyung original market links use the source period controls without copying data',()=>{
+await test('native close-only index map uses exactly the corroborated historical roster and discloses gaps',()=>{
  api.setData(data);api.render();
- const h=el('kr-content').innerHTML.split('id="kr-heatmaps"')[1].split('id="kr-heat-legacy-disclosure"')[0];
- assert.match(h,/한경 마켓맵/);
- const kosdaq=h.indexOf('href="https://markets.hankyung.com/marketmap/kosdaq"');
- const kospi=h.indexOf('href="https://markets.hankyung.com/marketmap/kospi"');
- assert(kosdaq>=0&&kospi>kosdaq);
- assert.match(h,/1일 · 1주 · 1개월/);assert.match(h,/장중 지연 시세/);
- assert.doesNotMatch(h,/코스피200|코스닥150|<iframe|data-kr-heat-market/);
+ const page=()=>el('kr-content').innerHTML.split('id="kr-heatmaps"')[1].split('id="kr-heat-legacy-disclosure"')[0],h=page();
+ assert.match(h,/코스피200 · 코스닥150/);assert.match(h,/2026-11-12 · 이전 거래일/);
+ assert.match(h,/검증 201\/201종목/);assert.match(h,/검증 149\/150종목/);assert.match(h,/구성목록 기준일 2026-10-16/);
+ assert.doesNotMatch(h,/hankyung.com\/marketmap|<iframe|1개월/);
+ const e=JSON.parse(fs.readFileSync(root+'/data/korea-index-evidence-20261112.json'));
+ const actual=[...h.matchAll(/data-kr-code="([A-Z0-9]{6})"/g)].map(m=>m[1]);
+ const expected=['KOSPI200','KOSDAQ150'].flatMap(i=>e.priceSeries[i].map(r=>r.code)).filter(c=>c!=='065350');
+ assert.deepEqual(actual.sort(),expected.sort());
+ const stale=structuredClone(data);stale.heatmaps.regularSessionOnly=false;api.setData(stale);api.render();
+ assert.match(page(),/종가 미확인/);assert.doesNotMatch(page(),/data-kr-code=/);api.setData(data);api.render();
 });
 await test('heatmap defaults are explicit top30 with true cap coverage and complete numeric tables',()=>{for(const market of ['KOSPI','KOSDAQ']){const view=api.heatmapView(market);assert.equal(view.rows.length,30);assert.equal(view.all.length,data.heatmaps.markets[market].rows.length);assert.equal(view.label,'시총 상위 30종목');const total=view.all.reduce((s,r)=>s+r.marketCapKRW,0),shown=view.rows.reduce((s,r)=>s+r.marketCapKRW,0);assert(Math.abs(view.coverage-shown/total*100)<1e-10)}const h=api.heatmapsSection();assert.equal((h.match(/data-kr-heat-detail=/g)||[]).length,60);for(const market of ['KOSPI','KOSDAQ'])assert(h.includes('검증 종목 전체 '+data.heatmaps.markets[market].rows.length+'개'));assert(h.includes('거래정지'));assert(h.includes('시세 검증 제외'));assert(h.includes('표시 범위 안에서 비교'))});
 await test('top100, full and 30-stock rank zoom cover every stock without changing values',()=>{for(const market of ['KOSPI','KOSDAQ']){const expected=api.heatmapView(market).all;api.heatState[market].scope='100';assert.equal(api.heatmapView(market).rows.length,100);api.heatState[market].scope='all';assert.equal(api.heatmapView(market).rows.length,expected.length);assert.equal(api.heatmapView(market).coverage,100);const seen=[];for(let start=0;start<expected.length;start+=30){api.heatState[market].scope=start?'range-'+start:'30';seen.push(...api.heatmapView(market).rows)}assert.deepEqual(seen,expected);api.heatState[market].scope='30'}api.heatState.KOSPI.scope='100';assert.equal(api.heatmapView('KOSDAQ').rows.length,30);api.heatState.KOSPI.scope='30'});
