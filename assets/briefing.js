@@ -4,7 +4,7 @@
   const el=id=>document.getElementById(id);
   const date=value=>typeof value==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(value)&&Number.isFinite(Date.parse(value))&&new Date(value).toISOString().slice(0,10)===value;
   const views=['explorer','rates','korea','etf','short','us','overseas-etf'];
-  let entries=[], loading=false, failed=false, activeView='explorer', lastLoaded=0;
+  let entries=[], cashFlowTail=null, loading=false, failed=false, activeView='explorer', lastLoaded=0;
   function view(name) {
     activeView=views.includes(name)?name:'explorer';
     views.forEach(name=>{const panel=el(name+'-panel');if(panel)panel.hidden=name!==activeView;});
@@ -44,18 +44,18 @@
     if(['movers','highs'].some(key=>entry[key]&&(!Array.isArray(entry[key].rows)||entry[key].rows.length)))return base;
     return [...base, entry];
   }
-  async function optionalOverlay(){
+  async function optionalOverlay(path){
     try{
-      const response=await fetch('./data/korea-close-overlay.json?ts='+Date.now(),{cache:'no-store'});
+      const response=await fetch('./data/'+path+'?ts='+Date.now(),{cache:'no-store'});
       return response.ok?await response.json():null;
     }catch(_){return null;}
   }
   async function load(){
-    if(loading)return;loading=true;const previous=JSON.stringify(entries),hadFailure=failed;failed=false;
-    try{const source=fetch('./data/briefings.json?ts='+Date.now(),{cache:'no-store'}), supplement=optionalOverlay();const response=await source;if(!response.ok)throw Error('HTTP '+response.status);const payload=await response.json();if(payload.schemaVersion!==1||!Array.isArray(payload.entries))throw Error('Unsupported analysis archive schema');const base=payload.entries.filter(entry=>entry&&['US','KR'].includes(entry.market)&&date(entry.date));entries=closeOverlay(base,await supplement);lastLoaded=Date.now();}
+    if(loading)return;loading=true;const previous=JSON.stringify([entries,cashFlowTail]),hadFailure=failed;failed=false;
+    try{const source=fetch('./data/briefings.json?ts='+Date.now(),{cache:'no-store'}), supplement=optionalOverlay('korea-close-overlay.json'), currentClose=optionalOverlay('korea-close-latest.json');const response=await source;if(!response.ok)throw Error('HTTP '+response.status);const payload=await response.json();if(payload.schemaVersion!==1||!Array.isArray(payload.entries))throw Error('Unsupported analysis archive schema');const base=payload.entries.filter(entry=>entry&&['US','KR'].includes(entry.market)&&date(entry.date));const archive=closeOverlay(base,await supplement),latest=await currentClose;entries=closeOverlay(archive,latest);cashFlowTail=latest?.cashFlowTail&&closeOverlay([],latest).length?{...latest.cashFlowTail,sources:latest.entry.sources}:null;lastLoaded=Date.now();}
     catch(error){failed=true;console.error('Analysis archive:',error);}
-    loading=false;window.TerminalBriefingData={entries:entries.slice(),failed};
-    if((previous!==JSON.stringify(entries)||failed||hadFailure)&&typeof window.dispatchEvent==='function'&&typeof window.CustomEvent==='function')window.dispatchEvent(new window.CustomEvent('terminal-briefing-ready'));
+    loading=false;window.TerminalBriefingData={entries:entries.slice(),failed,cashFlowTail};
+    if((previous!==JSON.stringify([entries,cashFlowTail])||failed||hadFailure)&&typeof window.dispatchEvent==='function'&&typeof window.CustomEvent==='function')window.dispatchEvent(new window.CustomEvent('terminal-briefing-ready'));
   }
   function refresh(){if(document.visibilityState==='hidden'||activeView!=='korea'||Date.now()-lastLoaded<60000)return;load();}
   function boot(){

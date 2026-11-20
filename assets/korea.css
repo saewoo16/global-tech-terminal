@@ -54,3 +54,5 @@
 .kr-sector-return-table .kr-sector-date-group th{background:var(--surface-2,#f1f5f9);color:var(--text,#172033);font-weight:700;text-align:left;border-top:2px solid var(--border,#cbd5e1);padding:12px}
 
 .kr-spot-heat-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;padding:10px 12px}.kr-spot-heat-tile{min-height:62px;padding:10px;border-radius:7px;color:#fff;display:flex;flex-direction:column;justify-content:center;gap:3px;overflow-wrap:anywhere}.kr-spot-heat-tile span{font-variant-numeric:tabular-nums;font-weight:700}@media(max-width:480px){.kr-spot-heat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.kr-close-breadth{margin-top:8px;padding-top:7px;border-top:1px solid var(--line);font-size:.82rem;line-height:1.55}.kr-close-breadth small{white-space:nowrap}.kr-close-digest{margin:16px 0 0}.kr-close-indices article>div:first-of-type{margin-top:4px}

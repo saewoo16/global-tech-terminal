@@ -1,0 +1,257 @@
+{
+  "schemaVersion": 1,
+  "kind": "kr-close-only-overlay",
+  "entry": {
+    "market": "KR",
+    "date": "2026-11-20",
+    "title": "11월 20일 국내 마감 분석",
+    "scope": "close-only",
+    "status": "partial",
+    "reportCutoffAt": "2026-11-20T07:21:23.597943+00:00",
+    "sources": [
+      {
+        "id": "nov20-close-hk",
+        "title": "한국경제 · 11/20 정규장 마감",
+        "url": "https://www.hankyung.com/article/2026112003686",
+        "note": "15:30 정규장 마감. 양 시장 종가·반도체·잠정 수급.",
+        "retrievedAt": "2026-11-20T07:21:23.597943+00:00"
+      },
+      {
+        "id": "nov20-close-yn",
+        "title": "연합뉴스 · 11/20 지수 마감",
+        "url": "https://www.yna.co.kr/view/AKR20261120127300008?section=economy%2Fall",
+        "note": "코스피·코스닥 정규장 종가 독립 대조.",
+        "retrievedAt": "2026-11-20T07:21:23.597943+00:00"
+      },
+      {
+        "id": "nov20-close-alpha",
+        "title": "알파스퀘어 · 마감 지수·거래대금",
+        "url": "https://alphasquare.co.kr/home/market-summary?code=058110",
+        "note": "양 시장 종가 4,869.96/645.68과 거래대금 14.11/4.14조원 대조.",
+        "retrievedAt": "2026-11-20T07:21:23.597943+00:00"
+      },
+      {
+        "id": "nov20-index-kospi",
+        "title": "한경 코리아마켓 · KOSPI 마감 지표",
+        "url": "https://markets.hankyung.com/indices/kospi",
+        "note": "11/20 15:52:50 KST 화면 관측. 상·하한가 포함 등락 종목 수와 거래대금.",
+        "retrievedAt": "2026-11-20T07:21:23.597943+00:00"
+      },
+      {
+        "id": "nov20-index-kosdaq",
+        "title": "한경 코리아마켓 · KOSDAQ 마감 지표",
+        "url": "https://markets.hankyung.com/indices/kosdaq",
+        "note": "11/20 15:52:50 KST 화면 관측. 상·하한가 포함 등락 종목 수와 거래대금.",
+        "retrievedAt": "2026-11-20T07:21:23.597943+00:00"
+      },
+      {
+        "id": "nov20-flow-kospi",
+        "title": "NAVER KRX 현물 일별 수급 · KOSPI",
+        "url": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=KOSPI&bizdate=20261120&startIdx=0&pageSize=30",
+        "note": "KRX 시장별 거래일 집계. 11/20 당일 잠정치와 11/19까지 과거 일별 관측은 분리.",
+        "retrievedAt": "2026-11-20T07:21:23.597943+00:00"
+      },
+      {
+        "id": "nov20-flow-kosdaq",
+        "title": "NAVER KRX 현물 일별 수급 · KOSDAQ",
+        "url": "https://stock.naver.com/api/domestic/market/trend/daily?tradeType=KRX&marketType=KOSDAQ&bizdate=20261120&startIdx=0&pageSize=30",
+        "note": "KRX 시장별 거래일 집계. 11/20 당일 잠정치와 11/19까지 과거 일별 관측은 분리.",
+        "retrievedAt": "2026-11-20T07:21:23.597943+00:00"
+      }
+    ],
+    "indices": [
+      {
+        "name": "KOSPI",
+        "close": 4869.96,
+        "previousClose": 5137.89,
+        "change": -267.93,
+        "changePct": -5.21,
+        "sessionDate": "2026-11-20",
+        "comparisonDate": "2026-11-19",
+        "marketStatus": "CLOSE",
+        "sourceIds": [
+          "nov20-close-hk",
+          "nov20-close-yn"
+        ]
+      },
+      {
+        "name": "KOSDAQ",
+        "close": 645.68,
+        "previousClose": 684.81,
+        "change": -39.13,
+        "changePct": -5.71,
+        "sessionDate": "2026-11-20",
+        "comparisonDate": "2026-11-19",
+        "marketStatus": "CLOSE",
+        "sourceIds": [
+          "nov20-close-hk",
+          "nov20-close-yn"
+        ]
+      }
+    ],
+    "summary": [
+      {
+        "title": "양 시장 5%대 급락",
+        "text": "코스피 −5.21%, 코스닥 −5.71%. 장중 두 시장 모두 프로그램 매도 사이드카가 발동됐습니다.",
+        "sourceIds": [
+          "nov20-close-hk",
+          "nov20-close-yn"
+        ]
+      },
+      {
+        "title": "미국 AI주 약세에 반도체 동반 하락",
+        "text": "미국 AI·반도체주 매도 여파로 삼성전자 −7.01%, SK하이닉스 −5.92%를 기록했습니다. 리노공업과 원익IPS도 두 자릿수 하락했습니다.",
+        "sourceIds": [
+          "nov20-close-hk"
+        ]
+      },
+      {
+        "title": "외국인·기관 매도, 원/달러 상승",
+        "text": "양 시장에서 외국인과 기관이 순매도했습니다. 서울 외환시장 주간 종가는 1,336.2원으로 6.2원 올랐습니다.",
+        "sourceIds": [
+          "nov20-close-hk"
+        ]
+      }
+    ],
+    "limitations": [
+      "시장 등락 종목 수는 15:52:50 KST 마감 후 집계이며, 상·하한가를 각각 상승·하락에 포함합니다.",
+      "시장 수급은 마감 잠정치입니다. 아래 추이에는 당일 잠정치를 섞지 않습니다.",
+      "히트맵 등 다른 항목의 자료 기준일은 각 화면을 확인하세요."
+    ],
+    "flows": {
+      "unit": "억원",
+      "status": "unavailable",
+      "rows": []
+    },
+    "sectors": {
+      "status": "unavailable",
+      "rows": []
+    },
+    "earnings": {
+      "status": "unavailable",
+      "rows": []
+    },
+    "marketBreadth": {
+      "asOf": "2026-11-20",
+      "scope": "krx-cash-close",
+      "markets": {
+        "KOSPI": {
+          "advancing": 89,
+          "declining": 803,
+          "unchanged": 19
+        },
+        "KOSDAQ": {
+          "advancing": 194,
+          "declining": 1486,
+          "unchanged": 53
+        }
+      },
+      "sourceIds": [
+        "nov20-index-kospi",
+        "nov20-index-kosdaq"
+      ]
+    },
+    "regularClosingTurnover": {
+      "date": "2026-11-20",
+      "scope": "krx-regular-market-close",
+      "status": "reported-approximate",
+      "unit": "조원",
+      "observedAt": "2026-11-20T15:52:50+09:00",
+      "markets": {
+        "KOSPI": 14.106386,
+        "KOSDAQ": 4.136619
+      },
+      "sourceIds": [
+        "nov20-index-kospi",
+        "nov20-index-kosdaq",
+        "nov20-close-alpha"
+      ]
+    },
+    "reportedCloseFlow": {
+      "date": "2026-11-20",
+      "scope": "krx-market-close-reports",
+      "status": "reported-provisional",
+      "unit": "억원",
+      "observedAt": "2026-11-20T07:21:23.597943+00:00",
+      "roundedEok": {
+        "KOSPI": {
+          "foreign": -11320,
+          "institution": -9510,
+          "individual": 15950
+        },
+        "KOSDAQ": {
+          "foreign": -1710,
+          "institution": -1080,
+          "individual": 2910
+        }
+      },
+      "sourceIds": [
+        "nov20-close-hk",
+        "nov20-flow-kospi",
+        "nov20-flow-kosdaq"
+      ]
+    }
+  },
+  "cashFlowTail": {
+    "scope": "krx-cash-daily",
+    "unit": "억원",
+    "asOf": "2026-11-19",
+    "previousPublishedThrough": "2026-11-13",
+    "sessions": [
+      "2026-11-16",
+      "2026-11-17",
+      "2026-11-18",
+      "2026-11-19"
+    ],
+    "markets": {
+      "KOSPI": [
+        {
+          "date": "2026-11-16",
+          "foreign": -13348.06,
+          "institution": -4561.77
+        },
+        {
+          "date": "2026-11-17",
+          "foreign": -14119.54,
+          "institution": 5133.87
+        },
+        {
+          "date": "2026-11-18",
+          "foreign": -3344.15,
+          "institution": 4925.97
+        },
+        {
+          "date": "2026-11-19",
+          "foreign": -4054.4,
+          "institution": 119.85
+        }
+      ],
+      "KOSDAQ": [
+        {
+          "date": "2026-11-16",
+          "foreign": -2019.04,
+          "institution": -1535.05
+        },
+        {
+          "date": "2026-11-17",
+          "foreign": -898.16,
+          "institution": -264.77
+        },
+        {
+          "date": "2026-11-18",
+          "foreign": -486.4,
+          "institution": 1794.49
+        },
+        {
+          "date": "2026-11-19",
+          "foreign": -2166.57,
+          "institution": 2257.26
+        }
+      ]
+    },
+    "sourceIds": [
+      "nov20-flow-kospi",
+      "nov20-flow-kosdaq"
+    ]
+  }
+}
