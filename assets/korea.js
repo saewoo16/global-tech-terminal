@@ -103,7 +103,7 @@
   function freshnessSection() {
     const latest=list(window.TerminalBriefingData?.entries).filter(e=>e?.market==='KR'&&isDate(e.date)).sort((a,b)=>b.date.localeCompare(a.date))[0];
     const sector=payload?.sectorReturns,sectorRows=list(sector?.rows),sectorCurrent=sectorRows.filter(row=>(row.asOf||sector?.asOf)===sector?.asOf).length,sectorDate=sector?.asOf+(sectorRows.length&&sectorCurrent<sectorRows.length?' · '+sectorCurrent+'/'+sectorRows.length+'개 최신 · '+(sectorRows.length-sectorCurrent)+'개 이전일 유지':'');
-    const flowDate=reportedFlowEvidence()?.observation?.date;const rows=[['최신 시황',latest?.date],['당일 수급',flowDate?flowDate+' · 잠정':null],['수급 추이',payload?.asOf],['업종 수익률',sector?.asOf?sectorDate+(latest?.date&&sector.asOf!==latest.date?' · 이전일 참고':''):null],['신고가 선별',payload?.highsScreen?.asOf],['히트맵',latest?.date===REPORTED_HEATMAP_DATE&&['KOSPI','KOSDAQ'].every(m=>reportedHeatmapRows(m).length===REPORTED_HEATMAP[m].length)?latest.date+' · 선별 12종목':hasCapHeatmap(payload?.heatmaps?.asOf,payload?.heatmaps)?payload.heatmaps.asOf+(payload.heatmaps.asOf===latest?.date?'':' · 이전일 참고'):null],['종목 순매수',list(payload?.rankings?.dates).slice().sort().at(-1)],['테마 수급',latest?.date&&latestDailySnapshot('themes',null,latest.date).date===latest.date?latest.date:null],['지수 종목 등락',list(payload?.indexMovers?.dates).slice().sort().at(-1)],['예탁금·신용',payload?.liquidity?.series?.deposits?.coverage?.end]];
+    const flowDate=reportedFlowEvidence()?.observation?.date;const rows=[['최신 시황',latest?.date],['당일 수급',flowDate?flowDate+' · 잠정':null],['수급 추이',payload?.asOf],['업종 수익률',sector?.asOf?sectorDate+(latest?.date&&sector.asOf!==latest.date?' · 이전일 참고':''):null],['신고가 선별',payload?.highsScreen?.asOf],['히트맵',indexHeatmap()?.asOf||null],['종목 순매수',list(payload?.rankings?.dates).slice().sort().at(-1)],['테마 수급',latest?.date&&latestDailySnapshot('themes',null,latest.date).date===latest.date?latest.date:null],['지수 종목 등락',list(payload?.indexMovers?.dates).slice().sort().at(-1)],['예탁금·신용',payload?.liquidity?.series?.deposits?.coverage?.end]];
     return `<div class="kr-freshness" id="kr-latest-status" aria-label="항목별 최신 검증일">${rows.map(([label,value])=>`<span>${label} <strong>${esc(value||'미확인')}</strong></span>`).join('')}</div>`;
   }
   function unusualMoverNews(row, entry) {
@@ -265,16 +265,51 @@
     }).join('');
     return `<p class="kr-note">선별 종목만 표시합니다. 면적은 11/18 종가 × 확인된 상장주식수로 계산한 추정 시총, 색은 전일 종가 대비 등락률입니다. 주식수는 11/6 보관값을 사용하되, SK하이닉스는 소각 후 공시 수를 적용했습니다.</p><div class="kr-grid" data-kr-heat-sample="${REPORTED_HEATMAP_DATE}">${cards}</div><details class="kr-history-disclosure"><summary>11/18 정규장 종가 출처</summary><p class="kr-note"><a href="https://www.newspim.com/news/view/20261118001065" target="_blank" rel="noopener noreferrer">뉴스핌 코스피 마감</a> · <a href="https://markets.hankyung.com/indices/kosdaq" target="_blank" rel="noopener noreferrer">한국경제 코스닥 마감</a> · <a href="https://www.papertrailkr.com/ko/posts/2026-11-18-dip-why-samchundang-pharm-fell-14-6-while/" target="_blank" rel="noopener noreferrer">삼천당제약 등락 확인</a> · <a href="https://snowshagal.com/market/2026-11-18/" target="_blank" rel="noopener noreferrer">11/18 코스피 종가 비교</a> · <a href="https://www.sec.gov/Archives/edgar/data/2120882/000119312526461909/d166755d6k.htm" target="_blank" rel="noopener noreferrer">SK하이닉스 소각 후 주식수(6-K)</a></p></details>`;
   }
-  function currentHeatmapsSection() {
+  function legacyHeatmapsSection() {
     const date=currentDomesticDate(), section=payload?.heatmaps, mapDate=section?.asOf;
-    if(hasCapHeatmap(date,section))return heatmapsSection();
+    if(hasCapHeatmap(date,section))return heatmapsSection('', '', 'kr-heatmaps-legacy');
     const sample=date===REPORTED_HEATMAP_DATE&&['KOSPI','KOSDAQ'].every(m=>reportedHeatmapRows(m).length===REPORTED_HEATMAP[m].length);
     const archived=isDate(date)&&hasCapHeatmap(mapDate,section)&&mapDate<date;
     const note=`<p class="kr-note" role="note"><strong>${esc(date||'최신 거래일')} 시장 전체 히트맵 미확인.</strong></p>`;
     const external='<p class="kr-note" aria-label="외부 지수 구성종목 히트맵">외부 원본 · 지수 구성종목만: <a href="https://etfshopping.com/treemap" target="_blank" rel="noopener noreferrer">코스피200 ↗</a> · <a href="https://etfshopping.com/treemap/kosdaq-150" target="_blank" rel="noopener noreferrer">코스닥150 ↗</a> <small>외부 페이지의 종가 기준일을 확인하세요.</small></p>';
-    if(!sample&&archived)return heatmapsSection('',note+external);
+    if(!sample&&archived)return heatmapsSection('',note+external,'kr-heatmaps-legacy');
     const archive=archived?`<details class="kr-history-disclosure" id="kr-heat-archive-disclosure"${heatArchiveOpen?' open':''}><summary>${esc(mapDate)} 보관 시장 지도 · 참고용</summary>${heatmapsSection('', '', 'kr-heatmaps-archive')}</details>`:'';
-    return `<section class="kr-section kr-heatmaps" id="kr-heatmaps" aria-labelledby="kr-heatmaps-title"><div class="kr-section-head"><div><h3 id="kr-heatmaps-title">KOSPI · KOSDAQ 히트맵</h3>${sample?`<p>${esc(date)} 정규장 마감 · 코스피·코스닥 각 6종목</p>`:''}</div>${sample?'<div class="kr-heat-legend"><span>−5% 이하</span><i></i><span>+5% 이상</span></div>':''}</div>${note}${sample?reportedHeatmap():''}${external}${archive}</section>`;
+    return `<section class="kr-section kr-heatmaps" id="kr-heatmaps-legacy" aria-labelledby="kr-heatmaps-legacy-title"><div class="kr-section-head"><div><h3 id="kr-heatmaps-legacy-title">KOSPI · KOSDAQ 히트맵</h3>${sample?`<p>${esc(date)} 정규장 마감 · 코스피·코스닥 각 6종목</p>`:''}</div>${sample?'<div class="kr-heat-legend"><span>−5% 이하</span><i></i><span>+5% 이상</span></div>':''}</div>${note}${sample?reportedHeatmap():''}${external}${archive}</section>`;
+  }
+  const INDEX_HEATMAPS={KOSPI200:{name:'코스피200',count:200,url:'https://etfshopping.com/treemap'},KOSDAQ150:{name:'코스닥150',count:150,url:'https://etfshopping.com/treemap/kosdaq-150'}};
+  function indexHeatmap() {
+    const map=payload?.indexHeatmaps,day=currentDomesticDate();
+    if(!isDate(day)||map?.asOf!==day||map.priceBasis!=='official_regular_close'||map.membershipAsOf!==day||!isDate(map.previousAsOf)||map.previousAsOf>=day||!list(map.sourceIds).length||!list(map.sourceIds).every(id=>list(payload?.sources).some(source=>source.id===id&&safe(source.url))))return null;
+    const seen=new Set();
+    for(const [id,{count}] of Object.entries(INDEX_HEATMAPS)){
+      const rows=list(map.indices?.[id]);
+      if(rows.length!==count)return null;
+      for(const row of rows){
+        if(!row||typeof row.code!=='string'||!/^[0-9A-Z]{6}$/.test(row.code)||seen.has(row.code)||typeof row.name!=='string'||!row.name.trim()||row.asOf!==day||![row.close,row.previousClose,row.marketCapKRW].every(v=>Number.isSafeInteger(v)&&v>0))return null;
+        seen.add(row.code);
+      }
+    }
+    return map;
+  }
+  function indexHeatRows(map,id) {
+    return list(map?.indices?.[id]).map(row=>({...row,industry:typeof row.industry?.id==='string'&&typeof row.industry?.name==='string'?row.industry:null,changePct:(row.close/row.previousClose-1)*100})).sort((a,b)=>b.marketCapKRW-a.marketCapKRW||a.code.localeCompare(b.code));
+  }
+  function currentHeatmapsSection() {
+    const current=indexHeatmap(),day=currentDomesticDate();
+    const cards=Object.entries(INDEX_HEATMAPS).map(([id,{name,count,url}])=>{
+      const header='<div class="kr-card-head"><h4>'+name+'</h4><span class="kr-badge">'+(current?esc(day)+' · '+count+'종목':'종가 미확인')+'</span></div>';
+      if(!current)return '<article class="kr-card">'+header+'<p class="kr-note"><a href="'+url+'" target="_blank" rel="noopener noreferrer">외부 원본 보기 ↗</a><br><small>외부 페이지의 날짜와 장중 여부를 확인하세요.</small></p></article>';
+      const rows=indexHeatRows(current,id),layout=groupedTreemap(rows);
+      const tiles=layout.tiles.map((r,i)=>{
+        const text=esc(r.name+' ('+r.code+') · '+r.industryName+' · 종가 '+integer(r.close)+'원 · '+(r.changePct>0?'+':'')+fmt(r.changePct,2)+'%');
+        return '<button type="button" tabindex="'+(i===0?0:-1)+'" class="kr-heat-tile" data-kr-code="'+r.code+'" data-kr-heat-detail="'+text+'" aria-label="'+text+'" style="left:'+r.x+'%;top:'+r.y+'%;width:'+r.width+'%;height:'+r.height+'%;background:'+heatColor(r.changePct)+'"><b>'+esc(r.name)+'</b><span>'+pct(r.changePct)+'</span></button>';
+      }).join('');
+      const groups=layout.groups.map(g=>'<div class="kr-heat-group" data-kr-industry="'+esc(g.id)+'" style="left:'+g.x+'%;top:'+g.y+'%;width:'+g.width+'%;height:'+g.height+'%" aria-hidden="true"><span>'+esc(g.name)+'</span></div>').join('');
+      const table=rows.map(r=>'<tr><th scope="row">'+esc(r.name)+' <small>'+r.code+'</small></th><td>'+integer(r.close)+'</td><td>'+pct(r.changePct)+'</td><td>'+integer(r.marketCapKRW/1e8)+'</td></tr>').join('');
+      return '<article class="kr-card kr-heat-card">'+header+'<div class="kr-treemap" role="group" aria-label="'+name+' 종가 히트맵" data-kr-heat-market="'+id+'" data-kr-heat-layer="index">'+tiles+groups+'</div><div class="kr-heat-detail" aria-live="polite">종목을 누르면 정규장 종가와 등락률이 표시됩니다.</div><details class="kr-metadata kr-heat-numbers"><summary>'+count+'종목 · 숫자로 보기</summary><div class="kr-table-wrap" tabindex="0"><table class="kr-table"><thead><tr><th scope="col">종목</th><th scope="col">종가(원)</th><th scope="col">등락률</th><th scope="col">시가총액(억원)</th></tr></thead><tbody>'+table+'</tbody></table></div></details></article>';
+    }).join('');
+    return '<section class="kr-section kr-heatmaps" id="kr-heatmaps" aria-labelledby="kr-heatmaps-title"><div class="kr-section-head"><div><h3 id="kr-heatmaps-title">코스피200 · 코스닥150 히트맵</h3><p>'+(current?esc(day)+' 정규장 마감 · 넓이 = 시가총액 비중 · 색 = 전 거래일 종가 대비 등락률':esc(day||'최신 거래일')+' · 지수 구성종목 전체의 정규장 종가 자료 미확인')+'</p></div>'+(current?'<div class="kr-heat-legend"><span>−5% 이하</span><i></i><span>+5% 이상</span></div>':'')+'</div><div class="kr-grid">'+cards+'</div>'+(current?'<details class="kr-metadata"><summary>공식 종가·구성종목 출처</summary>'+sourceLinks(current.sourceIds)+'</details>':'')+'</section>'+
+      '<details class="kr-history-disclosure" id="kr-heat-legacy-disclosure"><summary>예전 시장 전체·선별 지도 · 지수 히트맵과 별도</summary>'+legacyHeatmapsSection()+'</details>';
   }
   function currentSectorReturnsSection() {
     const entry=latestBrief(), section=payload?.sectorReturns||entry?.sectors, today=currentDomesticDate();
@@ -287,12 +322,14 @@
   }
   function layoutHeatmap(map) {
     const width=map.clientWidth,height=map.clientHeight;if(!width||!height)return;
-    const rows=map.dataset.krHeatLayer==='sample'?reportedHeatmapRows(map.dataset.krHeatMarket):heatmapView(map.dataset.krHeatMarket).rows;
+    const rows=map.dataset.krHeatLayer==='index'?indexHeatRows(indexHeatmap(),map.dataset.krHeatMarket):map.dataset.krHeatLayer==='sample'?reportedHeatmapRows(map.dataset.krHeatMarket):heatmapView(map.dataset.krHeatMarket).rows;
     const layout=groupedTreemap(rows,width/height),groups=new Map(layout.groups.map(group=>[group.id,group])),byCode=new Map(layout.tiles.map(row=>[row.code,row]));
     map.querySelectorAll('[data-kr-industry]').forEach(element=>{const group=groups.get(element.dataset.krIndustry);if(!group)return;Object.assign(element.style,{left:group.x+'%',top:group.y+'%',width:group.width+'%',height:group.height+'%'});element.classList.toggle('compact',group.width*width/100<55||group.height*height/100<44);});
     map.querySelectorAll('[data-kr-code]').forEach(tile=>{const row=byCode.get(tile.dataset.krCode);if(!row)return;const group=groups.get(row.industryId),groupLabel=group.width*width/100>=55&&group.height*height/100>=44,header=groupLabel&&Math.abs(row.y-group.y)<.00001?18:0,size=heatLabelSize(row.width*width/100,row.height*height/100-header);Object.assign(tile.style,{left:row.x+'%',top:row.y+'%',width:row.width+'%',height:row.height+'%',fontSize:size.font+'px',paddingTop:header+'px'});tile.classList.toggle('tiny',size.tiny);tile.classList.toggle('short',size.short);});
   }
   function bindHeatmaps() {
+    const legacy=document.querySelector?.('#kr-heat-legacy-disclosure');
+    if(legacy)legacy.ontoggle=()=>{if(legacy.open)legacy.querySelectorAll('[data-kr-heat-market]').forEach(layoutHeatmap);};
     const archive=document.querySelector?.('#kr-heat-archive-disclosure');
     if(archive)archive.ontoggle=()=>{heatArchiveOpen=archive.open;if(archive.open)archive.querySelectorAll('[data-kr-heat-market]').forEach(layoutHeatmap);};
     heatObserver?.disconnect();heatObserver=typeof ResizeObserver==='function'?new ResizeObserver(entries=>entries.forEach(entry=>layoutHeatmap(entry.target))):null;

@@ -139,7 +139,7 @@ await test('treemap rectangle area exactly tracks capitalization',()=>{const row
 await test('Nov 18 sampled cap-weighted maps lead with both markets and keep broad November 12 maps separate',()=>{
  const current=JSON.parse(fs.readFileSync(root+'/data/korea-close-overlay.json')).entry,saved=context.window.TerminalBriefingData;
  context.window.TerminalBriefingData={entries:[current,...archive.entries]};api.render();
- const h=el('kr-content').innerHTML,old=api.heatmapsSection(),part=h.split('id="kr-heatmaps"')[1].split('id="kr-close"')[0];
+ const h=el('kr-content').innerHTML,old=api.heatmapsSection(),part=h.split('id="kr-heatmaps-legacy"')[1].split('id="kr-close"')[0];
  assert(h.indexOf('id="kr-heatmaps"')<h.indexOf('id="kr-close"'));
  const [now,archived]=part.split('<details class="kr-history-disclosure" id="kr-heat-archive-disclosure">');
  assert(archived.includes('data-kr-heat-date="'+data.heatmaps.asOf+'"')&&!archived.includes('data-kr-heat-layer="sample"'));
@@ -172,11 +172,26 @@ await test('a limited map or future date is never promoted as the market-wide ma
   const copy=structuredClone(data),map=copy.heatmaps;
   if(kind==='limited'){map.markets.KOSPI.coverage.isFullUniverseAttempt=false;}
   else{map.asOf='2026-11-19';for(const market of Object.values(map.markets))market.asOf=map.asOf;}
-  api.setData(copy);api.render();const part=el('kr-content').innerHTML.split('id="kr-heatmaps"')[1].split('id="kr-close"')[0];
+  api.setData(copy);api.render();const part=el('kr-content').innerHTML.split('id="kr-heatmaps-legacy"')[1].split('id="kr-close"')[0];
   assert(part.includes('2026-11-18 시장 전체 히트맵 미확인')&&!part.includes('data-kr-heat-date='));
   if(kind==='limited')assert(part.includes('data-kr-heat-layer="sample"'));else assert(!part.includes('data-kr-heat-market='));
  }
  context.window.TerminalBriefingData=saved;api.setData(data);api.render();
+});
+await test('index heatmaps require complete same-day official closes and do not relabel archives',()=>{
+ const entry=JSON.parse(fs.readFileSync(root+'/data/korea-close-overlay.json')).entry,saved=context.window.TerminalBriefingData;
+ context.window.TerminalBriefingData={entries:[entry]};
+ const copy=structuredClone(data),rows=(count,start)=>Array.from({length:count},(_,i)=>({code:String(start+i).padStart(6,'0'),name:'<fixture>',asOf:entry.date,close:110,previousClose:100,marketCapKRW:100000000*(count-i)}));
+ const snapshot={asOf:entry.date,membershipAsOf:entry.date,previousAsOf:'2026-11-17',priceBasis:'official_regular_close',sourceIds:[data.sources[0].id],indices:{KOSPI200:rows(200,1000),KOSDAQ150:rows(150,2000)}};
+ const page=()=>{api.render();return el('kr-content').innerHTML.split('id="kr-heatmaps"')[1].split('id="kr-heat-legacy-disclosure"')[0]};
+ try {
+  api.setData(copy);assert.match(page(),/코스피200 · 코스닥150 히트맵/);assert.match(page(),/정규장 종가 자료 미확인/);assert.doesNotMatch(page(),/data-kr-heat-market/);
+  copy.indexHeatmaps=structuredClone(snapshot);let h=page();assert.equal((h.match(/data-kr-heat-detail=/g)||[]).length,350);
+  assert.match(h,/data-kr-heat-market="KOSPI200"/);assert.match(h,/data-kr-heat-market="KOSDAQ150"/);assert.match(h,/&lt;fixture&gt;/);assert.match(h,/종가 110원 · \+10%/);
+  for(const change of [m=>m.indices.KOSPI200.pop(),m=>m.indices.KOSPI200[0].asOf='2026-11-17',m=>m.indices.KOSDAQ150[0].code=m.indices.KOSPI200[0].code,m=>m.priceBasis='intraday',m=>m.asOf='2026-11-17']){
+    copy.indexHeatmaps=structuredClone(snapshot);change(copy.indexHeatmaps);assert.doesNotMatch(page(),/data-kr-heat-market/);
+  }
+ }finally{context.window.TerminalBriefingData=saved;api.setData(data);api.render();}
 });
 await test('heatmap defaults are explicit top30 with true cap coverage and complete numeric tables',()=>{for(const market of ['KOSPI','KOSDAQ']){const view=api.heatmapView(market);assert.equal(view.rows.length,30);assert.equal(view.all.length,data.heatmaps.markets[market].rows.length);assert.equal(view.label,'시총 상위 30종목');const total=view.all.reduce((s,r)=>s+r.marketCapKRW,0),shown=view.rows.reduce((s,r)=>s+r.marketCapKRW,0);assert(Math.abs(view.coverage-shown/total*100)<1e-10)}const h=api.heatmapsSection();assert.equal((h.match(/data-kr-heat-detail=/g)||[]).length,60);for(const market of ['KOSPI','KOSDAQ'])assert(h.includes('검증 종목 전체 '+data.heatmaps.markets[market].rows.length+'개'));assert(h.includes('거래정지'));assert(h.includes('시세 검증 제외'));assert(h.includes('표시 범위 안에서 비교'))});
 await test('top100, full and 30-stock rank zoom cover every stock without changing values',()=>{for(const market of ['KOSPI','KOSDAQ']){const expected=api.heatmapView(market).all;api.heatState[market].scope='100';assert.equal(api.heatmapView(market).rows.length,100);api.heatState[market].scope='all';assert.equal(api.heatmapView(market).rows.length,expected.length);assert.equal(api.heatmapView(market).coverage,100);const seen=[];for(let start=0;start<expected.length;start+=30){api.heatState[market].scope=start?'range-'+start:'30';seen.push(...api.heatmapView(market).rows)}assert.deepEqual(seen,expected);api.heatState[market].scope='30'}api.heatState.KOSPI.scope='100';assert.equal(api.heatmapView('KOSDAQ').rows.length,30);api.heatState.KOSPI.scope='30'});

@@ -2,6 +2,7 @@
 import argparse
 import json
 import math
+import re
 from datetime import date, datetime
 from pathlib import Path
 from urllib.parse import urlparse
@@ -364,6 +365,41 @@ def validate(payload):
             check(bool(seen), f'heatmaps.{market}: observations required')
             check(not seen.intersection(r.get('code') for r in coverage.get('excluded', [])), f'heatmaps.{market}: excluded rows rendered')
             check(item.get('totalDisplayedMarketCapKRW') == sum(r['marketCapKRW'] for r in rows), f'heatmaps.{market}: total cap mismatch')
+
+    if "indexHeatmaps" in payload:
+        section = payload["indexHeatmaps"]
+        if not isinstance(section, dict):
+            errors.append("indexHeatmaps: expected a snapshot object")
+        else:
+            day, previous = section.get("asOf"), section.get("previousAsOf")
+            check(valid_date(day) and valid_date(previous) and previous < day, "indexHeatmaps: two ordered session dates required")
+            check(day == section.get("membershipAsOf"), "indexHeatmaps: membership must be verified for the same session")
+            check(section.get("priceBasis") == "official_regular_close", "indexHeatmaps: official regular-session close required")
+            refs = section.get("sourceIds")
+            check(isinstance(refs, list) and bool(refs) and all(isinstance(r, str) and r in ids for r in refs), "indexHeatmaps: source IDs required")
+            indices = section.get("indices")
+            counts = {"KOSPI200": 200, "KOSDAQ150": 150}
+            check(isinstance(indices, dict) and set(indices) == set(counts), "indexHeatmaps: exact index names required")
+            seen = set()
+            for index, count in counts.items():
+                rows = indices.get(index) if isinstance(indices, dict) else None
+                if not isinstance(rows, list) or len(rows) != count:
+                    errors.append(f"indexHeatmaps.{index}: expected {count} constituents")
+                    continue
+                for row in rows:
+                    if not isinstance(row, dict):
+                        errors.append(f"indexHeatmaps.{index}: row must be an object")
+                        continue
+                    code = row.get("code")
+                    if isinstance(code, str) and re.fullmatch(r"[0-9A-Z]{6}", code) and code not in seen:
+                        seen.add(code)
+                    else:
+                        errors.append(f"indexHeatmaps.{index}: invalid or duplicate code {code!r}")
+                    check(isinstance(row.get("name"), str) and bool(row["name"].strip()), f"indexHeatmaps.{index}: name required")
+                    check(row.get("asOf") == day, f"indexHeatmaps.{index}: mixed session")
+                    for field in ("close", "previousClose", "marketCapKRW"):
+                        value = row.get(field)
+                        check(type(value) is int and 0 < value <= 9007199254740991, f"indexHeatmaps.{index}: {field} must be a positive safe integer")
 
     classification = payload.get('heatmaps', {}).get('classification')
     if classification is not None:
