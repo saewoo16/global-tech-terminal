@@ -151,8 +151,8 @@ await test('compact stock screens retain true dates and enforce actual turnover 
  for(const i of ['외국인','기관'])for(const side of ['순매수','순매도'])assert(ranks.includes(i+' '+side+' 상위 15'));
  assert.equal((ranks.match(/<tbody>/g)||[]).length,4);assert.equal((ranks.match(/<th scope="row">/g)||[]).length,60);
  assert.match(ranks,/2026-11-20/);assert.match(ranks,/글로벌텍스프리/);assert.match(ranks,/삼성전자우/);
- assert.match(ranks,/2026-11-19 · 이전 거래일/);
- assert.match(h,/data-kr-official-liquidity="2026-11-18"/);assert.match(h,/841,848/);assert.match(h,/262,663/);
+ assert.doesNotMatch(ranks,/이전 거래일/);assert.match(ranks,/한미약품/);assert.match(ranks,/지투지바이오/);
+ assert.match(h,/data-kr-official-liquidity="2026-11-18"/);assert.match(h,/약 81.57조원/);assert.match(h,/약 20.21조원/);assert.match(h,/약 5.88조원/);assert.match(h,/841,848/);assert.match(h,/262,663/);
  assert.match(h,/거래대금 50% 이상 증가/);assert.match(h,/정규장 거래대금과 종가를 함께 검증한 사례가 미확보/);
  const base={asOf:e.entry.date,previousSession:'2026-11-19',market:'KOSPI',close:105,previousClose:100,turnoverKRW:150000000,previousTurnoverKRW:100000000};
  e.entry.marketScreens.turnoverMovers={asOf:e.entry.date,previousSession:'2026-11-19',scope:'krx-regular-close-turnover',sourceIds:[e.entry.sources[0].id],rows:[{...base,name:'validFixture'},{...base,name:'rejectVolumeOnly',turnoverKRW:100000000,volumeCurrent:500000000},{...base,name:'rejectSmallMove',close:104},{...base,name:'rejectStale',asOf:'2026-11-18'}]};

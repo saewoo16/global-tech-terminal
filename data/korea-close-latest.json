@@ -101,6 +101,18 @@
         "title": "에너지경제 · 미국 AI주와 국내 반도체 영향",
         "url": "https://m.ekn.kr/view.php?key=20261120029362672",
         "note": "대신증권의 앤트로픽 상장과 AMD 수출통제 위반 의혹 관련 시장 해석."
+      },
+      {
+        "id": "nov20-kofia-round-table",
+        "title": "트레이더하우스 · FreeSIS 11/19 공표값 인용",
+        "url": "https://stock.idealmarketing.co.kr/fund-flow",
+        "note": "11/20 17:11 표시, 11/19 행의 조원 단위 소수 두 자리만 사용."
+      },
+      {
+        "id": "nov20-kofia-round-cross",
+        "title": "종가노트 · FreeSIS 11/19 공표값 교차 확인",
+        "url": "https://jongganote.com/market",
+        "note": "11/19 예탁금·전체 및 시장별 신용잔고의 조원 단위 소수 한 자리 수치 대조."
       }
     ],
     "indices": [
@@ -580,6 +592,11 @@
           "id": "nov20-flow-kosdaq-inst-public",
           "title": "11/20 코스닥 기관 · 매수·매도",
           "url": "https://www.yna.co.kr/view/AKR20261120130500008"
+        },
+        {
+          "id": "nov20-flow-kospi-inst-public",
+          "title": "11/20 코스피 기관 · 매수·매도",
+          "url": "https://www.yna.co.kr/view/AKR20261120130700008"
         }
       ],
       "highCandidates": {
@@ -781,6 +798,200 @@
               "value": -126.0
             }
           ]
+        },
+        "institution": {
+          "asOf": "2026-11-20",
+          "scope": "krx-regular-close-both-markets",
+          "unit": "억원",
+          "sourceIds": [
+            "nov20-flow-kospi-inst-public",
+            "nov20-flow-kosdaq-inst-public"
+          ],
+          "note": "같은 날 15:30 코스피·코스닥 표에서 부호·단위를 맞춘 뒤 순대금으로 통합 순위를 재산출. 코스피·코스닥 주권(우선주 포함), 원자료 표시 정밀도.",
+          "buy": [
+            {
+              "code": "128940",
+              "name": "한미약품",
+              "market": "KOSPI",
+              "value": 411.7
+            },
+            {
+              "code": "012450",
+              "name": "한화에어로스페이스",
+              "market": "KOSPI",
+              "value": 215.2
+            },
+            {
+              "code": "004170",
+              "name": "신세계",
+              "market": "KOSPI",
+              "value": 181.2
+            },
+            {
+              "code": "105560",
+              "name": "KB금융",
+              "market": "KOSPI",
+              "value": 176.3
+            },
+            {
+              "code": "352820",
+              "name": "하이브",
+              "market": "KOSPI",
+              "value": 147.7
+            },
+            {
+              "code": "041510",
+              "name": "에스엠",
+              "market": "KOSDAQ",
+              "value": 137.76425
+            },
+            {
+              "code": "196170",
+              "name": "알테오젠",
+              "market": "KOSDAQ",
+              "value": 135.20817
+            },
+            {
+              "code": "089860",
+              "name": "롯데렌탈",
+              "market": "KOSPI",
+              "value": 125.7
+            },
+            {
+              "code": "003490",
+              "name": "대한항공",
+              "market": "KOSPI",
+              "value": 124.1
+            },
+            {
+              "code": "277810",
+              "name": "레인보우로보틱스",
+              "market": "KOSDAQ",
+              "value": 101.15046
+            },
+            {
+              "code": "086790",
+              "name": "하나금융지주",
+              "market": "KOSPI",
+              "value": 92.3
+            },
+            {
+              "code": "316140",
+              "name": "우리금융지주",
+              "market": "KOSPI",
+              "value": 88.8
+            },
+            {
+              "code": "032830",
+              "name": "삼성생명",
+              "market": "KOSPI",
+              "value": 80.8
+            },
+            {
+              "code": "180640",
+              "name": "한진칼",
+              "market": "KOSPI",
+              "value": 68.6
+            },
+            {
+              "code": "456160",
+              "name": "지투지바이오",
+              "market": "KOSDAQ",
+              "value": 60.74533
+            }
+          ],
+          "sell": [
+            {
+              "code": "005930",
+              "name": "삼성전자",
+              "market": "KOSPI",
+              "value": -3602.3
+            },
+            {
+              "code": "000660",
+              "name": "SK하이닉스",
+              "market": "KOSPI",
+              "value": -2628.7
+            },
+            {
+              "code": "009150",
+              "name": "삼성전기",
+              "market": "KOSPI",
+              "value": -1374.3
+            },
+            {
+              "code": "005935",
+              "name": "삼성전자우",
+              "market": "KOSPI",
+              "value": -991.2
+            },
+            {
+              "code": "007660",
+              "name": "이수페타시스",
+              "market": "KOSPI",
+              "value": -433.8
+            },
+            {
+              "code": "222800",
+              "name": "심텍",
+              "market": "KOSDAQ",
+              "value": -335.99962
+            },
+            {
+              "code": "017670",
+              "name": "SK텔레콤",
+              "market": "KOSPI",
+              "value": -289.6
+            },
+            {
+              "code": "042700",
+              "name": "한미반도체",
+              "market": "KOSPI",
+              "value": -243.7
+            },
+            {
+              "code": "006400",
+              "name": "삼성SDI",
+              "market": "KOSPI",
+              "value": -175.8
+            },
+            {
+              "code": "028050",
+              "name": "삼성E&A",
+              "market": "KOSPI",
+              "value": -173.9
+            },
+            {
+              "code": "096770",
+              "name": "SK이노베이션",
+              "market": "KOSPI",
+              "value": -173.6
+            },
+            {
+              "code": "034020",
+              "name": "두산에너빌리티",
+              "market": "KOSPI",
+              "value": -137.4
+            },
+            {
+              "code": "353200",
+              "name": "대덕전자",
+              "market": "KOSPI",
+              "value": -135.4
+            },
+            {
+              "code": "402340",
+              "name": "SK스퀘어",
+              "market": "KOSPI",
+              "value": -130.0
+            },
+            {
+              "code": "000150",
+              "name": "두산",
+              "market": "KOSPI",
+              "value": -123.6
+            }
+          ]
         }
       }
     },
@@ -793,6 +1004,21 @@
         "nov20-kofia-18",
         "nov20-kofia-18-yn",
         "nov20-kofia-18-cross"
+      ]
+    },
+    "reportedLiquidityRounded": {
+      "date": "2026-11-19",
+      "unit": "조원",
+      "precision": 2,
+      "values": {
+        "deposits": 81.57,
+        "creditTotal": 26.08,
+        "creditKOSPI": 20.21,
+        "creditKOSDAQ": 5.88
+      },
+      "sourceIds": [
+        "nov20-kofia-round-table",
+        "nov20-kofia-round-cross"
       ]
     }
   },

@@ -567,12 +567,26 @@
     const series=payload.liquidity?.series||{};
     return `<section class="kr-section" aria-labelledby="kr-liquidity-title"><div class="kr-section-head"><div><h3 id="kr-liquidity-title">투자자예탁금 · 신용융자 잔고</h3><p>예탁금은 증시 전체 합계 · 신용융자는 KOSPI / KOSDAQ 구분 · 억원</p></div>${ranges('liquidity',liquidityRange)}</div>${summary()}<article class="kr-card"><div class="kr-card-head"><h4>투자자예탁금</h4><span class="kr-badge">시장 전체 · 억원</span></div><div class="kr-card-body">${chart('deposits',list(series.deposits?.rows).map(r=>({date:r.date,deposits:r.value})),['deposits'],liquidityRange,'시장 전체 투자자예탁금',false)}</div>${meta(series.deposits)}</article><div class="kr-grid kr-credit-grid" style="margin-top:14px">${['creditKOSPI','creditKOSDAQ'].map(key=>`<article class="kr-card"><div class="kr-card-head"><h4>${NAMES[key]} 잔고</h4><span class="kr-badge">억원</span></div><div class="kr-card-body">${chart(key,list(series[key]?.rows).map(r=>({date:r.date,[key]:r.value})),[key],liquidityRange,NAMES[key]+' 잔고',false)}</div>${meta(series[key])}</article>`).join('')}</div>${officialLiquiditySummary()}${payload.liquidity?.note?`<details class="kr-metadata"><summary>예탁금·신용융자 집계 기준</summary><p class="kr-note">${esc(payload.liquidity.note)}</p></details>`:''}</section>`;
   }
+  function roundedLiquidity() {
+    const entry=latestBrief(),a=entry?.reportedLiquidityRounded;
+    if(!(isDate(a?.date)&&a.date<=currentDomesticDate()&&a.unit==='조원'&&a.precision===2
+        &&['deposits','creditTotal','creditKOSPI','creditKOSDAQ'].every(k=>finite(a.values?.[k])&&a.values[k]>0)
+        &&new Set(list(a.sourceIds)).size>=2&&a.sourceIds.every(id=>list(entry.sources).some(s=>s.id===id&&safe(s.url)))))return null;
+    if(Math.abs(a.values.creditTotal-a.values.creditKOSPI-a.values.creditKOSDAQ)>0.016)return null;
+    return {entry,a};
+  }
   function summary() {
-    const series=payload.liquidity?.series||{};
-    const release=latestOfficialLiquidity()?.latest;
-    const cards=['deposits','creditKOSPI','creditKOSDAQ'].map(key=>{const section=series[key]||{}, stored=list(section.rows).filter(r=>finite(r.value)).at(-1);
-      const latest=key==='deposits'&&release&&(!stored||release.date>stored.date)?{date:release.date,value:release.officialInvestorDeposits/100}:stored;return `<article class="kr-summary-card"><small>${NAMES[key]}${key==='deposits'?' · 시장 전체':''}</small><strong>${latest?integer(latest.value)+'억원':'미확인'}</strong><p>${latest?latest.date+' 기준':'검증된 관측값 없음'}</p></article>`;});
-    return `<div class="kr-summary kr-balance-summary">${cards.join('')}</div>`;
+    const series=payload.liquidity?.series||{},release=latestOfficialLiquidity()?.latest,rounded=roundedLiquidity();
+    const cards=['deposits','creditKOSPI','creditKOSDAQ'].map(key=>{
+      const section=series[key]||{}, stored=list(section.rows).filter(r=>finite(r.value)).at(-1);
+      const exact=key==='deposits'&&release&&(!stored||release.date>stored.date)?{date:release.date,value:release.officialInvestorDeposits/100}:stored;
+      const approx=rounded&&(!exact||rounded.a.date>exact.date);
+      const value=approx?'약 '+fmt(rounded.a.values[key],2)+'조원':exact?integer(exact.value)+'억원':'미확인';
+      const date=approx?rounded.a.date:exact?.date;
+      return `<article class="kr-summary-card"><small>${NAMES[key]}${key==='deposits'?' · 시장 전체':''}</small><strong>${value}</strong><p>${date?date+' 기준'+(approx?' · 공표 인용':''):'검증된 관측값 없음'}</p></article>`;
+    });
+    const docs=rounded?`<details class="kr-metadata"><summary>${rounded.a.date} 예탁금·시장별 신용융자 출처</summary><p>금융투자협회 공표를 인용한 반올림 값입니다. 전체 신용융자 약 ${fmt(rounded.a.values.creditTotal,2)}조원. 시장별 값은 제공된 각 수치를 사용하며 합계에서 나누지 않습니다. 과거 정밀 차트에는 이 값을 삽입하지 않습니다.</p>${briefSourceLinks(rounded.a.sourceIds,rounded.entry)}</details>`:'';
+    return `<div class="kr-summary kr-balance-summary">${cards.join('')}</div>${docs}`;
   }
   // Move existing nodes, preserving every explanation and source link. Data tables stay beside charts.
   function collectExplanations(target, open=false) {
