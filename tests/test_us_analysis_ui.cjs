@@ -114,7 +114,7 @@ await test('a genuinely newer archive still wins over an older sidecar',async()=
   assert(el('us-content').innerHTML.includes('미국 현지 '+later.date+' 완료 거래일'));
 });
 await test('compact dated headline renders verified aggregates and one short close box without FX or sectors',async()=>{
- const old=context.fetch,record=JSON.parse(fs.readFileSync(root+'/data/us-close-headline.json')),original=context.fetchOverlay;
+ const old=context.fetch,record=JSON.parse(fs.readFileSync(root+'/tests/fixtures/us-close-headline-20261119.json')),original=context.fetchOverlay;
  context.fetchOverlay=async()=>({ok:true,json:async()=>JSON.parse(fs.readFileSync(root+'/data/us-analysis-latest.json'))});
  context.fetch=url=>url.includes('us-close-headline.json')?Promise.resolve({ok:true,json:async()=>record}):old(url);
  await api.load();const h=el('us-content').innerHTML,n=h.split('id="us-narrative"')[1].split('</section>')[0];
@@ -125,6 +125,19 @@ await test('compact dated headline renders verified aggregates and one short clo
  assert(h.includes('finviz.com/widgets/map'));
  assert(h.includes('S&P 500 상승 · 하락 상위 15')&&h.includes('Bio-Techne')&&h.includes('최근 4개 분기'));
  assert(!h.includes('class="us-earnings-summary"'));
+ context.fetch=old;context.fetchOverlay=original;
+});
+await test('current close snapshot renders only its own date and handles unavailable screens',async()=>{
+ const old=context.fetch,record=JSON.parse(fs.readFileSync(root+'/data/us-close-headline.json')),original=context.fetchOverlay;
+ context.fetchOverlay=async()=>({ok:true,json:async()=>JSON.parse(fs.readFileSync(root+'/data/us-analysis-latest.json'))});
+ context.fetch=url=>url.includes('us-close-headline.json')?Promise.resolve({ok:true,json:async()=>record}):old(url);
+ await api.load(); const h=el('us-content').innerHTML;
+ assert(h.includes(record.date+' 미국 정규장 종가'));
+ for(const row of record.indices)assert(h.includes(row.close.toLocaleString('ko-KR',{maximumFractionDigits:2})),row.ticker);
+ assert(h.includes('finviz.com/widgets/map'));
+ if(!record.reportedBreadth)assert(h.includes('검증된 상승·하락 집계 미확보'));
+ if(record.closeScreens?.turnoverStatus==='unavailable')assert(h.includes('실제 거래대금을 검증한 종목이 아직 미확보'));
+ if(record.earnings?.rows?.length===0){assert(!h.includes('최근 4개 분기'));if(record.earnings.showStatus&&record.earnings.note)assert(h.includes(api.esc(record.earnings.note)),h.slice(-6000));}
  context.fetch=old;context.fetchOverlay=original;
 });
 console.log(count+' US analysis UI checks passed');
